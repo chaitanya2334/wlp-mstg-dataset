@@ -1,0 +1,191 @@
+T1	Action 102 106	Seed
+T2	Reagent 111 116	cells
+T3	Generic-Measure 145 154	70 - 90 %
+T4	Measure-Type 155 164	confluent
+T5	Modifier 165 191	on the day of transfection
+T6	Modifier 354 360	Gently
+T7	Action 361 364	mix
+T8	Reagent 369 377	reaction
+T9	Action 382 390	incubate
+T10	Temperature 394 410	room temperature
+T11	Time 415 425	20 minutes
+T12	Modifier 428 449	During the incubation
+T13	Action 452 462	trypsinize
+T14	Reagent 467 472	cells
+T15	Action 475 482	washing
+T16	Numerical 483 487	once
+T17	Action 491 497	remove
+T18	Reagent 502 508	traces
+T19	Reagent 512 519	trypsin
+T20	Action 522 528	Remove
+T21	Numerical 529 540	1 - 2 x 106
+T22	Reagent 541 546	cells
+T23	Modifier 552 559	sterile
+T24	Location 560 574	microfuge tube
+T25	Action 639 648	Resuspend
+T26	Reagent 653 658	cells
+T27	Amount 662 667	10 ml
+T28	Reagent 671 676	media
+T29	Action 681 686	count
+T30	Action 689 695	Pellet
+T31	Time 700 705	5 min
+T32	Speed 709 716	500 x g
+T33	Action 719 723	Wash
+T34	Reagent 728 733	cells
+T35	Numerical 734 738	once
+T36	Concentration 744 746	1X
+T37	Reagent 747 750	PBS
+T38	Action 753 762	Resuspend
+T39	Reagent 767 772	cells
+T40	Amount 776 781	50 µl
+T41	Reagent 785 806	Resuspension Buffer R
+T42	Action 809 816	Prepare
+T43	Location 819 834	24 - well plate
+T44	Action 838 844	adding
+T45	Amount 845 851	500 µl
+T46	Reagent 852 865	growth medium
+T47	Numerical 873 891	appropriate number
+T48	Location 895 900	wells
+T49	Action 903 906	Add
+T50	Amount 907 911	5 µl
+T51	Reagent 915 920	cells
+T52	Numerical 924 928	each
+T53	Amount 929 933	7 µl
+T54	Reagent 934 946	RNP reaction
+T55	Action 949 957	Aspirate
+T56	Amount 958 963	10 µl
+T57	Reagent 971 986	RNP / cells mix
+T58	Amount 994 999	10 µl
+T59	Location 1000 1008	Neon tip
+T60	Action 1011 1024	Electroporate
+T61	Reagent 1029 1034	cells
+T62	Generic-Measure 1068 1073	1700V
+T63	Time 1076 1081	20 ms
+T64	Generic-Measure 1084 1091	1 pulse
+T65	Modifier 1094 1105	Immediately
+T66	Action 1106 1114	transfer
+T67	Reagent 1119 1124	cells
+T68	Modifier 1132 1140	prepared
+T69	Location 1141 1156	24 - well plate
+T70	Action 1159 1167	Incubate
+T71	Reagent 1172 1177	cells
+T72	Modifier 1183 1193	humidified
+T73	Temperature 1194 1199	37 °C
+T74	Concentration 1202 1209	5 % C02
+T75	Device 1210 1219	incubator
+T76	Time 1224 1237	48 - 72 hours
+T77	Modifier 1240 1246	Gently
+T78	Action 1247 1255	aspirate
+T79	Reagent 1260 1265	media
+T80	Reagent 1275 1280	cells
+T81	Action 1283 1286	Add
+T82	Amount 1287 1292	75 µl
+T83	Reagent 1296 1343	Epicentre QuickExtract™ DNA Extraction Solution
+T84	Action 1348 1362	shake / vortex
+T85	Time 1367 1376	5 minutes
+T86	Action 1379 1387	Transfer
+T87	Reagent 1392 1400	solution
+T88	Location 1406 1415	PCR plate
+T89	Location 1419 1424	tubes
+T90	Action 1429 1434	place
+T91	Device 1440 1452	thermocycler
+T92	Temperature 1487 1491	65°C
+T93	Time 1496 1502	15 min
+T94	Temperature 1505 1509	95°C
+T95	Time 1514 1520	15 min
+T96	Action 1523 1527	Hold
+T97	Temperature 1531 1534	4°C
+T98	Action 1537 1543	Dilute
+T99	Reagent 1548 1551	DNA
+T100	Concentration 1552 1558	1 : 10
+T101	Reagent 1562 1583	nuclease - free water
+T102	Action 1669 1675	Pellet
+T103	Time 1680 1685	5 min
+T104	Speed 1689 1696	500 x g
+T105	Action 1699 1703	Wash
+T106	Amount 1709 1715	100 µl
+T107	Concentration 1716 1718	1X
+T108	Reagent 1719 1722	PBS
+T109	Action 1735 1739	Wash
+T110	Amount 1745 1751	100 µl
+T111	Concentration 1752 1754	1X
+T112	Reagent 1755 1758	PBS
+E1	Action:T1 Acts-on:T2 Product:T14
+E2	Action:T7 Acts-on:T8
+E3	Action:T9 Acts-on:E2
+E4	Action:T13 Acts-on:T14
+E5	Action:T15 Acts-on:T14 Count:T16
+E6	Action:T17 Acts-on:T18
+E7	Action:T20 Acts-on:T22 Site:T24 Product:T26
+E8	Action:T25 Acts-on:T26 Site:T28
+E9	Action:T29 Acts-on:E8 Acts-on2:T26
+E10	Action:T30 Acts-on:E9 Product:T34
+E11	Action:T33 Acts-on:T34 Count:T35 Using:T37 Product:T39
+E12	Action:T38 Acts-on:T39 Acts-on2:T41 Product:T51
+E13	Action:T42 Acts-on:T43
+E14	Action:T44 Acts-on:T46 Site:T48
+E15	Action:T49 Acts-on:T51 Site:T54 Product:T57
+E16	Action:T55 Acts-on:T57 Site:T59 Product:T61
+E17	Action:T60 Acts-on:T61 Product:T67
+E18	Action:T66 Acts-on:T67 Site:T69 Product:T71
+E19	Action:T70 Acts-on:T71 Site:T75 Product:T80
+E20	Action:T78 Acts-on:T79 Site:T80
+E21	Action:T81 Site:E20 Acts-on:T83
+E22	Action:T84 Acts-on:E21 Product:T87
+E23	Action:T86 Acts-on:T87 Site:T88
+E24	Action:T90 Acts-on:E23 Site:T91 Product:T99
+E25	Action:T96 Acts-on:E24
+E26	Action:T98 Acts-on:T99 Site:T101
+E27	Action:T102 Acts-on:E26
+E28	Action:T105 Acts-on:E27 Using:T108
+E29	Action:T109 Acts-on:E28 Using:T112
+R1	Setting Arg1:E1 Arg2:T3
+R2	Mod-Link Arg1:E1 Arg2:T5
+R3	Of-Type Arg1:T3 Arg2:T4
+R4	Mod-Link Arg1:E2 Arg2:T6
+R5	Setting Arg1:E3 Arg2:T10
+R6	Setting Arg1:E3 Arg2:T11
+R7	Mod-Link Arg1:E4 Arg2:T12
+R8	Enables Arg1:E5 Arg2:E6
+R9	Meronym Arg1:T18 Arg2:T19
+R10	Measure Arg1:T22 Arg2:T21
+R11	Mod-Link Arg1:T24 Arg2:T23
+R12	Measure Arg1:T28 Arg2:T27
+R13	Setting Arg1:E10 Arg2:T31
+R14	Setting Arg1:E10 Arg2:T32
+R15	Measure Arg1:T37 Arg2:T36
+R16	Measure Arg1:T41 Arg2:T40
+R17	Enables Arg1:E14 Arg2:E13
+R18	Measure Arg1:T46 Arg2:T45
+R19	Meronym Arg1:T48 Arg2:T43
+R20	Measure Arg1:T48 Arg2:T47
+R21	Measure Arg1:T51 Arg2:T50
+R22	Measure Arg1:T54 Arg2:T52
+R23	Measure Arg1:T54 Arg2:T53
+R24	Measure Arg1:T57 Arg2:T56
+R25	Measure Arg1:T59 Arg2:T58
+R26	Setting Arg1:E17 Arg2:T62
+R27	Setting Arg1:E17 Arg2:T63
+R28	Setting Arg1:E17 Arg2:T64
+R29	Mod-Link Arg1:E18 Arg2:T65
+R30	Mod-Link Arg1:T69 Arg2:T68
+R31	Setting Arg1:E19 Arg2:T76
+R32	Mod-Link Arg1:T75 Arg2:T72
+R33	Setting Arg1:T75 Arg2:T73
+R34	Setting Arg1:T75 Arg2:T74
+R35	Mod-Link Arg1:E20 Arg2:T77
+R36	Measure Arg1:T83 Arg2:T82
+R37	Setting Arg1:E22 Arg2:T85
+R38	Or Arg1:T88 Arg2:T89
+R39	Setting Arg1:T91 Arg2:T92
+R40	Setting Arg1:T91 Arg2:T93
+R41	Setting Arg1:T91 Arg2:T94
+R42	Setting Arg1:T91 Arg2:T95
+R43	Setting Arg1:E25 Arg2:T97
+R44	Setting Arg1:E26 Arg2:T100
+R45	Setting Arg1:E27 Arg2:T103
+R46	Setting Arg1:E27 Arg2:T104
+R47	Measure Arg1:T108 Arg2:T106
+R48	Measure Arg1:T108 Arg2:T107
+R49	Measure Arg1:T112 Arg2:T110
+R50	Measure Arg1:T112 Arg2:T111

@@ -1,0 +1,56 @@
+T1	Action 69 75	Digest
+T2	Amount 76 82	1–5 μg
+T3	Reagent 86 97	plasmid DNA
+T4	Amount 103 108	20 μl
+T5	Reagent 109 117	reaction
+T6	Reagent 131 134	DNA
+T7	Amount 135 141	≥ 1 μl
+T8	Reagent 144 169	Restriction Enzyme Buffer
+T9	Concentration 172 175	10X
+T10	Amount 178 182	2 μl
+T11	Reagent 185 209	Restriction Endonuclease
+T12	Amount 210 214	1 μl
+T13	Reagent 217 220	H2O
+T14	Amount 235 240	20 μl
+T15	Action 243 251	Incubate
+T16	Temperature 255 259	37°C
+T17	Time 264 274	60 minutes
+T18	Method 278 315	follow manufacturer’s recommendations
+T19	Action 318 321	Add
+T20	Amount 322 328	1 unit
+T21	Reagent 332 335	CIP
+T22	Amount 346 352	1 pmol
+T23	Reagent 356 364	DNA ends
+T24	Action 400 408	Incubate
+T25	Temperature 412 416	37°C
+T26	Time 421 434	30–60 minutes
+T27	Action 437 443	Purify
+T28	Reagent 444 447	DNA
+T29	Method 451 467	gel purification
+T30	Method 470 483	spin - column
+T31	Method 487 504	phenol extraction
+T32	Action 507 514	Proceed
+T33	Method 520 528	ligation
+E1	Action:T1 Acts-on:T3 Product:T5 Acts-on2:T6 Acts-on3:T8 Acts-on4:T11 Acts-on5:T13
+E2	Action:T15 Acts-on:T5 Product:T23
+E3	Action:T19 Site:E2 Acts-on:T21 Acts-on2:T23
+E4	Action:T24 Acts-on:E3 Product:T28
+E5	Action:T27 Site:E4 Acts-on:T28 Using:T29
+E6	Action:T32 Acts-on:E5 Using:T33
+R1	Measure Arg1:T3 Arg2:T2
+R2	Coreference-Link Arg1:T3 Arg2:T6
+R3	Measure Arg1:T5 Arg2:T4
+R4	Measure Arg1:T6 Arg2:T7
+R5	Measure Arg1:T8 Arg2:T9
+R6	Measure Arg1:T8 Arg2:T10
+R7	Measure Arg1:T11 Arg2:T12
+R8	Measure Arg1:T13 Arg2:T14
+R9	Setting Arg1:E2 Arg2:T16
+R10	Setting Arg1:E2 Arg2:T17
+R11	Or Arg1:T17 Arg2:T18
+R12	Measure Arg1:T21 Arg2:T20
+R13	Measure Arg1:T23 Arg2:T22
+R14	Setting Arg1:E4 Arg2:T25
+R15	Setting Arg1:E4 Arg2:T26
+R16	Or Arg1:T29 Arg2:T30
+R17	Or Arg1:T30 Arg2:T31

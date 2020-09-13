@@ -1,0 +1,127 @@
+T1	Action 66 71	Place
+T2	Location 72 87	master mix tube
+T3	Location 91 94	ice
+T4	Action 99 104	flick
+T5	Numerical 107 110	few
+T6	Action 120 123	mix
+T7	Action 126 133	Combine
+T8	Generic-Measure 134 143	20–100 ng
+T9	Reagent 147 153	vector
+T10	Amount 161 182	3 - fold molar excess
+T11	Reagent 186 192	insert
+T12	Action 197 204	q . s .
+T13	Amount 208 211	5μl
+T14	Reagent 217 221	dH2O
+T15	Action 224 227	Add
+T16	Amount 228 232	5 μl
+T17	Modifier 236 243	Instant
+T18	Modifier 244 256	Sticky - end
+T19	Reagent 257 274	Ligase Master Mix
+T20	Action 277 280	mix
+T21	Modifier 281 291	thoroughly
+T22	Method 295 316	pipetting up and down
+T23	Numerical 317 323	7 - 10
+T24	Action 336 341	place
+T25	Location 345 348	ice
+T26	Action 407 411	Thaw
+T27	Modifier 412 421	competent
+T28	Reagent 422 427	cells
+T29	Location 431 434	ice
+T30	Action 437 444	Aliquot
+T31	Amount 445 450	50 μl
+T32	Reagent 454 459	cells
+T33	Amount 467 473	1.5 ml
+T34	Location 474 494	microcentrifuge tube
+T35	Action 497 500	Add
+T36	Amount 501 505	2 μl
+T37	Reagent 513 530	ligation reaction
+T38	Reagent 538 543	cells
+T39	Action 548 551	mix
+T40	Method 555 572	finger - flicking
+T41	Action 575 588	Do not vortex
+T42	Location 593 597	tube
+T43	Action 600 608	Incubate
+T44	Location 613 617	tube
+T45	Location 621 624	ice
+T46	Time 629 639	30 minutes
+T47	Action 642 652	Do not mix
+T48	Action 655 665	Heat shock
+T49	Temperature 669 673	42°C
+T50	Time 678 688	30 seconds
+T51	Action 691 697	Return
+T52	Location 698 702	tube
+T53	Location 706 709	ice
+T54	Time 714 723	2 minutes
+T55	Action 726 729	Add
+T56	Amount 730 736	950 μl
+T57	Reagent 737 751	recovery media
+T58	Location 775 779	tube
+T59	Action 782 790	Incubate
+T60	Time 795 803	one hour
+T61	Temperature 807 811	37°C
+T62	Method 817 836	rotation or shaking
+T63	Speed 839 850	200–250 rpm
+T64	Action 855 861	Spread
+T65	Amount 862 868	100 μl
+T66	Reagent 876 885	outgrowth
+T67	Action 888 908	undiluted or diluted
+T68	Generic-Measure 909 914	1 : 5
+T69	Reagent 920 934	recovery media
+T70	Modifier 942 953	appropriate
+T71	Location 954 981	antibiotic selection plates
+T72	Action 986 994	incubate
+T73	Time 995 1004	overnight
+T74	Temperature 1008 1012	37°C
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Count:T5 Acts-on:E1
+E3	Action:T6 Acts-on:E1 Product:T19
+E4	Action:T7 Acts-on:T9 Acts-on2:T11
+E5	Action:T12 Using:T14 Acts-on:E4
+E6	Action:T15 Acts-on:T19
+E7	Action:T20 Using:T22 Count:T23 Acts-on:E6
+E8	Action:T24 Acts-on:T25 Acts-on2:E7 Product:T37
+E9	Action:T26 Acts-on:T28 Site:T29 Product:T32
+E10	Action:T30 Acts-on:T32 Site:T34 Product:T38
+E11	Action:T35 Acts-on:T37 Site:T38 Product:T42
+E12	Action:T39 Using:T40 Acts-on:E11 Product:T44
+E13	Action:T41 Acts-on:T42
+E14	Action:T43 Acts-on:T44 Site:T45
+E15	Action:T47 
+E16	Action:T48 Acts-on:E14 Product:T52
+E17	Action:T51 Acts-on:T52 Site:T53 Product:T58
+E18	Action:T55 Acts-on:T57 Site:T58
+E19	Action:T59 Using:T62 Acts-on:E18
+E20	Action:T64 Acts-on:T66 Site:T71
+E21	Action:T67 Using:T69 Product:T66 Acts-on:E19
+E22	Action:T72 Acts-on:E20
+R1	Measure Arg1:T9 Arg2:T8
+R2	Setting Arg1:E5 Arg2:T13
+R3	Mod-Link Arg1:T19 Arg2:T18
+R4	Mod-Link Arg1:T19 Arg2:T17
+R5	Measure Arg1:T19 Arg2:T16
+R6	Mod-Link Arg1:E7 Arg2:T21
+R7	Mod-Link Arg1:T28 Arg2:T27
+R8	Measure Arg1:T34 Arg2:T33
+R9	Measure Arg1:T32 Arg2:T31
+R10	Measure Arg1:T37 Arg2:T36
+R11	Setting Arg1:E14 Arg2:T46
+R12	Setting Arg1:E16 Arg2:T49
+R13	Setting Arg1:E16 Arg2:T50
+R14	Setting Arg1:E17 Arg2:T54
+R15	Measure Arg1:T57 Arg2:T56
+R16	Setting Arg1:E19 Arg2:T60
+R17	Setting Arg1:E19 Arg2:T61
+R18	Setting Arg1:E19 Arg2:T63
+R19	Setting Arg1:E21 Arg2:T68
+R20	Measure Arg1:T66 Arg2:T65
+R21	Mod-Link Arg1:T71 Arg2:T70
+R22	Setting Arg1:E22 Arg2:T73
+R23	Setting Arg1:E22 Arg2:T74
+R24	Enables Arg1:E2 Arg2:E3
+R25	Measure Arg1:T11 Arg2:T10
+R26	Prevents Arg1:E12 Arg2:E13
+R27	Prevents Arg1:E14 Arg2:E15
+R28	Coreference-Link Arg1:T3 Arg2:T25
+R29	Coreference-Link Arg1:T25 Arg2:T29
+R30	Coreference-Link Arg1:T29 Arg2:T45
+R31	Coreference-Link Arg1:T45 Arg2:T53

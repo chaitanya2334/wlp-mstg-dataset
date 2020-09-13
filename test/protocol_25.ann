@@ -1,0 +1,144 @@
+T1	Time 46 50	10am
+T2	Action 53 58	start
+T3	Reagent 61 73	cell culture
+T4	Amount 79 83	50ml
+T5	Location 84 88	tube
+T6	Amount 97 101	10ml
+T7	Reagent 105 108	CSM
+T8	Action 111 115	Grow
+T9	Time 120 132	8 - 10 hours
+T10	Location 138 144	shaker
+T11	Temperature 148 153	30 °C
+T12	Action 156 163	Measure
+T13	Measure-Type 164 166	OD
+T14	Time 174 181	evening
+T15	Action 186 192	dilute
+T16	Amount 198 203	250ml
+T17	Location 204 216	glass flasks
+T18	Amount 228 232	45ml
+T19	Reagent 236 239	CSM
+T20	Time 244 253	overnight
+T21	Method 254 260	growth
+T22	Action 318 326	Transfer
+T23	Amount 330 334	50ml
+T24	Location 335 347	falcon tubes
+T25	Action 350 353	Add
+T26	Amount 354 357	5ml
+T27	Reagent 361 373	Formaldehyde
+T28	Action 376 382	invert
+T29	Numerical 385 396	few times ,
+T30	Action 397 400	set
+T31	Location 404 412	benchtop
+T32	Time 417 422	45min
+T33	Action 425 434	Spin down
+T34	Speed 438 446	3,000rpm
+T35	Time 451 455	4min
+T36	Action 458 473	Decant and wash
+T37	Method 477 486	pipetting
+T38	Amount 492 495	1ml
+T39	Modifier 499 509	ice - cold
+T40	Reagent 510 517	BufferB
+T41	Action 520 528	Transfer
+T42	Amount 532 537	1.5ml
+T43	Location 538 543	tubes
+T44	Action 563 567	Spin
+T45	Speed 576 584	3,000rpm
+T46	Time 589 593	4min
+T47	Action 613 617	Wash
+T48	Amount 633 636	1ml
+T49	Reagent 637 655	ice - cold BufferB
+T50	Action 675 679	Spin
+T51	Speed 688 696	3,000rpm
+T52	Time 701 705	4min
+T53	Action 725 745	Decant and resuspend
+T54	Amount 749 752	1ml
+T55	Reagent 756 763	BufferB
+T56	Action 766 769	Add
+T57	Amount 770 775	2.5ul
+T58	Reagent 779 788	Zymolyase
+T59	Action 793 799	digest
+T60	Temperature 803 808	30 °C
+T61	Action 920 924	Drop
+T62	Amount 925 929	1 μL
+T63	Reagent 937 942	cells
+T64	Location 950 961	glass slide
+T65	Action 1025 1028	Use
+T66	Device 1048 1067	phase contrast ring
+T67	Action 1249 1253	Wash
+T68	Amount 1259 1262	1ml
+T69	Reagent 1263 1281	ice - cold BufferB
+T70	Action 1284 1292	spinning
+T71	Time 1293 1301	5 - 6min
+T72	Speed 1305 1313	2,000rpm
+T73	Action 1333 1348	Decant and wash
+T74	Time 1360 1363	1ml
+T75	Reagent 1364 1382	ice - cold BufferB
+T76	Action 1385 1393	spinning
+T77	Time 1394 1402	5 - 6min
+T78	Speed 1406 1414	2,000rpm
+T79	Action 1434 1443	Resuspend
+T80	Amount 1447 1450	1ml
+T81	Concentration 1454 1458	70 %
+T82	Reagent 1459 1466	Ethanol
+T83	Time 1467 1476	overnight
+T84	Temperature 1480 1484	4 °C
+E1	Action:T2 Product:T3 Site:T5 Using:T7
+E2	Action:T8 Acts-on:E1 Site:T10
+E3	Action:T12 Acts-on:E2 Measure-Type-Link:T13
+E4	Action:T15 Acts-on:E3 Site:T17 Acts-on2:T19 Using:T21
+E5	Action:T22 Acts-on:E4 Site:T24
+E6	Action:T25 Site:E5 Acts-on:T27
+E7	Action:T28 Acts-on:E6 Count:T29
+E8	Action:T30 Acts-on:E7 Site:T31
+E9	Action:T33 Acts-on:E8
+E10	Action:T36 Site:E9 Using:T37 Acts-on:T40
+E11	Action:T41 Acts-on:E10 Site:T43
+E12	Action:T44 Acts-on:E11
+E13	Action:T47 Site:E12 Acts-on:T49
+E14	Action:T50 Acts-on:E13
+E15	Action:T53 Site:E14 Acts-on:T55
+E16	Action:T56 Site:E15 Acts-on:T58
+E17	Action:T59 Acts-on:E16
+E18	Action:T61 Acts-on:T63 Site:T64
+E19	Action:T65 Acts-on:E18
+E20	Action:T67 Acts-on:T69
+E21	Action:T70 Acts-on:E20
+E22	Action:T73 Site:E21 Acts-on:T75
+E23	Action:T76 Acts-on:E22
+E24	Action:T79 Acts-on:E23 Acts-on2:T82
+R1	Setting Arg1:E1 Arg2:T1
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T7 Arg2:T6
+R4	Setting Arg1:E2 Arg2:T9
+R5	Setting Arg1:E2 Arg2:T11
+R6	Setting Arg1:E3 Arg2:T14
+R7	Setting Arg1:E4 Arg2:T20
+R8	Measure Arg1:T17 Arg2:T16
+R9	Measure Arg1:T19 Arg2:T18
+R10	Measure Arg1:T24 Arg2:T23
+R11	Measure Arg1:T27 Arg2:T26
+R12	Setting Arg1:E8 Arg2:T32
+R13	Setting Arg1:E9 Arg2:T34
+R14	Setting Arg1:E9 Arg2:T35
+R15	Measure Arg1:T40 Arg2:T38
+R16	Mod-Link Arg1:T40 Arg2:T39
+R17	Measure Arg1:T43 Arg2:T42
+R18	Setting Arg1:E12 Arg2:T45
+R19	Setting Arg1:E12 Arg2:T46
+R20	Measure Arg1:T49 Arg2:T48
+R21	Setting Arg1:E14 Arg2:T51
+R22	Setting Arg1:E14 Arg2:T52
+R23	Measure Arg1:T55 Arg2:T54
+R24	Measure Arg1:T58 Arg2:T57
+R25	Setting Arg1:E17 Arg2:T60
+R26	Measure Arg1:T63 Arg2:T62
+R27	Measure Arg1:T69 Arg2:T68
+R28	Setting Arg1:E21 Arg2:T71
+R29	Setting Arg1:E21 Arg2:T72
+R30	Setting Arg1:E22 Arg2:T74
+R31	Setting Arg1:E23 Arg2:T77
+R32	Setting Arg1:E23 Arg2:T78
+R33	Setting Arg1:E24 Arg2:T83
+R34	Setting Arg1:E24 Arg2:T84
+R35	Measure Arg1:T82 Arg2:T80
+R36	Measure Arg1:T82 Arg2:T81

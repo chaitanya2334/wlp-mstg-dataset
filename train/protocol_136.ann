@@ -1,0 +1,202 @@
+T1	Action 53 61	Assemble
+T2	Numerical 62 65	two
+T3	Device 66 88	142mm filtering towers
+T4	Action 93 99	attach
+T5	Device 104 120	filter apparatus
+T6	Location 126 142	peristaltic pump
+T7	Device 150 164	pressure gauge
+T8	Action 197 209	Pre - filter
+T9	Amount 210 213	20L
+T10	Reagent 217 225	seawater
+T11	Device 234 261	150mm Whatman GF / A filter
+T12	Action 264 270	Filter
+T13	Modifier 271 276	again
+T14	Action 280 286	remove
+T15	Reagent 287 295	bacteria
+T16	Device 304 350	0.22um , 142mm Millipore Express Plus filter .
+T17	Action 351 356	Treat
+T18	Reagent 361 375	virus fraction
+T19	Reagent 401 406	FeCl3
+T20	Action 410 421	precipitate
+T21	Reagent 426 433	viruses
+T22	Action 437 443	adding
+T23	Amount 444 447	1ml
+T24	Reagent 451 476	10g / L Fe Stock Solution
+T25	Modifier 480 484	each
+T26	Amount 485 488	20L
+T27	Reagent 492 500	filtrate
+T28	Action 503 508	Shake
+T29	Modifier 509 519	vigorously
+T30	Time 524 532	1 minute
+T31	Action 535 538	Add
+T32	Modifier 542 552	additional
+T33	Amount 553 556	1ml
+T34	Reagent 560 585	10g / L Fe stock solution
+T35	Modifier 589 593	each
+T36	Amount 594 597	20L
+T37	Reagent 601 609	filtrate
+T38	Action 670 675	Shake
+T39	Modifier 676 686	vigorously
+T40	Time 691 699	1 minute
+T41	Modifier 710 723	FeCl3 treated
+T42	Reagent 724 732	filtrate
+T43	Action 733 736	sit
+T44	Time 741 747	1 hour
+T45	Temperature 751 767	room temperature
+T46	Action 770 776	Filter
+T47	Modifier 781 794	FeCl3 treated
+T48	Reagent 795 803	filtrate
+T49	Device 812 864	1.0μm , 142mm , polycarbonate ( PC ) membrane filter
+T50	Device 877 907	0.8μm , 142mm , support filter
+T51	Action 912 921	attaching
+T52	Device 926 942	filter apparatus
+T53	Location 948 964	peristaltic pump
+T54	Device 972 986	pressure gauge
+T55	Action 1019 1024	Place
+T56	Modifier 1025 1028	all
+T57	Device 1036 1057	polycarbonate filters
+T58	Location 1067 1070	20L
+T59	Location 1078 1098	50ml centrifuge tube
+T60	Modifier 1105 1112	careful
+T61	Action 1120 1130	scrape off
+T62	Reagent 1142 1147	FeCl3
+T63	Location 1155 1159	edge
+T64	Location 1167 1171	tube
+T65	Action 1243 1250	Discard
+T66	Device 1255 1275	Supor support filter
+T67	Action 1278 1285	Prepare
+T68	Modifier 1286 1291	fresh
+T69	Reagent 1292 1301	0.1M EDTA
+T70	Reagent 1304 1314	0.2M MgCl2
+T71	Reagent 1317 1338	0.2M Ascorbate Buffer
+T72	pH 1341 1346	pH6.5
+T73	Action 1349 1352	Add
+T74	Reagent 1353 1363	1ml buffer
+T75	Amount 1368 1379	each 1mg Fe
+T76	Action 1481 1486	Shake
+T77	Device 1491 1495	tube
+T78	Modifier 1496 1506	vigorously
+T79	Action 1509 1514	Place
+T80	Device 1515 1520	tubes
+T81	Location 1526 1533	rotator
+T82	Action 1538 1544	rotate
+T83	Temperature 1548 1551	4°C
+T84	Time 1552 1561	overnight
+T85	Action 1564 1569	Leave
+T86	Location 1570 1576	stored
+T87	Temperature 1580 1583	4°C
+T88	Time 1584 1595	until ready
+T89	Action 1599 1606	analyze
+T90	Modifier 1610 1617	further
+T91	Action 1618 1624	purify
+T92	Reagent 1629 1645	viral fraction .
+T93	Action 1687 1691	open
+T94	Device 1696 1700	tube
+T95	Action 1705 1712	collect
+T96	Reagent 1713 1719	liquid
+T97	Modifier 1727 1732	fresh
+T98	Location 1733 1737	tube
+T99	Device 1748 1761	sterile pipet
+T100	Device 1764 1780	applicator stick
+T101	Device 1786 1813	bleached and rinsed forceps
+T102	Action 1814 1818	pull
+T103	Location 1822 1826	edge
+T104	Device 1834 1840	filter
+T105	Location 1850 1859	tube edge
+T106	Action 1902 1912	Centrifuge
+T107	Speed 1916 1925	low speed
+T108	Time 1953 1966	3 - 5 minutes
+T109	Action 1970 1977	recover
+T110	Modifier 1978 1982	more
+T111	Reagent 1983 1989	buffer
+T112	Action 2030 2033	add
+T113	Modifier 2034 2038	more
+T114	Reagent 2039 2045	buffer
+T115	Action 2048 2056	incubate
+T116	Modifier 2057 2062	again
+T117	Time 2067 2081	a couple hours
+T118	Action 2088 2095	collect
+T119	Reagent 2096 2102	liquid
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T5 Site:T6 Using:T7 Product:T52
+E3	Action:T8 Acts-on:T10 Using:T11
+E4	Action:T12 Using:T16 Acts-on:E3
+E5	Action:T14 Acts-on:T15
+E6	Action:T17 Acts-on:T18 Using:T19
+E7	Action:T20 Acts-on:T21
+E8	Action:T22 Acts-on:T24 Site:T27
+E9	Action:T28 Acts-on:E8 Product:T37
+E10	Action:T31 Acts-on:T34 Site:E9
+E11	Action:T38 Acts-on:E10 Product:T42
+E12	Action:T43 Acts-on:T42 Site:E11 Product:T48
+E13	Action:T46 Acts-on:T48 Using:T49 Using2:T50
+E14	Action:T51 Acts-on:T52 Site:T53 Using:T54
+E15	Action:T55 Acts-on:T57 Site:T58 Site2:T59 Product:T66
+E16	Action:T61 Acts-on:T62 Site:T64
+E17	Action:T65 Acts-on:T66
+E18	Action:T67 Acts-on:T69 Acts-on2:T70 Acts-on3:T71 Product:T74
+E19	Action:T73 Acts-on:T74 Product:T77
+E20	Action:T76 Acts-on:T77 Product:T80
+E21	Action:T79 Acts-on:T80 Site:T81
+E22	Action:T82 Acts-on:E21
+E23	Action:T85 Site:T86 Acts-on:E22
+E24	Action:T89 
+E25	Action:T91 Acts-on:T92 Product:T94
+E26	Action:T93 Acts-on:T94 Site:E23
+E27	Action:T95 Acts-on:T96 Product:T98 Site:T94 Product2:T104
+E28	Action:T102 Using:T101 Using2:T100 Using3:T99 Site:T103 Site2:T105
+E29	Action:T106 Acts-on:E28
+E30	Action:T109 Acts-on:T111
+E31	Action:T112 Acts-on:T114 Site:E30
+E32	Action:T115 Acts-on:E31
+E33	Action:T118 Acts-on:T119 Acts-on2:E32
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T10 Arg2:T9
+R3	Mod-Link Arg1:E4 Arg2:T13
+R4	Measure Arg1:T24 Arg2:T23
+R5	Mod-Link Arg1:T26 Arg2:T25
+R6	Mod-Link Arg1:T27 Arg2:T25
+R7	Mod-Link Arg1:E9 Arg2:T29
+R8	Setting Arg1:E9 Arg2:T30
+R9	Mod-Link Arg1:E11 Arg2:T39
+R10	Setting Arg1:E11 Arg2:T40
+R11	Measure Arg1:T34 Arg2:T33
+R12	Mod-Link Arg1:T34 Arg2:T32
+R13	Measure Arg1:T37 Arg2:T36
+R14	Mod-Link Arg1:T37 Arg2:T35
+R15	Mod-Link Arg1:T42 Arg2:T41
+R16	Setting Arg1:E12 Arg2:T44
+R17	Setting Arg1:E12 Arg2:T45
+R18	Mod-Link Arg1:T48 Arg2:T47
+R19	Mod-Link Arg1:E15 Arg2:T56
+R20	Mod-Link Arg1:E16 Arg2:T60
+R21	Meronym Arg1:T64 Arg2:T63
+R22	Measure Arg1:T71 Arg2:T72
+R23	Mod-Link Arg1:T69 Arg2:T68
+R24	Mod-Link Arg1:T70 Arg2:T68
+R25	Mod-Link Arg1:T71 Arg2:T68
+R26	Setting Arg1:E19 Arg2:T75
+R27	Mod-Link Arg1:E20 Arg2:T78
+R28	Setting Arg1:E22 Arg2:T83
+R29	Setting Arg1:E22 Arg2:T84
+R30	Setting Arg1:E23 Arg2:T87
+R31	Setting Arg1:E23 Arg2:T88
+R32	Mod-Link Arg1:E25 Arg2:T90
+R33	Setting Arg1:E24 Arg2:T88
+R34	Mod-Link Arg1:T98 Arg2:T97
+R35	Meronym Arg1:T103 Arg2:T104
+R36	Setting Arg1:E29 Arg2:T107
+R37	Setting Arg1:E29 Arg2:T108
+R38	Mod-Link Arg1:T111 Arg2:T110
+R39	Mod-Link Arg1:T114 Arg2:T113
+R40	Mod-Link Arg1:E32 Arg2:T116
+R41	Setting Arg1:E32 Arg2:T117
+R42	Enables Arg1:E1 Arg2:E2
+R43	Enables Arg1:E4 Arg2:E5
+R44	Enables Arg1:E6 Arg2:E7
+R45	Enables Arg1:E8 Arg2:E7
+R46	Enables Arg1:E14 Arg2:E13
+R47	Prevents Arg1:E15 Arg2:E16
+R48	Enables Arg1:E23 Arg2:E24
+R49	Or Arg1:E24 Arg2:E25
+R50	Enables Arg1:E29 Arg2:E30

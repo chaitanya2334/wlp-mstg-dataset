@@ -1,0 +1,170 @@
+T1	Action 65 71	Pellet
+T2	Amount 72 78	1–5 ml
+T3	Reagent 79 96	bacterial culture
+T4	Action 100 114	centrifugation
+T5	Speed 118 128	16,000 x g
+T6	Time 133 143	30 seconds
+T7	Action 146 153	Discard
+T8	Reagent 154 165	supernatant
+T9	Action 168 177	Resuspend
+T10	Reagent 178 184	pellet
+T11	Amount 188 194	200 μl
+T12	Reagent 195 222	Plasmid Resuspension Buffer
+T13	Action 232 238	Vortex
+T14	Action 242 247	pipet
+T15	Reagent 258 263	cells
+T16	Modifier 268 278	completely
+T17	Action 279 290	resuspended
+T18	Action 329 332	Add
+T19	Amount 333 339	200 μl
+T20	Reagent 340 360	Plasmid Lysis Buffer
+T21	Modifier 370 376	gently
+T22	Action 377 383	invert
+T23	Location 384 388	tube
+T24	Numerical 389 392	5–6
+T25	Action 405 413	incubate
+T26	Temperature 417 433	room temperature
+T27	Time 438 446	1 minute
+T28	Action 535 548	Do not vortex
+T29	Action 551 554	Add
+T30	Amount 555 561	400 μl
+T31	Reagent 565 594	Plasmid Neutralization Buffer
+T32	Modifier 604 610	gently
+T33	Action 611 617	invert
+T34	Location 618 622	tube
+T35	Action 647 655	incubate
+T36	Temperature 659 675	room temperature
+T37	Time 680 689	2 minutes
+T38	Action 769 782	Do not vortex
+T39	Action 785 795	Centrifuge
+T40	Reagent 796 802	lysate
+T41	Speed 806 816	16,000 x g
+T42	Time 821 832	2–5 minutes
+T43	Reagent 839 846	culture
+T44	Amount 857 861	1 ml
+T45	Time 879 887	5 minute
+T46	Action 888 892	spin
+T47	Modifier 903 912	efficient
+T48	Reagent 913 916	RNA
+T49	Action 917 924	removal
+T50	Reagent 928 935	RNase A
+T51	Modifier 989 998	Carefully
+T52	Action 999 1007	transfer
+T53	Reagent 1008 1019	supernatant
+T54	Location 1027 1038	spin column
+T55	Action 1043 1053	centrifuge
+T56	Speed 1057 1067	16,000 x g
+T57	Time 1072 1080	1 minute
+T58	Action 1083 1090	Discard
+T59	Reagent 1091 1105	flow - through
+T60	Action 1108 1119	Re - insert
+T61	Location 1120 1126	column
+T62	Location 1134 1149	collection tube
+T63	Action 1154 1157	add
+T64	Amount 1158 1164	200 μl
+T65	Reagent 1168 1187	Plasmid Wash Buffer
+T66	Action 1192 1202	Centrifuge
+T67	Time 1207 1215	1 minute
+T68	Speed 1219 1229	16,000 x g
+T69	Action 1276 1279	Add
+T70	Amount 1280 1286	400 μl
+T71	Reagent 1290 1309	Plasmid Wash Buffer
+T72	Action 1316 1326	centrifuge
+T73	Speed 1330 1340	16,000 x g
+T74	Time 1345 1353	1 minute
+T75	Action 1356 1364	Transfer
+T76	Location 1365 1371	column
+T77	Modifier 1377 1382	clean
+T78	Amount 1383 1389	1.5 ml
+T79	Location 1390 1404	microfuge tube
+T80	Action 1530 1539	re - spin
+T81	Location 1544 1550	column
+T82	Time 1555 1563	1 minute
+T83	Action 1566 1569	Add
+T84	Amount 1572 1577	30 μl
+T85	Reagent 1578 1596	DNA Elution Buffer
+T86	Location 1604 1610	center
+T87	Location 1618 1624	matrix
+T88	Action 1627 1631	Wait
+T89	Time 1636 1644	1 minute
+T90	Action 1652 1656	spin
+T91	Time 1661 1669	1 minute
+T92	Speed 1673 1683	16,000 x g
+T93	Action 1687 1692	elute
+T94	Reagent 1697 1700	DNA
+T95	Reagent 1703 1724	Nuclease - free water
+T96	pH 1727 1735	pH 7–8.5
+T97	Action 1758 1763	elute
+T98	Reagent 1768 1771	DNA
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T3 Product:T8
+E3	Action:T7 Site:E2 Acts-on:T8 Product:T10
+E4	Action:T9 Acts-on:T10 Site:T12 Product:T15
+E5	Action:T13 
+E6	Action:T14 
+E7	Action:T17 Acts-on:T15
+E8	Action:T18 Acts-on:T20 Product:T23
+E9	Action:T22 Acts-on:T23 Count:T24
+E10	Action:T25 Acts-on:E9
+E11	Action:T28 
+E12	Action:T29 Acts-on:T31 Product:T34
+E13	Action:T33 Acts-on:T34
+E14	Action:T35 Acts-on:E13
+E15	Action:T38 
+E16	Action:T39 Acts-on:T40
+E17	Action:T46 Acts-on:T43 Product:T53
+E18	Action:T49 Acts-on:T48 Using:T50
+E19	Action:T52 Acts-on:T53 Site:T54
+E20	Action:T55 Acts-on:E19 Product:T59
+E21	Action:T58 Site:E20 Acts-on:T59 Product:T61
+E22	Action:T60 Acts-on:T61 Site:T62
+E23	Action:T63 Site:E22 Acts-on:T65
+E24	Action:T66 Acts-on:E23
+E25	Action:T69 Site:E24 Acts-on:T71
+E26	Action:T72 Acts-on:E25 Product:T76
+E27	Action:T75 Acts-on:T76 Site:T79 Product:T81
+E28	Action:T80 Acts-on:T81 Product:T87
+E29	Action:T83 Acts-on:T85 Site:T86
+E30	Action:T88 Acts-on:E29
+E31	Action:T90 
+E32	Action:T93 Site:E30 Acts-on:T94
+E33	Action:T97 Using:T95 Acts-on:T98
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T5
+R3	Setting Arg1:E2 Arg2:T6
+R4	Measure Arg1:T12 Arg2:T11
+R5	Or Arg1:E5 Arg2:E6
+R6	Mod-Link Arg1:E7 Arg2:T16
+R7	Measure Arg1:T20 Arg2:T19
+R8	Mod-Link Arg1:E9 Arg2:T21
+R9	Setting Arg1:E10 Arg2:T26
+R10	Setting Arg1:E10 Arg2:T27
+R11	Measure Arg1:T31 Arg2:T30
+R12	Mod-Link Arg1:E13 Arg2:T32
+R13	Setting Arg1:E14 Arg2:T36
+R14	Setting Arg1:E14 Arg2:T37
+R15	Setting Arg1:E16 Arg2:T41
+R16	Setting Arg1:E16 Arg2:T42
+R17	Measure Arg1:T43 Arg2:T44
+R18	Setting Arg1:E17 Arg2:T45
+R19	Mod-Link Arg1:E18 Arg2:T47
+R20	Mod-Link Arg1:E19 Arg2:T51
+R21	Setting Arg1:E20 Arg2:T56
+R22	Setting Arg1:E20 Arg2:T57
+R23	Measure Arg1:T65 Arg2:T64
+R24	Setting Arg1:E24 Arg2:T67
+R25	Setting Arg1:E24 Arg2:T68
+R26	Measure Arg1:T71 Arg2:T70
+R27	Setting Arg1:E26 Arg2:T73
+R28	Setting Arg1:E26 Arg2:T74
+R29	Mod-Link Arg1:T79 Arg2:T77
+R30	Measure Arg1:T79 Arg2:T78
+R31	Setting Arg1:E28 Arg2:T82
+R32	Measure Arg1:T85 Arg2:T84
+R33	Meronym Arg1:T86 Arg2:T87
+R34	Setting Arg1:E30 Arg2:T89
+R35	Setting Arg1:E31 Arg2:T91
+R36	Setting Arg1:E31 Arg2:T92
+R37	Or Arg1:E32 Arg2:E33
+R38	Coreference-Link Arg1:T94 Arg2:T98
+R39	Measure Arg1:T95 Arg2:T96

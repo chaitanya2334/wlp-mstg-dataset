@@ -1,0 +1,79 @@
+T1	Action 38 45	Prepare
+T2	Device 48 67	glass filter funnel
+T3	Location 72 77	flask
+T4	Action 81 89	cleaning
+T5	Reagent 95 99	acid
+T6	Reagent 104 119	Milli - Q water
+T7	Action 122 128	Filter
+T8	Modifier 129 132	raw
+T9	Reagent 133 141	seawater
+T10	Size 150 154	47mm
+T11	Device 155 169	Whatman GF / F
+T12	Action 170 177	stacked
+T13	Location 181 184	top
+T14	Size 190 194	47mm
+T15	Size 195 200	0.2µm
+T16	Device 201 221	polycarbonate filter
+T17	Action 224 233	Autoclave
+T18	Reagent 234 242	seawater
+T19	Location 248 261	Teflon bottle
+T20	Time 264 274	60 minutes
+T21	Amount 279 281	2L
+T22	Action 295 299	cool
+T23	Time 300 309	overnight
+T24	Action 312 319	Prepare
+T25	Concentration 320 324	0.5M
+T26	Reagent 325 339	NH4Cl solution
+T27	Action 342 349	Prepare
+T28	Concentration 350 356	0.025M
+T29	Reagent 357 377	NaH2PO4·H2O solution
+T30	Action 380 387	Prepare
+T31	Reagent 388 416	primary trace metal stocks .
+T32	Action 417 424	Prepare
+T33	Reagent 425 452	trace metal working stock .
+T34	Reagent 468 473	media
+T35	Action 476 479	add
+T36	Amount 480 497	following volumes
+T37	Modifier 501 508	sterile
+T38	Reagent 509 518	nutrients
+T39	Reagent 523 540	trace metal stock
+T40	Amount 544 553	one liter
+T41	Modifier 561 571	autoclaved
+T42	Reagent 572 580	seawater
+T43	Reagent 615 633	1000.0mL0.5M NH4Cl
+T44	Reagent 634 657	1.6mL0.025M NaH2PO4·H2O
+T45	Reagent 658 688	2.0mLTrace metal working stock
+T46	Action 697 702	Store
+T47	Temperature 706 722	room temperature
+T48	Modifier 727 732	up to
+T49	Time 733 742	one month
+E1	Action:T1 Product:T2
+E2	Action:T4 Using:T5 Using2:T6 Acts-on:T2 Acts-on2:T3
+E3	Action:T7 Acts-on:T9 Using:T11 Product:T18
+E4	Action:T12 Acts-on:T11 Site:T13
+E5	Action:T17 Acts-on:T18 Site:T19
+E6	Action:T22 Acts-on:E5
+E7	Action:T24 Acts-on:T26 Product:T43
+E8	Action:T27 Acts-on:T29 Product:T44
+E9	Action:T30 Acts-on:T31 Product:T45
+E10	Action:T32 Acts-on:T33 Product:T39
+E11	Action:T35 Acts-on:T38 Product:T34 Acts-on2:T39 Site:T42 Using:T43 Using2:T44 Using3:T45
+E12	Action:T46 Acts-on:E11
+R1	Mod-Link Arg1:T9 Arg2:T8
+R2	Setting Arg1:T11 Arg2:T10
+R3	Setting Arg1:T16 Arg2:T15
+R4	Setting Arg1:T16 Arg2:T14
+R5	Meronym Arg1:T13 Arg2:T16
+R6	Setting Arg1:E5 Arg2:T20
+R7	Measure Arg1:T19 Arg2:T21
+R8	Setting Arg1:E6 Arg2:T23
+R9	Measure Arg1:T26 Arg2:T25
+R10	Measure Arg1:T29 Arg2:T28
+R11	Mod-Link Arg1:T42 Arg2:T41
+R12	Mod-Link Arg1:T38 Arg2:T37
+R13	Measure Arg1:T38 Arg2:T36
+R14	Measure Arg1:T42 Arg2:T40
+R15	Mod-Link Arg1:T49 Arg2:T48
+R16	Setting Arg1:E12 Arg2:T47
+R17	Setting Arg1:E12 Arg2:T49
+R18	Enables Arg1:E2 Arg2:E1

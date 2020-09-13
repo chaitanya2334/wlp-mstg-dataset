@@ -1,0 +1,84 @@
+T1	Action 44 48	Coat
+T2	Location 53 74	96 - well ELISA plate
+T3	Reagent 84 99	target molecule
+T4	Concentration 103 108	50 mM
+T5	Reagent 109 146	sodium carbonate - bicarbonate buffer
+T6	pH 149 155	pH 9.5
+T7	Modifier 225 233	at least
+T8	Time 234 241	2 hours
+T9	Temperature 245 264	ambient temperature
+T10	Time 268 277	overnight
+T11	Temperature 281 284	4°C
+T12	Action 287 291	Wash
+T13	Location 296 301	wells
+T14	Generic-Measure 302 314	3 to 5 times
+T15	Reagent 320 323	PBS
+T16	Action 326 331	Block
+T17	Location 332 337	wells
+T18	Reagent 343 350	PBS - T
+T19	Generic-Measure 353 366	200 μl / well
+T20	Time 373 379	1 hour
+T21	Temperature 383 399	room temperature
+T22	Action 402 405	Add
+T23	Reagent 410 432	anti - Neu5Gc antibody
+T24	Generic-Measure 472 479	diluted
+T25	Reagent 483 490	PBS - T
+T26	Modifier 500 511	appropriate
+T27	Location 512 522	well ( s )
+T28	Action 527 535	incubate
+T29	Time 540 547	2 hours
+T30	Temperature 551 567	room temperature
+T31	Action 570 574	Wash
+T32	Location 575 580	wells
+T33	Reagent 596 603	PBS - T
+T34	Action 606 609	Add
+T35	Reagent 610 648	enzyme - conjugated secondary antibody
+T36	Modifier 709 713	each
+T37	Location 714 718	well
+T38	Action 723 731	incubate
+T39	Time 736 742	1 hour
+T40	Temperature 746 762	room temperature
+T41	Action 765 769	Wash
+T42	Location 770 775	wells
+T43	Modifier 776 781	again
+T44	Reagent 787 796	PBS - T .
+T45	Action 797 800	Add
+T46	Reagent 801 817	enzyme substrate
+T47	Location 830 835	wells
+T48	Action 839 846	develop
+T49	Action 849 855	quench
+T50	Reagent 860 868	reaction
+E1	Action:T1 Acts-on:T2 Using:T3 Site:T5 Product:T13
+E2	Action:T12 Acts-on:T13 Using:T15 Product:T17
+E3	Action:T16 Acts-on:T17 Using:T18 Product:T27
+E4	Action:T22 Acts-on:T23 Site:T27
+E5	Action:T28 Acts-on:E4 Product:T32
+E6	Action:T31 Acts-on:T32 Using:T33 Product:T37
+E7	Action:T34 Acts-on:T35 Site:T37
+E8	Action:T38 Acts-on:E7 Product:T42
+E9	Action:T41 Acts-on:T42 Using:T44
+E10	Action:T45 Acts-on:T46 Site:E9 Product:T47
+E11	Action:T48 Acts-on:T47 Product:T50
+E12	Action:T49 Acts-on:T50
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T5 Arg2:T6
+R3	Mod-Link Arg1:T8 Arg2:T7
+R4	Setting Arg1:E1 Arg2:T8
+R5	Setting Arg1:E1 Arg2:T9
+R6	Or Arg1:T8 Arg2:T10
+R7	Or Arg1:T9 Arg2:T11
+R8	Setting Arg1:E2 Arg2:T14
+R9	Measure Arg1:T18 Arg2:T19
+R10	Setting Arg1:E3 Arg2:T20
+R11	Setting Arg1:E3 Arg2:T21
+R12	Mod-Link Arg1:T27 Arg2:T26
+R13	Setting Arg1:E5 Arg2:T29
+R14	Setting Arg1:E5 Arg2:T30
+R15	Mod-Link Arg1:T37 Arg2:T36
+R16	Setting Arg1:E8 Arg2:T39
+R17	Setting Arg1:E8 Arg2:T40
+R18	Mod-Link Arg1:E9 Arg2:T43
+R19	Measure Arg1:T25 Arg2:T24
+R20	Meronym Arg1:T25 Arg2:T23
+R21	Coreference-Link Arg1:T18 Arg2:T33
+R22	Coreference-Link Arg1:T33 Arg2:T44

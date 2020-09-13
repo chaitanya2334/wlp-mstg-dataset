@@ -1,0 +1,137 @@
+T1	Action 126 135	Resuspend
+T2	Reagent 136 147	fixed cells
+T3	Reagent 151 190	Intracellular Staining Perm Wash Buffer
+T4	Action 195 205	centrifuge
+T5	Speed 209 216	350 x g
+T6	Time 221 235	5 - 10 minutes
+T7	Action 568 578	Centrifuge
+T8	Speed 582 589	350 x g
+T9	Time 594 603	5 minutes
+T10	Action 606 613	discard
+T11	Reagent 614 625	supernatant
+T12	Action 709 713	wash
+T13	Reagent 714 719	cells
+T14	Numerical 720 722	1x
+T15	Reagent 728 779	Cell StainingBuffer ( BioLegend Cat . No . 420201 )
+T16	Action 782 791	Resuspend
+T17	Reagent 792 797	cells
+T18	Reagent 801 821	Cell Staining Buffer
+T19	Action 826 831	store
+T20	Reagent 832 837	cells
+T21	Temperature 841 844	4°C
+T22	Concentration 866 870	90 %
+T23	Reagent 871 874	FCS
+T24	Concentration 877 881	10 %
+T25	Reagent 882 886	DMSO
+T26	Temperature 902 908	- 80°C
+T27	Action 976 982	Dilute
+T28	Concentration 983 986	10X
+T29	Reagent 987 1048	Intracellular Staining Perm Wash Buffer ( Cat . No . 421002 )
+T30	Concentration 1052 1054	1X
+T31	Reagent 1058 1066	DI water
+T32	Action 1069 1078	Resuspend
+T33	Reagent 1079 1090	fixed cells
+T34	Reagent 1094 1133	Intracellular Staining Perm Wash Buffer
+T35	Action 1138 1148	centrifuge
+T36	Speed 1152 1159	350 x g
+T37	Time 1164 1178	5 - 10 minutes
+T38	Action 1191 1200	Resuspend
+T39	Reagent 1201 1228	fixed / permeabilized cells
+T40	Modifier 1232 1240	residual
+T41	Reagent 1241 1280	Intracellular Staining Perm Wash Buffer
+T42	Action 1285 1288	add
+T43	Concentration 1289 1326	a predetermined optimum concentration
+T44	Reagent 1330 1405	fluorophore - conjugated antibody of interest ( e . g . PE anti - IFN - γ )
+T45	Reagent 1409 1440	an appropriate negative control
+T46	Time 1445 1455	20 minutes
+T47	Modifier 1456 1467	in the dark
+T48	Temperature 1471 1487	room temperature
+T49	Action 1689 1693	Wash
+T50	Amount 1699 1703	2 ml
+T51	Reagent 1707 1746	Intracellular Staining Perm Wash Buffer
+T52	Action 1751 1761	centrifuge
+T53	Speed 1765 1772	350 x g
+T54	Time 1777 1786	5 minutes
+T55	Action 1799 1803	Wash
+T56	Amount 1809 1813	2 ml
+T57	Reagent 1817 1856	Intracellular Staining Perm Wash Buffer
+T58	Action 1861 1871	centrifuge
+T59	Speed 1875 1882	350 x g
+T60	Time 1887 1896	5 minutes
+T61	Action 1909 1918	Resuspend
+T62	Reagent 1919 1958	fixed and intracellularly labeled cells
+T63	Amount 1962 1968	0.5 ml
+T64	Reagent 1969 1989	Cell Staining Buffer
+T65	Action 1994 2001	analyze
+T66	Reagent 2007 2027	appropriate controls
+T67	Action 2030 2039	Resuspend
+T68	Reagent 2040 2051	fixed cells
+T69	Reagent 2055 2094	Intracellular Staining Perm Wash Buffer
+T70	Action 2099 2109	centrifuge
+T71	Speed 2113 2120	350 x g
+T72	Time 2125 2139	5 - 10 minutes
+T73	Action 2152 2184	Set PMT voltage and compensation
+T74	Reagent 2191 2221	cell surface staining controls
+T75	Action 2224 2244	Set quadrant markers
+T76	Reagent 2254 2271	blocking controls
+T77	Reagent 2274 2290	isotype controls
+T78	Reagent 2296 2311	unstained cells
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:E1
+E3	Action:T7 Product:T11 Acts-on:E2
+E4	Action:T10 Acts-on:T11 Product:T13
+E5	Action:T12 Acts-on:T13 Count:T14 Using:T15
+E6	Action:T16 Acts-on:T17 Site:T18 Product:T20
+E7	Action:T19 Acts-on:T20 Product:T33
+E8	Action:T27 Acts-on:T29 Site:T31 Product:T34
+E9	Action:T32 Acts-on:T33 Site:T34
+E10	Action:T35 Acts-on:E9 Product:T39 Product2:T41
+E11	Action:T38 Acts-on:T39 Site:T41
+E12	Action:T42 Acts-on:T44 Site:E11
+E13	Action:T49 Using:T51 Acts-on:E12
+E14	Action:T52 Acts-on:E13
+E15	Action:T55 Using:T57 Acts-on:E14
+E16	Action:T58 Acts-on:E15 Product:T62
+E17	Action:T61 Acts-on:T62 Site:T64
+E18	Action:T65 Using:T66 Acts-on:E17
+E19	Action:T67 Acts-on:T68 Site:T69
+E20	Action:T70 Acts-on:E19
+E21	Action:T73 Using:T74
+E22	Action:T75 Using:T76 Acts-on:E21
+R1	Setting Arg1:E2 Arg2:T5
+R2	Setting Arg1:E2 Arg2:T6
+R3	Measure Arg1:T29 Arg2:T28
+R4	Setting Arg1:E8 Arg2:T30
+R5	Or Arg1:T44 Arg2:T45
+R6	Mod-Link Arg1:T41 Arg2:T40
+R7	Measure Arg1:T44 Arg2:T43
+R8	Setting Arg1:E12 Arg2:T46
+R9	Mod-Link Arg1:E12 Arg2:T47
+R10	Setting Arg1:E12 Arg2:T48
+R11	Measure Arg1:T51 Arg2:T50
+R12	Setting Arg1:E14 Arg2:T53
+R13	Setting Arg1:E14 Arg2:T54
+R14	Measure Arg1:T57 Arg2:T56
+R15	Setting Arg1:E16 Arg2:T59
+R16	Setting Arg1:E16 Arg2:T60
+R17	Measure Arg1:T64 Arg2:T63
+R18	Setting Arg1:E20 Arg2:T71
+R19	Setting Arg1:E20 Arg2:T72
+R20	Or Arg1:T76 Arg2:T77
+R21	Or Arg1:T77 Arg2:T78
+R22	Setting Arg1:E3 Arg2:T8
+R23	Setting Arg1:E3 Arg2:T9
+R24	Coreference-Link Arg1:T15 Arg2:T18
+R25	Measure Arg1:T25 Arg2:T24
+R26	Measure Arg1:T23 Arg2:T22
+R27	Meronym Arg1:T25 Arg2:T23
+R28	Or Arg1:T21 Arg2:T26
+R29	Setting Arg1:E7 Arg2:T21
+R30	Measure Arg1:T23 Arg2:T26
+R31	Coreference-Link Arg1:T3 Arg2:T29
+R32	Setting Arg1:E10 Arg2:T36
+R33	Setting Arg1:E10 Arg2:T37
+R34	Coreference-Link Arg1:T29 Arg2:T51
+R35	Coreference-Link Arg1:T51 Arg2:T57
+R36	Coreference-Link Arg1:T18 Arg2:T64
+R37	Coreference-Link Arg1:T57 Arg2:T69

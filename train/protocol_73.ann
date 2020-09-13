@@ -1,0 +1,43 @@
+T1	Action 103 110	Prepare
+T2	Modifier 111 119	modified
+T3	Reagent 120 132	DY - V media
+T4	Device 138 156	labeled substrates
+T5	Action 1096 1099	Add
+T6	Modifier 1100 1113	heat - killed
+T7	Reagent 1114 1122	bacteria
+T8	Location 1138 1143	media
+T9	Action 1192 1195	Add
+T10	Reagent 1199 1207	inoculum
+T11	Reagent 1215 1232	mixotrophic algae
+T12	Action 1597 1602	Track
+T13	Reagent 1607 1612	algae
+T14	Modifier 1613 1619	growth
+T15	Location 1628 1638	microscopy
+T16	Modifier 1687 1694	decline
+T17	Modifier 1698 1711	heat - killed
+T18	Reagent 1712 1720	bacteria
+T19	Device 2181 2188	filters
+T20	Action 2196 2202	stored
+T21	Modifier 2206 2211	glass
+T22	Location 2212 2217	vials
+T23	Temperature 2221 2237	room temperature
+T24	Action 2488 2495	collect
+T25	Amount 2496 2500	2 mL
+T26	Reagent 2504 2510	sample
+T27	Action 2515 2518	fix
+T28	Reagent 2524 2552	2X EM - grade glutaraldehyde
+E1	Action:T1 Acts-on:T3 Using:T4 Product:T8
+E2	Action:T5 Acts-on:T7 Site:T8
+E3	Action:T9 Acts-on:T10 Site:T11 Site2:E2 Product:T13
+E4	Action:T12 Acts-on:T13 Site:T15 Acts-on2:T18 Product:T19
+E5	Action:T20 Acts-on:T19 Site:T22 Product:T26
+E6	Action:T24 Acts-on:T26
+E7	Action:T27 Acts-on:T26 Acts-on2:T28 Acts-on3:E6
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Mod-Link Arg1:T13 Arg2:T14
+R4	Mod-Link Arg1:T18 Arg2:T17
+R5	Mod-Link Arg1:T18 Arg2:T16
+R6	Setting Arg1:E5 Arg2:T23
+R7	Mod-Link Arg1:T22 Arg2:T21
+R8	Measure Arg1:T26 Arg2:T25

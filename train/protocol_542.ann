@@ -1,0 +1,72 @@
+T1	Action 56 67	Precipitate
+T2	Amount 68 73	0.2µm
+T3	Reagent 74 91	filtered seawater
+T4	Reagent 97 110	iron chloride
+T5	Action 115 120	store
+T6	Device 125 132	filters
+T7	Temperature 136 139	4°C
+T8	Action 142 151	Resuspend
+T9	Reagent 156 174	precipitated virus
+T10	Reagent 178 199	Mg - EDTA - Ascorbate
+T11	Action 311 316	Treat
+T12	Reagent 321 350	resuspended virus preparation
+T13	Reagent 356 363	DNase I
+T14	Time 368 375	2 hours
+T15	Temperature 379 395	room temperature
+T16	Action 398 408	Inactivate
+T17	Reagent 413 419	enzyme
+T18	Reagent 425 429	EDTA
+T19	Reagent 434 438	EGTA
+T20	Action 441 452	Concentrate
+T21	Reagent 457 486	resuspended virus preparation
+T22	Device 493 518	centrifugal concentrators
+T23	Amount 527 535	3 - 5 ml
+T24	Amount 582 590	1 - 2 ml
+T25	Action 647 653	Remove
+T26	Reagent 658 669	concentrate
+T27	Location 681 685	tube
+T28	Action 688 693	Rinse
+T29	Reagent 698 706	membrane
+T30	Amount 726 736	0.5 - 1 ml
+T31	Reagent 737 756	resuspension buffer
+T32	Method 760 781	pipetting up and down
+T33	Action 803 812	Pool with
+T34	Reagent 817 836	concentrated sample
+T35	Action 862 867	layer
+T36	Mention 868 872	this
+T37	Reagent 878 900	premade CsCl gradients
+T38	Action 905 912	isolate
+T39	Reagent 917 931	virus fraction
+T40	Method 949 997	protocol Cesium Chloride Purification of Viruses
+T41	Method 1019 1086	Cesium Chloride DNA Extraction of Viruses using Wizard Prep Columns
+T42	Method 1112 1143	Wizard Prep purification of DNA
+T43	Action 1146 1153	Extract
+T44	Reagent 1158 1161	DNA
+T45	Location 1168 1187	Wizard Prep columns
+T46	Reagent 1192 1197	resin
+T47	Action 1198 1207	Calculate
+T48	Measure-Type 1212 1218	amount
+T49	Reagent 1222 1225	DNA
+T50	Method 1242 1279	Quant - iT dsDNA Pico Green assay kit
+E1	Action:T1 Acts-on:T3 Using:T4 Product:T6 Product2:T9
+E2	Action:T5 Acts-on:T6
+E3	Action:T8 Acts-on:T9 Using:T10 Product:T12
+E4	Action:T11 Acts-on:T12 Using:T13 Product:T17
+E5	Action:T16 Acts-on:T17 Acts-on2:T18 Acts-on3:T19 Product:T21
+E6	Action:T20 Acts-on:T21 Using:T22 Product:T26
+E7	Action:T25 Acts-on:T26 Site:T27 Product:T29 Product2:T34
+E8	Action:T28 Acts-on:T29 Using:T31 Using2:T32
+E9	Action:T33 Site:T34
+E10	Action:T35 Site:T37 Acts-on:T36 Product:T39
+E11	Action:T38 Acts-on:T39 Using:T40 Product:T44
+E12	Action:T43 Acts-on:T44 Using:T45 Using2:T46 Product:T49
+E13	Action:T47 Measure-Type-Link:T48 Acts-on:T49 Using:T50
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T7
+R3	Setting Arg1:E4 Arg2:T14
+R4	Setting Arg1:E4 Arg2:T15
+R5	Setting Arg1:E6 Arg2:T23
+R6	Or Arg1:T23 Arg2:T24
+R7	Measure Arg1:T31 Arg2:T30
+R8	Or Arg1:T40 Arg2:T41
+R9	Or Arg1:T41 Arg2:T42

@@ -1,0 +1,80 @@
+T1	Action 37 44	Prepare
+T2	Reagent 45 51	MTN100
+T3	Concentration 57 59	5x
+T4	Reagent 60 64	NaCl
+T5	Action 67 74	Prepare
+T6	Reagent 75 81	MTN100
+T7	Concentration 87 89	3x
+T8	Reagent 90 94	NaCl
+T9	Action 97 104	Prepare
+T10	Reagent 105 111	MTN100
+T11	Concentration 117 119	1x
+T12	Reagent 120 124	NaCl
+T13	Action 127 139	Bring volume
+T14	Amount 143 145	1L
+T15	Reagent 151 166	Milli - Q water
+T16	Location 173 208	Slide - A - Lyzer dialysis casettes
+T17	Action 268 274	follow
+T18	Method 279 342	manufacturer’s directions for loading and dialysis of cassettes
+T19	Action 345 357	Step dialyze
+T20	Time 362 370	~ 30 min
+T21	Concentration 380 382	5x
+T22	Reagent 383 398	NaCl MTN buffer
+T23	Action 401 413	Step dialyze
+T24	Time 418 426	~ 30 min
+T25	Concentration 436 438	3x
+T26	Reagent 439 454	NaCl MTN buffer
+T27	Action 457 469	Step dialyze
+T28	Time 474 482	~ 30 min
+T29	Generic-Measure 492 503	two changes
+T30	Concentration 511 513	1x
+T31	Reagent 514 522	NaCl MTN
+T32	Modifier 531 539	at least
+T33	Amount 540 551	300 volumes
+T34	Reagent 555 561	buffer
+T35	Action 574 578	Stir
+T36	Modifier 579 585	gently
+T37	Temperature 589 605	room temperature
+T38	Action 606 612	Remove
+T39	Reagent 617 623	sample
+T40	Method 637 662	manufacturer’s directions
+T41	Action 663 671	Transfer
+T42	Modifier 675 682	sterile
+T43	Location 685 699	low bind tubes
+T44	Action 702 707	Store
+T45	Modifier 708 716	dialyzed
+T46	Reagent 717 726	particles
+T47	Temperature 730 733	4°C
+E1	Action:T1 Using:T4 Product:T2
+E2	Action:T5 Product:T6 Using:T8
+E3	Action:T9 Product:T10 Using:T12
+E4	Action:T13 Using:T15
+E5	Action:T17 Using:T16 Using2:T18 Acts-on:E4
+E6	Action:T19 Using:T22 Acts-on:E5
+E7	Action:T23 Using:T26 Acts-on:E6
+E8	Action:T27 Using:T31 Using2:T34 Acts-on:E7
+E9	Action:T35 Product:T39 Acts-on:E8
+E10	Action:T38 Acts-on:T39 Using:T40
+E11	Action:T41 Acts-on:E10 Site:T43 Product:T46
+E12	Action:T44 Acts-on:T46
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T8 Arg2:T7
+R3	Measure Arg1:T12 Arg2:T11
+R4	Setting Arg1:E4 Arg2:T14
+R5	Measure Arg1:T22 Arg2:T21
+R6	Setting Arg1:E6 Arg2:T20
+R7	Measure Arg1:T26 Arg2:T25
+R8	Setting Arg1:E7 Arg2:T24
+R9	Measure Arg1:T34 Arg2:T33
+R10	Mod-Link Arg1:T33 Arg2:T32
+R11	Measure Arg1:T31 Arg2:T30
+R12	Measure Arg1:T31 Arg2:T29
+R13	Setting Arg1:E8 Arg2:T28
+R14	Mod-Link Arg1:E9 Arg2:T36
+R15	Setting Arg1:E9 Arg2:T37
+R16	Mod-Link Arg1:T43 Arg2:T42
+R17	Mod-Link Arg1:T46 Arg2:T45
+R18	Setting Arg1:E12 Arg2:T47
+R19	Coreference-Link Arg1:T2 Arg2:T22
+R20	Coreference-Link Arg1:T6 Arg2:T26
+R21	Coreference-Link Arg1:T10 Arg2:T31

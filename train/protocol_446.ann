@@ -1,0 +1,164 @@
+T1	Action 45 53	Dissolve
+T2	Amount 54 62	0.2232 g
+T3	Reagent 66 70	EDTA
+T4	Amount 76 82	600 mL
+T5	Reagent 86 95	Milli - Q
+T6	Generic-Measure 125 141	10 - 3 mol L - 1
+T7	Reagent 142 146	EDTA
+T8	Action 149 158	Weigh out
+T9	Modifier 159 172	approximately
+T10	Amount 173 178	1.2 g
+T11	Reagent 182 185	DMG
+T12	Device 214 224	weigh boat
+T13	Action 231 238	combine
+T14	Mention 239 241	it
+T15	Reagent 251 264	EDTA solution
+T16	Action 267 272	Weigh
+T17	Device 293 303	weigh boat
+T18	Action 381 387	record
+T19	Measure-Type 392 404	final weight
+T20	Action 446 450	Heat
+T21	Reagent 456 464	solution
+T22	Device 470 479	microwave
+T23	Generic-Measure 483 493	50 % power
+T24	Reagent 504 507	DMG
+T25	Modifier 511 516	fully
+T26	Action 517 526	dissolved
+T27	Action 529 537	stirring
+T28	Mention 538 540	it
+T29	Modifier 541 550	carefully
+T30	Action 606 613	boiling
+T31	Modifier 627 632	up to
+T32	Time 633 643	30 minutes
+T33	Action 664 668	heat
+T34	Mention 669 671	it
+T35	Modifier 672 678	slowly
+T36	Modifier 683 692	carefully
+T37	Action 695 698	Put
+T38	Reagent 703 711	solution
+T39	Location 715 718	ice
+T40	Mention 727 729	it
+T41	Action 730 743	recrystallize
+T42	Time 744 753	overnight
+T43	Device 759 771	refrigerator
+T44	Action 804 812	pour off
+T45	Modifier 818 824	slowly
+T46	Action 825 836	pipette off
+T47	Reagent 843 854	supernatant
+T48	Modifier 873 879	little
+T49	Reagent 880 886	liquid
+T50	Action 906 910	pour
+T51	Modifier 915 924	remaining
+T52	Reagent 925 933	crystals
+T53	Modifier 941 946	clean
+T54	Modifier 949 952	dry
+T55	Device 953 963	weigh boat
+T56	Modifier 1037 1046	remaining
+T57	Reagent 1047 1053	liquid
+T58	Action 1054 1063	evaporate
+T59	Time 1064 1073	overnight
+T60	Location 1083 1100	laminar flow hood
+T61	Action 1141 1148	measure
+T62	Device 1153 1164	weight boat
+T63	Modifier 1165 1170	again
+T64	Modifier 1181 1192	approximate
+T65	Measure-Type 1212 1225	amount of DMG
+T66	Action 1252 1261	Calculate
+T67	Amount 1262 1270	how much
+T68	Reagent 1271 1279	methanol
+T69	Reagent 1304 1307	DMG
+T70	Generic-Measure 1349 1362	0.1 mol L - 1
+T71	Reagent 1363 1366	DMG
+T72	Action 1373 1379	obtain
+T73	Modifier 1382 1399	trace metal clean
+T74	Location 1400 1406	bottle
+T75	Modifier 1414 1425	appropriate
+T76	Size 1426 1430	size
+T77	Action 1433 1438	Weigh
+T78	Modifier 1443 1448	clean
+T79	Location 1449 1455	bottle
+T80	Modifier 1467 1476	carefully
+T81	Action 1477 1485	transfer
+T82	Modifier 1490 1504	recrystallized
+T83	Reagent 1505 1508	DMG
+T84	Modifier 1519 1524	clean
+T85	Location 1525 1531	bottle
+T86	Action 1536 1546	re - weigh
+T87	Action 1650 1661	recalculate
+T88	Amount 1666 1672	amount
+T89	Modifier 1676 1682	optima
+T90	Reagent 1683 1691	methanol
+T91	Reagent 1710 1731	desired concentration
+T92	Generic-Measure 1735 1748	0.1 mol L - 1
+T93	Action 1755 1758	add
+T94	Amount 1764 1770	amount
+T95	Modifier 1774 1780	optima
+T96	Reagent 1781 1789	methanol
+E1	Action:T1 Acts-on:T3 Site:T5 Product:T7
+E2	Action:T8 Acts-on:T11 Using:T12 Product:T14
+E3	Action:T13 Acts-on:T14 Site:T15
+E4	Action:T16 Acts-on:E3 Site:T17
+E5	Action:T18 Measure-Type-Link:T19 Acts-on:E4 Product:T21
+E6	Action:T20 Acts-on:T21 Using:T22 Product:T24 Product2:T28
+E7	Action:T26 Acts-on:T24
+E8	Action:T27 Acts-on:T28
+E9	Action:T30 Acts-on:T28 Product:T34
+E10	Action:T33 Acts-on:T34 Product:T38
+E11	Action:T37 Acts-on:T38 Site:T39 Product:T40
+E12	Action:T41 Acts-on:T40 Site:T43 Product:T47
+E13	Action:T44 Acts-on:T47
+E14	Action:T46 Acts-on:T47 Product:T49
+E15	Action:T50 Acts-on:T52 Site:T55 Product:T57
+E16	Action:T58 Acts-on:T57 Site:T60 Product:T62
+E17	Action:T61 Using:T62 Measure-Type-Link:T65 Product:T69
+E18	Action:T66 Product:T71 Acts-on:T68 Site:T69
+E19	Action:T72 Product:T74
+E20	Action:T77 Acts-on:T79 Product:T85
+E21	Action:T81 Acts-on:T83 Site:T85
+E22	Action:T86 Acts-on:E21
+E23	Action:T87 Acts-on:T90 Product:T91
+E24	Action:T93 Acts-on:T96 Site:E22
+R1	Measure Arg1:T7 Arg2:T6
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T3 Arg2:T2
+R4	Mod-Link Arg1:T10 Arg2:T9
+R5	Measure Arg1:T11 Arg2:T10
+R6	Setting Arg1:T22 Arg2:T23
+R7	Mod-Link Arg1:E7 Arg2:T25
+R8	Mod-Link Arg1:E8 Arg2:T29
+R9	Setting Arg1:E10 Arg2:T32
+R10	Mod-Link Arg1:E10 Arg2:T35
+R11	Mod-Link Arg1:E10 Arg2:T36
+R12	Setting Arg1:E12 Arg2:T42
+R13	Mod-Link Arg1:E14 Arg2:T45
+R14	Mod-Link Arg1:T49 Arg2:T48
+R15	Mod-Link Arg1:T52 Arg2:T51
+R16	Mod-Link Arg1:T55 Arg2:T54
+R17	Mod-Link Arg1:T55 Arg2:T53
+R18	Mod-Link Arg1:T57 Arg2:T56
+R19	Setting Arg1:E16 Arg2:T59
+R20	Mod-Link Arg1:E17 Arg2:T63
+R21	Mod-Link Arg1:T65 Arg2:T64
+R22	Setting Arg1:E18 Arg2:T67
+R23	Measure Arg1:T71 Arg2:T70
+R24	Mod-Link Arg1:T74 Arg2:T73
+R25	Mod-Link Arg1:T76 Arg2:T75
+R26	Measure Arg1:T74 Arg2:T76
+R27	Mod-Link Arg1:T79 Arg2:T78
+R28	Mod-Link Arg1:E21 Arg2:T80
+R29	Mod-Link Arg1:T83 Arg2:T82
+R30	Mod-Link Arg1:T85 Arg2:T84
+R31	Setting Arg1:E23 Arg2:T88
+R32	Mod-Link Arg1:T90 Arg2:T89
+R33	Measure Arg1:T91 Arg2:T92
+R34	Mod-Link Arg1:T96 Arg2:T95
+R35	Measure Arg1:T96 Arg2:T94
+R36	Coreference-Link Arg1:T15 Arg2:T7
+R37	Overlaps Arg1:E8 Arg2:E7
+R38	Prevents Arg1:E8 Arg2:E9
+R39	Mod-Link Arg1:T32 Arg2:T31
+R40	Or Arg1:E13 Arg2:E14
+R41	Meronym Arg1:T52 Arg2:T49
+R42	Coreference-Link Arg1:T79 Arg2:T74
+R43	Coreference-Link Arg1:T96 Arg2:T91
+R44	Coreference-Link Arg1:T83 Arg2:T71

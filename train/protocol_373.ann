@@ -1,0 +1,27 @@
+T1	Modifier 43 50	sterile
+T2	Location 51 65	microfuge tube
+T3	Action 72 75	Add
+T4	Reagent 80 89	following
+T5	Amount 104 109	20 µL
+T6	Reagent 110 122	final volume
+T7	Action 127 135	Incubate
+T8	Temperature 139 143	42°C
+T9	Time 148 159	30min - 1hr
+T10	Action 162 172	Inactivate
+T11	Reagent 173 179	enzyme
+T12	Temperature 183 187	80°C
+T13	Time 192 201	5 minutes
+T14	Action 204 209	Store
+T15	Reagent 210 218	products
+T16	Temperature 222 228	- 20°C
+E1	Action:T3 Acts-on:T4 Product:T6 Site:T2
+E2	Action:T7 Acts-on:T6 Product:T11
+E3	Action:T10 Acts-on:T11 Product:T15
+E4	Action:T14 Acts-on:T15
+R1	Mod-Link Arg1:T2 Arg2:T1
+R2	Measure Arg1:T6 Arg2:T5
+R3	Setting Arg1:E2 Arg2:T8
+R4	Setting Arg1:E2 Arg2:T9
+R5	Setting Arg1:E3 Arg2:T12
+R6	Setting Arg1:E3 Arg2:T13
+R7	Setting Arg1:E4 Arg2:T16

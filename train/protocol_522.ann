@@ -1,0 +1,206 @@
+T1	Action 42 49	Collect
+T2	Amount 50 53	3mL
+T3	Reagent 54 68	animal's blood
+T4	Size 72 76	5 mL
+T5	Location 77 102	EDTA anticoagulative tube
+T6	Action 109 114	store
+T7	Temperature 118 122	4 °C
+T8	Action 125 128	Mix
+T9	Reagent 129 134	blood
+T10	Modifier 138 144	gently
+T11	Action 145 152	rocking
+T12	Time 157 162	10min
+T13	Temperature 166 182	room temperature
+T14	Action 225 233	Transfer
+T15	Amount 234 237	3ml
+T16	Reagent 238 243	blood
+T17	Size 247 251	15ml
+T18	Location 252 266	screw cap tube
+T19	Amount 278 281	9ml
+T20	Reagent 282 300	RBC lysis solution
+T21	Action 321 324	mix
+T22	Action 335 344	inverting
+T23	Numerical 345 348	10x
+T24	Action 351 359	Incubate
+T25	Time 360 365	5 min
+T26	Temperature 369 385	room temperature
+T27	Modifier 388 394	Gently
+T28	Action 395 398	mix
+T29	Action 402 411	inverting
+T30	Modifier 412 420	at least
+T31	Numerical 421 425	once
+T32	Action 446 450	Spin
+T33	Time 451 456	5 min
+T34	Speed 460 466	2000xg
+T35	Temperature 470 473	4⁰C
+T36	Modifier 478 487	carefully
+T37	Action 488 497	pipet out
+T38	Reagent 498 509	supernatant
+T39	Action 520 530	disturbing
+T40	Reagent 535 541	pellet
+T41	Action 544 553	Resuspend
+T42	Reagent 554 565	cell pellet
+T43	Amount 569 572	3ml
+T44	Reagent 573 576	PBS
+T45	Action 598 601	Add
+T46	Amount 602 605	9ml
+T47	Reagent 606 619	rbc lysis sol
+T48	Action 636 642	invert
+T49	Action 646 649	mix
+T50	Action 654 662	incubate
+T51	Time 663 668	5 min
+T52	Temperature 672 688	room temperature
+T53	Action 691 695	Spin
+T54	Reagent 696 711	cell suspension
+T55	Time 716 721	5 min
+T56	Speed 725 731	2000xg
+T57	Temperature 735 738	4⁰C
+T58	Modifier 743 752	carefully
+T59	Action 753 762	pipet out
+T60	Reagent 763 774	supernatant
+T61	Action 785 795	disturbing
+T62	Reagent 800 806	pellet
+T63	Action 809 815	Remove
+T64	Modifier 820 824	last
+T65	Reagent 825 839	drop of liquid
+T66	Action 843 850	tilting
+T67	Location 855 859	tube
+T68	Action 864 872	removing
+T69	Reagent 873 879	liquid
+T70	Device 885 894	pipet tip
+T71	Action 897 906	Resuspend
+T72	Reagent 907 918	cell pellet
+T73	Amount 922 927	580ul
+T74	Reagent 928 950	cell suspension buffer
+T75	Action 1008 1016	Transfer
+T76	Amount 1017 1022	375ul
+T77	Location 1032 1046	microfuge tube
+T78	Action 1051 1056	label
+T79	Location 1059 1062	400
+T80	Action 1067 1075	Transfer
+T81	Amount 1076 1083	187.5ul
+T82	Location 1087 1099	another tube
+T83	Action 1100 1107	labeled
+T84	Location 1110 1113	200
+T85	Action 1118 1121	add
+T86	Amount 1122 1129	187.5ul
+T87	Reagent 1130 1152	cell suspension buffer
+T88	Action 1159 1168	pipet mix
+T89	Modifier 1169 1175	gently
+T90	Time 1176 1178	5x
+T91	Action 1181 1185	Keep
+T92	Location 1191 1196	tubes
+T93	Location 1200 1203	ice
+T94	Action 1253 1257	Melt
+T95	Concentration 1258 1261	2 %
+T96	Reagent 1262 1269	agarose
+T97	Action 1289 1298	immersing
+T98	Temperature 1302 1320	microwave - boiled
+T99	Reagent 1321 1326	water
+T100	Time 1331 1341	10 - 15min
+T101	Action 1379 1390	Equilibrate
+T102	Location 1396 1401	tubes
+T103	Temperature 1428 1432	43°C
+T104	Device 1433 1456	water bath / heat block
+T105	Time 1470 1475	5 min
+T106	Action 1657 1662	Place
+T107	Device 1663 1672	plug cast
+T108	Location 1676 1679	ice
+T109	Time 1693 1698	45min
+T110	Action 1875 1879	Wash
+T111	Reagent 1885 1895	hemoglobin
+T112	Reagent 1900 1917	cellular material
+T113	Reagent 1923 1935	Proteinase K
+T114	Reagent 1940 1951	Wash Buffer
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T6 Acts-on:E1 Product:T9
+E3	Action:T8 Acts-on:T9 Product:T16
+E4	Action:T11 Acts-on:T9
+E5	Action:T14 Acts-on:T16 Site:T18
+E6	Action:T21 Acts-on:T18
+E7	Action:T22 Count:T23 Acts-on:T18
+E8	Action:T24 Acts-on:E6
+E9	Action:T28 Acts-on:E8
+E10	Action:T29 Acts-on:E8 Count:T31
+E11	Action:T32 Acts-on:E9 Product:T38 Product2:T40
+E12	Action:T37 Acts-on:T38 Product:T42
+E13	Action:T39 Acts-on:T40
+E14	Action:T41 Acts-on:T42 Using:T44
+E15	Action:T45 Acts-on:T47 Site:E14
+E16	Action:T48 Acts-on:E15
+E17	Action:T49 Acts-on:E15
+E18	Action:T50 Acts-on:E17 Product:T54
+E19	Action:T53 Acts-on:T54 Product:T60 Product2:T62
+E20	Action:T59 Acts-on:T60 Product:T67
+E21	Action:T61 Acts-on:T62
+E22	Action:T63 Acts-on:T65 Product:T72
+E23	Action:T66 Acts-on:T67
+E24	Action:T68 Acts-on:T69 Using:T70
+E25	Action:T71 Acts-on:T72 Using:T74
+E26	Action:T75 Site:T77 Acts-on:E25
+E27	Action:T78 Acts-on:E26 Product:T79
+E28	Action:T80 Site:T82 Acts-on:E26
+E29	Action:T83 Product:T84 Acts-on:E28
+E30	Action:T85 Acts-on:T87 Site:T84
+E31	Action:T88 Acts-on:E30 Product:T92
+E32	Action:T91 Acts-on:T92 Site:T93 Product:T102
+E33	Action:T94 Acts-on:T96
+E34	Action:T97 Site:T99 Acts-on:T96
+E35	Action:T101 Acts-on:T102 Site:T104
+E36	Action:T106 Acts-on:T107 Site:T108
+E37	Action:T110 Using:T113 Using2:T114
+R1	Measure Arg1:T5 Arg2:T4
+R2	Setting Arg1:E2 Arg2:T7
+R3	Measure Arg1:T3 Arg2:T2
+R4	Mod-Link Arg1:E4 Arg2:T10
+R5	Setting Arg1:E4 Arg2:T12
+R6	Setting Arg1:E4 Arg2:T13
+R7	Measure Arg1:T18 Arg2:T17
+R8	Measure Arg1:T16 Arg2:T15
+R9	Measure Arg1:T20 Arg2:T19
+R10	Meronym Arg1:T20 Arg2:T18
+R11	Setting Arg1:E8 Arg2:T25
+R12	Setting Arg1:E8 Arg2:T26
+R13	Setting Arg1:E11 Arg2:T33
+R14	Setting Arg1:E11 Arg2:T34
+R15	Setting Arg1:E11 Arg2:T35
+R16	Measure Arg1:T44 Arg2:T43
+R17	Measure Arg1:T47 Arg2:T46
+R18	Setting Arg1:E18 Arg2:T51
+R19	Setting Arg1:E18 Arg2:T52
+R20	Setting Arg1:E19 Arg2:T55
+R21	Setting Arg1:E19 Arg2:T56
+R22	Setting Arg1:E19 Arg2:T57
+R23	Measure Arg1:T74 Arg2:T73
+R24	Setting Arg1:E26 Arg2:T76
+R25	Setting Arg1:E28 Arg2:T81
+R26	Measure Arg1:T87 Arg2:T86
+R27	Setting Arg1:E31 Arg2:T90
+R28	Measure Arg1:T96 Arg2:T95
+R29	Setting Arg1:E34 Arg2:T98
+R30	Setting Arg1:E34 Arg2:T100
+R31	Setting Arg1:T104 Arg2:T103
+R32	Setting Arg1:E35 Arg2:T105
+R33	Setting Arg1:E36 Arg2:T109
+R34	Enables Arg1:E4 Arg2:E3
+R35	Enables Arg1:E7 Arg2:E6
+R36	Mod-Link Arg1:E9 Arg2:T27
+R37	Enables Arg1:E10 Arg2:E9
+R38	Overlaps Arg1:E9 Arg2:E8
+R39	Overlaps Arg1:E10 Arg2:E8
+R40	Mod-Link Arg1:T31 Arg2:T30
+R41	Mod-Link Arg1:E12 Arg2:T36
+R42	Prevents Arg1:E12 Arg2:E13
+R43	Coreference-Link Arg1:T47 Arg2:T20
+R44	Enables Arg1:E16 Arg2:E17
+R45	Mod-Link Arg1:E20 Arg2:T58
+R46	Prevents Arg1:E20 Arg2:E21
+R47	Mod-Link Arg1:T65 Arg2:T64
+R48	Enables Arg1:E23 Arg2:E22
+R49	Meronym Arg1:T65 Arg2:T67
+R50	Meronym Arg1:T69 Arg2:T67
+R51	Coreference-Link Arg1:T82 Arg2:T77
+R52	Mod-Link Arg1:E31 Arg2:T89
+R53	Coreference-Link Arg1:T87 Arg2:T74
+R54	Coreference-Link Arg1:T92 Arg2:T79
+R55	Enables Arg1:E34 Arg2:E33

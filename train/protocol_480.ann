@@ -1,0 +1,59 @@
+T1	Amount 30 35	500ml
+T2	Reagent 36 42	MilliQ
+T3	Action 45 48	add
+T4	Amount 49 52	44g
+T5	Reagent 53 62	TCBS Agar
+T6	Action 65 68	Mix
+T7	Modifier 69 79	thoroughly
+T8	Action 104 108	boil
+T9	Device 112 121	microwave
+T10	Action 125 133	dissolve
+T11	Modifier 134 144	completely
+T12	Action 149 153	boil
+T13	Modifier 158 171	approximately
+T14	Time 172 180	1 minute
+T15	Action 183 199	DO NOT AUTOCLAVE
+T16	Action 209 213	cool
+T17	Modifier 217 230	approximately
+T18	Time 231 235	60ºC
+T19	Action 239 246	running
+T20	Location 247 256	container
+T21	Action 288 292	pour
+T22	Reagent 293 302	TCBS agar
+T23	Modifier 308 315	sterile
+T24	Location 316 322	plates
+T25	Modifier 329 337	half way
+T26	Modifier 340 347	Quickly
+T27	Action 348 351	run
+T28	Device 352 357	flame
+T29	Location 363 370	surface
+T30	Reagent 374 378	agar
+T31	Action 382 388	remove
+T32	Reagent 393 404	air bubbles
+E1	Action:T3 Acts-on:T5 Site:T2
+E2	Action:T6 Acts-on:E1
+E3	Action:T8 Using:T9 Acts-on:E2
+E4	Action:T10 
+E5	Action:T12 Acts-on:E3
+E6	Action:T15 
+E7	Action:T16 Acts-on:E6
+E8	Action:T19 Acts-on:T20
+E9	Action:T21 Acts-on:T22 Site:T24 Product:T30
+E10	Action:T27 Acts-on:T28 Site:T29
+E11	Action:T31 Acts-on:T32
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T2 Arg2:T1
+R3	Mod-Link Arg1:E2 Arg2:T7
+R4	Mod-Link Arg1:T14 Arg2:T13
+R5	Setting Arg1:E5 Arg2:T14
+R6	Mod-Link Arg1:E4 Arg2:T11
+R7	Mod-Link Arg1:T18 Arg2:T17
+R8	Setting Arg1:E7 Arg2:T18
+R9	Mod-Link Arg1:E9 Arg2:T25
+R10	Mod-Link Arg1:T24 Arg2:T23
+R11	Mod-Link Arg1:E10 Arg2:T26
+R12	Meronym Arg1:T29 Arg2:T30
+R13	Enables Arg1:E3 Arg2:E4
+R14	Prevents Arg1:E5 Arg2:E6
+R15	Enables Arg1:E8 Arg2:E7
+R16	Enables Arg1:E10 Arg2:E11

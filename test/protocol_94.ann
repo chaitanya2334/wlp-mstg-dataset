@@ -1,0 +1,255 @@
+T1	Reagent 213 233	cell surface antigen
+T2	Action 234 242	staining
+T3	Method 259 320	BioLegend’s Cell Surface Immunofluorescence Staining Protocol
+T4	Action 328 331	fix
+T5	Reagent 332 337	cells
+T6	Amount 341 347	0.5 ml
+T7	Location 350 354	tube
+T8	Reagent 355 370	Fixation Buffer
+T9	Location 410 414	dark
+T10	Time 419 429	20 minutes
+T11	Temperature 433 449	room temperature
+T12	Action 452 462	Centrifuge
+T13	Speed 466 473	350 x g
+T14	Time 478 487	5 minutes
+T15	Action 490 497	discard
+T16	Reagent 498 509	supernatant
+T17	Action 593 597	wash
+T18	Reagent 598 603	cells
+T19	Concentration 604 606	1x
+T20	Reagent 612 631	Cell StainingBuffer
+T21	Action 666 675	Resuspend
+T22	Reagent 676 681	cells
+T23	Reagent 685 705	Cell Staining Buffer
+T24	Action 710 715	store
+T25	Reagent 716 721	cells
+T26	Temperature 725 728	4°C
+T27	Concentration 750 754	90 %
+T28	Reagent 755 758	FCS
+T29	Concentration 761 765	10 %
+T30	Reagent 766 770	DMSO
+T31	Reagent 775 782	storage
+T32	Temperature 786 792	- 80°C
+T33	Action 860 866	Dilute
+T34	Concentration 867 870	10X
+T35	Reagent 871 910	Intracellular Staining Perm Wash Buffer
+T36	Concentration 936 938	1X
+T37	Reagent 942 950	DI water
+T38	Action 953 962	Resuspend
+T39	Modifier 963 968	fixed
+T40	Reagent 969 974	cells
+T41	Reagent 978 1017	Intracellular Staining Perm Wash Buffer
+T42	Action 1022 1032	centrifuge
+T43	Speed 1036 1043	350 x g
+T44	Time 1048 1062	5 - 10 minutes
+T45	Action 1075 1084	Resuspend
+T46	Modifier 1085 1090	fixed
+T47	Reagent 1091 1096	cells
+T48	Reagent 1100 1139	Intracellular Staining Perm Wash Buffer
+T49	Action 1144 1154	centrifuge
+T50	Speed 1158 1165	350 x g
+T51	Time 1170 1184	5 - 10 minutes
+T52	Action 1197 1206	Resuspend
+T53	Modifier 1207 1212	fixed
+T54	Reagent 1213 1218	cells
+T55	Reagent 1222 1261	Intracellular Staining Perm Wash Buffer
+T56	Action 1266 1276	centrifuge
+T57	Speed 1280 1287	350 x g
+T58	Time 1292 1306	5 - 10 minutes
+T59	Action 1319 1328	Resuspend
+T60	Modifier 1329 1334	fixed
+T61	Modifier 1337 1350	permeabilized
+T62	Reagent 1351 1356	cells
+T63	Modifier 1360 1368	residual
+T64	Reagent 1369 1408	Intracellular Staining Perm Wash Buffer
+T65	Action 1413 1416	add
+T66	Modifier 1419 1432	predetermined
+T67	Modifier 1433 1440	optimum
+T68	Concentration 1441 1454	concentration
+T69	Reagent 1458 1503	fluorophore - conjugated antibody of interest
+T70	Modifier 1540 1551	appropriate
+T71	Reagent 1552 1568	negative control
+T72	Time 1573 1583	20 minutes
+T73	Location 1591 1595	dark
+T74	Temperature 1599 1615	room temperature
+T75	Action 1618 1622	Wash
+T76	Amount 1628 1632	2 ml
+T77	Reagent 1636 1675	Intracellular Staining Perm Wash Buffer
+T78	Action 1680 1690	centrifuge
+T79	Speed 1694 1701	350 x g
+T80	Time 1706 1715	5 minutes
+T81	Action 1728 1732	Wash
+T82	Amount 1738 1742	2 ml
+T83	Reagent 1746 1785	Intracellular Staining Perm Wash Buffer
+T84	Action 1790 1800	centrifuge
+T85	Speed 1804 1811	350 x g
+T86	Time 1816 1825	5 minutes
+T87	Reagent 1922 1957	fluorophore conjugated Streptavidin
+T88	Action 1958 1969	incubations
+T89	Modifier 1974 1984	subsequent
+T90	Action 1985 1991	washes
+T91	Reagent 1995 2034	Intracellular Staining Perm Wash Buffer
+T92	Action 2037 2046	Resuspend
+T93	Modifier 2047 2052	fixed
+T94	Modifier 2057 2080	intracellularly labeled
+T95	Reagent 2081 2086	cells
+T96	Amount 2090 2096	0.5 ml
+T97	Reagent 2097 2117	Cell Staining Buffer
+T98	Action 2122 2129	analyze
+T99	Modifier 2135 2146	appropriate
+T100	Reagent 2147 2155	controls
+T101	Action 2158 2161	Set
+T102	Measure-Type 2162 2173	PMT voltage
+T103	Measure-Type 2178 2190	compensation
+T104	Reagent 2197 2227	cell surface staining controls
+T105	Action 2230 2233	Set
+T106	Measure-Type 2234 2250	quadrant markers
+T107	Reagent 2260 2277	blocking controls
+T108	Reagent 2280 2296	isotype controls
+T109	Modifier 2302 2311	unstained
+T110	Reagent 2312 2317	cells
+T111	Action 2320 2326	Dilute
+T112	Modifier 2327 2338	heparinized
+T113	Reagent 2339 2350	whole blood
+T114	Generic-Measure 2351 2356	1 : 1
+T115	Modifier 2362 2369	sterile
+T116	Modifier 2370 2381	appropriate
+T117	Reagent 2382 2403	tissue culture medium
+T118	Location 2425 2430	vitro
+T119	Action 2431 2451	cellular stimulation
+T120	Reagent 2462 2469	antigen
+T121	Reagent 2473 2480	mitogen
+T122	Action 2592 2600	addition
+T123	Modifier 2607 2616	efficient
+T124	Reagent 2617 2644	protein transport inhibitor
+T125	Reagent 2653 2664	brefeldin A
+T126	Reagent 2700 2708	monensin
+T127	Action 2805 2812	aliquot
+T128	Amount 2813 2819	200 μl
+T129	Reagent 2827 2854	whole blood cell suspension
+T130	Size 2860 2870	12 x 75 mm
+T131	Location 2871 2884	plastic tubes
+T132	Action 2889 2897	incubate
+T133	Time 2902 2913	4 - 6 hours
+T134	Concentration 2917 2920	5 %
+T135	Reagent 2921 2924	CO2
+T136	Temperature 2928 2932	37°C
+T137	Action 2935 2938	Add
+T138	Amount 2939 2943	2 ml
+T139	Concentration 2947 2949	1X
+T140	Reagent 2950 2977	Red Blood Cell Lysis Buffer
+T141	Action 3004 3012	incubate
+T142	Time 3017 3031	5 - 10 minutes
+T143	Temperature 3035 3051	room temperature
+T144	Action 3054 3064	Centrifuge
+T145	Speed 3068 3075	350 x g
+T146	Time 3080 3089	5 minutes
+T147	Action 3094 3101	discard
+T148	Reagent 3106 3117	supernatant
+T149	Action 3120 3124	Wash
+T150	Reagent 3125 3130	cells
+T151	Concentration 3131 3133	1X
+T152	Reagent 3139 3159	Cell Staining Buffer
+E1	Action:T2 Acts-on:T1 Using:T3 Product:T5
+E2	Action:T4 Acts-on:T5 Site:T7
+E3	Action:T12 Acts-on:E2 Product:T16 Product2:T18
+E4	Action:T15 Acts-on:T16
+E5	Action:T17 Acts-on:T18 Using:T20
+E6	Action:T21 Acts-on:T22 Site:T23 Product:T25
+E7	Action:T24 Acts-on:T25 Site:T28 Site2:T30 Product:T31 Product2:T40
+E8	Action:T33 Acts-on:T35 Using:T37 Product:T41 Product2:T48 Product3:T55
+E9	Action:T38 Acts-on:T40 Site:T41
+E10	Action:T42 Acts-on:E9 Product:T47
+E11	Action:T45 Acts-on:T47 Site:T48
+E12	Action:T49 Acts-on:E11 Product:T54
+E13	Action:T52 Acts-on:T54 Site:T55
+E14	Action:T56 Acts-on:E13 Product:T62
+E15	Action:T59 Acts-on:T62 Site:T64
+E16	Action:T65 Site:E15 Acts-on:T69 Site2:T73
+E17	Action:T75 Site:E16 Acts-on:T77
+E18	Action:T78 Acts-on:E17
+E19	Action:T81 Acts-on:E18 Acts-on2:T83
+E20	Action:T84 Acts-on:E19
+E21	Action:T88 Acts-on:T87
+E22	Action:T90 Site:T91
+E23	Action:T92 Acts-on:T95 Site:T97
+E24	Action:T98 Acts-on:E23 Acts-on2:T100
+E25	Action:T101 Measure-Type-Link:T102 Measure-Type-Link2:T103 Using:T104
+E26	Action:T105 Measure-Type-Link:T106 Using:T107
+E27	Action:T111 Acts-on:T113 Using:T117
+E28	Action:T119 Acts-on:E27 Acts-on2:T118 Using:T120
+E29	Action:T122 Acts-on:T124
+E30	Action:T127 Acts-on:T129 Site:T131
+E31	Action:T132 Acts-on:E30 Site:T135
+E32	Action:T137 Site:E31 Acts-on:T140
+E33	Action:T141 Acts-on:E32
+E34	Action:T144 Acts-on:E33 Product:T148
+E35	Action:T147 Acts-on:T148 Product:T150
+E36	Action:T149 Acts-on:T150 Using:T152
+R1	Setting Arg1:E2 Arg2:T10
+R2	Setting Arg1:E2 Arg2:T11
+R3	Measure Arg1:T7 Arg2:T6
+R4	Meronym Arg1:T7 Arg2:T9
+R5	Meronym Arg1:T8 Arg2:T7
+R6	Setting Arg1:E3 Arg2:T13
+R7	Setting Arg1:E3 Arg2:T14
+R8	Measure Arg1:T18 Arg2:T19
+R9	Setting Arg1:E7 Arg2:T26
+R10	Setting Arg1:E7 Arg2:T32
+R11	Measure Arg1:T28 Arg2:T27
+R12	Measure Arg1:T30 Arg2:T29
+R13	Setting Arg1:E8 Arg2:T36
+R14	Measure Arg1:T35 Arg2:T34
+R15	Mod-Link Arg1:T40 Arg2:T39
+R16	Setting Arg1:E10 Arg2:T43
+R17	Setting Arg1:E10 Arg2:T44
+R18	Mod-Link Arg1:T47 Arg2:T46
+R19	Setting Arg1:E12 Arg2:T50
+R20	Setting Arg1:E12 Arg2:T51
+R21	Mod-Link Arg1:T54 Arg2:T53
+R22	Setting Arg1:E14 Arg2:T57
+R23	Setting Arg1:E14 Arg2:T58
+R24	Mod-Link Arg1:T62 Arg2:T60
+R25	Mod-Link Arg1:T62 Arg2:T61
+R26	Mod-Link Arg1:T64 Arg2:T63
+R27	Setting Arg1:E16 Arg2:T72
+R28	Setting Arg1:E16 Arg2:T74
+R29	Mod-Link Arg1:T68 Arg2:T66
+R30	Mod-Link Arg1:T68 Arg2:T67
+R31	Measure Arg1:T69 Arg2:T68
+R32	Or Arg1:T69 Arg2:T71
+R33	Mod-Link Arg1:T71 Arg2:T70
+R34	Measure Arg1:T77 Arg2:T76
+R35	Setting Arg1:E18 Arg2:T79
+R36	Setting Arg1:E18 Arg2:T80
+R37	Measure Arg1:T83 Arg2:T82
+R38	Setting Arg1:E20 Arg2:T85
+R39	Setting Arg1:E20 Arg2:T86
+R40	Mod-Link Arg1:E22 Arg2:T89
+R41	Mod-Link Arg1:T95 Arg2:T93
+R42	Mod-Link Arg1:T95 Arg2:T94
+R43	Measure Arg1:T97 Arg2:T96
+R44	Mod-Link Arg1:T100 Arg2:T99
+R45	Or Arg1:T107 Arg2:T108
+R46	Or Arg1:T108 Arg2:T110
+R47	Mod-Link Arg1:T110 Arg2:T109
+R48	Setting Arg1:E27 Arg2:T114
+R49	Mod-Link Arg1:T113 Arg2:T112
+R50	Mod-Link Arg1:T117 Arg2:T115
+R51	Mod-Link Arg1:T117 Arg2:T116
+R52	Or Arg1:T120 Arg2:T121
+R53	Mod-Link Arg1:T124 Arg2:T123
+R54	Or Arg1:T124 Arg2:T125
+R55	Or Arg1:T125 Arg2:T126
+R56	Measure Arg1:T129 Arg2:T128
+R57	Measure Arg1:T131 Arg2:T130
+R58	Setting Arg1:E31 Arg2:T133
+R59	Setting Arg1:E31 Arg2:T136
+R60	Measure Arg1:T135 Arg2:T134
+R61	Measure Arg1:T140 Arg2:T138
+R62	Measure Arg1:T140 Arg2:T139
+R63	Setting Arg1:E33 Arg2:T142
+R64	Setting Arg1:E33 Arg2:T143
+R65	Setting Arg1:E34 Arg2:T145
+R66	Setting Arg1:E34 Arg2:T146
+R67	Measure Arg1:T150 Arg2:T151

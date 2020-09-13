@@ -1,0 +1,148 @@
+T1	Action 51 56	Pulse
+T2	Reagent 57 80	actively dividing cells
+T3	Reagent 86 90	BrdU
+T4	Reagent 104 122	cell culture media
+T5	Action 130 136	pulsed
+T6	Action 140 146	adding
+T7	Concentration 147 157	10 - 40 μM
+T8	Reagent 161 165	BrdU
+T9	Time 170 181	1 - 2 hours
+T10	Action 186 193	Harvest
+T11	Reagent 194 199	cells
+T12	Action 204 214	centrifuge
+T13	Time 219 228	5 minutes
+T14	Speed 232 247	1200 - 1500 rpm
+T15	Speed 250 263	200 - 300 x g
+T16	Action 268 272	Wash
+T17	Reagent 273 278	cells
+T18	Concentration 282 284	1x
+T19	Reagent 285 288	PBS
+T20	Action 339 349	centrifuge
+T21	Time 354 363	5 minutes
+T22	Speed 367 382	1200 - 1500 rpm
+T23	Speed 385 398	200 - 300 x g
+T24	Action 403 410	Discard
+T25	Reagent 411 422	supernatant
+T26	Action 638 646	Dislodge
+T27	Reagent 647 658	cell pellet
+T28	Action 663 666	add
+T29	Amount 667 671	5 ml
+T30	Modifier 675 685	ice - cold
+T31	Temperature 688 694	- 20⁰C
+T32	Concentration 697 701	70 %
+T33	Reagent 702 709	Ethanol
+T34	Generic-Measure 713 724	1 - 2 X 107
+T35	Reagent 725 730	cells
+T36	Action 753 762	vortexing
+T37	Action 765 773	Incubate
+T38	Temperature 777 783	- 20⁰C
+T39	Modifier 788 796	at least
+T40	Time 797 804	2 hours
+T41	Reagent 807 812	Cells
+T42	Action 820 826	stored
+T43	Time 831 843	several days
+T44	Action 846 852	Repeat
+T45	Method 853 859	step 3
+T46	Numerical 860 865	twice
+T47	Action 868 876	Dislodge
+T48	Reagent 877 888	cell pellet
+T49	Action 893 896	add
+T50	Amount 897 901	2 ml
+T51	Concentration 905 908	2 N
+T52	Reagent 909 912	HCl
+T53	Action 917 925	incubate
+T54	Time 930 940	20 minutes
+T55	Temperature 944 960	room temperature
+T56	Action 963 969	Repeat
+T57	Method 970 976	step 3
+T58	Action 979 988	Resuspend
+T59	Reagent 989 994	cells
+T60	Measure-Type 1000 1013	concentration
+T61	Generic-Measure 1017 1039	1 x 107 cells per / ml
+T62	Reagent 1043 1058	staining buffer
+T63	Action 1063 1070	aliquot
+T64	Amount 1071 1077	100 μl
+T65	Location 1082 1086	tube
+T66	Action 1089 1092	Add
+T67	Reagent 1093 1113	anti - BrdU antibody
+T68	Concentration 1117 1142	appropriate concentration
+T69	Action 1147 1155	incubate
+T70	Time 1160 1170	20 minutes
+T71	Temperature 1174 1190	room temperature
+T72	Action 1193 1197	Wash
+T73	Reagent 1198 1203	cells
+T74	Reagent 1207 1227	Cell Staining Buffer
+T75	Action 1254 1264	centrifuge
+T76	Time 1269 1278	5 minutes
+T77	Speed 1282 1297	1200 - 1500 rpm
+T78	Speed 1300 1313	200 - 300 x g
+T79	Action 1318 1323	Stain
+T80	Reagent 1324 1327	DNA
+T81	Action 1331 1337	adding
+T82	Amount 1338 1342	1 μg
+T83	Reagent 1353 1360	7 - AAD
+T84	Action 1415 1419	Wait
+T85	Time 1424 1433	5 minutes
+T86	Action 1443 1452	acquiring
+T87	Reagent 1453 1460	samples
+T88	Device 1464 1478	flow cytometer
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T11
+E2	Action:T5 Acts-on:T4 Using:E3
+E3	Action:T6 Acts-on:T8
+E4	Action:T10 Acts-on:T11
+E5	Action:T12 Acts-on:E4 Product:T17
+E6	Action:T16 Acts-on:T17 Using:T19
+E7	Action:T20 Acts-on:E6 Product:T25
+E8	Action:T24 Acts-on:T25 Product:T27
+E9	Action:T26 Acts-on:T27 Product:T35
+E10	Action:T28 Acts-on:T33 Acts-on2:T35
+E11	Action:T36 Acts-on:E10
+E12	Action:T37 Acts-on:E11 Product:T41
+E13	Action:T42 Acts-on:T41
+E14	Action:T44 Using:T45 Count:T46 Product:T48
+E15	Action:T47 Acts-on:T48
+E16	Action:T49 Site:E15 Acts-on:T52
+E17	Action:T53 Acts-on:E16
+E18	Action:T56 Using:T57 Product:T59
+E19	Action:T58 Acts-on:T59 Site:T62
+E20	Action:T63 Acts-on:E19 Site:T65
+E21	Action:T66 Site:E20 Acts-on:T67
+E22	Action:T69 Acts-on:E21 Product:T73
+E23	Action:T72 Acts-on:T73 Acts-on2:T74
+E24	Action:T75 Acts-on:E23 Product:T80
+E25	Action:T79 Acts-on:T80
+E26	Action:T81 Acts-on:T83
+E27	Action:T84 Acts-on:E26 Product:T87
+E28	Action:T86 Acts-on:T87 Site:T88
+R1	Setting Arg1:E3 Arg2:T9
+R2	Measure Arg1:T8 Arg2:T7
+R3	Setting Arg1:E5 Arg2:T13
+R4	Setting Arg1:E5 Arg2:T14
+R5	Coreference-Link Arg1:T14 Arg2:T15
+R6	Measure Arg1:T19 Arg2:T18
+R7	Setting Arg1:E7 Arg2:T21
+R8	Setting Arg1:E7 Arg2:T22
+R9	Coreference-Link Arg1:T22 Arg2:T23
+R10	Measure Arg1:T33 Arg2:T29
+R11	Mod-Link Arg1:T33 Arg2:T30
+R12	Measure Arg1:T33 Arg2:T32
+R13	Measure Arg1:T35 Arg2:T34
+R14	Setting Arg1:E12 Arg2:T38
+R15	Setting Arg1:E12 Arg2:T40
+R16	Mod-Link Arg1:T40 Arg2:T39
+R17	Setting Arg1:E13 Arg2:T43
+R18	Measure Arg1:T52 Arg2:T50
+R19	Measure Arg1:T52 Arg2:T51
+R20	Setting Arg1:E17 Arg2:T54
+R21	Setting Arg1:E17 Arg2:T55
+R22	Measure Arg1:T59 Arg2:T61
+R23	Of-Type Arg1:T61 Arg2:T60
+R24	Measure Arg1:T65 Arg2:T64
+R25	Measure Arg1:T67 Arg2:T68
+R26	Setting Arg1:E22 Arg2:T70
+R27	Setting Arg1:E22 Arg2:T71
+R28	Setting Arg1:E24 Arg2:T76
+R29	Setting Arg1:E24 Arg2:T77
+R30	Coreference-Link Arg1:T77 Arg2:T78
+R31	Measure Arg1:T83 Arg2:T82
+R32	Setting Arg1:E27 Arg2:T85

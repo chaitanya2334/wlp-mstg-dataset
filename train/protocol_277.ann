@@ -1,0 +1,113 @@
+T1	Action 112 118	Dilute
+T2	Reagent 119 133	stock solution
+T3	Generic-Measure 134 140	1 : 40
+T4	Concentration 144 147	10x
+T5	Reagent 148 163	reaction buffer
+T6	Generic-Measure 166 178	1,000 U / ml
+T7	Generic-Measure 181 189	1 U / ul
+T8	Generic-Measure 220 226	1 : 10
+T9	Action 227 235	dilution
+T10	Amount 238 241	1μl
+T11	Amount 246 250	9 μl
+T12	Reagent 251 259	solution
+T13	Action 276 284	Incubate
+T14	Temperature 288 304	room temperature
+T15	Time 309 312	2hr
+T16	Action 315 322	Prepare
+T17	Concentration 323 325	1M
+T18	Reagent 326 354	EDTA disodium salt dihydrate
+T19	Action 357 366	Weigh out
+T20	Amount 367 373	3.72 g
+T21	Reagent 374 378	EDTA
+T22	Action 383 388	place
+T23	Amount 392 396	5 ml
+T24	Reagent 397 426	molecular biology grade water
+T25	Action 429 432	Add
+T26	Modifier 435 438	few
+T27	Reagent 439 451	NaOH pellets
+T28	pH 462 466	pH 9
+T29	Action 471 479	dissolve
+T30	Reagent 480 484	EDTA
+T31	Action 491 495	warm
+T32	Temperature 499 503	45°C
+T33	Action 509 517	stirring
+T34	Method 521 539	aid in dissolution
+T35	Action 544 551	Measure
+T36	Measure-Type 552 558	volume
+T37	Action 563 572	determine
+T38	Measure-Type 573 581	molarity
+T39	Amount 617 632	measured volume
+T40	Concentration 643 657	final molarity
+T41	Action 660 667	Prepare
+T42	Concentration 668 670	1M
+T43	Reagent 671 692	EGTA tetrasodium salt
+T44	Action 695 704	Weigh out
+T45	Amount 705 711	4.68 g
+T46	Action 716 721	place
+T47	Amount 725 729	5 ml
+T48	Reagent 730 759	molecular biology grade water
+T49	Action 762 766	Stir
+T50	Action 773 782	dissolved
+T51	Action 785 792	Measure
+T52	Measure-Type 793 799	volume
+T53	Action 804 813	determine
+T54	Measure-Type 814 822	molarity
+T55	Amount 858 873	measured volume
+T56	Concentration 884 898	final molarity
+T57	Action 901 911	Inactivate
+T58	Reagent 912 917	DNase
+T59	Action 921 927	adding
+T60	Concentration 928 934	100 mM
+T61	Reagent 935 939	EDTA
+T62	Concentration 942 948	100 mM
+T63	Reagent 949 953	EGTA
+E1	Action:T1 Acts-on:T2 Site:T5 Product:T12
+E2	Action:T9 Acts-on:T12
+E3	Action:T13 Acts-on:E2 Product:T58
+E4	Action:T16 Acts-on:T18 Product:T61
+E5	Action:T19 Acts-on:T21
+E6	Action:T22 Site:T24 Acts-on:E5
+E7	Action:T25 Acts-on:T27 Acts-on2:E6
+E8	Action:T29 Acts-on:T30 Acts-on2:E7
+E9	Action:T31 Acts-on:E8
+E10	Action:T33 Using:T34
+E11	Action:T35 Measure-Type-Link:T36 Acts-on:E9
+E12	Action:T37 Measure-Type-Link:T38 Acts-on:E11
+E13	Action:T41 Acts-on:T43 Product:T63
+E14	Action:T44 
+E15	Action:T46 Site:T48 Acts-on:E14
+E16	Action:T49 Acts-on:E15
+E17	Action:T50 
+E18	Action:T51 Measure-Type-Link:T52 Acts-on:E17
+E19	Action:T53 Measure-Type-Link:T54 Acts-on:E18
+E20	Action:T57 Acts-on:T58
+E21	Action:T59 Acts-on:T61 Acts-on2:T63
+R1	Setting Arg1:E1 Arg2:T3
+R2	Measure Arg1:T5 Arg2:T4
+R3	Setting Arg1:E2 Arg2:T8
+R4	Setting Arg1:E2 Arg2:T10
+R5	Measure Arg1:T12 Arg2:T11
+R6	Setting Arg1:E3 Arg2:T14
+R7	Setting Arg1:E3 Arg2:T15
+R8	Measure Arg1:T18 Arg2:T17
+R9	Measure Arg1:T5 Arg2:T6
+R10	Or Arg1:T6 Arg2:T7
+R11	Measure Arg1:T21 Arg2:T20
+R12	Measure Arg1:T24 Arg2:T23
+R13	Mod-Link Arg1:T27 Arg2:T26
+R14	Setting Arg1:E7 Arg2:T28
+R15	Setting Arg1:E9 Arg2:T32
+R16	Overlaps Arg1:E9 Arg2:E10
+R17	Setting Arg1:E11 Arg2:T39
+R18	Setting Arg1:E12 Arg2:T40
+R19	Measure Arg1:T43 Arg2:T42
+R20	Measure Arg1:T48 Arg2:T47
+R21	Setting Arg1:E14 Arg2:T45
+R22	Enables Arg1:E16 Arg2:E17
+R23	Setting Arg1:E18 Arg2:T55
+R24	Setting Arg1:E19 Arg2:T56
+R25	Measure Arg1:T61 Arg2:T60
+R26	Measure Arg1:T63 Arg2:T62
+R27	Enables Arg1:E21 Arg2:E20
+R28	Enables Arg1:E19 Arg2:E13
+R29	Enables Arg1:E12 Arg2:E4

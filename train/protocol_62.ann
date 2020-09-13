@@ -1,0 +1,77 @@
+T1	Action 40 44	Take
+T2	Amount 45 49	1 ml
+T3	Reagent 50 56	sample
+T4	Reagent 65 86	cyanobacteria culture
+T5	Action 91 95	spin
+T6	Mention 96 98	it
+T7	Speed 107 117	14,000 rpm
+T8	Time 122 127	5 min
+T9	Action 130 137	Discard
+T10	Amount 138 144	0.9 ml
+T11	Reagent 152 163	supernatant
+T12	Action 166 175	Resuspend
+T13	Reagent 180 186	pellet
+T14	Modifier 194 203	remaining
+T15	Amount 204 210	100 µl
+T16	Action 213 216	Add
+T17	Amount 217 223	0.9 ml
+T18	Concentration 227 232	100 %
+T19	Reagent 233 241	methanol
+T20	Reagent 249 255	sample
+T21	Action 260 263	mix
+T22	Modifier 264 274	thoroughly
+T23	Action 278 287	vortexing
+T24	Action 290 298	Incubate
+T25	Reagent 303 310	samples
+T26	Location 318 322	dark
+T27	Time 327 333	30 min
+T28	Temperature 337 341	4 °C
+T29	Device 349 355	fridge
+T30	Action 358 367	Spin down
+T31	Reagent 368 375	samples
+T32	Modifier 376 381	again
+T33	Speed 385 395	14,000 rpm
+T34	Time 400 405	5 min
+T35	Action 408 416	Transfer
+T36	Reagent 417 428	supernatant
+T37	Location 436 443	cuvette
+T38	Action 448 455	measure
+T39	Measure-Type 460 470	extinction
+T40	Generic-Measure 474 480	665 nm
+T41	Action 483 486	Use
+T42	Concentration 487 491	90 %
+T43	Reagent 492 500	methanol
+T44	Modifier 508 526	reference solution
+E1	Action:T1 Product:T6 Acts-on:T3 Site:T4
+E2	Action:T5 Acts-on:T6 Product:T11
+E3	Action:T9 Acts-on:T11 Product:T13
+E4	Action:T12 Acts-on:T13 Product:T20
+E5	Action:T16 Acts-on:T19 Site:T20
+E6	Action:T21 Acts-on:E5 Product:T25
+E7	Action:T23 
+E8	Action:T24 Acts-on:T25 Site:T26 Product:T31
+E9	Action:T30 Acts-on:T31 Product:T36
+E10	Action:T35 Acts-on:T36 Site:T37
+E11	Action:T38 Measure-Type-Link:T39 Acts-on:E10
+E12	Action:T41 Acts-on:T43
+R1	Setting Arg1:E2 Arg2:T7
+R2	Setting Arg1:E2 Arg2:T8
+R3	Setting Arg1:E8 Arg2:T27
+R4	Setting Arg1:E8 Arg2:T28
+R5	Setting Arg1:E11 Arg2:T40
+R6	Setting Arg1:E9 Arg2:T33
+R7	Setting Arg1:E9 Arg2:T34
+R8	Measure Arg1:T19 Arg2:T18
+R9	Measure Arg1:T19 Arg2:T17
+R10	Measure Arg1:T3 Arg2:T2
+R11	Measure Arg1:T11 Arg2:T10
+R12	Setting Arg1:E4 Arg2:T15
+R13	Measure Arg1:T43 Arg2:T42
+R14	Mod-Link Arg1:T15 Arg2:T14
+R15	Mod-Link Arg1:E6 Arg2:T22
+R16	Meronym Arg1:T26 Arg2:T29
+R17	Mod-Link Arg1:E9 Arg2:T32
+R18	Meronym Arg1:T3 Arg2:T4
+R19	Enables Arg1:E7 Arg2:E6
+R20	Enables Arg1:E12 Arg2:E11
+R21	Mod-Link Arg1:T43 Arg2:T44

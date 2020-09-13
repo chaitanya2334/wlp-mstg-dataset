@@ -1,0 +1,117 @@
+T1	Action 573 580	Prepare
+T2	Concentration 581 592	0.02μg / μl
+T3	Reagent 593 611	pCMVβ DNA solution
+T4	Reagent 615 623	OptiMEM®
+T5	Modifier 627 634	sterile
+T6	Modifier 635 644	deionized
+T7	Reagent 645 650	water
+T8	Action 653 656	Add
+T9	Amount 657 661	6 μl
+T10	Reagent 665 672	reagent
+T11	Amount 676 682	100 μl
+T12	Reagent 686 698	DNA solution
+T13	Action 701 704	Mix
+T14	Modifier 705 714	carefully
+T15	Method 718 727	pipetting
+T16	Numerical 730 732	15
+T17	Action 743 751	Incubate
+T18	Time 752 758	10 min
+T19	Temperature 762 778	room temperature
+T20	Action 781 784	Add
+T21	Amount 785 789	5 μl
+T22	Reagent 793 800	complex
+T23	Modifier 801 809	per well
+T24	Reagent 817 822	cells
+T25	Action 829 832	mix
+T26	Modifier 833 843	thoroughly
+T27	Action 859 867	Incubate
+T28	Reagent 868 885	transfected cells
+T29	Device 889 902	CO2 incubator
+T30	Time 907 915	48 hours
+T31	Action 952 958	Remove
+T32	Reagent 963 969	medium
+T33	Location 979 983	well
+T34	Action 988 992	wash
+T35	Reagent 997 1002	cells
+T36	Numerical 1003 1007	once
+T37	Amount 1013 1018	100μl
+T38	Modifier 1019 1027	per well
+T39	Reagent 1028 1031	PBS
+T40	Action 1034 1037	Fix
+T41	Reagent 1042 1047	cells
+T42	Location 1055 1059	well
+T43	Amount 1065 1069	50μl
+T44	Reagent 1070 1078	solution
+T45	Concentration 1082 1085	4 %
+T46	Reagent 1086 1098	formaldehyde
+T47	Reagent 1102 1105	PBS
+T48	Time 1110 1114	5min
+T49	Temperature 1118 1134	room temperature
+T50	Action 1137 1141	Wash
+T51	Modifier 1142 1146	each
+T52	Location 1147 1151	well
+T53	Numerical 1152 1157	twice
+T54	Amount 1163 1168	100μl
+T55	Reagent 1169 1172	PBS
+T56	Action 1175 1178	Add
+T57	Amount 1179 1183	50μl
+T58	Modifier 1184 1187	per
+T59	Location 1188 1192	well
+T60	Reagent 1196 1222	substrate / stain solution
+T61	Action 1227 1235	incubate
+T62	Location 1240 1245	plate
+T63	Time 1246 1255	overnight
+T64	Temperature 1259 1263	37°C
+T65	Action 1266 1273	Observe
+T66	Reagent 1278 1283	cells
+T67	Device 1290 1300	microscope
+T68	Action 1305 1313	evaluate
+T69	Measure-Type 1318 1365	proportion of blue ( β - gal - positive ) cells
+E1	Action:T1 Product:T3 Site:T4
+E2	Action:T8 Acts-on:T10 Site:T12
+E3	Action:T13 Count:T16 Acts-on:E2 Using:T15
+E4	Action:T17 Acts-on:E3 Product:T24
+E5	Action:T20 Acts-on:T22 Site:T24
+E6	Action:T25 Acts-on:E5 Product:T28
+E7	Action:T27 Acts-on:T28 Using:T29 Product:T32
+E8	Action:T31 Acts-on:T32 Site:T33 Product:T35
+E9	Action:T34 Acts-on:T35 Count:T36 Using:T39 Product:T41
+E10	Action:T40 Acts-on:T41 Site:T42 Using:T44 Product:T52
+E11	Action:T50 Acts-on:T52 Count:T53 Using:T55 Product:T59
+E12	Action:T56 Site:T59 Acts-on:T60 Product:T62
+E13	Action:T61 Acts-on:T62 Product:T66
+E14	Action:T65 Acts-on:T66 Using:T67
+E15	Action:T68 Measure-Type-Link:T69 Acts-on:E14
+R1	Measure Arg1:T12 Arg2:T11
+R2	Measure Arg1:T10 Arg2:T9
+R3	Mod-Link Arg1:E3 Arg2:T14
+R4	Setting Arg1:E4 Arg2:T18
+R5	Setting Arg1:E4 Arg2:T19
+R6	Mod-Link Arg1:E6 Arg2:T26
+R7	Measure Arg1:T22 Arg2:T21
+R8	Setting Arg1:E7 Arg2:T30
+R9	Measure Arg1:T39 Arg2:T37
+R10	Measure Arg1:T44 Arg2:T43
+R11	Measure Arg1:T46 Arg2:T45
+R12	Meronym Arg1:T46 Arg2:T47
+R13	Setting Arg1:E10 Arg2:T48
+R14	Setting Arg1:E10 Arg2:T49
+R15	Measure Arg1:T55 Arg2:T54
+R16	Mod-Link Arg1:T52 Arg2:T51
+R17	Mod-Link Arg1:T59 Arg2:T58
+R18	Setting Arg1:E13 Arg2:T63
+R19	Setting Arg1:E13 Arg2:T64
+R20	Meronym Arg1:T59 Arg2:T60
+R21	Mod-Link Arg1:T7 Arg2:T6
+R22	Mod-Link Arg1:T7 Arg2:T5
+R23	Or Arg1:T4 Arg2:T7
+R24	Measure Arg1:T3 Arg2:T2
+R25	Coreference-Link Arg1:T12 Arg2:T3
+R26	Meronym Arg1:T32 Arg2:T33
+R27	Mod-Link Arg1:E9 Arg2:T38
+R28	Mod-Link Arg1:E5 Arg2:T23
+R29	Meronym Arg1:T41 Arg2:T42
+R30	Meronym Arg1:T47 Arg2:T44
+R31	Coreference-Link Arg1:T47 Arg2:T39
+R32	Coreference-Link Arg1:T55 Arg2:T47
+R33	Measure Arg1:T60 Arg2:T57

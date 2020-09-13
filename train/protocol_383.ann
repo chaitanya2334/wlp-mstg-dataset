@@ -1,0 +1,108 @@
+T1	Action 53 57	Fill
+T2	Device 58 67	Fry Daddy
+T3	Amount 73 78	900 g
+T4	Reagent 79 93	liquid soybean
+T5	Modifier 105 111	edible
+T6	Reagent 114 117	oil
+T7	Action 120 127	Plug in
+T8	Device 128 137	Fry Daddy
+T9	Action 142 146	heat
+T10	Modifier 150 168	frying temperature
+T11	Temperature 171 176	180 C
+T12	Action 181 184	Use
+T13	Device 187 209	temperature controller
+T14	Action 225 228	Log
+T15	Measure-Type 229 240	temperature
+T16	Device 254 262	computer
+T17	Action 276 281	Weigh
+T18	Reagent 282 287	chips
+T19	Modifier 288 297	initially
+T20	Modifier 300 313	approximately
+T21	Amount 314 318	40 g
+T22	Numerical 324 331	20 - 25
+T23	Action 342 345	Fry
+T24	Reagent 346 351	chips
+T25	Location 359 365	basket
+T26	Modifier 366 374	provided
+T27	Time 379 388	2 minutes
+T28	Action 391 395	Lift
+T29	Location 400 406	basket
+T30	Action 409 414	drain
+T31	Reagent 419 424	chips
+T32	Modifier 425 429	well
+T33	Action 436 440	dump
+T34	Location 448 459	paper towel
+T35	Action 463 468	drain
+T36	Action 473 477	cool
+T37	Action 480 486	Spread
+T38	Reagent 487 492	chips
+T39	Modifier 493 496	out
+T40	Mention 505 509	they
+T41	Action 519 526	contact
+T42	Location 536 547	paper towel
+T43	Mention 559 563	them
+T44	Action 567 570	dry
+T45	Modifier 571 576	a bit
+T46	Action 579 583	Turn
+T47	Reagent 584 589	chips
+T48	Location 597 609	paper towels
+T49	Action 626 633	get rid
+T50	Modifier 637 640	any
+T51	Modifier 641 647	pooled
+T52	Reagent 648 651	oil
+T53	Action 654 657	Put
+T54	Reagent 658 663	chips
+T55	Device 674 685	weigh boats
+T56	Action 690 696	record
+T57	Modifier 699 704	final
+T58	Measure-Type 705 711	weight
+T59	Action 714 719	Store
+T60	Reagent 720 725	chips
+T61	Modifier 726 758	covered in an airtight container
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T8
+E2	Action:T7 Acts-on:T8
+E3	Action:T9 Acts-on:E2
+E4	Action:T12 Acts-on:T13 Site:E3
+E5	Action:T14 Measure-Type-Link:T15 Using:T16 Acts-on:E4 Product:T25
+E6	Action:T17 Acts-on:T18 Product:T24
+E7	Action:T23 Acts-on:T24 Site:T25 Product:T29
+E8	Action:T28 Acts-on:T29 Product:T31
+E9	Action:T30 Acts-on:T31
+E10	Action:T33 Site:T34 Acts-on:E9
+E11	Action:T35 Acts-on:E9
+E12	Action:T36 Acts-on:E11 Product:T38
+E13	Action:T37 Acts-on:T38
+E14	Action:T41 Acts-on:T40 Site:T42 Product:T43
+E15	Action:T44 Acts-on:T43 Product:T47
+E16	Action:T46 Acts-on:T47 Site:T48
+E17	Action:T49 Acts-on:T52 Product:T54
+E18	Action:T53 Acts-on:T54 Site:T55
+E19	Action:T56 Measure-Type-Link:T58 Acts-on:E18 Product:T60
+E20	Action:T59 Acts-on:T60
+R1	Or Arg1:T4 Arg2:T6
+R2	Mod-Link Arg1:T6 Arg2:T5
+R3	Measure Arg1:T4 Arg2:T3
+R4	Measure Arg1:T6 Arg2:T3
+R5	Setting Arg1:T10 Arg2:T11
+R6	Mod-Link Arg1:E3 Arg2:T10
+R7	Mod-Link Arg1:T21 Arg2:T20
+R8	Mod-Link Arg1:E6 Arg2:T19
+R9	Measure Arg1:T18 Arg2:T21
+R10	Or Arg1:T21 Arg2:T22
+R11	Mod-Link Arg1:T25 Arg2:T26
+R12	Setting Arg1:E7 Arg2:T27
+R13	Mod-Link Arg1:E9 Arg2:T32
+R14	Mod-Link Arg1:E13 Arg2:T39
+R15	Coreference-Link Arg1:T40 Arg2:T38
+R16	Mod-Link Arg1:E15 Arg2:T45
+R17	Mod-Link Arg1:T52 Arg2:T51
+R18	Mod-Link Arg1:T52 Arg2:T50
+R19	Enables Arg1:E10 Arg2:E11
+R20	Enables Arg1:E10 Arg2:E12
+R21	Meronym Arg1:T40 Arg2:T42
+R22	Enables Arg1:E13 Arg2:E14
+R23	Meronym Arg1:T47 Arg2:T48
+R24	Enables Arg1:E16 Arg2:E17
+R25	Meronym Arg1:T52 Arg2:T48
+R26	Mod-Link Arg1:E19 Arg2:T57
+R27	Mod-Link Arg1:T60 Arg2:T61

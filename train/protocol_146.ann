@@ -1,0 +1,249 @@
+T1	Action 80 85	Clear
+T2	Location 86 92	Slides
+T3	Action 95 102	Removes
+T4	Reagent 103 111	paraffin
+T5	Action 116 124	hydrates
+T6	Reagent 129 135	tissue
+T7	Action 257 258	A
+T8	Reagent 261 267	Xylene
+T9	Time 268 277	5 minutes
+T10	Modifier 281 285	each
+T11	Numerical 291 292	3
+T12	Size 305 310	250mL
+T13	Location 311 321	containers
+T14	Action 322 323	B
+T15	Concentration 326 331	100 %
+T16	Reagent 332 339	alcohol
+T17	Time 340 349	5 minutes
+T18	Modifier 353 357	each
+T19	Numerical 363 364	3
+T20	Size 377 382	250mL
+T21	Location 383 393	containers
+T22	Action 394 395	C
+T23	Concentration 398 402	95 %
+T24	Reagent 403 410	alcohol
+T25	Time 411 420	3 minutes
+T26	Numerical 426 427	1
+T27	Size 430 435	250mL
+T28	Location 436 445	container
+T29	Action 446 447	D
+T30	Concentration 450 454	70 %
+T31	Reagent 455 462	alcohol
+T32	Time 463 472	3 minutes
+T33	Numerical 478 479	1
+T34	Size 482 487	250mL
+T35	Location 488 497	container
+T36	Action 498 499	E
+T37	Reagent 502 507	water
+T38	Time 508 517	1 minutes
+T39	Modifier 521 525	each
+T40	Numerical 531 532	3
+T41	Size 545 550	250mL
+T42	Location 551 561	containers
+T43	Action 562 563	F
+T44	Reagent 566 570	H2O2
+T45	Concentration 573 576	3 %
+T46	Time 579 589	15 minutes
+T47	Numerical 595 596	1
+T48	Size 599 604	250mL
+T49	Location 605 614	container
+T50	Action 617 622	Rinse
+T51	Location 623 629	slides
+T52	Reagent 635 650	lab grade water
+T53	Concentration 846 850	70 %
+T54	Reagent 851 862	Formic Acid
+T55	Action 865 873	incubate
+T56	Location 878 884	slides
+T57	Time 889 899	20 minutes
+T58	Temperature 903 919	room temperature
+T59	Action 1077 1082	Rinse
+T60	Location 1083 1089	Slides
+T61	Reagent 1095 1101	1X PBS
+T62	Action 1104 1109	Apply
+T63	Reagent 1110 1121	serum block
+T64	Time 1135 1144	5 minutes
+T65	Action 1177 1185	Blot off
+T66	Reagent 1186 1197	serum block
+T67	Action 1200 1205	Apply
+T68	Reagent 1206 1222	primary antibody
+T69	Action 1225 1231	dilute
+T70	Concentration 1235 1244	1 mg / mL
+T71	Reagent 1248 1251	PBS
+T72	Action 1254 1262	Incubate
+T73	Reagent 1263 1279	primary antibody
+T74	Time 1280 1290	60 minutes
+T75	Temperature 1294 1310	room temperature
+T76	Action 1313 1318	Rinse
+T77	Location 1319 1325	slides
+T78	Reagent 1331 1337	1X PBS
+T79	Action 1340 1345	Apply
+T80	Reagent 1346 1365	USA Linking reagent
+T81	Time 1368 1378	20 minutes
+T82	Action 1379 1389	incubation
+T83	Action 1392 1397	Rinse
+T84	Location 1398 1404	slides
+T85	Reagent 1410 1416	1X PBS
+T86	Action 1419 1424	Apply
+T87	Reagent 1425 1441	Labeling Reagent
+T88	Time 1444 1454	20 minutes
+T89	Action 1455 1465	incubation
+T90	Action 1468 1473	Rinse
+T91	Reagent 1479 1485	1X PBS
+T92	Action 1488 1493	Apply
+T93	Reagent 1494 1503	chromogen
+T94	Time 1506 1515	5 minutes
+T95	Action 1516 1526	incubation
+T96	Action 1529 1535	Dilute
+T97	Modifier 1536 1576	according to manufacturer’s instructions
+T98	Reagent 1577 1590	AEC Chromogen
+T99	Amount 1593 1597	20mL
+T100	Reagent 1598 1611	AEC chromogen
+T101	Amount 1614 1617	1mL
+T102	Reagent 1618 1638	AEC substrate buffer
+T103	Reagent 1641 1654	DAB Chromogen
+T104	Amount 1657 1662	40 mL
+T105	Reagent 1663 1676	DAB chromogen
+T106	Amount 1679 1682	1mL
+T107	Reagent 1683 1705	DAB substrate buffer .
+T108	Action 1706 1711	Rinse
+T109	Location 1712 1718	slides
+T110	Reagent 1724 1739	lab grade water
+T111	Action 1742 1750	Submerge
+T112	Location 1751 1757	slides
+T113	Reagent 1761 1780	Mayer’s Hematoxylin
+T114	Time 1785 1795	30 seconds
+T115	Action 1798 1803	Rinse
+T116	Modifier 1810 1817	running
+T117	Reagent 1818 1833	lab grade water
+T118	Time 1838 1846	1 minute
+T119	Time 1850 1870	until water is clear
+T120	Action 1873 1881	Submerge
+T121	Location 1882 1888	slides
+T122	Reagent 1892 1906	Bluing Reagent
+T123	Time 1911 1919	1 minute
+T124	Action 1922 1927	Rinse
+T125	Modifier 1934 1941	running
+T126	Reagent 1942 1957	lab grade water
+T127	Time 1962 1970	1 minute
+T128	Action 1973 1978	Clear
+T129	Location 1979 1985	slides
+T130	Action 1988 1997	Dehydrate
+T131	Reagent 2002 2008	tissue
+T132	Concentration 2011 2015	95 %
+T133	Reagent 2016 2023	alcohol
+T134	Time 2024 2033	3 minutes
+T135	Numerical 2039 2040	1
+T136	Size 2043 2048	250mL
+T137	Location 2049 2058	container
+T138	Concentration 2059 2064	100 %
+T139	Reagent 2065 2072	alcohol
+T140	Time 2073 2082	5 minutes
+T141	Modifier 2086 2090	each
+T142	Numerical 2096 2097	3
+T143	Size 2110 2115	250mL
+T144	Location 2116 2125	container
+T145	Action 2190 2195	Cover
+T146	Location 2196 2206	slip slide
+T147	Reagent 2213 2262	Permanent Aqueous Mounting Medium ( SIG - 31010 )
+E1	Action:T1 Acts-on:T2 Product:T4 Product2:T6
+E2	Action:T3 Acts-on:T4 Product:T51
+E3	Action:T5 Acts-on:T6
+E4	Action:T7 Acts-on:T8 Site:T13
+E5	Action:T14 Acts-on:T16 Site:T21
+E6	Action:T22 Acts-on:T24 Site:T28
+E7	Action:T29 Acts-on:T31 Site:T35
+E8	Action:T36 Acts-on:T37 Site:T42
+E9	Action:T43 Acts-on:T44 Site:T49
+E10	Action:T50 Acts-on:T51 Using:T52 Product:T56
+E11	Action:T55 Acts-on:T56 Using:T54 Product:T60
+E12	Action:T59 Acts-on:T60 Using:T61
+E13	Action:T62 Acts-on:T63 Site:E12
+E14	Action:T65 Acts-on:T66 Site:E13
+E15	Action:T67 Acts-on:T68 Site:E14
+E16	Action:T69 Acts-on:T71 Acts-on2:E15 Product:T73
+E17	Action:T72 Acts-on:T73 Product:T77
+E18	Action:T76 Acts-on:T77 Using:T78
+E19	Action:T79 Acts-on:T80 Site:E18
+E20	Action:T82 Acts-on:E19 Product:T84
+E21	Action:T83 Acts-on:T84 Using:T85
+E22	Action:T86 Acts-on:T87 Site:E21
+E23	Action:T89 Acts-on:E22
+E24	Action:T90 Using:T91 Acts-on:E23
+E25	Action:T92 Acts-on:T93 Site:E24
+E26	Action:T95 Acts-on:E25
+E27	Action:T96 Acts-on:E26 Using:T98 Using2:T103 Product:T109
+E28	Action:T108 Acts-on:T109 Using:T110 Product:T112
+E29	Action:T111 Acts-on:T112 Site:T113
+E30	Action:T115 Using:T117 Acts-on:E29 Product:T121
+E31	Action:T120 Acts-on:T121 Site:T122
+E32	Action:T124 Acts-on:E31 Using:T126 Product:T129
+E33	Action:T128 Acts-on:T129 Product:T131
+E34	Action:T130 Acts-on:T131 Using:T133 Site:T137 Using2:T139 Site2:T144 Product:T146
+E35	Action:T145 Acts-on:T146 Using:T147
+R1	Measure Arg1:T13 Arg2:T12
+R2	Measure Arg1:T13 Arg2:T11
+R3	Setting Arg1:T10 Arg2:T11
+R4	Measure Arg1:T21 Arg2:T20
+R5	Measure Arg1:T21 Arg2:T19
+R6	Setting Arg1:T18 Arg2:T19
+R7	Measure Arg1:T16 Arg2:T15
+R8	Measure Arg1:T28 Arg2:T27
+R9	Measure Arg1:T28 Arg2:T26
+R10	Measure Arg1:T24 Arg2:T23
+R11	Measure Arg1:T35 Arg2:T34
+R12	Measure Arg1:T35 Arg2:T33
+R13	Measure Arg1:T31 Arg2:T30
+R14	Measure Arg1:T42 Arg2:T41
+R15	Measure Arg1:T42 Arg2:T40
+R16	Setting Arg1:T39 Arg2:T40
+R17	Measure Arg1:T49 Arg2:T48
+R18	Measure Arg1:T49 Arg2:T47
+R19	Measure Arg1:T44 Arg2:T45
+R20	Setting Arg1:E11 Arg2:T57
+R21	Setting Arg1:E11 Arg2:T58
+R22	Measure Arg1:T54 Arg2:T53
+R23	Setting Arg1:E13 Arg2:T64
+R24	Setting Arg1:E16 Arg2:T70
+R25	Setting Arg1:E17 Arg2:T74
+R26	Setting Arg1:E17 Arg2:T75
+R27	Setting Arg1:E20 Arg2:T81
+R28	Setting Arg1:E23 Arg2:T88
+R29	Setting Arg1:E26 Arg2:T94
+R30	Mod-Link Arg1:E27 Arg2:T97
+R31	Measure Arg1:T100 Arg2:T99
+R32	Measure Arg1:T102 Arg2:T101
+R33	Measure Arg1:T105 Arg2:T104
+R34	Measure Arg1:T107 Arg2:T106
+R35	Or Arg1:T118 Arg2:T119
+R36	Mod-Link Arg1:T117 Arg2:T116
+R37	Setting Arg1:E30 Arg2:T118
+R38	Setting Arg1:E31 Arg2:T123
+R39	Setting Arg1:E32 Arg2:T127
+R40	Mod-Link Arg1:T126 Arg2:T125
+R41	Measure Arg1:T133 Arg2:T132
+R42	Measure Arg1:T137 Arg2:T135
+R43	Measure Arg1:T137 Arg2:T136
+R44	Measure Arg1:T139 Arg2:T138
+R45	Setting Arg1:T141 Arg2:T142
+R46	Measure Arg1:T144 Arg2:T143
+R47	Measure Arg1:T144 Arg2:T142
+R48	Overlaps Arg1:E2 Arg2:E3
+R49	Setting Arg1:E4 Arg2:T9
+R50	Setting Arg1:E5 Arg2:T17
+R51	Setting Arg1:E6 Arg2:T25
+R52	Setting Arg1:E7 Arg2:T32
+R53	Setting Arg1:E8 Arg2:T38
+R54	Setting Arg1:E9 Arg2:T46
+R55	Enables Arg1:E4 Arg2:E1
+R56	Enables Arg1:E5 Arg2:E1
+R57	Enables Arg1:E6 Arg2:E1
+R58	Enables Arg1:E7 Arg2:E1
+R59	Enables Arg1:E8 Arg2:E1
+R60	Enables Arg1:E9 Arg2:E1
+R61	Meronym Arg1:T105 Arg2:T103
+R62	Meronym Arg1:T107 Arg2:T103
+R63	Meronym Arg1:T100 Arg2:T98
+R64	Meronym Arg1:T102 Arg2:T98
+R65	Setting Arg1:E29 Arg2:T114
+R66	Setting Arg1:E34 Arg2:T134
+R67	Setting Arg1:E34 Arg2:T140

@@ -1,0 +1,128 @@
+T1	Action 17 23	Dilute
+T2	Concentration 24 29	100 %
+T3	Reagent 30 38	Glycerol
+T4	Concentration 42 46	50 %
+T5	Reagent 47 55	Glycerol
+T6	Modifier 63 70	sterile
+T7	Amount 71 75	50ml
+T8	Location 76 87	Falcon tube
+T9	Action 88 92	pour
+T10	Amount 93 97	25ml
+T11	Concentration 98 103	100 %
+T12	Reagent 104 112	glycerol
+T13	Action 115 118	Add
+T14	Amount 119 123	25ml
+T15	Modifier 124 134	autoclaved
+T16	Reagent 135 141	MilliQ
+T17	Action 146 149	mix
+T18	Modifier 150 160	thoroughly
+T19	Action 163 167	Pour
+T20	Modifier 173 180	sterile
+T21	Location 181 190	reservoir
+T22	Modifier 196 203	sterile
+T23	Amount 204 209	500ml
+T24	Modifier 210 214	deep
+T25	Location 215 228	96 well plate
+T26	Action 229 232	add
+T27	Amount 233 238	240μl
+T28	Concentration 242 246	50 %
+T29	Reagent 247 255	glycerol
+T30	Modifier 259 263	each
+T31	Location 264 268	well
+T32	Generic-Measure 278 287	8 channel
+T33	Device 288 293	pipet
+T34	Action 296 300	Take
+T35	Reagent 301 310	pore film
+T36	Amount 318 321	2ml
+T37	Modifier 322 326	deep
+T38	Location 327 340	96 well plate
+T39	Generic-Measure 351 361	12 channel
+T40	Amount 362 367	200μl
+T41	Device 368 373	pipet
+T42	Action 376 381	pipet
+T43	Method 382 393	up and down
+T44	Location 399 405	bottom
+T45	Location 409 414	wells
+T46	Numerical 415 416	3
+T47	Action 430 438	transfer
+T48	Amount 439 444	160μl
+T49	Modifier 450 454	each
+T50	Location 455 459	well
+T51	Location 467 472	plate
+T52	Reagent 478 486	glycerol
+T53	Action 489 494	Pipet
+T54	Method 495 506	up and down
+T55	Reagent 510 518	glycerol
+T56	Numerical 519 520	5
+T57	Action 566 570	Seal
+T58	Amount 571 576	500ml
+T59	Modifier 577 581	deep
+T60	Location 582 595	96 well plate
+T61	Seal 620 624	foil
+T62	Action 627 632	Place
+T63	Device 636 642	shaker
+T64	Time 647 657	30 minutes
+T65	Action 660 669	Re - seal
+T66	Amount 670 673	2ml
+T67	Modifier 674 678	deep
+T68	Location 679 692	96 well plate
+T69	Seal 698 707	pore film
+T70	Action 712 717	place
+T71	Device 721 733	refrigerator
+T72	Action 765 770	place
+T73	Amount 771 776	500ml
+T74	Modifier 777 781	deep
+T75	Location 782 787	plate
+T76	Temperature 791 797	- 80ºC
+T77	Device 798 805	freezer
+E1	Action:T1 Acts-on:T3 Product:T5
+E2	Action:T9 Acts-on:T12 Site:T8
+E3	Action:T13 Acts-on:T16 Site:E2
+E4	Action:T17 Acts-on:E3
+E5	Action:T19 Acts-on:E4 Site:T21
+E6	Action:T26 Acts-on:T29 Site:T31 Using:T33 Product:T38
+E7	Action:T34 Acts-on:T35 Site:T38 Product:T44
+E8	Action:T42 Using:T41 Using2:T43 Site:T44 Count:T46
+E9	Action:T47 Site:T51 Site2:T50 Acts-on:E8
+E10	Action:T53 Using:T54 Acts-on:T55 Count:T56
+E11	Action:T57 Acts-on:T60 Using:T61
+E12	Action:T62 Site:T63 Product:T68 Acts-on:E11
+E13	Action:T65 Acts-on:T68 Using:T69
+E14	Action:T70 Site:T71 Acts-on:E13 Product:T75
+E15	Action:T72 Acts-on:T75 Site:T77
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Measure Arg1:T12 Arg2:T11
+R4	Measure Arg1:T12 Arg2:T10
+R5	Measure Arg1:T8 Arg2:T7
+R6	Mod-Link Arg1:T8 Arg2:T6
+R7	Mod-Link Arg1:E4 Arg2:T18
+R8	Mod-Link Arg1:T16 Arg2:T15
+R9	Measure Arg1:T16 Arg2:T14
+R10	Mod-Link Arg1:T21 Arg2:T20
+R11	Mod-Link Arg1:T25 Arg2:T24
+R12	Measure Arg1:T25 Arg2:T23
+R13	Mod-Link Arg1:T25 Arg2:T22
+R14	Measure Arg1:T29 Arg2:T28
+R15	Measure Arg1:T29 Arg2:T27
+R16	Mod-Link Arg1:T31 Arg2:T30
+R17	Meronym Arg1:T31 Arg2:T25
+R18	Mod-Link Arg1:T38 Arg2:T37
+R19	Measure Arg1:T38 Arg2:T36
+R20	Setting Arg1:T33 Arg2:T32
+R21	Setting Arg1:T41 Arg2:T40
+R22	Setting Arg1:T41 Arg2:T39
+R23	Mod-Link Arg1:T50 Arg2:T49
+R24	Meronym Arg1:T52 Arg2:T51
+R25	Meronym Arg1:T44 Arg2:T45
+R26	Setting Arg1:E9 Arg2:T48
+R27	Mod-Link Arg1:T60 Arg2:T59
+R28	Measure Arg1:T60 Arg2:T58
+R29	Setting Arg1:E12 Arg2:T64
+R30	Mod-Link Arg1:T68 Arg2:T67
+R31	Measure Arg1:T68 Arg2:T66
+R32	Setting Arg1:T77 Arg2:T76
+R33	Mod-Link Arg1:T75 Arg2:T74
+R34	Measure Arg1:T75 Arg2:T73
+R35	Coreference-Link Arg1:T3 Arg2:T12
+R36	Coreference-Link Arg1:T29 Arg2:T55

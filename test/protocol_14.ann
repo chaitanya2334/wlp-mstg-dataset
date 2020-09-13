@@ -1,0 +1,235 @@
+T1	Action 26 31	Place
+T2	Reagent 32 37	cells
+T3	Location 43 63	microcentrifuge tube
+T4	Action 68 78	centrifuge
+T5	Reagent 94 105	cell pellet
+T6	Action 108 112	Lyse
+T7	Reagent 117 128	cell pellet
+T8	Amount 134 140	100 µl
+T9	Reagent 144 156	lysis buffer
+T10	Location 160 163	ice
+T11	Time 168 174	30 min
+T12	Action 233 243	Centrifuge
+T13	Speed 247 257	14,000 rpm
+T14	Speed 260 270	16,000 x g
+T15	Time 277 287	10 minutes
+T16	Temperature 291 294	4°C
+T17	Action 297 305	Transfer
+T18	Reagent 310 321	supernatant
+T19	Location 331 335	tube
+T20	Action 340 347	discard
+T21	Reagent 352 358	pellet
+T22	Action 361 367	Remove
+T23	Amount 368 373	20 µl
+T24	Reagent 377 388	supernatant
+T25	Action 393 396	mix
+T26	Amount 402 407	20 µl
+T27	Concentration 411 413	2x
+T28	Reagent 414 427	sample buffer
+T29	Action 430 434	Boil
+T30	Time 439 444	5 min
+T31	Action 447 451	Cool
+T32	Temperature 455 471	room temperature
+T33	Time 476 485	5 minutes
+T34	Action 488 503	Microcentrifuge
+T35	Time 508 517	5 minutes
+T36	Action 520 524	Load
+T37	Amount 531 536	40 µl
+T38	Reagent 540 546	sample
+T39	Location 550 559	each well
+T40	Reagent 565 581	1.5 mm thick gel
+T41	Action 658 666	Transfer
+T42	Reagent 671 679	proteins
+T43	Reagent 683 698	anitrocellulose
+T44	Reagent 702 715	PVDF membrane
+T45	Action 792 798	Remove
+T46	Reagent 803 819	blotted membrane
+T47	Location 829 847	transfer apparatus
+T48	Action 864 869	place
+T49	Reagent 873 888	blocking buffer
+T50	Concentration 903 906	5 %
+T51	Reagent 907 932	nonfat dry milk / TBS - T
+T52	Action 935 943	Incubate
+T53	Reagent 948 952	blot
+T54	Time 957 963	1 hour
+T55	Temperature 967 983	room temperature
+T56	Time 989 998	overnight
+T57	Temperature 1002 1005	4°C
+T58	Method 1011 1020	agitation
+T59	Action 1023 1029	Dilute
+T60	Reagent 1034 1050	primary antibody
+T61	Concentration 1058 1094	recommended concentration / dilution
+T62	Concentration 1098 1101	5 %
+T63	Reagent 1102 1127	nonfat dry milk / TBS - T
+T64	Action 1158 1163	Place
+T65	Reagent 1168 1176	membrane
+T66	Reagent 1184 1209	primary antibody solution
+T67	Action 1214 1222	incubate
+T68	Time 1227 1234	2 hours
+T69	Temperature 1238 1254	room temperature
+T70	Time 1260 1269	overnight
+T71	Temperature 1273 1276	4°C
+T72	Method 1282 1291	agitation
+T73	Action 1294 1298	Wash
+T74	Time 1303 1312	5 minutes
+T75	Reagent 1318 1329	Wash Buffer
+T76	Reagent 1332 1335	TBS
+T77	Concentration 1347 1352	0.1 %
+T78	Reagent 1353 1363	Tween - 20
+T79	Action 1385 1389	Wash
+T80	Time 1394 1403	5 minutes
+T81	Reagent 1409 1420	Wash Buffer
+T82	Reagent 1423 1426	TBS
+T83	Concentration 1438 1443	0.1 %
+T84	Reagent 1444 1454	Tween - 20
+T85	Action 1476 1480	Wash
+T86	Time 1485 1494	5 minutes
+T87	Reagent 1500 1511	Wash Buffer
+T88	Reagent 1514 1517	TBS
+T89	Concentration 1529 1534	0.1 %
+T90	Reagent 1535 1545	Tween - 20
+T91	Action 1567 1575	Incubate
+T92	Reagent 1580 1588	membrane
+T93	Time 1593 1603	30 minutes
+T94	Temperature 1607 1623	room temperature
+T95	Reagent 1629 1690	horseradish peroxidase ( HRP ) ‐conjugated secondary antibody
+T96	Action 1693 1700	diluted
+T97	Concentration 1704 1712	1 : 1000
+T98	Concentration 1716 1719	5 %
+T99	Reagent 1720 1743	nonfat dry milk / TBS‐T
+T100	Action 1746 1750	Wash
+T101	Time 1755 1765	10 minutes
+T102	Reagent 1771 1774	TBS
+T103	Concentration 1786 1791	0.1 %
+T104	Reagent 1792 1800	Tween‐20
+T105	Action 1815 1819	Wash
+T106	Time 1824 1834	10 minutes
+T107	Reagent 1840 1843	TBS
+T108	Concentration 1855 1860	0.1 %
+T109	Reagent 1861 1869	Tween‐20
+T110	Action 1884 1888	Wash
+T111	Time 1893 1903	10 minutes
+T112	Reagent 1909 1912	TBS
+T113	Concentration 1924 1929	0.1 %
+T114	Reagent 1930 1938	Tween‐20
+T115	Action 1953 1957	Wash
+T116	Time 1962 1972	10 minutes
+T117	Reagent 1978 1981	TBS
+T118	Concentration 1993 1998	0.1 %
+T119	Reagent 1999 2007	Tween‐20
+T120	Action 2022 2026	Wash
+T121	Numerical 2027 2031	once
+T122	Time 2036 2045	2 minutes
+T123	Reagent 2051 2054	PBS
+T124	Action 2057 2065	Incubate
+T125	Reagent 2066 2074	membrane
+T126	Amount 2100 2105	10 ml
+T127	Reagent 2109 2112	ECL
+T128	Reagent 2115 2151	enhanced chemiluminescence substrate
+T129	Time 2158 2171	1 - 2 minutes
+T130	Action 2220 2229	Drain off
+T131	Reagent 2234 2258	excess detection reagent
+T132	Action 2261 2268	wrap up
+T133	Reagent 2273 2278	blots
+T134	Action 2292 2302	smooth out
+T135	Reagent 2307 2318	air bubbles
+T136	Action 2321 2326	Place
+T137	Reagent 2331 2344	wrapped blots
+T138	Device 2371 2392	X - ray film cassette
+T139	Action 2397 2419	expose to x - ray film
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T3 Product:T5
+E3	Action:T6 Acts-on:T7 Acts-on2:T9 Site:T10
+E4	Action:T12 Acts-on:E3 Product:T18 Product2:T21
+E5	Action:T17 Acts-on:T18 Site:T19 Product:T24
+E6	Action:T20 Acts-on:T21
+E7	Action:T22 Acts-on:T24
+E8	Action:T25 Acts-on:T28
+E9	Action:T29 Acts-on:E8
+E10	Action:T31 Acts-on:E9
+E11	Action:T34 Acts-on:E10 Product:T38
+E12	Action:T36 Site:T39 Product:T42
+E13	Action:T41 Acts-on:T42 Site:T43 Product:T46
+E14	Action:T45 Acts-on:T46 Site:T47
+E15	Action:T48 Acts-on:T49 Product:T53
+E16	Action:T52 Acts-on:T53 Using:T58 Product:T65
+E17	Action:T59 Acts-on:T60 Site:T63 Product:T66
+E18	Action:T64 Acts-on:T65 Site:T66
+E19	Action:T67 Acts-on:E18 Using:T72
+E20	Action:T73 Acts-on:E19 Acts-on2:T75
+E21	Action:T79 Acts-on:E20 Acts-on2:T81
+E22	Action:T85 Acts-on:E21 Acts-on2:T87 Product:T92
+E23	Action:T91 Acts-on:T92 Acts-on2:T95
+E24	Action:T96 
+E25	Action:T100 Acts-on:E23 Acts-on2:T102
+E26	Action:T105 Acts-on:E25 Acts-on2:T107
+E27	Action:T110 Acts-on:E26 Acts-on2:T112
+E28	Action:T115 Acts-on:E27 Acts-on2:T117
+E29	Action:T120 Acts-on:E28 Count:T121 Acts-on2:T123 Product:T125
+E30	Action:T124 Acts-on:T125 Acts-on2:T127
+E31	Action:T130 Site:E30 Acts-on:T131
+E32	Action:T132 Acts-on:T133
+E33	Action:T134 Site:E32 Acts-on:T135 Product:T137
+E34	Action:T136 Acts-on:T137 Site:T138
+E35	Action:T139 Acts-on:T137 Site:T138
+R1	Coreference-Link Arg1:T5 Arg2:T7
+R2	Setting Arg1:E3 Arg2:T11
+R3	Measure Arg1:T9 Arg2:T8
+R4	Setting Arg1:E4 Arg2:T13
+R5	Setting Arg1:E4 Arg2:T14
+R6	Setting Arg1:E4 Arg2:T15
+R7	Setting Arg1:E4 Arg2:T16
+R8	Measure Arg1:T24 Arg2:T23
+R9	Measure Arg1:T28 Arg2:T26
+R10	Measure Arg1:T28 Arg2:T27
+R11	Setting Arg1:E9 Arg2:T30
+R12	Setting Arg1:E10 Arg2:T32
+R13	Setting Arg1:E10 Arg2:T33
+R14	Setting Arg1:E11 Arg2:T35
+R15	Or Arg1:T37 Arg2:T38
+R16	Meronym Arg1:T39 Arg2:T40
+R17	Or Arg1:T43 Arg2:T44
+R18	Or Arg1:T50 Arg2:T51
+R19	Coreference-Link Arg1:T51 Arg2:T49
+R20	Setting Arg1:E16 Arg2:T54
+R21	Setting Arg1:E16 Arg2:T55
+R22	Setting Arg1:E16 Arg2:T56
+R23	Or Arg1:T54 Arg2:T56
+R24	Setting Arg1:E17 Arg2:T61
+R25	Measure Arg1:T63 Arg2:T62
+R26	Setting Arg1:E19 Arg2:T68
+R27	Setting Arg1:E19 Arg2:T69
+R28	Setting Arg1:E19 Arg2:T70
+R29	Or Arg1:T68 Arg2:T70
+R30	Setting Arg1:E20 Arg2:T74
+R31	Meronym Arg1:T76 Arg2:T75
+R32	Meronym Arg1:T78 Arg2:T75
+R33	Measure Arg1:T78 Arg2:T77
+R34	Setting Arg1:E21 Arg2:T80
+R35	Meronym Arg1:T82 Arg2:T81
+R36	Meronym Arg1:T84 Arg2:T81
+R37	Measure Arg1:T84 Arg2:T83
+R38	Setting Arg1:E22 Arg2:T86
+R39	Meronym Arg1:T88 Arg2:T87
+R40	Meronym Arg1:T90 Arg2:T87
+R41	Measure Arg1:T90 Arg2:T89
+R42	Setting Arg1:E23 Arg2:T93
+R43	Setting Arg1:E23 Arg2:T94
+R44	Measure Arg1:T95 Arg2:T97
+R45	Measure Arg1:T99 Arg2:T98
+R46	Setting Arg1:E25 Arg2:T101
+R47	Meronym Arg1:T104 Arg2:T102
+R48	Measure Arg1:T104 Arg2:T103
+R49	Setting Arg1:E26 Arg2:T106
+R50	Meronym Arg1:T109 Arg2:T107
+R51	Measure Arg1:T109 Arg2:T108
+R52	Setting Arg1:E27 Arg2:T111
+R53	Meronym Arg1:T114 Arg2:T112
+R54	Measure Arg1:T114 Arg2:T113
+R55	Setting Arg1:E28 Arg2:T116
+R56	Meronym Arg1:T119 Arg2:T117
+R57	Measure Arg1:T119 Arg2:T118
+R58	Setting Arg1:E29 Arg2:T122
+R59	Setting Arg1:E30 Arg2:T129
+R60	Measure Arg1:T127 Arg2:T126
+R61	Coreference-Link Arg1:T127 Arg2:T128

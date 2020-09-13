@@ -1,0 +1,215 @@
+T1	Action 55 60	Rinse
+T2	Size 63 68	60 mm
+T3	Location 69 81	culture dish
+T4	Reagent 85 100	confluent cells
+T5	Reagent 106 109	PBS
+T6	Action 112 116	Lyse
+T7	Reagent 121 126	cells
+T8	Amount 132 138	0.5 ml
+T9	Modifier 139 143	cold
+T10	Reagent 144 170	Immunoprecipitation Buffer
+T11	Action 191 200	agitation
+T12	Time 205 215	30 minutes
+T13	Temperature 219 222	4°C
+T14	Action 225 231	Scrape
+T15	Reagent 236 241	cells
+T16	Location 251 255	dish
+T17	Action 258 266	Sonicate
+T18	Location 270 273	ice
+T19	Time 278 287	5 seconds
+T20	Numerical 297 298	4
+T21	Action 307 317	Centrifuge
+T22	Time 322 331	5 minutes
+T23	Temperature 335 338	4°C
+T24	Action 341 346	Assay
+T25	Measure-Type 351 364	total protein
+T26	Action 370 376	adjust
+T27	Measure-Type 377 390	concentration
+T28	Modifier 394 407	approximately
+T29	Concentration 408 417	1 mg / ml
+T30	Reagent 423 449	Immunoprecipitation Buffer
+T31	Amount 457 463	1.5 ml
+T32	Location 464 484	microcentrifuge tube
+T33	Action 487 490	add
+T34	Amount 491 496	25 μl
+T35	Reagent 497 525	Protein A / G Magnetic Beads
+T36	Amount 529 535	200 μl
+T37	Reagent 539 557	crude cell extract
+T38	Modifier 560 566	Gently
+T39	Action 567 573	vortex
+T40	Action 576 584	Incubate
+T41	Temperature 588 591	4°C
+T42	Time 596 602	1 hour
+T43	Action 605 610	Apply
+T44	Method 611 625	magnetic field
+T45	Time 630 640	30 seconds
+T46	Action 644 648	pull
+T47	Reagent 649 654	beads
+T48	Location 662 666	side
+T49	Location 674 678	tube
+T50	Action 681 688	Pipette
+T51	Reagent 689 700	supernatant
+T52	Modifier 706 711	clean
+T53	Amount 712 718	1.5 ml
+T54	Location 719 739	microcentrifuge tube
+T55	Action 744 751	discard
+T56	Reagent 756 761	beads
+T57	Action 764 767	Add
+T58	Amount 768 776	1 - 5 μg
+T59	Reagent 780 788	antibody
+T60	Reagent 792 809	crude cell lysate
+T61	Action 812 818	Vortex
+T62	Action 821 829	Incubate
+T63	Temperature 833 836	4°C
+T64	Time 841 847	1 hour
+T65	Action 850 853	Add
+T66	Amount 854 859	25 μl
+T67	Reagent 863 902	Protein A / G Magnetic Beads suspension
+T68	Modifier 905 911	Gently
+T69	Action 912 918	vortex
+T70	Action 921 929	Incubate
+T71	Method 935 944	agitation
+T72	Time 949 955	1 hour
+T73	Temperature 959 962	4°C
+T74	Action 965 970	Apply
+T75	Method 971 985	magnetic field
+T76	Action 989 993	pull
+T77	Reagent 994 999	beads
+T78	Location 1007 1011	side
+T79	Location 1019 1023	tube
+T80	Modifier 1026 1035	Carefully
+T81	Action 1036 1043	pipette
+T82	Action 1047 1053	remove
+T83	Reagent 1054 1065	supernatant
+T84	Action 1081 1085	Wash
+T85	Amount 1091 1097	500 μl
+T86	Reagent 1101 1127	Immunoprecipitation Buffer
+T87	Modifier 1131 1137	gentle
+T88	Action 1138 1144	vortex
+T89	Action 1160 1165	Apply
+T90	Method 1166 1180	magnetic field
+T91	Action 1186 1192	remove
+T92	Reagent 1193 1204	supernatant
+T93	Action 1209 1216	discard
+T94	Action 1232 1236	Wash
+T95	Amount 1242 1248	500 μl
+T96	Reagent 1252 1278	Immunoprecipitation Buffer
+T97	Modifier 1282 1288	gentle
+T98	Action 1289 1295	vortex
+T99	Action 1311 1316	Apply
+T100	Method 1317 1331	magnetic field
+T101	Action 1337 1343	remove
+T102	Reagent 1344 1355	supernatant
+T103	Action 1360 1367	discard
+T104	Action 1383 1387	Wash
+T105	Amount 1393 1399	500 μl
+T106	Reagent 1403 1429	Immunoprecipitation Buffer
+T107	Modifier 1433 1439	gentle
+T108	Action 1440 1446	vortex
+T109	Action 1462 1467	Apply
+T110	Method 1468 1482	magnetic field
+T111	Action 1488 1494	remove
+T112	Reagent 1495 1506	supernatant
+T113	Action 1511 1518	discard
+T114	Action 1521 1530	Resuspend
+T115	Reagent 1531 1542	bead pellet
+T116	Amount 1546 1551	30 μl
+T117	Concentration 1555 1557	3X
+T118	Reagent 1558 1583	SDS Sample Loading Buffer
+T119	Action 1586 1594	Incubate
+T120	Reagent 1595 1601	sample
+T121	Temperature 1605 1609	70°C
+T122	Time 1614 1623	5 minutes
+T123	Action 1626 1631	Apply
+T124	Method 1632 1646	magnetic field
+T125	Reagent 1650 1656	sample
+T126	Action 1662 1666	load
+T127	Reagent 1667 1678	supernatant
+T128	Reagent 1682 1696	SDS - PAGE gel
+T129	Action 1701 1715	electrophorese
+E1	Action:T1 Acts-on:T3 Using:T5 Product:T7
+E2	Action:T6 Acts-on:T7 Using:T10
+E3	Action:T11 Acts-on:E2 Product:T15
+E4	Action:T14 Acts-on:T15 Site:T16
+E5	Action:T17 Acts-on:E4 Site:T18 Count:T20
+E6	Action:T21 Acts-on:E5
+E7	Action:T24 Acts-on:E6 Measure-Type-Link:T25
+E8	Action:T26 Acts-on:E7 Measure-Type-Link:T27 Using:T30 Product:T37
+E9	Action:T33 Site:T32 Acts-on:T35 Site2:T37
+E10	Action:T39 Acts-on:E9
+E11	Action:T40 Acts-on:E10
+E12	Action:T43 Acts-on:E11 Using:T44 Product:T51
+E13	Action:T46 Acts-on:T47 Site:T48
+E14	Action:T50 Acts-on:T51 Site:T54 Product:T60
+E15	Action:T55 Acts-on:T56
+E16	Action:T57 Acts-on:T59 Site:T60
+E17	Action:T61 Acts-on:E16
+E18	Action:T62 Acts-on:E17
+E19	Action:T65 Site:E18 Acts-on:T67
+E20	Action:T69 Acts-on:E19
+E21	Action:T70 Acts-on:E20 Using:T71
+E22	Action:T74 Using:T75 Product:T83
+E23	Action:T76 Acts-on:T77 Site:T78
+E24	Action:T81 
+E25	Action:T82 Acts-on:T83
+E26	Action:T84 Acts-on:T86
+E27	Action:T88 
+E28	Action:T89 Site:E27 Using:T90 Product:T92
+E29	Action:T91 Acts-on:T92
+E30	Action:T93 Acts-on:E29
+E31	Action:T94 Acts-on:T96
+E32	Action:T98 
+E33	Action:T99 Acts-on:E32 Using:T100 Product:T102
+E34	Action:T101 Acts-on:T102
+E35	Action:T103 Acts-on:E34
+E36	Action:T104 Acts-on:T106
+E37	Action:T108 
+E38	Action:T109 Acts-on:E37 Using:T110 Product:T112
+E39	Action:T111 Acts-on:T112
+E40	Action:T113 Acts-on:E39
+E41	Action:T114 Acts-on:T115 Site:T118 Product:T120
+E42	Action:T119 Acts-on:T120 Product:T125
+E43	Action:T123 Using:T124 Acts-on:T125 Product:T127
+E44	Action:T126 Acts-on:T127 Site:T128
+E45	Action:T129 Acts-on:E44
+R1	Measure Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T4 Arg2:T3
+R3	Measure Arg1:T10 Arg2:T8
+R4	Mod-Link Arg1:T10 Arg2:T9
+R5	Setting Arg1:E3 Arg2:T12
+R6	Setting Arg1:E3 Arg2:T13
+R7	Setting Arg1:E5 Arg2:T19
+R8	Setting Arg1:E6 Arg2:T22
+R9	Setting Arg1:E6 Arg2:T23
+R10	Setting Arg1:E8 Arg2:T29
+R11	Mod-Link Arg1:T29 Arg2:T28
+R12	Measure Arg1:T32 Arg2:T31
+R13	Measure Arg1:T35 Arg2:T34
+R14	Measure Arg1:T37 Arg2:T36
+R15	Mod-Link Arg1:E10 Arg2:T38
+R16	Setting Arg1:E11 Arg2:T41
+R17	Setting Arg1:E11 Arg2:T42
+R18	Setting Arg1:E12 Arg2:T45
+R19	Meronym Arg1:T48 Arg2:T49
+R20	Mod-Link Arg1:T54 Arg2:T52
+R21	Measure Arg1:T54 Arg2:T53
+R22	Measure Arg1:T59 Arg2:T58
+R23	Setting Arg1:E18 Arg2:T63
+R24	Setting Arg1:E18 Arg2:T64
+R25	Measure Arg1:T67 Arg2:T66
+R26	Mod-Link Arg1:E20 Arg2:T68
+R27	Setting Arg1:E21 Arg2:T72
+R28	Setting Arg1:E21 Arg2:T73
+R29	Meronym Arg1:T79 Arg2:T78
+R30	Mod-Link Arg1:E24 Arg2:T80
+R31	Measure Arg1:T86 Arg2:T85
+R32	Coreference-Link Arg1:T86 Arg2:T96
+R33	Mod-Link Arg1:E27 Arg2:T87
+R34	Measure Arg1:T96 Arg2:T95
+R35	Mod-Link Arg1:E32 Arg2:T97
+R36	Measure Arg1:T106 Arg2:T105
+R37	Mod-Link Arg1:E37 Arg2:T107
+R38	Measure Arg1:T118 Arg2:T116
+R39	Measure Arg1:T118 Arg2:T117
+R40	Setting Arg1:E42 Arg2:T121
+R41	Setting Arg1:E42 Arg2:T122

@@ -1,0 +1,127 @@
+T1	Action 142 149	discard
+T2	Reagent 154 166	preservative
+T3	Location 176 180	tube
+T4	Action 185 190	place
+T5	Seal 195 207	dialysis cap
+T6	Location 225 231	beaker
+T7	Location 235 259	other suitable container
+T8	Action 262 269	Pipette
+T9	Reagent 275 281	sample
+T10	Modifier 282 290	directly
+T11	Location 300 321	Tube‐O‐DIALYZER™ tube
+T12	Action 410 416	Remove
+T13	Seal 421 450	Tube‐O‐DIALYZER™ dialysis cap
+T14	Reagent 460 480	rinse water / buffer
+T15	Modifier 485 494	carefully
+T16	Action 495 501	remove
+T17	Modifier 502 508	excess
+T18	Reagent 509 515	liquid
+T19	Device 523 534	pipette tip
+T20	Action 537 542	Screw
+T21	Seal 547 559	dialysis cap
+T22	Location 570 591	Tube‐O‐DIALYZER™ tube
+T23	Action 613 619	Invert
+T24	Device 624 640	Tube‐O‐DIALYZER™
+T25	Device 708 724	Tube‐O‐DIALYZER™
+T26	Action 751 756	slide
+T27	Location 761 775	supplied float
+T28	Location 785 806	Tube‐O‐DIALYZER™ tube
+T29	Action 809 814	Place
+T30	Device 819 835	Tube‐O‐DIALYZER™
+T31	Reagent 843 858	dialysis buffer
+T32	Reagent 877 894	dialysis membrane
+T33	Action 895 903	contacts
+T34	Reagent 908 923	dialysis buffer
+T35	Action 1008 1012	tilt
+T36	Location 1017 1021	tube
+T37	Action 1025 1031	squirt
+T38	Reagent 1032 1038	buffer
+T39	Action 1042 1048	remove
+T40	Reagent 1053 1064	air bubbles
+T41	Reagent 1278 1284	sample
+T42	Action 1295 1303	dialyzed
+T43	Time 1308 1313	2‐12h
+T44	Action 1405 1411	remove
+T45	Device 1416 1432	Tube‐O‐DIALYZER™
+T46	Reagent 1442 1447	float
+T47	Modifier 1452 1463	immediately
+T48	Action 1464 1468	spin
+T49	Device 1473 1489	Tube‐O‐DIALYZER™
+T50	Time 1519 1530	5‐6 seconds
+T51	Speed 1534 1545	500‐1,000xg
+T52	Action 1548 1555	Discard
+T53	Seal 1560 1572	dialysis cap
+T54	Action 1577 1584	replace
+T55	Modifier 1594 1602	supplied
+T56	Seal 1603 1614	Storage Cap
+T57	Action 1617 1620	Add
+T58	Amount 1621 1626	1‐2ml
+T59	Reagent 1627 1635	DI water
+T60	Reagent 1639 1654	dialysis buffer
+T61	Action 1658 1663	rinse
+T62	Action 1666 1670	Keep
+T63	Reagent 1675 1700	Tube‐O‐DIALYZER™ membrane
+T64	Modifier 1722 1728	Gently
+T65	Action 1731 1735	stir
+T66	Reagent 1740 1755	dialysis buffer
+T67	Action 1807 1816	inverting
+T68	Modifier 1820 1826	gently
+T69	Action 1827 1834	tapping
+T70	Device 1839 1855	Tube‐O‐DIALYZER™
+T71	Numerical 1856 1859	1‐2
+T72	Method 1873 1881	dialysis
+T73	Action 1885 1888	mix
+T74	Reagent 1893 1899	sample
+E1	Action:T1 Acts-on:T2 Acts-on2:T3 Product:T5 Product2:T11
+E2	Action:T4 Acts-on:T5 Site:T6 Product:T13
+E3	Action:T8 Acts-on:T9 Site:T11 Product:T22
+E4	Action:T12 Acts-on:T13 Product:T18
+E5	Action:T16 Acts-on:T18 Using:T19 Product:T21
+E6	Action:T20 Acts-on:T21 Site:T22 Product:T24
+E7	Action:T23 Acts-on:T24 Product:T25
+E8	Action:T26 Acts-on:T27 Site:T28 Product:T30
+E9	Action:T29 Acts-on:T30 Site:T31 Product:T32 Product2:T34
+E10	Action:T33 Acts-on:T32 Site:T34 Product:T36 Product2:T38
+E11	Action:T35 Acts-on:T36
+E12	Action:T37 Acts-on:T38
+E13	Action:T39 Acts-on:T40 Product:T41
+E14	Action:T42 Acts-on:T41 Product:T45
+E15	Action:T44 Acts-on:T45 Product:T49
+E16	Action:T48 Acts-on:T49 Product:T53
+E17	Action:T52 Acts-on:T53
+E18	Action:T54 Using:T56 Acts-on:E17
+E19	Action:T57 Acts-on:T59 Site:E18
+E20	Action:T61 Acts-on:E18 Product:T63
+E21	Action:T62 Acts-on:T63 Product:T66
+E22	Action:T65 Acts-on:T66 Product:T70
+E23	Action:T67 Acts-on:T70
+E24	Action:T69 Acts-on:T70
+E25	Action:T73 Acts-on:T74
+R1	Or Arg1:T6 Arg2:T7
+R2	Mod-Link Arg1:T9 Arg2:T10
+R3	Mod-Link Arg1:T18 Arg2:T17
+R4	Mod-Link Arg1:E5 Arg2:T15
+R5	Meronym Arg1:T28 Arg2:T25
+R6	Setting Arg1:E14 Arg2:T43
+R7	Setting Arg1:E16 Arg2:T50
+R8	Setting Arg1:E16 Arg2:T51
+R9	Mod-Link Arg1:E16 Arg2:T47
+R10	Mod-Link Arg1:T56 Arg2:T55
+R11	Measure Arg1:T59 Arg2:T58
+R12	Or Arg1:T59 Arg2:T60
+R13	Mod-Link Arg1:E22 Arg2:T64
+R14	Mod-Link Arg1:E24 Arg2:T68
+R15	Setting Arg1:E24 Arg2:T71
+R16	Meronym Arg1:T2 Arg2:T3
+R17	Meronym Arg1:T13 Arg2:T14
+R18	Or Arg1:E11 Arg2:E12
+R19	Enables Arg1:E12 Arg2:E13
+R20	Enables Arg1:E11 Arg2:E13
+R21	Meronym Arg1:T40 Arg2:T38
+R22	Meronym Arg1:T40 Arg2:T36
+R23	Meronym Arg1:T45 Arg2:T46
+R24	Enables Arg1:E19 Arg2:E20
+R25	Or Arg1:E23 Arg2:E24
+R26	Enables Arg1:E24 Arg2:E25
+R27	Enables Arg1:E23 Arg2:E25
+R28	Meronym Arg1:T74 Arg2:T70

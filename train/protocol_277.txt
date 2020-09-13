@@ -1,0 +1,14 @@
+DNase I Treatment
+DNase I made up to 40,000 U / ml in storage buffer ( - 20°C freezer door ) = stock solution .
+Dilute stock solution 1 : 40 in 10x reaction buffer = 1,000 U / ml = 1 U / ul = working dilution .
+Use at a 1 : 10 dilution : 1μl per 9 μl solution to be treated .
+Incubate at room temperature for 2hr .
+Prepare 1M EDTA disodium salt dihydrate :
+Weigh out 3.72 g EDTA and place in 5 ml molecular biology grade water .
+Add a few NaOH pellets to get to pH 9 and dissolve EDTA ( can warm to 45°C with stirring to aid in dissolution ) .
+Measure volume and determine molarity : 1M = 3.72g / 10 ml , therefore , measured volume / 10 ml = final molarity .
+Prepare 1M EGTA tetrasodium salt :
+Weigh out 4.68 g and place in 5 ml molecular biology grade water .
+Stir until dissolved .
+Measure volume and determine molarity : 1M = 4.68g / 10 ml , therefore , measured volume / 10 ml = final molarity .
+Inactivate DNase by adding 100 mM EDTA / 100 mM EGTA final concentration .

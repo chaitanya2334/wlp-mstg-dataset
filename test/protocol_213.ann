@@ -1,0 +1,96 @@
+T1	Action 22 26	Pour
+T2	Concentration 27 55	1.5 % w / v ( 7.5g / 500mL )
+T3	Reagent 56 82	bacteriological grade agar
+T4	Location 91 115	autoclave safe container
+T5	Amount 161 166	500mL
+T6	Reagent 173 181	LB media
+T7	Action 182 186	Stir
+T8	Modifier 187 197	vigorously
+T9	Temperature 201 217	room temperature
+T10	Action 269 272	cap
+T11	Location 273 279	bottle
+T12	Action 289 298	autoclave
+T13	Time 316 326	30 minutes
+T14	Time 341 351	45 minutes
+T15	Method 373 402	slow exhaust ( liquid ) cycle
+T16	Action 405 411	Remove
+T17	Device 417 426	autoclave
+T18	Action 431 439	let cool
+T19	Time 444 459	20 - 40 minutes
+T20	Time 463 486	until sufficiently cool
+T21	Action 592 596	Cool
+T22	Temperature 600 603	55C
+T23	Location 604 614	water bath
+T24	Action 673 676	Add
+T25	Reagent 677 697	antibiotic selection
+T26	Action 750 754	pour
+T27	Amount 761 770	20 - 25mL
+T28	Reagent 774 781	LB agar
+T29	Size 787 791	10cm
+T30	Location 792 804	Petri dishes
+T31	Reagent 836 840	agar
+T32	Action 841 845	cool
+T33	Action 853 860	placing
+T34	Seal 861 864	lid
+T35	Location 868 871	top
+T36	Action 876 885	inverting
+T37	Location 886 891	plate
+T38	Action 910 915	place
+T39	Seal 916 919	lid
+T40	Modifier 920 945	open slightly to the side
+T41	Action 949 970	allow for evaporation
+T42	Action 991 995	Wrap
+T43	Location 996 1002	plates
+T44	Seal 1006 1018	plastic wrap
+T45	Action 1022 1027	store
+T46	Location 1038 1049	plastic bag
+T47	Location 1061 1067	plates
+T48	Action 1068 1083	from drying out
+T49	Action 1086 1090	Wrap
+T50	Seal 1094 1107	aluminum foil
+T51	Action 1111 1130	prevent degradation
+T52	Reagent 1134 1163	light - sensitive antibiotics
+T53	Reagent 1174 1184	ampicillin
+T54	Action 1187 1192	Store
+T55	Location 1193 1199	plates
+T56	Temperature 1203 1205	4C
+T57	Modifier 1208 1216	inverted
+E1	Action:T1 Acts-on:T3 Site:T4 Using:T6
+E2	Action:T7 Acts-on:E1 Product:T11
+E3	Action:T10 Acts-on:T11
+E4	Action:T12 Acts-on:E3 Using:T15
+E5	Action:T16 Acts-on:E4 Site:T17
+E6	Action:T18 Acts-on:E5
+E7	Action:T21 Site:T23
+E8	Action:T24 Acts-on:T25
+E9	Action:T26 Acts-on:T28 Site:T30 Product:T31
+E10	Action:T32 
+E11	Action:T33 Acts-on:T34 Site:T35
+E12	Action:T36 Acts-on:T37
+E13	Action:T38 Acts-on:T39 Product:T43
+E14	Action:T41 
+E15	Action:T42 Acts-on:T43 Using:T44
+E16	Action:T45 Site:T46
+E17	Action:T48 Acts-on:T47
+E18	Action:T49 Using:T50
+E19	Action:T51 Acts-on:T52
+E20	Action:T54 Acts-on:T55
+R1	Setting Arg1:E1 Arg2:T5
+R2	Measure Arg1:T3 Arg2:T2
+R3	Mod-Link Arg1:E2 Arg2:T8
+R4	Setting Arg1:E2 Arg2:T9
+R5	Setting Arg1:E4 Arg2:T13
+R6	Or Arg1:T13 Arg2:T14
+R7	Setting Arg1:E6 Arg2:T19
+R8	Or Arg1:T19 Arg2:T20
+R9	Setting Arg1:E7 Arg2:T22
+R10	Measure Arg1:T28 Arg2:T27
+R11	Measure Arg1:T30 Arg2:T29
+R12	Mod-Link Arg1:E13 Arg2:T40
+R13	Enables Arg1:E13 Arg2:E14
+R14	Or Arg1:E15 Arg2:E16
+R15	Prevents Arg1:E16 Arg2:E17
+R16	Prevents Arg1:E18 Arg2:E19
+R17	Meronym Arg1:T53 Arg2:T52
+R18	Setting Arg1:E20 Arg2:T56
+R19	Mod-Link Arg1:E20 Arg2:T57

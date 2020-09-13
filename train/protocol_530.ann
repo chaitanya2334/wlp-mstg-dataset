@@ -1,0 +1,95 @@
+T1	Action 347 350	Add
+T2	Amount 351 359	1 - 50µl
+T3	Reagent 367 382	protein samples
+T4	Size 400 403	2ml
+T5	Location 404 409	tubes
+T6	Action 412 415	Add
+T7	Amount 416 421	0.5ml
+T8	Reagent 422 429	UPPA™ I
+T9	Location 438 442	tube
+T10	Action 447 453	vortex
+T11	Action 456 459	Add
+T12	Reagent 460 474	0.5ml UPPA™ II
+T13	Location 482 487	tubes
+T14	Action 492 498	vortex
+T15	Action 501 509	Incubate
+T16	Time 514 527	2 - 3 minutes
+T17	Temperature 531 547	room temperature
+T18	Action 550 560	Centrifuge
+T19	Location 565 576	titer plate
+T20	Speed 580 589	~ 5,000xg
+T21	Time 594 603	7 minutes
+T22	Action 632 638	Invert
+T23	Location 643 654	titer plate
+T24	Action 685 690	shake
+T25	Action 726 729	Add
+T26	Amount 730 735	100µl
+T27	Reagent 736 751	Copper Solution
+T28	Amount 770 775	400µl
+T29	Reagent 776 791	deionized water
+T30	Location 799 804	tubes
+T31	Action 809 815	vortex
+T32	Size 871 874	1ml
+T33	Device 875 882	pipette
+T34	Action 893 898	shoot
+T35	Amount 899 902	1ml
+T36	Reagent 903 913	Reagent II
+T37	Location 933 937	tube
+T38	Reagent 949 958	Reagent I
+T39	Reagent 964 972	DI Water
+T40	Action 999 1008	inverting
+T41	Location 1013 1018	tubes
+T42	Action 1021 1029	Incubate
+T43	Temperature 1033 1049	room temperature
+T44	Time 1054 1069	15 - 20 minutes
+T45	Action 1091 1095	read
+T46	Measure-Type 1096 1107	absorbances
+T47	Numerical 1111 1116	480nm
+T48	Reagent 1125 1133	DI water
+T49	Action 1155 1163	transfer
+T50	Amount 1164 1169	200µl
+T51	Reagent 1170 1184	assay reaction
+T52	Size 1202 1209	96 well
+T53	Location 1210 1227	micro titer plate
+T54	Action 1232 1239	measure
+T55	Measure-Type 1244 1255	absorbances
+T56	Numerical 1259 1264	480nm
+T57	Reagent 1273 1281	DI water
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T6 Acts-on:T8 Acts-on2:T9 Acts-on3:E1
+E3	Action:T10 Acts-on:T9
+E4	Action:T11 Acts-on:T12 Site:T13 Acts-on2:E2
+E5	Action:T14 Acts-on:T13
+E6	Action:T15 Acts-on:E4
+E7	Action:T18 Acts-on:T19 Acts-on2:E6
+E8	Action:T22 Acts-on:T23 Acts-on2:E7
+E9	Action:T24 Acts-on:T23
+E10	Action:T25 Acts-on:T27 Acts-on2:T29 Site:T30 Acts-on3:E9
+E11	Action:T31 Acts-on:T30
+E12	Action:T34 Acts-on:T36 Site:T37 Using:T33 Acts-on2:E11
+E13	Action:T40 Acts-on:T41 Acts-on2:E12
+E14	Action:T42 Acts-on:E9
+E15	Action:T45 Using:T48 Acts-on:E14
+E16	Action:T49 Acts-on:T51 Site:T53
+E17	Action:T54 Site:T57 Acts-on:E16
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T8 Arg2:T7
+R4	Setting Arg1:E6 Arg2:T16
+R5	Setting Arg1:E6 Arg2:T17
+R6	Setting Arg1:E7 Arg2:T20
+R7	Setting Arg1:E7 Arg2:T21
+R8	Measure Arg1:T27 Arg2:T26
+R9	Measure Arg1:T29 Arg2:T28
+R10	Measure Arg1:T33 Arg2:T32
+R11	Measure Arg1:T36 Arg2:T35
+R12	Meronym Arg1:T38 Arg2:T37
+R13	Meronym Arg1:T39 Arg2:T37
+R14	Setting Arg1:E14 Arg2:T43
+R15	Setting Arg1:E14 Arg2:T44
+R16	Of-Type Arg1:T47 Arg2:T46
+R17	Setting Arg1:E15 Arg2:T47
+R18	Measure Arg1:T51 Arg2:T50
+R19	Measure Arg1:T53 Arg2:T52
+R20	Of-Type Arg1:T56 Arg2:T55
+R21	Setting Arg1:E17 Arg2:T56

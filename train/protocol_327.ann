@@ -1,0 +1,124 @@
+T1	Action 55 66	anesthetize
+T2	Modifier 67 78	3 - 6 d old
+T3	Reagent 79 84	flies
+T4	Reagent 91 94	CO2
+T5	Action 101 105	clip
+T6	Amount 106 111	2 / 3
+T7	Modifier 117 121	both
+T8	Reagent 122 127	wings
+T9	Amount 131 135	half
+T10	Mention 139 143	them
+T11	Modifier 153 157	same
+T12	Location 158 162	vial
+T13	Action 165 170	place
+T14	Amount 178 180	30
+T15	Reagent 181 186	flies
+T16	Modifier 192 205	clipped wings
+T17	Amount 218 220	30
+T18	Modifier 221 227	intact
+T19	Reagent 228 233	flies
+T20	Action 296 301	Place
+T21	Reagent 306 311	flies
+T22	Location 319 332	entrance tube
+T23	Action 352 366	let them adapt
+T24	Time 371 377	10 min
+T25	Action 380 387	Turn on
+T26	Device 392 404	light source
+T27	Action 407 415	Transfer
+T28	Reagent 420 425	flies
+T29	Location 433 441	elevator
+T30	Modifier 445 451	gently
+T31	Action 452 459	tapping
+T32	Device 464 473	apparatus
+T33	Action 480 484	pull
+T34	Device 489 501	movable part
+T35	Modifier 502 506	down
+T36	Action 519 524	close
+T37	Mention 525 527	it
+T38	Reagent 530 535	Flies
+T39	Action 540 544	kept
+T40	Location 552 560	elevator
+T41	Time 565 571	30 sec
+T42	Action 574 578	Pull
+T43	Modifier 579 583	down
+T44	Device 588 600	movable part
+T45	Location 615 623	elevator
+T46	Action 627 633	placed
+T47	Location 634 678	between the transparent and the opaque tubes
+T48	Action 681 706	Allow the flies to choose
+T49	Modifier 715 719	dark
+T50	Modifier 724 729	light
+T51	Time 734 740	30 sec
+T52	Action 743 748	Close
+T53	Amount 749 752	all
+T54	Location 753 758	tubes
+T55	Action 762 769	pulling
+T56	Modifier 770 772	up
+T57	Device 777 789	movable part
+T58	Action 804 808	lock
+T59	Reagent 813 818	flies
+T60	Mention 826 830	tube
+T61	Action 852 857	Count
+T62	Measure-Type 862 868	number
+T63	Reagent 872 877	flies
+T64	Modifier 878 900	with and without wings
+T65	Modifier 904 908	each
+T66	Location 909 913	tube
+T67	Action 916 925	Calculate
+T68	Measure-Type 930 942	Choice Index
+E1	Action:T1 Acts-on:T3 Using:T4 Product:T8 Product2:T19
+E2	Action:T5 Acts-on:T8 Site:T10 Product:T15
+E3	Action:T13 Site:T12 Acts-on:T15 Acts-on2:T19 Product:T21
+E4	Action:T20 Acts-on:T21 Site:T22
+E5	Action:T23 Acts-on:E4 Product:T28
+E6	Action:T25 Acts-on:T26 Product:T32
+E7	Action:T27 Acts-on:T28 Site:T29
+E8	Action:T31 Acts-on:T32
+E9	Action:T33 Acts-on:T34
+E10	Action:T36 Acts-on:T37 Product:T40
+E11	Action:T39 Acts-on:T38 Site:T40
+E12	Action:T42 Acts-on:T44
+E13	Action:T46 Acts-on:T45 Site:T47
+E14	Action:T48 Acts-on:E13 Product:T54
+E15	Action:T52 Acts-on:T54
+E16	Action:T55 Acts-on:T57
+E17	Action:T58 Acts-on:T59 Site:T60 Product:T63
+E18	Action:T61 Acts-on:T63 Site:T66 Measure-Type-Link:T62
+E19	Action:T67 Measure-Type-Link:T68 Acts-on:E18
+R1	Measure Arg1:T8 Arg2:T6
+R2	Mod-Link Arg1:T3 Arg2:T2
+R3	Measure Arg1:T10 Arg2:T9
+R4	Meronym Arg1:T8 Arg2:T10
+R5	Measure Arg1:T15 Arg2:T14
+R6	Mod-Link Arg1:T15 Arg2:T16
+R7	Mod-Link Arg1:T19 Arg2:T18
+R8	Measure Arg1:T19 Arg2:T17
+R9	Setting Arg1:E5 Arg2:T24
+R10	Meronym Arg1:T34 Arg2:T32
+R11	Mod-Link Arg1:E8 Arg2:T30
+R12	Setting Arg1:E11 Arg2:T41
+R13	Setting Arg1:E14 Arg2:T51
+R14	Coreference-Link Arg1:T60 Arg2:T54
+R15	Measure Arg1:T54 Arg2:T53
+R16	Mod-Link Arg1:T66 Arg2:T65
+R17	Mod-Link Arg1:T8 Arg2:T7
+R18	Mod-Link Arg1:T12 Arg2:T11
+R19	Enables Arg1:E8 Arg2:E7
+R20	Coreference-Link Arg1:T37 Arg2:T34
+R21	Enables Arg1:E9 Arg2:E10
+R22	Mod-Link Arg1:E9 Arg2:T35
+R23	Meronym Arg1:T29 Arg2:T32
+R24	Meronym Arg1:T38 Arg2:T40
+R25	Mod-Link Arg1:E12 Arg2:T43
+R26	Enables Arg1:E12 Arg2:E13
+R27	Coreference-Link Arg1:T44 Arg2:T34
+R28	Meronym Arg1:T44 Arg2:T45
+R29	Or Arg1:T49 Arg2:T50
+R30	Mod-Link Arg1:E14 Arg2:T49
+R31	Coreference-Link Arg1:T57 Arg2:T44
+R32	Mod-Link Arg1:E16 Arg2:T56
+R33	Enables Arg1:E16 Arg2:E15
+R34	Enables Arg1:E15 Arg2:E17
+R35	Meronym Arg1:T59 Arg2:T60
+R36	Mod-Link Arg1:T63 Arg2:T64
+R37	Meronym Arg1:T63 Arg2:T66

@@ -1,0 +1,128 @@
+T1	Action 114 126	preselection
+T2	Action 130 137	running
+T3	Modifier 140 147	regular
+T4	Modifier 150 164	single - trial
+T5	Method 165 186	photoxasis experiment
+T6	Modifier 187 194	without
+T7	Modifier 195 203	aversive
+T8	Reagent 204 212	stimulus
+T9	Action 217 224	collect
+T10	Reagent 234 239	flies
+T11	Modifier 254 260	bright
+T12	Modifier 268 272	dark
+T13	Location 273 277	tube
+T14	Action 286 293	placing
+T15	Device 298 310	filter paper
+T16	Modifier 318 329	appropriate
+T17	Location 330 334	tube
+T18	Device 348 356	elevator
+T19	Modifier 357 361	down
+T20	Action 364 368	load
+T21	Modifier 373 381	selected
+T22	Reagent 382 387	flies
+T23	Modifier 390 396	around
+T24	Numerical 397 399	50
+T25	Location 411 424	entrance tube
+T26	Time 439 449	10 minutes
+T27	Method 454 467	dark adaption
+T28	Action 470 475	Shift
+T29	Device 480 488	elevator
+T30	Modifier 489 500	all the way
+T31	Location 501 503	up
+T32	Action 506 509	tap
+T33	Reagent 514 519	flies
+T34	Device 529 537	elevator
+T35	Action 542 546	move
+T36	Mention 547 549	it
+T37	Location 557 572	middle position
+T38	Action 623 628	Bring
+T39	Device 633 641	T - maze
+T40	Modifier 642 646	back
+T41	Location 656 673	vertical position
+T42	Action 678 681	put
+T43	Device 686 694	elevator
+T44	Reagent 704 709	flies
+T45	Modifier 710 721	all the way
+T46	Location 722 726	down
+T47	Action 813 816	Tap
+T48	Modifier 817 820	all
+T49	Reagent 825 830	flies
+T50	Location 840 844	tube
+T51	Modifier 851 866	doesn’t contain
+T52	Reagent 871 888	aversive stimulus
+T53	Location 932 936	tube
+T54	Action 941 944	put
+T55	Modifier 945 948	all
+T56	Reagent 953 958	flies
+T57	Location 966 979	entrance tube
+T58	Modifier 980 985	again
+T59	Action 1015 1024	calm down
+T60	Time 1029 1039	15 seconds
+T61	Action 1115 1121	Switch
+T62	Location 1126 1130	tube
+T63	Reagent 1150 1167	aversive stimulus
+T64	Location 1175 1179	tube
+T65	Modifier 1180 1191	without any
+T66	Device 1192 1204	filter paper
+T67	Action 1282 1285	Put
+T68	Device 1290 1298	elevator
+T69	Location 1299 1301	up
+T70	Action 1306 1311	count
+T71	Reagent 1316 1321	flies
+T72	Location 1329 1342	entrance tube
+T73	Location 1349 1365	transparent tube
+T74	Location 1374 1385	opaque tube
+T75	Action 1392 1405	anesthetizing
+T76	Mention 1406 1410	them
+E1	Action:T1 Product:T22
+E2	Action:T2 Using:T5 Using2:T8
+E3	Action:T9 Acts-on:T10 Site:T13
+E4	Action:T14 Acts-on:T15 Site:T17 Using:T18 Product:T25 Product2:T29
+E5	Action:T20 Acts-on:T22 Site:T25 Using:T27 Product:T33
+E6	Action:T28 Acts-on:T29 Site:T31 Product:T34
+E7	Action:T32 Acts-on:T33 Site:T34
+E8	Action:T35 Acts-on:T36 Site:T37 Product:T43 Product2:T44
+E9	Action:T38 Acts-on:T39 Site:T41
+E10	Action:T42 Acts-on:T43 Site:T46 Product:T49
+E11	Action:T47 Acts-on:T49 Site:T50 Product:T53 Product2:T56
+E12	Action:T54 Acts-on:T56 Site:T57
+E13	Action:T59 Acts-on:E12
+E14	Action:T61 Acts-on:T62 Using:T64
+E15	Action:T67 Site:T69 Acts-on:T68
+E16	Action:T70 Acts-on:T71 Site:T72 Site2:T73 Site3:T74
+E17	Action:T75 Acts-on:T76
+R1	Or Arg1:T11 Arg2:T12
+R2	Mod-Link Arg1:T13 Arg2:T11
+R3	Mod-Link Arg1:T8 Arg2:T7
+R4	Mod-Link Arg1:T8 Arg2:T6
+R5	Mod-Link Arg1:T17 Arg2:T16
+R6	Mod-Link Arg1:T22 Arg2:T21
+R7	Measure Arg1:T22 Arg2:T24
+R8	Or Arg1:T24 Arg2:T23
+R9	Setting Arg1:E5 Arg2:T26
+R10	Mod-Link Arg1:T18 Arg2:T19
+R11	Coreference-Link Arg1:T36 Arg2:T34
+R12	Mod-Link Arg1:T31 Arg2:T30
+R13	Mod-Link Arg1:T41 Arg2:T40
+R14	Meronym Arg1:T44 Arg2:T43
+R15	Mod-Link Arg1:T46 Arg2:T45
+R16	Mod-Link Arg1:T52 Arg2:T51
+R17	Meronym Arg1:T52 Arg2:T50
+R18	Mod-Link Arg1:T49 Arg2:T48
+R19	Mod-Link Arg1:E12 Arg2:T58
+R20	Mod-Link Arg1:T56 Arg2:T55
+R21	Meronym Arg1:T56 Arg2:T53
+R22	Setting Arg1:E13 Arg2:T60
+R23	Meronym Arg1:T63 Arg2:T62
+R24	Mod-Link Arg1:T66 Arg2:T65
+R25	Meronym Arg1:T66 Arg2:T64
+R26	Coreference-Link Arg1:T76 Arg2:T71
+R27	Enables Arg1:E3 Arg2:E1
+R28	Enables Arg1:E2 Arg2:E1
+R29	Meronym Arg1:T43 Arg2:T39
+R30	Coreference-Link Arg1:T25 Arg2:T57
+R31	Coreference-Link Arg1:T57 Arg2:T72
+R32	Coreference-Link Arg1:T18 Arg2:T68
+R33	Meronym Arg1:T22 Arg2:T62
+R34	Mod-Link Arg1:E2 Arg2:T3
+R35	Mod-Link Arg1:E2 Arg2:T4

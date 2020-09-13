@@ -1,0 +1,115 @@
+T1	Action 69 76	Pipette
+T2	Amount 77 83	1.7 mL
+T3	Modifier 84 93	amplified
+T4	Size 94 103	0.22 - µm
+T5	Modifier 104 112	filtered
+T6	Reagent 113 124	virus stock
+T7	Amount 130 138	1.7 - mL
+T8	Location 139 154	screw cap tubes
+T9	Action 157 162	Float
+T10	Location 167 188	microcentrifuge tubes
+T11	Modifier 192 196	long
+T12	Location 197 218	ultracentrifuge tubes
+T13	Reagent 240 245	water
+T14	Mention 252 256	they
+T15	Action 261 271	just flush
+T16	Location 281 284	top
+T17	Location 292 313	ultracentrifuge tubes
+T18	Action 316 323	balance
+T19	Speed 339 342	1 g
+T20	Action 345 349	Load
+T21	Location 354 375	ultracentrifuge tubes
+T22	Device 385 395	SW40 rotor
+T23	Action 400 404	spin
+T24	Mention 405 409	them
+T25	Speed 413 421	133,000g
+T26	Time 426 429	1 h
+T27	Action 432 439	Recover
+T28	Location 444 465	microcentrifuge tubes
+T29	Action 468 474	Remove
+T30	Reagent 479 490	supernatant
+T31	Action 495 504	resuspend
+T32	Reagent 509 515	pellet
+T33	Action 518 525	Perform
+T34	Method 530 546	subsequent steps
+T35	Location 553 566	subdued light
+T36	Action 606 610	Thaw
+T37	Reagent 615 627	SYBR Green I
+T38	Action 635 638	add
+T39	Amount 639 643	1 µL
+T40	Reagent 644 649	stain
+T41	Modifier 658 670	concentrated
+T42	Location 671 681	virus tube
+T43	Action 686 694	incubate
+T44	Time 699 705	15 min
+T45	Location 713 717	dark
+T46	Action 720 726	Verify
+T47	Modifier 731 739	staining
+T48	Reagent 769 776	viruses
+T49	Action 780 789	pipetting
+T50	Amount 790 794	1 µL
+T51	Reagent 802 812	suspension
+T52	Location 820 836	microscope slide
+T53	Action 839 842	Add
+T54	Size 846 856	18 × 18 mm
+T55	Seal 857 866	coverslip
+T56	Action 871 878	observe
+T57	Location 883 888	slide
+T58	Device 899 925	epifluorescence microscope
+T59	Action 928 931	Add
+T60	Amount 932 939	1.65 mL
+T61	Reagent 940 945	water
+T62	Reagent 949 957	seawater
+T63	Location 973 977	tube
+T64	Action 982 988	respin
+T65	Action 1000 1006	Remove
+T66	Reagent 1011 1022	supernatant
+T67	Action 1027 1036	resuspend
+T68	Action 1086 1092	Repeat
+T69	Method 1099 1108	10 and 11
+T70	Action 1111 1117	Repeat
+T71	Method 1124 1133	10 and 11
+E1	Action:T1 Acts-on:T6 Site:T8 Product:T10
+E2	Action:T9 Acts-on:T10 Using:T13
+E3	Action:T15 Acts-on:T14 Site:T16
+E4	Action:T18 Acts-on:T10 Product:T21
+E5	Action:T20 Acts-on:T21 Using:T22
+E6	Action:T23 Acts-on:T24 Product:T28
+E7	Action:T27 Acts-on:T28 Product:T30
+E8	Action:T29 Acts-on:T30 Product:T32
+E9	Action:T31 Acts-on:T32 Product:T42
+E10	Action:T33 Acts-on:T34 Site:T35
+E11	Action:T36 Acts-on:T37 Product:T40
+E12	Action:T38 Acts-on:T40 Site:T42
+E13	Action:T43 Site:T45 Product:T51
+E14	Action:T46 Acts-on:T48
+E15	Action:T49 Acts-on:T51 Site:T52
+E16	Action:T53 Site:E15 Acts-on:T55 Product:T57
+E17	Action:T56 Acts-on:T57 Site:T58
+E18	Action:T59 Acts-on:T61 Using:T63
+E19	Action:T64 Acts-on:E18 Product:T66
+E20	Action:T65 Acts-on:T66
+E21	Action:T67 Acts-on:E20
+E22	Action:T68 Using:T69
+E23	Action:T70 Acts-on:E22 Using:T71
+R1	Measure Arg1:T6 Arg2:T2
+R2	Mod-Link Arg1:T6 Arg2:T3
+R3	Measure Arg1:T6 Arg2:T4
+R4	Mod-Link Arg1:T6 Arg2:T5
+R5	Measure Arg1:T8 Arg2:T7
+R6	Mod-Link Arg1:T12 Arg2:T11
+R7	Meronym Arg1:T14 Arg2:T10
+R8	Meronym Arg1:T16 Arg2:T17
+R9	Setting Arg1:E4 Arg2:T19
+R10	Setting Arg1:E6 Arg2:T25
+R11	Setting Arg1:E6 Arg2:T26
+R12	Coreference-Link Arg1:T24 Arg2:T21
+R13	Measure Arg1:T40 Arg2:T39
+R14	Mod-Link Arg1:T42 Arg2:T41
+R15	Setting Arg1:E13 Arg2:T44
+R16	Mod-Link Arg1:T48 Arg2:T47
+R17	Measure Arg1:T51 Arg2:T50
+R18	Measure Arg1:T55 Arg2:T54
+R19	Measure Arg1:T61 Arg2:T60
+R20	Or Arg1:T61 Arg2:T62
+R21	Measure Arg1:T62 Arg2:T60

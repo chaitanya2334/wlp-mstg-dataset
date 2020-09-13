@@ -1,0 +1,71 @@
+T1	Action 33 36	Mix
+T2	Amount 37 42	25 ml
+T3	Generic-Measure 46 50	40 %
+T4	Reagent 51 58	glyoxal
+T5	Action 65 74	deionized
+T6	Amount 80 85	2.5 g
+T7	Modifier 89 94	mixed
+T8	Reagent 95 104	bed resin
+T9	Action 107 110	Mix
+T10	Reagent 115 123	solution
+T11	Device 127 143	magnetic stirrer
+T12	Time 148 158	30 minutes
+T13	Temperature 162 178	room temperature
+T14	Action 261 269	Separate
+T15	Reagent 274 292	deionized material
+T16	Reagent 302 307	resin
+T17	Method 311 320	decanting
+T18	Method 336 346	filtration
+T19	Action 349 355	Repeat
+T20	Method 360 380	deionization process
+T21	Action 567 572	Check
+T22	Reagent 577 603	pH of the glyoxal solution
+T23	Action 607 613	mixing
+T24	Amount 614 620	200 μl
+T25	Reagent 624 631	glyoxal
+T26	Amount 637 641	2 μl
+T27	Concentration 647 657	10 mg / ml
+T28	Reagent 658 674	aqueous solution
+T29	Reagent 678 695	bromocresol green
+T30	Action 882 888	Repeat
+T31	Method 893 913	deionization process
+T32	Reagent 1128 1145	Deionized glyoxal
+T33	Action 1153 1159	stored
+T34	Time 1160 1172	indefinitely
+T35	Temperature 1176 1183	- 20 °C
+T36	Temperature 1189 1196	- 80 °C
+T37	Reagent 1205 1213	nitrogen
+T38	Modifier 1217 1231	tightly sealed
+T39	Location 1232 1246	small aliquots
+T40	Location 1257 1278	microcentrifuge tubes
+T41	Action 1283 1286	Use
+T42	Modifier 1287 1291	each
+T43	Reagent 1292 1299	aliquot
+T44	Action 1317 1324	discard
+E1	Action:T1 Acts-on:T4 Product:T10
+E2	Action:T5 Using:T8
+E3	Action:T9 Acts-on:T10 Using:T11 Product:T15 Product2:T16
+E4	Action:T14 Acts-on:T15 Site:T16 Using:T17 Using2:T18
+E5	Action:T19 Acts-on:E4 Using:T20
+E6	Action:T21 Acts-on:T22 Using:E7
+E7	Action:T23 Acts-on:T25 Acts-on2:T28
+E8	Action:T30 Using:T31 Product:T32
+E9	Action:T33 Acts-on:T32 Site:T37 Site2:T39
+E10	Action:T41 Acts-on:T43
+E11	Action:T44 Acts-on:E10
+R1	Measure Arg1:T4 Arg2:T2
+R2	Measure Arg1:T4 Arg2:T3
+R3	Measure Arg1:T8 Arg2:T6
+R4	Mod-Link Arg1:T8 Arg2:T7
+R5	Setting Arg1:E3 Arg2:T12
+R6	Setting Arg1:E3 Arg2:T13
+R7	Measure Arg1:T25 Arg2:T24
+R8	Measure Arg1:T28 Arg2:T26
+R9	Measure Arg1:T28 Arg2:T27
+R10	Meronym Arg1:T28 Arg2:T29
+R11	Setting Arg1:E9 Arg2:T34
+R12	Setting Arg1:E9 Arg2:T35
+R13	Or Arg1:T35 Arg2:T36
+R14	Mod-Link Arg1:T39 Arg2:T38
+R15	Or Arg1:T39 Arg2:T40
+R16	Mod-Link Arg1:T43 Arg2:T42

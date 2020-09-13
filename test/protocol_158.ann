@@ -1,0 +1,139 @@
+T1	Reagent 57 63	sample
+T2	Action 64 75	preparation
+T3	Action 80 88	staining
+T4	Method 92 97	usual
+T5	Reagent 117 123	sample
+T6	Action 136 140	used
+T7	Reagent 151 161	Cell lines
+T8	Reagent 168 179	Whole blood
+T9	Reagent 186 190	PBMC
+T10	Reagent 197 224	Cells from migration assays
+T11	Modifier 398 408	Vigorously
+T12	Action 409 415	vortex
+T13	Location 420 449	Precision Count Beads™ bottle
+T14	Time 454 469	30 - 40 seconds
+T15	Modifier 480 488	complete
+T16	Action 489 495	mixing
+T17	Action 500 508	break up
+T18	Reagent 512 522	aggregates
+T19	Location 545 552	storage
+T20	Action 555 558	Add
+T21	Amount 559 563	50μl
+T22	Reagent 567 589	Precision Count Beads™
+T23	Modifier 590 593	per
+T24	Reagent 594 600	sample
+T25	Method 668 685	reverse pipetting
+T26	Action 696 705	pipetting
+T27	Modifier 712 720	accurate
+T28	Amount 721 727	amount
+T29	Reagent 731 736	beads
+T30	Action 739 745	Set up
+T31	Measure-Type 750 770	FSC and SSC channels
+T32	Reagent 779 796	cells of interest
+T33	Method 800 811	recommended
+T34	Method 815 833	previously defined
+T35	Measure-Type 854 867	FSC threshold
+T36	Generic-Measure 871 883	not too high
+T37	Measure-Type 954 957	SSC
+T38	Action 968 976	adjusted
+T39	Reagent 1000 1005	cells
+T40	Modifier 1010 1019	optimally
+T41	Action 1020 1027	visible
+T42	Action 1050 1059	acquiring
+T43	Reagent 1062 1068	sample
+T44	Reagent 1072 1094	Precision Count Beads™
+T45	Action 1105 1112	compare
+T46	Reagent 1120 1133	cells profile
+T47	Action 1136 1142	Adjust
+T48	Measure-Type 1143 1155	compensation
+T49	Reagent 1164 1171	samples
+T50	Action 1259 1265	adjust
+T51	Measure-Type 1270 1277	voltage
+T52	Modifier 1281 1290	optimally
+T53	Action 1291 1297	detect
+T54	Reagent 1302 1324	Precision Count Beads™
+T55	Modifier 1328 1336	at least
+T56	Numerical 1337 1340	one
+T57	Location 1341 1360	fluorescent channel
+T58	Action 1363 1370	Acquire
+T59	Reagent 1371 1378	samples
+T60	Device 1384 1398	flow cytometer
+T61	Modifier 1401 1407	gently
+T62	Action 1408 1417	vortexing
+T63	Modifier 1418 1423	every
+T64	Reagent 1424 1430	sample
+T65	Modifier 1462 1470	adequate
+T66	Action 1471 1481	suspension
+T67	Reagent 1489 1493	cell
+T68	Reagent 1498 1514	bead populations
+T69	Method 1517 1530	Data analysis
+T70	Action 1541 1550	performed
+T71	Method 1554 1559	usual
+T72	Action 1563 1571	identify
+T73	Measure-Type 1576 1591	cell population
+T74	Reagent 1598 1609	of interest
+T75	Modifier 1618 1625	ungated
+T76	Device 1626 1630	plot
+T77	Modifier 1638 1642	same
+T78	Reagent 1643 1649	sample
+T79	Reagent 1652 1674	Precision Count Beads™
+T80	Action 1682 1692	visualized
+T81	Numerical 1699 1702	one
+T82	Numerical 1706 1709	two
+T83	Measure-Type 1710 1732	fluorescent parameters
+T84	Location 1739 1743	gate
+T85	Action 1744 1747	set
+T86	Reagent 1759 1774	bead population
+E1	Action:T2 Product:T1 Using:T4
+E2	Action:T3 Acts-on:T1 Acts-on2:E1 Using:T4 Product:T24
+E3	Action:T6 Product:T5 Using:T7
+E4	Action:T12 Acts-on:T13
+E5	Action:T16 Acts-on:T18
+E6	Action:T17 Acts-on:T18
+E7	Action:T20 Acts-on:T22 Site:T24 Product:T32
+E8	Action:T26 Using:T25 Acts-on:T29
+E9	Action:T30 Measure-Type-Link:T31 Acts-on:T32 Using:T33
+E10	Action:T38 Acts-on:E9 Measure-Type-Link:T37
+E11	Action:T41 Acts-on:T39
+E12	Action:T42 Acts-on:T43
+E13	Action:T45 Acts-on:E12 Acts-on2:T43 Site:T46
+E14	Action:T47 Measure-Type-Link:T48 Acts-on:T49
+E15	Action:T50 Measure-Type-Link:T51
+E16	Action:T53 Acts-on:T54 Site:T57
+E17	Action:T58 Acts-on:T59 Site:T60
+E18	Action:T62 Acts-on:T64
+E19	Action:T66 Acts-on:T67 Acts-on2:T68
+E20	Action:T70 Using:T69 Using2:T71
+E21	Action:T72 Measure-Type-Link:T73 Acts-on:T74
+E22	Action:T80 Acts-on:T76 Measure-Type-Link:T83
+E23	Action:T85 Acts-on:T84 Site:T86
+R1	Or Arg1:T7 Arg2:T8
+R2	Or Arg1:T8 Arg2:T9
+R3	Or Arg1:T9 Arg2:T10
+R4	Mod-Link Arg1:E4 Arg2:T11
+R5	Setting Arg1:E4 Arg2:T14
+R6	Enables Arg1:E4 Arg2:E5
+R7	Enables Arg1:E4 Arg2:E6
+R8	Mod-Link Arg1:E5 Arg2:T15
+R9	Measure Arg1:T22 Arg2:T21
+R10	Mod-Link Arg1:T24 Arg2:T23
+R11	Mod-Link Arg1:T28 Arg2:T27
+R12	Measure Arg1:T29 Arg2:T28
+R13	Or Arg1:T33 Arg2:T34
+R14	Enables Arg1:E10 Arg2:E11
+R15	Mod-Link Arg1:E11 Arg2:T40
+R16	Enables Arg1:E12 Arg2:E10
+R17	Meronym Arg1:T43 Arg2:T44
+R18	Enables Arg1:E15 Arg2:E16
+R19	Mod-Link Arg1:E16 Arg2:T52
+R20	Or Arg1:T56 Arg2:T55
+R21	Measure Arg1:T57 Arg2:T56
+R22	Mod-Link Arg1:E18 Arg2:T61
+R23	Enables Arg1:E18 Arg2:E19
+R24	Mod-Link Arg1:T64 Arg2:T63
+R25	Mod-Link Arg1:E19 Arg2:T65
+R26	Mod-Link Arg1:T76 Arg2:T75
+R27	Meronym Arg1:T76 Arg2:T78
+R28	Meronym Arg1:T76 Arg2:T79
+R29	Mod-Link Arg1:T78 Arg2:T77
+R30	Or Arg1:T81 Arg2:T82

@@ -1,0 +1,93 @@
+T1	Action 31 36	Plate
+T2	Reagent 37 42	cells
+T3	Action 59 66	Plating
+T4	Reagent 67 82	Prochlorococcus
+T5	Reagent 87 108	Synechococcus strains
+T6	Reagent 112 123	top agarose
+T7	Reagent 128 141	plaque assays
+T8	Reagent 149 156	plaques
+T9	Action 176 180	pick
+T10	Mention 181 185	them
+T11	Method 196 214	“coring” technique
+T12	Action 220 226	follow
+T13	Reagent 231 246	liquid cultures
+T14	Action 266 271	check
+T15	Device 277 280	eye
+T16	Time 289 303	couple of days
+T17	Mention 321 325	them
+T18	Action 331 336	lysed
+T19	Mention 366 370	them
+T20	Modifier 373 378	quick
+T21	Speed 379 390	LOW - SPEED
+T22	Action 391 397	vortex
+T23	Speed 400 403	< 4
+T24	Reagent 417 422	cells
+T25	Action 423 426	off
+T26	Location 431 437	bottom
+T27	Location 445 449	tube
+T28	Action 475 491	without spilling
+T29	Reagent 492 497	cells
+T30	Action 515 524	“harvest”
+T31	Reagent 529 539	cyanophage
+T32	Action 558 564	decant
+T33	Location 569 573	tube
+T34	Numerical 579 582	two
+T35	Amount 583 588	50 ml
+T36	Modifier 589 602	orange capped
+T37	Location 603 608	tubes
+T38	Action 611 615	Spin
+T39	Device 623 644	Beckman JA - 17 rotor
+T40	Speed 647 650	10K
+T41	Speed 653 662	~ 13,800g
+T42	Temperature 667 671	17°C
+T43	Time 674 684	20 minutes
+T44	Action 687 695	Transfer
+T45	Reagent 700 711	supernatant
+T46	Numerical 717 720	two
+T47	Modifier 721 726	fresh
+T48	Modifier 727 740	pre - labeled
+T49	Modifier 741 754	acid - washed
+T50	Modifier 755 775	glass black - capped
+T51	Location 776 781	tubes
+E1	Action:T1 Product:T2 Product2:T8
+E2	Action:T3 Acts-on:T4 Acts-on2:T5 Site:T6 Using:T7
+E3	Action:T9 Using:T11 Acts-on:T10 Product:T13
+E4	Action:T12 Acts-on:T13 Product:T31 Product2:T33
+E5	Action:T14 Using:T15
+E6	Action:T18 Acts-on:T17
+E7	Action:T22 Acts-on:T19
+E8	Action:T25 Acts-on:T24 Site:T26
+E9	Action:T28 Acts-on:T29
+E10	Action:T30 Acts-on:T31
+E11	Action:T32 Acts-on:T33 Site:T37
+E12	Action:T38 Using:T39 Acts-on:E10 Product:T45
+E13	Action:T44 Acts-on:T45 Site:T51
+R1	Setting Arg1:E12 Arg2:T40
+R2	Setting Arg1:E12 Arg2:T42
+R3	Setting Arg1:E12 Arg2:T43
+R4	Mod-Link Arg1:T51 Arg2:T47
+R5	Coreference-Link Arg1:T10 Arg2:T8
+R6	Mod-Link Arg1:T37 Arg2:T36
+R7	Measure Arg1:T37 Arg2:T35
+R8	Measure Arg1:T37 Arg2:T34
+R9	Or Arg1:T40 Arg2:T41
+R10	Mod-Link Arg1:T51 Arg2:T50
+R11	Mod-Link Arg1:T51 Arg2:T49
+R12	Mod-Link Arg1:T51 Arg2:T48
+R13	Setting Arg1:T51 Arg2:T46
+R14	Meronym Arg1:T26 Arg2:T27
+R15	Mod-Link Arg1:T21 Arg2:T20
+R16	Setting Arg1:E7 Arg2:T21
+R17	Or Arg1:T21 Arg2:T23
+R18	Enables Arg1:E2 Arg2:E1
+R19	Enables Arg1:E5 Arg2:E6
+R20	Setting Arg1:E5 Arg2:T16
+R21	Enables Arg1:E6 Arg2:E4
+R22	Coreference-Link Arg1:T17 Arg2:T13
+R23	Enables Arg1:E7 Arg2:E8
+R24	Enables Arg1:E9 Arg2:E8
+R25	Overlaps Arg1:E8 Arg2:E5
+R26	Coreference-Link Arg1:T19 Arg2:T13
+R27	Coreference-Link Arg1:T24 Arg2:T13
+R28	Coreference-Link Arg1:T29 Arg2:T13
+R29	Enables Arg1:E11 Arg2:E10

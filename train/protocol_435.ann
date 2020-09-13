@@ -1,0 +1,125 @@
+T1	Action 72 74	Do
+T2	Method 77 89	plaque assay
+T3	Action 93 102	determine
+T4	Concentration 107 115	PFU / ml
+T5	Reagent 123 129	lysate
+T6	Action 146 155	Inoculate
+T7	Modifier 158 161	new
+T8	Reagent 162 169	culture
+T9	Action 254 262	transfer
+T10	Amount 263 268	10 ml
+T11	Reagent 277 284	culture
+T12	Amount 288 294	500 ml
+T13	Reagent 298 307	new media
+T14	Location 313 327	Fernbach flask
+T15	Action 444 448	take
+T16	Time 451 459	'time 0'
+T17	Method 460 474	growth reading
+T18	Action 529 534	Graph
+T19	Device 539 546	results
+T20	Action 559 568	Determine
+T21	Device 573 586	concentration
+T22	Action 649 658	Calculate
+T23	Generic-Measure 663 675	total number
+T24	Reagent 679 684	cells
+T25	Amount 701 707	500 ml
+T26	Reagent 708 716	cultures
+T27	Action 719 728	Calculate
+T28	Reagent 738 744	phages
+T29	Measure-Type 764 767	MOI
+T30	Numerical 768 769	3
+T31	Action 772 775	Add
+T32	Reagent 776 782	phages
+T33	Location 790 808	experimental flask
+T34	Generic-Measure 816 821	equal
+T35	Measure-Type 822 828	volume
+T36	Reagent 832 835	MSM
+T37	Location 843 856	control flask
+T38	Action 861 866	start
+T39	Device 872 877	timer
+T40	Modifier 880 891	Immediately
+T41	Action 894 900	dilute
+T42	Reagent 905 914	infection
+T43	Concentration 915 920	1 : 1
+T44	Location 924 933	MLB media
+T45	Action 946 949	add
+T46	Amount 950 956	500 ml
+T47	Modifier 957 962	fresh
+T48	Reagent 963 968	media
+T49	Modifier 972 976	each
+T50	Location 977 982	flask
+T51	Action 987 992	swirl
+T52	Action 996 999	mix
+T53	Action 1002 1006	Take
+T54	Reagent 1009 1015	sample
+T55	Modifier 1016 1027	immediately
+T56	Time 1147 1159	The next day
+T57	Action 1162 1167	count
+T58	Reagent 1172 1179	plaques
+T59	Modifier 1183 1186	all
+T60	Location 1187 1193	plates
+T61	Time 1231 1243	The next day
+T62	Action 1246 1251	count
+T63	Modifier 1256 1259	new
+T64	Reagent 1260 1267	plaques
+T65	Action 1355 1363	Continue
+T66	Method 1364 1372	sampling
+T67	Time 1389 1396	8 hours
+T68	Action 1399 1408	Calculate
+T69	Device 1409 1417	PFU / ml
+T70	Action 1528 1533	Graph
+T71	Device 1538 1545	results
+T72	Action 1548 1557	Calculate
+T73	Device 1558 1568	burst size
+E1	Action:T1 Using:T2
+E2	Action:T3 Acts-on:T5
+E3	Action:T6 Acts-on:T8 Acts-on2:E2 Product:T11
+E4	Action:T9 Acts-on:T11 Using:T13 Site:T14
+E5	Action:T15 Using:T17 Acts-on:E4 Product:T26
+E6	Action:T18 Acts-on:T19 Acts-on2:E5
+E7	Action:T20 Acts-on:T21 Acts-on2:E5
+E8	Action:T22 Acts-on:T24 Acts-on2:E7
+E9	Action:T27 Count:T30 Product:T28 Acts-on:E8
+E10	Action:T31 Acts-on:T32 Site:T33 Acts-on2:T36 Site2:T37 Product:T50
+E11	Action:T38 Acts-on:T39
+E12	Action:T41 Acts-on:T42 Site:T44
+E13	Action:T45 Acts-on:T48 Site:T50
+E14	Action:T51 Acts-on:E13
+E15	Action:T52 Acts-on:E13 Product:T54
+E16	Action:T53 Acts-on:T54 Product:T58
+E17	Action:T57 Acts-on:T58 Product:T64
+E18	Action:T62 Acts-on:T64
+E19	Action:T65 Using:T66 Acts-on:E18
+E20	Action:T68 Acts-on:T69 Acts-on2:E19
+E21	Action:T70 Acts-on:T71 Acts-on2:E20
+E22	Action:T72 Acts-on:T73 Acts-on2:E21
+R1	Mod-Link Arg1:E16 Arg2:T55
+R2	Measure Arg1:T11 Arg2:T10
+R3	Measure Arg1:T13 Arg2:T12
+R4	Measure Arg1:T24 Arg2:T23
+R5	Measure Arg1:T26 Arg2:T25
+R6	Setting Arg1:E12 Arg2:T43
+R7	Mod-Link Arg1:T48 Arg2:T47
+R8	Measure Arg1:T48 Arg2:T46
+R9	Mod-Link Arg1:T50 Arg2:T49
+R10	Mod-Link Arg1:E12 Arg2:T40
+R11	Mod-Link Arg1:T60 Arg2:T59
+R12	Mod-Link Arg1:T64 Arg2:T63
+R13	Setting Arg1:E17 Arg2:T56
+R14	Setting Arg1:E18 Arg2:T61
+R15	Setting Arg1:E19 Arg2:T67
+R16	Measure Arg1:T5 Arg2:T4
+R17	Mod-Link Arg1:T8 Arg2:T7
+R18	Enables Arg1:E1 Arg2:E2
+R19	Meronym Arg1:T13 Arg2:T14
+R20	Setting Arg1:E5 Arg2:T16
+R21	Meronym Arg1:T24 Arg2:T26
+R22	Of-Type Arg1:T30 Arg2:T29
+R23	Coreference-Link Arg1:T28 Arg2:T32
+R24	Of-Type Arg1:T34 Arg2:T35
+R25	Measure Arg1:T36 Arg2:T34
+R26	Overlaps Arg1:E11 Arg2:E10
+R27	Enables Arg1:E13 Arg2:E12
+R28	Meronym Arg1:T42 Arg2:T50
+R29	Enables Arg1:E14 Arg2:E15
+R30	Meronym Arg1:T58 Arg2:T60

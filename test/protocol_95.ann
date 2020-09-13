@@ -1,0 +1,158 @@
+T1	Action 42 49	Prepare
+T2	Reagent 50 61	base plates
+T3	Action 62 69	Prepare
+T4	Reagent 70 88	top agar / agarose
+T5	Action 91 98	Prepare
+T6	Reagent 99 121	target indicator cells
+T7	Action 124 131	Prepare
+T8	Reagent 136 142	sample
+T9	Reagent 145 166	Environmental samples
+T10	Action 177 188	prefiltered
+T11	Method 192 209	described earlier
+T12	Action 212 218	Adsorb
+T13	Amount 219 231	50 to 100 µL
+T14	Reagent 232 238	sample
+T15	Action 399 405	strain
+T16	Reagent 406 409	DC2
+T17	Modifier 412 420	constant
+T18	Generic-Measure 421 444	5–25 µmol quanta m–2s–1
+T19	Temperature 450 454	25°C
+T20	Action 459 466	agitate
+T21	Modifier 467 479	occasionally
+T22	Action 483 503	encourage adsorption
+T23	Reagent 507 512	phage
+T24	Reagent 516 520	host
+T25	Time 529 532	1 h
+T26	Action 535 543	transfer
+T27	Reagent 544 564	virus : host mixture
+T28	Amount 568 574	2.5 mL
+T29	Reagent 575 584	soft agar
+T30	Modifier 587 605	Quickly and gently
+T31	Action 606 612	vortex
+T32	Reagent 617 624	mixture
+T33	Action 629 633	pour
+T34	Location 638 649	entire tube
+T35	Reagent 650 658	contents
+T36	Location 668 675	surface
+T37	Location 683 693	agar plate
+T38	Modifier 714 720	gently
+T39	Action 721 735	rock and swirl
+T40	Location 740 745	plate
+T41	Action 749 755	spread
+T42	Reagent 760 767	mixture
+T43	Modifier 768 774	evenly
+T44	Location 784 797	plate surface
+T45	Location 845 857	flat surface
+T46	Action 861 867	harden
+T47	Time 876 879	1 h
+T48	Action 884 891	Prepare
+T49	Location 894 907	control plate
+T50	Reagent 924 929	cells
+T51	Action 961 968	monitor
+T52	Measure-Type 969 980	cell growth
+T53	Action 983 987	Seal
+T54	Location 988 993	plate
+T55	Seal 999 1007	parafilm
+T56	Action 1010 1014	flip
+T57	Location 1015 1021	plates
+T58	Method 1022 1033	upside down
+T59	Action 1280 1286	Choose
+T60	Reagent 1289 1311	well - isolated plaque
+T61	Location 1317 1322	plate
+T62	Generic-Measure 1347 1355	100 PFUs
+T63	Action 1358 1365	Harvest
+T64	Reagent 1370 1376	plaque
+T65	Device 1385 1400	Pasteur pipette
+T66	Modifier 1403 1409	gently
+T67	Action 1410 1415	press
+T68	Device 1420 1438	tip of the pipette
+T69	Reagent 1448 1454	plaque
+T70	Reagent 1462 1473	bottom agar
+T71	Modifier 1482 1488	gentle
+T72	Method 1489 1496	suction
+T73	Action 1499 1505	remove
+T74	Reagent 1510 1514	plug
+T75	Action 1517 1525	Transfer
+T76	Reagent 1530 1534	plug
+T77	Amount 1538 1542	1 mL
+T78	Reagent 1543 1548	media
+T79	Action 1553 1559	vortex
+T80	Modifier 1560 1567	briefly
+T81	Action 1585 1590	Place
+T82	Location 1595 1599	tube
+T83	Temperature 1603 1606	4°C
+T84	Reagent 1621 1636	phages particle
+T85	Action 1640 1645	elute
+T86	Reagent 1655 1659	plug
+T87	Time 1660 1669	overnight
+T88	Reagent 1680 1693	plaque lysate
+T89	Action 1696 1702	Vortex
+T90	Action 1707 1717	centrifuge
+T91	Reagent 1722 1728	sample
+T92	Action 1792 1800	Transfer
+T93	Reagent 1805 1816	supernatant
+T94	Modifier 1822 1825	new
+T95	Location 1826 1830	tube
+T96	Action 1897 1903	Repeat
+T97	Method 1904 1918	steps 14 to 19
+T98	Numerical 1936 1937	3
+T99	Reagent 1938 1945	plaques
+E1	Action:T1 Product:T2
+E2	Action:T3 Product:T4
+E3	Action:T5 Product:T6
+E4	Action:T7 Product:T8 Using:E5
+E5	Action:T10 Acts-on:T9 Using:T11
+E6	Action:T12 Acts-on:T14
+E7	Action:T15 Acts-on:T16
+E8	Action:T20 Acts-on:E6
+E9	Action:T22 Acts-on:T23 Site:T24 Product:T27
+E10	Action:T26 Acts-on:T27 Site:T29 Product:T32
+E11	Action:T31 Acts-on:T32 Product:T35
+E12	Action:T33 Acts-on:T35 Site:T36 Product:T40
+E13	Action:T39 Acts-on:T40
+E14	Action:T41 Using:E13 Acts-on:T42 Site:T44
+E15	Action:T46 Acts-on:T45
+E16	Action:T48 Product:T49
+E17	Action:T51 Using:T49 Measure-Type-Link:T52
+E18	Action:T53 Acts-on:T54 Using:T55 Product:T57
+E19	Action:T56 Acts-on:T57 Using:T58
+E20	Action:T59 Acts-on:T60
+E21	Action:T63 Acts-on:T64 Using:T65
+E22	Action:T67 Acts-on:T68 Site:T69 Site2:T70 Using:T72
+E23	Action:T73 Acts-on:T74 Product:T76
+E24	Action:T75 Acts-on:T76 Site:T78
+E25	Action:T79 Acts-on:E24 Product:T82
+E26	Action:T81 Acts-on:T82 Product:T84
+E27	Action:T85 Acts-on:T84 Site:T86 Product:T88
+E28	Action:T89 Acts-on:T91
+E29	Action:T90 Acts-on:T91 Product:T93
+E30	Action:T92 Acts-on:T93 Site:T95
+E31	Action:T96 Using:T97 Product:T99
+R1	Coreference-Link Arg1:T2 Arg2:T37
+R2	Coreference-Link Arg1:T4 Arg2:T29
+R3	Coreference-Link Arg1:T8 Arg2:T14
+R4	Measure Arg1:T14 Arg2:T13
+R5	Setting Arg1:E7 Arg2:T19
+R6	Measure Arg1:T16 Arg2:T18
+R7	Mod-Link Arg1:T18 Arg2:T17
+R8	Mod-Link Arg1:E8 Arg2:T21
+R9	Setting Arg1:E10 Arg2:T25
+R10	Measure Arg1:T29 Arg2:T28
+R11	Mod-Link Arg1:E11 Arg2:T30
+R12	Meronym Arg1:T35 Arg2:T34
+R13	Meronym Arg1:T36 Arg2:T37
+R14	Mod-Link Arg1:E13 Arg2:T38
+R15	Mod-Link Arg1:T42 Arg2:T43
+R16	Setting Arg1:E15 Arg2:T47
+R17	Coreference-Link Arg1:T49 Arg2:T54
+R18	Meronym Arg1:T50 Arg2:T49
+R19	Meronym Arg1:T60 Arg2:T61
+R20	Measure Arg1:T60 Arg2:T62
+R21	Mod-Link Arg1:E22 Arg2:T66
+R22	Measure Arg1:T78 Arg2:T77
+R23	Mod-Link Arg1:E25 Arg2:T80
+R24	Setting Arg1:E26 Arg2:T83
+R25	Setting Arg1:E27 Arg2:T87
+R26	Coreference-Link Arg1:T88 Arg2:T91
+R27	Mod-Link Arg1:T95 Arg2:T94
+R28	Measure Arg1:T99 Arg2:T98

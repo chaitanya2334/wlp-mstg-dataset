@@ -1,0 +1,72 @@
+T1	Action 40 44	Take
+T2	Amount 45 49	1 ml
+T3	Reagent 50 56	sample
+T4	Reagent 65 86	cyanobacteria culture
+T5	Action 91 95	spin
+T6	Mention 96 98	it
+T7	Speed 107 117	14,000 rpm
+T8	Time 122 127	5 min
+T9	Action 130 137	Discard
+T10	Amount 138 144	0.9 ml
+T11	Reagent 152 163	supernatant
+T12	Action 166 175	Resuspend
+T13	Reagent 180 186	pellet
+T14	Modifier 194 203	remaining
+T15	Amount 204 210	100 µl
+T16	Action 213 216	Add
+T17	Amount 217 223	0.9 ml
+T18	Concentration 227 232	100 %
+T19	Reagent 233 241	methanol
+T20	Reagent 249 255	sample
+T21	Action 260 263	mix
+T22	Modifier 264 274	thoroughly
+T23	Action 278 287	vortexing
+T24	Action 290 298	Incubate
+T25	Reagent 303 310	samples
+T26	Location 318 322	dark
+T27	Time 327 333	30 min
+T28	Temperature 337 341	4 °C
+T29	Device 349 355	fridge
+T30	Action 358 367	Spin down
+T31	Reagent 368 375	samples
+T32	Speed 385 395	14,000 rpm
+T33	Time 400 405	5 min
+T34	Action 408 416	Transfer
+T35	Reagent 417 428	supernatant
+T36	Location 436 443	cuvette
+T37	Action 448 455	measure
+T38	Measure-Type 460 470	extinction
+T39	Generic-Measure 474 480	665 nm
+T40	Action 483 486	Use
+T41	Concentration 487 491	90 %
+T42	Reagent 492 500	methanol
+T43	Reagent 508 526	reference solution
+E1	Action:T1 Acts-on:T3 Product:T6
+E2	Action:T5 Acts-on:T6 Product:T11
+E3	Action:T9 Acts-on:T11 Product:T13
+E4	Action:T12 Acts-on:T13 Product:T20
+E5	Action:T16 Acts-on:T19 Site:T20
+E6	Action:T21 Acts-on:E5 Product:T25
+E7	Action:T23 Acts-on:E5
+E8	Action:T24 Acts-on:T25 Site:T26 Using:T29 Product:T31
+E9	Action:T30 Acts-on:T31 Product:T35
+E10	Action:T34 Acts-on:T35 Site:T36
+E11	Action:T37 Measure-Type-Link:T38 Acts-on:E10 Acts-on2:T43
+E12	Action:T40 Acts-on:T42 Product:T43
+R1	Setting Arg1:E2 Arg2:T7
+R2	Setting Arg1:E2 Arg2:T8
+R3	Measure Arg1:T3 Arg2:T2
+R4	Meronym Arg1:T3 Arg2:T4
+R5	Measure Arg1:T11 Arg2:T10
+R6	Mod-Link Arg1:T15 Arg2:T14
+R7	Mod-Link Arg1:E6 Arg2:T22
+R8	Measure Arg1:T19 Arg2:T18
+R9	Measure Arg1:T19 Arg2:T17
+R10	Setting Arg1:E8 Arg2:T27
+R11	Setting Arg1:E8 Arg2:T28
+R12	Setting Arg1:E9 Arg2:T32
+R13	Setting Arg1:E9 Arg2:T33
+R14	Setting Arg1:E11 Arg2:T39
+R15	Measure Arg1:T42 Arg2:T41
+R16	Setting Arg1:E4 Arg2:T15
+R17	Enables Arg1:E7 Arg2:E6

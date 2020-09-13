@@ -1,0 +1,160 @@
+T1	Action 46 53	Prepare
+T2	Modifier 56 62	single
+T3	Reagent 63 78	cell suspension
+T4	Action 83 92	resuspend
+T5	Reagent 97 102	cells
+T6	Modifier 108 116	ice cold
+T7	Reagent 117 139	cell separation buffer
+T8	Action 174 178	Pass
+T9	Reagent 183 188	cells
+T10	Size 199 204	70 μm
+T11	Device 205 211	filter
+T12	Action 214 224	centrifuge
+T13	Speed 227 234	300 x g
+T14	Time 239 248	5 minutes
+T15	Action 253 260	discard
+T16	Reagent 265 276	supernatant
+T17	Action 281 290	resuspend
+T18	Reagent 295 300	cells
+T19	Reagent 304 326	cell separation buffer
+T20	Action 329 335	Adjust
+T21	Measure-Type 340 358	cell concentration
+T22	Generic-Measure 362 380	1 x 108 cells / mL
+T23	Action 383 390	Aliquot
+T24	Amount 391 397	100 μL
+T25	Numerical 400 403	107
+T26	Reagent 404 409	cells
+T27	Modifier 419 422	new
+T28	Location 423 427	tube
+T29	Action 430 433	Add
+T30	Amount 434 439	10 μL
+T31	Modifier 447 460	pre - diluted
+T32	Reagent 461 487	Biotin - Antibody Cocktail
+T33	Action 490 493	mix
+T34	Modifier 494 498	well
+T35	Action 503 511	incubate
+T36	Location 515 518	ice
+T37	Time 523 533	15 minutes
+T38	Action 597 600	add
+T39	Amount 601 607	100 μL
+T40	Modifier 611 624	pre - diluted
+T41	Reagent 625 642	antibody cocktail
+T42	Action 647 657	separating
+T43	Generic-Measure 658 665	1 x 108
+T44	Reagent 666 671	cells
+T45	Amount 675 678	1ml
+T46	Reagent 682 688	buffer
+T47	Action 768 771	Add
+T48	Reagent 772 794	cell separation buffer
+T49	Modifier 795 800	up to
+T50	Amount 801 805	4 mL
+T51	Action 808 818	centrifuge
+T52	Reagent 823 828	cells
+T53	Speed 832 839	300 x g
+T54	Time 844 853	5 minutes
+T55	Action 856 863	Discard
+T56	Reagent 864 875	supernatant
+T57	Action 880 889	resuspend
+T58	Amount 893 899	100 μL
+T59	Reagent 903 909	buffer
+T60	Action 912 918	Vortex
+T61	Modifier 923 946	Streptavidin conjugated
+T62	Reagent 947 956	Nanobeads
+T63	Speed 977 986	max speed
+T64	Generic-Measure 989 998	5 touches
+T65	Action 1005 1012	prepare
+T66	Reagent 1017 1026	dilutions
+T67	Action 1037 1040	Add
+T68	Amount 1041 1046	10 μL
+T69	Modifier 1050 1063	pre - diluted
+T70	Reagent 1064 1086	Streptavidin Nanobeads
+T71	Action 1089 1092	Mix
+T72	Modifier 1093 1097	well
+T73	Action 1102 1110	incubate
+T74	Location 1114 1117	ice
+T75	Time 1122 1132	15 minutes
+T76	Action 1208 1211	add
+T77	Amount 1212 1218	100 μL
+T78	Modifier 1222 1235	pre - diluted
+T79	Reagent 1236 1245	Nanobeads
+T80	Action 1250 1260	separating
+T81	Generic-Measure 1261 1268	1 x 108
+T82	Reagent 1269 1274	cells
+T83	Amount 1278 1281	1ml
+T84	Reagent 1285 1291	buffer
+T85	Action 1516 1524	maximize
+T86	Action 1541 1548	disrupt
+T87	Reagent 1553 1563	aggregates
+T88	Action 1567 1576	pipetting
+T89	Reagent 1581 1589	solution
+T90	Method 1590 1601	up and down
+T91	Action 1604 1613	Resuspend
+T92	Reagent 1618 1623	cells
+T93	Modifier 1627 1638	appropriate
+T94	Amount 1639 1645	amount
+T95	Reagent 1649 1655	buffer
+E1	Action:T1 Product:T3
+E2	Action:T4 Acts-on:T5 Using:T7
+E3	Action:T8 Acts-on:T9 Site:T11
+E4	Action:T12 Acts-on:E3
+E5	Action:T15 Acts-on:T16
+E6	Action:T17 Acts-on:T18 Using:T19
+E7	Action:T20 Acts-on:E6 Measure-Type-Link:T21
+E8	Action:T23 Acts-on:T26 Site:T28
+E9	Action:T29 Acts-on:T32
+E10	Action:T33 Acts-on:E9
+E11	Action:T35 Acts-on:E10 Acts-on2:T36
+E12	Action:T38 Acts-on:T41
+E13	Action:T42 Acts-on:T44 Site:T46
+E14	Action:T47 Acts-on:T48
+E15	Action:T51 Acts-on:T52 Product:T56
+E16	Action:T55 Acts-on:T56
+E17	Action:T57 Acts-on:T56 Site:T59
+E18	Action:T60 Acts-on:T62
+E19	Action:T65 Product:T66
+E20	Action:T67 Acts-on:T70
+E21	Action:T71 Acts-on:E20
+E22	Action:T73 Acts-on:E21 Acts-on2:T74
+E23	Action:T76 Acts-on:T79
+E24	Action:T80 Acts-on:T82 Site:T84
+E25	Action:T85 
+E26	Action:T86 Acts-on:T87
+E27	Action:T88 Acts-on:T89 Using:T90
+E28	Action:T91 Acts-on:T92 Site:T95
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Setting Arg1:T11 Arg2:T10
+R4	Setting Arg1:E4 Arg2:T13
+R5	Setting Arg1:E4 Arg2:T14
+R6	Setting Arg1:E7 Arg2:T22
+R7	Or Arg1:T25 Arg2:T24
+R8	Measure Arg1:T26 Arg2:T25
+R9	Mod-Link Arg1:T28 Arg2:T27
+R10	Measure Arg1:T32 Arg2:T30
+R11	Mod-Link Arg1:T32 Arg2:T31
+R12	Mod-Link Arg1:E10 Arg2:T34
+R13	Setting Arg1:E11 Arg2:T37
+R14	Measure Arg1:T41 Arg2:T39
+R15	Mod-Link Arg1:T41 Arg2:T40
+R16	Measure Arg1:T44 Arg2:T43
+R17	Measure Arg1:T46 Arg2:T45
+R18	Measure Arg1:T48 Arg2:T50
+R19	Mod-Link Arg1:T50 Arg2:T49
+R20	Setting Arg1:E15 Arg2:T53
+R21	Setting Arg1:E15 Arg2:T54
+R22	Measure Arg1:T59 Arg2:T58
+R23	Setting Arg1:E18 Arg2:T63
+R24	Setting Arg1:E18 Arg2:T64
+R25	Mod-Link Arg1:T62 Arg2:T61
+R26	Measure Arg1:T70 Arg2:T68
+R27	Mod-Link Arg1:T70 Arg2:T69
+R28	Mod-Link Arg1:E21 Arg2:T72
+R29	Setting Arg1:E22 Arg2:T75
+R30	Enables Arg1:E23 Arg2:E24
+R31	Measure Arg1:T79 Arg2:T77
+R32	Mod-Link Arg1:T79 Arg2:T78
+R33	Measure Arg1:T82 Arg2:T81
+R34	Measure Arg1:T84 Arg2:T83
+R35	Enables Arg1:E27 Arg2:E26
+R36	Mod-Link Arg1:T94 Arg2:T93
+R37	Measure Arg1:T95 Arg2:T94

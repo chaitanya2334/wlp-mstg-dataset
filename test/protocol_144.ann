@@ -1,0 +1,68 @@
+T1	Action 23 30	Prepare
+T2	Reagent 31 42	PCR mixture
+T3	Action 45 52	Perform
+T4	Reagent 57 60	PCR
+T5	Action 75 78	add
+T6	Amount 79 82	1ul
+T7	Reagent 86 90	DpnI
+T8	Modifier 94 98	each
+T9	Location 99 107	pcr tube
+T10	Action 110 118	Incubate
+T11	Time 119 133	1 hour - O / N
+T12	Temperature 137 140	37C
+T13	Action 143 153	PCR Purify
+T14	Device 160 170	Qaigen kit
+T15	Action 173 176	Add
+T16	Amount 177 180	5ul
+T17	Reagent 184 196	PCR reaction
+T18	Amount 202 206	25ul
+T19	Reagent 207 215	DH5alpha
+T20	Reagent 219 228	TG1 cells
+T21	Action 231 239	Incubate
+T22	Location 240 246	on ice
+T23	Time 251 260	5 minutes
+T24	Action 263 272	Heatshock
+T25	Temperature 276 279	42C
+T26	Time 284 294	45 seconds
+T27	Action 297 304	Recover
+T28	Location 305 311	on ice
+T29	Time 316 325	2 minutes
+T30	Action 328 331	Add
+T31	Amount 332 337	200ul
+T32	Reagent 338 340	LB
+T33	Modifier 380 384	each
+T34	Reagent 385 393	reaction
+T35	Action 396 401	Shake
+T36	Temperature 405 408	37C
+T37	Time 413 419	1 hour
+T38	Action 422 427	Plate
+T39	Modifier 431 437	warmed
+T40	Location 438 455	antibiotic plates
+E1	Action:T1 Acts-on:T2
+E2	Action:T3 Acts-on:T4 Product:T9
+E3	Action:T5 Acts-on:T7 Site:T9
+E4	Action:T10 Acts-on:E3
+E5	Action:T13 Acts-on:E4 Using:T14 Product:T17
+E6	Action:T15 Acts-on:T17 Site:T19
+E7	Action:T21 Acts-on:E6 Site:T22
+E8	Action:T24 Acts-on:E7
+E9	Action:T27 Acts-on:E8 Site:T28 Product:T34
+E10	Action:T30 Acts-on:T32 Site:T34
+E11	Action:T35 Acts-on:E10
+E12	Action:T38 Acts-on:E11 Site:T40
+R1	Measure Arg1:T7 Arg2:T6
+R2	Mod-Link Arg1:T9 Arg2:T8
+R3	Setting Arg1:E4 Arg2:T11
+R4	Setting Arg1:E4 Arg2:T12
+R5	Measure Arg1:T17 Arg2:T16
+R6	Measure Arg1:T19 Arg2:T18
+R7	Or Arg1:T19 Arg2:T20
+R8	Setting Arg1:E7 Arg2:T23
+R9	Setting Arg1:E8 Arg2:T25
+R10	Setting Arg1:E8 Arg2:T26
+R11	Setting Arg1:E9 Arg2:T29
+R12	Measure Arg1:T32 Arg2:T31
+R13	Mod-Link Arg1:T34 Arg2:T33
+R14	Setting Arg1:E11 Arg2:T36
+R15	Setting Arg1:E11 Arg2:T37
+R16	Mod-Link Arg1:T40 Arg2:T39

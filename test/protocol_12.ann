@@ -1,0 +1,70 @@
+T1	Action 16 23	Prepare
+T2	Concentration 24 29	0.5 M
+T3	Reagent 30 34	EDTA
+T4	Action 37 44	Prepare
+T5	Concentration 45 48	1 M
+T6	Reagent 49 63	Sodium citrate
+T7	Amount 71 72	2
+T8	Amount 76 79	3 L
+T9	Location 80 85	flask
+T10	Action 86 89	mix
+T11	Amount 90 98	1,400 mL
+T12	Reagent 99 111	MilliQ water
+T13	Amount 117 122	60 mL
+T14	Concentration 123 127	0.5M
+T15	Reagent 128 132	EDTA
+T16	Amount 137 144	37.5 mL
+T17	Concentration 145 147	1M
+T18	Reagent 148 162	sodium citrate
+T19	Action 168 176	stirring
+T20	Action 219 222	add
+T21	Amount 223 230	1.05 kg
+T22	Amount 233 242	= 1,050 g
+T23	Reagent 245 261	Ammonium sulfate
+T24	Method 265 278	100 g amounts
+T25	Action 281 285	Stir
+T26	Time 286 294	~ 30 min
+T27	Location 298 307	hot plate
+T28	Temperature 315 318	low
+T29	Reagent 327 335	solution
+T30	Action 339 343	cool
+T31	Temperature 347 363	room temperature
+T32	Modifier 368 376	at least
+T33	Time 377 382	30min
+T34	Action 418 424	Filter
+T35	Reagent 425 433	solution
+T36	Size 442 448	0.2 μm
+T37	Device 449 455	filter
+T38	Action 478 483	Store
+T39	Temperature 487 496	room temp
+T40	Temperature 503 506	4°C
+E1	Action:T1 Product:T3
+E2	Action:T4 Product:T6
+E3	Action:T10 Site:T9 Acts-on:T12 Acts-on2:T15 Acts-on3:T18 Using:E4
+E4	Action:T19 
+E5	Action:T20 Acts-on:T23 Using:T24
+E6	Action:T25 Acts-on:E5 Site:T27 Product:T29
+E7	Action:T30 Acts-on:T29 Product:T35
+E8	Action:T34 Acts-on:T35 Using:T37
+E9	Action:T38 Acts-on:E8
+R1	Measure Arg1:T3 Arg2:T2
+R2	Coreference-Link Arg1:T3 Arg2:T15
+R3	Measure Arg1:T6 Arg2:T5
+R4	Coreference-Link Arg1:T6 Arg2:T18
+R5	Or Arg1:T8 Arg2:T7
+R6	Measure Arg1:T9 Arg2:T8
+R7	Measure Arg1:T12 Arg2:T11
+R8	Measure Arg1:T15 Arg2:T13
+R9	Measure Arg1:T15 Arg2:T14
+R10	Measure Arg1:T18 Arg2:T16
+R11	Measure Arg1:T18 Arg2:T17
+R12	Or Arg1:T22 Arg2:T21
+R13	Measure Arg1:T23 Arg2:T22
+R14	Setting Arg1:E6 Arg2:T26
+R15	Setting Arg1:E6 Arg2:T28
+R16	Setting Arg1:E7 Arg2:T31
+R17	Setting Arg1:E7 Arg2:T33
+R18	Mod-Link Arg1:T33 Arg2:T32
+R19	Measure Arg1:T37 Arg2:T36
+R20	Setting Arg1:E9 Arg2:T39
+R21	Or Arg1:T39 Arg2:T40

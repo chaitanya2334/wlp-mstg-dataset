@@ -1,0 +1,65 @@
+T1	Action 65 70	place
+T2	Device 75 83	membrane
+T3	Location 98 102	tray
+T4	Action 130 133	Add
+T5	Amount 134 138	20ml
+T6	Concentration 139 144	100 %
+T7	Reagent 145 153	methanol
+T8	Action 158 163	rinse
+T9	Time 168 181	10‐30 seconds
+T10	Action 184 191	Discard
+T11	Reagent 196 204	methanol
+T12	Action 221 224	add
+T13	Amount 225 229	12ml
+T14	Reagent 230 251	Swift™ Membrane Stain
+T15	Action 289 292	Add
+T16	Amount 293 297	20ml
+T17	Reagent 298 313	deionized water
+T18	Action 318 323	rinse
+T19	Time 328 338	30 seconds
+T20	Action 341 348	Discard
+T21	Reagent 353 357	wash
+T22	Action 362 365	add
+T23	Amount 366 370	12ml
+T24	Reagent 371 392	Swift™ Membrane Stain
+T25	Action 395 400	Place
+T26	Location 405 410	trays
+T27	Device 416 430	rocking shaker
+T28	Action 472 477	Rinse
+T29	Device 482 490	membrane
+T30	Reagent 494 502	DI water
+T31	Action 693 697	Wash
+T32	Reagent 702 711	membranes
+T33	Time 716 729	30‐60 seconds
+T34	Amount 733 737	50ml
+T35	Concentration 738 740	1X
+T36	Reagent 741 755	Swift™ Destain
+T37	Action 814 819	rinse
+T38	Reagent 823 831	DI water
+T39	Action 836 841	store
+T40	Reagent 846 850	blot
+T41	Reagent 854 862	DI water
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T7 Site:E1
+E3	Action:T8 Acts-on:E2
+E4	Action:T10 Acts-on:T11 Acts-on2:E3
+E5	Action:T12 Acts-on:T14 Site:E4
+E6	Action:T15 Acts-on:T17 Site:E5
+E7	Action:T18 Acts-on:E6
+E8	Action:T20 Acts-on:T21 Acts-on2:E7
+E9	Action:T22 Acts-on:T24 Site:E8 Product:T26
+E10	Action:T25 Acts-on:T26 Site:T27 Product:T29
+E11	Action:T28 Acts-on:T29 Using:T30 Product:T32
+E12	Action:T31 Acts-on:T32 Using:T36
+E13	Action:T37 Using:T38 Acts-on:E12
+E14	Action:T39 Acts-on:T40 Site:T41 Acts-on2:E13
+R1	Measure Arg1:T7 Arg2:T6
+R2	Measure Arg1:T7 Arg2:T5
+R3	Setting Arg1:E3 Arg2:T9
+R4	Measure Arg1:T14 Arg2:T13
+R5	Measure Arg1:T17 Arg2:T16
+R6	Setting Arg1:E7 Arg2:T19
+R7	Measure Arg1:T24 Arg2:T23
+R8	Setting Arg1:E12 Arg2:T33
+R9	Measure Arg1:T36 Arg2:T35
+R10	Measure Arg1:T36 Arg2:T34

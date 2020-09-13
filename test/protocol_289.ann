@@ -1,0 +1,175 @@
+T1	Action 26 33	Prepare
+T2	Reagent 34 49	cesium chloride
+T3	Measure-Type 50 59	densities
+T4	Generic-Measure 63 91	p1.2 , p1.4 , p1.5 and p1.65
+T5	Reagent 95 103	seawater
+T6	Size 125 131	0.02μm
+T7	Size 137 142	0.2μm
+T8	Action 145 153	filtered
+T9	Action 158 168	autoclaved
+T10	Action 171 176	Place
+T11	Location 177 181	tube
+T12	Modifier 185 193	prepared
+T13	Reagent 194 200	cesium
+T14	Device 204 211	balance
+T15	Action 214 218	Tare
+T16	Device 219 226	balance
+T17	Numerical 230 231	0
+T18	Action 234 240	Remove
+T19	Amount 241 244	1ml
+T20	Modifier 250 257	sterile
+T21	Device 258 267	pipet tip
+T22	Action 270 275	Layer
+T23	Reagent 276 280	CsCl
+T24	Location 290 296	bottom
+T25	Device 305 326	gradient fractionator
+T26	Modifier 356 365	Carefully
+T27	Action 366 371	layer
+T28	Reagent 375 381	sample
+T29	Amount 384 389	~ 5ml
+T30	Device 410 414	SW40
+T31	Amount 415 421	~ 15ml
+T32	Device 427 431	SW28
+T33	Action 436 441	Weigh
+T34	Location 454 459	tubes
+T35	Action 462 472	Centrifuge
+T36	Device 479 483	SW40
+T37	Device 487 505	SW28 Beckman rotor
+T38	Speed 508 517	24,000rpm
+T39	Time 522 525	4hr
+T40	Temperature 529 532	4°C
+T41	Modifier 540 547	sterile
+T42	Amount 548 553	0.5ml
+T43	Location 554 559	tubes
+T44	Amount 572 577	1.5ml
+T45	Location 578 583	tubes
+T46	Action 593 600	labeled
+T47	Action 608 612	Open
+T48	Location 613 618	tubes
+T49	Location 624 628	rack
+T50	Action 631 636	Place
+T51	Location 637 641	tube
+T52	Device 645 655	ring stand
+T53	Action 658 666	Puncture
+T54	Size 673 676	2mm
+T55	Location 686 697	bottom side
+T56	Location 705 709	tube
+T57	Modifier 718 725	sterile
+T58	Generic-Measure 726 734	20 guage
+T59	Device 735 741	needle
+T60	Action 755 762	Collect
+T61	Reagent 763 771	droplets
+T62	Location 785 789	tube
+T63	Action 801 806	Place
+T64	Location 807 811	tube
+T65	Reagent 817 823	sample
+T66	Device 827 844	4 - place balance
+T67	Device 848 854	holder
+T68	Action 857 861	Tare
+T69	Numerical 865 866	0
+T70	Modifier 874 881	sterile
+T71	Device 882 891	pipet tip
+T72	Action 894 900	remove
+T73	Amount 901 906	100µl
+T74	Action 909 913	Take
+T75	Action 928 934	Return
+T76	Reagent 935 941	sample
+T77	Location 945 949	tube
+T78	Action 952 958	Remove
+T79	Amount 967 972	100µl
+T80	Action 975 991	take measurement
+T81	Action 994 1000	return
+T82	Reagent 1001 1007	sample
+T83	Location 1011 1015	tube
+T84	Action 1018 1024	Remove
+T85	Amount 1037 1042	100µl
+T86	Action 1045 1061	take measurement
+T87	Action 1068 1074	return
+T88	Reagent 1075 1081	sample
+T89	Location 1085 1089	tube
+T90	Action 1129 1133	take
+T91	Measure-Type 1134 1141	average
+T92	Numerical 1149 1150	3
+T93	Modifier 1162 1166	each
+T94	Location 1167 1171	tube
+T95	Action 1174 1182	Multiply
+T96	Numerical 1186 1188	10
+T97	Action 1191 1195	Pool
+T98	Action 1200 1207	extract
+T99	Reagent 1208 1211	DNA
+T100	Action 1219 1235	confirm presence
+T101	Reagent 1239 1244	virus
+T102	Action 1254 1262	staining
+T103	Amount 1263 1267	10µl
+T104	Reagent 1273 1282	SYBR gold
+T105	Action 1285 1290	Count
+T106	Device 1297 1314	fluorescent scope
+T107	Action 1317 1321	Pool
+T108	Reagent 1326 1333	samples
+T109	Reagent 1339 1344	virus
+E1	Action:T1 Product:T2 Site:T5
+E2	Action:T8 Acts-on:T5
+E3	Action:T9 Acts-on:T5
+E4	Action:T10 Acts-on:T11 Site:T14 Product:T16
+E5	Action:T15 Acts-on:T16 Count:T17
+E6	Action:T18 Acts-on:E4 Using:T21 Product:T23
+E7	Action:T22 Acts-on:T23 Site:T24 Using:T25
+E8	Action:T27 Acts-on:T28 Using:T30
+E9	Action:T33 Acts-on:T34
+E10	Action:T35 Acts-on:T36
+E11	Action:T46 Acts-on:T43 Acts-on2:T45
+E12	Action:T47 Acts-on:T48 Site:T49
+E13	Action:T50 Acts-on:T51 Site:T52 Product:T56
+E14	Action:T53 Site:T55 Using:T59
+E15	Action:T60 Acts-on:T61 Site:T62
+E16	Action:T63 Acts-on:T64 Site:T66
+E17	Action:T68 Acts-on:E16 Count:T69
+E18	Action:T72 Acts-on:E17 Using:T71
+E19	Action:T74 
+E20	Action:T75 Acts-on:T76 Site:T77
+E21	Action:T78 Acts-on:E20 Product:T83
+E22	Action:T80 Product:T82
+E23	Action:T81 Acts-on:T82 Site:T83
+E24	Action:T84 Acts-on:E23 Product:T89
+E25	Action:T86 Acts-on:E24 Product:T88
+E26	Action:T87 Acts-on:T88 Site:T89
+E27	Action:T90 Measure-Type-Link:T91 Count:T92 Acts-on:T94
+E28	Action:T95 Acts-on:E27 Count:T96
+E29	Action:T97 Acts-on:T99
+E30	Action:T98 Acts-on:T99
+E31	Action:T100 Acts-on:T101
+E32	Action:T102 Using:T104
+E33	Action:T105 Using:T106 Product:T108
+E34	Action:T107 Acts-on:T108 Using:T109
+R1	Measure Arg1:T2 Arg2:T4
+R2	Of-Type Arg1:T4 Arg2:T3
+R3	Or Arg1:T7 Arg2:T6
+R4	Setting Arg1:E2 Arg2:T7
+R5	Meronym Arg1:T13 Arg2:T11
+R6	Mod-Link Arg1:T13 Arg2:T12
+R7	Setting Arg1:E6 Arg2:T19
+R8	Mod-Link Arg1:T21 Arg2:T20
+R9	Mod-Link Arg1:E8 Arg2:T26
+R10	Measure Arg1:T28 Arg2:T29
+R11	Or Arg1:T29 Arg2:T31
+R12	Or Arg1:T30 Arg2:T32
+R13	Setting Arg1:E10 Arg2:T38
+R14	Setting Arg1:E10 Arg2:T39
+R15	Setting Arg1:E10 Arg2:T40
+R16	Or Arg1:T36 Arg2:T37
+R17	Mod-Link Arg1:T43 Arg2:T41
+R18	Measure Arg1:T43 Arg2:T42
+R19	Measure Arg1:T45 Arg2:T44
+R20	Setting Arg1:E14 Arg2:T54
+R21	Meronym Arg1:T55 Arg2:T56
+R22	Mod-Link Arg1:T59 Arg2:T57
+R23	Measure Arg1:T59 Arg2:T58
+R24	Meronym Arg1:T65 Arg2:T64
+R25	Meronym Arg1:T66 Arg2:T67
+R26	Mod-Link Arg1:T71 Arg2:T70
+R27	Setting Arg1:E18 Arg2:T73
+R28	Setting Arg1:E21 Arg2:T79
+R29	Setting Arg1:E24 Arg2:T85
+R30	Mod-Link Arg1:T94 Arg2:T93
+R31	Enables Arg1:E32 Arg2:E31
+R32	Measure Arg1:T104 Arg2:T103

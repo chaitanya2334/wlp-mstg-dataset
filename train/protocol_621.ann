@@ -1,0 +1,119 @@
+T1	Action 96 103	Prepare
+T2	Modifier 104 112	modified
+T3	Reagent 113 125	DY - V media
+T4	Reagent 538 556	Sodium bicarbonate
+T5	Action 557 562	added
+T6	Concentration 591 596	95 µM
+T7	Action 611 619	addition
+T8	Reagent 635 649	algal inoculum
+T9	Size 653 659	0.2 µm
+T10	Action 660 670	filtration
+T11	Reagent 676 690	stock solution
+T12	Action 700 709	autoclave
+T13	Action 751 754	Add
+T14	Reagent 755 793	15N 13C labeled heat - killed bacteria
+T15	Reagent 809 814	media
+T16	Action 884 887	Add
+T17	Reagent 891 899	inoculum
+T18	Reagent 907 924	mixotrophic algae
+T19	Reagent 1219 1224	algae
+T20	Action 1225 1229	grow
+T21	Action 1289 1294	Track
+T22	Measure-Type 1299 1311	algae growth
+T23	Method 1320 1330	microscopy
+T24	Measure-Type 1379 1412	decline of heat - killed bacteria
+T25	Action 1455 1461	assess
+T26	Measure-Type 1462 1480	HKB concentrations
+T27	Method 1489 1515	epifluorescence microscopy
+T28	Action 1723 1729	filter
+T29	Amount 1730 1740	30 - 50 mL
+T30	Reagent 1748 1756	cultures
+T31	Modifier 1762 1777	pre - combusted
+T32	Modifier 1778 1789	glass fiber
+T33	Location 1790 1797	filters
+T34	Action 1802 1805	dry
+T35	Temperature 1809 1814	60 ºC
+T36	Time 1815 1825	over night
+T37	Location 1873 1880	filters
+T38	Action 1888 1894	stored
+T39	Modifier 1898 1903	glass
+T40	Location 1904 1909	vials
+T41	Temperature 1913 1929	room temperature
+T42	Method 1977 1995	acidification step
+T43	Reagent 2001 2004	HCl
+T44	Action 2008 2014	remove
+T45	Reagent 2015 2031	inorganic carbon
+T46	Measure-Type 2040 2072	C - and N - isotopic composition
+T47	Reagent 2080 2086	sample
+T48	Action 2091 2101	determined
+T49	Device 2108 2137	isotope rato mas spectrometer
+T50	Action 2180 2187	collect
+T51	Amount 2188 2192	2 mL
+T52	Reagent 2196 2202	sample
+T53	Action 2207 2210	fix
+T54	Concentration 2216 2218	2X
+T55	Reagent 2219 2244	EM - grade glutaraldehyde
+T56	Reagent 2247 2253	Sample
+T57	Action 2261 2267	stored
+T58	Device 2275 2281	fridge
+T59	Temperature 2285 2289	4 ºC
+T60	Action 2300 2310	processing
+T61	Reagent 2318 2324	sample
+T62	Action 2338 2348	deposition
+T63	Reagent 2352 2357	cells
+T64	Location 2363 2377	sylicon wafers
+T65	Action 2380 2384	wash
+T66	Reagent 2390 2400	MQ - water
+T67	Reagent 2405 2409	drye
+T68	Action 2412 2415	map
+T69	Reagent 2416 2421	cells
+T70	Location 2429 2435	waffer
+T71	Method 2442 2452	microscopy
+T72	Action 2457 2465	analysis
+T73	Modifier 2469 2475	single
+T74	Reagent 2476 2481	cells
+T75	Device 2490 2519	Cameca NanoSIMS 50 instrument
+E1	Action:T1 Product:T3
+E2	Action:T5 Acts-on:T4 Site:T3
+E3	Action:T7 Acts-on:T8 Site:E2 Product:T15
+E4	Action:T10 Acts-on:T11
+E5	Action:T12 Acts-on:T11
+E6	Action:T13 Acts-on:T14 Site:T15
+E7	Action:T16 Acts-on:T17 Site:E6 Product:T19
+E8	Action:T20 Acts-on:T19
+E9	Action:T21 Using:T23 Measure-Type-Link:T22 Acts-on:E8 Measure-Type-Link2:T24
+E10	Action:T25 Measure-Type-Link:T26 Using:T27 Acts-on:E8 Product:T30
+E11	Action:T28 Acts-on:T30 Site:T33
+E12	Action:T34 Acts-on:E11 Product:T37
+E13	Action:T38 Acts-on:T37 Site:T40 Product:T45
+E14	Action:T44 Acts-on:T45 Using:T42 Using2:T43 Product:T47
+E15	Action:T48 Measure-Type-Link:T46 Acts-on:T47 Using:T49 Product:T52
+E16	Action:T50 Acts-on:T52
+E17	Action:T53 Using:T55 Acts-on:E16 Product:T56
+E18	Action:T57 Site:T58 Acts-on:T56 Product:T61
+E19	Action:T60 Acts-on:T61
+E20	Action:T62 Site:T64
+E21	Action:T65 Using:T66 Using2:T67 Acts-on:E20 Product:T69
+E22	Action:T68 Acts-on:T69 Using:T71 Product:T74
+E23	Action:T72 Acts-on:T74 Using:T75
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Measure Arg1:T4 Arg2:T6
+R3	Setting Arg1:E4 Arg2:T9
+R4	Meronym Arg1:T17 Arg2:T18
+R5	Measure Arg1:T55 Arg2:T54
+R6	Measure Arg1:T52 Arg2:T51
+R7	Setting Arg1:E18 Arg2:T59
+R8	Enables Arg1:E4 Arg2:E3
+R9	Prevents Arg1:E4 Arg2:E5
+R10	Enables Arg1:E9 Arg2:E10
+R11	Measure Arg1:T30 Arg2:T29
+R12	Mod-Link Arg1:T33 Arg2:T32
+R13	Mod-Link Arg1:T33 Arg2:T31
+R14	Setting Arg1:E12 Arg2:T35
+R15	Setting Arg1:E12 Arg2:T36
+R16	Mod-Link Arg1:T40 Arg2:T39
+R17	Setting Arg1:E13 Arg2:T41
+R18	Enables Arg1:E20 Arg2:E19
+R19	Meronym Arg1:T63 Arg2:T61
+R20	Meronym Arg1:T69 Arg2:T70
+R21	Mod-Link Arg1:T74 Arg2:T73

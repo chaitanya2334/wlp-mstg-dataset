@@ -1,0 +1,178 @@
+T1	Action 184 191	come to
+T2	Temperature 192 208	room temperature
+T3	Time 213 223	15 minutes
+T4	Action 226 233	proceed
+T5	Action 1025 1029	Heat
+T6	Location 1030 1036	slides
+T7	Device 1040 1049	microwave
+T8	Generic-Measure 1053 1057	high
+T9	Time 1062 1081	1 minute 40 seconds
+T10	Modifier 1089 1100	appropriate
+T11	Reagent 1101 1119	retrieval solution
+T12	Concentration 1123 1125	1X
+T13	Generic-Measure 1138 1147	low power
+T14	Action 1152 1158	simmer
+T15	Time 1159 1169	10 minutes
+T16	Device 1177 1186	microwave
+T17	Action 1198 1202	cool
+T18	Location 1210 1219	bench top
+T19	Time 1224 1234	10 minutes
+T20	Action 1237 1242	Rinse
+T21	Reagent 1248 1263	lab grade water
+T22	Action 1266 1271	Rinse
+T23	Reagent 1272 1278	Slides
+T24	Concentration 1284 1286	1X
+T25	Reagent 1287 1290	PBS
+T26	Action 1443 1448	Apply
+T27	Reagent 1449 1469	# 2 Blocking Reagent
+T28	Modifier 1492 1500	at least
+T29	Time 1501 1510	5 minutes
+T30	Temperature 1514 1530	room temperature
+T31	Action 1563 1571	Blot off
+T32	Reagent 1572 1583	serum block
+T33	Amount 1584 1588	6 mL
+T34	Reagent 1589 1609	predilute antibodies
+T35	Action 1629 1642	do not dilute
+T36	Amount 1643 1647	1 mL
+T37	Modifier 1648 1659	concentrate
+T38	Reagent 1660 1668	products
+T39	Action 1676 1683	diluted
+T40	Generic-Measure 1684 1692	> 1 : 40
+T41	Reagent 1696 1699	PBS
+T42	Modifier 1703 1708	other
+T43	Reagent 1709 1725	antibody diluent
+T44	Action 1766 1772	dilute
+T45	Method 1790 1817	manufacturer’s instructions
+T46	Action 1820 1828	Incubate
+T47	Reagent 1829 1845	primary antibody
+T48	Time 1846 1861	20 - 60 minutes
+T49	Temperature 1865 1881	room temperature
+T50	Action 1937 1942	Rinse
+T51	Location 1943 1949	slides
+T52	Concentration 1955 1957	1X
+T53	Reagent 1958 1961	PBS
+T54	Action 1964 1969	Apply
+T55	Reagent 1970 1989	# 4 Linking Reagent
+T56	Action 2016 2024	incubate
+T57	Location 2025 2031	slides
+T58	Time 2036 2046	20 minutes
+T59	Temperature 2050 2068	room temperature .
+T60	Action 2069 2074	Rinse
+T61	Location 2075 2081	slides
+T62	Concentration 2087 2089	1X
+T63	Reagent 2090 2093	PBS
+T64	Action 2096 2101	Apply
+T65	Reagent 2102 2122	# 5 Labeling Reagent
+T66	Action 2149 2157	incubate
+T67	Location 2158 2164	slides
+T68	Time 2169 2179	20 minutes
+T69	Temperature 2183 2199	room temperature
+T70	Action 2200 2205	Rinse
+T71	Concentration 2211 2213	1X
+T72	Reagent 2214 2217	PBS
+T73	Action 2220 2225	Apply
+T74	Reagent 2226 2235	chromogen
+T75	Action 2240 2248	incubate
+T76	Location 2249 2255	slides
+T77	Time 2260 2269	5 minutes
+T78	Temperature 2273 2289	room temperature
+T79	Action 2548 2554	dilute
+T80	Action 2559 2567	incubate
+T81	Method 2585 2612	manufacturer’s instructions
+T82	Action 2615 2620	Rinse
+T83	Location 2621 2627	slides
+T84	Reagent 2633 2648	lab grade water
+T85	Action 2651 2659	Submerge
+T86	Location 2660 2666	slides
+T87	Reagent 2670 2681	Hematoxylin
+T88	Time 2686 2696	30 seconds
+T89	Action 2716 2721	Rinse
+T90	Modifier 2728 2735	running
+T91	Reagent 2736 2751	lab grade water
+T92	Time 2756 2764	1 minute
+T93	Action 2791 2799	Submerge
+T94	Location 2800 2806	slides
+T95	Reagent 2810 2824	Bluing Reagent
+T96	Time 2829 2837	1 minute
+T97	Action 2857 2862	Rinse
+T98	Modifier 2869 2876	running
+T99	Reagent 2877 2892	lab grade water
+T100	Time 2897 2905	1 minute
+T101	Action 2923 2932	Dehydrate
+T102	Reagent 2937 2943	tissue
+T103	Action 3135 3145	Cover slip
+T104	Location 3146 3151	slide
+T105	Reagent 3158 3191	Permanent Aqueous Mounting Medium
+T106	Reagent 3195 3214	Xylene Based medium
+T107	Action 3224 3234	Do not use
+T108	Reagent 3235 3253	xylene based mount
+T109	Reagent 3259 3272	AEC Chromogen
+E1	Action:T1 
+E2	Action:T4 
+E3	Action:T5 Acts-on:T6 Using:T7 Site:T11
+E4	Action:T14 Acts-on:E3 Using:T16
+E5	Action:T17 Acts-on:E4 Site:T18
+E6	Action:T20 Acts-on:E5 Using:T21 Product:T23
+E7	Action:T22 Acts-on:T23 Using:T25
+E8	Action:T26 Acts-on:E7 Acts-on2:T27
+E9	Action:T31 Acts-on:T32 Product:T34
+E10	Action:T35 Acts-on:T34
+E11	Action:T39 Acts-on:T38 Using:T41
+E12	Action:T44 Using:T45
+E13	Action:T46 Acts-on:T47
+E14	Action:T50 Acts-on:T51 Using:T53
+E15	Action:T54 Acts-on:T55 Product:T57
+E16	Action:T56 Acts-on:T57 Product:T61
+E17	Action:T60 Acts-on:T61 Using:T63
+E18	Action:T64 Acts-on:T65 Product:T67
+E19	Action:T66 Acts-on:T67
+E20	Action:T70 Acts-on:E19 Using:T72
+E21	Action:T73 Acts-on:T74
+E22	Action:T75 Acts-on:T76
+E23	Action:T79 Using:T81
+E24	Action:T80 Using:T81
+E25	Action:T82 Acts-on:T83 Using:T84 Product:T86
+E26	Action:T85 Acts-on:T86 Site:T87
+E27	Action:T89 Acts-on:E26 Acts-on2:T91 Product:T94
+E28	Action:T93 Acts-on:T94 Site:T95
+E29	Action:T97 Acts-on:T99
+E30	Action:T101 Acts-on:T102
+E31	Action:T103 Acts-on:T104 Using:T105
+E32	Action:T107 Acts-on:T108 Using:T109
+R1	Setting Arg1:E3 Arg2:T9
+R2	Setting Arg1:T7 Arg2:T8
+R3	Mod-Link Arg1:T11 Arg2:T10
+R4	Measure Arg1:T11 Arg2:T12
+R5	Setting Arg1:E4 Arg2:T15
+R6	Setting Arg1:T16 Arg2:T13
+R7	Setting Arg1:E5 Arg2:T19
+R8	Setting Arg1:E7 Arg2:T2
+R9	Setting Arg1:E7 Arg2:T3
+R10	Measure Arg1:T25 Arg2:T24
+R11	Setting Arg1:E8 Arg2:T29
+R12	Setting Arg1:E8 Arg2:T30
+R13	Mod-Link Arg1:T29 Arg2:T28
+R14	Measure Arg1:T34 Arg2:T33
+R15	Measure Arg1:T38 Arg2:T36
+R16	Mod-Link Arg1:T38 Arg2:T37
+R17	Or Arg1:T41 Arg2:T43
+R18	Mod-Link Arg1:T43 Arg2:T42
+R19	Setting Arg1:E13 Arg2:T48
+R20	Setting Arg1:E13 Arg2:T49
+R21	Measure Arg1:T53 Arg2:T52
+R22	Setting Arg1:E16 Arg2:T58
+R23	Setting Arg1:E16 Arg2:T59
+R24	Measure Arg1:T63 Arg2:T62
+R25	Setting Arg1:E19 Arg2:T68
+R26	Setting Arg1:E19 Arg2:T69
+R27	Measure Arg1:T72 Arg2:T71
+R28	Setting Arg1:E22 Arg2:T77
+R29	Setting Arg1:E22 Arg2:T78
+R30	Setting Arg1:E26 Arg2:T88
+R31	Setting Arg1:E27 Arg2:T92
+R32	Mod-Link Arg1:T91 Arg2:T90
+R33	Setting Arg1:E28 Arg2:T40
+R34	Setting Arg1:E28 Arg2:T96
+R35	Setting Arg1:E29 Arg2:T100
+R36	Mod-Link Arg1:T99 Arg2:T98
+R37	Or Arg1:T105 Arg2:T106

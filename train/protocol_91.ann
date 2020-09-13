@@ -1,0 +1,97 @@
+T1	Action 28 34	Dilute
+T2	Amount 35 38	5mL
+T3	Reagent 39 44	O / N
+T4	Amount 50 55	500mL
+T5	Reagent 56 58	LB
+T6	Action 61 65	Grow
+T7	Generic-Measure 69 82	OD 0.6­ - 0.8
+T8	Time 85 101	~ 1.5­ - 3 hours
+T9	Action 106 110	Pour
+T10	Amount 116 123	2x250mL
+T11	Location 124 142	Centrifuge bottles
+T12	Action 145 150	Chill
+T13	Location 151 158	bottles
+T14	Location 162 165	ice
+T15	Time 170 180	10 minutes
+T16	Action 183 187	Spin
+T17	Speed 191 197	3000xg
+T18	Time 202 207	20min
+T19	Temperature 211 213	4C
+T20	Action 216 222	Decant
+T21	Reagent 223 234	supernatant
+T22	Action 237 256	Resuspend + combine
+T23	Reagent 257 264	pellets
+T24	Amount 268 273	250mL
+T25	Modifier 274 285	pre­chilled
+T26	Concentration 286 290	10 %
+T27	Reagent 291 299	glycerol
+T28	Action 302 306	Spin
+T29	Speed 310 316	3000xg
+T30	Time 321 326	20min
+T31	Temperature 330 332	4C
+T32	Action 335 341	Decant
+T33	Reagent 342 353	supernatant
+T34	Action 356 365	Resuspend
+T35	Reagent 366 372	pellet
+T36	Amount 376 380	20mL
+T37	Modifier 381 392	pre­chilled
+T38	Concentration 393 397	10 %
+T39	Reagent 398 406	glycerol
+T40	Amount 419 423	50mL
+T41	Location 424 437	Falcon Tube )
+T42	Action 440 444	Spin
+T43	Speed 448 454	3000xg
+T44	Time 459 464	20min
+T45	Temperature 468 470	4C
+T46	Action 473 479	Decant
+T47	Reagent 480 491	supernatant
+T48	Action 494 503	Resuspend
+T49	Amount 507 510	3mL
+T50	Modifier 511 522	pre­chilled
+T51	Concentration 523 527	10 %
+T52	Reagent 528 536	glycerol
+T53	Action 539 550	SNAP Freeze
+T54	Amount 554 561	25­50uL
+T55	Reagent 562 570	aliquots
+T56	Reagent 574 577	LN2
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T6 Acts-on:E1
+E3	Action:T9 Site:T11 Acts-on:E2 Product:T13
+E4	Action:T12 Acts-on:T13 Site:T14
+E5	Action:T16 Acts-on:E4 Product:T21
+E6	Action:T20 Acts-on:T21 Product:T23
+E7	Action:T22 Acts-on:T23 Site:T27
+E8	Action:T28 Acts-on:E7 Product:T33
+E9	Action:T32 Acts-on:T33 Product:T35
+E10	Action:T34 Acts-on:T35 Site:T39
+E11	Action:T42 Acts-on:E10 Product:T47
+E12	Action:T46 Acts-on:T47
+E13	Action:T48 Site:T52 Acts-on:E12
+E14	Action:T53 Acts-on:T55 Site:T56 Acts-on2:E13
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Setting Arg1:E2 Arg2:T7
+R4	Setting Arg1:E2 Arg2:T8
+R5	Measure Arg1:T11 Arg2:T10
+R6	Setting Arg1:E4 Arg2:T15
+R7	Setting Arg1:E5 Arg2:T17
+R8	Setting Arg1:E5 Arg2:T18
+R9	Setting Arg1:E5 Arg2:T19
+R10	Measure Arg1:T27 Arg2:T26
+R11	Mod-Link Arg1:T27 Arg2:T25
+R12	Measure Arg1:T27 Arg2:T24
+R13	Setting Arg1:E8 Arg2:T29
+R14	Setting Arg1:E8 Arg2:T30
+R15	Setting Arg1:E8 Arg2:T31
+R16	Measure Arg1:T41 Arg2:T40
+R17	Measure Arg1:T39 Arg2:T38
+R18	Mod-Link Arg1:T39 Arg2:T37
+R19	Measure Arg1:T39 Arg2:T36
+R20	Meronym Arg1:T39 Arg2:T41
+R21	Setting Arg1:E11 Arg2:T43
+R22	Setting Arg1:E11 Arg2:T44
+R23	Setting Arg1:E11 Arg2:T45
+R24	Measure Arg1:T52 Arg2:T51
+R25	Mod-Link Arg1:T52 Arg2:T50
+R26	Measure Arg1:T52 Arg2:T49
+R27	Measure Arg1:T55 Arg2:T54

@@ -1,0 +1,42 @@
+T1	Action 37 46	Resuspend
+T2	Amount 47 52	10 µg
+T3	Reagent 53 56	RNA
+T4	Concentration 60 62	1X
+T5	Reagent 63 86	DNase I Reaction Buffer
+T6	Reagent 92 104	final volume
+T7	Amount 108 114	100 µl
+T8	Action 117 120	Add
+T9	Generic-Measure 121 128	2 units
+T10	Reagent 132 139	DNase I
+T11	Action 140 143	Mix
+T12	Modifier 144 154	thoroughly
+T13	Action 157 165	Incubate
+T14	Temperature 169 173	37°C
+T15	Time 178 188	10 minutes
+T16	Action 191 194	Add
+T17	Amount 195 199	1 µl
+T18	Concentration 203 208	0.5 M
+T19	Reagent 209 213	EDTA
+T20	Reagent 221 240	final concentration
+T21	Concentration 244 248	5 mM
+T22	Action 253 268	Heat inactivate
+T23	Temperature 272 276	75°C
+T24	Time 281 291	10 minutes
+E1	Action:T1 Acts-on:T3 Using:T5 Product:T6
+E2	Action:T8 Acts-on:T10 Site:T6
+E3	Action:T11 Acts-on:E2
+E4	Action:T13 Acts-on:E3
+E5	Action:T16 Acts-on:T19 Product:T20 Site:E4
+E6	Action:T22 Acts-on:T20
+R1	Measure Arg1:T19 Arg2:T18
+R2	Measure Arg1:T20 Arg2:T21
+R3	Measure Arg1:T3 Arg2:T2
+R4	Measure Arg1:T5 Arg2:T4
+R5	Measure Arg1:T6 Arg2:T7
+R6	Measure Arg1:T10 Arg2:T9
+R7	Mod-Link Arg1:E3 Arg2:T12
+R8	Setting Arg1:E4 Arg2:T14
+R9	Setting Arg1:E4 Arg2:T15
+R10	Measure Arg1:T19 Arg2:T17
+R11	Setting Arg1:E6 Arg2:T23
+R12	Setting Arg1:E6 Arg2:T24

@@ -1,0 +1,128 @@
+T1	Action 37 44	Prepare
+T2	Reagent 45 50	cells
+T3	Reagent 61 79	tissue of interest
+T4	Action 80 94	without lysing
+T5	Reagent 95 107	erythrocytes
+T6	Action 157 166	resuspend
+T7	Reagent 171 176	cells
+T8	Reagent 180 196	MojoSort™ Buffer
+T9	Action 200 206	adding
+T10	Amount 213 217	4 mL
+T11	Size 223 227	5 mL
+T12	Location 243 259	polystyrene tube
+T13	Action 269 273	Keep
+T14	Reagent 274 290	MojoSort™ Buffer
+T15	Location 294 297	ice
+T16	Action 325 331	Filter
+T17	Reagent 336 341	cells
+T18	Size 349 354	70 μm
+T19	Device 355 368	cell strainer
+T20	Action 371 381	centrifuge
+T21	Speed 385 392	300 x g
+T22	Time 397 406	5 minutes
+T23	Action 413 422	resuspend
+T24	Amount 429 447	appropriate volume
+T25	Reagent 451 467	MojoSort™ Buffer
+T26	Action 470 475	Count
+T27	Action 480 486	adjust
+T28	Reagent 491 495	cell
+T29	Measure-Type 496 509	concentration
+T30	Concentration 513 531	1 x 108 cells / mL
+T31	Action 534 541	Aliquot
+T32	Amount 542 548	100 μL
+T33	Reagent 552 567	cell suspension
+T34	Amount 570 573	107
+T35	Reagent 574 579	cells
+T36	Location 593 597	tube
+T37	Action 600 609	Resuspend
+T38	Reagent 614 619	beads
+T39	Action 623 632	vortexing
+T40	Speed 635 648	maximum speed
+T41	Numerical 651 652	5
+T42	Measure-Type 653 660	touches
+T43	Action 663 666	Add
+T44	Amount 667 672	10 μL
+T45	Reagent 676 685	Nanobeads
+T46	Action 688 691	mix
+T47	Modifier 692 696	well
+T48	Action 701 709	incubate
+T49	Location 713 716	ice
+T50	Time 721 731	15 minutes
+T51	Action 916 925	Resuspend
+T52	Reagent 930 935	cells
+T53	Amount 939 943	3 mL
+T54	Reagent 947 963	MojoSort™ Buffer
+T55	Action 1061 1066	Place
+T56	Location 1071 1075	tube
+T57	Device 1083 1089	magnet
+T58	Time 1094 1103	5 minutes
+T59	Action 1104 1112	Pour out
+T60	Reagent 1117 1123	liquid
+T61	Action 1126 1135	Resuspend
+T62	Reagent 1136 1149	labeled cells
+T63	Reagent 1153 1171	appropriate buffer
+T64	Action 1347 1351	pool
+T65	Reagent 1356 1375	unlabeled fractions
+T66	Action 1380 1387	process
+T67	Modifier 1388 1402	simultaneously
+T68	Reagent 1412 1434	positive labeled cells
+T69	Action 1440 1449	assessing
+T70	Measure-Type 1450 1456	purity
+T71	Measure-Type 1461 1466	yield
+E1	Action:T1 Acts-on:T2 Product:T17
+E2	Action:T4 Acts-on:T5
+E3	Action:T6 Acts-on:T7 Site:T8
+E4	Action:T9 Site:T12 Acts-on:T8 Acts-on2:T7
+E5	Action:T13 Acts-on:T14 Site:T15
+E6	Action:T16 Acts-on:T17 Using:T19
+E7	Action:T20 Acts-on:E6
+E8	Action:T23 Acts-on:E18 Site:T25 Product:T28
+E9	Action:T26 Measure-Type-Link:T29 Acts-on:T28
+E10	Action:T27 Acts-on:E9 Product:T35
+E11	Action:T31 Acts-on:T33 Site:T36 Product:T38
+E12	Action:T37 Acts-on:T38
+E13	Action:T39 Measure-Type-Link:T42
+E14	Action:T43 Acts-on:T45 Site:E12
+E15	Action:T46 Acts-on:E14
+E16	Action:T48 Site:T49 Acts-on:E15 Product:T52
+E17	Action:T51 Site:T54 Acts-on:T52 Product:T56
+E18	Action:T55 Acts-on:T56 Site:T57 Product:T60
+E19	Action:T59 Acts-on:T60 Product:T62
+E20	Action:T61 Acts-on:T62 Site:T63
+E21	Action:T64 Acts-on:T65
+E22	Action:T66 Acts-on:E21 Using:T68
+E23	Action:T69 Measure-Type-Link:T70 Measure-Type-Link2:T71 Acts-on:T65
+R1	Meronym Arg1:T2 Arg2:T3
+R2	Measure Arg1:T12 Arg2:T11
+R3	Measure Arg1:T8 Arg2:T10
+R4	Setting Arg1:T19 Arg2:T18
+R5	Setting Arg1:E10 Arg2:T30
+R6	Measure Arg1:T35 Arg2:T34
+R7	Meronym Arg1:T35 Arg2:T33
+R8	Measure Arg1:T33 Arg2:T32
+R9	Setting Arg1:E13 Arg2:T40
+R10	Of-Type Arg1:T41 Arg2:T42
+R11	Measure Arg1:T45 Arg2:T44
+R12	Mod-Link Arg1:E15 Arg2:T47
+R13	Setting Arg1:E16 Arg2:T50
+R14	Measure Arg1:T54 Arg2:T53
+R15	Setting Arg1:E18 Arg2:T58
+R16	Meronym Arg1:T60 Arg2:T56
+R17	Mod-Link Arg1:E22 Arg2:T67
+R18	Meronym Arg1:T5 Arg2:T2
+R19	Prevents Arg1:E1 Arg2:E2
+R20	Enables Arg1:E3 Arg2:E1
+R21	Enables Arg1:E4 Arg2:E3
+R22	Enables Arg1:E4 Arg2:E1
+R23	Coreference-Link Arg1:T2 Arg2:T7
+R24	Coreference-Link Arg1:T14 Arg2:T8
+R25	Overlaps Arg1:E5 Arg2:E3
+R26	Setting Arg1:E18 Arg2:T21
+R27	Setting Arg1:E18 Arg2:T22
+R28	Setting Arg1:E8 Arg2:T24
+R29	Coreference-Link Arg1:T8 Arg2:T25
+R30	Enables Arg1:E13 Arg2:E12
+R31	Coreference-Link Arg1:T15 Arg2:T49
+R32	Coreference-Link Arg1:T25 Arg2:T54
+R33	Coreference-Link Arg1:E20 Arg2:T65
+R34	Overlaps Arg1:E23 Arg2:E22

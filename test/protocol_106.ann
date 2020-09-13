@@ -1,0 +1,153 @@
+T1	Action 24 28	Wash
+T2	Reagent 29 32	gel
+T3	Reagent 36 52	ultra pure water
+T4	Time 57 66	5 minutes
+T5	Action 69 76	Replace
+T6	Reagent 81 86	water
+T7	Action 91 95	wash
+T8	Time 108 117	5 minutes
+T9	Action 120 123	Fix
+T10	Reagent 124 127	gel
+T11	Concentration 131 135	30 %
+T12	Reagent 136 143	ethanol
+T13	Concentration 146 150	10 %
+T14	Reagent 151 162	acetic acid
+T15	Reagent 163 171	solution
+T16	Time 230 240	15 minutes
+T17	Action 243 250	Replace
+T18	Reagent 255 263	solution
+T19	Action 268 271	fix
+T20	Time 284 294	15 minutes
+T21	Action 387 391	Wash
+T22	Reagent 392 395	gel
+T23	Concentration 399 403	10 %
+T24	Reagent 404 411	ethanol
+T25	Time 425 434	5 minutes
+T26	Action 437 444	Replace
+T27	Reagent 445 453	solution
+T28	Action 458 462	wash
+T29	Time 475 484	5 minutes
+T30	Action 487 491	Wash
+T31	Reagent 492 495	gel
+T32	Reagent 499 514	ultrapure water
+T33	Time 519 528	5 minutes
+T34	Action 531 538	Replace
+T35	Reagent 539 544	water
+T36	Action 549 553	wash
+T37	Time 566 575	5 minutes
+T38	Reagent 586 613	Sensitizer Working Solution
+T39	Action 617 623	mixing
+T40	Generic-Measure 624 630	1 part
+T41	Reagent 631 654	Silver Stain Sensitizer
+T42	Generic-Measure 660 669	500 parts
+T43	Reagent 670 685	ultrapure water
+T44	Action 738 746	Incubate
+T45	Reagent 747 750	gel
+T46	Reagent 754 781	Sensitizer Working Solution
+T47	Time 794 802	1 minute
+T48	Action 810 814	wash
+T49	Numerical 820 823	two
+T50	Reagent 835 850	ultrapure water
+T51	Time 855 863	1 minute
+T52	Reagent 879 901	Stain Working Solution
+T53	Action 905 911	mixing
+T54	Generic-Measure 912 918	1 part
+T55	Reagent 919 940	Silver Stain Enhancer
+T56	Generic-Measure 946 954	50 parts
+T57	Reagent 955 967	Silver Stain
+T58	Action 1018 1026	Incubate
+T59	Reagent 1027 1030	gel
+T60	Reagent 1034 1056	Stain Working Solution
+T61	Time 1061 1071	30 minutes
+T62	Action 1216 1223	Prepare
+T63	Reagent 1224 1250	Developer Working Solution
+T64	Action 1254 1260	mixing
+T65	Generic-Measure 1261 1267	1 part
+T66	Reagent 1268 1289	Silver Stain Enhancer
+T67	Generic-Measure 1295 1303	50 parts
+T68	Reagent 1304 1326	Silver Stain Developer
+T69	Action 1385 1392	Prepare
+T70	Concentration 1393 1396	5 %
+T71	Reagent 1397 1417	acetic acid solution
+T72	Reagent 1423 1436	Stop Solution
+T73	Modifier 1439 1446	Quickly
+T74	Action 1447 1451	wash
+T75	Reagent 1452 1455	gel
+T76	Numerical 1461 1464	two
+T77	Reagent 1476 1491	ultrapure water
+T78	Time 1496 1506	20 seconds
+T79	Modifier 1514 1525	Immediately
+T80	Action 1526 1529	add
+T81	Reagent 1530 1556	Developer Working Solution
+T82	Action 1561 1569	incubate
+T83	Time 1599 1612	2 - 3 minutes
+T84	Action 1904 1911	replace
+T85	Reagent 1912 1938	Developer Working Solution
+T86	Reagent 1953 1966	Stop Solution
+T87	Action 1989 1993	Wash
+T88	Reagent 1994 1997	gel
+T89	Modifier 1998 2005	briefly
+T90	Action 2013 2020	replace
+T91	Reagent 2021 2034	Stop Solution
+T92	Action 2039 2047	incubate
+T93	Time 2052 2062	10 minutes
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T6
+E2	Action:T5 Acts-on:T6
+E3	Action:T7 Acts-on:E2 Product:T10
+E4	Action:T9 Acts-on:T10 Using:T15 Product:T18
+E5	Action:T17 Acts-on:T18
+E6	Action:T19 Acts-on:E5 Product:T22
+E7	Action:T21 Acts-on:T22 Using:T24 Product:T27
+E8	Action:T26 Acts-on:T27
+E9	Action:T28 Acts-on:E8 Product:T31
+E10	Action:T30 Acts-on:T31 Using:T32 Product:T35
+E11	Action:T34 Acts-on:T35
+E12	Action:T36 Acts-on:E11 Product:T45
+E13	Action:T39 Product:T38 Acts-on:T41 Acts-on2:T43
+E14	Action:T44 Acts-on:T45 Using:T46
+E15	Action:T48 Acts-on:E14 Count:T49 Using:T50 Product:T59
+E16	Action:T53 Product:T52 Acts-on:T55 Acts-on2:T57
+E17	Action:T58 Acts-on:T59 Using:T60 Product:T75
+E18	Action:T62 Acts-on:T63
+E19	Action:T64 Product:T63 Acts-on:T66 Acts-on2:T68
+E20	Action:T69 Acts-on:T71 Product:T72
+E21	Action:T74 Acts-on:T75 Count:T76 Using:T77
+E22	Action:T80 Site:E21 Acts-on:T81
+E23	Action:T82 Acts-on:E22 Product:T85
+E24	Action:T84 Acts-on:T85 Acts-on2:T86 Product:T88
+E25	Action:T87 Acts-on:T88
+E26	Action:T90 Acts-on:T91
+E27	Action:T92 Acts-on:E26
+R1	Setting Arg1:E1 Arg2:T4
+R2	Setting Arg1:E3 Arg2:T8
+R3	Setting Arg1:E4 Arg2:T16
+R4	Measure Arg1:T12 Arg2:T11
+R5	Measure Arg1:T14 Arg2:T13
+R6	Meronym Arg1:T15 Arg2:T12
+R7	Meronym Arg1:T15 Arg2:T14
+R8	Setting Arg1:E6 Arg2:T20
+R9	Setting Arg1:E7 Arg2:T25
+R10	Measure Arg1:T24 Arg2:T23
+R11	Setting Arg1:E9 Arg2:T29
+R12	Setting Arg1:E10 Arg2:T33
+R13	Setting Arg1:E12 Arg2:T37
+R14	Coreference-Link Arg1:T38 Arg2:T46
+R15	Measure Arg1:T41 Arg2:T40
+R16	Measure Arg1:T43 Arg2:T42
+R17	Setting Arg1:E14 Arg2:T47
+R18	Setting Arg1:E15 Arg2:T51
+R19	Coreference-Link Arg1:T52 Arg2:T60
+R20	Measure Arg1:T55 Arg2:T54
+R21	Measure Arg1:T57 Arg2:T56
+R22	Setting Arg1:E17 Arg2:T61
+R23	Coreference-Link Arg1:T63 Arg2:T81
+R24	Measure Arg1:T66 Arg2:T65
+R25	Measure Arg1:T68 Arg2:T67
+R26	Measure Arg1:T71 Arg2:T70
+R27	Coreference-Link Arg1:T72 Arg2:T86
+R28	Mod-Link Arg1:E21 Arg2:T73
+R29	Setting Arg1:E21 Arg2:T78
+R30	Mod-Link Arg1:E22 Arg2:T79
+R31	Setting Arg1:E23 Arg2:T83
+R32	Mod-Link Arg1:E25 Arg2:T89
+R33	Setting Arg1:E27 Arg2:T93

@@ -1,0 +1,16 @@
+T1	Action 78 86	Incubate
+T2	Temperature 90 94	37°C
+T3	Time 99 109	30 minutes
+T4	Action 112 116	Heat
+T5	Reagent 117 127	inactivate
+T6	Action 131 141	incubating
+T7	Temperature 145 149	65°C
+T8	Time 154 164	20 minutes
+E1	Action:T1 Product:T5
+E2	Action:T4 Acts-on:T5
+E3	Action:T6 
+R1	Setting Arg1:E1 Arg2:T3
+R2	Setting Arg1:E3 Arg2:T7
+R3	Setting Arg1:E3 Arg2:T8
+R4	Setting Arg1:E1 Arg2:T2
+R5	Enables Arg1:E3 Arg2:E2

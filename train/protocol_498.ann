@@ -1,0 +1,26 @@
+T1	Modifier 447 453	Gently
+T2	Action 454 457	mix
+T3	Reagent 462 470	reaction
+T4	Action 471 478	Collect
+T5	Modifier 479 482	all
+T6	Reagent 483 489	liquid
+T7	Location 497 515	bottom of the tube
+T8	Method 521 531	quick spin
+T9	Action 549 556	overlay
+T10	Reagent 561 567	sample
+T11	Reagent 573 584	mineral oil
+T12	Modifier 631 638	Quickly
+T13	Action 639 647	transfer
+T14	Device 648 657	PCR tubes
+T15	Device 663 675	thermocycler
+T16	Temperature 720 724	94°C
+T17	Action 737 750	thermocycling
+E1	Action:T2 Acts-on:T3 Product:T6
+E2	Action:T4 Acts-on:T6 Site:T7 Using:T8 Product:T10
+E3	Action:T9 Acts-on:T10 Using:T11 Product:T14
+E4	Action:T13 Acts-on:T14 Site:T15
+E5	Action:T17 Acts-on:E4
+R1	Mod-Link Arg1:E4 Arg2:T12
+R2	Mod-Link Arg1:E1 Arg2:T1
+R3	Mod-Link Arg1:T6 Arg2:T5
+R4	Setting Arg1:T15 Arg2:T16

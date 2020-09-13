@@ -1,0 +1,58 @@
+T1	Action 92 99	Prepare
+T2	Reagent 102 123	Hepes Buffered Saline
+T3	Concentration 152 158	150 mM
+T4	Reagent 159 163	NaCl
+T5	Concentration 168 173	10 mM
+T6	Reagent 174 179	Hepes
+T7	Action 187 194	prepare
+T8	Concentration 209 219	25 µg / ml
+T9	Reagent 220 232	streptavidin
+T10	Reagent 236 239	HBS
+T11	Device 248 263	QCM - D sensing
+T12	Action 266 281	make a baseline
+T13	Reagent 289 301	HBS solution
+T14	Action 304 310	Expose
+T15	Modifier 315 323	modified
+T16	Device 324 331	sensors
+T17	Modifier 335 348	non - diluted
+T18	Reagent 349 367	Fetal Bovine Serum
+T19	Time 380 391	30 - 60 min
+T20	Method 398 415	static conditions
+T21	Device 419 426	QCM - D
+T22	Action 431 438	measure
+T23	Amount 443 449	amount
+T24	Modifier 453 461	adsorbed
+T25	Reagent 462 465	FBS
+T26	Reagent 482 494	HBS baseline
+T27	Action 527 532	Rinse
+T28	Device 537 544	sensors
+T29	Reagent 554 566	HBS solution
+T30	Action 569 573	Flow
+T31	Reagent 578 599	streptavidin solution
+T32	Modifier 609 617	modified
+T33	Device 618 625	sensors
+T34	Generic-Measure 628 646	100 - 500 µl / min
+T35	Action 678 683	Rinse
+T36	Device 688 695	sensors
+T37	Reagent 705 717	HBS solution
+E1	Action:T1 Product:T2 Acts-on:T4 Acts-on2:T6
+E2	Action:T7 Product:T9 Acts-on:E1 Product2:T29 Product3:T31 Product4:T37
+E3	Action:T12 Acts-on:T13 Using:T11 Product:T26 Product2:T16
+E4	Action:T14 Acts-on:T16 Site:T18 Using:T20 Using2:T21 Product:T25
+E5	Action:T22 Acts-on:T25 Using:T26 Product:T28
+E6	Action:T27 Acts-on:T28 Using:T29 Product:T33
+E7	Action:T30 Acts-on:T31 Site:T33 Product:T36
+E8	Action:T35 Acts-on:T36 Using:T37
+R1	Measure Arg1:T6 Arg2:T5
+R2	Measure Arg1:T4 Arg2:T3
+R3	Measure Arg1:T9 Arg2:T8
+R4	Meronym Arg1:T9 Arg2:T10
+R5	Mod-Link Arg1:T25 Arg2:T24
+R6	Setting Arg1:E5 Arg2:T23
+R7	Mod-Link Arg1:T18 Arg2:T17
+R8	Mod-Link Arg1:T16 Arg2:T15
+R9	Setting Arg1:E4 Arg2:T19
+R10	Mod-Link Arg1:T33 Arg2:T32
+R11	Measure Arg1:T31 Arg2:T34
+R12	Coreference-Link Arg1:T10 Arg2:T13
+R13	Overlaps Arg1:E5 Arg2:E4

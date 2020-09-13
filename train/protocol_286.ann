@@ -1,0 +1,63 @@
+T1	Action 56 65	Resuspend
+T2	Reagent 70 84	nuclear pellet
+T3	Amount 88 93	300µl
+T4	Reagent 94 112	SubCell Buffer‐III
+T5	Action 115 125	Centrifuge
+T6	Location 130 134	tube
+T7	Speed 138 144	700x g
+T8	Time 149 158	5 minutes
+T9	Action 163 170	discard
+T10	Reagent 175 186	supernatant
+T11	Action 303 310	Pipette
+T12	Amount 311 316	300µl
+T13	Reagent 317 334	SubCell Buffer‐IV
+T14	Amount 340 345	1.5ml
+T15	Location 346 361	centrifuge tube
+T16	Action 364 373	Resuspend
+T17	Reagent 378 392	nuclear pellet
+T18	Amount 396 401	100µl
+T19	Reagent 402 420	SubCell Buffer‐III
+T20	Modifier 423 432	Carefully
+T21	Action 433 440	overlay
+T22	Reagent 445 463	nuclear suspension
+T23	Location 471 478	surface
+T24	Reagent 482 499	SubCell Buffer‐IV
+T25	Action 502 512	Centrifuge
+T26	Location 517 521	tube
+T27	Speed 525 533	1,000x g
+T28	Time 538 548	10 minutes
+T29	Modifier 559 564	sharp
+T30	Device 565 576	pipette tip
+T31	Action 579 585	remove
+T32	Modifier 590 596	sticky
+T33	Reagent 597 601	lump
+T34	Action 670 676	Remove
+T35	Reagent 681 692	supernatant
+T36	Action 697 704	collect
+T37	Modifier 709 719	very clean
+T38	Reagent 720 734	nuclear pellet
+T39	Location 742 746	tube
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T6
+E2	Action:T5 Acts-on:T6 Product:T10
+E3	Action:T9 Acts-on:T10
+E4	Action:T11 Acts-on:T13 Site:T15
+E5	Action:T16 Acts-on:T17 Site:T19
+E6	Action:T21 Acts-on:T22 Site:T23 Product:T26
+E7	Action:T25 Acts-on:T26 Product:T33 Product2:T35
+E8	Action:T31 Acts-on:T33 Using:T30
+E9	Action:T34 Acts-on:T35
+E10	Action:T36 Site:T39 Product:T38 Acts-on:E9
+R1	Measure Arg1:T4 Arg2:T3
+R2	Setting Arg1:E2 Arg2:T7
+R3	Setting Arg1:E2 Arg2:T8
+R4	Measure Arg1:T15 Arg2:T14
+R5	Measure Arg1:T13 Arg2:T12
+R6	Measure Arg1:T19 Arg2:T18
+R7	Meronym Arg1:T23 Arg2:T24
+R8	Mod-Link Arg1:E6 Arg2:T20
+R9	Setting Arg1:E7 Arg2:T27
+R10	Setting Arg1:E7 Arg2:T28
+R11	Mod-Link Arg1:T30 Arg2:T29
+R12	Mod-Link Arg1:T33 Arg2:T32
+R13	Mod-Link Arg1:T38 Arg2:T37
+R14	Coreference-Link Arg1:T13 Arg2:T19

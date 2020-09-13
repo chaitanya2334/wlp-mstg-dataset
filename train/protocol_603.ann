@@ -1,0 +1,19 @@
+T1	Action 59 63	Make
+T2	Modifier 66 81	dilution series
+T3	Reagent 89 95	lysate
+T4	Action 152 158	Repeat
+T5	Method 163 192	plaque purification procedure
+T6	Numerical 193 194	2
+T7	Action 257 263	Repeat
+T8	Method 268 303	plaque purification procedure again
+T9	Action 316 323	prepare
+T10	Reagent 326 350	primary cyanophage stock
+T11	Reagent 357 363	lysate
+T12	Method 396 429	method A " Liquid Amplification "
+T13	Method 433 465	method B " Plate Amplification "
+E1	Action:T1 Acts-on:T3 Product:T11
+E2	Action:T4 Using:T5 Count:T6 Acts-on:E1
+E3	Action:T7 Using:T8 Acts-on:E2
+E4	Action:T9 Acts-on:T10 Using:T11 Using2:T12
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Or Arg1:T12 Arg2:T13

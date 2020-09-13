@@ -1,0 +1,49 @@
+T1	Action 50 55	Weigh
+T2	Amount 56 61	0.5 g
+T3	Reagent 65 86	Kanamycin Monosulfate
+T4	Action 89 92	Add
+T5	Amount 93 98	10 ml
+T6	Modifier 102 109	sterile
+T7	Reagent 110 113	H2O
+T8	Action 116 123	Disolve
+T9	Modifier 124 134	completely
+T10	Action 137 143	Prewet
+T11	Size 146 152	0.2 µm
+T12	Device 153 167	syringe filter
+T13	Action 171 178	drawing
+T14	Amount 187 196	5 - 10 ml
+T15	Modifier 200 207	sterile
+T16	Reagent 208 211	H2O
+T17	Action 216 223	discard
+T18	Mention 224 229	water
+T19	Action 232 241	Sterilize
+T20	Reagent 242 257	Kanamycin Stock
+T21	Modifier 270 278	prepared
+T22	Size 279 285	0.2 µm
+T23	Device 286 300	syringe filter
+T24	Reagent 303 308	Stock
+T25	Action 316 320	kept
+T26	Temperature 324 330	- 20°C
+T27	Time 335 341	1 year
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T7 Site:E1
+E3	Action:T8 Acts-on:E2 Product:T20
+E4	Action:T10 Acts-on:T12 Product:T18 Product2:T23
+E5	Action:T13 Acts-on:T16 Using:T12
+E6	Action:T17 Acts-on:T18
+E7	Action:T19 Acts-on:T20 Using:T23
+E8	Action:T25 Acts-on:T24
+R1	Coreference-Link Arg1:T18 Arg2:T16
+R2	Measure Arg1:T3 Arg2:T2
+R3	Mod-Link Arg1:T7 Arg2:T6
+R4	Measure Arg1:T7 Arg2:T5
+R5	Mod-Link Arg1:E3 Arg2:T9
+R6	Setting Arg1:T12 Arg2:T11
+R7	Mod-Link Arg1:T16 Arg2:T15
+R8	Measure Arg1:T16 Arg2:T14
+R9	Setting Arg1:T23 Arg2:T22
+R10	Mod-Link Arg1:T23 Arg2:T21
+R11	Setting Arg1:E8 Arg2:T26
+R12	Setting Arg1:E8 Arg2:T27
+R13	Enables Arg1:E5 Arg2:E4
+R14	Coreference-Link Arg1:T20 Arg2:T24

@@ -1,0 +1,180 @@
+T1	Action 53 57	Grow
+T2	Reagent 58 78	DH5alpha ecoli cells
+T3	Time 79 88	overnight
+T4	Reagent 94 118	pSP64 poly ( A ) plasmid
+T5	Reagent 130 158	inserted spike - in sequence
+T6	Action 223 229	Set up
+T7	Reagent 234 252	digestion reaction
+T8	Amount 256 260	50ul
+T9	Concentration 261 263	1x
+T10	Reagent 264 287	EcoRI compatible buffer
+T11	Amount 293 298	~ 3ug
+T12	Reagent 299 325	pSP64 - NSERT - poly ( A )
+T13	Amount 330 333	5ul
+T14	Reagent 334 339	EcoRI
+T15	Action 342 350	Incubate
+T16	Time 351 358	2 hours
+T17	Temperature 366 369	37C
+T18	Action 410 414	Pour
+T19	Concentration 417 420	1 %
+T20	Reagent 421 432	agarose gel
+T21	Action 437 440	run
+T22	Amount 441 448	~ 100ng
+T23	Reagent 452 481	digest and undigested plasmid
+T24	Method 487 504	check for cutting
+T25	Action 549 557	clean up
+T26	Reagent 558 567	reactions
+T27	Reagent 574 590	PCR clean up kit
+T28	Action 593 600	pooling
+T29	Reagent 601 635	repeats of the same plasmid digest
+T30	Action 652 660	Quantify
+T31	Device 667 675	nanodrop
+T32	Measure-Type 696 709	concentration
+T33	Action 712 718	Set up
+T34	Reagent 719 742	SP6 reaction master mix
+T35	Action 972 976	Make
+T36	Modifier 977 980	new
+T37	Location 981 986	tubes
+T38	Amount 990 996	6.25ul
+T39	Reagent 1000 1021	linarized plasmid DNA
+T40	Reagent 1030 1050	kit positive control
+T41	Action 1053 1059	dilute
+T42	Amount 1060 1063	1ul
+T43	Reagent 1071 1088	provided standard
+T44	Amount 1094 1100	5.25ul
+T45	Reagent 1104 1109	water
+T46	Action 1173 1176	Add
+T47	Amount 1177 1184	13.75ul
+T48	Reagent 1188 1211	SP6 reaction master mix
+T49	Modifier 1215 1219	each
+T50	Location 1220 1224	tube
+T51	Reagent 1228 1242	linearized DNA
+T52	Action 1245 1253	Incubate
+T53	Time 1254 1261	1 - 2hr
+T54	Temperature 1265 1273	30 / 37C
+T55	Device 1274 1284	water bath
+T56	Action 1287 1293	Remove
+T57	Amount 1294 1297	2ul
+T58	Location 1303 1312	PCR tubes
+T59	Action 1343 1346	add
+T60	Amount 1347 1350	1ul
+T61	Reagent 1354 1376	RQ1 RNase - Free DNase
+T62	Action 1379 1387	Incubate
+T63	Time 1388 1393	15min
+T64	Temperature 1397 1400	37C
+T65	Reagent 1406 1419	each reaction
+T66	Action 1422 1425	add
+T67	Amount 1426 1430	40ul
+T68	Reagent 1431 1446	Ampure XP beads
+T69	Action 1451 1454	mix
+T70	Modifier 1455 1459	well
+T71	Device 1465 1472	pipette
+T72	Action 1479 1482	sit
+T73	Temperature 1483 1485	RT
+T74	Time 1490 1494	5min
+T75	Action 1572 1575	Add
+T76	Amount 1576 1583	~ 500ul
+T77	Concentration 1584 1588	80 %
+T78	Reagent 1589 1593	etOH
+T79	Reagent 1599 1604	beads
+T80	Action 1611 1614	sit
+T81	Time 1615 1627	~ 30 seconds
+T82	Action 1635 1643	aspirate
+T83	Action 1650 1653	Add
+T84	Amount 1654 1661	~ 500ul
+T85	Concentration 1662 1666	80 %
+T86	Reagent 1667 1671	etOH
+T87	Reagent 1677 1682	beads
+T88	Action 1689 1692	sit
+T89	Time 1693 1705	~ 30 seconds
+T90	Action 1713 1721	aspirate
+T91	Reagent 1801 1806	beads
+T92	Action 1807 1810	dry
+T93	Location 1818 1822	rack
+T94	Device 1830 1837	kimwipe
+T95	Time 1860 1865	10min
+T96	Temperature 1866 1868	RT
+T97	Action 1871 1880	Resuspend
+T98	Reagent 1881 1886	beads
+T99	Amount 1890 1894	20ul
+T100	Reagent 1895 1909	hyclone H _ 2O
+T101	Action 1912 1915	Run
+T102	Amount 1916 1921	~ 3ul
+T103	Concentration 1925 1928	1 %
+T104	Reagent 1929 1944	agarose TAE gel
+T105	Time 1955 1960	20min
+T106	Generic-Measure 1964 1968	100V
+T107	Device 1978 1992	NEB 1kb ladder
+T108	Action 2054 2062	Quantify
+T109	Device 2066 2071	qubit
+E1	Action:T1 Acts-on:T2 Using:T4
+E2	Action:T6 Product:T7 Site:T10 Acts-on:T12 Using:T14
+E3	Action:T15 Acts-on:E2 Product:T23
+E4	Action:T18 Acts-on:T20
+E5	Action:T21 Site:E4 Acts-on:T23 Using:T24
+E6	Action:T25 Acts-on:T26 Using:T27
+E7	Action:T28 Acts-on:T29
+E8	Action:T30 Using:T31 Measure-Type-Link:T32
+E9	Action:T33 Product:T34
+E10	Action:T35 Site:T37 Product:T39
+E11	Action:T41 Product:T40 Acts-on:T43 Site:T45
+E12	Action:T46 Acts-on:T48 Site:T50
+E13	Action:T52 Acts-on:E12 Site:T55
+E14	Action:T56 Acts-on:E13 Site:T58
+E15	Action:T59 Acts-on:T61
+E16	Action:T62 Acts-on:E15 Product:T65
+E17	Action:T66 Site:T65 Acts-on:T68
+E18	Action:T69 Acts-on:E17 Using:T71
+E19	Action:T72 Acts-on:E18
+E20	Action:T75 Acts-on:T78 Site:T79
+E21	Action:T80 Acts-on:E20
+E22	Action:T82 Acts-on:E21 Product:T87
+E23	Action:T83 Acts-on:T86 Site:T87
+E24	Action:T88 Acts-on:E23
+E25	Action:T90 Acts-on:E24 Product:T91
+E26	Action:T92 Acts-on:T91 Site:T93 Using:T94 Product:T98
+E27	Action:T97 Acts-on:T98 Site:T100
+E28	Action:T101 Acts-on:E27 Site:T104 Using:T107
+E29	Action:T108 Acts-on:E28 Using:T109
+R1	Setting Arg1:E1 Arg2:T3
+R2	Meronym Arg1:T5 Arg2:T4
+R3	Measure Arg1:T10 Arg2:T8
+R4	Measure Arg1:T10 Arg2:T9
+R5	Measure Arg1:T12 Arg2:T11
+R6	Measure Arg1:T14 Arg2:T13
+R7	Setting Arg1:E3 Arg2:T16
+R8	Setting Arg1:E3 Arg2:T17
+R9	Measure Arg1:T20 Arg2:T19
+R10	Measure Arg1:T23 Arg2:T22
+R11	Coreference-Link Arg1:T34 Arg2:T48
+R12	Mod-Link Arg1:T37 Arg2:T36
+R13	Coreference-Link Arg1:T37 Arg2:T50
+R14	Measure Arg1:T39 Arg2:T38
+R15	Coreference-Link Arg1:T39 Arg2:T51
+R16	Measure Arg1:T43 Arg2:T42
+R17	Measure Arg1:T45 Arg2:T44
+R18	Measure Arg1:T48 Arg2:T47
+R19	Mod-Link Arg1:T50 Arg2:T49
+R20	Meronym Arg1:T50 Arg2:T51
+R21	Setting Arg1:E13 Arg2:T53
+R22	Setting Arg1:T55 Arg2:T54
+R23	Measure Arg1:T61 Arg2:T60
+R24	Setting Arg1:E16 Arg2:T63
+R25	Setting Arg1:E16 Arg2:T64
+R26	Measure Arg1:T68 Arg2:T67
+R27	Mod-Link Arg1:E18 Arg2:T70
+R28	Setting Arg1:E19 Arg2:T73
+R29	Setting Arg1:E19 Arg2:T74
+R30	Measure Arg1:T78 Arg2:T76
+R31	Measure Arg1:T78 Arg2:T77
+R32	Setting Arg1:E21 Arg2:T81
+R33	Measure Arg1:T86 Arg2:T84
+R34	Measure Arg1:T86 Arg2:T85
+R35	Setting Arg1:E24 Arg2:T89
+R36	Setting Arg1:E26 Arg2:T95
+R37	Setting Arg1:E26 Arg2:T96
+R38	Measure Arg1:T100 Arg2:T99
+R39	Setting Arg1:E28 Arg2:T105
+R40	Setting Arg1:E28 Arg2:T106
+R41	Measure Arg1:T104 Arg2:T102
+R42	Measure Arg1:T104 Arg2:T103

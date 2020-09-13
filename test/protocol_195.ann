@@ -1,0 +1,167 @@
+T1	Action 28 37	Inoculate
+T2	Reagent 38 53	fungal material
+T3	Amount 59 65	300 µL
+T4	Reagent 66 84	rich growth medium
+T5	Modifier 90 94	2 mL
+T6	Device 95 118	micro - centrifuge tube
+T7	Action 121 125	Grow
+T8	Temperature 129 131	RT
+T9	Time 136 146	3 - 4 days
+T10	Action 149 155	Freeze
+T11	Reagent 156 169	culture tubes
+T12	Reagent 173 182	LN2Freeze
+T13	Action 200 203	Add
+T14	Amount 204 209	50 µL
+T15	Modifier 210 215	0.6mm
+T16	Reagent 216 227	glass beads
+T17	Reagent 246 252	sample
+T18	Action 270 275	grind
+T19	Device 282 299	Tissue - Lyser LT
+T20	Time 304 310	5 mins
+T21	Amount 314 319	50 Hz
+T22	Action 322 325	Add
+T23	Amount 326 332	500 µL
+T24	Reagent 333 345	lysis buffer
+T25	Reagent 360 366	sample
+T26	Action 369 375	Vortex
+T27	Action 379 382	mix
+T28	Action 383 387	Heat
+T29	Temperature 391 396	45 ˚C
+T30	Time 401 407	5 mins
+T31	Action 410 417	shaking
+T32	Speed 421 429	1200 rpm
+T33	Action 432 435	Add
+T34	Amount 436 454	0.5 vol ( 250 µL )
+T35	Concentration 455 458	3 M
+T36	Reagent 459 476	Potassium Acetate
+T37	Reagent 480 489	lysis mix
+T38	Action 492 498	Vortex
+T39	Action 502 505	mix
+T40	Action 508 518	Centrifuge
+T41	Speed 522 530	12 K rpm
+T42	Time 548 558	15 minutes
+T43	Temperature 561 564	4˚C
+T44	Action 567 575	Transfer
+T45	Reagent 576 587	supernatant
+T46	Modifier 610 616	1.5 mL
+T47	Device 617 637	microcentrifuge tube
+T48	Action 640 643	Add
+T49	Amount 644 649	1 vol
+T50	Modifier 650 657	chilled
+T51	Reagent 658 669	Isopropanol
+T52	Reagent 690 701	supernatant
+T53	Action 704 707	mix
+T54	Action 715 723	incubate
+T55	Temperature 724 730	- 20˚C
+T56	Time 735 738	1hr
+T57	Action 741 751	Centrifuge
+T58	Speed 755 763	12 K rpm
+T59	Time 781 791	15 minutes
+T60	Temperature 795 798	4°C
+T61	Action 801 807	Decant
+T62	Action 818 826	aspirate
+T63	Reagent 827 838	supernatant
+T64	Reagent 848 854	pellet
+T65	Action 855 858	add
+T66	Amount 859 865	500 µL
+T67	Concentration 866 870	70 %
+T68	Reagent 871 878	ethanol
+T69	Action 879 885	stored
+T70	Temperature 889 895	- 20°C
+T71	Action 898 908	Centrifuge
+T72	Speed 912 920	12 K rpm
+T73	Time 938 947	3 minutes
+T74	Temperature 951 954	4°C
+T75	Action 957 964	Discard
+T76	Reagent 965 976	supernatant
+T77	Action 979 985	Repeat
+T78	Amount 1001 1007	500 µL
+T79	Concentration 1016 1020	70 %
+T80	Reagent 1021 1028	ethanol
+T81	Action 1031 1035	Spin
+T82	Action 1040 1047	discard
+T83	Reagent 1048 1059	supernatant
+T84	Action 1062 1065	Dry
+T85	Reagent 1066 1072	pellet
+T86	Temperature 1091 1095	45˚C
+T87	Time 1100 1114	5 - 10 minutes
+T88	Action 1117 1129	Re - suspend
+T89	Reagent 1130 1136	pellet
+T90	Reagent 1140 1159	nuclease free water
+T91	Reagent 1163 1172	TE buffer
+T92	Action 1216 1219	Add
+T93	Amount 1220 1225	50 µL
+T94	Concentration 1226 1228	3M
+T95	Reagent 1229 1243	Sodium Acetate
+T96	pH 1244 1250	pH 5.5
+E1	Action:T1 Acts-on:T2 Acts-on2:T4
+E2	Action:T7 Acts-on:E1 Product:T11
+E3	Action:T10 Acts-on:T11 Acts-on2:T12
+E4	Action:T13 
+E5	Action:T18 Acts-on:E4 Using:T19 Product:T25
+E6	Action:T22 Acts-on:T24
+E7	Action:T26 
+E8	Action:T27 
+E9	Action:T28 Acts-on:E8
+E10	Action:T31 
+E11	Action:T33 Acts-on:T36 Site:T37
+E12	Action:T38 
+E13	Action:T39 Acts-on:E11
+E14	Action:T40 Acts-on:E13 Product:T45
+E15	Action:T44 Acts-on:T45 Site:T47 Product:T52
+E16	Action:T48 Acts-on:T51 Site:T52
+E17	Action:T53 Acts-on:E16
+E18	Action:T54 Acts-on:E17
+E19	Action:T57 Acts-on:E18 Product:T63
+E20	Action:T61 Acts-on:T63
+E21	Action:T62 Acts-on:T63
+E22	Action:T65 Acts-on:T68
+E23	Action:T69 
+E24	Action:T71 Acts-on:E22 Product:T76
+E25	Action:T75 Acts-on:T76
+E26	Action:T77 Acts-on:E25 Acts-on2:T80
+E27	Action:T81 Acts-on:T83
+E28	Action:T82 Acts-on:T83
+E29	Action:T84 Acts-on:T85 Product:T89
+E30	Action:T88 Acts-on:T89 Site:T90 Site2:T91
+E31	Action:T92 Acts-on:E30 Acts-on2:T95
+R1	Measure Arg1:T4 Arg2:T3
+R2	Mod-Link Arg1:T6 Arg2:T5
+R3	Setting Arg1:E2 Arg2:T8
+R4	Setting Arg1:E2 Arg2:T9
+R5	Measure Arg1:T16 Arg2:T14
+R6	Mod-Link Arg1:T16 Arg2:T15
+R7	Setting Arg1:T19 Arg2:T20
+R8	Setting Arg1:T19 Arg2:T21
+R9	Measure Arg1:T24 Arg2:T23
+R10	Enables Arg1:E7 Arg2:E8
+R11	Setting Arg1:E7 Arg2:T30
+R12	Setting Arg1:E10 Arg2:T32
+R13	Measure Arg1:T36 Arg2:T34
+R14	Measure Arg1:T36 Arg2:T35
+R15	Enables Arg1:E12 Arg2:E13
+R16	Setting Arg1:E14 Arg2:T41
+R17	Setting Arg1:E14 Arg2:T42
+R18	Setting Arg1:E14 Arg2:T43
+R19	Mod-Link Arg1:T47 Arg2:T46
+R20	Measure Arg1:T51 Arg2:T49
+R21	Mod-Link Arg1:T51 Arg2:T50
+R22	Setting Arg1:E18 Arg2:T55
+R23	Setting Arg1:E18 Arg2:T56
+R24	Setting Arg1:E19 Arg2:T58
+R25	Setting Arg1:E19 Arg2:T59
+R26	Setting Arg1:E19 Arg2:T60
+R27	Or Arg1:E20 Arg2:E21
+R28	Measure Arg1:T68 Arg2:T66
+R29	Measure Arg1:T68 Arg2:T67
+R30	Setting Arg1:E23 Arg2:T70
+R31	Setting Arg1:E24 Arg2:T72
+R32	Setting Arg1:E24 Arg2:T73
+R33	Setting Arg1:E24 Arg2:T74
+R34	Measure Arg1:T80 Arg2:T78
+R35	Measure Arg1:T80 Arg2:T79
+R36	Setting Arg1:E29 Arg2:T86
+R37	Setting Arg1:E29 Arg2:T87
+R38	Measure Arg1:T95 Arg2:T93
+R39	Measure Arg1:T95 Arg2:T94
+R40	Measure Arg1:T95 Arg2:T96

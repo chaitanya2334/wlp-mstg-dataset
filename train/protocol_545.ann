@@ -1,0 +1,73 @@
+T1	Action 679 682	Mix
+T2	Amount 683 686	1µl
+T3	Concentration 687 692	100µM
+T4	Reagent 693 698	stock
+T5	Amount 709 713	20µl
+T6	Concentration 714 716	1x
+T7	Reagent 717 729	NEB buffer 2
+T8	Action 732 740	Incubate
+T9	Reagent 745 752	mixture
+T10	Temperature 766 771	95 °C
+T11	Time 776 781	5 min
+T12	Temperature 797 802	50 °C
+T13	Temperature 821 826	50 °C
+T14	Time 831 837	10 min
+T15	Temperature 847 851	4 °C
+T16	Generic-Measure 855 872	normal ramp speed
+T17	Action 875 878	Mix
+T18	Reagent 883 903	following components
+T19	Reagent 963 985	pU6x - sgRNA # 1 - # 5
+T20	Action 1040 1048	Incubate
+T21	Temperature 1052 1057	37 °C
+T22	Time 1062 1068	20 min
+T23	Action 1071 1079	Incubate
+T24	Temperature 1083 1088	16 °C
+T25	Time 1093 1099	15 min
+T26	Action 1102 1110	Incubate
+T27	Temperature 1114 1119	37 °C
+T28	Time 1124 1130	10 min
+T29	Action 1133 1141	Incubate
+T30	Temperature 1145 1150	55 °C
+T31	Time 1155 1161	15 min
+T32	Action 1164 1172	Incubate
+T33	Temperature 1176 1181	80 °C
+T34	Time 1186 1192	15 min
+T35	Action 1315 1324	Transform
+T36	Action 1329 1335	spread
+T37	Reagent 1341 1354	spectinomycin
+T38	Concentration 1357 1366	50µg / ml
+T39	Location 1369 1375	plates
+E1	Action:T1 Acts-on:T4 Site:T7 Product:T9
+E2	Action:T8 Acts-on:T9
+E3	Action:T17 Acts-on:T18
+E4	Action:T20 Acts-on:E3
+E5	Action:T23 Acts-on:E4
+E6	Action:T26 Acts-on:E5
+E7	Action:T29 Acts-on:E6
+E8	Action:T32 Acts-on:E7
+E9	Action:T35 Acts-on:E8
+E10	Action:T36 Site:T39 Acts-on:E9
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T4 Arg2:T2
+R3	Measure Arg1:T7 Arg2:T6
+R4	Measure Arg1:T7 Arg2:T5
+R5	Setting Arg1:E2 Arg2:T10
+R6	Setting Arg1:E2 Arg2:T11
+R7	Setting Arg1:E2 Arg2:T12
+R8	Setting Arg1:E2 Arg2:T13
+R9	Setting Arg1:E2 Arg2:T14
+R10	Setting Arg1:E2 Arg2:T15
+R11	Setting Arg1:E2 Arg2:T16
+R12	Setting Arg1:E4 Arg2:T21
+R13	Setting Arg1:E4 Arg2:T22
+R14	Setting Arg1:E5 Arg2:T24
+R15	Setting Arg1:E5 Arg2:T25
+R16	Setting Arg1:E6 Arg2:T27
+R17	Setting Arg1:E6 Arg2:T28
+R18	Setting Arg1:E7 Arg2:T30
+R19	Setting Arg1:E7 Arg2:T31
+R20	Setting Arg1:E8 Arg2:T33
+R21	Setting Arg1:E8 Arg2:T34
+R22	Measure Arg1:T37 Arg2:T38
+R23	Meronym Arg1:T37 Arg2:T39
+R24	Meronym Arg1:T19 Arg2:T18

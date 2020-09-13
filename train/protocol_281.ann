@@ -1,0 +1,103 @@
+T1	Action 202 208	Remove
+T2	Amount 209 213	5 µL
+T3	Reagent 214 222	aliquots
+T4	Action 311 319	addition
+T5	Reagent 327 344	digestion mixture
+T6	Modifier 347 358	Immediately
+T7	Action 359 367	transfer
+T8	Location 373 377	tube
+T9	Amount 389 394	25 µL
+T10	Modifier 395 410	Tris - buffered
+T11	pH 413 419	pH 7.0
+T12	Reagent 422 428	phenol
+T13	Action 431 438	Perform
+T14	Method 441 481	phenol : chloroform ( 1 : 1 ) extraction
+T15	Action 484 491	Perform
+T16	Method 494 515	chloroform extraction
+T17	Action 518 525	Perform
+T18	Method 528 549	chloroform extraction
+T19	Modifier 550 559	once more
+T20	Action 562 573	Precipitate
+T21	Modifier 578 588	fragmented
+T22	Reagent 589 592	DNA
+T23	Action 595 599	Wash
+T24	Concentration 605 609	70 %
+T25	Reagent 610 617	ethanol
+T26	Action 620 623	Dry
+T27	Action 626 635	Resuspend
+T28	Modifier 636 646	fragmented
+T29	Reagent 647 650	DNA
+T30	Amount 654 659	23 µL
+T31	Reagent 663 681	Blunt - ending Mix
+T32	Concentration 684 690	100 µM
+T33	Reagent 691 696	dNTPs
+T34	Concentration 699 702	1 ×
+T35	Reagent 703 720	T4 DNA Pol Buffer
+T36	Action 725 729	Heat
+T37	Temperature 733 737	65°C
+T38	Time 742 748	30 min
+T39	Action 752 761	resuspend
+T40	Reagent 762 765	DNA
+T41	Action 770 780	inactivate
+T42	Modifier 781 784	any
+T43	Reagent 785 792	DNase I
+T44	Action 817 821	Cool
+T45	Temperature 825 841	room temperature
+T46	Action 844 847	Add
+T47	Amount 848 853	2.5 U
+T48	Reagent 854 869	Klenow fragment
+T49	Amount 874 877	5 U
+T50	Reagent 878 895	T4 DNA polymerase
+T51	Action 898 906	Incubate
+T52	Reagent 911 919	reaction
+T53	Temperature 923 927	37°C
+T54	Time 932 935	1 h
+T55	Modifier 957 970	blunt - ended
+T56	Reagent 971 980	virus DNA
+T57	Action 988 991	run
+T58	Concentration 997 1000	1 %
+T59	Reagent 1001 1012	agarose gel
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T5 Acts-on2:E1
+E3	Action:T7 Site:T8 Acts-on:E1
+E4	Action:T13 Using:T14 Acts-on:E3
+E5	Action:T15 Using:T16 Acts-on:E4
+E6	Action:T17 Using:T18 Acts-on:E5 Product:T22
+E7	Action:T20 Acts-on:T22
+E8	Action:T23 Acts-on:T25 Acts-on2:E7
+E9	Action:T26 Acts-on:E8 Product:T29
+E10	Action:T27 Acts-on:T29 Site:T31 Product:T40
+E11	Action:T36 
+E12	Action:T39 Acts-on:T40
+E13	Action:T41 Acts-on:T43
+E14	Action:T44 Acts-on:E11
+E15	Action:T46 Acts-on:T48 Acts-on2:T50 Acts-on3:E14 Product:T52
+E16	Action:T51 Acts-on:T52 Product:T56
+E17	Action:T57 Acts-on:T56 Using:T59
+R1	Measure Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:E3 Arg2:T6
+R3	Mod-Link Arg1:T12 Arg2:T10
+R4	Measure Arg1:T12 Arg2:T11
+R5	Measure Arg1:T12 Arg2:T9
+R6	Meronym Arg1:T12 Arg2:T8
+R7	Mod-Link Arg1:E6 Arg2:T19
+R8	Mod-Link Arg1:T22 Arg2:T21
+R9	Measure Arg1:T25 Arg2:T24
+R10	Measure Arg1:T35 Arg2:T34
+R11	Measure Arg1:T33 Arg2:T32
+R12	Measure Arg1:T31 Arg2:T30
+R13	Meronym Arg1:T33 Arg2:T31
+R14	Meronym Arg1:T35 Arg2:T31
+R15	Mod-Link Arg1:T29 Arg2:T28
+R16	Mod-Link Arg1:T43 Arg2:T42
+R17	Setting Arg1:E11 Arg2:T37
+R18	Setting Arg1:E11 Arg2:T38
+R19	Setting Arg1:E14 Arg2:T45
+R20	Measure Arg1:T50 Arg2:T49
+R21	Measure Arg1:T48 Arg2:T47
+R22	Setting Arg1:E16 Arg2:T53
+R23	Setting Arg1:E16 Arg2:T54
+R24	Mod-Link Arg1:T56 Arg2:T55
+R25	Measure Arg1:T59 Arg2:T58
+R26	Enables Arg1:E11 Arg2:E12
+R27	Enables Arg1:E11 Arg2:E13

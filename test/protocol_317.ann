@@ -1,0 +1,183 @@
+T1	Action 17 23	Excise
+T2	Modifier 24 29	up to
+T3	Amount 30 36	200 mg
+T4	Reagent 37 46	gel slice
+T5	Reagent 62 74	DNA fragment
+T6	Modifier 83 88	clean
+T7	Device 89 96	scalpel
+T8	Device 100 111	razor blade
+T9	Action 114 117	Cut
+T10	Generic-Measure 118 126	as close
+T11	Reagent 134 137	DNA
+T12	Action 153 161	minimize
+T13	Reagent 166 176	gel volume
+T14	Action 179 184	Place
+T15	Reagent 189 198	gel slice
+T16	Amount 206 212	1.5 mL
+T17	Location 213 217	tube
+T18	Action 220 223	Add
+T19	Amount 224 230	200 µL
+T20	Reagent 234 251	Extraction Buffer
+T21	Action 254 257	Mix
+T22	Modifier 258 268	thoroughly
+T23	Action 272 281	pippeting
+T24	Action 284 292	Incubate
+T25	Reagent 297 308	gel mixture
+T26	Temperature 312 321	50 - 58°C
+T27	Time 326 336	10 minutes
+T28	Reagent 350 359	gel slice
+T29	Modifier 363 373	completely
+T30	Action 374 383	dissolved
+T31	Action 386 389	Mix
+T32	Location 394 398	tube
+T33	Action 402 411	inversion
+T34	Modifier 412 417	every
+T35	Time 418 429	few minutes
+T36	Action 433 443	facilitate
+T37	Method 448 463	melting process
+T38	Action 512 515	Add
+T39	Amount 516 522	200 µL
+T40	Reagent 526 533	ethanol
+T41	Concentration 536 546	96 - 100 %
+T42	Action 553 556	mix
+T43	Method 560 569	pipetting
+T44	Action 572 580	Transfer
+T45	Reagent 585 592	mixture
+T46	Location 600 629	DNA Purification Micro Column
+T47	Action 630 642	preassembled
+T48	Location 650 665	collection tube
+T49	Action 668 678	Centrifuge
+T50	Location 683 689	column
+T51	Time 694 702	1 minute
+T52	Speed 706 718	14,000 × g .
+T53	Action 719 726	Discard
+T54	Reagent 731 745	flow - through
+T55	Action 748 753	Place
+T56	Location 758 787	DNA Purification Micro Column
+T57	Location 802 817	collection tube
+T58	Action 820 823	Add
+T59	Amount 824 830	200 µL
+T60	Reagent 834 848	Prewash Buffer
+T61	Location 898 927	DNA Purification Micro Column
+T62	Action 932 942	centrifuge
+T63	Time 947 955	1 minute
+T64	Speed 959 969	14,000 × g
+T65	Action 972 979	Discard
+T66	Reagent 984 998	flow - through
+T67	Action 1003 1008	place
+T68	Location 1013 1032	purification column
+T69	Location 1047 1062	collection tube
+T70	Action 1065 1068	Add
+T71	Amount 1069 1075	700 µL
+T72	Reagent 1079 1090	Wash Buffer
+T73	Location 1140 1169	DNA Purification Micro Column
+T74	Action 1174 1184	centrifuge
+T75	Time 1189 1197	1 minute
+T76	Speed 1201 1211	14,000 × g
+T77	Action 1214 1221	Discard
+T78	Reagent 1226 1240	flow - through
+T79	Action 1245 1250	place
+T80	Location 1255 1274	purification column
+T81	Location 1289 1304	collection tube
+T82	Action 1307 1313	Repeat
+T83	Method 1314 1320	step 7
+T84	Action 1321 1331	Centrifuge
+T85	Modifier 1336 1341	empty
+T86	Location 1342 1371	DNA Purification Micro Column
+T87	Modifier 1379 1389	additional
+T88	Time 1390 1398	1 minute
+T89	Speed 1402 1412	14,000 × g
+T90	Modifier 1416 1426	completely
+T91	Action 1427 1433	remove
+T92	Modifier 1434 1442	residual
+T93	Reagent 1443 1454	Wash Buffer
+T94	Action 1457 1465	Transfer
+T95	Reagent 1470 1499	DNA Purification Micro Column
+T96	Modifier 1507 1512	clean
+T97	Amount 1513 1519	1.8 mL
+T98	Location 1520 1539	microcentrifugetube
+T99	Action 1540 1543	Add
+T100	Amount 1544 1549	10 µL
+T101	Reagent 1553 1567	Elution Buffer
+T102	Location 1575 1604	DNA Purification Micro Column
+T103	Action 1607 1617	Centrifuge
+T104	Time 1622 1630	1 minute
+T105	Speed 1634 1644	14,000 × g
+T106	Action 1648 1653	elute
+T107	Reagent 1654 1657	DNA
+E1	Action:T1 Acts-on:T4 Using:T7
+E2	Action:T9 Acts-on:T11
+E3	Action:T12 Acts-on:T13
+E4	Action:T14 Acts-on:T15 Site:T17
+E5	Action:T18 Site:E4 Acts-on:T20
+E6	Action:T21 Acts-on:E5 Product:T25
+E7	Action:T23 
+E8	Action:T24 Acts-on:T25 Product:T32
+E9	Action:T30 Acts-on:T28
+E10	Action:T31 Acts-on:T32
+E11	Action:T33 
+E12	Action:T36 Using:T37
+E13	Action:T38 Acts-on:T40
+E14	Action:T42 Acts-on:E13 Using:T43 Product:T45
+E15	Action:T44 Acts-on:T45 Site:T46 Product:T50
+E16	Action:T47 Acts-on:T46 Using:T48
+E17	Action:T49 Acts-on:T50 Product:T54
+E18	Action:T53 Acts-on:T54 Product:T56
+E19	Action:T55 Acts-on:T56 Site:T57 Product:T61
+E20	Action:T58 Acts-on:T60 Site:T61
+E21	Action:T62 Acts-on:E20 Product:T66
+E22	Action:T65 Acts-on:T66 Product:T68
+E23	Action:T67 Acts-on:T68 Site:T69 Product:T73
+E24	Action:T70 Acts-on:T72 Site:T73
+E25	Action:T74 Acts-on:E24 Product:T78
+E26	Action:T77 Acts-on:T78 Product:T80
+E27	Action:T79 Acts-on:T80 Site:T81 Product:T86
+E28	Action:T82 Using:T83
+E29	Action:T84 Acts-on:T86
+E30	Action:T91 Acts-on:T93 Product:T95
+E31	Action:T94 Acts-on:T95 Site:T98 Product:T102
+E32	Action:T99 Acts-on:T101 Site:T102
+E33	Action:T103 Acts-on:E32
+E34	Action:T106 Acts-on:T107
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Measure Arg1:T4 Arg2:T3
+R3	Meronym Arg1:T5 Arg2:T4
+R4	Mod-Link Arg1:T7 Arg2:T6
+R5	Or Arg1:T7 Arg2:T8
+R6	Enables Arg1:E2 Arg2:E3
+R7	Measure Arg1:T11 Arg2:T10
+R8	Measure Arg1:T17 Arg2:T16
+R9	Measure Arg1:T20 Arg2:T19
+R10	Mod-Link Arg1:E6 Arg2:T22
+R11	Enables Arg1:E7 Arg2:E6
+R12	Setting Arg1:E8 Arg2:T26
+R13	Setting Arg1:E8 Arg2:T27
+R14	Enables Arg1:E8 Arg2:E9
+R15	Mod-Link Arg1:E9 Arg2:T29
+R16	Enables Arg1:E10 Arg2:E12
+R17	Enables Arg1:E11 Arg2:E10
+R18	Setting Arg1:E11 Arg2:T35
+R19	Mod-Link Arg1:T35 Arg2:T34
+R20	Measure Arg1:T40 Arg2:T39
+R21	Measure Arg1:T40 Arg2:T41
+R22	Setting Arg1:E17 Arg2:T51
+R23	Setting Arg1:E17 Arg2:T52
+R24	Measure Arg1:T60 Arg2:T59
+R25	Setting Arg1:E21 Arg2:T63
+R26	Setting Arg1:E21 Arg2:T64
+R27	Measure Arg1:T72 Arg2:T71
+R28	Setting Arg1:E25 Arg2:T75
+R29	Setting Arg1:E25 Arg2:T76
+R30	Setting Arg1:E29 Arg2:T88
+R31	Setting Arg1:E29 Arg2:T89
+R32	Enables Arg1:E29 Arg2:E30
+R33	Mod-Link Arg1:T86 Arg2:T85
+R34	Mod-Link Arg1:T88 Arg2:T87
+R35	Mod-Link Arg1:E30 Arg2:T90
+R36	Mod-Link Arg1:T93 Arg2:T92
+R37	Mod-Link Arg1:T98 Arg2:T96
+R38	Measure Arg1:T98 Arg2:T97
+R39	Measure Arg1:T101 Arg2:T100
+R40	Setting Arg1:E33 Arg2:T104
+R41	Setting Arg1:E33 Arg2:T105
+R42	Enables Arg1:E33 Arg2:E34

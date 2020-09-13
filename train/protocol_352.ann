@@ -1,0 +1,125 @@
+T1	Action 46 52	Set up
+T2	Modifier 53 63	triplicate
+T3	Location 64 80	adsorption tubes
+T4	Size 91 97	1.5 mL
+T5	Location 98 108	microtubes
+T6	Action 111 114	Add
+T7	Reagent 115 121	phages
+T8	Modifier 127 138	known titer
+T9	Reagent 146 164	cyanobacteria host
+T10	Modifier 168 186	exponential growth
+T11	Measure-Type 254 257	MOI
+T12	Numerical 275 279	0.02
+T13	Reagent 292 298	phages
+T14	Action 302 308	adsorb
+T15	Reagent 316 321	hosts
+T16	Time 326 332	60 min
+T17	Temperature 338 354	room temperature
+T18	Generic-Measure 378 398	25µmol quanta m–2s–1
+T19	Action 401 407	Set up
+T20	Location 408 421	control tubes
+T21	Action 473 480	replace
+T22	Reagent 481 491	host cells
+T23	Reagent 497 502	media
+T24	Action 564 568	omit
+T25	Reagent 569 574	virus
+T26	Action 590 596	remove
+T27	Modifier 597 607	unadsorbed
+T28	Reagent 608 614	phages
+T29	Action 627 634	Prepare
+T30	Amount 635 639	nine
+T31	Size 640 647	15 - mL
+T32	Location 648 664	centrifuge tubes
+T33	Amount 676 681	10 mL
+T34	Reagent 682 700	algal growth media
+T35	Action 703 706	Add
+T36	Amount 707 713	100 µL
+T37	Reagent 719 721	AT
+T38	Reagent 725 728	FGT
+T39	Action 749 752	Mix
+T40	Action 757 763	remove
+T41	Amount 764 770	0.1 mL
+T42	Reagent 771 777	sample
+T43	Generic-Measure 782 787	T = 0
+T44	Action 790 797	Perform
+T45	Method 798 810	plaque assay
+T46	Modifier 811 822	immediately
+T47	Action 826 835	determine
+T48	Measure-Type 836 859	total infective centers
+T49	Action 875 878	Add
+T50	Amount 879 885	100 µL
+T51	Reagent 891 894	FGT
+T52	Reagent 898 901	SGT
+T53	Action 922 930	Incubate
+T54	Reagent 931 934	FGT
+T55	Reagent 939 942	SGT
+T56	Temperature 952 968	room temperature
+T57	Generic-Measure 973 977	ca .
+T58	Generic-Measure 978 999	25 µmol quanta m–2s–1
+T59	Action 1000 1006	Remove
+T60	Amount 1007 1013	100 µL
+T61	Reagent 1014 1021	samples
+T62	Time 1022 1031	every 3 h
+T63	Reagent 1037 1040	FGT
+T64	Reagent 1074 1077	SGT
+T65	Generic-Measure 1104 1113	ca . 30 h
+T66	Action 1116 1125	Determine
+T67	Measure-Type 1130 1133	TIC
+T68	Method 1138 1150	plaque assay
+T69	Action 1153 1156	Add
+T70	Amount 1157 1163	100 µL
+T71	Location 1169 1190	positive control tube
+T72	Location 1201 1214	FGT - control
+T73	Action 1235 1244	Determine
+T74	Measure-Type 1249 1266	total phage input
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T6 Acts-on:T7 Acts-on2:T9 Site:E1 Product:T13
+E3	Action:T14 Acts-on:T13 Acts-on2:T15 Product:T28
+E4	Action:T19 Product:T20 Product2:T28
+E5	Action:T21 Acts-on:T22 Acts-on2:T23
+E6	Action:T24 Acts-on:T25
+E7	Action:T26 Acts-on:T28 Product:T71 Product2:T37
+E8	Action:T29 Acts-on:T32 Product:T38
+E9	Action:T35 Acts-on:T37 Site:T38 Product:T42
+E10	Action:T39 Acts-on:T42
+E11	Action:T40 Acts-on:E10
+E12	Action:T44 Using:T45 Acts-on:E11
+E13	Action:T47 Measure-Type-Link:T48 Acts-on:E11 Product:T51
+E14	Action:T49 Acts-on:T51 Site:T52 Product:T54 Product2:T55
+E15	Action:T53 Acts-on:T54 Acts-on2:T55 Product:T61
+E16	Action:T59 Acts-on:T61
+E17	Action:T66 Measure-Type-Link:T67 Using:T68 Acts-on:E16 Product:T72
+E18	Action:T69 Acts-on:T71 Site:T72
+E19	Action:T73 Measure-Type-Link:T74 Acts-on:E18
+R1	Measure Arg1:T5 Arg2:T4
+R2	Of-Type Arg1:T12 Arg2:T11
+R3	Mod-Link Arg1:T7 Arg2:T8
+R4	Mod-Link Arg1:T9 Arg2:T10
+R5	Measure Arg1:T9 Arg2:T12
+R6	Setting Arg1:E3 Arg2:T16
+R7	Setting Arg1:E3 Arg2:T17
+R8	Setting Arg1:E3 Arg2:T18
+R9	Measure Arg1:T34 Arg2:T33
+R10	Meronym Arg1:T34 Arg2:T32
+R11	Measure Arg1:T32 Arg2:T31
+R12	Measure Arg1:T32 Arg2:T30
+R13	Measure Arg1:T37 Arg2:T36
+R14	Measure Arg1:T42 Arg2:T41
+R15	Setting Arg1:E11 Arg2:T43
+R16	Mod-Link Arg1:E12 Arg2:T46
+R17	Measure Arg1:T51 Arg2:T50
+R18	Setting Arg1:E15 Arg2:T56
+R19	Setting Arg1:E15 Arg2:T57
+R20	Measure Arg1:T61 Arg2:T60
+R21	Setting Arg1:E16 Arg2:T62
+R22	Setting Arg1:E16 Arg2:T65
+R23	Mod-Link Arg1:T3 Arg2:T2
+R24	Enables Arg1:E5 Arg2:E4
+R25	Enables Arg1:E6 Arg2:E4
+R26	Meronym Arg1:T13 Arg2:T15
+R27	Mod-Link Arg1:T28 Arg2:T27
+R28	Enables Arg1:E12 Arg2:E13
+R29	Setting Arg1:E15 Arg2:T58
+R30	Meronym Arg1:T61 Arg2:T63
+R31	Meronym Arg1:T61 Arg2:T64
+R32	Setting Arg1:E18 Arg2:T70

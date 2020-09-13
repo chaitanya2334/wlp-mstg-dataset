@@ -1,0 +1,138 @@
+T1	Modifier 38 42	each
+T2	Location 43 55	culture tube
+T3	Action 56 60	fill
+T4	Generic-Measure 61 72	half way up
+T5	Reagent 78 89	horse serum
+T6	Action 99 103	fill
+T7	Reagent 112 116	RPMI
+T8	Action 119 126	leaving
+T9	Generic-Measure 133 141	2 cm gap
+T10	Location 151 154	top
+T11	Action 157 160	Add
+T12	Amount 161 166	500µl
+T13	Reagent 170 181	penicillium
+T14	Modifier 197 202	blunt
+T15	Device 203 210	forceps
+T16	Modifier 211 217	gently
+T17	Action 218 222	open
+T18	Location 227 230	top
+T19	Location 234 251	dialysis membrane
+T20	Action 256 261	place
+T21	Reagent 266 270	worm
+T22	Location 280 288	membrane
+T23	Action 291 296	Screw
+T24	Location 301 304	top
+T25	Location 315 319	tube
+T26	Action 326 332	loosen
+T27	Modifier 333 341	slightly
+T28	Action 346 351	place
+T29	Modifier 361 368	shaking
+T30	Temperature 369 373	40°C
+T31	Device 374 384	water bath
+T32	Action 619 625	Remove
+T33	Location 630 647	dialysis membrane
+T34	Location 657 669	culture tube
+T35	Action 674 677	cut
+T36	Mention 678 680	it
+T37	Action 711 720	flush out
+T38	Location 728 738	petri dish
+T39	Reagent 745 750	ddH20
+T40	Action 753 757	Fill
+T41	Location 762 772	petri dish
+T42	Modifier 776 781	about
+T43	Generic-Measure 782 788	¼ full
+T44	Reagent 792 797	ddH20
+T45	Action 909 916	Collect
+T46	Reagent 921 930	egg layer
+T47	Device 938 951	glass pipette
+T48	Action 956 964	transfer
+T49	Modifier 968 973	fresh
+T50	Location 974 986	petri dishes
+T51	Action 1031 1035	Fill
+T52	Modifier 1036 1039	all
+T53	Location 1044 1050	plates
+T54	Modifier 1051 1056	up to
+T55	Generic-Measure 1063 1072	half full
+T56	Reagent 1078 1083	ddH20
+T57	Modifier 1098 1106	original
+T58	Location 1107 1117	petri dish
+T59	Action 1120 1125	Label
+T60	Modifier 1126 1130	each
+T61	Location 1131 1136	plate
+T62	Method 1145 1173	identification number / name
+T63	Action 1174 1178	Wrap
+T64	Modifier 1179 1183	each
+T65	Location 1184 1189	plate
+T66	Modifier 1190 1202	individually
+T67	Seal 1206 1210	foil
+T68	Action 1215 1220	label
+T69	Location 1225 1232	outside
+T70	Modifier 1242 1246	same
+T71	Method 1247 1280	identification plus your initials
+T72	Action 1283 1288	Place
+T73	Modifier 1293 1300	wrapped
+T74	Location 1301 1307	plates
+T75	Temperature 1315 1319	20°C
+T76	Device 1320 1329	incubator
+T77	Action 1334 1339	leave
+T78	Mention 1343 1348	there
+T79	Modifier 1353 1361	at least
+T80	Time 1362 1369	21 days
+T81	Action 1377 1385	checking
+T82	Method 1390 1398	hatching
+E1	Action:T3 Using:T5 Acts-on:T2
+E2	Action:T6 Using:T7 Acts-on:E1
+E3	Action:T8 Acts-on:T10
+E4	Action:T11 Acts-on:T13 Site:E2 Product:T19
+E5	Action:T17 Acts-on:T18 Using:T15
+E6	Action:T20 Acts-on:T21 Site:T22 Product:T25
+E7	Action:T23 Acts-on:T24
+E8	Action:T26 Acts-on:E7
+E9	Action:T28 Site:T31 Acts-on:E8 Product:T34
+E10	Action:T32 Acts-on:T33 Site:T34
+E11	Action:T35 Acts-on:T36
+E12	Action:T37 Site:T38 Using:T39 Acts-on:E11 Product:T41
+E13	Action:T40 Acts-on:T41 Using:T44 Product:T46
+E14	Action:T45 Acts-on:T46 Using:T47
+E15	Action:T48 Site:T50 Acts-on:E14 Product:T53
+E16	Action:T51 Acts-on:T53 Using:T56 Acts-on2:T58 Product:T61
+E17	Action:T59 Acts-on:T61 Using:T62 Product:T65
+E18	Action:T63 Acts-on:T65 Using:T67 Product:T69
+E19	Action:T68 Acts-on:T69 Using:T71 Product:T74
+E20	Action:T72 Acts-on:T74 Site:T76
+E21	Action:T77 Site:T78 Acts-on:E20
+E22	Action:T81 Using:T82 Acts-on:E21
+R1	Measure Arg1:T10 Arg2:T9
+R2	Mod-Link Arg1:T74 Arg2:T73
+R3	Mod-Link Arg1:T2 Arg2:T1
+R4	Measure Arg1:T5 Arg2:T4
+R5	Measure Arg1:T13 Arg2:T12
+R6	Mod-Link Arg1:T15 Arg2:T14
+R7	Mod-Link Arg1:E5 Arg2:T16
+R8	Meronym Arg1:T18 Arg2:T19
+R9	Meronym Arg1:T24 Arg2:T25
+R10	Mod-Link Arg1:E8 Arg2:T27
+R11	Setting Arg1:T31 Arg2:T30
+R12	Mod-Link Arg1:T31 Arg2:T29
+R13	Coreference-Link Arg1:T36 Arg2:T33
+R14	Mod-Link Arg1:T43 Arg2:T42
+R15	Measure Arg1:T44 Arg2:T43
+R16	Mod-Link Arg1:T50 Arg2:T49
+R17	Mod-Link Arg1:T53 Arg2:T52
+R18	Mod-Link Arg1:T55 Arg2:T54
+R19	Measure Arg1:T56 Arg2:T55
+R20	Mod-Link Arg1:T58 Arg2:T57
+R21	Mod-Link Arg1:T61 Arg2:T60
+R22	Mod-Link Arg1:T65 Arg2:T64
+R23	Mod-Link Arg1:T65 Arg2:T66
+R24	Or Arg1:T71 Arg2:T70
+R25	Setting Arg1:T76 Arg2:T75
+R26	Coreference-Link Arg1:T78 Arg2:T76
+R27	Setting Arg1:E21 Arg2:T80
+R28	Mod-Link Arg1:T80 Arg2:T79
+R29	Enables Arg1:E3 Arg2:E2
+R30	Coreference-Link Arg1:T19 Arg2:T22
+R31	Meronym Arg1:T33 Arg2:T34
+R32	Coreference-Link Arg1:T39 Arg2:T44
+R33	Coreference-Link Arg1:T38 Arg2:T50
+R34	Coreference-Link Arg1:T44 Arg2:T56

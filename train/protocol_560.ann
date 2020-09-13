@@ -1,0 +1,55 @@
+T1	Action 91 98	Prepare
+T2	Reagent 103 122	repair PCR template
+T3	Method 123 183	as indicated in Reagents for gtbp‐1 eGFP and mCherry tagging
+T4	Method 207 232	Repair template synthesis
+T5	Action 235 239	Make
+T6	Reagent 244 257	injection mix
+T7	Method 258 300	as indicated in injection mixes , part I .
+T8	Action 301 304	Use
+T9	Reagent 309 321	crRNA gtbp‐1
+T10	Action 349 355	Inject
+T11	Numerical 356 361	15‐20
+T12	Reagent 362 382	young adult N2 worms
+T13	Action 387 394	recover
+T14	Method 395 437	as described in Worm recovery and handling
+T15	Action 440 444	Pool
+T16	Reagent 449 464	recovered worms
+T17	Mention 467 470	P0s
+T18	Numerical 476 479	one
+T19	Location 480 485	plate
+T20	Action 490 498	incubate
+T21	Time 503 509	22‐23h
+T22	Temperature 513 518	20 °C
+T23	Action 531 536	Clone
+T24	Reagent 541 544	P0s
+T25	Modifier 548 558	individual
+T26	Location 559 570	OP50 plates
+T27	Action 575 583	incubate
+T28	Temperature 587 592	20 °C
+T29	Time 597 605	4‐5 days
+T30	Action 655 660	check
+T31	Reagent 665 672	Rollers
+T32	Action 705 711	screen
+T33	Reagent 716 723	Rollers
+T34	Measure-Type 728 758	fluorescent protein expression
+T35	Method 775 805	Screening for edit of interest
+E1	Action:T1 Product:T2 Using:T3 Using2:T4
+E2	Action:T5 Product:T6 Using:T7
+E3	Action:T8 Acts-on:T9 Product:T6
+E4	Action:T10 Site:T12 Acts-on:T6
+E5	Action:T13 Using:T14 Acts-on:E4 Product:T16
+E6	Action:T15 Acts-on:T16 Site:T19
+E7	Action:T20 Acts-on:E6 Product:T24
+E8	Action:T23 Acts-on:T24 Site:T26
+E9	Action:T27 Acts-on:E8 Product:T31
+E10	Action:T30 Acts-on:T31 Product:T33
+E11	Action:T32 Acts-on:T33 Measure-Type-Link:T34 Using:T35 Site:T2
+R1	Measure Arg1:T12 Arg2:T11
+R2	Measure Arg1:T19 Arg2:T18
+R3	Setting Arg1:E7 Arg2:T21
+R4	Setting Arg1:E7 Arg2:T22
+R5	Coreference-Link Arg1:T17 Arg2:T16
+R6	Mod-Link Arg1:T26 Arg2:T25
+R7	Setting Arg1:E9 Arg2:T28
+R8	Setting Arg1:E9 Arg2:T29
+R9	Enables Arg1:E3 Arg2:E2

@@ -1,0 +1,182 @@
+T1	Action 24 30	Set up
+T2	Reagent 35 41	assays
+T3	Amount 55 62	50.0 µL
+T4	Amount 84 88	3 µg
+T5	Reagent 92 95	DNA
+T6	Amount 100 105	2 µCi
+T7	Reagent 109 134	Adenosyl - L - Methionine
+T8	Reagent 137 154	S - Methyl ( 3H )
+T9	Reagent 165 171	enzyme
+T10	Action 187 195	Incubate
+T11	Reagent 200 206	assays
+T12	Temperature 210 214	37°C
+T13	Time 219 226	2 hours
+T14	Action 229 232	Add
+T15	Amount 233 238	30 µL
+T16	Reagent 252 264	proteinase K
+T17	Reagent 273 278	assay
+T18	Action 281 289	Incubate
+T19	Temperature 293 297	65°C
+T20	Time 302 308	20 min
+T21	Action 311 314	Add
+T22	Amount 315 319	4 µL
+T23	Reagent 333 352	ss salmon sperm DNA
+T24	Action 368 371	Add
+T25	Amount 390 395	84 µL
+T26	Concentration 401 405	20 %
+T27	Reagent 406 409	TCA
+T28	Action 414 422	incubate
+T29	Temperature 426 429	4°C
+T30	Time 434 440	10 min
+T31	Action 444 455	precipitate
+T32	Reagent 460 467	samples
+T33	Action 470 480	Centrifuge
+T34	Reagent 485 491	assays
+T35	Device 499 508	microfuge
+T36	Time 513 518	5 min
+T37	Temperature 522 525	4°C
+T38	Action 528 535	Discard
+T39	Reagent 540 552	supernatants
+T40	Action 555 559	Wash
+T41	Reagent 564 571	pellets
+T42	Numerical 572 574	2X
+T43	Amount 580 586	200 µL
+T44	Concentration 590 593	5 %
+T45	Reagent 594 597	TCA
+T46	Device 605 614	microfuge
+T47	Time 619 624	5 min
+T48	Temperature 628 631	4°C
+T49	Action 634 643	Resuspend
+T50	Reagent 648 655	pellets
+T51	Amount 661 667	500 µL
+T52	Concentration 676 682	500 mM
+T53	Reagent 683 687	NaOH
+T54	Action 690 698	Incubate
+T55	Reagent 703 709	assays
+T56	Temperature 713 717	65°C
+T57	Time 722 728	20 min
+T58	Action 731 742	Precipitate
+T59	Reagent 747 754	samples
+T60	Amount 760 766	500 µL
+T61	Concentration 770 774	20 %
+T62	Reagent 775 778	TCA
+T63	Time 783 789	10 min
+T64	Temperature 793 796	4°C
+T65	Action 799 809	Centrifuge
+T66	Reagent 814 821	samples
+T67	Device 829 838	microfuge
+T68	Time 843 848	5 min
+T69	Temperature 852 855	4°C
+T70	Action 858 862	Wash
+T71	Reagent 867 874	pellets
+T72	Numerical 875 877	2X
+T73	Amount 883 889	200 µL
+T74	Concentration 893 896	5 %
+T75	Reagent 897 900	TCA
+T76	Device 908 917	microfuge
+T77	Time 922 927	5 min
+T78	Temperature 931 934	4°C
+T79	Action 937 946	Resuspend
+T80	Reagent 951 957	pellet
+T81	Amount 963 969	500 µL
+T82	Concentration 973 976	5 %
+T83	Reagent 977 980	TCA
+T84	Action 983 991	Incubate
+T85	Reagent 995 1008	boiling water
+T86	Time 1013 1019	30 min
+T87	Action 1022 1028	loosen
+T88	Seal 1033 1037	caps
+T89	Action 1041 1049	puncture
+T90	Seal 1054 1058	caps
+T91	Location 1066 1071	tubes
+T92	Action 1076 1086	Centrifuge
+T93	Reagent 1091 1098	samples
+T94	Device 1106 1115	microfuge
+T95	Time 1120 1125	5 min
+T96	Temperature 1129 1132	4°C
+T97	Action 1168 1173	Count
+T98	Reagent 1178 1190	supernatants
+T99	Amount 1194 1199	10 mL
+T100	Reagent 1203 1237	triton - toluene counting solution
+E1	Action:T1 Product:T2
+E2	Action:T10 Acts-on:T11 Product:T17
+E3	Action:T14 Acts-on:T16 Site:T17
+E4	Action:T18 Acts-on:E3
+E5	Action:T21 Acts-on:T23 Site:E4
+E6	Action:T24 Acts-on:T27 Site:E5 Product:T32
+E7	Action:T28 Acts-on:T32
+E8	Action:T31 Acts-on:T32 Product:T34
+E9	Action:T33 Acts-on:T34 Using:T35 Product:T39
+E10	Action:T38 Acts-on:T39 Product:T41
+E11	Action:T40 Acts-on:T41 Count:T42 Using:T45 Site:T46 Product:T50
+E12	Action:T49 Acts-on:T50 Using:T53 Product:T55
+E13	Action:T54 Acts-on:T55 Product:T59
+E14	Action:T58 Acts-on:T59 Using:T62 Product:T66
+E15	Action:T65 Acts-on:T66 Using:T67 Product:T71
+E16	Action:T70 Acts-on:T71 Count:T72 Using:T75 Site:T76 Product:T80
+E17	Action:T79 Acts-on:T80 Using:T83
+E18	Action:T84 Site:T85 Acts-on:E17 Product:T93
+E19	Action:T87 Acts-on:T88
+E20	Action:T89 Acts-on:T90
+E21	Action:T92 Acts-on:T93 Using:T94 Product:T98
+E22	Action:T97 Acts-on:T98 Using:T100
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T7 Arg2:T6
+R3	Measure Arg1:T8 Arg2:T6
+R4	Measure Arg1:T9 Arg2:T6
+R5	Meronym Arg1:T5 Arg2:T2
+R6	Meronym Arg1:T7 Arg2:T2
+R7	Meronym Arg1:T8 Arg2:T2
+R8	Meronym Arg1:T9 Arg2:T2
+R9	Setting Arg1:E2 Arg2:T12
+R10	Setting Arg1:E2 Arg2:T13
+R11	Measure Arg1:T16 Arg2:T15
+R12	Setting Arg1:E4 Arg2:T19
+R13	Setting Arg1:E4 Arg2:T20
+R14	Measure Arg1:T23 Arg2:T22
+R15	Setting Arg1:E6 Arg2:T25
+R16	Measure Arg1:T27 Arg2:T26
+R17	Measure Arg1:T27 Arg2:T25
+R18	Setting Arg1:E7 Arg2:T29
+R19	Setting Arg1:E7 Arg2:T30
+R20	Setting Arg1:E9 Arg2:T36
+R21	Setting Arg1:E9 Arg2:T37
+R22	Measure Arg1:T45 Arg2:T44
+R23	Measure Arg1:T45 Arg2:T43
+R24	Setting Arg1:E11 Arg2:T47
+R25	Setting Arg1:E11 Arg2:T48
+R26	Measure Arg1:T53 Arg2:T52
+R27	Measure Arg1:T53 Arg2:T51
+R28	Setting Arg1:E13 Arg2:T56
+R29	Setting Arg1:E13 Arg2:T57
+R30	Measure Arg1:T62 Arg2:T61
+R31	Measure Arg1:T62 Arg2:T60
+R32	Setting Arg1:E14 Arg2:T63
+R33	Setting Arg1:E14 Arg2:T64
+R34	Setting Arg1:E15 Arg2:T68
+R35	Setting Arg1:E15 Arg2:T69
+R36	Measure Arg1:T75 Arg2:T74
+R37	Measure Arg1:T75 Arg2:T73
+R38	Setting Arg1:E16 Arg2:T77
+R39	Setting Arg1:E16 Arg2:T78
+R40	Measure Arg1:T83 Arg2:T82
+R41	Measure Arg1:T83 Arg2:T81
+R42	Setting Arg1:E18 Arg2:T86
+R43	Meronym Arg1:T90 Arg2:T91
+R44	Meronym Arg1:T88 Arg2:T91
+R45	Setting Arg1:E21 Arg2:T95
+R46	Setting Arg1:E21 Arg2:T96
+R47	Measure Arg1:T100 Arg2:T99
+R48	Measure Arg1:T2 Arg2:T3
+R49	Coreference-Link Arg1:T2 Arg2:T11
+R50	Enables Arg1:E7 Arg2:E8
+R51	Coreference-Link Arg1:T27 Arg2:T62
+R52	Coreference-Link Arg1:T45 Arg2:T75
+R53	Coreference-Link Arg1:T75 Arg2:T83
+R54	Coreference-Link Arg1:T35 Arg2:T46
+R55	Coreference-Link Arg1:T46 Arg2:T67
+R56	Coreference-Link Arg1:T67 Arg2:T76
+R57	Coreference-Link Arg1:T76 Arg2:T94
+R58	Enables Arg1:E19 Arg2:E18
+R59	Or Arg1:E19 Arg2:E20
+R60	Enables Arg1:E20 Arg2:E18

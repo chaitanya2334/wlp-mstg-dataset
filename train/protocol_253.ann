@@ -1,0 +1,162 @@
+T1	Action 76 83	Agitate
+T2	Reagent 84 87	gel
+T3	Numerical 88 93	twice
+T4	Concentration 99 103	50 %
+T5	Reagent 104 108	MeOH
+T6	Concentration 111 115	10 %
+T7	Reagent 116 127	acetic acid
+T8	Time 144 150	15 min
+T9	Action 156 161	Rinse
+T10	Time 164 169	1 min
+T11	Amount 177 183	200 ml
+T12	Reagent 184 186	DW
+T13	Action 189 196	Agitate
+T14	Concentration 200 204	10 %
+T15	Reagent 205 209	EtOH
+T16	Concentration 212 215	5 %
+T17	Reagent 216 235	glacial acetic acid
+T18	Time 252 257	6 min
+T19	Action 260 267	Agitate
+T20	Modifier 271 280	distilled
+T21	Reagent 281 286	water
+T22	Action 289 296	Agitate
+T23	Numerical 297 302	twice
+T24	Time 305 310	9 min
+T25	Modifier 311 315	each
+T26	Concentration 323 329	500 ml
+T27	Reagent 330 332	DW
+T28	Action 335 342	Agitate
+T29	Amount 346 352	500 ml
+T30	Concentration 356 365	20 mg / L
+T31	Reagent 366 373	Na2S2O4
+T32	Modifier 422 431	distilled
+T33	Modifier 434 443	deionized
+T34	Reagent 444 449	water
+T35	Time 462 466	9min
+T36	Action 487 495	Pour off
+T37	Reagent 496 504	solution
+T38	Action 507 514	Agitate
+T39	Time 519 524	9 min
+T40	Action 527 532	Rinse
+T41	Time 533 539	30 sec
+T42	Reagent 545 548	DDW
+T43	Action 552 558	remove
+T44	Modifier 559 565	excess
+T45	Reagent 566 571	AgNO3
+T46	Action 574 577	Add
+T47	Amount 578 584	200 ml
+T48	Reagent 585 600	image developer
+T49	Amount 603 606	1ml
+T50	Concentration 607 611	37 %
+T51	Reagent 612 624	formaldehyde
+T52	Modifier 625 628	per
+T53	Amount 629 634	liter
+T54	Concentration 638 641	3 %
+T55	Reagent 642 658	sodium carbonate
+T56	Amount 672 678	200 ml
+T57	Concentration 679 686	10g / L
+T58	Reagent 687 705	sodium thiosulfate
+T59	Action 708 716	Pour off
+T60	Reagent 717 726	developer
+T61	Action 729 732	Add
+T62	Amount 733 738	80 ml
+T63	Reagent 742 755	stop solution
+T64	Amount 758 762	50 g
+T65	Reagent 763 767	tris
+T66	Amount 770 775	25 ml
+T67	Reagent 776 790	glacial acetic
+T68	Modifier 791 794	per
+T69	Amount 795 800	liter
+T70	Modifier 804 813	distilled
+T71	Reagent 814 819	water
+T72	Action 824 829	Store
+T73	Reagent 830 833	gel
+T74	Concentration 837 841	10 %
+T75	Reagent 842 850	glycerol
+T76	Reagent 856 868	bacteriostat
+T77	Concentration 871 877	0.02 %
+T78	Reagent 878 882	NaN3
+T79	Action 905 908	add
+T80	Amount 909 915	200 ml
+T81	Concentration 918 923	0.1 %
+T82	Reagent 924 929	AgNO3
+T83	Amount 932 938	200 mg
+T84	Reagent 944 947	DDW
+T85	Action 950 953	Add
+T86	Amount 954 960	150 ml
+T87	Concentration 961 965	37 %
+T88	Reagent 966 978	formaldehyde
+T89	Action 981 988	Agitate
+T90	Generic-Measure 992 1018	desired staining intensity
+T91	Time 1021 1031	3 to 6 min
+E1	Action:T1 Acts-on:T2 Using:T5 Using2:T7
+E2	Action:T9 Using:T12 Acts-on:E1
+E3	Action:T13 Using:T15 Using2:T17 Acts-on:E2
+E4	Action:T19 Using:T21 Acts-on:E3
+E5	Action:T22 Using:T27 Acts-on:E4
+E6	Action:T28 Using:T31 Acts-on:T34 Acts-on2:E5 Product:T37
+E7	Action:T36 Acts-on:T37
+E8	Action:T38 Acts-on:E7
+E9	Action:T40 Using:T42 Acts-on:E8
+E10	Action:T43 Acts-on:T45
+E11	Action:T46 Acts-on:T48 Acts-on2:T58 Site:E9 Product:T60
+E12	Action:T59 Acts-on:T60
+E13	Action:T61 Acts-on:T63 Site:E12 Product:T73
+E14	Action:T72 Acts-on:T73 Site:T75
+E15	Action:T79 Acts-on:T82 Site:E14
+E16	Action:T85 Acts-on:T88 Site:E15
+E17	Action:T89 Acts-on:E16
+R1	Setting Arg1:E1 Arg2:T3
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T7 Arg2:T6
+R4	Setting Arg1:E1 Arg2:T8
+R5	Setting Arg1:E2 Arg2:T10
+R6	Measure Arg1:T12 Arg2:T11
+R7	Setting Arg1:E3 Arg2:T18
+R8	Measure Arg1:T15 Arg2:T14
+R9	Measure Arg1:T17 Arg2:T16
+R10	Mod-Link Arg1:T21 Arg2:T20
+R11	Setting Arg1:E5 Arg2:T23
+R12	Mod-Link Arg1:T24 Arg2:T25
+R13	Setting Arg1:E5 Arg2:T24
+R14	Measure Arg1:T27 Arg2:T26
+R15	Measure Arg1:T31 Arg2:T30
+R16	Measure Arg1:T31 Arg2:T29
+R17	Mod-Link Arg1:T34 Arg2:T33
+R18	Mod-Link Arg1:T34 Arg2:T32
+R19	Setting Arg1:E6 Arg2:T35
+R20	Setting Arg1:E8 Arg2:T39
+R21	Setting Arg1:E9 Arg2:T41
+R22	Mod-Link Arg1:T45 Arg2:T44
+R23	Measure Arg1:T48 Arg2:T47
+R24	Measure Arg1:T51 Arg2:T50
+R25	Measure Arg1:T51 Arg2:T49
+R26	Measure Arg1:T55 Arg2:T54
+R27	Measure Arg1:T58 Arg2:T57
+R28	Measure Arg1:T58 Arg2:T56
+R29	Measure Arg1:T63 Arg2:T62
+R30	Measure Arg1:T65 Arg2:T64
+R31	Measure Arg1:T67 Arg2:T66
+R32	Mod-Link Arg1:T71 Arg2:T70
+R33	Measure Arg1:T75 Arg2:T74
+R34	Measure Arg1:T78 Arg2:T77
+R35	Measure Arg1:T82 Arg2:T81
+R36	Measure Arg1:T82 Arg2:T80
+R37	Measure Arg1:T88 Arg2:T87
+R38	Measure Arg1:T88 Arg2:T86
+R39	Meronym Arg1:T78 Arg2:T76
+R40	Meronym Arg1:T76 Arg2:T75
+R41	Measure Arg1:T82 Arg2:T83
+R42	Meronym Arg1:T82 Arg2:T84
+R43	Setting Arg1:E17 Arg2:T90
+R44	Or Arg1:T90 Arg2:T91
+R45	Mod-Link Arg1:T53 Arg2:T52
+R46	Measure Arg1:T55 Arg2:T53
+R47	Meronym Arg1:T51 Arg2:T48
+R48	Meronym Arg1:T55 Arg2:T48
+R49	Measure Arg1:T71 Arg2:T69
+R50	Mod-Link Arg1:T69 Arg2:T68
+R51	Meronym Arg1:T65 Arg2:T63
+R52	Meronym Arg1:T67 Arg2:T63
+R53	Meronym Arg1:T71 Arg2:T63
+R54	Enables Arg1:E9 Arg2:E10

@@ -1,0 +1,19 @@
+T1	Action 48 51	Add
+T2	Amount 52 60	2 - 5 µl
+T3	Reagent 61 69	PNGase F
+T4	Action 72 75	Mix
+T5	Modifier 76 82	gently
+T6	Action 85 93	Incubate
+T7	Reagent 94 102	reaction
+T8	Temperature 106 110	37°C
+T9	Time 115 127	4 - 24 hours
+T10	Action 130 137	Analyze
+T11	Method 141 157	method of choice
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:E1 Product:T7
+E3	Action:T6 Acts-on:T7
+E4	Action:T10 Using:T11 Acts-on:E3
+R1	Measure Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:E2 Arg2:T5
+R3	Setting Arg1:E3 Arg2:T8
+R4	Setting Arg1:E3 Arg2:T9

@@ -1,0 +1,122 @@
+T1	Action 32 36	Grow
+T2	Reagent 37 67	plants of Arabidopsis thaliana
+T3	Generic-Measure 90 95	3 : 1
+T4	Location 106 113	compost
+T5	Reagent 117 136	vermiculite mixture
+T6	Temperature 140 144	20oC
+T7	Time 176 196	12h light : 12h dark
+T8	Generic-Measure 227 249	50 - 100µE m - 2 s - 1
+T9	Action 254 261	Prepare
+T10	Modifier 262 267	fresh
+T11	Reagent 268 283	enzyme solution
+T12	Action 288 296	transfer
+T13	Location 300 315	glass petridish
+T14	Action 318 324	Remove
+T15	Numerical 325 332	20 - 40
+T16	Reagent 333 339	leaves
+T17	Modifier 345 355	4 week old
+T18	Reagent 356 385	Arabidopsis thaliana rosettes
+T19	Action 388 392	Pile
+T20	Numerical 396 402	5 - 10
+T21	Reagent 403 409	leaves
+T22	Action 422 425	cut
+T23	Size 438 443	~ 2mm
+T24	Reagent 446 452	strips
+T25	Reagent 464 468	leaf
+T26	Modifier 477 482	sharp
+T27	Device 483 495	scapel blade
+T28	Action 496 502	dipped
+T29	Reagent 508 515	ethanol
+T30	Action 518 523	Place
+T31	Reagent 524 530	strips
+T32	Reagent 536 551	enzyme solution
+T33	Action 554 560	Repeat
+T34	Modifier 567 570	all
+T35	Reagent 571 577	leaves
+T36	Action 588 591	cut
+T37	Action 594 611	Vacuum infiltrate
+T38	Reagent 616 631	enzyme solution
+T39	Action 634 639	Leave
+T40	Reagent 640 645	cells
+T41	Location 653 663	petri dish
+T42	Temperature 667 671	20oC
+T43	Method 672 687	without shaking
+T44	Action 690 695	Twice
+T45	Modifier 696 702	filter
+T46	Reagent 703 708	cells
+T47	Reagent 713 728	enzyme solution
+T48	Amount 739 744	125μm
+T49	Device 745 755	nylon mesh
+T50	Action 759 765	remove
+T51	Modifier 766 774	residual
+T52	Reagent 775 781	debris
+T53	Location 789 821	pointed bottom , glass test tube
+T54	Action 824 829	Leave
+T55	Reagent 830 835	cells
+T56	Action 839 845	settle
+T57	Location 853 859	bottom
+T58	Location 867 871	tube
+T59	Modifier 874 883	Carefully
+T60	Action 884 892	aspirate
+T61	Reagent 901 916	liquid solution
+T62	Action 917 924	leaving
+T63	Reagent 929 940	cell pellet
+T64	Action 950 953	Add
+T65	Reagent 954 971	Incubation Buffer
+T66	Modifier 974 980	Gently
+T67	Action 981 990	resuspend
+T68	Reagent 991 1001	protoplast
+T69	Reagent 1005 1024	incubation solution
+T70	Modifier 1028 1033	light
+T71	Action 1034 1042	swirling
+T72	Location 1050 1059	test tube
+T73	Action 1062 1067	Check
+T74	Measure-Type 1068 1088	protoplast integrity
+T75	Action 1093 1108	determine yield
+T76	Modifier 1117 1127	disposable
+T77	Device 1128 1139	hemocytomer
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T5 Product2:T18
+E2	Action:T9 Product:T11
+E3	Action:T12 Acts-on:T11 Site:T13
+E4	Action:T14 Acts-on:T16 Site:T18 Product:T21
+E5	Action:T19 Acts-on:T21 Product:T25
+E6	Action:T22 Product:T24 Acts-on:T25 Using:T27
+E7	Action:T28 Site:T29
+E8	Action:T30 Acts-on:T31 Site:T32
+E9	Action:T33 Using:E10 Product:T38
+E10	Action:T36 Acts-on:T35
+E11	Action:T37 Acts-on:T38 Product:T40
+E12	Action:T39 Acts-on:T40 Site:T41 Using:T43 Product:T46 Product2:T47
+E13	Action:T44 Acts-on:T46 Acts-on2:T47 Using:T49
+E14	Action:T50 Using:E13 Acts-on:T52 Site:T53
+E15	Action:T54 Acts-on:T55
+E16	Action:T56 Using:E15 Site:T57 Product:T61
+E17	Action:T60 Site:T61
+E18	Action:T62 Acts-on:T63
+E19	Action:T64 Site:E12 Acts-on:T65
+E20	Action:T67 Acts-on:T68 Site:T69 Using:E21
+E21	Action:T71 Acts-on:T72
+E22	Action:T73 Measure-Type-Link:T74
+E23	Action:T75 Acts-on:E22 Using:T77
+R1	Setting Arg1:E1 Arg2:T6
+R2	Setting Arg1:E1 Arg2:T7
+R3	Setting Arg1:E1 Arg2:T8
+R4	Measure Arg1:T4 Arg2:T3
+R5	Mod-Link Arg1:T11 Arg2:T10
+R6	Coreference-Link Arg1:T11 Arg2:T32
+R7	Measure Arg1:T16 Arg2:T15
+R8	Mod-Link Arg1:T18 Arg2:T17
+R9	Measure Arg1:T21 Arg2:T20
+R10	Measure Arg1:T24 Arg2:T23
+R11	Coreference-Link Arg1:T24 Arg2:T31
+R12	Mod-Link Arg1:T27 Arg2:T26
+R13	Mod-Link Arg1:T35 Arg2:T34
+R14	Setting Arg1:E12 Arg2:T42
+R15	Mod-Link Arg1:T46 Arg2:T45
+R16	Setting Arg1:T49 Arg2:T48
+R17	Mod-Link Arg1:T52 Arg2:T51
+R18	Meronym Arg1:T57 Arg2:T58
+R19	Mod-Link Arg1:E17 Arg2:T59
+R20	Mod-Link Arg1:E20 Arg2:T66
+R21	Mod-Link Arg1:E21 Arg2:T70
+R22	Mod-Link Arg1:T77 Arg2:T76

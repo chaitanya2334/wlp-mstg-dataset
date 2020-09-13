@@ -1,0 +1,188 @@
+T1	Action 20 24	Pour
+T2	Amount 25 31	100 mL
+T3	Concentration 35 37	1X
+T4	Reagent 38 48	TAE Buffer
+T5	Location 57 73	Erlenmeyer Flask
+T6	Action 76 85	Weigh out
+T7	Amount 86 89	1 g
+T8	Reagent 90 97	Agarose
+T9	Action 102 105	add
+T10	Mention 106 108	it
+T11	Location 116 132	Erlenmeyer Flask
+T12	Action 135 140	Place
+T13	Location 141 157	Erlenmeyer Flask
+T14	Device 163 172	microwave
+T15	Temperature 176 186	high power
+T16	Time 191 202	two minutes
+T17	Reagent 212 220	solution
+T18	Action 224 229	clear
+T19	Reagent 234 241	agarose
+T20	Modifier 245 255	completely
+T21	Action 256 265	dissolved
+T22	Modifier 268 280	occasionally
+T23	Action 281 289	stirring
+T24	Action 292 298	Remove
+T25	Location 299 315	Erlenmeyer Flask
+T26	Device 321 330	microwave
+T27	Mention 339 341	it
+T28	Location 353 362	lab bench
+T29	Action 366 370	cool
+T30	Action 415 420	Place
+T31	Location 421 429	gel tray
+T32	Location 433 438	clamp
+T33	Action 443 448	clamp
+T34	Modifier 449 457	securely
+T35	Action 460 463	Add
+T36	Location 464 475	well plates
+T37	Action 540 544	Pour
+T38	Reagent 545 576	contents of the Erlemeyer Flask
+T39	Location 586 594	gel tray
+T40	Mention 603 605	it
+T41	Action 606 609	sit
+T42	Time 614 624	10 minutes
+T43	Action 644 650	Remove
+T44	Location 655 666	well plates
+T45	Modifier 667 676	carefully
+T46	Action 704 710	remove
+T47	Location 715 719	tray
+T48	Location 729 734	clamp
+T49	Action 778 783	Place
+T50	Location 784 792	gel tray
+T51	Device 798 827	gel electrophoresis apparatus
+T52	Action 880 884	Pour
+T53	Modifier 885 895	additional
+T54	Reagent 896 906	TAE Buffer
+T55	Action 910 914	fill
+T56	Location 915 924	each side
+T57	Device 932 941	apparatus
+T58	Reagent 958 978	thin layer of buffer
+T59	Location 992 995	top
+T60	Reagent 1003 1006	gel
+T61	Action 1009 1016	Pipette
+T62	Amount 1017 1021	5 uL
+T63	Reagent 1029 1043	1kb DNA Ladder
+T64	Reagent 1049 1060	Loading Dye
+T65	Location 1068 1072	well
+T66	Action 1137 1144	Pipette
+T67	Reagent 1145 1153	your DNA
+T68	Modifier 1156 1169	approximately
+T69	Amount 1170 1175	20 uL
+T70	Reagent 1183 1202	Loading Dye mixture
+T71	Location 1216 1220	well
+T72	Action 1248 1253	Place
+T73	Seal 1254 1257	lid
+T74	Device 1261 1270	apparatus
+T75	Action 1275 1279	plug
+T76	Seal 1280 1286	cables
+T77	Device 1292 1301	amplifier
+T78	Action 1304 1307	Set
+T79	Device 1308 1317	amplifier
+T80	Measure-Type 1331 1347	constant voltage
+T81	Generic-Measure 1351 1355	70 V
+T82	Action 1362 1365	run
+T83	Time 1370 1380	45 minutes
+T84	Reagent 1394 1405	loading dye
+T85	Modifier 1410 1422	sufficiently
+T86	Action 1423 1428	moved
+T87	Action 1431 1437	Remove
+T88	Reagent 1438 1441	gel
+T89	Location 1447 1455	gel tray
+T90	Action 1462 1470	draining
+T91	Reagent 1471 1488	excess TAE Buffer
+T92	Action 1491 1496	Place
+T93	Reagent 1497 1500	gel
+T94	Location 1508 1511	bin
+T95	Concentration 1517 1520	1 %
+T96	Reagent 1521 1537	Ethidium Bromide
+T97	Action 1601 1606	Clean
+T98	Location 1611 1619	surfaces
+T99	Action 1674 1679	place
+T100	Location 1692 1725	bin labelled " Ethidium Bromide "
+T101	Action 1732 1736	wash
+T102	Reagent 1771 1774	gel
+T103	Action 1775 1778	sit
+T104	Time 1783 1793	15 minutes
+T105	Modifier 1796 1805	Carefully
+T106	Action 1806 1814	removing
+T107	Reagent 1819 1822	gel
+T108	Action 1845 1850	place
+T109	Location 1854 1857	top
+T110	Location 1863 1892	UV light source with a camera
+T111	Action 1931 1938	turn on
+T112	Device 1943 1951	UV light
+T113	Action 1955 1962	capture
+T114	Device 1965 1975	photograph
+T115	Reagent 1983 1986	gel
+T116	Action 1989 1995	Remove
+T117	Location 1996 2000	band
+T118	Modifier 2032 2041	carefully
+T119	Action 2042 2049	dispose
+T120	Reagent 2057 2060	gel
+T121	Location 2068 2106	wastebin labelled " Ethidium Bromide "
+E1	Action:T1 Acts-on:T4 Site:T5
+E2	Action:T6 Acts-on:T8
+E3	Action:T9 Acts-on:T10 Site:T11 Product:T13
+E4	Action:T12 Acts-on:T13 Site:T14
+E5	Action:T18 Using:E4 Acts-on:T17
+E6	Action:T21 Using:E4 Acts-on:T19
+E7	Action:T23 
+E8	Action:T24 Acts-on:T25 Site:T26
+E9	Action:T29 Acts-on:T27 Site:T28 Product:T38
+E10	Action:T30 Acts-on:T31 Site:T32
+E11	Action:T33 Acts-on:E10
+E12	Action:T35 Site:E10 Acts-on:T36
+E13	Action:T37 Acts-on:T38 Site:T39
+E14	Action:T41 Acts-on:T40
+E15	Action:T43 Site:E14 Acts-on:T44 Product:T47
+E16	Action:T46 Acts-on:T47 Site:T48 Product:T50
+E17	Action:T49 Acts-on:T50 Site:T51
+E18	Action:T52 Acts-on:T54 Product:T65 Product2:T71
+E19	Action:T55 Using:E18 Acts-on:T56 Site:T57 Product:T58
+E20	Action:T61 Acts-on:T63 Site:T65
+E21	Action:T66 Acts-on:T67 Site:T71
+E22	Action:T72 Acts-on:T73 Site:T74
+E23	Action:T75 Acts-on:T76 Site:T77 Product:T79
+E24	Action:T78 Acts-on:T79
+E25	Action:T82 
+E26	Action:T86 Acts-on:T84
+E27	Action:T87 Acts-on:T88 Site:T89 Product:T93
+E28	Action:T90 Acts-on:T91
+E29	Action:T92 Acts-on:T93 Site:T94 Acts-on2:T96 Product:T102
+E30	Action:T97 Acts-on:T98
+E31	Action:T99 Site:T100
+E32	Action:T101 
+E33	Action:T103 Acts-on:T102 Product:T107
+E34	Action:T106 Acts-on:T107
+E35	Action:T108 Acts-on:E34 Site:T109
+E36	Action:T111 Acts-on:T112
+E37	Action:T113 Using:E36 Acts-on:T114
+E38	Action:T116 Acts-on:T117
+E39	Action:T119 Acts-on:T120 Site:T121
+R1	Measure Arg1:T4 Arg2:T2
+R2	Measure Arg1:T4 Arg2:T3
+R3	Measure Arg1:T8 Arg2:T7
+R4	Setting Arg1:T14 Arg2:T15
+R5	Setting Arg1:T14 Arg2:T16
+R6	Mod-Link Arg1:E6 Arg2:T20
+R7	Mod-Link Arg1:E7 Arg2:T22
+R8	Mod-Link Arg1:E11 Arg2:T34
+R9	Setting Arg1:E14 Arg2:T42
+R10	Mod-Link Arg1:E15 Arg2:T45
+R11	Mod-Link Arg1:T54 Arg2:T53
+R12	Meronym Arg1:T58 Arg2:T59
+R13	Meronym Arg1:T59 Arg2:T60
+R14	Measure Arg1:T63 Arg2:T62
+R15	Meronym Arg1:T64 Arg2:T63
+R16	Measure Arg1:T67 Arg2:T69
+R17	Mod-Link Arg1:T69 Arg2:T68
+R18	Meronym Arg1:T70 Arg2:T67
+R19	Setting Arg1:E24 Arg2:T81
+R20	Of-Type Arg1:T81 Arg2:T80
+R21	Setting Arg1:E25 Arg2:T83
+R22	Mod-Link Arg1:E26 Arg2:T85
+R23	Measure Arg1:T96 Arg2:T95
+R24	Setting Arg1:E33 Arg2:T104
+R25	Mod-Link Arg1:E34 Arg2:T105
+R26	Meronym Arg1:T109 Arg2:T110
+R27	Meronym Arg1:T114 Arg2:T115
+R28	Mod-Link Arg1:E39 Arg2:T118

@@ -1,0 +1,70 @@
+T1	Action 25 31	Set up
+T2	Reagent 46 54	reaction
+T3	Reagent 65 89	restriction endonuclease
+T4	Modifier 103 109	lowest
+T5	Modifier 110 114	salt
+T6	Concentration 115 128	concentration
+T7	Reagent 148 154	buffer
+T8	Amount 179 184	50 µl
+T9	Action 189 192	Mix
+T10	Reagent 193 203	components
+T11	Action 207 216	pipetting
+T12	Action 260 268	flicking
+T13	Location 275 288	reaction tube
+T14	Modifier 291 296	Quick
+T15	Action 311 322	spin - down
+T16	Device 328 343	microcentrifuge
+T17	Action 375 383	Incubate
+T18	Time 388 394	1 hour
+T19	Temperature 398 443	the enzyme - specific appropriate temperature
+T20	Action 446 452	Adjust
+T21	Modifier 457 461	salt
+T22	Concentration 462 475	concentration
+T23	Reagent 483 491	reaction
+T24	Amount 500 514	a small volume
+T25	Reagent 520 546	concentrated salt solution
+T26	Action 629 632	Add
+T27	Reagent 637 650	second enzyme
+T28	Action 653 656	Mix
+T29	Reagent 657 667	components
+T30	Action 671 680	pipetting
+T31	Reagent 685 701	reaction mixture
+T32	Action 724 732	flicking
+T33	Location 739 752	reaction tube
+T34	Modifier 755 760	Quick
+T35	Action 775 786	spin - down
+T36	Device 792 807	microcentrifuge
+T37	Action 839 847	Incubate
+T38	Time 852 858	1 hour
+T39	Temperature 862 907	the enzyme - specific appropriate temperature
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T10
+E2	Action:T9 Acts-on:T10
+E3	Action:T11 
+E4	Action:T12 Acts-on:T13
+E5	Action:T15 Acts-on:T16 Acts-on2:E2
+E6	Action:T17 Acts-on:E5 Product:T23
+E7	Action:T20 Acts-on:T23 Using:T25
+E8	Action:T26 Acts-on:T27 Acts-on2:E7 Product:T29
+E9	Action:T28 Acts-on:T29
+E10	Action:T30 
+E11	Action:T32 Acts-on:T33
+E12	Action:T35 Site:T36 Acts-on:E9
+E13	Action:T37 Acts-on:E12
+R1	Measure Arg1:T2 Arg2:T8
+R2	Meronym Arg1:T7 Arg2:T3
+R3	Mod-Link Arg1:E5 Arg2:T14
+R4	Setting Arg1:E6 Arg2:T18
+R5	Setting Arg1:E6 Arg2:T19
+R6	Mod-Link Arg1:T22 Arg2:T21
+R7	Mod-Link Arg1:T6 Arg2:T5
+R8	Measure Arg1:T7 Arg2:T6
+R9	Mod-Link Arg1:T6 Arg2:T4
+R10	Setting Arg1:E7 Arg2:T22
+R11	Measure Arg1:T25 Arg2:T24
+R12	Mod-Link Arg1:E12 Arg2:T34
+R13	Setting Arg1:E13 Arg2:T38
+R14	Setting Arg1:E13 Arg2:T39
+R15	Enables Arg1:E3 Arg2:E2
+R16	Or Arg1:E4 Arg2:E3
+R17	Or Arg1:E11 Arg2:E10
+R18	Enables Arg1:E10 Arg2:E9

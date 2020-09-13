@@ -1,0 +1,83 @@
+T1	Action 31 35	Grow
+T2	Reagent 36 41	cells
+T3	Reagent 72 85	liquid medium
+T4	Action 88 97	Normalize
+T5	Reagent 98 103	cells
+T6	Measure-Type 110 115	OD600
+T7	Numerical 119 124	2 - 3
+T8	Amount 128 132	1 mL
+T9	Reagent 136 139	H2O
+T10	Action 142 152	Centrifuge
+T11	Amount 153 157	1 mL
+T12	Reagent 161 164	H2O
+T13	Reagent 181 186	cells
+T14	Speed 190 198	9000 RPM
+T15	Time 203 214	two minutes
+T16	Action 217 226	Resuspend
+T17	Reagent 227 241	pelleted cells
+T18	Amount 245 251	100 uL
+T19	Concentration 252 257	0.2 M
+T20	Reagent 258 262	NaOH
+T21	Action 267 275	incubate
+T22	Reagent 279 282	ice
+T23	Time 287 297	15 minutes
+T24	Action 300 310	Centrifuge
+T25	Reagent 311 316	cells
+T26	Speed 320 328	9000 RPM
+T27	Time 333 344	two minutes
+T28	Action 347 356	Resuspend
+T29	Reagent 361 367	pellet
+T30	Amount 371 377	100 uL
+T31	Reagent 381 419	Yeast Protein Extraction Sample Buffer
+T32	Action 422 425	Add
+T33	Amount 426 432	0.4 uL
+T34	Reagent 433 452	2 - mercaptoethanol
+T35	Reagent 460 467	mixture
+T36	Action 470 474	Boil
+T37	Reagent 475 480	cells
+T38	Reagent 484 497	sample buffer
+T39	Time 502 511	5 minutes
+T40	Temperature 515 519	95 C
+T41	Action 526 531	store
+T42	Temperature 535 541	- 80 C
+T43	Action 545 549	load
+T44	Reagent 550 561	supernatant
+T45	Reagent 569 572	gel
+T46	Action 575 581	Vortex
+T47	Modifier 582 589	briefly
+T48	Action 595 605	centrifuge
+T49	Speed 609 619	10,000 RPM
+T50	Time 624 633	3 minutes
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T5
+E2	Action:T4 Acts-on:T5 Measure-Type-Link:T6 Site:T9 Product:T13
+E3	Action:T10 Acts-on:T12 Product:T17
+E4	Action:T16 Acts-on:T17 Site:T20
+E5	Action:T21 Site:T22 Acts-on:E4 Product:T25
+E6	Action:T24 Acts-on:T25 Product:T29
+E7	Action:T28 Acts-on:T29 Site:T31 Product:T35
+E8	Action:T32 Acts-on:T34 Site:T35 Product:T37
+E9	Action:T36 Acts-on:T37 Site:T38
+E10	Action:T41 Acts-on:E9
+E11	Action:T43 Acts-on:T44 Site:T45
+E12	Action:T46 Acts-on:E10
+E13	Action:T48 Acts-on:E12
+R1	Of-Type Arg1:T7 Arg2:T6
+R2	Measure Arg1:T9 Arg2:T8
+R3	Meronym Arg1:T13 Arg2:T12
+R4	Measure Arg1:T12 Arg2:T11
+R5	Setting Arg1:E3 Arg2:T14
+R6	Setting Arg1:E3 Arg2:T15
+R7	Measure Arg1:T20 Arg2:T19
+R8	Measure Arg1:T20 Arg2:T18
+R9	Setting Arg1:E5 Arg2:T23
+R10	Measure Arg1:T31 Arg2:T30
+R11	Measure Arg1:T34 Arg2:T33
+R12	Setting Arg1:E10 Arg2:T42
+R13	Setting Arg1:E9 Arg2:T39
+R14	Setting Arg1:E9 Arg2:T40
+R15	Mod-Link Arg1:E12 Arg2:T47
+R16	Setting Arg1:E13 Arg2:T49
+R17	Setting Arg1:E13 Arg2:T50
+R18	Setting Arg1:E6 Arg2:T26
+R19	Setting Arg1:E6 Arg2:T27
+R20	Or Arg1:E10 Arg2:E11

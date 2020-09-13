@@ -1,0 +1,200 @@
+T1	Action 35 39	Grow
+T2	Reagent 40 54	diatom culture
+T3	Reagent 58 83	autoclaved seawater media
+T4	Action 285 291	filter
+T5	Reagent 292 299	culture
+T6	Size 310 314	2 μm
+T7	Size 315 320	47 mM
+T8	Device 321 327	filter
+T9	Action 404 409	place
+T10	Device 410 417	filters
+T11	Amount 421 426	50 ml
+T12	Reagent 430 435	media
+T13	Action 547 553	Remove
+T14	Device 554 561	filters
+T15	Location 567 572	tubes
+T16	Action 577 587	centrifuge
+T17	Speed 590 598	1200 x g
+T18	Time 603 612	5 minutes
+T19	Action 638 644	decant
+T20	Reagent 645 650	media
+T21	Action 653 662	Resuspend
+T22	Reagent 663 669	pellet
+T23	Amount 673 678	~ 7ml
+T24	Concentration 679 682	10M
+T25	Reagent 683 687	NH4F
+T26	Action 690 696	Vortex
+T27	Generic-Measure 697 709	periodically
+T28	Action 716 726	incubating
+T29	Location 727 731	tube
+T30	Temperature 735 738	ice
+T31	Time 743 753	10 minutes
+T32	Action 756 766	Centrifuge
+T33	Speed 769 777	1200 x g
+T34	Temperature 780 783	4°C
+T35	Time 788 793	5 min
+T36	Action 798 806	pour off
+T37	Reagent 807 811	NH4F
+T38	Action 814 823	Resuspend
+T39	Action 828 833	rinse
+T40	Reagent 834 840	pellet
+T41	Numerical 841 843	3x
+T42	Reagent 849 865	isolation buffer
+T43	Amount 868 877	5 - 7 mls
+T44	Action 882 892	centrifuge
+T45	Speed 895 903	1200 x g
+T46	Temperature 906 909	4°C
+T47	Action 930 939	Resuspend
+T48	Reagent 940 946	pellet
+T49	Amount 950 954	1 ml
+T50	Temperature 955 959	cold
+T51	Reagent 960 976	isolation buffer
+T52	Action 979 987	Sonicate
+T53	Generic-Measure 990 993	10W
+T54	Time 998 1002	10 s
+T55	Action 1005 1012	Prepare
+T56	Numerical 1013 1014	2
+T57	Generic-Measure 1015 1025	two - step
+T58	Reagent 1026 1043	Percoll gradients
+T59	Size 1049 1054	15 ml
+T60	Location 1055 1066	COREX tubes
+T61	Action 1071 1074	Add
+T62	Amount 1075 1079	2 ml
+T63	Reagent 1080 1101	Bottom Layer Solution
+T64	Concentration 1104 1108	80 %
+T65	Reagent 1109 1116	Percoll
+T66	Size 1122 1127	15 ml
+T67	Location 1128 1138	corex tube
+T68	Action 1141 1146	Apply
+T69	Amount 1147 1152	10 μl
+T70	Reagent 1156 1171	gel loading dye
+T71	Reagent 1176 1194	Top Layer Solution
+T72	Concentration 1197 1201	40 %
+T73	Reagent 1202 1209	Percoll
+T74	Action 1223 1226	add
+T75	Amount 1227 1231	4 ml
+T76	Reagent 1232 1241	Top Layer
+T77	Concentration 1249 1253	80 %
+T78	Reagent 1254 1267	Percoll layer
+T79	Device 1276 1291	Pasteur Pipette
+T80	Action 1294 1298	Load
+T81	Reagent 1299 1309	homogenate
+T82	Location 1370 1373	top
+T83	Generic-Measure 1382 1392	two - step
+T84	Reagent 1393 1409	Percoll gradient
+T85	Device 1417 1432	Pasteur pipette
+T86	Action 1435 1445	Centrifuge
+T87	Device 1449 1466	swing - out rotor
+T88	Speed 1470 1478	1500 x g
+T89	Time 1483 1494	ten minutes
+T90	Method 1495 1504	brake off
+T91	Temperature 1509 1512	4°C
+T92	Action 1519 1525	ecover
+T93	Reagent 1526 1545	intact chloroplasts
+T94	Location 1548 1560	bottom layer
+T95	Device 1571 1586	Pasteur Pipette
+T96	Action 1589 1592	Add
+T97	Modifier 1596 1603	sterile
+T98	Size 1604 1609	15 ml
+T99	Location 1610 1620	corex tube
+T100	Action 1623 1627	Wash
+T101	Numerical 1628 1633	twice
+T102	Temperature 1639 1643	cold
+T103	Reagent 1644 1660	isolation buffer
+T104	Action 1694 1697	Add
+T105	Reagent 1698 1704	buffer
+T106	Action 1707 1717	Centrifuge
+T107	Device 1723 1738	swing out rotor
+T108	Speed 1742 1750	1000 x g
+T109	Temperature 1753 1756	4°C
+T110	Time 1761 1773	five minutes
+T111	Method 1776 1784	brake on
+T112	Action 1789 1796	Discard
+T113	Reagent 1797 1808	Supernatant
+T114	Device 1817 1832	soft paintbrush
+T115	Action 1846 1855	resuspend
+T116	Reagent 1856 1873	pelleted plastids
+T117	Generic-Measure 1879 1891	small amount
+T118	Temperature 1895 1899	cold
+T119	Reagent 1900 1916	isolation buffer
+T120	Reagent 1922 1966	alternate preservation buffer of your choice
+T121	Method 2066 2091	phase contrast microscopy
+T122	Action 2095 2104	visualize
+E1	Action:T1 Product:T2 Site:T3
+E2	Action:T4 Acts-on:T5 Using:T8 Product:T10
+E3	Action:T9 Acts-on:T10 Site:T12 Product:T14
+E4	Action:T13 Acts-on:T14 Site:T15
+E5	Action:T16 Acts-on:E4 Product:T20
+E6	Action:T19 Acts-on:T20 Product:T22
+E7	Action:T21 Acts-on:T22 Using:T25 Product:T29
+E8	Action:T26 Acts-on:T29
+E9	Action:T28 Acts-on:T29
+E10	Action:T32 Acts-on:E8 Product:T37
+E11	Action:T36 Acts-on:T37 Product:T40
+E12	Action:T38 Acts-on:T40 Using:T42
+E13	Action:T39 Acts-on:T40 Count:T41 Using:T42
+E14	Action:T44 Acts-on:E13 Product:T48
+E15	Action:T47 Acts-on:T48 Using:T51
+E16	Action:T52 Acts-on:E15 Product:T81
+E17	Action:T55 Count:T56 Product:T58 Site:T60 Product2:T67
+E18	Action:T61 Acts-on:T63 Site:T67 Product:T78
+E19	Action:T68 Acts-on:T70 Site:T71
+E20	Action:T74 Acts-on:T76 Site:T78 Using:T79 Product:T84
+E21	Action:T80 Acts-on:T81 Site:T82 Using:T85
+E22	Action:T86 Acts-on:E21 Site:T87 Using:T90 Product:T93
+E23	Action:T92 Acts-on:T93 Site:T94 Using:T95
+E24	Action:T96 Acts-on:E23 Site:T99
+E25	Action:T100 Acts-on:E24 Count:T101 Using:T103
+E26	Action:T104 Site:E25 Acts-on:T105
+E27	Action:T106 Acts-on:E26 Site:T107 Using:T111 Product:T113
+E28	Action:T112 Acts-on:T113 Product:T116
+E29	Action:T115 Using:T114 Acts-on:T116 Using2:T119
+E30	Action:T122 Acts-on:E29 Using:T121
+R1	Coreference-Link Arg1:T2 Arg2:T5
+R2	Setting Arg1:T8 Arg2:T6
+R3	Setting Arg1:T8 Arg2:T7
+R4	Measure Arg1:T12 Arg2:T11
+R5	Setting Arg1:E5 Arg2:T17
+R6	Setting Arg1:E5 Arg2:T18
+R7	Measure Arg1:T25 Arg2:T23
+R8	Measure Arg1:T25 Arg2:T24
+R9	Setting Arg1:E8 Arg2:T27
+R10	Overlaps Arg1:E9 Arg2:E8
+R11	Setting Arg1:E9 Arg2:T30
+R12	Setting Arg1:E9 Arg2:T31
+R13	Setting Arg1:E10 Arg2:T33
+R14	Setting Arg1:E10 Arg2:T34
+R15	Setting Arg1:E10 Arg2:T35
+R16	Measure Arg1:T42 Arg2:T43
+R17	Coreference-Link Arg1:T42 Arg2:T51
+R18	Setting Arg1:E14 Arg2:T45
+R19	Setting Arg1:E14 Arg2:T46
+R20	Setting Arg1:E15 Arg2:T50
+R21	Measure Arg1:T51 Arg2:T49
+R22	Setting Arg1:E16 Arg2:T53
+R23	Setting Arg1:E16 Arg2:T54
+R24	Measure Arg1:T58 Arg2:T57
+R25	Measure Arg1:T60 Arg2:T59
+R26	Measure Arg1:T63 Arg2:T62
+R27	Meronym Arg1:T65 Arg2:T63
+R28	Measure Arg1:T65 Arg2:T64
+R29	Measure Arg1:T67 Arg2:T66
+R30	Measure Arg1:T70 Arg2:T69
+R31	Meronym Arg1:T73 Arg2:T71
+R32	Measure Arg1:T73 Arg2:T72
+R33	Measure Arg1:T76 Arg2:T75
+R34	Measure Arg1:T78 Arg2:T77
+R35	Meronym Arg1:T82 Arg2:T84
+R36	Measure Arg1:T84 Arg2:T83
+R37	Setting Arg1:E22 Arg2:T88
+R38	Setting Arg1:E22 Arg2:T89
+R39	Setting Arg1:E22 Arg2:T91
+R40	Mod-Link Arg1:T99 Arg2:T97
+R41	Measure Arg1:T99 Arg2:T98
+R42	Setting Arg1:E25 Arg2:T102
+R43	Setting Arg1:E27 Arg2:T108
+R44	Setting Arg1:E27 Arg2:T109
+R45	Setting Arg1:E27 Arg2:T110
+R46	Setting Arg1:E29 Arg2:T118
+R47	Measure Arg1:T119 Arg2:T117
+R48	Or Arg1:T119 Arg2:T120

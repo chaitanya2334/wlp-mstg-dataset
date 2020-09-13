@@ -1,0 +1,57 @@
+T1	Action 44 50	Dilute
+T2	Reagent 55 75	10X RBC Lysis Buffer
+T3	Reagent 79 103	1X working concentration
+T4	Reagent 109 124	deionized water
+T5	Action 127 131	Warm
+T6	Reagent 136 147	1X solution
+T7	Modifier 151 167	room temperature
+T8	Action 183 186	Add
+T9	Amount 187 193	2.0 ml
+T10	Reagent 197 216	1X RBC Lysis Buffer
+T11	Modifier 220 224	each
+T12	Device 225 229	tube
+T13	Modifier 230 268	containing up to 100 μl of whole blood
+T14	Modifier 271 277	Gently
+T15	Action 278 284	vortex
+T16	Modifier 285 289	each
+T17	Device 290 294	tube
+T18	Action 342 350	Incubate
+T19	Modifier 354 370	room temperature
+T20	Modifier 373 393	protected from light
+T21	Time 400 415	10 - 15 minutes
+T22	Action 418 428	Centrifuge
+T23	Speed 429 436	350 x g
+T24	Time 441 450	5 minutes
+T25	Action 453 461	Aspirate
+T26	Reagent 462 473	supernatant
+T27	Action 482 492	disturbing
+T28	Reagent 493 499	pellet
+T29	Action 506 515	resuspend
+T30	Reagent 520 526	pellet
+T31	Modifier 534 545	appropriate
+T32	Reagent 546 552	buffer
+E1	Action:T1 Acts-on:T2 Product:T3 Using:T4
+E2	Action:T5 Acts-on:T6 Product:T10
+E3	Action:T8 Acts-on:T10 Using:T12 Product:T17
+E4	Action:T15 Acts-on:T17
+E5	Action:T18 Acts-on:T17
+E6	Action:T22 Acts-on:E5 Product:T26 Product2:T28
+E7	Action:T25 Acts-on:T26
+E8	Action:T27 Acts-on:T28
+E9	Action:T29 Acts-on:T30 Site:T32
+R1	Mod-Link Arg1:T32 Arg2:T31
+R2	Mod-Link Arg1:E4 Arg2:T14
+R3	Mod-Link Arg1:T17 Arg2:T16
+R4	Mod-Link Arg1:E5 Arg2:T19
+R5	Mod-Link Arg1:E5 Arg2:T20
+R6	Setting Arg1:E5 Arg2:T21
+R7	Setting Arg1:E6 Arg2:T23
+R8	Setting Arg1:E6 Arg2:T24
+R9	Mod-Link Arg1:T12 Arg2:T11
+R10	Measure Arg1:T10 Arg2:T9
+R11	Mod-Link Arg1:T12 Arg2:T13
+R12	Mod-Link Arg1:E2 Arg2:T7
+R13	Coreference-Link Arg1:T3 Arg2:T6
+R14	Coreference-Link Arg1:T28 Arg2:T30
+R15	Prevents Arg1:E7 Arg2:E8
+R16	Coreference-Link Arg1:T10 Arg2:T32

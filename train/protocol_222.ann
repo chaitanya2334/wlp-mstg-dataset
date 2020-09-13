@@ -1,0 +1,158 @@
+T1	Action 83 90	Prepare
+T2	Reagent 91 102	base plates
+T3	Concentration 109 114	0.4 %
+T4	Reagent 115 131	GIBCO LM agarose
+T5	Amount 134 138	0.4g
+T6	Reagent 139 146	agarose
+T7	Amount 149 155	100 ml
+T8	Action 160 167	Make up
+T9	Reagent 168 174	plates
+T10	Modifier 181 202	filtered , autoclaved
+T11	Concentration 203 207	75 %
+T12	Reagent 208 236	Sargasso Sea Water ( SSW ) .
+T13	Action 237 240	Add
+T14	Reagent 241 260	appropriate agarose
+T15	Action 268 277	microwave
+T16	Modifier 278 287	to a boil
+T17	Action 290 293	Add
+T18	Reagent 294 315	appropriate nutrients
+T19	Action 371 385	Vortex / shake
+T20	Action 389 392	mix
+T21	Reagent 393 402	nutrients
+T22	Modifier 403 413	thoroughly
+T23	Modifier 418 430	asceptically
+T24	Action 431 435	pour
+T25	Reagent 436 442	plates
+T26	Location 446 450	hood
+T27	Reagent 459 465	plates
+T28	Action 466 472	to sit
+T29	Time 473 482	overnight
+T30	Action 486 494	solidify
+T31	Action 502 508	adding
+T32	Reagent 509 520	top agarose
+T33	Action 523 530	Prepare
+T34	Reagent 536 556	cyanophage dilutions
+T35	Action 566 573	plating
+T36	Reagent 574 579	cells
+T37	Reagent 583 594	top agarose
+T38	Action 598 603	using
+T39	Reagent 604 609	media
+T40	Size 627 631	5 ml
+T41	Location 632 644	Falcon tubes
+T42	Action 647 654	Prepare
+T43	Reagent 655 666	top agarose
+T44	Concentration 670 675	0.5 %
+T45	Reagent 676 681	GIBCO
+T46	Action 684 694	Low - Melt
+T47	Reagent 695 702	agarose
+T48	Modifier 709 717	filtered
+T49	Modifier 720 730	autoclaved
+T50	Concentration 731 735	75 %
+T51	Reagent 736 739	SSW
+T52	Action 743 750	make up
+T53	Reagent 751 757	plates
+T54	Action 760 763	Add
+T55	Modifier 764 775	appropriate
+T56	Reagent 776 783	agarose
+T57	Concentration 786 800	0.5 g / 100 ml
+T58	Reagent 801 804	SSW
+T59	Action 811 820	microwave
+T60	Modifier 821 829	as above
+T61	Action 841 845	cool
+T62	Location 851 874	pre - heated water bath
+T63	Temperature 878 884	~ 29°C
+T64	Modifier 914 926	Asceptically
+T65	Action 927 930	add
+T66	Reagent 931 958	filter sterilized nutrients
+T67	Action 1028 1031	Add
+T68	Amount 1032 1050	appropriate volume
+T69	Reagent 1054 1059	cells
+T70	Reagent 1063 1074	top agarose
+T71	Action 1077 1083	vortex
+T72	Modifier 1087 1097	thoroughly
+T73	Action 1098 1101	mix
+T74	Action 1106 1111	plate
+T75	Modifier 1112 1123	immediately
+T76	Action 1126 1135	Inoculate
+T77	Reagent 1138 1152	liquid culture
+T78	Reagent 1168 1176	dilution
+T79	Modifier 1205 1214	indicator
+T80	Action 1289 1297	Incubate
+T81	Reagent 1302 1308	plates
+T82	Time 1309 1318	overnight
+T83	Generic-Measure 1322 1338	~ 2 - 5 uE light
+T84	Modifier 1339 1369	without parafilming the plates
+T85	Reagent 1383 1394	top agarose
+T86	Action 1398 1406	solidify
+T87	Action 1447 1455	parafilm
+T88	Reagent 1460 1466	plates
+T89	Action 1492 1497	place
+T90	Modifier 1498 1529	at the appropriate light levels
+E1	Action:T1 Using:T4 Product:T2
+E2	Action:T8 Acts-on:T9 Using:T12
+E3	Action:T13 Acts-on:T14 Site:E2
+E4	Action:T15 Acts-on:E3
+E5	Action:T17 Acts-on:T18 Site:E4 Product:T21
+E6	Action:T19 Product:T25
+E7	Action:T20 Acts-on:T21
+E8	Action:T24 Acts-on:T25 Site:T26 Product:T27
+E9	Action:T28 Acts-on:T27
+E10	Action:T30 
+E11	Action:T31 Acts-on:T32 Site:E9 Product:T37
+E12	Action:T33 Product:T34
+E13	Action:T35 Acts-on:T36 Site:T37
+E14	Action:T38 Acts-on:T39 Site:T41
+E15	Action:T42 Product:T43
+E16	Action:T46 Acts-on:T47 Product:T56
+E17	Action:T52 Acts-on:T53 Using:T51
+E18	Action:T54 Acts-on:T56 Site:E17
+E19	Action:T59 Acts-on:E18
+E20	Action:T61 Site:T62 Acts-on:E19
+E21	Action:T65 Acts-on:T66 Site:E20 Product:T70
+E22	Action:T67 Acts-on:T69 Site:T70
+E23	Action:T71 
+E24	Action:T73 Acts-on:E22
+E25	Action:T74 Acts-on:E24 Product:T81
+E26	Action:T76 Acts-on:T77 Using:T78 Product:T88
+E27	Action:T80 Acts-on:T81 Product:T88
+E28	Action:T86 Acts-on:T85
+E29	Action:T87 Acts-on:T88
+E30	Action:T89 Acts-on:E29
+R1	Measure Arg1:T6 Arg2:T5
+R2	Meronym Arg1:T6 Arg2:T4
+R3	Measure Arg1:T4 Arg2:T3
+R4	Measure Arg1:T12 Arg2:T11
+R5	Mod-Link Arg1:T12 Arg2:T10
+R6	Mod-Link Arg1:E4 Arg2:T16
+R7	Mod-Link Arg1:E8 Arg2:T23
+R8	Mod-Link Arg1:E7 Arg2:T22
+R9	Setting Arg1:E9 Arg2:T29
+R10	Measure Arg1:T41 Arg2:T40
+R11	Measure Arg1:T45 Arg2:T44
+R12	Measure Arg1:T51 Arg2:T50
+R13	Mod-Link Arg1:T51 Arg2:T49
+R14	Mod-Link Arg1:E19 Arg2:T60
+R15	Measure Arg1:T58 Arg2:T57
+R16	Meronym Arg1:T58 Arg2:T56
+R17	Setting Arg1:E20 Arg2:T63
+R18	Mod-Link Arg1:E21 Arg2:T64
+R19	Mod-Link Arg1:E24 Arg2:T72
+R20	Mod-Link Arg1:E25 Arg2:T75
+R21	Measure Arg1:T69 Arg2:T68
+R22	Setting Arg1:E27 Arg2:T82
+R23	Setting Arg1:E27 Arg2:T83
+R24	Mod-Link Arg1:E27 Arg2:T84
+R25	Mod-Link Arg1:E30 Arg2:T90
+R26	Measure Arg1:T6 Arg2:T7
+R27	Coreference-Link Arg1:T2 Arg2:T9
+R28	Enables Arg1:E6 Arg2:E7
+R29	Enables Arg1:E9 Arg2:E10
+R30	Enables Arg1:E14 Arg2:E12
+R31	Meronym Arg1:T45 Arg2:T43
+R32	Coreference-Link Arg1:T43 Arg2:T47
+R33	Enables Arg1:E23 Arg2:E24
+R34	Enables Arg1:E27 Arg2:E28
+R35	Coreference-Link Arg1:T34 Arg2:T78
+R36	Mod-Link Arg1:T77 Arg2:T79
+R37	Mod-Link Arg1:T51 Arg2:T48
+R38	Mod-Link Arg1:T56 Arg2:T55

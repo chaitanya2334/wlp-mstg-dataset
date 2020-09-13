@@ -1,0 +1,160 @@
+T1	Action 48 52	Fill
+T2	Location 53 71	centrifuge bottles
+T3	Amount 77 82	450mL
+T4	Reagent 83 100	Perkinsus Culture
+T5	Modifier 108 132	logarithmic growth phase
+T6	Action 135 145	Centrifuge
+T7	Location 146 153	bottles
+T8	Speed 157 163	1500 g
+T9	Time 166 172	15 min
+T10	Temperature 176 192	room temperature
+T11	Action 195 203	Transfer
+T12	Reagent 204 215	supernatant
+T13	Modifier 221 226	clean
+T14	Location 227 231	tube
+T15	Action 238 243	store
+T16	Temperature 247 250	4°C
+T17	Action 274 283	Resuspend
+T18	Reagent 284 290	pellet
+T19	Concentration 294 298	10 %
+T20	Amount 299 321	initial culture volume
+T21	Reagent 322 333	supernatant
+T22	Amount 339 343	50mL
+T23	Location 344 355	Falcon Tube
+T24	Action 358 368	Centrifuge
+T25	Location 369 374	tubes
+T26	Speed 378 384	1500 g
+T27	Time 387 393	15 min
+T28	Temperature 397 413	room temperature
+T29	Action 416 424	Transfer
+T30	Reagent 425 436	supernatant
+T31	Modifier 442 447	clean
+T32	Location 448 452	tube
+T33	Action 459 464	store
+T34	Temperature 468 471	4°C
+T35	Action 495 504	Resuspend
+T36	Reagent 505 511	pellet
+T37	Amount 515 518	4mL
+T38	Reagent 519 522	PBS
+T39	Reagent 550 577	protease inhibitor cocktail
+T40	Action 580 588	Transfer
+T41	Reagent 593 599	pellet
+T42	Modifier 600 611	resuspended
+T43	Amount 615 618	2mL
+T44	Location 619 634	Eppendorf Tubes
+T45	Action 654 657	Add
+T46	Amount 658 663	100mL
+T47	Reagent 664 675	Glass beads
+T48	Action 678 693	Disruptor Genie
+T49	Time 698 703	15sec
+T50	Action 706 712	Verify
+T51	Method 713 728	cell disruption
+T52	Action 731 736	place
+T53	Amount 739 743	20mL
+T54	Device 750 766	light microscope
+T55	Action 769 784	Disruptor Genie
+T56	Time 789 793	1min
+T57	Action 796 802	Verify
+T58	Method 803 818	cell disruption
+T59	Action 821 826	place
+T60	Amount 829 833	20mL
+T61	Device 840 856	light microscope
+T62	Action 859 874	Disruptor Genie
+T63	Time 879 883	3min
+T64	Action 886 892	Verify
+T65	Method 893 908	cell disruption
+T66	Action 911 916	place
+T67	Amount 919 923	20mL
+T68	Device 930 946	light microscope
+T69	Action 949 963	Centrifugation
+T70	Speed 967 975	10,000 g
+T71	Time 978 984	30 min
+T72	Temperature 987 990	4°C
+T73	Action 993 1000	Removed
+T74	Reagent 1005 1016	supernatant
+T75	Modifier 1020 1025	clean
+T76	Amount 1026 1031	1.5mL
+T77	Location 1032 1046	Eppendorf tube
+T78	Action 1049 1056	discard
+T79	Reagent 1061 1067	pellet
+T80	Action 1086 1100	Centrifugation
+T81	Speed 1110 1118	10,000 g
+T82	Time 1121 1127	30 min
+T83	Temperature 1130 1133	4°C
+T84	Action 1136 1143	Removed
+T85	Reagent 1148 1159	supernatant
+T86	Modifier 1163 1168	clean
+T87	Amount 1169 1174	1.5mL
+T88	Location 1175 1189	Eppendorf tube
+T89	Action 1192 1199	discard
+T90	Reagent 1204 1210	pellet
+T91	Action 1229 1237	Conserve
+T92	Location 1242 1247	tubes
+T93	Temperature 1251 1254	4°C
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T7
+E2	Action:T6 Acts-on:T7 Product:T12
+E3	Action:T11 Acts-on:T12 Site:T14 Product:T18 Product2:T21
+E4	Action:T15 Acts-on:E3
+E5	Action:T17 Acts-on:T18 Site:T21 Product:T25
+E6	Action:T24 Acts-on:T25 Product:T30
+E7	Action:T29 Acts-on:T30 Site:T32 Product:T36
+E8	Action:T33 Acts-on:E7
+E9	Action:T35 Acts-on:T36 Site:T38 Product:T41
+E10	Action:T40 Acts-on:T41 Site:T44
+E11	Action:T45 Acts-on:T47 Site:E10
+E12	Action:T48 Acts-on:E11
+E13	Action:T50 Using:T51 Acts-on:E12
+E14	Action:T52 Site:T54 Acts-on:E12
+E15	Action:T55 Acts-on:E13
+E16	Action:T57 Using:T58 Acts-on:E15
+E17	Action:T59 Site:T61 Acts-on:E15
+E18	Action:T62 Acts-on:E16
+E19	Action:T64 Using:T65 Acts-on:E18
+E20	Action:T66 Site:T68 Acts-on:E18
+E21	Action:T69 Acts-on:E19 Product:T74
+E22	Action:T73 Acts-on:T74 Site:T77 Product:T79
+E23	Action:T78 Acts-on:T79
+E24	Action:T80 Acts-on:E22 Product:T85
+E25	Action:T84 Acts-on:T85 Site:T88 Product:T90 Product2:T92
+E26	Action:T89 Acts-on:T90
+E27	Action:T91 Acts-on:T92
+R1	Measure Arg1:T4 Arg2:T3
+R2	Setting Arg1:E2 Arg2:T8
+R3	Setting Arg1:E2 Arg2:T9
+R4	Setting Arg1:E2 Arg2:T10
+R5	Mod-Link Arg1:T14 Arg2:T13
+R6	Setting Arg1:E4 Arg2:T16
+R7	Measure Arg1:T21 Arg2:T20
+R8	Measure Arg1:T21 Arg2:T19
+R9	Meronym Arg1:T21 Arg2:T23
+R10	Setting Arg1:E6 Arg2:T26
+R11	Setting Arg1:E6 Arg2:T27
+R12	Setting Arg1:E6 Arg2:T28
+R13	Mod-Link Arg1:T32 Arg2:T31
+R14	Setting Arg1:E8 Arg2:T34
+R15	Measure Arg1:T38 Arg2:T37
+R16	Meronym Arg1:T39 Arg2:T38
+R17	Measure Arg1:T44 Arg2:T43
+R18	Measure Arg1:T47 Arg2:T46
+R19	Setting Arg1:E12 Arg2:T49
+R20	Setting Arg1:E14 Arg2:T53
+R21	Setting Arg1:E15 Arg2:T56
+R22	Setting Arg1:E17 Arg2:T60
+R23	Setting Arg1:E18 Arg2:T63
+R24	Setting Arg1:E20 Arg2:T67
+R25	Setting Arg1:E21 Arg2:T70
+R26	Setting Arg1:E21 Arg2:T71
+R27	Setting Arg1:E21 Arg2:T72
+R28	Measure Arg1:T77 Arg2:T76
+R29	Mod-Link Arg1:T77 Arg2:T75
+R30	Setting Arg1:E24 Arg2:T81
+R31	Setting Arg1:E24 Arg2:T82
+R32	Setting Arg1:E24 Arg2:T83
+R33	Measure Arg1:T88 Arg2:T87
+R34	Mod-Link Arg1:T88 Arg2:T86
+R35	Setting Arg1:E27 Arg2:T93
+R36	Mod-Link Arg1:T4 Arg2:T5
+R37	Mod-Link Arg1:T41 Arg2:T42
+R38	Enables Arg1:E14 Arg2:E13
+R39	Enables Arg1:E17 Arg2:E16
+R40	Enables Arg1:E20 Arg2:E19

@@ -1,0 +1,192 @@
+T1	Action 66 71	Bring
+T2	Amount 72 80	100 pmol
+T3	Reagent 84 88	Cas9
+T4	Measure-Type 94 106	final volume
+T5	Amount 110 114	5 µL
+T6	Reagent 121 132	Cas9 buffer
+T7	Amount 135 140	20 mM
+T8	Reagent 141 152	HEPES - KOH
+T9	pH 153 159	pH 7.5
+T10	Amount 162 168	150 mM
+T11	Reagent 169 172	KCl
+T12	Concentration 175 179	10 %
+T13	Reagent 180 188	glycerol
+T14	Concentration 191 195	1 mM
+T15	Reagent 196 200	TCEP
+T16	Action 232 237	Bring
+T17	Amount 238 246	120 pmol
+T18	Reagent 247 252	sgRNA
+T19	Measure-Type 258 270	final volume
+T20	Amount 274 278	5 µL
+T21	Reagent 285 296	Cas9 buffer
+T22	Action 364 367	Add
+T23	Reagent 368 372	Cas9
+T24	Reagent 376 381	sgRNA
+T25	Modifier 382 388	slowly
+T26	Action 395 403	swirling
+T27	Device 404 415	pipette tip
+T28	Time 430 445	30s to 1 minute
+T29	Reagent 454 457	RNP
+T30	Action 461 465	form
+T31	Time 470 485	10 - 20 minutes
+T32	Action 488 493	Count
+T33	Reagent 494 499	cells
+T34	Action 554 561	pipette
+T35	Numerical 562 566	200k
+T36	Reagent 567 572	cells
+T37	Amount 580 585	15 mL
+T38	Location 586 593	conical
+T39	Action 596 600	Spin
+T40	Speed 601 608	100 x g
+T41	Time 613 623	10 minutes
+T42	Action 627 633	pellet
+T43	Reagent 634 639	cells
+T44	Modifier 640 646	softly
+T45	Action 680 687	prepare
+T46	Location 688 693	plate
+T47	Location 698 705	cuvette
+T48	Action 708 715	Prepare
+T49	Location 718 735	12 - well - plate
+T50	Amount 741 744	1mL
+T51	Reagent 745 750	media
+T52	Action 766 776	pre - warm
+T53	Device 784 793	incubator
+T54	Action 796 803	Prepare
+T55	Action 808 813	label
+T56	Location 814 819	wells
+T57	Amount 823 827	20uL
+T58	Reagent 828 848	nucleofection strips
+T59	Action 851 860	Configure
+T60	Device 861 869	Lonza 4d
+T61	Method 876 907	recommended cell - type program
+T62	Action 910 921	Pipette off
+T63	Reagent 922 927	media
+T64	Reagent 933 938	cells
+T65	Modifier 941 947	gently
+T66	Modifier 952 962	completely
+T67	Device 973 977	P200
+T68	Action 1020 1029	Resuspend
+T69	Reagent 1030 1035	cells
+T70	Amount 1039 1044	20 µL
+T71	Reagent 1048 1069	nucleofector solution
+T72	Device 1099 1103	P200
+T73	Action 1106 1109	Add
+T74	Amount 1121 1126	10 µL
+T75	Reagent 1127 1134	RNP mix
+T76	Amount 1142 1147	20 µL
+T77	Reagent 1148 1160	resuspension
+T78	Action 1165 1168	mix
+T79	Action 1171 1174	Add
+T80	Amount 1175 1178	1uL
+T81	Concentration 1182 1187	100uM
+T82	Reagent 1188 1197	donor DNA
+T83	Amount 1200 1210	100 pmoles
+T84	Action 1217 1220	mix
+T85	Modifier 1221 1225	well
+T86	Action 1228 1231	Add
+T87	Reagent 1232 1251	nucleofection mixes
+T88	Location 1259 1276	multiwell cuvette
+T89	Action 1283 1286	cap
+T90	Action 1419 1425	Insert
+T91	Location 1426 1433	cuvette
+T92	Device 1439 1451	nucleofector
+T93	Action 1456 1459	zap
+T94	Reagent 1468 1473	cells
+T95	Action 1477 1480	sit
+T96	Reagent 1484 1504	nucleofection strips
+T97	Time 1509 1519	10 minutes
+T98	Method 1520 1540	post - nucleofection
+T99	Action 1585 1588	Add
+T100	Amount 1589 1593	80uL
+T101	Modifier 1597 1609	pre - warmed
+T102	Reagent 1610 1615	media
+T103	Modifier 1619 1623	each
+T104	Location 1624 1628	well
+T105	Action 1631 1638	Pipette
+T106	Reagent 1639 1646	mixture
+T107	Device 1658 1662	P200
+T108	Modifier 1673 1685	pre - warmed
+T109	Location 1686 1701	12 - well plate
+T110	Reagent 1851 1856	cells
+T111	Time 1857 1865	24 hours
+T112	Action 1869 1875	settle
+T113	Action 1880 1887	recover
+E1	Action:T1 Acts-on:T3 Measure-Type-Link:T4 Using:T6 Product:T23
+E2	Action:T16 Acts-on:T18 Measure-Type-Link:T19 Using:T21 Product:T24
+E3	Action:T22 Acts-on:T23 Site:T24
+E4	Action:T26 Using:T27
+E5	Action:T30 Acts-on:E3 Product:T29
+E6	Action:T32 Acts-on:T33 Product:T36
+E7	Action:T34 Acts-on:T36 Site:T38 Product:T43
+E8	Action:T39 Acts-on:E7
+E9	Action:T42 Acts-on:T43 Product:T63 Product2:T64
+E10	Action:T45 Product:T46 Product2:T47
+E11	Action:T48 Acts-on:T49 Using:T51
+E12	Action:T52 Acts-on:E11 Acts-on2:T49 Site:T53
+E13	Action:T54 Acts-on:T56
+E14	Action:T55 Acts-on:E13
+E15	Action:T59 Acts-on:T60 Using:T61 Product:T92
+E16	Action:T62 Acts-on:T63 Site:T64 Using:T67 Product:T69
+E17	Action:T68 Acts-on:T69 Site:T71 Using:T72 Product:T77
+E18	Action:T73 Acts-on:T75 Site:T77
+E19	Action:T78 Acts-on:E18
+E20	Action:T79 Site:E19 Acts-on:T82
+E21	Action:T84 Acts-on:E20 Product:T87
+E22	Action:T86 Acts-on:T87 Site:T88
+E23	Action:T89 Acts-on:E22 Product:T91
+E24	Action:T90 Acts-on:T91 Site:T92
+E25	Action:T93 Acts-on:E24 Using:T92 Product:T94
+E26	Action:T95 Acts-on:T94 Site:T96 Using:T98 Product:T104
+E27	Action:T99 Acts-on:T102 Site:T104 Product:T106
+E28	Action:T105 Acts-on:T106 Using:T107 Site:T109 Product:T110
+E29	Action:T112 Acts-on:T110
+E30	Action:T113 Acts-on:E29
+R1	Measure Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T8 Arg2:T6
+R3	Measure Arg1:T8 Arg2:T7
+R4	Measure Arg1:T8 Arg2:T9
+R5	Meronym Arg1:T11 Arg2:T6
+R6	Measure Arg1:T11 Arg2:T10
+R7	Meronym Arg1:T13 Arg2:T6
+R8	Measure Arg1:T13 Arg2:T12
+R9	Meronym Arg1:T15 Arg2:T6
+R10	Measure Arg1:T15 Arg2:T14
+R11	Measure Arg1:T18 Arg2:T17
+R12	Coreference-Link Arg1:T21 Arg2:T6
+R13	Mod-Link Arg1:E3 Arg2:T25
+R14	Meronym Arg1:T23 Arg2:T27
+R15	Overlaps Arg1:E4 Arg2:E3
+R16	Setting Arg1:E4 Arg2:T28
+R17	Setting Arg1:E5 Arg2:T31
+R18	Measure Arg1:T36 Arg2:T35
+R19	Measure Arg1:T38 Arg2:T37
+R20	Setting Arg1:E8 Arg2:T40
+R21	Setting Arg1:E8 Arg2:T41
+R22	Enables Arg1:E8 Arg2:E9
+R23	Mod-Link Arg1:E9 Arg2:T44
+R24	Overlaps Arg1:E10 Arg2:E9
+R25	Enables Arg1:E11 Arg2:E10
+R26	Coreference-Link Arg1:T49 Arg2:T46
+R27	Measure Arg1:T51 Arg2:T50
+R28	Enables Arg1:E12 Arg2:E10
+R29	Enables Arg1:E13 Arg2:E10
+R30	Enables Arg1:E14 Arg2:E10
+R31	Meronym Arg1:T56 Arg2:T58
+R32	Measure Arg1:T58 Arg2:T57
+R33	Mod-Link Arg1:E16 Arg2:T65
+R34	Mod-Link Arg1:E16 Arg2:T66
+R35	Measure Arg1:T71 Arg2:T70
+R36	Coreference-Link Arg1:T75 Arg2:T29
+R37	Measure Arg1:T75 Arg2:T74
+R38	Measure Arg1:T77 Arg2:T76
+R39	Measure Arg1:T82 Arg2:T80
+R40	Measure Arg1:T82 Arg2:T81
+R41	Measure Arg1:T82 Arg2:T83
+R42	Mod-Link Arg1:E21 Arg2:T85
+R43	Coreference-Link Arg1:T88 Arg2:T47
+R44	Setting Arg1:E26 Arg2:T97
+R45	Measure Arg1:T102 Arg2:T100
+R46	Mod-Link Arg1:T102 Arg2:T101
+R47	Mod-Link Arg1:T104 Arg2:T103
+R48	Mod-Link Arg1:T109 Arg2:T108
+R49	Setting Arg1:E29 Arg2:T111

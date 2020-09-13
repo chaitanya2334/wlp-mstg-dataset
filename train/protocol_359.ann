@@ -1,0 +1,115 @@
+T1	Action 51 58	Prepare
+T2	Reagent 59 68	solutions
+T3	Concentration 72 75	2 %
+T4	Reagent 76 79	SDS
+T5	Concentration 82 87	0.1 %
+T6	Reagent 88 91	SDS
+T7	Concentration 96 101	0.1 M
+T8	Reagent 102 105	HCl
+T9	Action 108 113	Clean
+T10	Modifier 118 131	gold - coated
+T11	Device 132 147	QCM - D sensors
+T12	Concentration 161 164	2 %
+T13	Reagent 165 168	SDS
+T14	Modifier 172 184	mechanically
+T15	Action 185 191	remove
+T16	Reagent 192 204	contaminants
+T17	Device 224 229	glove
+T18	Modifier 233 236	wet
+T19	Action 285 290	Place
+T20	Device 295 302	sensors
+T21	Location 308 313	stand
+T22	Action 318 321	put
+T23	Mention 322 326	them
+T24	Concentration 332 337	0.1 %
+T25	Reagent 338 350	SDS solution
+T26	Action 353 357	Heat
+T27	Time 362 368	10 min
+T28	Temperature 372 378	80°C ,
+T29	Action 384 389	rinse
+T30	Device 394 401	sensors
+T31	Reagent 407 412	water
+T32	Action 415 420	Place
+T33	Device 425 432	sensors
+T34	Concentration 438 443	0.1 M
+T35	Reagent 444 456	HCl solution
+T36	Action 459 463	Heat
+T37	Time 468 474	10 min
+T38	Temperature 478 484	80°C ,
+T39	Action 490 495	rinse
+T40	Device 500 507	sensors
+T41	Reagent 513 518	water
+T42	Numerical 519 532	several times
+T43	Action 536 542	remove
+T44	Reagent 547 559	HCl solution
+T45	Method 567 571	blow
+T46	Device 576 583	sensors
+T47	Action 584 587	dry
+T48	Reagent 604 612	nitrogen
+T49	Action 615 619	Make
+T50	Reagent 623 641	ethanolic solution
+T51	Concentration 667 672	10 mM
+T52	Reagent 676 692	mixed PEG thiols
+T53	Action 821 829	Incubate
+T54	Device 834 849	QCM - D sensors
+T55	Reagent 857 885	ethanolic PEG thiol solution
+T56	Time 899 907	16 hours
+T57	Temperature 911 914	4°C
+T58	Modifier 918 926	darkness
+T59	Action 929 934	Rinse
+T60	Device 939 946	sensors
+T61	Numerical 949 964	couple of times
+T62	Reagent 970 977	ethanol
+T63	Reagent 1008 1023	milli - Q water
+T64	Mention 1040 1044	them
+T65	Action 1045 1048	dry
+T66	Reagent 1054 1062	nitrogen
+T67	Mention 1065 1069	They
+T68	Action 1089 1095	stored
+E1	Action:T1 Product:T2
+E2	Action:T9 Acts-on:T11 Using:T13 Using2:T17 Product:T20
+E3	Action:T15 Acts-on:T16
+E4	Action:T19 Acts-on:T20 Site:T21 Product:T23
+E5	Action:T22 Acts-on:T23 Site:T25
+E6	Action:T26 Acts-on:E5 Product:T30
+E7	Action:T29 Acts-on:T30 Using:T31 Product:T33
+E8	Action:T32 Site:T35 Acts-on:T33
+E9	Action:T36 Acts-on:E8 Product:T40
+E10	Action:T39 Acts-on:T40 Using:T41 Count:T42
+E11	Action:T43 Acts-on:T44 Product:T46
+E12	Action:T47 Acts-on:T46 Using:T48 Using2:T45
+E13	Action:T49 Product:T50
+E14	Action:T53 Acts-on:T54 Site:T55 Product:T60
+E15	Action:T59 Acts-on:T60 Count:T61 Using:T62 Using2:T63 Product:T64
+E16	Action:T65 Acts-on:T64 Using:T66 Product:T67
+E17	Action:T68 Acts-on:T67
+R1	Meronym Arg1:T4 Arg2:T2
+R2	Measure Arg1:T4 Arg2:T3
+R3	Measure Arg1:T6 Arg2:T5
+R4	Meronym Arg1:T6 Arg2:T2
+R5	Measure Arg1:T8 Arg2:T7
+R6	Meronym Arg1:T8 Arg2:T2
+R7	Mod-Link Arg1:T11 Arg2:T10
+R8	Measure Arg1:T13 Arg2:T12
+R9	Mod-Link Arg1:E3 Arg2:T14
+R10	Mod-Link Arg1:T17 Arg2:T18
+R11	Measure Arg1:T25 Arg2:T24
+R12	Setting Arg1:E6 Arg2:T27
+R13	Setting Arg1:E6 Arg2:T28
+R14	Setting Arg1:E9 Arg2:T37
+R15	Setting Arg1:E9 Arg2:T38
+R16	Measure Arg1:T52 Arg2:T51
+R17	Meronym Arg1:T52 Arg2:T50
+R18	Setting Arg1:E14 Arg2:T56
+R19	Setting Arg1:E14 Arg2:T57
+R20	Mod-Link Arg1:E14 Arg2:T58
+R21	Enables Arg1:E2 Arg2:E3
+R22	Meronym Arg1:T16 Arg2:T11
+R23	Coreference-Link Arg1:T4 Arg2:T13
+R24	Coreference-Link Arg1:T6 Arg2:T25
+R25	Coreference-Link Arg1:T8 Arg2:T35
+R26	Measure Arg1:T35 Arg2:T34
+R27	Coreference-Link Arg1:T31 Arg2:T41
+R28	Enables Arg1:E10 Arg2:E11
+R29	Meronym Arg1:T44 Arg2:T40
+R30	Coreference-Link Arg1:T50 Arg2:T55

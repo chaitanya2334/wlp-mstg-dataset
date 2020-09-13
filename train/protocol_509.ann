@@ -1,0 +1,110 @@
+T1	Action 83 90	Prepare
+T2	Concentration 93 103	10 µg / ml
+T3	Reagent 104 126	solution of anti - CD3
+T4	Reagent 135 140	UCHT1
+T5	Reagent 143 147	OKT3
+T6	Reagent 153 158	HIT3a
+T7	Modifier 164 171	sterile
+T8	Reagent 172 175	PBS
+T9	Action 178 186	Dispense
+T10	Amount 187 192	50 µl
+T11	Reagent 200 217	antibody solution
+T12	Modifier 221 225	each
+T13	Location 226 235	microwell
+T14	Size 243 252	96 - well
+T15	Location 253 264	assay plate
+T16	Action 304 307	add
+T17	Amount 308 313	50 µl
+T18	Modifier 317 324	sterile
+T19	Reagent 325 328	PBS
+T20	Action 331 335	Seal
+T21	Location 336 341	plate
+T22	Action 344 352	Incubate
+T23	Temperature 356 360	37°C
+T24	Time 365 372	2 hours
+T25	Temperature 376 379	4°C
+T26	Time 380 389	overnight
+T27	Modifier 392 403	Aseptically
+T28	Action 404 410	decant
+T29	Reagent 411 428	antibody solution
+T30	Location 438 453	microwell plate
+T31	Action 456 460	Wash
+T32	Location 461 477	plate microwells
+T33	Numerical 478 485	3 times
+T34	Modifier 491 498	sterile
+T35	Reagent 499 502	PBS
+T36	Action 519 526	Prepare
+T37	Reagent 527 549	single cell suspension
+T38	Reagent 574 606	supplemented cell culture medium
+T39	Concentration 610 626	1 - 2 x 106 / ml
+T40	Action 629 636	Aliquot
+T41	Amount 637 643	200 µl
+T42	Reagent 644 659	cell suspension
+T43	Location 665 681	plate microwells
+T44	Action 684 689	Cover
+T45	Seal 695 698	lid
+T46	Action 701 709	Incubate
+T47	Temperature 713 717	37°C
+T48	Concentration 721 724	5 %
+T49	Reagent 725 728	CO2
+T50	Method 733 747	100 % humidity
+T51	Time 752 758	3 days
+T52	Action 761 765	Wash
+T53	Location 766 782	plate microwells
+T54	Numerical 783 790	3 times
+T55	Modifier 796 803	sterile
+T56	Reagent 804 807	PBS
+T57	Action 824 828	Wash
+T58	Location 829 845	plate microwells
+T59	Numerical 846 853	3 times
+T60	Modifier 859 866	sterile
+T61	Reagent 867 870	PBS
+T62	Action 887 894	Discard
+T63	Reagent 895 901	liquid
+E1	Action:T1 Product:T3 Site:T8
+E2	Action:T9 Acts-on:T11 Site:T13
+E3	Action:T16 Acts-on:T19 Site:E2 Product:T21
+E4	Action:T20 Acts-on:T21
+E5	Action:T22 Acts-on:E4 Product:T29
+E6	Action:T28 Acts-on:T29 Site:T30 Product:T32
+E7	Action:T31 Acts-on:T32 Count:T33 Using:T35 Product:T43
+E8	Action:T36 Product:T37 Site:T38
+E9	Action:T40 Acts-on:T42 Site:T43
+E10	Action:T44 Using:T45 Acts-on:E9
+E11	Action:T46 Using:T49 Using2:T50 Acts-on:E10 Product:T53
+E12	Action:T52 Acts-on:T53 Count:T54 Using:T56 Product:T58
+E13	Action:T57 Acts-on:T58 Count:T59 Using:T61 Product:T63
+E14	Action:T62 Acts-on:T63
+R1	Measure Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T3 Arg2:T4
+R3	Meronym Arg1:T3 Arg2:T5
+R4	Meronym Arg1:T3 Arg2:T6
+R5	Measure Arg1:T11 Arg2:T10
+R6	Meronym Arg1:T13 Arg2:T15
+R7	Measure Arg1:T19 Arg2:T17
+R8	Setting Arg1:E5 Arg2:T23
+R9	Setting Arg1:E5 Arg2:T24
+R10	Or Arg1:T23 Arg2:T25
+R11	Or Arg1:T24 Arg2:T26
+R12	Mod-Link Arg1:E6 Arg2:T27
+R13	Measure Arg1:T42 Arg2:T41
+R14	Setting Arg1:E11 Arg2:T47
+R15	Measure Arg1:T49 Arg2:T48
+R16	Setting Arg1:E11 Arg2:T51
+R17	Or Arg1:T4 Arg2:T5
+R18	Or Arg1:T5 Arg2:T6
+R19	Mod-Link Arg1:T8 Arg2:T7
+R20	Coreference-Link Arg1:T11 Arg2:T3
+R21	Measure Arg1:T15 Arg2:T14
+R22	Mod-Link Arg1:T13 Arg2:T12
+R23	Mod-Link Arg1:T19 Arg2:T18
+R24	Coreference-Link Arg1:T19 Arg2:T8
+R25	Meronym Arg1:T29 Arg2:T30
+R26	Mod-Link Arg1:T35 Arg2:T34
+R27	Coreference-Link Arg1:T35 Arg2:T8
+R28	Setting Arg1:E8 Arg2:T39
+R29	Coreference-Link Arg1:T42 Arg2:T37
+R30	Mod-Link Arg1:T56 Arg2:T55
+R31	Coreference-Link Arg1:T56 Arg2:T35
+R32	Mod-Link Arg1:T61 Arg2:T60
+R33	Coreference-Link Arg1:T61 Arg2:T56

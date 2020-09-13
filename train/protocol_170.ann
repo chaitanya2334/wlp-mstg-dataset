@@ -1,0 +1,137 @@
+T1	Action 16 20	Wash
+T2	Action 25 36	concentrate
+T3	Reagent 37 42	blood
+T4	Action 45 52	prepare
+T5	Concentration 53 56	2 %
+T6	Reagent 57 71	blood solution
+T7	Action 74 77	Add
+T8	Amount 78 82	3 mL
+T9	Reagent 83 95	rabbit blood
+T10	Amount 99 104	14 mL
+T11	Reagent 105 108	PBS
+T12	pH 109 115	pH 5.7
+T13	Action 120 123	mix
+T14	Action 126 136	Centrifuge
+T15	Time 137 143	10 min
+T16	Speed 144 148	500g
+T17	Temperature 149 151	4C
+T18	Action 154 160	Remove
+T19	Reagent 161 172	supernatant
+T20	Action 237 243	remove
+T21	Amount 244 250	200 uL
+T22	Reagent 251 256	blood
+T23	Location 266 272	bottom
+T24	Location 280 284	vial
+T25	Action 289 292	add
+T26	Amount 296 302	9.8 mL
+T27	Reagent 303 306	PBS
+T28	pH 307 313	pH 5.7
+T29	Action 356 363	Prepare
+T30	Amount 364 370	100 uL
+T31	Reagent 371 404	solutions of endosomal disruptors
+T32	Concentration 408 432	different concentrations
+T33	Action 438 458	serial 10x dilutions
+T34	Reagent 462 469	TritonX
+T35	Concentration 475 485	15 mg / mL
+T36	Concentration 489 503	. 0015 mg / mL
+T37	Action 508 511	Add
+T38	Reagent 512 517	blood
+T39	Reagent 521 541	endosomal disruptors
+T40	Action 546 554	incubate
+T41	Action 557 560	Add
+T42	Amount 561 566	50 uL
+T43	Reagent 567 581	blood solution
+T44	Amount 585 591	100 uL
+T45	Reagent 592 621	endosomal disruptor solutions
+T46	Action 624 632	Incubate
+T47	Temperature 636 639	37C
+T48	Time 644 650	30 min
+T49	Action 725 729	Make
+T50	Reagent 732 748	positive control
+T51	Action 768 774	adding
+T52	Amount 775 780	50 uL
+T53	Reagent 781 795	blood solution
+T54	Amount 799 805	100 uL
+T55	Reagent 806 811	diH2O
+T56	Action 816 837	freeze - thaw cycling
+T57	Numerical 838 839	3
+T58	Action 848 854	freeze
+T59	Temperature 858 863	- 80C
+T60	Device 864 871	freezer
+T61	Action 876 886	Centrifuge
+T62	Action 891 896	place
+T63	Location 900 905	plate
+T64	Action 908 918	Centrifuge
+T65	Device 922 941	tabletop centrifuge
+T66	Speed 945 950	2500g
+T67	Time 955 960	6 min
+T68	Modifier 963 972	Carefully
+T69	Action 973 980	collect
+T70	Amount 981 986	75 uL
+T71	Reagent 990 1001	supernatant
+T72	Modifier 1007 1011	each
+T73	Location 1012 1016	tube
+T74	Action 1021 1026	place
+T75	Location 1030 1043	96 well plate
+T76	Action 1195 1210	Take absorbance
+T77	Generic-Measure 1214 1220	541 nm
+E1	Action:T1 Acts-on:T3
+E2	Action:T2 Acts-on:T3
+E3	Action:T4 Product:T6 Acts-on:E2
+E4	Action:T7 Acts-on:T9 Site:T11
+E5	Action:T13 Acts-on:E4
+E6	Action:T14 Acts-on:E5 Product:T19
+E7	Action:T18 Acts-on:T19 Product:T22
+E8	Action:T20 Acts-on:T22 Site:T23
+E9	Action:T25 Site:T27 Acts-on:E8 Product:T38
+E10	Action:T29 Product:T31
+E11	Action:T33 Acts-on:T34
+E12	Action:T37 Acts-on:T38 Site:T39 Product:T43 Product2:T53
+E13	Action:T40 Acts-on:E12
+E14	Action:T41 Acts-on:T43 Site:T45
+E15	Action:T46 Acts-on:E14
+E16	Action:T49 Product:T50
+E17	Action:T51 Acts-on:T53 Site:T55
+E18	Action:T56 Count:T57 Acts-on:T50
+E19	Action:T58 Site:T60 Acts-on:T50
+E20	Action:T61 Acts-on:E19
+E21	Action:T62 Site:T63 Acts-on:E20
+E22	Action:T64 Using:T65 Acts-on:E21 Product:T71
+E23	Action:T69 Acts-on:T71 Site:T73
+E24	Action:T74 Site:T75 Acts-on:E23
+E25	Action:T76 Acts-on:E24
+R1	Measure Arg1:T6 Arg2:T5
+R2	Measure Arg1:T11 Arg2:T12
+R3	Measure Arg1:T11 Arg2:T10
+R4	Measure Arg1:T9 Arg2:T8
+R5	Setting Arg1:E6 Arg2:T15
+R6	Setting Arg1:E6 Arg2:T16
+R7	Setting Arg1:E6 Arg2:T17
+R8	Measure Arg1:T27 Arg2:T26
+R9	Measure Arg1:T27 Arg2:T28
+R10	Measure Arg1:T22 Arg2:T21
+R11	Meronym Arg1:T23 Arg2:T24
+R12	Measure Arg1:T31 Arg2:T30
+R13	Setting Arg1:E10 Arg2:T32
+R14	Setting Arg1:E11 Arg2:T35
+R15	Setting Arg1:E11 Arg2:T36
+R16	Measure Arg1:T45 Arg2:T44
+R17	Measure Arg1:T43 Arg2:T42
+R18	Setting Arg1:E15 Arg2:T47
+R19	Setting Arg1:E15 Arg2:T48
+R20	Setting Arg1:T60 Arg2:T59
+R21	Measure Arg1:T55 Arg2:T54
+R22	Measure Arg1:T53 Arg2:T52
+R23	Setting Arg1:T65 Arg2:T66
+R24	Setting Arg1:T65 Arg2:T67
+R25	Mod-Link Arg1:T73 Arg2:T72
+R26	Measure Arg1:T71 Arg2:T70
+R27	Mod-Link Arg1:E23 Arg2:T68
+R28	Coreference-Link Arg1:T6 Arg2:T9
+R29	Coreference-Link Arg1:T11 Arg2:T27
+R30	Enables Arg1:E11 Arg2:E10
+R31	Coreference-Link Arg1:T31 Arg2:T39
+R32	Coreference-Link Arg1:T39 Arg2:T45
+R33	Enables Arg1:E17 Arg2:E16
+R34	Enables Arg1:E18 Arg2:E19
+R35	Setting Arg1:E25 Arg2:T77

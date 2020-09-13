@@ -1,0 +1,98 @@
+T1	Action 25 34	Inoculate
+T2	Amount 35 40	small
+T3	Reagent 55 99	cultures of your donor and recipient strains
+T4	Reagent 107 130	appropriate antibiotics
+T5	Location 136 150	lysogeny broth
+T6	Action 234 238	Take
+T7	Amount 239 243	1 ml
+T8	Reagent 247 274	donor and recipient culture
+T9	Action 279 289	centrifuge
+T10	Speed 293 303	10,000 rcf
+T11	Time 308 317	2 minutes
+T12	Action 343 351	Aspirate
+T13	Action 356 363	discard
+T14	Reagent 368 379	supernatant
+T15	Action 384 393	resuspend
+T16	Reagent 398 414	bacterial pellet
+T17	Location 418 426	fresh LB
+T18	Action 508 513	place
+T19	Modifier 514 524	sterilised
+T20	Amount 525 531	0.2 um
+T21	Modifier 532 541	pore size
+T22	Location 542 549	filters
+T23	Location 556 570	L - agar plate
+T24	Action 734 741	Pipette
+T25	Amount 742 747	10 ul
+T26	Modifier 755 766	resuspended
+T27	Reagent 767 794	donor and recipient strains
+T28	Action 909 917	Incubate
+T29	Location 922 927	plate
+T30	Method 928 939	upside down
+T31	Temperature 969 987	37 degrees Celsius
+T32	Action 1022 1026	take
+T33	Location 1031 1036	plate
+T34	Modifier 1037 1040	out
+T35	Location 1048 1057	incubator
+T36	Method 1066 1083	aseptic technique
+T37	Action 1086 1090	pick
+T38	Modifier 1091 1095	each
+T39	Device 1096 1102	filter
+T40	Location 1111 1116	plate
+T41	Device 1123 1130	forceps
+T42	Action 1135 1140	place
+T43	Amount 1149 1155	1.5 ml
+T44	Location 1156 1191	tube containing 1 ml of sterile PBS
+T45	Action 1194 1200	Vortex
+T46	Device 1205 1210	tubes
+T47	Action 1214 1218	free
+T48	Reagent 1223 1231	bacteria
+T49	Device 1241 1247	filter
+T50	Action 1250 1256	Remove
+T51	Action 1261 1268	discard
+T52	Device 1273 1280	filters
+T53	Location 1290 1295	tubes
+T54	Method 1302 1319	aseptic technique
+T55	Action 1322 1327	Plate
+T56	Modifier 1328 1335	desired
+T57	Reagent 1336 1371	volumes of the bacterial suspension
+T58	Location 1375 1396	selective agar medium
+T59	Action 1401 1409	incubate
+E1	Action:T1 Acts-on:T3 Using:T4 Site:T5 Product:T8
+E2	Action:T6 Acts-on:T8
+E3	Action:T9 Acts-on:E2 Product:T14
+E4	Action:T12 Acts-on:T14
+E5	Action:T13 Product:T16 Acts-on:E4
+E6	Action:T15 Acts-on:T16 Site:T17 Product:T27
+E7	Action:T18 Acts-on:T22 Site:T23
+E8	Action:T24 Acts-on:T27 Site:E7 Product:T29
+E9	Action:T28 Using:T30 Acts-on:T29 Product:T33
+E10	Action:T32 Acts-on:T33 Site:T35 Product:T40
+E11	Action:T37 Using:T36 Acts-on:T39 Site:T40 Using2:T41
+E12	Action:T42 Site:T44 Acts-on:E11 Product:T46
+E13	Action:T45 Acts-on:T46 Product:T53
+E14	Action:T47 Acts-on:T48
+E15	Action:T50 Acts-on:T52 Using:T54 Site:T53
+E16	Action:T51 Acts-on:T52 Using:T54 Site:T53 Product:T57
+E17	Action:T55 Acts-on:T57 Site:T58
+E18	Action:T59 Acts-on:T57
+R1	Mod-Link Arg1:T35 Arg2:T34
+R2	Mod-Link Arg1:T57 Arg2:T56
+R3	Mod-Link Arg1:T39 Arg2:T38
+R4	Measure Arg1:T44 Arg2:T43
+R5	Setting Arg1:E9 Arg2:T31
+R6	Mod-Link Arg1:T27 Arg2:T26
+R7	Measure Arg1:T27 Arg2:T25
+R8	Mod-Link Arg1:T22 Arg2:T19
+R9	Mod-Link Arg1:T22 Arg2:T21
+R10	Measure Arg1:T22 Arg2:T20
+R11	Measure Arg1:T8 Arg2:T7
+R12	Setting Arg1:E3 Arg2:T10
+R13	Setting Arg1:E3 Arg2:T11
+R14	Measure Arg1:T3 Arg2:T2
+R15	Coreference-Link Arg1:T5 Arg2:T17
+R16	Meronym Arg1:T39 Arg2:T40
+R17	Meronym Arg1:T52 Arg2:T53
+R18	Enables Arg1:E13 Arg2:E14
+R19	Meronym Arg1:T48 Arg2:T49
+R20	Meronym Arg1:T49 Arg2:T46
+R21	Enables Arg1:E15 Arg2:E16

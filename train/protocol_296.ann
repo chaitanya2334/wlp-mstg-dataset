@@ -1,0 +1,53 @@
+T1	Action 36 41	Weigh
+T2	Amount 42 49	2.383 g
+T3	Reagent 53 57	IPTG
+T4	Action 60 63	Add
+T5	Amount 64 69	10 ml
+T6	Modifier 70 77	sterile
+T7	Reagent 78 81	H2O
+T8	Action 84 92	Dissolve
+T9	Modifier 93 103	completely
+T10	Action 106 112	Prewet
+T11	Size 115 121	0.2 µm
+T12	Device 122 136	syringe filter
+T13	Action 140 155	drawing through
+T14	Amount 156 165	5 - 10 ml
+T15	Modifier 169 176	sterile
+T16	Reagent 177 180	H2O
+T17	Action 185 192	discard
+T18	Reagent 193 198	water
+T19	Action 201 210	Sterilize
+T20	Reagent 211 227	Ampicillin Stock
+T21	Modifier 240 248	prepared
+T22	Size 249 255	0.2 µm
+T23	Device 256 270	syringe filter
+T24	Action 273 278	Store
+T25	Amount 282 286	1 ml
+T26	Reagent 287 295	aliquots
+T27	Temperature 299 305	- 20°C
+T28	Modifier 310 315	up to
+T29	Time 316 322	1 year
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T7 Site:E1
+E3	Action:T8 Acts-on:E2 Product:T20
+E4	Action:T10 Acts-on:T12 Product:T23
+E5	Action:T13 Acts-on:T16 Acts-on2:T12 Product:T18
+E6	Action:T17 Acts-on:T18
+E7	Action:T19 Acts-on:T20 Using:T23 Product:T26
+E8	Action:T24 Acts-on:T26
+R1	Measure Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Measure Arg1:T7 Arg2:T5
+R4	Mod-Link Arg1:E3 Arg2:T9
+R5	Mod-Link Arg1:T16 Arg2:T15
+R6	Measure Arg1:T16 Arg2:T14
+R7	Measure Arg1:T12 Arg2:T11
+R8	Measure Arg1:T23 Arg2:T22
+R9	Mod-Link Arg1:T23 Arg2:T21
+R10	Mod-Link Arg1:T29 Arg2:T28
+R11	Measure Arg1:T26 Arg2:T25
+R12	Setting Arg1:E8 Arg2:T27
+R13	Setting Arg1:E8 Arg2:T29
+R14	Enables Arg1:E5 Arg2:E4
+R15	Enables Arg1:E6 Arg2:E4
+R16	Coreference-Link Arg1:T7 Arg2:T16

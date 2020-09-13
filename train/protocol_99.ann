@@ -1,0 +1,79 @@
+T1	Action 53 59	Set up
+T2	Reagent 64 82	following reaction
+T3	Location 86 89	ice
+T4	Reagent 92 124	Q5 High - Fidelity 2X Master Mix
+T5	Amount 127 134	12.5 µl
+T6	Amount 137 142	25 µl
+T7	Concentration 145 147	1X
+T8	Concentration 150 155	10 µM
+T9	Reagent 158 172	Forward Primer
+T10	Amount 175 182	1.25 µl
+T11	Amount 185 191	2.5 µl
+T12	Concentration 194 200	0.5 µM
+T13	Concentration 203 208	10 µM
+T14	Reagent 211 225	Reverse Primer
+T15	Amount 228 235	1.25 µl
+T16	Amount 238 244	2.5 µl
+T17	Concentration 247 253	0.5 µM
+T18	Reagent 256 268	Template DNA
+T19	Generic-Measure 269 277	variable
+T20	Generic-Measure 278 297	variable < 1,000 ng
+T21	Reagent 298 319	Nuclease - Free Water
+T22	Amount 325 330	25 µl
+T23	Amount 336 341	50 µl
+T24	Modifier 344 350	Gently
+T25	Action 351 354	mix
+T26	Reagent 359 367	reaction
+T27	Action 370 377	Collect
+T28	Modifier 378 381	all
+T29	Reagent 382 388	liquid
+T30	Location 396 402	bottom
+T31	Location 410 414	tube
+T32	Modifier 420 425	quick
+T33	Action 426 430	spin
+T34	Action 448 455	overlay
+T35	Reagent 460 466	sample
+T36	Reagent 472 483	mineral oil
+T37	Device 495 506	PCR machine
+T38	Modifier 517 523	heated
+T39	Seal 524 527	lid
+T40	Modifier 530 537	Quickly
+T41	Action 538 546	transfer
+T42	Location 547 556	PCR tubes
+T43	Device 562 574	thermocycler
+T44	Modifier 575 584	preheated
+T45	Temperature 592 616	denaturation temperature
+T46	Temperature 619 623	98°C
+E1	Action:T1 Product:T2 Site:T3 Acts-on:T4 Acts-on2:T9 Acts-on3:T14 Acts-on4:T18 Acts-on5:T21
+E2	Action:T25 Acts-on:T26 Product:T31
+E3	Action:T27 Acts-on:T29 Site:T30
+E4	Action:T33 Acts-on:T31 Product:T35
+E5	Action:T34 Acts-on:T35 Using:T36 Using2:T37 Product:T42
+E6	Action:T41 Acts-on:T42 Site:T43
+R1	Measure Arg1:T4 Arg2:T5
+R2	Measure Arg1:T4 Arg2:T6
+R3	Measure Arg1:T4 Arg2:T7
+R4	Measure Arg1:T9 Arg2:T8
+R5	Measure Arg1:T9 Arg2:T10
+R6	Measure Arg1:T9 Arg2:T11
+R7	Measure Arg1:T9 Arg2:T12
+R8	Measure Arg1:T14 Arg2:T13
+R9	Measure Arg1:T14 Arg2:T15
+R10	Measure Arg1:T14 Arg2:T16
+R11	Measure Arg1:T14 Arg2:T17
+R12	Measure Arg1:T18 Arg2:T19
+R13	Measure Arg1:T18 Arg2:T20
+R14	Measure Arg1:T21 Arg2:T22
+R15	Measure Arg1:T21 Arg2:T23
+R16	Mod-Link Arg1:E2 Arg2:T24
+R17	Mod-Link Arg1:T29 Arg2:T28
+R18	Meronym Arg1:T30 Arg2:T31
+R19	Mod-Link Arg1:E4 Arg2:T32
+R20	Mod-Link Arg1:T39 Arg2:T38
+R21	Or Arg1:T45 Arg2:T46
+R22	Mod-Link Arg1:E6 Arg2:T40
+R23	Coreference-Link Arg1:T2 Arg2:T26
+R24	Meronym Arg1:T29 Arg2:T30
+R25	Enables Arg1:E4 Arg2:E3
+R26	Mod-Link Arg1:T43 Arg2:T44
+R27	Setting Arg1:T44 Arg2:T45

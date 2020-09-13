@@ -1,0 +1,59 @@
+T1	Action 49 54	Chill
+T2	Reagent 55 62	CB - X™
+T3	Temperature 66 72	- 20°C
+T4	Action 90 93	mix
+T5	Reagent 94 111	CB - X™ Assay Dye
+T6	Modifier 115 121	gently
+T7	Action 122 131	inverting
+T8	Location 136 142	bottle
+T9	Numerical 143 156	several times
+T10	Action 159 171	DO NOT SHAKE
+T11	Location 176 182	BOTTLE
+T12	Action 185 191	Dilute
+T13	Modifier 196 204	supplied
+T14	Reagent 205 222	protein standards
+T15	Action 350 358	Transfer
+T16	Amount 359 363	50µl
+T17	Modifier 364 371	diluted
+T18	Reagent 372 389	protein standards
+T19	Reagent 394 406	test samples
+T20	Location 414 425	assay tubes
+T21	Action 428 434	Set up
+T22	Reagent 437 442	blank
+T23	Amount 454 458	50µl
+T24	Reagent 466 472	buffer
+T25	Action 506 509	Add
+T26	Amount 510 513	1ml
+T27	Reagent 514 531	CB - X™ Assay Dye
+T28	Location 542 546	tube
+T29	Action 551 554	mix
+T30	Modifier 555 559	well
+T31	Action 562 570	Incubate
+T32	Time 575 584	5 minutes
+T33	Temperature 588 604	room temperature
+T34	Action 607 611	Read
+T35	Measure-Type 616 626	absorbance
+T36	Generic-Measure 630 635	595nm
+E1	Action:T1 Acts-on:T2 Product:T5
+E2	Action:T4 Acts-on:T5
+E3	Action:T7 Acts-on:T8 Count:T9
+E4	Action:T10 Acts-on:T11
+E5	Action:T12 Acts-on:T14 Product:T18
+E6	Action:T15 Acts-on:T18 Acts-on2:T19 Site:T20 Product:T28
+E7	Action:T21 Product:T22 Acts-on:T24
+E8	Action:T25 Acts-on:T27 Site:T28
+E9	Action:T29 Acts-on:E8
+E10	Action:T31 Acts-on:E9
+E11	Action:T34 Acts-on:E10 Measure-Type-Link:T35
+R1	Setting Arg1:E1 Arg2:T3
+R2	Meronym Arg1:T5 Arg2:T8
+R3	Mod-Link Arg1:E3 Arg2:T6
+R4	Mod-Link Arg1:T14 Arg2:T13
+R5	Measure Arg1:T18 Arg2:T16
+R6	Mod-Link Arg1:T18 Arg2:T17
+R7	Measure Arg1:T24 Arg2:T23
+R8	Measure Arg1:T27 Arg2:T26
+R9	Mod-Link Arg1:E9 Arg2:T30
+R10	Setting Arg1:E10 Arg2:T32
+R11	Setting Arg1:E10 Arg2:T33
+R12	Setting Arg1:E11 Arg2:T36

@@ -1,0 +1,91 @@
+T1	Action 38 45	Collect
+T2	Numerical 46 49	100
+T3	Reagent 50 57	embryos
+T4	Action 62 67	place
+T5	Location 73 87	eppendorf tube
+T6	Size 90 95	1.5ml
+T7	Amount 109 113	50ul
+T8	Reagent 117 128	embryo wash
+T9	Action 131 134	Add
+T10	Numerical 135 136	3
+T11	Amount 137 142	drops
+T12	Reagent 146 152	bleach
+T13	Action 157 164	let sit
+T14	Time 169 175	3 mins
+T15	Action 178 183	Raise
+T16	Measure-Type 184 190	volume
+T17	Amount 194 199	1.5ml
+T18	Reagent 206 210	dH2O
+T19	Action 213 222	Spin down
+T20	Time 227 231	1min
+T21	Action 234 240	Remove
+T22	Reagent 241 249	solution
+T23	Action 252 255	Add
+T24	Amount 256 261	1.5ml
+T25	Reagent 265 269	dH2O
+T26	Action 272 281	Spin down
+T27	Time 282 286	1min
+T28	Action 289 295	Remove
+T29	Reagent 296 304	solution
+T30	Action 307 310	Add
+T31	Amount 311 316	1.5ml
+T32	Reagent 320 324	dH2O
+T33	Action 327 336	Spin down
+T34	Time 337 342	1 min
+T35	Action 345 351	Remove
+T36	Reagent 352 360	solution
+T37	Device 366 378	micropipette
+T38	Action 381 384	Add
+T39	Amount 385 389	50ul
+T40	Reagent 393 399	1X PBS
+T41	Action 402 405	Add
+T42	Amount 406 410	50ul
+T43	Reagent 414 423	2X SDS SB
+T44	Action 424 434	Homogenize
+T45	Device 440 446	pestle
+T46	Size 451 455	27ga
+T47	Device 456 462	needle
+T48	Action 465 469	Boil
+T49	Time 474 480	5 mins
+T50	Temperature 484 496	98 degrees C
+T51	Action 499 504	Store
+T52	Temperature 508 522	- 20 degrees C
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Site:T5 Acts-on:E1
+E3	Action:T9 Acts-on:T12 Site:E2
+E4	Action:T13 Acts-on:E3
+E5	Action:T15 Using:T18 Measure-Type-Link:T16 Acts-on:E4
+E6	Action:T19 Acts-on:E5 Product:T22
+E7	Action:T21 Acts-on:T22
+E8	Action:T23 Acts-on:T25 Site:E7
+E9	Action:T26 Acts-on:E8 Product:T29
+E10	Action:T28 Acts-on:T29
+E11	Action:T30 Acts-on:T32 Site:E10
+E12	Action:T33 Acts-on:E11 Product:T36
+E13	Action:T35 Acts-on:T36 Using:T37
+E14	Action:T38 Acts-on:T40 Site:E13
+E15	Action:T41 Acts-on:T43 Site:E14
+E16	Action:T44 Using:T45 Using2:T47 Acts-on:E15
+E17	Action:T48 Acts-on:E16
+E18	Action:T51 Acts-on:E17
+R1	Setting Arg1:E4 Arg2:T14
+R2	Measure Arg1:T3 Arg2:T2
+R3	Setting Arg1:E6 Arg2:T20
+R4	Setting Arg1:E5 Arg2:T17
+R5	Measure Arg1:T25 Arg2:T24
+R6	Setting Arg1:E9 Arg2:T27
+R7	Measure Arg1:T32 Arg2:T31
+R8	Setting Arg1:E12 Arg2:T34
+R9	Measure Arg1:T40 Arg2:T39
+R10	Setting Arg1:E17 Arg2:T49
+R11	Setting Arg1:E17 Arg2:T50
+R12	Measure Arg1:T43 Arg2:T42
+R13	Measure Arg1:T47 Arg2:T46
+R14	Setting Arg1:E18 Arg2:T52
+R15	Measure Arg1:T5 Arg2:T6
+R16	Measure Arg1:T8 Arg2:T7
+R17	Meronym Arg1:T8 Arg2:T5
+R18	Measure Arg1:T12 Arg2:T11
+R19	Measure Arg1:T12 Arg2:T10
+R20	Coreference-Link Arg1:T25 Arg2:T18
+R21	Coreference-Link Arg1:T32 Arg2:T25

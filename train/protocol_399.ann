@@ -1,0 +1,135 @@
+T1	Action 37 44	Prepare
+T2	Reagent 45 50	cells
+T3	Reagent 56 79	your tissue of interest
+T4	Method 80 107	without lysing erythrocytes
+T5	Action 157 166	resuspend
+T6	Reagent 171 176	cells
+T7	Reagent 180 196	MojoSort™ Buffer
+T8	Action 200 206	adding
+T9	Modifier 207 212	up to
+T10	Amount 213 217	4 mL
+T11	Amount 223 227	5 mL
+T12	Size 230 240	12 x 75 mm
+T13	Location 243 259	polystyrene tube
+T14	Action 269 273	Keep
+T15	Reagent 274 290	MojoSort™ Buffer
+T16	Location 294 297	ice
+T17	Modifier 298 308	throughout
+T18	Method 313 322	procedure
+T19	Action 325 331	Filter
+T20	Reagent 336 341	cells
+T21	Size 349 354	70 μm
+T22	Device 355 368	cell strainer
+T23	Action 371 381	centrifuge
+T24	Speed 385 392	300 x g
+T25	Time 397 406	5 minutes
+T26	Action 413 422	resuspend
+T27	Modifier 429 440	appropriate
+T28	Amount 441 447	volume
+T29	Reagent 451 467	MojoSort™ Buffer
+T30	Action 470 475	Count
+T31	Action 480 486	adjust
+T32	Measure-Type 491 509	cell concentration
+T33	Generic-Measure 513 531	1 x 108 cells / mL
+T34	Action 534 541	Aliquot
+T35	Amount 542 548	100 μL
+T36	Reagent 552 567	cell suspension
+T37	Modifier 589 592	new
+T38	Location 593 597	tube
+T39	Action 600 609	Resuspend
+T40	Reagent 614 619	beads
+T41	Action 623 632	vortexing
+T42	Speed 635 648	maximum speed
+T43	Generic-Measure 651 660	5 touches
+T44	Action 663 666	Add
+T45	Amount 667 672	10 μL
+T46	Reagent 676 685	Nanobeads
+T47	Action 688 691	mix
+T48	Modifier 692 696	well
+T49	Action 701 709	incubate
+T50	Location 713 716	ice
+T51	Time 721 731	15 minutes
+T52	Action 734 742	Scale up
+T53	Amount 747 753	volume
+T54	Modifier 754 765	accordingly
+T55	Action 916 919	Add
+T56	Reagent 920 936	MojoSort™ Buffer
+T57	Modifier 937 942	up to
+T58	Amount 943 947	4 mL
+T59	Action 952 962	centrifuge
+T60	Reagent 967 972	cells
+T61	Speed 976 983	300 x g
+T62	Time 988 997	5 minutes
+T63	Action 1000 1009	Resuspend
+T64	Reagent 1014 1019	cells
+T65	Amount 1023 1027	3 mL
+T66	Reagent 1031 1047	MojoSort™ Buffer
+T67	Action 1145 1150	Place
+T68	Location 1155 1159	tube
+T69	Device 1167 1173	magnet
+T70	Time 1178 1187	5 minutes
+T71	Action 1190 1198	Pour out
+T72	Reagent 1203 1209	liquid
+T73	Action 1212 1221	Resuspend
+T74	Modifier 1226 1233	labeled
+T75	Reagent 1234 1239	cells
+T76	Modifier 1243 1254	appropriate
+T77	Amount 1255 1261	amount
+T78	Reagent 1265 1271	buffer
+E1	Action:T1 Product:T2 Acts-on:T3 Using:T4 Product2:T6
+E2	Action:T5 Acts-on:T6 Site:T7 Product:T20
+E3	Action:T8 Site:T13 Acts-on:T6
+E4	Action:T14 Acts-on:T15 Site:T16 Using:T18
+E5	Action:T19 Acts-on:T20 Using:T22
+E6	Action:T23 Acts-on:E5
+E7	Action:T26 Site:T29 Acts-on:E6
+E8	Action:T30 Acts-on:E7
+E9	Action:T31 Acts-on:E8 Product:T36
+E10	Action:T34 Acts-on:T36 Site:T38 Product:T40
+E11	Action:T39 Acts-on:T40
+E12	Action:T41 
+E13	Action:T44 Acts-on:T46 Site:E11
+E14	Action:T47 Acts-on:E13
+E15	Action:T49 Acts-on:T50 Acts-on2:E14
+E16	Action:T52 Acts-on:E15
+E17	Action:T55 Acts-on:T56 Acts-on2:E16 Product:T60
+E18	Action:T59 Acts-on:T60 Product:T64
+E19	Action:T63 Acts-on:T64 Site:T66 Product:T68
+E20	Action:T67 Acts-on:T68 Site:T69 Product:T72
+E21	Action:T71 Acts-on:T72 Product:T75
+E22	Action:T73 Acts-on:T75 Site:T78
+R1	Measure Arg1:T13 Arg2:T12
+R2	Measure Arg1:T13 Arg2:T11
+R3	Mod-Link Arg1:T10 Arg2:T9
+R4	Measure Arg1:T6 Arg2:T10
+R5	Setting Arg1:E6 Arg2:T24
+R6	Setting Arg1:E6 Arg2:T25
+R7	Setting Arg1:T22 Arg2:T21
+R8	Measure Arg1:T29 Arg2:T28
+R9	Mod-Link Arg1:T28 Arg2:T27
+R10	Or Arg1:T33 Arg2:T32
+R11	Setting Arg1:E9 Arg2:T33
+R12	Setting Arg1:E8 Arg2:T33
+R13	Mod-Link Arg1:T38 Arg2:T37
+R14	Measure Arg1:T36 Arg2:T35
+R15	Setting Arg1:E12 Arg2:T42
+R16	Setting Arg1:E12 Arg2:T43
+R17	Setting Arg1:E15 Arg2:T51
+R18	Mod-Link Arg1:E14 Arg2:T48
+R19	Measure Arg1:T46 Arg2:T45
+R20	Setting Arg1:E16 Arg2:T53
+R21	Mod-Link Arg1:E16 Arg2:T54
+R22	Setting Arg1:E18 Arg2:T61
+R23	Setting Arg1:E18 Arg2:T62
+R24	Mod-Link Arg1:T58 Arg2:T57
+R25	Measure Arg1:T56 Arg2:T58
+R26	Measure Arg1:T66 Arg2:T65
+R27	Setting Arg1:E20 Arg2:T70
+R28	Measure Arg1:T78 Arg2:T77
+R29	Mod-Link Arg1:T77 Arg2:T76
+R30	Mod-Link Arg1:T75 Arg2:T74
+R31	Coreference-Link Arg1:T15 Arg2:T7
+R32	Coreference-Link Arg1:T7 Arg2:T29
+R33	Coreference-Link Arg1:T29 Arg2:T56
+R34	Coreference-Link Arg1:T56 Arg2:T66
+R35	Enables Arg1:E12 Arg2:E11

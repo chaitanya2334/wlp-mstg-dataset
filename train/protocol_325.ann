@@ -1,0 +1,127 @@
+T1	Action 51 58	Prepare
+T2	Amount 59 62	two
+T3	Modifier 63 72	identical
+T4	Reagent 73 88	SDS - PAGE gels
+T5	Action 91 95	Load
+T6	Action 100 103	run
+T7	Reagent 104 111	samples
+T8	Reagent 115 129	loading buffer
+T9	Action 144 151	loading
+T10	Reagent 155 158	gel
+T11	Location 161 167	Lane 1
+T12	Reagent 170 193	Molecular Weight Marker
+T13	Location 196 212	Lanes 2 , 8 , 10
+T14	Location 223 234	Lanes 3 - 6
+T15	Reagent 237 244	Samples
+T16	Location 247 253	Lane 7
+T17	Reagent 256 272	Positive Control
+T18	Location 275 281	Lane 9
+T19	Reagent 284 300	Negative Control
+T20	Action 303 335	Confirm the presence of proteins
+T21	Reagent 339 342	gel
+T22	Reagent 346 378	Coomassie Staining Blot proteins
+T23	Action 403 427	Confirm protein transfer
+T24	Method 431 438	Ponceau
+T25	Method 448 464	method of choice
+T26	Action 467 472	Block
+T27	Amount 473 477	each
+T28	Reagent 478 486	membrane
+T29	Amount 490 495	20 ml
+T30	Reagent 496 503	TBS - T
+T31	Amount 509 515	200 μl
+T32	Modifier 516 523	diluted
+T33	Reagent 524 554	Neu5Gc Assay Blocking Solution
+T34	Modifier 557 563	gently
+T35	Action 564 571	rocking
+T36	Temperature 575 578	4°C
+T37	Action 581 589	Incubate
+T38	Reagent 590 600	first blot
+T39	Reagent 604 620	Primary Antibody
+T40	Reagent 631 635	blot
+T41	Reagent 639 655	Control Antibody
+T42	Time 660 667	2 hours
+T43	Temperature 671 675	25°C
+T44	Time 679 688	overnight
+T45	Temperature 692 695	4°C
+T46	Modifier 701 707	gentle
+T47	Action 708 715	rocking
+T48	Action 718 722	Wash
+T49	Reagent 723 727	blot
+T50	Amount 733 738	50 ml
+T51	Reagent 739 746	TBS - T
+T52	Time 751 756	5 min
+T53	Temperature 760 764	25°C
+T54	Modifier 767 773	gently
+T55	Action 774 781	rocking
+T56	Numerical 782 783	5
+T57	Action 792 800	Incubate
+T58	Reagent 801 806	blots
+T59	Concentration 812 828	optimal dilution
+T60	Reagent 832 870	enzyme - conjugated secondary antibody
+T61	Temperature 884 888	25°C
+T62	Time 893 899	1 hour
+T63	Action 902 906	Wash
+T64	Reagent 907 911	blot
+T65	Amount 917 922	50 ml
+T66	Reagent 923 930	TBS - T
+T67	Time 935 940	5 min
+T68	Temperature 944 948	25°C
+T69	Modifier 951 957	gently
+T70	Action 958 965	rocking
+T71	Numerical 966 967	5
+T72	Action 976 983	Develop
+T73	Amount 984 988	each
+T74	Reagent 989 993	blot
+T75	Reagent 1003 1024	appropriate substrate
+E1	Action:T1 Acts-on:T4 Product:T7
+E2	Action:T5 Acts-on:T7 Site:T8
+E3	Action:T6 Acts-on:T7 Site:T8
+E4	Action:T9 Acts-on:T10 Product:T21
+E5	Action:T20 Site:T21 Using:T22 Product:T28
+E6	Action:T23 Using:T24 Using2:T25 Acts-on:E4 Product:T28
+E7	Action:T26 Acts-on:T28 Site:T30 Using:T33 Product:T38 Product2:T40
+E8	Action:T35 Acts-on:E7
+E9	Action:T37 Acts-on:T38 Site:T39 Acts-on2:T40 Site2:T41 Product:T49
+E10	Action:T47 Acts-on:E9
+E11	Action:T48 Acts-on:T49 Using:T51 Product:T58
+E12	Action:T55 Acts-on:E11
+E13	Action:T57 Acts-on:T58 Using:T60 Product:T64
+E14	Action:T63 Acts-on:T64 Using:T66 Product:T74
+E15	Action:T70 Acts-on:E14
+E16	Action:T72 Acts-on:T74 Using:T75
+R1	Mod-Link Arg1:T4 Arg2:T3
+R2	Measure Arg1:T4 Arg2:T2
+R3	Meronym Arg1:T11 Arg2:T10
+R4	Meronym Arg1:T13 Arg2:T10
+R5	Meronym Arg1:T14 Arg2:T10
+R6	Meronym Arg1:T16 Arg2:T10
+R7	Meronym Arg1:T18 Arg2:T10
+R8	Meronym Arg1:T12 Arg2:T11
+R9	Meronym Arg1:T15 Arg2:T14
+R10	Meronym Arg1:T17 Arg2:T16
+R11	Meronym Arg1:T19 Arg2:T18
+R12	Measure Arg1:T28 Arg2:T27
+R13	Measure Arg1:T30 Arg2:T29
+R14	Measure Arg1:T33 Arg2:T31
+R15	Mod-Link Arg1:T33 Arg2:T32
+R16	Mod-Link Arg1:E8 Arg2:T34
+R17	Setting Arg1:E8 Arg2:T36
+R18	Setting Arg1:E9 Arg2:T42
+R19	Setting Arg1:E9 Arg2:T43
+R20	Or Arg1:T42 Arg2:T44
+R21	Or Arg1:T43 Arg2:T45
+R22	Mod-Link Arg1:E10 Arg2:T46
+R23	Measure Arg1:T51 Arg2:T50
+R24	Setting Arg1:E11 Arg2:T52
+R25	Setting Arg1:E11 Arg2:T53
+R26	Mod-Link Arg1:E12 Arg2:T54
+R27	Setting Arg1:E12 Arg2:T56
+R28	Measure Arg1:T60 Arg2:T59
+R29	Setting Arg1:E13 Arg2:T61
+R30	Setting Arg1:E13 Arg2:T62
+R31	Measure Arg1:T66 Arg2:T65
+R32	Setting Arg1:E14 Arg2:T67
+R33	Setting Arg1:E14 Arg2:T68
+R34	Setting Arg1:E15 Arg2:T71
+R35	Measure Arg1:T74 Arg2:T73
+R36	Enables Arg1:E4 Arg2:E2

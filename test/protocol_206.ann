@@ -1,0 +1,253 @@
+T1	Action 25 30	Bring
+T2	Measure-Type 31 43	final volume
+T3	Generic-Measure 47 49	1L
+T4	Action 52 58	Adjust
+T5	Reagent 69 80	final media
+T6	pH 84 87	8.2
+T7	Action 103 106	add
+T8	Reagent 107 113	K2HPO4
+T9	Reagent 127 133	NaSiO3
+T10	Action 141 144	add
+T11	Modifier 149 155	others
+T12	Reagent 156 171	stock solutions
+T13	Action 183 196	precipitation
+T14	Size 199 205	0.2 um
+T15	Device 206 212	filter
+T16	Action 213 222	sterilize
+T17	Modifier 228 233	clean
+T18	Modifier 236 246	autoclaved
+T19	Location 247 257	containers
+T20	Location 263 277	biosafety hood
+T21	Action 287 296	autoclave
+T22	Reagent 301 306	media
+T23	Reagent 314 320	silica
+T24	Action 331 342	precipitate
+T25	Action 362 369	Prepare
+T26	Location 370 388	Conjugation Plates
+T27	Concentration 391 396	1 / 2
+T28	Reagent 397 404	BG - 11
+T29	Concentration 407 410	5 %
+T30	Reagent 411 413	LB
+T31	Concentration 416 419	1 %
+T32	Reagent 420 424	agar
+T33	Action 429 435	Dilute
+T34	Reagent 436 453	Saltwater BG - 11
+T35	Concentration 454 459	1 : 1
+T36	Reagent 465 470	ddH2O
+T37	Action 473 476	Add
+T38	Amount 477 481	50mL
+T39	Concentration 485 487	1x
+T40	Reagent 488 490	LB
+T41	Action 546 549	Add
+T42	Amount 550 552	5g
+T43	Reagent 556 566	Bacto Agar
+T44	Size 572 574	1L
+T45	Location 575 592	Earlenmeyer flask
+T46	Action 648 658	Distribute
+T47	Amount 659 665	500 mL
+T48	Reagent 669 692	Conjugation Plate media
+T49	Modifier 696 700	each
+T50	Size 701 703	1L
+T51	Location 704 721	Earlenmeyer flask
+T52	Action 724 729	Cover
+T53	Location 735 740	flask
+T54	Location 741 748	opening
+T55	Seal 754 767	aluminum foil
+T56	Action 772 781	autoclave
+T57	Speed 785 789	121C
+T58	Time 794 804	30 minutes
+T59	Reagent 813 818	media
+T60	Action 822 826	cool
+T61	Action 833 841	stirring
+T62	Location 845 864	magnetic stir plate
+T63	Action 881 889	stirring
+T64	Modifier 901 909	vigorous
+T65	Action 916 921	cause
+T66	Reagent 922 929	bubbles
+T67	Mention 932 934	It
+T68	Action 968 973	touch
+T69	Reagent 993 997	agar
+T70	Action 998 1008	solidified
+T71	Action 1011 1015	Pour
+T72	Location 1016 1022	plates
+T73	Action 1027 1040	allow to cool
+T74	Time 1041 1050	overnight
+T75	Action 1056 1063	Prepare
+T76	Location 1064 1080	Selection Plates
+T77	Concentration 1083 1088	1 / 2
+T78	Reagent 1089 1096	BG - 11
+T79	Concentration 1099 1102	1 %
+T80	Reagent 1103 1107	agar
+T81	Reagent 1112 1123	antibiotics
+T82	Action 1128 1134	Dilute
+T83	Reagent 1135 1152	Saltwater BG - 11
+T84	Concentration 1153 1158	1 : 1
+T85	Reagent 1164 1169	ddH2O
+T86	Action 1172 1175	Add
+T87	Amount 1176 1178	5g
+T88	Reagent 1182 1192	Bacto Agar
+T89	Size 1201 1203	1L
+T90	Location 1204 1221	Earlenmeyer flask
+T91	Action 1275 1285	Distribute
+T92	Amount 1286 1292	500 mL
+T93	Reagent 1296 1317	Selection Plate media
+T94	Modifier 1321 1325	each
+T95	Size 1326 1328	1L
+T96	Location 1329 1346	Earlenmeyer flask
+T97	Action 1349 1354	Cover
+T98	Location 1355 1360	flask
+T99	Location 1361 1368	opening
+T100	Seal 1374 1387	aluminum foil
+T101	Action 1392 1401	autoclave
+T102	Speed 1405 1409	121C
+T103	Time 1414 1424	30 minutes
+T104	Reagent 1433 1438	media
+T105	Action 1442 1446	cool
+T106	Action 1453 1461	stirring
+T107	Location 1465 1484	magnetic stir plate
+T108	Action 1501 1509	stirring
+T109	Modifier 1521 1529	vigorous
+T110	Action 1536 1541	cause
+T111	Reagent 1542 1549	bubbles
+T112	Mention 1552 1554	It
+T113	Action 1588 1593	touch
+T114	Reagent 1613 1617	agar
+T115	Action 1618 1628	solidified
+T116	Action 1631 1634	Add
+T117	Amount 1635 1640	500ul
+T118	Reagent 1657 1668	antibiotics
+T119	Reagent 1676 1697	Selection Plate media
+T120	Action 1708 1712	make
+T121	Amount 1713 1718	500uL
+T122	Reagent 1719 1727	aliquots
+T123	Concentration 1731 1736	1000x
+T124	Reagent 1737 1754	antibiotic stocks
+T125	Reagent 1819 1830	antibiotics
+T126	Action 1848 1855	destroy
+T127	Action 1863 1867	Pour
+T128	Location 1868 1874	plates
+T129	Action 1879 1892	allow to cool
+T130	Time 1893 1902	overnight
+E1	Action:T1 Measure-Type-Link:T2 Product:T5
+E2	Action:T4 Acts-on:T5 Product:T22
+E3	Action:T7 Acts-on:T8 Acts-on2:T9
+E4	Action:T10 Site:E3 Acts-on:T12
+E5	Action:T13 
+E6	Action:T16 Acts-on:E2 Using:T15 Site:T19 Product:T34 Product2:T83
+E7	Action:T21 Acts-on:T22
+E8	Action:T24 Acts-on:T23
+E9	Action:T25 
+E10	Action:T33 Acts-on:T34 Using:T36
+E11	Action:T37 Site:E10 Acts-on:T40 Product:T48
+E12	Action:T41 Acts-on:T43 Site:T45 Product:T51
+E13	Action:T46 Acts-on:T48 Site:T51 Product:T53
+E14	Action:T52 Acts-on:T54 Using:T55
+E15	Action:T56 Acts-on:E14 Product:T59
+E16	Action:T60 Acts-on:T59
+E17	Action:T61 Acts-on:T59 Site:T62
+E18	Action:T63 
+E19	Action:T65 Product:T66
+E20	Action:T68 Acts-on:T67
+E21	Action:T70 Acts-on:T69
+E22	Action:T71 Acts-on:E16 Product:T72
+E23	Action:T73 
+E24	Action:T75 Product:T76
+E25	Action:T82 Acts-on:T83 Using:T85 Product:T93
+E26	Action:T86 Acts-on:T88 Site:T90 Product:T96
+E27	Action:T91 Acts-on:T93 Site:T96 Product:T98
+E28	Action:T97 Acts-on:T99 Using:T100
+E29	Action:T101 Acts-on:E28 Product:T104
+E30	Action:T105 Acts-on:T104 Product:T119
+E31	Action:T106 Site:T107
+E32	Action:T108 
+E33	Action:T110 Product:T111
+E34	Action:T113 Acts-on:T112
+E35	Action:T115 Acts-on:T114
+E36	Action:T116 Acts-on:T118 Site:T119
+E37	Action:T120 Product:T122 Acts-on:T124
+E38	Action:T126 Acts-on:T125
+E39	Action:T127 Acts-on:E36 Site:T128
+E40	Action:T129 
+R1	Of-Type Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T6
+R3	Prevents Arg1:E3 Arg2:E5
+R4	Prevents Arg1:E4 Arg2:E5
+R5	Mod-Link Arg1:T12 Arg2:T11
+R6	Setting Arg1:T15 Arg2:T14
+R7	Prevents Arg1:E6 Arg2:E7
+R8	Mod-Link Arg1:T19 Arg2:T17
+R9	Mod-Link Arg1:T19 Arg2:T18
+R10	Meronym Arg1:T19 Arg2:T20
+R11	Enables Arg1:E7 Arg2:E8
+R12	Meronym Arg1:T23 Arg2:T22
+R13	Meronym Arg1:T28 Arg2:T26
+R14	Measure Arg1:T28 Arg2:T27
+R15	Meronym Arg1:T30 Arg2:T26
+R16	Measure Arg1:T30 Arg2:T29
+R17	Meronym Arg1:T32 Arg2:T26
+R18	Measure Arg1:T32 Arg2:T31
+R19	Enables Arg1:E10 Arg2:E9
+R20	Setting Arg1:E10 Arg2:T35
+R21	Enables Arg1:E11 Arg2:E9
+R22	Measure Arg1:T40 Arg2:T38
+R23	Measure Arg1:T40 Arg2:T39
+R24	Enables Arg1:E12 Arg2:E9
+R25	Measure Arg1:T43 Arg2:T42
+R26	Measure Arg1:T45 Arg2:T44
+R27	Enables Arg1:E13 Arg2:E9
+R28	Measure Arg1:T48 Arg2:T47
+R29	Mod-Link Arg1:T51 Arg2:T49
+R30	Measure Arg1:T51 Arg2:T50
+R31	Enables Arg1:E14 Arg2:E9
+R32	Meronym Arg1:T54 Arg2:T53
+R33	Enables Arg1:E15 Arg2:E9
+R34	Setting Arg1:E15 Arg2:T57
+R35	Setting Arg1:E15 Arg2:T58
+R36	Enables Arg1:E16 Arg2:E9
+R37	Prevents Arg1:E16 Arg2:E21
+R38	Overlaps Arg1:E17 Arg2:E16
+R39	Prevents Arg1:E17 Arg2:E18
+R40	Mod-Link Arg1:E18 Arg2:T64
+R41	Enables Arg1:E18 Arg2:E19
+R42	Coreference-Link Arg1:T67 Arg2:T59
+R43	Meronym Arg1:T69 Arg2:T67
+R44	Enables Arg1:E22 Arg2:E9
+R45	Enables Arg1:E23 Arg2:E9
+R46	Setting Arg1:E23 Arg2:T74
+R47	Meronym Arg1:T78 Arg2:T76
+R48	Measure Arg1:T78 Arg2:T77
+R49	Meronym Arg1:T80 Arg2:T76
+R50	Measure Arg1:T80 Arg2:T79
+R51	Meronym Arg1:T81 Arg2:T76
+R52	Enables Arg1:E25 Arg2:E24
+R53	Setting Arg1:E25 Arg2:T84
+R54	Enables Arg1:E26 Arg2:E24
+R55	Measure Arg1:T88 Arg2:T87
+R56	Measure Arg1:T90 Arg2:T89
+R57	Enables Arg1:E27 Arg2:E24
+R58	Measure Arg1:T93 Arg2:T92
+R59	Mod-Link Arg1:T96 Arg2:T94
+R60	Measure Arg1:T96 Arg2:T95
+R61	Enables Arg1:E28 Arg2:E24
+R62	Meronym Arg1:T99 Arg2:T98
+R63	Enables Arg1:E29 Arg2:E24
+R64	Setting Arg1:E29 Arg2:T102
+R65	Setting Arg1:E29 Arg2:T103
+R66	Enables Arg1:E30 Arg2:E24
+R67	Enables Arg1:E30 Arg2:E34
+R68	Prevents Arg1:E30 Arg2:E35
+R69	Prevents Arg1:E30 Arg2:E38
+R70	Overlaps Arg1:E31 Arg2:E30
+R71	Prevents Arg1:E31 Arg2:E32
+R72	Mod-Link Arg1:E32 Arg2:T109
+R73	Enables Arg1:E32 Arg2:E33
+R74	Coreference-Link Arg1:T112 Arg2:T104
+R75	Meronym Arg1:T114 Arg2:T112
+R76	Enables Arg1:E36 Arg2:E24
+R77	Measure Arg1:T118 Arg2:T117
+R78	Enables Arg1:E37 Arg2:E24
+R79	Measure Arg1:T122 Arg2:T121
+R80	Measure Arg1:T124 Arg2:T123
+R81	Enables Arg1:E39 Arg2:E24
+R82	Enables Arg1:E40 Arg2:E24
+R83	Setting Arg1:E40 Arg2:T130

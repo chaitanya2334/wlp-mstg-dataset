@@ -1,0 +1,20 @@
+T1	Action 32 42	Clean - up
+T2	Modifier 47 56	amplified
+T3	Reagent 57 60	DNA
+T4	Reagent 70 84	PCR components
+T5	Action 87 95	Set - up
+T6	Reagent 100 108	reaction
+T7	Action 112 118	adding
+T8	Reagent 123 143	following components
+T9	Action 146 154	Incubate
+T10	Reagent 159 167	reaction
+T11	Temperature 171 176	72 °C
+T12	Time 181 191	20 minutes
+E1	Action:T1 Acts-on:T3 Site:T4
+E2	Action:T5 Acts-on:T6
+E3	Action:T7 Acts-on:T8 Acts-on2:E1
+E4	Action:T9 Acts-on:T10 Acts-on2:E2
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Setting Arg1:E4 Arg2:T11
+R3	Setting Arg1:E4 Arg2:T12
+R4	Enables Arg1:E3 Arg2:E2

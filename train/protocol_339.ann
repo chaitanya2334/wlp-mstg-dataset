@@ -1,0 +1,72 @@
+T1	Action 49 54	Chill
+T2	Reagent 55 62	CB - X™
+T3	Temperature 66 72	- 20°C
+T4	Action 90 93	mix
+T5	Reagent 94 111	CB - X™ Assay Dye
+T6	Action 122 131	inverting
+T7	Location 136 142	bottle
+T8	Numerical 143 156	several times
+T9	Action 159 171	DO NOT SHAKE
+T10	Location 176 182	BOTTLE
+T11	Action 185 191	Dilute
+T12	Reagent 196 222	supplied protein standards
+T13	Reagent 235 241	buffer
+T14	Reagent 250 265	protein samples
+T15	Action 350 358	Transfer
+T16	Amount 359 363	50µl
+T17	Modifier 364 371	diluted
+T18	Reagent 372 389	protein standards
+T19	Reagent 394 406	test samples
+T20	Location 414 425	assay tubes
+T21	Action 428 434	Set up
+T22	Reagent 437 442	blank
+T23	Amount 454 458	50µl
+T24	Reagent 466 472	buffer
+T25	Action 506 509	Add
+T26	Amount 510 513	1ml
+T27	Reagent 514 531	CB - X™ Assay Dye
+T28	Amount 537 541	each
+T29	Location 542 546	tube
+T30	Action 551 554	mix
+T31	Modifier 555 559	well
+T32	Action 562 570	Incubate
+T33	Time 575 584	5 minutes
+T34	Temperature 588 604	room temperature
+T35	Action 607 611	Read
+T36	Measure-Type 616 626	absorbance
+T37	Generic-Measure 630 635	595nm
+T38	Action 638 673	Prepare a standard calibration plot
+T39	Action 682 695	determination
+T40	Measure-Type 699 720	protein concentration
+T41	Reagent 728 743	unknown samples
+E1	Action:T1 Acts-on:T2 Product:T14
+E2	Action:T4 Acts-on:T5 Product:T27
+E3	Action:T6 Acts-on:T7 Count:T8
+E4	Action:T9 Acts-on:T10
+E5	Action:T11 Acts-on:T12 Site:T13 Product:T18 Product2:T19
+E6	Action:T15 Site:T20 Acts-on:T18 Acts-on2:T19 Product:T29
+E7	Action:T21 Product:T22
+E8	Action:T25 Acts-on:T27 Site:T29
+E9	Action:T30 Acts-on:E8
+E10	Action:T32 Acts-on:E9 Product:T41
+E11	Action:T35 Measure-Type-Link:T36 Acts-on:E10
+E12	Action:T38 
+E13	Action:T39 Measure-Type-Link:T40 Site:T41
+R1	Meronym Arg1:T5 Arg2:T7
+R2	Meronym Arg1:T14 Arg2:T13
+R3	Mod-Link Arg1:T18 Arg2:T17
+R4	Measure Arg1:T18 Arg2:T16
+R5	Meronym Arg1:T24 Arg2:T22
+R6	Measure Arg1:T24 Arg2:T23
+R7	Measure Arg1:T27 Arg2:T26
+R8	Mod-Link Arg1:E9 Arg2:T31
+R9	Measure Arg1:T29 Arg2:T28
+R10	Setting Arg1:E10 Arg2:T33
+R11	Setting Arg1:E10 Arg2:T34
+R12	Setting Arg1:E11 Arg2:T37
+R13	Setting Arg1:E1 Arg2:T3
+R14	Enables Arg1:E3 Arg2:E2
+R15	Prevents Arg1:E2 Arg2:E4
+R16	Coreference-Link Arg1:T7 Arg2:T10
+R17	Coreference-Link Arg1:T13 Arg2:T24
+R18	Enables Arg1:E12 Arg2:E13

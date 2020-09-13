@@ -1,0 +1,115 @@
+T1	Action 38 46	Transfer
+T2	Reagent 51 69	transformed clones
+T3	Reagent 75 89	stock LB - Amp
+T4	Modifier 99 110	appropriate
+T5	Reagent 111 123	plated media
+T6	Action 126 130	Grow
+T7	Time 135 140	24 hr
+T8	Temperature 144 148	37°C
+T9	Action 151 158	Prepare
+T10	Reagent 159 186	forward and reverse primers
+T11	Concentration 229 240	100 ng / μl
+T12	Reagent 244 249	DDH2O
+T13	Action 327 332	Label
+T14	Modifier 333 346	thin - walled
+T15	Location 347 352	tubes
+T16	Action 355 362	Prepare
+T17	Amount 363 367	1 ml
+T18	Reagent 371 381	Master Mix
+T19	Action 718 724	Vortex
+T20	Action 729 733	spin
+T21	Reagent 734 744	Master Mix
+T22	Action 749 757	dispense
+T23	Amount 758 763	20 μl
+T24	Modifier 768 781	thin - walled
+T25	Location 782 786	tube
+T26	Action 789 792	Cap
+T27	Modifier 793 796	all
+T28	Location 797 802	tubes
+T29	Action 805 808	Set
+T30	Amount 811 816	10 μl
+T31	Device 817 825	pipetter
+T32	Amount 829 833	1 μl
+T33	Action 836 841	Place
+T34	Location 842 859	tranformant plate
+T35	Location 863 871	template
+T36	Action 876 881	touch
+T37	Device 886 897	pipette tip
+T38	Modifier 905 916	appropriate
+T39	Reagent 917 923	colony
+T40	Action 926 933	Pipette
+T41	Method 934 945	up and down
+T42	Modifier 953 964	appropriate
+T43	Location 965 973	PCR tube
+T44	Action 976 984	Re - cap
+T45	Location 985 989	tube
+T46	Action 992 998	change
+T47	Seal 999 1002	tip
+T48	Action 1007 1013	repeat
+T49	Method 1014 1026	steps 9 - 10
+T50	Modifier 1027 1061	until all colonies have been added
+T51	Action 1064 1071	Perform
+T52	Method 1072 1075	PCR
+T53	Method 1086 1110	thermal cycling protocol
+T54	Action 1281 1287	Remove
+T55	Location 1288 1293	tubes
+T56	Action 1322 1325	Add
+T57	Amount 1326 1330	2 μl
+T58	Reagent 1331 1353	10x gel loading buffer
+T59	Modifier 1357 1361	each
+T60	Location 1362 1366	tube
+T61	Action 1369 1373	Spin
+T62	Action 1377 1382	bring
+T63	Reagent 1383 1391	contents
+T64	Location 1395 1409	bottom of tube
+T65	Action 1414 1418	load
+T66	Amount 1419 1424	10 μl
+T67	Location 1430 1434	lane
+T68	Reagent 1440 1455	1 % agarose gel
+T69	Reagent 1459 1474	0.5x TBE buffer
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T6 Acts-on:E1 Product:T35
+E3	Action:T9 Site:T12 Product:T10
+E4	Action:T13 Acts-on:T15 Product:T25
+E5	Action:T16 Product:T18
+E6	Action:T19 Acts-on:T21
+E7	Action:T20 Acts-on:E6
+E8	Action:T22 Using:T25 Acts-on:E7 Product:T28
+E9	Action:T26 Acts-on:T28 Product:T43
+E10	Action:T29 Acts-on:T31 Product:T37
+E11	Action:T33 Acts-on:T34 Site:T35 Product:T39
+E12	Action:T36 Acts-on:T37 Site:T39
+E13	Action:T40 Using:T41 Site:T43 Product:T45 Product2:T47
+E14	Action:T44 Acts-on:T45
+E15	Action:T46 Acts-on:T47
+E16	Action:T48 Using:T49 Acts-on:E15
+E17	Action:T51 Using:T53 Using2:T52 Acts-on:E16 Product:T55
+E18	Action:T54 Acts-on:T55 Product:T60
+E19	Action:T56 Acts-on:T58 Site:T60 Product:T63
+E20	Action:T61 Acts-on:E19
+E21	Action:T62 Acts-on:T63
+E22	Action:T65 Acts-on:E20 Site:T67
+R1	Setting Arg1:E2 Arg2:T7
+R2	Setting Arg1:E2 Arg2:T8
+R3	Mod-Link Arg1:T15 Arg2:T14
+R4	Measure Arg1:T31 Arg2:T30
+R5	Setting Arg1:E8 Arg2:T23
+R6	Mod-Link Arg1:T25 Arg2:T24
+R7	Measure Arg1:T18 Arg2:T17
+R8	Setting Arg1:E3 Arg2:T11
+R9	Mod-Link Arg1:T28 Arg2:T27
+R10	Mod-Link Arg1:T60 Arg2:T59
+R11	Mod-Link Arg1:T43 Arg2:T42
+R12	Mod-Link Arg1:E16 Arg2:T50
+R13	Setting Arg1:E22 Arg2:T66
+R14	Measure Arg1:T58 Arg2:T57
+R15	Meronym Arg1:T67 Arg2:T68
+R16	Meronym Arg1:T68 Arg2:T69
+R17	Mod-Link Arg1:T5 Arg2:T4
+R18	Or Arg1:T3 Arg2:T5
+R19	Coreference-Link Arg1:T21 Arg2:T18
+R20	Setting Arg1:E10 Arg2:T32
+R21	Mod-Link Arg1:T39 Arg2:T38
+R22	Meronym Arg1:T64 Arg2:T63
+R23	Enables Arg1:E21 Arg2:E20
+R24	Coreference-Link Arg1:T34 Arg2:T10

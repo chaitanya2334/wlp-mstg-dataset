@@ -1,0 +1,63 @@
+T1	Device 53 76	Soft agar overlay tubes
+T2	Action 81 87	melted
+T3	Modifier 91 98	boiling
+T4	Reagent 99 104	water
+T5	Action 109 115	placed
+T6	Modifier 123 127	47°C
+T7	Location 128 138	water bath
+T8	Amount 141 144	One
+T9	Device 145 149	tube
+T10	Action 166 173	removed
+T11	Location 183 193	water bath
+T12	Reagent 196 215	1.0 mL host culture
+T13	Mention 227 230	1.0
+T14	Reagent 234 258	0.1 mL viral concentrate
+T15	Action 262 267	added
+T16	Reagent 274 282	contents
+T17	Action 298 303	mixed
+T18	Modifier 304 308	well
+T19	Method 312 334	rolling back and forth
+T20	Location 335 352	between two hands
+T21	Reagent 363 376	tube contents
+T22	Modifier 381 392	immediately
+T23	Action 393 400	emptied
+T24	Location 409 419	agar plate
+T25	Reagent 426 434	top agar
+T26	Modifier 438 444	gently
+T27	Action 445 451	spread
+T28	Location 461 473	agar surface
+T29	Action 477 484	sliding
+T30	Device 489 494	plate
+T31	Location 502 515	bench surface
+T32	Method 524 539	circular motion
+T33	Reagent 546 554	top agar
+T34	Action 569 575	harden
+T35	Action 579 593	not disturbing
+T36	Location 598 604	plates
+T37	Device 622 628	plates
+T38	Action 633 642	incubated
+T39	Time 666 675	overnight
+T40	Time 679 683	48 h
+E1	Action:T2 Acts-on:T1 Site:T4
+E2	Action:T5 Site:T7 Acts-on:E1 Product:T11
+E3	Action:T10 Acts-on:T9 Site:T11
+E4	Action:T15 Acts-on:T12 Acts-on2:T14 Acts-on3:T13 Site:E3 Product:T16
+E5	Action:T17 Acts-on:T16 Using:T19 Site:T20 Product:T21
+E6	Action:T23 Acts-on:T21 Site:T24 Product:T25
+E7	Action:T27 Acts-on:T25 Site:T28 Product:T33
+E8	Action:T29 Acts-on:T30 Site:T31 Using:T32
+E9	Action:T34 Acts-on:T33 Product:T37
+E10	Action:T35 Acts-on:T36
+E11	Action:T38 Acts-on:T37
+R1	Mod-Link Arg1:T4 Arg2:T3
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Measure Arg1:T9 Arg2:T8
+R4	Mod-Link Arg1:E5 Arg2:T18
+R5	Mod-Link Arg1:E6 Arg2:T22
+R6	Mod-Link Arg1:E7 Arg2:T26
+R7	Setting Arg1:E11 Arg2:T39
+R8	Setting Arg1:E11 Arg2:T40
+R9	Meronym Arg1:T9 Arg2:T11
+R10	Enables Arg1:E8 Arg2:E7
+R11	Prevents Arg1:E9 Arg2:E10
+R12	Meronym Arg1:T33 Arg2:T36

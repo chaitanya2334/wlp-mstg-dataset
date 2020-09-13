@@ -1,0 +1,36 @@
+T1	Action 16 20	Pour
+T2	Amount 21 26	500mL
+T3	Modifier 30 37	premade
+T4	Reagent 38 41	TAP
+T5	Amount 47 49	1L
+T6	Location 50 60	erlenmeyer
+T7	Reagent 61 65	Agar
+T8	Action 69 74	added
+T9	Reagent 78 81	TAP
+T10	Concentration 85 98	15g per liter
+T11	Action 113 116	add
+T12	Amount 117 121	7.5g
+T13	Reagent 125 129	agar
+T14	Action 130 134	Stir
+T15	Time 139 149	10 minutes
+T16	Action 152 157	Cover
+T17	Location 162 165	lid
+T18	Seal 171 184	aluminum foil
+T19	Seal 187 201	autoclave tape
+T20	Action 208 217	autoclave
+T21	Device 223 235	liquid cycle
+T22	Time 240 250	90 minutes
+E1	Action:T1 Acts-on:T4 Site:T6 Product:T9
+E2	Action:T8 Acts-on:T7 Site:T9
+E3	Action:T11 Acts-on:T13 Site:T7
+E4	Action:T14 Acts-on:E3 Product:T17
+E5	Action:T16 Acts-on:T17 Using:T18 Using2:T19
+E6	Action:T20 Using:T21 Acts-on:E5
+R1	Measure Arg1:T6 Arg2:T5
+R2	Mod-Link Arg1:T4 Arg2:T3
+R3	Measure Arg1:T4 Arg2:T2
+R4	Measure Arg1:T7 Arg2:T10
+R5	Setting Arg1:E4 Arg2:T15
+R6	Measure Arg1:T13 Arg2:T12
+R7	Setting Arg1:E6 Arg2:T22
+R8	Coreference-Link Arg1:T7 Arg2:T13

@@ -1,0 +1,30 @@
+T1	Action 46 52	Digest
+T2	Reagent 53 66	Upstream Part
+T3	Reagent 72 83	EcoRI - HF™
+T4	Reagent 88 92	SpeI
+T5	Action 95 101	Digest
+T6	Reagent 102 117	Downstream Part
+T7	Reagent 123 127	XbaI
+T8	Reagent 132 136	PstI
+T9	Action 139 145	Digest
+T10	Reagent 150 169	Destination Plasmid
+T11	Reagent 175 186	EcoRI - HF™
+T12	Reagent 191 195	PstI
+T13	Action 198 206	Incubate
+T14	Numerical 211 216	three
+T15	Reagent 217 245	restriction digest reactions
+T16	Temperature 249 253	37°C
+T17	Time 258 268	10 minutes
+T18	Action 269 284	Heat inactivate
+T19	Temperature 288 292	80°C
+T20	Time 297 307	20 minutes
+E1	Action:T1 Acts-on:T2 Using:T3 Using2:T4 Product:T15
+E2	Action:T5 Acts-on:T6 Using:T7 Using2:T8 Product:T15
+E3	Action:T9 Acts-on:T10 Using:T11 Using2:T12 Product:T15
+E4	Action:T13 Acts-on:T15
+E5	Action:T18 Acts-on:E4
+R1	Measure Arg1:T15 Arg2:T14
+R2	Setting Arg1:E4 Arg2:T16
+R3	Setting Arg1:E4 Arg2:T17
+R4	Setting Arg1:E5 Arg2:T19
+R5	Setting Arg1:E5 Arg2:T20

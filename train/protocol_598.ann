@@ -1,0 +1,74 @@
+T1	Action 18 27	Wipe down
+T2	Location 28 33	bench
+T3	Reagent 39 48	RNase zap
+T4	Reagent 60 88	Dilute oligo - dT30VN primer
+T5	Action 92 98	adding
+T6	Amount 99 103	37µL
+T7	Concentration 107 112	100µM
+T8	Reagent 113 119	primer
+T9	Amount 123 127	63µL
+T10	Reagent 131 148	nuclease free H20
+T11	Action 151 158	Prepare
+T12	Reagent 159 161	RT
+T13	Action 415 423	Incubate
+T14	Temperature 427 430	72º
+T15	Time 435 437	3m
+T16	Action 440 446	return
+T17	Location 450 453	ice
+T18	Action 456 460	Take
+T19	Amount 461 466	4.3µL
+T20	Reagent 470 497	hybridized oligo - dT + RNA
+T21	Action 502 505	put
+T22	Location 509 520	strip tubes
+T23	Action 523 526	Add
+T24	Amount 527 532	5.7µL
+T25	Reagent 533 604	RT mix RTNum CycleGroupTempTime1xA4290m10xB502m B422m1xC7015mholdD4hold
+T26	Action 605 611	Dilute
+T27	Reagent 612 625	ISPCR primers
+T28	Generic-Measure 626 633	1 : 100
+T29	Action 634 641	Prepare
+T30	Reagent 642 652	PCR preamp
+T31	Action 867 870	Add
+T32	Amount 871 875	15µL
+T33	Reagent 876 890	PCR preamp mix
+T34	Amount 894 898	10µL
+T35	Reagent 899 901	RT
+T36	Action 1009 1012	Use
+T37	Numerical 1013 1016	0.6
+T38	Measure-Type 1017 1024	volumes
+T39	Device 1028 1033	beads
+T40	Action 1077 1086	Resuspend
+T41	Amount 1090 1096	15.5µL
+T42	Reagent 1097 1099	EB
+T43	Action 1107 1114	measure
+T44	Mention 1115 1129	concentrations
+T45	Method 1136 1141	qubit
+E1	Action:T1 Acts-on:T2 Using:T3
+E2	Action:T5 Site:T10 Acts-on:T8
+E3	Action:T11 Acts-on:T12
+E4	Action:T13 Acts-on:E3
+E5	Action:T16 Site:T17 Acts-on:E4
+E6	Action:T18 Acts-on:T20
+E7	Action:T21 Acts-on:T20 Site:T22
+E8	Action:T23 Acts-on:T25 Site:E6 Product:T35
+E9	Action:T26 Acts-on:T27
+E10	Action:T29 Acts-on:T30 Product:T33
+E11	Action:T31 Acts-on:T33 Site:T35
+E12	Action:T36 Acts-on:T39 Site:E11
+E13	Action:T40 Site:T42 Acts-on:E11 Product:T44
+E14	Action:T43 Using:T45 Acts-on:E13
+R1	Of-Type Arg1:T37 Arg2:T38
+R2	Measure Arg1:T39 Arg2:T37
+R3	Measure Arg1:T42 Arg2:T41
+R4	Or Arg1:T3 Arg2:T4
+R5	Setting Arg1:E4 Arg2:T14
+R6	Setting Arg1:E4 Arg2:T15
+R7	Measure Arg1:T20 Arg2:T19
+R8	Measure Arg1:T25 Arg2:T24
+R9	Setting Arg1:E9 Arg2:T28
+R10	Measure Arg1:T33 Arg2:T32
+R11	Measure Arg1:T35 Arg2:T34
+R12	Measure Arg1:T10 Arg2:T9
+R13	Measure Arg1:T8 Arg2:T7
+R14	Measure Arg1:T8 Arg2:T6
+R15	Enables Arg1:E2 Arg2:E1

@@ -1,0 +1,44 @@
+T1	Action 52 55	Mix
+T2	Reagent 70 80	components
+T3	Modifier 86 93	sterile
+T4	Location 94 108	microfuge tube
+T5	Reagent 111 120	Reactions
+T6	Reagent 132 163	restriction enzyme digested DNA
+T7	Action 168 177	incubated
+T8	Temperature 181 197	room temperature
+T9	Time 202 212	15 minutes
+T10	Reagent 215 224	Reactions
+T11	Reagent 230 253	sheared / nebulized DNA
+T12	Reagent 257 269	PCR products
+T13	Action 274 283	incubated
+T14	Temperature 287 303	room temperature
+T15	Time 308 318	30 minutes
+T16	Modifier 321 332	Immediately
+T17	Action 333 343	inactivate
+T18	Reagent 344 350	enzyme
+T19	Method 358 375	blunting reaction
+T20	Action 379 386	heating
+T21	Temperature 390 394	70°C
+T22	Time 399 409	10 minutes
+T23	Action 412 419	Proceed
+T24	Modifier 420 428	directly
+T25	Method 436 449	ligation step
+T26	Reagent 460 478	Quick Ligation Kit
+T27	Reagent 498 520	standard T4 DNA Ligase
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T5
+E2	Action:T7 Acts-on:T6
+E3	Action:T13 Acts-on:T11 Acts-on2:T12
+E4	Action:T17 Acts-on:T18 Using:T19
+E5	Action:T20 
+E6	Action:T23 Acts-on:E5 Using:T25 Using2:T26
+R1	Mod-Link Arg1:T4 Arg2:T3
+R2	Setting Arg1:E2 Arg2:T8
+R3	Setting Arg1:E2 Arg2:T9
+R4	Or Arg1:E3 Arg2:E2
+R5	Setting Arg1:E3 Arg2:T14
+R6	Setting Arg1:E3 Arg2:T15
+R7	Mod-Link Arg1:E4 Arg2:T16
+R8	Setting Arg1:E5 Arg2:T21
+R9	Setting Arg1:E5 Arg2:T22
+R10	Mod-Link Arg1:E6 Arg2:T24
+R11	Or Arg1:T26 Arg2:T27

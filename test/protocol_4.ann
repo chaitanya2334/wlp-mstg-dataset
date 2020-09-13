@@ -1,0 +1,65 @@
+T1	Action 47 51	Thaw
+T2	Reagent 56 76	T4 DNA Ligase Buffer
+T3	Action 81 92	resuspended
+T4	Temperature 96 112	room temperature
+T5	Action 115 121	Set up
+T6	Reagent 126 134	reaction
+T7	Location 140 160	microcentrifuge tube
+T8	Location 164 167	ice
+T9	Modifier 170 176	Gently
+T10	Action 177 180	mix
+T11	Reagent 185 193	reaction
+T12	Method 197 218	pipetting up and down
+T13	Action 223 232	microfuge
+T14	Modifier 233 240	briefly
+T15	Reagent 247 271	cohesive ( sticky ) ends
+T16	Action 274 282	incubate
+T17	Temperature 286 290	16°C
+T18	Time 291 300	overnight
+T19	Temperature 304 320	room temperature
+T20	Time 325 335	10 minutes
+T21	Reagent 342 352	blunt ends
+T22	Reagent 356 377	single base overhangs
+T23	Action 380 388	incubate
+T24	Temperature 392 396	16°C
+T25	Time 397 406	overnight
+T26	Temperature 410 426	room temperature
+T27	Time 431 438	2 hours
+T28	Action 441 456	Heat inactivate
+T29	Temperature 460 472	65 degrees C
+T30	Time 477 487	10 minutes
+T31	Action 490 495	Chill
+T32	Location 499 502	ice
+T33	Action 507 516	transform
+T34	Amount 517 525	1 - 5 μl
+T35	Reagent 533 541	reaction
+T36	Amount 547 552	50 μl
+T37	Reagent 553 568	competent cells
+E1	Action:T1 Acts-on:T2
+E2	Action:T3 Acts-on:E1
+E3	Action:T5 Acts-on:T6 Site:T7
+E4	Action:T10 Acts-on:T11 Using:T12
+E5	Action:T13 Acts-on:E4
+E6	Action:T16 Acts-on:E5 Product:T15
+E7	Action:T23 Product:T21
+E8	Action:T28 Acts-on:E6 Acts-on2:E7
+E9	Action:T31 Acts-on:E8 Site:T32 Product:T35
+E10	Action:T33 Acts-on:T35 Site:T37
+R1	Setting Arg1:E2 Arg2:T4
+R2	Coreference-Link Arg1:T6 Arg2:T11
+R3	Meronym Arg1:T7 Arg2:T8
+R4	Mod-Link Arg1:E4 Arg2:T9
+R5	Mod-Link Arg1:E5 Arg2:T14
+R6	Setting Arg1:E6 Arg2:T17
+R7	Setting Arg1:E6 Arg2:T18
+R8	Or Arg1:T17 Arg2:T19
+R9	Or Arg1:T18 Arg2:T20
+R10	Or Arg1:T21 Arg2:T22
+R11	Setting Arg1:E7 Arg2:T24
+R12	Setting Arg1:E7 Arg2:T25
+R13	Or Arg1:T24 Arg2:T26
+R14	Or Arg1:T25 Arg2:T27
+R15	Setting Arg1:E8 Arg2:T29
+R16	Setting Arg1:E8 Arg2:T30
+R17	Measure Arg1:T35 Arg2:T34
+R18	Measure Arg1:T37 Arg2:T36

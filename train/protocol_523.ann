@@ -1,0 +1,120 @@
+T1	Action 38 45	Harvest
+T2	Reagent 46 57	lymph nodes
+T3	Reagent 140 144	mice
+T4	Action 147 152	Tease
+T5	Reagent 153 164	lymph nodes
+T6	Size 183 190	70 - µm
+T7	Device 191 210	nylon cell strainer
+T8	Action 305 314	Resuspend
+T9	Reagent 315 320	cells
+T10	Reagent 324 339	complete medium
+T11	Action 372 379	isolate
+T12	Reagent 380 391	CD4 + cells
+T13	Action 454 458	coat
+T14	Size 459 468	12 - well
+T15	Location 469 474	plate
+T16	Reagent 480 497	anti - mouse CD3ε
+T17	Concentration 519 528	3 µg / ml
+T18	Action 533 541	Incubate
+T19	Temperature 545 549	37°C
+T20	Time 554 561	2 hours
+T21	Action 624 630	decant
+T22	Reagent 631 648	antibody solution
+T23	Location 658 663	plate
+T24	Action 666 670	Wash
+T25	Location 671 676	plate
+T26	Reagent 682 693	sterile PBS
+T27	Action 711 715	Wash
+T28	Location 716 721	plate
+T29	Reagent 727 738	sterile PBS
+T30	Action 756 760	Wash
+T31	Location 761 766	plate
+T32	Reagent 772 783	sterile PBS
+T33	Action 801 808	Discard
+T34	Reagent 809 815	liquid
+T35	Action 818 823	Plate
+T36	Reagent 824 835	CD4 + cells
+T37	Concentration 839 854	1.0 x 106 / 1ml
+T38	Location 857 861	well
+T39	Action 864 871	Culture
+T40	Reagent 872 877	cells
+T41	Time 882 888	5 days
+T42	Temperature 892 896	37°C
+T43	Concentration 899 902	5 %
+T44	Reagent 903 906	CO2
+T45	Reagent 928 945	anti - mouse CD28
+T46	Reagent 948 959	clone 37.51
+T47	Concentration 962 971	3 µg / mL
+T48	Reagent 976 995	anti - mouse IL - 4
+T49	Reagent 998 1009	clone 11B11
+T50	Concentration 1012 1022	10 µg / mL
+T51	Reagent 1027 1051	recombinant mouse IL - 2
+T52	Concentration 1054 1063	5 ng / mL
+T53	Reagent 1072 1097	recombinant mouse IL - 12
+T54	Concentration 1100 1110	10 ng / ml
+T55	Action 1147 1150	add
+T56	Amount 1151 1162	2 ml / well
+T57	Reagent 1166 1177	fresh media
+T58	Action 1245 1249	wash
+T59	Reagent 1250 1255	cells
+T60	Numerical 1256 1260	once
+T61	Action 1270 1281	restimulate
+T62	Reagent 1285 1299	complete media
+T63	Concentration 1305 1315	50 ng / ml
+T64	Reagent 1316 1319	PMA
+T65	Concentration 1322 1331	1 μg / ml
+T66	Reagent 1332 1341	ionomycin
+T67	Amount 1346 1351	10 µl
+T68	Reagent 1352 1360	monensin
+T69	Concentration 1363 1368	1000x
+T70	Size 1378 1386	6 - well
+T71	Location 1387 1392	plate
+T72	Location 1396 1405	incubator
+T73	Temperature 1409 1413	37°C
+T74	Time 1418 1425	5 hours
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T5
+E2	Action:T4 Acts-on:T5 Using:T7 Product:T9
+E3	Action:T8 Acts-on:T9 Site:T10
+E4	Action:T11 Acts-on:T12 Site:E3 Product:T36
+E5	Action:T13 Acts-on:T15 Using:T16
+E6	Action:T18 Acts-on:E5 Product:T22
+E7	Action:T21 Acts-on:T22 Site:T23 Product:T25
+E8	Action:T24 Acts-on:T25 Using:T26 Product:T28
+E9	Action:T27 Acts-on:T28 Using:T29 Product:T31
+E10	Action:T30 Acts-on:T31 Using:T32 Product:T34
+E11	Action:T33 Acts-on:T34
+E12	Action:T35 Acts-on:T36 Site:T38 Product:T40
+E13	Action:T39 Acts-on:T40 Using:T44 Product:T59
+E14	Action:T55 Acts-on:T57 Site:E13
+E15	Action:T58 Acts-on:T59 Count:T60
+E16	Action:T61 Using:T62 Site:T71 Site2:T72 Acts-on:E15
+R1	Measure Arg1:T7 Arg2:T6
+R2	Measure Arg1:T15 Arg2:T14
+R3	Measure Arg1:T16 Arg2:T17
+R4	Setting Arg1:E6 Arg2:T19
+R5	Setting Arg1:E6 Arg2:T20
+R6	Measure Arg1:T36 Arg2:T37
+R7	Measure Arg1:T44 Arg2:T43
+R8	Setting Arg1:E13 Arg2:T41
+R9	Setting Arg1:E13 Arg2:T42
+R10	Measure Arg1:T46 Arg2:T47
+R11	Measure Arg1:T49 Arg2:T50
+R12	Meronym Arg1:T45 Arg2:T40
+R13	Meronym Arg1:T46 Arg2:T40
+R14	Meronym Arg1:T48 Arg2:T40
+R15	Meronym Arg1:T49 Arg2:T40
+R16	Measure Arg1:T51 Arg2:T52
+R17	Measure Arg1:T53 Arg2:T54
+R18	Meronym Arg1:T51 Arg2:T40
+R19	Meronym Arg1:T53 Arg2:T40
+R20	Measure Arg1:T57 Arg2:T56
+R21	Measure Arg1:T64 Arg2:T63
+R22	Measure Arg1:T66 Arg2:T65
+R23	Measure Arg1:T68 Arg2:T67
+R24	Measure Arg1:T68 Arg2:T69
+R25	Measure Arg1:T71 Arg2:T70
+R26	Meronym Arg1:T64 Arg2:T62
+R27	Meronym Arg1:T66 Arg2:T62
+R28	Meronym Arg1:T68 Arg2:T62
+R29	Setting Arg1:E16 Arg2:T73
+R30	Setting Arg1:E16 Arg2:T74

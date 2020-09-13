@@ -1,0 +1,34 @@
+T1	Reagent 45 48	DNA
+T2	Action 59 68	dissolved
+T3	Concentration 72 74	1x
+T4	Reagent 75 83	NEBuffer
+T5	Reagent 87 150	T4 DNA Ligase Reaction buffer supplemented with 33 μM each dNTP
+T6	Action 153 156	Add
+T7	Amount 157 163	1 unit
+T8	Reagent 167 173	Klenow
+T9	Action 194 202	Incubate
+T10	Time 207 217	15 minutes
+T11	Temperature 221 225	25°C
+T12	Action 228 232	Stop
+T13	Method 233 241	reaction
+T14	Action 245 251	adding
+T15	Reagent 252 256	EDTA
+T16	Concentration 285 290	10 mM
+T17	Action 293 297	Heat
+T18	Time 302 312	20 minutes
+T19	Temperature 316 320	75°C
+E1	Action:T2 Site:T4 Acts-on:T1
+E2	Action:T6 Acts-on:T8 Site:E1
+E3	Action:T9 Acts-on:E2
+E4	Action:T12 
+E5	Action:T14 Acts-on:T15 Site:E3
+E6	Action:T17 Acts-on:E5
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T8 Arg2:T7
+R3	Setting Arg1:E3 Arg2:T10
+R4	Setting Arg1:E3 Arg2:T11
+R5	Measure Arg1:T15 Arg2:T16
+R6	Setting Arg1:E6 Arg2:T18
+R7	Setting Arg1:E6 Arg2:T19
+R8	Enables Arg1:E5 Arg2:E4
+R9	Or Arg1:T4 Arg2:T5

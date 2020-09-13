@@ -1,0 +1,43 @@
+T1	Action 28 36	Dissolve
+T2	Reagent 37 40	DNA
+T3	Concentration 48 50	1X
+T4	Reagent 51 59	NEBuffer
+T5	Reagent 63 92	T4 DNA Ligase Reaction Buffer
+T6	Action 95 105	Supplement
+T7	Concentration 111 117	100 μM
+T8	Modifier 121 125	each
+T9	Reagent 126 130	dNTP
+T10	Action 133 136	Add
+T11	Amount 137 143	1 unit
+T12	Reagent 147 164	T4 DNA Polymerase
+T13	Modifier 165 182	per microgram DNA
+T14	Action 185 193	Incubate
+T15	Time 194 204	15 minutes
+T16	Temperature 208 212	12°C
+T17	Action 215 219	Stop
+T18	Reagent 220 228	reaction
+T19	Action 232 238	adding
+T20	Reagent 239 243	EDTA
+T21	Concentration 272 277	10 mM
+T22	Action 280 284	Heat
+T23	Time 289 299	20 minutes
+T24	Temperature 303 307	75°C
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T6 Using:T9 Acts-on:E1
+E3	Action:T10 Acts-on:T12 Site:E2
+E4	Action:T14 Acts-on:E3 Product:T18
+E5	Action:T17 Acts-on:T18
+E6	Action:T19 Acts-on:T20 Acts-on2:T18
+E7	Action:T22 Acts-on:E5
+R1	Or Arg1:T4 Arg2:T5
+R2	Measure Arg1:T4 Arg2:T3
+R3	Mod-Link Arg1:T9 Arg2:T8
+R4	Measure Arg1:T9 Arg2:T7
+R5	Measure Arg1:T12 Arg2:T11
+R6	Mod-Link Arg1:T11 Arg2:T13
+R7	Setting Arg1:E4 Arg2:T15
+R8	Setting Arg1:E4 Arg2:T16
+R9	Setting Arg1:E6 Arg2:T21
+R10	Setting Arg1:E7 Arg2:T23
+R11	Setting Arg1:E7 Arg2:T24
+R12	Enables Arg1:E6 Arg2:E5

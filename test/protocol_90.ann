@@ -1,0 +1,148 @@
+T1	Action 27 32	Grind
+T2	Modifier 33 39	frozen
+T3	Reagent 40 54	plant material
+T4	Amount 57 62	100mg
+T5	Reagent 68 83	liquid Nitrogen
+T6	Amount 91 95	2 ml
+T7	Location 96 100	tube
+T8	Action 103 106	add
+T9	Amount 107 113	800 uL
+T10	Concentration 117 121	1,5x
+T11	Reagent 122 126	CTAB
+T12	Amount 131 135	1 ul
+T13	Reagent 139 161	Beta - mercaptoethanol
+T14	Modifier 169 175	ground
+T15	Reagent 176 189	leaf material
+T16	Action 192 200	Incubate
+T17	Time 201 207	1 hour
+T18	Temperature 211 226	60 - 65 degrees
+T19	Action 235 239	Cool
+T20	Temperature 243 252	Room Temp
+T21	Action 255 258	Add
+T22	Amount 259 267	1 volume
+T23	Reagent 271 298	Chloroform / Isoamylalkohol
+T24	Generic-Measure 301 307	24 : 1
+T25	Action 320 323	Mix
+T26	Device 327 342	overhead shaker
+T27	Time 347 357	10 minutes
+T28	Action 360 370	Centrifuge
+T29	Speed 374 382	3000 rmp
+T30	Time 387 397	25 minutes
+T31	Action 400 408	Transfer
+T32	Reagent 409 420	supernatant
+T33	Modifier 426 429	new
+T34	Location 430 434	tube
+T35	Action 437 440	Use
+T36	Modifier 441 445	wide
+T37	Device 446 458	pipette tips
+T38	Action 493 496	Add
+T39	Amount 497 502	10 uL
+T40	Reagent 503 508	RNAse
+T41	Concentration 511 521	10 mg / ml
+T42	Action 524 532	incubate
+T43	Temperature 536 546	37 degrees
+T44	Time 557 567	30 minutes
+T45	Action 570 573	Add
+T46	Amount 574 584	one volume
+T47	Concentration 585 590	100 %
+T48	Reagent 591 601	Isoponanol
+T49	Action 604 617	pre - chilled
+T50	Temperature 621 625	- 20
+T51	Reagent 636 642	sample
+T52	Action 646 657	precepitate
+T53	Modifier 662 667	up to
+T54	Time 668 678	20 minutes
+T55	Temperature 682 686	- 20
+T56	Action 689 699	Centrifuge
+T57	Speed 703 713	full speed
+T58	Time 718 728	10 minutes
+T59	Action 731 737	Remove
+T60	Reagent 738 749	supernatant
+T61	Action 752 755	Add
+T62	Amount 756 760	1 ml
+T63	Concentration 761 765	70 %
+T64	Reagent 766 773	Ethanol
+T65	Action 776 786	Centrifuge
+T66	Speed 790 800	full speed
+T67	Time 805 815	10 minutes
+T68	Action 818 824	Remove
+T69	Reagent 825 836	Supernatant
+T70	Action 839 845	Repeat
+T71	Numerical 846 850	once
+T72	Action 853 856	Dry
+T73	Reagent 857 863	pellet
+T74	Modifier 874 880	approx
+T75	Time 881 891	20 minutes
+T76	Device 895 912	vacuum centrifuge
+T77	Action 915 923	Dissolve
+T78	Reagent 924 930	pallet
+T79	Concentration 934 936	1x
+T80	Reagent 937 939	TE
+T81	Concentration 942 947	10 mM
+T82	Reagent 948 952	Tris
+T83	pH 955 958	pH8
+T84	Concentration 961 965	1 mM
+T85	Reagent 966 970	EDTA
+E1	Action:T1 Acts-on:T3 Site:T5 Product:T15
+E2	Action:T8 Site:T7 Acts-on:T11 Acts-on2:T13 Acts-on3:T15
+E3	Action:T16 Acts-on:E2
+E4	Action:T19 Acts-on:E3
+E5	Action:T21 Site:E4 Acts-on:T23
+E6	Action:T25 Acts-on:E5 Site:T26
+E7	Action:T28 Acts-on:E6 Product:T32
+E8	Action:T31 Acts-on:T32 Site:T34
+E9	Action:T35 Acts-on:T37
+E10	Action:T38 Acts-on:T40
+E11	Action:T42 Acts-on:E10
+E12	Action:T45 Site:E11 Acts-on:T48 Product:T51
+E13	Action:T49 Product:T48
+E14	Action:T52 Acts-on:T51
+E15	Action:T56 Acts-on:E14 Product:T60
+E16	Action:T59 Acts-on:T60
+E17	Action:T61 Site:E16 Acts-on:T64
+E18	Action:T65 Acts-on:E17 Product:T69
+E19	Action:T68 Acts-on:T69
+E20	Action:T70 Product:T73
+E21	Action:T72 Acts-on:T73 Using:T76 Product:T78
+E22	Action:T77 Acts-on:T78 Site:T80
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Measure Arg1:T3 Arg2:T4
+R3	Measure Arg1:T7 Arg2:T6
+R4	Measure Arg1:T11 Arg2:T9
+R5	Measure Arg1:T11 Arg2:T10
+R6	Measure Arg1:T13 Arg2:T12
+R7	Mod-Link Arg1:T15 Arg2:T14
+R8	Setting Arg1:E3 Arg2:T17
+R9	Setting Arg1:E3 Arg2:T18
+R10	Setting Arg1:E4 Arg2:T20
+R11	Measure Arg1:T23 Arg2:T22
+R12	Measure Arg1:T23 Arg2:T24
+R13	Setting Arg1:E6 Arg2:T27
+R14	Setting Arg1:E7 Arg2:T29
+R15	Setting Arg1:E7 Arg2:T30
+R16	Mod-Link Arg1:T34 Arg2:T33
+R17	Mod-Link Arg1:T37 Arg2:T36
+R18	Measure Arg1:T40 Arg2:T39
+R19	Measure Arg1:T40 Arg2:T41
+R20	Setting Arg1:E11 Arg2:T43
+R21	Setting Arg1:E11 Arg2:T44
+R22	Measure Arg1:T48 Arg2:T46
+R23	Measure Arg1:T48 Arg2:T47
+R24	Setting Arg1:E13 Arg2:T50
+R25	Setting Arg1:E14 Arg2:T54
+R26	Setting Arg1:E14 Arg2:T55
+R27	Mod-Link Arg1:T54 Arg2:T53
+R28	Setting Arg1:E15 Arg2:T57
+R29	Setting Arg1:E15 Arg2:T58
+R30	Measure Arg1:T64 Arg2:T62
+R31	Measure Arg1:T64 Arg2:T63
+R32	Setting Arg1:E18 Arg2:T66
+R33	Setting Arg1:E18 Arg2:T67
+R34	Setting Arg1:E20 Arg2:T71
+R35	Mod-Link Arg1:T75 Arg2:T74
+R36	Setting Arg1:T76 Arg2:T75
+R37	Measure Arg1:T80 Arg2:T79
+R38	Meronym Arg1:T82 Arg2:T80
+R39	Measure Arg1:T82 Arg2:T81
+R40	Meronym Arg1:T85 Arg2:T80
+R41	Measure Arg1:T85 Arg2:T84

@@ -1,0 +1,216 @@
+T1	Action 41 46	Place
+T2	Reagent 47 52	cells
+T3	Location 58 78	microcentrifuge tube
+T4	Action 83 93	centrifuge
+T5	Action 97 104	collect
+T6	Reagent 109 120	cell pellet
+T7	Action 123 127	Lyse
+T8	Reagent 132 143	cell pellet
+T9	Amount 149 155	100 µl
+T10	Reagent 159 171	lysis buffer
+T11	Location 175 178	ice
+T12	Time 183 189	30 min
+T13	Action 248 258	Centrifuge
+T14	Speed 262 272	14,000 rpm
+T15	Speed 275 285	16,000 x g
+T16	Time 292 302	10 minutes
+T17	Temperature 306 309	4°C
+T18	Action 312 320	Transfer
+T19	Reagent 325 336	supernatant
+T20	Location 342 350	new tube
+T21	Action 355 362	discard
+T22	Reagent 367 373	pellet
+T23	Action 376 382	Remove
+T24	Amount 383 388	20 µl
+T25	Reagent 392 403	supernatant
+T26	Action 408 411	mix
+T27	Amount 417 422	20 µl
+T28	Concentration 426 428	2x
+T29	Reagent 429 442	sample buffer
+T30	Action 445 449	Boil
+T31	Time 454 459	5 min
+T32	Action 462 466	Cool
+T33	Temperature 470 486	room temperature
+T34	Time 491 500	5 minutes
+T35	Action 503 518	Microcentrifuge
+T36	Time 523 532	5 minutes
+T37	Action 535 539	Load
+T38	Amount 540 551	up to 40 µl
+T39	Reagent 555 561	sample
+T40	Modifier 565 569	each
+T41	Location 570 574	well
+T42	Size 580 592	1.5 mm thick
+T43	Location 593 596	gel
+T44	Action 599 602	Set
+T45	Generic-Measure 603 625	gel running conditions
+T46	Method 626 670	according to the manufacturer’s instructions
+T47	Action 673 681	Transfer
+T48	Reagent 686 694	proteins
+T49	Reagent 698 713	anitrocellulose
+T50	Reagent 717 730	PVDF membrane
+T51	Generic-Measure 736 759	variable power settings
+T52	Method 760 804	according to the manufacturer’s instructions
+T53	Action 807 813	Remove
+T54	Reagent 818 834	blotted membrane
+T55	Location 844 862	transfer apparatus
+T56	Modifier 867 878	immediately
+T57	Action 879 884	place
+T58	Reagent 888 903	blocking buffer
+T59	Concentration 918 921	5 %
+T60	Reagent 922 947	nonfat dry milk / TBS - T
+T61	Action 950 958	Incubate
+T62	Reagent 963 967	blot
+T63	Time 972 978	1 hour
+T64	Temperature 982 998	room temperature
+T65	Time 1004 1013	overnight
+T66	Temperature 1017 1020	4°C
+T67	Modifier 1021 1035	with agitation
+T68	Action 1038 1044	Dilute
+T69	Reagent 1049 1072	Direct - Blot™ antibody
+T70	Concentration 1080 1116	recommended concentration / dilution
+T71	Concentration 1120 1123	5 %
+T72	Reagent 1124 1149	nonfat dry milk / TBS - T
+T73	Concentration 1169 1188	1 : 1000 - 1 : 2000
+T74	Action 1202 1207	Place
+T75	Reagent 1212 1220	membrane
+T76	Reagent 1228 1260	Direct - Blot™ antibody solution
+T77	Action 1265 1273	incubate
+T78	Time 1278 1285	2 hours
+T79	Temperature 1289 1305	room temperature
+T80	Time 1311 1320	overnight
+T81	Temperature 1324 1327	4°C
+T82	Modifier 1328 1342	with agitation
+T83	Action 1345 1349	Wash
+T84	Time 1354 1363	5 minutes
+T85	Reagent 1369 1380	Wash Buffer
+T86	Reagent 1383 1386	TBS
+T87	Concentration 1398 1403	0.1 %
+T88	Reagent 1404 1414	Tween - 20
+T89	Action 1434 1438	Wash
+T90	Time 1443 1452	5 minutes
+T91	Reagent 1458 1469	Wash Buffer
+T92	Reagent 1472 1475	TBS
+T93	Concentration 1487 1492	0.1 %
+T94	Reagent 1493 1503	Tween - 20
+T95	Action 1523 1527	Wash
+T96	Time 1532 1541	5 minutes
+T97	Reagent 1547 1558	Wash Buffer
+T98	Reagent 1561 1564	TBS
+T99	Concentration 1576 1581	0.1 %
+T100	Reagent 1582 1592	Tween - 20
+T101	Action 1612 1620	Incubate
+T102	Reagent 1621 1629	membrane
+T103	Modifier 1632 1647	protein side up
+T104	Amount 1655 1660	10 ml
+T105	Reagent 1664 1708	ECL ( enhanced chemiluminescence substrate )
+T106	Time 1713 1726	1 - 2 minutes
+T107	Action 1775 1784	Drain off
+T108	Modifier 1789 1795	excess
+T109	Reagent 1796 1813	detection reagent
+T110	Action 1816 1823	wrap up
+T111	Reagent 1828 1833	blots
+T112	Modifier 1840 1846	gently
+T113	Action 1847 1857	smooth out
+T114	Reagent 1862 1873	air bubbles
+T115	Action 1876 1881	Place
+T116	Reagent 1886 1899	wrapped blots
+T117	Modifier 1902 1917	protein side up
+T118	Location 1926 1947	X - ray film cassette
+T119	Action 1952 1958	expose
+T120	Reagent 1962 1974	x - ray film
+T121	Time 2001 2024	5 seconds to 60 minutes
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T6
+E2	Action:T4 Acts-on:E1
+E3	Action:T5 Acts-on:T6 Product:T8
+E4	Action:T7 Acts-on:T8 Using:T10 Site:T11
+E5	Action:T13 Acts-on:E4 Product:T19 Product2:T22
+E6	Action:T18 Acts-on:T19 Site:T20 Product:T25
+E7	Action:T21 Acts-on:T22
+E8	Action:T23 Acts-on:T25
+E9	Action:T26 Site:T29 Acts-on:E8
+E10	Action:T30 Acts-on:E9
+E11	Action:T32 Acts-on:E10
+E12	Action:T35 Acts-on:E11 Product:T39
+E13	Action:T37 Acts-on:T39 Site:T41
+E14	Action:T44 Using:T46 Acts-on:E13 Product:T48
+E15	Action:T47 Acts-on:T48 Site:T49 Using:T52 Product:T54
+E16	Action:T53 Acts-on:T54 Site:T55
+E17	Action:T57 Site:T58 Acts-on:E16 Product:T62
+E18	Action:T61 Acts-on:T62 Product:T75
+E19	Action:T68 Using:T72 Acts-on:T69 Product:T76
+E20	Action:T74 Acts-on:T75 Site:T76
+E21	Action:T77 Acts-on:E20
+E22	Action:T83 Using:T85 Acts-on:E21
+E23	Action:T89 Using:T91 Acts-on:E22
+E24	Action:T95 Using:T97 Acts-on:E23 Product:T102
+E25	Action:T101 Acts-on:T102 Using:T105 Product:T109
+E26	Action:T107 Acts-on:T109 Product:T111
+E27	Action:T110 Acts-on:T111 Product:T114
+E28	Action:T113 Acts-on:T114 Product:T116
+E29	Action:T115 Acts-on:T116 Site:T118
+E30	Action:T119 Using:T120 Acts-on:E29
+R1	Measure Arg1:T10 Arg2:T9
+R2	Setting Arg1:E4 Arg2:T12
+R3	Or Arg1:T14 Arg2:T15
+R4	Setting Arg1:E5 Arg2:T14
+R5	Setting Arg1:E5 Arg2:T16
+R6	Setting Arg1:E5 Arg2:T17
+R7	Measure Arg1:T25 Arg2:T24
+R8	Measure Arg1:T29 Arg2:T28
+R9	Measure Arg1:T29 Arg2:T27
+R10	Setting Arg1:E10 Arg2:T31
+R11	Setting Arg1:E11 Arg2:T33
+R12	Setting Arg1:E11 Arg2:T34
+R13	Setting Arg1:E12 Arg2:T36
+R14	Measure Arg1:T43 Arg2:T42
+R15	Mod-Link Arg1:T41 Arg2:T40
+R16	Measure Arg1:T39 Arg2:T38
+R17	Meronym Arg1:T41 Arg2:T43
+R18	Setting Arg1:E14 Arg2:T45
+R19	Or Arg1:T49 Arg2:T50
+R20	Setting Arg1:E15 Arg2:T51
+R21	Measure Arg1:T60 Arg2:T59
+R22	Meronym Arg1:T60 Arg2:T58
+R23	Mod-Link Arg1:E17 Arg2:T56
+R24	Setting Arg1:E18 Arg2:T63
+R25	Or Arg1:T63 Arg2:T65
+R26	Or Arg1:T64 Arg2:T66
+R27	Setting Arg1:E18 Arg2:T64
+R28	Mod-Link Arg1:E18 Arg2:T67
+R29	Measure Arg1:T69 Arg2:T70
+R30	Measure Arg1:T72 Arg2:T71
+R31	Setting Arg1:E21 Arg2:T78
+R32	Setting Arg1:E21 Arg2:T79
+R33	Mod-Link Arg1:E21 Arg2:T82
+R34	Or Arg1:T78 Arg2:T80
+R35	Or Arg1:T79 Arg2:T81
+R36	Measure Arg1:T88 Arg2:T87
+R37	Meronym Arg1:T86 Arg2:T85
+R38	Setting Arg1:E22 Arg2:T84
+R39	Measure Arg1:T94 Arg2:T93
+R40	Meronym Arg1:T92 Arg2:T91
+R41	Meronym Arg1:T94 Arg2:T92
+R42	Measure Arg1:T105 Arg2:T104
+R43	Mod-Link Arg1:T102 Arg2:T103
+R44	Setting Arg1:E25 Arg2:T106
+R45	Mod-Link Arg1:T109 Arg2:T108
+R46	Mod-Link Arg1:E28 Arg2:T112
+R47	Mod-Link Arg1:T116 Arg2:T117
+R48	Setting Arg1:E23 Arg2:T90
+R49	Setting Arg1:E24 Arg2:T96
+R50	Meronym Arg1:T98 Arg2:T97
+R51	Measure Arg1:T100 Arg2:T99
+R52	Meronym Arg1:T100 Arg2:T98
+R53	Enables Arg1:E2 Arg2:E3
+R54	Coreference-Link Arg1:T20 Arg2:T3
+R55	Meronym Arg1:T54 Arg2:T55
+R56	Coreference-Link Arg1:T72 Arg2:T60
+R57	Setting Arg1:E19 Arg2:T73
+R58	Meronym Arg1:T88 Arg2:T86
+R59	Coreference-Link Arg1:T91 Arg2:T85
+R60	Coreference-Link Arg1:T92 Arg2:T86
+R61	Coreference-Link Arg1:T94 Arg2:T88
+R62	Coreference-Link Arg1:T97 Arg2:T91
+R63	Coreference-Link Arg1:T98 Arg2:T92
+R64	Coreference-Link Arg1:T100 Arg2:T94
+R65	Setting Arg1:E30 Arg2:T121

@@ -1,0 +1,274 @@
+T1	Action 230 234	Grow
+T2	Reagent 235 240	cells
+T3	Size 244 249	18 mm
+T4	Seal 250 270	round # 1 coverglass
+T5	Location 276 304	12 - well cell culture plate
+T6	Action 307 315	Aspirate
+T7	Reagent 316 329	growth medium
+T8	Action 336 340	wash
+T9	Amount 346 350	1 mL
+T10	Concentration 354 356	1X
+T11	Reagent 357 360	PBS
+T12	Action 363 366	Add
+T13	Amount 367 371	1 mL
+T14	Reagent 375 390	fixation buffer
+T15	Action 393 401	Incubate
+T16	Temperature 405 421	room temperature
+T17	Time 426 436	10 minutes
+T18	Action 439 443	Wash
+T19	Numerical 444 449	twice
+T20	Amount 455 459	1 mL
+T21	Concentration 463 465	1X
+T22	Reagent 466 469	PBS
+T23	Action 475 487	permeabilize
+T24	Reagent 488 493	cells
+T25	Action 496 505	resuspend
+T26	Reagent 506 511	cells
+T27	Amount 515 519	1 mL
+T28	Concentration 523 527	70 %
+T29	Reagent 528 535	ethanol
+T30	Modifier 540 548	at least
+T31	Time 549 555	1 hour
+T32	Temperature 559 572	+ 2 to + 8 °C
+T33	Reagent 575 580	Cells
+T34	Action 588 594	stored
+T35	Temperature 598 611	+ 2 to + 8 °C
+T36	Concentration 615 619	70 %
+T37	Reagent 620 627	ethanol
+T38	Modifier 628 633	up to
+T39	Time 636 640	week
+T40	Action 689 693	warm
+T41	Reagent 698 726	reconstituted probe solution
+T42	Temperature 730 746	room temperature
+T43	Action 749 752	Mix
+T44	Modifier 753 757	well
+T45	Method 761 770	vortexing
+T46	Action 778 788	centrifuge
+T47	Modifier 789 796	briefly
+T48	Action 802 809	prepare
+T49	Reagent 814 834	Hybridization Buffer
+T50	Device 846 851	probe
+T51	Action 854 857	add
+T52	Amount 858 862	1 μL
+T53	Reagent 866 886	probe stock solution
+T54	Amount 890 896	100 μL
+T55	Reagent 900 920	Hybridization Buffer
+T56	Action 932 938	vortex
+T57	Action 943 953	centrifuge
+T58	Action 1084 1092	Aspirate
+T59	Concentration 1097 1101	70 %
+T60	Reagent 1102 1109	ethanol
+T61	Location 1118 1128	coverglass
+T62	Reagent 1140 1154	adherent cells
+T63	Location 1166 1181	12 - well plate
+T64	Action 1184 1187	Add
+T65	Amount 1188 1192	1 mL
+T66	Reagent 1196 1209	Wash Buffer A
+T67	Action 1237 1245	incubate
+T68	Temperature 1249 1265	room temperature
+T69	Time 1270 1283	2 - 5 minutes
+T70	Action 1286 1294	Assemble
+T71	Location 1295 1313	humidified chamber
+T72	Size 1316 1322	150 mm
+T73	Location 1323 1343	tissue culture plate
+T74	Action 1346 1358	bottom lined
+T75	Modifier 1359 1365	evenly
+T76	Modifier 1373 1377	flat
+T77	Modifier 1378 1395	water - saturated
+T78	Device 1396 1407	paper towel
+T79	Seal 1414 1438	single layer of Parafilm
+T80	Action 1439 1445	placed
+T81	Location 1449 1452	top
+T82	Location 1460 1471	paper towel
+T83	Action 1599 1607	dispense
+T84	Amount 1608 1614	100 μL
+T85	Reagent 1622 1642	Hybridization Buffer
+T86	Device 1654 1659	probe
+T87	Modifier 1665 1678	appropriately
+T88	Reagent 1679 1703	diluted primary antibody
+T89	Location 1715 1723	Parafilm
+T90	Action 1733 1741	transfer
+T91	Location 1746 1756	coverglass
+T92	Amount 1786 1792	100 μL
+T93	Reagent 1793 1797	drop
+T94	Reagent 1801 1821	Hybridization Buffer
+T95	Device 1833 1838	probe
+T96	Reagent 1843 1859	primary antibody
+T97	Action 1862 1867	Cover
+T98	Location 1872 1890	humidified chamber
+T99	Seal 1900 1920	tissue culture lid ,
+T100	Action 1925 1929	seal
+T101	Seal 1935 1943	Parafilm
+T102	Action 1946 1954	Incubate
+T103	Location 1962 1966	dark
+T104	Temperature 1970 1975	37 °C
+T105	Modifier 1980 1988	at least
+T106	Time 1989 1996	4 hours
+T107	Modifier 2046 2052	Gently
+T108	Action 2053 2061	transfer
+T109	Location 2066 2076	coverglass
+T110	Modifier 2100 2105	fresh
+T111	Location 2106 2121	12 - well plate
+T112	Amount 2133 2137	1 mL
+T113	Reagent 2141 2154	Wash Buffer A
+T114	Modifier 2160 2173	appropriately
+T115	Reagent 2174 2200	diluted secondary antibody
+T116	Action 2203 2211	Incubate
+T117	Location 2219 2223	dark
+T118	Temperature 2227 2232	37 °C
+T119	Time 2237 2247	30 minutes
+T120	Action 2250 2258	Aspirate
+T121	Reagent 2259 2272	Wash Buffer A
+T122	Action 2284 2287	add
+T123	Amount 2288 2292	1 mL
+T124	Reagent 2296 2314	DAPI nuclear stain
+T125	Modifier 2367 2380	appropriately
+T126	Reagent 2381 2407	diluted secondary antibody
+T127	Action 2410 2418	Incubate
+T128	Location 2426 2430	dark
+T129	Temperature 2434 2439	37 °C
+T130	Time 2444 2454	30 minutes
+T131	Action 2457 2465	Aspirate
+T132	Reagent 2470 2490	DAPI staining buffer
+T133	Action 2502 2505	add
+T134	Amount 2506 2510	1 mL
+T135	Reagent 2514 2527	Wash Buffer B
+T136	Action 2530 2538	Incubate
+T137	Temperature 2542 2558	room temperature
+T138	Time 2563 2576	2 - 5 minutes
+T139	Action 2579 2582	Add
+T140	Modifier 2585 2590	small
+T141	Reagent 2591 2595	drop
+T142	Amount 2612 2617	15 μL
+T143	Reagent 2623 2650	Vectashield Mounting Medium
+T144	Location 2658 2674	microscope slide
+T145	Action 2681 2686	mount
+T146	Location 2687 2697	coverglass
+T147	Location 2707 2712	slide
+T148	Modifier 2733 2739	Gently
+T149	Action 2740 2749	wick away
+T150	Modifier 2750 2756	excess
+T151	Reagent 2757 2768	anti - fade
+T152	Location 2778 2787	perimeter
+T153	Location 2795 2805	coverglass
+T154	Action 2808 2812	Seal
+T155	Location 2817 2837	coverglass perimeter
+T156	Modifier 2843 2848	clear
+T157	Reagent 2849 2860	nail polish
+T158	Action 2876 2879	dry
+T159	Modifier 2897 2903	gently
+T160	Action 2904 2913	wipe away
+T161	Modifier 2914 2917	any
+T162	Reagent 2918 2928	dried salt
+T163	Location 2937 2947	coverglass
+T164	Reagent 2954 2959	water
+E1	Action:T1 Acts-on:T2 Using:T4 Site:T5
+E2	Action:T6 Acts-on:T7
+E3	Action:T8 Acts-on:E2 Using:T11
+E4	Action:T12 Site:E3 Acts-on:T14
+E5	Action:T15 Acts-on:E4
+E6	Action:T18 Acts-on:E5 Count:T19 Using:T22
+E7	Action:T23 Acts-on:T24
+E8	Action:T25 Acts-on:T26 Site:T29
+E9	Action:T34 Acts-on:T33 Site:T37
+E10	Action:T40 Acts-on:T41
+E11	Action:T43 Acts-on:E10 Using:T45
+E12	Action:T46 Acts-on:E11 Product:T53
+E13	Action:T48 Product:T49
+E14	Action:T51 Acts-on:T53 Site:T55
+E15	Action:T56 Acts-on:E14
+E16	Action:T57 Acts-on:E15
+E17	Action:T58 Acts-on:T60 Site:T61
+E18	Action:T64 Acts-on:T66
+E19	Action:T67 Acts-on:E18
+E20	Action:T70 Site:T71 Acts-on:T73
+E21	Action:T74 Acts-on:T73 Using:T78 Using2:T79
+E22	Action:T80 Acts-on:T73 Site:T81
+E23	Action:T83 Acts-on:T85 Acts-on2:T88 Site:T89
+E24	Action:T90 Acts-on:T91 Site:T93
+E25	Action:T97 Acts-on:T98 Using:T99
+E26	Action:T100 Acts-on:E25 Using:T101
+E27	Action:T102 Site:T103
+E28	Action:T108 Acts-on:T109 Site:T111
+E29	Action:T116 Acts-on:E28 Site:T117
+E30	Action:T120 Acts-on:T121
+E31	Action:T122 Acts-on:T124 Acts-on2:T126
+E32	Action:T127 Acts-on:E31 Acts-on2:T128
+E33	Action:T131 Acts-on:T132
+E34	Action:T133 Acts-on:T135
+E35	Action:T136 Acts-on:E34
+E36	Action:T139 Acts-on:T141 Site:T144 Product:T147
+E37	Action:T145 Acts-on:T146 Site:T147
+E38	Action:T149 Acts-on:T151 Site:T152 Product:T155
+E39	Action:T154 Acts-on:T155 Using:T157
+E40	Action:T158 Acts-on:E39 Product:T163
+E41	Action:T160 Acts-on:T162 Site:T163 Using:T164
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T11 Arg2:T9
+R3	Measure Arg1:T11 Arg2:T10
+R4	Measure Arg1:T14 Arg2:T13
+R5	Setting Arg1:E5 Arg2:T16
+R6	Setting Arg1:E5 Arg2:T17
+R7	Measure Arg1:T22 Arg2:T20
+R8	Measure Arg1:T22 Arg2:T21
+R9	Enables Arg1:E8 Arg2:E7
+R10	Setting Arg1:E8 Arg2:T31
+R11	Setting Arg1:E8 Arg2:T32
+R12	Measure Arg1:T29 Arg2:T27
+R13	Measure Arg1:T29 Arg2:T28
+R14	Mod-Link Arg1:T31 Arg2:T30
+R15	Setting Arg1:E9 Arg2:T35
+R16	Setting Arg1:E9 Arg2:T39
+R17	Measure Arg1:T37 Arg2:T36
+R18	Mod-Link Arg1:T39 Arg2:T38
+R19	Setting Arg1:E10 Arg2:T42
+R20	Mod-Link Arg1:E11 Arg2:T44
+R21	Mod-Link Arg1:E12 Arg2:T47
+R22	Meronym Arg1:T50 Arg2:T49
+R23	Enables Arg1:E14 Arg2:E13
+R24	Measure Arg1:T53 Arg2:T52
+R25	Measure Arg1:T55 Arg2:T54
+R26	Measure Arg1:T60 Arg2:T59
+R27	Meronym Arg1:T62 Arg2:T61
+R28	Measure Arg1:T66 Arg2:T65
+R29	Setting Arg1:E19 Arg2:T68
+R30	Setting Arg1:E19 Arg2:T69
+R31	Measure Arg1:T73 Arg2:T72
+R32	Mod-Link Arg1:E21 Arg2:T75
+R33	Mod-Link Arg1:T78 Arg2:T76
+R34	Mod-Link Arg1:T78 Arg2:T77
+R35	Meronym Arg1:T81 Arg2:T82
+R36	Measure Arg1:T85 Arg2:T84
+R37	Meronym Arg1:T86 Arg2:T85
+R38	Mod-Link Arg1:T88 Arg2:T87
+R39	Measure Arg1:T93 Arg2:T92
+R40	Meronym Arg1:T93 Arg2:T94
+R41	Meronym Arg1:T95 Arg2:T94
+R42	Meronym Arg1:T96 Arg2:T94
+R43	Setting Arg1:E27 Arg2:T104
+R44	Setting Arg1:E27 Arg2:T106
+R45	Mod-Link Arg1:T106 Arg2:T105
+R46	Mod-Link Arg1:E28 Arg2:T107
+R47	Mod-Link Arg1:T111 Arg2:T110
+R48	Meronym Arg1:T113 Arg2:T111
+R49	Measure Arg1:T113 Arg2:T112
+R50	Meronym Arg1:T115 Arg2:T111
+R51	Mod-Link Arg1:T115 Arg2:T114
+R52	Setting Arg1:E29 Arg2:T118
+R53	Setting Arg1:E29 Arg2:T119
+R54	Measure Arg1:T124 Arg2:T123
+R55	Mod-Link Arg1:T126 Arg2:T125
+R56	Setting Arg1:E32 Arg2:T129
+R57	Setting Arg1:E32 Arg2:T130
+R58	Measure Arg1:T135 Arg2:T134
+R59	Setting Arg1:E35 Arg2:T137
+R60	Setting Arg1:E35 Arg2:T138
+R61	Setting Arg1:T140 Arg2:T142
+R62	Mod-Link Arg1:T141 Arg2:T140
+R63	Meronym Arg1:T141 Arg2:T143
+R64	Mod-Link Arg1:E38 Arg2:T148
+R65	Mod-Link Arg1:T151 Arg2:T150
+R66	Meronym Arg1:T152 Arg2:T153
+R67	Mod-Link Arg1:T157 Arg2:T156
+R68	Mod-Link Arg1:E41 Arg2:T159
+R69	Mod-Link Arg1:T162 Arg2:T161

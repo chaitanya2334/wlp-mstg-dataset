@@ -1,0 +1,96 @@
+T1	Action 35 38	Add
+T2	Amount 39 44	90 uL
+T3	Generic-Measure 48 52	50 %
+T4	Reagent 53 77	Polyethylene Glycol 3350
+T5	Amount 83 89	1.5 mL
+T6	Location 90 110	microcentrifuge tube
+T7	Action 113 116	Add
+T8	Amount 117 122	10 uL
+T9	Generic-Measure 126 131	0.2 N
+T10	Reagent 132 147	Lithium Acetate
+T11	Location 155 175	microcentrifuge tube
+T12	Action 178 184	Pellet
+T13	Reagent 185 190	yeast
+T14	Amount 196 200	1 mL
+T15	Location 201 215	liquid culture
+T16	Action 219 223	take
+T17	Device 226 235	toothpick
+T18	Modifier 244 257	freshly grown
+T19	Reagent 258 263	yeast
+T20	Location 269 274	plate
+T21	Action 279 288	resuspend
+T22	Reagent 296 304	solution
+T23	Action 307 310	Add
+T24	Amount 311 315	1 ug
+T25	Reagent 319 322	DNA
+T26	Modifier 327 334	briefly
+T27	Action 335 341	vortex
+T28	Action 344 352	Incubate
+T29	Temperature 356 360	45°C
+T30	Time 365 385	30 minutes to 1 hour
+T31	Action 388 397	vortexing
+T32	Modifier 398 405	briefly
+T33	Modifier 406 411	every
+T34	Time 412 422	10 minutes
+T35	Action 425 428	Add
+T36	Amount 429 433	1 mL
+T37	Reagent 434 439	water
+T38	Location 447 451	tube
+T39	Action 456 463	pipette
+T40	Action 467 470	mix
+T41	Action 478 488	centrifuge
+T42	Speed 492 502	14,000 RPM
+T43	Time 507 517	15 seconds
+T44	Action 520 526	Remove
+T45	Reagent 531 542	supernatant
+T46	Action 547 556	resuspend
+T47	Reagent 561 567	pellet
+T48	Amount 571 577	200 uL
+T49	Reagent 578 583	water
+T50	Action 591 597	spread
+T51	Location 601 617	selective plates
+T52	Action 622 630	incubate
+T53	Temperature 634 638	30°C
+T54	Time 643 653	3 - 6 days
+E1	Action:T1 Acts-on:T4 Site:T6 Product:T11
+E2	Action:T7 Acts-on:T10 Site:T11 Product:T22
+E3	Action:T12 Acts-on:T13 Site:T15
+E4	Action:T16 Using:T17 Acts-on:T19
+E5	Action:T21 Site:T22 Acts-on:E4 Acts-on2:E3
+E6	Action:T23 Acts-on:T25 Site:E5
+E7	Action:T27 Acts-on:E6
+E8	Action:T28 Acts-on:E7 Product:T38
+E9	Action:T31 Acts-on:E7
+E10	Action:T35 Acts-on:T37 Site:T38
+E11	Action:T39 Acts-on:E10
+E12	Action:T40 Acts-on:E10
+E13	Action:T41 Acts-on:E12 Product:T45
+E14	Action:T44 Acts-on:T45 Product:T47
+E15	Action:T46 Acts-on:T47 Site:T49
+E16	Action:T50 Site:T51 Acts-on:E15
+E17	Action:T52 Acts-on:E16
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T4 Arg2:T2
+R3	Measure Arg1:T6 Arg2:T5
+R4	Measure Arg1:T10 Arg2:T9
+R5	Measure Arg1:T10 Arg2:T8
+R6	Measure Arg1:T15 Arg2:T14
+R7	Measure Arg1:T25 Arg2:T24
+R8	Mod-Link Arg1:E7 Arg2:T26
+R9	Setting Arg1:E8 Arg2:T29
+R10	Setting Arg1:E8 Arg2:T30
+R11	Mod-Link Arg1:E9 Arg2:T32
+R12	Setting Arg1:E9 Arg2:T34
+R13	Mod-Link Arg1:E9 Arg2:T33
+R14	Measure Arg1:T37 Arg2:T36
+R15	Setting Arg1:E13 Arg2:T42
+R16	Setting Arg1:E13 Arg2:T43
+R17	Measure Arg1:T49 Arg2:T48
+R18	Setting Arg1:E17 Arg2:T53
+R19	Setting Arg1:E17 Arg2:T54
+R20	Meronym Arg1:T19 Arg2:T20
+R21	Mod-Link Arg1:T19 Arg2:T18
+R22	Or Arg1:E3 Arg2:E4
+R23	Coreference-Link Arg1:T13 Arg2:T19
+R24	Overlaps Arg1:E9 Arg2:E8
+R25	Enables Arg1:E11 Arg2:E12

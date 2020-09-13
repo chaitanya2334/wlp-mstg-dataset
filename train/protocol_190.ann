@@ -1,0 +1,127 @@
+T1	Action 43 49	Filter
+T2	Reagent 55 61	sample
+T3	Modifier 72 80	0.2 - µm
+T4	Device 81 87	filter
+T5	Measure-Type 93 99	volume
+T6	Modifier 103 116	approximately
+T7	Amount 117 121	5 mL
+T8	Action 125 131	remove
+T9	Reagent 144 159	ambient viruses
+T10	Action 162 165	Add
+T11	Modifier 166 178	virus - free
+T12	Modifier 181 199	0.02 - µm filtered
+T13	Reagent 202 207	water
+T14	Modifier 208 237	prepared from the same sample
+T15	Action 242 248	reduce
+T16	Measure-Type 253 259	volume
+T17	Action 323 329	adding
+T18	Reagent 330 351	virus - free seawater
+T19	Action 354 362	dividing
+T20	Reagent 368 376	aliquots
+T21	Action 383 393	incubating
+T22	Modifier 394 425	with and without inducing agent
+T23	Action 428 433	Amend
+T24	Modifier 434 441	treated
+T25	Reagent 442 449	samples
+T26	Reagent 474 485	mitomycin C
+T27	Concentration 508 517	1 µg / mL
+T28	Reagent 530 544	inducing agent
+T29	Modifier 548 554	choice
+T30	Action 557 563	Employ
+T31	Method 589 603	( MPN ) method
+T32	Action 607 616	enumerate
+T33	Reagent 621 642	cyanophage population
+T34	Action 670 677	Prepare
+T35	Reagent 680 711	one - to five - dilution series
+T36	Modifier 719 732	environmental
+T37	Modifier 736 744	prophage
+T38	Reagent 745 771	induction treatment sample
+T39	Modifier 778 798	96 - well microtiter
+T40	Device 799 805	plates
+T41	Modifier 835 842	Freshly
+T42	Action 843 849	dilute
+T43	Modifier 852 863	susceptible
+T44	Reagent 864 882	Synechococcus host
+T45	Action 894 899	place
+T46	Modifier 903 907	each
+T47	Location 908 912	well
+T48	Action 915 922	Prepare
+T49	Reagent 923 937	control plates
+T50	Modifier 938 947	similarly
+T51	Reagent 954 970	sterile SN media
+T52	Location 978 999	first column of wells
+T53	Action 1002 1009	Prepare
+T54	Modifier 1010 1015	three
+T55	Reagent 1016 1035	replicate treatment
+T56	Reagent 1040 1054	control plates
+T57	Modifier 1055 1069	from each site
+T58	Action 1072 1080	Incubate
+T59	Device 1085 1091	plates
+T60	Action 1159 1164	Score
+T61	Reagent 1165 1170	wells
+T62	Method 1174 1252	positive for virus if lysis of the host organism is evident as a well clearing
+T63	Action 1255 1264	Calculate
+T64	Measure-Type 1265 1280	viral abundance
+T65	Modifier 1285 1289	each
+T66	Reagent 1290 1295	plate
+T67	Method 1305 1316	MPN program
+T68	Action 1346 1354	Evaluate
+T69	Measure-Type 1355 1412	treatment and control cyanophage and Synechococcus counts
+T70	Method 1416 1429	paired t test
+T71	Reagent 1438 1445	samples
+T72	Reagent 1452 1480	Minitab statistical software
+T73	Action 1483 1490	Perform
+T74	Measure-Type 1491 1551	comparison of induction results and environmental parameters
+T75	Method 1558 1575	linear regression
+T76	Method 1580 1591	X2 analysis
+T77	Reagent 1605 1612	Minitab
+E1	Action:T1 Acts-on:T2 Using:T4 Measure-Type-Link:T5
+E2	Action:T8 Acts-on:T9
+E3	Action:T10 Acts-on:T13 Site:E2
+E4	Action:T15 Measure-Type-Link:T16 Acts-on:E3
+E5	Action:T17 Acts-on:T18 Site:E4
+E6	Action:T19 Product:T20 Acts-on:E5
+E7	Action:T21 Acts-on:E6 Product:T25
+E8	Action:T23 Acts-on:T25 Using:T26 Product:T33
+E9	Action:T30 Using:T31 Acts-on:E8
+E10	Action:T32 Acts-on:T33
+E11	Action:T34 Using:T40 Product:T35 Acts-on:T38
+E12	Action:T42 Acts-on:T44
+E13	Action:T45 Site:T47 Acts-on:E12 Product:T52
+E14	Action:T48 Site:T52 Product:T49 Using:T51
+E15	Action:T53 Product:T55 Product2:T56
+E16	Action:T58 Acts-on:T59 Product:T61
+E17	Action:T60 Acts-on:T61 Using:T62 Product:T66
+E18	Action:T63 Using:T67 Measure-Type-Link:T64 Acts-on:T66 Product:T71
+E19	Action:T68 Using:T70 Using2:T72 Acts-on:T71
+E20	Action:T73 Using:T75 Measure-Type-Link:T74 Using2:T76 Using3:T77 Acts-on:E19
+R1	Mod-Link Arg1:T4 Arg2:T3
+R2	Mod-Link Arg1:T13 Arg2:T12
+R3	Measure Arg1:T26 Arg2:T27
+R4	Mod-Link Arg1:T40 Arg2:T39
+R5	Mod-Link Arg1:T55 Arg2:T54
+R6	Enables Arg1:E1 Arg2:E2
+R7	Mod-Link Arg1:T7 Arg2:T6
+R8	Setting Arg1:E1 Arg2:T7
+R9	Meronym Arg1:T9 Arg2:T2
+R10	Mod-Link Arg1:T13 Arg2:T11
+R11	Mod-Link Arg1:T13 Arg2:T14
+R12	Mod-Link Arg1:E7 Arg2:T22
+R13	Mod-Link Arg1:T25 Arg2:T24
+R14	Mod-Link Arg1:T28 Arg2:T29
+R15	Or Arg1:T26 Arg2:T28
+R16	Enables Arg1:E9 Arg2:E10
+R17	Mod-Link Arg1:E12 Arg2:T41
+R18	Or Arg1:T36 Arg2:T37
+R19	Mod-Link Arg1:T38 Arg2:T37
+R20	Mod-Link Arg1:T44 Arg2:T43
+R21	Coreference-Link Arg1:T47 Arg2:T35
+R22	Mod-Link Arg1:T47 Arg2:T46
+R23	Meronym Arg1:T51 Arg2:T52
+R24	Mod-Link Arg1:E15 Arg2:T57
+R25	Mod-Link Arg1:E14 Arg2:T50
+R26	Coreference-Link Arg1:T59 Arg2:T55
+R27	Coreference-Link Arg1:T59 Arg2:T56
+R28	Coreference-Link Arg1:T59 Arg2:T49
+R29	Mod-Link Arg1:T66 Arg2:T65
+R30	Coreference-Link Arg1:T77 Arg2:T72

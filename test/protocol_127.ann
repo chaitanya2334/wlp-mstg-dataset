@@ -1,0 +1,199 @@
+T1	Action 92 95	Use
+T2	Modifier 98 103	fresh
+T3	Reagent 104 117	tissue sample
+T4	Location 168 171	ice
+T5	Action 174 187	Do not freeze
+T6	Action 190 195	Weigh
+T7	Modifier 196 209	approximately
+T8	Amount 210 218	50‐100mg
+T9	Reagent 219 225	tissue
+T10	Modifier 233 239	cooled
+T11	Modifier 240 245	glass
+T12	Location 246 251	plate
+T13	Device 272 279	scalpel
+T14	Action 282 287	mince
+T15	Reagent 292 298	tissue
+T16	Modifier 304 321	very small pieces
+T17	Action 324 331	Suspend
+T18	Reagent 336 342	sample
+T19	Amount 348 357	8 volumes
+T20	Reagent 361 381	1X SubCell Buffer‐II
+T21	Amount 393 404	0.25mg / ml
+T22	Reagent 405 412	trypsin
+T23	Device 418 437	2ml centrifuge tube
+T24	Action 440 448	Incubate
+T25	Location 452 455	ice
+T26	Time 460 469	3 minutes
+T27	Action 479 488	spin down
+T28	Reagent 493 499	tissue
+T29	Time 506 517	few seconds
+T30	Location 525 535	centrifuge
+T31	Action 538 544	Remove
+T32	Reagent 549 560	supernatant
+T33	Method 564 574	aspiration
+T34	Action 579 582	add
+T35	Amount 583 592	8 volumes
+T36	Reagent 596 616	1X SubCell Buffer‐II
+T37	Amount 628 639	0.25mg / ml
+T38	Reagent 640 647	Trypsin
+T39	Action 650 658	Incubate
+T40	Location 662 665	ice
+T41	Time 670 680	20 minutes
+T42	Action 683 686	Add
+T43	Reagent 687 699	BSA Solution
+T44	Reagent 705 724	final concentration
+T45	Concentration 728 737	10mg / ml
+T46	Action 742 745	mix
+T47	Action 748 757	Spin down
+T48	Reagent 762 768	tissue
+T49	Speed 772 781	1,000 x g
+T50	Time 786 798	5‐10 seconds
+T51	Location 806 816	centrifuge
+T52	Action 819 825	Remove
+T53	Reagent 830 841	supernatant
+T54	Method 845 855	aspiration
+T55	Action 858 862	Wash
+T56	Reagent 867 873	pellet
+T57	Amount 879 888	8 volumes
+T58	Reagent 892 912	1X SubCell Buffer‐II
+T59	Modifier 913 928	without Trypsin
+T60	Action 935 944	spin down
+T61	Reagent 949 955	tissue
+T62	Time 962 973	few seconds
+T63	Location 981 991	centrifuge
+T64	Action 994 1000	Remove
+T65	Reagent 1005 1016	supernatant
+T66	Method 1020 1030	aspiration
+T67	Action 1035 1038	add
+T68	Amount 1039 1048	8 volumes
+T69	Reagent 1056 1077	1X SubCell Buffer‐ II
+T70	Modifier 1078 1093	without Trypsin
+T71	Action 1096 1104	Transfer
+T72	Reagent 1109 1119	suspension
+T73	Modifier 1126 1134	ice‐cold
+T74	Location 1135 1160	Dounce tissue homogenizer
+T75	Modifier 1173 1186	loose‐fitting
+T76	Device 1187 1193	pestle
+T77	Action 1196 1208	disaggregate
+T78	Reagent 1213 1219	tissue
+T79	Numerical 1225 1229	5‐15
+T80	Action 1230 1237	strokes
+T81	Reagent 1251 1264	tissue sample
+T82	Modifier 1268 1290	completely homogenized
+T83	Modifier 1301 1314	tight‐fitting
+T84	Device 1315 1321	pestle
+T85	Action 1324 1331	release
+T86	Reagent 1336 1342	nuclei
+T87	Numerical 1348 1352	8‐10
+T88	Action 1353 1360	strokes
+T89	Action 1418 1423	Stand
+T90	Location 1427 1430	ice
+T91	Time 1435 1444	2 minutes
+T92	Action 1447 1455	Transfer
+T93	Reagent 1460 1470	homogenate
+T94	Location 1476 1491	centrifuge tube
+T95	Action 1496 1501	leave
+T96	Modifier 1502 1507	large
+T97	Size 1508 1514	chunks
+T98	Reagent 1518 1534	tissue fragments
+T99	Location 1542 1553	homogenizer
+T100	Action 1572 1582	Centrifuge
+T101	Reagent 1587 1593	lysate
+T102	Speed 1597 1603	700x g
+T103	Time 1608 1617	5 minutes
+T104	Action 1621 1627	pellet
+T105	Reagent 1632 1638	nuclei
+T106	Action 1641 1649	Transfer
+T107	Reagent 1654 1665	supernatant
+T108	Modifier 1671 1674	new
+T109	Location 1675 1679	tube
+T110	Action 1682 1692	Centrifuge
+T111	Speed 1699 1707	12,000xg
+T112	Time 1712 1722	10 minutes
+T113	Action 1725 1733	Transfer
+T114	Reagent 1738 1749	supernatant
+T115	Modifier 1777 1780	new
+T116	Location 1781 1785	tube
+T117	Action 1823 1830	Suspend
+T118	Reagent 1835 1855	mitochondrial pellet
+T119	Modifier 1859 1866	working
+T120	Location 1867 1894	Mitochondria Storage Buffer
+T121	Action 1953 1957	keep
+T122	Reagent 1962 1972	suspension
+T123	Location 1976 1979	ice
+T124	Reagent 2015 2025	suspension
+T125	Action 2033 2039	stored
+T126	Location 2043 2046	ice
+T127	Modifier 2051 2056	up to
+T128	Time 2057 2065	48 hours
+E1	Action:T1 Acts-on:T3 Product:T9
+E2	Action:T5 
+E3	Action:T6 Acts-on:T9 Product:T15
+E4	Action:T14 Site:T12 Using:T13 Acts-on:T15 Product:T18
+E5	Action:T17 Acts-on:T18 Using:T20 Using2:T23
+E6	Action:T24 Acts-on:E5 Site:T25 Product:T28
+E7	Action:T27 Acts-on:T28 Site:T30 Product:T32
+E8	Action:T31 Acts-on:T32 Using:T33
+E9	Action:T34 Site:E8 Acts-on:T36
+E10	Action:T39 Acts-on:E9 Site:T40
+E11	Action:T42 Site:E10 Acts-on:T43 Site2:T44
+E12	Action:T46 Acts-on:E11 Acts-on2:T43 Product:T48
+E13	Action:T47 Acts-on:T48 Site:T51 Product:T53
+E14	Action:T52 Acts-on:T53 Using:T54 Product:T56
+E15	Action:T55 Acts-on:T56 Using:T58 Product:T61
+E16	Action:T60 Acts-on:T61 Site:T63 Product:T65
+E17	Action:T64 Acts-on:T65 Using:T66
+E18	Action:T67 Site:E17 Acts-on:T69 Product:T72
+E19	Action:T71 Site:E18 Acts-on:T72 Site2:T74 Using:T76 Product:T78
+E20	Action:T77 Acts-on:T78 Product:T86
+E21	Action:T80 Count:T79
+E22	Action:T85 Using:T84 Acts-on:T86
+E23	Action:T88 Count:T87
+E24	Action:T89 Acts-on:E22 Product:T93
+E25	Action:T92 Acts-on:T93 Site:T94 Product:T101
+E26	Action:T95 Acts-on:T98 Site:T99
+E27	Action:T100 Acts-on:T101 Product:T107
+E28	Action:T104 
+E29	Action:T106 Acts-on:T107 Site:T109
+E30	Action:T110 Acts-on:E29 Product:T114
+E31	Action:T113 Acts-on:T114 Site:T116 Product:T118
+E32	Action:T117 Acts-on:T118 Site:T120 Product:T122
+E33	Action:T121 Acts-on:T122 Site:T123 Product:T124
+E34	Action:T125 Acts-on:T124 Site:T126
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T4 Arg2:T3
+R3	Mod-Link Arg1:T8 Arg2:T7
+R4	Measure Arg1:T9 Arg2:T8
+R5	Mod-Link Arg1:T12 Arg2:T10
+R6	Mod-Link Arg1:T12 Arg2:T11
+R7	Mod-Link Arg1:T15 Arg2:T16
+R8	Measure Arg1:T20 Arg2:T19
+R9	Measure Arg1:T22 Arg2:T21
+R10	Setting Arg1:E6 Arg2:T26
+R11	Setting Arg1:E7 Arg2:T29
+R12	Measure Arg1:T36 Arg2:T35
+R13	Meronym Arg1:T38 Arg2:T36
+R14	Measure Arg1:T38 Arg2:T37
+R15	Setting Arg1:E10 Arg2:T41
+R16	Measure Arg1:T44 Arg2:T45
+R17	Setting Arg1:E13 Arg2:T49
+R18	Setting Arg1:E13 Arg2:T50
+R19	Measure Arg1:T58 Arg2:T57
+R20	Mod-Link Arg1:T58 Arg2:T59
+R21	Setting Arg1:E16 Arg2:T62
+R22	Measure Arg1:T69 Arg2:T68
+R23	Mod-Link Arg1:T69 Arg2:T70
+R24	Mod-Link Arg1:T74 Arg2:T73
+R25	Mod-Link Arg1:T76 Arg2:T75
+R26	Mod-Link Arg1:T81 Arg2:T82
+R27	Mod-Link Arg1:E22 Arg2:T83
+R28	Mod-Link Arg1:T97 Arg2:T96
+R29	Measure Arg1:T98 Arg2:T97
+R30	Setting Arg1:E27 Arg2:T102
+R31	Setting Arg1:E27 Arg2:T103
+R32	Mod-Link Arg1:T109 Arg2:T108
+R33	Setting Arg1:E30 Arg2:T111
+R34	Setting Arg1:E30 Arg2:T112
+R35	Mod-Link Arg1:T116 Arg2:T115
+R36	Mod-Link Arg1:T120 Arg2:T119
+R37	Mod-Link Arg1:T128 Arg2:T127

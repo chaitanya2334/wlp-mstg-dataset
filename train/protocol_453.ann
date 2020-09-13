@@ -1,0 +1,145 @@
+T1	Action 53 57	Warm
+T2	Reagent 58 67	SOC media
+T3	Temperature 71 87	room temperature
+T4	Action 90 94	Thaw
+T5	Location 97 101	tube
+T6	Reagent 105 143	NEB 5 - alpha Competent E . coli cells
+T7	Location 147 150	ice
+T8	Time 155 165	10 minutes
+T9	Action 168 175	Aliquot
+T10	Amount 176 180	25uL
+T11	Reagent 188 193	cells
+T12	Modifier 201 204	new
+T13	Location 205 209	tube
+T14	Action 212 215	Add
+T15	Amount 216 228	0.5 - 2.5 µl
+T16	Generic-Measure 240 254	0.5 pg - 50 ng
+T17	Reagent 258 269	plasmid DNA
+T18	Modifier 273 277	each
+T19	Reagent 278 290	cell mixture
+T20	Modifier 293 302	Carefully
+T21	Action 303 308	flick
+T22	Location 313 317	tube
+T23	Numerical 318 323	4 - 5
+T24	Action 333 336	mix
+T25	Reagent 337 342	cells
+T26	Reagent 347 350	DNA
+T27	Action 353 366	Do not vortex
+T28	Action 369 374	Place
+T29	Reagent 379 386	mixture
+T30	Location 390 393	ice
+T31	Time 398 408	30 minutes
+T32	Action 411 421	Do not mix
+T33	Action 424 434	Heat shock
+T34	Modifier 438 445	exactly
+T35	Temperature 446 450	42°C
+T36	Modifier 455 462	exactly
+T37	Time 463 473	30 seconds
+T38	Action 476 488	Do not mix .
+T39	Action 489 494	Place
+T40	Location 498 501	ice
+T41	Time 506 515	5 minutes
+T42	Action 518 528	Do not mix
+T43	Action 531 538	Pipette
+T44	Amount 539 545	475 µl
+T45	Temperature 549 565	room temperature
+T46	Reagent 566 569	SOC
+T47	Reagent 579 586	mixture
+T48	Modifier 590 594	each
+T49	Location 595 599	tube
+T50	Action 602 607	Place
+T51	Temperature 611 615	37°C
+T52	Time 620 630	60 minutes
+T53	Action 633 640	shaking
+T54	Modifier 641 651	vigorously
+T55	Speed 654 661	250 rpm
+T56	Action 667 675	rotating
+T57	Action 678 682	Warm
+T58	Location 683 699	selection plates
+T59	Temperature 703 707	37°C
+T60	Action 710 713	Mix
+T61	Reagent 718 723	cells
+T62	Modifier 724 734	thoroughly
+T63	Action 738 746	flicking
+T64	Location 751 755	tube
+T65	Action 760 769	inverting
+T66	Action 772 779	Perform
+T67	Numerical 780 787	several
+T68	Method 788 814	10 - fold serial dilutions
+T69	Reagent 818 821	SOC
+T70	Action 824 830	Spread
+T71	Amount 831 842	50 - 100 µl
+T72	Modifier 846 850	each
+T73	Reagent 851 859	dilution
+T74	Location 867 882	selection plate
+T75	Action 885 893	Incubate
+T76	Time 894 903	overnight
+T77	Temperature 907 911	37°C
+E1	Action:T1 Acts-on:T2 Product:T46
+E2	Action:T4 Acts-on:T5 Site:T7 Product:T11
+E3	Action:T9 Acts-on:T11 Site:T13 Product:T19
+E4	Action:T14 Acts-on:T17 Site:T19 Product:T22
+E5	Action:T21 Acts-on:T22 Count:T23
+E6	Action:T24 Acts-on:T25 Acts-on2:T26 Product:T29
+E7	Action:T27 
+E8	Action:T28 Acts-on:T29 Site:T30
+E9	Action:T32 
+E10	Action:T33 Acts-on:E8
+E11	Action:T38 
+E12	Action:T39 Site:T40 Acts-on:E10 Product:T49
+E13	Action:T42 
+E14	Action:T43 Acts-on:T46 Site:T47
+E15	Action:T50 Acts-on:E14 Product:T64
+E16	Action:T53 
+E17	Action:T56 
+E18	Action:T57 Acts-on:T58 Product:T74
+E19	Action:T60 Acts-on:T61
+E20	Action:T63 Acts-on:T64
+E21	Action:T65 Acts-on:E20
+E22	Action:T66 Count:T67 Using:T68 Acts-on:T69 Acts-on2:E19 Product:T73
+E23	Action:T70 Acts-on:T73 Site:T74
+E24	Action:T75 Acts-on:E23
+R1	Setting Arg1:E1 Arg2:T3
+R2	Meronym Arg1:T6 Arg2:T5
+R3	Setting Arg1:E2 Arg2:T8
+R4	Measure Arg1:T11 Arg2:T10
+R5	Mod-Link Arg1:T13 Arg2:T12
+R6	Measure Arg1:T17 Arg2:T16
+R7	Measure Arg1:T17 Arg2:T15
+R8	Mod-Link Arg1:T19 Arg2:T18
+R9	Mod-Link Arg1:E5 Arg2:T20
+R10	Setting Arg1:E8 Arg2:T31
+R11	Mod-Link Arg1:T35 Arg2:T34
+R12	Setting Arg1:E10 Arg2:T35
+R13	Setting Arg1:E10 Arg2:T37
+R14	Mod-Link Arg1:T37 Arg2:T36
+R15	Setting Arg1:E12 Arg2:T41
+R16	Measure Arg1:T46 Arg2:T44
+R17	Mod-Link Arg1:T49 Arg2:T48
+R18	Meronym Arg1:T47 Arg2:T49
+R19	Setting Arg1:E15 Arg2:T51
+R20	Setting Arg1:E15 Arg2:T52
+R21	Mod-Link Arg1:E16 Arg2:T54
+R22	Setting Arg1:T54 Arg2:T55
+R23	Setting Arg1:E18 Arg2:T59
+R24	Mod-Link Arg1:E19 Arg2:T62
+R25	Mod-Link Arg1:T73 Arg2:T72
+R26	Measure Arg1:T73 Arg2:T71
+R27	Setting Arg1:E24 Arg2:T76
+R28	Setting Arg1:E24 Arg2:T77
+R29	Enables Arg1:E5 Arg2:E6
+R30	Meronym Arg1:T25 Arg2:T22
+R31	Meronym Arg1:T26 Arg2:T22
+R32	Prevents Arg1:E5 Arg2:E7
+R33	Prevents Arg1:E8 Arg2:E9
+R34	Prevents Arg1:E10 Arg2:E11
+R35	Prevents Arg1:E12 Arg2:E13
+R36	Overlaps Arg1:E16 Arg2:E15
+R37	Overlaps Arg1:E17 Arg2:E15
+R38	Or Arg1:E17 Arg2:E16
+R39	Coreference-Link Arg1:T46 Arg2:T69
+R40	Meronym Arg1:T61 Arg2:T64
+R41	Enables Arg1:E20 Arg2:E19
+R42	Enables Arg1:E21 Arg2:E19
+R43	Coreference-Link Arg1:T7 Arg2:T30
+R44	Coreference-Link Arg1:T30 Arg2:T40

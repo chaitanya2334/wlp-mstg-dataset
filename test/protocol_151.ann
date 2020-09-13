@@ -1,0 +1,144 @@
+T1	Action 27 31	Mark
+T2	Location 36 40	side
+T3	Location 48 54	column
+T4	Location 93 97	mark
+T5	Action 101 107	facing
+T6	Modifier 108 116	outwards
+T7	Method 124 138	centrifugation
+T8	Action 141 148	Prepare
+T9	Location 153 168	SpinOUT™ column
+T10	Action 172 184	centrifuging
+T11	Location 189 205	SpinOUT™ columns
+T12	Speed 209 215	1,000g
+T13	Time 220 228	1 minute
+T14	Action 232 239	compact
+T15	Reagent 244 249	resin
+T16	Action 252 258	Remove
+T17	Seal 263 266	top
+T18	Seal 276 287	bottom caps
+T19	Action 290 295	Place
+T20	Modifier 304 315	appropriate
+T21	Location 316 331	collection tube
+T22	Action 334 344	Centrifuge
+T23	Location 349 355	column
+T24	Speed 359 365	1,000g
+T25	Time 370 379	2 minutes
+T26	Action 383 389	remove
+T27	Reagent 394 408	storage buffer
+T28	Action 411 416	Place
+T29	Location 421 427	column
+T30	Modifier 433 436	new
+T31	Location 437 452	collection tube
+T32	Action 457 463	remove
+T33	Seal 468 471	cap
+T34	Action 474 477	Add
+T35	Reagent 482 488	buffer
+T36	Modifier 495 504	exchanged
+T37	Location 517 524	columna
+T38	Amount 531 536	0.1ml
+T39	Location 537 543	column
+T40	Action 546 549	use
+T41	Amount 550 554	75µl
+T42	Reagent 555 562	bufferb
+T43	Amount 569 572	1ml
+T44	Location 573 579	column
+T45	Action 582 585	use
+T46	Amount 586 591	0.5ml
+T47	Reagent 592 599	bufferc
+T48	Amount 606 609	3ml
+T49	Location 610 616	column
+T50	Action 619 622	use
+T51	Amount 623 628	1.5ml
+T52	Reagent 629 636	bufferd
+T53	Amount 643 646	5ml
+T54	Location 647 653	column
+T55	Action 656 659	use
+T56	Amount 660 665	2.5ml
+T57	Reagent 666 673	buffere
+T58	Amount 680 684	10ml
+T59	Location 685 691	column
+T60	Action 694 697	use
+T61	Amount 698 701	5ml
+T62	Reagent 702 708	buffer
+T63	Action 709 719	Centrifuge
+T64	Reagent 724 730	column
+T65	Speed 734 740	1,000g
+T66	Time 745 754	2 minutes
+T67	Action 758 764	remove
+T68	Reagent 769 775	buffer
+T69	Reagent 842 848	buffer
+T70	Action 852 861	discarded
+T71	Amount 868 872	each
+T72	Method 873 887	centrifugation
+T73	Action 890 895	Place
+T74	Location 900 906	column
+T75	Modifier 912 915	new
+T76	Location 916 931	collection tube
+T77	Action 936 942	remove
+T78	Seal 947 950	cap
+T79	Modifier 953 959	Slowly
+T80	Action 962 967	apply
+T81	Reagent 972 988	protein solution
+T82	Location 996 1002	center
+T83	Reagent 1010 1024	SpinOUT™ resin
+T84	Action 1089 1096	Discard
+T85	Reagent 1101 1107	column
+E1	Action:T1 Acts-on:T2 Product:T11
+E2	Action:T5 Acts-on:T4 Using:T7
+E3	Action:T8 Product:T9
+E4	Action:T10 Acts-on:T11
+E5	Action:T14 Acts-on:T15
+E6	Action:T16 Acts-on:T17 Acts-on2:T18
+E7	Action:T19 Acts-on:E6 Site:T21 Product:T23
+E8	Action:T22 Acts-on:T23 Product:T29
+E9	Action:T26 Acts-on:T27
+E10	Action:T28 Acts-on:T29 Site:T31
+E11	Action:T32 Site:E10 Acts-on:T33 Product:T37
+E12	Action:T34 Acts-on:T35 Site:T37 Product:T64
+E13	Action:T40 Acts-on:T42
+E14	Action:T45 Acts-on:T47
+E15	Action:T50 Acts-on:T52
+E16	Action:T55 Acts-on:T57
+E17	Action:T60 Site:T59 Acts-on:T62
+E18	Action:T63 Acts-on:T64
+E19	Action:T67 Acts-on:T68 Product:T69
+E20	Action:T70 Acts-on:T69 Product:T74
+E21	Action:T73 Acts-on:T74 Site:T76
+E22	Action:T77 Site:E21 Acts-on:T78 Product:T83
+E23	Action:T80 Acts-on:T81 Site:T82 Product:T85
+E24	Action:T84 Site:E23 Acts-on:T85
+R1	Enables Arg1:E1 Arg2:E2
+R2	Meronym Arg1:T2 Arg2:T3
+R3	Mod-Link Arg1:E2 Arg2:T6
+R4	Setting Arg1:E4 Arg2:T12
+R5	Setting Arg1:E4 Arg2:T13
+R6	Enables Arg1:E4 Arg2:E5
+R7	Enables Arg1:E5 Arg2:E3
+R8	Meronym Arg1:T15 Arg2:T11
+R9	Meronym Arg1:T17 Arg2:T9
+R10	Meronym Arg1:T18 Arg2:T9
+R11	Mod-Link Arg1:T21 Arg2:T20
+R12	Setting Arg1:E8 Arg2:T24
+R13	Setting Arg1:E8 Arg2:T25
+R14	Enables Arg1:E8 Arg2:E9
+R15	Meronym Arg1:T27 Arg2:T23
+R16	Mod-Link Arg1:T31 Arg2:T30
+R17	Mod-Link Arg1:T35 Arg2:T36
+R18	Measure Arg1:T39 Arg2:T38
+R19	Measure Arg1:T42 Arg2:T41
+R20	Measure Arg1:T44 Arg2:T43
+R21	Measure Arg1:T47 Arg2:T46
+R22	Measure Arg1:T49 Arg2:T48
+R23	Measure Arg1:T52 Arg2:T51
+R24	Measure Arg1:T54 Arg2:T53
+R25	Measure Arg1:T57 Arg2:T56
+R26	Measure Arg1:T59 Arg2:T58
+R27	Measure Arg1:T62 Arg2:T61
+R28	Setting Arg1:E18 Arg2:T65
+R29	Setting Arg1:E18 Arg2:T66
+R30	Enables Arg1:E18 Arg2:E19
+R31	Meronym Arg1:T68 Arg2:T64
+R32	Setting Arg1:E20 Arg2:T71
+R33	Mod-Link Arg1:T76 Arg2:T75
+R34	Mod-Link Arg1:E23 Arg2:T79
+R35	Meronym Arg1:T82 Arg2:T83

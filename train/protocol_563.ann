@@ -1,0 +1,79 @@
+T1	Action 52 61	autoclave
+T2	Reagent 66 74	top agar
+T3	Action 78 82	melt
+T4	Mention 83 85	it
+T5	Location 134 140	plates
+T6	Action 141 145	warm
+T7	Temperature 149 165	room temperature
+T8	Action 170 175	label
+T9	Mention 176 180	them
+T10	Action 185 189	Make
+T11	Reagent 199 208	dilutions
+T12	Reagent 212 223	your phages
+T13	Method 228 241	plan to plate
+T14	Action 244 251	Aliquot
+T15	Reagent 256 260	agar
+T16	Location 266 271	tubes
+T17	Action 276 281	place
+T18	Temperature 285 289	40°C
+T19	Device 290 300	water bath
+T20	Action 303 308	Pipet
+T21	Amount 309 315	100 μl
+T22	Reagent 319 336	your phage sample
+T23	Location 346 351	plate
+T24	Action 354 360	Remove
+T25	Location 365 374	agar tube
+T26	Device 384 394	water bath
+T27	Action 399 402	add
+T28	Reagent 407 411	host
+T29	Mention 415 417	it
+T30	Action 420 423	Add
+T31	Amount 424 430	3.5 ml
+T32	Reagent 438 457	agar / host mixture
+T33	Action 460 465	Swirl
+T34	Modifier 466 470	each
+T35	Location 471 476	plate
+T36	Action 480 486	spread
+T37	Reagent 491 495	agar
+T38	Method 496 505	as you go
+T39	Action 508 513	Leave
+T40	Location 518 524	plates
+T41	Location 532 537	bench
+T42	Time 538 547	overnight
+T43	Action 550 555	Count
+T44	Action 559 563	pick
+T45	Reagent 564 571	plaques
+T46	Time 576 584	next day
+E1	Action:T1 Acts-on:T2 Product:T15
+E2	Action:T3 Acts-on:T4
+E3	Action:T6 Acts-on:T5 Product:T9
+E4	Action:T8 Acts-on:T9 Product:T23
+E5	Action:T10 Acts-on:T12 Using:T13 Product:T11 Product2:T22
+E6	Action:T14 Acts-on:T15 Site:T16
+E7	Action:T17 Site:T19 Acts-on:E6 Product:T25
+E8	Action:T20 Acts-on:T22 Site:T23
+E9	Action:T24 Acts-on:T25 Acts-on2:T26 Product:T29
+E10	Action:T27 Acts-on:T28 Site:T29 Product:T32
+E11	Action:T30 Acts-on:T32 Site:E8 Product:T35 Product2:T37
+E12	Action:T33 Acts-on:T35
+E13	Action:T36 Acts-on:T37 Using:T38 Product:T40
+E14	Action:T39 Acts-on:T40 Site:T41 Product:T45
+E15	Action:T43 Acts-on:T45
+E16	Action:T44 Acts-on:T45
+R1	Setting Arg1:E3 Arg2:T7
+R2	Setting Arg1:E7 Arg2:T18
+R3	Measure Arg1:T22 Arg2:T21
+R4	Measure Arg1:T32 Arg2:T31
+R5	Mod-Link Arg1:T35 Arg2:T34
+R6	Setting Arg1:E14 Arg2:T42
+R7	Setting Arg1:E15 Arg2:T46
+R8	Setting Arg1:E16 Arg2:T46
+R9	Enables Arg1:E1 Arg2:E2
+R10	Coreference-Link Arg1:T4 Arg2:T2
+R11	Overlaps Arg1:E3 Arg2:E1
+R12	Overlaps Arg1:E4 Arg2:E1
+R13	Overlaps Arg1:E5 Arg2:E1
+R14	Meronym Arg1:T25 Arg2:T26
+R15	Meronym Arg1:T37 Arg2:T35
+R16	Enables Arg1:E12 Arg2:E13
+R17	Or Arg1:E16 Arg2:E15

@@ -1,0 +1,30 @@
+T1	Action 54 57	Add
+T2	Amount 58 63	2.5ml
+T3	Concentration 64 66	1M
+T4	Reagent 67 77	Tris - HCl
+T5	Measure-Type 78 80	pH
+T6	Numerical 81 84	7.5
+T7	Location 91 108	autoclaved bottle
+T8	Action 111 114	Add
+T9	Amount 115 118	1ml
+T10	Concentration 119 123	0.5M
+T11	Reagent 124 128	EDTA
+T12	Action 131 134	Add
+T13	Amount 135 139	2.5g
+T14	Reagent 140 143	SDS
+T15	Action 146 152	Adjust
+T16	Measure-Type 159 165	volume
+T17	Amount 169 174	250ml
+T18	Reagent 180 186	MilliQ
+E1	Action:T1 Acts-on:T4 Site:T7
+E2	Action:T8 Acts-on:T11 Site:E1
+E3	Action:T12 Acts-on:T14 Site:E2
+E4	Action:T15 Using:T18 Measure-Type-Link:T16 Acts-on:E3
+R1	Of-Type Arg1:T6 Arg2:T5
+R2	Measure Arg1:T4 Arg2:T3
+R3	Measure Arg1:T4 Arg2:T2
+R4	Setting Arg1:E1 Arg2:T6
+R5	Measure Arg1:T11 Arg2:T10
+R6	Measure Arg1:T11 Arg2:T9
+R7	Measure Arg1:T14 Arg2:T13
+R8	Setting Arg1:E4 Arg2:T17

@@ -1,0 +1,185 @@
+T1	Action 80 85	Start
+T2	Amount 91 99	1 - 5 ml
+T3	Reagent 100 121	E . coli LB culture *
+T4	Action 124 130	pellet
+T5	Reagent 131 136	cells
+T6	Device 142 157	microcentrifuge
+T7	Time 162 168	30 sec
+T8	Speed 172 182	11,000 x g
+T9	Action 185 192	Discard
+T10	Reagent 197 208	supernatant
+T11	Action 213 219	remove
+T12	Mention 235 241	liquid
+T13	Action 256 259	Add
+T14	Amount 260 266	250 µl
+T15	Reagent 267 290	PB1 Resuspension Buffer
+T16	Action 293 308	Vortex or pipet
+T17	Method 309 320	up and down
+T18	Action 324 333	resuspend
+T19	Reagent 338 349	cell pellet
+T20	Modifier 350 360	completely
+T21	Action 398 401	Add
+T22	Amount 402 408	250 µl
+T23	Reagent 409 425	PB2 Lysis Buffer
+T24	Action 428 434	Invert
+T25	Location 439 443	tube
+T26	Numerical 444 449	6 - 8
+T27	Action 459 462	mix
+T28	Modifier 463 473	completely
+T29	Action 494 502	Incubate
+T30	Temperature 506 522	room temperature
+T31	Time 533 538	5 min
+T32	Reagent 548 554	lysate
+T33	Modifier 555 562	appears
+T34	Action 563 568	clear
+T35	Action 571 574	Add
+T36	Amount 575 581	300 µl
+T37	Reagent 582 607	PB3 Neutralization Buffer
+T38	Action 610 616	Invert
+T39	Location 621 625	tube
+T40	Numerical 626 631	6 - 8
+T41	Action 641 644	mix
+T42	Modifier 645 655	completely
+T43	Action 658 671	Do not vortex
+T44	Action 676 686	Centrifuge
+T45	Time 691 696	5 min
+T46	Speed 700 710	11,000 x g
+T47	Temperature 714 730	room temperature
+T48	Action 853 858	Place
+T49	Location 861 893	SpinSmart Plasmid Binding Column
+T50	Location 899 914	Collection Tube
+T51	Amount 917 921	2 ml
+T52	Action 928 932	load
+T53	Modifier 935 942	maximum
+T54	Amount 946 952	750 µl
+T55	Reagent 960 971	supernatant
+T56	Location 1033 1039	column
+T57	Action 1042 1052	Centrifuge
+T58	Time 1057 1062	1 min
+T59	Speed 1066 1076	11,000 x g
+T60	Action 1079 1086	Discard
+T61	Reagent 1087 1101	flow - through
+T62	Action 1106 1111	place
+T63	Location 1116 1148	SpinSmart Plasmid Binding Column
+T64	Location 1158 1173	Collection Tube
+T65	Amount 1176 1180	2 ml
+T66	Action 1297 1304	perform
+T67	Method 1307 1316	wash step
+T68	Amount 1322 1328	500 µl
+T69	Reagent 1329 1344	PB4 Wash Buffer
+T70	Action 1345 1357	pre - warmed
+T71	Temperature 1361 1365	50°C
+T72	Action 1368 1378	Centrifuge
+T73	Time 1383 1388	1 min
+T74	Speed 1392 1402	11,000 x g
+T75	Action 1439 1442	Add
+T76	Amount 1443 1449	600 µl
+T77	Reagent 1450 1465	PB5 Wash Buffer
+T78	Action 1502 1512	Centrifuge
+T79	Time 1517 1522	1 min
+T80	Speed 1526 1536	11,000 x g
+T81	Action 1539 1546	Discard
+T82	Reagent 1547 1561	flow - through
+T83	Action 1566 1571	place
+T84	Location 1576 1600	SpinSmart Plasmid Column
+T85	Modifier 1615 1620	empty
+T86	Location 1621 1636	Collection Tube
+T87	Amount 1639 1643	2 ml
+T88	Action 1648 1658	Centrifuge
+T89	Time 1663 1668	2 min
+T90	Speed 1672 1682	11,000 x g
+T91	Action 1687 1694	discard
+T92	Location 1699 1714	Collection Tube
+T93	Amount 1717 1721	2 ml
+T94	Action 1726 1731	Place
+T95	Location 1736 1768	SpinSmart Plasmid Binding Column
+T96	Amount 1774 1780	1.5 ml
+T97	Location 1781 1801	microcentrifuge tube
+T98	Action 1823 1826	add
+T99	Amount 1827 1832	50 µl
+T100	Reagent 1833 1851	PB6 Elution Buffer
+T101	Action 1854 1862	Incubate
+T102	Time 1867 1872	1 min
+T103	Temperature 1876 1892	room temperature
+T104	Action 1895 1905	Centrifuge
+T105	Time 1910 1915	1 min
+T106	Speed 1919 1929	11,000 x g
+E1	Action:T1 Acts-on:T3 Product:T5
+E2	Action:T4 Acts-on:T5 Site:T6 Product:T10
+E3	Action:T9 Acts-on:T10
+E4	Action:T11 Acts-on:T12
+E5	Action:T13 Acts-on:T15 Site:E4 Product:T19
+E6	Action:T16 Using:T17 Acts-on:E5
+E7	Action:T18 Acts-on:T19
+E8	Action:T21 Acts-on:T23 Site:E7 Product:T25
+E9	Action:T24 Acts-on:T25 Count:T26
+E10	Action:T27 
+E11	Action:T29 Acts-on:E10
+E12	Action:T34 Acts-on:T32
+E13	Action:T35 Acts-on:T37 Site:E12 Product:T39
+E14	Action:T38 Acts-on:T39 Count:T40
+E15	Action:T41 
+E16	Action:T43 Acts-on:E15
+E17	Action:T44 Acts-on:E16 Product:T55
+E18	Action:T48 Acts-on:T49 Site:T50 Product:T56
+E19	Action:T52 Acts-on:T55 Site:T56
+E20	Action:T57 Acts-on:E19 Product:T61 Product2:T63
+E21	Action:T60 Acts-on:T61
+E22	Action:T62 Acts-on:T63 Site:T64
+E23	Action:T66 Using:T67 Acts-on:E22 Using2:T69
+E24	Action:T70 Acts-on:T69
+E25	Action:T72 Acts-on:E23
+E26	Action:T75 Acts-on:T77 Site:E25
+E27	Action:T78 Acts-on:E26 Product:T82 Product2:T84
+E28	Action:T81 Acts-on:T82
+E29	Action:T83 Acts-on:T84 Site:T86
+E30	Action:T88 Acts-on:E29 Product:T92 Product2:T95
+E31	Action:T91 Acts-on:T92
+E32	Action:T94 Acts-on:T95 Site:T97
+E33	Action:T98 Acts-on:T100 Site:E32
+E34	Action:T101 Acts-on:E33
+E35	Action:T104 Acts-on:E34
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T15 Arg2:T14
+R3	Measure Arg1:T23 Arg2:T22
+R4	Measure Arg1:T37 Arg2:T36
+R5	Measure Arg1:T50 Arg2:T51
+R6	Measure Arg1:T55 Arg2:T54
+R7	Measure Arg1:T64 Arg2:T65
+R8	Measure Arg1:T69 Arg2:T68
+R9	Measure Arg1:T77 Arg2:T76
+R10	Or Arg1:T87 Arg2:T86
+R11	Measure Arg1:T97 Arg2:T96
+R12	Measure Arg1:T100 Arg2:T99
+R13	Setting Arg1:E2 Arg2:T7
+R14	Setting Arg1:E2 Arg2:T8
+R15	Coreference-Link Arg1:T12 Arg2:T10
+R16	Setting Arg1:E34 Arg2:T102
+R17	Setting Arg1:E35 Arg2:T105
+R18	Setting Arg1:E30 Arg2:T89
+R19	Setting Arg1:E27 Arg2:T79
+R20	Setting Arg1:E25 Arg2:T73
+R21	Setting Arg1:E20 Arg2:T58
+R22	Setting Arg1:E17 Arg2:T45
+R23	Setting Arg1:E11 Arg2:T31
+R24	Mod-Link Arg1:E7 Arg2:T20
+R25	Mod-Link Arg1:E10 Arg2:T28
+R26	Setting Arg1:E11 Arg2:T30
+R27	Mod-Link Arg1:E12 Arg2:T33
+R28	Setting Arg1:E17 Arg2:T46
+R29	Setting Arg1:E17 Arg2:T47
+R30	Mod-Link Arg1:T54 Arg2:T53
+R31	Setting Arg1:E20 Arg2:T59
+R32	Setting Arg1:E24 Arg2:T71
+R33	Setting Arg1:E25 Arg2:T74
+R34	Setting Arg1:E27 Arg2:T80
+R35	Mod-Link Arg1:T86 Arg2:T85
+R36	Setting Arg1:E30 Arg2:T90
+R37	Measure Arg1:T92 Arg2:T93
+R38	Setting Arg1:E34 Arg2:T103
+R39	Setting Arg1:E35 Arg2:T106
+R40	Enables Arg1:E6 Arg2:E7
+R41	Enables Arg1:E9 Arg2:E10
+R42	Enables Arg1:E11 Arg2:E12
+R43	Mod-Link Arg1:E15 Arg2:T42
+R44	Enables Arg1:E14 Arg2:E15

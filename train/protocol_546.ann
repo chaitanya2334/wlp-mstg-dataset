@@ -1,0 +1,100 @@
+T1	Action 67 73	Excise
+T2	Reagent 78 90	DNA fragment
+T3	Reagent 100 111	agarose gel
+T4	Action 129 133	trim
+T5	Reagent 141 148	agarose
+T6	Action 151 159	Transfer
+T7	Size 165 171	1.5 ml
+T8	Location 172 186	microfuge tube
+T9	Action 191 196	weigh
+T10	Reagent 201 210	gel slice
+T11	Action 245 248	Add
+T12	Amount 249 258	4 volumes
+T13	Reagent 262 283	Gel Dissolving Buffer
+T14	Reagent 291 300	gel slice
+T15	Action 360 368	Incubate
+T16	Reagent 373 379	sample
+T17	Temperature 388 395	37–55°C
+T18	Time 473 485	5–10 minutes
+T19	Action 717 723	Insert
+T20	Location 724 730	column
+T21	Location 736 751	collection tube
+T22	Action 756 760	load
+T23	Reagent 761 767	sample
+T24	Location 777 783	column
+T25	Action 786 790	Spin
+T26	Time 795 803	1 minute
+T27	Speed 807 817	16,000 x g
+T28	Action 825 832	discard
+T29	Reagent 833 847	flow - through
+T30	Action 850 861	Re - insert
+T31	Location 862 868	column
+T32	Location 874 889	collection tube
+T33	Action 892 895	Add
+T34	Amount 896 902	200 μl
+T35	Reagent 903 918	DNA Wash Buffer
+T36	Action 946 950	spin
+T37	Time 955 963	1 minute
+T38	Speed 967 977	16,000 x g
+T39	Action 1045 1056	Re - insert
+T40	Location 1057 1063	column
+T41	Location 1069 1084	collection tube
+T42	Action 1087 1090	Add
+T43	Amount 1091 1097	200 μl
+T44	Reagent 1098 1113	DNA Wash Buffer
+T45	Action 1118 1122	spin
+T46	Time 1127 1135	1 minute
+T47	Speed 1139 1149	16,000 x g
+T48	Action 1194 1202	Transfer
+T49	Location 1203 1209	column
+T50	Size 1221 1227	1.5 ml
+T51	Location 1228 1242	microfuge tube
+T52	Action 1383 1386	Add
+T53	Amount 1387 1393	≥ 6 μl
+T54	Reagent 1397 1415	DNA Elution Buffer
+T55	Location 1437 1443	matrix
+T56	Action 1446 1450	Wait
+T57	Time 1455 1463	1 minute
+T58	Action 1470 1474	spin
+T59	Time 1479 1487	1 minute
+T60	Speed 1491 1501	16,000 x g
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T5
+E3	Action:T6 Acts-on:T8 Acts-on2:E2
+E4	Action:T9 Acts-on:T10 Acts-on2:E3 Product:T14
+E5	Action:T11 Acts-on:T13 Site:T14 Product:T16
+E6	Action:T15 Acts-on:T16 Product:T23
+E7	Action:T19 Acts-on:T20 Site:T21
+E8	Action:T22 Acts-on:T23 Site:T24
+E9	Action:T25 Acts-on:E8 Product:T29
+E10	Action:T28 Acts-on:T29 Product:T31
+E11	Action:T30 Acts-on:T31 Site:T32
+E12	Action:T33 Acts-on:T35 Acts-on2:E11
+E13	Action:T36 Acts-on:E12 Product:T40
+E14	Action:T39 Acts-on:T40 Site:T41
+E15	Action:T42 Acts-on:T44 Acts-on2:E14
+E16	Action:T45 Acts-on:E15 Product:T49
+E17	Action:T48 Acts-on:T49 Site:T51 Product:T55
+E18	Action:T52 Acts-on:T54 Site:T55
+E19	Action:T56 Acts-on:E18
+E20	Action:T58 Acts-on:E19
+R1	Measure Arg1:T8 Arg2:T7
+R2	Measure Arg1:T13 Arg2:T12
+R3	Setting Arg1:E6 Arg2:T17
+R4	Setting Arg1:E6 Arg2:T18
+R5	Setting Arg1:E9 Arg2:T26
+R6	Setting Arg1:E9 Arg2:T27
+R7	Measure Arg1:T35 Arg2:T34
+R8	Setting Arg1:E13 Arg2:T37
+R9	Setting Arg1:E13 Arg2:T38
+R10	Measure Arg1:T44 Arg2:T43
+R11	Setting Arg1:E16 Arg2:T46
+R12	Setting Arg1:E16 Arg2:T47
+R13	Measure Arg1:T51 Arg2:T50
+R14	Setting Arg1:E18 Arg2:T53
+R15	Setting Arg1:E19 Arg2:T57
+R16	Setting Arg1:E20 Arg2:T59
+R17	Setting Arg1:E20 Arg2:T60
+R18	Enables Arg1:E2 Arg2:E1
+R19	Coreference-Link Arg1:T21 Arg2:T32
+R20	Coreference-Link Arg1:T32 Arg2:T41

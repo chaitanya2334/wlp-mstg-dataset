@@ -1,0 +1,23 @@
+T1	Action 197 204	Prepare
+T2	Concentration 205 207	2x
+T3	Reagent 208 211	TSS
+T4	Modifier 212 224	without DMSO
+T5	Action 229 238	autoclave
+T6	Action 241 244	Add
+T7	Modifier 245 252	sterile
+T8	Reagent 253 257	DMSO
+T9	Action 278 284	Divide
+T10	Amount 288 293	10 ml
+T11	Location 294 302	aliquots
+T12	Action 307 312	store
+T13	Temperature 316 320	4 °C
+E1	Action:T1 Product:T3
+E2	Action:T5 Acts-on:T3
+E3	Action:T6 Acts-on:T8 Site:E2
+E4	Action:T9 Site:T11 Acts-on:E3
+E5	Action:T12 Acts-on:E4
+R1	Mod-Link Arg1:T8 Arg2:T7
+R2	Setting Arg1:E5 Arg2:T13
+R3	Measure Arg1:T3 Arg2:T2
+R4	Measure Arg1:T11 Arg2:T10
+R5	Mod-Link Arg1:T3 Arg2:T4

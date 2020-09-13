@@ -1,0 +1,90 @@
+T1	Action 71 75	Wash
+T2	Modifier 76 83	quickly
+T3	Reagent 88 97	specimens
+T4	Reagent 101 110	tap water
+T5	Action 115 122	dissect
+T6	Reagent 123 131	tadpoles
+T7	Method 142 172	Wassersug ( 1976 : p . 4 - 5 )
+T8	Action 175 182	Prepare
+T9	Reagent 187 202	fixing solution
+T10	Action 205 208	Fix
+T11	Reagent 213 224	dissections
+T12	Concentration 228 231	4 %
+T13	Reagent 232 246	Glutaraldehyde
+T14	Action 247 254	diluted
+T15	Reagent 262 277	fixing solution
+T16	Action 280 288	Post fix
+T17	Reagent 293 304	dissections
+T18	Concentration 308 311	1 %
+T19	Reagent 312 337	Osmium tetroxide solution
+T20	Action 340 349	Dehydrate
+T21	Measure-Type 356 372	ascending series
+T22	Reagent 376 384	acetones
+T23	Action 406 414	Transfer
+T24	Reagent 418 425	acetone
+T25	Concentration 426 430	50 %
+T26	Action 433 441	Transfer
+T27	Reagent 445 452	acetone
+T28	Concentration 453 457	70 %
+T29	Action 460 468	Transfer
+T30	Reagent 472 479	acetone
+T31	Concentration 480 484	90 %
+T32	Action 487 495	Transfer
+T33	Reagent 499 506	acetone
+T34	Concentration 507 511	95 %
+T35	Action 514 522	Transfer
+T36	Reagent 546 553	acetone
+T37	Concentration 554 558	95 %
+T38	Action 561 569	Transfer
+T39	Reagent 593 600	acetone
+T40	Concentration 601 605	95 %
+T41	Action 608 616	Transfer
+T42	Reagent 620 627	acetone
+T43	Concentration 628 633	100 %
+T44	Action 636 644	Transfer
+T45	Reagent 668 675	acetone
+T46	Concentration 676 681	100 %
+T47	Action 688 692	take
+T48	Reagent 698 707	specimens
+T49	Device 713 733	Critical Point Dryer
+T50	Action 736 741	Mount
+T51	Reagent 746 755	specimens
+T52	Location 759 764	stubs
+T53	Action 769 775	attach
+T54	Mention 776 780	them
+T55	Seal 788 807	double - sided tape
+T56	Action 810 814	Take
+T57	Reagent 819 828	specimens
+T58	Device 836 854	High Vaccum Coater
+E1	Action:T1 Acts-on:T3 Using:T4 Product:T6
+E2	Action:T5 Acts-on:T6 Using:T7 Product:T11
+E3	Action:T8 Acts-on:T9
+E4	Action:T10 Acts-on:T11 Product:T17
+E5	Action:T14 Using:T15 Acts-on:T13
+E6	Action:T16 Acts-on:T17 Site:T19
+E7	Action:T20 Acts-on:T22 Measure-Type-Link:T21 Acts-on2:E6
+E8	Action:T23 Site:T24 Acts-on:E7
+E9	Action:T26 Site:T27 Acts-on:E8
+E10	Action:T29 Site:T30 Acts-on:E9
+E11	Action:T32 Site:T33 Acts-on:E10
+E12	Action:T35 Site:T36 Acts-on:E11
+E13	Action:T38 Site:T39 Acts-on:E12
+E14	Action:T41 Site:T42 Acts-on:E13
+E15	Action:T44 Site:T45 Acts-on:E14 Product:T48
+E16	Action:T47 Acts-on:T48 Site:T49 Product:T51
+E17	Action:T50 Acts-on:T51 Site:T52 Product:T54
+E18	Action:T53 Acts-on:T54 Using:T55 Product:T57
+E19	Action:T56 Acts-on:T57 Site:T58
+R1	Mod-Link Arg1:E1 Arg2:T2
+R2	Measure Arg1:T13 Arg2:T12
+R3	Measure Arg1:T19 Arg2:T18
+R4	Measure Arg1:T24 Arg2:T25
+R5	Measure Arg1:T27 Arg2:T28
+R6	Measure Arg1:T30 Arg2:T31
+R7	Measure Arg1:T33 Arg2:T34
+R8	Measure Arg1:T36 Arg2:T37
+R9	Measure Arg1:T39 Arg2:T40
+R10	Measure Arg1:T42 Arg2:T43
+R11	Measure Arg1:T45 Arg2:T46
+R12	Coreference-Link Arg1:T54 Arg2:T52
+R13	Coreference-Link Arg1:T9 Arg2:T15

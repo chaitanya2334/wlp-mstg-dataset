@@ -1,0 +1,225 @@
+T1	Action 88 92	Grow
+T2	Reagent 97 111	diatom culture
+T3	Reagent 115 130	mid - log phase
+T4	Concentration 135 151	8.0E6 cells / ml
+T5	Reagent 156 181	Phaeodactylum tricornutum
+T6	Action 182 187	grown
+T7	Reagent 191 202	F / 2 media
+T8	Concentration 206 222	5.0 E7 cell / ml
+T9	Action 228 233	grown
+T10	Reagent 237 244	BG - 11
+T11	Action 361 365	Grow
+T12	Amount 366 370	1 mL
+T13	Reagent 374 390	E . coli culture
+T14	Reagent 411 428	mobillity plasmid
+T15	Reagent 431 440	Pta - MOB
+T16	Reagent 447 462	carrier plasmid
+T17	Time 465 474	overnight
+T18	Time 477 488	16 - 20 hrs
+T19	Reagent 494 510	LB + antibiotics
+T20	Action 552 556	grow
+T21	Mention 557 561	them
+T22	Temperature 565 569	37°C
+T23	Speed 573 580	270 rpm
+T24	Device 586 603	shaking incubator
+T25	Reagent 649 666	overnight culture
+T26	Action 670 679	inoculate
+T27	Amount 680 685	50 mL
+T28	Modifier 689 694	fresh
+T29	Reagent 695 710	LB + antibiotic
+T30	Generic-Measure 713 728	1 : 50 dilution
+T31	Modifier 735 739	each
+T32	Modifier 740 747	planned
+T33	Reagent 748 762	transformation
+T34	Action 765 769	Grow
+T35	Generic-Measure 776 794	OD600 of 0.8 - 1.0
+T36	Temperature 797 801	37°C
+T37	Speed 807 814	270 rpm
+T38	Time 869 880	3 - 4 hours
+T39	Reagent 885 901	E . coli culture
+T40	Action 905 912	growing
+T41	Action 915 922	measure
+T42	Reagent 927 971	Phaeodactylum tricornutum cell concentration
+T43	Device 979 986	FlowCam
+T44	Device 990 1004	haemocytometer
+T45	Action 1008 1017	calculate
+T46	Amount 1022 1037	required volume
+T47	Action 1048 1055	collect
+T48	Amount 1056 1061	2.5E8
+T49	Reagent 1062 1067	cells
+T50	Modifier 1072 1076	each
+T51	Reagent 1077 1091	transformation
+T52	Modifier 1098 1102	each
+T53	Reagent 1103 1117	transformation
+T54	Action 1120 1130	centrifuge
+T55	Amount 1131 1136	50 mL
+T56	Reagent 1140 1156	E . coli culture
+T57	Modifier 1165 1173	required
+T58	Reagent 1174 1199	Phaeodactylum tricornutum
+T59	Amount 1200 1206	volume
+T60	Speed 1210 1218	4000 x g
+T61	Time 1223 1233	10 minutes
+T62	Temperature 1237 1240	4°C
+T63	Action 1243 1252	Resuspend
+T64	Reagent 1253 1268	E . coli pellet
+T65	Amount 1272 1278	500 μL
+T66	Reagent 1282 1292	SOC medium
+T67	Action 1295 1304	Resuspend
+T68	Reagent 1305 1327	P . tricornutum pellet
+T69	Amount 1331 1337	500 μL
+T70	Reagent 1341 1350	L1 medium
+T71	Reagent 1364 1370	diatom
+T72	Reagent 1375 1392	E . coli cultures
+T73	Action 1403 1414	centrifuged
+T74	Modifier 1429 1433	same
+T75	Time 1434 1438	time
+T76	Action 1442 1450	minimize
+T77	Time 1455 1469	amount of time
+T78	Amount 1501 1507	1.5 mL
+T79	Location 1508 1512	tube
+T80	Action 1513 1516	mix
+T81	Amount 1517 1523	200 μl
+T82	Reagent 1527 1541	E . coli cells
+T83	Amount 1547 1553	200 μl
+T84	Reagent 1557 1588	Phaeodactylum tricornutum cells
+T85	Reagent 1591 1607	Negative control
+T86	Amount 1615 1621	1.5 mL
+T87	Location 1622 1626	tube
+T88	Action 1627 1630	mix
+T89	Amount 1631 1637	200 μl
+T90	Reagent 1641 1651	SOC medium
+T91	Amount 1657 1663	200 μl
+T92	Reagent 1667 1698	Phaeodactylum tricornutum cells
+T93	Action 1708 1716	Incubate
+T94	Location 1731 1754	negative control plates
+T95	Location 1770 1788	conjugation plates
+T96	Action 1791 1797	Spread
+T97	Reagent 1802 1809	mixture
+T98	Amount 1812 1818	400 μL
+T99	Location 1824 1842	Conjugation Plates
+T100	Action 1889 1897	Incubate
+T101	Location 1898 1904	plates
+T102	Time 1909 1919	90 minutes
+T103	Temperature 1923 1927	30°C
+T104	Location 1935 1939	dark
+T105	Action 1942 1946	Move
+T106	Location 1947 1953	plates
+T107	Device 1957 1972	light incubator
+T108	Temperature 1975 1979	18°C
+T109	Generic-Measure 1984 2012	100 μmol photons m - 2 s - 1
+T110	Time 2019 2025	2 days
+T111	Action 2028 2035	Collect
+T112	Reagent 2036 2041	cells
+T113	Action 2045 2051	adding
+T114	Amount 2052 2056	1 mL
+T115	Reagent 2060 2069	L1 medium
+T116	Device 2078 2090	cell scraper
+T117	Action 2094 2105	concentrate
+T118	Reagent 2106 2111	cells
+T119	Reagent 2116 2122	medium
+T120	Location 2126 2134	one side
+T121	Location 2142 2147	plate
+T122	Action 2150 2158	Transfer
+T123	Reagent 2159 2176	resuspended cells
+T124	Amount 2182 2188	1.5 ml
+T125	Location 2189 2209	microcentrifuge tube
+T126	Device 2217 2230	P1000 pipette
+T127	Device 2235 2246	filter tips
+T128	Action 2249 2255	Spread
+T129	Amount 2256 2262	200 μl
+T130	Reagent 2270 2285	cell suspension
+T131	Location 2291 2306	Selection Plate
+T132	Action 2309 2317	Incubate
+T133	Temperature 2321 2325	18°C
+T134	Generic-Measure 2330 2358	100 μmol photons m - 2 s - 1
+T135	Reagent 2365 2373	colonies
+T136	Modifier 2568 2581	Alternatively
+T137	Action 2582 2591	selection
+T138	Reagent 2607 2637	liquid BG - 11 Selection media
+T139	Reagent 2644 2648	eGFP
+T140	Action 2667 2673	sorted
+T141	Reagent 2680 2684	FACS
+E1	Action:T1 Acts-on:T2 Product:T3
+E2	Action:T6 Product:T3 Acts-on:T5 Site:T7
+E3	Action:T9 Product:T3 Acts-on:T10
+E4	Action:T11 Acts-on:T13 Site:T19
+E5	Action:T20 Acts-on:T21 Site:T24
+E6	Action:T26 Using:T25 Acts-on:T29 Product:T33
+E7	Action:T34 
+E8	Action:T40 Acts-on:T39
+E9	Action:T41 Acts-on:T42 Site:T43
+E10	Action:T45 
+E11	Action:T47 Using:E10 Acts-on:T49 Product:T51
+E12	Action:T54 Product:T53 Acts-on:T56 Acts-on2:T58
+E13	Action:T63 Acts-on:T64 Site:T66
+E14	Action:T67 Acts-on:T68 Site:T70
+E15	Action:T73 Acts-on:T71 Acts-on2:T72
+E16	Action:T76 Using:E15
+E17	Action:T80 Site:T79 Acts-on:T82 Acts-on2:T84 Product:T97
+E18	Action:T88 Product:T85 Site:T87 Acts-on:T90 Acts-on2:T92
+E19	Action:T93 Acts-on:T94
+E20	Action:T96 Acts-on:T97 Site:T99 Product:T101
+E21	Action:T100 Acts-on:T101 Site:T104 Product:T106
+E22	Action:T105 Acts-on:T106 Site:T107
+E23	Action:T111 Product:T112 Using:E24
+E24	Action:T113 Acts-on:T115
+E25	Action:T117 Using:T116 Acts-on:T118 Acts-on2:T119 Site:T120 Product:T123
+E26	Action:T122 Acts-on:T123 Site:T125 Using:T126 Using2:T127 Product:T130
+E27	Action:T128 Acts-on:T130 Site:T131
+E28	Action:T132 Acts-on:E27 Product:T135
+E29	Action:T137 Site:T138 Using:T139
+E30	Action:T140 Acts-on:E29 Using:T141
+R1	Measure Arg1:T3 Arg2:T4
+R2	Or Arg1:T4 Arg2:T8
+R3	Setting Arg1:E4 Arg2:T17
+R4	Measure Arg1:T13 Arg2:T12
+R5	Meronym Arg1:T14 Arg2:T13
+R6	Or Arg1:T14 Arg2:T15
+R7	Meronym Arg1:T16 Arg2:T13
+R8	Or Arg1:T17 Arg2:T18
+R9	Setting Arg1:E5 Arg2:T22
+R10	Setting Arg1:E5 Arg2:T23
+R11	Measure Arg1:T29 Arg2:T27
+R12	Mod-Link Arg1:T29 Arg2:T28
+R13	Measure Arg1:T29 Arg2:T30
+R14	Mod-Link Arg1:T33 Arg2:T31
+R15	Mod-Link Arg1:T33 Arg2:T32
+R16	Setting Arg1:E7 Arg2:T35
+R17	Setting Arg1:E7 Arg2:T36
+R18	Setting Arg1:E7 Arg2:T37
+R19	Setting Arg1:E8 Arg2:T38
+R20	Or Arg1:T43 Arg2:T44
+R21	Setting Arg1:E10 Arg2:T46
+R22	Measure Arg1:T49 Arg2:T48
+R23	Mod-Link Arg1:T51 Arg2:T50
+R24	Mod-Link Arg1:T53 Arg2:T52
+R25	Setting Arg1:E12 Arg2:T60
+R26	Setting Arg1:E12 Arg2:T61
+R27	Setting Arg1:E12 Arg2:T62
+R28	Measure Arg1:T56 Arg2:T55
+R29	Measure Arg1:T58 Arg2:T59
+R30	Mod-Link Arg1:T59 Arg2:T57
+R31	Measure Arg1:T66 Arg2:T65
+R32	Measure Arg1:T70 Arg2:T69
+R33	Setting Arg1:E15 Arg2:T75
+R34	Mod-Link Arg1:T75 Arg2:T74
+R35	Setting Arg1:E16 Arg2:T77
+R36	Measure Arg1:T79 Arg2:T78
+R37	Measure Arg1:T82 Arg2:T81
+R38	Measure Arg1:T84 Arg2:T83
+R39	Measure Arg1:T87 Arg2:T86
+R40	Measure Arg1:T90 Arg2:T89
+R41	Measure Arg1:T92 Arg2:T91
+R42	Measure Arg1:T97 Arg2:T98
+R43	Setting Arg1:E21 Arg2:T102
+R44	Setting Arg1:E21 Arg2:T103
+R45	Setting Arg1:E22 Arg2:T110
+R46	Setting Arg1:T107 Arg2:T108
+R47	Setting Arg1:T107 Arg2:T109
+R48	Measure Arg1:T115 Arg2:T114
+R49	Meronym Arg1:T120 Arg2:T121
+R50	Measure Arg1:T125 Arg2:T124
+R51	Measure Arg1:T130 Arg2:T129
+R52	Setting Arg1:E28 Arg2:T133
+R53	Setting Arg1:E28 Arg2:T134
+R54	Mod-Link Arg1:E29 Arg2:T136

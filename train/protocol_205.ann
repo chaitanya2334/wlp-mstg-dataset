@@ -1,0 +1,111 @@
+T1	Action 29 33	Soak
+T2	Reagent 38 51	PVDF membrane
+T3	Concentration 55 60	100 %
+T4	Reagent 61 69	methanol
+T5	Time 74 85	1‐2 minutes
+T6	Action 91 96	rinse
+T7	Numerical 97 106	2‐3 times
+T8	Reagent 112 127	deionized water
+T9	Action 130 141	Equilibrate
+T10	Reagent 142 146	PVDF
+T11	Reagent 150 173	nitrocellulose membrane
+T12	Reagent 177 206	diluted SWIFT™ Western Buffer
+T13	Time 211 223	5‐10 minutes
+T14	Action 226 231	Place
+T15	Location 236 265	supplied SWIFT™ Template Card
+T16	Location 271 283	flat surface
+T17	Action 288 293	place
+T18	Location 296 323	SWIFT™ Western Transfer Pad
+T19	Location 331 344	Template Card
+T20	Action 347 350	Add
+T21	Reagent 351 380	diluted SWIFT™ Western Buffer
+T22	Location 384 387	top
+T23	Location 395 398	pad
+T24	Action 402 406	soak
+T25	Mention 407 409	it
+T26	Modifier 497 506	Carefully
+T27	Action 507 512	place
+T28	Reagent 517 520	gel
+T29	Location 524 527	top
+T30	Location 535 562	SWIFT™ Western Transfer Pad
+T31	Action 567 599	ensure no air bubbles are formed
+T32	Action 602 610	Incubate
+T33	Time 615 624	5 minutes
+T34	Temperature 628 644	room temperature
+T35	Action 706 711	Place
+T36	Reagent 716 733	blotting membrane
+T37	Modifier 734 779	equilibrated in diluted SWIFT™ Western Buffer
+T38	Location 783 786	top
+T39	Reagent 794 797	gel
+T40	Action 800 820	avoiding air bubbles
+T41	Action 823 828	Place
+T42	Location 837 842	piece
+T43	Location 846 873	SWIFT™ Western Transfer Pad
+T44	Location 877 880	top
+T45	Reagent 888 896	membrane
+T46	Action 899 919	avoiding air bubbles
+T47	Action 922 928	Remove
+T48	Reagent 933 944	air bubbles
+T49	Action 948 955	rolling
+T50	Device 958 962	tube
+T51	Device 966 973	pipette
+T52	Location 983 986	top
+T53	Reagent 994 1002	sandwich
+T54	Action 1005 1010	Slide
+T55	Reagent 1015 1028	blot sandwich
+T56	Location 1036 1053	transfer cassette
+T57	Location 1066 1076	fiber pads
+T58	Action 1077 1083	soaked
+T59	Reagent 1087 1116	diluted SWIFT™ Western Buffer
+T60	Action 1119 1122	Put
+T61	Location 1127 1154	assembled transfer cassette
+T62	Location 1160 1183	Western transfer module
+T63	Reagent 1189 1218	diluted SWIFT™ Western Buffer
+T64	Action 1223 1226	run
+T65	Time 1234 1247	30‐60 minutes
+T66	Generic-Measure 1251 1272	200mA fixed current .
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T6 Count:T7 Using:T8 Acts-on:E1 Product:T10
+E3	Action:T9 Acts-on:T10 Site:T12
+E4	Action:T14 Acts-on:T15 Site:T16 Product:T19
+E5	Action:T17 Acts-on:T18 Site:T19 Product:T23
+E6	Action:T20 Acts-on:T21 Site:T22 Product:T30
+E7	Action:T24 Acts-on:T25
+E8	Action:T27 Acts-on:T28 Site:T29
+E9	Action:T31 
+E10	Action:T32 Acts-on:E8 Product:T39
+E11	Action:T35 Acts-on:T36 Site:T38 Product:T45
+E12	Action:T40 
+E13	Action:T41 Acts-on:T42 Site:T44 Product:T53
+E14	Action:T46 
+E15	Action:T47 Acts-on:T48
+E16	Action:T49 Site:T52 Acts-on:T50 Product:T55
+E17	Action:T54 Acts-on:T55 Site:T56 Product:T61
+E18	Action:T58 Site:T59 Acts-on:T57
+E19	Action:T60 Acts-on:T61 Site:T62
+E20	Action:T64 Acts-on:E19
+R1	Measure Arg1:T4 Arg2:T3
+R2	Setting Arg1:E1 Arg2:T5
+R3	Or Arg1:T10 Arg2:T11
+R4	Setting Arg1:E3 Arg2:T13
+R5	Meronym Arg1:T22 Arg2:T23
+R6	Coreference-Link Arg1:T25 Arg2:T23
+R7	Meronym Arg1:T29 Arg2:T30
+R8	Setting Arg1:E10 Arg2:T33
+R9	Setting Arg1:E10 Arg2:T34
+R10	Meronym Arg1:T38 Arg2:T39
+R11	Meronym Arg1:T42 Arg2:T43
+R12	Meronym Arg1:T44 Arg2:T45
+R13	Meronym Arg1:T52 Arg2:T53
+R14	Meronym Arg1:T57 Arg2:T56
+R15	Meronym Arg1:T63 Arg2:T62
+R16	Setting Arg1:E20 Arg2:T65
+R17	Setting Arg1:E20 Arg2:T66
+R18	Enables Arg1:E6 Arg2:E7
+R19	Mod-Link Arg1:E8 Arg2:T26
+R20	Prevents Arg1:E9 Arg2:E8
+R21	Mod-Link Arg1:T36 Arg2:T37
+R22	Prevents Arg1:E14 Arg2:E13
+R23	Prevents Arg1:E12 Arg2:E11
+R24	Enables Arg1:E16 Arg2:E15
+R25	Or Arg1:T50 Arg2:T51

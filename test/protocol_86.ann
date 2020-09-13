@@ -1,0 +1,428 @@
+T1	Action 53 58	Label
+T2	Amount 65 70	1.5mL
+T3	Location 71 92	microcentrifuge tubes
+T4	Method 96 116	intermediate # 1 & 2
+T5	Action 142 145	Add
+T6	Amount 146 151	990uL
+T7	Reagent 155 171	standard diluent
+T8	Location 175 201	intermediate tubes # 1 & 2
+T9	Action 204 216	Reconstitute
+T10	Numerical 217 220	one
+T11	Amount 221 225	20ug
+T12	Location 226 230	vial
+T13	Numerical 234 240	1 - 40
+T14	Reagent 241 249	standard
+T15	Amount 255 259	80uL
+T16	Reagent 263 279	Standard Diluent
+T17	Action 282 285	Mix
+T18	Modifier 286 290	well
+T19	Method 294 303	inversion
+T20	Action 306 319	do not vortex
+T21	Action 357 365	Incubate
+T22	Time 366 376	30 minutes
+T23	Temperature 380 396	room temperature
+T24	Action 539 542	mix
+T25	Modifier 543 547	well
+T26	Method 551 560	inversion
+T27	Action 563 576	do not vortex
+T28	Action 644 647	Add
+T29	Amount 648 652	10uL
+T30	Location 662 666	vial
+T31	Modifier 670 683	reconstituted
+T32	Numerical 684 690	1 - 40
+T33	Reagent 691 699	standard
+T34	Amount 703 708	990uL
+T35	Reagent 712 728	standard diluent
+T36	Location 732 753	intermediate tube # 1
+T37	Action 756 759	Mix
+T38	Modifier 760 764	well
+T39	Method 768 777	inversion
+T40	Action 780 793	do not vortex
+T41	Action 796 802	Remove
+T42	Amount 803 807	10uL
+T43	Location 813 834	intermediate # 1 tube
+T44	Action 839 842	add
+T45	Amount 846 851	990uL
+T46	Reagent 855 871	standard diluent
+T47	Location 875 896	intermediate # 2 tube
+T48	Action 899 902	Mix
+T49	Modifier 903 907	well
+T50	Method 911 920	inversion
+T51	Action 923 936	do not vortex
+T52	Action 1018 1023	Label
+T53	Amount 1026 1030	50mL
+T54	Location 1031 1046	centrifuge tube
+T55	Method 1050 1072	“1X Incubation Buffer”
+T56	Action 1075 1081	Dilute
+T57	Concentration 1082 1084	2X
+T58	Reagent 1085 1102	Incubation buffer
+T59	Concentration 1106 1108	1X
+T60	Action 1112 1118	adding
+T61	Amount 1119 1123	10mL
+T62	Concentration 1127 1129	2X
+T63	Reagent 1130 1147	incubation buffer
+T64	Amount 1151 1155	10mL
+T65	Reagent 1159 1174	lab grade water
+T66	Amount 1184 1188	50mL
+T67	Location 1189 1193	tube
+T68	Action 1194 1201	labeled
+T69	Method 1202 1224	“1X Incubation Buffer”
+T70	Action 1351 1354	Mix
+T71	Modifier 1355 1359	well
+T72	Method 1363 1372	vortexing
+T73	Action 1433 1438	Label
+T74	Amount 1441 1443	1L
+T75	Location 1444 1453	container
+T76	Method 1454 1470	“1X Wash buffer”
+T77	Action 1473 1479	Dilute
+T78	Concentration 1480 1482	5X
+T79	Reagent 1483 1494	wash buffer
+T80	Concentration 1498 1500	1X
+T81	Action 1511 1514	Mix
+T82	Amount 1515 1520	125mL
+T83	Concentration 1524 1526	5X
+T84	Reagent 1527 1538	Wash buffer
+T85	Amount 1544 1549	500mL
+T86	Reagent 1553 1568	lab grade water
+T87	Action 1599 1604	Label
+T88	Amount 1611 1616	1.5mL
+T89	Location 1617 1638	microcentrifuge tubes
+T90	Method 1642 1649	# 1 - 8
+T91	Action 1675 1682	Aliquot
+T92	Amount 1683 1688	240uL
+T93	Concentration 1696 1698	1X
+T94	Reagent 1699 1716	incubation buffer
+T95	Modifier 1751 1755	each
+T96	Location 1763 1783	standard curve tubes
+T97	Amount 1800 1805	490uL
+T98	Location 1809 1817	tube # 1
+T99	Action 1849 1855	Remove
+T100	Amount 1856 1860	10uL
+T101	Location 1866 1882	intermediate # 2
+T102	Action 1887 1890	add
+T103	Amount 1894 1899	490uL
+T104	Concentration 1900 1902	1X
+T105	Reagent 1903 1920	incubation buffer
+T106	Location 1924 1932	tube # 1
+T107	Action 2027 2030	Mix
+T108	Modifier 2031 2035	well
+T109	Method 2039 2048	inversion
+T110	Action 2051 2064	do not vortex
+T111	Modifier 2067 2075	Continue
+T112	Action 2076 2082	making
+T113	Method 2083 2108	1.8 fold serial dilutions
+T114	Action 2112 2118	adding
+T115	Amount 2119 2124	300uL
+T116	Modifier 2132 2140	previous
+T117	Reagent 2141 2149	dilution
+T118	Amount 2153 2158	240uL
+T119	Concentration 2162 2164	1X
+T120	Reagent 2165 2182	incubation buffer
+T121	Location 2186 2199	tubes # 2 - 7
+T122	Action 2202 2205	Mix
+T123	Modifier 2206 2210	well
+T124	Method 2214 2223	inversion
+T125	Action 2248 2254	Dilute
+T126	Reagent 2255 2262	samples
+T127	Concentration 2266 2268	1X
+T128	Reagent 2269 2286	incubation buffer
+T129	Concentration 2290 2292	2X
+T130	Action 2309 2312	Mix
+T131	Modifier 2313 2317	well
+T132	Method 2321 2330	inversion
+T133	Action 2395 2401	dilute
+T134	Reagent 2406 2412	sample
+T135	Generic-Measure 2413 2418	1 : 5
+T136	Concentration 2422 2424	1X
+T137	Reagent 2425 2442	incubation buffer
+T138	Reagent 2449 2455	sample
+T139	Action 2469 2476	diluted
+T140	Generic-Measure 2477 2482	1 : 2
+T141	Method 2486 2494	step VII
+T142	Measure-Type 2501 2522	final dilution factor
+T143	Generic-Measure 2526 2532	1 : 10
+T144	Action 2535 2538	Run
+T145	Reagent 2539 2546	samples
+T146	Numerical 2550 2559	duplicate
+T147	Numerical 2563 2573	triplicate
+T148	Action 2752 2755	run
+T149	Numerical 2756 2761	2 - 3
+T150	Action 2762 2771	dilutions
+T151	Reagent 2776 2782	sample
+T152	Modifier 2793 2801	at least
+T153	Numerical 2802 2803	1
+T154	Action 3003 3008	Label
+T155	Amount 3011 3015	15mL
+T156	Location 3016 3020	tube
+T157	Method 3026 3056	Diluted HRP Detection Antibody
+T158	Action 3061 3064	Add
+T159	Amount 3065 3068	6mL
+T160	Concentration 3072 3074	1X
+T161	Reagent 3075 3092	Incubation buffer
+T162	Location 3100 3104	tube
+T163	Action 3105 3112	labeled
+T164	Method 3115 3145	Diluted HRP Detection Antibody
+T165	Action 3150 3153	Add
+T166	Amount 3154 3157	6uL
+T167	Reagent 3161 3183	HRP Detection Antibody
+T168	Action 3188 3191	mix
+T169	Modifier 3192 3196	well
+T170	Method 3200 3209	vortexing
+T171	Action 3210 3216	Remove
+T172	Location 3217 3222	plate
+T173	Seal 3228 3238	foil pouch
+T174	Action 3241 3247	Remove
+T175	Modifier 3248 3253	extra
+T176	Location 3254 3265	strip wells
+T177	Action 3283 3288	store
+T178	Modifier 3292 3302	resealable
+T179	Seal 3303 3313	foil pouch
+T180	Temperature 3317 3324	2 - 8°C
+T181	Action 3337 3340	Add
+T182	Amount 3341 3346	300uL
+T183	Location 3351 3355	well
+T184	Concentration 3359 3361	1X
+T185	Reagent 3362 3373	Wash Buffer
+T186	Action 3407 3415	Dump out
+T187	Reagent 3416 3427	wash buffer
+T188	Action 3432 3439	pat dry
+T189	Device 3443 3455	paper towels
+T190	Action 3458 3461	Add
+T191	Amount 3462 3466	50uL
+T192	Modifier 3470 3474	each
+T193	Modifier 3475 3483	prepared
+T194	Reagent 3484 3492	standard
+T195	Location 3500 3505	plate
+T196	Numerical 3509 3518	duplicate
+T197	Numerical 3522 3532	triplicate
+T198	Action 3654 3657	Add
+T199	Amount 3658 3662	50uL
+T200	Modifier 3666 3670	each
+T201	Reagent 3671 3677	sample
+T202	Location 3685 3690	plate
+T203	Numerical 3694 3703	duplicate
+T204	Numerical 3707 3717	triplicate
+T205	Action 3720 3723	Add
+T206	Amount 3724 3728	50uL
+T207	Modifier 3729 3732	per
+T208	Location 3733 3737	well
+T209	Modifier 3741 3748	diluted
+T210	Reagent 3749 3771	HRP detection antibody
+T211	Modifier 3775 3778	all
+T212	Location 3779 3784	wells
+T213	Action 3787 3792	Cover
+T214	Location 3793 3798	plate
+T215	Seal 3804 3816	plate sealer
+T216	Action 3819 3822	Mix
+T217	Reagent 3827 3832	plate
+T218	Modifier 3833 3839	gently
+T219	Device 3845 3857	plate shaker
+T220	Action 3860 3868	Incubate
+T221	Time 3869 3878	overnight
+T222	Temperature 3882 3889	2 - 8°C
+T223	Amount 3917 3921	50uL
+T224	Modifier 3925 3932	diluted
+T225	Reagent 3933 3955	HRP detection antibody
+T226	Action 4062 4070	generate
+T227	Action 4093 4099	Remove
+T228	Location 4100 4105	plate
+T229	Device 4111 4123	refrigerator
+T230	Action 4128 4132	dump
+T231	Reagent 4133 4141	contents
+T232	Action 4144 4148	Wash
+T233	Location 4149 4154	plate
+T234	Action 4158 4164	adding
+T235	Amount 4165 4170	300uL
+T236	Concentration 4174 4176	1X
+T237	Reagent 4177 4188	Wash Buffer
+T238	Modifier 4189 4192	per
+T239	Location 4193 4197	well
+T240	Action 4200 4208	Dump out
+T241	Concentration 4209 4211	1X
+T242	Reagent 4212 4223	Wash Buffer
+T243	Action 4228 4235	pat dry
+T244	Action 4238 4244	Repeat
+T245	Method 4245 4258	steps 52 - 53
+T246	Numerical 4259 4271	4 more times
+T247	Action 4298 4301	Add
+T248	Amount 4302 4307	200uL
+T249	Reagent 4308 4319	TMB subrate
+T250	Modifier 4323 4327	each
+T251	Location 4328 4332	well
+T252	Action 4335 4339	Read
+T253	Location 4340 4345	Plate
+T254	Generic-Measure 4349 4354	620nm
+T255	Action 4447 4455	Incubate
+T256	Time 4456 4471	40 - 50 minutes
+T257	Temperature 4475 4491	room temperature
+T258	Location 4499 4503	dark
+E1	Action:T1 Acts-on:T3 Using:T4 Product:T8
+E2	Action:T5 Acts-on:T7 Site:T8 Product:T47
+E3	Action:T9 Acts-on:T12 Using:T16
+E4	Action:T17 Acts-on:E3 Using:T19
+E5	Action:T20 
+E6	Action:T21 Acts-on:E4
+E7	Action:T24 Acts-on:E6 Using:T26
+E8	Action:T27 
+E9	Action:T28 Site:T30 Acts-on:T33 Site2:T35
+E10	Action:T37 Acts-on:E9 Using:T39
+E11	Action:T40 
+E12	Action:T41 Site:T43
+E13	Action:T44 Acts-on:E12 Site:T46
+E14	Action:T48 Acts-on:E13 Using:T50
+E15	Action:T51 
+E16	Action:T52 Acts-on:T54 Using:T55
+E17	Action:T56 Acts-on:T58
+E18	Action:T60 Acts-on:T63 Site:T65
+E19	Action:T68 Acts-on:T67 Using:T69
+E20	Action:T70 Acts-on:E18 Using:T72 Product:T94
+E21	Action:T73 Acts-on:T75 Using:T76
+E22	Action:T77 Acts-on:T79
+E23	Action:T81 Acts-on:T84 Acts-on2:T86 Product:T185
+E24	Action:T87 Acts-on:T89 Using:T90
+E25	Action:T91 Acts-on:T94 Site:T96 Site2:T98 Product:T105
+E26	Action:T99 Site:T101
+E27	Action:T102 Acts-on:E26 Site:T105
+E28	Action:T107 Acts-on:E27 Using:T109
+E29	Action:T110 
+E30	Action:T112 Using:T113
+E31	Action:T114 Acts-on:T117 Site:T120
+E32	Action:T122 Acts-on:E31 Using:T124 Product:T126
+E33	Action:T125 Acts-on:T126 Using:T128
+E34	Action:T130 Acts-on:E33 Using:T132
+E35	Action:T133 Acts-on:T134 Using:T137
+E36	Action:T139 Acts-on:T138 Using:T141 Product:T145
+E37	Action:T144 Acts-on:T145 Count:T146
+E38	Action:T148 
+E39	Action:T150 Count:T149 Acts-on:T151
+E40	Action:T154 Acts-on:T156 Using:T157 Product:T162
+E41	Action:T158 Acts-on:T161 Site:T162
+E42	Action:T163 Acts-on:T162 Using:T164
+E43	Action:T165 Site:E41 Acts-on:T167
+E44	Action:T168 Acts-on:E43 Using:T170
+E45	Action:T171 Acts-on:T172 Site:T173
+E46	Action:T174 Acts-on:T176
+E47	Action:T177 Site:T179
+E48	Action:T181 Site:T183 Product:T187
+E49	Action:T186 Acts-on:T187
+E50	Action:T188 Acts-on:E49 Site:T189 Product:T195
+E51	Action:T190 Acts-on:T194 Site:T195 Product:T202
+E52	Action:T198 Acts-on:T201 Site:T202 Product:T212
+E53	Action:T205 Acts-on:T208 Site:T212 Product:T214
+E54	Action:T213 Acts-on:T214 Using:T215 Product:T217
+E55	Action:T216 Acts-on:T217 Using:T219
+E56	Action:T220 Acts-on:E55 Product:T228
+E57	Action:T226 
+E58	Action:T227 Acts-on:T228 Site:T229
+E59	Action:T230 Site:E58 Acts-on:T231
+E60	Action:T232 Acts-on:T233
+E61	Action:T234 Acts-on:T237 Site:T239
+E62	Action:T240 Acts-on:T242
+E63	Action:T243 Acts-on:E62
+E64	Action:T244 Using:T245 Count:T246 Acts-on:T251
+E65	Action:T247 Acts-on:T249 Site:T251
+E66	Action:T252 Acts-on:T253
+E67	Action:T255 Acts-on:E65 Site:T258
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T7 Arg2:T6
+R3	Measure Arg1:T12 Arg2:T10
+R4	Measure Arg1:T12 Arg2:T11
+R5	Meronym Arg1:T14 Arg2:T12
+R6	Measure Arg1:T14 Arg2:T13
+R7	Measure Arg1:T16 Arg2:T15
+R8	Mod-Link Arg1:E4 Arg2:T18
+R9	Setting Arg1:E6 Arg2:T22
+R10	Setting Arg1:E6 Arg2:T23
+R11	Mod-Link Arg1:E7 Arg2:T25
+R12	Measure Arg1:T33 Arg2:T29
+R13	Mod-Link Arg1:T33 Arg2:T31
+R14	Measure Arg1:T33 Arg2:T32
+R15	Measure Arg1:T35 Arg2:T34
+R16	Meronym Arg1:T35 Arg2:T36
+R17	Mod-Link Arg1:E10 Arg2:T38
+R18	Setting Arg1:E12 Arg2:T42
+R19	Measure Arg1:T46 Arg2:T45
+R20	Meronym Arg1:T46 Arg2:T47
+R21	Mod-Link Arg1:E14 Arg2:T49
+R22	Measure Arg1:T54 Arg2:T53
+R23	Setting Arg1:E17 Arg2:T59
+R24	Measure Arg1:T58 Arg2:T57
+R25	Measure Arg1:T63 Arg2:T61
+R26	Measure Arg1:T63 Arg2:T62
+R27	Measure Arg1:T65 Arg2:T64
+R28	Meronym Arg1:T65 Arg2:T67
+R29	Measure Arg1:T67 Arg2:T66
+R30	Mod-Link Arg1:E20 Arg2:T71
+R31	Measure Arg1:T75 Arg2:T74
+R32	Setting Arg1:E22 Arg2:T80
+R33	Measure Arg1:T79 Arg2:T78
+R34	Measure Arg1:T84 Arg2:T82
+R35	Measure Arg1:T84 Arg2:T83
+R36	Measure Arg1:T86 Arg2:T85
+R37	Measure Arg1:T89 Arg2:T88
+R38	Measure Arg1:T94 Arg2:T92
+R39	Measure Arg1:T94 Arg2:T93
+R40	Mod-Link Arg1:T96 Arg2:T95
+R41	Measure Arg1:T98 Arg2:T97
+R42	Setting Arg1:E26 Arg2:T100
+R43	Measure Arg1:T105 Arg2:T103
+R44	Measure Arg1:T105 Arg2:T104
+R45	Meronym Arg1:T105 Arg2:T106
+R46	Mod-Link Arg1:E28 Arg2:T108
+R47	Mod-Link Arg1:E30 Arg2:T111
+R48	Measure Arg1:T117 Arg2:T115
+R49	Mod-Link Arg1:T117 Arg2:T116
+R50	Measure Arg1:T120 Arg2:T118
+R51	Measure Arg1:T120 Arg2:T119
+R52	Meronym Arg1:T120 Arg2:T121
+R53	Mod-Link Arg1:E32 Arg2:T123
+R54	Setting Arg1:E33 Arg2:T129
+R55	Measure Arg1:T128 Arg2:T127
+R56	Mod-Link Arg1:E34 Arg2:T131
+R57	Setting Arg1:E35 Arg2:T135
+R58	Measure Arg1:T137 Arg2:T136
+R59	Setting Arg1:E36 Arg2:T140
+R60	Setting Arg1:E36 Arg2:T143
+R61	Of-Type Arg1:T143 Arg2:T142
+R62	Coreference-Link Arg1:T145 Arg2:T151
+R63	Or Arg1:T146 Arg2:T147
+R64	Or Arg1:T153 Arg2:T152
+R65	Measure Arg1:T156 Arg2:T155
+R66	Measure Arg1:T161 Arg2:T159
+R67	Measure Arg1:T161 Arg2:T160
+R68	Measure Arg1:T167 Arg2:T166
+R69	Mod-Link Arg1:E44 Arg2:T169
+R70	Mod-Link Arg1:T176 Arg2:T175
+R71	Setting Arg1:E47 Arg2:T180
+R72	Mod-Link Arg1:T179 Arg2:T178
+R73	Setting Arg1:E48 Arg2:T182
+R74	Meronym Arg1:T185 Arg2:T183
+R75	Measure Arg1:T185 Arg2:T184
+R76	Setting Arg1:E51 Arg2:T196
+R77	Measure Arg1:T194 Arg2:T191
+R78	Mod-Link Arg1:T194 Arg2:T192
+R79	Mod-Link Arg1:T194 Arg2:T193
+R80	Or Arg1:T196 Arg2:T197
+R81	Setting Arg1:E52 Arg2:T203
+R82	Measure Arg1:T201 Arg2:T199
+R83	Mod-Link Arg1:T201 Arg2:T200
+R84	Or Arg1:T203 Arg2:T204
+R85	Measure Arg1:T208 Arg2:T206
+R86	Mod-Link Arg1:T208 Arg2:T207
+R87	Meronym Arg1:T210 Arg2:T208
+R88	Mod-Link Arg1:T210 Arg2:T209
+R89	Mod-Link Arg1:T212 Arg2:T211
+R90	Mod-Link Arg1:E55 Arg2:T218
+R91	Setting Arg1:E56 Arg2:T221
+R92	Setting Arg1:E56 Arg2:T222
+R93	Measure Arg1:T225 Arg2:T223
+R94	Mod-Link Arg1:T225 Arg2:T224
+R95	Measure Arg1:T237 Arg2:T235
+R96	Measure Arg1:T237 Arg2:T236
+R97	Mod-Link Arg1:T239 Arg2:T238
+R98	Measure Arg1:T242 Arg2:T241
+R99	Measure Arg1:T249 Arg2:T248
+R100	Mod-Link Arg1:T251 Arg2:T250
+R101	Setting Arg1:E66 Arg2:T254
+R102	Setting Arg1:E67 Arg2:T256
+R103	Setting Arg1:E67 Arg2:T257

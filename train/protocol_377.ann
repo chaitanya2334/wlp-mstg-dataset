@@ -1,0 +1,65 @@
+T1	Action 31 38	Prepare
+T2	Concentration 39 44	40 mM
+T3	Reagent 45 55	cap analog
+T4	Action 58 62	Thaw
+T5	Modifier 67 76	necessary
+T6	Reagent 77 91	kit components
+T7	Action 94 97	mix
+T8	Action 102 114	pulse - spin
+T9	Device 120 129	microfuge
+T10	Action 133 140	collect
+T11	Reagent 141 150	solutions
+T12	Location 158 165	bottoms
+T13	Location 169 174	tubes
+T14	Action 177 185	Assemble
+T15	Reagent 190 198	reaction
+T16	Temperature 202 218	room temperature
+T17	Action 244 247	Mix
+T18	Modifier 248 258	thoroughly
+T19	Action 263 275	pulse - spin
+T20	Action 278 286	Incubate
+T21	Temperature 290 294	37°C
+T22	Time 299 306	2 hours
+T23	Action 328 334	remove
+T24	Reagent 335 347	template DNA
+T25	Action 350 353	add
+T26	Amount 354 358	2 μl
+T27	Reagent 362 369	DNase I
+T28	Action 389 392	mix
+T29	Action 397 405	incubate
+T30	Temperature 409 413	37°C
+T31	Time 418 428	15 minutes
+T32	Action 431 438	Proceed
+T33	Action 444 456	purification
+T34	Reagent 460 475	synthesized RNA
+T35	Action 479 487	analysis
+T36	Reagent 491 513	transcription products
+T37	Method 517 536	gel electrophoresis
+E1	Action:T1 Product:T3
+E2	Action:T4 Acts-on:T6
+E3	Action:T7 Using:T9
+E4	Action:T8 Using:T9
+E5	Action:T10 Acts-on:T11 Site:T12 Using:E3 Using2:E4
+E6	Action:T14 Acts-on:T15
+E7	Action:T17 
+E8	Action:T19 
+E9	Action:T20 
+E10	Action:T23 Acts-on:T24 Using:E11
+E11	Action:T25 Acts-on:T27
+E12	Action:T28 
+E13	Action:T29 
+E14	Action:T32 Using:E15
+E15	Action:T33 Acts-on:T34
+E16	Action:T35 Acts-on:T36 Using:T37
+R1	Measure Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T6 Arg2:T5
+R3	Meronym Arg1:T12 Arg2:T13
+R4	Setting Arg1:E6 Arg2:T16
+R5	Mod-Link Arg1:E7 Arg2:T18
+R6	Setting Arg1:E9 Arg2:T21
+R7	Setting Arg1:E9 Arg2:T22
+R8	Measure Arg1:T27 Arg2:T26
+R9	Setting Arg1:E13 Arg2:T30
+R10	Setting Arg1:E13 Arg2:T31
+R11	Setting Arg1:E12 Arg2:T30
+R12	Setting Arg1:E12 Arg2:T31

@@ -1,0 +1,70 @@
+T1	Amount 83 86	5µL
+T2	Reagent 93 111	enrichment culture
+T3	Amount 117 123	0.2 µm
+T4	Action 124 132	filtered
+T5	Action 137 148	centrifuged
+T6	Time 151 157	10 min
+T7	Speed 161 166	3000g
+T8	Reagent 169 192	cell - free supernatant
+T9	Action 198 205	spotted
+T10	Modifier 211 236	carbon / formvar - coated
+T11	Location 237 262	electron microscope grids
+T12	Mention 294 296	It
+T13	Action 316 322	absorb
+T14	Time 327 332	2 min
+T15	Action 335 341	Remove
+T16	Reagent 342 348	sample
+T17	Location 354 358	grid
+T18	Action 369 377	bringing
+T19	Size 380 385	small
+T20	Device 400 421	piece of filter paper
+T21	Modifier 422 447	perpendicular to the grid
+T22	Location 455 471	side of the grid
+T23	Reagent 478 484	sample
+T24	Action 493 500	removed
+T25	Method 504 511	wicking
+T26	Action 514 519	Stain
+T27	Reagent 520 524	grid
+T28	Action 528 535	placing
+T29	Amount 541 544	5μL
+T30	Concentration 553 556	2 %
+T31	Reagent 557 571	Uranyl Acetate
+T32	Reagent 577 593	Phosphotungstate
+T33	Time 600 615	15 - 30 seconds
+T34	Action 618 624	Remove
+T35	Reagent 625 630	stain
+T36	Method 634 641	wicking
+T37	Action 653 660	Air dry
+T38	Time 674 684	10 minutes
+T39	Reagent 687 694	Samples
+T40	Action 699 707	examined
+T41	Method 711 743	transmission electron microscopy
+E1	Action:T4 Acts-on:T2
+E2	Action:T5 Acts-on:E1 Product:T8
+E3	Action:T9 Acts-on:T8 Site:T11 Product:T12
+E4	Action:T13 Acts-on:T12 Product:T16
+E5	Action:T15 Acts-on:T16 Site:T17 Product:T23
+E6	Action:T18 Acts-on:T20 Site:T22
+E7	Action:T24 Acts-on:T23 Using:T25 Product:T27
+E8	Action:T26 Acts-on:T27 Product:T35
+E9	Action:T28 Acts-on:T31 Site:T27
+E10	Action:T34 Acts-on:T35 Using:T36
+E11	Action:T37 Acts-on:E10 Product:T39
+E12	Action:T40 Acts-on:T39 Using:T41
+R1	Measure Arg1:T2 Arg2:T1
+R2	Or Arg1:T1 Arg2:T3
+R3	Setting Arg1:E2 Arg2:T6
+R4	Setting Arg1:E2 Arg2:T7
+R5	Mod-Link Arg1:T11 Arg2:T10
+R6	Setting Arg1:E4 Arg2:T14
+R7	Setting Arg1:T20 Arg2:T19
+R8	Mod-Link Arg1:T22 Arg2:T21
+R9	Measure Arg1:T31 Arg2:T30
+R10	Measure Arg1:T31 Arg2:T29
+R11	Meronym Arg1:T31 Arg2:T32
+R12	Setting Arg1:E9 Arg2:T33
+R13	Setting Arg1:E11 Arg2:T38
+R14	Meronym Arg1:T16 Arg2:T17
+R15	Enables Arg1:E6 Arg2:E5
+R16	Coreference-Link Arg1:T22 Arg2:T17
+R17	Enables Arg1:E9 Arg2:E8

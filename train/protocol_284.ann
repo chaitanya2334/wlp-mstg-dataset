@@ -1,0 +1,133 @@
+T1	Action 42 47	Sting
+T2	Numerical 48 49	3
+T3	Location 50 55	holes
+T4	Size 61 66	0.5ml
+T5	Location 67 80	Eppendorf cap
+T6	Action 85 88	put
+T7	Amount 94 98	15ml
+T8	Location 99 112	Eppendorf cap
+T9	Modifier 118 129	removed lid
+T10	Action 132 138	Remove
+T11	Reagent 143 155	flies’ wings
+T12	Action 158 163	spear
+T13	Reagent 168 180	fly’s thorax
+T14	Device 190 203	peaked stylus
+T15	Action 206 213	Collect
+T16	Numerical 214 216	20
+T17	Reagent 217 230	speared flies
+T18	Size 238 243	0.5ml
+T19	Location 244 268	Eppendorf cap with holes
+T20	Location 274 277	ice
+T21	Action 280 290	Centrifuge
+T22	Size 295 300	0.5ml
+T23	Location 301 314	Eppendorf cap
+T24	Size 326 331	1.5ml
+T25	Location 332 335	one
+T26	Time 338 343	1 min
+T27	Speed 346 354	5000 rpm
+T28	Temperature 360 363	4°C
+T29	Action 368 375	Discard
+T30	Size 380 385	0.5ml
+T31	Location 386 399	Eppendorf cap
+T32	Action 402 406	soak
+T33	Reagent 411 417	pellet
+T34	Location 425 434	capillary
+T35	Action 437 443	Record
+T36	Measure-Type 448 475	amount of soaked haemolymph
+T37	Reagent 532 542	haemolymph
+T38	Location 552 561	capillary
+T39	Action 569 580	transferred
+T40	Device 590 601	suction cup
+T41	Location 602 610	anywhere
+T42	Action 613 616	Add
+T43	Amount 617 623	19.5µl
+T44	Modifier 624 628	cold
+T45	Reagent 629 632	PBS
+T46	Amount 636 641	0.5µl
+T47	Reagent 642 652	haemolymph
+T48	Action 655 658	Add
+T49	Amount 659 663	10µl
+T50	Reagent 672 679	mixture
+T51	Amount 683 687	30µl
+T52	Reagent 688 707	Citrate Acid Buffer
+T53	Amount 712 716	10µl
+T54	Concentration 722 725	3 %
+T55	Reagent 726 766	Trehalase - Citrate acid buffer solution
+T56	Action 769 777	Incubate
+T57	Time 778 788	over night
+T58	Temperature 792 796	37°C
+T59	Action 799 802	Add
+T60	Amount 803 807	50µl
+T61	Reagent 808 819	Tris Buffer
+T62	Amount 822 825	80µ
+T63	Reagent 834 841	mixture
+T64	Action 846 851	added
+T65	Amount 855 861	156.8µ
+T66	Reagent 862 877	Glucose oxidase
+T67	Amount 909 914	3.2µl
+T68	Reagent 915 930	o - Dianisidine
+T69	Action 967 975	Incubate
+T70	Modifier 980 987	exactly
+T71	Time 988 994	30 min
+T72	Temperature 998 1002	37°C
+T73	Action 1005 1009	Stop
+T74	Location 1010 1018	reaction
+T75	Action 1022 1028	adding
+T76	Amount 1029 1034	160µl
+T77	Reagent 1035 1048	Sulfuric Acid
+T78	Action 1051 1058	Measure
+T79	Generic-Measure 1062 1067	540nm
+T80	Device 1088 1100	spectrometer
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T6 Site:T8 Acts-on:E1 Product:T19
+E3	Action:T10 Acts-on:T11 Product:T13
+E4	Action:T12 Acts-on:T13 Using:T14 Product:T17
+E5	Action:T15 Acts-on:T17 Site:T19 Product:T23
+E6	Action:T21 Acts-on:T23 Site:T25 Product:T31
+E7	Action:T29 Acts-on:T31 Product:T33
+E8	Action:T32 Acts-on:T33 Using:T34
+E9	Action:T35 Measure-Type-Link:T36 Acts-on:E8 Product:T37
+E10	Action:T39 Acts-on:T37 Using:T40 Site:T41 Product:T47
+E11	Action:T42 Acts-on:T45 Site:T47 Product:T50
+E12	Action:T48 Acts-on:T50 Site:T52 Site2:T55
+E13	Action:T56 Acts-on:E12
+E14	Action:T59 Acts-on:T61 Site:E13 Product:T63
+E15	Action:T64 Acts-on:T63 Site:T66 Site2:T68
+E16	Action:T69 Acts-on:E15 Product:T74
+E17	Action:T73 Acts-on:T74
+E18	Action:T75 Acts-on:T77 Site:E16
+E19	Action:T78 Using:T80 Acts-on:E17
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Measure Arg1:T8 Arg2:T7
+R4	Measure Arg1:T17 Arg2:T16
+R5	Measure Arg1:T19 Arg2:T18
+R6	Measure Arg1:T25 Arg2:T24
+R7	Measure Arg1:T23 Arg2:T22
+R8	Setting Arg1:E6 Arg2:T26
+R9	Setting Arg1:E6 Arg2:T27
+R10	Setting Arg1:E6 Arg2:T28
+R11	Measure Arg1:T31 Arg2:T30
+R12	Measure Arg1:T47 Arg2:T46
+R13	Mod-Link Arg1:T45 Arg2:T44
+R14	Measure Arg1:T45 Arg2:T43
+R15	Measure Arg1:T55 Arg2:T54
+R16	Measure Arg1:T55 Arg2:T53
+R17	Measure Arg1:T52 Arg2:T51
+R18	Measure Arg1:T50 Arg2:T49
+R19	Setting Arg1:E13 Arg2:T57
+R20	Setting Arg1:E13 Arg2:T58
+R21	Measure Arg1:T61 Arg2:T60
+R22	Measure Arg1:T68 Arg2:T67
+R23	Measure Arg1:T66 Arg2:T65
+R24	Measure Arg1:T63 Arg2:T62
+R25	Mod-Link Arg1:T71 Arg2:T70
+R26	Setting Arg1:E16 Arg2:T71
+R27	Setting Arg1:E16 Arg2:T72
+R28	Measure Arg1:T77 Arg2:T76
+R29	Setting Arg1:E19 Arg2:T79
+R30	Mod-Link Arg1:T8 Arg2:T9
+R31	Meronym Arg1:T19 Arg2:T20
+R32	Meronym Arg1:T23 Arg2:T25
+R33	Meronym Arg1:T37 Arg2:T38
+R34	Enables Arg1:E18 Arg2:E17

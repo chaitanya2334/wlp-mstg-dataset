@@ -1,0 +1,186 @@
+T1	Action 63 69	Vortex
+T2	Reagent 70 79	AMPure XP
+T3	Reagent 83 106	RXN pureplus SPRI beads
+T4	Method 110 119	resuspend
+T5	Action 122 126	Make
+T6	Reagent 132 146	pooled library
+T7	Amount 153 159	100 μl
+T8	Action 175 178	Add
+T9	Amount 179 184	60 μl
+T10	Reagent 197 207	SPRI beads
+T11	Amount 211 217	100 μl
+T12	Reagent 228 239	PCR product
+T13	Action 242 245	Mix
+T14	Modifier 246 250	well
+T15	Method 254 275	pipetting up and down
+T16	Modifier 276 284	at least
+T17	Numerical 285 287	10
+T18	Action 296 302	Vortex
+T19	Reagent 303 318	AMPure XP beads
+T20	Method 322 331	resuspend
+T21	Action 334 342	Incubate
+T22	Time 347 356	5 minutes
+T23	Temperature 360 376	room temperature
+T24	Modifier 379 386	Quickly
+T25	Action 387 391	spin
+T26	Location 396 400	tube
+T27	Action 405 410	place
+T28	Mention 411 413	it
+T29	Device 432 446	magnetic stand
+T30	Action 450 458	separate
+T31	Reagent 459 464	beads
+T32	Reagent 470 481	supernatant
+T33	Reagent 494 502	solution
+T34	Modifier 534 543	carefully
+T35	Action 544 550	remove
+T36	Action 555 562	discard
+T37	Reagent 567 578	supernatant
+T38	Action 679 682	Add
+T39	Amount 683 689	200 μl
+T40	Concentration 693 697	80 %
+T41	Modifier 698 714	freshly prepared
+T42	Reagent 715 722	ethanol
+T43	Location 730 734	tube
+T44	Device 748 762	magnetic stand
+T45	Action 765 773	Incubate
+T46	Temperature 777 793	room temperature
+T47	Time 798 808	30 seconds
+T48	Modifier 820 829	carefully
+T49	Action 830 836	remove
+T50	Action 841 848	discard
+T51	Reagent 853 864	supernatant
+T52	Action 867 870	Add
+T53	Amount 871 877	200 μl
+T54	Concentration 881 885	80 %
+T55	Modifier 886 902	freshly prepared
+T56	Reagent 903 910	ethanol
+T57	Location 918 922	tube
+T58	Device 936 950	magnetic stand
+T59	Action 953 961	Incubate
+T60	Temperature 965 981	room temperature
+T61	Time 986 996	30 seconds
+T62	Modifier 1008 1017	carefully
+T63	Action 1018 1024	remove
+T64	Action 1029 1036	discard
+T65	Reagent 1041 1052	supernatant
+T66	Action 1055 1058	Add
+T67	Amount 1059 1065	200 μl
+T68	Concentration 1069 1073	80 %
+T69	Modifier 1074 1090	freshly prepared
+T70	Reagent 1091 1098	ethanol
+T71	Location 1106 1110	tube
+T72	Device 1124 1138	magnetic stand
+T73	Action 1141 1149	Incubate
+T74	Temperature 1153 1169	room temperature
+T75	Time 1174 1184	30 seconds
+T76	Modifier 1196 1205	carefully
+T77	Action 1206 1212	remove
+T78	Action 1217 1224	discard
+T79	Reagent 1229 1240	supernatant
+T80	Action 1243 1246	Air
+T81	Reagent 1255 1260	beads
+T82	Time 1265 1275	10 minutes
+T83	Location 1286 1290	tube
+T84	Device 1301 1315	magnetic stand
+T85	Method 1325 1333	lid open
+T86	Action 1336 1341	Elute
+T87	Reagent 1346 1356	DNA target
+T88	Reagent 1366 1371	beads
+T89	Action 1375 1381	adding
+T90	Amount 1382 1387	30 μl
+T91	Concentration 1391 1396	10 mM
+T92	Reagent 1397 1407	Tris - HCl
+T93	pH 1410 1416	pH 8.0
+T94	Concentration 1420 1424	0.1X
+T95	Reagent 1425 1427	TE
+T96	Action 1593 1596	Mix
+T97	Modifier 1597 1601	well
+T98	Method 1605 1626	pipetting up and down
+T99	Device 1637 1649	vortex mixer
+T100	Modifier 1652 1659	Quickly
+T101	Action 1660 1664	spin
+T102	Location 1669 1673	tube
+T103	Action 1678 1683	place
+T104	Mention 1684 1686	it
+T105	Device 1694 1708	magnetic stand
+T106	Reagent 1721 1729	solution
+T107	Action 1761 1769	transfer
+T108	Amount 1770 1774	27ul
+T109	Modifier 1777 1780	new
+T110	Location 1781 1789	PCR tube
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T10
+E2	Action:T5 Product:T6 Product2:T12
+E3	Action:T8 Acts-on:T10 Site:T12
+E4	Action:T13 Acts-on:E3 Using:T15 Count:T17
+E5	Action:T18 Acts-on:T19 Using:T20
+E6	Action:T21 Product:T26
+E7	Action:T25 Acts-on:T26
+E8	Action:T27 Acts-on:T28 Site:T29 Product:T33
+E9	Action:T30 Using:E8 Acts-on:T31 Site:T32
+E10	Action:T35 Site:T33 Acts-on:T37 Product:T43
+E11	Action:T36 Site:E10 Acts-on:T37
+E12	Action:T38 Acts-on:T42 Site:T43
+E13	Action:T45 Acts-on:E12
+E14	Action:T49 Site:E13 Acts-on:T51 Product:T57
+E15	Action:T50 Site:E14 Acts-on:T51
+E16	Action:T52 Acts-on:T56 Site:T57
+E17	Action:T59 Acts-on:E16
+E18	Action:T63 Site:E17 Acts-on:T65
+E19	Action:T64 Site:E18 Acts-on:T65
+E20	Action:T66 Acts-on:T70 Site:T71
+E21	Action:T73 Acts-on:E20
+E22	Action:T77 Site:E21 Acts-on:T79 Product:T83
+E23	Action:T78 Site:E22 Acts-on:T79
+E24	Action:T80 Acts-on:T81 Site:T83 Using:T85
+E25	Action:T86 Acts-on:T87 Site:T88 Using:E26
+E26	Action:T89 Acts-on:T92
+E27	Action:T96 Acts-on:E26 Using:T98 Product:T102
+E28	Action:T101 Acts-on:T102
+E29	Action:T103 Acts-on:T104 Site:T105 Product:T106
+E30	Action:T107 Acts-on:T106 Site:T110
+R1	Or Arg1:T2 Arg2:T3
+R2	Measure Arg1:T6 Arg2:T7
+R3	Measure Arg1:T10 Arg2:T9
+R4	Measure Arg1:T12 Arg2:T11
+R5	Mod-Link Arg1:E4 Arg2:T14
+R6	Mod-Link Arg1:T17 Arg2:T16
+R7	Setting Arg1:E6 Arg2:T22
+R8	Setting Arg1:E6 Arg2:T23
+R9	Mod-Link Arg1:E7 Arg2:T24
+R10	Coreference-Link Arg1:T28 Arg2:T26
+R11	Mod-Link Arg1:E10 Arg2:T34
+R12	Setting Arg1:E12 Arg2:T39
+R13	Measure Arg1:T42 Arg2:T39
+R14	Measure Arg1:T42 Arg2:T40
+R15	Mod-Link Arg1:T42 Arg2:T41
+R16	Meronym Arg1:T43 Arg2:T44
+R17	Setting Arg1:E13 Arg2:T46
+R18	Setting Arg1:E13 Arg2:T47
+R19	Mod-Link Arg1:E14 Arg2:T48
+R20	Measure Arg1:T56 Arg2:T53
+R21	Measure Arg1:T56 Arg2:T54
+R22	Mod-Link Arg1:T56 Arg2:T55
+R23	Meronym Arg1:T57 Arg2:T58
+R24	Setting Arg1:E17 Arg2:T60
+R25	Setting Arg1:E17 Arg2:T61
+R26	Mod-Link Arg1:E18 Arg2:T62
+R27	Measure Arg1:T70 Arg2:T67
+R28	Measure Arg1:T70 Arg2:T68
+R29	Mod-Link Arg1:T70 Arg2:T69
+R30	Meronym Arg1:T71 Arg2:T72
+R31	Setting Arg1:E21 Arg2:T74
+R32	Setting Arg1:E21 Arg2:T75
+R33	Mod-Link Arg1:E22 Arg2:T76
+R34	Setting Arg1:E24 Arg2:T82
+R35	Meronym Arg1:T83 Arg2:T84
+R36	Measure Arg1:T92 Arg2:T90
+R37	Measure Arg1:T92 Arg2:T91
+R38	Measure Arg1:T92 Arg2:T93
+R39	Or Arg1:T92 Arg2:T95
+R40	Measure Arg1:T95 Arg2:T94
+R41	Mod-Link Arg1:E27 Arg2:T97
+R42	Or Arg1:T98 Arg2:T99
+R43	Mod-Link Arg1:E28 Arg2:T100
+R44	Coreference-Link Arg1:T104 Arg2:T102
+R45	Measure Arg1:T106 Arg2:T108
+R46	Mod-Link Arg1:T110 Arg2:T109

@@ -1,0 +1,16 @@
+T1	Amount 10 17	46.525g
+T2	Reagent 18 36	EDTA disodium 2H20
+T3	Amount 40 45	200ml
+T4	Reagent 46 52	MilliQ
+T5	Action 53 59	Adjust
+T6	pH 63 69	pH 8.0
+T7	Reagent 75 87	NaOH pellets
+T8	Amount 90 94	~ 5g
+T9	Action 97 106	Autoclave
+E1	Action:T5 Using:T7 Acts-on:T4
+E2	Action:T9 Acts-on:E1
+R1	Measure Arg1:T2 Arg2:T1
+R2	Measure Arg1:T4 Arg2:T3
+R3	Setting Arg1:E1 Arg2:T6
+R4	Measure Arg1:T7 Arg2:T8
+R5	Meronym Arg1:T2 Arg2:T4

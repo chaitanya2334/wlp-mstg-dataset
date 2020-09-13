@@ -1,0 +1,146 @@
+T1	Action 35 42	Prepare
+T2	Size 43 55	17mm x 100mm
+T3	Location 56 84	round - bottom culture tubes
+T4	Temperature 118 134	room temperature
+T5	Action 137 142	Place
+T6	Reagent 143 162	SOC recovery medium
+T7	Temperature 168 172	37°C
+T8	Location 173 183	water bath
+T9	Action 186 196	Pre - warm
+T10	Location 197 213	selective plates
+T11	Temperature 217 221	37°C
+T12	Time 226 232	1 hour
+T13	Action 235 240	Place
+T14	Location 241 265	electroporation cuvettes
+T15	Size 268 271	1mm
+T16	Location 278 299	microcentrifuge tubes
+T17	Location 303 306	ice
+T18	Action 352 358	dilute
+T19	Reagent 363 376	control pUC19
+T20	Concentration 414 424	10 pg / μl
+T21	Reagent 431 444	sterile water
+T22	Action 447 451	Thaw
+T23	Reagent 452 484	NEB Turbo Electrocompetent cells
+T24	Location 488 491	ice
+T25	Modifier 494 499	about
+T26	Time 500 506	10 min
+T27	Action 513 516	mix
+T28	Reagent 517 522	cells
+T29	Action 526 534	flicking
+T30	Modifier 535 541	gently
+T31	Action 544 552	Transfer
+T32	Amount 553 558	25 μl
+T33	Reagent 566 571	cells
+T34	Modifier 622 629	chilled
+T35	Location 630 650	microcentrifuge tube
+T36	Action 653 656	Add
+T37	Amount 657 661	1 μl
+T38	Reagent 669 681	DNA solution
+T39	Modifier 684 693	Carefully
+T40	Action 694 702	transfer
+T41	Reagent 707 721	cell / DNA mix
+T42	Modifier 729 736	chilled
+T43	Location 737 744	cuvette
+T44	Action 753 764	introducing
+T45	Reagent 765 772	bubbles
+T46	Reagent 796 801	cells
+T47	Action 802 809	deposit
+T48	Modifier 810 816	across
+T49	Location 821 827	bottom
+T50	Location 835 842	cuvette
+T51	Action 845 858	Electroporate
+T52	Generic-Measure 949 955	2.1 kV
+T53	Generic-Measure 958 963	100 Ω
+T54	Generic-Measure 970 977	25 μF .
+T55	Modifier 1028 1039	Immediately
+T56	Action 1040 1043	add
+T57	Amount 1044 1050	975 µl
+T58	Temperature 1054 1058	37°C
+T59	Reagent 1059 1062	SOC
+T60	Location 1070 1077	cuvette
+T61	Modifier 1080 1086	Gently
+T62	Action 1087 1090	mix
+T63	Method 1091 1102	up and down
+T64	Numerical 1103 1108	twice
+T65	Action 1111 1119	Transfer
+T66	Size 1127 1139	17mm x 100mm
+T67	Location 1140 1167	round - bottom culture tube
+T68	Action 1170 1175	Shake
+T69	Modifier 1176 1186	vigorously
+T70	Action 1202 1208	rotate
+T71	Temperature 1212 1216	37°C
+T72	Time 1221 1227	1 hour
+T73	Action 1230 1236	Dilute
+T74	Reagent 1241 1246	cells
+T75	Modifier 1250 1261	appropriate
+T76	Action 1267 1273	spread
+T77	Amount 1274 1286	100 - 200 μl
+T78	Reagent 1287 1292	cells
+T79	Modifier 1300 1312	pre - warmed
+T80	Location 1313 1328	selective plate
+T81	Action 1331 1339	Incubate
+T82	Location 1340 1346	plates
+T83	Time 1347 1354	8 hours
+T84	Time 1358 1367	overnight
+T85	Temperature 1371 1375	37°C
+E1	Action:T1 Product:T3
+E2	Action:T5 Acts-on:T6 Site:T8 Product:T59
+E3	Action:T9 Acts-on:T10 Product:T80
+E4	Action:T13 Acts-on:T14 Acts-on2:T16 Site:T17 Product:T35 Product2:T43
+E5	Action:T18 Using:T21 Product:T19
+E6	Action:T22 Acts-on:T23 Site:T24 Product:T28
+E7	Action:T27 Acts-on:T28 Product:T33
+E8	Action:T29 
+E9	Action:T31 Acts-on:T33 Site:T35
+E10	Action:T36 Acts-on:T38 Site:E9 Product:T41 Acts-on2:T19
+E11	Action:T40 Acts-on:T41 Site:T43 Product:T46
+E12	Action:T44 Acts-on:T45
+E13	Action:T47 Acts-on:T46 Site:T49
+E14	Action:T51 Acts-on:E13 Product:T60
+E15	Action:T56 Site:T60 Acts-on:T59
+E16	Action:T62 Using:T63 Count:T64 Acts-on:E15
+E17	Action:T65 Site:T67 Acts-on:E16
+E18	Action:T68 Acts-on:E17
+E19	Action:T70 
+E20	Action:T73 Product:T74 Acts-on:E18
+E21	Action:T76 Acts-on:T78 Site:T80 Product:T82
+E22	Action:T81 Acts-on:T82
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T4
+R3	Setting Arg1:E2 Arg2:T7
+R4	Setting Arg1:E3 Arg2:T11
+R5	Setting Arg1:E3 Arg2:T12
+R6	Measure Arg1:T14 Arg2:T15
+R7	Measure Arg1:T19 Arg2:T20
+R8	Setting Arg1:E6 Arg2:T26
+R9	Mod-Link Arg1:T26 Arg2:T25
+R10	Mod-Link Arg1:E8 Arg2:T30
+R11	Mod-Link Arg1:T35 Arg2:T34
+R12	Measure Arg1:T33 Arg2:T32
+R13	Measure Arg1:T38 Arg2:T37
+R14	Mod-Link Arg1:E11 Arg2:T39
+R15	Mod-Link Arg1:T43 Arg2:T42
+R16	Meronym Arg1:T49 Arg2:T50
+R17	Mod-Link Arg1:E13 Arg2:T48
+R18	Measure Arg1:T59 Arg2:T57
+R19	Setting Arg1:E15 Arg2:T58
+R20	Mod-Link Arg1:E15 Arg2:T55
+R21	Mod-Link Arg1:E16 Arg2:T61
+R22	Measure Arg1:T67 Arg2:T66
+R23	Mod-Link Arg1:E18 Arg2:T69
+R24	Setting Arg1:E19 Arg2:T71
+R25	Setting Arg1:E19 Arg2:T72
+R26	Mod-Link Arg1:T80 Arg2:T79
+R27	Measure Arg1:T78 Arg2:T77
+R28	Mod-Link Arg1:E20 Arg2:T75
+R29	Setting Arg1:E22 Arg2:T83
+R30	Setting Arg1:E22 Arg2:T84
+R31	Setting Arg1:E22 Arg2:T85
+R32	Enables Arg1:E8 Arg2:E7
+R33	Setting Arg1:E14 Arg2:T52
+R34	Setting Arg1:E14 Arg2:T53
+R35	Setting Arg1:E14 Arg2:T54
+R36	Coreference-Link Arg1:T3 Arg2:T67
+R37	Or Arg1:E18 Arg2:E19
+R38	Coreference-Link Arg1:T74 Arg2:T78
+R39	Prevents Arg1:E12 Arg2:E11

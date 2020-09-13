@@ -1,0 +1,54 @@
+T1	Action 100 107	placing
+T2	Location 110 130	microcentrifuge tube
+T3	Reagent 146 165	buffered DNA sample
+T4	Location 174 190	ice - water bath
+T5	Device 196 216	cup - horn sonicator
+T6	Action 219 229	Sonication
+T7	Time 267 278	10 s bursts
+T8	Modifier 279 320	using maximum output and continuous power
+T9	Amount 470 476	100 µg
+T10	Reagent 477 480	DNA
+T11	Reagent 484 493	TE buffer
+T12	Action 497 502	split
+T13	Numerical 508 510	10
+T14	Reagent 511 519	aliquots
+T15	Amount 523 528	35 µL
+T16	Numerical 531 532	5
+T17	Reagent 533 541	aliquots
+T18	Action 546 569	subjected to sonication
+T19	Time 596 607	10 s bursts
+T20	Reagent 610 618	Aliquots
+T21	Modifier 619 639	from each time point
+T22	Action 644 647	run
+T23	Reagent 654 665	agarose gel
+T24	Action 669 694	determine optimal - sized
+T25	Reagent 695 708	DNA fragments
+T26	Numerical 778 789	remaining 5
+T27	Reagent 790 798	aliquots
+T28	Amount 801 819	approximately 8 µg
+T29	Action 826 835	sonicated
+T30	Modifier 836 879	according to those predetermined conditions
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T6 
+E3	Action:T12 Acts-on:T10 Product:T14 Product2:T17 Product3:T20 Product4:T27
+E4	Action:T18 Acts-on:T17
+E5	Action:T22 Acts-on:T20 Acts-on2:T23
+E6	Action:T24 Acts-on:T25
+E7	Action:T29 Acts-on:T27
+R1	Meronym Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T4 Arg2:T5
+R3	Setting Arg1:E2 Arg2:T7
+R4	Mod-Link Arg1:E2 Arg2:T8
+R5	Measure Arg1:T10 Arg2:T9
+R6	Measure Arg1:T14 Arg2:T15
+R7	Measure Arg1:T14 Arg2:T13
+R8	Meronym Arg1:T10 Arg2:T11
+R9	Measure Arg1:T17 Arg2:T16
+R10	Setting Arg1:E4 Arg2:T19
+R11	Mod-Link Arg1:T20 Arg2:T21
+R12	Measure Arg1:T27 Arg2:T28
+R13	Measure Arg1:T27 Arg2:T26
+R14	Mod-Link Arg1:E7 Arg2:T30
+R15	Enables Arg1:E1 Arg2:E2
+R16	Enables Arg1:E3 Arg2:E2
+R17	Enables Arg1:E5 Arg2:E6

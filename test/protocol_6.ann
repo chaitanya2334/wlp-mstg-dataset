@@ -1,0 +1,140 @@
+T1	Action 60 64	Turn
+T2	Device 65 75	heat block
+T3	Generic-Measure 76 78	on
+T4	Action 83 90	preheat
+T5	Temperature 94 97	95C
+T6	Location 115 124	lab bench
+T7	Action 127 130	add
+T8	Amount 131 138	½ scoop
+T9	Size 146 152	1.0 mm
+T10	Reagent 153 174	zirconium oxide beads
+T11	Modifier 180 187	sterile
+T12	Amount 188 194	1.5 ml
+T13	Location 195 199	tube
+T14	Action 202 207	Close
+T15	Seal 212 215	lid
+T16	Action 220 225	label
+T17	Location 230 233	top
+T18	Location 238 242	side
+T19	Modifier 246 250	each
+T20	Location 251 255	tube
+T21	Seal 265 276	sample name
+T22	Location 314 331	laminar flow hood
+T23	Location 335 352	biosafety cabinet
+T24	Action 355 361	remove
+T25	Modifier 364 375	small piece
+T26	Size 393 400	0.5 cm2
+T27	Reagent 406 414	mycelium
+T28	Location 424 444	culture tube / plate
+T29	Action 449 457	transfer
+T30	Modifier 465 486	corresponding labeled
+T31	Amount 487 493	1.5 ml
+T32	Location 494 498	tube
+T33	Action 691 694	Add
+T34	Amount 695 701	100 ul
+T35	Reagent 705 722	Extraction Buffer
+T36	Reagent 741 749	mycelium
+T37	Modifier 753 763	completely
+T38	Action 764 773	submerged
+T39	Reagent 781 787	liquid
+T40	Method 806 816	centrifuge
+T41	Modifier 823 829	firmly
+T42	Action 830 835	close
+T43	Seal 836 845	tube lids
+T44	Action 848 853	Place
+T45	Location 854 859	tubes
+T46	Device 867 878	bead beater
+T47	Action 982 987	Close
+T48	Seal 992 995	lid
+T49	Action 1002 1011	bead beat
+T50	Time 1016 1024	1 minute
+T51	Speed 1028 1036	speed 10
+T52	Action 1063 1068	grind
+T53	Reagent 1073 1079	tissue
+T54	Modifier 1087 1094	sterile
+T55	Device 1095 1106	blue pestle
+T56	Time 1163 1183	Briefly ( < 30 sec )
+T57	Method 1184 1194	centrifuge
+T58	Action 1198 1204	remove
+T59	Reagent 1205 1211	liquid
+T60	Seal 1221 1224	lid
+T61	Location 1232 1236	tube
+T62	Action 1245 1257	Do not leave
+T63	Reagent 1258 1265	samples
+T64	Reagent 1273 1290	Extraction Buffer
+T65	Time 1291 1303	> 25 minutes
+T66	Action 1344 1349	Place
+T67	Location 1350 1355	tubes
+T68	Device 1359 1369	heat block
+T69	Temperature 1373 1377	95°C
+T70	Time 1382 1392	10 minutes
+T71	Modifier 1400 1407	briefly
+T72	Action 1408 1418	centrifuge
+T73	Action 1439 1445	remove
+T74	Reagent 1446 1458	condensation
+T75	Action 1461 1464	Add
+T76	Amount 1465 1471	100 ul
+T77	Reagent 1475 1490	Dilution Buffer
+T78	Method 1495 1501	vortex
+T79	Action 1505 1508	mix
+T80	Action 1511 1516	Store
+T81	Reagent 1521 1524	DNA
+T82	Temperature 1528 1535	2 - 8°C
+T83	Reagent 1540 1556	short - term use
+T84	Temperature 1561 1575	- 20° to - 80°
+T85	Reagent 1580 1599	long - term storage
+E1	Action:T1 Acts-on:T2
+E2	Action:T4 Acts-on:E1
+E3	Action:T7 Acts-on:T10 Site:T13
+E4	Action:T14 Site:T13 Acts-on:T15
+E5	Action:T16 Acts-on:T17 Acts-on2:T18 Using:T21
+E6	Action:T24 Acts-on:T27 Site:T28
+E7	Action:T29 Acts-on:E6 Site:T32
+E8	Action:T33 Site:E7 Acts-on:T35
+E9	Action:T38 Acts-on:T36 Acts-on2:T39 Using:T40
+E10	Action:T42 Site:E8 Acts-on:T43 Product:T45
+E11	Action:T44 Acts-on:T45 Site:T46
+E12	Action:T47 Site:E11 Acts-on:T48
+E13	Action:T49 Acts-on:E12
+E14	Action:T52 Acts-on:T53 Using:T55
+E15	Action:T58 Using:T57 Acts-on:T59 Site:T60
+E16	Action:T62 Acts-on:T63 Site:T64
+E17	Action:T66 Acts-on:T67 Site:T68
+E18	Action:T72 Acts-on:E17
+E19	Action:T73 Using:E18 Acts-on:T74
+E20	Action:T75 Site:E18 Acts-on:T77
+E21	Action:T79 Acts-on:E20 Using:T78 Product:T81
+E22	Action:T80 Acts-on:T81 Product:T83
+R1	Setting Arg1:T2 Arg2:T3
+R2	Setting Arg1:E2 Arg2:T5
+R3	Measure Arg1:T10 Arg2:T8
+R4	Measure Arg1:T10 Arg2:T9
+R5	Meronym Arg1:T13 Arg2:T6
+R6	Mod-Link Arg1:T13 Arg2:T11
+R7	Measure Arg1:T13 Arg2:T12
+R8	Meronym Arg1:T17 Arg2:T20
+R9	Meronym Arg1:T18 Arg2:T20
+R10	Mod-Link Arg1:T20 Arg2:T19
+R11	Or Arg1:T23 Arg2:T22
+R12	Setting Arg1:T25 Arg2:T26
+R13	Mod-Link Arg1:T27 Arg2:T25
+R14	Meronym Arg1:T28 Arg2:T23
+R15	Mod-Link Arg1:T32 Arg2:T30
+R16	Measure Arg1:T32 Arg2:T31
+R17	Measure Arg1:T35 Arg2:T34
+R18	Mod-Link Arg1:E9 Arg2:T37
+R19	Mod-Link Arg1:E10 Arg2:T41
+R20	Setting Arg1:E13 Arg2:T50
+R21	Setting Arg1:E13 Arg2:T51
+R22	Or Arg1:E14 Arg2:E13
+R23	Mod-Link Arg1:T55 Arg2:T54
+R24	Setting Arg1:E15 Arg2:T56
+R25	Meronym Arg1:T60 Arg2:T61
+R26	Setting Arg1:E16 Arg2:T65
+R27	Setting Arg1:E17 Arg2:T69
+R28	Setting Arg1:E17 Arg2:T70
+R29	Mod-Link Arg1:E18 Arg2:T71
+R30	Measure Arg1:T77 Arg2:T76
+R31	Setting Arg1:E22 Arg2:T82
+R32	Or Arg1:T82 Arg2:T84
+R33	Or Arg1:T83 Arg2:T85

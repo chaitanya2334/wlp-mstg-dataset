@@ -1,0 +1,204 @@
+T1	Action 36 41	Place
+T2	Device 42 48	filter
+T3	Location 54 62	PFA vial
+T4	Action 127 130	Add
+T5	Amount 131 137	1.5 mL
+T6	Reagent 141 154	sulfuric acid
+T7	Reagent 162 169	samples
+T8	Reagent 174 180	blanks
+T9	Action 183 188	Place
+T10	Seal 189 192	lid
+T11	Location 193 197	atop
+T12	Modifier 198 205	loosely
+T13	Device 216 222	filter
+T14	Action 226 230	soak
+T15	Time 235 241	20 min
+T16	Temperature 245 261	room temperature
+T17	Action 264 268	Lift
+T18	Seal 269 272	lid
+T19	Modifier 273 281	slightly
+T20	Action 285 288	add
+T21	Amount 289 294	0.5mL
+T22	Reagent 298 315	hydrogen peroxide
+T23	Modifier 318 324	Gently
+T24	Action 327 332	swirl
+T25	Location 333 337	vial
+T26	Action 341 344	mix
+T27	Action 347 352	React
+T28	Time 357 363	60 min
+T29	Device 369 378	hot plate
+T30	Temperature 382 387	110˚C
+T31	Seal 393 396	lid
+T32	Action 397 403	placed
+T33	Modifier 407 414	loosely
+T34	Action 417 420	Add
+T35	Amount 429 435	0.5 mL
+T36	Reagent 436 444	peroxide
+T37	Action 447 454	replace
+T38	Seal 455 459	caps
+T39	Modifier 460 467	loosely
+T40	Action 472 480	increase
+T41	Measure-Type 481 501	hotplate temperature
+T42	Temperature 505 510	200˚C
+T43	Action 672 675	Dry
+T44	Modifier 676 680	vial
+T45	Reagent 681 689	contents
+T46	Temperature 693 704	235 - 250˚C
+T47	Action 918 927	Resuspend
+T48	Modifier 928 933	dried
+T49	Reagent 934 941	samples
+T50	Amount 945 949	2 mL
+T51	Modifier 955 971	freshly prepared
+T52	Reagent 972 979	mixture
+T53	Reagent 983 987	HNO3
+T54	Reagent 990 993	HCl
+T55	Reagent 1000 1002	HF
+T56	Concentration 1011 1013	4M
+T57	Reagent 1024 1039	milli - Q water
+T58	Action 1042 1046	Heat
+T59	Time 1051 1058	4 hours
+T60	Temperature 1062 1073	100 - 110˚C
+T61	Location 1080 1085	vials
+T62	Action 1086 1090	cool
+T63	Temperature 1094 1110	room temperature
+T64	Action 1113 1118	uncap
+T65	Action 1123 1126	dry
+T66	Temperature 1130 1141	100 - 110˚C
+T67	Time 1144 1153	overnight
+T68	Action 1158 1161	Add
+T69	Amount 1162 1165	2mL
+T70	Reagent 1169 1185	freshly prepared
+T71	Concentration 1186 1190	50 %
+T72	Reagent 1191 1195	HNO3
+T73	Concentration 1198 1202	15 %
+T74	Reagent 1203 1207	H2O2
+T75	Location 1225 1230	vials
+T76	Action 1234 1241	dryness
+T77	Device 1247 1255	hotplate
+T78	Temperature 1259 1270	100 - 110˚C
+T79	Action 1273 1282	Resuspend
+T80	Reagent 1283 1289	sample
+T81	Amount 1293 1305	200 - 500 µL
+T82	Concentration 1309 1313	50 %
+T83	Reagent 1314 1318	HNO3
+T84	Concentration 1321 1325	15 %
+T85	Reagent 1326 1330	H2O2
+T86	Reagent 1331 1340	( v / v )
+T87	Action 1343 1346	Cap
+T88	Modifier 1347 1354	loosely
+T89	Action 1359 1363	heat
+T90	Temperature 1367 1372	110˚C
+T91	Action 1407 1412	uncap
+T92	Seal 1413 1418	vials
+T93	Action 1423 1426	dry
+T94	Temperature 1430 1435	135˚C
+T95	Action 1438 1441	Add
+T96	Amount 1442 1448	100 µL
+T97	Modifier 1449 1461	concentrated
+T98	Reagent 1462 1466	HNO3
+T99	Action 1471 1475	heat
+T100	Temperature 1479 1484	110˚C
+T101	Modifier 1488 1495	dryness
+T102	Action 1496 1507	redissolved
+T103	Amount 1511 1514	1mL
+T104	Concentration 1518 1523	0.1 M
+T105	Reagent 1524 1528	HNO3
+T106	Action 1531 1537	Dilute
+T107	Reagent 1538 1544	sample
+T108	Generic-Measure 1548 1577	5 % of original concentration
+T109	Concentration 1583 1588	0.1 M
+T110	Reagent 1589 1593	HNO3
+T111	Action 1640 1646	follow
+T112	Method 1647 1659	Conway et al
+T113	Action 1674 1681	prepare
+T114	Reagent 1682 1689	samples
+T115	Method 1694 1711	isotopic analysis
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T7 Product2:T8
+E2	Action:T4 Acts-on:T6 Site:T7 Site2:T8 Product:T11
+E3	Action:T9 Acts-on:T10 Site:T11
+E4	Action:T14 Acts-on:T13
+E5	Action:T17 Acts-on:T18
+E6	Action:T20 Acts-on:T22
+E7	Action:T24 Acts-on:T25
+E8	Action:T26 Acts-on:E6
+E9	Action:T27 Site:T29 Acts-on:E8
+E10	Action:T32 Acts-on:T31 Site:E9
+E11	Action:T34 Acts-on:T36 Site:E9
+E12	Action:T37 Acts-on:T38 Site:E11
+E13	Action:T40 Measure-Type-Link:T41 Acts-on:E12 Product:T45
+E14	Action:T43 Acts-on:T45 Product:T49
+E15	Action:T47 Acts-on:T49 Site:T52
+E16	Action:T58 Acts-on:E15 Product:T61
+E17	Action:T62 Acts-on:T61
+E18	Action:T64 Acts-on:T61
+E19	Action:T65 Acts-on:E18
+E20	Action:T68 Acts-on:T70 Site:E19 Product:T75
+E21	Action:T76 Acts-on:T75 Site:T77 Product:T80
+E22	Action:T79 Acts-on:T80 Using:T86
+E23	Action:T87 Acts-on:E22
+E24	Action:T89 Acts-on:E23
+E25	Action:T91 Acts-on:T92 Acts-on2:E24
+E26	Action:T93 Acts-on:E25
+E27	Action:T95 Acts-on:T98 Site:E26
+E28	Action:T99 Acts-on:E27
+E29	Action:T102 Site:T105 Acts-on:E28 Product:T107
+E30	Action:T106 Acts-on:T107 Using:T110 Product:T114
+E31	Action:T111 Using:T112 Acts-on:T114
+E32	Action:T113 Using:T115 Product:T114
+R1	Measure Arg1:T6 Arg2:T5
+R2	Mod-Link Arg1:E3 Arg2:T12
+R3	Setting Arg1:E4 Arg2:T15
+R4	Setting Arg1:E4 Arg2:T16
+R5	Measure Arg1:T22 Arg2:T21
+R6	Mod-Link Arg1:E5 Arg2:T19
+R7	Mod-Link Arg1:E7 Arg2:T23
+R8	Setting Arg1:E9 Arg2:T28
+R9	Setting Arg1:E9 Arg2:T30
+R10	Mod-Link Arg1:E10 Arg2:T33
+R11	Measure Arg1:T36 Arg2:T35
+R12	Mod-Link Arg1:E12 Arg2:T39
+R13	Setting Arg1:E13 Arg2:T42
+R14	Setting Arg1:E14 Arg2:T46
+R15	Measure Arg1:T55 Arg2:T56
+R16	Measure Arg1:T54 Arg2:T56
+R17	Measure Arg1:T53 Arg2:T56
+R18	Meronym Arg1:T53 Arg2:T52
+R19	Meronym Arg1:T54 Arg2:T52
+R20	Meronym Arg1:T55 Arg2:T52
+R21	Meronym Arg1:T57 Arg2:T52
+R22	Mod-Link Arg1:T52 Arg2:T51
+R23	Measure Arg1:T52 Arg2:T50
+R24	Setting Arg1:E16 Arg2:T59
+R25	Setting Arg1:E16 Arg2:T60
+R26	Setting Arg1:E17 Arg2:T63
+R27	Setting Arg1:E19 Arg2:T67
+R28	Setting Arg1:E19 Arg2:T66
+R29	Measure Arg1:T74 Arg2:T73
+R30	Measure Arg1:T72 Arg2:T71
+R31	Meronym Arg1:T72 Arg2:T70
+R32	Meronym Arg1:T74 Arg2:T70
+R33	Measure Arg1:T70 Arg2:T69
+R34	Setting Arg1:E21 Arg2:T78
+R35	Measure Arg1:T85 Arg2:T84
+R36	Measure Arg1:T83 Arg2:T82
+R37	Meronym Arg1:T85 Arg2:T86
+R38	Meronym Arg1:T83 Arg2:T86
+R39	Measure Arg1:T86 Arg2:T81
+R40	Setting Arg1:E24 Arg2:T90
+R41	Mod-Link Arg1:E23 Arg2:T88
+R42	Setting Arg1:E26 Arg2:T94
+R43	Measure Arg1:T98 Arg2:T96
+R44	Setting Arg1:E28 Arg2:T100
+R45	Measure Arg1:T105 Arg2:T104
+R46	Measure Arg1:T105 Arg2:T103
+R47	Setting Arg1:E30 Arg2:T108
+R48	Measure Arg1:T110 Arg2:T109
+R49	Enables Arg1:E5 Arg2:E6
+R50	Enables Arg1:E3 Arg2:E4
+R51	Enables Arg1:E7 Arg2:E8
+R52	Enables Arg1:E10 Arg2:E9
+R53	Mod-Link Arg1:T45 Arg2:T44
+R54	Mod-Link Arg1:T49 Arg2:T48
+R55	Mod-Link Arg1:T98 Arg2:T97
+R56	Mod-Link Arg1:E28 Arg2:T101
+R57	Enables Arg1:E31 Arg2:E32

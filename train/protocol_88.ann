@@ -1,0 +1,141 @@
+T1	Action 74 86	Re - suspend
+T2	Reagent 87 107	cell / tissue pellet
+T3	Amount 111 120	3 volumes
+T4	Amount 137 165	200 µl / 107 cells or 100 mg
+T5	Reagent 181 193	Lysis Buffer
+T6	Action 198 206	incubate
+T7	Location 210 213	ice
+T8	Time 218 224	30 min
+T9	Action 227 237	Centrifuge
+T10	Speed 241 251	12,000 rpm
+T11	Time 256 261	5 min
+T12	Temperature 265 268	4°C
+T13	Action 273 281	transfer
+T14	Reagent 286 306	supernatant fraction
+T15	Modifier 320 334	acid - soluble
+T16	Reagent 335 343	proteins
+T17	Modifier 353 356	new
+T18	Location 357 361	vial
+T19	Action 364 371	Prepare
+T20	Reagent 372 392	Balance - DTT Buffer
+T21	Action 396 402	adding
+T22	Reagent 403 415	DTT Solution
+T23	Reagent 419 433	Balance Buffer
+T24	Concentration 439 446	1 : 500
+T25	Action 517 520	Add
+T26	Amount 521 532	0.3 volumes
+T27	Reagent 540 560	Balance - DTT Buffer
+T28	Reagent 568 579	supernatant
+T29	Modifier 580 591	immediately
+T30	Action 662 670	Quantify
+T31	Reagent 675 682	protein
+T32	Measure-Type 683 696	concentration
+T33	Method 705 715	OD reading
+T34	Action 750 757	Aliquot
+T35	Action 762 767	store
+T36	Reagent 772 779	extract
+T37	Temperature 783 788	–20°C
+T38	Time 793 805	several days
+T39	Temperature 811 816	–80°C
+T40	Time 821 832	long - term
+T41	Action 881 886	Weigh
+T42	Reagent 891 897	sample
+T43	Action 902 905	cut
+T44	Reagent 910 916	sample
+T45	Amount 922 934	small pieces
+T46	Device 956 963	scalpel
+T47	Device 967 975	scissors
+T48	Action 978 986	Transfer
+T49	Reagent 987 1000	tissue pieces
+T50	Device 1006 1024	Dounce homogenizer
+T51	Action 1027 1033	Dilute
+T52	Concentration 1034 1037	10X
+T53	Reagent 1038 1056	Pre - Lysis Buffer
+T54	Concentration 1062 1064	1X
+T55	Reagent 1065 1083	Pre - Lysis Buffer
+T56	Reagent 1089 1104	distilled water
+T57	Concentration 1110 1116	1 : 10
+T58	Action 1186 1189	Add
+T59	Modifier 1194 1201	Diluted
+T60	Concentration 1202 1204	1X
+T61	Reagent 1205 1223	Pre - Lysis Buffer
+T62	Concentration 1227 1252	1 ml per 200 mg of tissue
+T63	Action 1259 1271	disaggregate
+T64	Reagent 1272 1285	tissue pieces
+T65	Method 1289 1304	50 - 60 strokes
+T66	Action 1307 1315	Transfer
+T67	Modifier 1316 1327	homogenized
+T68	Reagent 1328 1335	mixture
+T69	Size 1341 1346	15 ml
+T70	Location 1347 1359	conical tube
+T71	Action 1364 1374	centrifuge
+T72	Speed 1378 1386	3000 rpm
+T73	Time 1391 1396	5 min
+T74	Temperature 1400 1403	4°C
+T75	Action 1406 1412	Remove
+T76	Reagent 1413 1424	supernatant
+T77	Action 1471 1479	transfer
+T78	Reagent 1480 1487	mixture
+T79	Size 1493 1497	2 ml
+T80	Location 1498 1502	vial
+T81	Action 1507 1517	centrifuge
+T82	Speed 1521 1531	10,000 rpm
+T83	Time 1536 1541	1 min
+T84	Temperature 1545 1550	4°C .
+E1	Action:T1 Acts-on:T2 Site:T5
+E2	Action:T6 Site:T7 Acts-on:E1
+E3	Action:T9 Acts-on:E2 Product:T14
+E4	Action:T13 Acts-on:T14 Site:T18 Product:T28
+E5	Action:T19 Product:T20
+E6	Action:T21 Acts-on:T22 Site:T23
+E7	Action:T25 Acts-on:T27 Site:T28 Product:T31
+E8	Action:T30 Acts-on:T31 Measure-Type-Link:T32 Using:T33 Product:T36
+E9	Action:T34 Acts-on:T36
+E10	Action:T35 Acts-on:E9 Product:T42
+E11	Action:T41 Acts-on:T42 Product:T44
+E12	Action:T43 Acts-on:T44 Using:T46 Product:T49
+E13	Action:T48 Acts-on:T49 Site:T50
+E14	Action:T51 Acts-on:T53 Product:T55 Using:T56
+E15	Action:T58 Acts-on:T61 Product:T64
+E16	Action:T63 Acts-on:T64 Using:T65 Product:T68
+E17	Action:T66 Acts-on:T68 Site:T70
+E18	Action:T71 Acts-on:E17 Product:T76
+E19	Action:T75 Acts-on:T76 Product:T78
+E20	Action:T77 Acts-on:T78 Site:T80
+E21	Action:T81 Acts-on:E20
+R1	Or Arg1:T3 Arg2:T4
+R2	Setting Arg1:E3 Arg2:T10
+R3	Setting Arg1:E3 Arg2:T11
+R4	Setting Arg1:E3 Arg2:T12
+R5	Setting Arg1:E6 Arg2:T24
+R6	Measure Arg1:T27 Arg2:T26
+R7	Mod-Link Arg1:E7 Arg2:T29
+R8	Setting Arg1:E10 Arg2:T37
+R9	Setting Arg1:E10 Arg2:T38
+R10	Or Arg1:T37 Arg2:T39
+R11	Setting Arg1:E12 Arg2:T45
+R12	Or Arg1:T46 Arg2:T47
+R13	Measure Arg1:T53 Arg2:T52
+R14	Measure Arg1:T55 Arg2:T54
+R15	Setting Arg1:E14 Arg2:T57
+R16	Measure Arg1:T61 Arg2:T60
+R17	Mod-Link Arg1:T61 Arg2:T59
+R18	Mod-Link Arg1:T68 Arg2:T67
+R19	Measure Arg1:T70 Arg2:T69
+R20	Setting Arg1:E18 Arg2:T72
+R21	Setting Arg1:E18 Arg2:T73
+R22	Setting Arg1:E18 Arg2:T74
+R23	Measure Arg1:T80 Arg2:T79
+R24	Setting Arg1:E21 Arg2:T82
+R25	Setting Arg1:E21 Arg2:T83
+R26	Setting Arg1:E21 Arg2:T84
+R27	Setting Arg1:E2 Arg2:T8
+R28	Measure Arg1:T5 Arg2:T3
+R29	Mod-Link Arg1:T16 Arg2:T15
+R30	Meronym Arg1:T16 Arg2:T14
+R31	Mod-Link Arg1:T18 Arg2:T17
+R32	Enables Arg1:E6 Arg2:E5
+R33	Coreference-Link Arg1:T27 Arg2:T20
+R34	Setting Arg1:E10 Arg2:T40
+R35	Coreference-Link Arg1:T61 Arg2:T55
+R36	Setting Arg1:E15 Arg2:T62

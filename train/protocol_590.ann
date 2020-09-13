@@ -1,0 +1,141 @@
+T1	Action 26 32	Set up
+T2	Reagent 37 43	assays
+T3	Action 189 197	Incubate
+T4	Reagent 202 208	assays
+T5	Temperature 212 216	37°C
+T6	Time 221 228	2 hours
+T7	Action 231 234	Add
+T8	Amount 235 240	30 µL
+T9	Reagent 254 266	proteinase K
+T10	Modifier 270 274	each
+T11	Reagent 275 280	assay
+T12	Action 283 291	Incubate
+T13	Temperature 295 299	65°C
+T14	Time 304 310	20 min
+T15	Action 313 316	Add
+T16	Amount 317 321	4 µL
+T17	Reagent 335 354	ss salmon sperm DNA
+T18	Action 370 373	Add
+T19	Amount 392 397	84 µL
+T20	Generic-Measure 403 407	20 %
+T21	Reagent 408 411	TCA
+T22	Action 416 424	incubate
+T23	Temperature 428 431	4°C
+T24	Time 436 442	10 min
+T25	Action 472 482	Centrifuge
+T26	Reagent 487 493	assays
+T27	Device 501 510	microfuge
+T28	Time 515 520	5 min
+T29	Temperature 524 527	4°C
+T30	Action 530 537	Discard
+T31	Reagent 542 554	supernatants
+T32	Action 557 561	Wash
+T33	Reagent 566 573	pellets
+T34	Amount 582 588	200 µL
+T35	Generic-Measure 592 595	5 %
+T36	Reagent 596 599	TCA
+T37	Device 607 616	microfuge
+T38	Time 621 626	5 min
+T39	Temperature 630 633	4°C
+T40	Action 636 645	Resuspend
+T41	Reagent 650 657	pellets
+T42	Amount 663 669	500 µL
+T43	Generic-Measure 678 684	500 mM
+T44	Reagent 685 689	NaOH
+T45	Action 692 700	Incubate
+T46	Reagent 705 711	assays
+T47	Temperature 715 719	65°C
+T48	Time 724 730	20 min
+T49	Action 733 744	Precipitate
+T50	Reagent 749 756	samples
+T51	Amount 762 768	500 µL
+T52	Generic-Measure 772 776	20 %
+T53	Reagent 777 780	TCA
+T54	Time 785 791	10 min
+T55	Temperature 795 798	4°C
+T56	Action 801 811	Centrifuge
+T57	Reagent 816 823	samples
+T58	Device 831 840	microfuge
+T59	Time 845 850	5 min
+T60	Temperature 854 857	4°C
+T61	Action 860 864	Wash
+T62	Reagent 869 879	pellets 2X
+T63	Amount 885 891	200 µL
+T64	Generic-Measure 895 898	5 %
+T65	Reagent 899 902	TCA
+T66	Device 910 919	microfuge
+T67	Time 924 929	5 min
+T68	Temperature 933 936	4°C
+T69	Action 939 948	Resuspend
+T70	Reagent 953 959	pellet
+T71	Amount 965 971	500 µL
+T72	Generic-Measure 975 978	5 %
+T73	Reagent 979 982	TCA
+T74	Action 985 993	Incubate
+T75	Location 997 1010	boiling water
+T76	Time 1015 1021	30 min
+T77	Action 1078 1088	Centrifuge
+T78	Reagent 1093 1100	samples
+T79	Device 1108 1117	microfuge
+T80	Time 1122 1127	5 min
+T81	Temperature 1131 1134	4°C
+T82	Action 1170 1175	Count
+T83	Reagent 1180 1192	supernatants
+T84	Amount 1196 1201	10 mL
+T85	Reagent 1205 1239	triton - toluene counting solution
+E1	Action:T1 Acts-on:T2 Product:T4
+E2	Action:T3 Acts-on:T4 Product:T11
+E3	Action:T7 Acts-on:T9 Site:T11
+E4	Action:T12 Acts-on:E3
+E5	Action:T15 Acts-on:T17 Acts-on2:E4
+E6	Action:T18 Acts-on:T21 Acts-on2:E5
+E7	Action:T22 Acts-on:T21 Acts-on2:E6 Product:T26
+E8	Action:T25 Acts-on:T26 Site:T27 Product:T31
+E9	Action:T30 Acts-on:T31 Product:T33
+E10	Action:T32 Acts-on:T33 Using:T36 Site:T37 Product:T41
+E11	Action:T40 Acts-on:T41 Using:T44
+E12	Action:T45 Acts-on:T46 Product:T50
+E13	Action:T49 Acts-on:T50 Using:T53 Product:T57
+E14	Action:T56 Acts-on:T57 Site:T58 Product:T62
+E15	Action:T61 Acts-on:T62 Using:T65 Site:T66 Product:T70
+E16	Action:T69 Acts-on:T70 Using:T73
+E17	Action:T74 Site:T75 Product:T78 Acts-on:E16
+E18	Action:T77 Acts-on:T78 Site:T79 Product:T83
+E19	Action:T82 Acts-on:T83 Site:T85
+R1	Measure Arg1:T85 Arg2:T84
+R2	Setting Arg1:E18 Arg2:T80
+R3	Setting Arg1:E18 Arg2:T81
+R4	Measure Arg1:T73 Arg2:T72
+R5	Measure Arg1:T73 Arg2:T71
+R6	Measure Arg1:T65 Arg2:T64
+R7	Measure Arg1:T65 Arg2:T63
+R8	Setting Arg1:E15 Arg2:T67
+R9	Setting Arg1:E15 Arg2:T68
+R10	Setting Arg1:E17 Arg2:T76
+R11	Setting Arg1:E14 Arg2:T59
+R12	Setting Arg1:E14 Arg2:T60
+R13	Measure Arg1:T53 Arg2:T52
+R14	Measure Arg1:T53 Arg2:T51
+R15	Setting Arg1:E13 Arg2:T54
+R16	Setting Arg1:E13 Arg2:T55
+R17	Measure Arg1:T44 Arg2:T43
+R18	Measure Arg1:T44 Arg2:T42
+R19	Measure Arg1:T36 Arg2:T35
+R20	Measure Arg1:T36 Arg2:T34
+R21	Setting Arg1:E10 Arg2:T38
+R22	Setting Arg1:E10 Arg2:T39
+R23	Measure Arg1:T9 Arg2:T8
+R24	Setting Arg1:E12 Arg2:T47
+R25	Setting Arg1:E12 Arg2:T48
+R26	Setting Arg1:E8 Arg2:T28
+R27	Setting Arg1:E8 Arg2:T29
+R28	Measure Arg1:T17 Arg2:T16
+R29	Measure Arg1:T21 Arg2:T19
+R30	Measure Arg1:T21 Arg2:T20
+R31	Setting Arg1:E7 Arg2:T23
+R32	Setting Arg1:E7 Arg2:T24
+R33	Setting Arg1:E4 Arg2:T13
+R34	Setting Arg1:E4 Arg2:T14
+R35	Mod-Link Arg1:T11 Arg2:T10
+R36	Setting Arg1:E2 Arg2:T5
+R37	Setting Arg1:E2 Arg2:T6

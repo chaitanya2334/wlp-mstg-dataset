@@ -1,0 +1,83 @@
+T1	Action 75 81	Dilute
+T2	Reagent 82 88	sample
+T3	Reagent 94 120	DNA Cleanup Binding Buffer
+T4	Action 152 155	Mix
+T5	Modifier 156 160	well
+T6	Method 164 185	pipetting up and down
+T7	Method 189 206	flicking the tube
+T8	Action 209 224	Do not vortex .
+T9	Action 667 673	Insert
+T10	Device 674 680	column
+T11	Location 686 701	collection tube
+T12	Action 706 710	load
+T13	Reagent 711 717	sample
+T14	Location 723 729	column
+T15	Action 732 736	Spin
+T16	Time 741 749	1 minute
+T17	Speed 753 763	16,000 x g
+T18	Action 771 778	discard
+T19	Reagent 779 793	flow - through
+T20	Action 796 807	Re - insert
+T21	Device 808 814	column
+T22	Location 820 835	collection tube
+T23	Action 838 841	Add
+T24	Amount 842 848	200 μl
+T25	Reagent 849 864	DNA Wash Buffer
+T26	Action 892 896	spin
+T27	Time 901 909	1 minute
+T28	Speed 913 923	16,000 x g
+T29	Action 1035 1038	Add
+T30	Amount 1039 1045	200 μl
+T31	Reagent 1046 1061	DNA Wash Buffer
+T32	Action 1066 1070	spin
+T33	Time 1075 1083	1 minute
+T34	Speed 1087 1097	16,000 x g
+T35	Action 1142 1150	Transfer
+T36	Device 1151 1157	column
+T37	Amount 1169 1175	1.5 ml
+T38	Location 1176 1190	microfuge tube
+T39	Action 1331 1334	Add
+T40	Amount 1335 1341	≥ 6 μl
+T41	Reagent 1345 1363	DNA Elution Buffer
+T42	Modifier 1371 1377	center
+T43	Location 1385 1391	matrix
+T44	Action 1394 1398	Wait
+T45	Time 1403 1411	1 minute
+T46	Action 1419 1423	spin
+T47	Time 1428 1436	1 minute
+T48	Speed 1440 1450	16,000 x g
+E1	Action:T1 Acts-on:T2 Using:T3
+E2	Action:T4 Using:T6 Acts-on:E1
+E3	Action:T8 Product:T13
+E4	Action:T9 Acts-on:T10 Site:T11 Product:T14
+E5	Action:T12 Acts-on:T13 Site:T14
+E6	Action:T15 Acts-on:E5 Product:T19
+E7	Action:T18 Acts-on:T19 Product:T21
+E8	Action:T20 Acts-on:T21 Site:T22
+E9	Action:T23 Acts-on:T25 Site:E8
+E10	Action:T26 Acts-on:E9
+E11	Action:T29 Acts-on:T31 Site:E10
+E12	Action:T32 Acts-on:E11 Product:T36
+E13	Action:T35 Acts-on:T36 Site:T38 Product:T43
+E14	Action:T39 Acts-on:T41 Site:T43
+E15	Action:T44 Acts-on:E14
+E16	Action:T46 Acts-on:E15
+R1	Mod-Link Arg1:T43 Arg2:T42
+R2	Setting Arg1:E15 Arg2:T45
+R3	Setting Arg1:E16 Arg2:T47
+R4	Setting Arg1:E16 Arg2:T48
+R5	Measure Arg1:T41 Arg2:T40
+R6	Measure Arg1:T38 Arg2:T37
+R7	Measure Arg1:T31 Arg2:T30
+R8	Setting Arg1:E12 Arg2:T33
+R9	Setting Arg1:E12 Arg2:T34
+R10	Setting Arg1:E10 Arg2:T27
+R11	Setting Arg1:E10 Arg2:T28
+R12	Measure Arg1:T25 Arg2:T24
+R13	Setting Arg1:E6 Arg2:T16
+R14	Setting Arg1:E6 Arg2:T17
+R15	Mod-Link Arg1:E2 Arg2:T5
+R16	Or Arg1:T6 Arg2:T7
+R17	Prevents Arg1:E2 Arg2:E3
+R18	Coreference-Link Arg1:T11 Arg2:T22
+R19	Coreference-Link Arg1:T25 Arg2:T31

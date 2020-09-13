@@ -1,0 +1,117 @@
+T1	Action 18 22	Make
+T2	Reagent 23 39	6M Urea solution
+T3	Action 43 49	adding
+T4	Amount 50 59	108.11 mg
+T5	Reagent 63 67	Urea
+T6	Amount 71 77	300 µL
+T7	Reagent 81 137	50mM ammonium bicarbonate ( NH4HCO3 ) containing protein
+T8	Action 140 143	Add
+T9	Amount 144 149	20 µL
+T10	Reagent 153 163	1.5 M Tris
+T11	pH 167 170	8.8
+T12	Action 173 176	Add
+T13	Amount 177 183	7.5 µL
+T14	Reagent 187 197	200mM TCEP
+T15	Action 202 210	incubate
+T16	Time 215 221	1 hour
+T17	Temperature 225 229	37°C
+T18	Action 232 235	Add
+T19	Amount 236 241	60 µL
+T20	Reagent 245 264	200mM iodoacetamide
+T21	Action 269 275	vortex
+T22	Action 278 286	Incubate
+T23	Time 291 299	one hour
+T24	Temperature 303 319	room temperature
+T25	Location 325 334	dark area
+T26	Action 337 340	Add
+T27	Amount 341 346	60 µL
+T28	Reagent 350 359	200mM DTT
+T29	Action 364 372	vortex .
+T30	Action 373 381	Incubate
+T31	Time 386 394	one hour
+T32	Temperature 398 414	room temperature
+T33	Action 417 424	Aliquot
+T34	Amount 425 431	150 µL
+T35	Modifier 442 447	three
+T36	Location 448 471	1.5 mL centrifuge tubes
+T37	Action 474 477	Add
+T38	Amount 478 484	800 µL
+T39	Reagent 488 513	25mM ammonium bicarbonate
+T40	Modifier 517 521	each
+T41	Location 522 526	tube
+T42	Action 530 536	dilute
+T43	Reagent 541 545	urea
+T44	Action 548 551	Add
+T45	Amount 552 558	200 µL
+T46	Reagent 562 566	MeOH
+T47	Modifier 570 574	each
+T48	Location 575 579	tube
+T49	Action 582 585	Add
+T50	Reagent 586 593	Trypsin
+T51	Reagent 597 604	protein
+T52	Amount 619 642	50 protein to 1 trypsin
+T53	Action 647 655	incubate
+T54	Time 656 665	overnight
+T55	Temperature 669 685	room temperature
+T56	Action 688 696	Speedvac
+T57	Time 697 706	until dry
+T58	Action 709 712	Add
+T59	Amount 713 719	200 µL
+T60	Reagent 723 752	molecular biology grade water
+T61	Location 756 761	tubes
+T62	Numerical 762 767	three
+T63	Action 778 786	speedvac
+T64	Action 790 796	reduce
+T65	Reagent 801 821	ammonium bicarbonate
+T66	Action 824 829	Store
+T67	Temperature 833 839	- 80°C
+E1	Action:T1 Product:T2
+E2	Action:T3 Acts-on:T5 Site:T7
+E3	Action:T8 Acts-on:T10 Acts-on2:E1
+E4	Action:T12 Acts-on:T14 Acts-on2:E3
+E5	Action:T15 Acts-on:E4
+E6	Action:T18 Acts-on:T20 Acts-on2:E5
+E7	Action:T21 Acts-on:T20 Acts-on2:E6
+E8	Action:T22 Site:T25 Acts-on:E7
+E9	Action:T26 Acts-on:T28 Acts-on2:E8
+E10	Action:T29 Acts-on:T28 Acts-on2:E9
+E11	Action:T30 Acts-on:E10
+E12	Action:T33 Site:T36 Acts-on:E11 Product:T43
+E13	Action:T37 Acts-on:T39 Site:T41
+E14	Action:T42 Acts-on:T43
+E15	Action:T44 Acts-on:T46 Site:T48 Acts-on2:E14
+E16	Action:T49 Acts-on:T50 Site:T51 Acts-on2:E15
+E17	Action:T53 Acts-on:E16
+E18	Action:T56 Acts-on:E17
+E19	Action:T58 Acts-on:T60 Site:T61 Count:T62 Acts-on2:E18
+E20	Action:T63 Acts-on:E19
+E21	Action:T64 Acts-on:T65
+E22	Action:T66 Acts-on:E20
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T7 Arg2:T6
+R3	Measure Arg1:T10 Arg2:T11
+R4	Measure Arg1:T10 Arg2:T9
+R5	Measure Arg1:T14 Arg2:T13
+R6	Setting Arg1:E5 Arg2:T16
+R7	Setting Arg1:E5 Arg2:T17
+R8	Measure Arg1:T20 Arg2:T19
+R9	Setting Arg1:E8 Arg2:T23
+R10	Setting Arg1:E8 Arg2:T24
+R11	Measure Arg1:T28 Arg2:T27
+R12	Setting Arg1:E11 Arg2:T31
+R13	Setting Arg1:E11 Arg2:T32
+R14	Setting Arg1:E12 Arg2:T34
+R15	Mod-Link Arg1:T36 Arg2:T35
+R16	Measure Arg1:T39 Arg2:T38
+R17	Mod-Link Arg1:T41 Arg2:T40
+R18	Measure Arg1:T46 Arg2:T45
+R19	Mod-Link Arg1:T48 Arg2:T47
+R20	Measure Arg1:T50 Arg2:T52
+R21	Setting Arg1:E17 Arg2:T54
+R22	Setting Arg1:E17 Arg2:T55
+R23	Setting Arg1:E18 Arg2:T57
+R24	Measure Arg1:T60 Arg2:T59
+R25	Setting Arg1:E22 Arg2:T67
+R26	Enables Arg1:E2 Arg2:E1
+R27	Enables Arg1:E14 Arg2:E13
+R28	Enables Arg1:E20 Arg2:E21

@@ -1,0 +1,74 @@
+T1	Action 33 37	Thaw
+T2	Modifier 42 51	necessary
+T3	Reagent 52 66	kit components
+T4	Action 69 72	Mix
+T5	Action 77 89	pulse - spin
+T6	Device 93 102	microfuge
+T7	Action 106 113	collect
+T8	Reagent 114 123	solutions
+T9	Location 131 138	bottoms
+T10	Location 142 147	tubes
+T11	Action 150 154	Keep
+T12	Location 158 161	ice
+T13	Action 164 172	Assemble
+T14	Reagent 177 185	reaction
+T15	Temperature 189 205	room temperature
+T16	Action 233 236	Mix
+T17	Modifier 237 247	thoroughly
+T18	Action 252 264	pulse - spin
+T19	Device 270 279	microfuge
+T20	Action 282 290	Incubate
+T21	Temperature 294 298	37°C
+T22	Time 303 310	2 hours
+T23	Method 329 344	DNase treatment
+T24	Action 348 354	remove
+T25	Reagent 355 367	DNA template
+T26	Action 373 379	remove
+T27	Reagent 380 392	template DNA
+T28	Action 395 398	add
+T29	Amount 399 404	30 μl
+T30	Reagent 405 426	nuclease - free water
+T31	Modifier 430 434	each
+T32	Amount 435 440	20 μl
+T33	Reagent 441 449	reaction
+T34	Amount 464 468	2 μl
+T35	Reagent 472 496	DNase I ( RNase - free )
+T36	Action 499 502	mix
+T37	Action 507 515	incubate
+T38	Time 520 530	15 minutes
+T39	Temperature 534 538	37°C
+T40	Action 554 566	purification
+T41	Reagent 570 585	synthesized RNA
+T42	Action 589 597	analysis
+T43	Reagent 601 623	transcription products
+T44	Method 627 646	gel electrophoresis
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:E1 Site:T6
+E3	Action:T5 Acts-on:E2 Site:T6
+E4	Action:T7 Using:E2 Using2:E3 Product:T8 Site:T9
+E5	Action:T11 Site:T12
+E6	Action:T13 Acts-on:E5 Product:T14
+E7	Action:T16 Acts-on:T14
+E8	Action:T18 Acts-on:E7 Site:T19
+E9	Action:T20 Acts-on:E8
+E10	Action:T24 Using:T23 Acts-on:T25
+E11	Action:T26 Acts-on:T27 Using:E12
+E12	Action:T28 Acts-on:T30 Site:T33 Acts-on2:T35
+E13	Action:T36 Acts-on:E12
+E14	Action:T37 Acts-on:E13
+E15	Action:T40 Acts-on:T41 Using:T44
+E16	Action:T42 Acts-on:T43 Using:T44
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T9 Arg2:T10
+R3	Setting Arg1:E6 Arg2:T15
+R4	Mod-Link Arg1:E7 Arg2:T17
+R5	Setting Arg1:E9 Arg2:T21
+R6	Setting Arg1:E9 Arg2:T22
+R7	Measure Arg1:T30 Arg2:T29
+R8	Mod-Link Arg1:T33 Arg2:T31
+R9	Measure Arg1:T33 Arg2:T32
+R10	Measure Arg1:T35 Arg2:T34
+R11	Setting Arg1:E13 Arg2:T38
+R12	Setting Arg1:E13 Arg2:T39
+R13	Setting Arg1:E14 Arg2:T38
+R14	Setting Arg1:E14 Arg2:T39

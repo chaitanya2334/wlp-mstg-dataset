@@ -1,0 +1,77 @@
+T1	Action 416 422	Set up
+T2	Reagent 423 442	adsorption cultures
+T3	Amount 455 461	250 mL
+T4	Location 462 493	polycarbonate Erlenmeyer flasks
+T5	Seal 499 508	screw cap
+T6	Action 513 517	Fill
+T7	Location 518 523	flask
+T8	Amount 529 535	100 mL
+T9	Reagent 536 546	host cells
+T10	Action 549 552	Add
+T11	Reagent 553 569	cyanophage stock
+T12	Reagent 588 592	host
+T13	Generic-Measure 599 615	MOI of ca . 0.01
+T14	Modifier 620 627	quickly
+T15	Action 628 631	mix
+T16	Action 635 643	disperse
+T17	Reagent 648 653	virus
+T18	Modifier 656 667	Immediately
+T19	Action 668 674	remove
+T20	Reagent 677 686	subsample
+T21	Action 691 697	dilute
+T22	Concentration 698 702	100×
+T23	Time 707 716	time zero
+T24	Action 719 727	Transfer
+T25	Amount 728 733	15 µL
+T26	Location 739 743	tube
+T27	Amount 755 761	1.5 mL
+T28	Modifier 765 773	ice cold
+T29	Reagent 774 779	media
+T30	Action 782 788	Vortex
+T31	Action 792 795	mix
+T32	Action 798 804	Pellet
+T33	Reagent 805 809	host
+T34	Time 814 819	5 min
+T35	Modifier 862 871	Carefully
+T36	Action 872 878	remove
+T37	Amount 881 894	small aliquot
+T38	Amount 897 902	50 µL
+T39	Reagent 912 923	supernatant
+T40	Modifier 929 932	new
+T41	Location 933 937	tube
+T42	Action 942 951	keep cold
+T43	Action 983 988	Place
+T44	Reagent 989 1008	adsorption cultures
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T7 Product2:T44
+E2	Action:T6 Acts-on:T9 Site:T7 Product:T12
+E3	Action:T10 Acts-on:T11 Site:T12
+E4	Action:T15 Acts-on:E3 Product:T20
+E5	Action:T16 Acts-on:T17
+E6	Action:T19 Acts-on:T20
+E7	Action:T21 Acts-on:E6
+E8	Action:T24 Site:T26 Acts-on:E7
+E9	Action:T30 Acts-on:E8 Product:T33
+E10	Action:T31 
+E11	Action:T32 Acts-on:T33 Product:T39
+E12	Action:T36 Acts-on:T39 Site:T41
+E13	Action:T42 Acts-on:E12
+E14	Action:T43 Acts-on:T44
+R1	Measure Arg1:T4 Arg2:T3
+R2	Meronym Arg1:T5 Arg2:T4
+R3	Measure Arg1:T9 Arg2:T8
+R4	Mod-Link Arg1:E4 Arg2:T14
+R5	Setting Arg1:E3 Arg2:T13
+R6	Setting Arg1:E7 Arg2:T22
+R7	Setting Arg1:E7 Arg2:T23
+R8	Mod-Link Arg1:E6 Arg2:T18
+R9	Mod-Link Arg1:T29 Arg2:T28
+R10	Measure Arg1:T29 Arg2:T27
+R11	Setting Arg1:E8 Arg2:T25
+R12	Meronym Arg1:T29 Arg2:T26
+R13	Setting Arg1:E11 Arg2:T34
+R14	Mod-Link Arg1:E12 Arg2:T35
+R15	Measure Arg1:T39 Arg2:T38
+R16	Or Arg1:T38 Arg2:T37
+R17	Mod-Link Arg1:T41 Arg2:T40
+R18	Enables Arg1:E4 Arg2:E12
+R19	Enables Arg1:E9 Arg2:E10

@@ -1,0 +1,31 @@
+T1	Action 55 64	Prefilter
+T2	Reagent 65 80	seawater sample
+T3	Generic-Measure 86 92	200 µm
+T4	Device 93 97	mesh
+T5	Action 100 103	Add
+T6	Amount 104 110	1.5 mL
+T7	Modifier 114 125	prefiltered
+T8	Reagent 126 141	seawater sample
+T9	Amount 147 151	2 mL
+T10	Location 152 160	cryotube
+T11	Action 163 166	Add
+T12	Reagent 167 181	Glutaraldehyde
+T13	Action 184 187	Add
+T14	Reagent 188 196	Pluronic
+T15	Action 215 221	Vortex
+T16	Action 224 228	Wait
+T17	Time 229 235	10 min
+T18	Action 238 250	Flash freeze
+T19	Location 254 274	liquid nitrogen tank
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T8
+E2	Action:T5 Acts-on:T8 Site:T10
+E3	Action:T11 Acts-on:T12 Site:E2
+E4	Action:T13 Acts-on:T14 Site:E3
+E5	Action:T15 Acts-on:E4
+E6	Action:T16 Acts-on:E5
+E7	Action:T18 Site:T19 Acts-on:E6
+R1	Setting Arg1:T4 Arg2:T3
+R2	Measure Arg1:T10 Arg2:T9
+R3	Mod-Link Arg1:T8 Arg2:T7
+R4	Measure Arg1:T8 Arg2:T6
+R5	Setting Arg1:E6 Arg2:T17

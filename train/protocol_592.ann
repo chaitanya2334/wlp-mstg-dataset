@@ -1,0 +1,76 @@
+T1	Action 26 30	Thaw
+T2	Reagent 31 46	competent cells
+T3	Location 50 53	ice
+T4	Action 54 59	Chill
+T5	Modifier 60 73	approximately
+T6	Amount 74 78	5 ng
+T7	Reagent 95 111	ligation mixture
+T8	Amount 117 123	1.5 ml
+T9	Location 124 144	microcentrifuge tube
+T10	Action 147 150	Add
+T11	Amount 151 156	50 µl
+T12	Reagent 160 175	competent cells
+T13	Reagent 183 186	DNA
+T14	Action 189 192	Mix
+T15	Modifier 193 199	gently
+T16	Method 203 236	pipetting up and down or flicking
+T17	Device 241 245	tube
+T18	Modifier 246 255	4–5 times
+T19	Action 299 304	Place
+T20	Reagent 309 316	mixture
+T21	Location 320 323	ice
+T22	Time 328 338	30 minutes
+T23	Action 354 364	Heat shock
+T24	Temperature 368 372	42°C
+T25	Time 377 387	30 seconds
+T26	Action 403 406	Add
+T27	Amount 407 413	950 µl
+T28	Modifier 417 433	room temperature
+T29	Reagent 434 439	media
+T30	Location 447 451	tube
+T31	Action 454 459	Place
+T32	Device 460 464	tube
+T33	Temperature 468 472	37°C
+T34	Time 477 487	60 minutes
+T35	Action 490 495	Shake
+T36	Modifier 496 506	vigorously
+T37	Action 531 535	Warm
+T38	Reagent 536 552	selection plates
+T39	Temperature 556 560	37°C
+T40	Action 563 569	Spread
+T41	Amount 570 579	50–100 µl
+T42	Reagent 587 613	cells and ligation mixture
+T43	Location 623 629	plates
+T44	Action 632 640	Incubate
+T45	Modifier 641 650	overnight
+T46	Temperature 654 658	37°C
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T12
+E2	Action:T4 Acts-on:T2 Site:T9 Product:T13
+E3	Action:T10 Acts-on:T12 Site:T13 Product:T17
+E4	Action:T14 Using:T16 Acts-on:T17 Product:T20
+E5	Action:T19 Acts-on:T20 Site:T21
+E6	Action:T23 Acts-on:E5 Product:T30
+E7	Action:T26 Acts-on:T29 Site:T30 Product:T32
+E8	Action:T31 Acts-on:T32
+E9	Action:T35 Acts-on:E8
+E10	Action:T37 Acts-on:T38 Product:T43
+E11	Action:T40 Site:T43 Acts-on:T42
+E12	Action:T44 Acts-on:E11
+R1	Mod-Link Arg1:E9 Arg2:T36
+R2	Mod-Link Arg1:E12 Arg2:T45
+R3	Setting Arg1:E12 Arg2:T46
+R4	Setting Arg1:E10 Arg2:T39
+R5	Setting Arg1:E8 Arg2:T33
+R6	Setting Arg1:E8 Arg2:T34
+R7	Mod-Link Arg1:T29 Arg2:T28
+R8	Measure Arg1:T29 Arg2:T27
+R9	Setting Arg1:E6 Arg2:T24
+R10	Setting Arg1:E6 Arg2:T25
+R11	Setting Arg1:E5 Arg2:T22
+R12	Mod-Link Arg1:E4 Arg2:T15
+R13	Mod-Link Arg1:E4 Arg2:T18
+R14	Measure Arg1:T12 Arg2:T11
+R15	Mod-Link Arg1:E2 Arg2:T5
+R16	Measure Arg1:T7 Arg2:T6
+R17	Measure Arg1:T9 Arg2:T8
+R18	Measure Arg1:T42 Arg2:T41

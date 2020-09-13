@@ -1,0 +1,135 @@
+T1	Action 74 80	Set up
+T2	Amount 83 88	50 µl
+T3	Reagent 89 101	PCR reaction
+T4	Amount 108 116	~ 100 ng
+T5	Reagent 120 131	genomic DNA
+T6	Amount 148 165	For each amplicon
+T7	Action 166 172	set up
+T8	Amount 173 174	3
+T9	Reagent 175 188	PCR reactions
+T10	Reagent 191 199	positive
+T11	Reagent 202 210	negative
+T12	Reagent 213 234	no - template control
+T13	Modifier 239 245	Gently
+T14	Action 246 249	mix
+T15	Reagent 254 262	reaction
+T16	Action 265 272	Collect
+T17	Reagent 277 283	liquid
+T18	Location 291 297	bottom
+T19	Location 305 309	tube
+T20	Modifier 315 320	quick
+T21	Action 321 325	spin
+T22	Action 341 349	Transfer
+T23	Location 350 359	PCR tubes
+T24	Device 365 376	PCR machine
+T25	Action 387 400	thermocycling
+T26	Action 403 410	Analyze
+T27	Amount 413 425	small amount
+T28	Reagent 440 451	PCR product
+T29	Action 455 461	verify
+T30	Measure-Type 462 466	size
+T31	Measure-Type 483 496	amplification
+T32	Action 499 505	Purify
+T33	Reagent 510 522	PCR reaction
+T34	Amount 529 534	90 µl
+T35	Reagent 538 553	Ampure XP beads
+T36	Action 601 606	Elute
+T37	Reagent 607 619	PCR products
+T38	Amount 623 628	30 µl
+T39	Reagent 632 637	water
+T40	Action 640 650	recovering
+T41	Amount 651 656	25 µl
+T42	Action 659 666	Measure
+T43	Measure-Type 671 684	concentration
+T44	Modifier 692 700	purified
+T45	Reagent 701 713	PCR products
+T46	Action 748 754	Anneal
+T47	Reagent 759 771	PCR products
+T48	Device 777 789	thermocycler
+T49	Action 826 829	Add
+T50	Amount 830 834	1 µl
+T51	Reagent 842 859	T7 Endonuclease I
+T52	Modifier 867 875	annealed
+T53	Reagent 876 888	PCR products
+T54	Action 891 899	Incubate
+T55	Temperature 903 907	37°C
+T56	Time 912 922	15 minutes
+T57	Action 925 929	Stop
+T58	Reagent 934 942	reaction
+T59	Action 946 952	adding
+T60	Amount 953 959	1.5 µl
+T61	Concentration 963 969	0.25 M
+T62	Reagent 970 974	EDTA
+T63	Action 977 983	Purify
+T64	Reagent 988 996	reaction
+T65	Amount 1003 1008	36 µl
+T66	Reagent 1012 1027	Ampure XP beads
+T67	Action 1073 1078	Elute
+T68	Reagent 1083 1096	DNA fragments
+T69	Amount 1100 1105	20 µl
+T70	Reagent 1109 1114	water
+T71	Action 1117 1127	recovering
+T72	Amount 1128 1133	15 µl
+T73	Action 1136 1143	Analyze
+T74	Modifier 1148 1158	fragmented
+T75	Reagent 1159 1171	PCR products
+T76	Action 1176 1185	determine
+T77	Measure-Type 1190 1238	percent of nuclease - specific cleavage products
+T78	Action 1262 1271	Calculate
+T79	Measure-Type 1276 1303	estimated gene modification
+T80	Method 1324 1400	formula : % gene modification = 100 x ( 1 – ( 1 - fraction cleaved ) 1 / 2 )
+E1	Action:T1 Using:T5 Product:T3
+E2	Action:T7 Product:T9
+E3	Action:T14 Acts-on:T15 Product:T17
+E4	Action:T16 Acts-on:T17 Site:T18 Product:T23
+E5	Action:T21 Acts-on:T19
+E6	Action:T22 Acts-on:T23 Site:T24
+E7	Action:T25 Acts-on:E6 Product:T28
+E8	Action:T26 Acts-on:T28
+E9	Action:T29 Measure-Type-Link:T30 Measure-Type-Link2:T31 Acts-on:T28 Product:T33
+E10	Action:T32 Acts-on:T33 Using:T35 Product:T37
+E11	Action:T36 Acts-on:T37 Site:T39
+E12	Action:T40 Acts-on:E11 Product:T45
+E13	Action:T42 Acts-on:T45 Measure-Type-Link:T43 Product:T47
+E14	Action:T46 Acts-on:T47 Site:T48 Product:T53
+E15	Action:T49 Acts-on:T51 Site:T53
+E16	Action:T54 Acts-on:E15 Product:T58
+E17	Action:T57 Acts-on:T58 Product:T64
+E18	Action:T59 Acts-on:T62 Site:T58
+E19	Action:T63 Acts-on:T64 Using:T66 Product:T68
+E20	Action:T67 Acts-on:T68 Site:T70
+E21	Action:T71 Acts-on:E20 Product:T75
+E22	Action:T73 Acts-on:T75
+E23	Action:T76 Measure-Type-Link:T77 Acts-on:E22
+E24	Action:T78 Using:T80 Measure-Type-Link:T79 Acts-on:E23
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T9 Arg2:T8
+R4	Meronym Arg1:T10 Arg2:T9
+R5	Meronym Arg1:T11 Arg2:T9
+R6	Meronym Arg1:T12 Arg2:T9
+R7	Mod-Link Arg1:E3 Arg2:T13
+R8	Setting Arg1:E2 Arg2:T6
+R9	Meronym Arg1:T18 Arg2:T19
+R10	Mod-Link Arg1:E5 Arg2:T20
+R11	Measure Arg1:T28 Arg2:T27
+R12	Measure Arg1:T35 Arg2:T34
+R13	Measure Arg1:T39 Arg2:T38
+R14	Mod-Link Arg1:T45 Arg2:T44
+R15	Measure Arg1:T51 Arg2:T50
+R16	Mod-Link Arg1:T53 Arg2:T52
+R17	Setting Arg1:E16 Arg2:T55
+R18	Setting Arg1:E16 Arg2:T56
+R19	Measure Arg1:T62 Arg2:T61
+R20	Measure Arg1:T62 Arg2:T60
+R21	Measure Arg1:T66 Arg2:T65
+R22	Measure Arg1:T70 Arg2:T69
+R23	Mod-Link Arg1:T75 Arg2:T74
+R24	Setting Arg1:E12 Arg2:T41
+R25	Coreference-Link Arg1:T15 Arg2:T9
+R26	Coreference-Link Arg1:T9 Arg2:T3
+R27	Enables Arg1:E5 Arg2:E4
+R28	Enables Arg1:E8 Arg2:E9
+R29	Enables Arg1:E18 Arg2:E17
+R30	Coreference-Link Arg1:T70 Arg2:T39
+R31	Setting Arg1:E21 Arg2:T72

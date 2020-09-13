@@ -1,0 +1,33 @@
+T1	Action 39 43	Fill
+T2	Size 44 46	1L
+T3	Location 47 59	pyrex bottle
+T4	Amount 65 70	700mL
+T5	Reagent 71 75	dH20
+T6	Action 78 81	Add
+T7	Amount 82 87	30.2g
+T8	Reagent 88 97	Tris base
+T9	Action 100 103	Add
+T10	Amount 104 110	144.2g
+T11	Reagent 111 118	glycine
+T12	Action 119 121	pH
+T13	Reagent 122 130	solution
+T14	Measure-Type 134 138	8.80
+T15	Action 178 181	Add
+T16	Amount 182 185	10g
+T17	Reagent 186 189	SDS
+T18	Action 206 210	Fill
+T19	Amount 214 216	1L
+T20	Reagent 222 226	dH20
+E1	Action:T1 Acts-on:T3 Using:T5
+E2	Action:T6 Acts-on:T8 Site:E1
+E3	Action:T9 Acts-on:T11 Site:E2 Product:T13
+E4	Action:T12 Acts-on:T13 Measure-Type-Link:T14
+E5	Action:T15 Acts-on:T17 Site:E4
+E6	Action:T18 Using:T20 Site:E5
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T8 Arg2:T7
+R4	Measure Arg1:T11 Arg2:T10
+R5	Measure Arg1:T17 Arg2:T16
+R6	Setting Arg1:E6 Arg2:T19
+R7	Coreference-Link Arg1:T20 Arg2:T5

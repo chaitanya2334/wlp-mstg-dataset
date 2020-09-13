@@ -1,0 +1,109 @@
+T1	Action 53 57	Thaw
+T2	Location 60 64	tube
+T3	Reagent 68 106	NEB 5 - alpha Competent E . coli cells
+T4	Location 110 113	ice
+T5	Time 118 128	10 minutes
+T6	Action 131 134	Add
+T7	Amount 135 143	1 - 5 µl
+T8	Generic-Measure 155 168	1 pg - 100 ng
+T9	Reagent 172 183	plasmid DNA
+T10	Reagent 191 203	cell mixture
+T11	Modifier 206 215	Carefully
+T12	Action 216 221	flick
+T13	Location 226 230	tube
+T14	Numerical 231 236	4 - 5
+T15	Action 246 249	mix
+T16	Reagent 250 255	cells
+T17	Reagent 260 263	DNA
+T18	Action 282 287	Place
+T19	Reagent 292 299	mixture
+T20	Location 303 306	ice
+T21	Time 311 321	30 minutes
+T22	Action 337 347	Heat shock
+T23	Modifier 351 358	exactly
+T24	Temperature 359 363	42°C
+T25	Modifier 368 375	exactly
+T26	Time 376 386	30 seconds
+T27	Action 402 407	Place
+T28	Location 411 414	ice
+T29	Time 419 428	5 minutes
+T30	Action 444 451	Pipette
+T31	Amount 452 458	950 µl
+T32	Temperature 462 478	room temperature
+T33	Reagent 479 482	SOC
+T34	Reagent 492 499	mixture
+T35	Action 502 507	Place
+T36	Temperature 511 515	37°C
+T37	Time 520 530	60 minutes
+T38	Action 535 542	shaking
+T39	Modifier 543 553	vigorously
+T40	Speed 556 563	250 rpm
+T41	Action 569 577	rotating
+T42	Action 580 584	Warm
+T43	Reagent 585 601	selection plates
+T44	Temperature 605 609	37°C
+T45	Action 612 615	Mix
+T46	Reagent 620 625	cells
+T47	Modifier 626 636	thoroughly
+T48	Action 640 648	flicking
+T49	Location 653 657	tube
+T50	Action 662 671	inverting
+T51	Action 674 681	Perform
+T52	Numerical 682 689	several
+T53	Method 690 716	10 - fold serial dilutions
+T54	Reagent 720 723	SOC
+T55	Action 726 732	Spread
+T56	Amount 733 744	50 - 100 µl
+T57	Modifier 748 752	each
+T58	Reagent 753 761	dilution
+T59	Location 769 784	selection plate
+T60	Action 785 793	Incubate
+T61	Time 794 803	overnight
+T62	Temperature 807 811	37°C
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T10
+E2	Action:T6 Product:T13 Site:T10 Acts-on:T9
+E3	Action:T12 Acts-on:T13 Product:T19
+E4	Action:T15 Acts-on:T16 Acts-on2:T17
+E5	Action:T18 Acts-on:T19 Site:T20
+E6	Action:T22 Acts-on:E5
+E7	Action:T27 Site:T28 Acts-on:E6 Product:T34
+E8	Action:T30 Acts-on:T33 Site:T34
+E9	Action:T35 Acts-on:E8 Product:T46
+E10	Action:T38 
+E11	Action:T41 
+E12	Action:T42 Acts-on:T43 Product:T59
+E13	Action:T45 Acts-on:T46
+E14	Action:T48 Acts-on:T49
+E15	Action:T50 Acts-on:T49
+E16	Action:T51 Count:T52 Using:T53 Acts-on:T54 Product:T58 Acts-on2:E13
+E17	Action:T55 Acts-on:T58 Site:T59
+E18	Action:T60 Acts-on:T59 Acts-on2:E17
+R1	Meronym Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T5
+R3	Measure Arg1:T9 Arg2:T8
+R4	Measure Arg1:T9 Arg2:T7
+R5	Mod-Link Arg1:E3 Arg2:T11
+R6	Setting Arg1:E3 Arg2:T14
+R7	Setting Arg1:E5 Arg2:T21
+R8	Mod-Link Arg1:T26 Arg2:T25
+R9	Setting Arg1:E6 Arg2:T24
+R10	Mod-Link Arg1:T24 Arg2:T23
+R11	Setting Arg1:E6 Arg2:T26
+R12	Setting Arg1:E7 Arg2:T29
+R13	Measure Arg1:T33 Arg2:T31
+R14	Setting Arg1:E8 Arg2:T32
+R15	Mod-Link Arg1:E10 Arg2:T39
+R16	Setting Arg1:E9 Arg2:T36
+R17	Setting Arg1:E9 Arg2:T37
+R18	Setting Arg1:E11 Arg2:T40
+R19	Setting Arg1:E12 Arg2:T44
+R20	Mod-Link Arg1:E13 Arg2:T47
+R21	Mod-Link Arg1:T58 Arg2:T57
+R22	Measure Arg1:T58 Arg2:T56
+R23	Setting Arg1:E18 Arg2:T61
+R24	Setting Arg1:E18 Arg2:T62
+R25	Enables Arg1:E3 Arg2:E4
+R26	Or Arg1:E10 Arg2:E11
+R27	Enables Arg1:E14 Arg2:E13
+R28	Enables Arg1:E15 Arg2:E13
+R29	Overlaps Arg1:E10 Arg2:E9

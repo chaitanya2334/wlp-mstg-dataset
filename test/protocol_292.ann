@@ -1,0 +1,271 @@
+T1	Size 132 139	1 x 106
+T2	Reagent 140 145	cells
+T3	Action 146 153	aliquot
+T4	Amount 154 160	0.5 mL
+T5	Reagent 164 170	buffer
+T6	Action 175 179	warm
+T7	Temperature 183 187	37°C
+T8	Action 190 195	Chill
+T9	Reagent 196 220	True - Phos™ Perm Buffer
+T10	Temperature 224 230	- 20°C
+T11	Size 242 249	1 x 106
+T12	Reagent 250 255	cells
+T13	Action 256 263	aliquot
+T14	Amount 264 270	1.0 ml
+T15	Reagent 274 298	True - Phos™ Perm Buffer
+T16	Action 303 308	chill
+T17	Temperature 312 318	- 20°C
+T18	Action 321 328	Prepare
+T19	Numerical 331 337	single
+T20	Reagent 338 353	cell suspension
+T21	Reagent 363 381	sample of interest
+T22	Action 535 543	Incubate
+T23	Reagent 548 553	cells
+T24	Modifier 563 574	appropriate
+T25	Device 575 582	stimuli
+T26	Modifier 592 600	suitable
+T27	Temperature 601 612	temperature
+T28	Time 617 621	time
+T29	Action 624 627	Fix
+T30	Reagent 632 637	cells
+T31	Modifier 638 649	immediately
+T32	Action 669 675	adding
+T33	Amount 679 691	equal volume
+T34	Modifier 695 707	pre - warmed
+T35	Reagent 708 723	Fixation Buffer
+T36	Modifier 726 732	Gently
+T37	Action 733 740	pipette
+T38	Modifier 751 759	thorough
+T39	Action 760 766	mixing
+T40	Action 769 777	Incubate
+T41	Temperature 781 785	37°C
+T42	Time 790 800	15 minutes
+T43	Reagent 811 816	cells
+T44	Modifier 821 829	properly
+T45	Action 830 835	fixed
+T46	Action 838 848	Centrifuge
+T47	Reagent 849 854	cells
+T48	Speed 858 865	350 x g
+T49	Temperature 869 885	room temperature
+T50	Time 890 899	5 minutes
+T51	Action 902 908	decant
+T52	Reagent 909 920	supernatant
+T53	Action 923 929	vortex
+T54	Action 933 942	resuspend
+T55	Reagent 943 954	cell pellet
+T56	Action 957 960	Add
+T57	Modifier 961 971	sufficient
+T58	Reagent 972 992	Cell Staining Buffer
+T59	Action 996 1000	wash
+T60	Reagent 1005 1010	cells
+T61	Size 1041 1048	1 x 106
+T62	Reagent 1049 1054	cells
+T63	Action 1119 1129	Centrifuge
+T64	Speed 1133 1140	350 x g
+T65	Temperature 1144 1160	room temperature
+T66	Time 1165 1174	5 minutes
+T67	Action 1179 1185	decant
+T68	Reagent 1186 1197	supernatant
+T69	Action 1200 1206	Repeat
+T70	Numerical 1224 1227	two
+T71	Method 1228 1234	washes
+T72	Modifier 1237 1243	Gently
+T73	Action 1244 1251	pipette
+T74	Reagent 1252 1257	cells
+T75	Amount 1264 1279	residual volume
+T76	Action 1283 1292	resuspend
+T77	Reagent 1293 1304	cell pellet
+T78	Action 1325 1337	permeabilize
+T79	Reagent 1338 1343	cells
+T80	Action 1347 1353	adding
+T81	Modifier 1354 1367	pre - chilled
+T82	Reagent 1368 1392	True - Phos™ Perm Buffer
+T83	Action 1430 1443	permeabilized
+T84	Action 1499 1507	Incubate
+T85	Temperature 1511 1517	- 20°C
+T86	Time 1522 1532	60 minutes
+T87	Reagent 1543 1548	cells
+T88	Modifier 1553 1561	properly
+T89	Action 1562 1575	permeabilized
+T90	Action 1578 1588	Centrifuge
+T91	Reagent 1589 1594	cells
+T92	Speed 1598 1606	1000 x g
+T93	Temperature 1610 1626	room temperature
+T94	Time 1631 1640	5 minutes
+T95	Action 1643 1649	decant
+T96	Reagent 1650 1661	supernatant
+T97	Action 1664 1670	vortex
+T98	Action 1674 1683	resuspend
+T99	Reagent 1684 1695	cell pellet
+T100	Action 1698 1701	Add
+T101	Modifier 1702 1712	sufficient
+T102	Reagent 1713 1733	Cell Staining Buffer
+T103	Action 1737 1741	wash
+T104	Reagent 1746 1751	cells
+T105	Action 1754 1764	centrifuge
+T106	Reagent 1765 1770	cells
+T107	Speed 1774 1782	1000 x g
+T108	Temperature 1786 1802	room temperature
+T109	Time 1807 1816	5 minutes
+T110	Action 1819 1825	decant
+T111	Reagent 1826 1837	supernatant
+T112	Action 1840 1846	Repeat
+T113	Numerical 1864 1867	two
+T114	Method 1868 1874	washes
+T115	Action 1877 1886	Resuspend
+T116	Reagent 1891 1896	cells
+T117	Reagent 1900 1920	Cell Staining Buffer
+T118	Concentration 1943 1962	10 x 106 cells / ml
+T119	Action 1965 1973	Transfer
+T120	Amount 1974 1980	100 uL
+T121	Amount 1986 1993	1 x 106
+T122	Reagent 1994 1999	cells
+T123	Size 2007 2017	12 x 75 mm
+T124	Location 2018 2022	tube
+T125	Action 2025 2028	Add
+T126	Reagent 2029 2052	antibody cocktail ( s )
+T127	Modifier 2056 2067	appropriate
+T128	Location 2068 2073	tubes
+T129	Action 2076 2082	vortex
+T130	Action 2086 2089	mix
+T131	Action 2096 2104	incubate
+T132	Time 2109 2119	30 minutes
+T133	Temperature 2123 2139	room temperature
+T134	Location 2147 2151	dark
+T135	Action 2154 2157	Add
+T136	Amount 2158 2162	2 mL
+T137	Reagent 2166 2186	Cell Staining Buffer
+T138	Action 2189 2199	centrifuge
+T139	Reagent 2200 2205	cells
+T140	Speed 2209 2217	1000 x g
+T141	Temperature 2221 2237	room temperature
+T142	Time 2242 2251	5 minutes
+T143	Action 2254 2260	decant
+T144	Reagent 2261 2272	supernatant
+T145	Action 2275 2281	Repeat
+T146	Numerical 2299 2302	two
+T147	Method 2303 2309	washes
+T148	Action 2312 2321	Resuspend
+T149	Reagent 2322 2327	cells
+T150	Modifier 2331 2344	approximately
+T151	Amount 2345 2351	500 ml
+T152	Reagent 2355 2375	Cell Staining Buffer
+T153	Action 2380 2387	analyze
+T154	Device 2395 2409	flow cytometer
+E1	Action:T3 Site:T2 Acts-on:T5
+E2	Action:T6 Acts-on:E1 Product:T35
+E3	Action:T8 Acts-on:T9 Product:T15
+E4	Action:T13 Site:T12 Acts-on:T15
+E5	Action:T16 Acts-on:E4 Product:T82
+E6	Action:T18 Product:T20 Using:T21
+E7	Action:T22 Acts-on:T23 Using:T25 Product:T30
+E8	Action:T29 Acts-on:T30
+E9	Action:T32 Site:T30 Acts-on:T35
+E10	Action:T37 
+E11	Action:T39 Product:T43
+E12	Action:T40 Acts-on:T43
+E13	Action:T45 Acts-on:T43 Product:T47
+E14	Action:T46 Acts-on:T47 Product:T52
+E15	Action:T51 Acts-on:T52
+E16	Action:T53 
+E17	Action:T54 Acts-on:T55
+E18	Action:T56 Acts-on:T58
+E19	Action:T59 Acts-on:T60 Site:T62
+E20	Action:T63 Acts-on:E19 Product:T68
+E21	Action:T67 Acts-on:T68 Product:T74
+E22	Action:T69 Count:T70 Using:T71
+E23	Action:T73 Acts-on:T74
+E24	Action:T76 Acts-on:T77 Product:T79
+E25	Action:T78 Acts-on:T79
+E26	Action:T80 Acts-on:T82
+E27	Action:T83 
+E28	Action:T84 
+E29	Action:T89 Acts-on:T87 Product:T91
+E30	Action:T90 Acts-on:T91 Product:T96
+E31	Action:T95 Acts-on:T96 Product:T99
+E32	Action:T97 
+E33	Action:T98 Acts-on:T99 Product:T104
+E34	Action:T100 Acts-on:T102
+E35	Action:T103 Acts-on:T104
+E36	Action:T105 Acts-on:T106 Product:T111
+E37	Action:T110 Acts-on:T111 Product:T116
+E38	Action:T112 Using:T114
+E39	Action:T115 Acts-on:T116 Site:T117 Product:T122
+E40	Action:T119 Acts-on:T122 Site:T124 Product:T128
+E41	Action:T125 Acts-on:T126 Site:T128
+E42	Action:T129 Acts-on:E41
+E43	Action:T130 Acts-on:E41
+E44	Action:T131 Site:T134
+E45	Action:T135 Site:E44 Acts-on:T137 Product:T139
+E46	Action:T138 Acts-on:T139 Product:T144
+E47	Action:T143 Acts-on:T144
+E48	Action:T145 Count:T146 Using:T147
+E49	Action:T148 Acts-on:T149 Site:T152
+E50	Action:T153 Acts-on:E49 Using:T154
+R1	Measure Arg1:T2 Arg2:T1
+R2	Measure Arg1:T5 Arg2:T4
+R3	Setting Arg1:E2 Arg2:T7
+R4	Setting Arg1:E3 Arg2:T10
+R5	Measure Arg1:T12 Arg2:T11
+R6	Measure Arg1:T15 Arg2:T14
+R7	Setting Arg1:E5 Arg2:T17
+R8	Measure Arg1:T20 Arg2:T19
+R9	Setting Arg1:E7 Arg2:T27
+R10	Setting Arg1:E7 Arg2:T28
+R11	Mod-Link Arg1:T25 Arg2:T24
+R12	Mod-Link Arg1:T27 Arg2:T26
+R13	Mod-Link Arg1:T28 Arg2:T26
+R14	Mod-Link Arg1:T30 Arg2:T31
+R15	Enables Arg1:E9 Arg2:E8
+R16	Measure Arg1:T35 Arg2:T33
+R17	Mod-Link Arg1:T35 Arg2:T34
+R18	Mod-Link Arg1:E10 Arg2:T36
+R19	Enables Arg1:E10 Arg2:E11
+R20	Mod-Link Arg1:E11 Arg2:T38
+R21	Setting Arg1:E12 Arg2:T41
+R22	Setting Arg1:E12 Arg2:T42
+R23	Enables Arg1:E12 Arg2:E13
+R24	Mod-Link Arg1:E13 Arg2:T44
+R25	Setting Arg1:E14 Arg2:T48
+R26	Setting Arg1:E14 Arg2:T49
+R27	Setting Arg1:E14 Arg2:T50
+R28	Enables Arg1:E16 Arg2:E17
+R29	Enables Arg1:E18 Arg2:E19
+R30	Mod-Link Arg1:T58 Arg2:T57
+R31	Measure Arg1:T62 Arg2:T61
+R32	Setting Arg1:E20 Arg2:T64
+R33	Setting Arg1:E20 Arg2:T65
+R34	Setting Arg1:E20 Arg2:T66
+R35	Mod-Link Arg1:E23 Arg2:T72
+R36	Enables Arg1:E23 Arg2:E24
+R37	Measure Arg1:T74 Arg2:T75
+R38	Enables Arg1:E26 Arg2:E25
+R39	Mod-Link Arg1:T82 Arg2:T81
+R40	Setting Arg1:E28 Arg2:T85
+R41	Setting Arg1:E28 Arg2:T86
+R42	Enables Arg1:E28 Arg2:E29
+R43	Mod-Link Arg1:E29 Arg2:T88
+R44	Setting Arg1:E30 Arg2:T92
+R45	Setting Arg1:E30 Arg2:T93
+R46	Setting Arg1:E30 Arg2:T94
+R47	Enables Arg1:E32 Arg2:E33
+R48	Enables Arg1:E34 Arg2:E35
+R49	Mod-Link Arg1:T102 Arg2:T101
+R50	Setting Arg1:E36 Arg2:T107
+R51	Setting Arg1:E36 Arg2:T108
+R52	Setting Arg1:E36 Arg2:T109
+R53	Setting Arg1:E38 Arg2:T113
+R54	Setting Arg1:E39 Arg2:T118
+R55	Measure Arg1:T122 Arg2:T120
+R56	Measure Arg1:T122 Arg2:T121
+R57	Measure Arg1:T124 Arg2:T123
+R58	Mod-Link Arg1:T128 Arg2:T127
+R59	Enables Arg1:E42 Arg2:E43
+R60	Setting Arg1:E44 Arg2:T132
+R61	Setting Arg1:E44 Arg2:T133
+R62	Measure Arg1:T137 Arg2:T136
+R63	Setting Arg1:E46 Arg2:T140
+R64	Setting Arg1:E46 Arg2:T141
+R65	Setting Arg1:E46 Arg2:T142
+R66	Mod-Link Arg1:T151 Arg2:T150
+R67	Measure Arg1:T152 Arg2:T151

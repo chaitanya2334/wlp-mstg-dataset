@@ -1,0 +1,104 @@
+T1	Action 61 71	Centrifuge
+T2	Location 76 86	vial ( s )
+T3	Reagent 102 125	ligation reaction ( s )
+T4	Modifier 126 133	briefly
+T5	Action 138 143	place
+T6	Temperature 147 150	ice
+T7	Action 153 157	Thaw
+T8	Temperature 163 166	ice
+T9	Size 173 178	50 μL
+T10	Location 179 183	vial
+T11	Reagent 187 202	One Shot® cells
+T12	Action 240 245	Pipet
+T13	Amount 246 252	1–5 μL
+T14	Reagent 261 278	ligation reaction
+T15	Location 297 301	vial
+T16	Reagent 305 320	competent cells
+T17	Action 325 328	mix
+T18	Method 332 346	tapping gently
+T19	Action 449 457	Incubate
+T20	Location 462 472	vial ( s )
+T21	Location 476 479	ice
+T22	Time 484 494	30 minutes
+T23	Action 497 505	Incubate
+T24	Time 518 528	30 seconds
+T25	Temperature 536 540	42°C
+T26	Device 541 551	water bath
+T27	Action 576 582	Remove
+T28	Location 583 593	vial ( s )
+T29	Temperature 603 607	42°C
+T30	Device 608 612	bath
+T31	Action 617 622	place
+T32	Mention 623 627	them
+T33	Temperature 631 634	ice
+T34	Action 637 640	Add
+T35	Amount 641 647	250 μL
+T36	Reagent 664 680	S . O . C medium
+T37	Location 689 693	vial
+T38	Action 786 791	Place
+T39	Location 796 806	vial ( s )
+T40	Location 812 832	microcentrifuge rack
+T41	Action 849 855	secure
+T42	Device 861 865	tape
+T43	Action 900 905	Shake
+T44	Location 910 920	vial ( s )
+T45	Temperature 924 928	37°C
+T46	Time 941 947	1 hour
+T47	Speed 951 958	225 rpm
+T48	Device 964 981	shaking incubator
+T49	Action 984 990	Spread
+T50	Amount 991 1000	20–200 μL
+T51	Reagent 1011 1025	transformation
+T52	Location 1053 1067	LB agar plates
+T53	Action 1167 1173	Invert
+T54	Location 1178 1189	plate ( s )
+T55	Action 1194 1202	incubate
+T56	Temperature 1206 1210	37°C
+T57	Time 1211 1220	overnight
+T58	Action 1223 1229	Select
+T59	Reagent 1230 1238	colonies
+T60	Action 1243 1250	analyze
+T61	Method 1254 1271	plasmid isolation
+T62	Method 1274 1277	PCR
+T63	Method 1283 1293	sequencing
+E1	Action:T1 Acts-on:T2 Product:T14
+E2	Action:T5 Acts-on:E1
+E3	Action:T7 Acts-on:T10 Product:T16
+E4	Action:T12 Acts-on:T14 Site:T15
+E5	Action:T17 Using:T18 Acts-on:E4
+E6	Action:T19 Acts-on:T20 Site:T21 Acts-on2:E5
+E7	Action:T23 Site:T26 Acts-on:E6
+E8	Action:T27 Acts-on:T28 Site:T30 Acts-on2:E7
+E9	Action:T31 Acts-on:T32 Acts-on2:E8
+E10	Action:T34 Acts-on:T36 Site:T37
+E11	Action:T38 Acts-on:T39 Site:T40 Acts-on2:E10
+E12	Action:T41 Using:T42 Acts-on:T39
+E13	Action:T43 Acts-on:T44 Site:T48 Acts-on2:E12 Product:T51
+E14	Action:T49 Acts-on:T51 Site:T52
+E15	Action:T53 Acts-on:T54 Acts-on2:E14
+E16	Action:T55 Acts-on:T54 Product:T59
+E17	Action:T58 Acts-on:T59
+E18	Action:T60 Using:T61 Acts-on:T59
+R1	Meronym Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T6
+R3	Mod-Link Arg1:E1 Arg2:T4
+R4	Setting Arg1:E3 Arg2:T8
+R5	Measure Arg1:T10 Arg2:T9
+R6	Meronym Arg1:T10 Arg2:T11
+R7	Measure Arg1:T14 Arg2:T13
+R8	Meronym Arg1:T15 Arg2:T16
+R9	Setting Arg1:E6 Arg2:T22
+R10	Setting Arg1:T26 Arg2:T25
+R11	Setting Arg1:E7 Arg2:T24
+R12	Setting Arg1:E9 Arg2:T33
+R13	Coreference-Link Arg1:T32 Arg2:T28
+R14	Setting Arg1:T30 Arg2:T29
+R15	Measure Arg1:T36 Arg2:T35
+R16	Setting Arg1:E13 Arg2:T45
+R17	Setting Arg1:E13 Arg2:T46
+R18	Setting Arg1:E13 Arg2:T47
+R19	Measure Arg1:T51 Arg2:T50
+R20	Setting Arg1:E16 Arg2:T56
+R21	Setting Arg1:E16 Arg2:T57
+R22	Or Arg1:T61 Arg2:T62
+R23	Or Arg1:T62 Arg2:T63

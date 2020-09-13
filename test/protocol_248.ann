@@ -1,0 +1,220 @@
+T1	Action 31 37	Excise
+T2	Reagent 42 54	DNA fragment
+T3	Reagent 64 75	agarose gel
+T4	Device 83 104	clean , sharp scalpel
+T5	Action 107 112	Weigh
+T6	Reagent 117 126	gel slice
+T7	Location 132 146	colorless tube
+T8	Action 149 152	Add
+T9	Amount 153 162	3 volumes
+T10	Reagent 163 172	Buffer QG
+T11	Amount 176 184	1 volume
+T12	Reagent 185 188	gel
+T13	Concentration 215 220	> 2 %
+T14	Reagent 221 233	agarose gels
+T15	Action 236 239	add
+T16	Amount 240 249	6 volumes
+T17	Reagent 250 259	Buffer QG
+T18	Action 262 270	Incubate
+T19	Temperature 274 278	50°C
+T20	Time 283 289	10 min
+T21	Action 344 350	Vortex
+T22	Location 355 359	tube
+T23	Time 360 373	every 2–3 min
+T24	Action 382 390	dissolve
+T25	Reagent 391 394	gel
+T26	Action 444 464	check that the color
+T27	Reagent 472 479	mixture
+T28	Action 593 596	add
+T29	Amount 597 602	10 μl
+T30	Concentration 603 606	3 M
+T31	Reagent 607 621	sodium acetate
+T32	pH 624 630	pH 5.0
+T33	Action 637 640	mix
+T34	Action 687 690	Add
+T35	Amount 691 703	1 gel volume
+T36	Reagent 707 718	isopropanol
+T37	Reagent 726 732	sample
+T38	Action 737 740	mix
+T39	Action 743 748	Place
+T40	Location 751 771	QIAquick spin column
+T41	Size 788 792	2 ml
+T42	Location 793 808	collection tube
+T43	Action 814 818	bind
+T44	Reagent 819 822	DNA
+T45	Action 825 830	apply
+T46	Reagent 835 841	sample
+T47	Location 849 864	QIAquick column
+T48	Action 869 879	centrifuge
+T49	Time 884 889	1 min
+T50	Action 892 899	Discard
+T51	Reagent 900 914	flow - through
+T52	Action 919 924	place
+T53	Location 929 944	QIAquick column
+T54	Location 959 968	same tube
+T55	Action 1004 1008	load
+T56	Action 1013 1032	spin / apply vacuum
+T57	Modifier 1033 1038	again
+T58	Action 1140 1143	add
+T59	Amount 1144 1150	0.5 ml
+T60	Reagent 1151 1160	Buffer QG
+T61	Location 1168 1183	QIAquick column
+T62	Action 1188 1198	centrifuge
+T63	Time 1203 1208	1 min
+T64	Action 1211 1218	Discard
+T65	Reagent 1219 1233	flow - through
+T66	Action 1238 1243	place
+T67	Location 1248 1263	QIAquick column
+T68	Location 1278 1287	same tube
+T69	Action 1293 1297	wash
+T70	Action 1300 1303	add
+T71	Amount 1304 1311	0.75 ml
+T72	Reagent 1312 1321	Buffer PE
+T73	Location 1325 1340	QIAquick column
+T74	Action 1345 1355	centrifuge
+T75	Time 1360 1365	1 min
+T76	Reagent 1493 1499	column
+T77	Action 1500 1505	stand
+T78	Time 1506 1513	2–5 min
+T79	Action 1544 1554	Centrifuge
+T80	Location 1559 1574	QIAquick column
+T81	Size 1601 1605	2 ml
+T82	Location 1606 1621	collection tube
+T83	Time 1626 1631	1 min
+T84	Speed 1635 1660	17,900 x g ( 13,000 rpm )
+T85	Action 1664 1670	remove
+T86	Location 1671 1691	residual wash buffer
+T87	Action 1694 1699	Place
+T88	Location 1700 1715	QIAquick column
+T89	Size 1729 1735	1.5 ml
+T90	Location 1736 1756	microcentrifuge tube
+T91	Action 1762 1767	elute
+T92	Reagent 1768 1771	DNA
+T93	Action 1774 1777	add
+T94	Amount 1778 1783	10 µl
+T95	Reagent 1787 1796	Buffer EB
+T96	Concentration 1799 1804	10 mM
+T97	Reagent 1805 1812	Tris·Cl
+T98	pH 1815 1821	pH 8.5
+T99	Reagent 1827 1832	water
+T100	Location 1840 1846	center
+T101	Location 1854 1862	membrane
+T102	Location 1873 1879	column
+T103	Action 1880 1885	stand
+T104	Time 1890 1895	1 min
+T105	Action 1907 1917	centrifuge
+T106	Time 1922 1927	1 min
+T107	Action 2314 2319	store
+T108	Reagent 2320 2323	DNA
+T109	Temperature 2327 2332	–20°C
+T110	Reagent 2394 2406	purified DNA
+T111	Action 2419 2425	eluted
+T112	Reagent 2429 2438	TE buffer
+T113	Concentration 2441 2446	10 mM
+T114	Reagent 2447 2454	Tris·Cl
+T115	Concentration 2457 2461	1 mM
+T116	Reagent 2462 2466	EDTA
+T117	pH 2469 2475	pH 8.0
+T118	Action 2587 2590	add
+T119	Amount 2591 2599	1 volume
+T120	Reagent 2603 2614	Loading Dye
+T121	Amount 2618 2627	5 volumes
+T122	Reagent 2631 2643	purified DNA
+T123	Action 2646 2649	Mix
+T124	Reagent 2654 2662	solution
+T125	Action 2666 2687	pipetting up and down
+T126	Reagent 2713 2724	Loading dye
+T127	Reagent 2734 2747	3 marker dyes
+T128	Reagent 2750 2766	bromophenol blue
+T129	Reagent 2769 2782	xylene cyanol
+T130	Reagent 2789 2797	orange G
+T131	Action 2928 2936	identify
+T132	Reagent 2941 2945	dyes
+E1	Action:T1 Acts-on:T2 Site:T3 Using:T4 Product:T6
+E2	Action:T5 Acts-on:T6 Site:T7
+E3	Action:T8 Acts-on:T10
+E4	Action:T15 Product:T14 Acts-on:T17
+E5	Action:T18 Acts-on:E4
+E6	Action:T21 Acts-on:T22
+E7	Action:T24 Acts-on:T25
+E8	Action:T26 Acts-on:T27
+E9	Action:T28 Acts-on:T31
+E10	Action:T33 Acts-on:E9
+E11	Action:T34 Acts-on:T36 Site:T37
+E12	Action:T38 Acts-on:E11 Acts-on2:T37
+E13	Action:T39 Acts-on:T40 Site:T42
+E14	Action:T43 Acts-on:T44
+E15	Action:T45 Acts-on:T46 Site:T47
+E16	Action:T48 Acts-on:T46 Product:T51
+E17	Action:T50 Acts-on:T51
+E18	Action:T52 Acts-on:T53 Site:T54
+E19	Action:T55 
+E20	Action:T56 Acts-on:E19
+E21	Action:T58 Acts-on:T60
+E22	Action:T62 Acts-on:E21
+E23	Action:T64 Acts-on:T65
+E24	Action:T66 Acts-on:T67 Site:T68
+E25	Action:T69 
+E26	Action:T70 Acts-on:T72 Site:T73
+E27	Action:T74 Acts-on:T72
+E28	Action:T77 Acts-on:T76
+E29	Action:T79 Acts-on:T80 Site:T82
+E30	Action:T85 Acts-on:T86
+E31	Action:T87 Acts-on:T88 Site:T90
+E32	Action:T91 Acts-on:T92
+E33	Action:T93 Acts-on:T95 Site:T100
+E34	Action:T103 Acts-on:T102
+E35	Action:T105 Acts-on:T102
+E36	Action:T107 Acts-on:T108
+E37	Action:T111 Acts-on:T110 Site:T112
+E38	Action:T118 Acts-on:T120 Site:T122
+E39	Action:T123 Acts-on:T124
+E40	Action:T125 Acts-on:T124
+E41	Action:T131 Acts-on:T132
+R1	Measure Arg1:T10 Arg2:T9
+R2	Measure Arg1:T12 Arg2:T11
+R3	Measure Arg1:T14 Arg2:T13
+R4	Measure Arg1:T17 Arg2:T16
+R5	Setting Arg1:E5 Arg2:T19
+R6	Setting Arg1:E5 Arg2:T20
+R7	Setting Arg1:E6 Arg2:T23
+R8	Measure Arg1:T31 Arg2:T29
+R9	Measure Arg1:T31 Arg2:T30
+R10	Measure Arg1:T31 Arg2:T32
+R11	Measure Arg1:T36 Arg2:T35
+R12	Measure Arg1:T42 Arg2:T41
+R13	Enables Arg1:E15 Arg2:E14
+R14	Setting Arg1:E16 Arg2:T49
+R15	Mod-Link Arg1:E20 Arg2:T57
+R16	Measure Arg1:T60 Arg2:T59
+R17	Setting Arg1:E22 Arg2:T63
+R18	Enables Arg1:E26 Arg2:E25
+R19	Measure Arg1:T72 Arg2:T71
+R20	Setting Arg1:E27 Arg2:T75
+R21	Setting Arg1:E28 Arg2:T78
+R22	Setting Arg1:E29 Arg2:T83
+R23	Setting Arg1:E29 Arg2:T84
+R24	Enables Arg1:E29 Arg2:E30
+R25	Measure Arg1:T82 Arg2:T81
+R26	Measure Arg1:T90 Arg2:T89
+R27	Enables Arg1:E33 Arg2:E32
+R28	Measure Arg1:T95 Arg2:T94
+R29	Or Arg1:T95 Arg2:T99
+R30	Measure Arg1:T97 Arg2:T96
+R31	Measure Arg1:T97 Arg2:T98
+R32	Meronym Arg1:T101 Arg2:T100
+R33	Setting Arg1:E34 Arg2:T104
+R34	Setting Arg1:E35 Arg2:T106
+R35	Setting Arg1:E36 Arg2:T109
+R36	Measure Arg1:T112 Arg2:T117
+R37	Meronym Arg1:T114 Arg2:T112
+R38	Measure Arg1:T114 Arg2:T113
+R39	Meronym Arg1:T116 Arg2:T112
+R40	Measure Arg1:T116 Arg2:T115
+R41	Measure Arg1:T120 Arg2:T119
+R42	Measure Arg1:T122 Arg2:T121
+R43	Enables Arg1:E40 Arg2:E39
+R44	Meronym Arg1:T127 Arg2:T126
+R45	Meronym Arg1:T128 Arg2:T127
+R46	Meronym Arg1:T129 Arg2:T127
+R47	Meronym Arg1:T130 Arg2:T127

@@ -1,0 +1,110 @@
+T1	Action 43 47	Grow
+T2	Reagent 48 60	cell culture
+T3	Measure-Type 67 72	OD750
+T4	Numerical 76 87	0.15 to 0.4
+T5	Action 90 100	Centrifuge
+T6	Speed 104 108	400g
+T7	Time 113 122	5 minutes
+T8	Temperature 126 142	room temperature
+T9	Action 145 154	Resuspend
+T10	Amount 158 187	1 / 100th the original volume
+T11	Reagent 191 194	TAP
+T12	Action 330 333	Mix
+T13	Reagent 341 348	pipette
+T14	Action 349 355	Vortex
+T15	Speed 359 368	max speed
+T16	Time 373 383	15 seconds
+T17	Action 386 390	Take
+T18	Amount 391 395	25uL
+T19	Reagent 403 418	cell suspension
+T20	Action 423 426	add
+T21	Amount 430 435	100uL
+T22	Reagent 439 442	TAP
+T23	Modifier 451 462	appropriate
+T24	Reagent 463 473	antibiotic
+T25	Action 476 482	Spread
+T26	Location 488 491	TAP
+T27	Location 495 503	YA plate
+T28	Modifier 514 525	appropriate
+T29	Reagent 526 536	antibiotic
+T30	Modifier 545 550	large
+T31	Device 551 562	glass beads
+T32	Reagent 575 581	liquid
+T33	Action 585 588	dry
+T34	Action 595 603	avoiding
+T35	Location 604 609	light
+T36	Action 612 616	Seal
+T37	Reagent 621 627	plates
+T38	Seal 633 641	parafilm
+T39	Reagent 654 662	colonies
+T40	Action 666 670	grow
+T41	Time 697 708	1 - 3 weeks
+T42	Action 713 721	Transfer
+T43	Modifier 726 735	remaining
+T44	Reagent 736 757	cell / vortex culture
+T45	Amount 763 768	125mL
+T46	Location 769 774	flask
+T47	Amount 780 784	20mL
+T48	Reagent 788 791	TAP
+T49	Action 811 819	Incubate
+T50	Time 824 831	6 hours
+T51	Device 838 852	orbital shaker
+T52	Speed 856 861	70rpm
+T53	Action 864 867	Add
+T54	Reagent 868 878	antibiotic
+T55	Modifier 885 896	appropriate
+T56	Concentration 897 910	concentration
+T57	Action 913 917	Take
+T58	Amount 918 922	50uL
+T59	Reagent 930 945	cell suspension
+T60	Action 950 956	spread
+T61	Location 962 965	TAP
+T62	Location 969 977	YA plate
+T63	Modifier 986 997	appropriate
+T64	Reagent 998 1008	antibiotic
+T65	Modifier 1014 1019	large
+T66	Device 1020 1031	glass beads
+E1	Action:T1 Acts-on:T2
+E2	Action:T5 Acts-on:E1
+E3	Action:T9 Acts-on:E2 Site:T11
+E4	Action:T12 Using:T13
+E5	Action:T14 Acts-on:E4 Product:T19 Product2:T44
+E6	Action:T17 Acts-on:T19
+E7	Action:T20 Acts-on:E6 Site:T22
+E8	Action:T25 Acts-on:E7 Site:T26 Using:T31 Product:T32
+E9	Action:T33 Acts-on:T32 Product:T37
+E10	Action:T34 
+E11	Action:T36 Acts-on:T37 Using:T38
+E12	Action:T40 Acts-on:T39
+E13	Action:T42 Acts-on:T44 Site:T46 Using:T48
+E14	Action:T49 Acts-on:E13 Using:T51
+E15	Action:T53 Site:E14 Acts-on:T54 Product:T59
+E16	Action:T57 Acts-on:T59
+E17	Action:T60 Site:T61 Using:T66
+R1	Measure Arg1:T2 Arg2:T4
+R2	Of-Type Arg1:T4 Arg2:T3
+R3	Setting Arg1:E2 Arg2:T6
+R4	Setting Arg1:E2 Arg2:T7
+R5	Setting Arg1:E2 Arg2:T8
+R6	Measure Arg1:T11 Arg2:T10
+R7	Setting Arg1:E5 Arg2:T15
+R8	Setting Arg1:E5 Arg2:T16
+R9	Measure Arg1:T19 Arg2:T18
+R10	Measure Arg1:T22 Arg2:T21
+R11	Mod-Link Arg1:T24 Arg2:T23
+R12	Or Arg1:T26 Arg2:T27
+R13	Mod-Link Arg1:T29 Arg2:T28
+R14	Mod-Link Arg1:T31 Arg2:T30
+R15	Overlaps Arg1:E10 Arg2:E9
+R16	Setting Arg1:E12 Arg2:T41
+R17	Mod-Link Arg1:T44 Arg2:T43
+R18	Measure Arg1:T46 Arg2:T45
+R19	Measure Arg1:T48 Arg2:T47
+R20	Setting Arg1:E14 Arg2:T50
+R21	Setting Arg1:E14 Arg2:T52
+R22	Measure Arg1:T54 Arg2:T56
+R23	Mod-Link Arg1:T56 Arg2:T55
+R24	Measure Arg1:T59 Arg2:T58
+R25	Or Arg1:T61 Arg2:T62
+R26	Mod-Link Arg1:T64 Arg2:T63
+R27	Mod-Link Arg1:T66 Arg2:T65

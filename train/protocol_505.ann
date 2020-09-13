@@ -1,0 +1,18 @@
+T1	Action 47 50	Add
+T2	Amount 51 58	57.318g
+T3	Reagent 59 82	Guanidine Hydrochloride
+T4	Location 89 106	autoclaved bottle
+T5	Action 109 112	Add
+T6	Amount 113 117	50ml
+T7	Reagent 118 124	MilliQ
+T8	Action 127 130	Add
+T9	Amount 131 135	50ml
+T10	Concentration 136 140	7.5M
+T11	Reagent 141 157	Ammonium Acetate
+E1	Action:T1 Acts-on:T3 Site:T4
+E2	Action:T5 Acts-on:T7 Acts-on2:E1
+E3	Action:T8 Acts-on:T11 Acts-on2:E2
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T7 Arg2:T6
+R3	Measure Arg1:T11 Arg2:T10
+R4	Measure Arg1:T11 Arg2:T9

@@ -1,0 +1,547 @@
+T1	Action 111 130	Collect and prepare
+T2	Reagent 131 137	sample
+T3	Action 165 172	Prepare
+T4	Location 173 185	slide labels
+T5	Generic-Measure 224 228	date
+T6	Generic-Measure 231 246	sample location
+T7	Generic-Measure 253 268	volume filtered
+T8	Action 272 282	keep track
+T9	Reagent 290 297	samples
+T10	Action 318 338	filtered and stained
+T11	Modifier 341 354	For every set
+T12	Numerical 358 362	four
+T13	Reagent 363 370	samples
+T14	Action 377 384	stained
+T15	Device 393 406	permanent pen
+T16	Action 410 414	mark
+T17	Location 419 425	bottom
+T18	Location 431 450	plastic Petri plate
+T19	Method 456 477	four labeled sections
+T20	Modifier 480 488	For each
+T21	Device 489 495	filter
+T22	Action 510 518	prepared
+T23	Action 521 524	add
+T24	Amount 527 534	78 - µL
+T25	Size 543 552	0.02 - µm
+T26	Modifier 553 561	filtered
+T27	Reagent 562 566	dH2O
+T28	Modifier 570 574	each
+T29	Location 575 582	section
+T30	Modifier 590 596	marked
+T31	Location 597 609	Petri plates
+T32	Action 612 616	Thaw
+T33	Amount 619 626	40 - µL
+T34	Location 627 631	vial
+T35	Reagent 639 658	stock SYBR solution
+T36	Action 663 666	add
+T37	Amount 667 671	2 µL
+T38	Reagent 672 686	stock solution
+T39	Modifier 690 694	each
+T40	Amount 695 699	drop
+T41	Amount 702 707	78 µL
+T42	Modifier 713 720	sterile
+T43	Reagent 721 725	dH2O
+T44	Reagent 729 735	buffer
+T45	Action 738 741	Mix
+T46	Reagent 746 751	stain
+T47	Modifier 755 761	gently
+T48	Method 762 783	pipetting up and down
+T49	Action 786 791	Place
+T50	Location 796 808	Petri plates
+T51	Location 816 820	dark
+T52	Reagent 833 838	stain
+T53	Action 846 854	bleached
+T54	Action 857 864	Prepare
+T55	Reagent 869 886	antifade solution
+T56	Modifier 892 897	clean
+T57	Modifier 900 910	sterilized
+T58	Modifier 911 917	2 - mL
+T59	Location 918 938	microcentrifuge tube
+T60	Action 941 947	Dilute
+T61	Concentration 952 956	10 %
+T62	Reagent 970 999	stock of p - phenylenediamine
+T63	Generic-Measure 1000 1007	1 : 100
+T64	Reagent 1014 1028	glycerol / PBS
+T65	Action 1046 1050	Keep
+T66	Reagent 1055 1063	solution
+T67	Location 1067 1070	ice
+T68	Action 1075 1082	protect
+T69	Mention 1083 1085	it
+T70	Device 1091 1096	light
+T71	Modifier 1103 1107	each
+T72	Device 1108 1114	filter
+T73	Action 1129 1137	prepared
+T74	Action 1140 1143	add
+T75	Amount 1146 1153	80 - µL
+T76	Modifier 1162 1168	thawed
+T77	Reagent 1169 1194	Yo - Pro working solution
+T78	Modifier 1198 1202	each
+T79	Location 1203 1210	section
+T80	Modifier 1218 1224	marked
+T81	Location 1225 1237	Petri plates
+T82	Action 1240 1245	Place
+T83	Generic-Measure 1248 1265	9 - cm - diameter
+T84	Reagent 1266 1278	filter paper
+T85	Action 1279 1285	soaked
+T86	Amount 1291 1295	3 mL
+T87	Modifier 1296 1303	aqueous
+T88	Reagent 1304 1317	NaCl solution
+T89	Concentration 1320 1334	0.3 % wt / vol
+T90	Seal 1344 1347	lid
+T91	Location 1355 1367	Petri plates
+T92	Action 1371 1390	prevent evaporation
+T93	Reagent 1398 1403	stain
+T94	Action 1406 1413	Connect
+T95	Device 1416 1431	filtration unit
+T96	Size 1436 1443	25 - mm
+T97	Device 1444 1451	filters
+T98	Location 1457 1470	vacuum source
+T99	Device 1486 1492	vacuum
+T100	Generic-Measure 1496 1503	≤13 kPa
+T101	Action 1506 1511	Place
+T102	Size 1514 1523	0.45 - µm
+T103	Device 1524 1553	nitrocellulose backing filter
+T104	Modifier 1557 1561	each
+T105	Device 1562 1576	filter support
+T106	Action 1583 1590	overlay
+T107	Mention 1591 1593	it
+T108	Reagent 1601 1611	thin layer
+T109	Reagent 1615 1619	dH2O
+T110	Modifier 1622 1631	Carefully
+T111	Action 1632 1639	pick up
+T112	Size 1642 1651	0.02 - µm
+T113	Device 1652 1666	Anodisc filter
+T114	Location 1674 1686	plastic ring
+T115	Action 1691 1694	lay
+T116	Mention 1695 1697	it
+T117	Device 1707 1725	wet backing filter
+T118	Location 1737 1749	plastic ring
+T119	Action 1750 1756	facing
+T120	Method 1757 1763	upward
+T121	Reagent 1773 1779	sample
+T122	Modifier 1789 1798	preserved
+T123	Modifier 1803 1809	frozen
+T124	Action 1825 1829	thaw
+T125	Temperature 1838 1842	37°C
+T126	Device 1843 1853	water bath
+T127	Reagent 1862 1868	sample
+T128	Modifier 1888 1897	collected
+T129	Action 1900 1903	fix
+T130	Concentration 1912 1917	0.5 %
+T131	Reagent 1918 1932	glutaraldehyde
+T132	Time 1937 1946	15–30 min
+T133	Temperature 1950 1953	4°C
+T134	Action 1994 2001	prepare
+T135	Reagent 2002 2027	duplicate control samples
+T136	Action 2031 2037	fixing
+T137	Amount 2038 2042	1 mL
+T138	Size 2050 2059	0.02 - µm
+T139	Reagent 2060 2074	filtered water
+T140	Action 2092 2098	dilute
+T141	Reagent 2103 2113	SYBR stain
+T142	Reagent 2183 2199	seawater samples
+T143	Action 2210 2217	diluted
+T144	Generic-Measure 2221 2228	< 7 psu
+T145	Size 2234 2243	0.02 - µm
+T146	Modifier 2244 2252	filtered
+T147	Reagent 2253 2257	dH2O
+T148	Amount 2672 2682	0.8–1.0 mL
+T149	Reagent 2683 2689	sample
+T150	Action 2693 2698	added
+T151	Location 2706 2713	surface
+T152	Device 2721 2735	Anodisc filter
+T153	Device 2746 2752	vacuum
+T154	Action 2756 2759	off
+T155	Action 2762 2769	Turn on
+T156	Device 2774 2780	vacuum
+T157	Action 2785 2789	suck
+T158	Reagent 2794 2800	sample
+T159	Device 2813 2819	filter
+T160	Reagent 2826 2838	oligotrophic
+T161	Modifier 2842 2851	very deep
+T162	Reagent 2852 2865	ocean samples
+T163	Action 2891 2897	filter
+T164	Amount 2898 2902	4 mL
+T165	Device 2913 2926	Filter towers
+T166	Action 2935 2942	cleaned
+T167	Reagent 2951 2958	samples
+T168	Action 2961 2966	Rinse
+T169	Device 2971 2977	towers
+T170	Size 2983 2992	0.02 - µm
+T171	Modifier 2993 3001	filtered
+T172	Reagent 3002 3006	dH2O
+T173	Reagent 3019 3026	ethanol
+T174	Action 3029 3032	Dry
+T175	Device 3038 3055	lint - free paper
+T176	Action 3110 3116	remove
+T177	Device 3121 3128	Anodisc
+T178	Device 3138 3144	vacuum
+T179	Action 3151 3153	on
+T180	Device 3166 3172	filter
+T181	Action 3176 3185	air - dry
+T182	Location 3229 3236	surface
+T183	Modifier 3240 3247	visibly
+T184	Action 3248 3251	dry
+T185	Action 3254 3259	Place
+T186	Device 3264 3271	Anodisc
+T187	Method 3274 3288	sample side up
+T188	Reagent 3296 3309	drop of stain
+T189	Location 3317 3327	Petri dish
+T190	Device 3340 3346	filter
+T191	Action 3350 3355	stain
+T192	Time 3360 3366	15 min
+T193	Location 3374 3378	dark
+T194	Device 3391 3397	filter
+T195	Action 3401 3406	stain
+T196	Time 3411 3415	48 h
+T197	Location 3423 3427	dark
+T198	Temperature 3433 3449	room temperature
+T199	Action 3452 3455	Add
+T200	Reagent 3458 3462	drop
+T201	Reagent 3466 3470	dH2O
+T202	Device 3478 3492	backing filter
+T203	Action 3495 3498	lay
+T204	Modifier 3503 3510	stained
+T205	Reagent 3511 3518	Anodisc
+T206	Location 3522 3525	top
+T207	Device 3540 3546	vacuum
+T208	Action 3550 3556	remove
+T209	Modifier 3557 3560	any
+T210	Modifier 3561 3570	remaining
+T211	Reagent 3571 3576	fluid
+T212	Action 3783 3788	rinse
+T213	Device 3793 3799	filter
+T214	Numerical 3800 3805	twice
+T215	Amount 3811 3815	1 mL
+T216	Size 3819 3828	0.02 - µm
+T217	Modifier 3829 3837	filtered
+T218	Reagent 3838 3842	dH2O
+T219	Action 3845 3851	Remove
+T220	Device 3856 3863	Anodisc
+T221	Device 3874 3880	vacuum
+T222	Action 3884 3886	on
+T223	Action 3889 3894	Place
+T224	Device 3899 3906	Anodisc
+T225	Method 3909 3925	sample - side up
+T226	Size 3933 3939	9 - cm
+T227	Device 3940 3952	filter paper
+T228	Device 3956 3963	Kimwipe
+T229	Location 3971 3975	dark
+T230	Device 3992 3998	filter
+T231	Action 4002 4005	dry
+T232	Mention 4012 4014	it
+T233	Action 4015 4029	appears opaque
+T234	Action 4032 4037	Place
+T235	Amount 4038 4046	12–15 µL
+T236	Reagent 4047 4064	antifade solution
+T237	Modifier 4070 4077	labeled
+T238	Location 4078 4089	glass slide
+T239	Action 4094 4097	lay
+T240	Modifier 4102 4105	dry
+T241	Device 4106 4113	Anodisc
+T242	Location 4117 4120	top
+T243	Action 4123 4126	Add
+T244	Amount 4127 4134	~ 20 µL
+T245	Reagent 4135 4143	antifade
+T246	Location 4147 4150	top
+T247	Device 4158 4165	Anodisc
+T248	Action 4170 4175	cover
+T249	Seal 4183 4192	coverslip
+T250	Action 4195 4200	Place
+T251	Amount 4201 4209	12–15 µL
+T252	Reagent 4210 4245	spectrophotometric - grade glycerol
+T253	Modifier 4251 4258	labeled
+T254	Location 4259 4270	glass slide
+T255	Action 4275 4278	lay
+T256	Modifier 4283 4286	dry
+T257	Device 4287 4294	Anodisc
+T258	Location 4298 4301	top
+T259	Action 4304 4307	Add
+T260	Amount 4308 4315	~ 20 µL
+T261	Reagent 4316 4324	glycerol
+T262	Location 4328 4331	top
+T263	Device 4339 4346	Anodisc
+T264	Action 4351 4356	cover
+T265	Seal 4364 4373	coverslip
+T266	Action 4376 4382	Remove
+T267	Modifier 4383 4386	any
+T268	Reagent 4387 4398	air bubbles
+T269	Action 4408 4415	trapped
+T270	Location 4416 4421	under
+T271	Seal 4426 4435	coverslip
+T272	Modifier 4439 4445	gently
+T273	Action 4446 4454	pressing
+T274	Location 4462 4469	surface
+T275	Location 4476 4482	slides
+T276	Action 4490 4497	counted
+T277	Modifier 4498 4509	immediately
+T278	Action 4513 4519	stored
+T279	Modifier 4520 4526	frozen
+T280	Temperature 4530 4535	–20°C
+T281	Modifier 4540 4548	at least
+T282	Time 4549 4557	4 months
+T283	Action 4609 4614	Count
+T284	Reagent 4619 4626	viruses
+T285	Numerical 4630 4635	1000×
+T286	Measure-Type 4636 4649	magnification
+T287	Method 4658 4684	100× oilemersion objective
+T288	Action 4696 4704	checking
+T289	Device 4709 4721	test filters
+T290	Reagent 4741 4749	reagents
+T291	Device 4753 4760	filters
+T292	Action 4766 4782	not contaminated
+T293	Action 4827 4832	Check
+T294	Modifier 4833 4837	each
+T295	Location 4838 4843	slide
+T296	Device 4882 4888	filter
+T297	Modifier 4892 4898	evenly
+T298	Action 4899 4906	stained
+T299	Reagent 4920 4927	viruses
+T300	Location 4937 4958	single plane of focus
+T301	Action 4963 4976	not suspended
+T302	Reagent 4984 4999	mounting medium
+T303	Modifier 5008 5014	evenly
+T304	Action 5015 5026	distributed
+T305	Location 5027 5033	across
+T306	Device 5038 5044	filter
+T307	Device 5057 5072	ocular reticule
+T308	Action 5075 5081	select
+T309	Modifier 5085 5096	appropriate
+T310	Numerical 5097 5103	number
+T311	Reagent 5107 5119	grid squares
+T312	Numerical 5138 5144	10–100
+T313	Modifier 5145 5152	stained
+T314	Reagent 5153 5160	viruses
+T315	Modifier 5164 5168	each
+T316	Location 5169 5174	field
+T317	Action 5177 5185	Estimate
+T318	Measure-Type 5190 5199	abundance
+T319	Reagent 5203 5210	viruses
+T320	Action 5214 5222	counting
+T321	Modifier 5223 5231	at least
+T322	Numerical 5232 5234	20
+T323	Reagent 5235 5248	random fields
+E1	Action:T1 Acts-on:T2 Product:T9
+E2	Action:T3 Acts-on:T4
+E3	Action:T8 Acts-on:E4 Product:T13
+E4	Action:T10 Acts-on:T9
+E5	Action:T14 Acts-on:T13
+E6	Action:T16 Using:T15 Acts-on:T17 Using2:T19 Acts-on2:E5 Product:T31
+E7	Action:T22 Acts-on:T21
+E8	Action:T23 Acts-on:T27 Site:T29 Acts-on2:E49 Product:T43
+E9	Action:T32 Acts-on:T34 Product:T38
+E10	Action:T36 Acts-on:T38 Site:T43 Product:T46
+E11	Action:T45 Using:T48 Acts-on:T46 Product:T50 Product2:T52
+E12	Action:T49 Acts-on:T50 Site:T51
+E13	Action:T53 Acts-on:T52
+E14	Action:T54 Acts-on:T55 Site:T59 Product:T66 Acts-on2:E12
+E15	Action:T60 Using:T64 Site:T62
+E16	Action:T65 Acts-on:T66 Site:T67
+E17	Action:T68 Acts-on:T69 Site:T70 Product:T236 Product2:T245
+E18	Action:T73 Acts-on:T72
+E19	Action:T74 Acts-on:T77 Site:T79 Acts-on2:E18 Product:T91 Product2:T93
+E20	Action:T82 Acts-on:T84 Site:T90
+E21	Action:T85 Using:T88 Product:T84
+E22	Action:T92 Acts-on:T93
+E23	Action:T94 Acts-on:T95 Site:T98 Using:T99 Site2:T97 Product:T105
+E24	Action:T101 Acts-on:T103 Site:T105 Product:T107
+E25	Action:T106 Acts-on:T107 Using:T108
+E26	Action:T111 Acts-on:T114 Product:T116
+E27	Action:T115 Site:T117 Acts-on:T116 Product:T152
+E28	Action:T119 Acts-on:T118 Using:T120
+E29	Action:T124 Using:T126 Product:T141 Acts-on:T121
+E30	Action:T129 Using:T131 Product:T141 Acts-on:T127
+E31	Action:T134 Product:T135
+E32	Action:T136 Acts-on:T139 Product:T142
+E33	Action:T140 Acts-on:T141 Product:T139
+E34	Action:T143 Using:T147 Acts-on:T142 Product:T149
+E35	Action:T150 Acts-on:T149 Site:T151 Product:T158 Product2:T162
+E36	Action:T154 Acts-on:T153
+E37	Action:T155 Acts-on:T156
+E38	Action:T157 Acts-on:T158 Using:T159
+E39	Action:T163 Product:T165 Product2:T167 Acts-on:T162
+E40	Action:T166 Acts-on:T165 Product:T177
+E41	Action:T168 Acts-on:T169 Using:T173 Using2:T172
+E42	Action:T174 Using:T175 Acts-on:E41
+E43	Action:T176 Acts-on:T177 Product:T180 Product2:T186
+E44	Action:T179 Acts-on:T178
+E45	Action:T181 Acts-on:T180 Product:T190 Product2:T194
+E46	Action:T184 Acts-on:T182
+E47	Action:T185 Acts-on:T186 Using:T187 Site:T188
+E48	Action:T191 Acts-on:T190 Site:T193 Product:T202
+E49	Action:T195 Acts-on:T194 Site:T197 Product:T202
+E50	Action:T199 Acts-on:T200 Site:T202 Product:T211
+E51	Action:T203 Acts-on:T205 Site:T206
+E52	Action:T208 Using:T207 Acts-on:T211 Product:T213
+E53	Action:T212 Acts-on:T213 Count:T214 Using:T218
+E54	Action:T219 Acts-on:T220 Product:T224
+E55	Action:T222 Acts-on:T221
+E56	Action:T223 Acts-on:T224 Using:T225 Site:T227 Product:T230
+E57	Action:T231 Acts-on:T230
+E58	Action:T233 Acts-on:T232 Product:T241 Product2:T257
+E59	Action:T234 Acts-on:T236 Site:T238
+E60	Action:T239 Acts-on:T241 Site:T242 Product:T247
+E61	Action:T243 Using:T245 Site:T246
+E62	Action:T248 Using:T249 Acts-on:T246 Product:T271
+E63	Action:T250 Using:T252 Site:T254
+E64	Action:T255 Acts-on:T257 Site:T258 Product:T263
+E65	Action:T259 Acts-on:T261 Site:T262
+E66	Action:T264 Acts-on:E65 Using:T265 Product:T271
+E67	Action:T266 Acts-on:T268 Product:T275
+E68	Action:T269 Site:T270 Product:T268
+E69	Action:T273 Acts-on:T274
+E70	Action:T276 Acts-on:T275
+E71	Action:T278 Product:T295 Product2:T284
+E72	Action:T283 Acts-on:T284 Using:T287 Product:T299
+E73	Action:T288 Acts-on:T289
+E74	Action:T292 Acts-on:T291 Product:T296 Product2:T306
+E75	Action:T293 Acts-on:T295 Product:T314
+E76	Action:T298 Acts-on:T296
+E77	Action:T301 Acts-on:T299 Site:T302
+E78	Action:T304 Site:T305 Acts-on:T299
+E79	Action:T308 Using:T307 Acts-on:T311 Site:T316 Product:T319 Product2:T323
+E80	Action:T317 Measure-Type-Link:T318 Acts-on:T319
+E81	Action:T320 Acts-on:T323
+R1	Measure Arg1:T27 Arg2:T24
+R2	Measure Arg1:T38 Arg2:T37
+R3	Measure Arg1:T43 Arg2:T41
+R4	Mod-Link Arg1:T59 Arg2:T58
+R5	Measure Arg1:T62 Arg2:T61
+R6	Measure Arg1:T77 Arg2:T75
+R7	Measure Arg1:T88 Arg2:T86
+R8	Measure Arg1:T113 Arg2:T112
+R9	Setting Arg1:E29 Arg2:T125
+R10	Measure Arg1:T131 Arg2:T130
+R11	Setting Arg1:E30 Arg2:T133
+R12	Setting Arg1:E30 Arg2:T132
+R13	Measure Arg1:T139 Arg2:T138
+R14	Measure Arg1:T139 Arg2:T137
+R15	Meronym Arg1:T159 Arg2:T156
+R16	Mod-Link Arg1:T172 Arg2:T171
+R17	Setting Arg1:E48 Arg2:T192
+R18	Setting Arg1:E49 Arg2:T196
+R19	Mod-Link Arg1:T218 Arg2:T217
+R20	Measure Arg1:T218 Arg2:T215
+R21	Measure Arg1:T236 Arg2:T235
+R22	Mod-Link Arg1:T238 Arg2:T237
+R23	Measure Arg1:T245 Arg2:T244
+R24	Measure Arg1:T252 Arg2:T251
+R25	Mod-Link Arg1:T254 Arg2:T253
+R26	Measure Arg1:T261 Arg2:T260
+R27	Setting Arg1:E71 Arg2:T280
+R28	Meronym Arg1:T17 Arg2:T18
+R29	Mod-Link Arg1:T21 Arg2:T20
+R30	Mod-Link Arg1:T27 Arg2:T26
+R31	Setting Arg1:T26 Arg2:T25
+R32	Mod-Link Arg1:T31 Arg2:T30
+R33	Mod-Link Arg1:T29 Arg2:T28
+R34	Meronym Arg1:T29 Arg2:T31
+R35	Measure Arg1:T34 Arg2:T33
+R36	Meronym Arg1:T34 Arg2:T35
+R37	Or Arg1:T41 Arg2:T40
+R38	Mod-Link Arg1:T43 Arg2:T42
+R39	Or Arg1:T43 Arg2:T44
+R40	Mod-Link Arg1:T43 Arg2:T39
+R41	Mod-Link Arg1:T59 Arg2:T57
+R42	Mod-Link Arg1:T59 Arg2:T56
+R43	Measure Arg1:T62 Arg2:T63
+R44	Coreference-Link Arg1:T69 Arg2:T66
+R45	Mod-Link Arg1:T81 Arg2:T80
+R46	Mod-Link Arg1:T77 Arg2:T76
+R47	Mod-Link Arg1:T79 Arg2:T78
+R48	Meronym Arg1:T79 Arg2:T81
+R49	Mod-Link Arg1:T72 Arg2:T71
+R50	Mod-Link Arg1:T88 Arg2:T87
+R51	Measure Arg1:T88 Arg2:T89
+R52	Setting Arg1:T84 Arg2:T83
+R53	Meronym Arg1:T90 Arg2:T91
+R54	Setting Arg1:T97 Arg2:T96
+R55	Setting Arg1:T99 Arg2:T100
+R56	Setting Arg1:T103 Arg2:T102
+R57	Mod-Link Arg1:T105 Arg2:T104
+R58	Meronym Arg1:T108 Arg2:T109
+R59	Mod-Link Arg1:E26 Arg2:T110
+R60	Meronym Arg1:T114 Arg2:T113
+R61	Mod-Link Arg1:T121 Arg2:T122
+R62	Mod-Link Arg1:T121 Arg2:T123
+R63	Mod-Link Arg1:T127 Arg2:T128
+R64	Setting Arg1:E34 Arg2:T144
+R65	Mod-Link Arg1:T147 Arg2:T146
+R66	Setting Arg1:T146 Arg2:T145
+R67	Measure Arg1:T149 Arg2:T148
+R68	Meronym Arg1:T151 Arg2:T152
+R69	Setting Arg1:E39 Arg2:T164
+R70	Mod-Link Arg1:T162 Arg2:T161
+R71	Or Arg1:T162 Arg2:T160
+R72	Setting Arg1:T171 Arg2:T170
+R73	Mod-Link Arg1:E46 Arg2:T183
+R74	Meronym Arg1:T188 Arg2:T189
+R75	Setting Arg1:E49 Arg2:T198
+R76	Meronym Arg1:T200 Arg2:T201
+R77	Mod-Link Arg1:T205 Arg2:T204
+R78	Mod-Link Arg1:T211 Arg2:T210
+R79	Mod-Link Arg1:T211 Arg2:T209
+R80	Meronym Arg1:T206 Arg2:T202
+R81	Setting Arg1:T217 Arg2:T216
+R82	Setting Arg1:T227 Arg2:T226
+R83	Meronym Arg1:T227 Arg2:T228
+R84	Meronym Arg1:T227 Arg2:T229
+R85	Meronym Arg1:T228 Arg2:T229
+R86	Mod-Link Arg1:T241 Arg2:T240
+R87	Meronym Arg1:T242 Arg2:T238
+R88	Meronym Arg1:T246 Arg2:T247
+R89	Meronym Arg1:T258 Arg2:T254
+R90	Meronym Arg1:T262 Arg2:T263
+R91	Mod-Link Arg1:E69 Arg2:T272
+R92	Mod-Link Arg1:T268 Arg2:T267
+R93	Meronym Arg1:T270 Arg2:T271
+R94	Mod-Link Arg1:E70 Arg2:T277
+R95	Mod-Link Arg1:E71 Arg2:T279
+R96	Mod-Link Arg1:T282 Arg2:T281
+R97	Setting Arg1:E71 Arg2:T282
+R98	Of-Type Arg1:T285 Arg2:T286
+R99	Setting Arg1:E72 Arg2:T285
+R100	Or Arg1:T291 Arg2:T290
+R101	Mod-Link Arg1:T295 Arg2:T294
+R102	Mod-Link Arg1:E76 Arg2:T297
+R103	Meronym Arg1:T299 Arg2:T300
+R104	Mod-Link Arg1:E78 Arg2:T303
+R105	Meronym Arg1:T305 Arg2:T306
+R106	Measure Arg1:T311 Arg2:T310
+R107	Or Arg1:T310 Arg2:T309
+R108	Mod-Link Arg1:T314 Arg2:T313
+R109	Measure Arg1:T314 Arg2:T312
+R110	Mod-Link Arg1:T316 Arg2:T315
+R111	Measure Arg1:T323 Arg2:T322
+R112	Or Arg1:T322 Arg2:T321
+R113	Prevents Arg1:E12 Arg2:E13
+R114	Setting Arg1:E37 Arg2:T5
+R115	Setting Arg1:E37 Arg2:T6
+R116	Setting Arg1:E37 Arg2:T7
+R117	Enables Arg1:E37 Arg2:E3
+R118	Measure Arg1:T13 Arg2:T12
+R119	Mod-Link Arg1:T13 Arg2:T11
+R120	Enables Arg1:E15 Arg2:E14
+R121	Enables Arg1:E20 Arg2:E22
+R122	Enables Arg1:E28 Arg2:E27
+R123	Enables Arg1:E32 Arg2:E31
+R124	Enables Arg1:E36 Arg2:E35
+R125	Meronym Arg1:T167 Arg2:T165
+R126	Enables Arg1:E41 Arg2:E40
+R127	Overlaps Arg1:E43 Arg2:E44
+R128	Enables Arg1:E45 Arg2:E46
+R129	Enables Arg1:E51 Arg2:E50
+R130	Enables Arg1:E55 Arg2:E54
+R131	Meronym Arg1:T232 Arg2:T230
+R132	Enables Arg1:E57 Arg2:E58
+R133	Enables Arg1:E69 Arg2:E67
+R134	Meronym Arg1:T274 Arg2:T271
+R135	Or Arg1:E70 Arg2:E71
+R136	Enables Arg1:E73 Arg2:E74
+R137	Enables Arg1:E76 Arg2:E75
+R138	Enables Arg1:E77 Arg2:E75
+R139	Enables Arg1:E78 Arg2:E75
+R140	Meronym Arg1:T314 Arg2:T311
+R141	Enables Arg1:E81 Arg2:E80
+R142	Mod-Link Arg1:E11 Arg2:T47
+R143	Mod-Link Arg1:T257 Arg2:T256

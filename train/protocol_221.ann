@@ -1,0 +1,105 @@
+T1	Amount 49 55	200 µL
+T2	Reagent 56 73	overnight culture
+T3	Action 77 87	inoculated
+T4	Size 91 97	100 mL
+T5	Location 98 111	culture flask
+T6	Amount 117 122	50 mL
+T7	Reagent 123 136	growth medium
+T8	Reagent 149 151	LB
+T9	Action 156 164	Incubate
+T10	Location 168 183	a shaking table
+T11	Time 184 263	until the density in the culture has reached cell density of ~ 5 × 108 CFU mL–1
+T12	Amount 305 309	1 mL
+T13	Reagent 310 318	aliquots
+T14	Reagent 326 343	bacterial culture
+T15	Action 348 353	mixed
+T16	Reagent 359 369	subsamples
+T17	Reagent 377 388	phage stock
+T18	Location 392 418	triplicate microfuge tubes
+T19	Generic-Measure 422 480	an multiplicity of infection ( MOI ) of approximately 0.01
+T20	Action 483 491	Incubate
+T21	Time 496 502	10 min
+T22	Reagent 516 522	phages
+T23	Action 526 532	adsorb
+T24	Reagent 540 550	host cells
+T25	Action 553 563	Centrifuge
+T26	Reagent 568 573	cells
+T27	Speed 576 581	6000g
+T28	Time 584 590	10 min
+T29	Action 595 601	Remove
+T30	Reagent 606 617	supernatant
+T31	Action 620 629	Resuspend
+T32	Reagent 634 640	pellet
+T33	Amount 644 648	1 mL
+T34	Reagent 649 662	growth medium
+T35	Reagent 675 677	LB
+T36	Action 682 700	Repeat steps 5 - 7
+T37	Action 704 712	wash out
+T38	Reagent 725 742	unadsorbed phages
+T39	Action 745 753	Transfer
+T40	Amount 754 759	50 µL
+T41	Reagent 767 786	resuspended culture
+T42	Reagent 789 797	bacteria
+T43	Reagent 802 817	adsorbed phages
+T44	Amount 823 828	50 mL
+T45	Reagent 829 842	growth medium
+T46	Size 848 854	100 mL
+T47	Location 855 868	culture flask
+T48	Action 873 881	mix well
+T49	Action 884 892	Transfer
+T50	Amount 893 897	1 mL
+T51	Location 903 917	microfuge tube
+T52	Action 920 928	Incubate
+T53	Modifier 933 943	triplicate
+T54	Amount 944 949	50 mL
+T55	Reagent 950 958	cultures
+T56	Location 962 977	a shaking table
+T57	Action 980 989	Determine
+T58	Generic-Measure 990 1036	the number of PFU ( total infectious centers )
+T59	Method 1040 1052	plaque assay
+T60	Reagent 1060 1076	collected sample
+T61	Action 1079 1098	Continue to collect
+T62	Reagent 1099 1106	samples
+T63	Time 1129 1138	6–8 hours
+E1	Action:T3 Acts-on:T2 Site:T5 Using:T7
+E2	Action:T9 Site:T10 Acts-on:E1 Product:T14
+E3	Action:T15 Acts-on:T13 Acts-on2:T16 Site:T18 Product:T22 Product2:T24
+E4	Action:T20 Product:T26
+E5	Action:T23 
+E6	Action:T25 Acts-on:T26 Product:T30
+E7	Action:T29 Acts-on:T30 Product:T32
+E8	Action:T31 Site:T34 Acts-on:T32 Product:T41
+E9	Action:T36 
+E10	Action:T37 Acts-on:T38
+E11	Action:T39 Acts-on:T41 Site:T45
+E12	Action:T48 Acts-on:E11
+E13	Action:T49 Site:T51 Acts-on:E12 Product:T55
+E14	Action:T52 Acts-on:T55 Site:T56 Product:T60
+E15	Action:T57 Using:T59 Acts-on:T60 Product:T62
+E16	Action:T61 Acts-on:T62
+R1	Meronym Arg1:T8 Arg2:T7
+R2	Measure Arg1:T7 Arg2:T6
+R3	Measure Arg1:T2 Arg2:T1
+R4	Measure Arg1:T5 Arg2:T4
+R5	Setting Arg1:E2 Arg2:T11
+R6	Measure Arg1:T13 Arg2:T12
+R7	Meronym Arg1:T14 Arg2:T13
+R8	Meronym Arg1:T17 Arg2:T16
+R9	Setting Arg1:E3 Arg2:T19
+R10	Setting Arg1:E4 Arg2:T21
+R11	Setting Arg1:E6 Arg2:T27
+R12	Setting Arg1:E6 Arg2:T28
+R13	Meronym Arg1:T35 Arg2:T34
+R14	Measure Arg1:T34 Arg2:T33
+R15	Meronym Arg1:T42 Arg2:T41
+R16	Meronym Arg1:T43 Arg2:T41
+R17	Measure Arg1:T41 Arg2:T40
+R18	Measure Arg1:T45 Arg2:T44
+R19	Measure Arg1:T47 Arg2:T46
+R20	Meronym Arg1:T45 Arg2:T47
+R21	Measure Arg1:T55 Arg2:T54
+R22	Mod-Link Arg1:T55 Arg2:T53
+R23	Setting Arg1:E15 Arg2:T58
+R24	Setting Arg1:E16 Arg2:T63
+R25	Enables Arg1:E4 Arg2:E5
+R26	Enables Arg1:E9 Arg2:E10

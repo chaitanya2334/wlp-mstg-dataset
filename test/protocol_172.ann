@@ -1,0 +1,127 @@
+T1	Modifier 59 66	sterile
+T2	Method 67 77	techniques
+T3	Action 81 88	harvest
+T4	Amount 89 95	800 ml
+T5	Reagent 99 106	culture
+T6	Action 113 119	divide
+T7	Numerical 125 126	4
+T8	Amount 127 133	250 ml
+T9	Location 134 152	centrifuge bottles
+T10	Amount 158 164	200 ml
+T11	Modifier 165 169	each
+T12	Action 172 176	Spin
+T13	Location 181 199	centrifuge bottles
+T14	Speed 203 209	5000 g
+T15	Time 214 220	10 min
+T16	Modifier 223 232	Carefully
+T17	Action 233 239	decant
+T18	Reagent 244 255	supernatant
+T19	Amount 262 268	0.5 ml
+T20	Reagent 272 280	RNALater
+T21	Action 284 293	resuspend
+T22	Reagent 298 304	pellet
+T23	Action 309 317	transfer
+T24	Mention 318 320	it
+T25	Location 326 346	microcentrifuge tube
+T26	Amount 361 368	0.25 ml
+T27	Reagent 372 380	RNALater
+T28	Action 384 388	wash
+T29	Location 393 399	bottle
+T30	Action 404 410	obtain
+T31	Modifier 411 424	any remaining
+T32	Reagent 425 430	cells
+T33	Action 433 441	Transfer
+T34	Amount 447 454	0.25 ml
+T35	Modifier 464 468	same
+T36	Location 469 489	microcentrifuge tube
+T37	Action 552 556	keep
+T38	Numerical 561 562	4
+T39	Modifier 563 572	harvested
+T40	Reagent 573 579	pellet
+T41	Action 600 605	Store
+T42	Modifier 610 619	harvested
+T43	Reagent 620 625	cells
+T44	Modifier 626 637	at or below
+T45	Temperature 638 644	- 20oC
+T46	Action 737 741	Thaw
+T47	Reagent 742 749	samples
+T48	Action 771 781	Centrifuge
+T49	Reagent 782 789	samples
+T50	Speed 793 801	> 10 k g
+T51	Time 806 812	10 min
+T52	Temperature 816 819	4oC
+T53	Action 963 967	spin
+T54	Modifier 968 974	harder
+T55	Time 981 992	longer time
+T56	Action 995 1001	Decant
+T57	Reagent 1002 1013	supernatent
+T58	Reagent 1019 1027	RNALater
+T59	Action 1030 1037	Extract
+T60	Reagent 1038 1041	RNA
+T61	Reagent 1050 1071	RNeasy Plant Mini Kit
+T62	Method 1097 1126	manufacturer's instructions .
+T63	Action 1127 1133	Remove
+T64	Reagent 1138 1141	DNA
+T65	Reagent 1151 1168	extracted samples
+T66	Reagent 1175 1180	DNase
+T67	Method 1203 1230	manufacturer's instructions
+T68	Action 1233 1241	Clean up
+T69	Modifier 1246 1251	total
+T70	Reagent 1252 1255	RNA
+T71	Reagent 1264 1292	RNA Clean & Concentrator kit
+T72	Method 1318 1345	manufacturer's instructions
+T73	Action 1348 1356	Quantify
+T74	Reagent 1361 1364	RNA
+T75	Method 1371 1391	any preferred method
+T76	Action 1422 1427	Store
+T77	Reagent 1432 1435	RNA
+T78	Temperature 1439 1445	- 80oC
+T79	Action 1467 1474	aliquot
+T80	Reagent 1480 1483	RNA
+E1	Action:T3 Using:T2 Acts-on:T5
+E2	Action:T6 Acts-on:E1 Site:T9 Product:T13
+E3	Action:T12 Acts-on:T13 Product:T18
+E4	Action:T17 Acts-on:T18 Product:T22
+E5	Action:T21 Using:T20 Acts-on:T22 Product:T24
+E6	Action:T23 Acts-on:T24 Site:T25 Product:T36
+E7	Action:T28 Using:T27 Acts-on:T29
+E8	Action:T30 Product:T32
+E9	Action:T33 Acts-on:E8 Site:T36 Product:T40
+E10	Action:T37 Acts-on:T40
+E11	Action:T41 Acts-on:T43 Product:T47
+E12	Action:T46 Acts-on:T47 Product:T49
+E13	Action:T48 Acts-on:T49 Product:T57
+E14	Action:T53 Product:T57
+E15	Action:T56 Acts-on:T57 Using:T58 Product:T60
+E16	Action:T59 Acts-on:T60 Using:T61 Using2:T62 Product:T64 Product2:T65
+E17	Action:T63 Acts-on:T64 Site:T65 Using:T66 Using2:T67 Product:T70
+E18	Action:T68 Acts-on:T70 Using:T71 Using2:T72 Product:T74
+E19	Action:T73 Acts-on:T74 Using:T75 Product:T77
+E20	Action:T76 Acts-on:T77 Product:T80
+E21	Action:T79 Acts-on:T80
+R1	Measure Arg1:T5 Arg2:T4
+R2	Setting Arg1:E2 Arg2:T10
+R3	Measure Arg1:T9 Arg2:T7
+R4	Measure Arg1:T9 Arg2:T8
+R5	Mod-Link Arg1:T10 Arg2:T11
+R6	Setting Arg1:E3 Arg2:T14
+R7	Setting Arg1:E3 Arg2:T15
+R8	Mod-Link Arg1:E4 Arg2:T16
+R9	Measure Arg1:T20 Arg2:T19
+R10	Coreference-Link Arg1:T20 Arg2:T27
+R11	Measure Arg1:T27 Arg2:T26
+R12	Mod-Link Arg1:T32 Arg2:T31
+R13	Setting Arg1:E9 Arg2:T34
+R14	Mod-Link Arg1:T36 Arg2:T35
+R15	Measure Arg1:T40 Arg2:T38
+R16	Mod-Link Arg1:T40 Arg2:T39
+R17	Setting Arg1:E11 Arg2:T45
+R18	Mod-Link Arg1:T43 Arg2:T42
+R19	Mod-Link Arg1:T45 Arg2:T44
+R20	Setting Arg1:E13 Arg2:T50
+R21	Setting Arg1:E13 Arg2:T51
+R22	Setting Arg1:E13 Arg2:T52
+R23	Mod-Link Arg1:E14 Arg2:T54
+R24	Setting Arg1:E14 Arg2:T55
+R25	Mod-Link Arg1:T70 Arg2:T69
+R26	Setting Arg1:E20 Arg2:T78

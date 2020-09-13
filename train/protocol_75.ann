@@ -1,0 +1,200 @@
+T1	Action 50 53	Add
+T2	Amount 54 58	1 mL
+T3	Reagent 59 77	T + C lysis buffer
+T4	Concentration 89 100	100 µg / ml
+T5	Reagent 101 113	proteinase K
+T6	Modifier 119 131	low - volume
+T7	Location 143 150	syringe
+T8	Action 240 246	Ensure
+T9	Modifier 261 268	minimal
+T10	Reagent 269 272	air
+T11	Location 280 316	injection syringe - adapter assembly
+T12	Action 324 331	connect
+T13	Device 342 348	outlet
+T14	Device 356 362	filter
+T15	Action 365 372	Connect
+T16	Modifier 375 381	second
+T17	Device 382 402	low - volume syringe
+T18	Device 410 422	filter inlet
+T19	Action 452 456	Hold
+T20	Device 461 486	filter - syringe assembly
+T21	Modifier 487 497	vertically
+T22	Device 507 523	injector syringe
+T23	Action 524 531	pushing
+T24	Method 532 549	upward from below
+T25	Action 552 556	Hold
+T26	Device 561 567	filter
+T27	Modifier 568 576	securely
+T28	Device 584 601	injection syringe
+T29	Modifier 606 612	gently
+T30	Modifier 619 625	firmly
+T31	Action 628 632	push
+T32	Reagent 633 650	extraction buffer
+T33	Location 660 674	filter housing
+T34	Action 738 746	Incubate
+T35	Device 751 759	assembly
+T36	Temperature 802 808	15 min
+T37	Temperature 812 816	65°C
+T38	Location 822 840	hybridization oven
+T39	Device 853 878	syringe - filter assembly
+T40	Action 882 886	cool
+T41	Modifier 887 894	briefly
+T42	Action 897 903	Remove
+T43	Reagent 908 915	extract
+T44	Action 919 926	holding
+T45	Device 931 947	syringe assembly
+T46	Modifier 948 958	vertically
+T47	Device 968 986	aspiration syringe
+T48	Location 987 997	underneath
+T49	Action 1113 1119	Detach
+T50	Device 1124 1142	aspiration syringe
+T51	Action 1145 1153	Transfer
+T52	Reagent 1158 1165	extract
+T53	Device 1171 1191	microcentrifuge tube
+T54	Action 1194 1199	Chill
+T55	Location 1203 1206	ice
+T56	Time 1211 1222	2–3 minutes
+T57	Action 1225 1228	Add
+T58	Generic-Measure 1229 1239	one - half
+T59	Reagent 1240 1283	volume of MPC protein precipitation reagent
+T60	Action 1312 1318	vortex
+T61	Time 1323 1327	10 s
+T62	Action 1330 1336	Pellet
+T63	Reagent 1341 1347	debris
+T64	Method 1351 1365	centrifugation
+T65	Speed 1369 1376	10,000g
+T66	Time 1381 1387	10 min
+T67	Action 1390 1398	Transfer
+T68	Reagent 1403 1414	supernatant
+T69	Modifier 1453 1460	sterile
+T70	Device 1461 1481	microcentrifuge tube
+T71	Action 1563 1571	Transfer
+T72	Modifier 1572 1577	up to
+T73	Amount 1578 1584	800 µl
+T74	Reagent 1592 1598	sample
+T75	Device 1604 1614	fresh tube
+T76	Action 1617 1620	add
+T77	Amount 1621 1625	1 µl
+T78	Reagent 1626 1643	polyacryl carrier
+T79	Action 1650 1656	vortex
+T80	Modifier 1657 1664	briefly
+T81	Action 1667 1670	Add
+T82	Amount 1671 1675	1 µl
+T83	Reagent 1676 1693	polyacryl carrier
+T84	Action 1700 1706	vortex
+T85	Modifier 1707 1714	briefly
+T86	Action 1717 1720	Add
+T87	Modifier 1724 1736	equal volume
+T88	Generic-Measure 1740 1745	100 %
+T89	Reagent 1746 1757	isopropanol
+T90	Action 1760 1763	Mix
+T91	Action 1767 1776	inverting
+T92	Device 1781 1785	tube
+T93	Method 1786 1799	several times
+T94	Action 1802 1812	Centrifuge
+T95	Reagent 1817 1823	sample
+T96	Speed 1827 1835	≥10,000g
+T97	Time 1840 1849	15–45 min
+T98	Action 1852 1858	Decant
+T99	Action 1862 1870	aspirate
+T100	Reagent 1875 1886	supernatant
+T101	Action 1889 1893	Wash
+T102	Reagent 1898 1904	pellet
+T103	Method 1905 1910	twice
+T104	Modifier 1913 1922	each time
+T105	Action 1923 1929	adding
+T106	Generic-Measure 1930 1934	70 %
+T107	Reagent 1935 1942	ethanol
+T108	Action 1945 1957	centrifuging
+T109	Time 1962 1967	1 min
+T110	Action 1974 1983	decanting
+T111	Reagent 2006 2013	ethanol
+T112	Action 2016 2025	Air - dry
+T113	Reagent 2030 2036	pellet
+T114	Action 2044 2052	dissolve
+T115	Amount 2056 2061	10 µL
+T116	Modifier 2065 2080	0.02 - filtered
+T117	Modifier 2083 2090	sterile
+T118	Reagent 2091 2105	0.5× TE buffer
+T119	Modifier 2106 2112	heated
+T120	Temperature 2116 2120	50°C
+E1	Action:T1 Acts-on:T3 Site:T7 Product:T11
+E2	Action:T8 Acts-on:T10 Site:T11
+E3	Action:T12 Acts-on:T11 Using:T13 Product:T18
+E4	Action:T15 Acts-on:T17 Using:T18 Product:T20
+E5	Action:T19 Acts-on:T20 Using:T22
+E6	Action:T23 Using:T24 Using2:T22
+E7	Action:T25 Acts-on:T26 Using:T28 Acts-on2:E5
+E8	Action:T31 Acts-on:T32 Site:T33
+E9	Action:T34 Acts-on:T35 Site:T38 Product:T39
+E10	Action:T40 Acts-on:T39 Product:T43
+E11	Action:T42 Acts-on:T43 Product:T52
+E12	Action:T44 Acts-on:T45 Using:T47 Site:T48
+E13	Action:T49 Acts-on:T50 Acts-on2:E11
+E14	Action:T51 Acts-on:T52 Using:T53
+E15	Action:T54 Site:T55 Acts-on:E14
+E16	Action:T57 Acts-on:T59
+E17	Action:T60 Acts-on:T59 Acts-on2:E16 Product:T63
+E18	Action:T62 Acts-on:T63 Using:T64 Product:T68
+E19	Action:T67 Acts-on:T68 Using:T70 Product:T74
+E20	Action:T71 Acts-on:T74
+E21	Action:T76 Acts-on:T78 Site:E20
+E22	Action:T79 Acts-on:T78 Acts-on2:E21
+E23	Action:T81 Acts-on:T83 Acts-on2:E22
+E24	Action:T84 Acts-on:T83 Acts-on2:E23
+E25	Action:T86 Acts-on:T89 Acts-on2:E24 Product:T92
+E26	Action:T90 Acts-on:T92 Using:T93 Product:T95
+E27	Action:T91 
+E28	Action:T94 Acts-on:T95 Product:T100 Product2:T102
+E29	Action:T98 Acts-on:T100
+E30	Action:T99 Acts-on:T100
+E31	Action:T101 Acts-on:T102 Using:T103 Acts-on2:T107
+E32	Action:T105 Acts-on:E31
+E33	Action:T108 Acts-on:T111 Acts-on2:E32
+E34	Action:T110 Acts-on:T111 Acts-on2:E33 Product:T113
+E35	Action:T112 Acts-on:T113
+E36	Action:T114 Acts-on:T113 Site:T118 Acts-on2:E35
+R1	Setting Arg1:E15 Arg2:T56
+R2	Mod-Link Arg1:E7 Arg2:T27
+R3	Mod-Link Arg1:E8 Arg2:T29
+R4	Mod-Link Arg1:E8 Arg2:T30
+R5	Mod-Link Arg1:T10 Arg2:T9
+R6	Meronym Arg1:T14 Arg2:T13
+R7	Measure Arg1:T59 Arg2:T58
+R8	Setting Arg1:E17 Arg2:T61
+R9	Setting Arg1:E18 Arg2:T65
+R10	Setting Arg1:E18 Arg2:T66
+R11	Mod-Link Arg1:T70 Arg2:T69
+R12	Setting Arg1:T72 Arg2:T73
+R13	Measure Arg1:T74 Arg2:T73
+R14	Measure Arg1:T78 Arg2:T77
+R15	Mod-Link Arg1:E22 Arg2:T80
+R16	Measure Arg1:T83 Arg2:T82
+R17	Mod-Link Arg1:E24 Arg2:T85
+R18	Mod-Link Arg1:T89 Arg2:T87
+R19	Measure Arg1:T89 Arg2:T88
+R20	Setting Arg1:E28 Arg2:T96
+R21	Setting Arg1:E28 Arg2:T97
+R22	Mod-Link Arg1:E31 Arg2:T104
+R23	Measure Arg1:T107 Arg2:T106
+R24	Setting Arg1:E33 Arg2:T109
+R25	Measure Arg1:T118 Arg2:T115
+R26	Mod-Link Arg1:T118 Arg2:T116
+R27	Mod-Link Arg1:T118 Arg2:T117
+R28	Setting Arg1:T119 Arg2:T120
+R29	Mod-Link Arg1:T118 Arg2:T119
+R30	Mod-Link Arg1:E5 Arg2:T21
+R31	Measure Arg1:T3 Arg2:T2
+R32	Mod-Link Arg1:T7 Arg2:T6
+R33	Measure Arg1:T5 Arg2:T4
+R34	Meronym Arg1:T5 Arg2:T3
+R35	Mod-Link Arg1:T17 Arg2:T16
+R36	Setting Arg1:E9 Arg2:T36
+R37	Setting Arg1:E9 Arg2:T37
+R38	Mod-Link Arg1:E10 Arg2:T41
+R39	Mod-Link Arg1:E12 Arg2:T46
+R40	Overlaps Arg1:E6 Arg2:E5
+R41	Overlaps Arg1:E8 Arg2:E7
+R42	Enables Arg1:E12 Arg2:E11
+R43	Enables Arg1:E27 Arg2:E26
+R44	Or Arg1:E30 Arg2:E29

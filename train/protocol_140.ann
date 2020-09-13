@@ -1,0 +1,153 @@
+T1	Action 55 59	Thaw
+T2	Modifier 60 66	frozen
+T3	Reagent 67 75	sections
+T4	Modifier 81 87	sealed
+T5	Location 88 99	environment
+T6	Modifier 144 157	Approximately
+T7	Time 158 164	1 hour
+T8	Action 169 172	Fix
+T9	Time 177 186	5 minutes
+T10	Reagent 190 197	acetone
+T11	Temperature 200 206	- 20°C
+T12	Action 257 260	Dry
+T13	Time 265 275	10 minutes
+T14	Temperature 279 295	room temperature
+T15	Action 298 306	Incubate
+T16	Reagent 307 315	sections
+T17	Reagent 319 326	TBS - T
+T18	Amount 329 334	50 mM
+T19	Reagent 335 339	Tris
+T20	Amount 342 348	150 mM
+T21	Reagent 349 353	NaCl
+T22	Action 356 362	adjust
+T23	Measure-Type 363 365	pH
+T24	Reagent 371 374	HCl
+T25	pH 378 381	7.6
+T26	Concentration 387 393	0.05 %
+T27	Reagent 394 402	Tween 20
+T28	Time 409 419	15 minutes
+T29	Action 437 444	Perform
+T30	Method 445 462	antigen retrieval
+T31	Method 466 482	enzyme digestion
+T32	Action 495 499	Wash
+T33	Numerical 500 505	twice
+T34	Time 510 519	2 minutes
+T35	Modifier 520 524	each
+T36	Reagent 530 537	TBS - T
+T37	Action 631 639	Incubate
+T38	Reagent 640 648	sections
+T39	Concentration 654 657	1 %
+T40	Reagent 658 672	Triton X - 100
+T41	Modifier 673 680	diluted
+T42	Reagent 684 687	TBS
+T43	Time 692 702	30 minutes
+T44	Temperature 706 722	room temperature
+T45	Action 907 915	incubate
+T46	Reagent 916 924	sections
+T47	Modifier 925 933	directly
+T48	Concentration 939 942	5 %
+T49	Reagent 943 994	normal mouse / rat / rabbit serum blocking solution
+T50	Time 999 1009	30 minutes
+T51	Temperature 1013 1029	room temperature
+T52	Action 1123 1127	Wash
+T53	Numerical 1128 1139	three times
+T54	Time 1144 1153	2 minutes
+T55	Modifier 1154 1158	each
+T56	Reagent 1164 1171	TBS - T
+T57	Action 1207 1215	Incubate
+T58	Reagent 1216 1224	sections
+T59	Concentration 1230 1233	3 %
+T60	Reagent 1234 1238	H2O2
+T61	Reagent 1242 1245	TBS
+T62	Time 1250 1260	10 minutes
+T63	Action 1364 1368	Wash
+T64	Numerical 1369 1376	3 times
+T65	Time 1381 1390	2 minutes
+T66	Modifier 1391 1395	each
+T67	Reagent 1401 1408	TBS - T
+T68	Action 1430 1438	Incubate
+T69	Reagent 1439 1447	sections
+T70	Reagent 1453 1469	primary antibody
+T71	Concentration 1477 1492	optimaldilution
+T72	Reagent 1562 1587	“antibodydilution buffer“
+T73	Time 1592 1607	30 - 60 minutes
+T74	Temperature 1611 1627	room temperature
+T75	Action 1755 1759	Wash
+T76	Numerical 1760 1765	twice
+T77	Time 1770 1779	2 minutes
+T78	Reagent 1785 1792	TBS - T
+T79	Action 1795 1807	Counterstain
+T80	Numerical 1808 1813	twice
+T81	Time 1818 1827	3 minutes
+T82	Modifier 1828 1832	each
+T83	Reagent 1838 1847	DAPI Wash
+T84	Numerical 1848 1853	twice
+T85	Time 1858 1867	2 minutes
+T86	Reagent 1873 1880	TBS - T
+T87	Action 1883 1892	Coverslip
+T88	Reagent 1898 1904	Mowiol
+T89	Reagent 1908 1923	mounting medium
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T8 Site:T10 Acts-on:E1
+E3	Action:T12 Acts-on:E2 Product:T16
+E4	Action:T15 Acts-on:T16 Site:T17
+E5	Action:T22 Using:T24 Using2:T27 Product:T17 Measure-Type-Link:T23 Acts-on:T21 Acts-on2:T19
+E6	Action:T29 Using:T30 Acts-on:E4
+E7	Action:T32 Count:T33 Using:T36 Acts-on:E6 Product:T38
+E8	Action:T37 Acts-on:T38 Using:T40 Product:T46
+E9	Action:T45 Acts-on:T46 Using:T49
+E10	Action:T52 Count:T53 Using:T56 Acts-on:E9 Product:T58
+E11	Action:T57 Acts-on:T58 Using:T60 Site:T61
+E12	Action:T63 Count:T64 Using:T67 Acts-on:E11 Product:T69
+E13	Action:T68 Acts-on:T69 Using:T70 Site:T72
+E14	Action:T75 Count:T76 Using:T78 Acts-on:E13
+E15	Action:T79 Count:T80 Using:T83 Count2:T84 Using2:T86 Acts-on:E14
+E16	Action:T87 Using:T88 Acts-on:E15
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T5 Arg2:T4
+R3	Setting Arg1:E1 Arg2:T7
+R4	Mod-Link Arg1:T7 Arg2:T6
+R5	Setting Arg1:E2 Arg2:T9
+R6	Setting Arg1:E2 Arg2:T11
+R7	Setting Arg1:E3 Arg2:T13
+R8	Setting Arg1:E3 Arg2:T14
+R9	Setting Arg1:E4 Arg2:T28
+R10	Measure Arg1:T19 Arg2:T18
+R11	Measure Arg1:T21 Arg2:T20
+R12	Setting Arg1:E5 Arg2:T25
+R13	Measure Arg1:T27 Arg2:T26
+R14	Or Arg1:T30 Arg2:T31
+R15	Setting Arg1:E7 Arg2:T34
+R16	Measure Arg1:T40 Arg2:T39
+R17	Setting Arg1:E8 Arg2:T43
+R18	Setting Arg1:E8 Arg2:T44
+R19	Mod-Link Arg1:E9 Arg2:T47
+R20	Measure Arg1:T49 Arg2:T48
+R21	Setting Arg1:E9 Arg2:T50
+R22	Setting Arg1:E9 Arg2:T51
+R23	Mod-Link Arg1:T54 Arg2:T55
+R24	Setting Arg1:E10 Arg2:T54
+R25	Measure Arg1:T60 Arg2:T59
+R26	Setting Arg1:E11 Arg2:T62
+R27	Setting Arg1:E12 Arg2:T65
+R28	Mod-Link Arg1:T65 Arg2:T66
+R29	Measure Arg1:T70 Arg2:T71
+R30	Setting Arg1:E13 Arg2:T73
+R31	Setting Arg1:E13 Arg2:T74
+R32	Setting Arg1:E14 Arg2:T77
+R33	Setting Arg1:E15 Arg2:T81
+R34	Mod-Link Arg1:T81 Arg2:T82
+R35	Setting Arg1:E15 Arg2:T85
+R36	Or Arg1:T88 Arg2:T89
+R37	Meronym Arg1:T19 Arg2:T17
+R38	Meronym Arg1:T21 Arg2:T17
+R39	Coreference-Link Arg1:T36 Arg2:T17
+R40	Mod-Link Arg1:E7 Arg2:T35
+R41	Meronym Arg1:T40 Arg2:T42
+R42	Mod-Link Arg1:T40 Arg2:T41
+R43	Coreference-Link Arg1:T56 Arg2:T36
+R44	Coreference-Link Arg1:T61 Arg2:T42
+R45	Meronym Arg1:T60 Arg2:T61
+R46	Coreference-Link Arg1:T67 Arg2:T56
+R47	Coreference-Link Arg1:T78 Arg2:T67
+R48	Coreference-Link Arg1:T86 Arg2:T78

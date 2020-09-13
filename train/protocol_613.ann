@@ -1,0 +1,143 @@
+T1	Action 79 82	Use
+T2	Amount 83 86	2ml
+T3	Location 87 92	tubes
+T4	Reagent 97 102	assay
+T5	Action 105 112	Prepare
+T6	Modifier 115 118	set
+T7	Reagent 122 139	protein standards
+T8	Modifier 150 158	supplied
+T9	Reagent 159 162	BSA
+T10	Reagent 166 195	Non - Animal Protein Standard
+T11	Action 317 320	Add
+T12	Amount 321 329	1 - 50µl
+T13	Reagent 337 352	protein samples
+T14	Amount 370 373	2ml
+T15	Location 374 379	tubes
+T16	Action 382 385	Add
+T17	Amount 386 391	0.5ml
+T18	Reagent 392 399	UPPA™ I
+T19	Modifier 403 407	each
+T20	Location 408 412	tube
+T21	Action 417 423	vortex
+T22	Action 426 434	Incubate
+T23	Time 439 452	2 - 3 minutes
+T24	Temperature 456 472	room temperature
+T25	Action 475 478	Add
+T26	Amount 479 484	0.5ml
+T27	Reagent 485 493	UPPA™ II
+T28	Location 501 506	tubes
+T29	Action 511 517	vortex
+T30	Action 520 530	Centrifuge
+T31	Location 535 540	tubes
+T32	Speed 560 570	~ 10,000xg
+T33	Time 577 586	5 minutes
+T34	Action 590 596	pellet
+T35	Modifier 601 613	precipitated
+T36	Reagent 614 621	protein
+T37	Action 624 634	Decant off
+T38	Reagent 639 650	supernatant
+T39	Action 653 659	return
+T40	Location 664 669	tubes
+T41	Device 677 687	centrifuge
+T42	Method 691 697	before
+T43	Modifier 700 707	quickly
+T44	Action 708 713	pulse
+T45	Action 717 726	spin down
+T46	Modifier 727 735	residual
+T47	Reagent 736 742	liquid
+T48	Action 747 753	remove
+T49	Device 761 768	pipette
+T50	Action 771 774	Add
+T51	Amount 775 780	100µl
+T52	Reagent 781 796	Copper Solution
+T53	Amount 815 820	400µl
+T54	Modifier 821 830	deionized
+T55	Reagent 831 836	water
+T56	Location 844 849	tubes
+T57	Action 854 860	vortex
+T58	Amount 916 919	1ml
+T59	Device 920 927	pipette
+T60	Modifier 930 937	rapidly
+T61	Action 938 943	shoot
+T62	Amount 944 947	1ml
+T63	Reagent 948 958	Reagent II
+T64	Modifier 959 967	directly
+T65	Modifier 973 977	each
+T66	Location 978 982	tube
+T67	Reagent 994 1003	Reagent I
+T68	Reagent 1009 1017	DI Water
+T69	Modifier 1022 1033	immediately
+T70	Action 1034 1037	mix
+T71	Mention 1038 1040	it
+T72	Action 1044 1053	inverting
+T73	Location 1058 1063	tubes
+T74	Action 1066 1074	Incubate
+T75	Temperature 1078 1094	room temperature
+T76	Time 1099 1114	15 - 20 minutes
+T77	Modifier 1124 1135	immediately
+T78	Action 1136 1140	read
+T79	Measure-Type 1141 1152	absorbances
+T80	Generic-Measure 1156 1161	480nm
+T81	Reagent 1170 1178	DI water
+E1	Action:T1 Site:T3 Acts-on:T4 Product:T15
+E2	Action:T5 Product:T7 Using:T9 Product2:T13
+E3	Action:T11 Acts-on:T13 Site:T15 Product:T20
+E4	Action:T16 Acts-on:T18 Site:T20
+E5	Action:T21 Acts-on:E4
+E6	Action:T22 Acts-on:E5 Product:T28
+E7	Action:T25 Acts-on:T27 Site:T28
+E8	Action:T29 Acts-on:E7 Product:T31
+E9	Action:T30 Acts-on:T31
+E10	Action:T34 Acts-on:T36 Product:T38
+E11	Action:T37 Acts-on:T38 Product:T40
+E12	Action:T39 Acts-on:T40 Site:T41 Using:T42
+E13	Action:T44 Using:T41 Acts-on:E12
+E14	Action:T45 Acts-on:T47
+E15	Action:T48 Using:T49 Acts-on:E14 Product:T56
+E16	Action:T50 Acts-on:T52 Acts-on2:T55 Site:T56
+E17	Action:T57 Acts-on:E16 Product:T66
+E18	Action:T61 Using:T59 Acts-on:T63 Site:T66
+E19	Action:T70 Acts-on:T71
+E20	Action:T72 Acts-on:T73
+E21	Action:T74 Acts-on:E20
+E22	Action:T78 Measure-Type-Link:T79 Acts-on:T81
+R1	Measure Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Mod-Link Arg1:T9 Arg2:T8
+R4	Or Arg1:T9 Arg2:T10
+R5	Measure Arg1:T13 Arg2:T12
+R6	Measure Arg1:T15 Arg2:T14
+R7	Measure Arg1:T18 Arg2:T17
+R8	Mod-Link Arg1:T20 Arg2:T19
+R9	Setting Arg1:E6 Arg2:T23
+R10	Setting Arg1:E6 Arg2:T24
+R11	Measure Arg1:T27 Arg2:T26
+R12	Mod-Link Arg1:T36 Arg2:T35
+R13	Setting Arg1:E9 Arg2:T32
+R14	Setting Arg1:E9 Arg2:T33
+R15	Mod-Link Arg1:E13 Arg2:T43
+R16	Mod-Link Arg1:T47 Arg2:T46
+R17	Mod-Link Arg1:T55 Arg2:T54
+R18	Measure Arg1:T55 Arg2:T53
+R19	Measure Arg1:T52 Arg2:T51
+R20	Measure Arg1:T63 Arg2:T62
+R21	Setting Arg1:T59 Arg2:T58
+R22	Mod-Link Arg1:E18 Arg2:T60
+R23	Mod-Link Arg1:E18 Arg2:T64
+R24	Mod-Link Arg1:T66 Arg2:T65
+R25	Meronym Arg1:T67 Arg2:T66
+R26	Meronym Arg1:T68 Arg2:T66
+R27	Mod-Link Arg1:E19 Arg2:T69
+R28	Coreference-Link Arg1:T66 Arg2:T71
+R29	Setting Arg1:E21 Arg2:T75
+R30	Setting Arg1:E21 Arg2:T76
+R31	Mod-Link Arg1:E22 Arg2:T77
+R32	Setting Arg1:E22 Arg2:T80
+R33	Enables Arg1:E9 Arg2:E10
+R34	Meronym Arg1:T36 Arg2:T31
+R35	Enables Arg1:E13 Arg2:E14
+R36	Meronym Arg1:T47 Arg2:T40
+R37	Enables Arg1:E20 Arg2:E19
+R38	Coreference-Link Arg1:T66 Arg2:T73
+R39	Coreference-Link Arg1:T55 Arg2:T81
+R40	Enables Arg1:E21 Arg2:E22

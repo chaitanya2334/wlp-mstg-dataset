@@ -1,0 +1,56 @@
+T1	Action 70 77	Prepare
+T2	Concentration 78 83	300nM
+T3	Reagent 84 89	sgRNA
+T4	Action 93 101	diluting
+T5	Reagent 106 111	stock
+T6	Modifier 117 132	nuclease - free
+T7	Reagent 133 138	water
+T8	Location 142 145	ice
+T9	Action 148 155	Prepare
+T10	Concentration 156 160	30nM
+T11	Reagent 161 174	substrate DNA
+T12	Action 208 216	diluting
+T13	Reagent 221 226	stock
+T14	Modifier 232 247	nuclease - free
+T15	Reagent 248 253	water
+T16	Location 257 260	ice
+T17	Action 263 271	Assemble
+T18	Reagent 276 284	reaction
+T19	Temperature 288 304	room temperature
+T20	Action 353 367	Pre - incubate
+T21	Time 372 382	10 minutes
+T22	Temperature 386 390	37⁰C
+T23	Action 393 396	Add
+T24	Concentration 397 401	30nM
+T25	Reagent 402 415	substrate DNA
+T26	Action 416 419	Mix
+T27	Modifier 420 430	thoroughly
+T28	Action 433 441	Incubate
+T29	Temperature 445 449	37°C
+T30	Time 454 460	1 hour
+T31	Action 463 470	Proceed
+T32	Method 476 493	fragment analysis
+E1	Action:T1 Product:T3
+E2	Action:T4 Acts-on:T5 Using:T7 Site:T8
+E3	Action:T9 Product:T11
+E4	Action:T12 Acts-on:T13 Using:T15 Site:T16
+E5	Action:T17 Acts-on:T18
+E6	Action:T20 Acts-on:E1
+E7	Action:T23 Acts-on:T25 Acts-on2:E6
+E8	Action:T26 Acts-on:E7
+E9	Action:T28 Acts-on:E8 Product:T18
+E10	Action:T31 Using:T32 Acts-on:E9
+R1	Mod-Link Arg1:T7 Arg2:T6
+R2	Measure Arg1:T3 Arg2:T2
+R3	Mod-Link Arg1:T15 Arg2:T14
+R4	Measure Arg1:T11 Arg2:T10
+R5	Setting Arg1:E5 Arg2:T19
+R6	Setting Arg1:E6 Arg2:T21
+R7	Setting Arg1:E6 Arg2:T22
+R8	Mod-Link Arg1:E8 Arg2:T27
+R9	Measure Arg1:T25 Arg2:T24
+R10	Setting Arg1:E9 Arg2:T29
+R11	Setting Arg1:E9 Arg2:T30
+R12	Enables Arg1:E2 Arg2:E1
+R13	Enables Arg1:E4 Arg2:E3
+R14	Coreference-Link Arg1:T25 Arg2:T11

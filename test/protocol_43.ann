@@ -1,0 +1,63 @@
+T1	Action 56 65	Resuspend
+T2	Reagent 70 84	nuclear pellet
+T3	Amount 88 93	300µl
+T4	Reagent 94 112	SubCell Buffer‐III
+T5	Modifier 123 128	sharp
+T6	Device 129 140	pipette tip
+T7	Action 143 149	remove
+T8	Modifier 154 160	sticky
+T9	Reagent 161 165	lump
+T10	Action 234 244	Centrifuge
+T11	Location 249 253	tube
+T12	Speed 257 263	700x g
+T13	Time 268 277	5 minutes
+T14	Action 282 289	discard
+T15	Reagent 294 305	supernatant
+T16	Action 422 429	Pipette
+T17	Amount 430 435	300µl
+T18	Reagent 436 453	SubCell Buffer‐IV
+T19	Amount 459 464	1.5ml
+T20	Location 465 480	centrifuge tube
+T21	Action 483 492	Resuspend
+T22	Reagent 497 511	nuclear pellet
+T23	Amount 515 520	100µl
+T24	Reagent 521 539	SubCell Buffer‐III
+T25	Modifier 542 551	Carefully
+T26	Action 552 559	overlay
+T27	Reagent 564 582	nuclear suspension
+T28	Location 590 597	surface
+T29	Reagent 601 618	SubCell Buffer‐IV
+T30	Action 621 631	Centrifuge
+T31	Location 636 640	tube
+T32	Speed 644 652	1,000x g
+T33	Time 657 667	10 minutes
+T34	Action 670 676	Remove
+T35	Reagent 681 692	supernatant
+T36	Action 697 704	collect
+T37	Modifier 709 719	very clean
+T38	Reagent 720 734	nuclear pellet
+T39	Location 742 746	tube
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T7 Site:E1 Using:T6 Acts-on:T9 Product:T11
+E3	Action:T10 Acts-on:T11 Product:T15
+E4	Action:T14 Acts-on:T15 Product:T22
+E5	Action:T16 Acts-on:T18 Site:T20 Product:T29
+E6	Action:T21 Acts-on:T22 Site:T24 Product:T27
+E7	Action:T26 Acts-on:T27 Site:T28 Product:T31
+E8	Action:T30 Acts-on:T31 Product:T35
+E9	Action:T34 Acts-on:T35 Product:T38
+E10	Action:T36 Acts-on:T38 Site:T39
+R1	Measure Arg1:T4 Arg2:T3
+R2	Coreference-Link Arg1:T4 Arg2:T24
+R3	Mod-Link Arg1:T6 Arg2:T5
+R4	Mod-Link Arg1:T9 Arg2:T8
+R5	Setting Arg1:E3 Arg2:T12
+R6	Setting Arg1:E3 Arg2:T13
+R7	Measure Arg1:T18 Arg2:T17
+R8	Measure Arg1:T20 Arg2:T19
+R9	Measure Arg1:T24 Arg2:T23
+R10	Mod-Link Arg1:E7 Arg2:T25
+R11	Meronym Arg1:T28 Arg2:T29
+R12	Setting Arg1:E8 Arg2:T32
+R13	Setting Arg1:E8 Arg2:T33
+R14	Mod-Link Arg1:T38 Arg2:T37

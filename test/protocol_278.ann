@@ -1,0 +1,171 @@
+T1	Action 71 78	Collect
+T2	Reagent 79 87	seawater
+T3	Reagent 92 98	medium
+T4	Action 101 107	filter
+T5	Size 118 125	0.22 μm
+T6	Device 126 132	filter
+T7	Action 136 142	remove
+T8	Reagent 143 148	cells
+T9	Reagent 153 162	particles
+T10	Action 165 174	Autoclave
+T11	Action 178 187	microwave
+T12	Modifier 192 200	filtered
+T13	Reagent 201 206	water
+T14	Action 210 218	sterilze
+T15	Reagent 227 232	water
+T16	Action 236 240	cool
+T17	Action 248 256	treating
+T18	Reagent 262 270	charcoal
+T19	Action 273 277	Pour
+T20	Modifier 282 291	sterilzed
+T21	Reagent 292 297	water
+T22	Modifier 305 315	designated
+T23	Location 316 321	flask
+T24	Device 327 335	stir bar
+T25	Modifier 353 361	at least
+T26	Amount 362 364	1L
+T27	Reagent 368 374	liquid
+T28	Action 377 381	Wash
+T29	Modifier 382 391	activated
+T30	Reagent 392 400	charcoal
+T31	Action 403 406	Add
+T32	Amount 407 411	2.5g
+T33	Reagent 412 416	NaCl
+T34	Amount 420 425	500mL
+T35	Reagent 429 442	Milli Q water
+T36	Modifier 450 460	designated
+T37	Modifier 461 466	clean
+T38	Location 467 472	flask
+T39	Method 477 493	charcoal washing
+T40	Action 594 597	Add
+T41	Amount 598 601	10g
+T42	Modifier 605 614	activated
+T43	Reagent 615 623	charcoal
+T44	Reagent 631 645	NaCl2 solution
+T45	Action 648 651	Add
+T46	Device 652 660	stir bar
+T47	Action 663 667	Stir
+T48	Modifier 672 680	at least
+T49	Time 681 686	10min
+T50	Action 689 696	Recover
+T51	Reagent 701 709	charcoal
+T52	Method 713 723	filtration
+T53	Location 731 760	glass fiber ( GF / F ) filter
+T54	Modifier 769 779	designated
+T55	Device 780 790	filter rig
+T56	Device 799 807	scoopula
+T57	Action 811 814	add
+T58	Modifier 815 821	washed
+T59	Reagent 822 830	charcoal
+T60	Modifier 838 848	sterilized
+T61	Reagent 849 857	seawater
+T62	Action 915 921	Obtain
+T63	Modifier 926 935	remaining
+T64	Reagent 936 944	charcoal
+T65	Device 952 955	rig
+T66	Action 959 967	swirling
+T67	Modifier 968 977	sterilzed
+T68	Reagent 978 983	water
+T69	Device 991 1005	filtration rig
+T70	Action 1010 1017	pouring
+T71	Mention 1018 1022	that
+T72	Location 1037 1042	flask
+T73	Modifier 1052 1061	sterilzed
+T74	Reagent 1062 1070	seawater
+T75	Action 1101 1105	Stir
+T76	Modifier 1110 1116	washed
+T77	Reagent 1117 1125	charcoal
+T78	Modifier 1131 1140	sterilzed
+T79	Reagent 1141 1149	seawater
+T80	Modifier 1154 1162	at least
+T81	Time 1163 1168	30min
+T82	Location 1179 1189	stir plate
+T83	Action 1192 1198	Remove
+T84	Reagent 1199 1207	charcoal
+T85	Reagent 1217 1225	seawater
+T86	Action 1229 1238	filtering
+T87	Reagent 1243 1250	mixture
+T88	Modifier 1259 1269	disposable
+T89	Device 1270 1284	filtration rig
+T90	Size 1292 1298	0.2 μm
+T91	Device 1299 1305	filter
+T92	Action 1314 1322	removing
+T93	Reagent 1327 1335	charcoal
+T94	Modifier 1340 1343	any
+T95	Modifier 1344 1355	larger than
+T96	Size 1356 1362	0.2 μm
+T97	Reagent 1363 1372	particles
+T98	Location 1385 1404	sterile environment
+T99	Modifier 1443 1454	aseptically
+T100	Action 1455 1458	add
+T101	Modifier 1459 1466	desired
+T102	Reagent 1467 1488	nutrient requirements
+T103	Reagent 1497 1505	seawater
+T104	Reagent 1523 1529	medium
+E1	Action:T1 Acts-on:T2 Product:T3
+E2	Action:T4 Acts-on:E1 Using:T6
+E3	Action:T7 Acts-on:T8 Acts-on2:T9
+E4	Action:T10 Acts-on:T13
+E5	Action:T11 Acts-on:T13
+E6	Action:T14 Product:T15
+E7	Action:T16 Acts-on:T15
+E8	Action:T17 Acts-on:E7 Using:T18 Product:T21
+E9	Action:T19 Acts-on:T21 Site:T23 Using:T24 Product:T61
+E10	Action:T28 Acts-on:T30
+E11	Action:T31 Acts-on:T33 Acts-on2:T35 Site:T38 Product:T44
+E12	Action:T40 Acts-on:T43 Site:T44
+E13	Action:T45 Site:E12 Acts-on:T46
+E14	Action:T47 Acts-on:E13 Product:T51
+E15	Action:T50 Acts-on:T51 Using:T52 Site:T53 Using2:T55 Product:T59
+E16	Action:T57 Using:T56 Acts-on:T59 Site:T61
+E17	Action:T62 Product:T64 Site:T65 Product2:T79
+E18	Action:T66 Acts-on:T68 Site:T69
+E19	Action:T70 Acts-on:T71 Site:T72
+E20	Action:T75 Acts-on:T77 Acts-on2:T79 Using:T82
+E21	Action:T83 Acts-on:T84 Site:T85 Product:T93
+E22	Action:T86 Acts-on:T87 Using:T89
+E23	Action:T92 Acts-on:T93 Acts-on2:T97 Product:T103
+E24	Action:T100 Using:T98 Acts-on:T102 Site:T103 Product:T104
+R1	Enables Arg1:E2 Arg2:E3
+R2	Measure Arg1:T6 Arg2:T5
+R3	Or Arg1:E4 Arg2:E5
+R4	Enables Arg1:E4 Arg2:E6
+R5	Mod-Link Arg1:T13 Arg2:T12
+R6	Mod-Link Arg1:T21 Arg2:T20
+R7	Mod-Link Arg1:T23 Arg2:T22
+R8	Mod-Link Arg1:T26 Arg2:T25
+R9	Meronym Arg1:T27 Arg2:T23
+R10	Measure Arg1:T27 Arg2:T26
+R11	Mod-Link Arg1:T30 Arg2:T29
+R12	Measure Arg1:T33 Arg2:T32
+R13	Measure Arg1:T35 Arg2:T34
+R14	Mod-Link Arg1:T38 Arg2:T36
+R15	Mod-Link Arg1:T38 Arg2:T37
+R16	Measure Arg1:T43 Arg2:T41
+R17	Mod-Link Arg1:T43 Arg2:T42
+R18	Setting Arg1:E14 Arg2:T49
+R19	Mod-Link Arg1:T49 Arg2:T48
+R20	Mod-Link Arg1:T55 Arg2:T54
+R21	Mod-Link Arg1:T59 Arg2:T58
+R22	Mod-Link Arg1:T61 Arg2:T60
+R23	Mod-Link Arg1:T64 Arg2:T63
+R24	Enables Arg1:E18 Arg2:E17
+R25	Mod-Link Arg1:T68 Arg2:T67
+R26	Enables Arg1:E19 Arg2:E17
+R27	Coreference-Link Arg1:T71 Arg2:T68
+R28	Meronym Arg1:T74 Arg2:T72
+R29	Mod-Link Arg1:T74 Arg2:T73
+R30	Setting Arg1:E20 Arg2:T81
+R31	Mod-Link Arg1:T77 Arg2:T76
+R32	Meronym Arg1:T77 Arg2:T79
+R33	Mod-Link Arg1:T79 Arg2:T78
+R34	Mod-Link Arg1:T81 Arg2:T80
+R35	Enables Arg1:E22 Arg2:E21
+R36	Mod-Link Arg1:T89 Arg2:T88
+R37	Meronym Arg1:T91 Arg2:T89
+R38	Setting Arg1:T91 Arg2:T90
+R39	Mod-Link Arg1:T96 Arg2:T95
+R40	Mod-Link Arg1:T97 Arg2:T94
+R41	Measure Arg1:T97 Arg2:T96
+R42	Mod-Link Arg1:E24 Arg2:T99
+R43	Mod-Link Arg1:T102 Arg2:T101

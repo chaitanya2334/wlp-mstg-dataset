@@ -1,0 +1,71 @@
+T1	Action 22 27	Weigh
+T2	Amount 28 35	0.01 mg
+T3	Reagent 36 39	oil
+T4	Location 45 54	test tube
+T5	Action 59 65	record
+T6	Modifier 66 71	exact
+T7	Mention 72 78	weight
+T8	Modifier 290 301	Immediately
+T9	Action 302 305	add
+T10	Amount 306 310	3 mL
+T11	Reagent 311 326	working solvent
+T12	Action 331 337	vortex
+T13	Action 386 393	Prepare
+T14	Modifier 396 401	blank
+T15	Device 402 406	tube
+T16	Action 440 443	Add
+T17	Amount 444 449	15 μl
+T18	Reagent 450 470	ammonium thiocyanate
+T19	Modifier 474 477	all
+T20	Location 478 483	tubes
+T21	Action 490 496	vortex
+T22	Time 497 506	2 - 4 sec
+T23	Action 509 512	Add
+T24	Amount 513 518	15 μl
+T25	Reagent 519 535	ferrous chloride
+T26	Modifier 539 542	all
+T27	Location 543 548	tubes
+T28	Action 555 561	vortex
+T29	Time 562 571	2 - 4 sec
+T30	Action 578 581	sit
+T31	Temperature 585 601	room temperature
+T32	Time 602 608	20 min
+T33	Action 611 619	Keep out
+T34	Location 623 635	bright light
+T35	Action 638 642	Read
+T36	Device 643 653	absorbance
+T37	Device 657 674	spectrophotometer
+T38	Action 675 678	set
+T39	Size 682 688	510 nm
+T40	Action 691 700	Determine
+T41	Device 701 703	PV
+E1	Action:T1 Acts-on:T3 Site:T4 Product:T7
+E2	Action:T5 Acts-on:T7
+E3	Action:T9 Acts-on:T11 Site:E2
+E4	Action:T12 Acts-on:E3 Product:T20
+E5	Action:T13 Product:T15
+E6	Action:T16 Acts-on:T18 Site:T20
+E7	Action:T21 Acts-on:E6 Product:T27
+E8	Action:T23 Acts-on:T25 Site:T27
+E9	Action:T28 Acts-on:E8
+E10	Action:T30 Acts-on:E9 Product:T41
+E11	Action:T33 Site:T34
+E12	Action:T35 Acts-on:T36 Using:T37
+E13	Action:T38 Acts-on:E12
+E14	Action:T40 Acts-on:T41 Acts-on2:E13
+R1	Mod-Link Arg1:T27 Arg2:T26
+R2	Measure Arg1:T25 Arg2:T24
+R3	Measure Arg1:T18 Arg2:T17
+R4	Setting Arg1:E9 Arg2:T29
+R5	Setting Arg1:E7 Arg2:T22
+R6	Mod-Link Arg1:T15 Arg2:T14
+R7	Measure Arg1:T3 Arg2:T2
+R8	Mod-Link Arg1:T7 Arg2:T6
+R9	Mod-Link Arg1:E3 Arg2:T8
+R10	Measure Arg1:T11 Arg2:T10
+R11	Mod-Link Arg1:T20 Arg2:T19
+R12	Setting Arg1:E10 Arg2:T31
+R13	Setting Arg1:E10 Arg2:T32
+R14	Setting Arg1:E13 Arg2:T39
+R15	Meronym Arg1:T15 Arg2:T20
+R16	Prevents Arg1:E10 Arg2:E11

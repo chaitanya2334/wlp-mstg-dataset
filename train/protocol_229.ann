@@ -1,0 +1,111 @@
+T1	Amount 33 39	100 µl
+T2	Reagent 43 51	PBCV - 1
+T3	Size 57 60	1.5
+T4	Location 61 92	conical plastic centrifuge tube
+T5	Action 93 96	add
+T6	Amount 97 103	150 µl
+T7	Reagent 107 113	phenol
+T8	Action 116 119	Add
+T9	Reagent 120 123	DTT
+T10	Amount 126 133	~ 10 µl
+T11	Concentration 138 142	10 %
+T12	Reagent 143 146	SDS
+T13	Amount 149 156	~ 20 µl
+T14	Concentration 161 164	10M
+T15	Reagent 165 169	LiCl
+T16	Amount 172 179	~ 15 µl
+T17	Reagent 186 195	Ponceau S
+T18	Amount 198 205	~ 10 µl
+T19	Action 210 214	Heat
+T20	Time 215 220	5 min
+T21	Temperature 224 228	75°C
+T22	Action 231 234	mix
+T23	Action 248 261	Allow to cool
+T24	Action 264 274	centrifuge
+T25	Time 275 280	1 min
+T26	Speed 283 285	5K
+T27	Action 290 298	Draw off
+T28	Reagent 299 320	lower ( clear ) phase
+T29	Size 326 329	1.5
+T30	Location 330 361	conical plastic centrifuge tube
+T31	Action 364 367	Add
+T32	Amount 368 372	1 ml
+T33	Reagent 373 380	acetone
+T34	Amount 390 394	5 µl
+T35	Concentration 398 401	1 %
+T36	Reagent 402 408	Ficoll
+T37	Action 411 414	mix
+T38	Action 417 422	Store
+T39	Time 423 429	20 min
+T40	Temperature 433 439	- 20°C
+T41	Action 442 452	Centrifuge
+T42	Time 453 458	1 min
+T43	Speed 461 463	6K
+T44	Action 468 475	Discard
+T45	Reagent 476 487	supernatant
+T46	Action 490 495	drain
+T47	Location 496 500	tube
+T48	Action 503 507	wash
+T49	Reagent 508 511	ppt
+T50	Numerical 512 516	once
+T51	Reagent 522 529	acetone
+T52	Action 557 560	dry
+T53	Action 563 571	Dissolve
+T54	Reagent 572 578	pellet
+T55	Amount 582 589	~ 50 µl
+T56	Reagent 590 605	cracking buffer
+T57	Concentration 608 611	1 %
+T58	Reagent 612 615	SDS
+T59	Concentration 618 621	5 %
+T60	Reagent 622 630	glycerol
+T61	Concentration 633 642	0.03125 M
+T62	Reagent 643 653	Tris - HCl
+T63	pH 656 662	pH 6.8
+T64	Reagent 665 689	bromophenol blue - trace
+E1	Action:T5 Acts-on:T7 Site:T4 Site2:T2
+E2	Action:T8 Acts-on:T9 Acts-on2:T12 Acts-on3:T15 Acts-on4:T17 Site:E1
+E3	Action:T19 Acts-on:E2
+E4	Action:T22 Acts-on:E3
+E5	Action:T23 Acts-on:E4
+E6	Action:T24 Acts-on:E5
+E7	Action:T27 Acts-on:T28 Site:T30 Acts-on2:E6
+E8	Action:T31 Acts-on:T33 Acts-on2:T36 Site:E7
+E9	Action:T37 Acts-on:E8
+E10	Action:T38 Acts-on:E9
+E11	Action:T41 Acts-on:E10 Product:T45 Product2:T47 Product3:T54
+E12	Action:T44 Acts-on:T45
+E13	Action:T46 Acts-on:T47 Product:T49
+E14	Action:T48 Acts-on:T49 Count:T50 Using:T51
+E15	Action:T52 Acts-on:E14
+E16	Action:T53 Acts-on:T54 Site:T56
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T2 Arg2:T1
+R3	Measure Arg1:T7 Arg2:T6
+R4	Meronym Arg1:T2 Arg2:T4
+R5	Measure Arg1:T17 Arg2:T18
+R6	Measure Arg1:T15 Arg2:T16
+R7	Measure Arg1:T15 Arg2:T14
+R8	Measure Arg1:T12 Arg2:T13
+R9	Measure Arg1:T12 Arg2:T11
+R10	Measure Arg1:T9 Arg2:T10
+R11	Setting Arg1:E3 Arg2:T20
+R12	Setting Arg1:E3 Arg2:T21
+R13	Setting Arg1:E6 Arg2:T25
+R14	Setting Arg1:E6 Arg2:T26
+R15	Measure Arg1:T30 Arg2:T29
+R16	Measure Arg1:T33 Arg2:T32
+R17	Measure Arg1:T36 Arg2:T35
+R18	Measure Arg1:T36 Arg2:T34
+R19	Setting Arg1:E10 Arg2:T39
+R20	Setting Arg1:E10 Arg2:T40
+R21	Setting Arg1:E11 Arg2:T42
+R22	Setting Arg1:E11 Arg2:T43
+R23	Measure Arg1:T58 Arg2:T57
+R24	Measure Arg1:T60 Arg2:T59
+R25	Measure Arg1:T62 Arg2:T61
+R26	Measure Arg1:T62 Arg2:T63
+R27	Meronym Arg1:T64 Arg2:T56
+R28	Meronym Arg1:T62 Arg2:T56
+R29	Meronym Arg1:T60 Arg2:T56
+R30	Meronym Arg1:T58 Arg2:T56
+R31	Measure Arg1:T56 Arg2:T55

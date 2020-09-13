@@ -1,0 +1,44 @@
+T1	Action 38 48	Pre - cool
+T2	Reagent 49 61	lysis buffer
+T3	Location 65 68	ice
+T4	Action 71 74	Add
+T5	Reagent 75 94	protease inhibitors
+T6	Action 115 118	Add
+T7	Reagent 119 139	10 fold lysis buffer
+T8	Reagent 143 150	tissues
+T9	Action 189 199	Homogenize
+T10	Reagent 200 207	tissues
+T11	Device 213 222	dispenser
+T12	Action 310 313	Mix
+T13	Reagent 314 321	samples
+T14	Device 327 341	rotating mixer
+T15	Temperature 345 349	4 °C
+T16	Time 354 356	2h
+T17	Action 359 363	Spin
+T18	Speed 366 373	16,000g
+T19	Time 376 381	10min
+T20	Temperature 384 387	4°C
+T21	Action 424 428	Save
+T22	Reagent 429 440	supernatant
+T23	Action 443 452	Determine
+T24	Measure-Type 453 465	protein conc
+T25	Action 468 472	Make
+T26	Reagent 473 481	aliquots
+T27	Action 486 491	store
+T28	Temperature 495 501	- 80°C
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T5 Site:E1 Product:T7
+E3	Action:T6 Acts-on:T7 Site:T8 Product:T10
+E4	Action:T9 Acts-on:T10 Using:T11 Product:T13
+E5	Action:T12 Acts-on:T13 Site:T14
+E6	Action:T17 Acts-on:E5 Product:T22
+E7	Action:T21 Acts-on:T22
+E8	Action:T23 Measure-Type-Link:T24 Acts-on:E7
+E9	Action:T25 Product:T26 Acts-on:E8
+E10	Action:T27 Acts-on:T26
+R1	Setting Arg1:E5 Arg2:T15
+R2	Setting Arg1:E5 Arg2:T16
+R3	Setting Arg1:E6 Arg2:T18
+R4	Setting Arg1:E6 Arg2:T19
+R5	Setting Arg1:E6 Arg2:T20
+R6	Setting Arg1:E10 Arg2:T28

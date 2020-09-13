@@ -1,0 +1,111 @@
+T1	Action 52 61	Prefilter
+T2	Modifier 62 70	at least
+T3	Amount 71 74	3 L
+T4	Reagent 75 87	water sample
+T5	Device 98 116	glass fiber filter
+T6	Action 119 125	Filter
+T7	Reagent 126 132	sample
+T8	Amount 141 147	0.2 µm
+T9	Amount 151 158	0.45 µm
+T10	Device 159 190	low protein binding PVDF filter
+T11	Action 193 201	Dispense
+T12	Reagent 206 228	filtered water samples
+T13	Amount 241 246	0.5 L
+T14	Modifier 250 254	more
+T15	Location 262 277	culture vessels
+T16	Amount 290 293	1 L
+T17	Modifier 297 303	larger
+T18	Location 304 321	Erlenmeyer flasks
+T19	Action 324 327	Add
+T20	Reagent 328 337	nutrients
+T21	Mention 345 359	filtered water
+T22	Action 363 377	support growth
+T23	Reagent 385 397	target cells
+T24	Action 400 404	Seed
+T25	Mention 409 423	filtered water
+T26	Concentration 429 432	1 %
+T27	Concentration 436 440	10 %
+T28	Reagent 450 462	host culture
+T29	Action 480 487	replace
+T30	Reagent 492 521	filtered environmental sample
+T31	Modifier 527 539	virus - free
+T32	Size 542 549	0.02 µm
+T33	Modifier 550 558	filtered
+T34	Modifier 562 575	heat - killed
+T35	Reagent 578 590	water sample
+T36	Action 593 601	Incubate
+T37	Location 606 612	flasks
+T38	Temperature 620 631	temperature
+T39	Generic-Measure 636 652	light conditions
+T40	Modifier 653 664	appropriate
+T41	Reagent 673 686	cyanobacteria
+T42	Action 691 705	look for signs
+T43	Reagent 709 714	lysis
+T44	Action 717 723	Remove
+T45	Reagent 727 734	aliquot
+T46	Reagent 742 760	enrichment culture
+T47	Action 767 773	pellet
+T48	Reagent 774 789	remaining cells
+T49	Method 793 807	centrifugation
+T50	Time 820 830	20 minutes
+T51	Speed 834 839	6000g
+T52	Action 844 850	Filter
+T53	Reagent 855 866	supernatant
+T54	Amount 877 884	0.22 µm
+T55	Amount 888 895	0.45 µm
+T56	Device 896 907	PVDF filter
+T57	Action 910 915	Store
+T58	Reagent 920 926	lysate
+T59	Temperature 930 933	4°C
+T60	Action 959 978	Verify the presence
+T61	Reagent 982 994	lytic phages
+T62	Reagent 998 1010	liquid assay
+T63	Reagent 1016 1028	plaque assay
+T64	Action 1036 1055	propagate / amplify
+T65	Reagent 1060 1071	lytic agent
+T66	Reagent 1078 1093	liquid bioassay
+T67	Action 1097 1105	repeated
+T68	Reagent 1116 1136	putative lytic agent
+E1	Action:T1 Acts-on:T4 Using:T5 Product:T7
+E2	Action:T6 Acts-on:T7 Using:T10 Product:T12
+E3	Action:T11 Acts-on:T12 Site:T15 Site2:T18
+E4	Action:T19 Acts-on:T20 Site:T21 Product:T25
+E5	Action:T22 Using:E4 Product:T23
+E6	Action:T24 Site:T25 Acts-on:T28 Product:T37
+E7	Action:T29 Acts-on:T30 Using:T35
+E8	Action:T36 Acts-on:T37
+E9	Action:T42 Acts-on:E8 Acts-on2:T43
+E10	Action:T44 Acts-on:T45
+E11	Action:T47 Acts-on:T48 Using:T49
+E12	Action:T52 Acts-on:T53 Using:T56 Product:T58
+E13	Action:T57 Acts-on:T58
+E14	Action:T60 Acts-on:T61 Using:T62
+E15	Action:T64 Acts-on:T65 Using:E16
+E16	Action:T67 Acts-on:T66 Using:T68
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Measure Arg1:T4 Arg2:T3
+R3	Or Arg1:T9 Arg2:T8
+R4	Setting Arg1:T10 Arg2:T9
+R5	Measure Arg1:T12 Arg2:T13
+R6	Or Arg1:T13 Arg2:T14
+R7	Coreference-Link Arg1:T15 Arg2:T18
+R8	Or Arg1:T16 Arg2:T17
+R9	Measure Arg1:T18 Arg2:T16
+R10	Measure Arg1:T28 Arg2:T26
+R11	Measure Arg1:T28 Arg2:T27
+R12	Setting Arg1:T33 Arg2:T32
+R13	Or Arg1:T33 Arg2:T34
+R14	Mod-Link Arg1:T35 Arg2:T31
+R15	Mod-Link Arg1:T35 Arg2:T33
+R16	Setting Arg1:E8 Arg2:T38
+R17	Setting Arg1:E8 Arg2:T39
+R18	Mod-Link Arg1:T38 Arg2:T40
+R19	Mod-Link Arg1:T39 Arg2:T40
+R20	Measure Arg1:T41 Arg2:T39
+R21	Meronym Arg1:T45 Arg2:T46
+R22	Setting Arg1:E11 Arg2:T50
+R23	Setting Arg1:E11 Arg2:T51
+R24	Or Arg1:T55 Arg2:T54
+R25	Setting Arg1:T56 Arg2:T55
+R26	Setting Arg1:E13 Arg2:T59
+R27	Or Arg1:T62 Arg2:T63

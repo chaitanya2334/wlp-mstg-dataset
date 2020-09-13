@@ -1,0 +1,79 @@
+T1	Action 23 30	Harvest
+T2	Reagent 31 43	mouse spleen
+T3	Action 48 55	prepare
+T4	Numerical 58 64	single
+T5	Reagent 65 80	cell suspension
+T6	Location 87 93	slides
+T7	Device 99 106	syrings
+T8	Action 110 114	push
+T9	Reagent 119 125	spleen
+T10	Device 136 149	cell strainer
+T11	Action 152 158	Pellet
+T12	Reagent 163 168	cells
+T13	Action 172 186	centrifugation
+T14	Action 201 209	aspirate
+T15	Reagent 214 225	supernatant
+T16	Action 228 234	Dilute
+T17	Concentration 239 242	10X
+T18	Reagent 243 270	Red Blood Cell Lysis Buffer
+T19	Concentration 274 276	1X
+T20	Modifier 304 313	deionized
+T21	Reagent 314 319	water
+T22	Action 324 333	resuspend
+T23	Reagent 338 344	pellet
+T24	Amount 348 352	5 ml
+T25	Concentration 356 358	1X
+T26	Reagent 359 371	Lysis Buffer
+T27	Action 374 382	Incubate
+T28	Location 386 389	ice
+T29	Time 394 407	4 - 5 minutes
+T30	Modifier 413 423	occasional
+T31	Action 424 431	shaking
+T32	Action 455 463	diluting
+T33	Reagent 468 480	Lysis Buffer
+T34	Amount 486 496	20 - 30 ml
+T35	Concentration 500 502	1X
+T36	Reagent 503 506	PBS
+T37	Action 509 513	Spin
+T38	Reagent 518 523	cells
+T39	Speed 526 533	350 x g
+T40	Action 540 547	discard
+T41	Reagent 552 563	supernatant
+T42	Action 566 575	Resuspend
+T43	Reagent 580 586	pellet
+T44	Modifier 594 605	appropriate
+T45	Reagent 606 612	buffer
+T46	Action 613 618	Count
+T47	Reagent 619 624	cells
+E1	Action:T1 Acts-on:T2 Product:T9
+E2	Action:T3 Acts-on:T5 Product:T12
+E3	Action:T8 Using:T6 Acts-on:T9 Site:T10
+E4	Action:T11 Acts-on:T12 Product:T23
+E5	Action:T13 Product:T15
+E6	Action:T14 Acts-on:T15
+E7	Action:T16 Acts-on:T18 Using:T21 Product:T33
+E8	Action:T22 Acts-on:T23 Site:T26
+E9	Action:T27 Acts-on:T28 Site:E8 Product:T38
+E10	Action:T31 
+E11	Action:T32 Acts-on:T33 Using:T36 Product:T47
+E12	Action:T37 Acts-on:T38 Product:T41 Product2:T43
+E13	Action:T40 Acts-on:T41
+E14	Action:T42 Acts-on:T43 Site:T45
+E15	Action:T46 Acts-on:T47
+R1	Or Arg1:T6 Arg2:T7
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T18 Arg2:T17
+R4	Setting Arg1:E7 Arg2:T19
+R5	Mod-Link Arg1:T21 Arg2:T20
+R6	Measure Arg1:T26 Arg2:T25
+R7	Measure Arg1:T26 Arg2:T24
+R8	Setting Arg1:E9 Arg2:T29
+R9	Mod-Link Arg1:E10 Arg2:T30
+R10	Measure Arg1:T36 Arg2:T35
+R11	Measure Arg1:T36 Arg2:T34
+R12	Setting Arg1:E12 Arg2:T39
+R13	Mod-Link Arg1:T45 Arg2:T44
+R14	Enables Arg1:E1 Arg2:E2
+R15	Enables Arg1:E5 Arg2:E4
+R16	Enables Arg1:E10 Arg2:E9
+R17	Overlaps Arg1:E10 Arg2:E9

@@ -1,0 +1,186 @@
+T1	Action 118 125	Harvest
+T2	Reagent 126 158	Chlorella NC64A ( or Pbi ) cells
+T3	Location 164 182	4 day old cultures
+T4	Generic-Measure 183 213	( 1.2 - 2.0 x 107 cells / ml )
+T5	Action 217 231	centrifugation
+T6	Speed 235 243	4000 x g
+T7	Time 248 257	5 minutes
+T8	Action 260 272	Re - suspend
+T9	Reagent 276 296	MBBM ( NC64A cells )
+T10	Reagent 300 317	FES ( Pbi cells )
+T11	Concentration 338 358	8.6 x 107 cells / mL
+T12	Action 361 364	Add
+T13	Reagent 365 380	chlorella virus
+T14	Location 386 411	multiplicity of infection
+T15	Numerical 422 424	10
+T16	Measure-Type 425 462	plaque - forming units ( pfu ) / cell
+T17	Action 465 471	Sample
+T18	Modifier 472 480	infected
+T19	Reagent 481 496	chlorella cells
+T20	Amount 499 504	25 mL
+T21	Modifier 512 520	prepared
+T22	Location 521 537	centrifuge tubes
+T23	Device 543 555	formaldehyde
+T24	Action 608 613	place
+T25	Location 617 620	ice
+T26	Action 623 633	Centrifuge
+T27	Speed 637 645	4000 x g
+T28	Time 650 659	5 minutes
+T29	Action 662 666	Wash
+T30	Reagent 667 674	samples
+T31	Action 678 693	re - suspending
+T32	Amount 702 707	10 mL
+T33	Location 711 715	MBBM
+T34	Amount 729 734	50 mM
+T35	Reagent 735 739	EDTA
+T36	Speed 772 780	4000 x g
+T37	Time 785 794	5 minutes
+T38	Action 797 803	Repeat
+T39	Method 804 808	wash
+T40	Numerical 814 815	3
+T41	Action 824 836	Re - suspend
+T42	Modifier 837 843	washed
+T43	Modifier 844 852	infected
+T44	Reagent 853 858	cells
+T45	Amount 862 868	0.5 mL
+T46	Location 872 874	SB
+T47	Action 877 880	Add
+T48	Reagent 888 893	cells
+T49	Amount 894 900	0.5 mL
+T50	Reagent 904 933	2 % low melting point agarose
+T51	Location 948 950	SB
+T52	Temperature 961 965	45°C
+T53	Action 970 973	mix
+T54	Action 1040 1044	pour
+T55	Reagent 1049 1052	mix
+T56	Location 1058 1075	BioRad plug molds
+T57	Action 1078 1083	Place
+T58	Reagent 1084 1094	plug molds
+T59	Location 1098 1110	refrigerator
+T60	Time 1115 1125	15 minutes
+T61	Modifier 1140 1149	Carefully
+T62	Action 1150 1156	remove
+T63	Reagent 1157 1171	agarose blocks
+T64	Location 1177 1181	mold
+T65	Action 1186 1191	place
+T66	Amount 1202 1206	2 mL
+T67	Location 1210 1212	DB
+T68	Amount 1226 1234	1mg / mL
+T69	Reagent 1235 1247	Proteinase K
+T70	Action 1269 1273	wash
+T71	Reagent 1274 1288	agarose blocks
+T72	Time 1293 1303	30 minutes
+T73	Reagent 1309 1311	DB
+T74	Numerical 1312 1313	4
+T75	Action 1322 1325	Cut
+T76	Reagent 1326 1332	blocks
+T77	Modifier 1336 1341	small
+T78	Size 1342 1348	pieces
+T79	Action 1368 1372	Load
+T80	Reagent 1373 1387	agarose blocks
+T81	Location 1393 1402	gel wells
+T82	Action 1407 1411	seal
+T83	Modifier 1422 1428	melted
+T84	Modifier 1440 1461	1 % low melting point
+T85	Reagent 1462 1469	agarose
+T86	Location 1473 1487	running buffer
+T87	Action 1813 1821	Separate
+T88	Reagent 1822 1837	chromosomal DNA
+T89	Location 1841 1898	CHEF - DR ( BioRad , Hercules , CA ) electrophoresis unit
+T90	Modifier 1904 1910	1X TAE
+T91	Reagent 1911 1925	running buffer
+T92	Action 1928 1931	Run
+T93	Method 1932 1947	electrophoresis
+T94	Speed 1951 1959	3 V / cm
+T95	Action 1986 1993	ramping
+T96	Time 1999 2017	250 to 900 seconds
+T97	Time 2022 2028	60 hrs
+T98	Action 2031 2037	Change
+T99	Reagent 2038 2044	buffer
+T100	Time 2051 2057	24 hrs
+T101	Action 2060 2065	Stain
+T102	Reagent 2066 2069	gel
+T103	Amount 2075 2085	0.5 mg / L
+T104	Reagent 2086 2102	ethidium bromide
+T105	Numerical 2107 2109	20
+T106	Action 2112 2115	Add
+T107	Amount 2116 2122	3.1 ml
+T108	Reagent 2126 2143	37 % formaldehyde
+T109	Amount 2149 2154	40 ml
+T110	Location 2155 2171	centrifuge tubes
+T111	Action 2176 2181	place
+T112	Location 2190 2193	ice
+T113	Action 2196 2204	Incubate
+T114	Reagent 2205 2219	agarose blocks
+T115	Time 2224 2230	24 hrs
+T116	Temperature 2234 2238	50°C
+T117	Action 2239 2246	Prepare
+T118	Reagent 2247 2262	1 % agarose gel
+T119	Location 2281 2294	1× TAE buffer
+T120	Device 2301 2321	BioRad casting stand
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T5 
+E3	Action:T8 Acts-on:E1 Acts-on2:T9 Acts-on3:T10
+E4	Action:T12 Site:E3 Acts-on:T13 Site2:T14 Product:T19
+E5	Action:T17 Acts-on:T19 Site:T22 Using:T23
+E6	Action:T24 Site:T25
+E7	Action:T26 Product:T30
+E8	Action:T29 Acts-on:T30
+E9	Action:T31 Acts-on:T30 Site:T33
+E10	Action:T38 Using:T39 Count:T40 Product:T44
+E11	Action:T41 Acts-on:T44 Site:T46 Product:T48
+E12	Action:T47 Acts-on:T48 Acts-on2:T50 Site:T51
+E13	Action:T53 Acts-on:E12 Acts-on2:T48 Acts-on3:T50 Product:T55
+E14	Action:T54 Acts-on:T55 Site:T56 Product:T58
+E15	Action:T57 Acts-on:T58 Site:T59
+E16	Action:T62 Acts-on:T63 Site:T64
+E17	Action:T65 Acts-on:E16 Site:T67 Product:T71
+E18	Action:T70 Acts-on:T71 Using:T73 Count:T74 Product:T76
+E19	Action:T75 Acts-on:T76 Product:T80
+E20	Action:T79 Acts-on:T80 Site:T81
+E21	Action:T82 Acts-on:E20 Using:T85 Site:T86
+E22	Action:T87 Acts-on:T88 Site:T89 Using:T91
+E23	Action:T92 Acts-on:E22 Using:T93
+E24	Action:T95 Acts-on:E23
+E25	Action:T98 Site:E24 Acts-on:T99 Product:T102
+E26	Action:T101 Acts-on:T102 Using:T104 Count:T105
+E27	Action:T106 Acts-on:T108 Site:T110
+E28	Action:T111 Acts-on:E27 Site:T112
+E29	Action:T113 Acts-on:T114
+E30	Action:T117 Acts-on:T118 Site:T119 Using:T120
+R1	Measure Arg1:T3 Arg2:T4
+R2	Setting Arg1:E2 Arg2:T6
+R3	Setting Arg1:E3 Arg2:T11
+R4	Of-Type Arg1:T15 Arg2:T16
+R5	Mod-Link Arg1:T19 Arg2:T18
+R6	Measure Arg1:T19 Arg2:T20
+R7	Mod-Link Arg1:T22 Arg2:T21
+R8	Setting Arg1:E7 Arg2:T27
+R9	Setting Arg1:E7 Arg2:T28
+R10	Setting Arg1:E9 Arg2:T36
+R11	Setting Arg1:E9 Arg2:T37
+R12	Measure Arg1:T33 Arg2:T32
+R13	Measure Arg1:T35 Arg2:T34
+R14	Mod-Link Arg1:T44 Arg2:T42
+R15	Mod-Link Arg1:T44 Arg2:T43
+R16	Measure Arg1:T46 Arg2:T45
+R17	Measure Arg1:T48 Arg2:T49
+R18	Setting Arg1:E15 Arg2:T60
+R19	Mod-Link Arg1:E16 Arg2:T61
+R20	Measure Arg1:T67 Arg2:T66
+R21	Measure Arg1:T69 Arg2:T68
+R22	Setting Arg1:E18 Arg2:T72
+R23	Setting Arg1:E19 Arg2:T78
+R24	Mod-Link Arg1:T78 Arg2:T77
+R25	Mod-Link Arg1:T85 Arg2:T83
+R26	Mod-Link Arg1:T85 Arg2:T84
+R27	Mod-Link Arg1:T91 Arg2:T90
+R28	Setting Arg1:E23 Arg2:T94
+R29	Setting Arg1:E24 Arg2:T96
+R30	Setting Arg1:E24 Arg2:T97
+R31	Setting Arg1:E25 Arg2:T100
+R32	Measure Arg1:T104 Arg2:T103
+R33	Measure Arg1:T108 Arg2:T107
+R34	Measure Arg1:T110 Arg2:T109
+R35	Setting Arg1:E29 Arg2:T115
+R36	Setting Arg1:E29 Arg2:T116

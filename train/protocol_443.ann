@@ -1,0 +1,16 @@
+T1	Action 23 26	Put
+T2	Reagent 27 53	Milonig's phosphate buffer
+T3	Location 59 65	becker
+T4	Action 68 71	Add
+T5	Reagent 72 83	Tannic Acid
+T6	Location 91 97	becker
+T7	Reagent 107 124	previous solution
+T8	Action 127 130	Add
+T9	Amount 131 135	6 mL
+T10	Reagent 139 153	Glutarandehyde
+T11	Reagent 161 178	previous solution
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T6
+E2	Action:T4 Acts-on:T5 Site:T6 Product:T11
+E3	Action:T8 Acts-on:T10 Site:T11
+R1	Meronym Arg1:T7 Arg2:T6
+R2	Measure Arg1:T10 Arg2:T9

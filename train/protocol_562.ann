@@ -1,0 +1,122 @@
+T1	Action 23 32	Inoculate
+T2	Modifier 33 38	small
+T3	Amount 41 50	2 or 3 ml
+T4	Reagent 53 61	cultures
+T5	Reagent 70 97	donor and recipient strains
+T6	Modifier 105 116	appropriate
+T7	Reagent 117 128	antibiotics
+T8	Reagent 134 148	lysogeny broth
+T9	Action 232 236	Take
+T10	Amount 237 241	1 ml
+T11	Reagent 245 272	donor and recipient culture
+T12	Action 277 287	centrifuge
+T13	Speed 291 301	10,000 rcf
+T14	Time 306 315	2 minutes
+T15	Action 319 325	pellet
+T16	Reagent 330 338	bacteria
+T17	Action 341 349	Aspirate
+T18	Action 354 361	discard
+T19	Reagent 366 377	supernatant
+T20	Action 382 391	resuspend
+T21	Reagent 396 412	bacterial pellet
+T22	Modifier 416 421	fresh
+T23	Reagent 422 444	LB with no antibiotics
+T24	Action 506 511	place
+T25	Modifier 512 522	sterilised
+T26	Size 523 529	0.2 um
+T27	Device 530 547	pore size filters
+T28	Location 554 568	L - agar plate
+T29	Action 591 594	Use
+T30	Method 595 612	aseptic technique
+T31	Action 732 739	Pipette
+T32	Amount 740 745	10 ul
+T33	Modifier 753 764	resuspended
+T34	Reagent 765 792	donor and recipient strains
+T35	Location 800 810	same place
+T36	Device 816 822	filter
+T37	Location 840 850	agar plate
+T38	Action 907 915	Incubate
+T39	Location 920 925	plate
+T40	Modifier 926 937	upside down
+T41	Temperature 967 985	37 degrees Celsius
+T42	Action 1020 1024	take
+T43	Location 1029 1034	plate
+T44	Device 1046 1055	incubator
+T45	Method 1064 1081	aseptic technique
+T46	Action 1084 1088	pick
+T47	Modifier 1089 1093	each
+T48	Device 1094 1100	filter
+T49	Location 1109 1114	plate
+T50	Device 1121 1128	forceps
+T51	Action 1133 1138	place
+T52	Mention 1139 1141	it
+T53	Amount 1147 1153	1.5 ml
+T54	Location 1154 1158	tube
+T55	Amount 1170 1174	1 ml
+T56	Modifier 1178 1185	sterile
+T57	Reagent 1186 1189	PBS
+T58	Action 1192 1198	Vortex
+T59	Location 1203 1208	tubes
+T60	Action 1212 1216	free
+T61	Reagent 1221 1229	bacteria
+T62	Device 1239 1245	filter
+T63	Action 1248 1254	Remove
+T64	Action 1259 1266	discard
+T65	Device 1271 1278	filters
+T66	Location 1288 1293	tubes
+T67	Method 1300 1317	aseptic technique
+T68	Action 1320 1325	Plate
+T69	Amount 1326 1341	desired volumes
+T70	Reagent 1349 1369	bacterial suspension
+T71	Reagent 1373 1394	selective agar medium
+T72	Action 1399 1407	incubate
+T73	Time 1408 1420	over night .
+E1	Action:T1 Acts-on:T4 Using:T7 Product:T11
+E2	Action:T9 Acts-on:T11
+E3	Action:T12 
+E4	Action:T15 Acts-on:T16 Product:T19
+E5	Action:T17 Acts-on:T19
+E6	Action:T18 Acts-on:T19 Product:T21
+E7	Action:T20 Acts-on:T21 Site:T23 Product:T34
+E8	Action:T24 Acts-on:T27 Site:T28
+E9	Action:T29 Using:T30 Acts-on:E8 Product:T37
+E10	Action:T31 Acts-on:T34 Site:T35 Product:T39
+E11	Action:T38 Acts-on:T39 Product:T43
+E12	Action:T42 Acts-on:T43 Site:T44 Product:T49
+E13	Action:T46 Acts-on:T48 Site:T49 Using:T50 Product:T52
+E14	Action:T51 Acts-on:T52 Site:T54 Product:T59
+E15	Action:T58 Acts-on:T59 Product:T61 Product2:T66
+E16	Action:T60 Acts-on:T61 Site:T62
+E17	Action:T63 Acts-on:T65 Site:T66 Using:T67 Product:T70
+E18	Action:T64 Acts-on:T65 Site:T66 Using:T67
+E19	Action:T68 Acts-on:T70 Site:T71
+E20	Action:T72 Acts-on:E19
+R1	Setting Arg1:T2 Arg2:T3
+R2	Mod-Link Arg1:T4 Arg2:T2
+R3	Meronym Arg1:T4 Arg2:T5
+R4	Mod-Link Arg1:T7 Arg2:T6
+R5	Meronym Arg1:T7 Arg2:T8
+R6	Setting Arg1:E3 Arg2:T13
+R7	Setting Arg1:E3 Arg2:T14
+R8	Measure Arg1:T11 Arg2:T10
+R9	Mod-Link Arg1:T23 Arg2:T22
+R10	Setting Arg1:T27 Arg2:T26
+R11	Mod-Link Arg1:T27 Arg2:T25
+R12	Mod-Link Arg1:T34 Arg2:T33
+R13	Measure Arg1:T34 Arg2:T32
+R14	Meronym Arg1:T35 Arg2:T36
+R15	Mod-Link Arg1:E11 Arg2:T40
+R16	Setting Arg1:E11 Arg2:T41
+R17	Mod-Link Arg1:T57 Arg2:T56
+R18	Measure Arg1:T57 Arg2:T55
+R19	Measure Arg1:T54 Arg2:T53
+R20	Mod-Link Arg1:T48 Arg2:T47
+R21	Meronym Arg1:T57 Arg2:T54
+R22	Setting Arg1:E20 Arg2:T73
+R23	Measure Arg1:T70 Arg2:T69
+R24	Enables Arg1:E2 Arg2:E4
+R25	Enables Arg1:E3 Arg2:E4
+R26	Meronym Arg1:T36 Arg2:T37
+R27	Meronym Arg1:T48 Arg2:T49
+R28	Enables Arg1:E15 Arg2:E16
+R29	Meronym Arg1:T65 Arg2:T66

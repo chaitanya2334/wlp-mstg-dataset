@@ -1,0 +1,60 @@
+T1	Action 26 33	Prepare
+T2	Concentration 34 38	70 %
+T3	Reagent 39 46	Ethanol
+T4	Action 51 56	chill
+T5	Temperature 60 66	- 20°C
+T6	Action 126 133	Prepare
+T7	Reagent 134 146	target cells
+T8	Action 163 167	wash
+T9	Numerical 168 170	2X
+T10	Reagent 176 179	PBS
+T11	Action 182 194	centrifuging
+T12	Speed 198 203	350xg
+T13	Time 208 217	5 minutes
+T14	Action 220 227	Discard
+T15	Reagent 228 239	supernatant
+T16	Reagent 255 266	cell pellet
+T17	Action 270 279	vortexing
+T18	Action 282 285	Add
+T19	Amount 286 290	3 ml
+T20	Temperature 291 295	cold
+T21	Concentration 296 300	70 %
+T22	Reagent 301 308	ethanol
+T23	Method 309 321	drop by drop
+T24	Reagent 329 340	cell pellet
+T25	Action 347 356	vortexing
+T26	Action 368 377	vortexing
+T27	Time 382 392	30 seconds
+T28	Action 395 403	Incubate
+T29	Temperature 407 413	- 20°C
+T30	Time 418 424	1 hour
+T31	Action 427 431	Wash
+T32	Numerical 432 434	2X
+T33	Reagent 440 470	BioLegend Cell Staining Buffer
+T34	Action 494 503	resuspend
+T35	Reagent 504 509	cells
+T36	Concentration 513 539	0.5 - 1.0 x 107 cells / ml
+E1	Action:T1 Product:T3
+E2	Action:T4 Acts-on:T3 Product:T22
+E3	Action:T6 Product:T7
+E4	Action:T8 Count:T9 Using:T10 Acts-on:T7
+E5	Action:T11 Acts-on:T7 Product:T15
+E6	Action:T14 Acts-on:T15
+E7	Action:T17 Acts-on:T16 Product:T24
+E8	Action:T18 Acts-on:T22 Using:T23 Site:T24
+E9	Action:T25 Acts-on:T24
+E10	Action:T26 Acts-on:E8
+E11	Action:T28 Acts-on:E10
+E12	Action:T31 Count:T32 Using:T33 Acts-on:T35 Acts-on2:E11
+E13	Action:T34 Acts-on:T35
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T5
+R3	Setting Arg1:E5 Arg2:T12
+R4	Setting Arg1:E5 Arg2:T13
+R5	Measure Arg1:T22 Arg2:T21
+R6	Setting Arg1:E8 Arg2:T20
+R7	Measure Arg1:T22 Arg2:T19
+R8	Setting Arg1:E10 Arg2:T27
+R9	Setting Arg1:E11 Arg2:T29
+R10	Setting Arg1:E11 Arg2:T30
+R11	Setting Arg1:E13 Arg2:T36

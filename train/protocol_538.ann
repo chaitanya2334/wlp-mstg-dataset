@@ -1,0 +1,43 @@
+T1	Action 72 77	Split
+T2	Modifier 78 94	non - transduced
+T3	Modifier 97 106	confluent
+T4	Reagent 107 112	cells
+T5	Concentration 113 118	1 : 5
+T6	Amount 122 127	10 ml
+T7	Reagent 128 132	DMEM
+T8	Concentration 135 139	10 %
+T9	Reagent 140 149	FBS media
+T10	Action 152 160	Transfer
+T11	Amount 161 167	0.5 mL
+T12	Reagent 168 183	cell suspension
+T13	Size 189 198	24 - well
+T14	Location 199 204	plate
+T15	Amount 216 222	500 µl
+T16	Reagent 228 240	media + drug
+T17	Action 305 312	Examine
+T18	Method 313 322	viability
+T19	Time 323 335	every 2 days
+T20	Action 338 345	Culture
+T21	Time 350 357	14 days
+T22	Action 360 367	Replace
+T23	Reagent 372 377	media
+T24	Reagent 389 399	antibiotic
+T25	Time 400 412	every 3 days
+E1	Action:T1 Acts-on:T4 Site:T7 Site2:T9 Product:T12
+E2	Action:T10 Acts-on:T12 Site:T14
+E3	Action:T17 Using:T18 Acts-on:E2
+E4	Action:T20 Acts-on:E3 Product:T23
+E5	Action:T22 Acts-on:T23
+R1	Measure Arg1:T7 Arg2:T6
+R2	Measure Arg1:T9 Arg2:T8
+R3	Setting Arg1:E1 Arg2:T5
+R4	Measure Arg1:T12 Arg2:T11
+R5	Measure Arg1:T14 Arg2:T13
+R6	Measure Arg1:T16 Arg2:T15
+R7	Meronym Arg1:T16 Arg2:T14
+R8	Setting Arg1:E4 Arg2:T21
+R9	Meronym Arg1:T24 Arg2:T23
+R10	Setting Arg1:E5 Arg2:T25
+R11	Setting Arg1:E3 Arg2:T19
+R12	Mod-Link Arg1:T4 Arg2:T3
+R13	Mod-Link Arg1:T4 Arg2:T2

@@ -1,0 +1,133 @@
+T1	Method 77 89	plaque assay
+T2	Action 93 102	determine
+T3	Measure-Type 107 115	PFU / ml
+T4	Reagent 123 129	lysate
+T5	Action 148 157	Inoculate
+T6	Reagent 160 171	new culture
+T7	Action 184 188	pick
+T8	Reagent 191 197	colony
+T9	Size 205 211	125 ml
+T10	Location 212 217	flask
+T11	Reagent 229 238	MLB media
+T12	Action 256 264	transfer
+T13	Amount 265 270	10 ml
+T14	Reagent 279 286	culture
+T15	Amount 290 296	500 ml
+T16	Reagent 300 309	new media
+T17	Location 315 329	Fernbach flask
+T18	Action 358 367	Inoculate
+T19	Amount 368 374	enough
+T20	Size 375 381	500 ml
+T21	Reagent 382 390	cultures
+T22	Action 446 450	take
+T23	Action 453 461	'time 0'
+T24	Measure-Type 462 468	growth
+T25	Action 469 476	reading
+T26	Action 488 494	taking
+T27	Measure-Type 495 503	readings
+T28	Time 516 528	periodically
+T29	Action 531 536	Graph
+T30	Measure-Type 541 548	results
+T31	Action 561 570	Determine
+T32	Measure-Type 575 588	concentration
+T33	Reagent 597 604	culture
+T34	Action 651 660	Calculate
+T35	Measure-Type 671 677	number
+T36	Reagent 681 686	cells
+T37	Amount 690 694	each
+T38	Size 703 709	500 ml
+T39	Reagent 710 718	cultures
+T40	Action 721 730	Calculate
+T41	Measure-Type 731 739	how many
+T42	Reagent 740 746	phages
+T43	Action 774 777	Add
+T44	Reagent 778 784	phages
+T45	Location 792 810	experimental flask
+T46	Amount 818 830	equal volume
+T47	Reagent 834 837	MSM
+T48	Location 845 858	control flask
+T49	Action 863 868	start
+T50	Device 874 879	timer
+T51	Action 896 902	dilute
+T52	Reagent 907 916	infection
+T53	Concentration 917 922	1 : 1
+T54	Reagent 926 935	MLB media
+T55	Action 948 951	add
+T56	Amount 952 958	500 ml
+T57	Reagent 959 970	fresh media
+T58	Amount 974 978	each
+T59	Location 979 984	flask
+T60	Action 989 994	swirl
+T61	Action 998 1001	mix
+T62	Action 1004 1008	Take
+T63	Reagent 1011 1017	sample
+T64	Modifier 1018 1029	immediately
+T65	Action 1056 1064	sampling
+T66	Temperature 1081 1088	8 hours
+T67	Action 1106 1111	count
+T68	Reagent 1116 1123	plaques
+T69	Location 1131 1137	plates
+T70	Action 1192 1197	count
+T71	Reagent 1202 1213	new plaques
+T72	Action 1235 1238	add
+T73	Mention 1239 1244	these
+T74	Action 1270 1275	Count
+T75	Action 1301 1310	Calculate
+T76	Measure-Type 1311 1319	PFU / ml
+T77	Modifier 1352 1363	centrifuged
+T78	Modifier 1388 1403	not centrifuged
+T79	Reagent 1420 1427	samples
+T80	Action 1430 1435	Graph
+T81	Action 1440 1447	results
+T82	Action 1448 1457	Calculate
+T83	Measure-Type 1458 1468	burst size
+E1	Action:T2 Using:T1 Measure-Type-Link:T3 Acts-on:T4
+E2	Action:T5 Acts-on:T6 Product:T14
+E3	Action:T7 Acts-on:T8 Site:T10
+E4	Action:T12 Acts-on:T14 Site:T16
+E5	Action:T18 Acts-on:T21
+E6	Action:T22 Acts-on:E5 Measure-Type-Link:T24 Measure-Type-Link2:E8
+E7	Action:T23 
+E8	Action:T25 
+E9	Action:T26 Acts-on:E6 Measure-Type-Link:T27 Product:T33
+E10	Action:T29 Acts-on:E9 Measure-Type-Link:T30
+E11	Action:T31 Measure-Type-Link:T32 Acts-on:T33
+E12	Action:T34 Measure-Type-Link:T35 Acts-on:T36
+E13	Action:T40 Measure-Type-Link:T41 Acts-on:T42
+E14	Action:T43 Acts-on:T44 Site:T45 Acts-on2:T47 Site2:T48 Product:T52
+E15	Action:T49 Acts-on:T50
+E16	Action:T51 Acts-on:T52 Site:T54
+E17	Action:T55 Acts-on:T57 Site:T59
+E18	Action:T60 
+E19	Action:T61 Acts-on:E17
+E20	Action:T62 Product:T63
+E21	Action:T65 Acts-on:E20
+E22	Action:T67 Acts-on:T68 Site:T69
+E23	Action:T70 Acts-on:T71 Product:T73
+E24	Action:T72 Acts-on:T73
+E25	Action:T74 
+E26	Action:T75 Measure-Type-Link:T76 Acts-on:T79
+E27	Action:T80 Acts-on:E26
+E28	Action:T81 
+E29	Action:T82 Acts-on:E27 Measure-Type-Link:T83
+R1	Enables Arg1:E3 Arg2:E2
+R2	Measure Arg1:T10 Arg2:T9
+R3	Meronym Arg1:T11 Arg2:T10
+R4	Measure Arg1:T14 Arg2:T13
+R5	Measure Arg1:T16 Arg2:T15
+R6	Meronym Arg1:T16 Arg2:T17
+R7	Measure Arg1:T21 Arg2:T19
+R8	Measure Arg1:T21 Arg2:T20
+R9	Setting Arg1:E9 Arg2:T28
+R10	Measure Arg1:T39 Arg2:T37
+R11	Measure Arg1:T39 Arg2:T38
+R12	Measure Arg1:T47 Arg2:T46
+R13	Setting Arg1:E16 Arg2:T53
+R14	Enables Arg1:E17 Arg2:E16
+R15	Measure Arg1:T57 Arg2:T56
+R16	Measure Arg1:T59 Arg2:T58
+R17	Enables Arg1:E18 Arg2:E19
+R18	Mod-Link Arg1:E20 Arg2:T64
+R19	Setting Arg1:E21 Arg2:T66
+R20	Mod-Link Arg1:T79 Arg2:T77
+R21	Mod-Link Arg1:T79 Arg2:T78

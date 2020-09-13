@@ -1,0 +1,83 @@
+T1	Action 28 32	Mush
+T2	Reagent 37 43	banana
+T3	Location 51 65	resealable bag
+T4	Time 76 84	a minute
+T5	Action 152 156	Fill
+T6	Location 157 162	a cup
+T7	Reagent 172 181	hot water
+T8	Reagent 186 190	salt
+T9	Action 193 197	Pour
+T10	Reagent 202 215	saltwater mix
+T11	Location 225 228	bag
+T12	Action 235 240	close
+T13	Location 245 248	bag
+T14	Modifier 251 257	Gently
+T15	Action 258 271	mix and slosh
+T16	Reagent 276 285	saltwater
+T17	Reagent 290 303	mashed banana
+T18	Time 317 333	30 to 45 seconds
+T19	Action 336 339	Add
+T20	Reagent 340 356	dishwashing soap
+T21	Location 366 369	bag
+T22	Modifier 374 380	gently
+T23	Action 381 384	mix
+T24	Reagent 389 397	contents
+T25	Action 450 455	Place
+T26	Device 460 473	coffee filter
+T27	Location 479 494	clear glass cup
+T28	Action 497 505	securing
+T29	Location 510 513	top
+T30	Device 521 527	filter
+T31	Location 539 542	lip
+T32	Location 550 553	cup
+T33	Action 556 560	Pour
+T34	Reagent 565 573	contents
+T35	Location 581 584	bag
+T36	Device 594 600	filter
+T37	Action 672 690	Remove and discard
+T38	Device 695 713	used coffee filter
+T39	Action 716 720	Tilt
+T40	Location 725 730	glass
+T41	Modifier 735 741	slowly
+T42	Action 742 745	add
+T43	Reagent 746 758	cold alcohol
+T44	Location 768 772	side
+T45	Location 780 783	cup
+T46	Reagent 918 939	two - layered mixture
+T47	Action 940 943	sit
+T48	Time 948 961	eight minutes
+T49	Action 1067 1072	Stick
+T50	Device 1077 1091	wooden stirrer
+T51	Location 1101 1104	cup
+T52	Action 1107 1111	Spin
+T53	Mention 1112 1114	it
+T54	Method 1115 1123	in place
+T55	Action 1164 1170	Remove
+T56	Device 1175 1182	stirrer
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T11
+E2	Action:T5 Site:T6 Acts-on:T7 Acts-on2:T8 Product:T10
+E3	Action:T9 Acts-on:T10 Site:T11 Product:T13
+E4	Action:T12 Acts-on:T13
+E5	Action:T15 Acts-on:T16 Acts-on2:T17 Product:T21
+E6	Action:T19 Acts-on:T20 Site:T21 Product:T24
+E7	Action:T23 Acts-on:T24
+E8	Action:T25 Acts-on:T26 Site:T27 Product:T30
+E9	Action:T28 Acts-on:T29 Site:T31 Product:T36
+E10	Action:T33 Acts-on:T34 Using:T36
+E11	Action:T37 Acts-on:T38
+E12	Action:T39 Acts-on:T40 Product:T45
+E13	Action:T42 Acts-on:T43 Site:T44 Product:T46
+E14	Action:T47 Acts-on:T46 Product:T51
+E15	Action:T49 Acts-on:T50 Site:T51
+E16	Action:T52 Acts-on:E15 Acts-on2:T53 Using:T54
+E17	Action:T55 Site:E16 Acts-on:T56
+R1	Setting Arg1:E1 Arg2:T4
+R2	Mod-Link Arg1:E5 Arg2:T14
+R3	Setting Arg1:E5 Arg2:T18
+R4	Mod-Link Arg1:E7 Arg2:T22
+R5	Meronym Arg1:T29 Arg2:T30
+R6	Meronym Arg1:T31 Arg2:T32
+R7	Meronym Arg1:T35 Arg2:T34
+R8	Mod-Link Arg1:E13 Arg2:T41
+R9	Meronym Arg1:T44 Arg2:T45
+R10	Setting Arg1:E14 Arg2:T48

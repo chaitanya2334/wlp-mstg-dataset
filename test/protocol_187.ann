@@ -1,0 +1,138 @@
+T1	Action 39 45	Freeze
+T2	Reagent 46 56	mosquitoes
+T3	Action 61 69	separate
+T4	Numerical 70 71	1
+T5	Reagent 72 80	mosquito
+T6	Location 85 89	tube
+T7	Action 92 95	Add
+T8	Amount 96 101	25 uL
+T9	Reagent 105 124	fly grinding buffer
+T10	Action 127 132	Grind
+T11	Reagent 133 143	mosquitoes
+T12	Device 151 157	pestle
+T13	Action 160 165	Rinse
+T14	Device 166 172	pestle
+T15	Amount 178 183	25 uL
+T16	Reagent 187 193	buffer
+T17	Action 196 204	Incubate
+T18	Temperature 208 213	65o C
+T19	Time 218 224	30 min
+T20	Action 227 230	Add
+T21	Amount 231 234	7uL
+T22	Concentration 235 237	8M
+T23	Reagent 238 241	KAc
+T24	Action 244 252	Incubate
+T25	Temperature 256 259	ice
+T26	Time 264 270	30 min
+T27	Action 273 283	Centrifuge
+T28	Speed 287 296	max speed
+T29	Time 301 307	15 min
+T30	Temperature 311 313	RT
+T31	Action 316 323	Collect
+T32	Reagent 324 335	supernatant
+T33	Action 340 343	add
+T34	Amount 344 351	0.7 vol
+T35	Temperature 376 392	room temperature
+T36	Reagent 396 407	isopropanol
+T37	Amount 413 418	1 vol
+T38	Modifier 422 430	ice cold
+T39	Concentration 431 436	100 %
+T40	Reagent 437 441	EtOH
+T41	Action 448 456	incubate
+T42	Time 461 466	5 min
+T43	Temperature 470 486	room temperature
+T44	Action 489 499	Centrifuge
+T45	Temperature 503 505	RT
+T46	Time 510 516	15 min
+T47	Speed 520 529	max speed
+T48	Action 532 539	Discard
+T49	Reagent 540 551	supernatant
+T50	Action 556 559	add
+T51	Amount 560 566	100 uL
+T52	Concentration 567 571	70 %
+T53	Reagent 572 576	EtOH
+T54	Action 579 589	Centrifuge
+T55	Time 594 598	5min
+T56	Speed 602 611	max speed
+T57	Temperature 615 617	RT
+T58	Action 620 627	Discard
+T59	Reagent 628 639	supernatant
+T60	Action 644 647	add
+T61	Amount 648 654	100 uL
+T62	Concentration 655 660	100 %
+T63	Reagent 661 665	EtOH
+T64	Action 668 678	Centrifuge
+T65	Time 683 688	5 min
+T66	Speed 692 701	max speed
+T67	Temperature 705 707	RT
+T68	Action 710 717	Discard
+T69	Reagent 718 729	supernatant
+T70	Action 734 742	aird dry
+T71	Temperature 746 748	RT
+T72	Time 753 759	1 hour
+T73	Action 762 771	Resuspend
+T74	Reagent 775 777	TE
+T75	Action 780 784	heat
+T76	Time 789 799	10 minutes
+T77	Action 804 812	quantify
+T78	Device 818 826	nanodrop
+E1	Action:T1 Acts-on:T2 Product:T5
+E2	Action:T3 Acts-on:T5 Site:T6
+E3	Action:T7 Site:E2 Acts-on:T9 Product:T11
+E4	Action:T10 Acts-on:T11 Using:T12 Product:T14
+E5	Action:T13 Acts-on:T14 Using:T16
+E6	Action:T17 Acts-on:E5
+E7	Action:T20 Site:E6 Acts-on:T23
+E8	Action:T24 Acts-on:E7
+E9	Action:T27 Acts-on:E8 Product:T32
+E10	Action:T31 Acts-on:T32
+E11	Action:T33 Site:E10 Acts-on:T36
+E12	Action:T41 Acts-on:E11
+E13	Action:T44 Acts-on:E12 Product:T49
+E14	Action:T48 Acts-on:T49
+E15	Action:T50 Site:E14 Acts-on:T53
+E16	Action:T54 Acts-on:E15 Product:T59
+E17	Action:T58 Acts-on:T59
+E18	Action:T60 Site:E17 Acts-on:T63
+E19	Action:T64 Acts-on:E18 Product:T69
+E20	Action:T68 Acts-on:T69
+E21	Action:T70 Acts-on:E20
+E22	Action:T73 Acts-on:E21 Acts-on2:T74
+E23	Action:T75 Acts-on:E22
+E24	Action:T77 Acts-on:E23 Using:T78
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T9 Arg2:T8
+R3	Measure Arg1:T16 Arg2:T15
+R4	Setting Arg1:E6 Arg2:T18
+R5	Setting Arg1:E6 Arg2:T19
+R6	Measure Arg1:T23 Arg2:T21
+R7	Measure Arg1:T23 Arg2:T22
+R8	Setting Arg1:E8 Arg2:T25
+R9	Setting Arg1:E8 Arg2:T26
+R10	Setting Arg1:E9 Arg2:T28
+R11	Setting Arg1:E9 Arg2:T29
+R12	Setting Arg1:E9 Arg2:T30
+R13	Setting Arg1:E11 Arg2:T35
+R14	Measure Arg1:T36 Arg2:T34
+R15	Or Arg1:T36 Arg2:T40
+R16	Measure Arg1:T40 Arg2:T37
+R17	Mod-Link Arg1:T40 Arg2:T38
+R18	Measure Arg1:T40 Arg2:T39
+R19	Setting Arg1:E12 Arg2:T42
+R20	Setting Arg1:E12 Arg2:T43
+R21	Setting Arg1:E13 Arg2:T45
+R22	Setting Arg1:E13 Arg2:T46
+R23	Setting Arg1:E13 Arg2:T47
+R24	Measure Arg1:T53 Arg2:T51
+R25	Measure Arg1:T53 Arg2:T52
+R26	Setting Arg1:E16 Arg2:T55
+R27	Setting Arg1:E16 Arg2:T56
+R28	Setting Arg1:E16 Arg2:T57
+R29	Measure Arg1:T63 Arg2:T61
+R30	Measure Arg1:T63 Arg2:T62
+R31	Setting Arg1:E19 Arg2:T65
+R32	Setting Arg1:E19 Arg2:T66
+R33	Setting Arg1:E19 Arg2:T67
+R34	Setting Arg1:E21 Arg2:T71
+R35	Setting Arg1:E21 Arg2:T72
+R36	Setting Arg1:E23 Arg2:T76

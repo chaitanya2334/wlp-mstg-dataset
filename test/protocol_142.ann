@@ -1,0 +1,261 @@
+T1	Action 68 72	Thaw
+T2	Modifier 77 91	virus infected
+T3	Reagent 92 101	chlorella
+T4	Action 106 113	suspend
+T5	Location 117 127	MSK flasks
+T6	Reagent 133 143	Buffer A .
+T7	Action 144 151	Suspend
+T8	Amount 157 162	20 ml
+T9	Modifier 163 172	per flask
+T10	Modifier 173 193	per 1.0 - 1.5 X 1011
+T11	Reagent 194 208	infected cells
+T12	Action 211 221	Homogenize
+T13	Reagent 226 231	cells
+T14	Device 239 265	MSK mechanical homogenizer
+T15	Amount 271 276	15 gm
+T16	Size 280 286	0.3 mm
+T17	Reagent 287 298	glass beads
+T18	Speed 302 311	4,000 rpm
+T19	Time 316 337	90 sec ( 2 X 45 sec )
+T20	Method 343 354	CO2 cooling
+T21	Action 357 364	Recover
+T22	Reagent 369 379	homogenate
+T23	Location 389 394	tubes
+T24	Action 397 401	Wash
+T25	Reagent 406 417	glass beads
+T26	Concentration 418 420	3X
+T27	Amount 426 430	5 ml
+T28	Reagent 434 442	Buffer A
+T29	Action 447 454	combine
+T30	Reagent 464 474	homogenate
+T31	Action 477 487	Centrifuge
+T32	Reagent 492 502	homogenate
+T33	Device 510 528	Sorvall SS34 rotor
+T34	Speed 532 542	10,000 rpm
+T35	Time 545 551	20 min
+T36	Temperature 554 557	4°C
+T37	Action 560 566	Adjust
+T38	Reagent 571 593	homogenate supernatant
+T39	Concentration 597 612	70 % saturation
+T40	Reagent 618 630	( NH4 ) 2SO4
+T41	Temperature 634 637	4°C
+T42	Method 643 658	gentle stirring
+T43	Action 661 664	Add
+T44	Reagent 669 681	( NH4 ) 2SO4
+T45	Modifier 682 691	gradually
+T46	Action 694 704	Centrifuge
+T47	Reagent 709 717	material
+T48	Device 725 743	Sorvall SS34 rotor
+T49	Speed 747 757	10,000 rpm
+T50	Time 760 766	10 min
+T51	Temperature 769 772	4°C
+T52	Action 775 782	Suspend
+T53	Reagent 787 794	pellets
+T54	Reagent 800 808	Buffer A
+T55	Modifier 811 831	Per mL of suspension
+T56	Action 832 835	add
+T57	Amount 838 845	0.45 mL
+T58	Concentration 849 852	4 M
+T59	Reagent 853 857	NaCl
+T60	Amount 862 869	0.45 mL
+T61	Concentration 873 877	28 %
+T62	Reagent 878 886	PEG 8000
+T63	Action 889 895	heated
+T64	Temperature 899 903	65°C
+T65	Action 908 911	Mix
+T66	Modifier 912 918	gently
+T67	Method 922 931	inversion
+T68	Time 936 946	5 - 10 min
+T69	Action 949 959	Centrifuge
+T70	Reagent 964 972	material
+T71	Device 980 998	Sorvall SS34 rotor
+T72	Speed 1002 1012	10,000 rpm
+T73	Time 1015 1021	10 min
+T74	Temperature 1024 1027	4°C
+T75	Action 1030 1036	Dilute
+T76	Reagent 1041 1052	supernatant
+T77	Amount 1058 1073	10 - 15 volumes
+T78	Reagent 1077 1085	Buffer B
+T79	Action 1089 1095	reduce
+T80	Reagent 1100 1104	NaCl
+T81	Action 1121 1125	Load
+T82	Reagent 1130 1138	material
+T83	Time 1139 1148	overnight
+T84	Location 1156 1182	Heparin - Sepharose column
+T85	Action 1183 1195	equilibrated
+T86	Reagent 1201 1209	Buffer B
+T87	Location 1217 1226	cold room
+T88	Action 1229 1234	Elute
+T89	Location 1239 1265	Heparin - Sepharose column
+T90	Reagent 1271 1279	Buffer B
+T91	Concentration 1288 1297	0 - 2.0 M
+T92	Reagent 1298 1311	KOAc gradient
+T93	Action 1314 1319	Assay
+T94	Reagent 1324 1340	column fractions
+T95	Action 1345 1349	pool
+T96	Reagent 1354 1370	active fractions
+T97	Action 1373 1379	Dilute
+T98	Reagent 1384 1400	pooled fractions
+T99	Amount 1406 1421	10 - 15 volumes
+T100	Reagent 1425 1433	Buffer B
+T101	Action 1437 1443	reduce
+T102	Reagent 1448 1452	salt
+T103	Action 1469 1473	Load
+T104	Reagent 1478 1486	material
+T105	Time 1487 1496	overnight
+T106	Location 1504 1527	Blue - Sepharose column
+T107	Action 1528 1540	equilibrated
+T108	Reagent 1546 1554	Buffer B
+T109	Location 1562 1571	cold room
+T110	Action 1574 1579	Elute
+T111	Location 1584 1607	Blue - Sepharose column
+T112	Reagent 1613 1621	Buffer B
+T113	Concentration 1630 1639	0 - 2.0 M
+T114	Reagent 1640 1653	KOAc gradient
+T115	Action 1656 1661	Assay
+T116	Reagent 1666 1682	column fractions
+T117	Action 1687 1691	pool
+T118	Reagent 1696 1712	active fractions
+T119	Action 1715 1721	Dilute
+T120	Reagent 1726 1742	pooled fractions
+T121	Amount 1748 1763	10 - 15 volumes
+T122	Reagent 1767 1775	Buffer B
+T123	pH 1778 1784	pH 8.5
+T124	Action 1788 1794	reduce
+T125	Reagent 1799 1803	salt
+T126	Action 1820 1824	Load
+T127	Reagent 1829 1837	material
+T128	Time 1838 1847	overnight
+T129	Location 1855 1875	Q - Sepharose column
+T130	Action 1876 1888	equilibrated
+T131	Reagent 1894 1902	Buffer B
+T132	pH 1905 1911	pH 8.5
+T133	Location 1919 1928	cold room
+T134	Action 1931 1936	Elute
+T135	Location 1941 1961	Q - Sepharose column
+T136	Reagent 1967 1975	Buffer B
+T137	pH 1978 1984	pH 8.5
+T138	Concentration 1993 2002	0 - 2.0 M
+T139	Reagent 2003 2016	KOAc gradient
+T140	Action 2019 2024	Assay
+T141	Reagent 2029 2045	column fractions
+T142	Action 2050 2054	pool
+T143	Reagent 2059 2075	active fractions
+T144	Action 2078 2089	Concentrate
+T145	Reagent 2094 2107	pooled enzyme
+T146	Method 2111 2119	dialysis
+T147	Time 2120 2129	overnight
+T148	Reagent 2135 2149	storage buffer
+T149	Temperature 2153 2156	4°C
+T150	Action 2159 2162	Add
+T151	Reagent 2163 2166	BSA
+T152	Concentration 2169 2179	10 mg / mL
+T153	Concentration 2210 2221	100 µg / mL
+T154	Action 2224 2228	Save
+T155	Reagent 2233 2244	supernatant
+T156	Action 2247 2255	Incubate
+T157	Temperature 2259 2262	4°C
+T158	Time 2267 2278	60 - 90 min
+T159	Modifier 2279 2295	without stirring
+T160	Action 2298 2302	Save
+T161	Reagent 2307 2313	pellet
+T162	Action 2316 2320	Save
+T163	Reagent 2325 2336	supernatant
+T164	Action 2339 2344	Store
+T165	Reagent 2349 2355	enzyme
+T166	Temperature 2359 2365	- 20°C
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:E1 Site:T5 Using:T6 Product:T11
+E3	Action:T7 Using:T11 Product:T13
+E4	Action:T12 Acts-on:T13 Site:T14 Using:T17 Using2:T20 Product:T22
+E5	Action:T21 Acts-on:T22 Site:T23 Product:T25
+E6	Action:T24 Acts-on:T25 Using:T28
+E7	Action:T29 Acts-on:E6 Acts-on2:T30 Product:T32
+E8	Action:T31 Acts-on:T32 Site:T33 Product:T38
+E9	Action:T37 Acts-on:T38 Using:T40 Using2:T42
+E10	Action:T43 Acts-on:T44 Product:T47
+E11	Action:T46 Acts-on:T47 Site:T48 Product:T53
+E12	Action:T52 Acts-on:T53 Using:T54
+E13	Action:T56 Site:E12 Acts-on:T59 Acts-on2:T62
+E14	Action:T63 Acts-on:T62
+E15	Action:T65 Acts-on:E13 Using:T67 Product:T70
+E16	Action:T69 Acts-on:T70 Site:T71 Product:T76
+E17	Action:T75 Acts-on:T76 Using:T78 Product:T82
+E18	Action:T79 Acts-on:T80
+E19	Action:T81 Acts-on:T82 Site:T84 Product:T89
+E20	Action:T85 Acts-on:T84 Using:T86 Site:T87
+E21	Action:T88 Acts-on:T89 Using:T90 Using2:T92 Product:T94
+E22	Action:T93 Acts-on:T94 Product:T96
+E23	Action:T95 Acts-on:T96 Product:T98
+E24	Action:T97 Acts-on:T98 Using:T100 Product:T104
+E25	Action:T101 Acts-on:T102
+E26	Action:T103 Acts-on:T104 Site:T106 Product:T111
+E27	Action:T107 Acts-on:T106 Using:T108 Site:T109
+E28	Action:T110 Acts-on:T111 Using:T112 Using2:T114 Product:T116
+E29	Action:T115 Acts-on:T116 Product:T118
+E30	Action:T117 Acts-on:T118 Product:T120
+E31	Action:T119 Acts-on:T120 Using:T122 Product:T127
+E32	Action:T124 Acts-on:T125
+E33	Action:T126 Acts-on:T127 Site:T129 Product:T135
+E34	Action:T130 Acts-on:T129 Using:T131 Site:T133
+E35	Action:T134 Acts-on:T135 Using:T136 Using2:T139 Product:T141
+E36	Action:T140 Acts-on:T141 Product:T143
+E37	Action:T142 Acts-on:T143 Product:T145
+E38	Action:T144 Acts-on:T145 Using:T146 Site:T148
+E39	Action:T150 Site:E38 Acts-on:T151 Product:T155
+E40	Action:T154 Acts-on:T155
+E41	Action:T156 Acts-on:E40 Product:T161 Product2:T163 Product3:T165
+E42	Action:T160 Acts-on:T161
+E43	Action:T162 Acts-on:T163
+E44	Action:T164 Acts-on:T165
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T8 Arg2:T9
+R3	Mod-Link Arg1:T8 Arg2:T10
+R4	Measure Arg1:T11 Arg2:T8
+R5	Setting Arg1:E4 Arg2:T18
+R6	Setting Arg1:E4 Arg2:T19
+R7	Measure Arg1:T17 Arg2:T15
+R8	Measure Arg1:T17 Arg2:T16
+R9	Measure Arg1:T25 Arg2:T26
+R10	Measure Arg1:T28 Arg2:T27
+R11	Setting Arg1:E8 Arg2:T34
+R12	Setting Arg1:E8 Arg2:T35
+R13	Setting Arg1:E8 Arg2:T36
+R14	Setting Arg1:E9 Arg2:T39
+R15	Setting Arg1:E9 Arg2:T41
+R16	Mod-Link Arg1:E10 Arg2:T45
+R17	Setting Arg1:E11 Arg2:T49
+R18	Setting Arg1:E11 Arg2:T50
+R19	Setting Arg1:E11 Arg2:T51
+R20	Mod-Link Arg1:T57 Arg2:T55
+R21	Measure Arg1:T59 Arg2:T57
+R22	Measure Arg1:T59 Arg2:T58
+R23	Mod-Link Arg1:T60 Arg2:T55
+R24	Measure Arg1:T62 Arg2:T60
+R25	Measure Arg1:T62 Arg2:T61
+R26	Setting Arg1:E14 Arg2:T64
+R27	Mod-Link Arg1:E15 Arg2:T66
+R28	Setting Arg1:E15 Arg2:T68
+R29	Setting Arg1:E16 Arg2:T72
+R30	Setting Arg1:E16 Arg2:T73
+R31	Setting Arg1:E16 Arg2:T74
+R32	Measure Arg1:T78 Arg2:T77
+R33	Setting Arg1:E19 Arg2:T83
+R34	Measure Arg1:T92 Arg2:T91
+R35	Measure Arg1:T100 Arg2:T99
+R36	Setting Arg1:E26 Arg2:T105
+R37	Measure Arg1:T114 Arg2:T113
+R38	Measure Arg1:T122 Arg2:T121
+R39	Measure Arg1:T122 Arg2:T123
+R40	Setting Arg1:E33 Arg2:T128
+R41	Measure Arg1:T131 Arg2:T132
+R42	Measure Arg1:T136 Arg2:T137
+R43	Measure Arg1:T139 Arg2:T138
+R44	Setting Arg1:E38 Arg2:T147
+R45	Setting Arg1:E38 Arg2:T149
+R46	Setting Arg1:E39 Arg2:T153
+R47	Measure Arg1:T151 Arg2:T152
+R48	Setting Arg1:E41 Arg2:T157
+R49	Setting Arg1:E41 Arg2:T158
+R50	Mod-Link Arg1:E41 Arg2:T159
+R51	Setting Arg1:E44 Arg2:T166

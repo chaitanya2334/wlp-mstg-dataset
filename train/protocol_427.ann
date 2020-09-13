@@ -1,0 +1,160 @@
+T1	Action 45 55	Centrifuge
+T2	Reagent 60 66	lysate
+T3	Speed 70 75	4000g
+T4	Time 80 86	30 min
+T5	Modifier 89 98	Carefully
+T6	Action 99 105	decant
+T7	Action 110 116	retain
+T8	Reagent 121 132	supernatant
+T9	Action 135 143	Dissolve
+T10	Concentration 144 147	8 %
+T11	Reagent 148 151	PEG
+T12	Modifier 165 174	clarified
+T13	Reagent 175 181	lysate
+T14	Action 195 206	precipitate
+T15	Time 207 216	overnight
+T16	Temperature 220 223	4°C
+T17	Action 226 236	Centrifuge
+T18	Reagent 241 253	PEG solution
+T19	Speed 257 264	10,000g
+T20	Time 269 275	20 min
+T21	Modifier 278 287	Carefully
+T22	Action 288 294	decant
+T23	Reagent 299 310	supernatant
+T24	Action 313 322	retaining
+T25	Reagent 327 333	pellet
+T26	Action 336 345	Resuspend
+T27	Reagent 346 352	pellet
+T28	Amount 358 370	small volume
+T29	Modifier 374 382	residual
+T30	Reagent 383 395	PEG solution
+T31	Action 400 404	pool
+T32	Modifier 405 408	all
+T33	Reagent 409 426	pelleted material
+T34	Action 429 435	Repeat
+T35	Method 436 447	steps 5 - 6
+T36	Action 461 472	concentrate
+T37	Reagent 473 478	virus
+T38	Amount 482 488	< 1 mL
+T39	Action 491 500	Resuspend
+T40	Reagent 501 506	virus
+T41	Amount 510 525	10 - 50 volumes
+T42	Reagent 529 542	culture media
+T43	Action 546 552	dilute
+T44	Reagent 553 556	PEG
+T45	Reagent 567 579	virus pellet
+T46	Action 583 595	disaggregate
+T47	Time 596 605	overnight
+T48	Temperature 609 612	4°C
+T49	Action 615 626	Concentrate
+T50	Reagent 627 633	sample
+T51	Amount 637 643	~ 1 mL
+T52	Generic-Measure 654 660	30 kDa
+T53	Modifier 668 678	disposable
+T54	Device 679 713	centrifugal ultrafiltration device
+T55	Action 716 723	Prepare
+T56	Reagent 724 742	OptiPrep solutions
+T57	Reagent 749 762	culture media
+T58	Method 790 813	underlayering technique
+T59	Device 819 826	syringe
+T60	Device 831 847	pipetting needle
+T61	Action 850 854	pour
+T62	Reagent 855 873	4 - step gradients
+T63	Modifier 879 891	open - toped
+T64	Location 892 913	ultracentrifuge tubes
+T65	Action 973 978	blend
+T66	Time 983 986	2 h
+T67	Temperature 990 1006	room temperature
+T68	Action 1009 1013	Mark
+T69	Location 1018 1021	top
+T70	Reagent 1029 1038	gradients
+T71	Device 1046 1066	fine - tipped marker
+T72	Modifier 1073 1082	carefully
+T73	Action 1083 1090	overlay
+T74	Reagent 1091 1108	virus concentrate
+T75	Device 1117 1133	transfer pipette
+T76	Action 1136 1143	Overlay
+T77	Reagent 1144 1157	culture media
+T78	Reagent 1161 1178	balance gradients
+T79	Action 1182 1188	create
+T80	Location 1189 1202	balance tubes
+T81	Action 1205 1212	Balance
+T82	Location 1217 1222	tubes
+T83	Action 1226 1232	adding
+T84	Reagent 1233 1238	media
+T85	Location 1242 1259	underweight tubes
+T86	Action 1262 1266	Load
+T87	Location 1267 1272	tubes
+T88	Device 1278 1283	rotor
+T89	Action 1288 1303	ultracentrifuge
+T90	Speed 1307 1332	maximum permissible speed
+T91	Method 1382 1423	fraction collection apparatus / technique
+T92	Modifier 1426 1435	carefully
+T93	Action 1436 1443	extract
+T94	Modifier 1444 1452	purified
+T95	Reagent 1453 1470	viral concentrate
+T96	Modifier 1476 1480	each
+T97	Location 1481 1485	tube
+E1	Action:T1 Acts-on:T2 Product:T8
+E2	Action:T6 Acts-on:T8
+E3	Action:T7 Acts-on:T8 Acts-on2:E2 Product:T13
+E4	Action:T9 Acts-on:T11 Using:T13
+E5	Action:T14 Acts-on:E4 Product:T18
+E6	Action:T17 Acts-on:T18 Product:T23
+E7	Action:T22 Acts-on:T23 Product:T25
+E8	Action:T24 Acts-on:T25 Product:T27
+E9	Action:T26 Acts-on:T27 Site:T30 Product:T33
+E10	Action:T31 Acts-on:T33
+E11	Action:T34 Using:T35 Acts-on:E7
+E12	Action:T36 Acts-on:T37
+E13	Action:T39 Acts-on:T40 Site:T42 Product:T45
+E14	Action:T43 Acts-on:T44
+E15	Action:T46 Acts-on:T45 Product:T50
+E16	Action:T49 Acts-on:T50 Using:T54
+E17	Action:T55 Product:T56 Using:T57 Product2:T77
+E18	Action:T61 Using:T58 Using2:T59 Using3:T60 Acts-on:T62 Site:T64
+E19	Action:T65 Acts-on:E18 Product:T70
+E20	Action:T68 Acts-on:T69 Using:T71
+E21	Action:T73 Acts-on:T74 Using:T75 Acts-on2:E20
+E22	Action:T76 Acts-on:T77 Site:T78
+E23	Action:T79 Acts-on:T80
+E24	Action:T81 Acts-on:T82 Product:T87
+E25	Action:T83 Acts-on:T84 Site:T85
+E26	Action:T86 Acts-on:T87 Site:T88
+E27	Action:T89 Using:T88 Product:T97 Acts-on:E26
+E28	Action:T93 Using:T91 Acts-on:T95 Site:T97
+R1	Setting Arg1:E1 Arg2:T3
+R2	Setting Arg1:E1 Arg2:T4
+R3	Mod-Link Arg1:E2 Arg2:T5
+R4	Mod-Link Arg1:E3 Arg2:T5
+R5	Measure Arg1:T11 Arg2:T10
+R6	Mod-Link Arg1:T13 Arg2:T12
+R7	Setting Arg1:E5 Arg2:T15
+R8	Setting Arg1:E5 Arg2:T16
+R9	Setting Arg1:E6 Arg2:T19
+R10	Setting Arg1:E6 Arg2:T20
+R11	Mod-Link Arg1:E7 Arg2:T21
+R12	Mod-Link Arg1:T30 Arg2:T29
+R13	Measure Arg1:T30 Arg2:T28
+R14	Mod-Link Arg1:T33 Arg2:T32
+R15	Setting Arg1:E12 Arg2:T38
+R16	Measure Arg1:T42 Arg2:T41
+R17	Setting Arg1:E15 Arg2:T47
+R18	Setting Arg1:E15 Arg2:T48
+R19	Mod-Link Arg1:T54 Arg2:T53
+R20	Setting Arg1:T54 Arg2:T52
+R21	Setting Arg1:E16 Arg2:T51
+R22	Mod-Link Arg1:T64 Arg2:T63
+R23	Setting Arg1:E19 Arg2:T66
+R24	Setting Arg1:E19 Arg2:T67
+R25	Meronym Arg1:T69 Arg2:T70
+R26	Mod-Link Arg1:E21 Arg2:T72
+R27	Setting Arg1:E27 Arg2:T90
+R28	Mod-Link Arg1:T95 Arg2:T94
+R29	Mod-Link Arg1:E28 Arg2:T92
+R30	Mod-Link Arg1:T97 Arg2:T96
+R31	Enables Arg1:E11 Arg2:E12
+R32	Enables Arg1:E13 Arg2:E14
+R33	Enables Arg1:E18 Arg2:E17
+R34	Enables Arg1:E25 Arg2:E24
+R35	Enables Arg1:E22 Arg2:E23

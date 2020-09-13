@@ -1,0 +1,135 @@
+T1	Action 69 76	Combine
+T2	Reagent 77 92	affinity matrix
+T3	Reagent 97 106	IP Buffer
+T4	Location 112 126	microfuge tube
+T5	Concentration 132 146	1 : 5 dilution
+T6	Action 149 152	Add
+T7	Modifier 153 159	tagged
+T8	Reagent 160 167	protein
+T9	Reagent 171 178	mixture
+T10	Modifier 181 187	Gently
+T11	Action 188 192	rock
+T12	Reagent 193 201	aliquots
+T13	Time 206 214	one hour
+T14	Temperature 218 221	4°C
+T15	Action 224 234	Centrifuge
+T16	Reagent 235 242	mixture
+T17	Speed 246 253	10,000g
+T18	Time 258 268	20 seconds
+T19	Temperature 272 275	4°C
+T20	Action 278 284	Remove
+T21	Reagent 285 296	supernatant
+T22	Action 305 315	disturbing
+T23	Reagent 316 321	beads
+T24	Action 324 327	Add
+T25	Amount 331 343	equal volume
+T26	Reagent 347 361	IP Wash Buffer
+T27	Reagent 369 374	beads
+T28	Action 379 391	re - suspend
+T29	Reagent 392 398	matrix
+T30	Modifier 401 407	Gently
+T31	Action 408 412	rock
+T32	Reagent 413 421	aliquots
+T33	Time 426 432	20 min
+T34	Temperature 438 441	4°C
+T35	Action 444 448	Keep
+T36	Amount 451 458	portion
+T37	Reagent 466 477	supernatant
+T38	Modifier 478 493	from each rinse
+T39	Action 533 539	Repeat
+T40	Method 540 546	step 2
+T41	Numerical 547 557	four times
+T42	Action 560 565	Elute
+T43	Modifier 570 575	bound
+T44	Reagent 576 583	protein
+T45	Modifier 593 604	appropriate
+T46	Reagent 605 620	epitope peptide
+T47	Concentration 624 647	1 mg / ml concentration
+T48	Concentration 651 656	50 mm
+T49	Reagent 657 665	Tris HCl
+T50	pH 668 674	pH 7.5
+T51	Concentration 679 684	50 mM
+T52	Reagent 685 689	NaCl
+T53	Concentration 692 696	1 mM
+T54	Reagent 697 701	EDTA
+T55	pH 704 710	pH 8.0
+T56	Action 715 724	Resuspend
+T57	Reagent 725 730	beads
+T58	Action 733 741	incubate
+T59	Action 744 754	centrifuge
+T60	Action 759 767	withdraw
+T61	Reagent 768 779	supernatant
+T62	Modifier 780 792	as in step 2
+T63	Action 795 804	repeating
+T64	Numerical 820 833	four elutions
+T65	Action 836 843	Recover
+T66	Amount 844 851	as much
+T67	Reagent 859 865	eluate
+T68	Modifier 880 890	each stage
+T69	Reagent 902 916	elution sample
+T70	Action 919 926	prepare
+T71	Concentration 930 944	1 : 1 dilution
+T72	Reagent 950 977	reducing gel loading buffer
+T73	Action 980 984	Boil
+T74	Reagent 985 990	tubes
+T75	Time 995 1000	3 min
+T76	Action 1003 1010	Analyze
+T77	Reagent 1015 1034	supernatant samples
+T78	Method 1038 1050	Western blot
+E1	Action:T1 Acts-on:T2 Acts-on2:T3 Site:T4 Product:T9
+E2	Action:T6 Acts-on:T8 Site:T9 Product:T12
+E3	Action:T11 Acts-on:T12 Product:T16
+E4	Action:T15 Acts-on:T16 Product:T21
+E5	Action:T20 Acts-on:T21 Product:T27
+E6	Action:T22 Acts-on:T23
+E7	Action:T24 Acts-on:T26 Site:T27 Product:T29
+E8	Action:T28 Acts-on:T29 Product:T32
+E9	Action:T31 Acts-on:T32 Product:T37
+E10	Action:T35 Acts-on:T37
+E11	Action:T39 Count:T41 Using:T40 Acts-on:E10 Product:T44
+E12	Action:T42 Acts-on:T44 Using:T46 Product:T57
+E13	Action:T56 Acts-on:T57
+E14	Action:T58 Acts-on:E13
+E15	Action:T59 Acts-on:E14 Product:T61
+E16	Action:T60 Acts-on:T61
+E17	Action:T63 Count:T64 Acts-on:E16 Product:T67
+E18	Action:T65 Acts-on:T67
+E19	Action:T70 Using:T72 Product:T69 Acts-on:E18
+E20	Action:T73 Acts-on:T74 Product:T77
+E21	Action:T76 Acts-on:T77 Using:T78
+R1	Setting Arg1:E1 Arg2:T5
+R2	Setting Arg1:E3 Arg2:T13
+R3	Setting Arg1:E3 Arg2:T14
+R4	Setting Arg1:E4 Arg2:T17
+R5	Setting Arg1:E4 Arg2:T18
+R6	Setting Arg1:E4 Arg2:T19
+R7	Measure Arg1:T26 Arg2:T25
+R8	Setting Arg1:E9 Arg2:T33
+R9	Setting Arg1:E9 Arg2:T34
+R10	Measure Arg1:T37 Arg2:T36
+R11	Measure Arg1:T49 Arg2:T48
+R12	Measure Arg1:T49 Arg2:T50
+R13	Measure Arg1:T52 Arg2:T51
+R14	Measure Arg1:T54 Arg2:T53
+R15	Measure Arg1:T54 Arg2:T55
+R16	Measure Arg1:T46 Arg2:T47
+R17	Meronym Arg1:T52 Arg2:T46
+R18	Meronym Arg1:T54 Arg2:T46
+R19	Meronym Arg1:T49 Arg2:T46
+R20	Mod-Link Arg1:E16 Arg2:T62
+R21	Mod-Link Arg1:E15 Arg2:T62
+R22	Mod-Link Arg1:E14 Arg2:T62
+R23	Mod-Link Arg1:E13 Arg2:T62
+R24	Measure Arg1:T67 Arg2:T66
+R25	Setting Arg1:E19 Arg2:T71
+R26	Setting Arg1:E20 Arg2:T75
+R27	Mod-Link Arg1:T8 Arg2:T7
+R28	Mod-Link Arg1:E3 Arg2:T10
+R29	Prevents Arg1:E5 Arg2:E6
+R30	Meronym Arg1:T23 Arg2:T21
+R31	Mod-Link Arg1:E9 Arg2:T30
+R32	Mod-Link Arg1:T37 Arg2:T38
+R33	Mod-Link Arg1:T44 Arg2:T43
+R34	Mod-Link Arg1:T46 Arg2:T45
+R35	Mod-Link Arg1:E18 Arg2:T68
+R36	Coreference-Link Arg1:T74 Arg2:T69

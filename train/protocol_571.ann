@@ -1,0 +1,81 @@
+T1	Action 52 61	Prefilter
+T2	Amount 71 74	3 L
+T3	Reagent 75 87	water sample
+T4	Modifier 98 109	glass fiber
+T5	Device 110 116	filter
+T6	Action 119 125	Filter
+T7	Reagent 126 132	sample
+T8	Size 141 147	0.2 µm
+T9	Size 151 158	0.45 µm
+T10	Modifier 159 178	low protein binding
+T11	Device 179 190	PVDF filter
+T12	Action 193 201	Dispense
+T13	Modifier 206 214	filtered
+T14	Reagent 215 228	water samples
+T15	Device 262 277	culture vessels
+T16	Size 290 293	1 L
+T17	Device 297 321	larger Erlenmeyer flasks
+T18	Action 324 327	Add
+T19	Reagent 328 337	nutrients
+T20	Modifier 345 353	filtered
+T21	Reagent 354 359	water
+T22	Action 371 377	growth
+T23	Reagent 392 397	cells
+T24	Action 400 404	Seed
+T25	Modifier 409 417	filtered
+T26	Reagent 418 423	water
+T27	Concentration 429 446	1 % to 10 % v / v
+T28	Reagent 450 462	host culture
+T29	Action 593 601	Incubate
+T30	Location 606 612	flasks
+T31	Modifier 620 686	temperature and light conditions appropriate for the cyanobacteria
+T32	Action 717 723	Remove
+T33	Reagent 727 734	aliquot
+T34	Reagent 742 760	enrichment culture
+T35	Action 767 773	pellet
+T36	Modifier 774 783	remaining
+T37	Reagent 784 789	cells
+T38	Action 793 807	centrifugation
+T39	Time 820 830	20 minutes
+T40	Speed 834 839	6000g
+T41	Action 844 850	Filter
+T42	Reagent 855 866	supernatant
+T43	Size 877 884	0.22 µm
+T44	Size 888 895	0.45 µm
+T45	Device 896 907	PVDF filter
+T46	Action 910 915	Store
+T47	Reagent 920 926	lysate
+T48	Temperature 930 933	4°C
+E1	Action:T1 Acts-on:T3 Using:T5 Product:T7
+E2	Action:T6 Acts-on:T7 Using:T11 Product:T14
+E3	Action:T12 Acts-on:T14 Site:T15 Product:T21
+E4	Action:T18 Acts-on:T19 Site:T21 Product:T26
+E5	Action:T22 Acts-on:T23
+E6	Action:T24 Acts-on:T26 Using:T28
+E7	Action:T29 Acts-on:T30 Product:T34
+E8	Action:T32 Acts-on:T33
+E9	Action:T35 Acts-on:T37 Site:E8
+E10	Action:T38 Product:T42
+E11	Action:T41 Acts-on:T42 Using:T45 Product:T47
+E12	Action:T46 Acts-on:T47
+R1	Mod-Link Arg1:T5 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Or Arg1:T8 Arg2:T9
+R4	Mod-Link Arg1:T11 Arg2:T10
+R5	Measure Arg1:T11 Arg2:T8
+R6	Mod-Link Arg1:T14 Arg2:T13
+R7	Mod-Link Arg1:T21 Arg2:T20
+R8	Mod-Link Arg1:T26 Arg2:T25
+R9	Measure Arg1:T28 Arg2:T27
+R10	Mod-Link Arg1:E7 Arg2:T31
+R11	Setting Arg1:E10 Arg2:T39
+R12	Setting Arg1:E10 Arg2:T40
+R13	Mod-Link Arg1:T37 Arg2:T36
+R14	Meronym Arg1:T33 Arg2:T34
+R15	Or Arg1:T43 Arg2:T44
+R16	Measure Arg1:T45 Arg2:T43
+R17	Setting Arg1:E12 Arg2:T48
+R18	Or Arg1:T15 Arg2:T17
+R19	Setting Arg1:T17 Arg2:T16
+R20	Enables Arg1:E4 Arg2:E5
+R21	Enables Arg1:E10 Arg2:E9

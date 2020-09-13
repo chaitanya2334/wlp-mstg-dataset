@@ -1,0 +1,103 @@
+T1	Action 83 86	Add
+T2	Reagent 92 98	sample
+T3	Location 106 121	upper reservoir
+T4	Device 129 135	Amicon
+T5	Action 138 148	Centrifuge
+T6	Speed 152 160	1000 x g
+T7	Temperature 164 167	4ºC
+T8	Device 173 196	swinging - bucket rotor
+T9	Action 368 374	Remove
+T10	Reagent 379 398	concentrated sample
+T11	Location 408 423	upper reservoir
+T12	Action 428 433	place
+T13	Mention 434 436	it
+T14	Location 442 446	tube
+T15	Action 464 470	Remove
+T16	Location 475 490	upper reservoir
+T17	Device 500 506	Amicon
+T18	Action 516 521	Place
+T19	Location 566 581	upper reservoir
+T20	Action 597 600	Add
+T21	Reagent 608 614	liquid
+T22	Device 628 634	filter
+T23	Amount 639 645	1.5 ml
+T24	Action 650 656	Vortex
+T25	Location 661 676	upper reservoir
+T26	Speed 725 729	1200
+T27	Time 734 739	~ 20s
+T28	Action 742 748	Remove
+T29	Reagent 753 759	liquid
+T30	Location 769 784	upper reservoir
+T31	Action 789 792	add
+T32	Mention 793 795	it
+T33	Reagent 804 820	recovered sample
+T34	Action 874 877	Add
+T35	Reagent 883 889	sample
+T36	Location 897 912	upper reservoir
+T37	Device 920 927	Nanosep
+T38	Action 930 940	Centrifuge
+T39	Speed 944 952	1000 x g
+T40	Temperature 956 959	4ºC
+T41	Device 1137 1145	pipettor
+T42	Action 1149 1155	remove
+T43	Reagent 1160 1179	concentrated sample
+T44	Location 1189 1204	upper reservoir
+T45	Action 1209 1214	place
+T46	Mention 1215 1217	it
+T47	Location 1223 1227	tube
+T48	Action 1245 1248	Add
+T49	Modifier 1249 1255	enough
+T50	Reagent 1256 1262	liquid
+T51	Action 1266 1271	cover
+T52	Device 1276 1282	filter
+T53	Amount 1285 1292	~ 10 µl
+T54	Action 1297 1302	Swirl
+T55	Reagent 1307 1313	liquid
+T56	Device 1323 1329	filter
+T57	Action 1334 1338	stir
+T58	Mention 1339 1341	it
+T59	Modifier 1342 1348	gently
+T60	Device 1356 1365	pipet tip
+T61	Action 1368 1374	Remove
+T62	Reagent 1379 1385	liquid
+T63	Location 1395 1410	upper reservoir
+T64	Action 1415 1418	add
+T65	Mention 1419 1421	it
+T66	Reagent 1430 1446	recovered sample
+T67	Action 1449 1455	Repeat
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T5 Acts-on:E1 Site:T8 Product:T10
+E3	Action:T9 Acts-on:T10 Site:T11
+E4	Action:T12 Acts-on:T13 Site:T14
+E5	Action:T15 Acts-on:T16 Site:T17
+E6	Action:T18 Product:T22
+E7	Action:T20 Acts-on:T21
+E8	Action:T24 Acts-on:T25 Product:T29
+E9	Action:T28 Acts-on:T29 Site:T30
+E10	Action:T31 Acts-on:T32 Site:T33 Product:T35
+E11	Action:T34 Acts-on:T35 Site:T36
+E12	Action:T38 Acts-on:E11 Product:T43
+E13	Action:T42 Using:T41 Acts-on:T43 Site:T44
+E14	Action:T45 Acts-on:T46 Site:T47
+E15	Action:T48 Acts-on:T50 Product:T55
+E16	Action:T51 Acts-on:T52
+E17	Action:T54 Acts-on:T55 Using:T56
+E18	Action:T57 Acts-on:T58 Using:T60 Product:T62
+E19	Action:T61 Acts-on:T62 Site:T63
+E20	Action:T64 Acts-on:T65 Acts-on2:T66
+E21	Action:T67 
+R1	Meronym Arg1:T3 Arg2:T4
+R2	Setting Arg1:E2 Arg2:T6
+R3	Setting Arg1:E2 Arg2:T7
+R4	Coreference-Link Arg1:T13 Arg2:T10
+R5	Measure Arg1:T21 Arg2:T23
+R6	Setting Arg1:E8 Arg2:T26
+R7	Setting Arg1:E8 Arg2:T27
+R8	Coreference-Link Arg1:T32 Arg2:T29
+R9	Meronym Arg1:T36 Arg2:T37
+R10	Setting Arg1:E12 Arg2:T39
+R11	Setting Arg1:E12 Arg2:T40
+R12	Coreference-Link Arg1:T46 Arg2:T43
+R13	Mod-Link Arg1:T50 Arg2:T49
+R14	Measure Arg1:T50 Arg2:T53
+R15	Mod-Link Arg1:E18 Arg2:T59

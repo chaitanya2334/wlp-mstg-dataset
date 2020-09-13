@@ -1,0 +1,23 @@
+T1	Action 61 66	Weigh
+T2	Amount 67 79	0.25 - 0.5 g
+T3	Reagent 83 98	Chloramphenicol
+T4	Action 101 104	Add
+T5	Amount 105 110	10 ml
+T6	Concentration 114 118	95 %
+T7	Reagent 119 123	EtOH
+T8	Action 152 160	Dissolve
+T9	Modifier 161 171	completely
+T10	Reagent 174 179	Stock
+T11	Action 187 191	kept
+T12	Temperature 195 201	- 20°C
+T13	Time 206 212	1 year
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T7 Site:E1
+E3	Action:T8 Site:E2 Product:T10
+E4	Action:T11 Acts-on:T10
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T7 Arg2:T6
+R3	Measure Arg1:T7 Arg2:T5
+R4	Mod-Link Arg1:E3 Arg2:T9
+R5	Setting Arg1:E4 Arg2:T12
+R6	Setting Arg1:E4 Arg2:T13

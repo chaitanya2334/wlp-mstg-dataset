@@ -1,0 +1,65 @@
+T1	Reagent 53 76	Soft agar overlay tubes
+T2	Action 81 87	melted
+T3	Reagent 91 104	boiling water
+T4	Action 109 115	placed
+T5	Temperature 123 127	47°C
+T6	Device 128 138	water bath
+T7	Reagent 141 149	One tube
+T8	Reagent 153 162	soft agar
+T9	Action 166 173	removed
+T10	Device 183 193	water bath
+T11	Amount 196 202	1.0 mL
+T12	Reagent 203 215	host culture
+T13	Amount 227 230	1.0
+T14	Amount 234 240	0.1 mL
+T15	Reagent 241 258	viral concentrate
+T16	Action 262 267	added
+T17	Reagent 274 282	contents
+T18	Location 290 294	tube
+T19	Action 298 303	mixed
+T20	Modifier 304 308	well
+T21	Method 312 352	rolling back and forth between two hands
+T22	Location 363 367	tube
+T23	Reagent 368 376	contents
+T24	Modifier 381 392	immediately
+T25	Action 393 400	emptied
+T26	Location 409 419	agar plate
+T27	Reagent 426 434	top agar
+T28	Modifier 438 444	gently
+T29	Action 445 451	spread
+T30	Location 461 473	agar surface
+T31	Action 477 484	sliding
+T32	Location 489 494	plate
+T33	Location 502 515	bench surface
+T34	Method 524 539	circular motion
+T35	Reagent 546 554	top agar
+T36	Action 569 575	harden
+T37	Action 579 593	not disturbing
+T38	Location 598 604	plates
+T39	Time 609 615	30 min
+T40	Location 622 628	plates
+T41	Action 633 642	incubated
+T42	Time 666 683	overnight to 48 h
+E1	Action:T2 Acts-on:T1 Site:T3
+E2	Action:T4 Acts-on:T1 Site:T6 Product:T7
+E3	Action:T9 Acts-on:T7 Site:T10
+E4	Action:T16 Site:E3 Acts-on:T12 Acts-on2:T15
+E5	Action:T19 Acts-on:T17 Using:T21
+E6	Action:T25 Acts-on:T23 Site:T26
+E7	Action:T29 Acts-on:T27 Site:T30
+E8	Action:T31 Acts-on:T32 Site:T33 Using:T34
+E9	Action:T36 Acts-on:T35
+E10	Action:T37 Acts-on:T38 Product:T40
+E11	Action:T41 Acts-on:T40
+R1	Setting Arg1:T6 Arg2:T5
+R2	Meronym Arg1:T7 Arg2:T8
+R3	Measure Arg1:T12 Arg2:T11
+R4	Or Arg1:T14 Arg2:T13
+R5	Measure Arg1:T15 Arg2:T14
+R6	Meronym Arg1:T17 Arg2:T18
+R7	Mod-Link Arg1:E5 Arg2:T20
+R8	Meronym Arg1:T23 Arg2:T22
+R9	Mod-Link Arg1:E6 Arg2:T24
+R10	Mod-Link Arg1:E7 Arg2:T28
+R11	Setting Arg1:E10 Arg2:T39
+R12	Setting Arg1:E11 Arg2:T42

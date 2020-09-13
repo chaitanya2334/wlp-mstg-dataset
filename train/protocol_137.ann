@@ -1,0 +1,63 @@
+T1	Action 47 54	Dissect
+T2	Reagent 55 62	tissues
+T3	Reagent 66 80	ice cold PBS ,
+T4	Action 81 88	keeping
+T5	Reagent 89 96	samples
+T6	Location 100 103	ice
+T7	Time 104 142	until required sample size is obtained
+T8	Action 145 148	Fix
+T9	Reagent 149 156	tissues
+T10	Concentration 160 163	4 %
+T11	Reagent 164 167	PFA
+T12	Time 172 182	20 minutes
+T13	Action 185 189	Wash
+T14	Reagent 190 197	tissues
+T15	Numerical 198 200	3x
+T16	Reagent 204 207	PBS
+T17	Action 210 215	Stain
+T18	Reagent 216 223	samples
+T19	Reagent 227 235	Nile Red
+T20	Concentration 239 250	0.5 ug / mL
+T21	Action 251 258	diluted
+T22	Reagent 262 265	PBS
+T23	Time 270 276	1 hour
+T24	Action 279 283	Wash
+T25	Reagent 284 291	tissues
+T26	Numerical 292 294	3x
+T27	Reagent 298 301	PBS
+T28	Modifier 304 313	Carefully
+T29	Action 314 321	replace
+T30	Reagent 326 329	PBS
+T31	Reagent 335 350	mounting medium
+T32	Action 358 370	transferring
+T33	Reagent 371 378	samples
+T34	Location 382 388	slides
+T35	Action 393 400	imaging
+T36	Action 403 408	Image
+T37	Modifier 409 420	immediately
+T38	Modifier 426 437	temporarily
+T39	Action 438 443	store
+T40	Location 444 450	slides
+T41	Temperature 454 457	4°C
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T5
+E2	Action:T4 Acts-on:T5 Site:T6 Product:T9
+E3	Action:T8 Acts-on:T9 Site:T11 Product:T14
+E4	Action:T13 Acts-on:T14 Count:T15 Site:T16 Product:T18
+E5	Action:T17 Acts-on:T18 Site:T19
+E6	Action:T21 Site:T22 Acts-on:E5 Product:T25
+E7	Action:T24 Acts-on:T25 Count:T26 Site:T27 Product:T30
+E8	Action:T29 Acts-on:T30 Using:T31 Product:T33
+E9	Action:T32 Acts-on:T33 Site:T34 Product:T40
+E10	Action:T35 Acts-on:E9
+E11	Action:T36 Acts-on:E10
+E12	Action:T39 Acts-on:T40
+R1	Setting Arg1:E2 Arg2:T7
+R2	Setting Arg1:E3 Arg2:T12
+R3	Setting Arg1:E5 Arg2:T20
+R4	Setting Arg1:E6 Arg2:T23
+R5	Mod-Link Arg1:E8 Arg2:T28
+R6	Mod-Link Arg1:E11 Arg2:T37
+R7	Mod-Link Arg1:E12 Arg2:T38
+R8	Setting Arg1:E12 Arg2:T41
+R9	Measure Arg1:T11 Arg2:T10
+R10	Or Arg1:E11 Arg2:E12

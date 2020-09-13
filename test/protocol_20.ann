@@ -1,0 +1,132 @@
+T1	Action 79 86	Prepare
+T2	Amount 97 102	1.5ml
+T3	Location 103 118	microfuge tubes
+T4	Action 134 143	make sure
+T5	Reagent 144 149	resin
+T6	Temperature 156 172	room temperature
+T7	Action 175 180	Shake
+T8	Reagent 181 186	resin
+T9	Modifier 187 197	vigorously
+T10	Action 201 210	resuspend
+T11	Reagent 211 220	particles
+T12	Action 223 226	Mix
+T13	Amount 227 230	1ml
+T14	Reagent 231 253	DNA Purification Resin
+T15	Amount 259 264	0.5ml
+T16	Reagent 265 276	CsCl sample
+T17	Action 279 285	Attach
+T18	Location 286 296	minicolumn
+T19	Location 300 306	bottom
+T20	Amount 310 313	3ml
+T21	Amount 317 320	5ml
+T22	Device 321 336	sterile syringe
+T23	Action 368 371	Add
+T24	Reagent 372 389	resin with sample
+T25	Device 397 404	syringe
+T26	Action 409 413	push
+T27	Reagent 426 434	solution
+T28	Action 437 443	Remove
+T29	Location 444 454	minicolumn
+T30	Device 464 471	syringe
+T31	Action 476 480	pull
+T32	Device 485 492	plunger
+T33	Action 495 503	Reattach
+T34	Location 504 514	minicolumn
+T35	Device 522 529	syringe
+T36	Amount 534 537	2ml
+T37	Concentration 541 545	80 %
+T38	Reagent 546 557	isopropanol
+T39	Device 565 572	syringe
+T40	Device 585 592	plunger
+T41	Action 593 597	push
+T42	Reagent 610 621	isopropanol
+T43	Action 625 629	wash
+T44	Reagent 634 639	resin
+T45	Action 642 648	Remove
+T46	Location 649 659	minicolumn
+T47	Device 665 672	syringe
+T48	Action 677 682	place
+T49	Modifier 688 695	sterile
+T50	Amount 696 701	1.5ml
+T51	Location 702 717	centrifuge tube
+T52	Action 720 730	Centrifuge
+T53	Speed 731 739	10,000 g
+T54	Time 744 748	2min
+T55	Action 752 758	remove
+T56	Reagent 763 778	residual liquid
+T57	Action 781 786	Place
+T58	Location 787 797	minicolumn
+T59	Amount 813 818	1.5ml
+T60	Location 819 834	centrifuge tube
+T61	Action 837 840	Add
+T62	Amount 841 846	100μl
+T63	Temperature 847 851	80°C
+T64	Reagent 852 861	TE buffer
+T65	Location 865 868	top
+T66	Location 872 882	minicolumn
+T67	Action 885 890	Place
+T68	Seal 891 899	tube lid
+T69	Location 905 908	top
+T70	Location 912 918	column
+T71	Action 923 929	vortex
+T72	Modifier 930 936	gently
+T73	Time 941 951	10 seconds
+T74	Action 954 958	Wait
+T75	Time 959 967	1 minute
+T76	Action 970 980	Centrifuge
+T77	Speed 984 992	10,000 g
+T78	Time 997 1003	30 sec
+T79	Action 1007 1012	elute
+T80	Reagent 1013 1016	DNA
+T81	Action 1019 1027	Quantify
+T82	Reagent 1028 1031	DNA
+T83	Reagent 1035 1071	Quant - iT PicoGreen dsDNA assay kit
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T5 Product:T8
+E3	Action:T7 Acts-on:T8 Product:T14
+E4	Action:T10 Using:E3 Acts-on:T11
+E5	Action:T12 Acts-on:T14 Acts-on2:T16 Product:T24
+E6	Action:T17 Acts-on:T18 Site:T19 Product:T25
+E7	Action:T23 Acts-on:T24 Site:T25
+E8	Action:T26 Acts-on:T27 Product:T30
+E9	Action:T28 Acts-on:T29 Site:T30 Product:T34
+E10	Action:T31 Site:E9 Using:T32 Product:T35
+E11	Action:T33 Acts-on:T34 Site:T35 Product:T39
+E12	Action:T41 Using:T40 Acts-on:T42
+E13	Action:T43 Using:E12 Acts-on:T44
+E14	Action:T45 Acts-on:T46 Site:T47
+E15	Action:T48 Acts-on:E14 Site:T51
+E16	Action:T52 Acts-on:E15 Product:T58
+E17	Action:T55 Using:E16 Acts-on:T56
+E18	Action:T57 Acts-on:T58 Site:T60 Product:T66
+E19	Action:T61 Acts-on:T64 Site:T65
+E20	Action:T67 Acts-on:T68 Site:T69
+E21	Action:T71 Acts-on:E20
+E22	Action:T74 Acts-on:E21
+E23	Action:T76 Acts-on:E22
+E24	Action:T79 Using:E23 Acts-on:T80
+E25	Action:T81 Acts-on:T82 Using:T83
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T6
+R3	Mod-Link Arg1:E3 Arg2:T9
+R4	Measure Arg1:T14 Arg2:T13
+R5	Measure Arg1:T16 Arg2:T15
+R6	Meronym Arg1:T19 Arg2:T22
+R7	Or Arg1:T21 Arg2:T20
+R8	Measure Arg1:T22 Arg2:T21
+R9	Measure Arg1:T38 Arg2:T36
+R10	Measure Arg1:T38 Arg2:T37
+R11	Mod-Link Arg1:T51 Arg2:T49
+R12	Measure Arg1:T51 Arg2:T50
+R13	Setting Arg1:E16 Arg2:T53
+R14	Setting Arg1:E16 Arg2:T54
+R15	Measure Arg1:T60 Arg2:T59
+R16	Setting Arg1:E19 Arg2:T63
+R17	Measure Arg1:T64 Arg2:T62
+R18	Meronym Arg1:T65 Arg2:T66
+R19	Meronym Arg1:T69 Arg2:T70
+R20	Mod-Link Arg1:E21 Arg2:T72
+R21	Setting Arg1:E21 Arg2:T73
+R22	Setting Arg1:E22 Arg2:T75
+R23	Setting Arg1:E23 Arg2:T77
+R24	Setting Arg1:E23 Arg2:T78

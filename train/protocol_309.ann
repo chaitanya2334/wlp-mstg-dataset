@@ -1,0 +1,73 @@
+T1	Action 13 16	Cut
+T2	Size 19 34	5 ¼ inch length
+T3	Location 38 55	carbon fiber tube
+T4	Size 60 73	6 inch length
+T5	Location 77 102	FEP outer sheath material
+T6	Size 105 115	two ¾ inch
+T7	Location 116 122	pieces
+T8	Location 126 150	inner end - cap material
+T9	Size 157 167	two ¾ inch
+T10	Location 168 174	pieces
+T11	Location 178 203	middle end - cap material
+T12	Action 206 211	Place
+T13	Location 216 240	inner end - cap material
+T14	Modifier 241 247	around
+T15	Location 252 263	sample tube
+T16	Action 266 274	slide up
+T17	Modifier 281 292	appropriate
+T18	Measure-Type 293 299	height
+T19	Action 426 432	shrink
+T20	Mention 433 435	it
+T21	Modifier 436 438	on
+T22	Action 441 447	Shrink
+T23	Location 452 477	middle end - cap material
+T24	Modifier 478 482	over
+T25	Location 487 502	inner end - cap
+T26	Action 505 510	Slide
+T27	Location 515 526	sample tube
+T28	Location 536 553	carbon fiber tube
+T29	Action 568 574	shrink
+T30	Modifier 575 577	on
+T31	Location 578 605	inner and middle end - caps
+T32	Location 615 626	sample tube
+T33	Location 637 649	carbon fiber
+T34	Action 652 658	Shrink
+T35	Numerical 661 667	single
+T36	Location 668 673	piece
+T37	Location 677 696	FEP sheath material
+T38	Modifier 697 701	over
+T39	Modifier 706 711	whole
+T40	Location 712 720	assembly
+T41	Action 723 726	Cut
+T42	Location 731 734	end
+T43	Modifier 735 752	on a slight angle
+E1	Action:T1 Product:T3 Product2:T5 Product3:T7 Product4:T10
+E2	Action:T12 Acts-on:T13 Site:T15
+E3	Action:T16 Measure-Type-Link:T18 Acts-on:E2 Product:T20
+E4	Action:T19 Acts-on:T20 Product:T25
+E5	Action:T22 Acts-on:T23 Site:T25 Product:T27
+E6	Action:T26 Acts-on:T27 Site:T28 Product:T32
+E7	Action:T29 Acts-on:T31 Site:T32 Product:T40
+E8	Action:T34 Acts-on:T36 Product:T42
+E9	Action:T41 Acts-on:T42
+R1	Meronym Arg1:T10 Arg2:T11
+R2	Meronym Arg1:T7 Arg2:T8
+R3	Measure Arg1:T3 Arg2:T2
+R4	Measure Arg1:T5 Arg2:T4
+R5	Measure Arg1:T7 Arg2:T6
+R6	Measure Arg1:T10 Arg2:T9
+R7	Mod-Link Arg1:E2 Arg2:T14
+R8	Mod-Link Arg1:E5 Arg2:T24
+R9	Meronym Arg1:T33 Arg2:T32
+R10	Coreference-Link Arg1:T13 Arg2:T7
+R11	Mod-Link Arg1:E4 Arg2:T21
+R12	Coreference-Link Arg1:T23 Arg2:T10
+R13	Coreference-Link Arg1:T28 Arg2:T3
+R14	Mod-Link Arg1:E7 Arg2:T30
+R15	Meronym Arg1:T31 Arg2:T32
+R16	Mod-Link Arg1:T40 Arg2:T39
+R17	Meronym Arg1:T36 Arg2:T37
+R18	Measure Arg1:T36 Arg2:T35
+R19	Coreference-Link Arg1:T37 Arg2:T5
+R20	Mod-Link Arg1:E8 Arg2:T38
+R21	Mod-Link Arg1:E9 Arg2:T43

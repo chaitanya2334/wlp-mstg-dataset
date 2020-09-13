@@ -1,0 +1,61 @@
+T1	Action 30 34	Clip
+T2	Reagent 35 40	wings
+T3	Generic-Measure 44 48	half
+T4	Reagent 56 61	flies
+T5	Reagent 68 73	flies
+T6	Action 74 81	recover
+T7	Time 86 91	1 day
+T8	Action 124 127	Put
+T9	Reagent 132 137	flies
+T10	Location 145 153	T - maze
+T11	Mention 180 184	them
+T12	Action 185 190	adapt
+T13	Location 209 216	machine
+T14	Location 225 233	darkness
+T15	Time 238 248	10 minutes
+T16	Action 251 255	Move
+T17	Reagent 260 265	flies
+T18	Location 275 283	elevator
+T19	Mention 330 334	them
+T20	Action 335 339	stay
+T21	Location 340 345	there
+T22	Time 357 365	1 minute
+T23	Action 368 372	Move
+T24	Reagent 377 382	flies
+T25	Modifier 390 396	bottom
+T26	Location 400 408	T - maze
+T27	Action 680 684	Wait
+T28	Time 689 699	30 seconds
+T29	Reagent 708 713	flies
+T30	Action 743 747	lock
+T31	Mention 748 752	them
+T32	Location 760 765	tubes
+T33	Action 817 828	Anesthetize
+T34	Reagent 833 838	flies
+T35	Reagent 844 847	CO2
+T36	Action 852 857	count
+T37	Mention 858 862	them
+T38	Modifier 863 868	under
+T39	Location 873 889	magnifying glass
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T5
+E2	Action:T6 Acts-on:T5 Product:T9
+E3	Action:T8 Acts-on:T9 Site:T10
+E4	Action:T12 Acts-on:T11 Site:T13 Site2:T14 Acts-on2:E3 Product:T17
+E5	Action:T16 Acts-on:T17 Site:T18
+E6	Action:T20 Acts-on:T19 Acts-on2:E5 Site:T21 Product:T24
+E7	Action:T23 Acts-on:T24 Site:T26 Product:T29
+E8	Action:T27 Acts-on:T29
+E9	Action:T30 Acts-on:T31 Site:T32 Acts-on2:E8 Product:T34
+E10	Action:T33 Acts-on:T34 Using:T35
+E11	Action:T36 Acts-on:T37 Site:T39 Acts-on2:E10
+R1	Measure Arg1:T4 Arg2:T3
+R2	Setting Arg1:E2 Arg2:T7
+R3	Mod-Link Arg1:T26 Arg2:T25
+R4	Coreference-Link Arg1:T11 Arg2:T9
+R5	Setting Arg1:E4 Arg2:T15
+R6	Coreference-Link Arg1:T19 Arg2:T17
+R7	Setting Arg1:E6 Arg2:T22
+R8	Setting Arg1:E8 Arg2:T28
+R9	Coreference-Link Arg1:T31 Arg2:T29
+R10	Coreference-Link Arg1:T37 Arg2:T34
+R11	Mod-Link Arg1:T39 Arg2:T38

@@ -1,0 +1,106 @@
+T1	Action 31 34	Run
+T2	Concentration 35 39	40 %
+T3	Reagent 43 52	IP eluate
+T4	Concentration 56 60	10 %
+T5	Reagent 61 64	gel
+T6	Action 67 75	Transfer
+T7	Reagent 76 83	protein
+T8	Reagent 87 100	PVDF membrane
+T9	Time 105 108	1hr
+T10	Temperature 112 114	RT
+T11	Device 120 128	ice pack
+T12	Generic-Measure 131 135	100V
+T13	Action 140 143	Cut
+T14	Reagent 144 152	membrane
+T15	Modifier 153 163	just below
+T16	Generic-Measure 164 169	180kD
+T17	Action 221 224	Cut
+T18	Reagent 225 233	Membrane
+T19	Generic-Measure 237 243	~ 82kD
+T20	Action 621 626	Block
+T21	Reagent 627 635	membrane
+T22	Concentration 641 644	5 %
+T23	Reagent 645 648	BSA
+T24	Reagent 651 654	IgG
+T25	Reagent 659 674	Protease - Free
+T26	Reagent 679 683	TBST
+T27	Time 688 692	2hrs
+T28	Temperature 696 698	RT
+T29	Action 699 704	Probe
+T30	Reagent 705 713	membrane
+T31	Reagent 719 757	rabbit - anti - phosphoserine antibody
+T32	Reagent 776 815	IgG - Free / Protease - Free BSA / TBST
+T33	Generic-Measure 818 826	1 : 2000
+T34	Generic-Measure 841 849	1 : 1000
+T35	Action 889 894	Probe
+T36	Time 895 904	overnight
+T37	Temperature 908 910	4C
+T38	Location 914 923	cold room
+T39	Location 927 939	tilting tray
+T40	Action 942 947	Rinse
+T41	Reagent 948 956	membrane
+T42	Numerical 957 959	8x
+T43	Temperature 979 983	2hrs
+T44	Concentration 989 991	1x
+T45	Reagent 992 996	TBST
+T46	Action 997 1002	Block
+T47	Reagent 1003 1011	membrane
+T48	Concentration 1015 1018	5 %
+T49	Reagent 1019 1030	milk / TBST
+T50	Time 1035 1038	1hr
+T51	Action 1039 1044	Probe
+T52	Reagent 1050 1113	mouse - anti - rabbit light - chain specific secondary antibody
+T53	Generic-Measure 1117 1125	1 : 2000
+T54	Time 1130 1134	2hrs
+T55	Temperature 1138 1140	RT
+T56	Action 1143 1148	Rinse
+T57	Numerical 1149 1151	6x
+T58	Reagent 1157 1161	TBST
+T59	Time 1167 1170	1hr
+T60	Temperature 1174 1176	RT
+T61	Action 1179 1187	Activate
+T62	Reagent 1188 1196	membrane
+T63	Reagent 1202 1210	pico ECL
+T64	Action 1213 1222	Visualize
+T65	Device 1228 1241	Amersham film
+E1	Action:T1 Acts-on:T3 Using:T5 Product:T7
+E2	Action:T6 Acts-on:T7 Site:T8 Using:T11 Product:T14
+E3	Action:T13 Acts-on:T14 Product:T18
+E4	Action:T17 Acts-on:T18 Product:T21
+E5	Action:T20 Acts-on:T21 Using:T23 Product:T30
+E6	Action:T29 Acts-on:T30 Using:T31 Site:T32
+E7	Action:T35 Acts-on:E6 Site:T39 Product:T41
+E8	Action:T40 Acts-on:T41 Count:T42 Using:T45 Product:T47
+E9	Action:T46 Acts-on:T47 Site:T49
+E10	Action:T51 Acts-on:E9 Using:T52
+E11	Action:T56 Acts-on:E10 Count:T57 Using:T58 Product:T62
+E12	Action:T61 Acts-on:T62 Using:T63
+E13	Action:T64 Acts-on:E12 Using:T65
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T5 Arg2:T4
+R3	Setting Arg1:E2 Arg2:T9
+R4	Setting Arg1:E2 Arg2:T10
+R5	Setting Arg1:T11 Arg2:T12
+R6	Setting Arg1:E3 Arg2:T16
+R7	Mod-Link Arg1:T16 Arg2:T15
+R8	Setting Arg1:E4 Arg2:T19
+R9	Setting Arg1:E5 Arg2:T27
+R10	Setting Arg1:E5 Arg2:T28
+R11	Measure Arg1:T23 Arg2:T22
+R12	Or Arg1:T23 Arg2:T26
+R13	Meronym Arg1:T24 Arg2:T23
+R14	Meronym Arg1:T25 Arg2:T23
+R15	Setting Arg1:E6 Arg2:T33
+R16	Or Arg1:T33 Arg2:T34
+R17	Setting Arg1:E7 Arg2:T36
+R18	Setting Arg1:E7 Arg2:T37
+R19	Meronym Arg1:T39 Arg2:T38
+R20	Setting Arg1:E8 Arg2:T43
+R21	Measure Arg1:T45 Arg2:T44
+R22	Setting Arg1:E9 Arg2:T50
+R23	Measure Arg1:T49 Arg2:T48
+R24	Setting Arg1:E10 Arg2:T53
+R25	Setting Arg1:E10 Arg2:T54
+R26	Setting Arg1:E10 Arg2:T55
+R27	Setting Arg1:E11 Arg2:T59
+R28	Setting Arg1:E11 Arg2:T60

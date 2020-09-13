@@ -1,0 +1,88 @@
+T1	Action 24 30	Create
+T2	Reagent 31 38	mixture
+T3	Reagent 42 46	CsCl
+T4	Reagent 49 61	Proteinase K
+T5	Reagent 68 71	SDS
+T6	Action 74 77	Mix
+T7	Action 82 90	incubate
+T8	Time 91 97	1 hour
+T9	Temperature 101 105	56°C
+T10	Action 108 112	Cool
+T11	Temperature 116 132	room temperature
+T12	Action 133 136	Add
+T13	Amount 140 152	equal volume
+T14	Reagent 156 162	phenol
+T15	Action 167 173	invert
+T16	Numerical 174 187	several times
+T17	Action 190 194	Spin
+T18	Speed 195 200	3000g
+T19	Time 229 238	5 minutes
+T20	Temperature 241 257	room temperature
+T21	Modifier 260 269	Carefully
+T22	Action 270 278	transfer
+T23	Reagent 283 294	supernatant
+T24	Device 302 321	wide - bore pipette
+T25	Modifier 327 332	fresh
+T26	Location 333 337	tube
+T27	Action 340 343	Add
+T28	Amount 347 359	equal volume
+T29	Reagent 363 381	phenol : choroform
+T30	Concentration 384 389	1 : 1
+T31	Action 394 400	invert
+T32	Action 403 407	Spin
+T33	Speed 416 421	3000g
+T34	Time 450 459	5 minutes
+T35	Temperature 462 478	room temperature
+T36	Action 481 489	Transfer
+T37	Reagent 494 505	supernatant
+T38	Modifier 508 522	as done before
+T39	Action 525 528	Add
+T40	Amount 532 544	equal volume
+T41	Reagent 548 558	chloroform
+T42	Action 563 569	invert
+T43	Action 572 576	Spin
+T44	Speed 585 590	3000g
+T45	Time 619 628	5 minutes
+T46	Temperature 631 647	room temperature
+T47	Action 650 658	Transfer
+T48	Reagent 663 674	supernatant
+T49	Modifier 677 691	as done before
+E1	Action:T1 Product:T2
+E2	Action:T6 Acts-on:T2
+E3	Action:T7 Acts-on:E2
+E4	Action:T10 Acts-on:E3
+E5	Action:T12 Acts-on:T14 Site:E4
+E6	Action:T15 Count:T16 Acts-on:E5
+E7	Action:T17 Acts-on:E6 Product:T23
+E8	Action:T22 Acts-on:T23 Site:T26 Using:T24
+E9	Action:T27 Acts-on:T29 Site:E8
+E10	Action:T31 Acts-on:E9
+E11	Action:T32 Acts-on:E10 Product:T37
+E12	Action:T36 Acts-on:T37
+E13	Action:T39 Acts-on:T41 Site:E12
+E14	Action:T42 Acts-on:E13
+E15	Action:T43 Acts-on:E14 Product:T48
+E16	Action:T47 Acts-on:T48
+R1	Meronym Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T4 Arg2:T2
+R3	Meronym Arg1:T5 Arg2:T2
+R4	Setting Arg1:E3 Arg2:T8
+R5	Setting Arg1:E3 Arg2:T9
+R6	Setting Arg1:E4 Arg2:T11
+R7	Measure Arg1:T14 Arg2:T13
+R8	Setting Arg1:E7 Arg2:T18
+R9	Setting Arg1:E7 Arg2:T19
+R10	Setting Arg1:E7 Arg2:T20
+R11	Mod-Link Arg1:E8 Arg2:T21
+R12	Mod-Link Arg1:T26 Arg2:T25
+R13	Measure Arg1:T29 Arg2:T30
+R14	Measure Arg1:T29 Arg2:T28
+R15	Setting Arg1:E11 Arg2:T33
+R16	Setting Arg1:E11 Arg2:T34
+R17	Setting Arg1:E11 Arg2:T35
+R18	Mod-Link Arg1:E12 Arg2:T38
+R19	Measure Arg1:T41 Arg2:T40
+R20	Setting Arg1:E15 Arg2:T44
+R21	Setting Arg1:E15 Arg2:T45
+R22	Setting Arg1:E15 Arg2:T46
+R23	Mod-Link Arg1:E16 Arg2:T49

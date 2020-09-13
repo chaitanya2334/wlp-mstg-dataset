@@ -1,0 +1,158 @@
+T1	Action 47 54	Prepare
+T2	Reagent 55 60	cells
+T3	Reagent 71 89	tissue of interest
+T4	Action 98 104	lysing
+T5	Reagent 105 117	erythrocytes
+T6	Action 167 176	resuspend
+T7	Reagent 181 186	cells
+T8	Reagent 190 206	MojoSort™ Buffer
+T9	Action 210 216	adding
+T10	Amount 223 227	4 mL
+T11	Amount 233 237	5 mL
+T12	Size 240 250	12 x 75 mm
+T13	Location 253 269	polystyrene tube
+T14	Action 279 283	Keep
+T15	Reagent 284 300	MojoSort™ Buffer
+T16	Location 304 307	ice
+T17	Action 335 341	Filter
+T18	Reagent 346 351	cells
+T19	Size 359 364	70 μm
+T20	Device 365 378	cell strainer
+T21	Action 381 391	centrifuge
+T22	Speed 395 402	300 x g
+T23	Time 407 416	5 minutes
+T24	Action 423 432	resuspend
+T25	Modifier 439 450	appropriate
+T26	Amount 451 457	volume
+T27	Reagent 461 477	MojoSort™ Buffer
+T28	Action 480 485	Count
+T29	Action 490 496	adjust
+T30	Measure-Type 501 519	cell concentration
+T31	Generic-Measure 523 541	1 x 108 cells / mL
+T32	Action 544 551	Aliquot
+T33	Amount 552 558	100 μL
+T34	Reagent 562 577	cell suspension
+T35	Generic-Measure 580 589	107 cells
+T36	Modifier 599 602	new
+T37	Location 603 607	tube
+T38	Action 610 619	Resuspend
+T39	Reagent 624 629	beads
+T40	Action 633 642	vortexing
+T41	Speed 645 658	maximum speed
+T42	Numerical 661 662	5
+T43	Action 673 676	Add
+T44	Amount 677 682	10 μL
+T45	Reagent 686 695	Nanobeads
+T46	Action 698 701	mix
+T47	Modifier 702 706	well
+T48	Action 711 719	incubate
+T49	Location 723 726	ice
+T50	Time 731 741	15 minutes
+T51	Action 926 935	Resuspend
+T52	Reagent 940 945	cells
+T53	Amount 949 953	3 mL
+T54	Reagent 957 973	MojoSort™ Buffer
+T55	Action 987 991	Take
+T56	Reagent 995 1002	aliquot
+T57	Action 1010 1017	placing
+T58	Location 1022 1026	tube
+T59	Device 1034 1040	magnet
+T60	Action 1044 1051	monitor
+T61	Measure-Type 1052 1068	purity and yield
+T62	Action 1071 1076	Place
+T63	Location 1081 1085	tube
+T64	Device 1093 1099	magnet
+T65	Time 1104 1113	5 minutes
+T66	Action 1114 1122	Pour out
+T67	Reagent 1127 1133	liquid
+T68	Action 1136 1145	Resuspend
+T69	Modifier 1146 1153	labeled
+T70	Reagent 1154 1159	cells
+T71	Modifier 1163 1174	appropriate
+T72	Reagent 1175 1181	buffer
+T73	Action 1184 1190	Repeat
+T74	Method 1191 1202	steps 6 – 8
+T75	Modifier 1210 1217	labeled
+T76	Reagent 1218 1226	fraction
+T77	Numerical 1227 1228	2
+T78	Action 1293 1297	Take
+T79	Amount 1300 1305	small
+T80	Reagent 1306 1313	aliquot
+T81	Action 1317 1324	monitor
+T82	Measure-Type 1325 1341	purity and yield
+T83	Action 1357 1361	pool
+T84	Modifier 1366 1375	unlabeled
+T85	Reagent 1376 1385	fractions
+T86	Action 1390 1397	process
+T87	Modifier 1398 1412	simultaneously
+T88	Modifier 1422 1438	positive labeled
+T89	Reagent 1439 1444	cells
+T90	Action 1450 1459	assessing
+T91	Measure-Type 1460 1476	purity and yield
+E1	Action:T1 Acts-on:T3 Product:T2
+E2	Action:T4 Acts-on:T5
+E3	Action:T6 Acts-on:T7 Site:T8 Product:T18
+E4	Action:T9 Site:T13 Acts-on:T7
+E5	Action:T14 Acts-on:T15 Site:T16
+E6	Action:T17 Acts-on:T18 Using:T20
+E7	Action:T21 Acts-on:E6
+E8	Action:T24 Acts-on:E7 Site:T27
+E9	Action:T28 Acts-on:E8
+E10	Action:T29 Acts-on:E9 Measure-Type-Link:T30 Product:T34
+E11	Action:T32 Acts-on:T34 Site:T37 Product:T39
+E12	Action:T38 Acts-on:T39
+E13	Action:T40 Count:T42 Acts-on:T39
+E14	Action:T43 Acts-on:T45 Site:E12
+E15	Action:T46 Acts-on:E14
+E16	Action:T48 Site:T49 Acts-on:E15 Product:T52
+E17	Action:T51 Acts-on:T52 Site:T54
+E18	Action:T55 Acts-on:T56 Site:E17 Product:T58
+E19	Action:T57 Acts-on:T58 Site:T59
+E20	Action:T60 Measure-Type-Link:T61 Product:T63 Acts-on:T56
+E21	Action:T62 Acts-on:T63 Site:T64 Product:T67
+E22	Action:T66 Acts-on:T67 Product:T70
+E23	Action:T68 Acts-on:T70 Site:T72 Product:T76
+E24	Action:T73 Using:T74 Acts-on:T76 Count:T77
+E25	Action:T78 Acts-on:T80 Site:E24
+E26	Action:T81 Measure-Type-Link:T82 Acts-on:E25 Product:T85
+E27	Action:T83 Acts-on:T85
+E28	Action:T86 Using:T89 Acts-on:E27
+E29	Action:T90 Measure-Type-Link:T91
+R1	Measure Arg1:T13 Arg2:T12
+R2	Measure Arg1:T13 Arg2:T11
+R3	Setting Arg1:E4 Arg2:T10
+R4	Measure Arg1:T54 Arg2:T53
+R5	Setting Arg1:E21 Arg2:T65
+R6	Mod-Link Arg1:T72 Arg2:T71
+R7	Mod-Link Arg1:T70 Arg2:T69
+R8	Mod-Link Arg1:T76 Arg2:T75
+R9	Measure Arg1:T80 Arg2:T79
+R10	Mod-Link Arg1:E28 Arg2:T87
+R11	Mod-Link Arg1:T89 Arg2:T88
+R12	Mod-Link Arg1:T85 Arg2:T84
+R13	Setting Arg1:T20 Arg2:T19
+R14	Setting Arg1:E7 Arg2:T22
+R15	Setting Arg1:E7 Arg2:T23
+R16	Measure Arg1:T27 Arg2:T26
+R17	Mod-Link Arg1:T26 Arg2:T25
+R18	Measure Arg1:T34 Arg2:T33
+R19	Measure Arg1:T34 Arg2:T35
+R20	Mod-Link Arg1:T37 Arg2:T36
+R21	Setting Arg1:E13 Arg2:T41
+R22	Measure Arg1:T45 Arg2:T44
+R23	Mod-Link Arg1:E15 Arg2:T47
+R24	Setting Arg1:E16 Arg2:T50
+R25	Prevents Arg1:E1 Arg2:E2
+R26	Meronym Arg1:T5 Arg2:T3
+R27	Coreference-Link Arg1:T7 Arg2:T2
+R28	Enables Arg1:E4 Arg2:E3
+R29	Coreference-Link Arg1:T15 Arg2:T8
+R30	Coreference-Link Arg1:T27 Arg2:T15
+R31	Of-Type Arg1:T31 Arg2:T30
+R32	Enables Arg1:E13 Arg2:E12
+R33	Coreference-Link Arg1:T49 Arg2:T16
+R34	Coreference-Link Arg1:T54 Arg2:T27
+R35	Enables Arg1:E19 Arg2:E20
+R36	Coreference-Link Arg1:T64 Arg2:T59
+R37	Enables Arg1:E25 Arg2:E26
+R38	Enables Arg1:E28 Arg2:E29

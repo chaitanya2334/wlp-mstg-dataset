@@ -1,0 +1,86 @@
+T1	Action 27 35	Transfer
+T2	Reagent 36 42	phages
+T3	Location 52 65	clearing zone
+T4	Location 73 78	plate
+T5	Amount 82 86	1 mL
+T6	Reagent 87 99	phage buffer
+T7	Modifier 103 110	sterile
+T8	Reagent 111 120	sea water
+T9	Modifier 126 133	sterile
+T10	Location 134 138	tube
+T11	Action 142 154	scraping off
+T12	Reagent 159 172	surface layer
+T13	Reagent 180 189	soft agar
+T14	Reagent 205 211	phages
+T15	Modifier 220 227	sterile
+T16	Device 228 232	loop
+T17	Reagent 245 251	phages
+T18	Action 255 262	diffuse
+T19	Reagent 272 278	medium
+T20	Time 279 288	overnight
+T21	Temperature 292 295	4°C
+T22	Action 298 304	Vortex
+T23	Location 309 313	tube
+T24	Action 318 328	centrifuge
+T25	Reagent 333 339	sample
+T26	Speed 342 350	10,000 x
+T27	Time 355 361	10 min
+T28	Action 367 373	remove
+T29	Reagent 374 382	bacteria
+T30	Reagent 387 391	agar
+T31	Action 394 402	Transfer
+T32	Reagent 407 418	supernatant
+T33	Modifier 424 427	new
+T34	Location 428 432	tube
+T35	Action 495 502	isolate
+T36	Numerical 503 509	single
+T37	Reagent 510 516	phages
+T38	Action 519 528	dilutions
+T39	Reagent 537 548	concentrate
+T40	Action 578 590	plaque assay
+T41	Action 608 617	isolation
+T42	Reagent 621 627	phages
+T43	Numerical 633 639	single
+T44	Reagent 640 647	plaques
+T45	Reagent 882 899	phage concentrate
+T46	Generic-Measure 903 909	0.2 µm
+T47	Modifier 910 918	filtered
+T48	Action 923 927	kept
+T49	Device 935 941	fridge
+E1	Action:T1 Acts-on:T2 Site:T3 Site2:T6 Product:T17
+E2	Action:T11 Acts-on:T12 Using:T16
+E3	Action:T18 Acts-on:T17 Site:T19 Product:T25 Product2:T29
+E4	Action:T22 Acts-on:T23
+E5	Action:T24 Acts-on:T25 Product:T32
+E6	Action:T28 Acts-on:T29 Acts-on2:T30
+E7	Action:T31 Acts-on:T32 Site:T34 Product:T39
+E8	Action:T35 Acts-on:T37 Product:T45
+E9	Action:T38 Acts-on:T39
+E10	Action:T40 Acts-on:E9
+E11	Action:T41 Acts-on:T42 Site:T44
+E12	Action:T48 Site:T49 Acts-on:T45
+R1	Meronym Arg1:T3 Arg2:T4
+R2	Measure Arg1:T6 Arg2:T5
+R3	Mod-Link Arg1:T8 Arg2:T7
+R4	Or Arg1:T6 Arg2:T8
+R5	Meronym Arg1:T8 Arg2:T10
+R6	Mod-Link Arg1:T10 Arg2:T9
+R7	Meronym Arg1:T12 Arg2:T13
+R8	Meronym Arg1:T14 Arg2:T12
+R9	Mod-Link Arg1:T16 Arg2:T15
+R10	Setting Arg1:E3 Arg2:T20
+R11	Setting Arg1:E3 Arg2:T21
+R12	Setting Arg1:E5 Arg2:T26
+R13	Setting Arg1:E5 Arg2:T27
+R14	Mod-Link Arg1:T34 Arg2:T33
+R15	Measure Arg1:T37 Arg2:T36
+R16	Measure Arg1:T44 Arg2:T43
+R17	Enables Arg1:E2 Arg2:E1
+R18	Enables Arg1:E4 Arg2:E6
+R19	Enables Arg1:E5 Arg2:E6
+R20	Meronym Arg1:T25 Arg2:T23
+R21	Meronym Arg1:T29 Arg2:T30
+R22	Enables Arg1:E9 Arg2:E8
+R23	Enables Arg1:E11 Arg2:E8
+R24	Mod-Link Arg1:T46 Arg2:T47
+R25	Mod-Link Arg1:T45 Arg2:T47

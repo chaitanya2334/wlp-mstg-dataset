@@ -1,0 +1,264 @@
+T1	Method 61 85	Cesium chloride gradient
+T2	Action 102 108	purify
+T3	Reagent 109 116	viruses
+T4	Location 122 151	viral concentrate of seawater
+T5	Reagent 283 299	density fraction
+T6	Action 308 317	extracted
+T7	Device 327 352	QIAamp Viral RNA Mini kit
+T8	Action 446 452	Remove
+T9	Modifier 453 466	contaminating
+T10	Reagent 467 470	DNA
+T11	Reagent 476 492	RNA preparations
+T12	Device 502 519	Turbo DNAfree kit
+T13	Amount 632 637	10 µL
+T14	Modifier 638 646	purified
+T15	Reagent 647 665	RNA viral template
+T16	Action 669 674	mixed
+T17	Reagent 688 692	dNTP
+T18	Concentration 710 716	0.2 mM
+T19	Concentration 721 725	1 µM
+T20	Concentration 730 734	5 nM
+T21	Reagent 759 769	FR26RV - N
+T22	Reagent 774 784	FR40RV - T
+T23	Reagent 813 821	reaction
+T24	Action 825 831	heated
+T25	Temperature 835 839	65°C
+T26	Action 845 851	cooled
+T27	Location 855 858	ice
+T28	Location 907 910	ice
+T29	Reagent 913 916	DTT
+T30	Action 944 949	added
+T31	Reagent 957 965	reaction
+T32	Reagent 972 1000	enzyme stabilization reagent
+T33	Amount 1006 1010	40 U
+T34	Reagent 1011 1020	RNase OUT
+T35	Action 1039 1046	protect
+T36	Reagent 1051 1057	sample
+T37	Method 1063 1077	RNAse activity
+T38	Reagent 1084 1108	complementary DNA strand
+T39	Action 1112 1123	synthesized
+T40	Amount 1129 1134	200 U
+T41	Reagent 1138 1190	Superscript III ( Invitrogen ) reverse transcriptase
+T42	Reagent 1197 1205	reaction
+T43	Action 1209 1218	incubated
+T44	Modifier 1219 1228	initially
+T45	Temperature 1232 1236	25°C
+T46	Time 1241 1247	10 min
+T47	Reagent 1260 1270	hexamer 3′
+T48	Reagent 1278 1295	primer FR26RV - N
+T49	Reagent 1304 1320	poly ( T ) 20 3′
+T50	Reagent 1328 1345	primer FR40RV - T
+T51	Action 1346 1361	remain annealed
+T52	Reagent 1369 1377	template
+T53	Action 1384 1408	cDNA synthesis commences
+T54	Action 1435 1444	increased
+T55	Temperature 1448 1452	50°C
+T56	Time 1528 1534	60 min
+T57	Time 1547 1558	hour - long
+T58	Action 1559 1569	incubation
+T59	Temperature 1573 1577	50°C
+T60	Reagent 1584 1615	first strand synthesis reaction
+T61	Action 1619 1625	heated
+T62	Modifier 1626 1637	immediately
+T63	Temperature 1641 1645	94°C
+T64	Time 1650 1655	3 min
+T65	Modifier 1665 1672	rapidly
+T66	Action 1673 1679	cooled
+T67	Location 1683 1686	ice
+T68	Reagent 1691 1718	complementary second strand
+T69	Action 1735 1746	synthesized
+T70	Temperature 1750 1754	37°C
+T71	Time 1759 1765	60 min
+T72	Amount 1787 1792	2.5 U
+T73	Reagent 1796 1811	Klenow Fragment
+T74	Reagent 1814 1825	3′ - 5′ exo
+T75	Reagent 1858 1873	Klenow reaction
+T76	Action 1877 1887	terminated
+T77	Modifier 1895 1900	final
+T78	Reagent 1901 1911	incubation
+T79	Temperature 1915 1919	75°C
+T80	Time 1924 1930	10 min
+T81	Reagent 1937 1949	PCR reaction
+T82	Action 1950 1958	contains
+T83	Amount 1959 1963	5 µL
+T84	Reagent 1967 1975	template
+T85	Action 1976 1981	taken
+T86	Modifier 1982 1990	directly
+T87	Reagent 2000 2032	second strand synthesis reaction
+T88	Concentration 2035 2040	40 pM
+T89	Reagent 2044 2057	FR20RV primer
+T90	Reagent 2084 2088	dNTP
+T91	Concentration 2106 2112	0.2 mM
+T92	Concentration 2115 2118	1 ×
+T93	Reagent 2119 2130	Gold buffer
+T94	Concentration 2133 2139	2.5 mM
+T95	Reagent 2140 2145	MgCl2
+T96	Amount 2152 2157	2.5 U
+T97	Reagent 2161 2185	Ampligold DNA polymerase
+T98	Amount 2230 2235	50 µL
+T99	Reagent 2242 2250	reaction
+T100	Action 2254 2263	incubated
+T101	Temperature 2267 2271	94°C
+T102	Time 2276 2282	10 min
+T103	Modifier 2286 2291	fully
+T104	Action 2292 2300	denature
+T105	Reagent 2305 2313	template
+T106	Action 2318 2326	activate
+T107	Reagent 2331 2347	hot start enzyme
+T108	Numerical 2362 2364	35
+T109	Action 2375 2387	denaturation
+T110	Temperature 2391 2395	94°C
+T111	Time 2400 2405	1 min
+T112	Action 2408 2417	Annealing
+T113	Temperature 2421 2425	65°C
+T114	Time 2430 2435	1 min
+T115	Action 2438 2447	Extension
+T116	Temperature 2451 2455	72°C
+T117	Time 2460 2465	2 min
+T118	Method 2470 2485	final extension
+T119	Time 2490 2496	13 min
+T120	Action 2514 2524	completion
+T121	Time 2561 2582	Before gel separation
+T122	Action 2588 2610	purify and concentrate
+T123	Reagent 2615 2628	PCR reactions
+T124	Device 2636 2663	MinElute PCR cleanup column
+T125	Method 2675 2707	as described by the manufacturer
+T126	Modifier 2710 2718	Purified
+T127	Reagent 2719 2731	PCR products
+T128	Action 2736 2742	loaded
+T129	Concentration 2750 2753	1 %
+T130	Reagent 2754 2765	agarose gel
+T131	Concentration 2777 2780	1 ×
+T132	Reagent 2781 2796	SYBR safe stain
+T133	Concentration 2816 2821	0.5 ×
+T134	Reagent 2822 2832	TBE buffer
+T135	Reagent 2835 2847	Bands of DNA
+T136	Modifier 2855 2877	appropriate size range
+T137	Action 2882 2902	excised and purified
+T138	Method 2910 2948	MinElute Gel Extraction kit ( Qiagen )
+T139	Action 3063 3070	eluting
+T140	Reagent 3071 3074	DNA
+T141	Location 3084 3090	column
+T142	Method 3096 3108	three washes
+T143	Amount 3112 3117	10 µL
+T144	Reagent 3118 3139	nuclease - free water
+T145	Modifier 3439 3447	relevant
+T146	Reagent 3448 3485	virus - containing gradient fractions
+T147	Action 3490 3499	collected
+T148	Reagent 3506 3510	CsCl
+T149	Reagent 3518 3555	Virus - containing gradient fractions
+T150	Action 3560 3567	removed
+T151	Method 3571 3586	buffer exchange
+T152	Device 3595 3627	centrifugal ultrafiltration unit
+T153	Modifier 3635 3666	nominal molecular weight cutoff
+T154	Generic-Measure 3670 3685	30 KD to 100 KD
+T155	Reagent 3789 3796	Viruses
+T156	Action 3806 3815	recovered
+T157	Action 3819 3826	eluting
+T158	Amount 3830 3839	3 × 50 µL
+T159	Location 3843 3868	0.02 - filtered SM buffer
+E1	Action:T2 Using:T1 Acts-on:T3
+E2	Action:T6 Acts-on:T5 Using:T7 Product:T11 Site:E1
+E3	Action:T8 Acts-on:T10 Site:T11 Using:T12 Product:T15
+E4	Action:T16 Acts-on:T15 Acts-on2:T17 Acts-on3:T21 Acts-on4:T22 Product:T23
+E5	Action:T24 Acts-on:T23
+E6	Action:T26 Site:T27 Acts-on:E5 Product:T31
+E7	Action:T30 Site:T28 Acts-on:T29 Site2:T31 Using:T34
+E8	Action:T35 Acts-on:T36 Using:T37 Product:T38
+E9	Action:T39 Acts-on:T38 Using:T41 Product:T42
+E10	Action:T43 Acts-on:T42
+E11	Action:T51 Acts-on:T47 Acts-on2:T49 Site:T52
+E12	Action:T53 
+E13	Action:T54 Acts-on:E11
+E14	Action:T58 Acts-on:E13 Product:T60
+E15	Action:T61 Acts-on:T60
+E16	Action:T66 Site:T67 Acts-on:E15 Product:T68
+E17	Action:T69 Acts-on:T68 Using:T73 Product:T75
+E18	Action:T76 Acts-on:T75 Using:T78
+E19	Action:T82 Product:T81 Acts-on:T84 Acts-on2:T89 Acts-on3:T90 Acts-on4:T93 Acts-on5:T95 Acts-on6:T97 Product2:T105 Product3:T107
+E20	Action:T85 Product:T84 Acts-on:T87
+E21	Action:T100 Acts-on:T99
+E22	Action:T104 Acts-on:T105
+E23	Action:T106 Acts-on:T107
+E24	Action:T109 Count:T108 Acts-on:E23
+E25	Action:T112 Acts-on:E24
+E26	Action:T115 Acts-on:E25
+E27	Action:T120 Using:T118 Acts-on:E26 Product:T123
+E28	Action:T122 Acts-on:T123 Using:T124 Using2:T125 Product:T127
+E29	Action:T128 Site:T130 Acts-on:T127 Product:T135
+E30	Action:T137 Acts-on:T135 Using:T138 Product:T140
+E31	Action:T139 Acts-on:T140 Site:T141 Using:T142 Using2:T144 Product:T146
+E32	Action:T147 Acts-on:T146 Product:T149
+E33	Action:T150 Acts-on:T148 Using:T151 Using2:T152 Product:T155
+E34	Action:T156 Acts-on:T155
+E35	Action:T157 Acts-on:T159
+R1	Measure Arg1:T159 Arg2:T158
+R2	Setting Arg1:T153 Arg2:T154
+R3	Mod-Link Arg1:T152 Arg2:T153
+R4	Mod-Link Arg1:T146 Arg2:T145
+R5	Measure Arg1:T144 Arg2:T143
+R6	Mod-Link Arg1:T135 Arg2:T136
+R7	Mod-Link Arg1:T127 Arg2:T126
+R8	Meronym Arg1:T132 Arg2:T130
+R9	Meronym Arg1:T134 Arg2:T130
+R10	Setting Arg1:E27 Arg2:T119
+R11	Setting Arg1:E26 Arg2:T116
+R12	Setting Arg1:E26 Arg2:T117
+R13	Setting Arg1:E25 Arg2:T113
+R14	Setting Arg1:E25 Arg2:T114
+R15	Setting Arg1:E24 Arg2:T110
+R16	Setting Arg1:E24 Arg2:T111
+R17	Setting Arg1:E21 Arg2:T101
+R18	Setting Arg1:E21 Arg2:T102
+R19	Mod-Link Arg1:E22 Arg2:T103
+R20	Mod-Link Arg1:T78 Arg2:T77
+R21	Setting Arg1:E18 Arg2:T79
+R22	Setting Arg1:E18 Arg2:T80
+R23	Setting Arg1:E17 Arg2:T70
+R24	Setting Arg1:E17 Arg2:T71
+R25	Setting Arg1:E14 Arg2:T57
+R26	Setting Arg1:E14 Arg2:T59
+R27	Setting Arg1:E15 Arg2:T63
+R28	Mod-Link Arg1:T63 Arg2:T62
+R29	Setting Arg1:E15 Arg2:T64
+R30	Mod-Link Arg1:E16 Arg2:T65
+R31	Setting Arg1:E13 Arg2:T55
+R32	Setting Arg1:E13 Arg2:T56
+R33	Mod-Link Arg1:E10 Arg2:T44
+R34	Setting Arg1:E10 Arg2:T45
+R35	Setting Arg1:E10 Arg2:T46
+R36	Measure Arg1:T41 Arg2:T40
+R37	Setting Arg1:E5 Arg2:T25
+R38	Mod-Link Arg1:T10 Arg2:T9
+R39	Meronym Arg1:T3 Arg2:T4
+R40	Measure Arg1:T21 Arg2:T19
+R41	Measure Arg1:T22 Arg2:T20
+R42	Measure Arg1:T17 Arg2:T18
+R43	Measure Arg1:T15 Arg2:T13
+R44	Mod-Link Arg1:T15 Arg2:T14
+R45	Coreference-Link Arg1:T32 Arg2:T29
+R46	Enables Arg1:E7 Arg2:E8
+R47	Measure Arg1:T34 Arg2:T33
+R48	Meronym Arg1:T47 Arg2:T48
+R49	Meronym Arg1:T49 Arg2:T50
+R50	Overlaps Arg1:E11 Arg2:E12
+R51	Enables Arg1:E10 Arg2:E11
+R52	Meronym Arg1:T74 Arg2:T73
+R53	Measure Arg1:T73 Arg2:T72
+R54	Mod-Link Arg1:E20 Arg2:T86
+R55	Measure Arg1:T81 Arg2:T98
+R56	Measure Arg1:T84 Arg2:T83
+R57	Measure Arg1:T89 Arg2:T88
+R58	Measure Arg1:T90 Arg2:T91
+R59	Measure Arg1:T93 Arg2:T92
+R60	Measure Arg1:T95 Arg2:T94
+R61	Measure Arg1:T97 Arg2:T96
+R62	Coreference-Link Arg1:T99 Arg2:T81
+R63	Enables Arg1:E21 Arg2:E22
+R64	Overlaps Arg1:E22 Arg2:E23
+R65	Setting Arg1:E28 Arg2:T121
+R66	Measure Arg1:T130 Arg2:T129
+R67	Measure Arg1:T132 Arg2:T131
+R68	Measure Arg1:T134 Arg2:T133
+R69	Meronym Arg1:T148 Arg2:T149
+R70	Enables Arg1:E35 Arg2:E34

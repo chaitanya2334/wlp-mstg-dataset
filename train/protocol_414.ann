@@ -1,0 +1,126 @@
+T1	Action 52 59	Prepare
+T2	Reagent 60 65	Pro99
+T3	Reagent 68 70	SN
+T4	Reagent 73 77	SNAX
+T5	Reagent 81 92	Amp1 medium
+T6	Method 93 116	according to directions
+T7	Concentration 127 130	15N
+T8	Reagent 131 148	ammonium chloride
+T9	Action 276 280	Grow
+T10	Reagent 281 294	cyanobacteria
+T11	Reagent 302 308	medium
+T12	Reagent 314 328	heavy nitrogen
+T13	Action 333 341	transfer
+T14	Modifier 342 350	at least
+T15	Numerical 351 352	3
+T16	Action 372 379	Harvest
+T17	Reagent 384 398	bacteria grown
+T18	Reagent 402 416	heavy nitrogen
+T19	Action 419 426	Extract
+T20	Reagent 427 440	bacterial DNA
+T21	Method 447 463	standard methods
+T22	Action 466 474	Quantify
+T23	Reagent 479 482	DNA
+T24	Reagent 489 510	Quant - iT Pico Green
+T25	Modifier 517 525	at least
+T26	Amount 526 531	10 µg
+T27	Reagent 535 538	DNA
+T28	Action 543 574	density gradient centrifugation
+T29	Action 581 612	density gradient centrifugation
+T30	Device 617 646	Beckman VTi 65 vertical rotor
+T31	Size 661 669	13x48 mm
+T32	Location 670 696	OptiSeal polyallomer tubes
+T33	Amount 699 705	4.9 ml
+T34	Action 719 722	Mix
+T35	Reagent 727 730	DNA
+T36	Reagent 736 745	TE buffer
+T37	Concentration 748 752	10mM
+T38	Reagent 753 757	Tris
+T39	Concentration 760 763	1mM
+T40	Reagent 764 768	EDTA
+T41	pH 771 776	pH7.6
+T42	Amount 800 806	0.9 ml
+T43	Action 809 812	Mix
+T44	Reagent 817 820	DNA
+T45	Amount 826 829	4ml
+T46	Reagent 833 837	CsCl
+T47	Reagent 850 852	TE
+T48	Generic-Measure 858 873	density of p1.8
+T49	Action 945 953	Dispense
+T50	Amount 954 960	4.9 ml
+T51	Reagent 968 978	DNA sample
+T52	Reagent 982 986	CsCl
+T53	Location 996 1009	OptiSeal tube
+T54	Action 1014 1018	plug
+T55	Seal 1028 1038	black caps
+T56	Action 1041 1045	Load
+T57	Location 1050 1055	tubes
+T58	Device 1065 1070	rotor
+T59	Action 1075 1078	put
+T60	Seal 1079 1083	caps
+T61	Action 1102 1112	Centrifuge
+T62	Speed 1116 1126	44,000 rpm
+T63	Device 1150 1184	Beckman L70 or L80 ultracentrifuge
+T64	Time 1189 1194	48 hr
+T65	Temperature 1198 1202	18°C
+T66	Action 1205 1212	Collect
+T67	Amount 1213 1226	0.2 - 0.25 ml
+T68	Reagent 1227 1236	fractions
+T69	Action 1239 1248	Calculate
+T70	Amount 1249 1255	amount
+T71	Reagent 1259 1262	DNA
+T72	Modifier 1266 1270	each
+T73	Reagent 1271 1279	fraction
+T74	Reagent 1286 1307	Quant - iT Pico Green
+T75	Action 1337 1344	measure
+T76	Measure-Type 1349 1356	density
+T77	Modifier 1360 1364	each
+T78	Reagent 1365 1373	fraction
+T79	Action 1376 1385	Determine
+T80	Reagent 1405 1414	fractions
+E1	Action:T1 Using:T6 Using2:T8 Product:T2 Product2:T11
+E2	Action:T9 Acts-on:T10 Site:T11
+E3	Action:T13 Count:T15 Acts-on:E2 Product:T17
+E4	Action:T16 Acts-on:T17 Site:T18
+E5	Action:T19 Acts-on:T20 Using:T21 Site:E4 Product:T23
+E6	Action:T22 Acts-on:T23 Using:T24 Product:T27
+E7	Action:T28 Using:T27
+E8	Action:T29 Using:T30 Using2:T32 Acts-on:E7 Product:T35
+E9	Action:T34 Acts-on:T35 Acts-on2:T36 Product:T44
+E10	Action:T43 Acts-on:T44 Acts-on2:T46 Product:T51
+E11	Action:T49 Acts-on:T51 Site:T52
+E12	Action:T54 Using:T55 Acts-on:E11
+E13	Action:T56 Acts-on:T57 Site:T58 Acts-on2:E12
+E14	Action:T59 Acts-on:T60 Site:E13
+E15	Action:T61 Using:T63 Product:T68 Acts-on:E14
+E16	Action:T66 Acts-on:T68 Product:T73
+E17	Action:T69 Product:T78 Acts-on:T71
+E18	Action:T75 
+E19	Action:T79 Acts-on:E18 Acts-on2:T80
+R1	Measure Arg1:T8 Arg2:T7
+R2	Or Arg1:T2 Arg2:T3
+R3	Or Arg1:T3 Arg2:T4
+R4	Or Arg1:T4 Arg2:T5
+R5	Or Arg1:T15 Arg2:T14
+R6	Meronym Arg1:T12 Arg2:T11
+R7	Measure Arg1:T27 Arg2:T26
+R8	Mod-Link Arg1:T26 Arg2:T25
+R9	Measure Arg1:T32 Arg2:T31
+R10	Measure Arg1:T32 Arg2:T33
+R11	Measure Arg1:T38 Arg2:T37
+R12	Measure Arg1:T40 Arg2:T39
+R13	Measure Arg1:T40 Arg2:T41
+R14	Meronym Arg1:T38 Arg2:T36
+R15	Meronym Arg1:T40 Arg2:T36
+R16	Setting Arg1:E9 Arg2:T42
+R17	Measure Arg1:T46 Arg2:T45
+R18	Meronym Arg1:T47 Arg2:T46
+R19	Measure Arg1:T51 Arg2:T50
+R20	Meronym Arg1:T52 Arg2:T53
+R21	Measure Arg1:T68 Arg2:T67
+R22	Mod-Link Arg1:T78 Arg2:T77
+R23	Mod-Link Arg1:T73 Arg2:T72
+R24	Setting Arg1:T63 Arg2:T64
+R25	Setting Arg1:T63 Arg2:T65
+R26	Setting Arg1:T63 Arg2:T62
+R27	Meronym Arg1:T71 Arg2:T73

@@ -1,0 +1,34 @@
+T1	Action 42 51	Weigh out
+T2	Amount 52 56	22 g
+T3	Reagent 60 64	EPPS
+T4	Amount 81 87	200 mL
+T5	Modifier 88 93	trace
+T6	Modifier 94 99	metal
+T7	Modifier 100 105	clean
+T8	Location 106 112	bottle
+T9	Action 115 118	Add
+T10	Amount 119 125	173 mL
+T11	Reagent 129 138	Milli - Q
+T12	Location 146 152	bottle
+T13	Device 172 190	analytical balance
+T14	Action 242 246	pass
+T15	Reagent 251 264	EPPS solution
+T16	Device 276 287	HPLC column
+T17	Reagent 300 318	Chelex - 100 resin
+T18	Modifier 326 331	trace
+T19	Modifier 332 337	metal
+T20	Modifier 338 343	clean
+T21	Location 344 350	bottle
+E1	Action:T1 Acts-on:T3 Site:T8 Product:T12
+E2	Action:T9 Acts-on:T11 Site:T12 Using:T13 Product:T15
+E3	Action:T14 Acts-on:T15 Site:T21 Using:T16
+R1	Mod-Link Arg1:T8 Arg2:T7
+R2	Mod-Link Arg1:T8 Arg2:T6
+R3	Mod-Link Arg1:T8 Arg2:T5
+R4	Measure Arg1:T11 Arg2:T10
+R5	Measure Arg1:T3 Arg2:T2
+R6	Measure Arg1:T8 Arg2:T4
+R7	Mod-Link Arg1:T21 Arg2:T20
+R8	Mod-Link Arg1:T21 Arg2:T19
+R9	Mod-Link Arg1:T21 Arg2:T18
+R10	Meronym Arg1:T17 Arg2:T16

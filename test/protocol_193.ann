@@ -1,0 +1,90 @@
+T1	Action 57 62	Label
+T2	Modifier 65 67	1L
+T3	Device 68 74	bottle
+T4	Reagent 78 94	“1X Wash Buffer”
+T5	Action 97 103	Dilute
+T6	Reagent 104 118	5X Wash Buffer
+T7	Reagent 131 146	lab grade water
+T8	Action 153 156	mix
+T9	Action 288 293	Label
+T10	Device 315 321	bottle
+T11	Reagent 325 345	“1X Reagent Diluent”
+T12	Action 348 353	Label
+T13	Modifier 360 365	1.5mL
+T14	Device 366 387	microcentrifuge tubes
+T15	Action 437 440	Add
+T16	Amount 441 446	990uL
+T17	Reagent 450 466	standard diluent
+T18	Reagent 470 482	intermediate
+T19	Action 499 511	Reconstitute
+T20	Amount 512 516	20ug
+T21	Device 517 521	vial
+T22	Amount 546 550	80uL
+T23	Reagent 554 570	Standard Diluent
+T24	Action 573 576	Mix
+T25	Method 585 594	inversion
+T26	Action 714 717	Add
+T27	Amount 718 722	10uL
+T28	Device 732 736	vial
+T29	Reagent 740 769	reconstituted 1 - 40 standard
+T30	Amount 773 778	990uL
+T31	Reagent 782 798	standard diluent
+T32	Action 825 828	Mix
+T33	Method 837 846	inversion
+T34	Action 865 871	Remove
+T35	Amount 872 876	10uL
+T36	Device 882 903	intermediate # 1 tube
+T37	Action 908 911	add
+T38	Amount 915 920	990uL
+T39	Reagent 921 937	standard diluent
+T40	Device 941 962	intermediate # 2 tube
+T41	Action 965 968	Mix
+T42	Method 977 986	inversion
+T43	Action 1074 1079	Label
+T44	Modifier 1082 1097	50mL centrifuge
+T45	Device 1098 1102	tube
+T46	Action 1131 1137	Dilute
+T47	Reagent 1138 1158	2X incubation buffer
+T48	Action 1168 1174	adding
+T49	Amount 1175 1179	10mL
+T50	Reagent 1183 1203	2X incubation buffer
+T51	Amount 1207 1211	10mL
+T52	Reagent 1215 1230	lab grade water
+T53	Modifier 1240 1244	50mL
+T54	Device 1245 1249	tube
+T55	Modifier 1258 1280	“1X Incubation Buffer”
+T56	Action 1283 1286	Mix
+T57	Method 1295 1304	vortexing
+E1	Action:T1 Acts-on:T3 Acts-on2:T4
+E2	Action:T5 Acts-on:T6 Using:T7
+E3	Action:T8 Acts-on:E2
+E4	Action:T9 Acts-on:T10 Acts-on2:T11
+E5	Action:T12 Acts-on:T14 Product:T18
+E6	Action:T15 Acts-on:T17
+E7	Action:T19 Acts-on:T21
+E8	Action:T24 Acts-on:E7 Using:T25
+E9	Action:T26 Acts-on:T29 Site:T31
+E10	Action:T32 Acts-on:E9 Using:T33
+E11	Action:T34 Acts-on:T36
+E12	Action:T37 Acts-on:E11 Acts-on2:T39 Site:T40
+E13	Action:T41 
+E14	Action:T43 Acts-on:T45
+E15	Action:T46 Acts-on:T47
+E16	Action:T48 Acts-on:T50 Site:T52
+E17	Action:T56 Using:T57
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T14 Arg2:T13
+R3	Measure Arg1:T17 Arg2:T16
+R4	Setting Arg1:T21 Arg2:T20
+R5	Measure Arg1:T23 Arg2:T22
+R6	Or Arg1:T27 Arg2:T29
+R7	Meronym Arg1:T28 Arg2:T29
+R8	Measure Arg1:T31 Arg2:T30
+R9	Measure Arg1:T36 Arg2:T35
+R10	Measure Arg1:T39 Arg2:T38
+R11	Mod-Link Arg1:T45 Arg2:T44
+R12	Enables Arg1:E16 Arg2:E15
+R13	Measure Arg1:T50 Arg2:T49
+R14	Measure Arg1:T52 Arg2:T51
+R15	Mod-Link Arg1:T54 Arg2:T53
+R16	Mod-Link Arg1:T54 Arg2:T55

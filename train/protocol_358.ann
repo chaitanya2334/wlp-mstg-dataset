@@ -1,0 +1,39 @@
+T1	Action 99 106	Aliquot
+T2	Amount 107 113	180 µl
+T3	Reagent 114 129	seawater medium
+T4	Location 151 160	each well
+T5	Location 166 181	96 - well plate
+T6	Action 267 270	Add
+T7	Amount 271 276	20 µl
+T8	Reagent 280 286	sample
+T9	Reagent 296 299	ASW
+T10	Concentration 306 309	10X
+T11	Action 321 324	Mix
+T12	Modifier 325 329	well
+T13	Device 337 344	pipette
+T14	Action 347 351	Read
+T15	Measure-Type 352 364	fluorescence
+T16	Device 375 411	Tecan Infinite Pro 200M plate reader
+T17	Action 414 420	Set up
+T18	Device 423 430	program
+T19	Action 577 581	Plot
+T20	Measure-Type 582 604	fluorescence vs . time
+T21	Action 608 613	track
+T22	Measure-Type 645 656	cell growth
+T23	Measure-Type 666 681	phage infection
+E1	Action:T1 Acts-on:T3 Site:T4 Product:T9
+E2	Action:T6 Acts-on:T8 Site:T9
+E3	Action:T11 Using:T13 Acts-on:E2
+E4	Action:T14 Measure-Type-Link:T15 Using:T16 Acts-on:E3
+E5	Action:T17 Acts-on:T18
+E6	Action:T19 Measure-Type-Link:T20 Acts-on:E5
+E7	Action:T21 Measure-Type-Link:T22
+R1	Measure Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T4 Arg2:T5
+R3	Measure Arg1:T8 Arg2:T7
+R4	Measure Arg1:T8 Arg2:T10
+R5	Mod-Link Arg1:E3 Arg2:T12
+R6	Or Arg1:T22 Arg2:T23
+R7	Enables Arg1:E6 Arg2:E7
+R8	Enables Arg1:E5 Arg2:E4
+R9	Enables Arg1:E7 Arg2:E4

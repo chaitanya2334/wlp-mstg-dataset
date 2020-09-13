@@ -1,0 +1,208 @@
+T1	Action 38 46	Dissolve
+T2	Modifier 47 51	each
+T3	Reagent 52 56	salt
+T4	Modifier 57 67	completely
+T5	Action 75 81	adding
+T6	Mention 86 94	next one
+T7	Action 97 105	Dispense
+T8	Size 111 117	500 ml
+T9	Modifier 118 131	acid - washed
+T10	Location 132 153	polycarbonate bottles
+T11	Action 156 165	Autoclave
+T12	Time 166 172	30 min
+T13	Action 175 177	pH
+T14	Reagent 178 185	NaH2PO4
+T15	Numerical 189 192	7.5
+T16	Concentration 199 201	1M
+T17	Reagent 202 206	NaOH
+T18	Action 209 225	Filter sterilize
+T19	Modifier 226 230	each
+T20	Reagent 231 239	solution
+T21	Size 246 252	0.2 µm
+T22	Device 253 267	syringe filter
+T23	Modifier 273 276	new
+T24	Modifier 279 286	sterile
+T25	Size 287 291	50ml
+T26	Location 292 308	centrifuge tubes
+T27	Modifier 312 323	acid washed
+T28	Modifier 328 335	sterile
+T29	Location 336 357	polycarbonate bottles
+T30	Action 360 365	Store
+T31	Temperature 369 372	4°C
+T32	Action 375 377	pH
+T33	Reagent 378 383	HEPES
+T34	Numerical 387 390	7.5
+T35	Concentration 397 399	1M
+T36	Reagent 400 404	NaOH
+T37	Action 407 423	Filter sterilize
+T38	Modifier 424 428	each
+T39	Reagent 429 437	solution
+T40	Size 444 450	0.2 µm
+T41	Device 451 465	syringe filter
+T42	Modifier 471 474	new
+T43	Modifier 477 484	sterile
+T44	Size 485 496	15 or 50 ml
+T45	Location 497 513	centrifuge tubes
+T46	Modifier 517 528	acid washed
+T47	Modifier 533 540	sterile
+T48	Location 541 562	polycarbonate bottles
+T49	Action 565 570	Store
+T50	Temperature 574 577	4°C
+T51	Action 580 588	Dispense
+T52	Amount 589 593	5 ml
+T53	Reagent 597 603	NaHCO3
+T54	Amount 608 614	0.5 ml
+T55	Reagent 615 620	HEPES
+T56	Amount 625 631	500 ml
+T57	Location 632 638	bottle
+T58	Reagent 642 664	Turk's Island Salt Mix
+T59	Reagent 680 692	final medium
+T60	Action 695 704	Weigh out
+T61	Amount 705 713	0.2175 g
+T62	Reagent 714 726	Na2EDTA·2H2O
+T63	Device 733 748	dust free paper
+T64	Action 751 759	Transfer
+T65	Modifier 763 774	acid washed
+T66	Amount 775 780	50 ml
+T67	Location 781 797	volumetric flask
+T68	Amount 810 815	40 ml
+T69	Reagent 816 826	MQ - water
+T70	Action 829 837	Dissolve
+T71	Reagent 838 842	EDTA
+T72	Action 846 855	inverting
+T73	Location 856 861	flask
+T74	Numerical 862 869	several
+T75	Action 878 887	Weigh out
+T76	Amount 888 894	0.16 g
+T77	Reagent 895 905	FeCl3·6H2O
+T78	Device 912 927	dust free paper
+T79	Action 930 938	Dissolve
+T80	Reagent 939 952	iron chloride
+T81	Modifier 958 962	same
+T82	Location 963 979	volumetric flask
+T83	Action 983 992	inverting
+T84	Numerical 993 1000	several
+T85	Modifier 1009 1021	Individually
+T86	Action 1022 1025	add
+T87	Action 1030 1038	dissolve
+T88	Amount 1039 1044	50 µl
+T89	Reagent 1057 1062	ZnSO4
+T90	Reagent 1065 1070	CoCl2
+T91	Reagent 1073 1078	MnCl2
+T92	Reagent 1081 1088	Na2MoO4
+T93	Reagent 1091 1097	NaSeO3
+T94	Reagent 1104 1109	NiCl2
+T95	Action 1139 1145	Adjust
+T96	Measure-Type 1146 1152	volume
+T97	Amount 1156 1161	50 ml
+T98	Reagent 1172 1182	MQ - water
+T99	Action 1185 1191	Filter
+T100	Size 1202 1208	0.2 µm
+T101	Device 1209 1223	syringe filter
+T102	Modifier 1229 1236	sterile
+T103	Modifier 1239 1250	acid washed
+T104	Location 1251 1260	container
+T105	Device 1264 1281	laminar flow hood
+T106	Action 1284 1289	Store
+T107	Modifier 1290 1297	sterile
+T108	Reagent 1298 1303	stock
+T109	Temperature 1307 1310	4°C
+T110	Action 1313 1321	Dispense
+T111	Amount 1322 1326	5 µl
+T112	Reagent 1327 1348	Stock Trace Metal Mix
+T113	Amount 1352 1358	500 ml
+T114	Location 1359 1365	bottle
+T115	Reagent 1369 1391	Turk's Island Salt Mix
+T116	Reagent 1407 1419	final medium
+E1	Action:T1 Acts-on:T3
+E2	Action:T5 Acts-on:T6 Site:E1
+E3	Action:T7 Site:T10 Acts-on:E2
+E4	Action:T11 Acts-on:E3 Product:T14
+E5	Action:T13 Acts-on:T14 Using:T17 Product:T20
+E6	Action:T18 Acts-on:T20 Using:T22 Site:T26
+E7	Action:T30 Acts-on:E6 Product:T53
+E8	Action:T32 Acts-on:T33 Using:T36 Product:T39
+E9	Action:T37 Acts-on:T39 Using:T41 Site:T45
+E10	Action:T49 Acts-on:E9 Product:T55
+E11	Action:T51 Acts-on:T53 Acts-on2:T55 Site:T57 Product:T59
+E12	Action:T60 Acts-on:T62 Using:T63
+E13	Action:T64 Site:T67 Acts-on:E12 Product:T71
+E14	Action:T70 Acts-on:T71 Product:T82
+E15	Action:T72 Acts-on:T73 Count:T74
+E16	Action:T75 Acts-on:T77 Using:T78 Product:T80
+E17	Action:T79 Acts-on:T80 Site:T82
+E18	Action:T83 Count:T84 Acts-on:T82
+E19	Action:T86 Site:E18 Acts-on:T89 Acts-on2:T90 Acts-on3:T91 Acts-on4:T92 Acts-on5:T93 Acts-on6:T94
+E20	Action:T87 Acts-on:E19
+E21	Action:T95 Measure-Type-Link:T96 Using:T98 Acts-on:E20
+E22	Action:T99 Using:T101 Site:T104 Acts-on:E21 Product:T108
+E23	Action:T106 Acts-on:T108 Product:T112
+E24	Action:T110 Acts-on:T112 Site:T114 Product:T116
+R1	Mod-Link Arg1:E1 Arg2:T4
+R2	Mod-Link Arg1:T10 Arg2:T9
+R3	Setting Arg1:E4 Arg2:T12
+R4	Measure Arg1:T17 Arg2:T16
+R5	Setting Arg1:E5 Arg2:T15
+R6	Mod-Link Arg1:T29 Arg2:T28
+R7	Mod-Link Arg1:T29 Arg2:T27
+R8	Measure Arg1:T22 Arg2:T21
+R9	Setting Arg1:E7 Arg2:T31
+R10	Setting Arg1:E8 Arg2:T34
+R11	Measure Arg1:T36 Arg2:T35
+R12	Mod-Link Arg1:T26 Arg2:T24
+R13	Mod-Link Arg1:T26 Arg2:T23
+R14	Mod-Link Arg1:T48 Arg2:T47
+R15	Mod-Link Arg1:T48 Arg2:T46
+R16	Mod-Link Arg1:T45 Arg2:T43
+R17	Mod-Link Arg1:T45 Arg2:T42
+R18	Measure Arg1:T41 Arg2:T40
+R19	Setting Arg1:E10 Arg2:T50
+R20	Meronym Arg1:T58 Arg2:T57
+R21	Mod-Link Arg1:T67 Arg2:T65
+R22	Meronym Arg1:T69 Arg2:T67
+R23	Mod-Link Arg1:E19 Arg2:T85
+R24	Mod-Link Arg1:T104 Arg2:T102
+R25	Mod-Link Arg1:T104 Arg2:T103
+R26	Mod-Link Arg1:T108 Arg2:T107
+R27	Setting Arg1:E23 Arg2:T109
+R28	Meronym Arg1:T115 Arg2:T114
+R29	Measure Arg1:T10 Arg2:T8
+R30	Measure Arg1:T26 Arg2:T25
+R31	Measure Arg1:T45 Arg2:T44
+R32	Measure Arg1:T57 Arg2:T56
+R33	Measure Arg1:T55 Arg2:T54
+R34	Measure Arg1:T53 Arg2:T52
+R35	Measure Arg1:T62 Arg2:T61
+R36	Measure Arg1:T67 Arg2:T66
+R37	Measure Arg1:T69 Arg2:T68
+R38	Measure Arg1:T77 Arg2:T76
+R39	Measure Arg1:T89 Arg2:T88
+R40	Measure Arg1:T90 Arg2:T88
+R41	Measure Arg1:T91 Arg2:T88
+R42	Measure Arg1:T92 Arg2:T88
+R43	Measure Arg1:T93 Arg2:T88
+R44	Measure Arg1:T94 Arg2:T88
+R45	Setting Arg1:E21 Arg2:T97
+R46	Measure Arg1:T112 Arg2:T111
+R47	Measure Arg1:T114 Arg2:T113
+R48	Mod-Link Arg1:T3 Arg2:T2
+R49	Mod-Link Arg1:T20 Arg2:T19
+R50	Or Arg1:T26 Arg2:T29
+R51	Mod-Link Arg1:T39 Arg2:T38
+R52	Or Arg1:T45 Arg2:T48
+R53	Mod-Link Arg1:T82 Arg2:T81
+R54	Measure Arg1:T101 Arg2:T100
+R55	Meronym Arg1:T104 Arg2:T105
+R56	Meronym Arg1:T6 Arg2:T3
+R57	Coreference-Link Arg1:T29 Arg2:T10
+R58	Coreference-Link Arg1:T36 Arg2:T17
+R59	Coreference-Link Arg1:T45 Arg2:T26
+R60	Coreference-Link Arg1:T48 Arg2:T29
+R61	Enables Arg1:E15 Arg2:E14
+R62	Meronym Arg1:T71 Arg2:T73
+R63	Enables Arg1:E18 Arg2:E17
+R64	Coreference-Link Arg1:T98 Arg2:T69
+R65	Coreference-Link Arg1:T78 Arg2:T63
+R66	Coreference-Link Arg1:T41 Arg2:T22
+R67	Coreference-Link Arg1:T101 Arg2:T41
+R68	Coreference-Link Arg1:T114 Arg2:T59

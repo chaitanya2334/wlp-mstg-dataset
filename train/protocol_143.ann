@@ -1,0 +1,35 @@
+T1	Action 58 65	Dissect
+T2	Reagent 66 73	tissues
+T3	Concentration 77 79	1X
+T4	Reagent 80 83	PBS
+T5	Action 88 91	fix
+T6	Concentration 95 98	4 %
+T7	Reagent 99 115	Paraformaldehyde
+T8	Time 120 130	20 minutes
+T9	Action 133 138	Rinse
+T10	Numerical 139 144	twice
+T11	Concentration 150 152	1X
+T12	Reagent 153 156	PBS
+T13	Action 159 164	Stain
+T14	Time 169 179	20 minutes
+T15	Reagent 183 201	Oil Red O Solution
+T16	Action 204 209	Rinse
+T17	Numerical 210 212	2X
+T18	Reagent 216 221	water
+T19	Action 224 229	Mount
+T20	Reagent 233 241	glycerol
+T21	Action 246 251	image
+T22	Modifier 252 263	immediately
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T5 Site:T7 Acts-on:E1
+E3	Action:T9 Count:T10 Using:T12 Acts-on:E2
+E4	Action:T13 Site:T15 Acts-on:E3
+E5	Action:T16 Site:T18 Count:T17 Acts-on:E4
+E6	Action:T19 Site:T20 Acts-on:E5
+E7	Action:T21 Acts-on:E6
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T7 Arg2:T6
+R3	Setting Arg1:E2 Arg2:T8
+R4	Measure Arg1:T12 Arg2:T11
+R5	Setting Arg1:E4 Arg2:T14
+R6	Mod-Link Arg1:E7 Arg2:T22

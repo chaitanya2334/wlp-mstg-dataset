@@ -1,0 +1,452 @@
+T1	Action 75 80	split
+T2	Reagent 81 86	cells
+T3	Generic-Measure 94 99	ratio
+T4	Action 182 186	take
+T5	Modifier 189 197	'time 0'
+T6	Generic-Measure 198 212	growth reading
+T7	Device 221 233	plate reader
+T8	Modifier 236 244	Continue
+T9	Action 245 260	taking readings
+T10	Modifier 261 272	in this way
+T11	Modifier 273 313	at approximately the same time every day
+T12	Time 318 325	21 days
+T13	Action 328 333	Graph
+T14	Reagent 338 345	results
+T15	Modifier 375 386	exponential
+T16	Action 387 393	growth
+T17	Action 403 409	Repeat
+T18	Numerical 410 411	2
+T19	Modifier 412 416	more
+T20	Reagent 437 441	host
+T21	Action 442 448	growth
+T22	Modifier 452 462	consistent
+T23	Action 532 535	fix
+T24	Amount 536 540	1 ml
+T25	Reagent 544 549	cells
+T26	Amount 555 559	5 µl
+T27	Concentration 560 564	25 %
+T28	Reagent 565 579	glutaraldehyde
+T29	Action 582 594	Flash freeze
+T30	Reagent 598 613	liquid nitrogen
+T31	Time 614 619	daily
+T32	Action 622 627	Store
+T33	Temperature 631 637	- 80°C
+T34	Location 638 645	freezer
+T35	Action 648 657	Determine
+T36	Amount 662 672	cell count
+T37	Device 681 684	FCM
+T38	Device 688 692	DAPI
+T39	Reagent 723 749	culture fluorescence level
+T40	Action 792 798	infect
+T41	Reagent 803 807	host
+T42	Modifier 808 850	in late - exponential ( log linear ) phase
+T43	Action 853 870	Do a plaque assay
+T44	Action 874 883	determine
+T45	Concentration 888 896	PFU / ml
+T46	Reagent 904 910	lysate
+T47	Action 929 938	Calculate
+T48	Amount 943 949	volume
+T49	Modifier 950 956	needed
+T50	Numerical 961 964	107
+T51	Reagent 965 971	phages
+T52	Action 974 983	Determine
+T53	Time 988 1002	length of time
+T54	Action 1049 1056	Prepare
+T55	Reagent 1057 1066	dilutions
+T56	Reagent 1071 1081	free phage
+T57	Reagent 1086 1097	total phage
+T58	Method 1101 1140	following the table found in guidelines
+T59	Action 1143 1150	Turn on
+T60	Location 1151 1161	water bath
+T61	Temperature 1165 1169	35°C
+T62	Action 1170 1175	Label
+T63	Size 1178 1180	1L
+T64	Location 1181 1186	flask
+T65	Reagent 1196 1201	phage
+T66	Reagent 1204 1208	host
+T67	Seal 1215 1228	your initials
+T68	Action 1231 1234	Add
+T69	Amount 1235 1241	396 ml
+T70	Reagent 1242 1250	SN media
+T71	Amount 1256 1285	however much to q . to 400 ml
+T72	Size 1295 1297	1L
+T73	Location 1298 1303	flask
+T74	Action 1306 1311	Label
+T75	Numerical 1312 1313	1
+T76	Amount 1314 1318	15ml
+T77	Location 1319 1332	snap cap tube
+T78	Modifier 1333 1355	the " Infection Tube "
+T79	Action 1358 1363	Label
+T80	Numerical 1364 1367	230
+T81	Amount 1368 1372	15ml
+T82	Location 1373 1387	snap cap tubes
+T83	Modifier 1393 1418	the red , bolded text ids
+T84	Action 1421 1424	Add
+T85	Amount 1425 1428	1ml
+T86	Reagent 1429 1433	host
+T87	Modifier 1437 1441	each
+T88	Location 1442 1446	tube
+T89	Action 1467 1471	pour
+T90	Numerical 1472 1475	240
+T91	Reagent 1476 1497	SN bottom agar plates
+T92	Amount 1500 1503	2ml
+T93	Reagent 1504 1518	SN bottom agar
+T94	Location 1523 1528	plate
+T95	Action 1533 1540	Lay out
+T96	Reagent 1545 1566	SN bottom agar plates
+T97	Action 1569 1574	Label
+T98	Numerical 1575 1578	230
+T99	Reagent 1579 1600	SN bottom agar plates
+T100	Modifier 1606 1631	the red , bolded text ids
+T101	Action 1634 1639	Label
+T102	Numerical 1640 1641	2
+T103	Location 1642 1648	plates
+T104	Modifier 1649 1663	" Host ( - ) "
+T105	Action 1664 1669	Label
+T106	Size 1670 1675	1.5µl
+T107	Location 1676 1692	centrifuge tubes
+T108	Modifier 1698 1709	ALL THE IDS
+T109	Action 1739 1742	Add
+T110	Amount 1743 1748	900µl
+T111	Reagent 1749 1757	SN media
+T112	Location 1761 1790	the ids highlighted in yellow
+T113	Action 1793 1796	Add
+T114	Amount 1797 1802	990µl
+T115	Reagent 1803 1811	SN media
+T116	Location 1815 1842	the ids highlighted in blue
+T117	Action 1845 1854	Microwave
+T118	Reagent 1855 1866	SN top agar
+T119	Action 1869 1876	Aliquot
+T120	Modifier 1877 1883	heated
+T121	Reagent 1884 1901	SN media top agar
+T122	Size 1907 1911	50ml
+T123	Location 1912 1925	conical tubes
+T124	Action 1928 1937	Keep warm
+T125	Temperature 1945 1949	35°C
+T126	Location 1950 1960	water bath
+T127	Action 1963 1972	Determine
+T128	Concentration 1977 1990	concentration
+T129	Reagent 1999 2006	culture
+T130	Action 2053 2062	Calculate
+T131	Amount 2067 2073	volume
+T132	Reagent 2077 2089	host culture
+T133	Numerical 2101 2104	108
+T134	Reagent 2105 2110	cells
+T135	Amount 2120 2123	2ml
+T136	Reagent 2129 2137	SN media
+T137	Action 2142 2147	Pipet
+T138	Amount 2148 2159	this amount
+T139	Size 2169 2174	15 ml
+T140	Location 2175 2188	snap cap tube
+T141	Modifier 2189 2215	labeled " Infection Tube "
+T142	Action 2218 2221	Add
+T143	Numerical 2222 2225	107
+T144	Reagent 2226 2232	phages
+T145	Amount 2242 2245	2ml
+T146	Reagent 2251 2259	SN media
+T147	Location 2269 2273	tube
+T148	Reagent 2286 2292	phages
+T149	Action 2296 2302	adsorb
+T150	Reagent 2310 2320	host cells
+T151	Time 2325 2331	1 hour
+T152	Action 2334 2337	Put
+T153	Amount 2342 2345	4ml
+T154	Reagent 2346 2355	infection
+T155	Amount 2361 2366	396ml
+T156	Reagent 2367 2375	SN media
+T157	Size 2381 2383	1L
+T158	Location 2384 2389	flask
+T159	Action 2393 2399	dilute
+T160	Reagent 2404 2413	infection
+T161	Concentration 2417 2424	1 : 100
+T162	Action 2427 2440	Take a sample
+T163	Time 2441 2467	immediately after dilution
+T164	Action 2487 2493	Remove
+T165	Seal 2498 2505	plunger
+T166	Size 2509 2512	1ml
+T167	Device 2513 2532	luer - lock syringe
+T168	Action 2535 2538	Add
+T169	Size 2541 2561	0.2 µm 25mm diameter
+T170	Seal 2562 2576	syringe filter
+T171	Location 2580 2595	the syringe end
+T172	Action 2598 2603	Pipet
+T173	Amount 2604 2608	1 ml
+T174	Location 2614 2623	the flask
+T175	Location 2629 2640	the syringe
+T176	Size 2647 2651	1 ml
+T177	Device 2652 2669	serological pipet
+T178	Action 2672 2675	Add
+T179	Seal 2680 2687	plunger
+T180	Location 2700 2707	syringe
+T181	Size 2712 2717	0.2µm
+T182	Device 2718 2725	syringe
+T183	Action 2726 2732	filter
+T184	Amount 2737 2741	1 ml
+T185	Size 2749 2755	1.5 ml
+T186	Location 2756 2771	centrifuge tube
+T187	Action 2774 2799	Perform a serial dilution
+T188	Action 2803 2809	dilute
+T189	Reagent 2814 2820	sample
+T190	Concentration 2824 2854	102 per ml ( 10 - 3 dilution )
+T191	Action 2857 2860	Add
+T192	Amount 2861 2866	250µl
+T193	Concentration 2874 2880	10 - 3
+T194	Reagent 2881 2889	dilution
+T195	Amount 2894 2899	250µl
+T196	Concentration 2907 2913	10 - 2
+T197	Reagent 2914 2922	dilution
+T198	Size 2944 2948	15ml
+T199	Location 2949 2962	snap cap tube
+T200	Amount 2968 2971	1ml
+T201	Reagent 2972 2976	host
+T202	Reagent 2985 2990	phage
+T203	Reagent 2995 2999	host
+T204	Action 3003 3011	incubate
+T205	Time 3016 3023	2 hours
+T206	Action 3026 3031	Plate
+T207	Amount 3038 3041	4ml
+T208	Reagent 3042 3053	SN top agar
+T209	Location 3058 3063	plate
+T210	Action 3066 3073	Pipette
+T211	Amount 3074 3077	1ml
+T212	Location 3083 3092	the flask
+T213	Size 3100 3105	1.5ml
+T214	Location 3106 3121	centrifuge tube
+T215	Modifier 3132 3136	same
+T216	Size 3137 3140	1ml
+T217	Device 3141 3160	serological pipette
+T218	Action 3163 3188	Perform a serial dilution
+T219	Action 3192 3198	dilute
+T220	Reagent 3203 3209	sample
+T221	Concentration 3213 3234	102 per ml ( 10 - 3 )
+T222	Action 3237 3240	Add
+T223	Amount 3241 3246	250µl
+T224	Concentration 3254 3260	10 - 3
+T225	Reagent 3261 3269	dilution
+T226	Amount 3274 3279	250µl
+T227	Concentration 3287 3293	10 - 2
+T228	Reagent 3294 3302	dilution
+T229	Size 3324 3328	15ml
+T230	Location 3329 3342	snap cap tube
+T231	Amount 3348 3351	1ml
+T232	Reagent 3352 3356	host
+T233	Action 3359 3364	Allow
+T234	Reagent 3365 3370	phage
+T235	Reagent 3375 3379	host
+T236	Action 3383 3391	incubate
+T237	Time 3396 3403	2 hours
+T238	Action 3413 3418	plate
+T239	Amount 3425 3428	4ml
+T240	Reagent 3429 3440	SN top agar
+T241	Modifier 3441 3450	per plate
+T242	Action 3453 3470	Continue sampling
+T243	Modifier 3471 3482	in this way
+T244	Time 3487 3495	16 hours
+T245	Action 3502 3508	sample
+T246	Numerical 3509 3522	one more time
+T247	Time 3526 3532	24 hrs
+T248	Modifier 3558 3562	more
+T249	Reagent 3563 3572	dilutions
+T250	Action 3589 3595	plated
+T251	Action 3760 3765	count
+T252	Reagent 3770 3777	plaques
+T253	Location 3785 3791	plates
+T254	Modifier 3792 3828	that have a countable number of them
+T255	Action 3831 3842	Count again
+T256	Time 3846 3852	day 14
+T257	Time 3857 3859	21
+T258	Action 3862 3880	Calculate PFU / ml
+T259	Time 3884 3899	each time point
+T260	Modifier 3913 3944	centrifuged ( free phage only )
+T261	Modifier 3949 3980	not centrifuged ( total phage )
+T262	Reagent 3981 3988	samples
+T263	Action 3991 4008	Graph the results
+T264	Action 4011 4020	Calculate
+T265	Measure-Type 4021 4031	burst size
+E1	Action:T1 Acts-on:T2
+E2	Action:T4 Using:T7 Acts-on:E1
+E3	Action:T9 Product:T14 Acts-on:E2
+E4	Action:T13 Acts-on:T14
+E5	Action:T16 Acts-on:E43
+E6	Action:T17 Count:T18 Acts-on:E5
+E7	Action:T21 Acts-on:T20 Product:T25
+E8	Action:T23 Acts-on:T25 Using:T28
+E9	Action:T29 Using:T30 Acts-on:E8
+E10	Action:T32 Site:T34 Acts-on:E9 Product:T39 Product2:T41
+E11	Action:T35 Using:T37 Acts-on:T39
+E12	Action:T40 Acts-on:T41 Product:T46
+E13	Action:T43 
+E14	Action:T44 Acts-on:T46 Product:T51
+E15	Action:T47 Acts-on:T51 Product:T56 Product2:T57
+E16	Action:T52 Acts-on:E15
+E17	Action:T54 Acts-on:T55 Using:T58 Product:T65 Product2:T66
+E18	Action:T59 Acts-on:T60 Product:T126
+E19	Action:T62 Acts-on:T64 Using:T65 Using2:T66 Using3:T67 Product:T73
+E20	Action:T68 Acts-on:T70 Site:T73 Product:T156
+E21	Action:T74 Acts-on:T77 Product:T88 Product2:T199
+E22	Action:T79 Acts-on:T82 Product:T230
+E23	Action:T84 Acts-on:T86 Site:T88
+E24	Action:T89 Product:T91 Acts-on:T93 Site:T94
+E25	Action:T95 Acts-on:T96 Product:T99
+E26	Action:T97 Acts-on:T99 Product:T103
+E27	Action:T101 Acts-on:T103 Product:T209
+E28	Action:T105 Acts-on:T107 Product:T112 Product2:T116
+E29	Action:T109 Acts-on:T111 Site:T112
+E30	Action:T113 Acts-on:T115 Site:T116 Product:T134
+E31	Action:T117 Acts-on:T118 Product:T121
+E32	Action:T119 Acts-on:T121 Site:T123
+E33	Action:T124 Site:T126 Acts-on:E32 Product:T129
+E34	Action:T127 Acts-on:T129 Product:T132
+E35	Action:T130 Acts-on:T134 Acts-on2:T132
+E36	Action:T137 Site:T140 Acts-on:E35 Product:T144
+E37	Action:T142 Site:T147 Acts-on:T144 Product:T148 Product2:T150
+E38	Action:T149 Site:T150 Acts-on:T148 Product:T154
+E39	Action:T152 Acts-on:T154 Site:T156
+E40	Action:T159 Acts-on:T160
+E41	Action:T162 Acts-on:E40 Product:T174 Product2:T212
+E42	Action:T164 Acts-on:T165 Product:T171
+E43	Action:T168 Acts-on:T170 Site:T171 Product:T175
+E44	Action:T172 Site:T174 Site2:T175 Using:T177 Product:T180 Product2:T217
+E45	Action:T178 Acts-on:T179 Site:T180
+E46	Action:T183 Using:T182 Site:T186 Acts-on:E45 Product:T189
+E47	Action:T187 
+E48	Action:T188 Acts-on:T189 Product:T194 Product2:T197
+E49	Action:T191 Acts-on:T194 Acts-on2:T197 Site:T199 Product:T202 Product2:T203
+E50	Action:T204 Acts-on:T202 Acts-on2:T203
+E51	Action:T206 Using:T208 Acts-on:E50 Site:T209 Product:T220
+E52	Action:T210 Site:T214 Using:T217 Acts-on:T212
+E53	Action:T218 
+E54	Action:T219 Acts-on:T220 Product:T225 Product2:T228
+E55	Action:T222 Acts-on:T225 Acts-on2:T228 Site:T230 Product:T234 Product2:T235
+E56	Action:T233 
+E57	Action:T236 Acts-on:T234 Acts-on2:T235
+E58	Action:T238 Using:T240 Acts-on:E56
+E59	Action:T242 Acts-on:E58
+E60	Action:T245 Count:T246 Acts-on:E59
+E61	Action:T250 Acts-on:T249 Acts-on2:E60 Product:T252
+E62	Action:T251 Acts-on:T252
+E63	Action:T255 Acts-on:E62 Product:T262
+E64	Action:T258 Acts-on:T262
+E65	Action:T263 Acts-on:E64
+E66	Action:T264 Measure-Type-Link:T265 Acts-on:E65
+R1	Mod-Link Arg1:T6 Arg2:T5
+R2	Setting Arg1:E2 Arg2:T6
+R3	Mod-Link Arg1:T12 Arg2:T11
+R4	Mod-Link Arg1:E3 Arg2:T10
+R5	Setting Arg1:E3 Arg2:T12
+R6	Setting Arg1:T19 Arg2:T18
+R7	Measure Arg1:T28 Arg2:T26
+R8	Measure Arg1:T28 Arg2:T27
+R9	Measure Arg1:T25 Arg2:T24
+R10	Setting Arg1:E9 Arg2:T31
+R11	Setting Arg1:E10 Arg2:T33
+R12	Mod-Link Arg1:E12 Arg2:T42
+R13	Setting Arg1:E14 Arg2:T45
+R14	Setting Arg1:E15 Arg2:T48
+R15	Setting Arg1:T49 Arg2:T48
+R16	Setting Arg1:E16 Arg2:T53
+R17	Meronym Arg1:T56 Arg2:T55
+R18	Meronym Arg1:T57 Arg2:T55
+R19	Setting Arg1:E18 Arg2:T61
+R20	Measure Arg1:T64 Arg2:T63
+R21	Or Arg1:T69 Arg2:T71
+R22	Measure Arg1:T70 Arg2:T69
+R23	Measure Arg1:T73 Arg2:T72
+R24	Measure Arg1:T51 Arg2:T50
+R25	Measure Arg1:T77 Arg2:T75
+R26	Measure Arg1:T77 Arg2:T76
+R27	Measure Arg1:T82 Arg2:T80
+R28	Measure Arg1:T82 Arg2:T81
+R29	Mod-Link Arg1:T88 Arg2:T87
+R30	Measure Arg1:T86 Arg2:T85
+R31	Measure Arg1:T91 Arg2:T90
+R32	Measure Arg1:T93 Arg2:T92
+R33	Measure Arg1:T99 Arg2:T98
+R34	Measure Arg1:T103 Arg2:T102
+R35	Measure Arg1:T107 Arg2:T106
+R36	Measure Arg1:T111 Arg2:T110
+R37	Measure Arg1:T115 Arg2:T114
+R38	Measure Arg1:T123 Arg2:T122
+R39	Mod-Link Arg1:T121 Arg2:T120
+R40	Setting Arg1:E33 Arg2:T125
+R41	Measure Arg1:T132 Arg2:T131
+R42	Measure Arg1:T129 Arg2:T128
+R43	Setting Arg1:E34 Arg2:T128
+R44	Measure Arg1:T134 Arg2:T133
+R45	Measure Arg1:T140 Arg2:T139
+R46	Mod-Link Arg1:T140 Arg2:T141
+R47	Measure Arg1:T144 Arg2:T143
+R48	Setting Arg1:E38 Arg2:T151
+R49	Measure Arg1:T154 Arg2:T153
+R50	Measure Arg1:T156 Arg2:T155
+R51	Measure Arg1:T158 Arg2:T157
+R52	Setting Arg1:E40 Arg2:T161
+R53	Meronym Arg1:T156 Arg2:T158
+R54	Setting Arg1:E41 Arg2:T163
+R55	Setting Arg1:T167 Arg2:T166
+R56	Meronym Arg1:T165 Arg2:T167
+R57	Measure Arg1:T170 Arg2:T169
+R58	Measure Arg1:T177 Arg2:T176
+R59	Setting Arg1:E44 Arg2:T173
+R60	Setting Arg1:E36 Arg2:T138
+R61	Setting Arg1:E48 Arg2:T190
+R62	Measure Arg1:T194 Arg2:T193
+R63	Measure Arg1:T194 Arg2:T192
+R64	Measure Arg1:T197 Arg2:T196
+R65	Measure Arg1:T197 Arg2:T195
+R66	Measure Arg1:T199 Arg2:T198
+R67	Measure Arg1:T201 Arg2:T200
+R68	Measure Arg1:T208 Arg2:T207
+R69	Setting Arg1:E52 Arg2:T211
+R70	Measure Arg1:T214 Arg2:T213
+R71	Measure Arg1:T217 Arg2:T216
+R72	Setting Arg1:E54 Arg2:T221
+R73	Measure Arg1:T230 Arg2:T229
+R74	Measure Arg1:T240 Arg2:T239
+R75	Mod-Link Arg1:T239 Arg2:T241
+R76	Setting Arg1:E60 Arg2:T247
+R77	Setting Arg1:E59 Arg2:T244
+R78	Mod-Link Arg1:E59 Arg2:T243
+R79	Mod-Link Arg1:T249 Arg2:T248
+R80	Mod-Link Arg1:T253 Arg2:T254
+R81	Meronym Arg1:T252 Arg2:T253
+R82	Setting Arg1:E63 Arg2:T256
+R83	Setting Arg1:E63 Arg2:T257
+R84	Mod-Link Arg1:T262 Arg2:T261
+R85	Mod-Link Arg1:T262 Arg2:T260
+R86	Setting Arg1:E64 Arg2:T259
+R87	Setting Arg1:E57 Arg2:T237
+R88	Mod-Link Arg1:T217 Arg2:T215
+R89	Setting Arg1:E50 Arg2:T205
+R90	Setting Arg1:E1 Arg2:T3
+R91	Mod-Link Arg1:E3 Arg2:T8
+R92	Mod-Link Arg1:E5 Arg2:T15
+R93	Mod-Link Arg1:E7 Arg2:T22
+R94	Enables Arg1:E6 Arg2:E7
+R95	Or Arg1:T37 Arg2:T38
+R96	Measure Arg1:T39 Arg2:T36
+R97	Enables Arg1:E13 Arg2:E14
+R98	Coreference-Link Arg1:T91 Arg2:T96
+R99	Meronym Arg1:T136 Arg2:T134
+R100	Mod-Link Arg1:E26 Arg2:T100
+R101	Mod-Link Arg1:E28 Arg2:T108
+R102	Mod-Link Arg1:E27 Arg2:T104
+R103	Mod-Link Arg1:E22 Arg2:T83
+R104	Mod-Link Arg1:E21 Arg2:T78
+R105	Measure Arg1:T134 Arg2:T135
+R106	Measure Arg1:T144 Arg2:T145
+R107	Meronym Arg1:T146 Arg2:T144
+R108	Measure Arg1:T186 Arg2:T185
+R109	Enables Arg1:E39 Arg2:E40
+R110	Enables Arg1:E47 Arg2:E48
+R111	Setting Arg1:T182 Arg2:T181
+R112	Setting Arg1:E54 Arg2:T184
+R113	Meronym Arg1:T201 Arg2:T199
+R114	Enables Arg1:E53 Arg2:E54
+R115	Measure Arg1:T225 Arg2:T224
+R116	Measure Arg1:T225 Arg2:T223
+R117	Measure Arg1:T228 Arg2:T226
+R118	Measure Arg1:T228 Arg2:T227
+R119	Measure Arg1:T232 Arg2:T231
+R120	Meronym Arg1:T232 Arg2:T230
+R121	Enables Arg1:E56 Arg2:E57

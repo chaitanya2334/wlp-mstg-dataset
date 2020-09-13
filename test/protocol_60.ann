@@ -1,0 +1,217 @@
+T1	Action 44 51	Prepare
+T2	Reagent 52 57	cells
+T3	Reagent 68 74	tissue
+T4	Modifier 75 86	of interest
+T5	Action 87 101	without lysing
+T6	Reagent 102 114	erythrocytes
+T7	Action 164 173	resuspend
+T8	Reagent 178 183	cells
+T9	Reagent 187 203	MojoSort™ Buffer
+T10	Action 207 213	adding
+T11	Amount 220 223	4mL
+T12	Amount 229 233	5 mL
+T13	Generic-Measure 236 246	12 x 75 mm
+T14	Location 249 265	polystyrene tube
+T15	Action 275 279	Keep
+T16	Reagent 280 296	MojoSort™ Buffer
+T17	Location 300 303	ice
+T18	Time 304 328	throughout the procedure
+T19	Action 331 337	Filter
+T20	Reagent 342 347	cells
+T21	Size 355 360	70 μm
+T22	Device 361 374	cell strainer
+T23	Action 377 387	centrifuge
+T24	Speed 391 398	300 x g
+T25	Time 403 412	5 minutes
+T26	Action 419 428	resuspend
+T27	Modifier 432 445	anappropriate
+T28	Amount 446 452	volume
+T29	Reagent 456 472	MojoSort™ Buffer
+T30	Action 475 491	Count and adjust
+T31	Measure-Type 496 514	cell concentration
+T32	Generic-Measure 518 536	1 x 108 cells / mL
+T33	Action 539 546	Aliquot
+T34	Amount 547 553	100 μL
+T35	Reagent 557 572	cell suspension
+T36	Generic-Measure 575 584	107 cells
+T37	Modifier 594 597	new
+T38	Location 598 602	tube
+T39	Action 605 608	Add
+T40	Amount 609 614	10 μL
+T41	Reagent 622 646	biotin anti - human CD14
+T42	Action 649 652	mix
+T43	Modifier 653 657	well
+T44	Action 662 670	incubate
+T45	Location 674 677	ice
+T46	Time 682 692	15 minutes
+T47	Action 695 703	Scale up
+T48	Measure-Type 708 714	volume
+T49	Reagent 746 751	cells
+T50	Action 768 771	add
+T51	Amount 772 778	100 μL
+T52	Generic-Measure 783 790	1 x 108
+T53	Reagent 791 796	cells
+T54	Modifier 817 826	less than
+T55	Amount 827 830	107
+T56	Reagent 831 836	cells
+T57	Action 839 842	use
+T58	Generic-Measure 843 863	indicated volumesfor
+T59	Amount 864 867	107
+T60	Reagent 868 873	cells
+T61	Action 887 891	Keep
+T62	Modifier 892 898	unused
+T63	Reagent 899 904	cells
+T64	Action 910 914	take
+T65	Reagent 918 925	aliquot
+T66	Action 933 939	adding
+T67	Reagent 944 952	cocktail
+T68	Action 956 963	monitor
+T69	Measure-Type 964 970	purity
+T70	Measure-Type 975 980	yield
+T71	Action 983 992	Resuspend
+T72	Reagent 997 1002	beads
+T73	Method 1006 1015	vortexing
+T74	Modifier 1018 1031	maximum speed
+T75	Numerical 1034 1035	5
+T76	Action 1064 1067	add
+T77	Amount 1068 1073	10 μL
+T78	Reagent 1074 1098	ofStreptavidin Nanobeads
+T79	Action 1101 1104	Mix
+T80	Modifier 1105 1109	well
+T81	Action 1114 1122	incubate
+T82	Temperature 1123 1129	on ice
+T83	Time 1134 1144	15 minutes
+T84	Action 1147 1155	Scale up
+T85	Generic-Measure 1160 1166	volume
+T86	Modifier 1167 1178	accordingly
+T87	Modifier 1193 1197	more
+T88	Reagent 1198 1203	cells
+T89	Action 1220 1223	add
+T90	Amount 1224 1230	100 μL
+T91	Amount 1235 1242	1 x 108
+T92	Reagent 1243 1248	cells
+T93	Amount 1279 1282	107
+T94	Reagent 1283 1288	cells
+T95	Amount 1317 1320	107
+T96	Reagent 1321 1326	cells
+T97	Action 1329 1338	Resuspend
+T98	Reagent 1343 1348	cells
+T99	Amount 1352 1356	3 mL
+T100	Reagent 1360 1376	MojoSort™ Buffer
+T101	Action 1393 1400	observe
+T102	Reagent 1401 1411	aggregates
+T103	Action 1414 1420	filter
+T104	Reagent 1425 1435	suspension
+T105	Action 1441 1449	maximize
+T106	Measure-Type 1450 1455	yield
+T107	Action 1466 1473	disrupt
+T108	Reagent 1478 1488	aggregates
+T109	Action 1492 1501	pipetting
+T110	Reagent 1506 1514	solution
+T111	Method 1515 1526	up and down
+T112	Action 1529 1534	Place
+T113	Location 1539 1543	tube
+T114	Device 1551 1557	magnet
+T115	Time 1562 1571	5 minutes
+T116	Action 1574 1582	Pour out
+T117	Action 1587 1594	collect
+T118	Reagent 1599 1605	liquid
+T119	Reagent 1623 1628	cells
+T120	Modifier 1629 1640	of interest
+T121	Action 1672 1675	add
+T122	Amount 1676 1680	3 mL
+T123	Reagent 1684 1700	MojoSort™ Buffer
+T124	Action 1705 1711	repeat
+T125	Method 1712 1727	steps 10 and 11
+T126	Modifier 1737 1749	magnetically
+T127	Reagent 1750 1765	labeledfraction
+T128	Modifier 1766 1771	up to
+T129	Numerical 1772 1775	two
+T130	Action 1793 1797	pool
+T131	Modifier 1802 1811	unlabeled
+T132	Reagent 1812 1821	fractions
+T133	Concentration 1966 1974	8 – 10 %
+T134	Concentration 2012 2019	2 – 5 %
+T135	Measure-Type 2049 2055	purity
+T136	Concentration 2069 2076	1 – 2 %
+E1	Action:T1 Product:T2 Acts-on:T3 Using:E2
+E2	Action:T5 Acts-on:T6
+E3	Action:T7 Acts-on:T8 Using:T9
+E4	Action:T10 Acts-on:T9 Site:T14
+E5	Action:T15 Product:T9 Acts-on:T16 Site:T17
+E6	Action:T19 Acts-on:T20 Using:T22
+E7	Action:T23 Acts-on:T20
+E8	Action:T26 Acts-on:E7 Site:T29
+E9	Action:T30 Acts-on:E8 Measure-Type-Link:T31 Product:T35
+E10	Action:T33 Acts-on:T35 Site:T38
+E11	Action:T39 Site:E10 Acts-on:T41
+E12	Action:T42 Acts-on:E11
+E13	Action:T44 Acts-on:E12 Site:T45
+E14	Action:T47 Measure-Type-Link:T48
+E15	Action:T50 Acts-on:T53
+E16	Action:T57 Site:T56
+E17	Action:T61 Acts-on:T63
+E18	Action:T64 Acts-on:T65
+E19	Action:T66 Acts-on:T67
+E20	Action:T68 Using:E18 Using2:E19 Measure-Type-Link:T69 Measure-Type-Link2:T70
+E21	Action:T71 Acts-on:T72 Using:T73 Count:T75 Product:T78
+E22	Action:T76 Acts-on:T78
+E23	Action:T79 Acts-on:E22
+E24	Action:T81 Acts-on:E23
+E25	Action:T84 
+E26	Action:T89 
+E27	Action:T97 Acts-on:T98 Site:T100
+E28	Action:T101 Acts-on:T102
+E29	Action:T103 Acts-on:T104
+E30	Action:T105 Measure-Type-Link:T106
+E31	Action:T107 Acts-on:T108
+E32	Action:T109 Acts-on:T110 Using:T111
+E33	Action:T112 Acts-on:T113 Site:T114
+E34	Action:T116 Acts-on:T118
+E35	Action:T117 Acts-on:T118
+E36	Action:T121 Acts-on:T123
+E37	Action:T124 Using:T125 Using2:T127 Count:T129
+E38	Action:T130 Acts-on:T132
+R1	Mod-Link Arg1:T3 Arg2:T4
+R2	Measure Arg1:T9 Arg2:T11
+R3	Coreference-Link Arg1:T9 Arg2:T16
+R4	Measure Arg1:T14 Arg2:T12
+R5	Measure Arg1:T14 Arg2:T13
+R6	Setting Arg1:E5 Arg2:T18
+R7	Mod-Link Arg1:T22 Arg2:T21
+R8	Setting Arg1:E7 Arg2:T24
+R9	Setting Arg1:E7 Arg2:T25
+R10	Mod-Link Arg1:T28 Arg2:T27
+R11	Measure Arg1:T29 Arg2:T28
+R12	Setting Arg1:E9 Arg2:T32
+R13	Measure Arg1:T35 Arg2:T34
+R14	Measure Arg1:T35 Arg2:T36
+R15	Mod-Link Arg1:T38 Arg2:T37
+R16	Measure Arg1:T41 Arg2:T40
+R17	Mod-Link Arg1:E12 Arg2:T43
+R18	Setting Arg1:E13 Arg2:T46
+R19	Measure Arg1:T53 Arg2:T51
+R20	Measure Arg1:T53 Arg2:T52
+R21	Measure Arg1:T56 Arg2:T55
+R22	Setting Arg1:E16 Arg2:T58
+R23	Measure Arg1:T60 Arg2:T59
+R24	Mod-Link Arg1:T63 Arg2:T62
+R25	Mod-Link Arg1:E21 Arg2:T74
+R26	Measure Arg1:T78 Arg2:T77
+R27	Mod-Link Arg1:E23 Arg2:T80
+R28	Setting Arg1:E24 Arg2:T82
+R29	Setting Arg1:E24 Arg2:T83
+R30	Setting Arg1:E25 Arg2:T85
+R31	Mod-Link Arg1:E25 Arg2:T86
+R32	Mod-Link Arg1:T88 Arg2:T87
+R33	Setting Arg1:E26 Arg2:T90
+R34	Measure Arg1:T92 Arg2:T91
+R35	Measure Arg1:T94 Arg2:T93
+R36	Measure Arg1:T96 Arg2:T95
+R37	Coreference-Link Arg1:T102 Arg2:T108
+R38	Setting Arg1:E33 Arg2:T115
+R39	Mod-Link Arg1:T119 Arg2:T120
+R40	Measure Arg1:T123 Arg2:T122
+R41	Mod-Link Arg1:T127 Arg2:T126
+R42	Or Arg1:T129 Arg2:T128
+R43	Mod-Link Arg1:T132 Arg2:T131

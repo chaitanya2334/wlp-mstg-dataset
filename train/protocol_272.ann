@@ -1,0 +1,47 @@
+T1	Action 52 58	Set up
+T2	Reagent 73 81	reaction
+T3	Reagent 87 97	Enzyme # 1
+T4	Amount 122 127	50 µl
+T5	Action 132 135	Mix
+T6	Reagent 136 146	components
+T7	Action 150 159	pipetting
+T8	Reagent 164 180	reaction mixture
+T9	Method 181 192	up and down
+T10	Action 203 211	flicking
+T11	Location 218 231	reaction tube
+T12	Modifier 234 239	Quick
+T13	Action 254 265	spin - down
+T14	Device 271 286	microcentrifuge
+T15	Action 289 302	Do not vortex
+T16	Reagent 307 315	reaction
+T17	Action 318 326	Incubate
+T18	Time 331 337	1 hour
+T19	Modifier 345 374	enzyme - specific appropriate
+T20	Temperature 375 386	temperature
+T21	Action 389 392	Add
+T22	Reagent 397 410	second enzyme
+T23	Action 413 421	Incubate
+T24	Time 426 432	1 hour
+T25	Modifier 440 469	enzyme - specific appropriate
+T26	Temperature 470 481	temperature
+E1	Action:T1 Using:T3 Product:T2
+E2	Action:T5 Acts-on:T6
+E3	Action:T7 Acts-on:T8 Using:T9
+E4	Action:T10 Acts-on:T11
+E5	Action:T13 Using:T14 Acts-on:E2
+E6	Action:T15 Acts-on:T16
+E7	Action:T17 Acts-on:E5
+E8	Action:T21 Acts-on:T22 Site:E7
+E9	Action:T23 Acts-on:E8
+R1	Measure Arg1:T3 Arg2:T4
+R2	Mod-Link Arg1:E5 Arg2:T12
+R3	Mod-Link Arg1:T20 Arg2:T19
+R4	Setting Arg1:E7 Arg2:T18
+R5	Setting Arg1:E7 Arg2:T20
+R6	Setting Arg1:E9 Arg2:T24
+R7	Mod-Link Arg1:T26 Arg2:T25
+R8	Setting Arg1:E9 Arg2:T26
+R9	Enables Arg1:E3 Arg2:E2
+R10	Or Arg1:E3 Arg2:E4
+R11	Prevents Arg1:E5 Arg2:E6
+R12	Enables Arg1:E2 Arg2:E1

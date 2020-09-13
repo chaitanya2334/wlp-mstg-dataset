@@ -1,0 +1,94 @@
+T1	Action 20 27	Grow up
+T2	Reagent 28 33	yeast
+T3	Reagent 37 50	liquid medium
+T4	Time 51 60	overnight
+T5	Action 63 66	Add
+T6	Amount 67 73	333 μL
+T7	Amount 79 87	1 volume
+T8	Reagent 90 103	yeast culture
+T9	Size 109 115	1.5 mL
+T10	Location 116 136	microcentrifuge tube
+T11	Action 139 142	Add
+T12	Amount 143 149	666 μL
+T13	Amount 155 163	2 volume
+T14	Concentration 169 174	100 %
+T15	Reagent 175 182	Ethanol
+T16	Size 190 196	1.5 mL
+T17	Location 197 217	microcentrifuge tube
+T18	Reagent 228 249	yeast ethanol mixture
+T19	Action 250 253	sit
+T20	Temperature 257 273	room temperature
+T21	Time 278 293	30 - 60 minutes
+T22	Action 296 305	Spin down
+T23	Reagent 306 317	yeast cells
+T24	Time 322 330	1 minute
+T25	Speed 334 342	2500 RPM
+T26	Action 345 353	Pour out
+T27	Reagent 358 369	supernatant
+T28	Action 374 383	resuspend
+T29	Reagent 388 394	pellet
+T30	Amount 398 401	1mL
+T31	Concentration 405 408	1 x
+T32	Reagent 409 412	PBS
+T33	Action 420 430	centrifuge
+T34	Time 435 443	1 minute
+T35	Speed 447 455	2500 RPM
+T36	Action 458 466	Pour out
+T37	Reagent 471 482	supernatant
+T38	Action 487 496	resuspend
+T39	Reagent 501 507	pellet
+T40	Amount 511 517	200 μL
+T41	Concentration 523 526	1 x
+T42	Reagent 527 530	PBS
+T43	Generic-Measure 533 541	1 : 2000
+T44	Reagent 542 563	Dilution DAPI mixture
+T45	Action 566 569	Add
+T46	Numerical 570 573	one
+T47	Reagent 574 578	drop
+T48	Reagent 586 591	yeast
+T49	Modifier 592 627	suspended in the PBS / DAPI mixture
+T50	Location 635 651	microscope slide
+T51	Action 654 657	add
+T52	Seal 660 669	coverslip
+T53	Location 673 676	top
+T54	Action 686 693	observe
+T55	Modifier 698 705	stained
+T56	Reagent 706 711	yeast
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T8
+E2	Action:T5 Acts-on:T8 Site:T10 Product:T17
+E3	Action:T11 Acts-on:T15 Site:T17 Product:T18
+E4	Action:T19 Acts-on:T18 Product:T23
+E5	Action:T22 Acts-on:T23 Product:T27
+E6	Action:T26 Acts-on:T27 Product:T29
+E7	Action:T28 Acts-on:T29 Using:T32
+E8	Action:T33 Acts-on:E7 Product:T37
+E9	Action:T36 Acts-on:T37 Product:T39
+E10	Action:T38 Acts-on:T39 Using:T42 Product:T48
+E11	Action:T45 Acts-on:T47 Site:T50 Product:T53
+E12	Action:T51 Acts-on:T52 Site:T53 Product:T56
+E13	Action:T54 Acts-on:T56
+R1	Measure Arg1:T8 Arg2:T7
+R2	Or Arg1:T7 Arg2:T6
+R3	Measure Arg1:T10 Arg2:T9
+R4	Measure Arg1:T15 Arg2:T14
+R5	Measure Arg1:T15 Arg2:T13
+R6	Or Arg1:T13 Arg2:T12
+R7	Measure Arg1:T17 Arg2:T16
+R8	Setting Arg1:E4 Arg2:T20
+R9	Setting Arg1:E4 Arg2:T21
+R10	Setting Arg1:E5 Arg2:T24
+R11	Setting Arg1:E5 Arg2:T25
+R12	Measure Arg1:T32 Arg2:T31
+R13	Measure Arg1:T32 Arg2:T30
+R14	Setting Arg1:E8 Arg2:T34
+R15	Setting Arg1:E8 Arg2:T35
+R16	Measure Arg1:T42 Arg2:T41
+R17	Measure Arg1:T44 Arg2:T43
+R18	Measure Arg1:T42 Arg2:T40
+R19	Measure Arg1:T47 Arg2:T46
+R20	Meronym Arg1:T47 Arg2:T48
+R21	Mod-Link Arg1:T56 Arg2:T55
+R22	Setting Arg1:E1 Arg2:T4
+R23	Coreference-Link Arg1:T42 Arg2:T32
+R24	Meronym Arg1:T44 Arg2:T42
+R25	Mod-Link Arg1:T48 Arg2:T49

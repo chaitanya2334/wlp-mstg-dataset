@@ -1,0 +1,65 @@
+T1	Action 67 71	Cool
+T2	Modifier 72 82	autoclaved
+T3	Reagent 83 100	growth media agar
+T4	Temperature 104 108	50°C
+T5	Action 111 114	Add
+T6	Amount 115 120	10 µl
+T7	Reagent 121 137	X - Gal Solution
+T8	Concentration 140 150	20 mg / ml
+T9	Modifier 153 156	per
+T10	Amount 157 161	1 mL
+T11	Reagent 165 170	Media
+T12	Amount 176 180	2 µl
+T13	Reagent 181 197	X - Gal Solution
+T14	Concentration 200 211	100 mg / ml
+T15	Action 236 239	Add
+T16	Amount 240 245	10 µl
+T17	Reagent 246 250	IPTG
+T18	Concentration 253 258	100mM
+T19	Modifier 261 264	per
+T20	Amount 265 269	1 mL
+T21	Reagent 273 278	Media
+T22	Concentration 308 311	1mM
+T23	Action 314 317	Add
+T24	Modifier 318 327	screening
+T25	Reagent 328 348	antibiotic of choice
+T26	Reagent 351 361	Ampicillin
+T27	Reagent 364 373	Kanamycin
+T28	Reagent 376 389	Carbenicillin
+T29	Action 400 404	Pour
+T30	Location 405 411	plates
+T31	Action 425 429	cool
+T32	Temperature 433 449	room temperature
+T33	Time 469 479	30 minutes
+T34	Action 495 501	Spread
+T35	Modifier 502 513	transformed
+T36	Reagent 514 529	competent cells
+T37	Method 530 540	as desired
+E1	Action:T1 Acts-on:T3 Product:T11
+E2	Action:T5 Acts-on:T7 Site:T11 Product:T21
+E3	Action:T15 Acts-on:T17 Site:T21
+E4	Action:T23 Acts-on:T25 Acts-on2:E3
+E5	Action:T29 Acts-on:T30 Acts-on2:E4
+E6	Action:T31 Acts-on:T30 Product:T36
+E7	Action:T34 Acts-on:T36 Using:T37
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T4
+R3	Measure Arg1:T7 Arg2:T6
+R4	Measure Arg1:T7 Arg2:T8
+R5	Measure Arg1:T11 Arg2:T10
+R6	Mod-Link Arg1:T11 Arg2:T9
+R7	Measure Arg1:T13 Arg2:T12
+R8	Measure Arg1:T13 Arg2:T14
+R9	Or Arg1:T7 Arg2:T13
+R10	Measure Arg1:T17 Arg2:T16
+R11	Measure Arg1:T17 Arg2:T18
+R12	Measure Arg1:T21 Arg2:T20
+R13	Mod-Link Arg1:T21 Arg2:T19
+R14	Setting Arg1:E3 Arg2:T22
+R15	Meronym Arg1:T26 Arg2:T25
+R16	Meronym Arg1:T27 Arg2:T25
+R17	Meronym Arg1:T28 Arg2:T25
+R18	Mod-Link Arg1:T25 Arg2:T24
+R19	Setting Arg1:E6 Arg2:T32
+R20	Setting Arg1:E6 Arg2:T33
+R21	Mod-Link Arg1:T36 Arg2:T35

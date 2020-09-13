@@ -1,0 +1,180 @@
+T1	Action 51 56	Label
+T2	Location 61 87	dilution preparation plate
+T3	Reagent 94 101	example
+T4	Action 118 123	Label
+T5	Reagent 128 134	sample
+T6	Location 135 141	plates
+T7	Modifier 151 155	date
+T8	Modifier 158 162	host
+T9	Modifier 165 175	phage name
+T10	Size 253 262	8x1500 µL
+T11	Device 263 287	multi - channel pipettor
+T12	Action 290 293	put
+T13	Amount 294 300	270 µL
+T14	Reagent 304 309	Pro99
+T15	Reagent 313 322	SN medium
+T16	Amount 326 329	all
+T17	Location 330 335	wells
+T18	Location 339 353	dilution plate
+T19	Size 364 370	100 µL
+T20	Device 371 379	pipettor
+T21	Action 382 390	dispense
+T22	Amount 391 396	30 µL
+T23	Reagent 400 412	virus sample
+T24	Location 418 423	row H
+T25	Location 431 445	dilution plate
+T26	Size 500 509	12x300 µL
+T27	Device 510 534	multi - channel pipettor
+T28	Size 542 547	30 µL
+T29	Amount 553 555	12
+T30	Device 556 560	tips
+T31	Action 561 569	attached
+T32	Action 572 579	pipette
+T33	Location 580 585	row H
+T34	Action 601 604	mix
+T35	Reagent 609 617	dilution
+T36	Action 620 627	Replace
+T37	Device 632 636	tips
+T38	Action 641 648	pipette
+T39	Mention 649 654	30 µL
+T40	Location 660 665	row H
+T41	Location 671 676	row A
+T42	Action 698 705	Pipette
+T43	Method 706 717	up and down
+T44	Numerical 718 731	several times
+T45	Action 735 738	mix
+T46	Action 741 748	Replace
+T47	Device 753 757	tips
+T48	Action 762 770	transfer
+T49	Mention 771 776	30 µL
+T50	Location 782 787	row B
+T51	Action 805 811	Repeat
+T52	Method 817 823	mixing
+T53	Method 826 840	replacing tips
+T54	Method 845 857	transferring
+T55	Numerical 858 859	4
+T56	Size 919 928	12x300 µL
+T57	Device 929 953	multi - channel pipettor
+T58	Size 961 966	30 µL
+T59	Amount 972 973	8
+T60	Device 974 978	tips
+T61	Modifier 979 987	attached
+T62	Action 990 995	pipet
+T63	Amount 996 1001	30 µL
+T64	Reagent 1002 1012	host cells
+T65	Location 1022 1039	appropriate wells
+T66	Location 1047 1059	sample plate
+T67	Action 1062 1067	Reset
+T68	Device 1072 1080	pipettor
+T69	Size 1093 1098	20 µL
+T70	Action 1101 1107	put on
+T71	Amount 1108 1109	8
+T72	Modifier 1110 1115	fresh
+T73	Device 1116 1120	tips
+T74	Action 1125 1133	transfer
+T75	Mention 1134 1139	20 µL
+T76	Location 1149 1169	virus dilution plate
+T77	Location 1182 1202	corresponding column
+T78	Location 1210 1227	sample test plate
+T79	Action 1230 1233	Put
+T80	Seal 1238 1242	lids
+T81	Location 1250 1268	sample test plates
+T82	Action 1273 1278	place
+T83	Device 1282 1291	incubator
+T84	Modifier 1298 1309	appropriate
+T85	Generic-Measure 1310 1315	light
+T86	Temperature 1320 1331	temperature
+T87	Reagent 1371 1376	virus
+T88	Action 1377 1383	adsorb
+T89	Reagent 1391 1395	host
+T90	Time 1400 1404	1 hr
+T91	Size 1417 1426	8x1500 µL
+T92	Device 1427 1451	multi - channel pipettor
+T93	Size 1464 1472	6x200 µL
+T94	Action 1475 1478	add
+T95	Amount 1479 1485	200 µL
+T96	Reagent 1489 1494	Pro99
+T97	Reagent 1498 1507	SN medium
+T98	Amount 1511 1514	all
+T99	Location 1515 1520	wells
+T100	Amount 1524 1527	all
+T101	Location 1528 1541	sample plates
+T102	Action 1544 1548	Seal
+T103	Location 1554 1559	plate
+T104	Seal 1565 1573	parafilm
+T105	Action 1578 1584	return
+T106	Location 1585 1591	plates
+T107	Device 1599 1608	incubator
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T18
+E2	Action:T4 Acts-on:T6 Product:T66
+E3	Action:T12 Acts-on:T14 Site:T17 Using:T11 Acts-on2:T15 Product:T25 Product2:T41 Product3:T50
+E4	Action:T21 Acts-on:T23 Using:T20 Site:T24 Product:T33
+E5	Action:T31 Acts-on:T30 Acts-on2:T27
+E6	Action:T32 Acts-on:T33 Site:T27 Product:T37
+E7	Action:T34 Acts-on:T35 Product:T40
+E8	Action:T36 Acts-on:T37
+E9	Action:T38 Acts-on:T39 Site:T41 Acts-on2:E8
+E10	Action:T42 Using:T43 Acts-on:E9
+E11	Action:T45 Acts-on:E9 Product:T47
+E12	Action:T46 Acts-on:T47
+E13	Action:T48 Acts-on:T49 Site:T50 Acts-on2:E11 Acts-on3:E12
+E14	Action:T51 Using:T52 Using2:T53 Using3:T54 Acts-on:E3 Acts-on2:E13 Product:T76
+E15	Action:T62 Acts-on:T64 Site:T65 Using:T57 Product:T68 Product2:T78
+E16	Action:T67 Acts-on:T68
+E17	Action:T70 Acts-on:T73 Site:E16
+E18	Action:T74 Site:T77 Acts-on:T76 Acts-on2:E17 Product:T81
+E19	Action:T79 Site:T81 Acts-on:T80
+E20	Action:T82 Site:T83 Acts-on:E19 Product:T87 Product2:T89
+E21	Action:T88 Acts-on:T87 Site:T89 Product:T101
+E22	Action:T94 Using:T92 Acts-on:T96 Site:T99 Product:T103
+E23	Action:T102 Using:T104 Acts-on:T103 Product:T106
+E24	Action:T105 Acts-on:T106 Site:T107
+R1	Meronym Arg1:T5 Arg2:T6
+R2	Or Arg1:T14 Arg2:T15
+R3	Measure Arg1:T14 Arg2:T13
+R4	Measure Arg1:T15 Arg2:T13
+R5	Measure Arg1:T17 Arg2:T16
+R6	Meronym Arg1:T17 Arg2:T18
+R7	Setting Arg1:T11 Arg2:T10
+R8	Meronym Arg1:T24 Arg2:T25
+R9	Measure Arg1:T23 Arg2:T22
+R10	Setting Arg1:T20 Arg2:T19
+R11	Setting Arg1:T30 Arg2:T29
+R12	Setting Arg1:T27 Arg2:T28
+R13	Setting Arg1:T27 Arg2:T26
+R14	Meronym Arg1:T39 Arg2:T40
+R15	Setting Arg1:E10 Arg2:T44
+R16	Setting Arg1:E14 Arg2:T55
+R17	Setting Arg1:T60 Arg2:T59
+R18	Setting Arg1:T57 Arg2:T56
+R19	Setting Arg1:T57 Arg2:T58
+R20	Measure Arg1:T64 Arg2:T63
+R21	Meronym Arg1:T65 Arg2:T66
+R22	Setting Arg1:T68 Arg2:T69
+R23	Mod-Link Arg1:T73 Arg2:T72
+R24	Setting Arg1:T73 Arg2:T71
+R25	Meronym Arg1:T77 Arg2:T78
+R26	Meronym Arg1:T75 Arg2:T76
+R27	Mod-Link Arg1:T86 Arg2:T84
+R28	Setting Arg1:E20 Arg2:T86
+R29	Mod-Link Arg1:T85 Arg2:T84
+R30	Setting Arg1:E20 Arg2:T85
+R31	Setting Arg1:E21 Arg2:T90
+R32	Setting Arg1:T92 Arg2:T91
+R33	Setting Arg1:T92 Arg2:T93
+R34	Meronym Arg1:T99 Arg2:T101
+R35	Measure Arg1:T101 Arg2:T100
+R36	Measure Arg1:T99 Arg2:T98
+R37	Meronym Arg1:T96 Arg2:T97
+R38	Measure Arg1:T96 Arg2:T95
+R39	Measure Arg1:T97 Arg2:T95
+R40	Mod-Link Arg1:T6 Arg2:T7
+R41	Mod-Link Arg1:T6 Arg2:T8
+R42	Mod-Link Arg1:T6 Arg2:T9
+R43	Meronym Arg1:T35 Arg2:T33
+R44	Enables Arg1:E6 Arg2:E7
+R45	Enables Arg1:E10 Arg2:E11
+R46	Mod-Link Arg1:T57 Arg2:T61
+R47	Coreference-Link Arg1:T14 Arg2:T96
+R48	Coreference-Link Arg1:T15 Arg2:T97
+R49	Coreference-Link Arg1:T83 Arg2:T107

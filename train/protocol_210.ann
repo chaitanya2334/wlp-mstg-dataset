@@ -1,0 +1,138 @@
+T1	Action 22 28	Vortex
+T2	Reagent 33 54	bead stock suspension
+T3	Action 58 63	yield
+T4	Reagent 66 93	homogeneous bead suspension
+T5	Action 96 104	Dissolve
+T6	Amount 105 124	approximately 10 mg
+T7	Modifier 125 129	each
+T8	Reagent 133 136	EDC
+T9	Reagent 141 148	S - NHS
+T10	Numerical 154 155	2
+T11	Location 156 177	microcentrifuge tubes
+T12	Action 182 191	resuspend
+T13	Reagent 195 210	deionized water
+T14	Concentration 214 224	50 mg / mL
+T15	Action 227 237	Centrifuge
+T16	Amount 242 248	100 μl
+T17	Reagent 249 264	bead suspension
+T18	Speed 268 278	10,000 x g
+T19	Modifier 281 290	Carefully
+T20	Action 291 297	remove
+T21	Action 302 309	discard
+T22	Reagent 314 325	supernatant
+T23	Action 328 337	Resuspend
+T24	Reagent 342 347	beads
+T25	Amount 351 356	80 μl
+T26	Reagent 357 374	activation buffer
+T27	Action 377 380	Add
+T28	Amount 381 386	10 μl
+T29	Reagent 390 406	S - NHS solution
+T30	Amount 411 416	10 μl
+T31	Reagent 420 432	EDC solution
+T32	Reagent 440 455	bead suspension
+T33	Action 458 466	Incubate
+T34	Modifier 467 481	with agitation
+T35	Temperature 485 501	room temperature
+T36	Modifier 502 513	in the dark
+T37	Speed 525 532	900 rpm
+T38	Action 535 541	Dilute
+T39	Reagent 547 569	protein stock solution
+T40	Reagent 575 590	coupling buffer
+T41	Concentration 613 624	0.1 mg / ml
+T42	Amount 640 646	100 μl
+T43	Action 789 799	Centrifuge
+T44	Reagent 804 809	beads
+T45	Speed 813 823	10,000 x g
+T46	Modifier 826 835	Carefully
+T47	Action 836 842	remove
+T48	Action 847 854	discard
+T49	Reagent 859 870	supernatant
+T50	Action 873 876	Add
+T51	Reagent 881 905	diluted protein solution
+T52	Action 908 915	Agitate
+T53	Location 920 924	tube
+T54	Reagent 930 945	activated beads
+T55	Reagent 950 966	protein solution
+T56	Time 967 976	overnight
+T57	Temperature 980 982	4C
+T58	Speed 994 1001	900 rpm
+T59	Modifier 1002 1013	in the dark
+T60	Action 1036 1046	Centrifuge
+T61	Reagent 1051 1056	beads
+T62	Speed 1060 1070	10,000 x g
+T63	Action 1073 1080	Discard
+T64	Reagent 1081 1092	supernatant
+T65	Action 1095 1099	Wash
+T66	Reagent 1104 1109	beads
+T67	Numerical 1110 1121	three times
+T68	Reagent 1127 1130	PBS
+T69	Concentration 1133 1136	1 %
+T70	Reagent 1137 1140	BSA
+T71	Action 1143 1152	Resuspend
+T72	Reagent 1157 1168	bead pellet
+T73	Amount 1172 1176	1 ml
+T74	Reagent 1177 1180	PBS
+T75	Concentration 1183 1186	1 %
+T76	Reagent 1187 1190	BSA
+T77	Action 1193 1221	Determine bead concentration
+T78	Reagent 1228 1235	Luminex
+T79	Action 1240 1253	adjust amount
+T80	Reagent 1257 1262	stock
+T81	Modifier 1268 1279	accordingly
+E1	Action:T1 Acts-on:T2
+E2	Action:T3 Product:T4
+E3	Action:T5 Acts-on:T8 Acts-on2:T9 Site:T11
+E4	Action:T12 Acts-on:E3 Site:T13 Product:T29 Product2:T31
+E5	Action:T15 Acts-on:T17 Product:T22
+E6	Action:T20 Acts-on:T22
+E7	Action:T21 Acts-on:E6 Product:T24
+E8	Action:T23 Acts-on:T24 Site:T26 Product:T32
+E9	Action:T27 Acts-on:T29 Acts-on2:T31 Site:T32
+E10	Action:T33 Acts-on:E9 Product:T44
+E11	Action:T38 Acts-on:T39 Using:T40 Product:T51
+E12	Action:T43 Acts-on:T44 Product:T49
+E13	Action:T47 Acts-on:T49
+E14	Action:T48 Acts-on:E13
+E15	Action:T50 Site:E14 Acts-on:T51 Product:T53
+E16	Action:T52 Acts-on:T53 Product:T61
+E17	Action:T60 Acts-on:T61 Product:T64
+E18	Action:T63 Acts-on:T64 Product:T66
+E19	Action:T65 Count:T67 Acts-on:T66 Using:T68 Product:T72
+E20	Action:T71 Acts-on:T72 Site:T74
+E21	Action:T77 Using:T78 Acts-on:E20 Product:T80
+E22	Action:T79 Acts-on:T80
+R1	Measure Arg1:T8 Arg2:T6
+R2	Measure Arg1:T9 Arg2:T6
+R3	Measure Arg1:T11 Arg2:T10
+R4	Setting Arg1:E4 Arg2:T14
+R5	Measure Arg1:T17 Arg2:T16
+R6	Setting Arg1:E5 Arg2:T18
+R7	Measure Arg1:T26 Arg2:T25
+R8	Measure Arg1:T31 Arg2:T30
+R9	Measure Arg1:T29 Arg2:T28
+R10	Mod-Link Arg1:E10 Arg2:T34
+R11	Mod-Link Arg1:E10 Arg2:T36
+R12	Setting Arg1:E10 Arg2:T35
+R13	Setting Arg1:E10 Arg2:T37
+R14	Setting Arg1:E11 Arg2:T41
+R15	Setting Arg1:E11 Arg2:T42
+R16	Setting Arg1:E12 Arg2:T45
+R17	Meronym Arg1:T54 Arg2:T53
+R18	Meronym Arg1:T55 Arg2:T53
+R19	Setting Arg1:E16 Arg2:T56
+R20	Setting Arg1:E16 Arg2:T57
+R21	Setting Arg1:E16 Arg2:T58
+R22	Mod-Link Arg1:E16 Arg2:T59
+R23	Setting Arg1:E17 Arg2:T62
+R24	Measure Arg1:T70 Arg2:T69
+R25	Measure Arg1:T76 Arg2:T75
+R26	Measure Arg1:T74 Arg2:T73
+R27	Mod-Link Arg1:E22 Arg2:T81
+R28	Mod-Link Arg1:E6 Arg2:T19
+R29	Mod-Link Arg1:E13 Arg2:T46
+R30	Enables Arg1:E1 Arg2:E2
+R31	Coreference-Link Arg1:T17 Arg2:T4
+R32	Mod-Link Arg1:T6 Arg2:T7
+R33	Meronym Arg1:T70 Arg2:T68
+R34	Meronym Arg1:T76 Arg2:T74
+R35	Coreference-Link Arg1:T74 Arg2:T68

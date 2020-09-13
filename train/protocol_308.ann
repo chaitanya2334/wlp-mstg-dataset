@@ -1,0 +1,199 @@
+T1	Action 55 63	Fragment
+T2	Amount 64 69	400ng
+T3	Modifier 73 82	amplified
+T4	Reagent 83 87	mRNA
+T5	Generic-Measure 91 99	10‐200nt
+T6	Concentration 106 109	10x
+T7	Reagent 110 134	RNA fragmentation buffer
+T8	Action 148 154	Purify
+T9	Method 161 190	regular ethanol precipitation
+T10	Amount 203 209	0.35μl
+T11	Reagent 213 222	GlycoBlue
+T12	Action 236 251	Dephosphorylate
+T13	Location 256 262	3’ end
+T14	Reagent 267 278	RNA samples
+T15	Concentration 285 288	10x
+T16	Reagent 289 317	Antarctic Phosphatase Buffer
+T17	Amount 322 328	0.5 μl
+T18	Reagent 329 350	Antarctic Phosphatase
+T19	Temperature 362 367	37 °C
+T20	Time 372 382	20 minutes
+T21	Action 385 400	Heat inactivate
+T22	Temperature 404 408	75°C
+T23	Time 413 423	10 minutes
+T24	Action 426 439	Phosphorylate
+T25	Location 444 450	5’ end
+T26	Reagent 454 465	RNA samples
+T27	Concentration 476 479	10x
+T28	Reagent 480 500	T4 DNA ligase buffer
+T29	Concentration 510 513	1mM
+T30	Reagent 514 523	ATP final
+T31	Reagent 530 536	T4 PNK
+T32	Temperature 548 553	37 °C
+T33	Time 558 568	30 minutes
+T34	Action 571 577	Purify
+T35	Reagent 582 586	RNAs
+T36	Method 610 652	ammonium acetate and ethanol precipitation
+T37	Amount 658 661	2μl
+T38	Reagent 665 674	GlycoBlue
+T39	Action 688 694	Ligate
+T40	Reagent 699 710	RNA samples
+T41	Temperature 714 719	37 °C
+T42	Time 724 732	one hour
+T43	Reagent 736 799	3’ linker ( 5’‐ / 5rApp / CTG TAG GCA CCA TCA AT / 3ddC / ‐3’ )
+T44	Reagent 831 846	T4 RNA ligase 1
+T45	Concentration 857 859	5X
+T46	Modifier 860 868	ATP‐free
+T47	Reagent 869 889	T4 RNA ligase buffer
+T48	Concentration 892 899	16.5 mM
+T49	Reagent 900 903	DTT
+T50	Concentration 906 912	41.5 %
+T51	Reagent 913 921	glycerol
+T52	Concentration 924 930	250 mM
+T53	Reagent 931 940	HEPES‐KOH
+T54	pH 943 948	pH8.3
+T55	Concentration 951 956	50 mM
+T56	Reagent 957 962	MgCl2
+T57	Concentration 965 975	50 μg / ml
+T58	Reagent 976 990	acetylated BSA
+T59	Concentration 999 1003	10 %
+T60	Reagent 1004 1008	DMSO
+T61	Action 1011 1017	Purify
+T62	Reagent 1022 1026	RNAs
+T63	Method 1050 1092	ammonium acetate and ethanol precipitation
+T64	Amount 1098 1101	2μl
+T65	Reagent 1105 1114	GlycoBlue
+T66	Action 1128 1131	Run
+T67	Reagent 1136 1147	RNA samples
+T68	Concentration 1151 1154	6 %
+T69	Reagent 1155 1172	TBE‐Urea PAGE Gel
+T70	Action 1190 1193	Cut
+T71	Generic-Measure 1194 1203	100‐200nt
+T72	Reagent 1204 1209	bands
+T73	Action 1214 1219	elute
+T74	Time 1220 1229	overnight
+T75	Amount 1235 1240	400μl
+T76	Reagent 1241 1254	stop solution
+T77	Concentration 1257 1259	1M
+T78	Reagent 1260 1276	ammonium acetate
+T79	Concentration 1281 1285	10mM
+T80	Reagent 1286 1290	EDTA
+T81	Temperature 1296 1299	4°C
+T82	Action 1302 1308	Purify
+T83	Reagent 1313 1317	RNAs
+T84	Reagent 1325 1336	supernatant
+T85	Modifier 1343 1350	regular
+T86	Method 1351 1379	ethanol precipitation method
+T87	Amount 1385 1388	2μl
+T88	Reagent 1392 1401	GlycoBlue
+T89	Action 1415 1421	Ligate
+T90	Reagent 1426 1437	RNA samples
+T91	Temperature 1441 1445	37°C
+T92	Time 1450 1456	1 hour
+T93	Reagent 1460 1469	5’ linker
+T94	Reagent 1496 1511	T4 RNA ligase 1
+T95	Concentration 1522 1525	10x
+T96	Reagent 1526 1548	T4 RNA ligase 1 buffer
+T97	Concentration 1563 1567	10 %
+T98	Reagent 1568 1572	DMSO
+T99	Action 1575 1581	Purify
+T100	Reagent 1586 1590	RNAs
+T101	Method 1594 1636	ammonium acetate and ethanol precipitation
+T102	Method 1641 1657	gel purification
+T103	Action 1689 1707	Reverse transcribe
+T104	Reagent 1708 1712	cDNA
+T105	Reagent 1720 1731	RNA samples
+T106	Device 1738 1753	SuperScript III
+T107	Action 1889 1896	Amplify
+T108	Reagent 1901 1913	cDNA samples
+T109	Reagent 1920 1923	Taq
+T110	Action 1967 1973	Purify
+T111	Reagent 1978 1990	PCR products
+T112	Reagent 2011 2038	Qiagen PCR purification kit
+T113	Action 2041 2047	Dilute
+T114	Modifier 2052 2060	purified
+T115	Reagent 2061 2072	PCR samples
+T116	Concentration 2076 2080	10nM
+T117	Action 2085 2093	sequence
+T118	Device 2100 2132	Illumina GA II sequencing system
+E1	Action:T1 Acts-on:T4 Using:T7
+E2	Action:T8 Using:T9 Using2:T11 Acts-on:E1 Product:T14
+E3	Action:T12 Using:T16 Using2:T18 Acts-on:T13
+E4	Action:T21 Acts-on:E3 Product:T26
+E5	Action:T24 Using:T28 Acts-on:T25 Using2:T31 Product:T35
+E6	Action:T34 Acts-on:T35 Using:T38 Using2:T36 Product:T40
+E7	Action:T39 Acts-on:T40 Product:T43 Using:T44 Using2:T47 Using3:T60
+E8	Action:T61 Acts-on:T62 Using:T65 Using2:T63 Product:T67
+E9	Action:T66 Acts-on:T67 Site:T69 Product:T72
+E10	Action:T70 Acts-on:T72
+E11	Action:T73 Using:T76 Acts-on:E10 Product:T83
+E12	Action:T82 Acts-on:T83 Using:T86 Using2:T88 Product:T90
+E13	Action:T89 Acts-on:T90 Product:T93 Using:T94 Using2:T96 Using3:T98
+E14	Action:T99 Using:T101 Using2:T102 Acts-on:T100 Product:T105
+E15	Action:T103 Acts-on:T104 Using:T106 Product:T108
+E16	Action:T107 Acts-on:T108 Using:T109 Product:T111
+E17	Action:T110 Acts-on:T111 Using:T112 Product:T115
+E18	Action:T113 Acts-on:T115
+E19	Action:T117 Using:T118 Acts-on:E18
+R1	Measure Arg1:T7 Arg2:T6
+R2	Mod-Link Arg1:T4 Arg2:T3
+R3	Measure Arg1:T4 Arg2:T2
+R4	Setting Arg1:E1 Arg2:T5
+R5	Measure Arg1:T11 Arg2:T10
+R6	Measure Arg1:T16 Arg2:T15
+R7	Measure Arg1:T18 Arg2:T17
+R8	Setting Arg1:E3 Arg2:T19
+R9	Setting Arg1:E3 Arg2:T20
+R10	Setting Arg1:E4 Arg2:T22
+R11	Setting Arg1:E4 Arg2:T23
+R12	Measure Arg1:T28 Arg2:T27
+R13	Setting Arg1:E5 Arg2:T32
+R14	Setting Arg1:E5 Arg2:T33
+R15	Measure Arg1:T30 Arg2:T29
+R16	Meronym Arg1:T30 Arg2:T28
+R17	Measure Arg1:T38 Arg2:T37
+R18	Measure Arg1:T49 Arg2:T48
+R19	Measure Arg1:T51 Arg2:T50
+R20	Measure Arg1:T53 Arg2:T52
+R21	Measure Arg1:T53 Arg2:T54
+R22	Measure Arg1:T56 Arg2:T55
+R23	Measure Arg1:T58 Arg2:T57
+R24	Measure Arg1:T60 Arg2:T59
+R25	Meronym Arg1:T49 Arg2:T47
+R26	Meronym Arg1:T51 Arg2:T47
+R27	Meronym Arg1:T53 Arg2:T47
+R28	Meronym Arg1:T56 Arg2:T47
+R29	Meronym Arg1:T58 Arg2:T47
+R30	Mod-Link Arg1:T47 Arg2:T46
+R31	Measure Arg1:T47 Arg2:T45
+R32	Setting Arg1:E7 Arg2:T41
+R33	Setting Arg1:E7 Arg2:T42
+R34	Measure Arg1:T65 Arg2:T64
+R35	Measure Arg1:T69 Arg2:T68
+R36	Measure Arg1:T72 Arg2:T71
+R37	Setting Arg1:E11 Arg2:T74
+R38	Measure Arg1:T76 Arg2:T75
+R39	Measure Arg1:T78 Arg2:T77
+R40	Measure Arg1:T80 Arg2:T79
+R41	Meronym Arg1:T78 Arg2:T76
+R42	Meronym Arg1:T80 Arg2:T76
+R43	Setting Arg1:E11 Arg2:T81
+R44	Measure Arg1:T88 Arg2:T87
+R45	Meronym Arg1:T83 Arg2:T84
+R46	Measure Arg1:T98 Arg2:T97
+R47	Measure Arg1:T96 Arg2:T95
+R48	Setting Arg1:E13 Arg2:T91
+R49	Setting Arg1:E13 Arg2:T92
+R50	Meronym Arg1:T104 Arg2:T105
+R51	Mod-Link Arg1:T115 Arg2:T114
+R52	Setting Arg1:E18 Arg2:T116
+R53	Meronym Arg1:T13 Arg2:T14
+R54	Meronym Arg1:T25 Arg2:T26
+R55	Coreference-Link Arg1:T43 Arg2:T62
+R56	Coreference-Link Arg1:T11 Arg2:T38
+R57	Coreference-Link Arg1:T38 Arg2:T65
+R58	Coreference-Link Arg1:T65 Arg2:T88
+R59	Coreference-Link Arg1:T93 Arg2:T100
+R60	Coreference-Link Arg1:T44 Arg2:T94
+R61	Coreference-Link Arg1:T47 Arg2:T96
+R62	Coreference-Link Arg1:T60 Arg2:T98

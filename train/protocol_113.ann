@@ -1,0 +1,58 @@
+T1	Action 48 57	Transform
+T2	Reagent 58 76	expression plasmid
+T3	Reagent 82 86	BL21
+T4	Reagent 89 92	DE3
+T5	Action 97 102	Plate
+T6	Location 106 133	antibiotic selection plates
+T7	Action 136 144	Incubate
+T8	Time 145 154	overnight
+T9	Temperature 158 162	37°C
+T10	Action 165 174	Resuspend
+T11	Reagent 177 190	single colony
+T12	Amount 194 199	10 ml
+T13	Reagent 200 230	liquid culture with antibiotic
+T14	Action 233 241	Incubate
+T15	Temperature 245 249	37°C
+T16	Measure-Type 256 261	OD600
+T17	Action 262 269	reaches
+T18	Numerical 270 277	0.4–0.8
+T19	Action 280 286	Induce
+T20	Numerical 292 293	4
+T21	Amount 297 302	40 µl
+T22	Concentration 308 314	100 mM
+T23	Reagent 324 328	IPTG
+T24	Reagent 331 350	final concentration
+T25	Numerical 354 356	40
+T26	Concentration 360 366	400 µM
+T27	Action 369 375	Induce
+T28	Time 380 392	3 to 5 hours
+T29	Temperature 396 400	37°C
+T30	Action 403 423	Check for expression
+T31	Reagent 434 463	Coomassie stained protein gel
+T32	Reagent 466 478	Western Blot
+T33	Reagent 482 496	activity assay
+E1	Action:T1 Acts-on:T2 Product:T3
+E2	Action:T5 Site:T6 Acts-on:T3
+E3	Action:T7 Acts-on:E2 Product:T11
+E4	Action:T10 Acts-on:T11 Site:T13
+E5	Action:T14 Acts-on:E4
+E6	Action:T17 Measure-Type-Link:T16
+E7	Action:T19 Using:T23 Product:T24 Acts-on:E6
+E8	Action:T27 Acts-on:E7
+E9	Action:T30 Using:T31 Acts-on:E8
+R1	Setting Arg1:E3 Arg2:T9
+R2	Measure Arg1:T13 Arg2:T12
+R3	Measure Arg1:T23 Arg2:T22
+R4	Measure Arg1:T23 Arg2:T21
+R5	Setting Arg1:E8 Arg2:T28
+R6	Setting Arg1:E8 Arg2:T29
+R7	Or Arg1:T3 Arg2:T4
+R8	Setting Arg1:E3 Arg2:T8
+R9	Setting Arg1:E5 Arg2:T15
+R10	Setting Arg1:E6 Arg2:T18
+R11	Or Arg1:T21 Arg2:T20
+R12	Or Arg1:T26 Arg2:T25
+R13	Measure Arg1:T24 Arg2:T26
+R14	Or Arg1:T31 Arg2:T32
+R15	Or Arg1:T32 Arg2:T33
+R16	Enables Arg1:E5 Arg2:E6

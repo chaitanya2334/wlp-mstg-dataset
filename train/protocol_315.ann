@@ -1,0 +1,111 @@
+T1	Concentration 66 69	2 %
+T2	Reagent 70 82	PFA Fixation
+T3	Action 85 88	Add
+T4	Reagent 89 92	PFA
+T5	Method 93 105	drop by drop
+T6	Method 110 116	mixing
+T7	Modifier 117 126	carefully
+T8	Amount 132 135	1mL
+T9	Reagent 136 141	cells
+T10	Concentration 171 178	2 % PFA
+T11	Action 181 189	Incubate
+T12	Reagent 190 195	cells
+T13	Time 200 205	4 min
+T14	Temperature 209 225	room temperature
+T15	Action 228 238	Centrifuge
+T16	Speed 242 247	1000g
+T17	Time 252 261	5 minutes
+T18	Action 264 268	Wash
+T19	Reagent 269 274	cells
+T20	Reagent 280 285	1XPBS
+T21	Action 298 307	Resuspend
+T22	Reagent 308 313	cells
+T23	Amount 319 322	1mL
+T24	Reagent 323 330	1xPBS .
+T25	Action 331 334	Add
+T26	Amount 335 343	1 / 1000
+T27	Reagent 344 359	lysotracker dye
+T28	Amount 362 366	1 uL
+T29	Reagent 370 381	lysotracker
+T30	Amount 388 391	1mL
+T31	Reagent 408 413	cells
+T32	Temperature 416 432	Room temperature
+T33	Action 435 447	protect from
+T34	Location 448 453	light
+T35	Action 456 459	Add
+T36	Amount 460 468	1 / 1000
+T37	Reagent 469 477	DAPI dye
+T38	Temperature 480 496	Room temperature
+T39	Action 499 511	protect from
+T40	Location 512 517	light
+T41	Action 520 530	Centrifuge
+T42	Speed 534 539	1000g
+T43	Time 544 553	5 minutes
+T44	Action 558 567	resuspend
+T45	Reagent 573 578	1xPBS
+T46	Action 626 630	Wash
+T47	Reagent 631 636	cells
+T48	Reagent 642 647	1XPBS
+T49	Action 660 664	Wash
+T50	Reagent 670 675	1xPBS
+T51	Action 688 692	Wash
+T52	Reagent 698 703	1xPBS
+T53	Action 716 724	Incubate
+T54	Time 729 735	20 min
+T55	Temperature 738 754	Room temperature
+T56	Action 757 769	protect from
+T57	Location 770 775	light
+T58	Action 778 786	Incubate
+T59	Time 791 800	5 minutes
+T60	Temperature 803 819	Room temperature
+T61	Action 822 834	protect from
+T62	Location 835 840	light
+E1	Action:T3 Acts-on:T4 Using:T5 Site:T9 Using2:T6 Product:T2
+E2	Action:T11 Acts-on:T12
+E3	Action:T15 Acts-on:E2 Product:T19
+E4	Action:T18 Acts-on:T19 Using:T20 Product:T22
+E5	Action:T21 Acts-on:T22 Using:T24
+E6	Action:T25 Acts-on:T27 Product:T31 Site:E5
+E7	Action:T33 Acts-on:T34 Site:E6
+E8	Action:T35 Acts-on:T37 Site:E7
+E9	Action:T39 Acts-on:T40 Site:E8
+E10	Action:T41 Acts-on:E9
+E11	Action:T44 Using:T45 Acts-on:E10 Product:T47
+E12	Action:T46 Acts-on:T47 Using:T48
+E13	Action:T49 Using:T50 Acts-on:E12
+E14	Action:T51 Using:T52 Acts-on:E13
+E15	Action:T53 Acts-on:E14
+E16	Action:T56 Acts-on:T57 Site:E15
+E17	Action:T58 Acts-on:E16
+E18	Action:T61 Acts-on:T62 Site:E17
+R1	Measure Arg1:T2 Arg2:T1
+R2	Measure Arg1:T9 Arg2:T8
+R3	Setting Arg1:E2 Arg2:T13
+R4	Setting Arg1:E2 Arg2:T14
+R5	Setting Arg1:E3 Arg2:T16
+R6	Setting Arg1:E3 Arg2:T17
+R7	Measure Arg1:T24 Arg2:T23
+R8	Measure Arg1:T31 Arg2:T30
+R9	Measure Arg1:T27 Arg2:T26
+R10	Measure Arg1:T29 Arg2:T28
+R11	Measure Arg1:T37 Arg2:T36
+R12	Setting Arg1:E10 Arg2:T42
+R13	Setting Arg1:E10 Arg2:T43
+R14	Setting Arg1:E17 Arg2:T59
+R15	Setting Arg1:E15 Arg2:T54
+R16	Mod-Link Arg1:E1 Arg2:T7
+R17	Setting Arg1:E1 Arg2:T10
+R18	Coreference-Link Arg1:T12 Arg2:T2
+R19	Coreference-Link Arg1:T24 Arg2:T20
+R20	Meronym Arg1:T29 Arg2:T27
+R21	Setting Arg1:E7 Arg2:T32
+R22	Setting Arg1:E9 Arg2:T38
+R23	Coreference-Link Arg1:T45 Arg2:T24
+R24	Coreference-Link Arg1:T48 Arg2:T45
+R25	Coreference-Link Arg1:T50 Arg2:T48
+R26	Coreference-Link Arg1:T52 Arg2:T50
+R27	Setting Arg1:E16 Arg2:T55
+R28	Setting Arg1:E18 Arg2:T60
+R29	Coreference-Link Arg1:T62 Arg2:T57
+R30	Coreference-Link Arg1:T57 Arg2:T40
+R31	Coreference-Link Arg1:T40 Arg2:T34

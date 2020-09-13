@@ -1,0 +1,230 @@
+T1	Action 50 57	Prepare
+T2	Reagent 58 63	cells
+T3	Location 74 80	tissue
+T4	Action 93 107	without lysing
+T5	Reagent 108 120	erythrocytes
+T6	Action 170 179	resuspend
+T7	Reagent 184 189	cells
+T8	Location 193 209	MojoSort™ Buffer
+T9	Action 213 220	filling
+T10	Amount 227 231	4 mL
+T11	Modifier 237 241	5 mL
+T12	Size 242 256	( 12 x 75 mm )
+T13	Location 257 273	polystyrene tube
+T14	Action 283 287	Keep
+T15	Reagent 288 304	MojoSort™ Buffer
+T16	Location 308 311	ice
+T17	Action 339 345	Filter
+T18	Reagent 350 355	cells
+T19	Size 363 368	70 μm
+T20	Device 369 382	cell strainer
+T21	Action 385 395	centrifuge
+T22	Speed 399 406	300 x g
+T23	Time 411 420	5 minutes
+T24	Action 427 436	resuspend
+T25	Reagent 465 481	MojoSort™ Buffer
+T26	Action 484 489	Count
+T27	Action 494 500	adjust
+T28	Reagent 505 523	cell concentration
+T29	Concentration 527 545	1 x 108 cells / mL
+T30	Action 548 555	Aliquot
+T31	Amount 556 562	100 μL
+T32	Reagent 566 581	cell suspension
+T33	Modifier 603 606	new
+T34	Location 607 611	tube
+T35	Action 614 617	Add
+T36	Amount 618 623	10 μL
+T37	Reagent 631 657	Biotin - Antibody Cocktail
+T38	Action 660 668	mix well
+T39	Action 673 681	incubate
+T40	Location 685 688	ice
+T41	Time 693 703	15 minutes
+T42	Action 706 714	Scale up
+T43	Mention 719 725	volume
+T44	Action 741 751	separating
+T45	Modifier 752 756	more
+T46	Reagent 757 762	cells
+T47	Action 815 822	working
+T48	Modifier 828 837	less than
+T49	Numerical 838 841	107
+T50	Reagent 842 847	cells
+T51	Action 850 853	use
+T52	Modifier 854 863	indicated
+T53	Mention 864 871	volumes
+T54	Numerical 876 879	107
+T55	Reagent 880 885	cells
+T56	Action 899 903	Keep
+T57	Modifier 904 910	unused
+T58	Reagent 911 916	cells
+T59	Action 922 926	take
+T60	Amount 930 937	aliquot
+T61	Action 945 951	adding
+T62	Reagent 956 964	cocktail
+T63	Action 995 999	Wash
+T64	Reagent 1004 1009	cells
+T65	Action 1013 1019	adding
+T66	Reagent 1020 1036	MojoSort™ Buffer
+T67	Amount 1043 1047	4 mL
+T68	Action 1050 1060	centrifuge
+T69	Reagent 1065 1070	cells
+T70	Speed 1074 1081	300 x g
+T71	Time 1086 1095	5 minutes
+T72	Action 1098 1105	Discard
+T73	Reagent 1106 1117	supernatant
+T74	Action 1122 1131	resuspend
+T75	Amount 1135 1141	100 μL
+T76	Location 1145 1161	MojoSort™ Buffer
+T77	Location 1167 1173	volume
+T78	Action 1184 1188	keep
+T79	Reagent 1193 1198	cells
+T80	Concentration 1202 1220	1 x 108 cells / mL
+T81	Action 1223 1232	Resuspend
+T82	Reagent 1237 1242	beads
+T83	Action 1246 1255	vortexing
+T84	Numerical 1274 1275	5
+T85	Measure-Type 1276 1283	touches
+T86	Action 1286 1289	Add
+T87	Amount 1290 1295	10 μL
+T88	Reagent 1299 1321	Streptavidin Nanobeads
+T89	Action 1324 1327	Mix
+T90	Modifier 1328 1332	well
+T91	Action 1337 1345	incubate
+T92	Location 1349 1352	ice
+T93	Time 1357 1367	15 minutes
+T94	Action 1370 1378	Scale up
+T95	Reagent 1383 1389	volume
+T96	Action 1405 1415	separating
+T97	Modifier 1416 1420	more
+T98	Reagent 1421 1426	cells
+T99	Action 1552 1555	Add
+T100	Reagent 1556 1572	MojoSort™ Buffer
+T101	Amount 1579 1583	2 mL
+T102	Action 1588 1593	place
+T103	Device 1598 1602	tube
+T104	Location 1610 1616	magnet
+T105	Time 1621 1630	5 minutes
+T106	Action 1633 1640	Collect
+T107	Reagent 1645 1651	liquid
+T108	Modifier 1657 1662	clean
+T109	Device 1663 1667	tube
+T110	Action 1670 1686	DO NOT DISCARD .
+T111	Action 1782 1788	Remove
+T112	Device 1793 1797	tube
+T113	Location 1807 1813	magnet
+T114	Action 1818 1827	resuspend
+T115	Reagent 1832 1837	cells
+T116	Amount 1841 1845	2 mL
+T117	Location 1849 1865	MojoSort™ Buffer
+T118	Action 1868 1873	Place
+T119	Location 1891 1897	magnet
+T120	Time 1902 1911	5 minutes
+T121	Action 1914 1921	Collect
+T122	Reagent 1926 1932	liquid
+T123	Modifier 1940 1944	same
+T124	Device 1945 1949	tube
+T125	Action 1965 1979	DO NOT DISCARD
+T126	Action 1996 2003	observe
+T127	Reagent 2004 2014	aggregates
+T128	Action 2017 2023	filter
+T129	Reagent 2028 2038	suspension
+T130	Action 2069 2076	disrupt
+T131	Reagent 2081 2091	aggregates
+T132	Action 2095 2104	pipetting
+T133	Reagent 2109 2117	solution
+T134	Method 2118 2129	up and down
+T135	Action 2132 2140	Pour out
+T136	Action 2145 2152	collect
+T137	Reagent 2157 2163	liquid
+T138	Action 2200 2214	DO NOT DISCARD
+T139	Action 2217 2221	Take
+T140	Device 2226 2255	pooled negative fraction tube
+T141	Action 2338 2343	place
+T142	Mention 2348 2352	tube
+T143	Location 2360 2366	magnet
+T144	Amount 2371 2380	5 minutes
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T5
+E3	Action:T6 Acts-on:T7 Site:T8
+E4	Action:T9 Acts-on:T7 Site:T13 Product:T18
+E5	Action:T14 Product:T8 Acts-on:T15 Site:T16 Product2:T66
+E6	Action:T17 Acts-on:T18 Using:T20
+E7	Action:T21 Acts-on:E6
+E8	Action:T24 Acts-on:E7 Acts-on2:T25
+E9	Action:T26 Acts-on:E8 Acts-on2:T28
+E10	Action:T27 Acts-on:E9 Acts-on2:T28 Product:T32
+E11	Action:T30 Acts-on:T32 Site:T34
+E12	Action:T35 Site:E11 Acts-on:T37
+E13	Action:T38 Acts-on:E12 Acts-on2:T37
+E14	Action:T39 Acts-on:T37 Acts-on2:E13 Site:T40
+E15	Action:T42 Acts-on:T43
+E16	Action:T44 Acts-on:T46
+E17	Action:T47 Acts-on:T50
+E18	Action:T51 Acts-on:T53
+E19	Action:T56 Acts-on:T58
+E20	Action:T59 Acts-on:T58
+E21	Action:T61 Acts-on:T62
+E22	Action:T63 Acts-on:T64
+E23	Action:T65 Acts-on:T66
+E24	Action:T68 Acts-on:T69 Product:T73
+E25	Action:T72 Acts-on:T73
+E26	Action:T74 Acts-on:E25 Site:T76 Site2:T77
+E27	Action:T78 Acts-on:T79
+E28	Action:T81 Acts-on:T82 Product:T88
+E29	Action:T83 Acts-on:T82 Measure-Type-Link:T85
+E30	Action:T86 Site:E26 Acts-on:T88
+E31	Action:T89 Acts-on:E30
+E32	Action:T91 Acts-on:E31 Site:T92
+E33	Action:T94 Acts-on:T95
+E34	Action:T96 Acts-on:T98
+E35	Action:T99 Site:E32 Acts-on:T100 Product:T103
+E36	Action:T102 Acts-on:T103 Site:T104 Product:T107
+E37	Action:T106 Acts-on:T107 Using:T109 Product:T112
+E38	Action:T110 
+E39	Action:T111 Acts-on:T112 Site:T113 Product:T115
+E40	Action:T114 Acts-on:T115 Site:T117
+E41	Action:T118 Acts-on:E40 Site:T119 Product:T122
+E42	Action:T121 Acts-on:T122 Using:T124
+E43	Action:T125 
+E44	Action:T126 Acts-on:T127
+E45	Action:T128 Acts-on:T129
+E46	Action:T130 Acts-on:T131
+E47	Action:T132 Acts-on:T133 Using:T134
+E48	Action:T135 Acts-on:T137
+E49	Action:T136 Acts-on:T137
+E50	Action:T138 
+E51	Action:T139 Acts-on:T140
+E52	Action:T141 Acts-on:T142 Site:T143
+R1	Measure Arg1:T7 Arg2:T10
+R2	Mod-Link Arg1:T13 Arg2:T11
+R3	Measure Arg1:T13 Arg2:T12
+R4	Measure Arg1:T20 Arg2:T19
+R5	Setting Arg1:E7 Arg2:T22
+R6	Setting Arg1:E7 Arg2:T23
+R7	Measure Arg1:T28 Arg2:T29
+R8	Measure Arg1:T32 Arg2:T31
+R9	Mod-Link Arg1:T34 Arg2:T33
+R10	Measure Arg1:T37 Arg2:T36
+R11	Setting Arg1:E14 Arg2:T41
+R12	Mod-Link Arg1:T46 Arg2:T45
+R13	Measure Arg1:T50 Arg2:T49
+R14	Mod-Link Arg1:T53 Arg2:T52
+R15	Measure Arg1:T55 Arg2:T54
+R16	Mod-Link Arg1:T58 Arg2:T57
+R17	Measure Arg1:T58 Arg2:T60
+R18	Measure Arg1:T66 Arg2:T67
+R19	Setting Arg1:E24 Arg2:T70
+R20	Setting Arg1:E24 Arg2:T71
+R21	Measure Arg1:T76 Arg2:T75
+R22	Measure Arg1:T79 Arg2:T80
+R23	Of-Type Arg1:T84 Arg2:T85
+R24	Measure Arg1:T88 Arg2:T87
+R25	Mod-Link Arg1:E31 Arg2:T90
+R26	Setting Arg1:E32 Arg2:T93
+R27	Mod-Link Arg1:T98 Arg2:T97
+R28	Measure Arg1:T100 Arg2:T101
+R29	Setting Arg1:E36 Arg2:T105
+R30	Mod-Link Arg1:T109 Arg2:T108
+R31	Measure Arg1:T117 Arg2:T116
+R32	Setting Arg1:E41 Arg2:T120
+R33	Mod-Link Arg1:T124 Arg2:T123
+R34	Setting Arg1:E52 Arg2:T144

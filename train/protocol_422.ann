@@ -1,0 +1,130 @@
+T1	Action 39 46	Harvest
+T2	Reagent 47 58	lymph nodes
+T3	Reagent 141 145	mice
+T4	Action 148 153	Tease
+T5	Reagent 154 165	lymph nodes
+T6	Modifier 176 183	sterile
+T7	Size 184 191	70 - µm
+T8	Device 192 211	nylon cell strainer
+T9	Reagent 222 263	single - cell suspensions incomplete RPMI
+T10	Concentration 275 279	10 %
+T11	Reagent 280 283	FCS
+T12	Action 306 315	Resuspend
+T13	Reagent 316 321	cells
+T14	Reagent 325 340	complete medium
+T15	Method 349 369	your favorite method
+T16	Action 373 380	isolate
+T17	Reagent 381 394	CD4 + cells .
+T18	Action 454 458	coat
+T19	Size 459 469	60 × 15 mm
+T20	Location 473 493	plastic petri dishes
+T21	Reagent 499 535	anti - mouse CD3ε , clone 145 - 2C11
+T22	Concentration 538 549	5 µg / ml )
+T23	Action 552 560	Incubate
+T24	Temperature 564 568	37°C
+T25	Time 573 580	2 hours
+T26	Action 601 609	incubate
+T27	Temperature 613 616	4°C
+T28	Time 617 626	overnight
+T29	Modifier 631 642	Aseptically
+T30	Action 643 649	decant
+T31	Reagent 650 667	antibody solution
+T32	Location 677 682	plate
+T33	Action 685 689	Wash
+T34	Location 690 695	plate
+T35	Modifier 701 708	sterile
+T36	Reagent 709 712	PBS
+T37	Action 730 734	Wash
+T38	Location 735 740	plate
+T39	Modifier 746 753	sterile
+T40	Reagent 754 757	PBS
+T41	Action 775 779	Wash
+T42	Location 780 785	plate
+T43	Modifier 791 798	sterile
+T44	Reagent 799 802	PBS
+T45	Action 820 827	Discard
+T46	Reagent 828 834	liquid
+T47	Action 837 842	Plate
+T48	Reagent 843 854	CD4 + cells
+T49	Generic-Measure 858 880	1.0 x 106 / 1ml / well
+T50	Action 883 890	Culture
+T51	Reagent 891 896	cells
+T52	Time 901 907	4 days
+T53	Reagent 927 958	anti - mouse CD28 , clone 37.51
+T54	Concentration 961 970	5 µg / mL
+T55	Reagent 975 999	recombinant mouse IL - 6
+T56	Concentration 1002 1012	50 ng / mL
+T57	Reagent 1017 1043	recombinant human TGF - β1
+T58	Concentration 1046 1055	1 ng / mL
+T59	Reagent 1060 1085	recombinant mouse IL - 23
+T60	Concentration 1088 1097	5 ng / ml
+T61	Reagent 1102 1121	anti - mouse IL - 4
+T62	Concentration 1124 1134	10 µg / mL
+T63	Reagent 1143 1163	anti - mouse IFN - γ
+T64	Concentration 1166 1176	10 µg / mL
+T65	Modifier 1192 1198	slowly
+T66	Action 1199 1202	add
+T67	Amount 1203 1207	5 ml
+T68	Modifier 1211 1216	fresh
+T69	Reagent 1217 1222	media
+T70	Reagent 1260 1282	antibodies / cytokines
+T71	Action 1313 1317	wash
+T72	Reagent 1318 1323	cells
+T73	Numerical 1324 1328	once
+T74	Action 1338 1349	restimulate
+T75	Reagent 1353 1368	complete medium
+T76	Concentration 1374 1385	500 ng / ml
+T77	Reagent 1386 1389	PMA
+T78	Concentration 1394 1405	500 ng / mL
+T79	Reagent 1406 1415	ionomycin
+T80	Reagent 1437 1448	Brefeldin A
+T81	Time 1514 1525	4 - 5 hours
+E1	Action:T1 Product:T2 Acts-on:T3 Product2:T5
+E2	Action:T4 Acts-on:T5 Using:T8 Product:T9
+E3	Action:T12 Acts-on:T13 Site:T14
+E4	Action:T16 Acts-on:T17 Using:T15 Product:T48
+E5	Action:T18 Using:T21 Acts-on:T20
+E6	Action:T23 Acts-on:E5
+E7	Action:T26 Product:T32
+E8	Action:T30 
+E9	Action:T33 Acts-on:E8 Acts-on2:T34 Using:T36
+E10	Action:T37 Acts-on:E9 Acts-on2:T38 Using:T40
+E11	Action:T41 Product:T46 Acts-on:E10 Acts-on2:T42 Using:T44
+E12	Action:T45 Acts-on:T46
+E13	Action:T47 Site:E12 Product:T51 Acts-on:T48
+E14	Action:T50 Acts-on:T51 Using:T53 Using2:T55 Using3:T57 Using4:T59 Using5:T61 Using6:T63
+E15	Action:T66 Site:E14 Acts-on:T69 Product:T72
+E16	Action:T71 Acts-on:T72
+E17	Action:T74 Site:T75 Acts-on:T72 Using:T77 Using2:T79 Using3:T80 Acts-on2:E16
+R1	Measure Arg1:T11 Arg2:T10
+R2	Meronym Arg1:T11 Arg2:T9
+R3	Setting Arg1:T8 Arg2:T7
+R4	Mod-Link Arg1:T8 Arg2:T6
+R5	Mod-Link Arg1:T69 Arg2:T68
+R6	Mod-Link Arg1:E15 Arg2:T65
+R7	Setting Arg1:E16 Arg2:T73
+R8	Measure Arg1:T77 Arg2:T76
+R9	Measure Arg1:T79 Arg2:T78
+R10	Setting Arg1:E17 Arg2:T81
+R11	Coreference-Link Arg1:T9 Arg2:T13
+R12	Meronym Arg1:T17 Arg2:T13
+R13	Coreference-Link Arg1:T36 Arg2:T40
+R14	Coreference-Link Arg1:T40 Arg2:T44
+R15	Setting Arg1:E7 Arg2:T27
+R16	Setting Arg1:E7 Arg2:T28
+R17	Setting Arg1:E6 Arg2:T24
+R18	Setting Arg1:E6 Arg2:T25
+R19	Measure Arg1:T20 Arg2:T19
+R20	Measure Arg1:T21 Arg2:T22
+R21	Or Arg1:E6 Arg2:E7
+R22	Mod-Link Arg1:T36 Arg2:T35
+R23	Mod-Link Arg1:T40 Arg2:T39
+R24	Mod-Link Arg1:T44 Arg2:T43
+R25	Measure Arg1:T48 Arg2:T49
+R26	Setting Arg1:E14 Arg2:T52
+R27	Measure Arg1:T53 Arg2:T54
+R28	Measure Arg1:T55 Arg2:T56
+R29	Measure Arg1:T57 Arg2:T58
+R30	Measure Arg1:T59 Arg2:T60
+R31	Measure Arg1:T61 Arg2:T62
+R32	Measure Arg1:T63 Arg2:T64

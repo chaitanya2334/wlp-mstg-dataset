@@ -1,0 +1,133 @@
+T1	Action 31 34	Add
+T2	Modifier 35 51	freshly prepared
+T3	Reagent 52 64	PFA fixative
+T4	Reagent 109 121	water sample
+T5	Reagent 127 146	final concentration
+T6	Concentration 150 157	1 - 2 %
+T7	Reagent 180 192	Formaldehyde
+T8	Action 199 202	fix
+T9	Time 207 220	12 - 24 hours
+T10	Temperature 224 227	4°C
+T11	Action 230 235	Place
+T12	Modifier 238 247	moistened
+T13	Device 248 262	support filter
+T14	Size 265 272	0.45 μm
+T15	Reagent 285 302	cellulose nitrate
+T16	Generic-Measure 305 310	47 mm
+T17	Measure-Type 311 319	diameter
+T18	Device 328 343	membrane filter
+T19	Size 346 352	0.2 μm
+T20	Reagent 365 384	white polycarbonate
+T21	Generic-Measure 396 401	47 mm
+T22	Measure-Type 402 410	diameter
+T23	Device 420 436	filtration tower
+T24	Action 439 445	Filter
+T25	Modifier 449 460	appropriate
+T26	Amount 461 467	volume
+T27	Reagent 475 487	fixed sample
+T28	Modifier 500 506	gentle
+T29	Action 507 513	vacuum
+T30	Generic-Measure 518 524	5 inch
+T31	Action 529 534	Place
+T32	Modifier 537 546	moistened
+T33	Device 547 561	support filter
+T34	Size 564 571	0.45 μm
+T35	Reagent 584 601	cellulose nitrate
+T36	Generic-Measure 604 609	25 mm
+T37	Measure-Type 610 618	diameter
+T38	Device 649 664	membrane filter
+T39	Size 667 673	0.2 μm
+T40	Reagent 686 705	white polycarbonate
+T41	Generic-Measure 717 722	25 mm
+T42	Measure-Type 723 731	diameter
+T43	Device 774 790	filtration tower
+T44	Action 793 799	Filter
+T45	Amount 800 804	1 ml
+T46	Reagent 812 824	fixed sample
+T47	Modifier 837 843	gentle
+T48	Action 844 850	vacuum
+T49	Generic-Measure 853 861	~ 5 inch
+T50	Action 866 872	Filter
+T51	Amount 873 877	2 ml
+T52	Reagent 885 897	fixed sample
+T53	Modifier 903 909	second
+T54	Device 910 918	filter .
+T55	Action 954 958	wash
+T56	Amount 964 974	10 - 20 ml
+T57	Modifier 978 985	sterile
+T58	Reagent 986 989	H2O
+T59	Action 992 998	Remove
+T60	Reagent 999 1002	H2O
+T61	Method 1006 1016	filtration
+T62	Action 1019 1022	Put
+T63	Device 1023 1038	membrane filter
+T64	Device 1042 1056	blotting paper
+T65	Action 1061 1067	drying
+T66	Action 1072 1077	cover
+T67	Seal 1097 1100	lid
+T68	Action 1154 1159	Store
+T69	Device 1160 1171	each filter
+T70	Modifier 1177 1194	separate labelled
+T71	Location 1195 1205	Petri dish
+T72	Action 1208 1213	Place
+T73	Device 1214 1229	membrane filter
+T74	Location 1230 1254	between separator sheets
+T75	Action 1307 1311	Seal
+T76	Location 1312 1322	Petri dish
+T77	Seal 1328 1336	parafilm
+T78	Action 1339 1344	Store
+T79	Temperature 1348 1354	- 20°C
+E1	Action:T1 Acts-on:T3 Site:T4 Product:T5
+E2	Action:T8 
+E3	Action:T11 Acts-on:T13 Acts-on2:T18 Site:T23
+E4	Action:T24 Site:E3 Acts-on:T27
+E5	Action:T29 
+E6	Action:T31 Acts-on:T33 Acts-on2:T38 Site:T43
+E7	Action:T44 Site:E6 Acts-on:T46
+E8	Action:T48 
+E9	Action:T50 Acts-on:T52 Using:T54
+E10	Action:T55 Acts-on:E9 Using:T58 Product:T60
+E11	Action:T59 Acts-on:T60 Using:T61 Product:T63
+E12	Action:T62 Acts-on:T63 Site:T64
+E13	Action:T65 
+E14	Action:T66 
+E15	Action:T68 Acts-on:T69 Site:T71
+E16	Action:T72 Acts-on:T73 Site:T74 Product:T76
+E17	Action:T75 Acts-on:T76 Using:T77
+E18	Action:T78 Acts-on:E17
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Or Arg1:T4 Arg2:T7
+R3	Measure Arg1:T5 Arg2:T6
+R4	Setting Arg1:E2 Arg2:T9
+R5	Setting Arg1:E2 Arg2:T10
+R6	Mod-Link Arg1:T13 Arg2:T12
+R7	Measure Arg1:T13 Arg2:T14
+R8	Measure Arg1:T13 Arg2:T16
+R9	Meronym Arg1:T15 Arg2:T13
+R10	Of-Type Arg1:T16 Arg2:T17
+R11	Setting Arg1:T18 Arg2:T19
+R12	Setting Arg1:T18 Arg2:T21
+R13	Meronym Arg1:T20 Arg2:T18
+R14	Of-Type Arg1:T21 Arg2:T22
+R15	Mod-Link Arg1:T26 Arg2:T25
+R16	Measure Arg1:T27 Arg2:T26
+R17	Mod-Link Arg1:E5 Arg2:T28
+R18	Setting Arg1:E5 Arg2:T30
+R19	Mod-Link Arg1:T33 Arg2:T32
+R20	Measure Arg1:T33 Arg2:T34
+R21	Measure Arg1:T33 Arg2:T36
+R22	Meronym Arg1:T35 Arg2:T33
+R23	Of-Type Arg1:T36 Arg2:T37
+R24	Setting Arg1:T38 Arg2:T39
+R25	Setting Arg1:T38 Arg2:T41
+R26	Meronym Arg1:T40 Arg2:T38
+R27	Of-Type Arg1:T41 Arg2:T42
+R28	Measure Arg1:T46 Arg2:T45
+R29	Mod-Link Arg1:E8 Arg2:T47
+R30	Setting Arg1:E8 Arg2:T49
+R31	Measure Arg1:T52 Arg2:T51
+R32	Mod-Link Arg1:T54 Arg2:T53
+R33	Measure Arg1:T58 Arg2:T56
+R34	Mod-Link Arg1:T58 Arg2:T57
+R35	Mod-Link Arg1:T71 Arg2:T70
+R36	Setting Arg1:E18 Arg2:T79

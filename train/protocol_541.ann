@@ -1,0 +1,90 @@
+T1	Action 100 107	Suspend
+T2	Reagent 112 132	mitochondrial pellet
+T3	Amount 136 141	100µl
+T4	Concentration 142 144	1X
+T5	Reagent 145 164	SubCell Buffer - II
+T6	Action 167 171	Make
+T7	Reagent 174 187	step gradient
+T8	Action 191 197	adding
+T9	Amount 198 203	200µl
+T10	Reagent 204 222	SubCell Buffer - V
+T11	Location 228 243	centrifuge tube
+T12	Action 253 263	overlaying
+T13	Amount 269 274	200µl
+T14	Reagent 275 294	SubCell Buffer - IV
+T15	Modifier 297 303	Gently
+T16	Action 304 309	float
+T17	Reagent 314 338	mitochondrial suspension
+T18	Location 346 353	surface
+T19	Reagent 361 374	step gradient
+T20	Action 377 387	Centrifuge
+T21	Reagent 392 400	gradient
+T22	Speed 404 413	20,000x g
+T23	Time 418 428	20 minutes
+T24	Action 431 438	Observe
+T25	Numerical 443 446	two
+T26	Reagent 447 458	white bands
+T27	Modifier 461 470	Carefully
+T28	Action 471 477	remove
+T29	Modifier 478 482	each
+T30	Reagent 483 487	band
+T31	Modifier 493 501	separate
+T32	Location 502 506	tube
+T33	Action 509 515	Dilute
+T34	Reagent 520 545	mitochondrial suspensions
+T35	Generic-Measure 551 563	equal volume
+T36	Concentration 567 569	1X
+T37	Reagent 570 589	SubCell Buffer - II
+T38	Action 592 602	Centrifuge
+T39	Location 607 612	tubes
+T40	Speed 616 625	12,000x g
+T41	Time 630 640	15 minutes
+T42	Action 645 652	discard
+T43	Reagent 657 668	supernatant
+T44	Action 671 678	Suspend
+T45	Reagent 683 704	mitochondrial pellets
+T46	Amount 708 717	30 - 50µl
+T47	Reagent 718 753	Working Mitochondria Storage Buffer
+T48	Action 758 762	keep
+T49	Reagent 767 778	suspensions
+T50	Location 782 785	ice
+T51	Reagent 821 832	suspensions
+T52	Action 840 846	stored
+T53	Location 850 853	ice
+T54	Time 860 868	48 hours
+E1	Action:T1 Acts-on:T2 Site:T5 Product:T17
+E2	Action:T6 Product:T7
+E3	Action:T8 Acts-on:T10 Site:T11
+E4	Action:T12 Using:T14 Acts-on:E3 Product:T7
+E5	Action:T16 Acts-on:T17 Site:T18 Product:T21
+E6	Action:T20 Acts-on:T21 Product:T26
+E7	Action:T24 Acts-on:T26 Product:T30
+E8	Action:T28 Acts-on:T30 Site:T32 Product:T34
+E9	Action:T33 Acts-on:T34 Using:T37 Product:T39
+E10	Action:T38 Acts-on:T39 Product:T43
+E11	Action:T42 Acts-on:T43 Product:T45
+E12	Action:T44 Acts-on:T45 Using:T47 Product:T49
+E13	Action:T48 Acts-on:T49 Site:T50 Product:T51
+E14	Action:T52 Acts-on:T51 Site:T53
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T5 Arg2:T3
+R3	Measure Arg1:T10 Arg2:T9
+R4	Measure Arg1:T14 Arg2:T13
+R5	Meronym Arg1:T18 Arg2:T19
+R6	Setting Arg1:E6 Arg2:T22
+R7	Setting Arg1:E6 Arg2:T23
+R8	Measure Arg1:T26 Arg2:T25
+R9	Measure Arg1:T37 Arg2:T36
+R10	Measure Arg1:T37 Arg2:T35
+R11	Setting Arg1:E10 Arg2:T40
+R12	Setting Arg1:E10 Arg2:T41
+R13	Measure Arg1:T47 Arg2:T46
+R14	Setting Arg1:E14 Arg2:T54
+R15	Enables Arg1:E3 Arg2:E2
+R16	Coreference-Link Arg1:T19 Arg2:T7
+R17	Mod-Link Arg1:E5 Arg2:T15
+R18	Mod-Link Arg1:T30 Arg2:T29
+R19	Mod-Link Arg1:E8 Arg2:T27
+R20	Mod-Link Arg1:T32 Arg2:T31
+R21	Coreference-Link Arg1:T37 Arg2:T5
+R22	Coreference-Link Arg1:T53 Arg2:T50

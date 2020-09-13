@@ -1,0 +1,173 @@
+T1	Reagent 45 62	Salt lake samples
+T2	Action 67 76	collected
+T3	Reagent 82 100	hypersaline waters
+T4	Reagent 185 192	Samples
+T5	Action 197 206	collected
+T6	Modifier 210 217	sterile
+T7	Size 218 225	5–10 mL
+T8	Location 226 233	vessels
+T9	Action 245 251	stored
+T10	Time 256 269	several weeks
+T11	Temperature 273 289	room temperature
+T12	Reagent 312 317	cells
+T13	Reagent 322 337	cellular debris
+T14	Action 342 349	removed
+T15	Method 353 367	centrifugation
+T16	Speed 370 376	5,000g
+T17	Time 379 385	10 min
+T18	Temperature 388 404	room temperature
+T19	Reagent 413 424	supernatant
+T20	Action 433 462	screened directly for viruses
+T21	Method 466 478	plaque assay
+T22	Reagent 826 849	Base and overlay plates
+T23	Size 852 857	90 mm
+T24	Action 864 868	made
+T25	Reagent 874 877	MGM
+T26	Action 899 909	solidified
+T27	Concentration 916 920	15 %
+T28	Reagent 921 933	w / v agar .
+T29	Reagent 945 970	salt water concentrations
+T30	Action 981 989	examined
+T31	Reagent 1077 1083	Plates
+T32	Action 1091 1097	stored
+T33	Time 1098 1110	indefinitely
+T34	Temperature 1114 1117	4°C
+T35	Action 1120 1127	wrapped
+T36	Seal 1131 1138	plastic
+T37	Action 1142 1161	prevent dessication
+T38	Action 1180 1186	warmed
+T39	Temperature 1190 1206	room temperature
+T40	Temperature 1210 1216	warmer
+T41	Amount 1249 1259	100–500 µl
+T42	Reagent 1267 1287	cleared water sample
+T43	Action 1291 1296	mixed
+T44	Amount 1302 1308	150 µl
+T45	Modifier 1312 1333	exponentially growing
+T46	Reagent 1334 1344	host cells
+T47	Amount 1354 1360	3–4 mL
+T48	Temperature 1364 1379	molten ( 50°C )
+T49	Reagent 1380 1395	top - layer MGM
+T50	Concentration 1403 1408	0.7 %
+T51	Reagent 1409 1419	w / v agar
+T52	Action 1425 1430	added
+T53	Reagent 1441 1449	solution
+T54	Action 1450 1455	mixed
+T55	Modifier 1456 1462	gently
+T56	Action 1467 1473	poured
+T57	Modifier 1474 1480	evenly
+T58	Location 1490 1495	plate
+T59	Action 1504 1511	setting
+T60	Location 1517 1530	level surface
+T61	Time 1535 1543	5–10 min
+T62	Location 1546 1552	plates
+T63	Action 1557 1566	incubated
+T64	Modifier 1567 1578	aerobically
+T65	Action 1581 1589	inverted
+T66	Location 1593 1612	airtight containers
+T67	Temperature 1616 1620	30°C
+T68	Temperature 1625 1629	37°C
+T69	Time 1634 1639	1–4 d
+T70	Action 1646 1675	checked every day for plaques
+T71	Reagent 1678 1697	Any visible plaques
+T72	Action 1702 1708	picked
+T73	Device 1715 1745	sterile glass Pasteur pipettes
+T74	Device 1751 1784	sterile plastic micropipette tips
+T75	Reagent 1793 1803	agar plugs
+T76	Action 1813 1824	transferred
+T77	Location 1828 1833	tubes
+T78	Amount 1845 1851	500 µl
+T79	Reagent 1855 1872	halovirus diluent
+T80	Concentration 1875 1881	2.47 M
+T81	Reagent 1884 1888	NaCl
+T82	Concentration 1891 1896	90 mM
+T83	Reagent 1899 1904	MgCl2
+T84	Concentration 1907 1912	90 mM
+T85	Reagent 1915 1920	MgSO4
+T86	Concentration 1923 1928	60 mM
+T87	Reagent 1931 1934	KCl
+T88	Concentration 1937 1941	3 mM
+T89	Reagent 1944 1949	CaCl2
+T90	Concentration 1952 1957	10 mM
+T91	Reagent 1960 1970	Tris - HCl
+T92	pH 1973 1979	pH 7.5
+T93	Action 1996 2004	vortexed
+T94	Action 2008 2018	homogenize
+T95	Reagent 2023 2029	sample
+T96	Reagent 2038 2049	suspensions
+T97	Action 2059 2068	replaqued
+T98	Location 2072 2086	overlay plates
+T99	Action 2090 2096	purify
+T100	Reagent 2101 2109	isolates
+T101	Action 2117 2126	eliminate
+T102	Reagent 2127 2142	“false plaques”
+E1	Action:T2 Acts-on:T1
+E2	Action:T5 Acts-on:T4 Site:T8
+E3	Action:T9 Acts-on:T4
+E4	Action:T14 Acts-on:T12 Acts-on2:T13 Using:T15 Product:T19
+E5	Action:T20 Acts-on:T19 Using:T21
+E6	Action:T24 Product:T22 Using:T25
+E7	Action:T26 Acts-on:T22 Using:T28
+E8	Action:T30 Acts-on:T29
+E9	Action:T32 Acts-on:T31
+E10	Action:T35 Using:T36
+E11	Action:T37 Acts-on:T31 Using:E10
+E12	Action:T38 Acts-on:T31
+E13	Action:T43 Acts-on:T42 Acts-on2:T46
+E14	Action:T52 Acts-on:E13 Acts-on2:T49 Acts-on3:T51 Product:T53
+E15	Action:T54 Acts-on:T53
+E16	Action:T56 Acts-on:T53 Acts-on2:E15 Site:T58
+E17	Action:T59 Site:T60 Acts-on:T62
+E18	Action:T63 Acts-on:E17 Acts-on2:T62
+E19	Action:T65 Acts-on:T62 Acts-on2:E18 Site:T66
+E20	Action:T70 Acts-on:T62 Product:T71
+E21	Action:T72 Acts-on:T71 Using:T73 Product:T75
+E22	Action:T76 Acts-on:T75 Site:T77
+E23	Action:T93 Acts-on:E22
+E24	Action:T94 Using:E23 Acts-on:T95
+E25	Action:T97 Acts-on:T96 Site:T98
+E26	Action:T99 Using:E25 Acts-on:T100
+E27	Action:T101 Using:E25 Acts-on:T102
+R1	Meronym Arg1:T1 Arg2:T3
+R2	Mod-Link Arg1:T8 Arg2:T6
+R3	Measure Arg1:T8 Arg2:T7
+R4	Setting Arg1:E3 Arg2:T10
+R5	Setting Arg1:E3 Arg2:T11
+R6	Measure Arg1:T22 Arg2:T23
+R7	Measure Arg1:T28 Arg2:T27
+R8	Setting Arg1:E9 Arg2:T33
+R9	Setting Arg1:E9 Arg2:T34
+R10	Prevents Arg1:E10 Arg2:E11
+R11	Setting Arg1:E12 Arg2:T39
+R12	Or Arg1:T39 Arg2:T40
+R13	Measure Arg1:T42 Arg2:T41
+R14	Measure Arg1:T46 Arg2:T44
+R15	Mod-Link Arg1:T46 Arg2:T45
+R16	Measure Arg1:T49 Arg2:T47
+R17	Measure Arg1:T51 Arg2:T50
+R18	Setting Arg1:E14 Arg2:T48
+R19	Mod-Link Arg1:E15 Arg2:T55
+R20	Mod-Link Arg1:E16 Arg2:T57
+R21	Setting Arg1:E17 Arg2:T61
+R22	Mod-Link Arg1:E18 Arg2:T64
+R23	Setting Arg1:E19 Arg2:T67
+R24	Setting Arg1:E19 Arg2:T68
+R25	Setting Arg1:E19 Arg2:T69
+R26	Or Arg1:T73 Arg2:T74
+R27	Meronym Arg1:T79 Arg2:T77
+R28	Measure Arg1:T79 Arg2:T78
+R29	Meronym Arg1:T81 Arg2:T79
+R30	Measure Arg1:T81 Arg2:T80
+R31	Meronym Arg1:T83 Arg2:T79
+R32	Measure Arg1:T83 Arg2:T82
+R33	Meronym Arg1:T85 Arg2:T79
+R34	Measure Arg1:T85 Arg2:T84
+R35	Meronym Arg1:T87 Arg2:T79
+R36	Measure Arg1:T87 Arg2:T86
+R37	Meronym Arg1:T89 Arg2:T79
+R38	Measure Arg1:T89 Arg2:T88
+R39	Meronym Arg1:T91 Arg2:T79
+R40	Measure Arg1:T91 Arg2:T90
+R41	Measure Arg1:T91 Arg2:T92
+R42	Enables Arg1:E23 Arg2:E24
+R43	Enables Arg1:E25 Arg2:E26
+R44	Enables Arg1:E25 Arg2:E27

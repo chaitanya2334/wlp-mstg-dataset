@@ -1,0 +1,110 @@
+T1	Action 15 20	Weigh
+T2	Amount 46 48	1L
+T3	Location 49 65	Erlenmeyer flask
+T4	Amount 68 70	5g
+T5	Reagent 71 75	NaCl
+T6	Amount 78 80	5g
+T7	Reagent 81 89	Tryptone
+T8	Amount 92 96	2.5g
+T9	Reagent 97 110	Yeast Extract
+T10	Amount 113 117	7.5g
+T11	Reagent 118 122	Agar
+T12	Action 125 128	add
+T13	Reagent 131 135	dH2O
+T14	Amount 141 146	500mL
+T15	Action 149 154	Swirl
+T16	Action 158 161	mix
+T17	Action 164 169	Cover
+T18	Location 174 177	top
+T19	Location 185 190	flask
+T20	Seal 196 209	aluminum foil
+T21	Action 214 219	label
+T22	Seal 225 239	autoclave tape
+T23	Action 242 251	Autoclave
+T24	Generic-Measure 259 273	liquid setting
+T25	Time 278 288	20 minutes
+T26	Action 345 353	removing
+T27	Reagent 358 366	solution
+T28	Device 376 385	autoclave
+T29	Reagent 398 411	agar solution
+T30	Action 415 419	cool
+T31	Temperature 423 427	55°C
+T32	Action 430 433	Add
+T33	Amount 438 456	appropriate amount
+T34	Modifier 460 467	desired
+T35	Reagent 468 478	antibiotic
+T36	Reagent 486 494	solution
+T37	Amount 497 502	500μL
+T38	Concentration 522 528	1,000x
+T39	Reagent 529 545	antibiotic stock
+T40	Action 552 557	swirl
+T41	Action 561 564	mix
+T42	Action 567 571	Pour
+T43	Amount 572 578	~ 20mL
+T44	Reagent 582 589	LB agar
+T45	Amount 594 598	10cm
+T46	Location 599 621	polystyrene Petri dish
+T47	Action 624 629	Place
+T48	Seal 634 638	lids
+T49	Location 646 652	plates
+T50	Mention 663 667	them
+T51	Action 671 675	cool
+T52	Time 680 695	30 - 60 minutes
+T53	Action 719 725	Invert
+T54	Location 730 736	plates
+T55	Action 745 748	sit
+T56	Time 753 771	several more hours
+T57	Time 775 784	overnight
+T58	Action 787 792	Label
+T59	Location 797 803	bottom
+T60	Location 807 813	plates
+T61	Reagent 819 829	antibiotic
+T62	Action 843 848	store
+T63	Location 852 864	plastic bags
+T64	Action 868 874	sealed
+T65	Seal 880 888	parafilm
+T66	Temperature 892 895	4°C
+E1	Action:T1 Site:T3 Acts-on:T5 Acts-on2:T7 Acts-on3:T9 Acts-on4:T11 Product:T19
+E2	Action:T12 Acts-on:T13 Site:E1
+E3	Action:T15 Acts-on:E2
+E4	Action:T16 
+E5	Action:T17 Using:T20 Acts-on:T18
+E6	Action:T21 Using:T22 Acts-on:E5
+E7	Action:T23 Acts-on:E6 Product:T27
+E8	Action:T26 Acts-on:T27 Site:T28 Product:T29
+E9	Action:T30 Acts-on:T29 Product:T36
+E10	Action:T32 Acts-on:T35 Site:T36
+E11	Action:T40 Acts-on:E10
+E12	Action:T41 
+E13	Action:T42 Acts-on:T44 Site:T46 Product:T49
+E14	Action:T47 Acts-on:T48 Site:T49 Product:T54
+E15	Action:T51 Acts-on:E14
+E16	Action:T53 Acts-on:T54 Product:T59
+E17	Action:T55 Acts-on:T54
+E18	Action:T58 Acts-on:T59 Using:T61
+E19	Action:T62 Site:T63 Acts-on:E18
+E20	Action:T64 Using:T65 Acts-on:T60
+R1	Meronym Arg1:T18 Arg2:T19
+R2	Setting Arg1:E7 Arg2:T25
+R3	Setting Arg1:E9 Arg2:T31
+R4	Mod-Link Arg1:T35 Arg2:T34
+R5	Setting Arg1:E15 Arg2:T52
+R6	Coreference-Link Arg1:T50 Arg2:T49
+R7	Setting Arg1:E17 Arg2:T56
+R8	Meronym Arg1:T59 Arg2:T60
+R9	Setting Arg1:E20 Arg2:T66
+R10	Measure Arg1:T3 Arg2:T2
+R11	Measure Arg1:T5 Arg2:T4
+R12	Setting Arg1:E2 Arg2:T14
+R13	Measure Arg1:T35 Arg2:T33
+R14	Measure Arg1:T44 Arg2:T43
+R15	Measure Arg1:T46 Arg2:T45
+R16	Setting Arg1:E7 Arg2:T24
+R17	Measure Arg1:T39 Arg2:T38
+R18	Measure Arg1:T36 Arg2:T37
+R19	Or Arg1:T56 Arg2:T57
+R20	Measure Arg1:T7 Arg2:T6
+R21	Measure Arg1:T9 Arg2:T8
+R22	Measure Arg1:T11 Arg2:T10
+R23	Enables Arg1:E3 Arg2:E4
+R24	Enables Arg1:E11 Arg2:E12

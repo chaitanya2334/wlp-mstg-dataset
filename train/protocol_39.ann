@@ -1,0 +1,75 @@
+T1	Action 67 76	Inoculate
+T2	Reagent 77 97	E . coli BL21 strain
+T3	Reagent 113 169	recombinant protein of chloramphenicol acetyltransferase
+T4	Amount 173 176	5mL
+T5	Reagent 177 193	LB liquid medium
+T6	Concentration 207 217	100ug / mL
+T7	Reagent 218 228	ampicillin
+T8	Temperature 233 237	37 ℃
+T9	Action 238 245	shaking
+T10	Action 250 257	culture
+T11	Time 258 267	overnight
+T12	Action 270 278	Transfer
+T13	Amount 279 282	1mL
+T14	Modifier 283 292	overnight
+T15	Reagent 293 301	cultures
+T16	Amount 305 311	100 mL
+T17	Concentration 325 335	100ug / mL
+T18	Reagent 336 346	ampicillin
+T19	Reagent 349 365	LB liquid medium
+T20	Temperature 368 372	37 ℃
+T21	Action 373 378	shake
+T22	Reagent 379 386	culture
+T23	Generic-Measure 393 410	OD600 = 0.6 - 0.8
+T24	Amount 418 422	10ul
+T25	Reagent 423 430	samples
+T26	Action 435 454	SDS - PAGE analysis
+T27	Action 457 460	Add
+T28	Reagent 461 465	IPTG
+T29	Reagent 471 490	final concentration
+T30	Concentration 494 506	0.5 mmol / l
+T31	Action 509 516	culture
+T32	Time 517 523	1 - 3h
+T33	Temperature 527 531	37 ℃
+T34	Speed 534 543	12,000rpm
+T35	Action 544 558	centrifugation
+T36	Time 563 569	10 min
+T37	Action 572 579	discard
+T38	Reagent 584 595	supernatant
+T39	Action 598 603	store
+T40	Reagent 604 620	cell precipitate
+T41	Temperature 624 630	- 20 ℃
+T42	Temperature 634 640	- 70 ℃
+E1	Action:T1 Acts-on:T2 Acts-on2:T5
+E2	Action:T9 Acts-on:E1
+E3	Action:T10 Acts-on:E1 Product:T15
+E4	Action:T12 Acts-on:T15 Acts-on2:T19 Product:T22
+E5	Action:T21 Acts-on:T22 Product:T25
+E6	Action:T26 Acts-on:T25
+E7	Action:T27 Acts-on:T28 Product:T29 Acts-on2:E6
+E8	Action:T31 Acts-on:T29
+E9	Action:T35 Acts-on:E8 Product:T38
+E10	Action:T37 Acts-on:T38 Product:T40
+E11	Action:T39 Acts-on:T40
+R1	Meronym Arg1:T3 Arg2:T2
+R2	Or Arg1:T6 Arg2:T7
+R3	Meronym Arg1:T7 Arg2:T5
+R4	Setting Arg1:E3 Arg2:T11
+R5	Setting Arg1:E2 Arg2:T8
+R6	Mod-Link Arg1:T15 Arg2:T14
+R7	Meronym Arg1:T18 Arg2:T19
+R8	Setting Arg1:E4 Arg2:T20
+R9	Measure Arg1:T25 Arg2:T24
+R10	Setting Arg1:E8 Arg2:T32
+R11	Setting Arg1:E8 Arg2:T33
+R12	Setting Arg1:E9 Arg2:T36
+R13	Setting Arg1:E9 Arg2:T34
+R14	Setting Arg1:E11 Arg2:T41
+R15	Measure Arg1:T5 Arg2:T4
+R16	Measure Arg1:T15 Arg2:T13
+R17	Measure Arg1:T19 Arg2:T16
+R18	Measure Arg1:T18 Arg2:T17
+R19	Measure Arg1:T29 Arg2:T30
+R20	Setting Arg1:E5 Arg2:T23
+R21	Or Arg1:T41 Arg2:T42
+R22	Overlaps Arg1:E3 Arg2:E2

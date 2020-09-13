@@ -1,0 +1,66 @@
+T1	Action 30 38	Incubate
+T2	Device 44 56	thermocycler
+T3	Time 61 71	10 minutes
+T4	Temperature 75 79	75ºC
+T5	Reagent 101 106	cells
+T6	Action 111 116	lysed
+T7	Reagent 119 128	nucleases
+T8	Reagent 133 141	proteins
+T9	Action 142 150	degraded
+T10	Reagent 155 158	DNA
+T11	Action 159 167	released
+T12	Action 170 178	Incubate
+T13	Time 183 192	5 minutes
+T14	Temperature 196 200	95ºC
+T15	Action 204 214	inactivate
+T16	Reagent 219 261	thermostable KAPA Express Extract protease
+T17	Action 264 270	Vortex
+T18	Reagent 271 287	reaction product
+T19	Time 292 301	2 - 3 sec
+T20	Action 304 314	Centrifuge
+T21	Speed 318 328	high speed
+T22	Time 333 341	1 minute
+T23	Action 345 351	pellet
+T24	Reagent 352 358	debris
+T25	Action 361 369	Transfer
+T26	Reagent 370 398	DNA - containing supernatant
+T27	Modifier 404 409	fresh
+T28	Location 410 414	tube
+T29	Amount 421 425	1 μl
+T30	Reagent 429 440	DNA extract
+T31	Size 455 460	25 μl
+T32	Action 461 464	PCR
+T33	Action 492 498	Dilute
+T34	Reagent 502 511	TE Buffer
+T35	Action 528 535	storage
+T36	Temperature 539 545	- 20ºC
+E1	Action:T1 Site:T2 Product:T16
+E2	Action:T6 Acts-on:T5 Product:T7 Product2:T8 Product3:T10
+E3	Action:T9 Acts-on:T8 Acts-on2:T7
+E4	Action:T11 Acts-on:T10
+E5	Action:T12 Acts-on:E1 Product:T18
+E6	Action:T15 Acts-on:T16
+E7	Action:T17 Acts-on:T18 Product:T24
+E8	Action:T20 Acts-on:E7
+E9	Action:T23 Acts-on:T24 Product:T26
+E10	Action:T25 Acts-on:T26 Site:T28 Product:T30
+E11	Action:T32 Acts-on:T30
+E12	Action:T33 Site:T34 Acts-on:E11
+E13	Action:T35 Acts-on:E12
+R1	Setting Arg1:E1 Arg2:T3
+R2	Setting Arg1:E1 Arg2:T4
+R3	Setting Arg1:E5 Arg2:T13
+R4	Setting Arg1:E5 Arg2:T14
+R5	Setting Arg1:E7 Arg2:T19
+R6	Setting Arg1:E8 Arg2:T21
+R7	Setting Arg1:E8 Arg2:T22
+R8	Mod-Link Arg1:T28 Arg2:T27
+R9	Measure Arg1:T30 Arg2:T29
+R10	Setting Arg1:E11 Arg2:T31
+R11	Setting Arg1:E13 Arg2:T36
+R12	Overlaps Arg1:E2 Arg2:E1
+R13	Overlaps Arg1:E3 Arg2:E1
+R14	Overlaps Arg1:E4 Arg2:E1
+R15	Overlaps Arg1:E4 Arg2:E3
+R16	Enables Arg1:E5 Arg2:E6
+R17	Enables Arg1:E8 Arg2:E9

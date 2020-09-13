@@ -1,0 +1,91 @@
+T1	Action 52 61	autoclave
+T2	Location 66 69	top
+T3	Reagent 70 74	agar
+T4	Action 78 82	melt
+T5	Mention 83 85	it
+T6	Location 130 136	bottom
+T7	Location 137 148	agar plates
+T8	Action 149 153	warm
+T9	Temperature 157 173	room temperature
+T10	Action 178 183	label
+T11	Mention 184 188	them
+T12	Action 193 197	make
+T13	Reagent 207 216	dilutions
+T14	Reagent 225 231	phages
+T15	Action 360 367	Aliquot
+T16	Reagent 372 376	agar
+T17	Location 382 387	tubes
+T18	Action 392 397	place
+T19	Temperature 401 405	40°C
+T20	Location 406 416	water bath
+T21	Action 419 424	Pipet
+T22	Amount 425 431	100 μl
+T23	Reagent 440 452	phage sample
+T24	Location 462 467	plate
+T25	Action 470 476	Remove
+T26	Location 481 490	agar tube
+T27	Location 500 510	water bath
+T28	Action 515 518	add
+T29	Reagent 523 527	host
+T30	Mention 531 533	it
+T31	Size 542 546	1 ml
+T32	Size 550 554	5 ml
+T33	Device 555 563	pipettor
+T34	Action 566 569	Add
+T35	Amount 570 576	3.5 ml
+T36	Reagent 584 588	agar
+T37	Reagent 591 595	host
+T38	Reagent 596 603	mixture
+T39	Amount 607 611	each
+T40	Location 612 617	plate
+T41	Action 620 625	Swirl
+T42	Location 630 635	plate
+T43	Action 639 645	spread
+T44	Reagent 650 654	agar
+T45	Action 670 676	covers
+T46	Location 687 692	plate
+T47	Action 695 700	Leave
+T48	Location 705 711	plates
+T49	Location 719 724	bench
+T50	Time 725 734	overnight
+T51	Action 737 742	Count
+T52	Action 746 750	pick
+T53	Reagent 751 758	plaques
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T5
+E3	Action:T8 Acts-on:T7
+E4	Action:T10 Acts-on:T11
+E5	Action:T12 Product:T13 Using:T14
+E6	Action:T15 Acts-on:T16 Site:T17
+E7	Action:T18 Acts-on:T17 Site:T20
+E8	Action:T21 Acts-on:T23 Site:T24
+E9	Action:T25 Acts-on:T26 Site:T27 Product:T30
+E10	Action:T28 Acts-on:T29 Site:T30 Using:T33 Product:T38
+E11	Action:T34 Acts-on:T38 Site:T40 Product:T42
+E12	Action:T41 Acts-on:T42
+E13	Action:T43 Acts-on:T44
+E14	Action:T45 Acts-on:T46 Product:T48
+E15	Action:T47 Acts-on:T48 Site:T49 Product:T53
+E16	Action:T51 Acts-on:T53
+E17	Action:T52 Acts-on:T53
+R1	Enables Arg1:E1 Arg2:E2
+R2	Meronym Arg1:T3 Arg2:T2
+R3	Coreference-Link Arg1:T5 Arg2:T3
+R4	Meronym Arg1:T7 Arg2:T6
+R5	Overlaps Arg1:E3 Arg2:E1
+R6	Setting Arg1:E3 Arg2:T9
+R7	Coreference-Link Arg1:T11 Arg2:T7
+R8	Setting Arg1:E7 Arg2:T19
+R9	Coreference-Link Arg1:T20 Arg2:T27
+R10	Measure Arg1:T23 Arg2:T22
+R11	Coreference-Link Arg1:T30 Arg2:T26
+R12	Setting Arg1:T33 Arg2:T31
+R13	Setting Arg1:T33 Arg2:T32
+R14	Meronym Arg1:T36 Arg2:T38
+R15	Meronym Arg1:T37 Arg2:T38
+R16	Measure Arg1:T38 Arg2:T35
+R17	Measure Arg1:T40 Arg2:T39
+R18	Enables Arg1:E12 Arg2:E13
+R19	Enables Arg1:E13 Arg2:E14
+R20	Setting Arg1:E15 Arg2:T50
+R21	Or Arg1:E16 Arg2:E17

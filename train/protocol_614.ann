@@ -1,0 +1,88 @@
+T1	Action 26 32	Create
+T2	Reagent 33 40	mixture
+T3	Reagent 44 48	CsCl
+T4	Reagent 51 63	Proteinase K
+T5	Reagent 70 73	SDS
+T6	Action 76 79	Mix
+T7	Action 84 92	incubate
+T8	Time 93 99	1 hour
+T9	Temperature 103 107	56°C
+T10	Action 110 114	Cool
+T11	Temperature 118 134	room temperature
+T12	Action 137 140	Add
+T13	Amount 144 156	equal volume
+T14	Reagent 160 166	phenol
+T15	Action 171 177	invert
+T16	Numerical 178 185	several
+T17	Action 194 198	Spin
+T18	Speed 199 204	3000g
+T19	Device 219 228	microfuge
+T20	Time 233 242	5 minutes
+T21	Temperature 245 261	room temperature
+T22	Modifier 264 273	Carefully
+T23	Action 274 282	transfer
+T24	Reagent 287 298	supernatant
+T25	Device 306 325	wide - bore pipette
+T26	Modifier 331 336	fresh
+T27	Location 337 341	tube
+T28	Action 344 347	Add
+T29	Amount 351 363	equal volume
+T30	Reagent 367 385	phenol : choroform
+T31	Generic-Measure 388 393	1 : 1
+T32	Action 398 404	invert
+T33	Action 407 411	Spin
+T34	Speed 420 425	3000g
+T35	Device 440 449	microfuge
+T36	Time 454 463	5 minutes
+T37	Temperature 466 482	room temperature
+T38	Action 485 493	Transfer
+T39	Reagent 498 509	supernatant
+T40	Method 520 526	before
+T41	Action 529 532	Add
+T42	Amount 536 548	equal volume
+T43	Reagent 552 562	chloroform
+T44	Action 567 573	invert
+T45	Action 576 580	Spin
+T46	Speed 589 594	3000g
+T47	Device 609 618	microfuge
+T48	Time 623 632	5 minutes
+T49	Temperature 635 651	room temperature
+T50	Action 654 662	Transfer
+T51	Reagent 667 678	supernatant
+T52	Method 689 695	before
+E1	Action:T1 Product:T2 Acts-on:T3 Acts-on2:T4 Acts-on3:T5
+E2	Action:T6 Acts-on:E1
+E3	Action:T7 Acts-on:E2
+E4	Action:T10 Acts-on:E3
+E5	Action:T12 Acts-on:T14 Site:E4
+E6	Action:T15 Count:T16 Acts-on:T14 Acts-on2:E5
+E7	Action:T17 Using:T19 Acts-on:E6 Product:T24
+E8	Action:T23 Acts-on:T24 Using:T25 Site:T27
+E9	Action:T28 Acts-on:T30 Site:E8
+E10	Action:T32 Acts-on:T30 Acts-on2:E9
+E11	Action:T33 Using:T35 Acts-on:E10 Product:T39
+E12	Action:T38 Acts-on:T39 Using:T40
+E13	Action:T41 Acts-on:T43 Site:E12
+E14	Action:T44 Acts-on:T43 Acts-on2:E13
+E15	Action:T45 Using:T47 Acts-on:E14 Product:T51
+E16	Action:T50 Acts-on:T51 Using:T52
+R1	Setting Arg1:E3 Arg2:T8
+R2	Setting Arg1:E3 Arg2:T9
+R3	Setting Arg1:E2 Arg2:T8
+R4	Setting Arg1:E2 Arg2:T9
+R5	Setting Arg1:E4 Arg2:T11
+R6	Measure Arg1:T14 Arg2:T13
+R7	Setting Arg1:E7 Arg2:T20
+R8	Setting Arg1:E7 Arg2:T21
+R9	Mod-Link Arg1:T27 Arg2:T26
+R10	Mod-Link Arg1:E8 Arg2:T22
+R11	Setting Arg1:E7 Arg2:T18
+R12	Measure Arg1:T30 Arg2:T31
+R13	Measure Arg1:T30 Arg2:T29
+R14	Setting Arg1:E11 Arg2:T34
+R15	Setting Arg1:E11 Arg2:T36
+R16	Setting Arg1:E11 Arg2:T37
+R17	Measure Arg1:T43 Arg2:T42
+R18	Setting Arg1:E15 Arg2:T46
+R19	Setting Arg1:E15 Arg2:T48
+R20	Setting Arg1:E15 Arg2:T49

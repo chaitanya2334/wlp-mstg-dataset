@@ -1,0 +1,39 @@
+T1	Modifier 31 37	Gently
+T2	Action 38 42	load
+T3	Reagent 43 71	plant protoplast suspensions
+T4	Device 77 105	hamilton gas - tight syringe
+T5	Action 108 112	Load
+T6	Generic-Measure 113 118	2.5 %
+T7	Measure-Type 119 123	wt %
+T8	Reagent 124 157	Pico - Surf ( TM ) 1in Novec 7500
+T9	Device 163 191	hamilton gas - tight syringe
+T10	Action 194 199	Place
+T11	Device 204 223	microfluidic device
+T12	Location 231 236	stage
+T13	Device 240 274	bright - field inverted microscope
+T14	Action 319 326	Connect
+T15	Device 331 339	syringes
+T16	Modifier 347 360	corresponding
+T17	Location 361 367	inlets
+T18	Device 375 392	microfluidic chip
+T19	Method 397 413	PTFE microtubing
+T20	Action 416 420	Load
+T21	Device 426 467	Harvard Apparatus , PHD 2000 syringe pump
+T22	Action 472 477	start
+T23	Method 478 486	infusing
+T24	Action 598 603	Image
+T25	Reagent 608 637	plant protoplasts in droplets
+T26	Device 643 670	Andor iXon Ultra 897 camera
+E1	Action:T2 Acts-on:T3 Site:T4 Product:T9
+E2	Action:T5 Acts-on:T8 Site:T9 Product:T15
+E3	Action:T10 Acts-on:T11 Site:T12 Product:T18
+E4	Action:T14 Acts-on:T15 Site:T17 Using:T19
+E5	Action:T20 Site:T21 Acts-on:E4
+E6	Action:T22 Using:T23 Acts-on:E5 Product:T25
+E7	Action:T24 Acts-on:T25 Using:T26
+R1	Mod-Link Arg1:E1 Arg2:T1
+R2	Of-Type Arg1:T6 Arg2:T7
+R3	Measure Arg1:T8 Arg2:T6
+R4	Meronym Arg1:T12 Arg2:T13
+R5	Mod-Link Arg1:T17 Arg2:T16
+R6	Meronym Arg1:T17 Arg2:T18

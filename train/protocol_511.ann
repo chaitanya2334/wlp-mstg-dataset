@@ -1,0 +1,44 @@
+T1	Action 36 40	Wash
+T2	Reagent 41 48	embryos
+T3	Action 53 58	place
+T4	Device 64 75	wash basket
+T5	Action 94 101	pouring
+T6	Reagent 102 108	bleach
+T7	Reagent 123 130	embryos
+T8	Action 133 140	Let sit
+T9	Time 145 158	three minutes
+T10	Action 161 166	Rinse
+T11	Reagent 167 174	embryos
+T12	Device 178 184	basket
+T13	Reagent 190 195	ddH2O
+T14	Action 237 242	Place
+T15	Reagent 243 250	embryos
+T16	Location 256 266	glass vial
+T17	Amount 278 281	6ml
+T18	Reagent 285 292	Heptane
+T19	Amount 297 300	6ml
+T20	Concentration 304 309	0.4 %
+T21	Reagent 310 326	Paraformaldehyde
+T22	Action 329 334	Shake
+T23	Device 338 353	orbital rotator
+T24	Speed 357 363	150rpm
+T25	Time 368 378	20 minutes
+T26	Device 543 556	glass pipette
+T27	Action 560 566	remove
+T28	Reagent 571 603	bottom ( parafomaldehyde ) layer
+E1	Action:T1 Acts-on:T2
+E2	Action:T3 Site:T4 Acts-on:E1 Product:T7
+E3	Action:T5 Acts-on:T6 Site:T7
+E4	Action:T8 Acts-on:E3 Product:T11
+E5	Action:T10 Acts-on:T11 Site:T12 Product:T15
+E6	Action:T14 Acts-on:T15 Site:T16
+E7	Action:T22 Using:T23 Acts-on:E6
+E8	Action:T27 Using:T26 Acts-on:T28 Acts-on2:E7
+R1	Setting Arg1:E4 Arg2:T9
+R2	Measure Arg1:T21 Arg2:T20
+R3	Measure Arg1:T21 Arg2:T19
+R4	Measure Arg1:T18 Arg2:T17
+R5	Meronym Arg1:T18 Arg2:T16
+R6	Meronym Arg1:T21 Arg2:T16
+R7	Setting Arg1:E7 Arg2:T24
+R8	Setting Arg1:E7 Arg2:T25
