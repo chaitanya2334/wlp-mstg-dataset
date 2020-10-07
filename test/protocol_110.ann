@@ -76,39 +76,38 @@ T75	Action 1093 1108	determine yield
 T76	Modifier 1117 1127	disposable
 T77	Device 1128 1139	hemocytomer
 E1	Action:T1 Acts-on:T2 Site:T4 Product:T5 Product2:T18
-E2	Action:T9 Product:T11
+E2	Action:T9 Acts-on:T11 Product:T32
 E3	Action:T12 Acts-on:T11 Site:T13
 E4	Action:T14 Acts-on:T16 Site:T18 Product:T21
 E5	Action:T19 Acts-on:T21 Product:T25
 E6	Action:T22 Product:T24 Acts-on:T25 Using:T27
-E7	Action:T28 Site:T29
-E8	Action:T30 Acts-on:T31 Site:T32
-E9	Action:T33 Using:E10 Product:T38
+E7	Action:T28 Site:T29 Product:T27
+E8	Action:T30 Acts-on:T31 Site:T32 Product:T35
+E9	Action:T33 Product:T38
 E10	Action:T36 Acts-on:T35
 E11	Action:T37 Acts-on:T38 Product:T40
 E12	Action:T39 Acts-on:T40 Site:T41 Using:T43 Product:T46 Product2:T47
-E13	Action:T44 Acts-on:T46 Acts-on2:T47 Using:T49
-E14	Action:T50 Using:E13 Acts-on:T52 Site:T53
+E13	Action:T44 Acts-on:T46 Acts-on2:T47 Using:T49 Product:T55
+E14	Action:T50 Acts-on:T52 Site:T53
 E15	Action:T54 Acts-on:T55
-E16	Action:T56 Using:E15 Site:T57 Product:T61
+E16	Action:T56 Site:T57 Product:T61 Product2:T63
 E17	Action:T60 Site:T61
 E18	Action:T62 Acts-on:T63
-E19	Action:T64 Site:E12 Acts-on:T65
-E20	Action:T67 Acts-on:T68 Site:T69 Using:E21
+E19	Action:T64 Acts-on:T65 Product:T69 Site:E18 Site2:E17
+E20	Action:T67 Acts-on:T68 Site:T69
 E21	Action:T71 Acts-on:T72
-E22	Action:T73 Measure-Type-Link:T74
+E22	Action:T73 Measure-Type-Link:T74 Acts-on:E20
 E23	Action:T75 Acts-on:E22 Using:T77
 R1	Setting Arg1:E1 Arg2:T6
 R2	Setting Arg1:E1 Arg2:T7
 R3	Setting Arg1:E1 Arg2:T8
 R4	Measure Arg1:T4 Arg2:T3
 R5	Mod-Link Arg1:T11 Arg2:T10
-R6	Coreference-Link Arg1:T11 Arg2:T32
 R7	Measure Arg1:T16 Arg2:T15
 R8	Mod-Link Arg1:T18 Arg2:T17
 R9	Measure Arg1:T21 Arg2:T20
 R10	Measure Arg1:T24 Arg2:T23
-R11	Coreference-Link Arg1:T24 Arg2:T31
+R11	Coreference-Link Arg1:T31 Arg2:T24
 R12	Mod-Link Arg1:T27 Arg2:T26
 R13	Mod-Link Arg1:T35 Arg2:T34
 R14	Setting Arg1:E12 Arg2:T42
@@ -120,3 +119,8 @@ R19	Mod-Link Arg1:E17 Arg2:T59
 R20	Mod-Link Arg1:E20 Arg2:T66
 R21	Mod-Link Arg1:E21 Arg2:T70
 R22	Mod-Link Arg1:T77 Arg2:T76
+R6	Enables Arg1:E21 Arg2:E20	
+R23	Overlaps Arg1:E17 Arg2:E18	
+R24	Enables Arg1:E13 Arg2:E14	
+R25	Enables Arg1:E15 Arg2:E16	
+R26	Enables Arg1:E10 Arg2:E9	

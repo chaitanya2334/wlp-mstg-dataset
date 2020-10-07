@@ -108,15 +108,15 @@ E14	Action:T44 Acts-on:T45 Using:T46
 E15	Action:T48 Acts-on:E14 Count:T49 Using:T50 Product:T59
 E16	Action:T53 Product:T52 Acts-on:T55 Acts-on2:T57
 E17	Action:T58 Acts-on:T59 Using:T60 Product:T75
-E18	Action:T62 Acts-on:T63
-E19	Action:T64 Product:T63 Acts-on:T66 Acts-on2:T68
+E18	Action:T62 Acts-on:T63 Product:T81
+E19	Action:T64 Acts-on:T66 Acts-on2:T68
 E20	Action:T69 Acts-on:T71 Product:T72
 E21	Action:T74 Acts-on:T75 Count:T76 Using:T77
 E22	Action:T80 Site:E21 Acts-on:T81
 E23	Action:T82 Acts-on:E22 Product:T85
 E24	Action:T84 Acts-on:T85 Acts-on2:T86 Product:T88
 E25	Action:T87 Acts-on:T88
-E26	Action:T90 Acts-on:T91
+E26	Action:T90 Acts-on:T91 Site:E25
 E27	Action:T92 Acts-on:E26
 R1	Setting Arg1:E1 Arg2:T4
 R2	Setting Arg1:E3 Arg2:T8
@@ -131,23 +131,23 @@ R10	Measure Arg1:T24 Arg2:T23
 R11	Setting Arg1:E9 Arg2:T29
 R12	Setting Arg1:E10 Arg2:T33
 R13	Setting Arg1:E12 Arg2:T37
-R14	Coreference-Link Arg1:T38 Arg2:T46
+R14	Coreference-Link Arg1:T46 Arg2:T38
 R15	Measure Arg1:T41 Arg2:T40
 R16	Measure Arg1:T43 Arg2:T42
 R17	Setting Arg1:E14 Arg2:T47
 R18	Setting Arg1:E15 Arg2:T51
-R19	Coreference-Link Arg1:T52 Arg2:T60
+R19	Coreference-Link Arg1:T60 Arg2:T52
 R20	Measure Arg1:T55 Arg2:T54
 R21	Measure Arg1:T57 Arg2:T56
 R22	Setting Arg1:E17 Arg2:T61
-R23	Coreference-Link Arg1:T63 Arg2:T81
 R24	Measure Arg1:T66 Arg2:T65
 R25	Measure Arg1:T68 Arg2:T67
 R26	Measure Arg1:T71 Arg2:T70
-R27	Coreference-Link Arg1:T72 Arg2:T86
+R27	Coreference-Link Arg1:T86 Arg2:T72
 R28	Mod-Link Arg1:E21 Arg2:T73
 R29	Setting Arg1:E21 Arg2:T78
 R30	Mod-Link Arg1:E22 Arg2:T79
 R31	Setting Arg1:E23 Arg2:T83
 R32	Mod-Link Arg1:E25 Arg2:T89
 R33	Setting Arg1:E27 Arg2:T93
+R34	Enables Arg1:E19 Arg2:E18	

@@ -1,7 +1,6 @@
 T1	Action 63 69	Vortex
 T2	Reagent 70 79	AMPure XP
 T3	Reagent 83 106	RXN pureplus SPRI beads
-T4	Method 110 119	resuspend
 T5	Action 122 126	Make
 T6	Reagent 132 146	pooled library
 T7	Amount 153 159	100 μl
@@ -17,7 +16,6 @@ T16	Modifier 276 284	at least
 T17	Numerical 285 287	10
 T18	Action 296 302	Vortex
 T19	Reagent 303 318	AMPure XP beads
-T20	Method 322 331	resuspend
 T21	Action 334 342	Incubate
 T22	Time 347 356	5 minutes
 T23	Temperature 360 376	room temperature
@@ -108,33 +106,33 @@ T107	Action 1761 1769	transfer
 T108	Amount 1770 1774	27ul
 T109	Modifier 1777 1780	new
 T110	Location 1781 1789	PCR tube
-E1	Action:T1 Acts-on:T2 Using:T4 Product:T10
-E2	Action:T5 Product:T6 Product2:T12
+E1	Action:T1 Acts-on:T2
+E2	Action:T5 Acts-on:T6 Product:T12
 E3	Action:T8 Acts-on:T10 Site:T12
-E4	Action:T13 Acts-on:E3 Using:T15 Count:T17
-E5	Action:T18 Acts-on:T19 Using:T20
-E6	Action:T21 Product:T26
+E4	Action:T13 Acts-on:E3 Using:T15 Count:T17 Product:T19
+E5	Action:T18 Acts-on:T19
+E6	Action:T21 Product:T26 Acts-on:E32
 E7	Action:T25 Acts-on:T26
-E8	Action:T27 Acts-on:T28 Site:T29 Product:T33
-E9	Action:T30 Using:E8 Acts-on:T31 Site:T32
+E8	Action:T27 Acts-on:T28 Site:T29
+E9	Action:T30 Acts-on:T31 Site:T32 Product:T33
 E10	Action:T35 Site:T33 Acts-on:T37 Product:T43
-E11	Action:T36 Site:E10 Acts-on:T37
+E11	Action:T36 Acts-on:T37
 E12	Action:T38 Acts-on:T42 Site:T43
 E13	Action:T45 Acts-on:E12
 E14	Action:T49 Site:E13 Acts-on:T51 Product:T57
-E15	Action:T50 Site:E14 Acts-on:T51
+E15	Action:T50 Acts-on:T51
 E16	Action:T52 Acts-on:T56 Site:T57
 E17	Action:T59 Acts-on:E16
-E18	Action:T63 Site:E17 Acts-on:T65
-E19	Action:T64 Site:E18 Acts-on:T65
+E18	Action:T63 Site:E17 Acts-on:T65 Product:T71
+E19	Action:T64 Acts-on:T65
 E20	Action:T66 Acts-on:T70 Site:T71
 E21	Action:T73 Acts-on:E20
-E22	Action:T77 Site:E21 Acts-on:T79 Product:T83
-E23	Action:T78 Site:E22 Acts-on:T79
-E24	Action:T80 Acts-on:T81 Site:T83 Using:T85
-E25	Action:T86 Acts-on:T87 Site:T88 Using:E26
+E22	Action:T77 Site:E21 Acts-on:T79 Product:T83 Product2:T81
+E23	Action:T78 Acts-on:T79
+E24	Action:T80 Acts-on:T81 Site:T83 Using:T85 Product:T88
+E25	Action:T86 Acts-on:T87
 E26	Action:T89 Acts-on:T92
-E27	Action:T96 Acts-on:E26 Using:T98 Product:T102
+E27	Action:T96 Using:T98 Product:T102 Acts-on:E25
 E28	Action:T101 Acts-on:T102
 E29	Action:T103 Acts-on:T104 Site:T105 Product:T106
 E30	Action:T107 Acts-on:T106 Site:T110
@@ -184,3 +182,22 @@ R43	Mod-Link Arg1:E28 Arg2:T100
 R44	Coreference-Link Arg1:T104 Arg2:T102
 R45	Measure Arg1:T106 Arg2:T108
 R46	Mod-Link Arg1:T110 Arg2:T109
+R47	Enables Arg1:E26 Arg2:E25	
+T4	Action 110 119	resuspend
+E31	Action:T4 Product:T10
+R48	Enables Arg1:E1 Arg2:E31	
+T111	Modifier 185 196	resuspended
+R49	Mod-Link Arg1:T10 Arg2:T111	
+T112	Modifier 160 172	if necessary
+R50	Mod-Link Arg1:E2 Arg2:T112	
+T113	Modifier 221 227	pooled
+R51	Mod-Link Arg1:T12 Arg2:T113	
+T20	Action 322 331	resuspend
+E32	Action:T20 
+R52	Enables Arg1:E5 Arg2:E32	
+R53	Enables Arg1:E8 Arg2:E9	
+R54	Overlaps Arg1:E11 Arg2:E10	
+R55	Overlaps Arg1:E15 Arg2:E14	
+R56	Overlaps Arg1:E19 Arg2:E18	
+R57	Overlaps Arg1:E23 Arg2:E22	
+R58	Meronym Arg1:T87 Arg2:T88	

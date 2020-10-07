@@ -75,7 +75,6 @@ T74	Action 992 996	fill
 T75	Modifier 997 1001	each
 T76	Location 1002 1006	side
 T77	Device 1014 1023	apparatus
-T78	Action 1031 1037	create
 T79	Reagent 1040 1060	thin layer of buffer
 T80	Action 1061 1069	covering
 T81	Location 1074 1077	top
@@ -135,37 +134,36 @@ E6	Action:T20 Acts-on:T18
 E7	Action:T21 Acts-on:T22 Site:T23
 E8	Action:T25 Acts-on:T24 Site:T26
 E9	Action:T27 
-E10	Action:T29 Acts-on:T30
+E10	Action:T29 Acts-on:T30 Product:T34
 E11	Action:T31 Acts-on:T33 Site:T34
 E12	Action:T35 Acts-on:E11
 E13	Action:T36 Product:T49
-E14	Action:T37 Acts-on:T38 Site:T39
+E14	Action:T37 Acts-on:T38 Site:T39 Product:T44
 E15	Action:T40 Acts-on:E14
 E16	Action:T42 Acts-on:T43 Site:T44
 E17	Action:T47 Using:T45 Acts-on:T46 Product:T51
 E18	Action:T48 Acts-on:T49 Site:T51
 E19	Action:T53 Acts-on:T52
 E20	Action:T56 Product:T55
-E21	Action:T57 Acts-on:T58 Product:T63
-E22	Action:T60 Acts-on:T61
-E23	Action:T62 Acts-on:T63 Site:T64
+E21	Action:T57 Acts-on:T58 Product:T63 Site:E19
+E22	Action:T60 Acts-on:T61 Product:T63
+E23	Action:T62 Acts-on:T63 Site:T64 Product:T69
 E24	Action:T66 Acts-on:T65 Site:T67 Product:T69
-E25	Action:T68 Acts-on:T69 Site:T70
+E25	Action:T68 Acts-on:T69 Site:T70 Product:T77
 E26	Action:T71 Acts-on:T73
 E27	Action:T74 Acts-on:T76
-E28	Action:T78 Product:T79
-E29	Action:T80 Using:T79 Site:T81 Product:T88
+E29	Action:T80 Site:T81 Product:T88 Product2:T79
 E30	Action:T83 Acts-on:T86 Site:T88
 E31	Action:T89 Acts-on:T90 Site:T93
-E32	Action:T94 Acts-on:T96 Product:T99
-E33	Action:T97 Acts-on:T98 Site:T99
+E32	Action:T94 Acts-on:T96 Product:T99 Acts-on2:E31 Acts-on3:E30
+E33	Action:T97 Acts-on:T98 Site:T99 Product:T102
 E34	Action:T100 Acts-on:T101 Site:T102 Product:T104
 E35	Action:T103 Acts-on:T104
-E36	Action:T107 Acts-on:E35 Product:T113
+E36	Action:T107 Acts-on:E35 Product:T117
 E37	Action:T111 Acts-on:T109
 E38	Action:T112 Acts-on:T113 Site:T114
-E39	Action:T115 Acts-on:T117
-E40	Action:T118 Site:T119 Product:T121
+E39	Action:T115 Acts-on:T117 Product:T113
+E40	Action:T118 Site:T119 Product:T121 Acts-on:E38
 E41	Action:T120 Acts-on:T121 Site:T123
 E42	Action:T124 Acts-on:T125
 E43	Action:T126 Site:T127
@@ -175,12 +173,10 @@ R3	Measure Arg1:T8 Arg2:T7
 R4	Coreference-Link Arg1:T10 Arg2:T8
 R5	Setting Arg1:E4 Arg2:T15
 R6	Mod-Link Arg1:E6 Arg2:T19
-R7	Coreference-Link Arg1:T24 Arg2:T22
 R8	Mod-Link Arg1:E10 Arg2:T28
-R9	Coreference-Link Arg1:T30 Arg2:T22
+R9	Coreference-Link Arg1:T30 Arg2:E9
 R10	Measure Arg1:T33 Arg2:T32
 R11	Mod-Link Arg1:E15 Arg2:T41
-R12	Coreference-Link Arg1:T46 Arg2:T43
 R13	Meronym Arg1:T49 Arg2:T50
 R14	Coreference-Link Arg1:T52 Arg2:T51
 R15	Setting Arg1:E19 Arg2:T54
@@ -202,3 +198,26 @@ R30	Mod-Link Arg1:E37 Arg2:T110
 R31	Mod-Link Arg1:T117 Arg2:T116
 R32	Meronym Arg1:T121 Arg2:T122
 R33	Setting Arg1:E43 Arg2:T128
+T129	Generic-Measure 177 187	high power
+R35	Setting Arg1:T14 Arg2:T129	
+R34	Or Arg1:T15 Arg2:E5	
+R36	Or Arg1:T15 Arg2:E6	
+R37	Enables Arg1:E8 Arg2:E9	
+R39	Enables Arg1:E12 Arg2:E13	
+T130	Action 456 472	not to introduce
+E44	Action:T130 Acts-on:T131
+T131	Reagent 473 480	bubbles
+R40	Overlaps Arg1:E13 Arg2:E44	
+R12	Coreference-Link Arg1:T46 Arg2:E16	
+R41	Or Arg1:E19 Arg2:E20	
+R42	Overlaps Arg1:E21 Arg2:E22	
+R43	Enables Arg1:E41 Arg2:E42	
+R44	Or Arg1:E42 Arg2:E43	
+R45	Enables Arg1:E26 Arg2:E27	
+R46	Enables Arg1:E26 Arg2:E29	
+R47	Coreference-Link Arg1:T90 Arg2:T86	
+R48	Coreference-Link Arg1:T91 Arg2:T87	
+R49	Or Arg1:E36 Arg2:E37	
+R50	Overlaps Arg1:E23 Arg2:E24	
+R7	Coreference-Link Arg1:T24 Arg2:E7	
+R38	Enables Arg1:E9 Arg2:E10	

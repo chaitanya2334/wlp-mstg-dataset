@@ -144,48 +144,48 @@ T143	Action 2344 2352	Incubate
 T144	Reagent 2357 2371	sterility test
 T145	Time 2376 2387	several day
 E1	Action:T1 Product:T2
-E2	Action:T3 Acts-on:T5 Acts-on2:T7 Acts-on3:T9 Acts-on4:T11 Acts-on5:T13 Acts-on6:T15
-E3	Action:T18 
+E2	Action:T3 Acts-on:T5 Acts-on2:T7 Acts-on3:T9 Acts-on4:T11 Acts-on5:T13 Acts-on6:T15 Site:T17
+E3	Action:T18 Acts-on:E1
 E4	Action:T19 
 E5	Action:T20 Acts-on:E4
 E6	Action:T21 
 E7	Action:T22 Acts-on:E6 Site:T24 Product:T29
 E8	Action:T25 Acts-on:T26 Site:T27 Site2:T29 Product:T31
 E9	Action:T30 Acts-on:T31 Using:T32 Product:T37
-E10	Action:T35 Site:E9 Using:T34 Acts-on:T37 Product:T39
-E11	Action:T38 Acts-on:T39 Site:T40
-E12	Action:T47 Acts-on:T46 Using:T48
+E10	Action:T35 Using:T34 Acts-on:T37 Product:T39
+E11	Action:T38 Acts-on:T39 Site:T40 Product:T46
+E12	Action:T47 Acts-on:T46 Using:T48 Product:T65
 E13	Action:T49 Acts-on:T51 Product:T65
 E14	Action:T52 Product:T54 Acts-on:T56 Acts-on2:T58
-E15	Action:T61 Acts-on:E14 Product:T66
-E16	Action:T62 
+E15	Action:T61 Acts-on:T54
+E16	Action:T62 Product:T66
 E17	Action:T63 Acts-on:T65 Site:T66 Product:T67
-E18	Action:T68 Acts-on:T67 Product:T71
+E18	Action:T68 Acts-on:T67 Product:T71 Product2:T75
 E19	Action:T70 Acts-on:T71 Using:T75
 E20	Action:T76 Acts-on:E19 Site:T77
-E21	Action:T80 Acts-on:E20 Acts-on2:T82
-E22	Action:T81 Acts-on:T82
+E21	Action:T80 Acts-on:E20 Acts-on2:T82 Product:T84
+E22	Action:T81 Acts-on:T82 Acts-on2:E20
 E23	Action:T83 Acts-on:T84 Product:T88
 E24	Action:T87 Acts-on:T88 Product:T93
-E25	Action:T89 Acts-on:T92 Site:T93
-E26	Action:T94 Acts-on:T96
+E25	Action:T89 Acts-on:T92 Site:T93 Product:T96
+E26	Action:T94 Acts-on:E25
 E27	Action:T95 Acts-on:T96
 E28	Action:T97 Site:E27 Acts-on:T98
 E29	Action:T99 
-E30	Action:T101 
-E31	Action:T105 Using:T106
+E30	Action:T101 Acts-on:E29
+E31	Action:T105 Using:T106 Acts-on:E30
 E32	Action:T107 Acts-on:T108 Count:T109
 E33	Action:T110 Acts-on:E32 Acts-on2:T112
-E34	Action:T111 Acts-on:T112
-E35	Action:T113 Site:E34 Acts-on:T115
-E36	Action:T116 Acts-on:E35 Acts-on2:T118
-E37	Action:T117 Acts-on:T118
-E38	Action:T119 Acts-on:T121 Using:T122
-E39	Action:T123 Measure-Type-Link:T124 Acts-on:T125
-E40	Action:T126 Measure-Type-Link:T127 Acts-on:T128
-E41	Action:T129 Acts-on:T131 Site:T136 Site2:T138 Product:T139
-E42	Action:T140 Acts-on:T139
-E43	Action:T141 Acts-on:T142
+E34	Action:T111 Acts-on:T112 Acts-on2:E32
+E35	Action:T113 Site:E34 Acts-on:T115 Product:T118
+E36	Action:T116 Acts-on2:T118 Product:T121
+E37	Action:T117 Acts-on:T118 Product:T121
+E38	Action:T119 Acts-on:T121 Using:T122 Product:T125
+E39	Action:T123 Measure-Type-Link:T124 Acts-on:T125 Product:T142
+E40	Action:T126 Measure-Type-Link:T127 Acts-on:T128 Product:T142
+E41	Action:T129 Acts-on:T131 Site:T136 Site2:T138
+E42	Action:T140 Acts-on:T139 Product:T144
+E43	Action:T141 Acts-on:T142 Product:T139
 E44	Action:T143 Acts-on:T144
 R1	Measure Arg1:T5 Arg2:T4
 R2	Measure Arg1:T7 Arg2:T6
@@ -234,3 +234,19 @@ R44	Measure Arg1:T136 Arg2:T135
 R45	Measure Arg1:T138 Arg2:T134
 R46	Measure Arg1:T138 Arg2:T137
 R47	Setting Arg1:E44 Arg2:T145
+R48	Enables Arg1:E3 Arg2:E4	
+R49	Enables Arg1:E2 Arg2:E1	
+R50	Enables Arg1:E5 Arg2:E6	
+R51	Overlaps Arg1:E12 Arg2:E13	
+R52	Enables Arg1:E15 Arg2:E16	
+R53	Overlaps Arg1:E21 Arg2:E22	
+R54	Enables Arg1:E26 Arg2:E27	
+R55	Enables Arg1:E28 Arg2:E29	
+R56	Enables Arg1:E31 Arg2:E32	
+R57	Overlaps Arg1:E33 Arg2:E34	
+T146	Modifier 1860 1871	as possible
+R58	Mod-Link Arg1:T115 Arg2:T146	
+R59	Overlaps Arg1:E36 Arg2:E37	
+R60	Overlaps Arg1:E40 Arg2:E39	
+R61	Enables Arg1:E41 Arg2:E40	
+R62	Enables Arg1:E41 Arg2:E39	

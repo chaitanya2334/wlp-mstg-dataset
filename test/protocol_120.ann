@@ -4,8 +4,6 @@ T3	Amount 107 111	30µl
 T4	Location 114 118	tube
 T5	Action 123 129	freeze
 T6	Temperature 133 138	‐20°C
-T7	Reagent 146 157	precipitate
-T8	Action 158 163	forms
 T9	Action 193 197	warm
 T10	Temperature 201 217	room temperature
 T11	Reagent 224 235	precipitate
@@ -151,7 +149,7 @@ T150	Action 2072 2082	drain away
 T151	Action 2161 2164	Add
 T152	Amount 2165 2176	50 to 100µl
 T153	Reagent 2177 2186	TE Buffer
-T154	Location 2194 2200	pellet
+T154	Reagent 2194 2200	pellet
 T155	Action 2203 2211	Incubate
 T156	Temperature 2215 2231	room temperature
 T157	Modifier 2236 2244	at least
@@ -177,60 +175,59 @@ T176	Temperature 2485 2490	‐20°C
 T177	Temperature 2494 2499	‐80°C
 E1	Action:T1 Acts-on:T2 Site:T4
 E2	Action:T5 Acts-on:E1
-E3	Action:T8 Acts-on:T7
-E4	Action:T9 Product:T53
-E5	Action:T12 Acts-on:T11
+E4	Action:T9 Acts-on:E2
+E5	Action:T12 Acts-on:T11 Product:T53
 E6	Action:T13 Acts-on:T14 Product:T18
 E7	Action:T17 Acts-on:T18
-E8	Action:T19 Site:E7 Acts-on:T21
-E9	Action:T22 Acts-on:T23 Site:T24
+E8	Action:T19 Site:E7 Acts-on:T21 Product:T36
+E9	Action:T22 Acts-on:T23
 E10	Action:T25 Acts-on:E9 Count:T26 Site:T27 Product:T30
 E11	Action:T29 Product:T28 Acts-on:T30 Using:T31 Site:T32
-E12	Action:T33 Acts-on:T35 Site:T36
-E13	Action:T39 Acts-on:T40
-E14	Action:T42 
-E15	Action:T43 
+E12	Action:T33 Acts-on:T35 Site:T36 Product:T40
+E13	Action:T39 Acts-on:T40 Product:T46
+E14	Action:T42 Acts-on:T40
+E15	Action:T43 Acts-on:T40
 E16	Action:T44 Acts-on:T46 Using:T48
-E17	Action:T49 Acts-on:E16 Using:T50
+E17	Action:T49 Acts-on:E16 Using:T50 Product:T55
 E18	Action:T51 Acts-on:T53 Site:T55
 E19	Action:T56 Acts-on:E18 Product:T60
 E20	Action:T59 Acts-on:T60 Product:T63
 E21	Action:T64 Acts-on:T63
-E22	Action:T66 Site:E9 Acts-on:T68 Product:T71
-E23	Action:T69 
+E22	Action:T66 Acts-on:T68 Product:T71 Site:E21
+E23	Action:T69 Acts-on:E22
 E24	Action:T70 Acts-on:T71 Count:T72
-E25	Action:T73 Product:T78
+E25	Action:T73 Product:T78 Acts-on:E23
 E26	Action:T77 Acts-on:T78 Site:T80 Product:T84
 E27	Action:T81 Acts-on:T83 Site:T84
 E28	Action:T85 Acts-on:E27 Count:T86
-E29	Action:T87 
+E29	Action:T87 Product:T89
 E30	Action:T88 Acts-on:T89
 E31	Action:T92 Site:E30 Acts-on:T94 Product:T97
 E32	Action:T95 
 E33	Action:T96 Acts-on:T97 Count:T98
-E34	Action:T99 Acts-on:T101
+E34	Action:T99 Acts-on:T101 Site:E32 Product:T104
 E35	Action:T103 Acts-on:T104 Product:T108
 E36	Action:T107 Acts-on:T108 Site:T110
-E37	Action:T111 Site:E36 Acts-on:T112 Using:T114
+E37	Action:T111 Site:E36 Acts-on:T112 Using:T114 Product:T116
 E38	Action:T115 Acts-on:T116 Count:T117
 E39	Action:T118 Acts-on:T119
-E40	Action:T120 Product:T126
+E40	Action:T120 Product:T126 Acts-on:E39
 E41	Action:T123 Acts-on:T124
 E42	Action:T125 Acts-on:T126 Product:T131
 E43	Action:T127 Acts-on:T130 Site:T131
-E44	Action:T132 Acts-on:E43 Acts-on2:T131 Count:T133
+E44	Action:T132 Acts-on:E43 Count:T133
 E45	Action:T134 Acts-on:T135
 E46	Action:T136 Acts-on:E45 Product:T141
 E47	Action:T139 Product:T143
 E48	Action:T140 Acts-on:T141 Product:T143
-E49	Action:T142 Acts-on:T143 Site:T146 Product:T154
-E50	Action:T150 Acts-on:T149
+E49	Action:T142 Acts-on:T143 Site:T146
+E50	Action:T150 Acts-on:T149 Product:T154
 E51	Action:T151 Acts-on:T153 Site:T154
 E52	Action:T155 Acts-on:E51
 E53	Action:T159 
 E54	Action:T160 Acts-on:T161
-E55	Action:T163 Acts-on:E52 Product:T172
-E56	Action:T165 Acts-on:T167 Site:T170
+E55	Action:T163 Acts-on:E52 Product:T172 Acts-on2:E54
+E56	Action:T165 Acts-on:T167 Site:T170 Site2:E55 Product:T172
 E57	Action:T171 Acts-on:T172
 E58	Action:T175 Product:T174
 R1	Measure Arg1:T2 Arg2:T3
@@ -239,7 +236,6 @@ R3	Setting Arg1:E4 Arg2:T10
 R4	Setting Arg1:E6 Arg2:T15
 R5	Setting Arg1:E6 Arg2:T16
 R6	Measure Arg1:T21 Arg2:T20
-R7	Setting Arg1:E9 Arg2:T65
 R8	Measure Arg1:T35 Arg2:T34
 R9	Meronym Arg1:T38 Arg2:T36
 R10	Measure Arg1:T38 Arg2:T37
@@ -290,3 +286,23 @@ R54	Measure Arg1:T170 Arg2:T169
 R55	Setting Arg1:E57 Arg2:T173
 R56	Setting Arg1:E58 Arg2:T176
 R57	Or Arg1:T176 Arg2:T177
+R58	Enables Arg1:E4 Arg2:E5	
+R7	Coreference-Link Arg1:T35 Arg2:T28	
+R59	Meronym Arg1:T23 Arg2:T24	
+R60	Or Arg1:E14 Arg2:E15	
+R61	Enables Arg1:E14 Arg2:E13	
+R62	Enables Arg1:E15 Arg2:E13	
+R63	Setting Arg1:E21 Arg2:T65	
+R64	Enables Arg1:E24 Arg2:E23	
+R65	Enables Arg1:E28 Arg2:E29	
+R66	Enables Arg1:E33 Arg2:E32	
+R67	Enables Arg1:E38 Arg2:E39	
+R68	Enables Arg1:E40 Arg2:E41	
+R69	Enables Arg1:E44 Arg2:E45	
+R70	Or Arg1:E47 Arg2:E48	
+R71	Enables Arg1:E49 Arg2:E50	
+R72	Enables Arg1:E52 Arg2:E53	
+R73	Overlaps Arg1:E54 Arg2:E52	
+T7	Modifier 2358 2366	OPTIONAL
+R74	Mod-Link Arg1:E56 Arg2:T7	
+R75	Or Arg1:E57 Arg2:E58	

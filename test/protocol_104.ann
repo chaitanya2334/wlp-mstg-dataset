@@ -68,23 +68,23 @@ T67	Concentration 1149 1152	2 %
 T68	Reagent 1153 1191	paraformaldehyde - PBS fixation buffer
 T69	Action 1194 1201	Analyze
 T70	Device 1209 1223	Flow Cytometer
-E1	Action:T1 Site:T8
+E1	Action:T1 Site:T8 Acts-on:T6
 E2	Action:T9 Acts-on:E1 Using:T12 Product:T25
 E3	Action:T13 Acts-on:T15 Product:T17 Using:T18
 E4	Action:T19 Acts-on:T17 Product:T24
 E5	Action:T21 Acts-on:T24 Site:T25
 E6	Action:T26 Acts-on:E5
-E7	Action:T29 Acts-on:E6
+E7	Action:T29 Acts-on:E6 Product:T33
 E8	Action:T32 Acts-on:T33
-E9	Action:T34 Acts-on:E7 Count:T35 Using:T38
-E10	Action:T39 
-E11	Action:T42 
-E12	Action:T45 Acts-on:T50
+E9	Action:T34 Count:T35 Using:T38 Acts-on:E8
+E10	Action:T39 Product:T43
+E11	Action:T42 Acts-on:T43 Site:T44
+E12	Action:T45 Acts-on:T50 Site:E11
 E13	Action:T51 Acts-on:E12 Site:T52
-E14	Action:T54 Count:T55 Using:T58
+E14	Action:T54 Count:T55 Using:T58 Acts-on:E13 Product:T63
 E15	Action:T59 
 E16	Action:T62 Acts-on:T63 Site:T65
-E17	Action:T69 Using:T70
+E17	Action:T69 Using:T70 Acts-on:E16
 R1	Mod-Link Arg1:T4 Arg2:T2
 R2	Mod-Link Arg1:T4 Arg2:T3
 R3	Measure Arg1:T6 Arg2:T4
@@ -118,3 +118,5 @@ R30	Measure Arg1:T65 Arg2:T64
 R31	Or Arg1:T65 Arg2:T68
 R32	Measure Arg1:T68 Arg2:T66
 R33	Measure Arg1:T68 Arg2:T67
+R34	Enables Arg1:E10 Arg2:E9	
+R35	Enables Arg1:E15 Arg2:E14	

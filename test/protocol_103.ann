@@ -235,7 +235,7 @@ T234	Concentration 3424 3426	1X
 T235	Reagent 3427 3436	TE buffer
 E1	Action:T1 Acts-on:T3 Using:T4 Product:T9
 E2	Action:T8 Acts-on:T9 Using:T12 Using2:T13 Product:T15
-E3	Action:T14 Acts-on:T15
+E3	Action:T14 Acts-on:T15 Product:T18
 E4	Action:T16 Product:T17 Acts-on:T18 Product2:T21
 E5	Action:T20 Acts-on:T21 Using:T22 Product:T27
 E6	Action:T26 Acts-on:T27 Count:T28 Using:T29 Using2:T30 Product:T35
@@ -245,7 +245,7 @@ E9	Action:T40 Acts-on:T41 Using:T44 Product:T50
 E10	Action:T49 Acts-on:T50 Product:T54
 E11	Action:T53 Acts-on:T54 Using:T56 Product:T58
 E12	Action:T57 Acts-on:T58 Site:T59 Product:T63
-E13	Action:T60 Acts-on:T62 Using:T63 Site:T64
+E13	Action:T60 Acts-on:T62 Using:T63 Site:T64 Product:T70 Product2:T66
 E14	Action:T65 Acts-on:T66 Using:T68
 E15	Action:T69 Acts-on:T70 Using:T72 Product:T76
 E16	Action:T75 Acts-on:T76 Product:T82
@@ -254,20 +254,20 @@ E18	Action:T85 Acts-on:T88 Site:T89
 E19	Action:T90 Acts-on:E18 Acts-on2:T89 Product:T92
 E20	Action:T91 Acts-on:T92 Product:T96
 E21	Action:T95 Acts-on:T96 Using:T97 Product:T102
-E22	Action:T103 Site:T102 Acts-on:T105
+E22	Action:T103 Acts-on:T105
 E23	Action:T107 Acts-on:T108 Using:T109 Product:T114
-E24	Action:T113 Acts-on:T114 Product:T123
+E24	Action:T113 Acts-on:T114 Product:T123 Using:T117
 E25	Action:T122 Acts-on:T123 Product:T138
 E26	Action:T127 Acts-on:T129
 E27	Action:T134 Acts-on:T137 Site:T138 Product:T140
 E28	Action:T139 Acts-on:T140 Using:T141 Product:T146
 E29	Action:T145 Acts-on:T146 Count:T147 Using:T150 Using2:T151 Product:T156
-E30	Action:T155 Acts-on:T156 Using:T158 Product:T161
+E30	Action:T155 Acts-on:T156 Using:T158
 E31	Action:T159 Acts-on:T161 Using:T162
-E32	Action:T163 Acts-on:E31 Using:T164
+E32	Action:T163 Acts-on:E31 Using:T164 Product:T166
 E33	Action:T165 Acts-on:T166 Using:T167 Product:T172
 E34	Action:T171 Acts-on:T172 Using:T174 Product:T176
-E35	Action:T175 Acts-on:T176 Product:T180
+E35	Action:T175 Acts-on:T176
 E36	Action:T179 Acts-on:T180 Using:T183 Using2:T184 Product:T186
 E37	Action:T185 Acts-on:T186 Product:T188
 E38	Action:T187 Acts-on:T188 Using:T189 Using2:T192 Using3:T194 Product:T196 Product2:T205
@@ -283,9 +283,6 @@ E47	Action:T226 Acts-on:E46 Product:T230
 E48	Action:T229 Acts-on:T230 Product:T232
 E49	Action:T231 Acts-on:T232 Using:T235
 R1	Measure Arg1:T3 Arg2:T2
-R2	Measure Arg1:T4 Arg2:T5
-R3	Measure Arg1:T4 Arg2:T6
-R4	Measure Arg1:T7 Arg2:T6
 R5	Setting Arg1:E2 Arg2:T10
 R6	Setting Arg1:E2 Arg2:T11
 R7	Measure Arg1:T17 Arg2:T19
@@ -380,3 +377,39 @@ R95	Setting Arg1:E47 Arg2:T227
 R96	Setting Arg1:E47 Arg2:T228
 R97	Measure Arg1:T235 Arg2:T233
 R98	Measure Arg1:T235 Arg2:T234
+T236	Reagent 123 128	cells
+R2	Measure Arg1:T236 Arg2:T5	
+T237	Location 96 101	flask
+T238	Modifier 91 95	each
+R4	Mod-Link Arg1:T237 Arg2:T238	
+T239	Action 105 112	contain
+E50	Action:T239 Site:T237 Acts-on:T236
+R3	Meronym Arg1:T236 Arg2:T7	
+R99	Measure Arg1:T236 Arg2:T6	
+R100	Enables Arg1:E50 Arg2:E1	
+R102	Setting Arg1:E36 Arg2:T182	
+T240	Amount 2477 2492	required volume
+R103	Measure Arg1:T166 Arg2:T240	
+T241	Modifier 2289 2296	briefly
+T242	Action 2341 2347	remove
+E51	Action:T242 Acts-on:T243 Product:T161
+T243	Reagent 2352 2356	EtOH
+R104	Mod-Link Arg1:E30 Arg2:T241	
+R105	Enables Arg1:E30 Arg2:E51	
+T244	Action 2685 2694	acclimate
+E52	Action:T244 Acts-on:T245 Site:T246 Product:T180
+T245	Reagent 2676 2681	cells
+T246	Reagent 2702 2711	new media
+R106	Enables Arg1:E35 Arg2:E52	
+R107	Enables Arg1:E26 Arg2:E25	
+T247	Action 1675 1686	Precipitate
+E53	Action:T247 Acts-on:T248 Product:T108
+T248	Reagent 1691 1695	DNAs
+R108	Meronym Arg1:T248 Arg2:T102	
+R109	Enables Arg1:E22 Arg2:E53	
+T249	Amount 1721 1731	2X volumes
+R110	Measure Arg1:T105 Arg2:T249	
+T250	Modifier 1494 1498	well
+R111	Mod-Link Arg1:E19 Arg2:T250	
+T251	Modifier 1748 1761	approximately
+R112	Mod-Link Arg1:T106 Arg2:T251	

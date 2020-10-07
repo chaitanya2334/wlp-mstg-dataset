@@ -92,31 +92,31 @@ E2	Action:T6 Site:E1 Acts-on:T8
 E3	Action:T9 Acts-on:E2 Product:T11
 E4	Action:T10 Acts-on:T11 Product:T15
 E5	Action:T14 Acts-on:T15 Using:T16 Product:T18
-E6	Action:T17 Acts-on:T18 Using:T20
-E7	Action:T21 Acts-on:E6
+E6	Action:T17 Acts-on:T18 Using:T20 Product:T91
+E7	Action:T21 Acts-on:T91
 E8	Action:T22 Acts-on:E7
-E9	Action:T23 Acts-on:E8
-E10	Action:T24 Acts-on:E9 Product:T27
+E9	Action:T23 Acts-on:E32
+E10	Action:T24 Acts-on:E9
 E11	Action:T25 Acts-on:T27 Acts-on2:T29
 E12	Action:T30 Acts-on:E11
-E13	Action:T31 Acts-on:E12 Using:T32 Product:T40
-E14	Action:T34 Acts-on:T36
+E13	Action:T31 Using:T32 Acts-on:E34
+E14	Action:T34 Acts-on:T36 Site:E13 Product:T40
 E15	Action:T37 Acts-on:T39 Site:T40
-E16	Action:T41 Acts-on:E15 Product:T45
+E16	Action:T41 Acts-on:E15
 E17	Action:T42 Acts-on:T44 Site:T45 Product:T53
 E18	Action:T46 Acts-on:T47 Acts-on2:T48 Using:T49 Using2:T50 Product:T59
 E19	Action:T52 Acts-on:T53 Using:T54 Product:T58
 E20	Action:T56 Acts-on:T58 Site:T59 Product:T62
-E21	Action:T60 Using:T61 Acts-on:T62
-E22	Action:T63 Using:T64 Acts-on:T65
-E23	Action:T66 Acts-on:T67 Using:T68 Using2:T69 Using3:T70
+E21	Action:T60 Using:T61 Acts-on:T62 Product:T100 Product2:T65
+E22	Action:T63 Using:T64 Acts-on:T65 Product:T103 Product2:T67
+E23	Action:T66 Acts-on:T67 Using:T68 Using2:T69 Using3:T70 Product:T72 Product2:T80 Product3:T81 Product4:T78
 E24	Action:T71 Acts-on:T72
-E25	Action:T73 Acts-on:T74
-E26	Action:T75 Acts-on:T76
+E25	Action:T73 Acts-on:T74 Acts-on2:T72
+E26	Action:T75 Acts-on2:E25 Acts-on3:T104
 E27	Action:T77 Acts-on:T78
 E28	Action:T79 Acts-on:T80 Acts-on2:T81
-E29	Action:T84 Acts-on:E28
-E30	Action:T85 Site:T87
+E29	Action:T84 Acts-on:E28 Acts-on2:T83
+E30	Action:T85 Site:T87 Acts-on:E29 Product:T89
 E31	Action:T88 Site:T89
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T5 Arg2:T4
@@ -133,6 +133,35 @@ R12	Measure Arg1:T44 Arg2:T43
 R13	Mod-Link Arg1:E19 Arg2:T51
 R14	Mod-Link Arg1:E20 Arg2:T55
 R15	Measure Arg1:T58 Arg2:T57
-R16	Measure Arg1:T83 Arg2:T82
 R17	Setting Arg1:E29 Arg2:T82
 R18	Setting Arg1:E30 Arg2:T86
+T90	Concentration 400 424	100 - fold concentration
+T91	Reagent 432 447	original sample
+R19	Measure Arg1:T91 Arg2:T90	
+T92	Modifier 496 504	complete
+T93	Action 505 516	dissolution
+E32	Action:T93 
+R20	Mod-Link Arg1:E32 Arg2:T92	
+R21	Enables Arg1:E8 Arg2:E32	
+T94	Modifier 565 573	complete
+T95	Action 574 585	dissolution
+E33	Action:T95 Product:T27
+R22	Mod-Link Arg1:E33 Arg2:T94	
+R23	Enables Arg1:E10 Arg2:E33	
+T96	Action 689 692	mix
+E34	Action:T96 
+R24	Enables Arg1:E12 Arg2:E34	
+T97	Action 859 862	mix
+E35	Action:T97 Product:T45
+R25	Enables Arg1:E16 Arg2:E35	
+T98	Action 1151 1165	avoid trapping
+E36	Action:T98 Acts-on:T99 Site:T100
+T99	Reagent 1166 1169	air
+T100	Seal 1180 1189	coverslip
+T101	Action 1231 1245	avoid trapping
+E37	Action:T101 Acts-on:T102 Site:T103
+T102	Reagent 1246 1249	air
+T103	Seal 1260 1269	coverslip
+T104	Device 1489 1500	white light
+R26	Meronym Arg1:T104 Arg2:T76	
+R27	Enables Arg1:E26 Arg2:E27	

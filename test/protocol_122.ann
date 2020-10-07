@@ -5,7 +5,7 @@ T4	Action 93 107	without lysing
 T5	Reagent 108 120	erythrocytes
 T6	Action 170 179	resuspend
 T7	Reagent 184 189	cells
-T8	Location 193 209	MojoSort™ Buffer
+T8	Reagent 193 209	MojoSort™ Buffer
 T9	Action 213 220	filling
 T10	Amount 227 231	4 mL
 T11	Modifier 237 241	5 mL
@@ -73,8 +73,8 @@ T72	Action 1098 1105	Discard
 T73	Reagent 1106 1117	supernatant
 T74	Action 1122 1131	resuspend
 T75	Amount 1135 1141	100 μL
-T76	Location 1145 1161	MojoSort™ Buffer
-T77	Location 1167 1173	volume
+T76	Reagent 1145 1161	MojoSort™ Buffer
+T77	Amount 1167 1173	volume
 T78	Action 1184 1188	keep
 T79	Reagent 1193 1198	cells
 T80	Concentration 1202 1220	1 x 108 cells / mL
@@ -100,8 +100,8 @@ T99	Action 1552 1555	Add
 T100	Reagent 1556 1572	MojoSort™ Buffer
 T101	Amount 1579 1583	2 mL
 T102	Action 1588 1593	place
-T103	Device 1598 1602	tube
-T104	Location 1610 1616	magnet
+T103	Location 1598 1602	tube
+T104	Device 1610 1616	magnet
 T105	Time 1621 1630	5 minutes
 T106	Action 1633 1640	Collect
 T107	Reagent 1645 1651	liquid
@@ -109,22 +109,20 @@ T108	Modifier 1657 1662	clean
 T109	Device 1663 1667	tube
 T110	Action 1670 1686	DO NOT DISCARD .
 T111	Action 1782 1788	Remove
-T112	Device 1793 1797	tube
-T113	Location 1807 1813	magnet
+T112	Location 1793 1797	tube
+T113	Device 1807 1813	magnet
 T114	Action 1818 1827	resuspend
 T115	Reagent 1832 1837	cells
 T116	Amount 1841 1845	2 mL
-T117	Location 1849 1865	MojoSort™ Buffer
+T117	Reagent 1849 1865	MojoSort™ Buffer
 T118	Action 1868 1873	Place
-T119	Location 1891 1897	magnet
+T119	Device 1891 1897	magnet
 T120	Time 1902 1911	5 minutes
 T121	Action 1914 1921	Collect
 T122	Reagent 1926 1932	liquid
 T123	Modifier 1940 1944	same
-T124	Device 1945 1949	tube
+T124	Location 1945 1949	tube
 T125	Action 1965 1979	DO NOT DISCARD
-T126	Action 1996 2003	observe
-T127	Reagent 2004 2014	aggregates
 T128	Action 2017 2023	filter
 T129	Reagent 2028 2038	suspension
 T130	Action 2069 2076	disrupt
@@ -139,60 +137,59 @@ T138	Action 2200 2214	DO NOT DISCARD
 T139	Action 2217 2221	Take
 T140	Device 2226 2255	pooled negative fraction tube
 T141	Action 2338 2343	place
-T142	Mention 2348 2352	tube
-T143	Location 2360 2366	magnet
+T142	Location 2348 2352	tube
+T143	Device 2360 2366	magnet
 T144	Amount 2371 2380	5 minutes
-E1	Action:T1 Acts-on:T2 Site:T3
-E2	Action:T4 Acts-on:T5
-E3	Action:T6 Acts-on:T7 Site:T8
-E4	Action:T9 Acts-on:T7 Site:T13 Product:T18
-E5	Action:T14 Product:T8 Acts-on:T15 Site:T16 Product2:T66
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T7
+E2	Action:T4 Acts-on:T5 Product:T7
+E3	Action:T6 Acts-on:T7 Site:T8 Product:T18
+E4	Action:T9 Site:T13
+E5	Action:T14 Acts-on:T15 Site:T16 Product:T8
 E6	Action:T17 Acts-on:T18 Using:T20
 E7	Action:T21 Acts-on:E6
 E8	Action:T24 Acts-on:E7 Acts-on2:T25
-E9	Action:T26 Acts-on:E8 Acts-on2:T28
-E10	Action:T27 Acts-on:E9 Acts-on2:T28 Product:T32
+E9	Action:T26 Acts-on:E8 Acts-on2:T28 Product:T32
+E10	Action:T27 Acts-on2:T28 Product:T32
 E11	Action:T30 Acts-on:T32 Site:T34
 E12	Action:T35 Site:E11 Acts-on:T37
-E13	Action:T38 Acts-on:E12 Acts-on2:T37
-E14	Action:T39 Acts-on:T37 Acts-on2:E13 Site:T40
+E13	Action:T38 Acts-on:E12
+E14	Action:T39 Acts-on2:E13 Site:T40 Product:T46
 E15	Action:T42 Acts-on:T43
-E16	Action:T44 Acts-on:T46
+E16	Action:T44 Acts-on:T46 Product:T147
 E17	Action:T47 Acts-on:T50
-E18	Action:T51 Acts-on:T53
+E18	Action:T51 Acts-on:T53 Using:T55 Product:T58
 E19	Action:T56 Acts-on:T58
-E20	Action:T59 Acts-on:T58
-E21	Action:T61 Acts-on:T62
-E22	Action:T63 Acts-on:T64
+E20	Action:T59 
+E21	Action:T61 Acts-on:T62 Site:E20
+E22	Action:T63 Acts-on:T64 Product:T69
 E23	Action:T65 Acts-on:T66
-E24	Action:T68 Acts-on:T69 Product:T73
+E24	Action:T68 Acts-on:T69 Product:T73 Product2:T82
 E25	Action:T72 Acts-on:T73
-E26	Action:T74 Acts-on:E25 Site:T76 Site2:T77
+E26	Action:T74 Acts-on:E25 Site:T76
 E27	Action:T78 Acts-on:T79
 E28	Action:T81 Acts-on:T82 Product:T88
 E29	Action:T83 Acts-on:T82 Measure-Type-Link:T85
-E30	Action:T86 Site:E26 Acts-on:T88
+E30	Action:T86 Acts-on:T88 Site:E27
 E31	Action:T89 Acts-on:E30
-E32	Action:T91 Acts-on:E31 Site:T92
+E32	Action:T91 Acts-on:E31 Site:T92 Product:T95 Product2:T98
 E33	Action:T94 Acts-on:T95
 E34	Action:T96 Acts-on:T98
-E35	Action:T99 Site:E32 Acts-on:T100 Product:T103
+E35	Action:T99 Acts-on:T100 Product:T103 Site:E55
 E36	Action:T102 Acts-on:T103 Site:T104 Product:T107
-E37	Action:T106 Acts-on:T107 Using:T109 Product:T112
-E38	Action:T110 
+E37	Action:T106 Acts-on:T107 Using:T109
+E38	Action:T110 Acts-on:E37 Product:T156
 E39	Action:T111 Acts-on:T112 Site:T113 Product:T115
 E40	Action:T114 Acts-on:T115 Site:T117
 E41	Action:T118 Acts-on:E40 Site:T119 Product:T122
 E42	Action:T121 Acts-on:T122 Using:T124
-E43	Action:T125 
-E44	Action:T126 Acts-on:T127
-E45	Action:T128 Acts-on:T129
-E46	Action:T130 Acts-on:T131
+E43	Action:T125 Acts-on:E42 Product:T129
+E45	Action:T128 Acts-on:T129 Product:T131 Product2:T133
+E46	Action:T130 Acts-on:T131 Product:T137
 E47	Action:T132 Acts-on:T133 Using:T134
 E48	Action:T135 Acts-on:T137
 E49	Action:T136 Acts-on:T137
-E50	Action:T138 
-E51	Action:T139 Acts-on:T140
+E50	Action:T138 Acts-on:E48 Acts-on2:E49
+E51	Action:T139 Acts-on:T140 Product:T142
 E52	Action:T141 Acts-on:T142 Site:T143
 R1	Measure Arg1:T7 Arg2:T10
 R2	Mod-Link Arg1:T13 Arg2:T11
@@ -228,3 +225,45 @@ R31	Measure Arg1:T117 Arg2:T116
 R32	Setting Arg1:E41 Arg2:T120
 R33	Mod-Link Arg1:T124 Arg2:T123
 R34	Setting Arg1:E52 Arg2:T144
+R35	Overlaps Arg1:E1 Arg2:E2	
+R36	Overlaps Arg1:E9 Arg2:E10	
+R37	Enables Arg1:E15 Arg2:E16	
+R38	Enables Arg1:E17 Arg2:E18	
+T145	Action 779 782	add
+E53	Action:T145 Acts-on:T147 Product:T50
+T146	Amount 783 789	100 μL
+T147	Reagent 794 807	1 x 108 cells
+R39	Measure Arg1:T147 Arg2:T146	
+T148	Modifier 888 896	Optional
+R40	Mod-Link Arg1:E19 Arg2:T148	
+R41	Or Arg1:E19 Arg2:E20	
+T149	Action 968 975	monitor
+E54	Action:T149 Acts-on:T150 Product:T64
+T150	Reagent 976 992	purity and yield
+R42	Enables Arg1:E21 Arg2:E54	
+R43	Enables Arg1:E23 Arg2:E22	
+R44	Or Arg1:T75 Arg2:T77	
+R45	Enables Arg1:E26 Arg2:E27	
+R46	Enables Arg1:E33 Arg2:E34	
+T151	Action 1443 1446	add
+E55	Action:T151 Using:T153 Acts-on:E34
+T152	Amount 1447 1453	100 μL
+T153	Reagent 1458 1471	1 x 108 cells
+R47	Measure Arg1:T153 Arg2:T152	
+T154	Modifier 1687 1695	Optional
+T155	Action 1698 1702	Take
+E56	Action:T155 Acts-on:T156 Product:T158
+T156	Reagent 1706 1713	aliquot
+T157	Action 1721 1728	placing
+E57	Action:T157 Acts-on:T158 Site:T159
+T158	Location 1733 1737	tube
+T159	Device 1745 1751	magnet
+T160	Action 1755 1762	monitor
+E58	Action:T160 Acts-on:T161 Product:T112
+T161	Reagent 1763 1779	purity and yield
+R48	Mod-Link Arg1:E56 Arg2:T154	
+R49	Enables Arg1:E57 Arg2:E58	
+R50	Enables Arg1:E47 Arg2:E46	
+R51	Overlaps Arg1:E48 Arg2:E49	
+R52	Enables Arg1:E4 Arg2:E3	
+R53	Mod-Link Arg1:T49 Arg2:T48	
