@@ -35,7 +35,7 @@ T34	Location 520 523	ice
 T35	Time 528 537	5 minutes
 T36	Action 540 547	Pipette
 T37	Amount 548 554	950 μl
-T38	Modifier 558 574	room temperature
+T38	Temperature 558 574	room temperature
 T39	Reagent 575 578	SOC
 T40	Reagent 588 595	mixture
 T41	Action 598 606	Incubate
@@ -57,23 +57,23 @@ T56	Time 772 781	overnight
 T57	Temperature 785 789	37°C
 E1	Action:T1 Acts-on:T2 Site:T3
 E2	Action:T4 Acts-on:E1 Site:T5
-E3	Action:T6 
-E4	Action:T7 Acts-on:E3
+E3	Action:T6 Acts-on:E2
+E4	Action:T7 Acts-on:E3 Product:T16
 E5	Action:T10 Acts-on:T11 Site:T13 Product:T18
 E6	Action:T14 Acts-on:T16 Site:T18 Product:T22
-E7	Action:T21 Acts-on:T22 Product:T27
+E7	Action:T21 Acts-on:T22
 E8	Action:T24 
-E9	Action:T25 
+E9	Action:T25 Acts-on:E8 Product:T27
 E10	Action:T26 Acts-on:T27 Site:T28
 E11	Action:T30 Acts-on:E10
 E12	Action:T33 Acts-on:E11 Site:T34 Product:T40
 E13	Action:T36 Acts-on:T39 Site:T40
-E14	Action:T41 Acts-on:E13
-E15	Action:T44 
+E14	Action:T41 Acts-on:E13 Product:T47
+E15	Action:T44 Product:T47
 E16	Action:T46 Acts-on:T47
 E17	Action:T49 Acts-on:T50
-E18	Action:T51 Acts-on:T50
-E19	Action:T52 Site:T54
+E18	Action:T51 Acts-on:E17
+E19	Action:T52 Site:T54 Acts-on:E18
 E20	Action:T55 Acts-on:E19
 R1	Setting Arg1:E4 Arg2:T8
 R2	Setting Arg1:E4 Arg2:T9
@@ -88,11 +88,14 @@ R10	Setting Arg1:E11 Arg2:T31
 R11	Setting Arg1:E11 Arg2:T32
 R12	Setting Arg1:E12 Arg2:T35
 R13	Measure Arg1:T39 Arg2:T37
-R14	Mod-Link Arg1:T39 Arg2:T38
 R15	Setting Arg1:E14 Arg2:T42
 R16	Setting Arg1:E14 Arg2:T43
 R17	Setting Arg1:E15 Arg2:T45
 R18	Mod-Link Arg1:E16 Arg2:T48
-R19	Meronym Arg1:T47 Arg2:T50
 R20	Setting Arg1:E20 Arg2:T56
 R21	Setting Arg1:E20 Arg2:T57
+R22	Enables Arg1:E7 Arg2:E8	
+R14	Measure Arg1:T39 Arg2:T38	
+R23	Overlaps Arg1:E14 Arg2:E15	
+R24	Enables Arg1:E17 Arg2:E16	
+R19	Setting Arg1:E19 Arg2:T53	

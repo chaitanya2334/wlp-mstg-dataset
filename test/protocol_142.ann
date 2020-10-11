@@ -173,36 +173,36 @@ E6	Action:T24 Acts-on:T25 Using:T28
 E7	Action:T29 Acts-on:E6 Acts-on2:T30 Product:T32
 E8	Action:T31 Acts-on:T32 Site:T33 Product:T38
 E9	Action:T37 Acts-on:T38 Using:T40 Using2:T42
-E10	Action:T43 Acts-on:T44 Product:T47
+E10	Action:T43 Acts-on:T44 Product:T47 Site:E9
 E11	Action:T46 Acts-on:T47 Site:T48 Product:T53
 E12	Action:T52 Acts-on:T53 Using:T54
 E13	Action:T56 Site:E12 Acts-on:T59 Acts-on2:T62
-E14	Action:T63 Acts-on:T62
+E14	Action:T63 Product:T62
 E15	Action:T65 Acts-on:E13 Using:T67 Product:T70
 E16	Action:T69 Acts-on:T70 Site:T71 Product:T76
-E17	Action:T75 Acts-on:T76 Using:T78 Product:T82
-E18	Action:T79 Acts-on:T80
+E17	Action:T75 Acts-on:T76 Using:T78
+E18	Action:T79 Acts-on:T80 Measure-Type-Link:T167 Product:T82
 E19	Action:T81 Acts-on:T82 Site:T84 Product:T89
-E20	Action:T85 Acts-on:T84 Using:T86 Site:T87
+E20	Action:T85 Using:T86 Site:T87 Product:T84
 E21	Action:T88 Acts-on:T89 Using:T90 Using2:T92 Product:T94
 E22	Action:T93 Acts-on:T94 Product:T96
 E23	Action:T95 Acts-on:T96 Product:T98
-E24	Action:T97 Acts-on:T98 Using:T100 Product:T104
-E25	Action:T101 Acts-on:T102
+E24	Action:T97 Acts-on:T98 Using:T100
+E25	Action:T101 Acts-on:T102 Measure-Type-Link:T168 Product:T104
 E26	Action:T103 Acts-on:T104 Site:T106 Product:T111
-E27	Action:T107 Acts-on:T106 Using:T108 Site:T109
+E27	Action:T107 Using:T108 Site:T109 Product:T106
 E28	Action:T110 Acts-on:T111 Using:T112 Using2:T114 Product:T116
 E29	Action:T115 Acts-on:T116 Product:T118
 E30	Action:T117 Acts-on:T118 Product:T120
-E31	Action:T119 Acts-on:T120 Using:T122 Product:T127
-E32	Action:T124 Acts-on:T125
+E31	Action:T119 Acts-on:T120 Using:T122
+E32	Action:T124 Acts-on:T125 Measure-Type-Link:T169 Product:T127
 E33	Action:T126 Acts-on:T127 Site:T129 Product:T135
-E34	Action:T130 Acts-on:T129 Using:T131 Site:T133
+E34	Action:T130 Using:T131 Site:T133 Product:T129
 E35	Action:T134 Acts-on:T135 Using:T136 Using2:T139 Product:T141
 E36	Action:T140 Acts-on:T141 Product:T143
 E37	Action:T142 Acts-on:T143 Product:T145
 E38	Action:T144 Acts-on:T145 Using:T146 Site:T148
-E39	Action:T150 Site:E38 Acts-on:T151 Product:T155
+E39	Action:T150 Site:E38 Acts-on:T151 Product:T155 Measure-Type-Link:T170
 E40	Action:T154 Acts-on:T155
 E41	Action:T156 Acts-on:E40 Product:T161 Product2:T163 Product3:T165
 E42	Action:T160 Acts-on:T161
@@ -259,3 +259,10 @@ R48	Setting Arg1:E41 Arg2:T157
 R49	Setting Arg1:E41 Arg2:T158
 R50	Mod-Link Arg1:E41 Arg2:T159
 R51	Setting Arg1:E44 Arg2:T166
+R52	Enables Arg1:E17 Arg2:E18	
+T167	Measure-Type 1105 1118	concentration
+R53	Enables Arg1:E24 Arg2:E25	
+T168	Measure-Type 1453 1466	concentration
+R54	Enables Arg1:E31 Arg2:E32	
+T169	Measure-Type 1804 1817	concentration
+T170	Measure-Type 2187 2206	final concentration

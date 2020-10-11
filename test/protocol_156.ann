@@ -82,18 +82,18 @@ T81	Time 977 982	1 min
 T82	Action 983 987	Spin
 T83	Speed 991 997	10000g
 T84	Time 1002 1011	2 minutes
-E1	Action:T1 Acts-on:T2 Acts-on2:T3
-E2	Action:T10 Site:T7 Site2:T8 Acts-on:T9
+E1	Action:T1 Acts-on:T2 Acts-on2:T3 Product:T20
+E2	Action:T10 Site:T7 Site2:T8 Acts-on:T9 Product:T50 Product2:T57
 E3	Action:T11 Acts-on:T13 Product:T17
 E4	Action:T16 Acts-on:T17 Product:T22
 E5	Action:T18 Acts-on:T20 Site:T22
 E6	Action:T23 Acts-on:E5 Product:T30
 E7	Action:T25 Acts-on:T28 Site:T30
 E8	Action:T31 Acts-on:E7 Product:T37
-E9	Action:T34 Product:T40
-E10	Action:T35 Acts-on:T37
+E9	Action:T34 
+E10	Action:T35 Acts-on:T37 Product:T40 Product2:T41
 E11	Action:T38 Acts-on:T40 Acts-on2:T41 Site:T42
-E12	Action:T43 Acts-on:E11 Product:T47
+E12	Action:T43 Acts-on:E11 Product:T47 Product2:T51
 E13	Action:T46 Acts-on:T47
 E14	Action:T48 Acts-on:T50 Site:T51
 E15	Action:T52 Acts-on:E14 Product:T58
@@ -140,3 +140,4 @@ R32	Setting Arg1:E22 Arg2:T80
 R33	Setting Arg1:E23 Arg2:T81
 R34	Setting Arg1:E23 Arg2:T83
 R35	Setting Arg1:E23 Arg2:T84
+R36	Enables Arg1:E9 Arg2:E10	

@@ -36,8 +36,8 @@ T35	Time 508 517	5 minutes
 T36	Action 520 524	Load
 T37	Amount 531 536	40 µl
 T38	Reagent 540 546	sample
-T39	Location 550 559	each well
-T40	Reagent 565 581	1.5 mm thick gel
+T39	Location 555 559	well
+T40	Reagent 572 581	thick gel
 T41	Action 658 666	Transfer
 T42	Reagent 671 679	proteins
 T43	Reagent 683 698	anitrocellulose
@@ -128,51 +128,51 @@ T127	Reagent 2109 2112	ECL
 T128	Reagent 2115 2151	enhanced chemiluminescence substrate
 T129	Time 2158 2171	1 - 2 minutes
 T130	Action 2220 2229	Drain off
-T131	Reagent 2234 2258	excess detection reagent
+T131	Reagent 2241 2258	detection reagent
 T132	Action 2261 2268	wrap up
 T133	Reagent 2273 2278	blots
 T134	Action 2292 2302	smooth out
 T135	Reagent 2307 2318	air bubbles
 T136	Action 2321 2326	Place
-T137	Reagent 2331 2344	wrapped blots
+T137	Reagent 2339 2344	blots
 T138	Device 2371 2392	X - ray film cassette
 T139	Action 2397 2419	expose to x - ray film
 E1	Action:T1 Acts-on:T2 Site:T3
-E2	Action:T4 Acts-on:T3 Product:T5
+E2	Action:T4 Product:T5 Acts-on:E1
 E3	Action:T6 Acts-on:T7 Acts-on2:T9 Site:T10
 E4	Action:T12 Acts-on:E3 Product:T18 Product2:T21
 E5	Action:T17 Acts-on:T18 Site:T19 Product:T24
 E6	Action:T20 Acts-on:T21
 E7	Action:T22 Acts-on:T24
-E8	Action:T25 Acts-on:T28
+E8	Action:T25 Acts-on2:E7 Using:T28
 E9	Action:T29 Acts-on:E8
 E10	Action:T31 Acts-on:E9
 E11	Action:T34 Acts-on:E10 Product:T38
-E12	Action:T36 Site:T39 Product:T42
-E13	Action:T41 Acts-on:T42 Site:T43 Product:T46
-E14	Action:T45 Acts-on:T46 Site:T47
-E15	Action:T48 Acts-on:T49 Product:T53
+E12	Action:T36 Site:T39 Product2:T145 Acts-on:T38
+E13	Action:T41 Acts-on:T42 Site:T43 Product:T46 Using:T148 Product2:T47
+E14	Action:T45 Acts-on:T46
+E15	Action:T48 Product:T53 Site:T49 Acts-on:E14
 E16	Action:T52 Acts-on:T53 Using:T58 Product:T65
 E17	Action:T59 Acts-on:T60 Site:T63 Product:T66
 E18	Action:T64 Acts-on:T65 Site:T66
 E19	Action:T67 Acts-on:E18 Using:T72
-E20	Action:T73 Acts-on:E19 Acts-on2:T75
+E20	Action:T73 Acts-on:E19 Using:T75
 E21	Action:T79 Acts-on:E20 Acts-on2:T81
 E22	Action:T85 Acts-on:E21 Acts-on2:T87 Product:T92
-E23	Action:T91 Acts-on:T92 Acts-on2:T95
-E24	Action:T96 
-E25	Action:T100 Acts-on:E23 Acts-on2:T102
-E26	Action:T105 Acts-on:E25 Acts-on2:T107
-E27	Action:T110 Acts-on:E26 Acts-on2:T112
-E28	Action:T115 Acts-on:E27 Acts-on2:T117
-E29	Action:T120 Acts-on:E28 Count:T121 Acts-on2:T123 Product:T125
-E30	Action:T124 Acts-on:T125 Acts-on2:T127
-E31	Action:T130 Site:E30 Acts-on:T131
-E32	Action:T132 Acts-on:T133
-E33	Action:T134 Site:E32 Acts-on:T135 Product:T137
+E23	Action:T91 Acts-on:T92 Acts-on2:E24
+E24	Action:T96 Site:T99 Acts-on:T95
+E25	Action:T100 Acts-on:E23 Using:T102
+E26	Action:T105 Acts-on:E25 Using:T107
+E27	Action:T110 Acts-on:E26 Using:T112
+E28	Action:T115 Acts-on:E27 Using:T117
+E29	Action:T120 Acts-on:E28 Count:T121 Product:T125 Using:T123
+E30	Action:T124 Acts-on:T125 Using:T127
+E31	Action:T130 Site:E30 Acts-on:T131 Product:T133
+E32	Action:T132 Acts-on:T133 Product:T135
+E33	Action:T134 Acts-on:T135 Product:T137
 E34	Action:T136 Acts-on:T137 Site:T138
-E35	Action:T139 Acts-on:T137 Site:T138
-R1	Coreference-Link Arg1:T5 Arg2:T7
+E35	Action:T139 Acts-on:E34
+R1	Coreference-Link Arg1:T7 Arg2:T5
 R2	Setting Arg1:E3 Arg2:T11
 R3	Measure Arg1:T9 Arg2:T8
 R4	Setting Arg1:E4 Arg2:T13
@@ -186,36 +186,30 @@ R11	Setting Arg1:E9 Arg2:T30
 R12	Setting Arg1:E10 Arg2:T32
 R13	Setting Arg1:E10 Arg2:T33
 R14	Setting Arg1:E11 Arg2:T35
-R15	Or Arg1:T37 Arg2:T38
 R16	Meronym Arg1:T39 Arg2:T40
 R17	Or Arg1:T43 Arg2:T44
-R18	Or Arg1:T50 Arg2:T51
-R19	Coreference-Link Arg1:T51 Arg2:T49
 R20	Setting Arg1:E16 Arg2:T54
 R21	Setting Arg1:E16 Arg2:T55
-R22	Setting Arg1:E16 Arg2:T56
 R23	Or Arg1:T54 Arg2:T56
 R24	Setting Arg1:E17 Arg2:T61
 R25	Measure Arg1:T63 Arg2:T62
 R26	Setting Arg1:E19 Arg2:T68
 R27	Setting Arg1:E19 Arg2:T69
-R28	Setting Arg1:E19 Arg2:T70
 R29	Or Arg1:T68 Arg2:T70
 R30	Setting Arg1:E20 Arg2:T74
 R31	Meronym Arg1:T76 Arg2:T75
-R32	Meronym Arg1:T78 Arg2:T75
+R32	Meronym Arg1:T78 Arg2:T76
 R33	Measure Arg1:T78 Arg2:T77
 R34	Setting Arg1:E21 Arg2:T80
 R35	Meronym Arg1:T82 Arg2:T81
-R36	Meronym Arg1:T84 Arg2:T81
+R36	Meronym Arg1:T84 Arg2:T82
 R37	Measure Arg1:T84 Arg2:T83
 R38	Setting Arg1:E22 Arg2:T86
 R39	Meronym Arg1:T88 Arg2:T87
-R40	Meronym Arg1:T90 Arg2:T87
+R40	Meronym Arg1:T90 Arg2:T88
 R41	Measure Arg1:T90 Arg2:T89
 R42	Setting Arg1:E23 Arg2:T93
 R43	Setting Arg1:E23 Arg2:T94
-R44	Measure Arg1:T95 Arg2:T97
 R45	Measure Arg1:T99 Arg2:T98
 R46	Setting Arg1:E25 Arg2:T101
 R47	Meronym Arg1:T104 Arg2:T102
@@ -232,4 +226,32 @@ R57	Measure Arg1:T119 Arg2:T118
 R58	Setting Arg1:E29 Arg2:T122
 R59	Setting Arg1:E30 Arg2:T129
 R60	Measure Arg1:T127 Arg2:T126
-R61	Coreference-Link Arg1:T127 Arg2:T128
+R61	Coreference-Link Arg1:T128 Arg2:T127
+T140	Modifier 327 330	new
+R62	Mod-Link Arg1:T19 Arg2:T140	
+R15	Measure Arg1:T38 Arg2:T37	
+T141	Modifier 550 554	each
+R63	Mod-Link Arg1:T39 Arg2:T141	
+T142	Size 565 571	1.5 mm
+R64	Measure Arg1:T40 Arg2:T142	
+T143	Action 584 587	Set
+E36	Action:T143 Acts-on:T145 Using:T144 Product:T42
+T144	Method 628 655	manufacturer’s instructions
+T145	Reagent 588 591	gel
+T146	Generic-Measure 592 610	running conditions
+R65	Setting Arg1:E36 Arg2:T146	
+T147	Generic-Measure 721 744	variable power settings
+T148	Method 762 789	manufacturer’s instructions
+R66	Setting Arg1:E13 Arg2:T147	
+R67	Meronym Arg1:T46 Arg2:T47	
+R18	Measure Arg1:T51 Arg2:T50	
+R19	Meronym Arg1:T51 Arg2:T49	
+R68	Or Arg1:T69 Arg2:T71	
+R44	Setting Arg1:E24 Arg2:T97	
+T149	Modifier 2234 2240	excess
+R69	Mod-Link Arg1:T131 Arg2:T149	
+T150	Modifier 2285 2291	gently
+R70	Mod-Link Arg1:E33 Arg2:T150	
+T151	Modifier 2331 2338	wrapped
+R71	Mod-Link Arg1:T137 Arg2:T151	
+R72	Or Arg1:T55 Arg2:T57	

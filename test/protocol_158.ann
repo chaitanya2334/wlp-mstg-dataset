@@ -32,8 +32,6 @@ T31	Measure-Type 750 770	FSC and SSC channels
 T32	Reagent 779 796	cells of interest
 T33	Method 800 811	recommended
 T34	Method 815 833	previously defined
-T35	Measure-Type 854 867	FSC threshold
-T36	Generic-Measure 871 883	not too high
 T37	Measure-Type 954 957	SSC
 T38	Action 968 976	adjusted
 T39	Reagent 1000 1005	cells
@@ -71,7 +69,6 @@ T70	Action 1541 1550	performed
 T71	Method 1554 1559	usual
 T72	Action 1563 1571	identify
 T73	Measure-Type 1576 1591	cell population
-T74	Reagent 1598 1609	of interest
 T75	Modifier 1618 1625	ungated
 T76	Device 1626 1630	plot
 T77	Modifier 1638 1642	same
@@ -85,26 +82,26 @@ T84	Location 1739 1743	gate
 T85	Action 1744 1747	set
 T86	Reagent 1759 1774	bead population
 E1	Action:T2 Product:T1 Using:T4
-E2	Action:T3 Acts-on:T1 Acts-on2:E1 Using:T4 Product:T24
+E2	Action:T3 Using:T4 Product2:T1
 E3	Action:T6 Product:T5 Using:T7
 E4	Action:T12 Acts-on:T13
-E5	Action:T16 Acts-on:T18
-E6	Action:T17 Acts-on:T18
+E5	Action:T16 Acts-on:T18 Product:T22 Product2:T44
+E6	Action:T17 Acts-on:T18 Product:T22
 E7	Action:T20 Acts-on:T22 Site:T24 Product:T32
 E8	Action:T26 Using:T25 Acts-on:T29
-E9	Action:T30 Measure-Type-Link:T31 Acts-on:T32 Using:T33
+E9	Action:T30 Measure-Type-Link:T31 Acts-on:T32 Using:T33 Product:T39
 E10	Action:T38 Acts-on:E9 Measure-Type-Link:T37
 E11	Action:T41 Acts-on:T39
-E12	Action:T42 Acts-on:T43
-E13	Action:T45 Acts-on:E12 Acts-on2:T43 Site:T46
-E14	Action:T47 Measure-Type-Link:T48 Acts-on:T49
+E12	Action:T42 Acts-on:T43 Product:T49
+E13	Action:T45 Acts-on:E12 Site:T46
+E14	Action:T47 Measure-Type-Link:T48 Acts-on:T49 Product:T54
 E15	Action:T50 Measure-Type-Link:T51
-E16	Action:T53 Acts-on:T54 Site:T57
+E16	Action:T53 Acts-on:T54 Site:T57 Product:T59 Product2:T67 Product3:T68
 E17	Action:T58 Acts-on:T59 Site:T60
 E18	Action:T62 Acts-on:T64
-E19	Action:T66 Acts-on:T67 Acts-on2:T68
-E20	Action:T70 Using:T69 Using2:T71
-E21	Action:T72 Measure-Type-Link:T73 Acts-on:T74
+E19	Action:T66 Acts-on:T67 Acts-on2:T68 Product:T78 Product2:T86 Product3:T79
+E20	Action:T70 Using:T69 Using2:T71 Acts-on:E19
+E21	Action:T72 Measure-Type-Link:T73
 E22	Action:T80 Acts-on:T76 Measure-Type-Link:T83
 E23	Action:T85 Acts-on:T84 Site:T86
 R1	Or Arg1:T7 Arg2:T8
@@ -113,7 +110,6 @@ R3	Or Arg1:T9 Arg2:T10
 R4	Mod-Link Arg1:E4 Arg2:T11
 R5	Setting Arg1:E4 Arg2:T14
 R6	Enables Arg1:E4 Arg2:E5
-R7	Enables Arg1:E4 Arg2:E6
 R8	Mod-Link Arg1:E5 Arg2:T15
 R9	Measure Arg1:T22 Arg2:T21
 R10	Mod-Link Arg1:T24 Arg2:T23
@@ -137,3 +133,13 @@ R27	Meronym Arg1:T76 Arg2:T78
 R28	Meronym Arg1:T76 Arg2:T79
 R29	Mod-Link Arg1:T78 Arg2:T77
 R30	Or Arg1:T81 Arg2:T82
+R31	Overlaps Arg1:E2 Arg2:E1	
+R32	Overlaps Arg1:E3 Arg2:E2	
+T87	Action 532 537	occur
+E24	Action:T87 Site:T19 Product:T18
+R33	Coreference-Link Arg1:T24 Arg2:T1	
+R34	Overlaps Arg1:E5 Arg2:E6	
+R7	Enables Arg1:E8 Arg2:E7	
+R35	Coreference-Link Arg1:T46 Arg2:T39	
+R36	Overlaps Arg1:E17 Arg2:E18	
+R37	Enables Arg1:E20 Arg2:E21	

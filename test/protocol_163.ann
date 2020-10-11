@@ -22,9 +22,6 @@ T21	Speed 316 323	2,000xg
 T22	Time 328 337	5 minutes
 T23	Action 343 349	remove
 T24	Reagent 350 361	supernatant
-T25	Action 364 370	Repeat
-T26	Method 371 384	steps 4 and 5
-T27	Reagent 388 394	pellet
 T28	Action 410 416	Vortex
 T29	Location 421 425	tube
 T30	Action 429 438	resuspend
@@ -38,7 +35,7 @@ T37	Reagent 522 527	cells
 T38	Action 532 538	vortex
 T39	Modifier 539 549	vigorously
 T40	Action 553 557	lyse
-T41	Mention 562 567	cells
+T41	Reagent 562 567	cells
 T42	Action 658 666	incubate
 T43	Temperature 670 674	37°C
 T44	Time 679 691	5‐10 minutes
@@ -131,45 +128,44 @@ T130	Amount 1707 1710	5ml
 T131	Reagent 1711 1727	RBC Lysis Buffer
 E1	Action:T1 Acts-on:T2
 E2	Action:T3 
-E3	Action:T4 Acts-on:E1
-E4	Action:T7 Acts-on:E3 Product:T11
+E3	Action:T4 Acts-on:E2
+E4	Action:T7 Acts-on:E3 Product:T11 Product2:T14
 E5	Action:T10 Acts-on:T11
-E6	Action:T13 Acts-on:T14
+E6	Action:T13 Acts-on:T14 Product:T18
 E7	Action:T15 Acts-on:T17 Site:T18
 E8	Action:T19 Acts-on:E7
 E9	Action:T20 Acts-on:E8 Product:T24
-E10	Action:T23 Acts-on:T24
-E11	Action:T25 Using:T26
+E10	Action:T23 Acts-on:T24 Product:T29
 E12	Action:T28 Acts-on:T29
 E13	Action:T30 Acts-on:T31 Site:T32 Product:T37
-E14	Action:T33 Acts-on:T35 Site:T37
+E14	Action:T33 Acts-on:T35 Site:T37 Product:T41
 E15	Action:T38 Acts-on:E14
 E16	Action:T40 Acts-on:T41
-E17	Action:T42 Acts-on:T45
+E17	Action:T42 Acts-on2:E16 Product:T45
 E18	Action:T46 Acts-on:T48 Site:T49 Product:T52
-E19	Action:T50 
+E19	Action:T50 Acts-on:E18
 E20	Action:T51 Acts-on:T52
-E21	Action:T54 Product:T59
+E21	Action:T54 Product:T59 Acts-on:E20
 E22	Action:T58 Acts-on:T59 Site:T61 Product:T65
 E23	Action:T62 Acts-on:T64 Site:T65 Product:T69
-E24	Action:T66 
+E24	Action:T66 Acts-on:E23
 E25	Action:T68 Acts-on:T69
-E26	Action:T71 Product:T75
+E26	Action:T71 Product:T75 Acts-on:E24 Product2:T79 Product3:T81
 E27	Action:T74 Acts-on:T75
 E28	Action:T78 Using:T76 Acts-on:T79
 E29	Action:T80 Acts-on:T81
-E30	Action:T82 Acts-on:T85
+E30	Action:T82 Acts-on:T85 Product:E28 Product2:T87
 E31	Action:T86 Acts-on:T87
 E32	Action:T89 Acts-on:T90
-E33	Action:T91 Product:T95
+E33	Action:T91 Product:T95 Acts-on:E32
 E34	Action:T94 Acts-on:T95 Product:T97
 E35	Action:T96 Acts-on:T97 Site:T101
 E36	Action:T102 Acts-on:E35
 E37	Action:T104 Site:E36 Acts-on:T106
-E38	Action:T107 Acts-on:T108
+E38	Action:T107 Acts-on:T108 Product:T110
 E39	Action:T109 Acts-on:T110
 E40	Action:T111 Acts-on:T110
-E41	Action:T114 Acts-on:E40
+E41	Action:T114 Acts-on:E39
 E42	Action:T118 Product:T117
 E43	Action:T119 Acts-on:T120
 E44	Action:T122 Acts-on:T120
@@ -187,7 +183,6 @@ R10	Meronym Arg1:T32 Arg2:T29
 R11	Measure Arg1:T35 Arg2:T34
 R12	Mod-Link Arg1:T37 Arg2:T36
 R13	Mod-Link Arg1:E15 Arg2:T39
-R14	Mod-Link Arg1:E16 Arg2:T39
 R15	Setting Arg1:E17 Arg2:T43
 R16	Setting Arg1:E17 Arg2:T44
 R17	Measure Arg1:T48 Arg2:T47
@@ -223,3 +218,19 @@ R46	Measure Arg1:T127 Arg2:T126
 R47	Measure Arg1:T129 Arg2:T128
 R48	Meronym Arg1:T131 Arg2:T129
 R49	Measure Arg1:T131 Arg2:T130
+R50	Enables Arg1:E1 Arg2:E2	
+R51	Overlaps Arg1:E5 Arg2:E6	
+R52	Enables Arg1:E12 Arg2:E13	
+R14	Enables Arg1:E15 Arg2:E16	
+T25	Modifier 717 727	homogenous
+R53	Mod-Link Arg1:T45 Arg2:T25	
+R54	Coreference-Link Arg1:T49 Arg2:T45	
+R55	Enables Arg1:E20 Arg2:E19	
+R56	Enables Arg1:E25 Arg2:E24	
+R57	Overlaps Arg1:E28 Arg2:E29	
+R58	Enables Arg1:E31 Arg2:E32	
+R59	Enables Arg1:E37 Arg2:E38	
+R60	Enables Arg1:E40 Arg2:E39	
+R61	Enables Arg1:E41 Arg2:E42	
+R62	Coreference-Link Arg1:T120 Arg2:T117	
+R63	Or Arg1:E43 Arg2:E44	

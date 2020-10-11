@@ -1,7 +1,7 @@
 T1	Action 66 71	Bring
 T2	Amount 72 80	100 pmol
 T3	Reagent 84 88	Cas9
-T4	Measure-Type 94 106	final volume
+T4	Reagent 94 106	final volume
 T5	Amount 110 114	5 µL
 T6	Reagent 121 132	Cas9 buffer
 T7	Amount 135 140	20 mM
@@ -16,7 +16,7 @@ T15	Reagent 196 200	TCEP
 T16	Action 232 237	Bring
 T17	Amount 238 246	120 pmol
 T18	Reagent 247 252	sgRNA
-T19	Measure-Type 258 270	final volume
+T19	Reagent 258 270	final volume
 T20	Amount 274 278	5 µL
 T21	Reagent 285 296	Cas9 buffer
 T22	Action 364 367	Add
@@ -111,22 +111,22 @@ T110	Reagent 1851 1856	cells
 T111	Time 1857 1865	24 hours
 T112	Action 1869 1875	settle
 T113	Action 1880 1887	recover
-E1	Action:T1 Acts-on:T3 Measure-Type-Link:T4 Using:T6 Product:T23
-E2	Action:T16 Acts-on:T18 Measure-Type-Link:T19 Using:T21 Product:T24
+E1	Action:T1 Acts-on:T3 Using:T6 Product2:T4
+E2	Action:T16 Acts-on:T18 Using:T21 Product2:T19
 E3	Action:T22 Acts-on:T23 Site:T24
 E4	Action:T26 Using:T27
 E5	Action:T30 Acts-on:E3 Product:T29
 E6	Action:T32 Acts-on:T33 Product:T36
 E7	Action:T34 Acts-on:T36 Site:T38 Product:T43
 E8	Action:T39 Acts-on:E7
-E9	Action:T42 Acts-on:T43 Product:T63 Product2:T64
+E9	Action:T42 Acts-on:T43 Product:T63
 E10	Action:T45 Product:T46 Product2:T47
 E11	Action:T48 Acts-on:T49 Using:T51
-E12	Action:T52 Acts-on:E11 Acts-on2:T49 Site:T53
-E13	Action:T54 Acts-on:T56
-E14	Action:T55 Acts-on:E13
+E12	Action:T52 Site:T53 Acts-on:E11 Product:T56
+E13	Action:T54 Acts-on:T56 Site:T58 Product:T71
+E14	Action:T55 Acts-on:T56 Site:T58 Product:T71
 E15	Action:T59 Acts-on:T60 Using:T61 Product:T92
-E16	Action:T62 Acts-on:T63 Site:T64 Using:T67 Product:T69
+E16	Action:T62 Acts-on:T63 Using:T67 Product:T69
 E17	Action:T68 Acts-on:T69 Site:T71 Using:T72 Product:T77
 E18	Action:T73 Acts-on:T75 Site:T77
 E19	Action:T78 Acts-on:E18
@@ -152,7 +152,6 @@ R8	Measure Arg1:T13 Arg2:T12
 R9	Meronym Arg1:T15 Arg2:T6
 R10	Measure Arg1:T15 Arg2:T14
 R11	Measure Arg1:T18 Arg2:T17
-R12	Coreference-Link Arg1:T21 Arg2:T6
 R13	Mod-Link Arg1:E3 Arg2:T25
 R14	Meronym Arg1:T23 Arg2:T27
 R15	Overlaps Arg1:E4 Arg2:E3
@@ -165,13 +164,7 @@ R21	Setting Arg1:E8 Arg2:T41
 R22	Enables Arg1:E8 Arg2:E9
 R23	Mod-Link Arg1:E9 Arg2:T44
 R24	Overlaps Arg1:E10 Arg2:E9
-R25	Enables Arg1:E11 Arg2:E10
-R26	Coreference-Link Arg1:T49 Arg2:T46
 R27	Measure Arg1:T51 Arg2:T50
-R28	Enables Arg1:E12 Arg2:E10
-R29	Enables Arg1:E13 Arg2:E10
-R30	Enables Arg1:E14 Arg2:E10
-R31	Meronym Arg1:T56 Arg2:T58
 R32	Measure Arg1:T58 Arg2:T57
 R33	Mod-Link Arg1:E16 Arg2:T65
 R34	Mod-Link Arg1:E16 Arg2:T66
@@ -190,3 +183,10 @@ R46	Mod-Link Arg1:T102 Arg2:T101
 R47	Mod-Link Arg1:T104 Arg2:T103
 R48	Mod-Link Arg1:T109 Arg2:T108
 R49	Setting Arg1:E29 Arg2:T111
+R50	Measure Arg1:T4 Arg2:T5	
+R12	Measure Arg1:T19 Arg2:T20	
+R52	Coreference-Link Arg1:T24 Arg2:T19	
+R51	Coreference-Link Arg1:T23 Arg2:T4	
+R53	Overlaps Arg1:E13 Arg2:E14	
+R25	Coreference-Link Arg1:T49 Arg2:T46	
+R26	Meronym Arg1:T63 Arg2:T64	
