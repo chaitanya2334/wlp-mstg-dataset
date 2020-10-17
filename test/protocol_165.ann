@@ -92,28 +92,28 @@ E1	Action:T1 Acts-on:T3 Using:T5 Product:T9 Product2:T16 Product3:T20
 E2	Action:T6 Acts-on:T8 Site:T9
 E3	Action:T10 Acts-on:E2 Product:T15
 E4	Action:T11 Acts-on:T12
-E5	Action:T13 Using:T12 Acts-on:T15 Site:T16
-E6	Action:T17 Acts-on:E5
+E5	Action:T13 Acts-on:T15 Site:T16 Acts-on2:E4
+E6	Action:T17 Acts-on:E5 Product:T22
 E7	Action:T18 Using:T19 Acts-on:T20 Product:T59
 E8	Action:T21 Acts-on:T22 Site:T23
 E9	Action:T24 Site:E8 Acts-on:T25 Product:T28
-E10	Action:T26 Using:T25 Acts-on:T28 Site:T30
-E11	Action:T33 Site:E8 Acts-on:T34 Product:T37
-E12	Action:T35 Using:T34 Acts-on:T37 Site:T39
+E10	Action:T26 Acts-on:T28 Site:T30
+E11	Action:T33 Acts-on:T34 Product:T37 Site:E10
+E12	Action:T35 Acts-on:T37 Site:T39 Product:T43
 E13	Action:T42 Acts-on:T43 Product:T47
 E14	Action:T44 Acts-on:T45 Site:T47
-E15	Action:T48 Site:E14 Acts-on:T49 Product:T56
-E16	Action:T50 Acts-on:E15 Using:T49 Site:T53
+E15	Action:T48 Site:E14 Acts-on:T49
+E16	Action:T50 Acts-on:E15 Site:T53 Product:T56 Product2:T62
 E17	Action:T55 Acts-on:T56
 E18	Action:T57 Using:T58 Acts-on:T59
-E19	Action:T60 Acts-on:T62
+E19	Action:T60 Acts-on:T62 Acts-on2:E18
 E20	Action:T64 Site:E19 Acts-on:T65
 E21	Action:T66 Acts-on:E20 Using:T68
 E22	Action:T69 
-E23	Action:T70 Acts-on:E21 Product:T73
-E24	Action:T72 Using:T71 Acts-on:T73 Product:T76
+E23	Action:T70 Product:T73 Acts-on:E22 Using:T92
+E24	Action:T72 Using:T71 Acts-on:T73 Product:T93
 E25	Action:T75 Acts-on:T76
-E26	Action:T77 Acts-on:E25
+E26	Action:T77 Acts-on:E25 Product:T84
 E27	Action:T79 
 E28	Action:T80 Acts-on:T81 Using:T82 Product:T86
 E29	Action:T85 Acts-on:T86 Site:T89
@@ -142,3 +142,13 @@ R21	Meronym Arg1:T82 Arg2:T84
 R22	Mod-Link Arg1:T84 Arg2:T83
 R23	Meronym Arg1:T86 Arg2:T88
 R24	Mod-Link Arg1:T88 Arg2:T87
+T91	Modifier 339 357	vigorously growing
+R25	Mod-Link Arg1:T22 Arg2:T91	
+R26	Enables Arg1:E21 Arg2:E22	
+T92	Method 972 994	appropriate conditions
+T93	Reagent 1059 1078	signs of cell lysis
+T94	Reagent 1119 1124	lysis
+R27	Meronym Arg1:T94 Arg2:T76	
+R28	Coreference-Link Arg1:T94 Arg2:T93	
+R29	Overlaps Arg1:E26 Arg2:E27	
+R30	Setting Arg1:E16 Arg2:T51	

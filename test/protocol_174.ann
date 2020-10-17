@@ -65,25 +65,25 @@ T64	Action 789 797	incubate
 T65	Time 798 807	overnight
 T66	Temperature 811 815	37°C
 E1	Action:T1 Acts-on:T2 Site:T4 Product:T10
-E2	Action:T6 Acts-on:T9 Site:T10 Product:T13
+E2	Action:T6 Acts-on:T9 Site:T10 Product:T13 Product2:T16 Product3:T17
 E3	Action:T12 Acts-on:T13 Count:T14
 E4	Action:T15 Acts-on:T16 Acts-on2:T17
-E5	Action:T18 
+E5	Action:T18 Acts-on:E4 Product:T20
 E6	Action:T19 Acts-on:T20 Site:T21
-E7	Action:T23 
-E8	Action:T24 
-E9	Action:T29 
-E10	Action:T30 Acts-on:E8 Site:T31 Product:T38
-E11	Action:T33 
+E7	Action:T23 Acts-on:E6
+E8	Action:T24 Acts-on:E7
+E9	Action:T29 Acts-on:E8
+E10	Action:T30 Site:T31 Acts-on:E9
+E11	Action:T33 Acts-on:E10 Product:T38
 E12	Action:T34 Acts-on:T37 Site:T38
 E13	Action:T39 Acts-on:E12
-E14	Action:T42 Acts-on:E13
+E14	Action:T42 Acts-on:E13 Product:T50
 E15	Action:T45 
-E16	Action:T46 Acts-on:T47 Product:T63
+E16	Action:T46 Acts-on:T47 Product:T63 Product2:T53
 E17	Action:T49 Acts-on:T50
 E18	Action:T52 Acts-on:T53
 E19	Action:T54 Acts-on:T53
-E20	Action:T55 Using:T57 Site:T58 Product:T62
+E20	Action:T55 Using:T57 Site:T58 Product:T62 Acts-on:E17
 E21	Action:T59 Acts-on:T62 Site:T63
 E22	Action:T64 Acts-on:E21
 R1	Setting Arg1:E1 Arg2:T5
@@ -110,3 +110,8 @@ R21	Measure Arg1:T62 Arg2:T60
 R22	Mod-Link Arg1:T62 Arg2:T61
 R23	Setting Arg1:E22 Arg2:T65
 R24	Setting Arg1:E22 Arg2:T66
+R25	Enables Arg1:E3 Arg2:E4	
+R26	Or Arg1:E14 Arg2:E15	
+R27	Enables Arg1:E18 Arg2:E17	
+R28	Overlaps Arg1:E18 Arg2:E19	
+R29	Enables Arg1:E19 Arg2:E17	

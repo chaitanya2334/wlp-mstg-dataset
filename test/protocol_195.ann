@@ -2,14 +2,14 @@ T1	Action 28 37	Inoculate
 T2	Reagent 38 53	fungal material
 T3	Amount 59 65	300 µL
 T4	Reagent 66 84	rich growth medium
-T5	Modifier 90 94	2 mL
-T6	Device 95 118	micro - centrifuge tube
+T5	Amount 90 94	2 mL
+T6	Location 95 118	micro - centrifuge tube
 T7	Action 121 125	Grow
 T8	Temperature 129 131	RT
 T9	Time 136 146	3 - 4 days
 T10	Action 149 155	Freeze
 T11	Reagent 156 169	culture tubes
-T12	Reagent 173 182	LN2Freeze
+T12	Reagent 173 186	LN2Freeze dry
 T13	Action 200 203	Add
 T14	Amount 204 209	50 µL
 T15	Modifier 210 215	0.6mm
@@ -18,7 +18,7 @@ T17	Reagent 246 252	sample
 T18	Action 270 275	grind
 T19	Device 282 299	Tissue - Lyser LT
 T20	Time 304 310	5 mins
-T21	Amount 314 319	50 Hz
+T21	Generic-Measure 314 319	50 Hz
 T22	Action 322 325	Add
 T23	Amount 326 332	500 µL
 T24	Reagent 333 345	lysis buffer
@@ -43,8 +43,8 @@ T42	Time 548 558	15 minutes
 T43	Temperature 561 564	4˚C
 T44	Action 567 575	Transfer
 T45	Reagent 576 587	supernatant
-T46	Modifier 610 616	1.5 mL
-T47	Device 617 637	microcentrifuge tube
+T46	Amount 610 616	1.5 mL
+T47	Location 617 637	microcentrifuge tube
 T48	Action 640 643	Add
 T49	Amount 644 649	1 vol
 T50	Modifier 650 657	chilled
@@ -94,39 +94,38 @@ T93	Amount 1220 1225	50 µL
 T94	Concentration 1226 1228	3M
 T95	Reagent 1229 1243	Sodium Acetate
 T96	pH 1244 1250	pH 5.5
-E1	Action:T1 Acts-on:T2 Acts-on2:T4
+E1	Action:T1 Acts-on:T2 Site:T4
 E2	Action:T7 Acts-on:E1 Product:T11
-E3	Action:T10 Acts-on:T11 Acts-on2:T12
-E4	Action:T13 
+E3	Action:T10 Acts-on:T11 Site:T12 Product:T17
+E4	Action:T13 Acts-on:T16 Site:T17
 E5	Action:T18 Acts-on:E4 Using:T19 Product:T25
-E6	Action:T22 Acts-on:T24
-E7	Action:T26 
+E6	Action:T22 Acts-on:T24 Site:T25
+E7	Action:T26 Acts-on:E6
 E8	Action:T27 
-E9	Action:T28 Acts-on:E8
+E9	Action:T28 Acts-on:E8 Product:T37
 E10	Action:T31 
 E11	Action:T33 Acts-on:T36 Site:T37
-E12	Action:T38 
-E13	Action:T39 Acts-on:E11
+E12	Action:T38 Acts-on:E11
+E13	Action:T39 
 E14	Action:T40 Acts-on:E13 Product:T45
 E15	Action:T44 Acts-on:T45 Site:T47 Product:T52
 E16	Action:T48 Acts-on:T51 Site:T52
 E17	Action:T53 Acts-on:E16
 E18	Action:T54 Acts-on:E17
-E19	Action:T57 Acts-on:E18 Product:T63
+E19	Action:T57 Acts-on:E18 Product:T63 Product2:T64
 E20	Action:T61 Acts-on:T63
 E21	Action:T62 Acts-on:T63
-E22	Action:T65 Acts-on:T68
-E23	Action:T69 
-E24	Action:T71 Acts-on:E22 Product:T76
+E22	Action:T65 Acts-on:T68 Site:T64
+E23	Action:T69 Acts-on:E22
+E24	Action:T71 Product:T76 Acts-on:E23
 E25	Action:T75 Acts-on:T76
-E26	Action:T77 Acts-on:E25 Acts-on2:T80
-E27	Action:T81 Acts-on:T83
-E28	Action:T82 Acts-on:T83
-E29	Action:T84 Acts-on:T85 Product:T89
-E30	Action:T88 Acts-on:T89 Site:T90 Site2:T91
-E31	Action:T92 Acts-on:E30 Acts-on2:T95
+E26	Action:T77 Acts-on:E25 Using:T80 Product:T83
+E27	Action:T81 Acts-on:T83 Product:T85
+E28	Action:T82 Acts-on:T83 Product:T85
+E29	Action:T84 Acts-on:T85 Product:T89 Site:T110
+E30	Action:T88 Acts-on:T89 Site:T90
+E31	Action:T92 Acts-on2:T95 Site:E30
 R1	Measure Arg1:T4 Arg2:T3
-R2	Mod-Link Arg1:T6 Arg2:T5
 R3	Setting Arg1:E2 Arg2:T8
 R4	Setting Arg1:E2 Arg2:T9
 R5	Measure Arg1:T16 Arg2:T14
@@ -135,7 +134,6 @@ R7	Setting Arg1:T19 Arg2:T20
 R8	Setting Arg1:T19 Arg2:T21
 R9	Measure Arg1:T24 Arg2:T23
 R10	Enables Arg1:E7 Arg2:E8
-R11	Setting Arg1:E7 Arg2:T30
 R12	Setting Arg1:E10 Arg2:T32
 R13	Measure Arg1:T36 Arg2:T34
 R14	Measure Arg1:T36 Arg2:T35
@@ -143,7 +141,6 @@ R15	Enables Arg1:E12 Arg2:E13
 R16	Setting Arg1:E14 Arg2:T41
 R17	Setting Arg1:E14 Arg2:T42
 R18	Setting Arg1:E14 Arg2:T43
-R19	Mod-Link Arg1:T47 Arg2:T46
 R20	Measure Arg1:T51 Arg2:T49
 R21	Mod-Link Arg1:T51 Arg2:T50
 R22	Setting Arg1:E18 Arg2:T55
@@ -165,3 +162,50 @@ R37	Setting Arg1:E29 Arg2:T87
 R38	Measure Arg1:T95 Arg2:T93
 R39	Measure Arg1:T95 Arg2:T94
 R40	Measure Arg1:T95 Arg2:T96
+R41	Meronym Arg1:T4 Arg2:T6	
+T97	Time 187 197	over night
+R42	Setting Arg1:E3 Arg2:T97	
+T98	Modifier 231 245	freeze - dried
+R43	Mod-Link Arg1:T17 Arg2:T98	
+T99	Amount 256 260	2 mL
+T100	Location 261 265	tube
+R44	Measure Arg1:T100 Arg2:T99	
+R45	Meronym Arg1:T17 Arg2:T100	
+R2	Measure Arg1:T6 Arg2:T5	
+T101	Modifier 349 359	pulverised
+R46	Mod-Link Arg1:T25 Arg2:T101	
+R47	Setting Arg1:E9 Arg2:T29	
+R48	Setting Arg1:E9 Arg2:T30	
+R11	Overlaps Arg1:E9 Arg2:E10	
+T102	Modifier 537 544	minimum
+R49	Mod-Link Arg1:T42 Arg2:T102	
+T103	Amount 592 598	650 µL
+R50	Measure Arg1:T45 Arg2:T103	
+T104	Modifier 604 609	fresh
+R19	Measure Arg1:T47 Arg2:T46	
+T105	Amount 674 680	700 µL
+R51	Measure Arg1:T51 Arg2:T105	
+T106	Modifier 708 712	well
+R52	Mod-Link Arg1:E17 Arg2:T106	
+T107	Modifier 770 777	minimum
+R53	Mod-Link Arg1:T59 Arg2:T107	
+T108	Modifier 808 814	gently
+R54	Mod-Link Arg1:E20 Arg2:T108	
+T109	Modifier 927 934	minimum
+R55	Mod-Link Arg1:T73 Arg2:T109	
+R56	Overlaps Arg1:E27 Arg2:E28	
+T110	Device 1076 1087	speed - vac
+R57	Or Arg1:T90 Arg2:T91	
+T111	Concentration 1175 1180	10 mM
+T112	Reagent 1181 1185	Tris
+T113	pH 1186 1192	pH 8.0
+T114	pH 1205 1211	pH 8.0
+T115	Reagent 1200 1204	EDTA
+T116	Concentration 1195 1199	1 mM
+R58	Measure Arg1:T112 Arg2:T111	
+R59	Measure Arg1:T112 Arg2:T113	
+R60	Measure Arg1:T115 Arg2:T116	
+R61	Measure Arg1:T115 Arg2:T114	
+R62	Meronym Arg1:T112 Arg2:T91	
+R63	Meronym Arg1:T115 Arg2:T91	
+R64	Mod-Link Arg1:T47 Arg2:T104	

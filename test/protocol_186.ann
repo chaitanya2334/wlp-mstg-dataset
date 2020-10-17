@@ -36,7 +36,6 @@ T35	Action 652 655	Add
 T36	Amount 656 661	200µl
 T37	Reagent 662 672	chloroform
 T38	Action 677 680	mix
-T39	Method 681 693	by inverting
 T40	Location 698 702	tube
 T41	Generic-Measure 703 716	several times
 T42	Action 719 729	Centrifuge
@@ -60,7 +59,6 @@ T59	Action 957 960	Add
 T60	Amount 961 966	100µl
 T61	Reagent 967 989	Precipitation Solution
 T62	Action 994 997	mix
-T63	Method 1001 1010	inverting
 T64	Location 1015 1019	tube
 T65	Generic-Measure 1020 1033	several times
 T66	Action 1036 1046	Centrifuge
@@ -69,7 +67,7 @@ T68	Speed 1061 1069	14,000xg
 T69	Time 1074 1083	5 minutes
 T70	Action 1086 1094	Transfer
 T71	Reagent 1099 1110	supernatant
-T72	Location 1116 1126	clean tube
+T72	Location 1122 1126	tube
 T73	Action 1131 1142	precipitate
 T74	Reagent 1147 1158	genomic DNA
 T75	Amount 1164 1169	500µl
@@ -97,10 +95,10 @@ T96	Time 1504 1512	1 minute
 T97	Speed 1516 1524	14,000xg
 T98	Action 1527 1533	Decant
 T99	Action 1537 1548	pipette off
-T100	Reagent 1553 1560	ethanol
+T100	Reagent 1553 1565	ethanol wash
 T101	Action 1568 1574	Invert
 T102	Location 1579 1583	tube
-T103	Location 1589 1612	clean absorbent surface
+T103	Location 1595 1612	absorbent surface
 T104	Generic-Measure 1617 1632	several minutes
 T105	Action 1677 1680	Add
 T106	Amount 1681 1685	50µl
@@ -126,43 +124,43 @@ T125	Reagent 1958 1969	supernatant
 T126	Action 1972 1978	Vortex
 T127	Location 1983 1987	tube
 E1	Action:T1 Acts-on:T3 Site:T5
-E2	Action:T6 Acts-on:E1 Acts-on2:T9
-E3	Action:T10 Acts-on:T12
-E4	Action:T13 Acts-on:E3 Using:T14
+E2	Action:T6 Acts-on:E1
+E3	Action:T10 Acts-on:T12 Acts-on2:E40
+E4	Action:T13 Acts-on:E3 Using:T14 Product:T17
 E5	Action:T16 Acts-on:T17
-E6	Action:T20 Acts-on:T22 Site:T24
-E7	Action:T25 Acts-on:E6
-E8	Action:T28 Acts-on:T29
+E6	Action:T20 Acts-on:T22 Site:T24 Acts-on2:E41
+E7	Action:T25 Acts-on:E6 Product:T29
+E8	Action:T28 Acts-on:T29 Product:T32
 E9	Action:T33 Acts-on:T32
-E10	Action:T35 Acts-on:E9 Acts-on2:T37
-E11	Action:T38 Acts-on:E10 Using:T39 Acts-on2:T40
-E12	Action:T42 Acts-on:E11
+E10	Action:T35 Acts-on:E9 Acts-on2:T37 Product:T40
+E11	Action:T38 Acts-on:E10
+E12	Action:T42 Acts-on:E11 Product:T47
 E13	Action:T46 Acts-on:T47 Site:T48 Product:T52
 E14	Action:T49 Acts-on:T51 Site:T52
-E15	Action:T53 Acts-on:E14 Product:T56
+E15	Action:T53 Acts-on:E14
 E16	Action:T55 Acts-on:T56
 E17	Action:T59 Acts-on:E16 Acts-on2:T61
-E18	Action:T62 Acts-on:E17 Using:T63 Acts-on2:T64 Product:T67
-E19	Action:T66 Acts-on:T67 Product:T71
+E18	Action:T62 Acts-on:E17 Product:T67
+E19	Action:T66 Acts-on:T67 Product:T71 Product2:T74
 E20	Action:T70 Acts-on:T71 Site:T72
-E21	Action:T73 Acts-on:E20 Acts-on2:T74 Using:T76
+E21	Action:T73 Using:T76 Acts-on:T74 Product:T78 Product2:T136
 E22	Action:T77 Acts-on:T78 Count:T79
-E23	Action:T80 Acts-on:T82
+E23	Action:T80 Acts-on:T82 Acts-on2:E45 Product:T139
 E24	Action:T83 Acts-on:E23
 E25	Action:T86 Acts-on:T87 Product:T92
 E26	Action:T88 Acts-on:T91 Site:T92
 E27	Action:T93 Acts-on:E26
-E28	Action:T95 Acts-on:E27
-E29	Action:T98 Acts-on:E28 Acts-on2:T100
-E30	Action:T99 Acts-on:T100
+E28	Action:T95 Acts-on:E47
+E29	Action:T98 Acts-on2:T100 Site:E28 Product:T102
+E30	Action:T99 Acts-on:T100 Product:T102
 E31	Action:T101 Acts-on:T102 Site:T103
-E32	Action:T105 Acts-on:T107
+E32	Action:T105 Acts-on:T107 Site:T147
 E33	Action:T108 Acts-on:E32
-E34	Action:T116 Acts-on:T113 Site:T115
-E35	Action:T117 Acts-on:T118
-E36	Action:T120 
-E37	Action:T123 Acts-on:T125
-E38	Action:T124 Acts-on:T125
+E34	Action:T116 Acts-on:T113 Site:T115 Site2:E49 Product:T118
+E35	Action:T117 Acts-on:T118 Product:T125
+E36	Action:T120 Product:T125
+E37	Action:T123 Acts-on:T125 Product:T127 Product2:T151 Product3:T153
+E38	Action:T124 Acts-on:T125 Product:T127
 E39	Action:T126 Acts-on:T127
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T5 Arg2:T4
@@ -212,3 +210,68 @@ R45	Measure Arg1:T115 Arg2:T114
 R46	Setting Arg1:E35 Arg2:T119
 R47	Setting Arg1:E36 Arg2:T121
 R48	Setting Arg1:E36 Arg2:T122
+T128	Action 187 193	pellet
+E40	Action:T128 Acts-on:T9
+R49	Enables Arg1:E2 Arg2:E40	
+T129	Action 314 325	Do not heat
+E41	Action:T129 Acts-on:E5
+T130	Modifier 326 337	higher than
+T131	Temperature 338 342	60°C
+R50	Mod-Link Arg1:T131 Arg2:T130	
+R51	Setting Arg1:E41 Arg2:T131	
+T132	Modifier 345 353	OPTIONAL
+R52	Mod-Link Arg1:E6 Arg2:T132	
+T39	Action 684 693	inverting
+E42	Action:T39 Acts-on:T40
+R53	Enables Arg1:E42 Arg2:E11	
+T133	Action 902 905	mix
+E43	Action:T133 Product:T56
+R54	Enables Arg1:E15 Arg2:E43	
+T63	Action 1001 1010	inverting
+E44	Action:T63 Acts-on:T64
+R55	Enables Arg1:E44 Arg2:E18	
+T134	Modifier 1116 1121	clean
+R56	Mod-Link Arg1:T72 Arg2:T134	
+T135	Action 1213 1224	precipitate
+E45	Action:T135 Acts-on:T136
+T136	Reagent 1229 1232	DNA
+R57	Enables Arg1:E22 Arg2:E45	
+R58	Meronym Arg1:T136 Arg2:T78	
+T137	Modifier 1235 1243	OPTIONAL
+R59	Mod-Link Arg1:E23 Arg2:T137	
+T138	Action 1358 1364	pellet
+E46	Action:T138 Acts-on:T139 Product:T87
+T139	Reagent 1365 1376	genomic DNA
+R60	Enables Arg1:E24 Arg2:E46	
+T140	Action 1467 1471	wash
+E47	Action:T140 Acts-on:T141
+T141	Reagent 1476 1486	DNA pellet
+R61	Enables Arg1:E27 Arg2:E47	
+T142	Modifier 1589 1594	clean
+R62	Mod-Link Arg1:T103 Arg2:T142	
+T143	Reagent 1653 1660	ethanol
+T144	Action 1664 1674	drain away
+E48	Action:T144 Acts-on:T143 Product:T147
+T145	Modifier 1646 1652	excess
+T146	Modifier 1642 1645	any
+R63	Mod-Link Arg1:T143 Arg2:T145	
+R64	Mod-Link Arg1:T143 Arg2:T146	
+R65	Enables Arg1:E31 Arg2:E48	
+R66	Meronym Arg1:T143 Arg2:T102	
+T147	Reagent 1703 1709	pellet
+T148	Action 1768 1777	rehydrate
+E49	Action:T148 
+R67	Enables Arg1:E33 Arg2:E49	
+T149	Modifier 1780 1788	OPTIONAL
+R68	Mod-Link Arg1:E34 Arg2:T149	
+R69	Or Arg1:E35 Arg2:E36	
+R70	Overlaps Arg1:E37 Arg2:E38	
+T150	Action 1991 2003	re - suspend
+E50	Action:T150 Acts-on:T151 Site:T153
+T151	Reagent 2008 2013	cells
+T152	Modifier 2017 2025	residual
+T153	Reagent 2026 2037	supernatant
+R71	Mod-Link Arg1:T153 Arg2:T152	
+R72	Enables Arg1:E39 Arg2:E50	
+R73	Meronym Arg1:T151 Arg2:T127	
+R74	Meronym Arg1:T153 Arg2:T127	

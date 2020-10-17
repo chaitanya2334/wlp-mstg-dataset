@@ -87,7 +87,7 @@ E6	Action:T23 Acts-on:T24 Site:T25 Product:T36
 E7	Action:T28 Using:T27 Acts-on:T29
 E8	Action:T30 Product:T32
 E9	Action:T33 Acts-on:E8 Site:T36 Product:T40
-E10	Action:T37 Acts-on:T40
+E10	Action:T37 Acts-on:T40 Product:T43
 E11	Action:T41 Acts-on:T43 Product:T47
 E12	Action:T46 Acts-on:T47 Product:T49
 E13	Action:T48 Acts-on:T49 Product:T57

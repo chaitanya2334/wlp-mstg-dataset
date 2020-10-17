@@ -79,8 +79,8 @@ E4	Action:T15 Acts-on:T17 Site:T18 Product:T22
 E5	Action:T19 Acts-on:T21 Site:T22 Product:T26
 E6	Action:T23 Acts-on:T25 Site:T26 Product:T30
 E7	Action:T27 Acts-on:T29 Site:T30 Product:T34
-E8	Action:T31 Acts-on:T33 Site:T34 Product:T40
-E9	Action:T35 Acts-on:T37 Site:T38
+E8	Action:T31 Acts-on:T33 Site:T34 Product:T40 Product2:T38
+E9	Action:T35 Acts-on:T37 Site:T38 Product:T40
 E10	Action:T39 Acts-on:T40 Using:T41 Product:T45
 E11	Action:T43 Acts-on:T44 Site:T45 Product:T47
 E12	Action:T46 Acts-on:T47 Site:T48 Product:T53
@@ -88,9 +88,9 @@ E13	Action:T49 Acts-on:T50 Using:T51
 E14	Action:T52 Site:E12 Acts-on:T53 Using:T54 Product:T58
 E15	Action:T55 Acts-on:T56 Site:T58
 E16	Action:T59 Acts-on:E15 Using:T60
-E17	Action:T62 Site:T64 Product:T65
+E17	Action:T62 Site:T64 Product:T65 Acts-on:E16
 E18	Action:T66 Acts-on:T65
-E19	Action:T67 Acts-on:E17 Site:T69
+E19	Action:T67 Site:T69
 E20	Action:T70 Acts-on:E16
 E21	Action:T73 Acts-on:E20
 R1	Measure Arg1:T3 Arg2:T2
@@ -115,3 +115,6 @@ R19	Setting Arg1:E19 Arg2:T68
 R20	Setting Arg1:E20 Arg2:T72
 R21	Mod-Link Arg1:T72 Arg2:T71
 R22	Setting Arg1:E21 Arg2:T74
+T75	Modifier 316 324	Optional
+R23	Mod-Link Arg1:E9 Arg2:T75	
+R24	Enables Arg1:E18 Arg2:E19	

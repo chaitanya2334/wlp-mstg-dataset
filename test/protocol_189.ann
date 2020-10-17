@@ -1,4 +1,4 @@
-T1	Modifier 47 64	Low melting point
+T1	Temperature 47 64	Low melting point
 T2	Reagent 65 77	agarose gels
 T3	Action 88 94	poured
 T4	Action 110 116	set up
@@ -45,7 +45,7 @@ T44	Time 868 873	5 min
 T45	Device 881 890	microfuge
 T46	Action 893 901	Transfer
 T47	Reagent 906 926	upper aqueous layers
-T48	Location 930 941	clean tubes
+T48	Location 936 941	tubes
 T49	Action 944 947	Add
 T50	Generic-Measure 951 963	equal volume
 T51	Reagent 967 999	phenol : CHCl3 : Isoamyl alcohol
@@ -107,34 +107,34 @@ T106	Time 1731 1742	10 - 15 min
 T107	Action 1745 1748	Mix
 T108	Modifier 1749 1753	well
 E1	Action:T3 Acts-on:T2
-E2	Action:T4 Product:T2 Acts-on:E1
-E3	Action:T6 Product:T8
+E2	Action:T4 Acts-on:E1
+E3	Action:T6 Product:T8 Acts-on:E2
 E4	Action:T9 Acts-on:T8
-E5	Action:T11 Acts-on:E4
-E6	Action:T12 Acts-on:T13 Site:T14 Using:T16
+E5	Action:T11 Acts-on:E4 Product:T111
+E6	Action:T12 Acts-on:T13 Using:T16 Product:T22
 E7	Action:T17 Using:T19 Acts-on:T20 Product:T22
 E8	Action:T21 Acts-on:T22 Site:T23 Product:T27
 E9	Action:T24 Acts-on:T26 Site:T27 Product:T29
 E10	Action:T28 Acts-on:T29
 E11	Action:T31 Site:E10 Acts-on:T33 Product:T38
-E12	Action:T35 Product:T33 Acts-on:T34
+E12	Action:T35 Product:T33 Acts-on:T34 Product2:T114
 E13	Action:T37 Acts-on:T38
-E14	Action:T40 Acts-on:T38 Site:T43 Product:T47
+E14	Action:T40 Site:T43 Product:T47 Acts-on:E30
 E15	Action:T46 Acts-on:T47 Site:T48 Product:T53
 E16	Action:T49 Acts-on:T51 Site:T53
 E17	Action:T54 Acts-on:E16
 E18	Action:T56 Acts-on:E17 Site:T59 Product:T63
 E19	Action:T62 Acts-on:T63 Count:T64 Using:T65 Site:T67
-E20	Action:T68 Site:E19 Acts-on:T70
-E21	Action:T71 Acts-on:T72 Using:T75
+E20	Action:T68 Site:E19 Acts-on:T70 Product:T72
+E21	Action:T71 Acts-on:T72 Using:T75 Product:T79 Product2:T118
 E22	Action:T78 Acts-on:T79
-E23	Action:T80 Site:T81 Product:T89
+E23	Action:T80 Site:T81 Product:T89 Acts-on:E31
 E24	Action:T88 Acts-on:T89 Count:T90 Using:T92 Site:T93 Product:T95
 E25	Action:T94 Acts-on:T95 Using:T96 Product:T99
 E26	Action:T98 Acts-on:T99 Using:T102 Product:T104
 E27	Action:T103 Acts-on:T104
 E28	Action:T107 Acts-on:E27
-R1	Mod-Link Arg1:T2 Arg2:T1
+R1	Measure Arg1:T2 Arg2:T1
 R2	Setting Arg1:E2 Arg2:T5
 R3	Setting Arg1:E3 Arg2:T7
 R4	Setting Arg1:E4 Arg2:T10
@@ -175,3 +175,37 @@ R38	Measure Arg1:T102 Arg2:T101
 R39	Setting Arg1:E27 Arg2:T105
 R40	Setting Arg1:E27 Arg2:T106
 R41	Mod-Link Arg1:E28 Arg2:T108
+T109	Action 241 248	cut out
+E29	Action:T109 Acts-on:T110 Product:T22
+T110	Reagent 253 262	DNA bands
+T111	Reagent 272 275	gel
+R42	Meronym Arg1:T110 Arg2:T111	
+R43	Overlaps Arg1:E6 Arg2:E29	
+R44	Coreference-Link Arg1:T13 Arg2:T110	
+R45	Coreference-Link Arg1:T14 Arg2:T111	
+R46	Meronym Arg1:T13 Arg2:T14	
+R47	Overlaps Arg1:E7 Arg2:E6	
+R48	Coreference-Link Arg1:T19 Arg2:T16	
+R49	Coreference-Link Arg1:T20 Arg2:T13	
+T112	Reagent 533 540	agarose
+R50	Meronym Arg1:T112 Arg2:T27	
+T113	Action 794 802	separate
+E30	Action:T113 Acts-on:T114
+T114	Reagent 807 813	phases
+R51	Enables Arg1:E13 Arg2:E30	
+R52	Meronym Arg1:T114 Arg2:T38	
+T115	Modifier 930 935	clean
+R53	Mod-Link Arg1:T48 Arg2:T115	
+T116	Concentration 1272 1277	0.3 M
+R54	Setting Arg1:E20 Arg2:T116	
+T117	Action 1379 1385	pellet
+E31	Action:T117 Acts-on:T118
+T118	Reagent 1390 1394	DNAs
+R55	Meronym Arg1:T118 Arg2:T79	
+R56	Enables Arg1:E22 Arg2:E31	
+T119	Modifier 1602 1609	briefly
+R57	Mod-Link Arg1:E25 Arg2:T119	
+T120	Action 1629 1635	remove
+E32	Action:T120 Acts-on:T121
+T121	Reagent 1640 1644	EtOH
+R58	Enables Arg1:E25 Arg2:E32	

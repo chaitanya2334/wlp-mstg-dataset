@@ -261,7 +261,7 @@ T260	Action 5432 5438	stored
 T261	Reagent 5442 5450	5X SSCTw
 T262	Temperature 5454 5458	4 °C
 E1	Action:T1 Acts-on:T2 Site:T3
-E2	Action:T4 Acts-on:T2 Acts-on2:T5
+E2	Action:T4 Acts-on2:T5 Acts-on:E1
 E3	Action:T6 Acts-on:E2 Acts-on2:T8 Product:T10
 E4	Action:T9 Acts-on:T10
 E5	Action:T12 Acts-on:T10 Site:T14

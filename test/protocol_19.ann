@@ -35,7 +35,7 @@ T34	Modifier 449 457	securely
 T35	Action 460 463	Add
 T36	Location 464 475	well plates
 T37	Action 540 544	Pour
-T38	Reagent 545 576	contents of the Erlemeyer Flask
+T38	Reagent 545 553	contents
 T39	Location 586 594	gel tray
 T40	Mention 603 605	it
 T41	Action 606 609	sit
@@ -88,7 +88,7 @@ T87	Action 1431 1437	Remove
 T88	Reagent 1438 1441	gel
 T89	Location 1447 1455	gel tray
 T90	Action 1462 1470	draining
-T91	Reagent 1471 1488	excess TAE Buffer
+T91	Reagent 1478 1488	TAE Buffer
 T92	Action 1491 1496	Place
 T93	Reagent 1497 1500	gel
 T94	Location 1508 1511	bin
@@ -114,48 +114,48 @@ T113	Action 1955 1962	capture
 T114	Device 1965 1975	photograph
 T115	Reagent 1983 1986	gel
 T116	Action 1989 1995	Remove
-T117	Location 1996 2000	band
+T117	Reagent 1996 2000	band
 T118	Modifier 2032 2041	carefully
 T119	Action 2042 2049	dispose
 T120	Reagent 2057 2060	gel
 T121	Location 2068 2106	wastebin labelled " Ethidium Bromide "
-E1	Action:T1 Acts-on:T4 Site:T5
-E2	Action:T6 Acts-on:T8
-E3	Action:T9 Acts-on:T10 Site:T11 Product:T13
+E1	Action:T1 Acts-on:T4 Site:T5 Product:T11
+E2	Action:T6 Acts-on:T8 Product:T10
+E3	Action:T9 Acts-on:T10 Site:T11 Product:T13 Product2:T17
 E4	Action:T12 Acts-on:T13 Site:T14
-E5	Action:T18 Using:E4 Acts-on:T17
-E6	Action:T21 Using:E4 Acts-on:T19
-E7	Action:T23 
-E8	Action:T24 Acts-on:T25 Site:T26
-E9	Action:T29 Acts-on:T27 Site:T28 Product:T38
-E10	Action:T30 Acts-on:T31 Site:T32
+E5	Action:T18 Acts-on:T17 Product:T25
+E6	Action:T21 Acts-on:T19 Product:T25
+E7	Action:T23 Product:T25
+E8	Action:T24 Acts-on:T25 Site:T26 Product:T27
+E9	Action:T29 Product:T38
+E10	Action:T30 Acts-on:T31 Site:T32 Product:T124
 E11	Action:T33 Acts-on:E10
-E12	Action:T35 Site:E10 Acts-on:T36
-E13	Action:T37 Acts-on:T38 Site:T39
-E14	Action:T41 Acts-on:T40
-E15	Action:T43 Site:E14 Acts-on:T44 Product:T47
-E16	Action:T46 Acts-on:T47 Site:T48 Product:T50
-E17	Action:T49 Acts-on:T50 Site:T51
-E18	Action:T52 Acts-on:T54 Product:T65 Product2:T71
-E19	Action:T55 Using:E18 Acts-on:T56 Site:T57 Product:T58
+E12	Action:T35 Acts-on:T36 Site2:T124
+E13	Action:T37 Acts-on:T38 Site:T39 Product:T40
+E14	Action:T41 Acts-on:T40 Product:T44 Product2:T129
+E15	Action:T43 Acts-on:T44 Product:T47
+E16	Action:T46 Acts-on:T47 Product:T50
+E17	Action:T49 Acts-on:T50 Site:T51 Product:T57
+E18	Action:T52 Acts-on:T54 Product2:T71
+E19	Action:T55 Acts-on:T56 Site:T57 Product:T58 Product2:T65 Product3:T71
 E20	Action:T61 Acts-on:T63 Site:T65
-E21	Action:T66 Acts-on:T67 Site:T71
+E21	Action:T66 Acts-on:T67 Site:T71 Product:T74
 E22	Action:T72 Acts-on:T73 Site:T74
 E23	Action:T75 Acts-on:T76 Site:T77 Product:T79
 E24	Action:T78 Acts-on:T79
-E25	Action:T82 
-E26	Action:T86 Acts-on:T84
+E25	Action:T82 Acts-on:E24
+E26	Action:T86 Acts-on:T84 Product:T91
 E27	Action:T87 Acts-on:T88 Site:T89 Product:T93
-E28	Action:T90 Acts-on:T91
-E29	Action:T92 Acts-on:T93 Site:T94 Acts-on2:T96 Product:T102
-E30	Action:T97 Acts-on:T98
-E31	Action:T99 Site:T100
-E32	Action:T101 
+E28	Action:T90 Acts-on:T91 Product:T88
+E29	Action:T92 Acts-on:T93 Site:T94 Product:T102 Product2:T98
+E30	Action:T97 Acts-on:T98 Product:T135
+E31	Action:T99 Site:T100 Acts-on:T135 Product:T136
+E32	Action:T101 Acts-on:T136
 E33	Action:T103 Acts-on:T102 Product:T107
 E34	Action:T106 Acts-on:T107
-E35	Action:T108 Acts-on:E34 Site:T109
+E35	Action:T108 Acts-on:E34 Site:T109 Product:T115 Product2:T120
 E36	Action:T111 Acts-on:T112
-E37	Action:T113 Using:E36 Acts-on:T114
+E37	Action:T113 Acts-on:T114 Product:T117
 E38	Action:T116 Acts-on:T117
 E39	Action:T119 Acts-on:T120 Site:T121
 R1	Measure Arg1:T4 Arg2:T2
@@ -186,3 +186,48 @@ R25	Mod-Link Arg1:E34 Arg2:T105
 R26	Meronym Arg1:T109 Arg2:T110
 R27	Meronym Arg1:T114 Arg2:T115
 R28	Mod-Link Arg1:E39 Arg2:T118
+R29	Coreference-Link Arg1:T10 Arg2:T8	
+R30	Enables Arg1:E4 Arg2:E5	
+R31	Meronym Arg1:T17 Arg2:T13	
+R33	Overlaps Arg1:E5 Arg2:E6	
+R34	Meronym Arg1:T19 Arg2:T13	
+R32	Overlaps Arg1:E6 Arg2:E7	
+R35	Coreference-Link Arg1:T27 Arg2:T25	
+T122	Action 342 345	sit
+E40	Action:T122 Acts-on:T27 Site:T28
+R36	Enables Arg1:E40 Arg2:E9	
+T123	Location 561 576	Erlemeyer Flask
+R37	Meronym Arg1:T38 Arg2:T123	
+T124	Location 476 496	where you want wells
+T125	Action 501 504	use
+E41	Action:T125 Acts-on:T126 Site:T127 Product:T39
+T126	Device 507 512	level
+T127	Mention 523 525	it
+R38	Coreference-Link Arg1:T127 Arg2:T36	
+R39	Overlaps Arg1:E41 Arg2:E12	
+R40	Coreference-Link Arg1:T40 Arg2:T39	
+T128	Action 683 691	not tear
+E42	Action:T128 Acts-on:T129
+T129	Reagent 696 699	gel
+R41	Overlaps Arg1:E15 Arg2:E42	
+R42	Meronym Arg1:T129 Arg2:T44	
+R43	Meronym Arg1:T47 Arg2:T48	
+T130	Action 756 763	remains
+E43	Action:T130 Acts-on:T131 Site:T132
+T131	Reagent 752 755	gel
+T132	Location 771 775	tray
+R44	Overlaps Arg1:E16 Arg2:E43	
+R45	Coreference-Link Arg1:T132 Arg2:T47	
+R46	Enables Arg1:E18 Arg2:E19	
+R47	Enables Arg1:E25 Arg2:E26	
+T133	Modifier 1471 1477	excess
+R48	Mod-Link Arg1:T91 Arg2:T133	
+R49	Meronym Arg1:T96 Arg2:T94	
+T134	Reagent 1655 1671	ethidium bromide
+T135	Device 1680 1686	gloves
+T136	Device 1737 1742	hands
+T137	Modifier 1743 1753	repeatedly
+R50	Mod-Link Arg1:E32 Arg2:T137	
+R51	Meronym Arg1:T134 Arg2:T98	
+R52	Enables Arg1:E36 Arg2:E37	
+R53	Or Arg1:E38 Arg2:E39	

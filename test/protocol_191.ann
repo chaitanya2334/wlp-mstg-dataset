@@ -11,7 +11,6 @@ T10	Action 164 167	Add
 T11	Amount 168 172	4 ml
 T12	Reagent 173 182	Buffer P2
 T13	Action 185 188	mix
-T14	Method 214 223	inverting
 T15	Action 240 248	incubate
 T16	Temperature 271 278	15–25°C
 T17	Time 285 290	5 min
@@ -19,11 +18,9 @@ T18	Action 351 354	Add
 T19	Amount 355 359	4 ml
 T20	Reagent 360 380	prechilled Buffer P3
 T21	Action 383 386	mix
-T22	Method 412 421	inverting
 T23	Action 434 442	Incubate
 T24	Location 446 449	ice
 T25	Time 454 460	15 min
-T26	Reagent 472 490	LyseBlue reagent ,
 T27	Action 491 494	mix
 T28	Action 532 542	Centrifuge
 T29	Speed 546 556	14,000 x g
@@ -48,7 +45,7 @@ T47	Action 902 907	Elute
 T48	Reagent 908 911	DNA
 T49	Amount 917 921	5 ml
 T50	Reagent 922 931	Buffer QF
-T51	Modifier 945 950	15 ml
+T51	Amount 945 950	15 ml
 T52	Device 951 957	vessel
 T53	Action 995 1005	prewarming
 T54	Reagent 1010 1024	elution buffer
@@ -83,63 +80,117 @@ T82	Reagent 1381 1387	pellet
 T83	Time 1392 1400	5–10 min
 T84	Action 1405 1415	redissolve
 T85	Reagent 1416 1419	DNA
-E1	Action:T1 
+E1	Action:T1 Acts-on:T86 Product:T7
 E2	Action:T2 
-E3	Action:T6 Acts-on:T7
+E3	Action:T6 Acts-on:T7 Site:T9
 E4	Action:T10 Site:E3 Site2:T12
-E5	Action:T13 Acts-on:E4 Using:T14
+E5	Action:T13 Acts-on:E4
 E6	Action:T15 Acts-on:E5
 E7	Action:T18 Site:E6 Acts-on:T20
-E8	Action:T21 Acts-on:E7 Using:T22
-E9	Action:T23 Acts-on:E8 Site:T24
-E10	Action:T27 Acts-on:E9 Acts-on2:T26
+E8	Action:T21 Acts-on:E7
+E9	Action:T23 Acts-on:E8 Site:T24 Product:T94
+E10	Action:T27 Acts-on:T94
 E11	Action:T28 Acts-on:E10 Product:T38
 E12	Action:T32 Acts-on:T33 Product:T39
 E13	Action:T34 Acts-on:T36
-E14	Action:T37 Using:T38 Acts-on:T39 Product:T41
-E15	Action:T40 Acts-on:T41 Product:T46
-E16	Action:T45 Acts-on:T44 Acts-on2:T46 Product:T48
-E17	Action:T47 Acts-on:T48 Using:T50
+E14	Action:T37 Product:T41 Acts-on2:T38 Site:T39
+E15	Action:T40 Acts-on:T41 Product:T46 Using:T43 Product2:T44
+E16	Action:T45 Acts-on:T44 Product:T48 Site:T46 Using:T101
+E17	Action:T47 Acts-on:T48 Using:T50 Site:T52 Product:T57
 E18	Action:T53 Product:T50 Acts-on:T54
 E19	Action:T56 Acts-on:T57
-E20	Action:T58 
-E21	Action:T63 Acts-on:T62
-E22	Action:T64 Acts-on:E21 Product:T69
+E20	Action:T58 Acts-on:T61 Site:T62
+E21	Action:T63 Acts-on:E20
+E22	Action:T64 Product:T69 Acts-on:E19
 E23	Action:T68 Acts-on:T69 Product:T71
-E24	Action:T70 Acts-on:T71
+E24	Action:T70 Acts-on:T71 Using:T75
 E25	Action:T76 Acts-on:E24 Product:T80
-E26	Action:T79 Acts-on:T80 Product:T82
+E26	Action:T79 Acts-on:T80 Product:T82 Product2:T85
 E27	Action:T81 Acts-on:T82
-E28	Action:T84 Acts-on:T85
+E28	Action:T84 Acts-on:T85 Site:T107
 R1	Enables Arg1:E2 Arg2:E1
 R2	Setting Arg1:E2 Arg2:T3
 R3	Setting Arg1:E2 Arg2:T4
 R4	Setting Arg1:E2 Arg2:T5
-R5	Or Arg1:T8 Arg2:T9
+R5	Measure Arg1:T9 Arg2:T8
 R6	Measure Arg1:T12 Arg2:T11
-R7	Setting Arg1:E6 Arg2:T16
+R7	Setting Arg1:E6 Arg2:T90
 R8	Setting Arg1:E6 Arg2:T17
 R9	Measure Arg1:T20 Arg2:T19
 R10	Setting Arg1:E9 Arg2:T25
 R11	Setting Arg1:E11 Arg2:T29
 R12	Setting Arg1:E11 Arg2:T30
 R13	Setting Arg1:E11 Arg2:T31
-R14	Enables Arg1:E13 Arg2:E12
 R15	Measure Arg1:T36 Arg2:T35
 R16	Measure Arg1:T43 Arg2:T42
 R17	Measure Arg1:T50 Arg2:T49
-R18	Mod-Link Arg1:T52 Arg2:T51
 R19	Setting Arg1:E18 Arg2:T55
-R20	Setting Arg1:E19 Arg2:T60
-R21	Enables Arg1:E20 Arg2:E19
 R22	Measure Arg1:T61 Arg2:T59
-R23	Enables Arg1:E21 Arg2:E19
 R24	Setting Arg1:E22 Arg2:T65
 R25	Setting Arg1:E22 Arg2:T66
 R26	Setting Arg1:E22 Arg2:T67
-R27	Setting Arg1:E24 Arg2:T73
 R28	Measure Arg1:T75 Arg2:T72
 R29	Measure Arg1:T75 Arg2:T74
 R30	Setting Arg1:E25 Arg2:T77
 R31	Setting Arg1:E25 Arg2:T78
 R32	Setting Arg1:E27 Arg2:T83
+T86	Reagent 37 64	overnight bacterial culture
+T87	Modifier 189 199	thoroughly
+R33	Mod-Link Arg1:E5 Arg2:T87	
+T88	Modifier 203 213	vigorously
+T14	Action 214 223	inverting
+E29	Action:T14 Count:T89
+T89	Numerical 224 227	4–6
+R34	Mod-Link Arg1:E29 Arg2:T88	
+R35	Enables Arg1:E29 Arg2:E5	
+T90	Temperature 252 268	room temperature
+R36	Or Arg1:T90 Arg2:T16	
+T91	Modifier 387 397	thoroughly
+R37	Mod-Link Arg1:E8 Arg2:T91	
+T92	Modifier 401 411	vigorously
+T93	Numerical 422 425	4–6
+T22	Action 412 421	inverting
+E30	Action:T22 Count:T93
+R38	Mod-Link Arg1:E30 Arg2:T92	
+R39	Enables Arg1:E30 Arg2:E8	
+T94	Reagent 499 507	solution
+T26	Action 658 663	empty
+E31	Action:T26 Using:T95 Acts-on:T96 Acts-on2:E13
+T95	Method 667 679	gravity flow
+T96	Location 648 654	column
+R14	Enables Arg1:E31 Arg2:E12	
+T97	Action 752 757	enter
+E32	Action:T97 Site:T98 Using:T99 Acts-on:T100
+T98	Reagent 762 767	resin
+T99	Method 771 783	gravity flow
+T100	Mention 746 748	it
+R40	Meronym Arg1:T100 Arg2:T39	
+R41	Overlaps Arg1:E14 Arg2:E32	
+T101	Method 887 899	gravity flow
+T102	Modifier 939 944	clean
+R18	Mod-Link Arg1:T52 Arg2:T102	
+R42	Measure Arg1:T52 Arg2:T51	
+R20	Measure Arg1:T61 Arg2:T60	
+T103	Modifier 1137 1143	eluted
+R43	Mod-Link Arg1:T62 Arg2:T103	
+R21	Enables Arg1:E21 Arg2:E19	
+T104	Modifier 1202 1211	Carefully
+R23	Mod-Link Arg1:E23 Arg2:T104	
+R27	Measure Arg1:T75 Arg2:T73	
+T105	Modifier 1340 1349	Carefully
+R44	Mod-Link Arg1:E26 Arg2:T105	
+T106	Modifier 1444 1455	appropriate
+T107	Reagent 1456 1462	buffer
+R45	Mod-Link Arg1:T107 Arg2:T106	
+T108	Amount 1425 1440	suitable volume
+R46	Measure Arg1:T107 Arg2:T108	
+T109	pH 1487 1493	pH 8.0
+T110	pH 1515 1521	pH 8.5
+T111	Concentration 1499 1504	10 mM
+T112	Reagent 1475 1484	TE buffer
+T113	Reagent 1505 1512	Tris·Cl
+R47	Measure Arg1:T113 Arg2:T111	
+R48	Measure Arg1:T113 Arg2:T110	
+R49	Measure Arg1:T112 Arg2:T109	
+R50	Or Arg1:T112 Arg2:T113	
+R51	Coreference-Link Arg1:T107 Arg2:T112	

@@ -1,5 +1,5 @@
 T1	Action 38 47	Resuspend
-T2	Reagent 48 72	pelleted bacterial cells
+T2	Reagent 57 72	bacterial cells
 T3	Amount 76 81	250μl
 T4	Reagent 82 91	Buffer P1
 T5	Action 96 104	transfer
@@ -7,9 +7,6 @@ T6	Location 110 133	micro - centrifuge tube
 T7	Reagent 148 155	RNase A
 T8	Action 165 170	added
 T9	Reagent 174 183	Buffer P1
-T10	Modifier 304 314	vigorously
-T11	Action 315 320	shake
-T12	Location 325 338	buffer bottle
 T13	Reagent 399 407	bacteria
 T14	Action 418 429	resuspended
 T15	Modifier 430 440	completely
@@ -37,10 +34,10 @@ T36	Reagent 736 744	solution
 T37	Modifier 765 773	slightly
 T38	Action 774 779	clear
 T39	Action 952 958	Mixing
-T40	Reagent 978 1010	homogeneously colored suspension
+T40	Reagent 1000 1010	suspension
 T41	Action 1124 1130	mixing
 T42	Reagent 1135 1143	solution
-T43	Reagent 1152 1184	homogeneously colored suspension
+T43	Reagent 1174 1184	suspension
 T44	Action 1199 1202	Add
 T45	Amount 1203 1209	350 μl
 T46	Reagent 1210 1219	Buffer N3
@@ -128,51 +125,48 @@ T127	Action 3228 3238	centrifuge
 T128	Time 3243 3248	1 min
 E1	Action:T1 Acts-on:T2 Site:T4 Product:T13
 E2	Action:T5 Acts-on:E1 Site:T6
-E3	Action:T8 Acts-on:T7 Site:T9
-E4	Action:T11 Acts-on:T12
+E3	Action:T8 Acts-on:T7 Site:T9 Product:T4
 E5	Action:T14 Acts-on:T13 Using:T16
-E6	Action:T20 Using:E5 Acts-on:T19
-E7	Action:T21 Site:E5 Acts-on:T23
+E6	Action:T20 Acts-on:T19
+E7	Action:T21 Site:E5 Acts-on:T23 Product:T27
 E8	Action:T24 Using:T26 Acts-on:T27 Count:T28 Product:T32
 E9	Action:T29 Using:T31 Acts-on:T32
 E10	Action:T34 Acts-on:T35 Product:T36
-E11	Action:T38 Using:E10 Acts-on:T36
-E12	Action:T39 Product:T40
+E11	Action:T38 Acts-on:T36 Product:T139
+E12	Action:T39 Product:T40 Product2:T42 Acts-on:E49
 E13	Action:T41 Acts-on:T42 Product:T43
-E14	Action:T44 Acts-on:T46
-E15	Action:T47 Using:E16
+E14	Action:T44 Acts-on:T46 Site:E13 Product:T51
+E15	Action:T47 Acts-on2:E14
 E16	Action:T50 Acts-on:T51 Count:T52
-E17	Action:T53 Acts-on:T54
-E18	Action:T57 Acts-on:T58
+E17	Action:T53 Acts-on:T54 Product:T59
+E18	Action:T57 Acts-on:T58 Site:E15 Product:T54
 E19	Action:T60 Acts-on:T59
-E20	Action:T61 Site:T65 Product:T67
+E20	Action:T61 Site:T65 Product:T67 Acts-on:E50 Acts-on2:E51
 E21	Action:T66 Acts-on:T67 Site:T68 Using:T69
 E22	Action:T71 Acts-on:E21 Product:T74
 E23	Action:T73 Acts-on:T74 Site:T75
 E24	Action:T76 Acts-on:E23 Product:T79
 E25	Action:T78 Acts-on:T79 Product:T81
-E26	Action:T80 Acts-on:T81 Using:E27 Using2:E28
+E26	Action:T80 Acts-on:T81 Product:T88
 E27	Action:T82 Acts-on:T84
-E28	Action:T85 Product:T88
+E28	Action:T85 Acts-on:E27
 E29	Action:T87 Acts-on:T88 Product:T90
-E30	Action:T89 Acts-on:T90 Using:E31
+E30	Action:T89 Acts-on:T90 Product:T97
 E31	Action:T91 Acts-on:T93
-E32	Action:T94 Product:T97
+E32	Action:T94 Acts-on:E31
 E33	Action:T96 Acts-on:T97
-E34	Action:T98 Acts-on:E33 Using:E35
+E34	Action:T98 Acts-on:E33
 E35	Action:T102 Acts-on:T103
-E36	Action:T104 Acts-on:T105 Site:T108 Product:T114
-E37	Action:T109 Acts-on:T110 Using:E38 Using2:E39 Using3:E40
+E36	Action:T104 Acts-on:T105 Site:T108 Product:T114 Product2:T110
+E37	Action:T109 Acts-on:T110 Product:T124 Product2:T120
 E38	Action:T111 Acts-on:T113 Site:T114
-E39	Action:T115 
-E40	Action:T117 Product:T124
-E41	Action:T119 Acts-on:T120 Using:E42 Using2:E43 Using3:E44
+E39	Action:T115 Acts-on:E38
+E40	Action:T117 Acts-on:E39
+E41	Action:T119 Acts-on:T120
 E42	Action:T121 Acts-on:T123 Site:T124
-E43	Action:T125 
-E44	Action:T127 
+E43	Action:T125 Acts-on:E42
+E44	Action:T127 Acts-on:E43
 R1	Measure Arg1:T4 Arg2:T3
-R2	Coreference-Link Arg1:T4 Arg2:T9
-R3	Mod-Link Arg1:E4 Arg2:T10
 R4	Mod-Link Arg1:E5 Arg2:T15
 R5	Or Arg1:T16 Arg2:T17
 R6	Mod-Link Arg1:E6 Arg2:T18
@@ -207,3 +201,52 @@ R34	Setting Arg1:E40 Arg2:T118
 R35	Measure Arg1:T123 Arg2:T122
 R36	Setting Arg1:E43 Arg2:T126
 R37	Setting Arg1:E44 Arg2:T128
+R40	Enables Arg1:E44 Arg2:E41	
+R41	Enables Arg1:E40 Arg2:E37	
+T129	Modifier 48 56	pelleted
+R38	Mod-Link Arg1:T2 Arg2:T129	
+R2	Enables Arg1:E6 Arg2:E5	
+T10	Modifier 304 314	vigorously
+T11	Action 315 320	shake
+E4	Action:T11 Acts-on:T12
+T12	Location 325 338	buffer bottle
+T130	Reagent 349 367	LyseBlue particles
+T131	Action 383 392	dissolved
+E45	Action:T131 Acts-on:T130 Product:T4
+T132	Modifier 372 382	completely
+R3	Mod-Link Arg1:E45 Arg2:T132	
+R39	Mod-Link Arg1:E4 Arg2:T10	
+R42	Enables Arg1:E4 Arg2:E45	
+T133	Action 283 288	added
+E46	Action:T133 Acts-on:T135 Site:T134 Product:T12
+T134	Reagent 292 301	Buffer P1
+T135	Reagent 257 273	LyseBlue reagent
+T136	Action 618 631	Do not vortex
+E47	Action:T136 Acts-on:E9 Product:T35
+R43	Enables Arg1:E10 Arg2:E11	
+T137	Action 753 760	viscous
+E48	Action:T137 Acts-on:T36 Product:T139
+R44	Overlaps Arg1:E48 Arg2:E11	
+T138	Action 805 813	reaction
+E49	Action:T138 Acts-on:T139
+T139	Reagent 799 804	lysis
+T140	Time 839 844	5 min
+R45	Setting Arg1:E49 Arg2:T140	
+T141	Modifier 978 999	homogeneously colored
+R46	Mod-Link Arg1:T40 Arg2:T141	
+T142	Modifier 1152 1173	homogeneously colored
+R47	Mod-Link Arg1:T43 Arg2:T142	
+R48	Enables Arg1:E16 Arg2:E15	
+T143	Reagent 1588 1601	trace of blue
+T144	Modifier 1584 1587	all
+T145	Action 1606 1610	gone
+E50	Action:T145 Acts-on:T143
+T146	Reagent 1619 1629	suspension
+T147	Action 1633 1642	colorless
+E51	Action:T147 Acts-on:T146
+R49	Overlaps Arg1:E50 Arg2:E51	
+R50	Enables Arg1:E19 Arg2:E50	
+R51	Mod-Link Arg1:E50 Arg2:T144	
+R52	Enables Arg1:E28 Arg2:E26	
+R53	Enables Arg1:E32 Arg2:E30	
+R54	Enables Arg1:E34 Arg2:E35	
