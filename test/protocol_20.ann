@@ -81,30 +81,30 @@ T80	Reagent 1013 1016	DNA
 T81	Action 1019 1027	Quantify
 T82	Reagent 1028 1031	DNA
 T83	Reagent 1035 1071	Quant - iT PicoGreen dsDNA assay kit
-E1	Action:T1 Acts-on:T3
+E1	Action:T1 Acts-on:T3 Product:T5
 E2	Action:T4 Acts-on:T5 Product:T8
 E3	Action:T7 Acts-on:T8 Product:T14
-E4	Action:T10 Using:E3 Acts-on:T11
-E5	Action:T12 Acts-on:T14 Acts-on2:T16 Product:T24
+E4	Action:T10 Acts-on:T11
+E5	Action:T12 Acts-on:T14 Product:T24 Using:T16
 E6	Action:T17 Acts-on:T18 Site:T19 Product:T25
-E7	Action:T23 Acts-on:T24 Site:T25
+E7	Action:T23 Acts-on:T24 Site:T25 Product:T27
 E8	Action:T26 Acts-on:T27 Product:T30
-E9	Action:T28 Acts-on:T29 Site:T30 Product:T34
-E10	Action:T31 Site:E9 Using:T32 Product:T35
-E11	Action:T33 Acts-on:T34 Site:T35 Product:T39
+E9	Action:T28 Acts-on:T29 Product:T34
+E10	Action:T31 Site:E9 Product:T35 Acts-on:T32
+E11	Action:T33 Acts-on:T34 Site:T35 Acts-on2:T38 Site2:T39 Product:T40 Product2:T42 Product3:T44
 E12	Action:T41 Using:T40 Acts-on:T42
-E13	Action:T43 Using:E12 Acts-on:T44
-E14	Action:T45 Acts-on:T46 Site:T47
+E13	Action:T43 Acts-on:T44 Product:T46 Product2:T47
+E14	Action:T45 Acts-on:T46
 E15	Action:T48 Acts-on:E14 Site:T51
-E16	Action:T52 Acts-on:E15 Product:T58
-E17	Action:T55 Using:E16 Acts-on:T56
+E16	Action:T52 Product:T58 Acts-on:E15
+E17	Action:T55 Acts-on:T56
 E18	Action:T57 Acts-on:T58 Site:T60 Product:T66
-E19	Action:T61 Acts-on:T64 Site:T65
+E19	Action:T61 Acts-on:T64 Site:T65 Product:T70
 E20	Action:T67 Acts-on:T68 Site:T69
 E21	Action:T71 Acts-on:E20
-E22	Action:T74 Acts-on:E21
-E23	Action:T76 Acts-on:E22
-E24	Action:T79 Using:E23 Acts-on:T80
+E22	Action:T74 Acts-on:E21 Product:T80
+E23	Action:T76 Acts-on:T80
+E24	Action:T79 Acts-on:T80 Product:T82
 E25	Action:T81 Acts-on:T82 Using:T83
 R1	Measure Arg1:T3 Arg2:T2
 R2	Setting Arg1:E2 Arg2:T6
@@ -130,3 +130,19 @@ R21	Setting Arg1:E21 Arg2:T73
 R22	Setting Arg1:E22 Arg2:T75
 R23	Setting Arg1:E23 Arg2:T77
 R24	Setting Arg1:E23 Arg2:T78
+T84	Modifier 89 96	labeled
+T85	Numerical 87 88	2
+R25	Mod-Link Arg1:T3 Arg2:T84	
+R26	Measure Arg1:T3 Arg2:T85	
+R27	Enables Arg1:E3 Arg2:E4	
+T86	Reagent 123 129	sample
+R28	Meronym Arg1:T86 Arg2:T3	
+R29	Meronym Arg1:T29 Arg2:T30	
+R30	Enables Arg1:E12 Arg2:E13	
+R31	Meronym Arg1:T46 Arg2:T47	
+R32	Enables Arg1:E16 Arg2:E17	
+T87	Modifier 801 804	new
+T88	Modifier 805 812	sterile
+R33	Mod-Link Arg1:T60 Arg2:T88	
+R34	Mod-Link Arg1:T60 Arg2:T87	
+R35	Enables Arg1:E23 Arg2:E24	

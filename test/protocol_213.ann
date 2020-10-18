@@ -55,25 +55,25 @@ T54	Action 1187 1192	Store
 T55	Location 1193 1199	plates
 T56	Temperature 1203 1205	4C
 T57	Modifier 1208 1216	inverted
-E1	Action:T1 Acts-on:T3 Site:T4 Using:T6
-E2	Action:T7 Acts-on:E1 Product:T11
+E1	Action:T1 Acts-on:T3 Site:T4 Using:T6 Product:T59
+E2	Action:T7 Product:T11 Acts-on:T59
 E3	Action:T10 Acts-on:T11
 E4	Action:T12 Acts-on:E3 Using:T15
 E5	Action:T16 Acts-on:E4 Site:T17
 E6	Action:T18 Acts-on:E5
-E7	Action:T21 Site:T23
-E8	Action:T24 Acts-on:T25
+E7	Action:T21 Site:T23 Acts-on:E6
+E8	Action:T24 Acts-on:T25 Site:E7
 E9	Action:T26 Acts-on:T28 Site:T30 Product:T31
-E10	Action:T32 
-E11	Action:T33 Acts-on:T34 Site:T35
+E10	Action:T32 Acts-on:T31 Product:T35
+E11	Action:T33 Acts-on:T34 Site:T35 Product:T37
 E12	Action:T36 Acts-on:T37
-E13	Action:T38 Acts-on:T39 Product:T43
-E14	Action:T41 
+E13	Action:T38 Acts-on:T39 Site:E12
+E14	Action:T41 Product:T43
 E15	Action:T42 Acts-on:T43 Using:T44
-E16	Action:T45 Site:T46
+E16	Action:T45 Site:T46 Acts-on:T43
 E17	Action:T48 Acts-on:T47
-E18	Action:T49 Using:T50
-E19	Action:T51 Acts-on:T52
+E18	Action:T49 Using:T50 Acts-on:E17
+E19	Action:T51 Acts-on:T52 Product:T55
 E20	Action:T54 Acts-on:T55
 R1	Setting Arg1:E1 Arg2:T5
 R2	Measure Arg1:T3 Arg2:T2
@@ -89,8 +89,28 @@ R11	Measure Arg1:T30 Arg2:T29
 R12	Mod-Link Arg1:E13 Arg2:T40
 R13	Enables Arg1:E13 Arg2:E14
 R14	Or Arg1:E15 Arg2:E16
-R15	Prevents Arg1:E16 Arg2:E17
-R16	Prevents Arg1:E18 Arg2:E19
+R15	Enables Arg1:E16 Arg2:E17
+R16	Enables Arg1:E18 Arg2:E19
 R17	Meronym Arg1:T53 Arg2:T52
 R18	Setting Arg1:E20 Arg2:T56
 R19	Mod-Link Arg1:E20 Arg2:T57
+T58	Action 241 258	no longer visible
+E21	Action:T58 Acts-on:T59
+T59	Reagent 224 236	particulates
+R20	Enables Arg1:E2 Arg2:E21	
+T60	Modifier 261 268	Loosely
+R21	Mod-Link Arg1:E3 Arg2:T60	
+T61	Modifier 305 312	minimum
+R22	Mod-Link Arg1:T13 Arg2:T61	
+T62	Modifier 579 587	Optional
+R23	Mod-Link Arg1:E7 Arg2:T62	
+T63	Modifier 740 749	Carefully
+R24	Mod-Link Arg1:E9 Arg2:T63	
+T64	Action 729 732	mix
+E22	Action:T64 Acts-on:E8 Product:T28
+T65	Modifier 733 737	well
+R25	Mod-Link Arg1:E22 Arg2:T65	
+T66	Modifier 894 907	Alternatively
+R26	Mod-Link Arg1:E13 Arg2:T66	
+T67	Modifier 1053 1060	prevent
+R27	Mod-Link Arg1:E17 Arg2:T67	

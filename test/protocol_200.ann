@@ -17,18 +17,18 @@ T16	Speed 370 376	5,000g
 T17	Time 379 385	10 min
 T18	Temperature 388 404	room temperature
 T19	Reagent 413 424	supernatant
-T20	Action 433 462	screened directly for viruses
+T20	Action 433 441	screened
 T21	Method 466 478	plaque assay
-T22	Reagent 826 849	Base and overlay plates
+T22	Location 826 849	Base and overlay plates
 T23	Size 852 857	90 mm
 T24	Action 864 868	made
 T25	Reagent 874 877	MGM
 T26	Action 899 909	solidified
-T27	Concentration 916 920	15 %
-T28	Reagent 921 933	w / v agar .
+T27	Concentration 916 926	15 % w / v
+T28	Reagent 927 931	agar
 T29	Reagent 945 970	salt water concentrations
 T30	Action 981 989	examined
-T31	Reagent 1077 1083	Plates
+T31	Location 1077 1083	Plates
 T32	Action 1091 1097	stored
 T33	Time 1098 1110	indefinitely
 T34	Temperature 1114 1117	4°C
@@ -39,7 +39,7 @@ T38	Action 1180 1186	warmed
 T39	Temperature 1190 1206	room temperature
 T40	Temperature 1210 1216	warmer
 T41	Amount 1249 1259	100–500 µl
-T42	Reagent 1267 1287	cleared water sample
+T42	Reagent 1275 1287	water sample
 T43	Action 1291 1296	mixed
 T44	Amount 1302 1308	150 µl
 T45	Modifier 1312 1333	exponentially growing
@@ -47,8 +47,8 @@ T46	Reagent 1334 1344	host cells
 T47	Amount 1354 1360	3–4 mL
 T48	Temperature 1364 1379	molten ( 50°C )
 T49	Reagent 1380 1395	top - layer MGM
-T50	Concentration 1403 1408	0.7 %
-T51	Reagent 1409 1419	w / v agar
+T50	Concentration 1403 1414	0.7 % w / v
+T51	Reagent 1415 1419	agar
 T52	Action 1425 1430	added
 T53	Reagent 1441 1449	solution
 T54	Action 1450 1455	mixed
@@ -67,7 +67,7 @@ T66	Location 1593 1612	airtight containers
 T67	Temperature 1616 1620	30°C
 T68	Temperature 1625 1629	37°C
 T69	Time 1634 1639	1–4 d
-T70	Action 1646 1675	checked every day for plaques
+T70	Action 1646 1653	checked
 T71	Reagent 1678 1697	Any visible plaques
 T72	Action 1702 1708	picked
 T73	Device 1715 1745	sterile glass Pasteur pipettes
@@ -102,31 +102,31 @@ T101	Action 2117 2126	eliminate
 T102	Reagent 2127 2142	“false plaques”
 E1	Action:T2 Acts-on:T1
 E2	Action:T5 Acts-on:T4 Site:T8
-E3	Action:T9 Acts-on:T4
+E3	Action:T9 Acts-on:E2 Product:T29 Acts-on2:E1
 E4	Action:T14 Acts-on:T12 Acts-on2:T13 Using:T15 Product:T19
-E5	Action:T20 Acts-on:T19 Using:T21
+E5	Action:T20 Using:T21 Acts-on:T106 Product:T46
 E6	Action:T24 Product:T22 Using:T25
-E7	Action:T26 Acts-on:T22 Using:T28
-E8	Action:T30 Acts-on:T29
+E7	Action:T26 Acts-on:T22 Using:T28 Product:T31
+E8	Action:T30 Acts-on:T29 Product:T42
 E9	Action:T32 Acts-on:T31
-E10	Action:T35 Using:T36
-E11	Action:T37 Acts-on:T31 Using:E10
-E12	Action:T38 Acts-on:T31
+E10	Action:T35 Using:T36 Acts-on:T31
+E11	Action:T37 
+E12	Action:T38 Acts-on:E9 Product:T58
 E13	Action:T43 Acts-on:T42 Acts-on2:T46
-E14	Action:T52 Acts-on:E13 Acts-on2:T49 Acts-on3:T51 Product:T53
+E14	Action:T52 Product:T53 Site:E13 Acts-on:T49
 E15	Action:T54 Acts-on:T53
-E16	Action:T56 Acts-on:T53 Acts-on2:E15 Site:T58
-E17	Action:T59 Site:T60 Acts-on:T62
-E18	Action:T63 Acts-on:E17 Acts-on2:T62
-E19	Action:T65 Acts-on:T62 Acts-on2:E18 Site:T66
-E20	Action:T70 Acts-on:T62 Product:T71
+E16	Action:T56 Acts-on2:E15 Site:T58
+E17	Action:T59 Site:T60 Acts-on2:E16 Product:T62
+E18	Action:T63 Acts-on:T62
+E19	Action:T65 Site:T66 Acts-on:E18
+E20	Action:T70 Product:T71 Acts-on:E19 Acts-on2:T110
 E21	Action:T72 Acts-on:T71 Using:T73 Product:T75
-E22	Action:T76 Acts-on:T75 Site:T77
-E23	Action:T93 Acts-on:E22
-E24	Action:T94 Using:E23 Acts-on:T95
+E22	Action:T76 Acts-on:T75 Site:T77 Product:T95
+E23	Action:T93 Acts-on:T95
+E24	Action:T94 Acts-on:T95 Product:T96 Product2:T100 Product3:T102
 E25	Action:T97 Acts-on:T96 Site:T98
-E26	Action:T99 Using:E25 Acts-on:T100
-E27	Action:T101 Using:E25 Acts-on:T102
+E26	Action:T99 Acts-on:T100
+E27	Action:T101 Acts-on:T102
 R1	Meronym Arg1:T1 Arg2:T3
 R2	Mod-Link Arg1:T8 Arg2:T6
 R3	Measure Arg1:T8 Arg2:T7
@@ -171,3 +171,26 @@ R41	Measure Arg1:T91 Arg2:T92
 R42	Enables Arg1:E23 Arg2:E24
 R43	Enables Arg1:E25 Arg2:E26
 R44	Enables Arg1:E25 Arg2:E27
+T103	Concentration 130 140	15 % w / v
+R45	Measure Arg1:T1 Arg2:T103	
+T104	Concentration 176 180	35 %
+R46	Measure Arg1:T1 Arg2:T104	
+R47	Overlaps Arg1:E2 Arg2:E1	
+R48	Coreference-Link Arg1:T4 Arg2:T1	
+R49	Setting Arg1:E4 Arg2:T16	
+R50	Setting Arg1:E4 Arg2:T17	
+R51	Setting Arg1:E4 Arg2:T18	
+T105	Modifier 442 450	directly
+R52	Mod-Link Arg1:E5 Arg2:T105	
+T106	Reagent 455 462	viruses
+R53	Meronym Arg1:T106 Arg2:T19	
+T107	Modifier 936 941	range
+R54	Mod-Link Arg1:T29 Arg2:T107	
+R55	Enables Arg1:E10 Arg2:E11	
+R56	Enables Arg1:E11 Arg2:E9	
+T108	Modifier 1267 1274	cleared
+R57	Mod-Link Arg1:T42 Arg2:T108	
+T109	Time 1654 1663	every day
+T110	Reagent 1668 1675	plaques
+R58	Setting Arg1:E20 Arg2:T109	
+R59	Meronym Arg1:T51 Arg2:T49	

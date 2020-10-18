@@ -7,7 +7,7 @@ T6	Location 87 102	selection plate
 T7	Action 115 119	wait
 T8	Time 120 128	13 hours
 T9	Action 131 135	Pick
-T10	Reagent 138 166	well separated single colony
+T10	Reagent 153 166	single colony
 T11	Location 172 187	selection plate
 T12	Device 192 211	yellow pipette tips
 T13	Action 214 218	Move
@@ -41,8 +41,8 @@ T40	Action 620 623	run
 E1	Action:T2 Acts-on:T1 Site:T3 Product:T5
 E2	Action:T4 Acts-on:T5 Site:T6
 E3	Action:T7 Acts-on:E2 Product:T10
-E4	Action:T9 Acts-on:T10 Site:T11 Using:T12
-E5	Action:T13 Acts-on:T14 Site:T15
+E4	Action:T9 Acts-on:T10 Site:T11 Using:T12 Product:T14
+E5	Action:T13 Acts-on:T14 Site:T15 Product:T17
 E6	Action:T16 Acts-on:T17 Site:T18 Product:T31
 E7	Action:T22 Product:T23
 E8	Action:T25 Using:T24 Acts-on:T27 Site:T28
@@ -59,3 +59,5 @@ R5	Coreference-Link Arg1:T23 Arg2:T27
 R6	Measure Arg1:T27 Arg2:T26
 R7	Measure Arg1:T31 Arg2:T30
 R8	Measure Arg1:T36 Arg2:T35
+T41	Modifier 138 152	well separated
+R9	Mod-Link Arg1:T10 Arg2:T41	

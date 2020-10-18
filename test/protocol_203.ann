@@ -2,13 +2,13 @@ T1	Action 58 65	Prepare
 T2	Reagent 66 78	lysis buffer
 T3	Action 81 88	Prepare
 T4	Reagent 89 97	Lysozyme
-T5	Reagent 100 105	RNase
+T5	Reagent 100 113	RNase Aliquot
 T6	Action 116 123	Prepare
-T7	Reagent 124 128	ProK
+T7	Reagent 124 136	ProK Aliquot
 T8	Action 139 143	Thaw
 T9	Reagent 144 151	filters
 T10	Temperature 152 158	on ice
-T11	Action 161 179	Do quick spin down
+T11	Action 170 179	spin down
 T12	Action 182 190	Transfer
 T13	Reagent 196 202	filter
 T14	Location 206 243	screw top , O - ringed eppendorf tube
@@ -22,7 +22,7 @@ T21	Location 316 320	tube
 T22	Action 323 331	Incubate
 T23	Temperature 332 336	37°C
 T24	Time 341 347	30 min
-T25	Modifier 352 382	rotating end over end at angle
+T25	Method 352 382	rotating end over end at angle
 T26	Action 428 431	Add
 T27	Amount 432 440	18.75 µl
 T28	Reagent 444 465	Proteinase K solution
@@ -88,10 +88,9 @@ T87	Temperature 1334 1339	40­°C
 T88	Action 1342 1349	Discard
 T89	Reagent 1350 1362	flow through
 T90	Action 1365 1370	Place
-T91	Location 1374 1393	new collection tray
+T91	Location 1378 1393	collection tray
 T92	Action 1396 1399	Add
 T93	Reagent 1411 1417	lysate
-T94	Action 1432 1443	repeat spin
 T95	Action 1452 1455	Add
 T96	Amount 1456 1462	500 µl
 T97	Reagent 1463 1473	Buffer AW1
@@ -120,7 +119,7 @@ T119	Speed 1657 1664	5600 xg
 T120	Time 1669 1675	15 min
 T121	Temperature 1681 1685	40°C
 T122	Location 1686 1690	atop
-T123	Location 1693 1712	new collection tray
+T123	Location 1697 1712	collection tray
 T124	Action 1716 1724	incubate
 T125	Device 1728 1736	hyb oven
 T126	Temperature 1740 1744	70°C
@@ -144,10 +143,6 @@ T143	Action 1914 1918	Spin
 T144	Speed 1919 1926	5788 xg
 T145	Time 1927 1934	2 min .
 T146	Action 1938 1943	elute
-T147	Action 1946 1952	Repeat
-T148	Amount 1965 1971	200 µl
-T149	Amount 2081 2087	200 µl
-T150	Reagent 2088 2095	elution
 T151	Action 2098 2102	heat
 T152	Mention 2103 2105	it
 T153	Temperature 2114 2118	70°C
@@ -183,63 +178,61 @@ T182	Modifier 2750 2761	up and down
 T183	Numerical 2762 2770	20 times
 T184	Action 2775 2783	transfer
 T185	Location 2789 2808	clean 96 well plate
-E1	Action:T1 Product:T18
-E2	Action:T3 Acts-on:T4 Acts-on2:T5 Product:T19 Product2:T20
-E3	Action:T6 Acts-on:T7 Product:T28
+E1	Action:T1 Product:T2
+E2	Action:T3 Product:T4 Product2:T5
+E3	Action:T6 Product:T7
 E4	Action:T8 Acts-on:T9
 E5	Action:T11 Acts-on:E4 Product:T13
 E6	Action:T12 Acts-on:T13 Site:T14 Product:T21
 E7	Action:T16 Acts-on:T18 Site:T21
-E8	Action:T22 Acts-on:E7
-E9	Action:T26 Acts-on:E8 Acts-on2:T28
-E10	Action:T32 Acts-on:E9 Acts-on2:T35
+E8	Action:T22 Acts-on:E7 Using:T25
+E9	Action:T26 Site:E8 Acts-on:T28
+E10	Action:T32 Acts-on2:T35 Site:E9
 E11	Action:T37 Acts-on:E10 Using:T40
 E12	Action:T41 Acts-on:T42
-E13	Action:T45 Acts-on:T46
-E14	Action:T50 Using:E13
-E15	Action:T51 Acts-on:T53
+E13	Action:T45 Acts-on:T46 Site:E12
+E14	Action:T50 
+E15	Action:T51 Acts-on:T53 Site:E14
 E16	Action:T56 Acts-on:E15 Using:T58
 E17	Action:T59 Acts-on:E16
 E18	Action:T61 Acts-on:E17
-E19	Action:T64 Acts-on:E18 Acts-on2:T67
-E20	Action:T68 Acts-on:E19 Using:T69
+E19	Action:T64 Acts-on2:T67 Site:E18
+E20	Action:T68 Acts-on:E19 Using:T69 Product:T74
 E21	Action:T71 Acts-on:E20
 E22	Action:T73 Acts-on:T74
 E23	Action:T76 Acts-on:E22 Acts-on2:T77 Product:T79
 E24	Action:T78 Acts-on:T79 Site:T80 Product:T82
 E25	Action:T81 Acts-on:T82 Using:T83
-E26	Action:T84 Acts-on:E25
+E26	Action:T84 Acts-on:E25 Product:T89
 E27	Action:T88 Acts-on:T89
 E28	Action:T90 Acts-on:E27 Site:T91
-E29	Action:T92 Acts-on:T93
-E30	Action:T94 
-E31	Action:T95 Acts-on:T97
+E29	Action:T92 Acts-on:T93 Site:E28
+E31	Action:T95 Acts-on:T97 Site:E29 Product:T99
 E32	Action:T98 Acts-on:T99
 E33	Action:T100 Acts-on:E32
-E34	Action:T104 Acts-on:E33 Acts-on2:T106
+E34	Action:T104 Acts-on2:T106 Site:E33 Product:T108
 E35	Action:T107 Acts-on:T108
-E36	Action:T109 Acts-on:E35
+E36	Action:T109 Acts-on:E35 Product:T114 Product2:T116
 E37	Action:T113 Acts-on:T114
 E38	Action:T115 Acts-on:T116 Using:T117
-E39	Action:T118 Acts-on:E38 Site:T122
-E40	Action:T124 Site:T125
+E39	Action:T118 Acts-on:E38 Site:T122 Product:T129
+E40	Action:T124 Site:T125 Product:T129
 E41	Action:T128 Acts-on:T129 Site:T130
-E42	Action:T133 Acts-on:T136
+E42	Action:T133 Acts-on:T136 Site:E41 Product:T139
 E43	Action:T138 Acts-on:T139
 E44	Action:T140 Acts-on:E43
-E45	Action:T143 
-E46	Action:T146 Using:E45
-E47	Action:T147 
-E48	Action:T151 Acts-on:T152
-E49	Action:T154 Acts-on:T155 Site:T156
+E45	Action:T143 Acts-on:E44 Product:T156
+E46	Action:T146 
+E48	Action:T151 Acts-on:T152 Product:T155
+E49	Action:T154 Acts-on:T155 Site:T156 Product:T158
 E50	Action:T157 Acts-on:T158
 E51	Action:T159 Acts-on:E50
 E52	Action:T162 Acts-on:T163 Site:T164
-E53	Action:T165 Acts-on:E52 Acts-on2:T166 Product:T170
+E53	Action:T165 Acts-on2:T166 Product:T170 Site:E52
 E54	Action:T169 Acts-on:T170 Using:T172
 E55	Action:T173 Acts-on:E54 Acts-on2:T174
 E56	Action:T176 Acts-on:E55 Using:T177
-E57	Action:T178 Acts-on:E56 Acts-on2:T180
+E57	Action:T178 Site:E56 Acts-on:T180
 E58	Action:T181 Acts-on:E57 Count:T183
 E59	Action:T184 Acts-on:E58 Site:T185
 R1	Setting Arg1:E4 Arg2:T10
@@ -248,11 +241,10 @@ R3	Measure Arg1:T18 Arg2:T17
 R4	Meronym Arg1:T19 Arg2:T18
 R5	Meronym Arg1:T20 Arg2:T18
 R6	Setting Arg1:E8 Arg2:T23
-R7	Mod-Link Arg1:E8 Arg2:T25
 R8	Setting Arg1:E9 Arg2:T31
 R9	Measure Arg1:T28 Arg2:T27
 R10	Measure Arg1:T28 Arg2:T29
-R11	Meronym Arg1:T30 Arg2:T28
+R11	Meronym Arg1:T28 Arg2:T30
 R12	Setting Arg1:E10 Arg2:T36
 R13	Measure Arg1:T35 Arg2:T33
 R14	Measure Arg1:T35 Arg2:T34
@@ -296,14 +288,12 @@ R51	Setting Arg1:E40 Arg2:T126
 R52	Setting Arg1:E40 Arg2:T127
 R53	Meronym Arg1:T131 Arg2:T130
 R54	Meronym Arg1:T132 Arg2:T131
-R55	Setting Arg1:E42 Arg2:T135
 R56	Measure Arg1:T136 Arg2:T134
 R57	Or Arg1:T136 Arg2:T137
 R58	Setting Arg1:E44 Arg2:T141
 R59	Setting Arg1:E44 Arg2:T142
 R60	Setting Arg1:E45 Arg2:T144
 R61	Setting Arg1:E45 Arg2:T145
-R62	Measure Arg1:T150 Arg2:T149
 R63	Setting Arg1:E48 Arg2:T153
 R64	Setting Arg1:E51 Arg2:T160
 R65	Setting Arg1:E51 Arg2:T161
@@ -312,3 +302,56 @@ R67	Setting Arg1:E53 Arg2:T168
 R68	Measure Arg1:T172 Arg2:T171
 R69	Setting Arg1:E55 Arg2:T175
 R70	Mod-Link Arg1:E58 Arg2:T182
+R71	Coreference-Link Arg1:T18 Arg2:T2	
+R72	Coreference-Link Arg1:T19 Arg2:T5	
+R73	Coreference-Link Arg1:T20 Arg2:T4	
+R74	Coreference-Link Arg1:T28 Arg2:T7	
+T186	Modifier 164 169	quick
+R75	Mod-Link Arg1:E5 Arg2:T186	
+T187	Modifier 191 195	each
+R76	Mod-Link Arg1:T13 Arg2:T187	
+T188	Modifier 311 315	each
+R77	Mod-Link Arg1:T21 Arg2:T188	
+T189	Action 1139 1149	not to wet
+E60	Action:T189 Acts-on:T190
+T190	Location 1154 1158	rims
+T191	Action 1162 1187	avoid cross contamination
+E61	Action:T191 Product:T79
+R7	Enables Arg1:E60 Arg2:E61	
+R78	Overlaps Arg1:E23 Arg2:E60	
+R79	Meronym Arg1:T190 Arg2:T77	
+T192	Modifier 1374 1377	new
+R80	Mod-Link Arg1:T91 Arg2:T192	
+T193	Modifier 1400 1410	additional
+R81	Mod-Link Arg1:T93 Arg2:T193	
+T94	Modifier 1638 1641	new
+R82	Mod-Link Arg1:T117 Arg2:T94	
+R83	Meronym Arg1:T114 Arg2:T116	
+T194	Modifier 1693 1696	new
+R84	Mod-Link Arg1:T123 Arg2:T194	
+R85	Or Arg1:E39 Arg2:E40	
+R55	Measure Arg1:T136 Arg2:T135	
+R86	Enables Arg1:E45 Arg2:E46	
+T147	Action 1946 1952	Repeat
+E30	Action:T147 Product:T152
+T148	Modifier 1958 1964	second
+T149	Amount 1965 1971	200 µl
+T150	Action 2067 2070	use
+E47	Action:T150 Acts-on:T197 Product:T152
+T195	Modifier 2075 2080	first
+T196	Amount 2081 2087	200 µl
+T197	Reagent 2088 2095	elution
+R62	Measure Arg1:T197 Arg2:T196	
+R87	Mod-Link Arg1:T197 Arg2:T195	
+R88	Setting Arg1:E30 Arg2:T149	
+R89	Mod-Link Arg1:T149 Arg2:T148	
+R90	Or Arg1:E30 Arg2:E47	
+R91	Coreference-Link Arg1:T152 Arg2:T197	
+T198	Action 2275 2285	proceeding
+E62	Action:T198 Acts-on:E51 Using:T199 Acts-on2:T200 Product:T163
+T199	Method 2301 2314	clean up step
+T200	Reagent 2291 2300	Final DNA
+T201	Modifier 2648 2659	second time
+R92	Mod-Link Arg1:E56 Arg2:T201	
+R93	Measure Arg1:T180 Arg2:T179	
+R94	Setting Arg1:E8 Arg2:T24	

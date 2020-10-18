@@ -6,9 +6,10 @@ T5	Action 133 143	incubating
 T6	Temperature 147 151	65°C
 T7	Time 156 166	20 minutes
 E1	Action:T1 
-E2	Action:T4 Using:E3
+E2	Action:T4 
 E3	Action:T5 Acts-on:E1
 R1	Setting Arg1:E1 Arg2:T2
 R2	Setting Arg1:E1 Arg2:T3
 R3	Setting Arg1:E3 Arg2:T6
 R4	Setting Arg1:E3 Arg2:T7
+R5	Enables Arg1:E3 Arg2:E2	

@@ -1,8 +1,8 @@
 T1	Action 50 56	Obtain
 T2	Reagent 57 71	desired tissue
 T3	Action 131 138	prepare
-T4	Reagent 139 163	a single cell suspension
-T5	Reagent 167 219	Cell Staining Buffer ( BioLegend Cat . No . 420201 )
+T4	Reagent 148 163	cell suspension
+T5	Reagent 167 187	Cell Staining Buffer
 T6	Action 222 225	Add
 T7	Reagent 226 246	Cell Staining Buffer
 T8	Amount 253 260	~ 15 ml
@@ -13,7 +13,7 @@ T12	Action 303 310	discard
 T13	Reagent 311 322	supernatant
 T14	Action 359 365	dilute
 T15	Concentration 366 369	10X
-T16	Reagent 370 437	Red Blood Cell ( RBC ) Lysis Buffer ( BioLegend Cat . No . 420301 )
+T16	Reagent 370 405	Red Blood Cell ( RBC ) Lysis Buffer
 T17	Concentration 441 443	1X
 T18	Reagent 471 479	DI water
 T19	Action 484 493	resuspend
@@ -93,7 +93,7 @@ T92	Action 1808 1811	add
 T93	Amount 1812 1816	5 μl
 T94	Concentration 1817 1838	( 0.25 μg ) / million
 T95	Reagent 1839 1844	cells
-T96	Reagent 1848 1915	7 - AAD Viability Staining Solution ( BioLegend Cat . No . 420403 )
+T96	Reagent 1848 1883	7 - AAD Viability Staining Solution
 T97	Action 1919 1926	exclude
 T98	Reagent 1927 1937	dead cells
 T99	Action 1940 1948	Incubate
@@ -115,41 +115,41 @@ T114	Action 2176 2190	centrifugation
 T115	Speed 2194 2201	350 x g
 T116	Time 2206 2215	5 minutes
 E1	Action:T1 Acts-on:T2
-E2	Action:T3 Product:T4 Site:T5
+E2	Action:T3 Site:T5 Acts-on2:E1 Product:T4
 E3	Action:T6 Acts-on:T7
-E4	Action:T9 Acts-on:E3 Product:T13
+E4	Action:T9 Product:T13 Acts-on:T4 Product2:T20
 E5	Action:T12 Acts-on:T13
 E6	Action:T14 Acts-on:T16 Using:T18 Product:T23
 E7	Action:T19 Acts-on:T20 Site:T23
-E8	Action:T24 Acts-on:E7
-E9	Action:T27 Using:E10
+E8	Action:T24 Acts-on:E7 Product:T31
+E9	Action:T27 
 E10	Action:T28 Acts-on:T30 Site:T31
-E11	Action:T32 Product:T36
+E11	Action:T32 Product:T36 Acts-on:E9
 E12	Action:T35 Acts-on:T36
-E13	Action:T37 Acts-on:E12 Acts-on2:T38
+E13	Action:T37 Acts-on2:T38 Site:E12
 E14	Action:T40 Acts-on:E13 Product:T44
 E15	Action:T43 Acts-on:T44 Product:T46
 E16	Action:T45 Acts-on:T46
-E17	Action:T47 Site:T48
-E18	Action:T50 Acts-on:T52
-E19	Action:T56 Acts-on:E18 Acts-on2:T60
+E17	Action:T47 Site:T48 Acts-on:E16 Product:T52
+E18	Action:T50 Acts-on:T52 Site:T55
+E19	Action:T56 Acts-on2:T60 Site:E18
 E20	Action:T62 Acts-on:E19
-E21	Action:T66 Acts-on:E20 Using:T68
-E22	Action:T69 Product:T73
+E21	Action:T66 Acts-on:E20 Using:T68 Product:T73 Product2:T74
+E22	Action:T69 
 E23	Action:T72 Acts-on:T73 Site:T74
-E24	Action:T75 Acts-on:T77
-E25	Action:T78 
-E26	Action:T82 Using:T84
+E24	Action:T75 Acts-on:T77 Site:E23
+E25	Action:T78 Acts-on:E24
+E26	Action:T82 Using:T84 Acts-on:E25
 E27	Action:T85 Product:T89
 E28	Action:T88 Acts-on:T89 Site:T91
-E29	Action:T92 Acts-on:T95
+E29	Action:T92 Acts-on:T95 Site:E28
 E30	Action:T97 Acts-on:T98
-E31	Action:T99 Acts-on:E29
+E31	Action:T99 Acts-on:E30
 E32	Action:T103 Acts-on:E31 Using:T104
 E33	Action:T105 Acts-on:E32 Using:T107
-E34	Action:T108 Acts-on:E33
+E34	Action:T108 
 E35	Action:T111 Acts-on:E34 Using:T113
-E36	Action:T114 Acts-on:E35
+E36	Action:T114 
 R1	Setting Arg1:E3 Arg2:T8
 R2	Setting Arg1:E4 Arg2:T10
 R3	Setting Arg1:E4 Arg2:T11
@@ -202,3 +202,10 @@ R49	Setting Arg1:E34 Arg2:T110
 R50	Measure Arg1:T113 Arg2:T112
 R51	Setting Arg1:E36 Arg2:T115
 R52	Setting Arg1:E36 Arg2:T116
+T117	Numerical 141 147	single
+R53	Measure Arg1:T4 Arg2:T117	
+R54	Overlaps Arg1:E3 Arg2:E2	
+R55	Coreference-Link Arg1:T7 Arg2:T5	
+R56	Enables Arg1:E29 Arg2:E30	
+R57	Enables Arg1:E34 Arg2:E33	
+R58	Enables Arg1:E36 Arg2:E35	
