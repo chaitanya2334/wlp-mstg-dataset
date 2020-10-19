@@ -51,7 +51,7 @@ T50	Action 892 899	Discard
 T51	Reagent 900 914	flow - through
 T52	Action 919 924	place
 T53	Location 929 944	QIAquick column
-T54	Location 959 968	same tube
+T54	Location 964 968	tube
 T55	Action 1004 1008	load
 T56	Action 1013 1032	spin / apply vacuum
 T57	Modifier 1033 1038	again
@@ -65,7 +65,7 @@ T64	Action 1211 1218	Discard
 T65	Reagent 1219 1233	flow - through
 T66	Action 1238 1243	place
 T67	Location 1248 1263	QIAquick column
-T68	Location 1278 1287	same tube
+T68	Location 1283 1287	tube
 T69	Action 1293 1297	wash
 T70	Action 1300 1303	add
 T71	Amount 1304 1311	0.75 ml
@@ -78,15 +78,15 @@ T77	Action 1500 1505	stand
 T78	Time 1506 1513	2–5 min
 T79	Action 1544 1554	Centrifuge
 T80	Location 1559 1574	QIAquick column
-T81	Size 1601 1605	2 ml
+T81	Amount 1601 1605	2 ml
 T82	Location 1606 1621	collection tube
 T83	Time 1626 1631	1 min
 T84	Speed 1635 1660	17,900 x g ( 13,000 rpm )
 T85	Action 1664 1670	remove
-T86	Location 1671 1691	residual wash buffer
+T86	Reagent 1671 1691	residual wash buffer
 T87	Action 1694 1699	Place
 T88	Location 1700 1715	QIAquick column
-T89	Size 1729 1735	1.5 ml
+T89	Amount 1729 1735	1.5 ml
 T90	Location 1736 1756	microcentrifuge tube
 T91	Action 1762 1767	elute
 T92	Reagent 1768 1771	DNA
@@ -130,47 +130,47 @@ T129	Reagent 2769 2782	xylene cyanol
 T130	Reagent 2789 2797	orange G
 T131	Action 2928 2936	identify
 T132	Reagent 2941 2945	dyes
-E1	Action:T1 Acts-on:T2 Site:T3 Using:T4 Product:T6
-E2	Action:T5 Acts-on:T6 Site:T7
-E3	Action:T8 Acts-on:T10
-E4	Action:T15 Product:T14 Acts-on:T17
-E5	Action:T18 Acts-on:E4
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T6
+E2	Action:T5 Acts-on:T6 Site:T7 Product:T12
+E3	Action:T8 Acts-on:T10 Site:T12
+E4	Action:T15 Product:T14 Acts-on:T17 Site:E3
+E5	Action:T18 Acts-on:T14 Product:T22 Product2:T25
 E6	Action:T21 Acts-on:T22
-E7	Action:T24 Acts-on:T25
+E7	Action:T24 Acts-on:T25 Product:T27
 E8	Action:T26 Acts-on:T27
-E9	Action:T28 Acts-on:T31
-E10	Action:T33 Acts-on:E9
+E9	Action:T28 Acts-on:T31 Site:E8
+E10	Action:T33 Acts-on:E9 Product:T37
 E11	Action:T34 Acts-on:T36 Site:T37
-E12	Action:T38 Acts-on:E11 Acts-on2:T37
-E13	Action:T39 Acts-on:T40 Site:T42
+E12	Action:T38 Acts-on:E11 Product:T46
+E13	Action:T39 Acts-on:T40 Site:T42 Product:T47
 E14	Action:T43 Acts-on:T44
 E15	Action:T45 Acts-on:T46 Site:T47
-E16	Action:T48 Acts-on:T46 Product:T51
-E17	Action:T50 Acts-on:T51
+E16	Action:T48 Product:T51 Acts-on:E14 Product2:T53
+E17	Action:T50 Acts-on:T51 Product:T54
 E18	Action:T52 Acts-on:T53 Site:T54
-E19	Action:T55 
-E20	Action:T56 Acts-on:E19
-E21	Action:T58 Acts-on:T60
-E22	Action:T62 Acts-on:E21
-E23	Action:T64 Acts-on:T65
-E24	Action:T66 Acts-on:T67 Site:T68
-E25	Action:T69 
+E19	Action:T55 Acts-on:E18 Product:T61
+E20	Action:T56 Acts-on2:E18 Product:T61
+E21	Action:T58 Acts-on:T60 Site:T61
+E22	Action:T62 Acts-on:E21 Product:T65 Product2:T67
+E23	Action:T64 Acts-on:T65 Product:T68
+E24	Action:T66 Acts-on:T67 Site:T68 Product:T73
+E25	Action:T69 Product:T76
 E26	Action:T70 Acts-on:T72 Site:T73
-E27	Action:T74 Acts-on:T72
-E28	Action:T77 Acts-on:T76
-E29	Action:T79 Acts-on:T80 Site:T82
-E30	Action:T85 Acts-on:T86
-E31	Action:T87 Acts-on:T88 Site:T90
-E32	Action:T91 Acts-on:T92
+E27	Action:T74 Acts-on:E25
+E28	Action:T77 Acts-on:T76 Product:T80 Product2:T86
+E29	Action:T79 Acts-on:T80 Site:T82 Count:T135
+E30	Action:T85 Acts-on:T86 Product:T88
+E31	Action:T87 Acts-on:T88 Site:T90 Product:T100 Product2:T101
+E32	Action:T91 Acts-on:T92 Product:T102
 E33	Action:T93 Acts-on:T95 Site:T100
 E34	Action:T103 Acts-on:T102
-E35	Action:T105 Acts-on:T102
-E36	Action:T107 Acts-on:T108
-E37	Action:T111 Acts-on:T110 Site:T112
-E38	Action:T118 Acts-on:T120 Site:T122
+E35	Action:T105 Acts-on:E34 Product:T108
+E36	Action:T107 Acts-on:T108 Product:T110
+E37	Action:T111 Acts-on:T110 Site:T112 Product:T122
+E38	Action:T118 Acts-on:T120 Site:T122 Product:T124
 E39	Action:T123 Acts-on:T124
 E40	Action:T125 Acts-on:T124
-E41	Action:T131 Acts-on:T132
+E41	Action:T131 Acts-on:T132 Product:T126
 R1	Measure Arg1:T10 Arg2:T9
 R2	Measure Arg1:T12 Arg2:T11
 R3	Measure Arg1:T14 Arg2:T13
@@ -218,3 +218,18 @@ R44	Meronym Arg1:T127 Arg2:T126
 R45	Meronym Arg1:T128 Arg2:T127
 R46	Meronym Arg1:T129 Arg2:T127
 R47	Meronym Arg1:T130 Arg2:T127
+R48	Meronym Arg1:T2 Arg2:T3	
+R49	Enables Arg1:E6 Arg2:E7	
+R50	Meronym Arg1:T25 Arg2:T22	
+R51	Meronym Arg1:T44 Arg2:T46	
+T133	Modifier 959 963	same
+R52	Mod-Link Arg1:T54 Arg2:T133	
+R53	Overlaps Arg1:E20 Arg2:E19	
+T134	Modifier 1278 1282	same
+R54	Mod-Link Arg1:T68 Arg2:T134	
+T135	Numerical 1575 1579	once
+R55	Meronym Arg1:T86 Arg2:T80	
+T136	Modifier 1723 1728	clean
+R56	Mod-Link Arg1:T90 Arg2:T136	
+R57	Coreference-Link Arg1:T126 Arg2:T120	
+R58	Meronym Arg1:T97 Arg2:T95	

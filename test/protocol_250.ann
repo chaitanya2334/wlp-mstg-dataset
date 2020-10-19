@@ -96,28 +96,28 @@ T95	Reagent 1649 1655	buffer
 E1	Action:T1 Product:T3
 E2	Action:T4 Acts-on:T5 Using:T7
 E3	Action:T8 Acts-on:T9 Site:T11
-E4	Action:T12 Acts-on:E3
-E5	Action:T15 Acts-on:T16
+E4	Action:T12 Acts-on:E3 Product:T16
+E5	Action:T15 Acts-on:T16 Product:T18
 E6	Action:T17 Acts-on:T18 Using:T19
-E7	Action:T20 Acts-on:E6 Measure-Type-Link:T21
+E7	Action:T20 Measure-Type-Link:T21 Acts-on:E2 Product:T26
 E8	Action:T23 Acts-on:T26 Site:T28
-E9	Action:T29 Acts-on:T32
+E9	Action:T29 Acts-on:T32 Site:E8
 E10	Action:T33 Acts-on:E9
 E11	Action:T35 Acts-on:E10 Acts-on2:T36
 E12	Action:T38 Acts-on:T41
 E13	Action:T42 Acts-on:T44 Site:T46
-E14	Action:T47 Acts-on:T48
+E14	Action:T47 Acts-on:T48 Product:T52 Site:E11
 E15	Action:T51 Acts-on:T52 Product:T56
 E16	Action:T55 Acts-on:T56
-E17	Action:T57 Acts-on:T56 Site:T59
+E17	Action:T57 Site:T59 Acts-on:E16 Product:T82
 E18	Action:T60 Acts-on:T62
-E19	Action:T65 Product:T66
-E20	Action:T67 Acts-on:T70
+E19	Action:T65 Product:T66 Acts-on:E18
+E20	Action:T67 Acts-on:T70 Site:T66
 E21	Action:T71 Acts-on:E20
-E22	Action:T73 Acts-on:E21 Acts-on2:T74
+E22	Action:T73 Acts-on:E21 Acts-on2:T74 Product:T79
 E23	Action:T76 Acts-on:T79
-E24	Action:T80 Acts-on:T82 Site:T84
-E25	Action:T85 
+E24	Action:T80 Acts-on:T82 Site:T84 Product:T87 Product2:T89
+E25	Action:T85 Product:T92
 E26	Action:T86 Acts-on:T87
 E27	Action:T88 Acts-on:T89 Using:T90
 E28	Action:T91 Acts-on:T92 Site:T95
@@ -158,3 +158,10 @@ R34	Measure Arg1:T84 Arg2:T83
 R35	Enables Arg1:E27 Arg2:E26
 R36	Mod-Link Arg1:T94 Arg2:T93
 R37	Measure Arg1:T95 Arg2:T94
+R39	Enables Arg1:E6 Arg2:E2	
+R38	Coreference-Link Arg1:T5 Arg2:T3	
+R40	Overlaps Arg1:E12 Arg2:E9	
+R41	Coreference-Link Arg1:T41 Arg2:T32	
+R42	Enables Arg1:E12 Arg2:E13	
+R43	Enables Arg1:E26 Arg2:E25	
+R44	Meronym Arg1:T89 Arg2:T87	

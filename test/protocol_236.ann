@@ -40,12 +40,9 @@ T39	Amount 755 761	100 μL
 T40	Reagent 765 785	Hybridization Buffer
 T41	Action 797 803	vortex
 T42	Action 808 818	centrifuge
-T43	Amount 821 846	enough for one coverglass
 T44	Action 856 863	creates
 T45	Reagent 866 888	working probe solution
 T46	Concentration 892 898	125 nM
-T47	Reagent 906 914	solution
-T48	Action 923 927	used
 T49	Action 947 955	Aspirate
 T50	Reagent 960 971	MeOH - AcOH
 T51	Location 980 990	coverglass
@@ -58,7 +55,7 @@ T57	Action 1099 1107	incubate
 T58	Temperature 1111 1127	room temperature
 T59	Time 1132 1145	2 - 5 minutes
 T60	Action 1148 1156	Assemble
-T61	Location 1157 1175	humidified chamber
+T61	Device 1157 1175	humidified chamber
 T62	Size 1178 1184	150 mm
 T63	Location 1185 1205	tissue culture plate
 T64	Action 1215 1220	lined
@@ -69,7 +66,7 @@ T68	Device 1292 1300	Parafilm
 T69	Action 1301 1307	placed
 T70	Location 1311 1314	top
 T71	Mention 1322 1333	paper towel
-T72	Location 1440 1458	humidified chamber
+T72	Device 1440 1458	humidified chamber
 T73	Action 1461 1469	dispense
 T74	Amount 1470 1476	100 μL
 T75	Reagent 1484 1504	Hybridization Buffer
@@ -83,7 +80,7 @@ T82	Reagent 1609 1613	drop
 T83	Reagent 1617 1637	Hybridization Buffer
 T84	Reagent 1649 1654	probe
 T85	Action 1657 1662	Cover
-T86	Location 1667 1685	humidified chamber
+T86	Device 1667 1685	humidified chamber
 T87	Seal 1695 1713	tissue culture lid
 T88	Action 1720 1724	seal
 T89	Device 1730 1738	Parafilm
@@ -92,12 +89,11 @@ T91	Modifier 1750 1761	in the dark
 T92	Temperature 1765 1770	37 °C
 T93	Time 1775 1782	2 hours
 T94	Action 1787 1797	Incubation
-T95	Action 1805 1814	continued
 T96	Time 1815 1829	up to 16 hours
 T97	Action 1841 1849	transfer
 T98	Location 1854 1864	coverglass
 T99	Modifier 1867 1880	cells side up
-T100	Location 1888 1909	fresh 12 - well plate
+T100	Location 1894 1909	12 - well plate
 T101	Amount 1921 1925	1 mL
 T102	Reagent 1929 1942	Wash Buffer A
 T103	Action 1945 1953	Incubate
@@ -146,54 +142,52 @@ T145	Reagent 2566 2585	clear nail polish ,
 T146	Action 2590 2602	allow to dry
 T147	Modifier 2620 2626	gently
 T148	Action 2627 2636	wipe away
-T149	Reagent 2637 2651	any dried salt
+T149	Reagent 2641 2651	dried salt
 T150	Location 2660 2670	coverglass
 T151	Reagent 2677 2682	water
-E1	Action:T1 Product:T2 Site:T4 Product2:T8
+E1	Action:T1 Site:T4 Acts-on:T2 Product:T8
 E2	Action:T7 Acts-on:T8
-E3	Action:T9 Acts-on:T8 Using:T12
+E3	Action:T9 Using:T12 Acts-on:E2 Product:T15
 E4	Action:T13 Acts-on:T15
 E5	Action:T14 Acts-on:T15
 E6	Action:T16 Acts-on:T18
-E7	Action:T19 Product:T22
-E8	Action:T23 Acts-on:T22 Site:T25
+E7	Action:T19 Product:T22 Acts-on:E6
+E8	Action:T23 Acts-on:T22 Site:T25 Product:T51 Product2:T53 Product3:T52 Product4:T50
 E9	Action:T27 Acts-on:T28
-E10	Action:T30 Using:T31
+E10	Action:T30 Using:T31 Acts-on:E9 Product:T38
 E11	Action:T32 Acts-on:E10
 E12	Action:T33 Product:T34
 E13	Action:T36 Acts-on:T38 Site:T40
 E14	Action:T41 Acts-on:E13
 E15	Action:T42 Acts-on:E14
 E16	Action:T44 Product:T45
-E17	Action:T48 Acts-on:T47
-E18	Action:T49 Acts-on:T50 Site:T51
-E19	Action:T54 Acts-on:T56
-E20	Action:T57 Acts-on:E19
-E21	Action:T60 Acts-on:T61
-E22	Action:T64 Acts-on:T63 Using:T66 Using2:T68
+E18	Action:T49 Acts-on:T50
+E19	Action:T54 Acts-on:T56 Site:E18
+E20	Action:T57 Acts-on:E19 Product:T79
+E21	Action:T60 Acts-on2:T61 Product:T72
+E22	Action:T64 Acts-on:T63 Using:T66 Acts-on2:E23
 E23	Action:T69 Acts-on:T68 Site:T70
-E24	Action:T73 Acts-on:T76 Site:T77 Product:T83
-E25	Action:T78 Acts-on:T79 Site:T82
+E24	Action:T73 Acts-on:T76 Site:T77 Product:T83 Product2:T84 Product3:T82
+E25	Action:T78 Acts-on:T79 Site:T82 Product:T86
 E26	Action:T85 Acts-on:T86 Using:T87
-E27	Action:T88 Acts-on:E26 Acts-on2:T86 Using:T89
-E28	Action:T90 
-E29	Action:T94 
-E30	Action:T95 
+E27	Action:T88 Acts-on:E26 Using:T89
+E28	Action:T90 Acts-on:E27 Product:T98
+E29	Action:T94 Product:T98
 E31	Action:T97 Acts-on:T98 Site:T100
-E32	Action:T103 Acts-on:E31
-E33	Action:T107 Acts-on:T108
+E32	Action:T103 Acts-on:E31 Product:T116
+E33	Action:T107 Acts-on:T108 Site:E32
 E34	Action:T109 Site:E33 Acts-on:T111
 E35	Action:T115 Acts-on:T116
 E36	Action:T117 Acts-on:E35 Product:T122
 E37	Action:T121 Acts-on:T122
-E38	Action:T123 Acts-on:T125
-E39	Action:T126 Acts-on:E38
-E40	Action:T129 Acts-on:T131 Site:T132
-E41	Action:T133 Acts-on:T134 Site:T135
-E42	Action:T138 Acts-on:T140 Site:T141 Product:T144
+E38	Action:T123 Acts-on:T125 Site:E37
+E39	Action:T126 Acts-on:E38 Product:T134
+E40	Action:T129 Acts-on:T131 Site:T132 Product:T135
+E41	Action:T133 Acts-on:T134 Site:T135 Product:T140 Product2:T141 Product3:T142
+E42	Action:T138 Acts-on:T140 Product:T144
 E43	Action:T143 Acts-on:T144 Using:T145
-E44	Action:T146 Acts-on:T145
-E45	Action:T148 Acts-on:T149 Site:T150 Using:T151
+E44	Action:T146 Acts-on:E43 Product:T149 Product2:T150
+E45	Action:T148 Acts-on:T149 Using:T151
 R1	Measure Arg1:T4 Arg2:T3
 R2	Meronym Arg1:T4 Arg2:T6
 R3	Measure Arg1:T6 Arg2:T5
@@ -208,16 +202,13 @@ R11	Setting Arg1:E8 Arg2:T24
 R12	Setting Arg1:E8 Arg2:T26
 R13	Setting Arg1:E9 Arg2:T29
 R14	Meronym Arg1:T35 Arg2:T34
-R15	Enables Arg1:E13 Arg2:E12
 R16	Measure Arg1:T38 Arg2:T37
 R17	Measure Arg1:T40 Arg2:T39
 R18	Measure Arg1:T45 Arg2:T46
-R19	Meronym Arg1:T52 Arg2:T53
-R20	Meronym Arg1:T53 Arg2:T51
+R20	Meronym Arg1:T51 Arg2:T53
 R21	Measure Arg1:T56 Arg2:T55
 R22	Setting Arg1:E20 Arg2:T58
 R23	Setting Arg1:E20 Arg2:T59
-R24	Meronym Arg1:T63 Arg2:T61
 R25	Measure Arg1:T63 Arg2:T62
 R26	Mod-Link Arg1:E22 Arg2:T65
 R27	Measure Arg1:T68 Arg2:T67
@@ -234,7 +225,6 @@ R37	Mod-Link Arg1:E28 Arg2:T91
 R38	Setting Arg1:E28 Arg2:T92
 R39	Setting Arg1:E28 Arg2:T93
 R40	Setting Arg1:E29 Arg2:T96
-R41	Setting Arg1:E30 Arg2:T96
 R42	Mod-Link Arg1:T98 Arg2:T99
 R43	Meronym Arg1:T102 Arg2:T100
 R44	Measure Arg1:T102 Arg2:T101
@@ -257,3 +247,24 @@ R60	Mod-Link Arg1:E42 Arg2:T137
 R61	Measure Arg1:T140 Arg2:T139
 R62	Meronym Arg1:T141 Arg2:T142
 R63	Mod-Link Arg1:E45 Arg2:T147
+R64	Overlaps Arg1:E4 Arg2:E5	
+T152	Modifier 618 622	well
+R65	Mod-Link Arg1:E10 Arg2:T152	
+R15	Enables Arg1:E15 Arg2:E12	
+R66	Coreference-Link Arg1:T45 Arg2:T34	
+R67	Meronym Arg1:T50 Arg2:T51	
+R19	Meronym Arg1:T52 Arg2:T51	
+R24	Enables Arg1:E22 Arg2:E21	
+R41	Overlaps Arg1:E29 Arg2:E28	
+T47	Modifier 1834 1840	Gently
+R68	Mod-Link Arg1:E31 Arg2:T47	
+T48	Modifier 1888 1893	fresh
+R69	Mod-Link Arg1:T100 Arg2:T48	
+R70	Meronym Arg1:T112 Arg2:T111	
+T95	Modifier 2321 2334	approximately
+R71	Mod-Link Arg1:T130 Arg2:T95	
+R72	Meronym Arg1:T140 Arg2:T141	
+T153	Modifier 2637 2640	any
+R73	Mod-Link Arg1:T149 Arg2:T153	
+R74	Meronym Arg1:T149 Arg2:T150	
+R75	Coreference-Link Arg1:T76 Arg2:T45	

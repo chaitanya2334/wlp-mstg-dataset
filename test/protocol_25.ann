@@ -97,11 +97,11 @@ E12	Action:T44 Acts-on:E11
 E13	Action:T47 Site:E12 Acts-on:T49
 E14	Action:T50 Acts-on:E13
 E15	Action:T53 Site:E14 Acts-on:T55
-E16	Action:T56 Site:E15 Acts-on:T58
+E16	Action:T56 Site:E15 Acts-on:T58 Product:T63
 E17	Action:T59 Acts-on:E16
 E18	Action:T61 Acts-on:T63 Site:T64
-E19	Action:T65 Acts-on:E18
-E20	Action:T67 Acts-on:T69
+E19	Action:T65 Acts-on:E18 Using:T85 Using2:T66 Product:T92
+E20	Action:T67 Acts-on:T69 Acts-on2:E26
 E21	Action:T70 Acts-on:E20
 E22	Action:T73 Site:E21 Acts-on:T75
 E23	Action:T76 Acts-on:E22
@@ -142,3 +142,17 @@ R33	Setting Arg1:E24 Arg2:T83
 R34	Setting Arg1:E24 Arg2:T84
 R35	Measure Arg1:T82 Arg2:T80
 R36	Measure Arg1:T82 Arg2:T81
+T85	Device 1031 1040	20x scope
+T86	Action 1070 1075	Check
+E25	Action:T86 Using:T87
+T87	Method 1076 1094	digestion progress
+T88	Time 1101 1111	30 minutes
+T89	Modifier 1095 1100	every
+R37	Mod-Link Arg1:T88 Arg2:T89	
+R38	Setting Arg1:E25 Arg2:T88	
+T90	Action 1218 1226	digested
+E26	Action:T90 Acts-on:T92
+T91	Concentration 1171 1182	80 % - 90 %
+T92	Reagent 1190 1195	cells
+R39	Measure Arg1:T92 Arg2:T91	
+R40	Enables Arg1:E25 Arg2:E26	

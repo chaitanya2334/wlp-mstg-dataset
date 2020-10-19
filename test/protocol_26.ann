@@ -30,7 +30,7 @@ T29	Reagent 753 759	liquid
 T30	Location 769 784	upper reservoir
 T31	Action 789 792	add
 T32	Mention 793 795	it
-T33	Reagent 804 820	recovered sample
+T33	Reagent 814 820	sample
 T34	Action 874 877	Add
 T35	Reagent 883 889	sample
 T36	Location 897 912	upper reservoir
@@ -64,28 +64,26 @@ T63	Location 1395 1410	upper reservoir
 T64	Action 1415 1418	add
 T65	Mention 1419 1421	it
 T66	Reagent 1430 1446	recovered sample
-T67	Action 1449 1455	Repeat
 E1	Action:T1 Acts-on:T2 Site:T3
 E2	Action:T5 Acts-on:E1 Site:T8 Product:T10
 E3	Action:T9 Acts-on:T10 Site:T11
-E4	Action:T12 Acts-on:T13 Site:T14
-E5	Action:T15 Acts-on:T16 Site:T17
-E6	Action:T18 Product:T22
-E7	Action:T20 Acts-on:T21
+E4	Action:T12 Acts-on:T13 Site:T14 Product:T16 Product2:T33
+E5	Action:T15 Acts-on:T16 Product:T19
+E6	Action:T18 Product:T22 Acts-on:T68 Site:T69
+E7	Action:T20 Acts-on:T21 Product:T25
 E8	Action:T24 Acts-on:T25 Product:T29
-E9	Action:T28 Acts-on:T29 Site:T30
+E9	Action:T28 Acts-on:T29
 E10	Action:T31 Acts-on:T32 Site:T33 Product:T35
 E11	Action:T34 Acts-on:T35 Site:T36
 E12	Action:T38 Acts-on:E11 Product:T43
-E13	Action:T42 Using:T41 Acts-on:T43 Site:T44
-E14	Action:T45 Acts-on:T46 Site:T47
-E15	Action:T48 Acts-on:T50 Product:T55
-E16	Action:T51 Acts-on:T52
+E13	Action:T42 Using:T41 Acts-on:T43
+E14	Action:T45 Acts-on:T46 Site:T47 Product:T66
+E15	Action:T48 Acts-on:T50
+E16	Action:T51 Acts-on:T52 Product:T55 Product2:T56
 E17	Action:T54 Acts-on:T55 Using:T56
-E18	Action:T57 Acts-on:T58 Using:T60 Product:T62
-E19	Action:T61 Acts-on:T62 Site:T63
+E18	Action:T57 Acts-on:T58 Using:T60 Product:T62 Acts-on2:E17
+E19	Action:T61 Acts-on:T62
 E20	Action:T64 Acts-on:T65 Acts-on2:T66
-E21	Action:T67 
 R1	Meronym Arg1:T3 Arg2:T4
 R2	Setting Arg1:E2 Arg2:T6
 R3	Setting Arg1:E2 Arg2:T7
@@ -101,3 +99,18 @@ R12	Coreference-Link Arg1:T46 Arg2:T43
 R13	Mod-Link Arg1:T50 Arg2:T49
 R14	Measure Arg1:T50 Arg2:T53
 R15	Mod-Link Arg1:E18 Arg2:T59
+R16	Meronym Arg1:T16 Arg2:T17	
+T68	Seal 524 542	square of parafilm
+T69	Location 552 558	bottom
+R17	Meronym Arg1:T69 Arg2:T19	
+T70	Action 618 623	cover
+E22	Action:T70 Acts-on:T22
+R18	Enables Arg1:E7 Arg2:E22	
+T71	Modifier 804 813	recovered
+R19	Mod-Link Arg1:T33 Arg2:T71	
+R20	Meronym Arg1:T29 Arg2:T30	
+R21	Meronym Arg1:T43 Arg2:T44	
+R22	Enables Arg1:E15 Arg2:E16	
+R23	Coreference-Link Arg1:T58 Arg2:T55	
+R24	Meronym Arg1:T62 Arg2:T63	
+R25	Coreference-Link Arg1:T65 Arg2:T62	

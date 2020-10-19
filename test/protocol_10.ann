@@ -184,7 +184,7 @@ R45	Measure Arg1:T106 Arg2:T108
 R46	Mod-Link Arg1:T110 Arg2:T109
 R47	Enables Arg1:E26 Arg2:E25	
 T4	Action 110 119	resuspend
-E31	Action:T4 Product:T10
+E31	Action:T4 Product:T10 Acts-on:T2
 R48	Enables Arg1:E1 Arg2:E31	
 T111	Modifier 185 196	resuspended
 R49	Mod-Link Arg1:T10 Arg2:T111	
@@ -193,7 +193,7 @@ R50	Mod-Link Arg1:E2 Arg2:T112
 T113	Modifier 221 227	pooled
 R51	Mod-Link Arg1:T12 Arg2:T113	
 T20	Action 322 331	resuspend
-E32	Action:T20 
+E32	Action:T20 Acts-on:T19
 R52	Enables Arg1:E5 Arg2:E32	
 R53	Enables Arg1:E8 Arg2:E9	
 R54	Overlaps Arg1:E11 Arg2:E10	

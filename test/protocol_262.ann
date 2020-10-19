@@ -213,9 +213,7 @@ R19	Coreference-Link Arg1:T29 Arg2:T27
 R20	Meronym Arg1:T33 Arg2:T29
 R21	Meronym Arg1:T35 Arg2:T29
 R22	Overlaps Arg1:E10 Arg2:E7
-R23	Enables Arg1:E11 Arg2:E10
 R24	Meronym Arg1:T41 Arg2:T40
-R25	Enables Arg1:E12 Arg2:E10
 R26	Setting Arg1:E12 Arg2:T43
 R27	Enables Arg1:E13 Arg2:E10
 R28	Setting Arg1:E16 Arg2:T55

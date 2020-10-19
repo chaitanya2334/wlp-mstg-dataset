@@ -57,13 +57,13 @@ T56	Device 1175 1182	stirrer
 E1	Action:T1 Acts-on:T2 Site:T3 Product:T11
 E2	Action:T5 Site:T6 Acts-on:T7 Acts-on2:T8 Product:T10
 E3	Action:T9 Acts-on:T10 Site:T11 Product:T13
-E4	Action:T12 Acts-on:T13
+E4	Action:T12 Acts-on:T13 Product:T16 Product2:T17
 E5	Action:T15 Acts-on:T16 Acts-on2:T17 Product:T21
 E6	Action:T19 Acts-on:T20 Site:T21 Product:T24
-E7	Action:T23 Acts-on:T24
+E7	Action:T23 Acts-on:T24 Product:T34
 E8	Action:T25 Acts-on:T26 Site:T27 Product:T30
 E9	Action:T28 Acts-on:T29 Site:T31 Product:T36
-E10	Action:T33 Acts-on:T34 Using:T36
+E10	Action:T33 Acts-on:T34 Using:T36 Product:T38 Product2:T40
 E11	Action:T37 Acts-on:T38
 E12	Action:T39 Acts-on:T40 Product:T45
 E13	Action:T42 Acts-on:T43 Site:T44 Product:T46
