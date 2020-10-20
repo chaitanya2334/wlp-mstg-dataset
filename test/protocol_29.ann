@@ -87,7 +87,7 @@ T86	Action 1443 1452	acquiring
 T87	Reagent 1453 1460	samples
 T88	Device 1464 1478	flow cytometer
 E1	Action:T1 Acts-on:T2 Using:T3 Product:T11
-E2	Action:T5 Acts-on:T4 Using:E3
+E2	Action:T5 Acts-on:T4
 E3	Action:T6 Acts-on:T8
 E4	Action:T10 Acts-on:T11
 E5	Action:T12 Acts-on:E4 Product:T17
@@ -96,14 +96,14 @@ E7	Action:T20 Acts-on:E6 Product:T25
 E8	Action:T24 Acts-on:T25 Product:T27
 E9	Action:T26 Acts-on:T27 Product:T35
 E10	Action:T28 Acts-on:T33 Acts-on2:T35
-E11	Action:T36 Acts-on:E10
-E12	Action:T37 Acts-on:E11 Product:T41
+E11	Action:T36 
+E12	Action:T37 Acts-on:E11 Product:T41 Acts-on2:E10
 E13	Action:T42 Acts-on:T41
-E14	Action:T44 Using:T45 Count:T46 Product:T48
+E14	Action:T44 Using:T45 Count:T46 Product:T48 Acts-on2:E13
 E15	Action:T47 Acts-on:T48
 E16	Action:T49 Site:E15 Acts-on:T52
 E17	Action:T53 Acts-on:E16
-E18	Action:T56 Using:T57 Product:T59
+E18	Action:T56 Using:T57 Product:T59 Acts-on:E17
 E19	Action:T58 Acts-on:T59 Site:T62
 E20	Action:T63 Acts-on:E19 Site:T65
 E21	Action:T66 Site:E20 Acts-on:T67
@@ -112,7 +112,7 @@ E23	Action:T72 Acts-on:T73 Acts-on2:T74
 E24	Action:T75 Acts-on:E23 Product:T80
 E25	Action:T79 Acts-on:T80
 E26	Action:T81 Acts-on:T83
-E27	Action:T84 Acts-on:E26 Product:T87
+E27	Action:T84 Product:T87 Acts-on:E25
 E28	Action:T86 Acts-on:T87 Site:T88
 R1	Setting Arg1:E3 Arg2:T9
 R2	Measure Arg1:T8 Arg2:T7
@@ -146,3 +146,9 @@ R29	Setting Arg1:E24 Arg2:T77
 R30	Coreference-Link Arg1:T77 Arg2:T78
 R31	Measure Arg1:T83 Arg2:T82
 R32	Setting Arg1:E27 Arg2:T85
+R33	Enables Arg1:E3 Arg2:E2	
+R34	Enables Arg1:E2 Arg2:E1	
+R35	Coreference-Link Arg1:T8 Arg2:T3	
+R36	Coreference-Link Arg1:T4 Arg2:T2	
+R37	Overlaps Arg1:E10 Arg2:E11	
+R38	Enables Arg1:E26 Arg2:E25	

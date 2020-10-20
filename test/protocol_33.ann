@@ -39,7 +39,7 @@ T38	Reagent 589 594	molds
 T39	Amount 600 604	5 mL
 T40	Reagent 605 617	lysis buffer
 T41	Action 620 628	Incubate
-T42	Reagent 633 654	plugs in lysis buffer
+T42	Reagent 633 638	plugs
 T43	Time 655 664	overnight
 T44	Location 672 676	dark
 T45	Temperature 680 684	30°C
@@ -138,41 +138,41 @@ T137	Reagent 2207 2218	each sample
 T138	Action 2228 2231	run
 T139	Numerical 2232 2237	three
 E1	Action:T1 Product:T3 Product2:T4
-E2	Action:T5 Acts-on:T6
-E3	Action:T8 Acts-on:T11 Site:T13
+E2	Action:T5 Acts-on:T6 Product:T19
+E3	Action:T8 Acts-on:T11 Site:T13 Product:T40
 E4	Action:T14 Acts-on:T16 Acts-on2:T19
 E5	Action:T20 Acts-on:E4 Product:T23
 E6	Action:T22 Acts-on:T23 Site:T24 Using:T25 Product:T27
 E7	Action:T26 Acts-on:T27 Site:T28 Product:T35
-E8	Action:T32 Acts-on:T33 Site:T34 Product:T38
-E9	Action:T36 Acts-on:T37 Site:T38 Site2:T40 Product:T42
+E8	Action:T32 Acts-on:T33 Product:T38
+E9	Action:T36 Acts-on:T37 Site2:T40 Product:T42 Product2:T140
 E10	Action:T41 Acts-on:T42 Site:T44 Product:T47
-E11	Action:T46 Site:E10 Acts-on:T47 Using:T48 Product:T53
-E12	Action:T49 Acts-on:T48 Site:T50
-E13	Action:T52 Acts-on:T53 Count:T54 Acts-on2:T56 Product:T97
-E14	Action:T59 Acts-on:T60
-E15	Action:T61 Product:T63 Site:T65
+E11	Action:T46 Acts-on:T47 Using:T48 Product:T53
+E12	Action:T49 Acts-on:T48 Site:T50 Product:T53
+E13	Action:T52 Acts-on:T53 Count:T54 Site:T56 Product:T142
+E14	Action:T59 Acts-on:T60 Product:T74
+E15	Action:T61 Site:T65 Acts-on:T63 Product:T67
 E16	Action:T66 Acts-on:T67 Product:T70
 E17	Action:T68 Acts-on:T70
 E18	Action:T73 Acts-on:E17 Site:T74
-E19	Action:T75 Acts-on:T77 Product:T106
-E20	Action:T79 Acts-on:T82 Site:T83
+E19	Action:T75 Acts-on:T77 Product:T106 Product2:T84 Product3:T83
+E20	Action:T79 Acts-on:T82 Site:T83 Product:T86
 E21	Action:T85 Acts-on:T86 Site:T87 Product:T95
 E22	Action:T91 Acts-on:T92 Site:T94 Product:T99
 E23	Action:T96 Acts-on:T97 Site:T98 Using:T101 Product:T103
 E24	Action:T102 Site:T103 Acts-on:T106 Product:T108
-E25	Action:T107 Acts-on:T108 Site:T109
-E26	Action:T110 Acts-on:T112 Site:T113 Site2:T114 Product:T121
-E27	Action:T115 Product:T117
-E28	Action:T118 Acts-on:T117 Product:T127
+E25	Action:T107 Acts-on:T108 Site:T109 Product:T112
+E26	Action:T110 Acts-on:T112 Product:T121
+E27	Action:T115 Acts-on:T117
+E28	Action:T118 Product:T127 Acts-on:E27
 E29	Action:T120 Acts-on:T121 Site:T122 Product:T128
 E30	Action:T124 Acts-on:T127 Site:T128 Product:T130
 E31	Action:T129 Acts-on:T130 Using:T132
-E32	Action:T136 
+E32	Action:T136 Acts-on:T149
 E33	Action:T138 Acts-on:T137 Count:T139
 R1	Measure Arg1:T3 Arg2:T2
-R2	Coreference-Link Arg1:T3 Arg2:T6
-R3	Coreference-Link Arg1:T4 Arg2:T11
+R2	Coreference-Link Arg1:T6 Arg2:T3
+R3	Coreference-Link Arg1:T11 Arg2:T4
 R4	Setting Arg1:E2 Arg2:T7
 R5	Measure Arg1:T11 Arg2:T9
 R6	Mod-Link Arg1:T11 Arg2:T10
@@ -221,3 +221,27 @@ R48	Setting Arg1:E31 Arg2:T134
 R49	Setting Arg1:E31 Arg2:T135
 R50	Setting Arg1:T132 Arg2:T131
 R51	Setting Arg1:T132 Arg2:T133
+R52	Meronym Arg1:T33 Arg2:T34	
+R53	Meronym Arg1:T37 Arg2:T38	
+T140	Reagent 642 654	lysis buffer
+R54	Meronym Arg1:T42 Arg2:T140	
+R55	Overlaps Arg1:E11 Arg2:E12	
+T141	Action 920 926	stored
+E34	Action:T141 Acts-on:T142 Site:T144 Product:T97
+T142	Reagent 907 912	plugs
+T143	Temperature 930 933	4°C
+T144	Reagent 937 939	TE
+T145	Concentration 940 947	20 : 50
+T146	Time 952 965	several month
+R56	Setting Arg1:E34 Arg2:T143	
+R57	Measure Arg1:T144 Arg2:T145	
+R58	Setting Arg1:E34 Arg2:T146	
+T147	Action 1356 1360	cool
+E35	Action:T147 Acts-on:E18 Product:T77
+R59	Meronym Arg1:T112 Arg2:T113	
+R60	Meronym Arg1:T113 Arg2:T114	
+T148	Modifier 2169 2178	different
+T149	Reagent 2179 2204	viral genome size classes
+R61	Mod-Link Arg1:T149 Arg2:T148	
+R62	Enables Arg1:E33 Arg2:E32	
+R63	Meronym Arg1:T137 Arg2:T149	

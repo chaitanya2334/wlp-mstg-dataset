@@ -43,7 +43,6 @@ T42	Action 775 780	Shake
 T43	Device 784 799	orbital rotator
 T44	Speed 803 809	150rpm
 T45	Time 814 821	20 mins
-T46	Action 824 829	Allow
 T47	Reagent 830 838	solution
 T48	Reagent 842 849	heptane
 T49	Reagent 854 857	PFA
@@ -223,27 +222,26 @@ T222	Seal 2979 2988	coverslip
 T223	Action 2991 2995	Seal
 T224	Seal 3001 3012	nail polish
 E1	Action:T5 Product:T1 Acts-on:T4 Site:T6
-E2	Action:T9 Acts-on:T7
-E3	Action:T11 Acts-on:T12 Site:T13 Site2:T14 Using:T16 Using2:T17 Product:T19
+E2	Action:T9 Acts-on:T7 Product:T13
+E3	Action:T11 Acts-on:T12 Site2:T14 Using:T16 Using2:T17 Product:T19
 E4	Action:T18 Acts-on:T19 Site:T21 Product:T25
 E5	Action:T22 Acts-on:T23 Site:T24
 E6	Action:T27 Using:T23 Acts-on:T25
-E7	Action:T28 Acts-on:E5
-E8	Action:T30 Acts-on:T31
+E7	Action:T28 Acts-on:E6
+E8	Action:T30 Acts-on:T31 Product:T34
 E9	Action:T32 Acts-on:T33 Site:T34 Product:T37
 E10	Action:T36 Acts-on:T37 Site:T38
 E11	Action:T42 Acts-on:E10 Using:T43 Product:T47
-E12	Action:T46 
-E13	Action:T50 Product:T52
+E13	Action:T50 Product:T52 Acts-on:T47
 E14	Action:T51 Site:E13 Acts-on:T52
-E15	Action:T53 Acts-on:E14 Using:T54
-E16	Action:T55 Acts-on:T57
-E17	Action:T56 Acts-on:T57
+E15	Action:T53 Acts-on:E14 Using:T54 Product:T59
+E16	Action:T55 Acts-on:T57 Product:T64
+E17	Action:T56 Acts-on:T57 Product:T64
 E18	Action:T58 Product:T57 Site:T59
 E19	Action:T60 Acts-on:T61 Site:T64
 E20	Action:T65 Acts-on:E19 Product:T68
-E21	Action:T69 Acts-on:T68 Site:T70
-E22	Action:T72 Acts-on:T73 Site:T74
+E21	Action:T69 Acts-on:T68 Site:T70 Product:T74 Product2:T73 Product3:T76
+E22	Action:T72 Acts-on:T73 Acts-on2:T76
 E23	Action:T77 Site:E22 Acts-on:T78
 E24	Action:T79 Acts-on:E23 Count:T80 Product:T82
 E25	Action:T81 Acts-on:T82 Site:T85
@@ -356,3 +354,9 @@ R61	Mod-Link Arg1:E67 Arg2:T213
 R62	Mod-Link Arg1:T217 Arg2:T215
 R63	Measure Arg1:T217 Arg2:T216
 R64	Measure Arg1:T220 Arg2:T219
+R65	Overlaps Arg1:E27 Arg2:E28	
+R66	Enables Arg1:E5 Arg2:E6	
+R67	Enables Arg1:E7 Arg2:E8	
+R68	Meronym Arg1:T73 Arg2:T74	
+R69	Meronym Arg1:T12 Arg2:T13	
+R70	Overlaps Arg1:E2 Arg2:E1	

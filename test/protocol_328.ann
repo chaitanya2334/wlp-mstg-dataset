@@ -17,14 +17,14 @@ T16	Reagent 372 376	agar
 T17	Location 382 387	tubes
 T18	Action 392 397	place
 T19	Temperature 401 405	40°C
-T20	Location 406 416	water bath
+T20	Device 406 416	water bath
 T21	Action 419 424	Pipet
 T22	Amount 425 431	100 μl
 T23	Reagent 440 452	phage sample
 T24	Location 462 467	plate
 T25	Action 470 476	Remove
 T26	Location 481 490	agar tube
-T27	Location 500 510	water bath
+T27	Device 500 510	water bath
 T28	Action 515 518	add
 T29	Reagent 523 527	host
 T30	Mention 531 533	it
@@ -52,16 +52,16 @@ T51	Action 737 742	Count
 T52	Action 746 750	pick
 T53	Reagent 751 758	plaques
 E1	Action:T1 Acts-on:T3
-E2	Action:T4 Acts-on:T5
+E2	Action:T4 Acts-on:T5 Product:T7
 E3	Action:T8 Acts-on:T7
-E4	Action:T10 Acts-on:T11
-E5	Action:T12 Product:T13 Using:T14
+E4	Action:T10 Acts-on:T11 Product:T16
+E5	Action:T12 Product:T13 Using:T14 Product2:T23
 E6	Action:T15 Acts-on:T16 Site:T17
-E7	Action:T18 Acts-on:T17 Site:T20
+E7	Action:T18 Site:T20 Acts-on:E6 Product:T27 Product2:T26
 E8	Action:T21 Acts-on:T23 Site:T24
-E9	Action:T25 Acts-on:T26 Site:T27 Product:T30
+E9	Action:T25 Acts-on:T26
 E10	Action:T28 Acts-on:T29 Site:T30 Using:T33 Product:T38
-E11	Action:T34 Acts-on:T38 Site:T40 Product:T42
+E11	Action:T34 Acts-on:T38 Site:T40 Product:T42 Product2:T44
 E12	Action:T41 Acts-on:T42
 E13	Action:T43 Acts-on:T44
 E14	Action:T45 Acts-on:T46 Product:T48
@@ -76,7 +76,6 @@ R5	Overlaps Arg1:E3 Arg2:E1
 R6	Setting Arg1:E3 Arg2:T9
 R7	Coreference-Link Arg1:T11 Arg2:T7
 R8	Setting Arg1:E7 Arg2:T19
-R9	Coreference-Link Arg1:T20 Arg2:T27
 R10	Measure Arg1:T23 Arg2:T22
 R11	Coreference-Link Arg1:T30 Arg2:T26
 R12	Setting Arg1:T33 Arg2:T31
@@ -89,3 +88,6 @@ R18	Enables Arg1:E12 Arg2:E13
 R19	Enables Arg1:E13 Arg2:E14
 R20	Setting Arg1:E15 Arg2:T50
 R21	Or Arg1:E16 Arg2:E17
+R22	Overlaps Arg1:E4 Arg2:E3	
+R9	Meronym Arg1:T26 Arg2:T27	
+R23	Meronym Arg1:T44 Arg2:T42	

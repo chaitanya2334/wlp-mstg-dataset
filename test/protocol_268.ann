@@ -10,7 +10,7 @@ T9	Action 145 154	Resuspend
 T10	Amount 158 187	1 / 100th the original volume
 T11	Reagent 191 194	TAP
 T12	Action 330 333	Mix
-T13	Reagent 341 348	pipette
+T13	Device 341 348	pipette
 T14	Action 349 355	Vortex
 T15	Speed 359 368	max speed
 T16	Time 373 383	15 seconds
@@ -23,7 +23,7 @@ T22	Reagent 439 442	TAP
 T23	Modifier 451 462	appropriate
 T24	Reagent 463 473	antibiotic
 T25	Action 476 482	Spread
-T26	Location 488 491	TAP
+T26	Reagent 488 491	TAP
 T27	Location 495 503	YA plate
 T28	Modifier 514 525	appropriate
 T29	Reagent 526 536	antibiotic
@@ -32,7 +32,7 @@ T31	Device 551 562	glass beads
 T32	Reagent 575 581	liquid
 T33	Action 585 588	dry
 T34	Action 595 603	avoiding
-T35	Location 604 609	light
+T35	Reagent 604 609	light
 T36	Action 612 616	Seal
 T37	Reagent 621 627	plates
 T38	Seal 633 641	parafilm
@@ -58,7 +58,7 @@ T57	Action 913 917	Take
 T58	Amount 918 922	50uL
 T59	Reagent 930 945	cell suspension
 T60	Action 950 956	spread
-T61	Location 962 965	TAP
+T61	Reagent 962 965	TAP
 T62	Location 969 977	YA plate
 T63	Modifier 986 997	appropriate
 T64	Reagent 998 1008	antibiotic
@@ -67,20 +67,20 @@ T66	Device 1020 1031	glass beads
 E1	Action:T1 Acts-on:T2
 E2	Action:T5 Acts-on:E1
 E3	Action:T9 Acts-on:E2 Site:T11
-E4	Action:T12 Using:T13
+E4	Action:T12 Using:T13 Acts-on:E18
 E5	Action:T14 Acts-on:E4 Product:T19 Product2:T44
 E6	Action:T17 Acts-on:T19
 E7	Action:T20 Acts-on:E6 Site:T22
 E8	Action:T25 Acts-on:E7 Site:T26 Using:T31 Product:T32
 E9	Action:T33 Acts-on:T32 Product:T37
-E10	Action:T34 
-E11	Action:T36 Acts-on:T37 Using:T38
+E10	Action:T34 Acts-on:T35 Product:T37
+E11	Action:T36 Acts-on:T37 Using:T38 Product:T39
 E12	Action:T40 Acts-on:T39
-E13	Action:T42 Acts-on:T44 Site:T46 Using:T48
+E13	Action:T42 Acts-on:T44 Site:T46
 E14	Action:T49 Acts-on:E13 Using:T51
 E15	Action:T53 Site:E14 Acts-on:T54 Product:T59
 E16	Action:T57 Acts-on:T59
-E17	Action:T60 Site:T61 Using:T66
+E17	Action:T60 Site:T61 Using:T66 Acts-on:E16
 R1	Measure Arg1:T2 Arg2:T4
 R2	Of-Type Arg1:T4 Arg2:T3
 R3	Setting Arg1:E2 Arg2:T6
@@ -108,3 +108,27 @@ R24	Measure Arg1:T59 Arg2:T58
 R25	Or Arg1:T61 Arg2:T62
 R26	Mod-Link Arg1:T64 Arg2:T63
 R27	Mod-Link Arg1:T66 Arg2:T65
+T67	Action 197 200	Add
+E18	Action:T67 Acts-on:T69 Acts-on2:T72 Acts-on3:T75 Acts-on4:T77 Site:E3
+T68	Generic-Measure 217 221	8000
+T69	Reagent 224 227	PEG
+T70	Concentration 231 234	5 %
+T71	Amount 250 254	3 ug
+T72	Reagent 258 261	DNA
+T73	Amount 264 268	0.3g
+T74	Generic-Measure 272 275	500
+T75	Reagent 278 296	micron glass beads
+T76	Amount 297 302	0.4mL
+T77	Reagent 305 327	Chlamy cell suspension
+R28	Measure Arg1:T69 Arg2:T68	
+R29	Measure Arg1:T69 Arg2:T70	
+R30	Measure Arg1:T72 Arg2:T71	
+R31	Measure Arg1:T75 Arg2:T74	
+R32	Measure Arg1:T75 Arg2:T73	
+R33	Measure Arg1:T77 Arg2:T76	
+R34	Meronym Arg1:T22 Arg2:T24	
+R35	Meronym Arg1:T27 Arg2:T29	
+R36	Meronym Arg1:T26 Arg2:T29	
+R37	Meronym Arg1:T46 Arg2:T48	
+R38	Meronym Arg1:T61 Arg2:T64	
+R39	Meronym Arg1:T62 Arg2:T64	

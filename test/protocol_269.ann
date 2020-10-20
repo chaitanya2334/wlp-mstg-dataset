@@ -38,7 +38,7 @@ T37	Reagent 620 627	ethanol
 T38	Modifier 628 633	up to
 T39	Time 636 640	week
 T40	Action 689 693	warm
-T41	Reagent 698 726	reconstituted probe solution
+T41	Reagent 712 726	probe solution
 T42	Temperature 730 746	room temperature
 T43	Action 749 752	Mix
 T44	Modifier 753 757	well
@@ -47,7 +47,7 @@ T46	Action 778 788	centrifuge
 T47	Modifier 789 796	briefly
 T48	Action 802 809	prepare
 T49	Reagent 814 834	Hybridization Buffer
-T50	Device 846 851	probe
+T50	Reagent 846 851	probe
 T51	Action 854 857	add
 T52	Amount 858 862	1 μL
 T53	Reagent 866 886	probe stock solution
@@ -68,7 +68,7 @@ T67	Action 1237 1245	incubate
 T68	Temperature 1249 1265	room temperature
 T69	Time 1270 1283	2 - 5 minutes
 T70	Action 1286 1294	Assemble
-T71	Location 1295 1313	humidified chamber
+T71	Device 1295 1313	humidified chamber
 T72	Size 1316 1322	150 mm
 T73	Location 1323 1343	tissue culture plate
 T74	Action 1346 1358	bottom lined
@@ -83,7 +83,7 @@ T82	Location 1460 1471	paper towel
 T83	Action 1599 1607	dispense
 T84	Amount 1608 1614	100 μL
 T85	Reagent 1622 1642	Hybridization Buffer
-T86	Device 1654 1659	probe
+T86	Reagent 1654 1659	probe
 T87	Modifier 1665 1678	appropriately
 T88	Reagent 1679 1703	diluted primary antibody
 T89	Location 1715 1723	Parafilm
@@ -92,10 +92,10 @@ T91	Location 1746 1756	coverglass
 T92	Amount 1786 1792	100 μL
 T93	Reagent 1793 1797	drop
 T94	Reagent 1801 1821	Hybridization Buffer
-T95	Device 1833 1838	probe
+T95	Reagent 1833 1838	probe
 T96	Reagent 1843 1859	primary antibody
 T97	Action 1862 1867	Cover
-T98	Location 1872 1890	humidified chamber
+T98	Device 1872 1890	humidified chamber
 T99	Seal 1900 1920	tissue culture lid ,
 T100	Action 1925 1929	seal
 T101	Seal 1935 1943	Parafilm
@@ -162,43 +162,43 @@ T161	Modifier 2914 2917	any
 T162	Reagent 2918 2928	dried salt
 T163	Location 2937 2947	coverglass
 T164	Reagent 2954 2959	water
-E1	Action:T1 Acts-on:T2 Using:T4 Site:T5
+E1	Action:T1 Acts-on:T2 Using:T4 Site:T5 Product:T7
 E2	Action:T6 Acts-on:T7
 E3	Action:T8 Acts-on:E2 Using:T11
 E4	Action:T12 Site:E3 Acts-on:T14
 E5	Action:T15 Acts-on:E4
-E6	Action:T18 Acts-on:E5 Count:T19 Using:T22
-E7	Action:T23 Acts-on:T24
+E6	Action:T18 Acts-on:E5 Count:T19 Using:T22 Product:T24 Product2:T26
+E7	Action:T23 Acts-on:T24 Product:T33
 E8	Action:T25 Acts-on:T26 Site:T29
-E9	Action:T34 Acts-on:T33 Site:T37
+E9	Action:T34 Acts-on:T33 Site:T37 Product:T62 Product2:T61 Product3:T63
 E10	Action:T40 Acts-on:T41
 E11	Action:T43 Acts-on:E10 Using:T45
 E12	Action:T46 Acts-on:E11 Product:T53
 E13	Action:T48 Product:T49
 E14	Action:T51 Acts-on:T53 Site:T55
-E15	Action:T56 Acts-on:E14
-E16	Action:T57 Acts-on:E15
+E15	Action:T56 Acts-on:T49
+E16	Action:T57 Acts-on:E15 Product:T85 Product2:T86
 E17	Action:T58 Acts-on:T60 Site:T61
-E18	Action:T64 Acts-on:T66
-E19	Action:T67 Acts-on:E18
-E20	Action:T70 Site:T71 Acts-on:T73
+E18	Action:T64 Acts-on:T66 Site:E17
+E19	Action:T67 Acts-on:E18 Product:T91
+E20	Action:T70 Acts-on:E22 Product:T71
 E21	Action:T74 Acts-on:T73 Using:T78 Using2:T79
-E22	Action:T80 Acts-on:T73 Site:T81
-E23	Action:T83 Acts-on:T85 Acts-on2:T88 Site:T89
-E24	Action:T90 Acts-on:T91 Site:T93
+E22	Action:T80 Site:T81 Acts-on:E21
+E23	Action:T83 Acts-on:T85 Acts-on2:T88 Site:T89 Product:T93 Product2:T94 Product3:T95 Product4:T96
+E24	Action:T90 Acts-on:T91 Site:T93 Product:T98
 E25	Action:T97 Acts-on:T98 Using:T99
 E26	Action:T100 Acts-on:E25 Using:T101
-E27	Action:T102 Site:T103
+E27	Action:T102 Site:T103 Acts-on:E26 Product:T109
 E28	Action:T108 Acts-on:T109 Site:T111
 E29	Action:T116 Acts-on:E28 Site:T117
-E30	Action:T120 Acts-on:T121
-E31	Action:T122 Acts-on:T124 Acts-on2:T126
-E32	Action:T127 Acts-on:E31 Acts-on2:T128
-E33	Action:T131 Acts-on:T132
-E34	Action:T133 Acts-on:T135
-E35	Action:T136 Acts-on:E34
+E30	Action:T120 Acts-on:T121 Site:E29
+E31	Action:T122 Acts-on:T124 Acts-on2:T126 Site:E30
+E32	Action:T127 Acts-on:E31 Site:T128
+E33	Action:T131 Acts-on:T132 Site:E32
+E34	Action:T133 Acts-on:T135 Site:E33
+E35	Action:T136 Acts-on:E34 Product:T146
 E36	Action:T139 Acts-on:T141 Site:T144 Product:T147
-E37	Action:T145 Acts-on:T146 Site:T147
+E37	Action:T145 Acts-on:T146 Site:T147 Product:T152 Product2:T153
 E38	Action:T149 Acts-on:T151 Site:T152 Product:T155
 E39	Action:T154 Acts-on:T155 Using:T157
 E40	Action:T158 Acts-on:E39 Product:T163
@@ -272,3 +272,12 @@ R66	Meronym Arg1:T152 Arg2:T153
 R67	Mod-Link Arg1:T157 Arg2:T156
 R68	Mod-Link Arg1:E41 Arg2:T159
 R69	Mod-Link Arg1:T162 Arg2:T161
+R70	Coreference-Link Arg1:T26 Arg2:T24	
+T165	Modifier 698 711	reconstituted
+R71	Mod-Link Arg1:T41 Arg2:T165	
+R72	Meronym Arg1:T61 Arg2:T63	
+T166	Device 1578 1596	humidified chamber
+R73	Meronym Arg1:T89 Arg2:T166	
+R74	Coreference-Link Arg1:T166 Arg2:T71	
+T167	Modifier 1726 1732	Gently
+R75	Mod-Link Arg1:E24 Arg2:T167	

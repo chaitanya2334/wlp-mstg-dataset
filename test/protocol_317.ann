@@ -105,8 +105,8 @@ T104	Time 1622 1630	1 minute
 T105	Speed 1634 1644	14,000 × g
 T106	Action 1648 1653	elute
 T107	Reagent 1654 1657	DNA
-E1	Action:T1 Acts-on:T4 Using:T7
-E2	Action:T9 Acts-on:T11
+E1	Action:T1 Acts-on:T4 Using:T7 Product:T11
+E2	Action:T9 Acts-on:T11 Product:T15
 E3	Action:T12 Acts-on:T13
 E4	Action:T14 Acts-on:T15 Site:T17
 E5	Action:T18 Site:E4 Acts-on:T20
@@ -115,9 +115,9 @@ E7	Action:T23
 E8	Action:T24 Acts-on:T25 Product:T32
 E9	Action:T30 Acts-on:T28
 E10	Action:T31 Acts-on:T32
-E11	Action:T33 
+E11	Action:T33 Acts-on:T32
 E12	Action:T36 Using:T37
-E13	Action:T38 Acts-on:T40
+E13	Action:T38 Acts-on:T40 Site:E12
 E14	Action:T42 Acts-on:E13 Using:T43 Product:T45
 E15	Action:T44 Acts-on:T45 Site:T46 Product:T50
 E16	Action:T47 Acts-on:T46 Using:T48
@@ -131,8 +131,8 @@ E23	Action:T67 Acts-on:T68 Site:T69 Product:T73
 E24	Action:T70 Acts-on:T72 Site:T73
 E25	Action:T74 Acts-on:E24 Product:T78
 E26	Action:T77 Acts-on:T78 Product:T80
-E27	Action:T79 Acts-on:T80 Site:T81 Product:T86
-E28	Action:T82 Using:T83
+E27	Action:T79 Acts-on:T80 Site:T81
+E28	Action:T82 Using:T83 Acts-on:E27 Product:T86
 E29	Action:T84 Acts-on:T86
 E30	Action:T91 Acts-on:T93 Product:T95
 E31	Action:T94 Acts-on:T95 Site:T98 Product:T102
@@ -181,3 +181,4 @@ R39	Measure Arg1:T101 Arg2:T100
 R40	Setting Arg1:E33 Arg2:T104
 R41	Setting Arg1:E33 Arg2:T105
 R42	Enables Arg1:E33 Arg2:E34
+R43	Enables Arg1:E12 Arg2:E28	

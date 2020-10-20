@@ -137,36 +137,36 @@ E7	Action:T24 Acts-on:E6 Measure-Type-Link:T25
 E8	Action:T26 Acts-on:E7 Measure-Type-Link:T27 Using:T30 Product:T37
 E9	Action:T33 Site:T32 Acts-on:T35 Site2:T37
 E10	Action:T39 Acts-on:E9
-E11	Action:T40 Acts-on:E10
-E12	Action:T43 Acts-on:E11 Using:T44 Product:T51
-E13	Action:T46 Acts-on:T47 Site:T48
-E14	Action:T50 Acts-on:T51 Site:T54 Product:T60
-E15	Action:T55 Acts-on:T56
+E11	Action:T40 Acts-on:E10 Product:T47
+E12	Action:T43 Acts-on:E11 Using:T44
+E13	Action:T46 Acts-on:T47 Site:T48 Product:T51
+E14	Action:T50 Acts-on:T51 Site:T54 Product:T56
+E15	Action:T55 Acts-on:T56 Product:T60
 E16	Action:T57 Acts-on:T59 Site:T60
 E17	Action:T61 Acts-on:E16
 E18	Action:T62 Acts-on:E17
 E19	Action:T65 Site:E18 Acts-on:T67
 E20	Action:T69 Acts-on:E19
-E21	Action:T70 Acts-on:E20 Using:T71
-E22	Action:T74 Using:T75 Product:T83
-E23	Action:T76 Acts-on:T77 Site:T78
-E24	Action:T81 
+E21	Action:T70 Acts-on:E20 Using:T71 Product:T77
+E22	Action:T74 Using:T75
+E23	Action:T76 Acts-on:T77 Site:T78 Product:T83
+E24	Action:T81 Acts-on:T83
 E25	Action:T82 Acts-on:T83
-E26	Action:T84 Acts-on:T86
+E26	Action:T84 Acts-on2:E25 Acts-on3:E24 Using:T86
 E27	Action:T88 
-E28	Action:T89 Site:E27 Using:T90 Product:T92
+E28	Action:T89 Using:T90 Product:T92 Site:E26
 E29	Action:T91 Acts-on:T92
 E30	Action:T93 Acts-on:E29
-E31	Action:T94 Acts-on:T96
+E31	Action:T94 Acts-on2:E30 Using:T96
 E32	Action:T98 
-E33	Action:T99 Acts-on:E32 Using:T100 Product:T102
+E33	Action:T99 Using:T100 Product:T102 Acts-on:E31
 E34	Action:T101 Acts-on:T102
 E35	Action:T103 Acts-on:E34
-E36	Action:T104 Acts-on:T106
+E36	Action:T104 Acts-on2:E35 Using:T106
 E37	Action:T108 
-E38	Action:T109 Acts-on:E37 Using:T110 Product:T112
+E38	Action:T109 Using:T110 Product:T112 Acts-on:E36
 E39	Action:T111 Acts-on:T112
-E40	Action:T113 Acts-on:E39
+E40	Action:T113 Acts-on:E39 Product:T115
 E41	Action:T114 Acts-on:T115 Site:T118 Product:T120
 E42	Action:T119 Acts-on:T120 Product:T125
 E43	Action:T123 Using:T124 Acts-on:T125 Product:T127
@@ -213,3 +213,9 @@ R38	Measure Arg1:T118 Arg2:T116
 R39	Measure Arg1:T118 Arg2:T117
 R40	Setting Arg1:E42 Arg2:T121
 R41	Setting Arg1:E42 Arg2:T122
+R42	Enables Arg1:E12 Arg2:E13	
+R43	Enables Arg1:E22 Arg2:E23	
+R44	Enables Arg1:E24 Arg2:E25	
+R45	Enables Arg1:E27 Arg2:E26	
+R46	Enables Arg1:E32 Arg2:E31	
+R47	Enables Arg1:E37 Arg2:E36	

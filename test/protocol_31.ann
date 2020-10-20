@@ -139,12 +139,12 @@ E18	Action:T71 Acts-on:T72 Site:T74 Using:T76 Product:T78
 E19	Action:T77 Acts-on:T78
 E20	Action:T82 Site:E19 Using:T81 Acts-on:T83
 E21	Action:T85 Acts-on:E20 Site:T86 Product:T89
-E22	Action:T88 Acts-on:T89 Site:T90 Product:T96
-E23	Action:T91 Acts-on:T92 Site:T94
-E24	Action:T95 Acts-on:T96 Product:T102
-E25	Action:T99 Acts-on:T100
+E22	Action:T88 Acts-on:T89 Site:T90 Product:T96 Product2:T92
+E23	Action:T91 Acts-on:T92 Site:T94 Product:T100
+E24	Action:T95 Acts-on:T96
+E25	Action:T99 Acts-on:T100 Product:T102
 E26	Action:T101 Acts-on:T102 Site:T104
-E27	Action:T105 Acts-on:E26
+E27	Action:T105 Acts-on:E26 Product:T109
 E28	Action:T108 Acts-on:T109 Product:T112
 E29	Action:T110 Acts-on:T112 Site:T113 Product:T115
 E30	Action:T114 Acts-on:T115 Site:T116
@@ -188,3 +188,7 @@ R36	Setting Arg1:E27 Arg2:T107
 R37	Mod-Link Arg1:T112 Arg2:T111
 R38	Coreference-Link Arg1:T115 Arg2:T117
 R39	Setting Arg1:E31 Arg2:T120
+R40	Mod-Link Arg1:T76 Arg2:T75	
+R41	Enables Arg1:E24 Arg2:E25	
+R42	Meronym Arg1:T100 Arg2:T96	
+R43	Overlaps Arg1:E31 Arg2:E30	

@@ -16,13 +16,11 @@ T15	Amount 290 296	500 ml
 T16	Reagent 300 309	new media
 T17	Location 315 329	Fernbach flask
 T18	Action 358 367	Inoculate
-T19	Amount 368 374	enough
-T20	Size 375 381	500 ml
+T19	Modifier 368 374	enough
+T20	Amount 375 381	500 ml
 T21	Reagent 382 390	cultures
 T22	Action 446 450	take
-T23	Action 453 461	'time 0'
-T24	Measure-Type 462 468	growth
-T25	Action 469 476	reading
+T24	Measure-Type 462 476	growth reading
 T26	Action 488 494	taking
 T27	Measure-Type 495 503	readings
 T28	Time 516 528	periodically
@@ -68,7 +66,7 @@ T67	Action 1106 1111	count
 T68	Reagent 1116 1123	plaques
 T69	Location 1131 1137	plates
 T70	Action 1192 1197	count
-T71	Reagent 1202 1213	new plaques
+T71	Reagent 1206 1213	plaques
 T72	Action 1235 1238	add
 T73	Mention 1239 1244	these
 T74	Action 1270 1275	Count
@@ -78,37 +76,33 @@ T77	Modifier 1352 1363	centrifuged
 T78	Modifier 1388 1403	not centrifuged
 T79	Reagent 1420 1427	samples
 T80	Action 1430 1435	Graph
-T81	Action 1440 1447	results
 T82	Action 1448 1457	Calculate
 T83	Measure-Type 1458 1468	burst size
-E1	Action:T2 Using:T1 Measure-Type-Link:T3 Acts-on:T4
+E1	Action:T2 Using:T1 Measure-Type-Link:T3 Acts-on:T4 Product:T42
 E2	Action:T5 Acts-on:T6 Product:T14
 E3	Action:T7 Acts-on:T8 Site:T10
-E4	Action:T12 Acts-on:T14 Site:T16
+E4	Action:T12 Acts-on:T14 Site:T16 Product:T21
 E5	Action:T18 Acts-on:T21
-E6	Action:T22 Acts-on:E5 Measure-Type-Link:T24 Measure-Type-Link2:E8
-E7	Action:T23 
-E8	Action:T25 
+E6	Action:T22 Acts-on:E5 Measure-Type-Link:T24
 E9	Action:T26 Acts-on:E6 Measure-Type-Link:T27 Product:T33
 E10	Action:T29 Acts-on:E9 Measure-Type-Link:T30
-E11	Action:T31 Measure-Type-Link:T32 Acts-on:T33
+E11	Action:T31 Measure-Type-Link:T32 Acts-on:T33 Product:T39
 E12	Action:T34 Measure-Type-Link:T35 Acts-on:T36
-E13	Action:T40 Measure-Type-Link:T41 Acts-on:T42
-E14	Action:T43 Acts-on:T44 Site:T45 Acts-on2:T47 Site2:T48 Product:T52
-E15	Action:T49 Acts-on:T50
+E13	Action:T40 Measure-Type-Link:T41 Acts-on:T42 Site:E12 Product:T44
+E14	Action:T43 Acts-on:T44 Site:T45 Acts-on2:T47 Site2:T48
+E15	Action:T49 Acts-on:T50 Acts-on2:E14 Product:T52
 E16	Action:T51 Acts-on:T52 Site:T54
 E17	Action:T55 Acts-on:T57 Site:T59
-E18	Action:T60 
-E19	Action:T61 Acts-on:E17
-E20	Action:T62 Product:T63
-E21	Action:T65 Acts-on:E20
-E22	Action:T67 Acts-on:T68 Site:T69
+E18	Action:T60 Acts-on:E17
+E19	Action:T61 Acts-on:E17 Product:T63
+E20	Action:T62 Acts-on:T63
+E21	Action:T65 Acts-on:E20 Product:T68
+E22	Action:T67 Acts-on:T68 Site:T69 Product:T71
 E23	Action:T70 Acts-on:T71 Product:T73
 E24	Action:T72 Acts-on:T73
-E25	Action:T74 
+E25	Action:T74 Acts-on:E24 Product:T79
 E26	Action:T75 Measure-Type-Link:T76 Acts-on:T79
-E27	Action:T80 Acts-on:E26
-E28	Action:T81 
+E27	Action:T80 Acts-on:E26 Measure-Type-Link:T81
 E29	Action:T82 Acts-on:E27 Measure-Type-Link:T83
 R1	Enables Arg1:E3 Arg2:E2
 R2	Measure Arg1:T10 Arg2:T9
@@ -116,7 +110,6 @@ R3	Meronym Arg1:T11 Arg2:T10
 R4	Measure Arg1:T14 Arg2:T13
 R5	Measure Arg1:T16 Arg2:T15
 R6	Meronym Arg1:T16 Arg2:T17
-R7	Measure Arg1:T21 Arg2:T19
 R8	Measure Arg1:T21 Arg2:T20
 R9	Setting Arg1:E9 Arg2:T28
 R10	Measure Arg1:T39 Arg2:T37
@@ -131,3 +124,19 @@ R18	Mod-Link Arg1:E20 Arg2:T64
 R19	Setting Arg1:E21 Arg2:T66
 R20	Mod-Link Arg1:T79 Arg2:T77
 R21	Mod-Link Arg1:T79 Arg2:T78
+R7	Mod-Link Arg1:T20 Arg2:T19	
+T23	Generic-Measure 453 461	'time 0'
+R22	Setting Arg1:E6 Arg2:T23	
+T25	Modifier 479 487	Continue
+R23	Mod-Link Arg1:E9 Arg2:T25	
+R24	Meronym Arg1:T36 Arg2:T39	
+R25	Coreference-Link Arg1:T57 Arg2:T54	
+T84	Modifier 1047 1055	Continue
+R26	Mod-Link Arg1:E21 Arg2:T84	
+T85	Modifier 1202 1205	new
+R27	Mod-Link Arg1:T71 Arg2:T85	
+T86	Modifier 1276 1281	again
+R28	Mod-Link Arg1:E25 Arg2:T86	
+T87	Time 1289 1298	third day
+R29	Setting Arg1:E25 Arg2:T87	
+T81	Measure-Type 1440 1447	results

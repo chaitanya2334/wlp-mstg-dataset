@@ -98,27 +98,27 @@ E3	Action:T11 Site:E2 Acts-on:T13 Acts-on2:T16
 E4	Action:T17 Site:E3 Acts-on:T19 Product:T21
 E5	Action:T20 Acts-on:T21 Count:T22
 E6	Action:T24 Acts-on:T25
-E7	Action:T26 Using:T27 Product:T32
-E8	Action:T28 Acts-on:T32 Site:T35 Product:T41
+E7	Action:T26 Using:T27 Product:T32 Acts-on:E6
+E8	Action:T28 Acts-on:T32 Site:T35 Product:T41 Product2:T40
 E9	Action:T37 Acts-on:T39 Site:T40
-E10	Action:T42 Acts-on:T43
-E11	Action:T44 
-E12	Action:T48 Acts-on:T51
+E10	Action:T42 Acts-on:E9
+E11	Action:T44 Acts-on:T43 Product:T78
+E12	Action:T48 Acts-on:T51 Site:T47
 E13	Action:T52 Site:E12 Acts-on:T55
 E14	Action:T56 Site:E13 Acts-on:T58
 E15	Action:T59 Site:E14 Acts-on:T62
 E16	Action:T63 Site:E15 Acts-on:T65 Product:T67
 E17	Action:T66 Acts-on:T67
 E18	Action:T69 
-E19	Action:T70 Using:T71
-E20	Action:T73 Using:T72 Acts-on:T76
+E19	Action:T70 Using:T71 Acts-on:E18
+E20	Action:T73 Using:T72 Acts-on:T76 Site:E19 Product:T82
 E21	Action:T77 Acts-on:T78
 E22	Action:T79 Acts-on:T82
-E23	Action:T83 Acts-on:T84
+E23	Action:T83 Acts-on:T84 Site:E21
 E24	Action:T86 Acts-on:T85
-E25	Action:T87 Using:T88
-E26	Action:T89 
-E27	Action:T90 Using:T92 Using2:T93
+E25	Action:T87 Using:T88 Acts-on:E24
+E26	Action:T89 Acts-on:E25
+E27	Action:T90 Using:T92 Using2:T93 Acts-on:E25
 R1	Measure Arg1:T2 Arg2:T1
 R2	Measure Arg1:T6 Arg2:T4
 R3	Measure Arg1:T6 Arg2:T5
@@ -156,7 +156,10 @@ R34	Mod-Link Arg1:T76 Arg2:T75
 R35	Enables Arg1:E22 Arg2:E21
 R36	Measure Arg1:T82 Arg2:T80
 R37	Measure Arg1:T82 Arg2:T81
-R38	Prevents Arg1:E23 Arg2:E24
+R38	Enables Arg1:E23 Arg2:E24
 R39	Or Arg1:E26 Arg2:E27
 R40	Setting Arg1:E27 Arg2:T94
 R41	Mod-Link Arg1:T92 Arg2:T91
+R42	Enables Arg1:E10 Arg2:E11	
+T95	Modifier 1333 1335	no
+R43	Mod-Link Arg1:E24 Arg2:T95	

@@ -107,39 +107,39 @@ T106	Device 1297 1314	fluorescent scope
 T107	Action 1317 1321	Pool
 T108	Reagent 1326 1333	samples
 T109	Reagent 1339 1344	virus
-E1	Action:T1 Product:T2 Site:T5
-E2	Action:T8 Acts-on:T5
-E3	Action:T9 Acts-on:T5
+E1	Action:T1 Site:T5 Acts-on:T2 Product:T13
+E2	Action:T8 Product:T5
+E3	Action:T9 Product:T5
 E4	Action:T10 Acts-on:T11 Site:T14 Product:T16
 E5	Action:T15 Acts-on:T16 Count:T17
-E6	Action:T18 Acts-on:E4 Using:T21 Product:T23
-E7	Action:T22 Acts-on:T23 Site:T24 Using:T25
-E8	Action:T27 Acts-on:T28 Using:T30
+E6	Action:T18 Using:T21 Product:T23 Acts-on:E5
+E7	Action:T22 Acts-on:T23 Using:T25
+E8	Action:T27 Acts-on:T28 Using:T30 Site:E7 Product:T34
 E9	Action:T33 Acts-on:T34
-E10	Action:T35 Acts-on:T36
-E11	Action:T46 Acts-on:T43 Acts-on2:T45
-E12	Action:T47 Acts-on:T48 Site:T49
+E10	Action:T35 Using:T36 Acts-on:E9 Acts-on2:E35 Product2:T43 Product3:T45
+E11	Action:T46 Acts-on2:T45 Product:T48
+E12	Action:T47 Acts-on:T48 Site:T49 Product:T51
 E13	Action:T50 Acts-on:T51 Site:T52 Product:T56
-E14	Action:T53 Site:T55 Using:T59
-E15	Action:T60 Acts-on:T61 Site:T62
+E14	Action:T53 Site:T55 Using:T59 Product:T62
+E15	Action:T60 Acts-on:T61 Site:T62 Product:T64 Product2:T65
 E16	Action:T63 Acts-on:T64 Site:T66
 E17	Action:T68 Acts-on:E16 Count:T69
 E18	Action:T72 Acts-on:E17 Using:T71
-E19	Action:T74 
+E19	Action:T74 Measure-Type-Link:T112 Acts-on:E18 Product:T76
 E20	Action:T75 Acts-on:T76 Site:T77
 E21	Action:T78 Acts-on:E20 Product:T83
-E22	Action:T80 Product:T82
+E22	Action:T80 Product:T82 Acts-on:E21
 E23	Action:T81 Acts-on:T82 Site:T83
 E24	Action:T84 Acts-on:E23 Product:T89
 E25	Action:T86 Acts-on:E24 Product:T88
-E26	Action:T87 Acts-on:T88 Site:T89
+E26	Action:T87 Acts-on:T88 Site:T89 Product:T94
 E27	Action:T90 Measure-Type-Link:T91 Count:T92 Acts-on:T94
-E28	Action:T95 Acts-on:E27 Count:T96
+E28	Action:T95 Acts-on:E27 Count:T96 Product:T99 Product2:T101
 E29	Action:T97 Acts-on:T99
 E30	Action:T98 Acts-on:T99
 E31	Action:T100 Acts-on:T101
-E32	Action:T102 Using:T104
-E33	Action:T105 Using:T106 Product:T108
+E32	Action:T102 Using:T104 Acts-on:T101
+E33	Action:T105 Using:T106 Product:T108 Acts-on:E31
 E34	Action:T107 Acts-on:T108 Using:T109
 R1	Measure Arg1:T2 Arg2:T4
 R2	Of-Type Arg1:T4 Arg2:T3
@@ -173,3 +173,17 @@ R29	Setting Arg1:E24 Arg2:T85
 R30	Mod-Link Arg1:T94 Arg2:T93
 R31	Enables Arg1:E32 Arg2:E31
 R32	Measure Arg1:T104 Arg2:T103
+R33	Overlaps Arg1:E2 Arg2:E3	
+R34	Meronym Arg1:T23 Arg2:T24	
+T110	Device 349 353	hand
+R35	Or Arg1:T25 Arg2:T110	
+T111	Action 446 453	balance
+E35	Action:T111 Acts-on:T34
+R36	Overlaps Arg1:E9 Arg2:E35	
+R37	Or Arg1:T43 Arg2:T45	
+T112	Measure-Type 914 925	measurement
+R38	Overlaps Arg1:E29 Arg2:E30	
+R39	Or Arg1:E30 Arg2:E31	
+R40	Or Arg1:E29 Arg2:E31	
+T113	Modifier 1245 1250	first
+R41	Mod-Link Arg1:E31 Arg2:T113	

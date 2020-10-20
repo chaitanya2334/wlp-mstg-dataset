@@ -22,7 +22,7 @@ T21	Reagent 363 381	sample of interest
 T22	Action 535 543	Incubate
 T23	Reagent 548 553	cells
 T24	Modifier 563 574	appropriate
-T25	Device 575 582	stimuli
+T25	Reagent 575 582	stimuli
 T26	Modifier 592 600	suitable
 T27	Temperature 601 612	temperature
 T28	Time 617 621	time
@@ -80,7 +80,6 @@ T79	Reagent 1338 1343	cells
 T80	Action 1347 1353	adding
 T81	Modifier 1354 1367	pre - chilled
 T82	Reagent 1368 1392	True - Phos™ Perm Buffer
-T83	Action 1430 1443	permeabilized
 T84	Action 1499 1507	Incubate
 T85	Temperature 1511 1517	- 20°C
 T86	Time 1522 1532	60 minutes
@@ -157,49 +156,48 @@ E2	Action:T6 Acts-on:E1 Product:T35
 E3	Action:T8 Acts-on:T9 Product:T15
 E4	Action:T13 Site:T12 Acts-on:T15
 E5	Action:T16 Acts-on:E4 Product:T82
-E6	Action:T18 Product:T20 Using:T21
-E7	Action:T22 Acts-on:T23 Using:T25 Product:T30
+E6	Action:T18 Using:T21 Acts-on:T20 Product:T161 Product2:T163
+E7	Action:T22 Acts-on:T23 Product:T30
 E8	Action:T29 Acts-on:T30
 E9	Action:T32 Site:T30 Acts-on:T35
-E10	Action:T37 
+E10	Action:T37 Acts-on:E8
 E11	Action:T39 Product:T43
 E12	Action:T40 Acts-on:T43
 E13	Action:T45 Acts-on:T43 Product:T47
 E14	Action:T46 Acts-on:T47 Product:T52
 E15	Action:T51 Acts-on:T52
-E16	Action:T53 
-E17	Action:T54 Acts-on:T55
-E18	Action:T56 Acts-on:T58
+E16	Action:T53 Acts-on:E15
+E17	Action:T54 Acts-on:T55 Product:T60
+E18	Action:T56 Acts-on:T58 Site:T60
 E19	Action:T59 Acts-on:T60 Site:T62
 E20	Action:T63 Acts-on:E19 Product:T68
-E21	Action:T67 Acts-on:T68 Product:T74
-E22	Action:T69 Count:T70 Using:T71
+E21	Action:T67 Acts-on:T68
+E22	Action:T69 Count:T70 Using:T71 Acts-on:E21 Product:T74
 E23	Action:T73 Acts-on:T74
 E24	Action:T76 Acts-on:T77 Product:T79
 E25	Action:T78 Acts-on:T79
 E26	Action:T80 Acts-on:T82
-E27	Action:T83 
-E28	Action:T84 
+E28	Action:T84 Acts-on:E25
 E29	Action:T89 Acts-on:T87 Product:T91
 E30	Action:T90 Acts-on:T91 Product:T96
 E31	Action:T95 Acts-on:T96 Product:T99
-E32	Action:T97 
+E32	Action:T97 Acts-on:T99
 E33	Action:T98 Acts-on:T99 Product:T104
 E34	Action:T100 Acts-on:T102
-E35	Action:T103 Acts-on:T104
+E35	Action:T103 Acts-on:T104 Product:T106
 E36	Action:T105 Acts-on:T106 Product:T111
-E37	Action:T110 Acts-on:T111 Product:T116
-E38	Action:T112 Using:T114
+E37	Action:T110 Acts-on:T111
+E38	Action:T112 Using:T114 Acts-on:E37 Product:T116
 E39	Action:T115 Acts-on:T116 Site:T117 Product:T122
 E40	Action:T119 Acts-on:T122 Site:T124 Product:T128
 E41	Action:T125 Acts-on:T126 Site:T128
 E42	Action:T129 Acts-on:E41
 E43	Action:T130 Acts-on:E41
-E44	Action:T131 Site:T134
+E44	Action:T131 Site:T134 Acts-on:E43
 E45	Action:T135 Site:E44 Acts-on:T137 Product:T139
 E46	Action:T138 Acts-on:T139 Product:T144
 E47	Action:T143 Acts-on:T144
-E48	Action:T145 Count:T146 Using:T147
+E48	Action:T145 Count:T146 Using:T147 Acts-on:E47 Product:T149
 E49	Action:T148 Acts-on:T149 Site:T152
 E50	Action:T153 Acts-on:E49 Using:T154
 R1	Measure Arg1:T2 Arg2:T1
@@ -215,7 +213,6 @@ R10	Setting Arg1:E7 Arg2:T28
 R11	Mod-Link Arg1:T25 Arg2:T24
 R12	Mod-Link Arg1:T27 Arg2:T26
 R13	Mod-Link Arg1:T28 Arg2:T26
-R14	Mod-Link Arg1:T30 Arg2:T31
 R15	Enables Arg1:E9 Arg2:E8
 R16	Measure Arg1:T35 Arg2:T33
 R17	Mod-Link Arg1:T35 Arg2:T34
@@ -269,3 +266,31 @@ R64	Setting Arg1:E46 Arg2:T141
 R65	Setting Arg1:E46 Arg2:T142
 R66	Mod-Link Arg1:T151 Arg2:T150
 R67	Measure Arg1:T152 Arg2:T151
+T155	Reagent 384 394	Human PBMC
+T156	Reagent 397 408	splenocytes
+T157	Reagent 411 421	cell lines
+R68	Meronym Arg1:T155 Arg2:T21	
+R69	Meronym Arg1:T156 Arg2:T21	
+R70	Meronym Arg1:T157 Arg2:T21	
+T158	Action 439 446	Prepare
+E51	Action:T158 Acts-on:T160 Product:T23
+T159	Numerical 447 450	two
+T160	Reagent 451 459	aliquots
+T161	Reagent 462 478	Negative control
+T162	Modifier 481 490	untreated
+T163	Reagent 493 509	Positive control
+T164	Modifier 512 532	treated with stimuli
+R71	Measure Arg1:T160 Arg2:T159	
+R72	Meronym Arg1:T161 Arg2:T160	
+R73	Mod-Link Arg1:T161 Arg2:T162	
+R74	Meronym Arg1:T163 Arg2:T160	
+R75	Mod-Link Arg1:T163 Arg2:T164	
+R76	Meronym Arg1:T25 Arg2:T23	
+R14	Mod-Link Arg1:E8 Arg2:T31	
+T165	Amount 1027 1031	2 ml
+T166	Modifier 1013 1026	approximately
+R77	Mod-Link Arg1:T165 Arg2:T166	
+R78	Measure Arg1:T58 Arg2:T165	
+R79	Enables Arg1:E18 Arg2:E22	
+R80	Enables Arg1:E34 Arg2:E38	
+R81	Enables Arg1:E45 Arg2:E48	

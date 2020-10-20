@@ -41,12 +41,12 @@ T40	Location 622 628	plates
 T41	Action 633 642	incubated
 T42	Time 666 683	overnight to 48 h
 E1	Action:T2 Acts-on:T1 Site:T3
-E2	Action:T4 Acts-on:T1 Site:T6 Product:T7
-E3	Action:T9 Acts-on:T7 Site:T10
-E4	Action:T16 Site:E3 Acts-on:T12 Acts-on2:T15
-E5	Action:T19 Acts-on:T17 Using:T21
-E6	Action:T25 Acts-on:T23 Site:T26
-E7	Action:T29 Acts-on:T27 Site:T30
+E2	Action:T4 Site:T6 Product:T7 Acts-on:E1 Product2:T8
+E3	Action:T9 Acts-on:T7
+E4	Action:T16 Site:E3 Acts-on:T12 Acts-on2:T15 Product:T18 Product2:T17
+E5	Action:T19 Acts-on:T17 Using:T21 Product:T22 Product2:T23
+E6	Action:T25 Acts-on:T23 Site:T26 Product:T27
+E7	Action:T29 Acts-on:T27 Site:T30 Product:T35 Product2:T38
 E8	Action:T31 Acts-on:T32 Site:T33 Using:T34
 E9	Action:T36 Acts-on:T35
 E10	Action:T37 Acts-on:T38 Product:T40
@@ -63,3 +63,8 @@ R9	Mod-Link Arg1:E6 Arg2:T24
 R10	Mod-Link Arg1:E7 Arg2:T28
 R11	Setting Arg1:E10 Arg2:T39
 R12	Setting Arg1:E11 Arg2:T42
+R13	Meronym Arg1:T7 Arg2:T10	
+R14	Enables Arg1:E8 Arg2:E7	
+R15	Meronym Arg1:T30 Arg2:T32	
+R16	Enables Arg1:E10 Arg2:E9	
+R17	Meronym Arg1:T35 Arg2:T38	
