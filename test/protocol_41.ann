@@ -102,9 +102,9 @@ T101	Time 1708 1728	long periods of time
 T102	Temperature 1738 1743	–80°C
 T103	Time 1744 1756	indefinitely
 E1	Action:T5 Acts-on:T1 Site:T4 Acts-on2:T7
-E2	Action:T8 
-E3	Action:T9 Acts-on:E1
-E4	Action:T10 Acts-on:E2 Product:T13 Product2:T14
+E2	Action:T8 Acts-on:E1
+E3	Action:T9 
+E4	Action:T10 Product:T13 Product2:T14 Acts-on:E3
 E5	Action:T15 Acts-on:T16 Site:T18 Product:T24
 E6	Action:T19 Using:T20
 E7	Action:T21 Acts-on:T23 Acts-on2:T24
@@ -173,3 +173,4 @@ R35	Or Arg1:T98 Arg2:T100
 R36	Or Arg1:T99 Arg2:T101
 R37	Or Arg1:T100 Arg2:T102
 R38	Or Arg1:T101 Arg2:T103
+R39	Enables Arg1:E2 Arg2:E3	

@@ -116,7 +116,7 @@ T115	Reagent 2088 2093	cells
 T116	Reagent 2109 2129	Cell Staining Buffer
 T117	Amount 2148 2172	starting volume of blood
 T118	Action 2286 2294	Transfer
-T119	Reagent 2295 2301	100 ml
+T119	Amount 2295 2301	100 ml
 T120	Size 2307 2317	12 x 75 mm
 T121	Location 2318 2322	tube
 T122	Action 2325 2328	Add
@@ -146,13 +146,13 @@ T145	Reagent 2655 2675	Cell Staining Buffer
 T146	Action 2680 2687	analyze
 T147	Device 2695 2709	flow cytometer
 E1	Action:T1 Acts-on:T3 Product:T9
-E2	Action:T6 Acts-on:T9 Site:T11
+E2	Action:T6 Acts-on:T9 Site:T11 Using:T5
 E3	Action:T12 Acts-on:T11 Product:T42
 E4	Action:T14 Acts-on:T15 Product:T21
-E5	Action:T19 Acts-on:T21
-E6	Action:T22 Acts-on:E5
-E7	Action:T24 Acts-on:T26 Site:T28
-E8	Action:T29 Count:T30 Acts-on:T31
+E5	Action:T19 Acts-on:T21 Using:T18
+E6	Action:T22 Acts-on:E5 Product:T85
+E7	Action:T24 Acts-on:T26 Site:T28 Product:T148 Product2:T150
+E8	Action:T29 Count:T30 Acts-on:T31 Product:T33
 E9	Action:T32 Acts-on:T33 Using:T34 Product:T38
 E10	Action:T37 Acts-on:T38 Using:T42
 E11	Action:T44 Acts-on:E10
@@ -166,45 +166,43 @@ E18	Action:T60 Acts-on:T61 Product:T66
 E19	Action:T62 Acts-on:T64
 E20	Action:T65 Acts-on:T66
 E21	Action:T68 Acts-on:E20 Product:T73
-E22	Action:T72 Acts-on:T73 Product:T77
-E23	Action:T74 
+E22	Action:T72 Acts-on:T73
+E23	Action:T74 Count:T153 Acts-on:E22 Product:T77
 E24	Action:T76 Acts-on:T77
 E25	Action:T79 Using:T78 Acts-on:T80 Product:T82
-E26	Action:T81 Acts-on:T82
+E26	Action:T81 Acts-on:T82 Product:T89
 E27	Action:T83 Acts-on:T85
-E28	Action:T86 
+E28	Action:T86 Acts-on:T89
 E29	Action:T90 Acts-on:T89 Product:T92
 E30	Action:T91 Acts-on:T92 Product:T97
 E31	Action:T96 Acts-on:T97 Product:T100
 E32	Action:T98 
-E33	Action:T99 Acts-on:T100
-E34	Action:T101 Acts-on:T103
+E33	Action:T99 Acts-on:T100 Product:T105
+E34	Action:T101 Acts-on:T103 Site:T105
 E35	Action:T104 Acts-on:T105 Product:T107
 E36	Action:T106 Acts-on:T107 Product:T112
-E37	Action:T111 Acts-on:T112 Product:T115
-E38	Action:T113 
+E37	Action:T111 Acts-on:T112
+E38	Action:T113 Count:T155 Acts-on:E37 Product:T115
 E39	Action:T114 Acts-on:T115 Site:T116
-E40	Action:T118 Acts-on:E39 Acts-on2:T119 Site:T121 Product:T124
+E40	Action:T118 Acts-on:E39 Site:T121 Product:T124
 E41	Action:T122 Acts-on:T123 Site:T124
 E42	Action:T125 Acts-on:E41
 E43	Action:T126 
 E44	Action:T127 Acts-on:E43 Site:T130
 E45	Action:T131 Site:E44 Acts-on:T133 Product:T135
 E46	Action:T134 Acts-on:T135 Product:T140
-E47	Action:T139 Acts-on:T140 Product:T143
-E48	Action:T141 
+E47	Action:T139 Acts-on:T140
+E48	Action:T141 Count:T156 Acts-on:E47 Product:T143
 E49	Action:T142 Acts-on:T143 Site:T145
 E50	Action:T146 Acts-on:E49 Using:T147
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T5 Arg2:T4
-R3	Meronym Arg1:T9 Arg2:T5
 R4	Measure Arg1:T9 Arg2:T7
 R5	Measure Arg1:T9 Arg2:T8
 R6	Measure Arg1:T11 Arg2:T10
 R7	Setting Arg1:E3 Arg2:T13
 R8	Setting Arg1:E4 Arg2:T16
 R9	Measure Arg1:T18 Arg2:T17
-R10	Meronym Arg1:T21 Arg2:T18
 R11	Measure Arg1:T21 Arg2:T20
 R12	Setting Arg1:E6 Arg2:T23
 R13	Measure Arg1:T26 Arg2:T25
@@ -243,7 +241,7 @@ R45	Setting Arg1:E30 Arg2:T95
 R46	Enables Arg1:E32 Arg2:E33
 R47	Enables Arg1:E34 Arg2:E35
 R48	Measure Arg1:T103 Arg2:T102
-R49	Coreference-Link Arg1:T103 Arg2:T116
+R49	Coreference-Link Arg1:T116 Arg2:T103
 R50	Setting Arg1:E36 Arg2:T108
 R51	Setting Arg1:E36 Arg2:T109
 R52	Setting Arg1:E36 Arg2:T110
@@ -253,8 +251,25 @@ R55	Enables Arg1:E42 Arg2:E43
 R56	Setting Arg1:E44 Arg2:T128
 R57	Setting Arg1:E44 Arg2:T129
 R58	Measure Arg1:T133 Arg2:T132
-R59	Coreference-Link Arg1:T133 Arg2:T145
+R59	Coreference-Link Arg1:T145 Arg2:T133
 R60	Setting Arg1:E46 Arg2:T136
 R61	Setting Arg1:E46 Arg2:T137
 R62	Setting Arg1:E46 Arg2:T138
 R63	Measure Arg1:T145 Arg2:T144
+T148	Reagent 665 681	Negative control
+T150	Reagent 696 712	Positive control
+T151	Action 715 722	treated
+E51	Action:T151 Acts-on:T150 Using:T152 Product:T31
+T152	Reagent 728 735	stimuli
+T149	Action 684 693	untreated
+E52	Action:T149 Acts-on:T148 Product:T31
+T153	Numerical 1421 1424	two
+R3	Enables Arg1:E19 Arg2:E23	
+T154	Action 1510 1519	vortexing
+E53	Action:T154 Acts-on:T82 Product:T89
+R10	Overlaps Arg1:E26 Arg2:E53	
+T155	Numerical 2061 2064	two
+R64	Enables Arg1:E34 Arg2:E38	
+R65	Setting Arg1:E40 Arg2:T119	
+T156	Numerical 2599 2602	two
+R66	Enables Arg1:E45 Arg2:E48	

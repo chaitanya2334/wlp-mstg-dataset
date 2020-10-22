@@ -125,34 +125,34 @@ T124	Action 1589 1593	Read
 T125	Location 1594 1600	slides
 T126	Generic-Measure 1607 1635	100x oil immersion objective
 T127	Device 1640 1671	inverted fluorescent microscope
-E1	Action:T1 Product:T2 Site:T4
-E2	Action:T7 Product:T8
-E3	Action:T9 Acts-on:T11 Site:T14 Product:T20
-E4	Action:T19 Acts-on:T20 Using:T21
+E1	Action:T1 Site:T4 Acts-on:T2 Product:T62
+E2	Action:T7 Acts-on:T8 Product:T11
+E3	Action:T9 Acts-on:T11 Site:T14 Product:T20 Site2:T18
+E4	Action:T19 Acts-on:T20 Using:T21 Product:T89
 E5	Action:T22 Acts-on:T23 Product:T31
 E6	Action:T24 Acts-on:T25 Site:T26
-E7	Action:T27 Acts-on:T30 Site:T31
-E8	Action:T32 Acts-on:T34 Site:T35
-E9	Action:T37 Acts-on:T38
+E7	Action:T27 Acts-on:T30 Site:T31 Product:T36
+E8	Action:T32 Acts-on:T34 Site:T35 Product2:T41 Product:T38
+E9	Action:T37 Acts-on:T38 Product:T39
 E10	Action:T40 Acts-on:T39 Site:T41 Product:T46
-E11	Action:T42 Acts-on:T45 Site:T46
-E12	Action:T47 Acts-on:T48
+E11	Action:T42 Acts-on:T45 Site:T46 Product:T48 Product2:T50
+E12	Action:T47 Acts-on:T48 Product:T55
 E13	Action:T49 Acts-on:T50
 E14	Action:T52 Acts-on:T54 Site:T55
 E15	Action:T56 Site:E14 Acts-on:T57
-E16	Action:T58 Acts-on:T57
+E16	Action:T58 Acts-on:E15 Product:T60
 E17	Action:T59 Acts-on:T60
-E18	Action:T61 Site:T60 Acts-on:T62
-E19	Action:T63 Acts-on:T64
+E18	Action:T61 Acts-on:T62 Site:E17 Product:T64
+E19	Action:T63 Acts-on:T64 Product:T66
 E20	Action:T65 Acts-on:T66 Using:T69 Product:T71
-E21	Action:T70 Acts-on:T71
+E21	Action:T70 Acts-on:T71 Product:T73
 E22	Action:T72 Acts-on:T73 Using:T75
 E23	Action:T76 Acts-on:E22 Using:T77
-E24	Action:T78 
+E24	Action:T78 Product:T80
 E25	Action:T79 Acts-on:T80 Using:T81 Product:T85
-E26	Action:T84 Acts-on:T85
+E26	Action:T84 Acts-on:T85 Product:T87
 E27	Action:T86 Acts-on:T87 Using:T88 Site:T89
-E28	Action:T92 Acts-on:E27 Acts-on2:T93
+E28	Action:T92 Acts-on:E27 Acts-on2:T93 Product:T95
 E29	Action:T94 Acts-on:T95 Using:T96 Acts-on2:T97 Product:T106
 E30	Action:T100 Acts-on:T102 Site:T103 Product:T108
 E31	Action:T104 Acts-on:T106 Site:T107 Product:T116
@@ -201,3 +201,7 @@ R36	Prevents Arg1:E33 Arg2:E34
 R37	Setting Arg1:E35 Arg2:T121
 R38	Enables Arg1:E35 Arg2:E36
 R39	Setting Arg1:T127 Arg2:T126
+R40	Coreference-Link Arg1:T30 Arg2:T14	
+R41	Coreference-Link Arg1:T45 Arg2:T30	
+R42	Meronym Arg1:T50 Arg2:T48	
+R43	Coreference-Link Arg1:T69 Arg2:T45	

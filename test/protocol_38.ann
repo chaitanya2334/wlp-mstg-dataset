@@ -35,12 +35,12 @@ T34	Action 607 611	Read
 T35	Measure-Type 616 626	absorbance
 T36	Generic-Measure 630 635	595nm
 E1	Action:T1 Acts-on:T2 Product:T5
-E2	Action:T4 Acts-on:T5
+E2	Action:T4 Acts-on:T5 Product:T11
 E3	Action:T7 Acts-on:T8 Count:T9
-E4	Action:T10 Acts-on:T11
-E5	Action:T12 Acts-on:T14 Product:T18
+E4	Action:T10 Acts-on:T11 Product:T27
+E5	Action:T12 Acts-on:T14 Product:T18 Site:T37
 E6	Action:T15 Acts-on:T18 Acts-on2:T19 Site:T20 Product:T28
-E7	Action:T21 Product:T22 Acts-on:T24
+E7	Action:T21 Acts-on2:T22
 E8	Action:T25 Acts-on:T27 Site:T28
 E9	Action:T29 Acts-on:E8
 E10	Action:T31 Acts-on:E9
@@ -57,3 +57,16 @@ R9	Mod-Link Arg1:E9 Arg2:T30
 R10	Setting Arg1:E10 Arg2:T32
 R11	Setting Arg1:E10 Arg2:T33
 R12	Setting Arg1:E11 Arg2:T36
+R13	Enables Arg1:E3 Arg2:E2	
+T37	Reagent 230 241	same buffer
+T38	Reagent 250 265	protein samples
+R14	Meronym Arg1:T37 Arg2:T38	
+T39	Action 281 291	duplicates
+E12	Action:T39 Acts-on:T41 Count:T40 Product:T18
+T40	Numerical 295 300	5 - 6
+T41	Reagent 301 310	dilutions
+T42	Concentration 331 347	0.1 - 1.0mg / ml
+R15	Measure Arg1:T41 Arg2:T42	
+R16	Overlaps Arg1:E12 Arg2:E5	
+R17	Coreference-Link Arg1:T24 Arg2:T37	
+R18	Meronym Arg1:T24 Arg2:T22	

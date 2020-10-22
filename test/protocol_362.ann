@@ -25,7 +25,6 @@ T24	Amount 403 411	3 x 1 mL
 T25	Size 415 424	0.02 - µm
 T26	Modifier 427 435	filtered
 T27	Reagent 436 445	TE buffer
-T28	Action 449 459	triplicate
 T29	Modifier 460 467	sterile
 T30	Amount 468 474	1.2 mL
 T31	Location 475 484	cryovials
@@ -40,7 +39,7 @@ T39	Action 531 537	vortex
 T40	Action 541 544	mix
 T41	Action 547 551	Snap
 T42	Location 552 561	cryovials
-T43	Device 567 576	cryocanes
+T43	Location 567 576	cryocanes
 T44	Action 581 589	incubate
 T45	Temperature 593 596	4°C
 T46	Time 601 611	30 minutes
@@ -59,9 +58,7 @@ T58	Action 795 800	Store
 T59	Modifier 801 807	thawed
 T60	Reagent 808 814	sample
 T61	Location 818 821	ice
-T62	Action 827 834	aliquot
 T63	Action 842 845	run
-T64	Reagent 850 859	host cell
 T65	Modifier 877 884	diluted
 T66	Reagent 885 897	virus sample
 T67	Action 901 911	incubating
@@ -174,56 +171,54 @@ T173	Action 2525 2528	run
 T174	Time 2533 2542	2 - 4 min
 T175	Action 2580 2592	back - flush
 T176	Time 2597 2602	2 min
-E1	Action:T1 Acts-on:T2 Acts-on2:T3
+E1	Action:T1 Acts-on:T2 Acts-on2:T3 Product:T6
 E2	Action:T4 Acts-on:T6 Site:T9
 E3	Action:T10 Site:E2 Acts-on:T13
 E4	Action:T16 Acts-on:E3
 E5	Action:T17 
 E6	Action:T18 Acts-on:E5 Site:T22 Product:T31
-E7	Action:T23 Acts-on:T27 Site:T31
-E8	Action:T28 Acts-on:T31
+E7	Action:T23 Acts-on:T27 Site:T31 Product:T37
 E9	Action:T32 Acts-on:T35 Site:T37
 E10	Action:T39 Acts-on:E9
 E11	Action:T40 Acts-on:E9 Product:T42
-E12	Action:T41 Acts-on:T42 Site:T43
-E13	Action:T44 Acts-on:E12 Site:T47
+E12	Action:T41 Acts-on:T42 Product:T43
+E13	Action:T44 Site:T47 Acts-on:T43
 E14	Action:T48 Acts-on:E13 Site:T49
 E15	Action:T50 Acts-on:E14
-E16	Action:T52 
-E17	Action:T53 
-E18	Action:T57 
-E19	Action:T58 Acts-on:T60 Site:T61
-E20	Action:T62 
-E21	Action:T63 Acts-on:E20
-E22	Action:T67 Acts-on:T66
+E16	Action:T52 Acts-on:T54 Site:T55 Product:T60
+E17	Action:T53 Acts-on:T54 Site:T55 Product:T60
+E18	Action:T57 Acts-on:E15 Product:T54
+E19	Action:T58 Acts-on:T60 Site:T61 Product:T64 Product2:T66
+E21	Action:T63 Measure-Type-Link:T62 Acts-on:T64
+E22	Action:T67 Acts-on:T66 Product:T69
 E23	Action:T68 Acts-on:T69 Using:T73
 E24	Action:T74 Using:T75
-E25	Action:T78 Acts-on:T77
-E26	Action:T79 
+E25	Action:T78 Acts-on:T77 Product:T94 Product2:T140 Product3:T140
+E26	Action:T79 Product:T94 Product2:T141 Product3:T141
 E27	Action:T80 Acts-on:T82
 E28	Action:T83 Acts-on:T86
-E29	Action:T87 Acts-on:T89
-E30	Action:T88 Acts-on:T89
+E29	Action:T87 Site:T89 Acts-on:E27 Product:T95
+E30	Action:T88 Site:T89 Acts-on:E27 Product:T95
 E31	Action:T91 Acts-on:T94 Site:T95
-E32	Action:T98 Acts-on:E31
+E32	Action:T98 Acts-on:E31 Product:T104
 E33	Action:T99 
 E34	Action:T101 
 E35	Action:T102 Acts-on:T104 Acts-on2:T106 Product:T111
 E36	Action:T108 Acts-on:T111 Site:T113 Product:T120
-E37	Action:T114 Acts-on:T116 Acts-on2:T118 Site:T120
-E38	Action:T121 
+E37	Action:T114 Acts-on:T116 Acts-on2:T118 Site:T120 Product:T132
+E38	Action:T121 Acts-on:E37
 E39	Action:T131 Acts-on:T132
 E40	Action:T134 Acts-on:E39
-E41	Action:T136 Acts-on:E40
-E42	Action:T138 Acts-on:T140 Measure-Type-Link:T142
+E41	Action:T136 Acts-on:E40 Product:T144
+E42	Action:T138 Acts-on:T140 Measure-Type-Link:T142 Product:T156
 E43	Action:T145 Acts-on:T144
 E44	Action:T146 Site:T148 Acts-on:T150 Acts-on2:T152 Product:T158
 E45	Action:T153 Acts-on:T156 Site:T158 Product:T167
 E46	Action:T161 Product:T159 Acts-on:T165 Site:T167
-E47	Action:T168 
+E47	Action:T168 Acts-on:T159
 E48	Action:T170 Acts-on:T171
 E49	Action:T173 Acts-on:E48
-E50	Action:T175 
+E50	Action:T175 Acts-on:E49
 R1	Measure Arg1:T6 Arg2:T5
 R2	Mod-Link Arg1:T9 Arg2:T7
 R3	Measure Arg1:T9 Arg2:T8
@@ -232,7 +227,6 @@ R5	Measure Arg1:T13 Arg2:T12
 R6	Measure Arg1:T13 Arg2:T14
 R7	Mod-Link Arg1:E4 Arg2:T15
 R8	Enables Arg1:E4 Arg2:E5
-R9	Enables Arg1:E6 Arg2:E1
 R10	Setting Arg1:E6 Arg2:T19
 R11	Measure Arg1:T22 Arg2:T20
 R12	Mod-Link Arg1:T22 Arg2:T21
@@ -311,3 +305,48 @@ R84	Mod-Link Arg1:E47 Arg2:T169
 R85	Setting Arg1:E48 Arg2:T172
 R86	Setting Arg1:E49 Arg2:T174
 R87	Setting Arg1:E50 Arg2:T176
+T28	Modifier 449 459	triplicate
+R9	Mod-Link Arg1:T31 Arg2:T28	
+R88	Overlaps Arg1:E16 Arg2:E17	
+T62	Measure-Type 850 866	host cell counts
+T64	Reagent 827 834	aliquot
+R89	Overlaps Arg1:E21 Arg2:E22	
+R90	Meronym Arg1:T64 Arg2:T66	
+R91	Overlaps Arg1:E24 Arg2:E23	
+R92	Coreference-Link Arg1:T77 Arg2:T69	
+R93	Overlaps Arg1:E29 Arg2:E30	
+R94	Overlaps Arg1:E25 Arg2:E26	
+R95	Overlaps Arg1:E34 Arg2:E33	
+R96	Overlaps Arg1:E39 Arg2:E38	
+T177	Generic-Measure 2393 2396	LOW
+T178	Measure-Type 2416 2423	Trigger
+T179	Generic-Measure 2426 2430	TFSC
+T180	Measure-Type 2433 2437	TFSC
+T181	Generic-Measure 2440 2442	27
+T182	Measure-Type 2445 2449	PFSC
+T183	Generic-Measure 2452 2454	19
+T184	Measure-Type 2457 2460	SSC
+T185	Generic-Measure 2463 2465	40
+T186	Measure-Type 2468 2471	520
+T187	Measure-Type 2479 2482	572
+T188	Measure-Type 2490 2493	692
+T189	Generic-Measure 2485 2487	40
+T190	Generic-Measure 2496 2498	40
+T191	Generic-Measure 2474 2476	40
+R97	Of-Type Arg1:T179 Arg2:T178	
+R98	Of-Type Arg1:T181 Arg2:T180	
+R99	Of-Type Arg1:T183 Arg2:T182	
+R100	Of-Type Arg1:T185 Arg2:T184	
+R101	Of-Type Arg1:T191 Arg2:T186	
+R102	Of-Type Arg1:T189 Arg2:T187	
+R103	Of-Type Arg1:T190 Arg2:T188	
+R104	Setting Arg1:E47 Arg2:T177	
+R105	Setting Arg1:E47 Arg2:T179	
+R106	Setting Arg1:E47 Arg2:T181	
+R107	Setting Arg1:E47 Arg2:T183	
+R108	Setting Arg1:E47 Arg2:T185	
+R109	Setting Arg1:E47 Arg2:T191	
+R110	Setting Arg1:E47 Arg2:T189	
+R111	Setting Arg1:E47 Arg2:T190	
+R112	Overlaps Arg1:E48 Arg2:E47	
+R113	Coreference-Link Arg1:T171 Arg2:T159	

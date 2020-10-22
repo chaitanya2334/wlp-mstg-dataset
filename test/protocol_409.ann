@@ -115,7 +115,7 @@ T114	Time 1509 1518	overnight
 T115	Action 1521 1532	Concentrate
 T116	Reagent 1533 1540	protein
 T117	Concentration 1544 1556	~ 10 mg / mL
-T118	Device 1565 1588	100K centrifugal filter
+T118	Device 1570 1588	centrifugal filter
 T119	Action 1616 1623	Aliquot
 T120	Action 1628 1640	flash‐freeze
 T121	Reagent 1644 1659	liquid nitrogen
@@ -123,7 +123,7 @@ T122	Action 1662 1667	Store
 T123	Reagent 1668 1676	aliquots
 T124	Temperature 1680 1685	‐80°C
 E1	Action:T1 Acts-on:T2 Using:T3
-E2	Action:T4 Acts-on:E1 Site:T5 Product:T13
+E2	Action:T4 Acts-on:E1 Site:T5 Product:T12 Product2:T10 Product3:T13 Product4:T125
 E3	Action:T8 Acts-on:T12 Using:T13
 E4	Action:T14 Acts-on:E3 Product:T20
 E5	Action:T17 Acts-on:T20 Site:T26
@@ -132,19 +132,19 @@ E7	Action:T30 Acts-on:T31
 E8	Action:T34 Site:E7 Acts-on:T35
 E9	Action:T37 Acts-on:E8 Product:T40
 E10	Action:T39 Acts-on:T40
-E11	Action:T41 Acts-on:E10 Measure-Type-Link:T42
+E11	Action:T41 Acts-on:E10 Measure-Type-Link:T42 Product:T45
 E12	Action:T43 Acts-on:T45 Using:T46 Using2:T47 Using3:T49
-E13	Action:T50 Acts-on:E12
+E13	Action:T50 Acts-on:E12 Product:T55
 E14	Action:T53 Product:T55
 E15	Action:T54 Acts-on:T55 Product:T59
 E16	Action:T58 Acts-on:T59 Site:T61 Product:T70
-E17	Action:T62 Acts-on:T64 Product:T71
+E17	Action:T62 Acts-on:T64 Product:T71 Using:T126
 E18	Action:T68 Acts-on:T70 Using:T71 Product:T75
 E19	Action:T74 Acts-on:T75 Using:T77 Product:T79
-E20	Action:T78 Acts-on:T79 Using:T80
+E20	Action:T78 Acts-on:T79 Using:T80 Product:T82
 E21	Action:T81 Acts-on:T82 Using:T84 Product:T89
-E22	Action:T85 Acts-on:T87
-E23	Action:T88 Acts-on:T89
+E22	Action:T85 Site:T87
+E23	Action:T88 Acts-on:T89 Product:T101
 E24	Action:T90 Acts-on:T92 Using:T94 Product:T97
 E25	Action:T96 Acts-on:T97 Using:T98 Product:T102
 E26	Action:T100 Acts-on:T101 Site:T102 Product:T104
@@ -153,8 +153,8 @@ E28	Action:T105 Acts-on:E27 Site:T107
 E29	Action:T110 Acts-on:E28 Site:T112
 E30	Action:T113 Acts-on:E29 Product:T116
 E31	Action:T115 Acts-on:T116 Using:T118
-E32	Action:T119 Acts-on:E31 Using:T121
-E33	Action:T120 Acts-on:E32 Using:T121 Product:T123
+E32	Action:T119 Acts-on:E31 Site:T121 Product:T123
+E33	Action:T120 Product:T123 Site:T121 Acts-on:E31
 E34	Action:T122 Acts-on:T123
 R1	Meronym Arg1:T5 Arg2:T7
 R2	Measure Arg1:T7 Arg2:T6
@@ -179,7 +179,7 @@ R20	Setting Arg1:E9 Arg2:T38
 R21	Measure Arg1:T45 Arg2:T44
 R22	Measure Arg1:T49 Arg2:T48
 R23	Setting Arg1:E13 Arg2:T51
-R24	Enables Arg1:E14 Arg2:E13
+R24	Overlaps Arg1:E14 Arg2:E13
 R25	Setting Arg1:E14 Arg2:T52
 R26	Setting Arg1:E15 Arg2:T56
 R27	Setting Arg1:E15 Arg2:T57
@@ -192,7 +192,6 @@ R33	Setting Arg1:E18 Arg2:T73
 R34	Mod-Link Arg1:T70 Arg2:T69
 R35	Measure Arg1:T77 Arg2:T76
 R36	Meronym Arg1:T83 Arg2:T82
-R37	Measure Arg1:T87 Arg2:T86
 R38	Measure Arg1:T92 Arg2:T91
 R39	Measure Arg1:T94 Arg2:T93
 R40	Measure Arg1:T94 Arg2:T95
@@ -204,3 +203,14 @@ R45	Measure Arg1:T112 Arg2:T111
 R46	Setting Arg1:E30 Arg2:T114
 R47	Setting Arg1:E31 Arg2:T117
 R48	Setting Arg1:E34 Arg2:T124
+T125	Reagent 227 247	fresh transformation
+R49	Meronym Arg1:T13 Arg2:T125	
+R50	Meronym Arg1:T12 Arg2:T125	
+R51	Meronym Arg1:T10 Arg2:T125	
+T126	Reagent 870 876	column
+R52	Meronym Arg1:T65 Arg2:T126	
+R37	Setting Arg1:E22 Arg2:T86	
+R53	Enables Arg1:E22 Arg2:E21	
+T127	Generic-Measure 1565 1569	100K
+R54	Setting Arg1:T118 Arg2:T127	
+R55	Overlaps Arg1:E33 Arg2:E32	

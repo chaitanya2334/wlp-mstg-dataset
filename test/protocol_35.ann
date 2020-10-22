@@ -107,25 +107,25 @@ T106	Generic-Measure 1964 1968	100V
 T107	Device 1978 1992	NEB 1kb ladder
 T108	Action 2054 2062	Quantify
 T109	Device 2066 2071	qubit
-E1	Action:T1 Acts-on:T2 Using:T4
-E2	Action:T6 Product:T7 Site:T10 Acts-on:T12 Using:T14
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T115
+E2	Action:T6 Site:T10 Using:T14 Using2:T12 Acts-on:T7
 E3	Action:T15 Acts-on:E2 Product:T23
-E4	Action:T18 Acts-on:T20
-E5	Action:T21 Site:E4 Acts-on:T23 Using:T24
-E6	Action:T25 Acts-on:T26 Using:T27
+E4	Action:T18 Acts-on:T20 Site:E30
+E5	Action:T21 Acts-on:T23 Using:T24 Site:E4 Product:T26
+E6	Action:T25 Acts-on:T26 Using:T27 Product:T29
 E7	Action:T28 Acts-on:T29
-E8	Action:T30 Using:T31 Measure-Type-Link:T32
+E8	Action:T30 Using:T31 Measure-Type-Link:T32 Acts-on:E7 Product:T39
 E9	Action:T33 Product:T34
-E10	Action:T35 Site:T37 Product:T39
+E10	Action:T35 Acts-on:T37 Product:T50 Product2:T51
 E11	Action:T41 Product:T40 Acts-on:T43 Site:T45
 E12	Action:T46 Acts-on:T48 Site:T50
 E13	Action:T52 Acts-on:E12 Site:T55
 E14	Action:T56 Acts-on:E13 Site:T58
-E15	Action:T59 Acts-on:T61
+E15	Action:T59 Acts-on:T61 Acts-on2:E14
 E16	Action:T62 Acts-on:E15 Product:T65
 E17	Action:T66 Site:T65 Acts-on:T68
 E18	Action:T69 Acts-on:E17 Using:T71
-E19	Action:T72 Acts-on:E18
+E19	Action:T72 Acts-on:E18 Product:T79
 E20	Action:T75 Acts-on:T78 Site:T79
 E21	Action:T80 Acts-on:E20
 E22	Action:T82 Acts-on:E21 Product:T87
@@ -146,11 +146,9 @@ R7	Setting Arg1:E3 Arg2:T16
 R8	Setting Arg1:E3 Arg2:T17
 R9	Measure Arg1:T20 Arg2:T19
 R10	Measure Arg1:T23 Arg2:T22
-R11	Coreference-Link Arg1:T34 Arg2:T48
+R11	Coreference-Link Arg1:T48 Arg2:T34
 R12	Mod-Link Arg1:T37 Arg2:T36
-R13	Coreference-Link Arg1:T37 Arg2:T50
 R14	Measure Arg1:T39 Arg2:T38
-R15	Coreference-Link Arg1:T39 Arg2:T51
 R16	Measure Arg1:T43 Arg2:T42
 R17	Measure Arg1:T45 Arg2:T44
 R18	Measure Arg1:T48 Arg2:T47
@@ -178,3 +176,17 @@ R39	Setting Arg1:E28 Arg2:T105
 R40	Setting Arg1:E28 Arg2:T106
 R41	Measure Arg1:T104 Arg2:T102
 R42	Measure Arg1:T104 Arg2:T103
+T110	Action 372 376	Save
+E30	Action:T110 Acts-on:T112 Site:T113
+T111	Modifier 377 381	some
+T112	Reagent 382 389	plasmid
+T113	Reagent 398 401	gel
+R43	Mod-Link Arg1:T112 Arg2:T111	
+R13	Meronym Arg1:T37 Arg2:T39	
+R15	Setting Arg1:E14 Arg2:T57	
+T114	Action 161 169	Miniprep
+E31	Action:T114 Acts-on:T115
+T115	Reagent 170 178	plasmids
+T116	Action 181 189	quantify
+E32	Action:T116 Acts-on:E31 Product:T12 Product2:T112
+R44	Overlaps Arg1:E11 Arg2:E10	

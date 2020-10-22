@@ -111,37 +111,37 @@ T110	Location 1320 1324	vial
 T111	Action 1331 1336	place
 T112	Location 1342 1345	bag
 E1	Action:T1 Acts-on:T2
-E2	Action:T4 Acts-on:T3 Site:T6
-E3	Action:T7 Acts-on:T10 Site:T11
+E2	Action:T4 Acts-on:T3 Site:T6 Product:T16
+E3	Action:T7 Acts-on:T10 Site:T11 Product:T16
 E4	Action:T12 Acts-on:T13 Site:T14 Product:T16
 E5	Action:T15 Acts-on:T16 Using:T17 Site:T18 Product:T22
 E6	Action:T20 Acts-on:T21 Site:T22
 E7	Action:T23 Acts-on:T24 Using:T25 Product:T27
-E8	Action:T26 Site:T27 Acts-on:T28 Product:T33
+E8	Action:T26 Product:T33 Acts-on2:T27
 E9	Action:T29 Acts-on:E8 Count:T31
-E10	Action:T32 Acts-on:T33
+E10	Action:T32 Acts-on:T33 Product:T34 Product2:T38 Product3:T40
 E11	Action:T35 Acts-on:T34 Site:T38
 E12	Action:T39 Acts-on:T40 Using:T41
-E13	Action:T46 Acts-on:T43
+E13	Action:T46 Acts-on:T43 Product:T48 Product2:T51
 E14	Action:T47 Acts-on:T48
-E15	Action:T52 Acts-on:T49 Product:T56
-E16	Action:T53 Acts-on:T54
+E15	Action:T52 Acts-on:T49 Product:T56 Product2:T54
+E16	Action:T53 Acts-on:T54 Product:T58
 E17	Action:T55 Acts-on:T56 Product:T58
 E18	Action:T57 Acts-on:T58 Using:T59 Site:T61 Product:T65
 E19	Action:T62 Acts-on:T65
 E20	Action:T63 Acts-on:T65
-E21	Action:T70 Acts-on:T69
-E22	Action:T71 Acts-on:T72 Acts-on2:T73 Site:T74
+E21	Action:T70 Acts-on:T69 Product:T72 Product2:T73
+E22	Action:T71 Acts-on:T72 Acts-on2:T73 Product:T77
 E23	Action:T75 Acts-on:T77
 E24	Action:T79 Acts-on:T81 Product:T88
 E25	Action:T82 Acts-on:T83 Using:T86 Product:T89
 E26	Action:T87 Acts-on:T88 Site:T89 Product:T96
 E27	Action:T93 Using:T92 Acts-on:T95 Site:T96 Product:T99
-E28	Action:T98 Acts-on:T99 Acts-on2:T101 Count:T102
+E28	Action:T98 Acts-on:T99 Acts-on2:T101 Count:T102 Product:T108
 E29	Action:T103 Acts-on:T104
-E30	Action:T106 Acts-on:T108
+E30	Action:T106 Acts-on:T108 Product:T110
 E31	Action:T109 Acts-on:T110
-E32	Action:T111 Acts-on:E31 Acts-on2:T112
+E32	Action:T111 Acts-on:E31 Site:T112
 R1	Enables Arg1:E1 Arg2:E2
 R2	Coreference-Link Arg1:T3 Arg2:T2
 R3	Mod-Link Arg1:E2 Arg2:T5
@@ -185,3 +185,15 @@ R40	Measure Arg1:T101 Arg2:T100
 R41	Enables Arg1:E29 Arg2:E30
 R42	Meronym Arg1:T104 Arg2:T105
 R43	Mod-Link Arg1:T108 Arg2:T107
+R44	Overlaps Arg1:E3 Arg2:E2	
+R45	Coreference-Link Arg1:T10 Arg2:T2	
+R46	Meronym Arg1:T27 Arg2:T28	
+R47	Coreference-Link Arg1:T33 Arg2:T28	
+R48	Overlaps Arg1:E12 Arg2:E11	
+R49	Enables Arg1:E12 Arg2:E13	
+R50	Coreference-Link Arg1:T43 Arg2:T38	
+R51	Meronym Arg1:T51 Arg2:T48	
+R52	Meronym Arg1:T54 Arg2:T56	
+R53	Overlaps Arg1:E19 Arg2:E20	
+R54	Meronym Arg1:T73 Arg2:T74	
+R55	Meronym Arg1:T72 Arg2:T74	
