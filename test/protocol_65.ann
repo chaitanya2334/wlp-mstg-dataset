@@ -23,7 +23,6 @@ T22	Reagent 311 327	Cyanophage stock
 T23	Action 328 335	diluted
 T24	Amount 341 347	1–5 mL
 T25	Reagent 348 353	media
-T26	Action 356 362	Set up
 T27	Action 420 426	Set up
 T28	Reagent 427 446	adsorption cultures
 T29	Amount 459 465	250 mL
@@ -79,31 +78,30 @@ T78	Action 1120 1129	Determine
 T79	Measure-Type 1134 1147	concentration
 T80	Reagent 1151 1158	viruses
 T81	Reagent 1176 1187	supernatant
-E1	Action:T2 Acts-on:T1 Using:T3
+E1	Action:T2 Acts-on:T1 Using:T3 Product:T5 Product2:T10 Product3:T12 Product4:T16 Product5:T22
 E2	Action:T6 Acts-on:T5
-E3	Action:T7 Acts-on:E2 Site:T8
-E4	Action:T11 
+E3	Action:T7 Acts-on:E2 Site:T8 Product:T36
+E4	Action:T11 Acts-on:T10
 E5	Action:T13 Acts-on:T12
-E6	Action:T15 
+E6	Action:T15 Acts-on:E5 Product:T44
 E7	Action:T19 Acts-on:T16
-E8	Action:T20 Acts-on:T16 Site:T21
-E9	Action:T23 Acts-on:T22 Site:T25
-E10	Action:T26 
-E11	Action:T27 Acts-on:T28
+E8	Action:T20 Site:T21 Acts-on:E7 Product:T56 Product2:T53
+E9	Action:T23 Acts-on:T22 Site:T25 Product:T38
+E11	Action:T27 Acts-on:T28 Site:T31 Product:T34
 E12	Action:T33 Acts-on:T34 Using:T36 Product:T40
 E13	Action:T37 Acts-on:T38 Site:T40
 E14	Action:T42 
-E15	Action:T43 Acts-on:T44
+E15	Action:T43 Acts-on:T44 Product:T47
 E16	Action:T46 Acts-on:T47
-E17	Action:T48 Acts-on:T47
-E18	Action:T51 Site:T53
-E19	Action:T57 Product:T60
-E20	Action:T58 
+E17	Action:T48 Acts-on:E16
+E18	Action:T51 Site:T53 Acts-on:E17
+E19	Action:T57 Acts-on:E18
+E20	Action:T58 Product:T60
 E21	Action:T59 Acts-on:T60 Product:T68
-E22	Action:T65 Acts-on:T68 Site:T70
-E23	Action:T71 Acts-on:T70
+E22	Action:T65 Acts-on:T68 Site:T70 Product:T81 Product2:T80
+E23	Action:T71 Acts-on:E22
 E24	Action:T72 Acts-on:T73
-E25	Action:T74 Using:T75
+E25	Action:T74 Using:T75 Acts-on:E24 Product:T81 Product2:T80
 E26	Action:T78 Measure-Type-Link:T79 Acts-on:T80
 R1	Mod-Link Arg1:T5 Arg2:T4
 R2	Mod-Link Arg1:T10 Arg2:T9
@@ -116,7 +114,6 @@ R8	Meronym Arg1:T32 Arg2:T31
 R9	Measure Arg1:T36 Arg2:T35
 R10	Measure Arg1:T38 Arg2:T39
 R11	Mod-Link Arg1:E14 Arg2:T41
-R12	Setting Arg1:E15 Arg2:T14
 R13	Mod-Link Arg1:E16 Arg2:T45
 R14	Setting Arg1:E17 Arg2:T49
 R15	Setting Arg1:E17 Arg2:T50
@@ -132,3 +129,9 @@ R24	Mod-Link Arg1:T70 Arg2:T69
 R25	Setting Arg1:E25 Arg2:T76
 R26	Setting Arg1:E25 Arg2:T77
 R27	Meronym Arg1:T80 Arg2:T81
+R28	Setting Arg1:E6 Arg2:T14	
+R29	Enables Arg1:E14 Arg2:E15	
+R12	Enables Arg1:E19 Arg2:E20	
+R30	Setting Arg1:E21 Arg2:T62	
+R31	Setting Arg1:E21 Arg2:T63	
+R32	Enables Arg1:E22 Arg2:E25	

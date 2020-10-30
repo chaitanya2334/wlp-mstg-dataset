@@ -67,8 +67,7 @@ T66	Action 1285 1289	Take
 T67	Amount 1292 1297	small
 T68	Reagent 1298 1305	aliquot
 T69	Action 1309 1316	monitor
-T70	Measure-Type 1317 1323	purity
-T71	Measure-Type 1328 1333	yield
+T70	Measure-Type 1317 1333	purity and yield
 E1	Action:T1 Acts-on:T2 Product:T4
 E2	Action:T3 Acts-on:T4 Site:T5 Product:T12
 E3	Action:T6 Acts-on:T4 Acts-on2:T5 Site:T10
@@ -80,15 +79,15 @@ E8	Action:T25 Acts-on:T27 Site:T30
 E9	Action:T31 Acts-on:T32 Using:T33 Product:T38
 E10	Action:T36 Site:E8 Acts-on:T38
 E11	Action:T39 Acts-on:E10
-E12	Action:T41 Acts-on:E11 Site:T42
-E13	Action:T44 Acts-on:T46
+E12	Action:T41 Acts-on:E11 Site:T42 Product:T48
+E13	Action:T44 Using:T46
 E14	Action:T47 Acts-on:T48 Site:T50 Product:T52
 E15	Action:T51 Acts-on:T52 Site:T53 Product:T56
 E16	Action:T55 Acts-on:T56 Product:T58
-E17	Action:T57 Acts-on:T58 Site:T60
-E18	Action:T61 Using:T62 Acts-on:T64 Count:T65
+E17	Action:T57 Acts-on:T58 Site:T60 Product:T64
+E18	Action:T61 Using:T62 Acts-on:T64 Count:T65 Product:T68
 E19	Action:T66 Acts-on:T68
-E20	Action:T69 Using:E19 Measure-Type-Link:T70 Measure-Type-Link2:T71
+E20	Action:T69 Measure-Type-Link:T70
 R1	Measure Arg1:T5 Arg2:T7
 R2	Measure Arg1:T10 Arg2:T8
 R3	Measure Arg1:T10 Arg2:T9
@@ -105,9 +104,22 @@ R13	Setting Arg1:T34 Arg2:T35
 R14	Measure Arg1:T38 Arg2:T37
 R15	Mod-Link Arg1:E11 Arg2:T40
 R16	Setting Arg1:E12 Arg2:T43
-R17	Measure Arg1:T46 Arg2:T45
 R18	Measure Arg1:T50 Arg2:T49
 R19	Setting Arg1:E15 Arg2:T54
 R20	Mod-Link Arg1:T60 Arg2:T59
 R21	Mod-Link Arg1:T64 Arg2:T63
 R22	Measure Arg1:T68 Arg2:T67
+R23	Enables Arg1:E19 Arg2:E20	
+R24	Setting Arg1:E13 Arg2:T45	
+T71	Action 734 742	Scale up
+E21	Action:T71 Measure-Type-Link:T72 Product:T38
+T72	Measure-Type 747 753	volume
+T73	Reagent 785 790	cells
+T74	Action 769 779	separating
+E22	Action:T74 Acts-on:T73
+T75	Modifier 780 784	more
+R17	Mod-Link Arg1:T73 Arg2:T75	
+R25	Coreference-Link Arg1:T46 Arg2:T73	
+R26	Enables Arg1:E22 Arg2:E21	
+R27	Overlaps Arg1:E13 Arg2:E21	
+R28	Enables Arg1:E3 Arg2:E2	

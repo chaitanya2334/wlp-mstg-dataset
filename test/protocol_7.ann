@@ -120,7 +120,7 @@ T119	Reagent 2116 2122	medium
 T120	Location 2126 2134	one side
 T121	Location 2142 2147	plate
 T122	Action 2150 2158	Transfer
-T123	Reagent 2159 2176	resuspended cells
+T123	Reagent 2171 2176	cells
 T124	Amount 2182 2188	1.5 ml
 T125	Location 2189 2209	microcentrifuge tube
 T126	Device 2217 2230	P1000 pipette
@@ -139,35 +139,35 @@ T138	Reagent 2607 2637	liquid BG - 11 Selection media
 T139	Reagent 2644 2648	eGFP
 T140	Action 2667 2673	sorted
 T141	Reagent 2680 2684	FACS
-E1	Action:T1 Acts-on:T2 Product:T3
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T21
 E2	Action:T6 Product:T3 Acts-on:T5 Site:T7
 E3	Action:T9 Product:T3 Acts-on:T10
-E4	Action:T11 Acts-on:T13 Site:T19
-E5	Action:T20 Acts-on:T21 Site:T24
-E6	Action:T26 Using:T25 Acts-on:T29 Product:T33
-E7	Action:T34 
-E8	Action:T40 Acts-on:T39
+E4	Action:T11 Acts-on:T13 Site:T19 Product:T21
+E5	Action:T20 Acts-on:T21 Site:T24 Product:T25
+E6	Action:T26 Using:T25 Acts-on:T29 Site:T33
+E7	Action:T34 Product:T39 Acts-on:E6 Product2:T71
+E8	Action:T40 Acts-on:T39 Product:T72
 E9	Action:T41 Acts-on:T42 Site:T43
 E10	Action:T45 
-E11	Action:T47 Using:E10 Acts-on:T49 Product:T51
-E12	Action:T54 Product:T53 Acts-on:T56 Acts-on2:T58
-E13	Action:T63 Acts-on:T64 Site:T66
+E11	Action:T47 Acts-on:T49 Site:T51 Product:T58
+E12	Action:T54 Acts-on:T56 Acts-on2:T58 Site:T53 Product:T64 Product2:T68
+E13	Action:T63 Acts-on:T64 Site:T66 Product:T82
 E14	Action:T67 Acts-on:T68 Site:T70
 E15	Action:T73 Acts-on:T71 Acts-on2:T72
-E16	Action:T76 Using:E15
-E17	Action:T80 Site:T79 Acts-on:T82 Acts-on2:T84 Product:T97
-E18	Action:T88 Product:T85 Site:T87 Acts-on:T90 Acts-on2:T92
-E19	Action:T93 Acts-on:T94
+E16	Action:T76 Product:T56
+E17	Action:T80 Site:T79 Acts-on:T82 Product:T97 Using:T84
+E18	Action:T88 Product:T85 Site:T87 Acts-on:T90 Using:T92
+E19	Action:T93 Acts-on:T94 Acts-on2:T95
 E20	Action:T96 Acts-on:T97 Site:T99 Product:T101
 E21	Action:T100 Acts-on:T101 Site:T104 Product:T106
-E22	Action:T105 Acts-on:T106 Site:T107
-E23	Action:T111 Product:T112 Using:E24
-E24	Action:T113 Acts-on:T115
+E22	Action:T105 Acts-on:T106 Site:T107 Product:T112
+E23	Action:T111 Acts-on:T112 Product:T118 Product2:T119
+E24	Action:T113 Acts-on:T115 Site:T112
 E25	Action:T117 Using:T116 Acts-on:T118 Acts-on2:T119 Site:T120 Product:T123
 E26	Action:T122 Acts-on:T123 Site:T125 Using:T126 Using2:T127 Product:T130
 E27	Action:T128 Acts-on:T130 Site:T131
-E28	Action:T132 Acts-on:E27 Product:T135
-E29	Action:T137 Site:T138 Using:T139
+E28	Action:T132 Acts-on:E27 Product:T135 Product2:T150 Product3:T155 Product4:T151
+E29	Action:T137 Site:T138 Using:T139 Acts-on:E28
 E30	Action:T140 Acts-on:E29 Using:T141
 R1	Measure Arg1:T3 Arg2:T4
 R2	Or Arg1:T4 Arg2:T8
@@ -223,3 +223,43 @@ R51	Measure Arg1:T130 Arg2:T129
 R52	Setting Arg1:E28 Arg2:T133
 R53	Setting Arg1:E28 Arg2:T134
 R54	Mod-Link Arg1:E29 Arg2:T136
+R55	Overlaps Arg1:E8 Arg2:E9	
+R56	Enables Arg1:E9 Arg2:E10	
+R57	Enables Arg1:E10 Arg2:E11	
+R58	Enables Arg1:E15 Arg2:E16	
+T142	Action 1721 1726	treat
+E31	Action:T142 Acts-on:T94 Acts-on2:T95
+R59	Overlaps Arg1:E19 Arg2:E31	
+R60	Coreference-Link Arg1:T94 Arg2:T85	
+R61	Coreference-Link Arg1:T95 Arg2:T99	
+T143	Reagent 1852 1859	BG - 11
+T144	Reagent 1869 1871	LB
+T145	Reagent 1880 1884	agar
+T146	Concentration 1876 1879	1 %
+T147	Concentration 1865 1868	5 %
+T148	Concentration 1847 1851	0.5x
+R62	Measure Arg1:T143 Arg2:T148	
+R63	Measure Arg1:T144 Arg2:T147	
+R64	Measure Arg1:T145 Arg2:T146	
+R65	Meronym Arg1:T143 Arg2:T99	
+R66	Meronym Arg1:T144 Arg2:T99	
+R67	Meronym Arg1:T145 Arg2:T99	
+R68	Enables Arg1:E24 Arg2:E23	
+T149	Modifier 2159 2170	resuspended
+R69	Mod-Link Arg1:T123 Arg2:T149	
+T150	Reagent 2476 2484	colonies
+T151	Reagent 2488 2505	transformed cells
+T152	Action 2515 2521	appear
+E32	Action:T152 Acts-on:T150
+T153	Time 2402 2413	8 - 12 days
+T154	Modifier 2416 2429	untransformed
+T155	Reagent 2430 2461	Phaeodactylum tricornutum cells
+T156	Action 2462 2469	die off
+E33	Action:T156 Acts-on:T155
+R70	Setting Arg1:E33 Arg2:T153	
+R71	Mod-Link Arg1:T155 Arg2:T154	
+R72	Meronym Arg1:T150 Arg2:T151	
+R73	Overlaps Arg1:E32 Arg2:E33	
+T157	Time 2554 2565	3 - 4 weeks
+R75	Setting Arg1:E32 Arg2:T153	
+R74	Or Arg1:T153 Arg2:T157	

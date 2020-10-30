@@ -100,11 +100,11 @@ E9	Action:T27 Acts-on:T28 Product:T36
 E10	Action:T29 Acts-on:T34 Site:T36 Using:T37
 E11	Action:T38 Acts-on:E10 Product:T42
 E12	Action:T44 Acts-on:T42
-E13	Action:T46 Using:T47
+E13	Action:T46 Using:T47 Product:T49 Acts-on:E12
 E14	Action:T48 Acts-on:T49
 E15	Action:T50 Site:E14 Acts-on:T53
 E16	Action:T54 Acts-on:E15
-E17	Action:T57 Using:T58 Product:T60
+E17	Action:T57 Using:T58 Product:T60 Acts-on:E16
 E18	Action:T59 Acts-on:T60 Using:T62
 E19	Action:T63 Acts-on:E18 Site:T65
 E20	Action:T66 Site:E19 Acts-on:T67
@@ -113,7 +113,7 @@ E22	Action:T73 Acts-on:T74 Site:T75
 E23	Action:T76 Acts-on:E22 Product:T81
 E24	Action:T80 Acts-on:T81
 E25	Action:T82 Acts-on:T84
-E26	Action:T86 Acts-on:E24
+E26	Action:T86 Acts-on:E24 Product:T89
 E27	Action:T88 Acts-on:T89 Site:T90
 R1	Mod-Link Arg1:T3 Arg2:T2
 R2	Enables Arg1:E2 Arg2:E1
@@ -153,3 +153,7 @@ R35	Measure Arg1:T84 Arg2:T83
 R36	Or Arg1:T84 Arg2:T85
 R37	Measure Arg1:T85 Arg2:T83
 R38	Setting Arg1:E26 Arg2:T87
+R39	Measure Arg1:T20 Arg2:T19	
+R40	Measure Arg1:T34 Arg2:T30	
+R41	Enables Arg1:E7 Arg2:E13	
+R42	Enables Arg1:E7 Arg2:E17	

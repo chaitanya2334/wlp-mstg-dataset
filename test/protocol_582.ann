@@ -112,17 +112,17 @@ T111	Concentration 1752 1754	1X
 T112	Reagent 1755 1758	PBS
 E1	Action:T1 Acts-on:T2 Product:T14
 E2	Action:T7 Acts-on:T8
-E3	Action:T9 Acts-on:E2
+E3	Action:T9 Acts-on:E2 Product:T54
 E4	Action:T13 Acts-on:T14
-E5	Action:T15 Acts-on:T14 Count:T16
-E6	Action:T17 Acts-on:T18
+E5	Action:T15 Count:T16 Acts-on:E4
+E6	Action:T17 Acts-on:T18 Product:T22
 E7	Action:T20 Acts-on:T22 Site:T24 Product:T26
 E8	Action:T25 Acts-on:T26 Site:T28
-E9	Action:T29 Acts-on:E8 Acts-on2:T26
+E9	Action:T29 Acts-on:E8
 E10	Action:T30 Acts-on:E9 Product:T34
 E11	Action:T33 Acts-on:T34 Count:T35 Using:T37 Product:T39
 E12	Action:T38 Acts-on:T39 Acts-on2:T41 Product:T51
-E13	Action:T42 Acts-on:T43
+E13	Action:T42 Acts-on:T43 Product:T69
 E14	Action:T44 Acts-on:T46 Site:T48
 E15	Action:T49 Acts-on:T51 Site:T54 Product:T57
 E16	Action:T55 Acts-on:T57 Site:T59 Product:T61
@@ -133,8 +133,8 @@ E20	Action:T78 Acts-on:T79 Site:T80
 E21	Action:T81 Site:E20 Acts-on:T83
 E22	Action:T84 Acts-on:E21 Product:T87
 E23	Action:T86 Acts-on:T87 Site:T88
-E24	Action:T90 Acts-on:E23 Site:T91 Product:T99
-E25	Action:T96 Acts-on:E24
+E24	Action:T90 Acts-on:E23 Site:T91
+E25	Action:T96 Acts-on:E24 Product:T99
 E26	Action:T98 Acts-on:T99 Site:T101
 E27	Action:T102 Acts-on:E26
 E28	Action:T105 Acts-on:E27 Using:T108

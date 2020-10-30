@@ -33,7 +33,7 @@ T32	Amount 457 463	1.5 ml
 T33	Location 464 484	microcentrifuge tube
 T34	Action 487 490	add
 T35	Amount 491 496	25 μl
-T36	Device 497 525	Protein A / G Magnetic Beads
+T36	Reagent 497 525	Protein A / G Magnetic Beads
 T37	Amount 529 535	200 μl
 T38	Reagent 539 557	crude cell extract
 T39	Modifier 560 566	Gently
@@ -134,15 +134,15 @@ E3	Action:T12 Acts-on:E2 Product:T16
 E4	Action:T15 Acts-on:T16 Site:T17
 E5	Action:T18 Acts-on:E4 Site:T19
 E6	Action:T21 Acts-on:E5 Count:T22
-E7	Action:T23 Acts-on:E34
+E7	Action:T23 Acts-on2:E6
 E8	Action:T26 Acts-on:E7
-E9	Action:T27 Acts-on:E8 Measure-Type-Link:T28 Using:T31
+E9	Action:T27 Acts-on:E8 Measure-Type-Link:T28 Using:T31 Product:T38 Product2:T33
 E10	Action:T34 Site:T33 Acts-on:T36
 E11	Action:T40 Acts-on:E10
 E12	Action:T41 Acts-on:E11 Product:T48
 E13	Action:T44 Acts-on:T45
 E14	Action:T47 Acts-on:T48 Site:T49 Product:T52
-E15	Action:T51 Acts-on:T52 Site:T55
+E15	Action:T51 Acts-on:T52 Site:T55 Product:T57
 E16	Action:T56 Acts-on:T57 Product:T61
 E17	Action:T58 Acts-on:T60 Site:T61
 E18	Action:T62 Acts-on:E17
@@ -156,19 +156,19 @@ E25	Action:T82
 E26	Action:T83 Acts-on:T84
 E27	Action:T85 Acts-on:E26 Using:T87
 E28	Action:T89 
-E29	Action:T90 Acts-on:E27 Acts-on2:T91 Product:T93
+E29	Action:T90 Acts-on2:T91 Product:T93 Site:E27
 E30	Action:T92 Acts-on:T93
 E31	Action:T94 Acts-on:E30
-E32	Action:T95 Acts-on:T97
+E32	Action:T95 Using:T97 Acts-on:E31
 E33	Action:T99 
-E34	Action:T100 Acts-on:E32 Acts-on2:T101 Product:T103
+E34	Action:T100 Acts-on2:T101 Product:T103 Site:E32
 E35	Action:T102 Acts-on:T103
 E36	Action:T104 Acts-on:E35
-E37	Action:T105 Acts-on:T107
+E37	Action:T105 Acts-on2:E36 Using:T107
 E38	Action:T109 
-E39	Action:T110 Acts-on:E37 Acts-on2:T111 Product:T113
+E39	Action:T110 Acts-on2:T111 Product:T113 Site:E37
 E40	Action:T112 Acts-on:T113
-E41	Action:T114 Acts-on:E40
+E41	Action:T114 Acts-on:E40 Product:T116
 E42	Action:T115 Acts-on:T116 Using:T119 Product:T121
 E43	Action:T120 Acts-on:T121 Product:T126
 E44	Action:T124 Using:T125 Acts-on:T126 Product:T128

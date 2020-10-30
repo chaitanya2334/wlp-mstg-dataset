@@ -1,7 +1,7 @@
 T1	Action 42 49	Prepare
 T2	Reagent 50 55	cells
 T3	Reagent 61 84	your tissue of interest
-T4	Action 93 99	lysing
+T4	Action 85 99	without lysing
 T5	Reagent 100 112	erythrocytes
 T6	Action 162 171	resuspend
 T7	Reagent 176 181	cells
@@ -87,7 +87,6 @@ T86	Amount 1778 1783	20 μL
 T87	Reagent 1787 1796	Nanobeads
 T88	Modifier 1818 1827	more than
 T89	Reagent 1863 1868	cells
-T90	Modifier 1872 1878	step 6
 T91	Concentration 1884 1904	higher concentration
 T92	Amount 1928 1933	50 μL
 T93	Reagent 1937 1946	Nanobeads
@@ -147,7 +146,7 @@ E1	Action:T1 Product:T2 Using:T3
 E2	Action:T4 Acts-on:T5
 E3	Action:T6 Acts-on:T7 Site:T8 Product:T19
 E4	Action:T9 Acts-on:T8 Site:T14
-E5	Action:T15 Acts-on:T16 Site:T17
+E5	Action:T15 Acts-on:T16 Site:T17 Product:T28
 E6	Action:T18 Acts-on:T19 Using:T21
 E7	Action:T22 Acts-on:E6
 E8	Action:T25 Acts-on:E7 Site:T28
@@ -159,7 +158,7 @@ E13	Action:T46 Acts-on:E12
 E14	Action:T48 Acts-on:E13 Site:T49
 E15	Action:T56 Site:E14 Acts-on:T57 Product:T61
 E16	Action:T60 Acts-on:T61 Product:T65
-E17	Action:T64 Acts-on:T65 Site:T67
+E17	Action:T64 Acts-on:T65 Site:T67 Product:T69
 E18	Action:T68 Acts-on:T69
 E19	Action:T70 
 E20	Action:T73 Acts-on:T77
@@ -167,21 +166,20 @@ E21	Action:T78 Acts-on:E20
 E22	Action:T80 Acts-on:E21 Site:T81
 E23	Action:T97 Site:E22 Acts-on:T98 Product:T102
 E24	Action:T101 Acts-on:T102 Product:T106
-E25	Action:T105 Acts-on:T106 Site:T108 Product:T117
-E26	Action:T109 Acts-on:T110
+E25	Action:T105 Acts-on:T106 Site:T108
+E26	Action:T109 Acts-on:T110 Site:E25 Product:T112
 E27	Action:T111 Acts-on:T112 Site:T113
 E28	Action:T114 Measure-Type-Link:T115
-E29	Action:T116 Acts-on:T117 Site:T118 Product:T121 Product2:T126
+E29	Action:T116 Acts-on:T117 Site:T118 Product:T121
 E30	Action:T120 Acts-on:T121 Site:T123
-E31	Action:T124 
+E31	Action:T124 Acts-on:E30 Product:T191
 E32	Action:T125 Acts-on:T126 Product:T130
-E33	Action:T129 Acts-on:T130 Site:T131
-E34	Action:T132 Acts-on:T133 Product:T139
+E33	Action:T129 Acts-on:T130 Product:T133
+E34	Action:T132 Acts-on:T133 Product:T139 Product2:T135
 E35	Action:T137 Acts-on:T139
-E36	Action:T140 Acts-on:E35 Using:T143
-E37	Action:T144 Measure-Type-Link:T145
-R1	Prevents Arg1:E1 Arg2:E2
-R2	Coreference-Link Arg1:T2 Arg2:T7
+E36	Action:T140 Using:T143 Acts-on:T139
+E37	Action:T144 Measure-Type-Link:T145 Acts-on:T139
+R2	Coreference-Link Arg1:T7 Arg2:T2
 R3	Measure Arg1:T8 Arg2:T11
 R4	Enables Arg1:E4 Arg2:E3
 R5	Mod-Link Arg1:T11 Arg2:T10
@@ -204,7 +202,7 @@ R21	Or Arg1:T43 Arg2:T44
 R22	Mod-Link Arg1:E13 Arg2:T47
 R23	Setting Arg1:E14 Arg2:T50
 R24	Measure Arg1:T57 Arg2:T59
-R25	Coreference-Link Arg1:T57 Arg2:T67
+R25	Coreference-Link Arg1:T67 Arg2:T57
 R26	Mod-Link Arg1:T59 Arg2:T58
 R27	Setting Arg1:E16 Arg2:T62
 R28	Setting Arg1:E16 Arg2:T63
@@ -229,3 +227,125 @@ R46	Meronym Arg1:T127 Arg2:T128
 R47	Mod-Link Arg1:T139 Arg2:T138
 R48	Mod-Link Arg1:E36 Arg2:T141
 R49	Mod-Link Arg1:T143 Arg2:T142
+T146	Modifier 2922 2930	Optional
+R50	Mod-Link Arg1:T135 Arg2:T134	
+T147	Action 2957 2964	monitor
+E38	Action:T147 Measure-Type-Link:T136
+T148	Action 2933 2937	Take
+E39	Action:T148 Acts-on:T135
+R51	Mod-Link Arg1:E39 Arg2:T146	
+R52	Enables Arg1:E39 Arg2:E38	
+R53	Overlaps Arg1:E36 Arg2:E37	
+R54	Overlaps Arg1:E35 Arg2:E36	
+R56	Mod-Link Arg1:T54 Arg2:T53	
+R57	Measure Arg1:T52 Arg2:T51	
+T149	Action 875 885	do not add
+E40	Action:T149 Acts-on:T55 Site:T52
+R59	Setting Arg1:E40 Arg2:T54	
+T150	Action 965 974	resuspend
+E41	Action:T150 Acts-on:T151
+T151	Reagent 979 984	cells
+T152	Concentration 1000 1020	higher concentration
+R55	Measure Arg1:T151 Arg2:T152	
+T153	Action 1040 1043	add
+E42	Action:T153 Site:T155
+T154	Amount 1044 1049	50 μL
+T155	Reagent 1053 1061	antibody
+T156	Action 1064 1073	resuspend
+E43	Action:T156 Acts-on:T157 Product:T158
+T157	Reagent 1078 1083	cells
+T158	Reagent 1089 1108	final concentration
+T159	Concentration 1112 1130	2 x 108 cells / mL
+T160	Action 1146 1153	aliquot
+E44	Action:T160 Acts-on:T162
+T161	Amount 1154 1159	50 μL
+T162	Reagent 1163 1168	cells
+T163	Action 1173 1176	add
+E45	Action:T163 Acts-on:T165 Site:E44
+T164	Amount 1177 1182	50 μL
+T165	Reagent 1186 1194	antibody
+T166	Action 1197 1200	mix
+E46	Action:T166 Acts-on:E45
+T167	Modifier 1201 1205	well
+T168	Action 1210 1218	incubate
+E47	Action:T168 Site:T169 Acts-on:E46
+T169	Location 1222 1225	ice
+T170	Time 1230 1240	15 minutes
+T171	Action 1250 1254	keep
+E48	Action:T171 Measure-Type-Link:T172 Acts-on:E42 Acts-on2:E57 Acts-on3:E40 Product:T43
+T172	Measure-Type 1259 1271	total volume
+T173	Amount 1279 1285	100 μL
+R58	Setting Arg1:E48 Arg2:T173	
+R60	Measure Arg1:T162 Arg2:T161	
+R61	Measure Arg1:T165 Arg2:T164	
+R62	Mod-Link Arg1:E46 Arg2:T167	
+R63	Setting Arg1:E47 Arg2:T170	
+R64	Measure Arg1:T155 Arg2:T154	
+R65	Measure Arg1:T158 Arg2:T159	
+R66	Coreference-Link Arg1:T162 Arg2:T158	
+R69	Measure Arg1:T84 Arg2:T83	
+R70	Measure Arg1:T87 Arg2:T86	
+T174	Action 1757 1767	do not add
+E49	Action:T174 Acts-on2:T87 Site:T84
+T175	Amount 1828 1833	20 μL
+T176	Reagent 1837 1846	Nanobeads
+T177	Action 1849 1858	resuspend
+E50	Action:T177 Acts-on:T89
+R71	Setting Arg1:E50 Arg2:T91	
+R72	Measure Arg1:T176 Arg2:T175	
+R73	Mod-Link Arg1:T175 Arg2:T88	
+T90	Amount 945 950	20 μL
+T178	Reagent 954 962	antibody
+T179	Modifier 935 944	more than
+R74	Measure Arg1:T178 Arg2:T90	
+R75	Mod-Link Arg1:T90 Arg2:T179	
+R67	Enables Arg1:E47 Arg2:E41	
+R76	Or Arg1:E41 Arg2:E40	
+R77	Measure Arg1:T93 Arg2:T92	
+T180	Action 1924 1927	add
+E51	Action:T180 Acts-on:T93
+T181	Action 1949 1958	resuspend
+E52	Action:T181 Acts-on:T94 Site:T96
+R78	Measure Arg1:T96 Arg2:T95	
+T182	Action 1814 1817	add
+E53	Action:T182 Acts-on:T176
+T183	Modifier 2000 2006	Always
+T184	Action 2007 2011	keep
+E54	Action:T184 Measure-Type-Link:T186 Acts-on:E51 Acts-on2:E53 Acts-on3:E49 Product:T77
+T185	Modifier 2179 2187	Optional
+R79	Mod-Link Arg1:E26 Arg2:T185	
+R80	Enables Arg1:E26 Arg2:E28	
+R81	Overlaps Arg1:E29 Arg2:E27	
+R82	Coreference-Link Arg1:T117 Arg2:T112	
+R83	Coreference-Link Arg1:T118 Arg2:T113	
+T186	Measure-Type 2016 2028	total volume
+T187	Amount 2036 2042	100 μL
+T188	Modifier 2029 2035	around
+R84	Mod-Link Arg1:T187 Arg2:T188	
+R85	Mod-Link Arg1:E54 Arg2:T183	
+R86	Setting Arg1:E54 Arg2:T187	
+R87	Enables Arg1:E52 Arg2:E51	
+R88	Enables Arg1:E50 Arg2:E53	
+R89	Overlaps Arg1:E51 Arg2:E53	
+T189	Action 2486 2492	repeat
+E55	Action:T189 Using:T190 Acts-on:T191
+T190	Method 2497 2516	magnetic separation
+T191	Reagent 2525 2538	cell fraction
+T192	Action 2542 2550	increase
+E56	Action:T192 Acts-on:T193 Product:T126
+T193	Reagent 2555 2560	yield
+R90	Enables Arg1:E55 Arg2:E56	
+R91	Meronym Arg1:T126 Arg2:T127	
+R92	Meronym Arg1:T130 Arg2:T131	
+R93	Mod-Link Arg1:T86 Arg2:T85	
+R94	Coreference-Link Arg1:T16 Arg2:T8	
+R95	Coreference-Link Arg1:T57 Arg2:T28	
+R96	Coreference-Link Arg1:T96 Arg2:T67	
+R97	Coreference-Link Arg1:T98 Arg2:T96	
+R1	Overlaps Arg1:E1 Arg2:E2	
+R98	Meronym Arg1:T5 Arg2:T3	
+R99	Enables Arg1:E43 Arg2:E42	
+R68	Coreference-Link Arg1:T157 Arg2:T151	
+T194	Action 931 934	add
+E57	Action:T194 Acts-on:T178
+R100	Enables Arg1:E41 Arg2:E57	

@@ -64,34 +64,33 @@ T63	Device 1023 1038	membrane filter
 T64	Device 1042 1056	blotting paper
 T65	Action 1061 1067	drying
 T66	Action 1072 1077	cover
-T67	Seal 1097 1100	lid
 T68	Action 1154 1159	Store
 T69	Device 1160 1171	each filter
 T70	Modifier 1177 1194	separate labelled
 T71	Location 1195 1205	Petri dish
 T72	Action 1208 1213	Place
 T73	Device 1214 1229	membrane filter
-T74	Location 1230 1254	between separator sheets
+T74	Location 1238 1254	separator sheets
 T75	Action 1307 1311	Seal
 T76	Location 1312 1322	Petri dish
 T77	Seal 1328 1336	parafilm
 T78	Action 1339 1344	Store
 T79	Temperature 1348 1354	- 20°C
 E1	Action:T1 Acts-on:T3 Site:T4 Product:T5
-E2	Action:T8 
+E2	Action:T8 Acts-on:T5 Product:T27
 E3	Action:T11 Acts-on:T13 Acts-on2:T18 Site:T23
-E4	Action:T24 Site:E3 Acts-on:T27
-E5	Action:T29 
+E4	Action:T24 Site:E3 Acts-on:T27 Product:T46
+E5	Action:T29 Acts-on:T27
 E6	Action:T31 Acts-on:T33 Acts-on2:T38 Site:T43
-E7	Action:T44 Site:E6 Acts-on:T46
-E8	Action:T48 
+E7	Action:T44 Site:E6 Acts-on:T46 Product:T52
+E8	Action:T48 Acts-on:T46
 E9	Action:T50 Acts-on:T52 Using:T54
 E10	Action:T55 Acts-on:E9 Using:T58 Product:T60
 E11	Action:T59 Acts-on:T60 Using:T61 Product:T63
 E12	Action:T62 Acts-on:T63 Site:T64
 E13	Action:T65 
 E14	Action:T66 
-E15	Action:T68 Acts-on:T69 Site:T71
+E15	Action:T68 Acts-on:T69 Site:T71 Product:T73
 E16	Action:T72 Acts-on:T73 Site:T74 Product:T76
 E17	Action:T75 Acts-on:T76 Using:T77
 E18	Action:T78 Acts-on:E17
@@ -131,3 +130,14 @@ R33	Measure Arg1:T58 Arg2:T56
 R34	Mod-Link Arg1:T58 Arg2:T57
 R35	Mod-Link Arg1:T71 Arg2:T70
 R36	Setting Arg1:E18 Arg2:T79
+R37	Enables Arg1:E5 Arg2:E4	
+R38	Enables Arg1:E8 Arg2:E7	
+R39	Enables Arg1:E12 Arg2:E13	
+R40	Overlaps Arg1:E13 Arg2:E14	
+R41	Enables Arg1:E12 Arg2:E14	
+T67	Action 1139 1151	air - drying
+E19	Action:T67 Acts-on:E13 Acts-on2:E14 Product:T69
+T80	Device 1264 1285	GTTP membrane filters
+R42	Meronym Arg1:T74 Arg2:T80	
+T81	Modifier 1230 1237	between
+R43	Mod-Link Arg1:E16 Arg2:T81	

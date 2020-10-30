@@ -199,17 +199,17 @@ E12	Action:T63 Acts-on:T64 Using:T65 Product:T73
 E13	Action:T71 Acts-on:T72 Using:T75 Site:T76 Site2:T82 Product:T84
 E14	Action:T83 Acts-on:T84 Using:T87 Product:T89
 E15	Action:T88 Acts-on:T89 Product:T91
-E16	Action:T90 Acts-on:T91
-E17	Action:T92 Acts-on:T93 Site:T95
+E16	Action:T90 Acts-on:T91 Product:T93
+E17	Action:T92 Acts-on:T93 Site:T95 Product:T102
 E18	Action:T96 Product:T95 Using:T98 Site:T100
 E19	Action:T101 Acts-on:T102 Using:T104 Site:T106 Product:T109
 E20	Action:T108 Acts-on:T109 Using:T112 Product:T115
 E21	Action:T114 Acts-on:T115 Site:T116 Product:T122
 E22	Action:T121 Acts-on:T122 Product:T124
 E23	Action:T123 Acts-on:T124
-E24	Action:T126 
+E24	Action:T126 Acts-on:E23 Product:T129
 E25	Action:T127 Acts-on:T129 Using:T130
-E26	Action:T132 Acts-on:E25
+E26	Action:T132 Acts-on:E25 Product:T137
 E27	Action:T136 Acts-on:T137 Site:T139 Product:T148
 E28	Action:T141 Product:T140 Using:T143 Site:T145
 E29	Action:T146 Acts-on:T147 Using:T150 Site:T151 Site2:T158 Product:T162
@@ -306,3 +306,6 @@ R85	Or Arg1:T175 Arg2:T176
 R86	Setting Arg1:T183 Arg2:T184
 R87	Setting Arg1:T183 Arg2:T185
 R88	Setting Arg1:T183 Arg2:T186
+R89	Or Arg1:T75 Arg2:T79	
+R90	Or Arg1:T150 Arg2:T155	
+R91	Coreference-Link Arg1:T29 Arg2:T26	

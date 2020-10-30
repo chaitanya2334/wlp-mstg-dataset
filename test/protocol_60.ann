@@ -66,8 +66,7 @@ T65	Reagent 918 925	aliquot
 T66	Action 933 939	adding
 T67	Reagent 944 952	cocktail
 T68	Action 956 963	monitor
-T69	Measure-Type 964 970	purity
-T70	Measure-Type 975 980	yield
+T69	Measure-Type 964 980	purity and yield
 T71	Action 983 992	Resuspend
 T72	Reagent 997 1002	beads
 T73	Method 1006 1015	vortexing
@@ -130,51 +129,46 @@ T129	Numerical 1772 1775	two
 T130	Action 1793 1797	pool
 T131	Modifier 1802 1811	unlabeled
 T132	Reagent 1812 1821	fractions
-T133	Concentration 1966 1974	8 – 10 %
-T134	Concentration 2012 2019	2 – 5 %
-T135	Measure-Type 2049 2055	purity
-T136	Concentration 2069 2076	1 – 2 %
-E1	Action:T1 Product:T2 Acts-on:T3 Using:E2
+E1	Action:T1 Acts-on2:T2 Product:T8
 E2	Action:T5 Acts-on:T6
-E3	Action:T7 Acts-on:T8 Using:T9
+E3	Action:T7 Acts-on:T8 Using:T9 Product:T20
 E4	Action:T10 Acts-on:T9 Site:T14
 E5	Action:T15 Product:T9 Acts-on:T16 Site:T17
 E6	Action:T19 Acts-on:T20 Using:T22
-E7	Action:T23 Acts-on:T20
+E7	Action:T23 Acts-on:E6
 E8	Action:T26 Acts-on:E7 Site:T29
 E9	Action:T30 Acts-on:E8 Measure-Type-Link:T31 Product:T35
 E10	Action:T33 Acts-on:T35 Site:T38
 E11	Action:T39 Site:E10 Acts-on:T41
 E12	Action:T42 Acts-on:E11
-E13	Action:T44 Acts-on:E12 Site:T45
-E14	Action:T47 Measure-Type-Link:T48
-E15	Action:T50 Acts-on:T53
-E16	Action:T57 Site:T56
+E13	Action:T44 Acts-on:E12 Site:T45 Product:T49 Product2:T53
+E14	Action:T47 Measure-Type-Link:T48 Acts-on:T49 Product:T60
+E15	Action:T50 Acts-on:T53 Product:T60
+E16	Action:T57 Site:T56 Acts-on:T60 Product:T63 Product2:T65
 E17	Action:T61 Acts-on:T63
 E18	Action:T64 Acts-on:T65
-E19	Action:T66 Acts-on:T67
-E20	Action:T68 Using:E18 Using2:E19 Measure-Type-Link:T69 Measure-Type-Link2:T70
+E19	Action:T66 Acts-on:T67 Site:E18 Product:T98
+E20	Action:T68 Measure-Type-Link:T69
 E21	Action:T71 Acts-on:T72 Using:T73 Count:T75 Product:T78
 E22	Action:T76 Acts-on:T78
 E23	Action:T79 Acts-on:E22
 E24	Action:T81 Acts-on:E23
-E25	Action:T84 
-E26	Action:T89 
-E27	Action:T97 Acts-on:T98 Site:T100
-E28	Action:T101 Acts-on:T102
-E29	Action:T103 Acts-on:T104
-E30	Action:T105 Measure-Type-Link:T106
+E25	Action:T84 Site:T88 Acts-on:E24
+E26	Action:T89 Site:T92 Acts-on:E24
+E27	Action:T97 Acts-on:T98 Site:T100 Product:T102 Site2:E39
+E28	Action:T101 Acts-on:T102 Product:T104
+E29	Action:T103 Acts-on:T104 Product:T108 Product2:T110
+E30	Action:T105 Measure-Type-Link:T106 Product:T113
 E31	Action:T107 Acts-on:T108
 E32	Action:T109 Acts-on:T110 Using:T111
-E33	Action:T112 Acts-on:T113 Site:T114
-E34	Action:T116 Acts-on:T118
-E35	Action:T117 Acts-on:T118
-E36	Action:T121 Acts-on:T123
-E37	Action:T124 Using:T125 Using2:T127 Count:T129
+E33	Action:T112 Acts-on:T113 Site:T114 Product:T118
+E34	Action:T116 Acts-on:T118 Product:T119
+E35	Action:T117 Acts-on:T118 Product:T119
+E36	Action:T121 Acts-on:T123 Site:T119
+E37	Action:T124 Using:T125 Using2:T127 Count:T129 Acts-on:E36 Product:T132
 E38	Action:T130 Acts-on:T132
 R1	Mod-Link Arg1:T3 Arg2:T4
 R2	Measure Arg1:T9 Arg2:T11
-R3	Coreference-Link Arg1:T9 Arg2:T16
 R4	Measure Arg1:T14 Arg2:T12
 R5	Measure Arg1:T14 Arg2:T13
 R6	Setting Arg1:E5 Arg2:T18
@@ -208,10 +202,33 @@ R33	Setting Arg1:E26 Arg2:T90
 R34	Measure Arg1:T92 Arg2:T91
 R35	Measure Arg1:T94 Arg2:T93
 R36	Measure Arg1:T96 Arg2:T95
-R37	Coreference-Link Arg1:T102 Arg2:T108
 R38	Setting Arg1:E33 Arg2:T115
 R39	Mod-Link Arg1:T119 Arg2:T120
 R40	Measure Arg1:T123 Arg2:T122
 R41	Mod-Link Arg1:T127 Arg2:T126
 R42	Or Arg1:T129 Arg2:T128
 R43	Mod-Link Arg1:T132 Arg2:T131
+R44	Overlaps Arg1:E1 Arg2:E2	
+R45	Meronym Arg1:T2 Arg2:T3	
+R46	Enables Arg1:E4 Arg2:E3	
+R3	Coreference-Link Arg1:T29 Arg2:T9	
+T137	Modifier 741 745	more
+R47	Mod-Link Arg1:T49 Arg2:T137	
+R48	Overlaps Arg1:E15 Arg2:E14	
+T138	Modifier 876 884	Optional
+R49	Mod-Link Arg1:E17 Arg2:T138	
+R50	Or Arg1:E17 Arg2:E18	
+R51	Enables Arg1:E19 Arg2:E20	
+R52	Coreference-Link Arg1:T100 Arg2:T29	
+R53	Overlaps Arg1:E26 Arg2:E25	
+T70	Action 1291 1294	use
+E39	Action:T70 Using:T94 Site:T96 Acts-on:E24
+T139	Amount 1295 1312	indicated volumes
+R54	Setting Arg1:E39 Arg2:T139	
+R55	Overlaps Arg1:E39 Arg2:E26	
+R37	Enables Arg1:E31 Arg2:E30	
+R56	Meronym Arg1:T108 Arg2:T110	
+R57	Enables Arg1:E32 Arg2:E31	
+R58	Overlaps Arg1:E34 Arg2:E35	
+R59	Mod-Link Arg1:T55 Arg2:T54	
+R60	Measure Arg1:T100 Arg2:T99	

@@ -26,7 +26,7 @@ T25	Action 661 666	shake
 T26	Action 670 678	emulsify
 T27	Action 681 691	Centrifuge
 T28	Method 698 704	step 2
-T29	Action 708 723	separate phases
+T29	Action 708 716	separate
 T30	Action 726 734	Transfer
 T31	Reagent 739 752	aqueous phase
 T32	Modifier 768 771	new
@@ -101,36 +101,36 @@ T100	Temperature 1698 1703	–20°C
 T101	Time 1708 1728	long periods of time
 T102	Temperature 1738 1743	–80°C
 T103	Time 1744 1756	indefinitely
-E1	Action:T5 Acts-on:T1 Site:T4 Acts-on2:T7
+E1	Action:T5 Acts-on2:T7 Site:T1
 E2	Action:T8 Acts-on:E1
 E3	Action:T9 
 E4	Action:T10 Product:T13 Product2:T14 Acts-on:E3
 E5	Action:T15 Acts-on:T16 Site:T18 Product:T24
-E6	Action:T19 Using:T20
+E6	Action:T19 Using:T20 Acts-on:T16
 E7	Action:T21 Acts-on:T23 Acts-on2:T24
-E8	Action:T25 
+E8	Action:T25 Acts-on:E7
 E9	Action:T26 Acts-on:E7
-E10	Action:T27 Acts-on:E8 Using:T28 Product:T31
-E11	Action:T29 
+E10	Action:T27 Using:T28 Acts-on:E9
+E11	Action:T29 Acts-on:T108 Product:T31
 E12	Action:T30 Acts-on:T31 Site:T33
 E13	Action:T34 Site:E12 Acts-on:T36
 E14	Action:T37 Site:E13 Acts-on:T39 Product:T41
 E15	Action:T40 Acts-on:T41
-E16	Action:T42 
+E16	Action:T42 Acts-on:T41
 E17	Action:T43 
-E18	Action:T44 Acts-on:T46 Product:T48
+E18	Action:T44 Acts-on:T46 Product:T48 Site:E17
 E19	Action:T47 Acts-on:T48
-E20	Action:T49 
+E20	Action:T49 Product:T51
 E21	Action:T50 Acts-on:T51 Site:T52
-E22	Action:T54 Acts-on:E21 Product:T58
-E23	Action:T57 Site:E22 Acts-on:T58
+E22	Action:T54 Acts-on:E21 Product:T58 Product2:T60
+E23	Action:T57 Acts-on:T58
 E24	Action:T59 Acts-on:T60
-E25	Action:T61 Acts-on:T65
-E26	Action:T66 Acts-on:E25 Product:T71
-E27	Action:T69 Product:T74
-E28	Action:T70 
-E29	Action:T72 
-E30	Action:T76 Acts-on:T74
+E25	Action:T61 Acts-on:T65 Site:E24 Site2:E36 Site3:E23
+E26	Action:T66 Acts-on:E25 Product:T71 Product2:T73
+E27	Action:T69 Product:T74 Acts-on:T71 Product2:T75
+E28	Action:T70 Acts-on:T71 Product:T74 Product2:T75
+E29	Action:T72 Acts-on:T73 Product:T74 Product2:T75
+E30	Action:T76 Acts-on:T74 Product:T88
 E31	Action:T77 Using:T78 Using2:T79
 E32	Action:T80 Site:T82
 E33	Action:T86 Acts-on:T88 Site:T90 Product:T96
@@ -140,7 +140,7 @@ R2	Measure Arg1:T4 Arg2:T3
 R3	Measure Arg1:T7 Arg2:T6
 R4	Setting Arg1:E4 Arg2:T11
 R5	Setting Arg1:E4 Arg2:T12
-R6	Coreference-Link Arg1:T14 Arg2:T16
+R6	Coreference-Link Arg1:T16 Arg2:T14
 R7	Mod-Link Arg1:T18 Arg2:T17
 R8	Measure Arg1:T23 Arg2:T22
 R9	Mod-Link Arg1:T33 Arg2:T32
@@ -174,3 +174,34 @@ R36	Or Arg1:T99 Arg2:T101
 R37	Or Arg1:T100 Arg2:T102
 R38	Or Arg1:T101 Arg2:T103
 R39	Enables Arg1:E2 Arg2:E3	
+R40	Meronym Arg1:T1 Arg2:T4	
+R41	Enables Arg1:E6 Arg2:E5	
+T104	Modifier 405 412	careful
+T105	Action 416 421	avoid
+E35	Action:T105 Acts-on:T106
+T106	Reagent 422 430	material
+T107	Reagent 438 447	interface
+R43	Meronym Arg1:T106 Arg2:T107	
+R44	Mod-Link Arg1:E35 Arg2:T104	
+R45	Overlaps Arg1:E35 Arg2:E6	
+R42	Coreference-Link Arg1:T106 Arg2:T13	
+R46	Enables Arg1:E8 Arg2:E9	
+R47	Enables Arg1:E10 Arg2:E11	
+T108	Reagent 717 723	phases
+R48	Enables Arg1:E16 Arg2:E17	
+R49	Enables Arg1:E19 Arg2:E20	
+T109	Action 1035 1041	decant
+E36	Action:T109 Acts-on:T58
+R50	Or Arg1:E23 Arg2:E36	
+T110	Modifier 1066 1073	careful
+R51	Mod-Link Arg1:E24 Arg2:T110	
+R52	Overlaps Arg1:E36 Arg2:E24	
+R53	Overlaps Arg1:E23 Arg2:E24	
+R54	Setting Arg1:E26 Arg2:T67	
+R55	Setting Arg1:E26 Arg2:T68	
+T111	Modifier 1239 1246	careful
+R56	Mod-Link Arg1:E29 Arg2:T111	
+R57	Overlaps Arg1:E28 Arg2:E29	
+R58	Overlaps Arg1:E27 Arg2:E29	
+R59	Enables Arg1:E31 Arg2:E30	
+R60	Or Arg1:E32 Arg2:E31	

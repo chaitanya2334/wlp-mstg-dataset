@@ -9,7 +9,7 @@ T8	Amount 141 147	0.2 µm
 T9	Amount 151 158	0.45 µm
 T10	Device 159 190	low protein binding PVDF filter
 T11	Action 193 201	Dispense
-T12	Reagent 206 228	filtered water samples
+T12	Reagent 215 228	water samples
 T13	Amount 241 246	0.5 L
 T14	Modifier 250 254	more
 T15	Location 262 277	culture vessels
@@ -18,16 +18,16 @@ T17	Modifier 297 303	larger
 T18	Location 304 321	Erlenmeyer flasks
 T19	Action 324 327	Add
 T20	Reagent 328 337	nutrients
-T21	Mention 345 359	filtered water
+T21	Reagent 354 359	water
 T22	Action 363 377	support growth
 T23	Reagent 385 397	target cells
 T24	Action 400 404	Seed
-T25	Mention 409 423	filtered water
+T25	Reagent 418 423	water
 T26	Concentration 429 432	1 %
 T27	Concentration 436 440	10 %
 T28	Reagent 450 462	host culture
 T29	Action 480 487	replace
-T30	Reagent 492 521	filtered environmental sample
+T30	Reagent 501 521	environmental sample
 T31	Modifier 527 539	virus - free
 T32	Size 542 549	0.02 µm
 T33	Modifier 550 558	filtered
@@ -39,8 +39,8 @@ T38	Temperature 620 631	temperature
 T39	Generic-Measure 636 652	light conditions
 T40	Modifier 653 664	appropriate
 T41	Reagent 673 686	cyanobacteria
-T42	Action 691 705	look for signs
-T43	Reagent 709 714	lysis
+T42	Action 691 695	look
+T43	Reagent 700 714	signs of lysis
 T44	Action 717 723	Remove
 T45	Reagent 727 734	aliquot
 T46	Reagent 742 760	enrichment culture
@@ -67,20 +67,20 @@ T66	Reagent 1078 1093	liquid bioassay
 T67	Action 1097 1105	repeated
 T68	Reagent 1116 1136	putative lytic agent
 E1	Action:T1 Acts-on:T4 Using:T5 Product:T7
-E2	Action:T6 Acts-on:T7 Using:T10 Product:T12
-E3	Action:T11 Acts-on:T12 Site:T15 Site2:T18
+E2	Action:T6 Acts-on:T7 Using:T10 Product:T12 Product2:T30
+E3	Action:T11 Acts-on:T12 Site:T15 Product:T21
 E4	Action:T19 Acts-on:T20 Site:T21 Product:T25
-E5	Action:T22 Using:E4 Product:T23
-E6	Action:T24 Site:T25 Acts-on:T28 Product:T37
-E7	Action:T29 Acts-on:T30 Using:T35
+E5	Action:T22 Acts-on:T23
+E6	Action:T24 Product:T37 Acts-on2:T25 Using:T28
+E7	Action:T29 Acts-on:T30 Using:T35 Product:T37
 E8	Action:T36 Acts-on:T37
-E9	Action:T42 Acts-on:E8 Acts-on2:T43
-E10	Action:T44 Acts-on:T45
-E11	Action:T47 Acts-on:T48 Using:T49
+E9	Action:T42 Acts-on2:T43 Site:E8 Product:T45 Product2:T46
+E10	Action:T44 Acts-on:T45 Product:T48
+E11	Action:T47 Acts-on:T48 Using:T49 Product:T53
 E12	Action:T52 Acts-on:T53 Using:T56 Product:T58
-E13	Action:T57 Acts-on:T58
-E14	Action:T60 Acts-on:T61 Using:T62
-E15	Action:T64 Acts-on:T65 Using:E16
+E13	Action:T57 Acts-on:T58 Product:T61
+E14	Action:T60 Acts-on:T61 Using:T62 Product:T65
+E15	Action:T64 Acts-on:T65
 E16	Action:T67 Acts-on:T66 Using:T68
 R1	Mod-Link Arg1:T3 Arg2:T2
 R2	Measure Arg1:T4 Arg2:T3
@@ -101,7 +101,6 @@ R16	Setting Arg1:E8 Arg2:T38
 R17	Setting Arg1:E8 Arg2:T39
 R18	Mod-Link Arg1:T38 Arg2:T40
 R19	Mod-Link Arg1:T39 Arg2:T40
-R20	Measure Arg1:T41 Arg2:T39
 R21	Meronym Arg1:T45 Arg2:T46
 R22	Setting Arg1:E11 Arg2:T50
 R23	Setting Arg1:E11 Arg2:T51
@@ -109,3 +108,17 @@ R24	Or Arg1:T55 Arg2:T54
 R25	Setting Arg1:T56 Arg2:T55
 R26	Setting Arg1:E13 Arg2:T59
 R27	Or Arg1:T62 Arg2:T63
+R28	Enables Arg1:E15 Arg2:E16	
+T69	Modifier 206 214	filtered
+R29	Mod-Link Arg1:T12 Arg2:T69	
+R30	Enables Arg1:E5 Arg2:E4	
+T70	Modifier 345 353	filtered
+R31	Mod-Link Arg1:T21 Arg2:T70	
+R32	Meronym Arg1:T23 Arg2:T21	
+T71	Modifier 409 417	filtered
+R33	Mod-Link Arg1:T25 Arg2:T71	
+T72	Modifier 492 500	filtered
+R34	Mod-Link Arg1:T30 Arg2:T72	
+T73	Modifier 470 477	control
+R35	Mod-Link Arg1:E7 Arg2:T73	
+R20	Meronym Arg1:T41 Arg2:T37	

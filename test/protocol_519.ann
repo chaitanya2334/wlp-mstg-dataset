@@ -136,9 +136,9 @@ E13	Action:T39 Acts-on:T40 Count:T41 Using:T42
 E14	Action:T44 Acts-on:E13 Product:T48
 E15	Action:T47 Acts-on:T48 Using:T51
 E16	Action:T52 Acts-on:E15 Product:T81
-E17	Action:T55 Count:T56 Product:T58 Site:T60 Product2:T67
+E17	Action:T55 Count:T56 Site:T60 Acts-on:T58 Product:T67
 E18	Action:T61 Acts-on:T63 Site:T67 Product:T78
-E19	Action:T68 Acts-on:T70 Site:T71
+E19	Action:T68 Acts-on:T70 Site:T71 Product:T76
 E20	Action:T74 Acts-on:T76 Site:T78 Using:T79 Product:T84
 E21	Action:T80 Acts-on:T81 Site:T82 Using:T85
 E22	Action:T86 Acts-on:E21 Site:T87 Using:T90 Product:T93
@@ -150,7 +150,7 @@ E27	Action:T106 Acts-on:E26 Site:T107 Using:T111 Product:T113
 E28	Action:T112 Acts-on:T113 Product:T116
 E29	Action:T115 Using:T114 Acts-on:T116 Using2:T119
 E30	Action:T122 Acts-on:E29 Using:T121
-R1	Coreference-Link Arg1:T2 Arg2:T5
+R1	Coreference-Link Arg1:T5 Arg2:T2
 R2	Setting Arg1:T8 Arg2:T6
 R3	Setting Arg1:T8 Arg2:T7
 R4	Measure Arg1:T12 Arg2:T11
@@ -166,7 +166,7 @@ R13	Setting Arg1:E10 Arg2:T33
 R14	Setting Arg1:E10 Arg2:T34
 R15	Setting Arg1:E10 Arg2:T35
 R16	Measure Arg1:T42 Arg2:T43
-R17	Coreference-Link Arg1:T42 Arg2:T51
+R17	Coreference-Link Arg1:T51 Arg2:T42
 R18	Setting Arg1:E14 Arg2:T45
 R19	Setting Arg1:E14 Arg2:T46
 R20	Setting Arg1:E15 Arg2:T50
@@ -198,3 +198,6 @@ R45	Setting Arg1:E27 Arg2:T110
 R46	Setting Arg1:E29 Arg2:T118
 R47	Measure Arg1:T119 Arg2:T117
 R48	Or Arg1:T119 Arg2:T120
+T123	Modifier 1216 1222	gently
+R49	Mod-Link Arg1:E20 Arg2:T123	
+R50	Overlaps Arg1:E12 Arg2:E13	

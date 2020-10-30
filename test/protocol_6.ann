@@ -80,31 +80,31 @@ T79	Action 1505 1508	mix
 T80	Action 1511 1516	Store
 T81	Reagent 1521 1524	DNA
 T82	Temperature 1528 1535	2 - 8°C
-T83	Reagent 1540 1556	short - term use
+T83	Modifier 1540 1556	short - term use
 T84	Temperature 1561 1575	- 20° to - 80°
-T85	Reagent 1580 1599	long - term storage
+T85	Modifier 1580 1599	long - term storage
 E1	Action:T1 Acts-on:T2
 E2	Action:T4 Acts-on:E1
 E3	Action:T7 Acts-on:T10 Site:T13
-E4	Action:T14 Site:T13 Acts-on:T15
-E5	Action:T16 Acts-on:T17 Acts-on2:T18 Using:T21
-E6	Action:T24 Acts-on:T27 Site:T28
-E7	Action:T29 Acts-on:E6 Site:T32
-E8	Action:T33 Site:E7 Acts-on:T35
-E9	Action:T38 Acts-on:T36 Acts-on2:T39 Using:T40
+E4	Action:T14 Acts-on:T15 Site:E3 Product:T20
+E5	Action:T16 Acts-on:T17 Acts-on2:T18 Using:T21 Product:T28
+E6	Action:T24 Acts-on:T27
+E7	Action:T29 Acts-on:E6 Site:T32 Product:T36
+E8	Action:T33 Acts-on:T35 Site:E9
+E9	Action:T38 Acts-on:T36 Using:T40 Site:T39
 E10	Action:T42 Site:E8 Acts-on:T43 Product:T45
 E11	Action:T44 Acts-on:T45 Site:T46
-E12	Action:T47 Site:E11 Acts-on:T48
-E13	Action:T49 Acts-on:E12
-E14	Action:T52 Acts-on:T53 Using:T55
-E15	Action:T58 Using:T57 Acts-on:T59 Site:T60
-E16	Action:T62 Acts-on:T63 Site:T64
+E12	Action:T47 Site:E11 Acts-on:T48 Product:T53
+E13	Action:T49 Acts-on:E12 Product:T59
+E14	Action:T52 Acts-on:T53 Using:T55 Product:T59
+E15	Action:T58 Using:T57 Acts-on:T59 Site:T60 Product:T63
+E16	Action:T62 Acts-on:T63 Site:T64 Product:T67
 E17	Action:T66 Acts-on:T67 Site:T68
 E18	Action:T72 Acts-on:E17
-E19	Action:T73 Using:E18 Acts-on:T74
-E20	Action:T75 Site:E18 Acts-on:T77
+E19	Action:T73 Acts-on:T74
+E20	Action:T75 Acts-on:T77 Site:E19
 E21	Action:T79 Acts-on:E20 Using:T78 Product:T81
-E22	Action:T80 Acts-on:T81 Product:T83
+E22	Action:T80 Acts-on:T81
 R1	Setting Arg1:T2 Arg2:T3
 R2	Setting Arg1:E2 Arg2:T5
 R3	Measure Arg1:T10 Arg2:T8
@@ -137,4 +137,7 @@ R29	Mod-Link Arg1:E18 Arg2:T71
 R30	Measure Arg1:T77 Arg2:T76
 R31	Setting Arg1:E22 Arg2:T82
 R32	Or Arg1:T82 Arg2:T84
-R33	Or Arg1:T83 Arg2:T85
+R34	Meronym Arg1:T27 Arg2:T28	
+R35	Enables Arg1:E18 Arg2:E19	
+R33	Mod-Link Arg1:T82 Arg2:T83	
+R36	Mod-Link Arg1:T84 Arg2:T85	

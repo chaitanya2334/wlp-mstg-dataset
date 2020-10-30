@@ -62,13 +62,13 @@ T61	Location 1120 1126	column
 T62	Location 1134 1149	collection tube
 T63	Action 1154 1157	add
 T64	Amount 1158 1164	200 μl
-T65	Reagent 1168 1187	Plasmid Wash Buffer
+T65	Reagent 1168 1189	Plasmid Wash Buffer 1
 T66	Action 1192 1202	Centrifuge
 T67	Time 1207 1215	1 minute
 T68	Speed 1219 1229	16,000 x g
 T69	Action 1276 1279	Add
 T70	Amount 1280 1286	400 μl
-T71	Reagent 1290 1309	Plasmid Wash Buffer
+T71	Reagent 1290 1311	Plasmid Wash Buffer 2
 T72	Action 1316 1326	centrifuge
 T73	Speed 1330 1340	16,000 x g
 T74	Time 1345 1353	1 minute
@@ -98,36 +98,36 @@ T97	Action 1758 1763	elute
 T98	Reagent 1768 1771	DNA
 E1	Action:T1 Acts-on:T3
 E2	Action:T4 Acts-on:T3 Product:T8
-E3	Action:T7 Site:E2 Acts-on:T8 Product:T10
+E3	Action:T7 Acts-on:T8 Product:T10
 E4	Action:T9 Acts-on:T10 Site:T12 Product:T15
-E5	Action:T13 
-E6	Action:T14 
+E5	Action:T13 Acts-on:T15
+E6	Action:T14 Acts-on:T15
 E7	Action:T17 Acts-on:T15
-E8	Action:T18 Acts-on:T20 Product:T23
+E8	Action:T18 Acts-on:T20 Product:T23 Site:E7
 E9	Action:T22 Acts-on:T23 Count:T24
 E10	Action:T25 Acts-on:E9
-E11	Action:T28 
-E12	Action:T29 Acts-on:T31 Product:T34
+E11	Action:T28 Acts-on:E10
+E12	Action:T29 Acts-on:T31 Product:T34 Site:E11
 E13	Action:T33 Acts-on:T34
 E14	Action:T35 Acts-on:E13
-E15	Action:T38 
-E16	Action:T39 Acts-on:T40
-E17	Action:T46 Acts-on:T43 Product:T53
-E18	Action:T49 Acts-on:T48 Using:T50
+E15	Action:T38 Acts-on:E14 Product:T40
+E16	Action:T39 Acts-on:T40 Product:T48
+E17	Action:T46 Acts-on:T43
+E18	Action:T49 Acts-on:T48 Using:T50 Product:T53
 E19	Action:T52 Acts-on:T53 Site:T54
 E20	Action:T55 Acts-on:E19 Product:T59
-E21	Action:T58 Site:E20 Acts-on:T59 Product:T61
+E21	Action:T58 Acts-on:T59 Product:T61
 E22	Action:T60 Acts-on:T61 Site:T62
 E23	Action:T63 Site:E22 Acts-on:T65
-E24	Action:T66 Acts-on:E23
-E25	Action:T69 Site:E24 Acts-on:T71
+E24	Action:T66 Acts-on:E23 Product:T100
+E25	Action:T69 Acts-on:T71 Site:E34
 E26	Action:T72 Acts-on:E25 Product:T76
 E27	Action:T75 Acts-on:T76 Site:T79 Product:T81
 E28	Action:T80 Acts-on:T81 Product:T87
 E29	Action:T83 Acts-on:T85 Site:T86
 E30	Action:T88 Acts-on:E29
-E31	Action:T90 
-E32	Action:T93 Site:E30 Acts-on:T94
+E31	Action:T90 Acts-on:E30
+E32	Action:T93 Acts-on:T94
 E33	Action:T97 Using:T95 Acts-on:T98
 R1	Measure Arg1:T3 Arg2:T2
 R2	Setting Arg1:E2 Arg2:T5
@@ -168,3 +168,13 @@ R36	Setting Arg1:E31 Arg2:T92
 R37	Or Arg1:E32 Arg2:E33
 R38	Coreference-Link Arg1:T94 Arg2:T98
 R39	Measure Arg1:T95 Arg2:T96
+R40	Enables Arg1:E2 Arg2:E1	
+R41	Enables Arg1:E6 Arg2:E7	
+R42	Enables Arg1:E5 Arg2:E7	
+R43	Enables Arg1:E17 Arg2:E18	
+T99	Action 1232 1242	Discarding
+E34	Action:T99 Acts-on:T100
+T100	Reagent 1247 1261	flow - through
+T101	Modifier 1265 1273	optional
+R44	Mod-Link Arg1:E34 Arg2:T101	
+R45	Enables Arg1:E31 Arg2:E32	

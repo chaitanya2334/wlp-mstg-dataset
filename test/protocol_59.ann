@@ -46,7 +46,7 @@ T45	Concentration 650 655	10 mM
 T46	Reagent 656 661	MgCl2
 T47	Action 664 672	Transfer
 T48	Amount 673 679	350 µL
-T49	Reagent 687 704	resuspended virus
+T49	Reagent 699 704	virus
 T50	Amount 708 714	1.5 mL
 T51	Location 715 742	screw - cap microfuge tubes
 T52	Action 747 753	adjust
@@ -187,15 +187,15 @@ T186	Reagent 2303 2307	DNAs
 T187	Temperature 2311 2314	4°C
 E1	Action:T1 Acts-on:T3 Using:T5 Product:T7
 E2	Action:T6 Acts-on:T7 Using:T10 Using2:T11 Product:T14
-E3	Action:T12 Acts-on:T14 Site:T15 Product:T20
+E3	Action:T12 Acts-on:T14 Site:T15 Product:T20 Product2:T22 Product3:T23
 E4	Action:T19 Acts-on:T20 Product:T28
 E5	Action:T21 Acts-on:T22
 E6	Action:T24 Acts-on:T26 Site:T28 Product:T29
 E7	Action:T31 Acts-on:T32 Using:T33 Product:T38
-E8	Action:T37 Site:E7 Acts-on:T38 Product:T40
+E8	Action:T37 Acts-on:T38 Product:T40
 E9	Action:T39 Acts-on:T40 Using:T43 Using2:T46 Product:T49
 E10	Action:T47 Acts-on:T49 Site:T51
-E11	Action:T52 Measure-Type-Link:T53 Using:T56 Using2:T59
+E11	Action:T52 Measure-Type-Link:T53 Using:T56 Using2:T59 Acts-on:E10
 E12	Action:T60 Site:E11 Acts-on:T62
 E13	Action:T63 Acts-on:E12
 E14	Action:T64 Acts-on:E13 Product:T72
@@ -212,25 +212,25 @@ E24	Action:T99 Acts-on:T100 Site:T102 Product:T107
 E25	Action:T103 Acts-on:T105 Site:T107
 E26	Action:T108 Acts-on:E25
 E27	Action:T109 
-E28	Action:T110 Using:T113 Product:T115
+E28	Action:T110 Using:T113 Product:T115 Acts-on:E26
 E29	Action:T114 Acts-on:T115 Site:T117
-E30	Action:T118 Using:E31 Product:T123
-E31	Action:T120 Acts-on:T119 Count:T121
+E30	Action:T118 Product:T123
+E31	Action:T120 Acts-on:T119 Count:T121 Acts-on2:E29
 E32	Action:T122 Acts-on:T123 Site:T125 Product:T131
-E33	Action:T126 Acts-on:T129 Site:T131
-E34	Action:T132 Site:E33 Product:T133 Acts-on:T136
+E33	Action:T126 Acts-on:T129 Site:T131 Product:T133
+E34	Action:T132 Using:T136 Acts-on:T133
 E35	Action:T137 Acts-on:E34
 E36	Action:T139 Acts-on:E35 Product:T143
-E37	Action:T142 Acts-on:T143 Using:T144 Product:T150
-E38	Action:T147 Acts-on:T148
-E39	Action:T149 Site:E37 Acts-on:T150 Product:T152
+E37	Action:T142 Acts-on:T143 Using:T144
+E38	Action:T147 Acts-on:T148 Product:T150
+E39	Action:T149 Acts-on:T150 Product:T152
 E40	Action:T151 Acts-on:T152 Using:T156 Site:T157 Product:T161
 E41	Action:T160 Acts-on:T161 Using:T164
-E42	Action:T167 Acts-on:T168
-E43	Action:T169 Acts-on:T170 Site:T174
+E42	Action:T167 Acts-on:T168 Product:T170
+E43	Action:T169 Acts-on:T170 Using:T174
 E44	Action:T175 Acts-on:E43 Using:T176 Product:T180
 E45	Action:T179 Acts-on:T180 Site:T182 Product:T184
-E46	Action:T183 Acts-on:T184
+E46	Action:T183 Acts-on:T184 Product:T186
 E47	Action:T185 Acts-on:T186
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T5 Arg2:T4
@@ -307,3 +307,13 @@ R72	Setting Arg1:E44 Arg2:T177
 R73	Setting Arg1:E44 Arg2:T178
 R74	Mod-Link Arg1:T182 Arg2:T181
 R75	Setting Arg1:E47 Arg2:T187
+R76	Coreference-Link Arg1:T32 Arg2:T29	
+T188	Modifier 687 698	resuspended
+R77	Mod-Link Arg1:T49 Arg2:T188	
+R78	Enables Arg1:E22 Arg2:E21	
+R79	Enables Arg1:E27 Arg2:E26	
+R80	Enables Arg1:E31 Arg2:E30	
+R81	Enables Arg1:E37 Arg2:E38	
+R82	Meronym Arg1:T148 Arg2:T143	
+R83	Enables Arg1:E41 Arg2:E42	
+R84	Meronym Arg1:T168 Arg2:T161	
