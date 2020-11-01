@@ -25,11 +25,11 @@ T24	Modifier 420 428	directly
 T25	Method 436 449	ligation step
 T26	Reagent 460 478	Quick Ligation Kit
 T27	Reagent 498 520	standard T4 DNA Ligase
-E1	Action:T1 Acts-on:T2 Site:T4 Product:T5
-E2	Action:T7 Acts-on:T6
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T5 Product3:T10
+E2	Action:T7 Acts-on:T5 Product:T18
 E3	Action:T13 Acts-on:T11 Acts-on2:T12
 E4	Action:T17 Acts-on:T18 Using:T19
-E5	Action:T20 
+E5	Action:T20 Acts-on:E2
 E6	Action:T23 Acts-on:E5 Using:T25 Using2:T26
 R1	Mod-Link Arg1:T4 Arg2:T3
 R2	Setting Arg1:E2 Arg2:T8
@@ -42,3 +42,8 @@ R8	Setting Arg1:E5 Arg2:T21
 R9	Setting Arg1:E5 Arg2:T22
 R10	Mod-Link Arg1:E6 Arg2:T24
 R11	Or Arg1:T26 Arg2:T27
+R12	Meronym Arg1:T6 Arg2:T5	
+R13	Meronym Arg1:T11 Arg2:T10	
+R14	Meronym Arg1:T12 Arg2:T10	
+R15	Or Arg1:T12 Arg2:T11	
+R16	Enables Arg1:E5 Arg2:E4	

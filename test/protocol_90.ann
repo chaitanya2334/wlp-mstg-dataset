@@ -92,7 +92,7 @@ E6	Action:T25 Acts-on:E5 Site:T26
 E7	Action:T28 Acts-on:E6 Product:T32
 E8	Action:T31 Acts-on:T32 Site:T34
 E9	Action:T35 Acts-on:T37
-E10	Action:T38 Acts-on:T40
+E10	Action:T38 Acts-on:T40 Site:E8
 E11	Action:T42 Acts-on:E10
 E12	Action:T45 Site:E11 Acts-on:T48 Product:T51
 E13	Action:T49 Product:T48
@@ -102,7 +102,7 @@ E16	Action:T59 Acts-on:T60
 E17	Action:T61 Site:E16 Acts-on:T64
 E18	Action:T65 Acts-on:E17 Product:T69
 E19	Action:T68 Acts-on:T69
-E20	Action:T70 Product:T73
+E20	Action:T70 Product:T73 Acts-on:E19
 E21	Action:T72 Acts-on:T73 Using:T76 Product:T78
 E22	Action:T77 Acts-on:T78 Site:T80
 R1	Mod-Link Arg1:T3 Arg2:T2
@@ -146,3 +146,6 @@ R38	Meronym Arg1:T82 Arg2:T80
 R39	Measure Arg1:T82 Arg2:T81
 R40	Meronym Arg1:T85 Arg2:T80
 R41	Measure Arg1:T85 Arg2:T84
+R42	Enables Arg1:E9 Arg2:E8	
+R43	Enables Arg1:E19 Arg2:E20	
+R44	Measure Arg1:T82 Arg2:T83	

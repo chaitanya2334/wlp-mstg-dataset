@@ -1,5 +1,5 @@
 T1	Action 42 49	Prepare
-T2	Reagent 50 61	base plates
+T2	Location 50 61	base plates
 T3	Action 62 69	Prepare
 T4	Reagent 70 88	top agar / agarose
 T5	Action 91 98	Prepare
@@ -100,37 +100,37 @@ T99	Reagent 1938 1945	plaques
 E1	Action:T1 Product:T2
 E2	Action:T3 Product:T4
 E3	Action:T5 Product:T6
-E4	Action:T7 Product:T8 Using:E5
+E4	Action:T7 Product:T8
 E5	Action:T10 Acts-on:T9 Using:T11
-E6	Action:T12 Acts-on:T14
+E6	Action:T12 Acts-on:T14 Site:T100 Using:T102
 E7	Action:T15 Acts-on:T16
 E8	Action:T20 Acts-on:E6
 E9	Action:T22 Acts-on:T23 Site:T24 Product:T27
 E10	Action:T26 Acts-on:T27 Site:T29 Product:T32
 E11	Action:T31 Acts-on:T32 Product:T35
-E12	Action:T33 Acts-on:T35 Site:T36 Product:T40
+E12	Action:T33 Acts-on:T35 Site:T36 Product:T40 Product2:T42
 E13	Action:T39 Acts-on:T40
-E14	Action:T41 Using:E13 Acts-on:T42 Site:T44
-E15	Action:T46 Acts-on:T45
+E14	Action:T41 Acts-on:T42 Site:T44
+E15	Action:T46 Site:T45 Acts-on:E14 Product:T54
 E16	Action:T48 Product:T49
-E17	Action:T51 Using:T49 Measure-Type-Link:T52
+E17	Action:T51 Measure-Type-Link:T52 Acts-on:T49
 E18	Action:T53 Acts-on:T54 Using:T55 Product:T57
-E19	Action:T56 Acts-on:T57 Using:T58
-E20	Action:T59 Acts-on:T60
-E21	Action:T63 Acts-on:T64 Using:T65
+E19	Action:T56 Acts-on:T57 Using:T58 Product:T104
+E20	Action:T59 Acts-on:T60 Product:T64
+E21	Action:T63 Acts-on:T64 Using:T65 Product:T74
 E22	Action:T67 Acts-on:T68 Site:T69 Site2:T70 Using:T72
 E23	Action:T73 Acts-on:T74 Product:T76
 E24	Action:T75 Acts-on:T76 Site:T78
 E25	Action:T79 Acts-on:E24 Product:T82
 E26	Action:T81 Acts-on:T82 Product:T84
-E27	Action:T85 Acts-on:T84 Site:T86 Product:T88
-E28	Action:T89 Acts-on:T91
+E27	Action:T85 Acts-on:T84 Product:T88
+E28	Action:T89 Acts-on:T91 Product:T93
 E29	Action:T90 Acts-on:T91 Product:T93
 E30	Action:T92 Acts-on:T93 Site:T95
 E31	Action:T96 Using:T97 Product:T99
-R1	Coreference-Link Arg1:T2 Arg2:T37
-R2	Coreference-Link Arg1:T4 Arg2:T29
-R3	Coreference-Link Arg1:T8 Arg2:T14
+R1	Coreference-Link Arg1:T37 Arg2:T2
+R2	Coreference-Link Arg1:T29 Arg2:T4
+R3	Coreference-Link Arg1:T14 Arg2:T8
 R4	Measure Arg1:T14 Arg2:T13
 R5	Setting Arg1:E7 Arg2:T19
 R6	Measure Arg1:T16 Arg2:T18
@@ -144,7 +144,7 @@ R13	Meronym Arg1:T36 Arg2:T37
 R14	Mod-Link Arg1:E13 Arg2:T38
 R15	Mod-Link Arg1:T42 Arg2:T43
 R16	Setting Arg1:E15 Arg2:T47
-R17	Coreference-Link Arg1:T49 Arg2:T54
+R17	Coreference-Link Arg1:T54 Arg2:T49
 R18	Meronym Arg1:T50 Arg2:T49
 R19	Meronym Arg1:T60 Arg2:T61
 R20	Measure Arg1:T60 Arg2:T62
@@ -153,6 +153,34 @@ R22	Measure Arg1:T78 Arg2:T77
 R23	Mod-Link Arg1:E25 Arg2:T80
 R24	Setting Arg1:E26 Arg2:T83
 R25	Setting Arg1:E27 Arg2:T87
-R26	Coreference-Link Arg1:T88 Arg2:T91
+R26	Coreference-Link Arg1:T91 Arg2:T88
 R27	Mod-Link Arg1:T95 Arg2:T94
 R28	Measure Arg1:T99 Arg2:T98
+R29	Enables Arg1:E5 Arg2:E4	
+T100	Reagent 314 326	target cells
+T101	Amount 307 313	0.5 mL
+T102	Method 337 363	usual culturing conditions
+R30	Measure Arg1:T100 Arg2:T101	
+R31	Enables Arg1:E8 Arg2:E9	
+R32	Enables Arg1:E13 Arg2:E14	
+R33	Meronym Arg1:T42 Arg2:T40	
+T103	Action 1036 1046	Incubation
+E32	Action:T103 Acts-on:T104 Using:T105 Product:T107 Product2:T61 Product3:T60
+T104	Location 1050 1056	plates
+T105	Method 1063 1092	constant low light conditions
+T106	Generic-Measure 1095 1121	5 to 25 µmol quanta m–2s–1
+R34	Setting Arg1:E32 Arg2:T106	
+T107	Reagent 1137 1149	darker lawns
+R35	Coreference-Link Arg1:T69 Arg2:T64	
+R36	Enables Arg1:E22 Arg2:E21	
+R37	Meronym Arg1:T84 Arg2:T86	
+R38	Overlaps Arg1:E28 Arg2:E29	
+R39	Enables Arg1:E20 Arg2:E31	
+R40	Enables Arg1:E21 Arg2:E31	
+R41	Enables Arg1:E23 Arg2:E31	
+R42	Enables Arg1:E24 Arg2:E31	
+R43	Enables Arg1:E25 Arg2:E31	
+R44	Enables Arg1:E26 Arg2:E31	
+R45	Enables Arg1:E27 Arg2:E31	
+R46	Enables Arg1:E28 Arg2:E31	
+R47	Enables Arg1:E29 Arg2:E31	

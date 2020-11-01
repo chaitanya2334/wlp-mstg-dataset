@@ -45,12 +45,12 @@ T44	Action 1317 1324	discard
 E1	Action:T1 Acts-on:T4 Product:T10
 E2	Action:T5 Using:T8
 E3	Action:T9 Acts-on:T10 Using:T11 Product:T15 Product2:T16
-E4	Action:T14 Acts-on:T15 Site:T16 Using:T17 Using2:T18
-E5	Action:T19 Acts-on:E4 Using:T20
-E6	Action:T21 Acts-on:T22 Using:E7
-E7	Action:T23 Acts-on:T25 Acts-on2:T28
-E8	Action:T30 Using:T31 Product:T32
-E9	Action:T33 Acts-on:T32 Site:T37 Site2:T39
+E4	Action:T14 Acts-on:T15 Using:T17 Using2:T18
+E5	Action:T19 Acts-on:E4 Using:T20 Product:T46
+E6	Action:T21 Acts-on:T22
+E7	Action:T23 Acts-on:T25 Using:T28
+E8	Action:T30 Using:T31 Product:T32 Acts-on:E6
+E9	Action:T33 Acts-on:T32 Site:T37 Product:T43
 E10	Action:T41 Acts-on:T43
 E11	Action:T44 Acts-on:E10
 R1	Measure Arg1:T4 Arg2:T2
@@ -69,3 +69,29 @@ R13	Or Arg1:T35 Arg2:T36
 R14	Mod-Link Arg1:T39 Arg2:T38
 R15	Or Arg1:T39 Arg2:T40
 R16	Mod-Link Arg1:T43 Arg2:T42
+R17	Meronym Arg1:T15 Arg2:T16	
+R18	Enables Arg1:E3 Arg2:E5	
+R19	Enables Arg1:E4 Arg2:E5	
+R20	Enables Arg1:E7 Arg2:E6	
+R21	Enables Arg1:E3 Arg2:E8	
+R22	Enables Arg1:E4 Arg2:E8	
+T45	Action 987 994	removal
+E12	Action:T45 Acts-on:T46 Using:T48
+T46	Reagent 981 986	resin
+T47	Modifier 1020 1025	small
+T48	Device 1026 1044	pore - size filter
+T49	Size 1055 1069	0.22 - 0.45 µm
+T50	Modifier 1072 1088	gamma sterilized
+T51	Action 1094 1112	avoid carry - over
+E13	Action:T51 Acts-on:T52
+T52	Reagent 1120 1125	resin
+T53	Modifier 975 980	Final
+R23	Mod-Link Arg1:T46 Arg2:T53	
+R24	Mod-Link Arg1:T48 Arg2:T47	
+R25	Measure Arg1:T48 Arg2:T49	
+R26	Mod-Link Arg1:T48 Arg2:T50	
+R27	Enables Arg1:E12 Arg2:E13	
+R28	Coreference-Link Arg1:T52 Arg2:T46	
+R29	Meronym Arg1:T37 Arg2:T39	
+T54	Modifier 1300 1309	only once
+R30	Mod-Link Arg1:E10 Arg2:T54	

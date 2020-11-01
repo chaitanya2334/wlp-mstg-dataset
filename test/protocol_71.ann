@@ -3,7 +3,7 @@ T2	Reagent 55 60	cells
 T3	Reagent 71 89	tissue of interest
 T4	Action 167 176	resuspend
 T5	Reagent 181 186	cells
-T6	Location 190 206	MojoSort™ Buffer
+T6	Reagent 190 206	MojoSort™ Buffer
 T7	Action 210 216	adding
 T8	Amount 223 226	4mL
 T9	Amount 232 236	5 mL
@@ -40,7 +40,7 @@ T39	Reagent 713 719	volume
 T40	Modifier 720 731	accordingly
 T41	Action 773 776	add
 T42	Amount 777 783	100 μL
-T43	Reagent 788 801	1 x 108 cells
+T43	Reagent 796 801	cells
 T44	Action 989 998	Resuspend
 T45	Reagent 1003 1008	beads
 T46	Action 1012 1021	vortexing
@@ -69,17 +69,17 @@ T68	Reagent 1415 1426	supernatant
 T69	Action 1524 1533	Resuspend
 T70	Reagent 1538 1543	cells
 T71	Amount 1547 1551	3 mL
-T72	Location 1555 1571	MojoSort™ Buffer
+T72	Reagent 1555 1571	MojoSort™ Buffer
 T73	Action 1661 1668	disrupt
 T74	Reagent 1673 1683	aggregates
 T75	Action 1687 1696	pipetting
 T76	Reagent 1701 1709	solution
 T77	Method 1710 1721	up and down
 T78	Action 1724 1729	Place
-T79	Device 1734 1738	tube
-T80	Location 1746 1752	magnet
+T79	Location 1734 1738	tube
+T80	Device 1746 1752	magnet
 T81	Time 1757 1766	5 minutes
-T82	Action 1769 1773	Pour
+T82	Action 1769 1777	Pour out
 T83	Action 1782 1789	collect
 T84	Reagent 1794 1800	liquid
 T85	Action 1867 1870	add
@@ -98,40 +98,40 @@ T97	Location 2349 2353	tube
 T98	Device 2361 2367	magnet
 T99	Action 2371 2378	monitor
 T100	Measure-Type 2379 2395	purity and yield
-E1	Action:T1 Acts-on:T2
-E2	Action:T4 Acts-on:T5 Site:T6
+E1	Action:T1 Product:T2
+E2	Action:T4 Acts-on:T5 Site:T6 Product:T12
 E3	Action:T7 Site:T10
 E4	Action:T11 Acts-on:T12 Using:T14
-E5	Action:T15 Acts-on:T12
-E6	Action:T18 Acts-on:E5 Site:T20
-E7	Action:T21 Acts-on:T23
+E5	Action:T15 Acts-on:E4
+E6	Action:T18 Acts-on:E5 Site:T20 Product:T23
+E7	Action:T21 Acts-on:T23 Product:T27
 E8	Action:T22 Acts-on:T23 Product:T27
 E9	Action:T25 Acts-on:T27 Site:T29
 E10	Action:T30 Site:E9 Acts-on:T32
-E11	Action:T33 Acts-on:T32
-E12	Action:T35 Acts-on:E11 Site:T36
+E11	Action:T33 Acts-on:E10
+E12	Action:T35 Acts-on:E11 Site:T36 Product2:T43
 E13	Action:T38 Acts-on:T39
 E14	Action:T41 Acts-on:T43
-E15	Action:T44 Acts-on:T45
-E16	Action:T46 
-E17	Action:T48 Acts-on:T50
+E15	Action:T44 Acts-on:T45 Product:T50
+E16	Action:T46 Acts-on:T45
+E17	Action:T48 Acts-on:T50 Site:E14
 E18	Action:T51 Acts-on:E17
-E19	Action:T53 Acts-on:E18 Site:T54
+E19	Action:T53 Acts-on:E18 Site:T54 Product:T107
 E20	Action:T56 Acts-on:T57
 E21	Action:T59 Acts-on:T60
-E22	Action:T61 Acts-on:T63
-E23	Action:T64 Product:T68
-E24	Action:T67 Acts-on:T68 Product:T70
+E22	Action:T61 Acts-on:T63 Site:T60
+E23	Action:T64 Product:T68 Acts-on:E21
+E24	Action:T67 Acts-on:T68 Product:T70 Product2:T74
 E25	Action:T69 Acts-on:T70 Site:T72 Product:T76
-E26	Action:T73 Acts-on:T74 Using:E27
-E27	Action:T75 Acts-on:T76 Using:T77
+E26	Action:T73 Acts-on:T74 Product:T79
+E27	Action:T75 Acts-on:T76 Using:T77 Product:T79
 E28	Action:T78 Acts-on:T79 Site:T80 Product:T84
 E29	Action:T82 Acts-on:T84
 E30	Action:T83 Acts-on:T84
-E31	Action:T85 Site:E30 Acts-on:T87
-E32	Action:T88 Using:T89 Acts-on:T90 Count:T91 Product:T93
-E33	Action:T92 Acts-on:T93
-E34	Action:T94 Acts-on:T95
+E31	Action:T85 Site:E30 Acts-on:T87 Site2:E29
+E32	Action:T88 Using:T89 Acts-on:T90 Count:T91 Product:T93 Acts-on2:E31
+E33	Action:T92 Acts-on:T93 Product:T95
+E34	Action:T94 Acts-on:T95 Product:T97
 E35	Action:T96 Acts-on:T97 Site:T98
 E36	Action:T99 Measure-Type-Link:T100
 R1	Meronym Arg1:T2 Arg2:T3
@@ -149,7 +149,6 @@ R12	Measure Arg1:T32 Arg2:T31
 R13	Mod-Link Arg1:E11 Arg2:T34
 R14	Setting Arg1:E12 Arg2:T37
 R15	Mod-Link Arg1:E13 Arg2:T40
-R16	Measure Arg1:T43 Arg2:T42
 R17	Setting Arg1:E16 Arg2:T47
 R18	Measure Arg1:T50 Arg2:T49
 R19	Mod-Link Arg1:E18 Arg2:T52
@@ -161,3 +160,33 @@ R24	Setting Arg1:E23 Arg2:T66
 R25	Measure Arg1:T72 Arg2:T71
 R26	Setting Arg1:E28 Arg2:T81
 R27	Measure Arg1:T87 Arg2:T86
+T101	Action 90 104	without lysing
+E37	Action:T101 Acts-on:T102
+T102	Reagent 105 117	erythrocytes
+R28	Overlaps Arg1:E1 Arg2:E37	
+R29	Coreference-Link Arg1:T5 Arg2:T2	
+R30	Enables Arg1:E3 Arg2:E2	
+R31	Overlaps Arg1:E7 Arg2:E8	
+T103	Generic-Measure 788 795	1 x 108
+R32	Measure Arg1:T43 Arg2:T103	
+R33	Enables Arg1:E16 Arg2:E15	
+T104	Action 1209 1212	add
+E38	Action:T104 Acts-on:T107 Product:T60
+T105	Amount 1213 1219	100 μL
+T106	Generic-Measure 1224 1231	1 x 108
+T107	Reagent 1232 1237	cells
+R34	Measure Arg1:T107 Arg2:T106	
+R35	Setting Arg1:E38 Arg2:T105	
+R36	Enables Arg1:E20 Arg2:E38	
+R16	Setting Arg1:E14 Arg2:T42	
+R37	Enables Arg1:E13 Arg2:E14	
+R38	Enables Arg1:E22 Arg2:E21	
+R39	Enables Arg1:E27 Arg2:E26	
+R40	Meronym Arg1:T74 Arg2:T76	
+R41	Overlaps Arg1:E29 Arg2:E30	
+R42	Enables Arg1:E28 Arg2:E32	
+R43	Enables Arg1:E29 Arg2:E32	
+T108	Modifier 2298 2306	Optional
+R44	Mod-Link Arg1:E34 Arg2:T108	
+R45	Enables Arg1:E34 Arg2:E36	
+R46	Meronym Arg1:T102 Arg2:T3	

@@ -70,27 +70,27 @@ T69	Method 1099 1108	10 and 11
 T70	Action 1111 1117	Repeat
 T71	Method 1124 1133	10 and 11
 E1	Action:T1 Acts-on:T6 Site:T8 Product:T10
-E2	Action:T9 Acts-on:T10 Using:T13
+E2	Action:T9 Acts-on:T10 Using:T13 Site:T12
 E3	Action:T15 Acts-on:T14 Site:T16
-E4	Action:T18 Acts-on:T10 Product:T21
+E4	Action:T18 Product:T21 Acts-on:E2
 E5	Action:T20 Acts-on:T21 Using:T22
 E6	Action:T23 Acts-on:T24 Product:T28
 E7	Action:T27 Acts-on:T28 Product:T30
 E8	Action:T29 Acts-on:T30 Product:T32
 E9	Action:T31 Acts-on:T32 Product:T42
-E10	Action:T33 Acts-on:T34 Site:T35
-E11	Action:T36 Acts-on:T37 Product:T40
+E10	Action:T33 Site:T35 Using:T34
+E11	Action:T36 Acts-on:T37 Product:T40 Site:E10
 E12	Action:T38 Acts-on:T40 Site:T42
-E13	Action:T43 Site:T45 Product:T51
+E13	Action:T43 Site:T45 Product:T51 Acts-on:E12 Product2:T48
 E14	Action:T46 Acts-on:T48
 E15	Action:T49 Acts-on:T51 Site:T52
 E16	Action:T53 Site:E15 Acts-on:T55 Product:T57
-E17	Action:T56 Acts-on:T57 Site:T58
+E17	Action:T56 Acts-on:T57 Site:T58 Product:T63
 E18	Action:T59 Acts-on:T61 Using:T63
 E19	Action:T64 Acts-on:E18 Product:T66
 E20	Action:T65 Acts-on:T66
 E21	Action:T67 Acts-on:E20
-E22	Action:T68 Using:T69
+E22	Action:T68 Using:T69 Acts-on:E20
 E23	Action:T70 Acts-on:E22 Using:T71
 R1	Measure Arg1:T6 Arg2:T2
 R2	Mod-Link Arg1:T6 Arg2:T3
@@ -113,3 +113,17 @@ R18	Measure Arg1:T55 Arg2:T54
 R19	Measure Arg1:T61 Arg2:T60
 R20	Or Arg1:T61 Arg2:T62
 R21	Measure Arg1:T62 Arg2:T60
+R22	Overlaps Arg1:E2 Arg2:E3	
+R23	Coreference-Link Arg1:T17 Arg2:T12	
+T72	Size 221 231	14 × 95 mm
+R24	Measure Arg1:T12 Arg2:T72	
+R25	Enables Arg1:E15 Arg2:E14	
+R26	Meronym Arg1:T51 Arg2:T48	
+T73	Modifier 968 972	each
+R27	Mod-Link Arg1:T63 Arg2:T73	
+R28	Enables Arg1:E21 Arg2:E22	
+R29	Enables Arg1:E19 Arg2:E22	
+R30	Enables Arg1:E21 Arg2:E23	
+R31	Enables Arg1:E19 Arg2:E23	
+T74	Modifier 1134 1139	again
+R32	Mod-Link Arg1:E23 Arg2:T74	

@@ -151,13 +151,13 @@ T150	Reagent 3125 3130	cells
 T151	Concentration 3131 3133	1X
 T152	Reagent 3139 3159	Cell Staining Buffer
 E1	Action:T2 Acts-on:T1 Using:T3 Product:T5
-E2	Action:T4 Acts-on:T5 Site:T7
-E3	Action:T12 Acts-on:E2 Product:T16 Product2:T18
-E4	Action:T15 Acts-on:T16
+E2	Action:T4 Acts-on:T5 Site:T7 Site2:T9
+E3	Action:T12 Acts-on:E2 Product:T16
+E4	Action:T15 Acts-on:T16 Product:T18 Product2:T40
 E5	Action:T17 Acts-on:T18 Using:T20
 E6	Action:T21 Acts-on:T22 Site:T23 Product:T25
-E7	Action:T24 Acts-on:T25 Site:T28 Site2:T30 Product:T31 Product2:T40
-E8	Action:T33 Acts-on:T35 Using:T37 Product:T41 Product2:T48 Product3:T55
+E7	Action:T24 Acts-on:T25 Site:T28 Site2:T30 Product:T31
+E8	Action:T33 Acts-on:T35 Using:T37 Product:T41
 E9	Action:T38 Acts-on:T40 Site:T41
 E10	Action:T42 Acts-on:E9 Product:T47
 E11	Action:T45 Acts-on:T47 Site:T48
@@ -170,15 +170,15 @@ E17	Action:T75 Site:E16 Acts-on:T77
 E18	Action:T78 Acts-on:E17
 E19	Action:T81 Acts-on:E18 Acts-on2:T83
 E20	Action:T84 Acts-on:E19
-E21	Action:T88 Acts-on:T87
-E22	Action:T90 Site:T91
+E21	Action:T88 Acts-on:T87 Site:E20
+E22	Action:T90 Site:T91 Acts-on:E21 Product:T95
 E23	Action:T92 Acts-on:T95 Site:T97
-E24	Action:T98 Acts-on:E23 Acts-on2:T100
-E25	Action:T101 Measure-Type-Link:T102 Measure-Type-Link2:T103 Using:T104
-E26	Action:T105 Measure-Type-Link:T106 Using:T107
+E24	Action:T98 Acts-on:E23 Using:T100
+E25	Action:T101 Measure-Type-Link:T102 Measure-Type-Link2:T103 Using:T104 Acts-on:E23
+E26	Action:T105 Measure-Type-Link:T106 Using:T107 Acts-on:E23
 E27	Action:T111 Acts-on:T113 Using:T117
 E28	Action:T119 Acts-on:E27 Acts-on2:T118 Using:T120
-E29	Action:T122 Acts-on:T124
+E29	Action:T122 Acts-on:T124 Site:E28 Product:T129
 E30	Action:T127 Acts-on:T129 Site:T131
 E31	Action:T132 Acts-on:E30 Site:T135
 E32	Action:T137 Site:E31 Acts-on:T140
@@ -189,7 +189,6 @@ E36	Action:T149 Acts-on:T150 Using:T152
 R1	Setting Arg1:E2 Arg2:T10
 R2	Setting Arg1:E2 Arg2:T11
 R3	Measure Arg1:T7 Arg2:T6
-R4	Meronym Arg1:T7 Arg2:T9
 R5	Meronym Arg1:T8 Arg2:T7
 R6	Setting Arg1:E3 Arg2:T13
 R7	Setting Arg1:E3 Arg2:T14
@@ -253,3 +252,16 @@ R64	Setting Arg1:E33 Arg2:T143
 R65	Setting Arg1:E34 Arg2:T145
 R66	Setting Arg1:E34 Arg2:T146
 R67	Measure Arg1:T150 Arg2:T151
+R4	Overlaps Arg1:E6 Arg2:E5	
+R68	Coreference-Link Arg1:T22 Arg2:T18	
+R69	Coreference-Link Arg1:T23 Arg2:T20	
+R70	Coreference-Link Arg1:T48 Arg2:T41	
+R71	Coreference-Link Arg1:T55 Arg2:T48	
+R72	Coreference-Link Arg1:T64 Arg2:T55	
+R73	Coreference-Link Arg1:T77 Arg2:T64	
+R74	Coreference-Link Arg1:T83 Arg2:T77	
+R75	Coreference-Link Arg1:T91 Arg2:T83	
+R76	Coreference-Link Arg1:T97 Arg2:T23	
+R77	Coreference-Link Arg1:T104 Arg2:T100	
+R78	Overlaps Arg1:E25 Arg2:E24	
+R79	Coreference-Link Arg1:T152 Arg2:T97	

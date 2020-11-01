@@ -24,9 +24,9 @@ T23	Reagent 383 398	liquid nitrogen
 T24	Device 404 410	mortar
 T25	Reagent 416 420	sand
 T26	Amount 427 429	1g
-T27	Mention 433 437	sand
+T27	Reagent 433 437	sand
 T28	Amount 442 447	100mg
-T29	Mention 451 468	starting material
+T29	Reagent 451 468	starting material
 T30	Action 471 476	Grind
 T31	Time 481 487	2 mins
 T32	Generic-Measure 491 507	4x 15 sec bursts
@@ -284,12 +284,12 @@ T283	Action 3363 3370	measure
 T284	Measure-Type 3371 3381	absorbance
 T285	Device 3387 3395	Nanodrop
 E1	Action:T2 Product:T1 Acts-on:T3 Acts-on2:T6
-E2	Action:T8 Acts-on:E1
-E3	Action:T10 Site:T13 Product:T20
-E4	Action:T16 Acts-on:T19 Site:T20
-E5	Action:T21 Acts-on:T22 Site:T24 Using:T25
+E2	Action:T8 Acts-on:T1 Product:T15
+E3	Action:T10 Site:T13 Product:T20 Acts-on:T15
+E4	Action:T16 Acts-on:T19 Site:T20 Product:T41
+E5	Action:T21 Acts-on:T22 Site:T24 Using:T25 Site2:T27 Acts-on2:T29
 E6	Action:T30 Acts-on:E5
-E7	Action:T33 Site:E6 Acts-on:T34 Using:T37
+E7	Action:T33 Site:E6 Acts-on:T34 Using:T37 Product:T39
 E8	Action:T38 Acts-on:T39 Site:T41
 E9	Action:T44 Acts-on:E8 Using:T46
 E10	Action:T47 Acts-on:E9
@@ -317,44 +317,44 @@ E31	Action:T125 Site:E30 Acts-on:T129
 E32	Action:T130 Acts-on:E31 Using:T131
 E33	Action:T132 Acts-on:E32
 E34	Action:T135 Acts-on:E33 Product:T141
-E35	Action:T140 Acts-on:T141 Product:T143
+E35	Action:T140 Acts-on:T141 Product:T143 Product2:T144
 E36	Action:T145 Acts-on:T144 Product:T148 Site:T149
-E37	Action:T153 Using:T152 Acts-on:T154 Acts-on2:T156 Site:T159
+E37	Action:T153 Using:T152 Acts-on:T154 Acts-on2:T156 Site:T159 Product:T166
 E38	Action:T160 Acts-on:T164 Site:T166
 E39	Action:T167 Acts-on:E38
 E40	Action:T170 Acts-on:E39 Product:T173
 E41	Action:T172 Acts-on:T173 Acts-on2:T174 Site:T177
 E42	Action:T178 Acts-on:E41 Site:T179 Product:T183
 E43	Action:T182 Acts-on:T183 Using:T184
-E44	Action:T185 Acts-on:E43 Acts-on2:T189
+E44	Action:T185 Acts-on:E43 Acts-on2:T189 Product:T193
 E45	Action:T190 Acts-on:E44
-E46	Action:T192 Using:E45 Acts-on:T193
-E47	Action:T194 Acts-on:E45 Site:T195 Product:T199
+E46	Action:T192 Acts-on:T193
+E47	Action:T194 Site:T195 Product:T199 Acts-on:E46
 E48	Action:T198 Acts-on:T199 Using:T200
 E49	Action:T201 Acts-on:E48 Acts-on2:T205
 E50	Action:T206 Acts-on:E49
 E51	Action:T208 Acts-on:T209
-E52	Action:T210 Acts-on:E50 Site:T211 Product:T215
+E52	Action:T210 Site:T211 Product:T215 Acts-on:E51
 E53	Action:T214 Acts-on:T215 Using:T216
 E54	Action:T217 Acts-on:E53 Site:T218 Product:T223
-E55	Action:T221 Site:E54 Acts-on:T223 Using:T224
+E55	Action:T221 Site:E54 Acts-on:T223 Using:T224 Product:T226
 E56	Action:T225 Acts-on:T226
 E57	Action:T228 Site:E56 Acts-on:T231
-E58	Action:T232 Acts-on:E57
+E58	Action:T232 Acts-on:E57 Product:T236
 E59	Action:T235 Acts-on:T236 Using:T238
 E60	Action:T239 Site:E59 Acts-on:T241
 E61	Action:T242 Acts-on:E60
 E62	Action:T245 Site:E61 Acts-on:T248
-E63	Action:T249 Acts-on:E62 Using:E64
+E63	Action:T249 Acts-on:E62 Product:T255 Product2:T262 Product3:T268
 E64	Action:T253 
-E65	Action:T254 Acts-on:E63 Acts-on2:T255 Measure-Type-Link:T256 Using:T257
-E66	Action:T258 Measure-Type-Link:T259 Using:T260
-E67	Action:T261 Acts-on:T262 Measure-Type-Link:T263 Using:E68
-E68	Action:T264 Acts-on:T266 Acts-on2:T268 Acts-on3:T269
-E69	Action:T272 Site:E63 Acts-on:T270 Acts-on2:T273 Using:T275
-E70	Action:T276 Acts-on:E69 Site:T278
+E65	Action:T254 Acts-on2:T255 Measure-Type-Link:T256 Using:T257
+E66	Action:T258 Measure-Type-Link:T259 Using:T260 Acts-on:E63
+E67	Action:T261 Acts-on:T262 Measure-Type-Link:T263
+E68	Action:T264 Acts-on:T266 Using:T268 Using2:T269
+E69	Action:T272 Acts-on:T270 Acts-on2:T273 Using:T275 Site:E67
+E70	Action:T276 Acts-on:E69 Site:T278 Product:T280
 E71	Action:T279 Acts-on:T280 Measure-Type-Link:T281 Using:T282
-E72	Action:T283 Measure-Type-Link:T284 Using:T285
+E72	Action:T283 Measure-Type-Link:T284 Using:T285 Acts-on:E70
 R1	Measure Arg1:T3 Arg2:T4
 R2	Measure Arg1:T6 Arg2:T5
 R3	Mod-Link Arg1:E2 Arg2:T7
@@ -368,7 +368,7 @@ R10	Meronym Arg1:T23 Arg2:T22
 R11	Coreference-Link Arg1:T27 Arg2:T25
 R12	Measure Arg1:T27 Arg2:T26
 R13	Coreference-Link Arg1:T29 Arg2:T22
-R14	Coreference-Link Arg1:T29 Arg2:T28
+R14	Measure Arg1:T29 Arg2:T28
 R15	Setting Arg1:E6 Arg2:T31
 R16	Setting Arg1:E6 Arg2:T32
 R17	Setting Arg1:E7 Arg2:T36
@@ -424,7 +424,7 @@ R66	Setting Arg1:E34 Arg2:T137
 R67	Setting Arg1:E34 Arg2:T138
 R68	Mod-Link Arg1:E35 Arg2:T139
 R69	Measure Arg1:T143 Arg2:T142
-R70	Coreference-Link Arg1:T143 Arg2:T156
+R70	Coreference-Link Arg1:T156 Arg2:T143
 R71	Mod-Link Arg1:T148 Arg2:T146
 R72	Mod-Link Arg1:T148 Arg2:T147
 R73	Meronym Arg1:T149 Arg2:T150
@@ -477,3 +477,10 @@ R119	Measure Arg1:T268 Arg2:T267
 R120	Mod-Link Arg1:E69 Arg2:T271
 R121	Measure Arg1:T273 Arg2:T274
 R122	Measure Arg1:T278 Arg2:T277
+R123	Enables Arg1:E64 Arg2:E63	
+R124	Coreference-Link Arg1:T154 Arg2:T148	
+R125	Meronym Arg1:T100 Arg2:T97	
+R126	Meronym Arg1:T88 Arg2:T85	
+R127	Enables Arg1:E68 Arg2:E67	
+R128	Enables Arg1:E45 Arg2:E46	
+R130	Enables Arg1:E50 Arg2:E51	
