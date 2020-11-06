@@ -1,0 +1,36 @@
+T1	Action 28 33	Place
+T2	Numerical 34 35	1
+T3	Reagent 36 49	cup of coffee
+T4	Modifier 78 83	clean
+T5	Location 86 106	lyophilization flask
+T6	Action 109 121	Flash freeze
+T7	Action 125 132	bathing
+T8	Location 133 138	flask
+T9	Method 146 159	hand rotation
+T10	Location 167 171	bath
+T11	Reagent 175 190	liquid nitrogen
+T12	Action 219 225	Attach
+T13	Device 229 257	vacuum lyophilization system
+T14	Time 258 267	overnight
+T15	Action 270 276	Scrape
+T16	Reagent 277 297	lyophilized crystals
+T17	Modifier 305 310	clean
+T18	Location 311 321	coffee cup
+T19	Action 324 327	Add
+T20	Modifier 328 331	hot
+T21	Reagent 332 337	water
+T22	Action 344 349	enjoy
+E1	Action:T1 Acts-on:T3 Site:T5 Product:T8
+E2	Action:T6 Acts-on:E1
+E3	Action:T7 Acts-on:T8 Using:T9 Site:T10
+E4	Action:T12 Site:T13 Acts-on:E2 Product:T16
+E5	Action:T15 Acts-on:T16 Site:T18
+E6	Action:T19 Acts-on:T21 Site:E5
+E7	Action:T22 Acts-on:E6
+R1	Mod-Link Arg1:T5 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Meronym Arg1:T11 Arg2:T10
+R4	Setting Arg1:E4 Arg2:T14
+R5	Mod-Link Arg1:T18 Arg2:T17
+R6	Enables Arg1:E3 Arg2:E2
+R7	Mod-Link Arg1:T21 Arg2:T20

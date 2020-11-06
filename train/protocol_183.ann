@@ -1,0 +1,62 @@
+T1	Action 53 62	Inoculate
+T2	Reagent 63 71	Mycelium
+T3	Reagent 77 83	spores
+T4	Location 108 124	fresh SNA plates
+T5	Action 140 149	inoculate
+T6	Reagent 157 169	small amount
+T7	Location 183 189	middle
+T8	Location 197 202	plate
+T9	Modifier 212 226	even and equal
+T10	Action 227 233	spread
+T11	Action 238 244	growth
+T12	Modifier 245 255	throughout
+T13	Location 260 265	plate
+T14	Action 268 273	Store
+T15	Location 274 279	plate
+T16	Device 285 299	growth chamber
+T17	Method 305 336	12 / 12 h darkness / blacklight
+T18	Temperature 362 366	22°C
+T19	Generic-Measure 377 395	humidity 60 - 70 %
+T20	Action 407 411	grow
+T21	Time 416 423	3 weeks
+T22	Action 426 433	Harvest
+T23	Reagent 434 440	spores
+T24	Concentration 453 464	0.0 - 0.5 %
+T25	Reagent 465 479	tween solution
+T26	Location 487 492	plate
+T27	Action 497 512	scraping gently
+T28	Reagent 520 529	coverslip
+T29	Action 532 539	Collect
+T30	Reagent 544 550	liquid
+T31	Reagent 556 562	spores
+T32	Action 563 577	Filter through
+T33	Size 578 589	four layers
+T34	Device 593 597	mesh
+T35	Action 626 632	remove
+T36	Reagent 633 648	mycelial debris
+E1	Action:T1 Acts-on:T2 Using:T3 Site:T4 Product:T15
+E2	Action:T5 Acts-on:T6 Site:T7
+E3	Action:T10 Site:T13
+E4	Action:T11 Site:T13
+E5	Action:T14 Acts-on:T15 Site:T16 Using:T17
+E6	Action:T20 Acts-on:E5 Product:T23
+E7	Action:T22 Acts-on:T23 Using:T25 Site:T26
+E8	Action:T27 Using:T28 Acts-on:E7
+E9	Action:T29 Acts-on:T30 Acts-on2:E8
+E10	Action:T32 Using:T34 Acts-on:E9
+E11	Action:T35 Acts-on:T36
+R1	Setting Arg1:E6 Arg2:T21
+R2	Measure Arg1:T25 Arg2:T24
+R3	Measure Arg1:T34 Arg2:T33
+R4	Mod-Link Arg1:T13 Arg2:T12
+R5	Coreference-Link Arg1:T6 Arg2:T2
+R6	Overlaps Arg1:E2 Arg2:E1
+R7	Meronym Arg1:T8 Arg2:T7
+R8	Mod-Link Arg1:E3 Arg2:T9
+R9	Mod-Link Arg1:E4 Arg2:T9
+R10	Overlaps Arg1:E3 Arg2:E4
+R11	Enables Arg1:E2 Arg2:E3
+R12	Setting Arg1:E5 Arg2:T18
+R13	Setting Arg1:E5 Arg2:T19
+R14	Meronym Arg1:T31 Arg2:T30
+R15	Enables Arg1:E10 Arg2:E11

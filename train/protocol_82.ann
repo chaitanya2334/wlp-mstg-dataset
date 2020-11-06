@@ -1,0 +1,198 @@
+T1	Action 29 32	Mix
+T2	Reagent 33 48	Lysing Solution
+T3	Reagent 58 76	Sodium Perchlorate
+T4	Generic-Measure 87 92	2 : 1
+T5	Action 95 98	Mix
+T6	Modifier 103 111	combined
+T7	Reagent 112 148	Lysing Solution & sodium Perchlorate
+T8	Reagent 154 164	virus prep
+T9	Amount 167 174	18.5 ml
+T10	Reagent 175 182	LS + SP
+T11	Amount 188 192	10ml
+T12	Reagent 193 203	virus prep
+T13	Modifier 206 207	~
+T14	Generic-Measure 208 221	10¹¹ PFU / ml
+T15	Action 226 234	Incubate
+T16	Reagent 239 245	lysate
+T17	Temperature 249 253	55ºC
+T18	Time 258 262	1hrs
+T19	Action 265 268	Add
+T20	Amount 269 273	30ml
+T21	Reagent 277 283	phenol
+T22	Reagent 288 298	chloroform
+T23	Reagent 301 316	isoamyl alcohol
+T24	Generic-Measure 319 325	25 : 1
+T25	Generic-Measure 357 362	1 : 1
+T26	Action 365 370	Shake
+T27	Mention 371 375	them
+T28	Device 379 384	hands
+T29	Time 389 394	5mins
+T30	Action 397 405	Transfer
+T31	Reagent 410 416	liquid
+T32	Location 424 440	centrifuge tubes
+T33	Action 443 450	balance
+T34	Mention 451 455	them
+T35	Action 458 468	centrifuge
+T36	Time 473 480	15 mins
+T37	Speed 484 493	14000 rpm
+T38	Temperature 497 500	4ºC
+T39	Action 503 511	Transfer
+T40	Reagent 516 538	aqueous ( upper ) part
+T41	Device 544 551	pipette
+T42	Modifier 559 564	clean
+T43	Location 565 581	centrifuge tubes
+T44	Action 620 623	Put
+T45	Location 628 640	bottom layer
+T46	Location 650 665	waste container
+T47	Action 668 678	Centrifuge
+T48	Location 679 684	tubes
+T49	Modifier 685 690	again
+T50	Speed 694 704	14,000 rpm
+T51	Time 709 715	15 min
+T52	Reagent 774 787	Aqueous layer
+T53	Action 795 801	stored
+T54	Time 802 811	overnight
+T55	Temperature 815 819	4 ºC
+T56	Action 822 830	Estimate
+T57	Generic-Measure 835 841	volume
+T58	Reagent 849 862	aqueous layer
+T59	Action 867 870	add
+T60	Amount 871 881	0.1 volume
+T61	Concentration 885 887	3M
+T62	Concentration 893 895	5M
+T63	Reagent 898 912	Sodium Acetate
+T64	pH 915 921	pH 6.0
+T65	Action 926 933	Collect
+T66	Reagent 934 937	DNA
+T67	Action 941 949	swirling
+T68	Device 950 959	glass rod
+T69	Mention 966 968	it
+T70	Action 969 972	dry
+T71	Device 980 989	glass rod
+T72	Action 992 1000	Pour off
+T73	Reagent 1001 1008	alcohol
+T74	Location 1018 1033	waste container
+T75	Action 1036 1039	Put
+T76	Reagent 1040 1043	DNA
+T77	Device 1051 1054	rod
+T78	Location 1064 1070	beaker
+T79	Action 1073 1076	add
+T80	Amount 1077 1087	10 to 20ml
+T81	Modifier 1091 1095	cold
+T82	Concentration 1096 1100	76 %
+T83	Reagent 1101 1108	Ethanol
+T84	Temperature 1111 1117	- 20ºC
+T85	Action 1122 1134	Let it stand
+T86	Time 1139 1150	10 - 20 min
+T87	Action 1153 1158	Press
+T88	Device 1163 1172	glass rod
+T89	Reagent 1178 1181	DNA
+T90	Location 1194 1198	wall
+T91	Location 1202 1208	beaker
+T92	Action 1212 1219	get rid
+T93	Reagent 1227 1234	ethanol
+T94	Action 1237 1243	Invert
+T95	Device 1248 1260	stirring rod
+T96	Location 1268 1282	test tube rack
+T97	Action 1287 1290	dry
+T98	Time 1295 1300	5 min
+T99	Action 1303 1306	Use
+T100	Amount 1307 1311	15ml
+T101	Location 1312 1325	plastic tubes
+T102	Action 1328 1336	Dissolve
+T103	Reagent 1337 1340	DNA
+T104	Amount 1344 1347	4ml
+T105	Reagent 1351 1353	TE
+T106	Action 1356 1364	Estimate
+T107	Measure-Type 1365 1382	DNA concentration
+T108	Device 1389 1406	spectrophotometer
+T109	Reagent 1410 1413	gel
+T110	Action 1417 1423	ensure
+T111	Measure-Type 1424 1436	DNA quantity
+T112	Modifier 1439 1445	Gently
+T113	Action 1446 1453	overlay
+T114	Reagent 1458 1471	aqueous layer
+T115	Amount 1477 1486	2 volumes
+T116	Concentration 1490 1494	95 %
+T117	Reagent 1498 1505	ethanol
+E1	Action:T1 Acts-on:T2 Acts-on2:T3 Product:T7
+E2	Action:T5 Acts-on:T7 Acts-on2:T8 Product:T16
+E3	Action:T15 Acts-on:T16
+E4	Action:T19 Acts-on:T21 Site:E3 Product:T27
+E5	Action:T26 Using:T28 Acts-on:T27 Product:T31
+E6	Action:T30 Acts-on:T31 Site:T32 Product:T34
+E7	Action:T33 Acts-on:T34
+E8	Action:T35 Acts-on:E7 Product:T40
+E9	Action:T39 Acts-on:T40 Using:T41 Site:T43 Product:T45 Product2:T48
+E10	Action:T44 Acts-on:T45 Site:T46
+E11	Action:T47 Acts-on:T48 Product:T52
+E12	Action:T53 Acts-on:T52 Product:T58
+E13	Action:T56 
+E14	Action:T59 Acts-on:T63 Site:E13
+E15	Action:T65 Product:T66 Acts-on:E14
+E16	Action:T67 Acts-on:T68 Acts-on2:E14
+E17	Action:T70 Site:T71 Acts-on:T69 Product:T73
+E18	Action:T72 Acts-on:T73 Site:T74 Product:T76
+E19	Action:T75 Acts-on:T76 Site:T78
+E20	Action:T79 Acts-on:T83 Acts-on2:E19
+E21	Action:T85 Product:T89
+E22	Action:T87 Acts-on:T88 Site:T90
+E23	Action:T92 Acts-on:T93 Product:T95
+E24	Action:T94 Acts-on:T95 Site:T96
+E25	Action:T97 Acts-on:E24
+E26	Action:T99 Acts-on:T101 Site:E25 Product:T103
+E27	Action:T102 Acts-on:T103 Site:T105 Product:T114
+E28	Action:T106 Measure-Type-Link:T107 Using:T108 Acts-on:E27
+E29	Action:T110 Measure-Type-Link:T111 Acts-on:E27
+E30	Action:T113 Acts-on:T114 Using:T117
+R1	Setting Arg1:E1 Arg2:T4
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Measure Arg1:T10 Arg2:T9
+R4	Measure Arg1:T12 Arg2:T11
+R5	Measure Arg1:T12 Arg2:T14
+R6	Mod-Link Arg1:T14 Arg2:T13
+R7	Coreference-Link Arg1:T7 Arg2:T10
+R8	Coreference-Link Arg1:T8 Arg2:T12
+R9	Setting Arg1:E3 Arg2:T17
+R10	Setting Arg1:E3 Arg2:T18
+R11	Measure Arg1:T21 Arg2:T20
+R12	Meronym Arg1:T22 Arg2:T21
+R13	Meronym Arg1:T23 Arg2:T21
+R14	Measure Arg1:T22 Arg2:T24
+R15	Measure Arg1:T23 Arg2:T24
+R16	Setting Arg1:E4 Arg2:T25
+R17	Setting Arg1:E5 Arg2:T29
+R18	Setting Arg1:E8 Arg2:T36
+R19	Setting Arg1:E8 Arg2:T37
+R20	Setting Arg1:E8 Arg2:T38
+R21	Mod-Link Arg1:T43 Arg2:T42
+R22	Setting Arg1:E11 Arg2:T50
+R23	Setting Arg1:E11 Arg2:T51
+R24	Mod-Link Arg1:E11 Arg2:T49
+R25	Setting Arg1:E12 Arg2:T54
+R26	Setting Arg1:E12 Arg2:T55
+R27	Or Arg1:T62 Arg2:T61
+R28	Measure Arg1:T63 Arg2:T62
+R29	Measure Arg1:T63 Arg2:T64
+R30	Measure Arg1:T63 Arg2:T60
+R31	Meronym Arg1:T76 Arg2:T77
+R32	Measure Arg1:T83 Arg2:T82
+R33	Mod-Link Arg1:T83 Arg2:T81
+R34	Measure Arg1:T83 Arg2:T80
+R35	Or Arg1:T83 Arg2:T84
+R36	Setting Arg1:E21 Arg2:T86
+R37	Meronym Arg1:T89 Arg2:T88
+R38	Meronym Arg1:T90 Arg2:T91
+R39	Setting Arg1:E25 Arg2:T98
+R40	Measure Arg1:T101 Arg2:T100
+R41	Measure Arg1:T105 Arg2:T104
+R42	Measure Arg1:T117 Arg2:T116
+R43	Measure Arg1:T117 Arg2:T115
+R44	Mod-Link Arg1:E30 Arg2:T112
+R45	Measure Arg1:T58 Arg2:T57
+R46	Enables Arg1:E16 Arg2:E15
+R47	Coreference-Link Arg1:T69 Arg2:T66
+R48	Enables Arg1:E22 Arg2:E23
+R49	Meronym Arg1:T93 Arg2:T88
+R50	Or Arg1:T108 Arg2:T109
+R51	Enables Arg1:E28 Arg2:E29

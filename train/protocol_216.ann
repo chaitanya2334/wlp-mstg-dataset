@@ -1,0 +1,93 @@
+T1	Action 20 25	Place
+T2	Location 26 36	reservoirs
+T3	Location 40 54	autoclave bags
+T4	Action 57 61	Wrap
+T5	Location 62 68	plates
+T6	Device 72 76	foil
+T7	Action 81 86	place
+T8	Seal 87 112	a piece of autoclave tape
+T9	Location 113 119	on top
+T10	Action 122 127	Place
+T11	Seal 128 142	autoclave tape
+T12	Location 146 161	pipet tip boxes
+T13	Action 164 169	Place
+T14	Reagent 170 179	all items
+T15	Location 183 203	beige autoclave tray
+T16	Action 206 211	Bring
+T17	Device 215 224	autoclave
+T18	Action 227 235	Fill out
+T19	Location 236 241	table
+T20	Device 255 264	autoclave
+T21	Modifier 267 277	Name / Lab
+T22	Modifier 280 287	Process
+T23	Modifier 290 294	Time
+T24	Action 295 299	Open
+T25	Device 300 309	autoclave
+T26	Location 310 314	door
+T27	Action 318 326	pressing
+T28	Location 327 333	button
+T29	Action 354 359	place
+T30	Location 360 364	tray
+T31	Reagent 370 375	items
+T32	Location 383 389	middle
+T33	Device 397 406	autoclave
+T34	Action 427 431	fill
+T35	Modifier 432 437	large
+T36	Location 438 454	Erlenmeyer flask
+T37	Reagent 460 468	DI water
+T38	Action 473 478	place
+T39	Device 486 495	autoclave
+T40	Device 501 507	sensor
+T41	Action 508 514	placed
+T42	Location 518 523	flask
+T43	Action 526 531	Close
+T44	Device 532 541	autoclave
+T45	Location 542 546	door
+T46	Action 550 558	pressing
+T47	Location 559 565	button
+T48	Action 568 574	Select
+T49	Method 608 610	P1
+T50	Modifier 615 618	dry
+T51	Method 621 623	P2
+T52	Modifier 628 631	wet
+T53	Action 634 639	Press
+T54	Location 640 652	Start button
+T55	Action 657 661	wait
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T14
+E2	Action:T4 Acts-on:T5 Using:T6 Product:T14
+E3	Action:T7 Acts-on:T8 Site:T9
+E4	Action:T10 Acts-on:T11 Site:T12 Product:T14
+E5	Action:T13 Acts-on:T14 Site:T15
+E6	Action:T16 Site:T17 Acts-on:E5 Product:T30
+E7	Action:T18 Acts-on:T19
+E8	Action:T24 Acts-on:T26
+E9	Action:T27 Acts-on:T28
+E10	Action:T29 Acts-on:T30 Site:T32 Product:T39
+E11	Action:T34 Site:T36 Acts-on:T37 Product:T44
+E12	Action:T38 Site:T39 Acts-on:E11
+E13	Action:T41 Acts-on:T40 Site:T42 Product:T36
+E14	Action:T43 Acts-on:T45
+E15	Action:T46 Acts-on:T47
+E16	Action:T48 Using:T49 Acts-on:E14 Product:T54
+E17	Action:T53 Acts-on:T54
+E18	Action:T55 Acts-on:E17
+R1	Meronym Arg1:T9 Arg2:T5
+R2	Meronym Arg1:T31 Arg2:T30
+R3	Meronym Arg1:T32 Arg2:T33
+R4	Meronym Arg1:T19 Arg2:T20
+R5	Mod-Link Arg1:E7 Arg2:T21
+R6	Mod-Link Arg1:E7 Arg2:T22
+R7	Mod-Link Arg1:E7 Arg2:T23
+R8	Meronym Arg1:T26 Arg2:T25
+R9	Meronym Arg1:T28 Arg2:T25
+R10	Enables Arg1:E9 Arg2:E8
+R11	Coreference-Link Arg1:T20 Arg2:T17
+R12	Coreference-Link Arg1:T25 Arg2:T20
+R13	Mod-Link Arg1:T36 Arg2:T35
+R14	Meronym Arg1:T40 Arg2:T39
+R15	Meronym Arg1:T45 Arg2:T44
+R16	Enables Arg1:E15 Arg2:E14
+R17	Meronym Arg1:T47 Arg2:T44
+R18	Or Arg1:T49 Arg2:T51
+R19	Or Arg1:T50 Arg2:T52
+R20	Mod-Link Arg1:E16 Arg2:T50

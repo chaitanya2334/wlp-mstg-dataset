@@ -1,0 +1,38 @@
+T1	Action 36 44	Incubate
+T2	Reagent 45 52	samples
+T3	Device 58 70	thermocycler
+T4	Temperature 74 78	50°C
+T5	Time 83 93	15 minutes
+T6	Numerical 99 100	2
+T7	Numerical 104 105	3
+T8	Reagent 106 115	fragments
+T9	Action 126 135	assembled
+T10	Time 139 149	60 minutes
+T11	Numerical 155 160	4 - 6
+T12	Reagent 161 170	fragments
+T13	Action 181 190	assembled
+T14	Action 193 198	Store
+T15	Reagent 199 206	samples
+T16	Location 210 213	ice
+T17	Temperature 220 225	–20°C
+T18	Action 258 267	Transform
+T19	Reagent 268 306	NEB 5 - alpha Competent E . coli cells
+T20	Amount 338 342	2 μl
+T21	Reagent 350 367	assembly reaction
+T22	Method 384 407	transformation protocol
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T15
+E2	Action:T9 Acts-on:T8
+E3	Action:T13 Acts-on:T12
+E4	Action:T14 Acts-on:T15 Site:T16 Product:T19
+E5	Action:T18 Acts-on:T19 Using:T21 Using2:T22
+R1	Setting Arg1:E1 Arg2:T4
+R2	Measure Arg1:T8 Arg2:T6
+R3	Or Arg1:T6 Arg2:T7
+R4	Measure Arg1:T12 Arg2:T11
+R5	Setting Arg1:E2 Arg2:T5
+R6	Setting Arg1:E3 Arg2:T10
+R7	Or Arg1:T16 Arg2:T17
+R8	Measure Arg1:T21 Arg2:T20
+R9	Overlaps Arg1:E1 Arg2:E2
+R10	Overlaps Arg1:E1 Arg2:E3
+R11	Or Arg1:E2 Arg2:E3

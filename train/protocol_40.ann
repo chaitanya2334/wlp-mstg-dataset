@@ -1,0 +1,75 @@
+T1	Action 26 31	Weigh
+T2	Amount 32 39	0.01 mg
+T3	Reagent 40 43	oil
+T4	Location 49 58	test tube
+T5	Action 63 69	record
+T6	Measure-Type 76 82	weight
+T7	Reagent 85 94	Solid fat
+T8	Action 105 111	melted
+T9	Modifier 112 117	first
+T10	Reagent 120 127	Samples
+T11	Modifier 133 140	high PV
+T12	Modifier 156 164	serially
+T13	Action 165 172	diluted
+T14	Reagent 176 191	working solvent
+T15	Modifier 298 309	Immediately
+T16	Action 310 313	add
+T17	Amount 314 318	3 mL
+T18	Reagent 319 334	working solvent
+T19	Action 339 345	vortex
+T20	Action 349 357	dissolve
+T21	Action 398 405	Prepare
+T22	Location 408 418	blank tube
+T23	Reagent 421 428	solvent
+T24	Action 456 459	Add
+T25	Amount 460 465	15 μl
+T26	Reagent 466 486	ammonium thiocyanate
+T27	Modifier 490 493	all
+T28	Location 494 499	tubes
+T29	Action 506 512	vortex
+T30	Time 513 522	2 - 4 sec
+T31	Action 529 532	Add
+T32	Amount 533 538	15 μl
+T33	Reagent 539 555	ferrous chloride
+T34	Modifier 559 562	all
+T35	Location 563 568	tubes
+T36	Action 575 581	vortex
+T37	Time 582 591	2 - 4 sec
+T38	Action 602 605	sit
+T39	Temperature 609 625	room temperature
+T40	Time 626 632	20 min
+T41	Action 666 670	Read
+T42	Measure-Type 671 681	absorbance
+T43	Device 685 702	spectrophotometer
+T44	Generic-Measure 710 716	510 nm
+E1	Action:T1 Acts-on:T3 Site:T4
+E2	Action:T5 Measure-Type-Link:T6 Acts-on:E1
+E3	Action:T8 Acts-on:T7 Product:T10
+E4	Action:T13 Acts-on:T10 Site:T14 Product:T3
+E5	Action:T16 Acts-on:T18 Site:E2
+E6	Action:T19 Acts-on:E5
+E7	Action:T20 Acts-on:E5 Product:T28
+E8	Action:T21 Acts-on:T22 Product:T28
+E9	Action:T24 Acts-on:T26 Site:T28 Product:T35
+E10	Action:T29 Acts-on:E9
+E11	Action:T31 Acts-on:T33 Site:T35
+E12	Action:T36 Acts-on:E11
+E13	Action:T38 Acts-on:E12
+E14	Action:T41 Measure-Type-Link:T42 Using:T43 Acts-on:E13
+R1	Setting Arg1:E10 Arg2:T30
+R2	Setting Arg1:E12 Arg2:T37
+R3	Setting Arg1:E13 Arg2:T39
+R4	Setting Arg1:E13 Arg2:T40
+R5	Measure Arg1:T3 Arg2:T2
+R6	Measure Arg1:T18 Arg2:T17
+R7	Measure Arg1:T26 Arg2:T25
+R8	Measure Arg1:T33 Arg2:T32
+R9	Mod-Link Arg1:E3 Arg2:T9
+R10	Mod-Link Arg1:E4 Arg2:T12
+R11	Mod-Link Arg1:E5 Arg2:T15
+R12	Mod-Link Arg1:T28 Arg2:T27
+R13	Mod-Link Arg1:T35 Arg2:T34
+R14	Setting Arg1:T43 Arg2:T44
+R15	Mod-Link Arg1:T10 Arg2:T11
+R16	Enables Arg1:E6 Arg2:E7
+R17	Meronym Arg1:T23 Arg2:T22

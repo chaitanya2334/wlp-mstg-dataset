@@ -1,0 +1,62 @@
+T1	Action 56 63	Prepare
+T2	Reagent 64 93	Trace Metal Solutions I - III
+T3	Reagent 96 126	Fe - EDTA Sodium Salt Solution
+T4	Reagent 133 149	Vitamin Solution
+T5	Action 152 155	Add
+T6	Reagent 156 168	constituents
+T7	Amount 172 178	750 mL
+T8	Reagent 179 191	MilliQ water
+T9	Action 194 199	shake
+T10	Action 203 211	dissolve
+T11	Action 214 217	Add
+T12	Reagent 218 230	MilliQ water
+T13	Amount 234 239	1.0 L
+T14	Action 242 258	Filter sterilize
+T15	Action 432 435	Add
+T16	Reagent 436 451	anhydrous salts
+T17	Reagent 454 467	hydrous salts
+T18	Reagent 470 484	macronutrients
+T19	Reagent 489 498	Tris Base
+T20	Concentration 502 506	75 %
+T21	Reagent 515 527	MilliQ water
+T22	Action 534 542	stirring
+T23	Action 546 554	dissolve
+T24	Action 557 560	Add
+T25	Reagent 561 573	MilliQ water
+T26	Amount 577 589	final volume
+T27	Action 592 601	autoclave
+T28	Action 618 621	add
+T29	Amount 625 628	1mL
+T30	Reagent 636 657	Trace Metal Solutions
+T31	Reagent 660 690	Fe - EDTA Sodium Salt Solution
+T32	Reagent 697 713	Vitamin Solution
+T33	Concentration 714 734	per 1L of media made
+E1	Action:T1 Product:T2 Product2:T3 Product3:T4
+E2	Action:T5 Acts-on:T6 Site:T8
+E3	Action:T9 Acts-on:E2
+E4	Action:T10 Acts-on:E2
+E5	Action:T11 Acts-on:T12
+E6	Action:T14 Acts-on:E5 Product:T21 Product2:T25
+E7	Action:T15 Acts-on:T16 Acts-on2:T17 Acts-on3:T18 Acts-on4:T19 Site:T21
+E8	Action:T22 
+E9	Action:T23 
+E10	Action:T24 Acts-on:T25 Site:E9
+E11	Action:T27 Acts-on:E10
+E12	Action:T28 Acts-on:T30 Acts-on2:T31 Acts-on3:T32 Site:E11
+R1	Setting Arg1:E5 Arg2:T13
+R2	Measure Arg1:T21 Arg2:T20
+R3	Setting Arg1:E10 Arg2:T26
+R4	Measure Arg1:T32 Arg2:T29
+R5	Measure Arg1:T31 Arg2:T29
+R6	Measure Arg1:T30 Arg2:T29
+R7	Measure Arg1:T32 Arg2:T33
+R8	Coreference-Link Arg1:T2 Arg2:T6
+R9	Coreference-Link Arg1:T3 Arg2:T6
+R10	Coreference-Link Arg1:T4 Arg2:T6
+R11	Measure Arg1:T8 Arg2:T7
+R12	Enables Arg1:E3 Arg2:E4
+R13	Coreference-Link Arg1:T2 Arg2:T30
+R14	Coreference-Link Arg1:T3 Arg2:T31
+R15	Coreference-Link Arg1:T4 Arg2:T32
+R16	Overlaps Arg1:E8 Arg2:E7
+R17	Enables Arg1:E8 Arg2:E9

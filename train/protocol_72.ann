@@ -1,0 +1,157 @@
+T1	Action 28 32	Pour
+T2	Location 37 43	plates
+T3	Time 55 70	day of titering
+T4	Time 78 88	day before
+T5	Action 91 95	Melt
+T6	Modifier 100 109	MBBM soft
+T7	Reagent 110 114	agar
+T8	Action 119 123	hold
+T9	Temperature 131 135	50°C
+T10	Location 136 146	water bath
+T11	Action 149 157	Dispense
+T12	Amount 158 164	2.5 ml
+T13	Modifier 168 172	soft
+T14	Reagent 173 177	agar
+T15	Modifier 181 188	sterile
+T16	Size 189 200	13 x 100 mm
+T17	Location 201 206	tubes
+T18	Action 211 215	hold
+T19	Temperature 219 223	50°C
+T20	Action 226 237	Concentrate
+T21	Reagent 242 257	NC64A chlorella
+T22	Concentration 261 281	4.0 X 108 cells / ml
+T23	Device 289 307	Sorvall centrifuge
+T24	Speed 311 320	5,000 rpm
+T25	Time 323 328	5 min
+T26	Temperature 331 334	4°C
+T27	Action 339 348	resuspend
+T28	Reagent 353 360	pellets
+T29	Modifier 366 371	fresh
+T30	Reagent 372 378	medium
+T31	Action 444 451	Make up
+T32	Device 452 467	dilution blanks
+T33	Reagent 476 481	virus
+T34	Modifier 489 496	sterile
+T35	Size 497 508	13 x 100 mm
+T36	Location 509 514	tubes
+T37	Amount 520 525	50 mM
+T38	Reagent 526 536	Tris - HCl
+T39	pH 539 545	pH 7.8
+T40	Action 548 554	Dilute
+T41	Reagent 559 564	virus
+T42	Concentration 568 574	1 / 10
+T43	Modifier 575 581	serial
+T44	Reagent 582 591	dilutions
+T45	Action 594 599	Label
+T46	Location 604 610	plates
+T47	Action 613 619	Remove
+T48	Size 620 631	13 x 100 mm
+T49	Location 632 637	tubes
+T50	Modifier 641 645	soft
+T51	Reagent 646 650	agar
+T52	Location 660 670	water bath
+T53	Location 676 690	test tube rack
+T54	Modifier 706 710	each
+T55	Location 711 715	tube
+T56	Action 718 721	add
+T57	Amount 722 728	0.3 ml
+T58	Modifier 736 748	concentrated
+T59	Reagent 749 758	chlorella
+T60	Amount 763 769	0.1 ml
+T61	Reagent 777 790	diluted virus
+T62	Action 898 901	Mix
+T63	Modifier 902 909	briefly
+T64	Action 915 922	rolling
+T65	Location 927 932	tubes
+T66	Method 933 963	between the palms of the hands
+T67	Action 970 974	pour
+T68	Reagent 979 987	contents
+T69	Location 995 999	tube
+T70	Location 1009 1014	plate
+T71	Action 1017 1021	Tilt
+T72	Location 1026 1031	plate
+T73	Modifier 1032 1038	gently
+T74	Time 1039 1102	until the entire surface of the plate is covered with soft agar
+T75	Action 1105 1110	Allow
+T76	Modifier 1115 1118	top
+T77	Reagent 1119 1123	agar
+T78	Action 1127 1135	solidify
+T79	Action 1140 1145	stick
+T80	Modifier 1153 1159	bottom
+T81	Reagent 1160 1164	agar
+T82	Action 1188 1194	Invert
+T83	Location 1199 1205	plates
+T84	Seal 1215 1218	lid
+T85	Modifier 1219 1223	down
+T86	Action 1226 1234	Incubate
+T87	Location 1239 1245	plates
+T88	Temperature 1249 1253	25°C
+T89	Location 1257 1273	continuous light
+T90	Action 1276 1281	Stack
+T91	Location 1286 1292	plates
+T92	Numerical 1298 1306	two deep
+E1	Action:T1 Acts-on:T2 Product:T46
+E2	Action:T5 Acts-on:T7
+E3	Action:T8 Site:T10 Acts-on:E2 Product:T14
+E4	Action:T11 Acts-on:T14 Site:T17
+E5	Action:T18 Acts-on:E4 Product:T49
+E6	Action:T20 Site:T23 Acts-on:T21 Product:T28
+E7	Action:T27 Acts-on:T28 Using:T30 Product:T59
+E8	Action:T31 Acts-on:T32 Using:T33 Site:T36 Using2:T38 Product:T44
+E9	Action:T40 Acts-on:T41 Product:T61
+E10	Action:T45 Acts-on:T46 Product:T70
+E11	Action:T47 Acts-on:T49 Site:T52 Site2:T53 Product:T55
+E12	Action:T56 Acts-on:T59 Acts-on2:T61 Site:T55 Product:T65
+E13	Action:T62 Site:T70 Acts-on:T65 Product:T69
+E14	Action:T64 Using:T66 Acts-on:T65
+E15	Action:T67 Acts-on:T68 Site:T70 Product:T72 Product2:T81
+E16	Action:T71 Acts-on:T72 Acts-on2:E15 Product:T77
+E17	Action:T75 Acts-on:T77
+E18	Action:T78 Acts-on:T77
+E19	Action:T79 Acts-on:T81 Acts-on2:T77 Product:T83
+E20	Action:T82 Acts-on:T83 Using:T84 Product:T87
+E21	Action:T86 Acts-on:T87 Site:T89 Product:T91
+E22	Action:T90 Acts-on:T91
+R1	Or Arg1:T3 Arg2:T4
+R2	Setting Arg1:E1 Arg2:T3
+R3	Setting Arg1:E3 Arg2:T9
+R4	Measure Arg1:T14 Arg2:T12
+R5	Setting Arg1:E5 Arg2:T19
+R6	Measure Arg1:T17 Arg2:T16
+R7	Mod-Link Arg1:T17 Arg2:T15
+R8	Mod-Link Arg1:E16 Arg2:T73
+R9	Mod-Link Arg1:T77 Arg2:T76
+R10	Mod-Link Arg1:T14 Arg2:T13
+R11	Mod-Link Arg1:T51 Arg2:T50
+R12	Mod-Link Arg1:T59 Arg2:T58
+R13	Measure Arg1:T59 Arg2:T57
+R14	Measure Arg1:T61 Arg2:T60
+R15	Mod-Link Arg1:T7 Arg2:T6
+R16	Mod-Link Arg1:T30 Arg2:T29
+R17	Setting Arg1:E6 Arg2:T22
+R18	Setting Arg1:E6 Arg2:T24
+R19	Setting Arg1:E6 Arg2:T25
+R20	Setting Arg1:E6 Arg2:T26
+R21	Measure Arg1:T36 Arg2:T35
+R22	Measure Arg1:T38 Arg2:T37
+R23	Measure Arg1:T38 Arg2:T39
+R24	Measure Arg1:T49 Arg2:T48
+R25	Meronym Arg1:T51 Arg2:T49
+R26	Mod-Link Arg1:E13 Arg2:T63
+R27	Setting Arg1:E16 Arg2:T74
+R28	Mod-Link Arg1:T81 Arg2:T80
+R29	Mod-Link Arg1:T84 Arg2:T85
+R30	Setting Arg1:E21 Arg2:T88
+R31	Mod-Link Arg1:T55 Arg2:T54
+R32	Enables Arg1:E18 Arg2:E18
+R33	Measure Arg1:T44 Arg2:T42
+R34	Mod-Link Arg1:T44 Arg2:T43
+R35	Mod-Link Arg1:T36 Arg2:T34
+R36	Meronym Arg1:T49 Arg2:T52
+R37	Coreference-Link Arg1:T33 Arg2:T41
+R38	Meronym Arg1:T68 Arg2:T69
+R39	Enables Arg1:E14 Arg2:E13
+R40	Enables Arg1:E18 Arg2:E19
+R41	Overlaps Arg1:E19 Arg2:E18
+R42	Meronym Arg1:T84 Arg2:T83
+R43	Setting Arg1:E22 Arg2:T92

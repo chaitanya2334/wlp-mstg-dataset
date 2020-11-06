@@ -1,0 +1,40 @@
+T1	Action 20 29	Autoclave
+T2	Reagent 30 47	BD Difco AC Broth
+T3	Reagent 52 59	NaCl Qs
+T4	Amount 63 66	1 L
+T5	Reagent 72 87	distilled water
+T6	Time 92 98	20 min
+T7	Action 126 129	add
+T8	Amount 130 135	16 ml
+T9	Generic-Measure 136 139	2 M
+T10	Reagent 140 145	MgSO4
+T11	Amount 150 155	10 ml
+T12	Generic-Measure 156 159	1 M
+T13	Reagent 160 165	CaCl2
+T14	Action 168 176	Dispense
+T15	Amount 177 180	2.0
+T16	Amount 184 190	4.5 ml
+T17	Device 195 207	sterile tube
+T18	Action 210 219	Inoculate
+T19	Reagent 220 231	sterile MPB
+T20	Numerical 237 242	1 : 5
+T21	Measure-Type 257 265	dilution
+T22	Reagent 269 276	culture
+T23	Action 279 287	Incubate
+T24	Temperature 291 295	22°C
+E1	Action:T1 Acts-on:T2 Acts-on2:T3 Using:T5
+E2	Action:T7 Acts-on:T10 Acts-on2:T13 Site:E1
+E3	Action:T14 Site:T17 Acts-on:E2
+E4	Action:T18 Acts-on:T19 Using:T22 Site:E3
+E5	Action:T23 Acts-on:E4
+R1	Setting Arg1:E5 Arg2:T24
+R2	Measure Arg1:T22 Arg2:T20
+R3	Of-Type Arg1:T20 Arg2:T21
+R4	Or Arg1:T15 Arg2:T16
+R5	Setting Arg1:E3 Arg2:T15
+R6	Measure Arg1:T10 Arg2:T9
+R7	Measure Arg1:T10 Arg2:T8
+R8	Measure Arg1:T13 Arg2:T12
+R9	Measure Arg1:T13 Arg2:T11
+R10	Setting Arg1:E1 Arg2:T4
+R11	Setting Arg1:E1 Arg2:T6

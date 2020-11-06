@@ -1,0 +1,229 @@
+T1	Action 60 63	Add
+T2	Amount 64 68	1 mL
+T3	Reagent 69 83	TRIzol Reagent
+T4	Amount 87 98	50 - 100 mg
+T5	Reagent 102 126	frozen Drosophila tissue
+T6	Size 132 138	1.5 mL
+T7	Location 139 159	microcentrifuge tube
+T8	Action 166 176	homogenize
+T9	Modifier 177 188	immediately
+T10	Device 194 221	a disposable plastic pestle
+T11	Action 224 233	Centifuge
+T12	Reagent 238 244	sample
+T13	Speed 248 258	12,000 x g
+T14	Time 263 273	10 minutes
+T15	Temperature 277 280	4˚C
+T16	Action 458 464	Remove
+T17	Action 469 476	discard
+T18	Reagent 477 492	the fatty layer
+T19	Action 495 503	Transfer
+T20	Reagent 508 527	cleared supernatant
+T21	Location 533 541	new tube
+T22	Action 544 552	Incubate
+T23	Reagent 557 563	sample
+T24	Time 568 577	5 minutes
+T25	Temperature 581 597	room temperature
+T26	Action 600 603	Add
+T27	Amount 604 610	0.2 mL
+T28	Reagent 614 624	chloroform
+T29	Action 631 634	cap
+T30	Location 639 643	tube
+T31	Modifier 644 652	securely
+T32	Action 655 660	Shake
+T33	Location 665 669	tube
+T34	Modifier 670 680	vigorously
+T35	Modifier 681 688	by hand
+T36	Time 693 703	15 seconds
+T37	Action 706 714	Incubate
+T38	Time 719 732	2 - 3 minutes
+T39	Temperature 736 752	room temperature
+T40	Action 755 765	Centrifuge
+T41	Reagent 770 776	sample
+T42	Speed 780 790	12,000 x g
+T43	Time 795 805	15 minutes
+T44	Temperature 809 812	4˚C
+T45	Action 1010 1016	Remove
+T46	Reagent 1021 1034	aqueous phase
+T47	Reagent 1042 1048	sample
+T48	Action 1052 1059	angling
+T49	Location 1064 1068	tube
+T50	Generic-Measure 1069 1075	at 45˚
+T51	Action 1080 1089	pipetting
+T52	Reagent 1094 1102	solution
+T53	Action 1109 1114	Place
+T54	Reagent 1119 1132	aqueous phase
+T55	Location 1140 1148	new tube
+T56	Reagent 1227 1280	The interphase and organic phenol - chloroform phases
+T57	Action 1288 1293	saved
+T58	Time 1342 1351	overnight
+T59	Temperature 1355 1358	4˚C
+T60	Action 1496 1499	Add
+T61	Amount 1500 1506	0.5 mL
+T62	Concentration 1510 1515	100 %
+T63	Reagent 1516 1527	isopropanol
+T64	Reagent 1535 1548	aqueous phase
+T65	Action 1551 1559	Incubate
+T66	Reagent 1560 1566	sample
+T67	Temperature 1570 1586	room temperature
+T68	Time 1591 1601	10 minutes
+T69	Action 1604 1614	Centrifuge
+T70	Speed 1618 1628	12,000 x g
+T71	Time 1633 1643	10 minutes
+T72	Temperature 1647 1650	4˚C
+T73	Action 1765 1771	Remove
+T74	Reagent 1776 1787	supernatant
+T75	Location 1797 1801	tube
+T76	Reagent 1812 1826	the RNA pellet
+T77	Action 1829 1833	Wash
+T78	Reagent 1838 1844	pellet
+T79	Amount 1850 1854	1 mL
+T80	Concentration 1855 1859	75 %
+T81	Reagent 1860 1867	ethanol
+T82	Reagent 1872 1875	RNA
+T83	Action 1883 1889	stored
+T84	Concentration 1893 1897	75 %
+T85	Reagent 1898 1905	ethanol
+T86	Modifier 1906 1914	at least
+T87	Time 1915 1921	1 year
+T88	Temperature 1925 1931	- 20˚C
+T89	Modifier 1937 1945	at least
+T90	Time 1946 1952	1 week
+T91	Temperature 1956 1959	4˚C
+T92	Modifier 1962 1969	Briefly
+T93	Action 1970 1976	vortex
+T94	Reagent 1981 1987	sample
+T95	Action 1990 2000	Centrifuge
+T96	Location 2005 2009	tube
+T97	Speed 2013 2022	7,500 x g
+T98	Time 2027 2036	5 minutes
+T99	Temperature 2040 2043	4˚C
+T100	Action 2046 2053	Discard
+T101	Reagent 2058 2062	wash
+T102	Action 2065 2071	Vacuum
+T103	Action 2075 2082	air dry
+T104	Reagent 2087 2097	RNA pellet
+T105	Time 2102 2116	5 - 10 minutes
+T106	Action 2128 2131	dry
+T107	Reagent 2136 2142	pellet
+T108	Device 2146 2163	vacuum centrifuge
+T109	Reagent 2185 2188	RNA
+T110	Action 2192 2195	dry
+T111	Modifier 2196 2206	completely
+T112	Action 2209 2218	Resuspend
+T113	Reagent 2223 2233	RNA pellet
+T114	Reagent 2237 2255	RNase - free water
+T115	Action 2259 2266	passing
+T116	Reagent 2271 2279	solution
+T117	Modifier 2280 2291	up and down
+T118	Numerical 2292 2305	several times
+T119	Device 2316 2327	pipette tip
+T120	Action 2330 2338	Incubate
+T121	Location 2344 2354	water bath
+T122	Location 2358 2372	heat block set
+T123	Temperature 2376 2385	55 - 60˚C
+T124	Time 2390 2405	10 - 15 minutes
+T125	Action 2408 2442	Proceed to downstream applications
+T126	Method 2453 2468	DNase treatment
+T127	Method 2472 2486	cDNA synthesis
+T128	Action 2492 2497	store
+T129	Temperature 2501 2507	- 70˚C
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T8 Using:T10 Acts-on:E1 Product:T12
+E3	Action:T11 Acts-on:T12 Product:T18
+E4	Action:T16 Acts-on:T18
+E5	Action:T17 Acts-on:E4 Product:T20
+E6	Action:T19 Acts-on:T20 Site:T21 Product:T23
+E7	Action:T22 Acts-on:T23
+E8	Action:T26 Acts-on:T28 Site:E7 Product:T30
+E9	Action:T29 Acts-on:T30 Product:T33
+E10	Action:T32 Acts-on:T33
+E11	Action:T37 Acts-on:E10 Product:T41
+E12	Action:T40 Acts-on:T41 Product:T47
+E13	Action:T45 Acts-on:T46 Product:T54
+E14	Action:T48 Acts-on:T49 Product:T52
+E15	Action:T51 Acts-on:T52
+E16	Action:T53 Acts-on:T54 Site:T55 Product:T56
+E17	Action:T57 Acts-on:T56 Product:T64
+E18	Action:T60 Acts-on:T63 Site:T64 Product:T66
+E19	Action:T65 Acts-on:T66
+E20	Action:T69 Acts-on:E19 Product:T75
+E21	Action:T73 Acts-on:T74 Site:T75 Product:T76
+E22	Action:T77 Acts-on:T78 Using:T81 Product:T82
+E23	Action:T83 Acts-on:T82 Site:T85 Product:T94
+E24	Action:T93 Acts-on:T94 Product:T96
+E25	Action:T95 Acts-on:T96 Product:T101
+E26	Action:T100 Acts-on:T101 Product:T104
+E27	Action:T102 Acts-on:T104
+E28	Action:T103 Acts-on:T104 Product:T107 Product2:T109
+E29	Action:T106 Using:T108 Acts-on:T107
+E30	Action:T110 Acts-on:T109 Product:T113
+E31	Action:T112 Acts-on:T113 Site:T114
+E32	Action:T115 Acts-on:T116 Count:T118 Using:T119
+E33	Action:T120 Site:T121 Acts-on:E31
+E34	Action:T125 Acts-on:E33 Using:T126
+E35	Action:T128 Acts-on:E33
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T7 Arg2:T6
+R4	Meronym Arg1:T5 Arg2:T7
+R5	Setting Arg1:E3 Arg2:T13
+R6	Setting Arg1:E3 Arg2:T14
+R7	Setting Arg1:E3 Arg2:T15
+R8	Setting Arg1:E7 Arg2:T24
+R9	Setting Arg1:E7 Arg2:T25
+R10	Mod-Link Arg1:E9 Arg2:T31
+R11	Measure Arg1:T28 Arg2:T27
+R12	Mod-Link Arg1:E10 Arg2:T34
+R13	Mod-Link Arg1:E10 Arg2:T35
+R14	Setting Arg1:E10 Arg2:T36
+R15	Setting Arg1:E12 Arg2:T42
+R16	Setting Arg1:E12 Arg2:T43
+R17	Setting Arg1:E12 Arg2:T44
+R18	Meronym Arg1:T46 Arg2:T47
+R19	Setting Arg1:E14 Arg2:T50
+R20	Setting Arg1:E17 Arg2:T58
+R21	Setting Arg1:E17 Arg2:T59
+R22	Measure Arg1:T63 Arg2:T62
+R23	Measure Arg1:T63 Arg2:T61
+R24	Setting Arg1:E19 Arg2:T67
+R25	Setting Arg1:E19 Arg2:T68
+R26	Measure Arg1:T81 Arg2:T80
+R27	Measure Arg1:T81 Arg2:T79
+R28	Or Arg1:T87 Arg2:T90
+R29	Or Arg1:T88 Arg2:T91
+R30	Measure Arg1:T85 Arg2:T84
+R31	Setting Arg1:E23 Arg2:T87
+R32	Setting Arg1:E23 Arg2:T88
+R33	Mod-Link Arg1:E24 Arg2:T92
+R34	Setting Arg1:E25 Arg2:T97
+R35	Setting Arg1:E25 Arg2:T98
+R36	Setting Arg1:E25 Arg2:T99
+R37	Setting Arg1:E27 Arg2:T105
+R38	Setting Arg1:E28 Arg2:T105
+R39	Mod-Link Arg1:E32 Arg2:T117
+R40	Or Arg1:T121 Arg2:T122
+R41	Setting Arg1:E33 Arg2:T123
+R42	Setting Arg1:E33 Arg2:T124
+R43	Setting Arg1:E35 Arg2:T129
+R44	Mod-Link Arg1:E2 Arg2:T9
+R45	Setting Arg1:E11 Arg2:T38
+R46	Setting Arg1:E11 Arg2:T39
+R47	Enables Arg1:E14 Arg2:E13
+R48	Meronym Arg1:T47 Arg2:T49
+R49	Coreference-Link Arg1:T55 Arg2:T21
+R50	Setting Arg1:E20 Arg2:T70
+R51	Setting Arg1:E20 Arg2:T71
+R52	Setting Arg1:E20 Arg2:T72
+R53	Meronym Arg1:T74 Arg2:T75
+R54	Coreference-Link Arg1:T78 Arg2:T76
+R55	Coreference-Link Arg1:T85 Arg2:T81
+R56	Mod-Link Arg1:T87 Arg2:T86
+R57	Mod-Link Arg1:T90 Arg2:T89
+R58	Or Arg1:E27 Arg2:E28
+R59	Prevents Arg1:E28 Arg2:E29
+R60	Mod-Link Arg1:E30 Arg2:T111
+R61	Prevents Arg1:E28 Arg2:E30
+R62	Enables Arg1:E32 Arg2:E31
+R63	Meronym Arg1:T113 Arg2:T116
+R64	Or Arg1:E34 Arg2:E35
+R65	Or Arg1:T126 Arg2:T127

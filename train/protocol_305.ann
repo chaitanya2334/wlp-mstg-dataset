@@ -1,0 +1,105 @@
+T1	Action 82 89	prepare
+T2	Reagent 94 107	mucin samples
+T3	Action 110 116	Assign
+T4	Action 188 191	Add
+T5	Reagent 192 201	DDI water
+T6	Reagent 209 216	samples
+T7	Location 228 232	tube
+T8	Amount 237 241	30ul
+T9	Action 253 256	Add
+T10	Reagent 257 271	loading buffer
+T11	Modifier 275 279	each
+T12	Reagent 280 286	sample
+T13	Action 289 296	Heating
+T14	Mention 297 301	them
+T15	Temperature 305 314	95 degree
+T16	Time 319 324	10min
+T17	Action 356 359	Add
+T18	Reagent 365 379	running buffer
+T19	Device 389 408	electrophrosis cell
+T20	Action 411 415	peel
+T21	Reagent 420 431	green paste
+T22	Location 439 445	bottom
+T23	Action 450 459	take away
+T24	Seal 464 487	top green plastic cover
+T25	Action 490 493	set
+T26	Reagent 498 501	gel
+T27	Device 509 528	electrophorsis cell
+T28	Action 531 535	Fill
+T29	Location 540 571	inner and outer buffer chambers
+T30	Reagent 577 593	running buffer .
+T31	Action 763 767	Load
+T32	Reagent 772 786	protein sample
+T33	Reagent 794 797	gel
+T34	Action 800 807	Connect
+T35	Device 812 832	electrophoresis cell
+T36	Device 840 852	power supply
+T37	Action 857 864	perform
+T38	Method 865 878	electrophores
+T39	Generic-Measure 899 912	150 V ~ 200 V
+T40	Action 995 999	Wash
+T41	Reagent 1000 1004	gels
+T42	Reagent 1008 1014	DI H2O
+T43	Action 1017 1023	Remove
+T44	Modifier 1024 1027	all
+T45	Reagent 1028 1033	water
+T46	Location 1039 1057	staining container
+T47	Action 1062 1065	add
+T48	Reagent 1066 1071	stain
+T49	Action 1087 1094	agitate
+T50	Time 1095 1104	overnight
+T51	Action 1107 1111	Wash
+T52	Reagent 1112 1115	gel
+T53	Reagent 1122 1130	DI water
+T54	Modifier 1133 1143	first time
+T55	Time 1144 1153	5 minutes
+T56	Modifier 1156 1167	second time
+T57	Time 1168 1178	10 minutes
+T58	Modifier 1181 1191	third time
+T59	Time 1192 1202	30 minutes
+T60	Modifier 1205 1215	forth time
+T61	Time 1218 1224	1 hour
+T62	Modifier 1229 1239	fifth time
+T63	Action 1240 1244	keep
+T64	Reagent 1249 1252	gel
+T65	Reagent 1256 1264	DI water
+T66	Action 1265 1272	agitate
+T67	Time 1273 1282	overnight
+E1	Action:T1 Acts-on:T2
+E2	Action:T3 Acts-on:E1 Product:T6
+E3	Action:T4 Acts-on:T5 Acts-on2:T6 Site:T7 Product:T12
+E4	Action:T9 Acts-on:T10 Site:T12 Product:T14
+E5	Action:T13 Acts-on:T14 Product:T18
+E6	Action:T17 Acts-on:T18 Site:T19 Product:T21
+E7	Action:T20 Acts-on:T21 Site:T22
+E8	Action:T23 Acts-on:T24 Site:E7
+E9	Action:T25 Acts-on:T26 Site:T27 Acts-on2:E8
+E10	Action:T28 Acts-on:T29 Using:T30 Product:T33 Site:E9
+E11	Action:T31 Acts-on:T32 Site:T33
+E12	Action:T34 Acts-on:T35 Using:T36 Acts-on2:E11
+E13	Action:T37 Using:T38 Acts-on:E12 Product:T41
+E14	Action:T40 Acts-on:T41 Using:T42 Product:T45
+E15	Action:T43 Acts-on:T45 Site:T46
+E16	Action:T47 Acts-on:T48 Site:E15
+E17	Action:T49 Acts-on:T46 Product:T52
+E18	Action:T51 Acts-on:T52 Using:T53 Product:T64
+E19	Action:T63 Acts-on:T64 Site:T65
+E20	Action:T66 Acts-on:E19
+R1	Setting Arg1:E3 Arg2:T8
+R2	Mod-Link Arg1:T12 Arg2:T11
+R3	Setting Arg1:E5 Arg2:T15
+R4	Setting Arg1:E5 Arg2:T16
+R5	Setting Arg1:E13 Arg2:T39
+R6	Mod-Link Arg1:T45 Arg2:T44
+R7	Setting Arg1:E17 Arg2:T50
+R8	Coreference-Link Arg1:T30 Arg2:T18
+R9	Setting Arg1:E20 Arg2:T67
+R10	Mod-Link Arg1:T55 Arg2:T54
+R11	Setting Arg1:E18 Arg2:T55
+R12	Mod-Link Arg1:T57 Arg2:T56
+R13	Mod-Link Arg1:T61 Arg2:T60
+R14	Mod-Link Arg1:T59 Arg2:T58
+R15	Setting Arg1:E18 Arg2:T57
+R16	Setting Arg1:E18 Arg2:T59
+R17	Setting Arg1:E18 Arg2:T61
+R18	Mod-Link Arg1:E19 Arg2:T62

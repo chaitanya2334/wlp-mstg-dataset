@@ -1,0 +1,228 @@
+T1	Action 25 34	Inoculate
+T2	Location 35 41	flasks
+T3	Reagent 47 56	Chlorella
+T4	Action 61 69	incubate
+T5	Temperature 73 77	25°C
+T6	Modifier 78 111	with continuous light and shaking
+T7	Action 164 173	Inoculate
+T8	Location 174 180	flasks
+T9	Reagent 186 201	Chlorella NC64A
+T10	Reagent 205 209	MBBM
+T11	Reagent 215 231	Micractinium Pbi
+T12	Reagent 235 238	FES
+T13	Action 245 253	incubate
+T14	Temperature 257 261	250C
+T15	Modifier 262 295	with continuous light and shaking
+T16	Action 381 387	Infect
+T17	Location 392 398	flasks
+T18	Reagent 402 411	chlorella
+T19	Reagent 417 422	virus
+T20	Generic-Measure 426 451	an moi of 0.01 to 0.001 .
+T21	Action 452 460	Incubate
+T22	Location 465 471	flasks
+T23	Time 476 489	48 - 72 hours
+T24	Temperature 493 497	25°C
+T25	Method 503 531	continuous light and shaking
+T26	Reagent 562 570	“lysate”
+T27	Action 573 583	Centrifuge
+T28	Reagent 588 594	lysate
+T29	Device 602 619	Sorvall GSA rotor
+T30	Size 623 629	250 ml
+T31	Location 630 637	bottles
+T32	Speed 641 650	5,000 rpm
+T33	Time 667 672	5 min
+T34	Temperature 675 678	4°C
+T35	Action 681 688	Discard
+T36	Reagent 693 700	pellets
+T37	Action 703 706	Add
+T38	Reagent 707 721	Triton X - 100
+T39	Reagent 729 748	lysate supernatants
+T40	Concentration 778 781	1 %
+T41	Action 812 822	Centrifuge
+T42	Reagent 827 833	lysate
+T43	Device 841 885	Beckman Type 19 225 mL ultracentrifuge rotor
+T44	Speed 889 899	17,000 rpm
+T45	Time 917 923	50 min
+T46	Temperature 929 932	4°C
+T47	Action 935 942	Discard
+T48	Reagent 947 959	supernatants
+T49	Action 962 971	Resuspend
+T50	Reagent 976 989	virus pellets
+T51	Amount 995 1009	a small volume
+T52	Concentration 1013 1018	50 mM
+T53	Reagent 1019 1029	Tris - HCl
+T54	pH 1032 1038	pH 7.8
+T55	Action 1096 1101	Layer
+T56	Reagent 1106 1122	virus suspension
+T57	Concentration 1128 1159	100 - 400 mg / mL ( 10 - 40 % )
+T58	Reagent 1160 1192	linear sucrose density gradients
+T59	Action 1193 1205	equilibrated
+T60	Concentration 1211 1216	50 mM
+T61	Reagent 1217 1227	Tris - HCl
+T62	pH 1230 1236	pH 7.8
+T63	Action 1239 1246	made up
+T64	Location 1250 1274	Beckman SW28 rotor tubes
+T65	Amount 1297 1305	3 - 4 mL
+T66	Modifier 1306 1318	per gradient
+T67	Action 1323 1333	Centrifuge
+T68	Reagent 1338 1347	gradients
+T69	Device 1353 1371	Beckman SW28 rotor
+T70	Speed 1375 1385	20,000 rpm
+T71	Time 1406 1412	20 min
+T72	Temperature 1415 1418	4°C
+T73	Action 1421 1427	Remove
+T74	Reagent 1432 1443	virus bands
+T75	Reagent 1453 1462	gradients
+T76	Device 1468 1488	sterile bent needles
+T77	Action 1493 1501	transfer
+T78	Modifier 1505 1514	oak ridge
+T79	Size 1515 1520	30 mL
+T80	Location 1521 1551	polypropylene centrifuge tubes
+T81	Action 1554 1559	Split
+T82	Reagent 1564 1569	virus
+T83	Numerical 1575 1576	3
+T84	Reagent 1577 1586	gradients
+T85	Numerical 1595 1596	2
+T86	Location 1597 1602	tubes
+T87	Modifier 1605 1611	Slowly
+T88	Action 1612 1618	dilute
+T89	Reagent 1623 1628	virus
+T90	Amount 1636 1647	tube volume
+T91	Concentration 1653 1658	50 mM
+T92	Reagent 1659 1669	Tris - HCl
+T93	pH 1672 1678	pH 7.8
+T94	Action 1681 1691	Centrifuge
+T95	Location 1696 1701	tubes
+T96	Device 1705 1726	Beckman Ti 50.2 rotor
+T97	Speed 1730 1740	27,000 rpm
+T98	Time 1763 1770	3 hours
+T99	Temperature 1773 1776	4°C
+T100	Action 1795 1801	dilute
+T101	Reagent 1806 1811	virus
+T102	Reagent 1821 1830	gradients
+T103	Concentration 1831 1842	~ 10 - fold
+T104	Reagent 1848 1859	Tris buffer
+T105	Action 1864 1874	centrifuge
+T106	Device 1882 1895	Type 19 rotor
+T107	Time 1900 1906	1 hour
+T108	Speed 1909 1919	17,000 rpm
+T109	Time 1922 1925	4 C
+T110	Action 1998 2005	Discard
+T111	Reagent 2010 2022	supernatants
+T112	Action 2025 2034	Resuspend
+T113	Reagent 2039 2052	virus pellets
+T114	Amount 2060 2072	small volume
+T115	Concentration 2076 2081	50 mM
+T116	Reagent 2082 2092	Tris - HCl
+T117	pH 2095 2101	pH 7.8
+T118	Action 2104 2109	Store
+T119	Reagent 2114 2119	virus
+T120	Temperature 2123 2126	4°C
+T121	Action 2136 2142	freeze
+T122	Action 2145 2165	Filter sterilizition
+T123	Amount 2174 2181	0.45 µm
+T124	Reagent 2182 2199	cellulose acetate
+T125	Reagent 2209 2235	low protein binding filter
+T126	Modifier 2253 2259	Gently
+T127	Action 2260 2264	wash
+T128	Reagent 2269 2275	pellet
+T129	Action 2280 2286	bottle
+T130	Concentration 2297 2302	50 mM
+T131	pH 2310 2316	pH 7.8
+T132	Reagent 2317 2323	buffer
+T133	Action 2327 2331	wash
+T134	Reagent 2332 2348	residual sucrose
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T17
+E2	Action:T4 Acts-on:E1
+E3	Action:T7 Acts-on:T8 Using:T9 Product:T17
+E4	Action:T13 Acts-on:E3
+E5	Action:T16 Acts-on:T17 Using:T19 Product:T22
+E6	Action:T21 Acts-on:T22 Using:T25 Product:T26
+E7	Action:T27 Acts-on:T28 Site:T29 Product:T36
+E8	Action:T35 Acts-on:T36 Product:T39
+E9	Action:T37 Acts-on:T38 Site:T39 Product:T42
+E10	Action:T41 Acts-on:T42 Site:T43 Product:T48
+E11	Action:T47 Acts-on:T48 Product:T50
+E12	Action:T49 Acts-on:T50 Using:T53 Product:T56
+E13	Action:T55 Acts-on:T56 Site:T58 Product:T68
+E14	Action:T59 Using:T61 Acts-on:T64 Product:T58
+E15	Action:T63 Site:T64
+E16	Action:T67 Acts-on:T68 Site:T69 Product:T74
+E17	Action:T73 Acts-on:T74 Site:T75 Using:T76
+E18	Action:T77 Site:T80 Acts-on:E17 Product:T84
+E19	Action:T81 Acts-on:T82 Site:T84 Site2:T86 Product:T89
+E20	Action:T88 Acts-on:T89 Using:T92 Product:T95
+E21	Action:T94 Acts-on:T95 Site:T96 Product:T101
+E22	Action:T100 Acts-on:T101 Using:T104
+E23	Action:T105 Site:T106 Acts-on:E22 Product:T111
+E24	Action:T110 Acts-on:T111 Product:T113
+E25	Action:T112 Acts-on:T113 Using:T116 Product:T119
+E26	Action:T118 Acts-on:T119
+E27	Action:T121 Acts-on:E26
+E28	Action:T122 Using:T124 Acts-on:E27 Product:T128
+E29	Action:T127 Acts-on:T128
+E30	Action:T129 Using:T132 Acts-on:E29
+E31	Action:T133 Acts-on:T134
+R1	Setting Arg1:E2 Arg2:T5
+R2	Mod-Link Arg1:E2 Arg2:T6
+R3	Meronym Arg1:T9 Arg2:T10
+R4	Meronym Arg1:T11 Arg2:T12
+R5	Or Arg1:T9 Arg2:T11
+R6	Setting Arg1:E4 Arg2:T14
+R7	Mod-Link Arg1:E4 Arg2:T15
+R8	Measure Arg1:T19 Arg2:T20
+R9	Meronym Arg1:T18 Arg2:T17
+R10	Setting Arg1:E6 Arg2:T23
+R11	Setting Arg1:E6 Arg2:T24
+R12	Measure Arg1:T31 Arg2:T30
+R13	Setting Arg1:E7 Arg2:T32
+R14	Setting Arg1:E7 Arg2:T33
+R15	Setting Arg1:E7 Arg2:T34
+R16	Setting Arg1:E9 Arg2:T40
+R17	Setting Arg1:E10 Arg2:T44
+R18	Setting Arg1:E10 Arg2:T45
+R19	Setting Arg1:E10 Arg2:T46
+R20	Measure Arg1:T53 Arg2:T52
+R21	Measure Arg1:T53 Arg2:T51
+R22	Measure Arg1:T53 Arg2:T54
+R23	Measure Arg1:T58 Arg2:T57
+R24	Measure Arg1:T61 Arg2:T60
+R25	Measure Arg1:T61 Arg2:T62
+R26	Measure Arg1:T56 Arg2:T65
+R27	Mod-Link Arg1:T65 Arg2:T66
+R28	Setting Arg1:E16 Arg2:T70
+R29	Setting Arg1:E16 Arg2:T71
+R30	Setting Arg1:E16 Arg2:T72
+R31	Measure Arg1:T80 Arg2:T79
+R32	Measure Arg1:T84 Arg2:T83
+R33	Measure Arg1:T86 Arg2:T85
+R34	Setting Arg1:E20 Arg2:T90
+R35	Measure Arg1:T92 Arg2:T91
+R36	Measure Arg1:T92 Arg2:T93
+R37	Setting Arg1:E21 Arg2:T97
+R38	Setting Arg1:E21 Arg2:T98
+R39	Setting Arg1:E21 Arg2:T99
+R40	Meronym Arg1:T101 Arg2:T102
+R41	Setting Arg1:E22 Arg2:T103
+R42	Setting Arg1:E23 Arg2:T107
+R43	Setting Arg1:E23 Arg2:T108
+R44	Setting Arg1:E23 Arg2:T109
+R45	Measure Arg1:T116 Arg2:T115
+R46	Measure Arg1:T116 Arg2:T117
+R47	Measure Arg1:T116 Arg2:T114
+R48	Or Arg1:T124 Arg2:T125
+R49	Setting Arg1:E26 Arg2:T120
+R50	Measure Arg1:T124 Arg2:T123
+R51	Measure Arg1:T132 Arg2:T130
+R52	Coreference-Link Arg1:T28 Arg2:T26
+R53	Meronym Arg1:T31 Arg2:T29
+R54	Meronym Arg1:T74 Arg2:T75
+R55	Mod-Link Arg1:T80 Arg2:T78
+R56	Meronym Arg1:T82 Arg2:T84
+R57	Mod-Link Arg1:E20 Arg2:T87
+R58	Coreference-Link Arg1:T92 Arg2:T53
+R59	Coreference-Link Arg1:T116 Arg2:T92
+R60	Prevents Arg1:E26 Arg2:E27
+R61	Mod-Link Arg1:E29 Arg2:T126
+R62	Measure Arg1:T132 Arg2:T131
+R63	Enables Arg1:E30 Arg2:E31

@@ -1,0 +1,96 @@
+T1	Action 30 40	Centrifuge
+T2	Reagent 45 60	NC64A chlorella
+T3	Device 68 86	Sorvall centrifuge
+T4	Speed 90 99	5,000 rpm
+T5	Time 102 107	5 min
+T6	Temperature 110 113	4°C
+T7	Action 167 171	thaw
+T8	Reagent 176 183	pellets
+T9	Action 188 195	suspend
+T10	Concentration 201 206	50 mM
+T11	Reagent 207 217	Tris - HCl
+T12	pH 220 226	pH 7.8
+T13	Action 229 239	Centrifuge
+T14	Reagent 244 249	cells
+T15	Device 257 275	Sorvall SS34 rotor
+T16	Device 279 291	HB - 4 rotor
+T17	Speed 295 304	5,000 rpm
+T18	Time 307 312	5 min
+T19	Temperature 315 318	4°C
+T20	Action 321 327	Decant
+T21	Reagent 332 344	supernatants
+T22	Action 347 357	Centrifuge
+T23	Reagent 362 367	cells
+T24	Device 375 393	Sorvall SS34 rotor
+T25	Device 397 409	HB - 4 rotor
+T26	Speed 413 422	5,000 rpm
+T27	Time 425 430	5 min
+T28	Temperature 433 436	4°C
+T29	Action 439 445	Repeat
+T30	Concentration 450 454	70 %
+T31	Reagent 455 463	methanol
+T32	Method 464 470	washes
+T33	Numerical 471 476	5 - 6
+T34	Amount 496 510	desired amount
+T35	Reagent 514 521	pigment
+T36	Action 531 538	removed
+T37	Reagent 548 553	cells
+T38	Action 556 561	Store
+T39	Reagent 566 584	chlorella “ghosts”
+T40	Temperature 588 591	4°C
+T41	Concentration 595 599	70 %
+T42	Reagent 600 608	methanol
+T43	Action 611 614	Add
+T44	Amount 615 625	10 - 15 mL
+T45	Concentration 629 633	70 %
+T46	Reagent 634 642	methanol
+T47	Reagent 650 667	chlorella pellets
+T48	Action 672 681	resuspend
+T49	Reagent 686 691	cells
+T50	Modifier 692 702	completely
+T51	Action 705 711	Decant
+T52	Reagent 716 728	supernatants
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T14
+E2	Action:T7 Acts-on:T8
+E3	Action:T9 Acts-on:T8 Using:T11 Product:T14
+E4	Action:T13 Acts-on:T14 Using:T15 Product:T21
+E5	Action:T20 Acts-on:T21 Product:T23
+E6	Action:T22 Acts-on:T23 Using:T24 Product:T37
+E7	Action:T29 Count:T33 Using:T32 Acts-on:T31 Site:E6
+E8	Action:T36 Acts-on:T35 Site:T37 Product:T39
+E9	Action:T38 Acts-on:T39 Site:T42 Product:T47
+E10	Action:T43 Acts-on:T46 Site:T47 Product:T49
+E11	Action:T48 Acts-on:T49 Product:T52
+E12	Action:T51 Acts-on:T52
+R1	Setting Arg1:T3 Arg2:T4
+R2	Setting Arg1:T3 Arg2:T5
+R3	Setting Arg1:T3 Arg2:T6
+R4	Measure Arg1:T11 Arg2:T10
+R5	Measure Arg1:T11 Arg2:T12
+R6	Or Arg1:T15 Arg2:T16
+R7	Setting Arg1:T15 Arg2:T17
+R8	Setting Arg1:T15 Arg2:T18
+R9	Setting Arg1:T15 Arg2:T19
+R10	Setting Arg1:T16 Arg2:T17
+R11	Setting Arg1:T16 Arg2:T18
+R12	Setting Arg1:T16 Arg2:T19
+R13	Measure Arg1:T35 Arg2:T34
+R14	Measure Arg1:T31 Arg2:T30
+R15	Measure Arg1:T42 Arg2:T41
+R16	Setting Arg1:E9 Arg2:T40
+R17	Measure Arg1:T46 Arg2:T45
+R18	Or Arg1:T24 Arg2:T25
+R19	Setting Arg1:T24 Arg2:T26
+R20	Setting Arg1:T24 Arg2:T27
+R21	Setting Arg1:T24 Arg2:T28
+R22	Setting Arg1:T25 Arg2:T26
+R23	Setting Arg1:T25 Arg2:T27
+R24	Setting Arg1:T25 Arg2:T28
+R25	Coreference-Link Arg1:T24 Arg2:T15
+R26	Coreference-Link Arg1:T25 Arg2:T16
+R27	Or Arg1:E7 Arg2:E8
+R28	Meronym Arg1:T35 Arg2:T37
+R29	Coreference-Link Arg1:T46 Arg2:T42
+R30	Coreference-Link Arg1:T42 Arg2:T31
+R31	Measure Arg1:T46 Arg2:T44
+R32	Mod-Link Arg1:E11 Arg2:T50

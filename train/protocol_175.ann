@@ -1,0 +1,181 @@
+T1	Modifier 349 354	fresh
+T2	Reagent 355 368	tissue sample
+T3	Action 411 415	kept
+T4	Location 419 422	ice
+T5	Action 432 438	freeze
+T6	Action 441 446	Weigh
+T7	Modifier 447 460	approximately
+T8	Amount 461 469	50‐100mg
+T9	Reagent 470 476	tissue
+T10	Modifier 484 490	cooled
+T11	Location 491 502	glass plate
+T12	Device 523 530	scalpel
+T13	Action 533 538	mince
+T14	Reagent 543 549	tissue
+T15	Modifier 555 565	very small
+T16	Reagent 566 572	pieces
+T17	Action 575 582	Perform
+T18	Method 583 594	steps 4 - 7
+T19	Location 598 601	ice
+T20	Action 604 612	Transfer
+T21	Modifier 617 623	minced
+T22	Reagent 624 630	tissue
+T23	Modifier 637 645	ice‐cold
+T24	Device 646 671	Dounce tissue homogenizer
+T25	Action 674 679	Stand
+T26	Location 683 686	ice
+T27	Time 691 700	2 minutes
+T28	Action 703 711	Transfer
+T29	Reagent 716 726	homogenate
+T30	Location 732 747	centrifuge tube
+T31	Action 752 757	leave
+T32	Modifier 758 763	large
+T33	Reagent 764 770	chunks
+T34	Reagent 774 790	tissue fragments
+T35	Device 798 809	homogenizer
+T36	Action 816 825	discarded
+T37	Action 828 838	Centrifuge
+T38	Reagent 843 849	sample
+T39	Speed 853 859	700x g
+T40	Time 864 873	5 minutes
+T41	Action 877 883	pellet
+T42	Reagent 888 894	nuclei
+T43	Modifier 897 906	Carefully
+T44	Action 907 915	transfer
+T45	Reagent 920 931	supernatant
+T46	Modifier 939 942	new
+T47	Location 943 947	tube
+T48	Action 950 960	Centrifuge
+T49	Reagent 961 972	supernatant
+T50	Speed 976 984	12,000xg
+T51	Time 989 999	10 minutes
+T52	Action 1002 1010	Transfer
+T53	Reagent 1015 1026	supernatant
+T54	Modifier 1029 1046	post mitochondria
+T55	Modifier 1054 1057	new
+T56	Location 1058 1062	tube
+T57	Action 1067 1076	resuspend
+T58	Reagent 1081 1087	pellet
+T59	Amount 1091 1101	10 volumes
+T60	Concentration 1105 1107	1X
+T61	Reagent 1108 1125	SubCell Buffer II
+T62	Action 1140 1150	Centrifuge
+T63	Reagent 1155 1161	sample
+T64	Speed 1165 1171	700x g
+T65	Time 1176 1185	5 minutes
+T66	Action 1189 1195	pellet
+T67	Reagent 1200 1206	nuclei
+T68	Modifier 1209 1218	Carefully
+T69	Action 1219 1227	transfer
+T70	Reagent 1232 1243	supernatant
+T71	Modifier 1251 1254	new
+T72	Location 1255 1259	tube
+T73	Action 1262 1272	Centrifuge
+T74	Reagent 1273 1284	supernatant
+T75	Speed 1288 1296	12,000xg
+T76	Time 1301 1311	10 minutes
+T77	Action 1316 1322	remove
+T78	Reagent 1327 1338	supernatant
+T79	Action 1376 1383	Suspend
+T80	Reagent 1388 1408	mitochondrial pellet
+T81	Modifier 1412 1419	Working
+T82	Reagent 1420 1447	Mitochondria Storage Buffer
+T83	Modifier 1450 1463	approximately
+T84	Amount 1464 1468	50μl
+T85	Action 1506 1510	keep
+T86	Reagent 1515 1525	suspension
+T87	Location 1529 1532	ice
+T88	Reagent 1568 1578	suspension
+T89	Action 1586 1592	stored
+T90	Location 1596 1599	ice
+T91	Time 1610 1618	48 hours
+T92	Action 1797 1800	Add
+T93	Amount 1801 1811	10 volumes
+T94	Concentration 1815 1817	1X
+T95	Reagent 1818 1835	SubCell Buffer‐II
+T96	Modifier 1848 1861	loose‐fitting
+T97	Device 1862 1868	pestle
+T98	Action 1871 1883	disaggregate
+T99	Reagent 1888 1894	tissue
+T100	Numerical 1900 1904	5‐10
+T101	Method 1905 1912	strokes
+T102	Modifier 1976 1989	tight‐fitting
+T103	Device 1990 1996	pestle
+T104	Action 1999 2006	release
+T105	Reagent 2011 2017	nuclei
+T106	Numerical 2023 2027	8‐10
+T107	Method 2028 2035	strokes
+T108	Action 2045 2050	twist
+T109	Device 2055 2061	pestle
+E1	Action:T3 Site:T4 Acts-on:T2
+E2	Action:T5 Acts-on:T2 Product:T9
+E3	Action:T6 Acts-on:T9 Product:T14
+E4	Action:T13 Acts-on:T14 Product:T16 Using:T12 Site:T11
+E5	Action:T17 Using:T18 Site:T19 Acts-on:T16 Product:T22
+E6	Action:T20 Acts-on:T22 Site:T24
+E7	Action:T25 Site:T26 Acts-on:E6 Product:T29
+E8	Action:T28 Acts-on:T29 Site:T30 Product:T33
+E9	Action:T31 Acts-on:T33 Site:T35 Product:T38
+E10	Action:T36 Acts-on:E9
+E11	Action:T37 Acts-on:T38
+E12	Action:T41 Acts-on:T42 Product:T45
+E13	Action:T44 Acts-on:T45 Site:T47 Product:T49
+E14	Action:T48 Acts-on:T49 Product:T53
+E15	Action:T52 Acts-on:T53 Site:T56 Product:T58
+E16	Action:T57 Acts-on:T58 Site:T61 Product:T63
+E17	Action:T62 Acts-on:T63
+E18	Action:T66 Acts-on:T67 Product:T70
+E19	Action:T69 Acts-on:T70 Site:T72 Product:T74
+E20	Action:T73 Acts-on:T74 Product:T78
+E21	Action:T77 Acts-on:T78 Product:T80
+E22	Action:T79 Acts-on:T80 Site:T82 Product:T86
+E23	Action:T85 Acts-on:T86 Site:T87 Product:T88
+E24	Action:T89 Acts-on:T88 Site:T90
+E25	Action:T92 Acts-on:T95 Site:E24 Product:T99
+E26	Action:T98 Using:T97 Acts-on:T99 Using2:T101 Count:T100 Product:T105
+E27	Action:T104 Acts-on:T105 Using:T103 Using2:T107 Count:T106 Product:T109
+E28	Action:T108 Acts-on:T109
+R1	Mod-Link Arg1:T2 Arg2:T1
+R2	Measure Arg1:T9 Arg2:T8
+R3	Mod-Link Arg1:T8 Arg2:T7
+R4	Mod-Link Arg1:T16 Arg2:T15
+R5	Mod-Link Arg1:T11 Arg2:T10
+R6	Mod-Link Arg1:T24 Arg2:T23
+R7	Mod-Link Arg1:T22 Arg2:T21
+R8	Setting Arg1:E7 Arg2:T27
+R9	Mod-Link Arg1:T33 Arg2:T32
+R10	Meronym Arg1:T33 Arg2:T34
+R11	Setting Arg1:E11 Arg2:T39
+R12	Setting Arg1:E11 Arg2:T40
+R13	Mod-Link Arg1:T47 Arg2:T46
+R14	Mod-Link Arg1:E13 Arg2:T43
+R15	Setting Arg1:E14 Arg2:T50
+R16	Setting Arg1:E14 Arg2:T51
+R17	Mod-Link Arg1:T56 Arg2:T55
+R18	Measure Arg1:T61 Arg2:T60
+R19	Measure Arg1:T61 Arg2:T59
+R20	Setting Arg1:E17 Arg2:T64
+R21	Setting Arg1:E17 Arg2:T65
+R22	Mod-Link Arg1:T72 Arg2:T71
+R23	Mod-Link Arg1:E19 Arg2:T68
+R24	Setting Arg1:E20 Arg2:T75
+R25	Setting Arg1:E20 Arg2:T76
+R26	Mod-Link Arg1:T82 Arg2:T81
+R27	Mod-Link Arg1:T84 Arg2:T83
+R28	Measure Arg1:T82 Arg2:T84
+R29	Setting Arg1:E24 Arg2:T91
+R30	Measure Arg1:T95 Arg2:T94
+R31	Measure Arg1:T95 Arg2:T93
+R32	Mod-Link Arg1:T97 Arg2:T96
+R33	Mod-Link Arg1:T103 Arg2:T102
+R34	Prevents Arg1:E11 Arg2:E2
+R35	Meronym Arg1:T34 Arg2:T35
+R36	Enables Arg1:E11 Arg2:E12
+R37	Meronym Arg1:T42 Arg2:T38
+R38	Mod-Link Arg1:T53 Arg2:T54
+R39	Coreference-Link Arg1:T56 Arg2:T47
+R40	Enables Arg1:E17 Arg2:E18
+R41	Meronym Arg1:T67 Arg2:T63
+R42	Coreference-Link Arg1:T72 Arg2:T56
+R43	Coreference-Link Arg1:T95 Arg2:T61
+R44	Prevents Arg1:E27 Arg2:E28

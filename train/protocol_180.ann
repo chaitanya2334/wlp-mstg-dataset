@@ -1,0 +1,209 @@
+T1	Action 111 112	A
+T2	Reagent 115 121	Xylene
+T3	Time 124 133	5 minutes
+T4	Numerical 147 148	3
+T5	Size 161 166	250mL
+T6	Location 167 177	containers
+T7	Action 178 179	B
+T8	Concentration 182 187	100 %
+T9	Reagent 188 195	alcohol
+T10	Time 196 205	5 minutes
+T11	Numerical 219 220	3
+T12	Size 233 238	250mL
+T13	Location 239 249	containers
+T14	Action 250 251	C
+T15	Concentration 254 258	95 %
+T16	Reagent 259 266	alcohol
+T17	Time 267 276	3 minutes
+T18	Size 286 291	250mL
+T19	Location 292 301	container
+T20	Action 302 303	D
+T21	Concentration 306 310	70 %
+T22	Reagent 311 318	alcohol
+T23	Time 319 328	3 minutes
+T24	Size 338 343	250mL
+T25	Location 344 353	container
+T26	Action 354 355	E
+T27	Reagent 358 363	Water
+T28	Time 364 373	1 minutes
+T29	Numerical 387 388	3
+T30	Size 401 406	250mL
+T31	Location 407 417	containers
+T32	Action 418 419	F
+T33	Reagent 422 426	H2O2
+T34	Concentration 429 432	3 %
+T35	Time 435 445	15 minutes
+T36	Size 455 460	250mL
+T37	Location 461 470	container
+T38	Action 473 478	Rinse
+T39	Location 479 485	slides
+T40	Modifier 491 500	lab grade
+T41	Reagent 501 506	water
+T42	Action 631 635	Heat
+T43	Location 636 642	slides
+T44	Concentration 646 648	1X
+T45	Reagent 649 672	Sodium Citrate solution
+T46	Time 677 696	1 minute 25 seconds
+T47	Generic-Measure 700 710	high power
+T48	Device 714 723	microwave
+T49	Action 726 732	Reduce
+T50	Generic-Measure 736 745	low power
+T51	Action 750 756	simmer
+T52	Time 761 771	10 minutes
+T53	Device 775 784	microwave
+T54	Action 787 793	Remove
+T55	Device 799 808	microwave
+T56	Location 819 825	slides
+T57	Action 829 833	cool
+T58	Location 841 850	bench top
+T59	Time 855 865	10 minutes
+T60	Action 868 873	Rinse
+T61	Location 874 880	slides
+T62	Modifier 886 895	lab grade
+T63	Reagent 896 901	water
+T64	Action 904 909	Apply
+T65	Reagent 910 921	serum block
+T66	Modifier 926 934	at least
+T67	Time 935 944	5 minutes
+T68	Action 954 958	wash
+T69	Action 977 985	Blot off
+T70	Reagent 986 997	serum block
+T71	Action 1000 1005	Apply
+T72	Reagent 1006 1022	primary antibody
+T73	Action 1069 1077	Incubate
+T74	Reagent 1078 1094	primary antibody
+T75	Time 1095 1105	60 minutes
+T76	Temperature 1109 1125	room temperature
+T77	Action 1128 1133	Rinse
+T78	Location 1134 1140	slides
+T79	Concentration 1146 1148	1X
+T80	Reagent 1149 1152	PBS
+T81	Action 1155 1160	Apply
+T82	Reagent 1161 1180	USA Linking reagent
+T83	Time 1183 1193	20 minutes
+T84	Method 1194 1204	incubation
+T85	Action 1207 1212	Rinse
+T86	Location 1213 1219	slides
+T87	Concentration 1225 1227	1X
+T88	Reagent 1228 1231	PBS
+T89	Action 1234 1239	Apply
+T90	Reagent 1240 1256	Labeling Reagent
+T91	Time 1259 1269	20 minutes
+T92	Method 1270 1280	incubation
+T93	Action 1283 1288	Rinse
+T94	Concentration 1294 1296	1X
+T95	Reagent 1297 1300	PBS
+T96	Action 1303 1308	Apply
+T97	Reagent 1309 1318	chromogen
+T98	Time 1321 1330	5 minutes
+T99	Method 1331 1341	incubation
+T100	Action 1344 1350	Dilute
+T101	Method 1364 1391	manufacturer’s instructions
+T102	Action 1458 1463	Rinse
+T103	Location 1464 1470	slides
+T104	Modifier 1476 1485	lab grade
+T105	Reagent 1486 1491	water
+T106	Action 1494 1502	Submerge
+T107	Location 1503 1509	slides
+T108	Reagent 1513 1532	Mayer’s Hematoxylin
+T109	Time 1537 1547	30 seconds
+T110	Action 1550 1555	Rinse
+T111	Modifier 1562 1569	running
+T112	Modifier 1570 1579	lab grade
+T113	Reagent 1580 1585	water
+T114	Time 1590 1598	1 minute
+T115	Action 1625 1633	Submerge
+T116	Location 1634 1640	slides
+T117	Reagent 1644 1658	Bluing Reagent
+T118	Time 1663 1671	1 minute
+T119	Action 1674 1679	Rinse
+T120	Modifier 1686 1693	running
+T121	Modifier 1694 1703	lab grade
+T122	Reagent 1704 1709	water
+T123	Time 1714 1722	1 minute
+T124	Action 1725 1735	Cover slip
+T125	Location 1736 1741	slide
+T126	Reagent 1748 1781	Permanent Aqueous Mounting Medium
+E1	Action:T1 Using:T2 Count:T4 Site:T6
+E2	Action:T7 Using:T9 Count:T11 Site:T13 Acts-on:E16
+E3	Action:T14 Using:T16 Site:T19 Acts-on:E2
+E4	Action:T20 Using:T22 Site:T25 Acts-on:E3
+E5	Action:T26 Using:T27 Count:T29 Site:T31 Acts-on:E4
+E6	Action:T32 Using:T33 Site:T37 Acts-on:E5 Product:T39
+E7	Action:T38 Acts-on:T39 Using:T41 Product:T43
+E8	Action:T42 Acts-on:T43 Site:T45 Using:T48
+E9	Action:T49 Acts-on:E8
+E10	Action:T51 Site:T53 Acts-on:E9
+E11	Action:T54 Site:T55 Acts-on:E10 Product:T56
+E12	Action:T57 Acts-on:T56 Site:T58 Product:T61
+E13	Action:T60 Acts-on:T61 Using:T63
+E14	Action:T64 Site:E13 Acts-on:T65
+E15	Action:T68 Acts-on:E14 Product:T70
+E16	Action:T69 Acts-on:T70
+E17	Action:T71 Acts-on:T72 Site:E16 Product:T74
+E18	Action:T73 Acts-on:T74 Product:T78
+E19	Action:T77 Acts-on:T78 Using:T80 Product:T82
+E20	Action:T81 Acts-on:T82 Using:T84 Product:T86
+E21	Action:T85 Acts-on:T86 Using:T88
+E22	Action:T89 Acts-on:T90 Using:T92 Site:E21
+E23	Action:T93 Using:T95 Acts-on:E22
+E24	Action:T96 Acts-on:T97 Using:T99 Site:E23
+E25	Action:T100 Using:T101 Acts-on:E24 Product:T103
+E26	Action:T102 Acts-on:T103 Using:T105 Product:T107
+E27	Action:T106 Acts-on:T107 Using:T108
+E28	Action:T110 Using:T113 Acts-on:E27 Product:T116
+E29	Action:T115 Acts-on:T116 Site:T117
+E30	Action:T119 Using:T122 Acts-on:E29 Product:T125
+E31	Action:T124 Acts-on:T125 Using:T126
+R1	Measure Arg1:T6 Arg2:T5
+R2	Setting Arg1:E16 Arg2:T3
+R3	Measure Arg1:T13 Arg2:T12
+R4	Measure Arg1:T9 Arg2:T8
+R5	Setting Arg1:E2 Arg2:T10
+R6	Measure Arg1:T31 Arg2:T30
+R7	Measure Arg1:T25 Arg2:T24
+R8	Measure Arg1:T19 Arg2:T18
+R9	Measure Arg1:T16 Arg2:T15
+R10	Setting Arg1:E3 Arg2:T17
+R11	Measure Arg1:T22 Arg2:T21
+R12	Setting Arg1:E4 Arg2:T23
+R13	Setting Arg1:E5 Arg2:T28
+R14	Measure Arg1:T37 Arg2:T36
+R15	Setting Arg1:E6 Arg2:T35
+R16	Measure Arg1:T33 Arg2:T34
+R17	Measure Arg1:T45 Arg2:T44
+R18	Setting Arg1:E8 Arg2:T46
+R19	Setting Arg1:E10 Arg2:T52
+R20	Setting Arg1:E12 Arg2:T59
+R21	Mod-Link Arg1:T67 Arg2:T66
+R22	Setting Arg1:E14 Arg2:T67
+R23	Setting Arg1:E18 Arg2:T75
+R24	Setting Arg1:E18 Arg2:T76
+R25	Measure Arg1:T80 Arg2:T79
+R26	Setting Arg1:E20 Arg2:T83
+R27	Measure Arg1:T88 Arg2:T87
+R28	Setting Arg1:E22 Arg2:T91
+R29	Measure Arg1:T95 Arg2:T94
+R30	Setting Arg1:E24 Arg2:T98
+R31	Setting Arg1:E27 Arg2:T109
+R32	Mod-Link Arg1:T113 Arg2:T111
+R33	Setting Arg1:E28 Arg2:T114
+R34	Setting Arg1:E29 Arg2:T118
+R35	Mod-Link Arg1:T122 Arg2:T120
+R36	Setting Arg1:E30 Arg2:T123
+R37	Mod-Link Arg1:T41 Arg2:T40
+R38	Setting Arg1:E8 Arg2:T47
+R39	Setting Arg1:E9 Arg2:T50
+R40	Coreference-Link Arg1:T55 Arg2:T53
+R41	Coreference-Link Arg1:T53 Arg2:T48
+R42	Mod-Link Arg1:T63 Arg2:T62
+R43	Coreference-Link Arg1:T63 Arg2:T41
+R44	Prevents Arg1:E14 Arg2:E15
+R45	Coreference-Link Arg1:T88 Arg2:T80
+R46	Coreference-Link Arg1:T95 Arg2:T88
+R47	Mod-Link Arg1:T105 Arg2:T104
+R48	Coreference-Link Arg1:T105 Arg2:T63
+R49	Mod-Link Arg1:T113 Arg2:T112
+R50	Mod-Link Arg1:T122 Arg2:T121
+R51	Coreference-Link Arg1:T113 Arg2:T105
+R52	Coreference-Link Arg1:T122 Arg2:T113

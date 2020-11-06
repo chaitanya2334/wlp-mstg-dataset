@@ -1,0 +1,364 @@
+T1	Action 100 109	Prefilter
+T2	Reagent 110 130	ambient water sample
+T3	Size 138 145	25 - µm
+T4	Modifier 146 151	wound
+T5	Device 152 181	polypropylene sediment filter
+T6	Modifier 215 226	peristaltic
+T7	Modifier 230 239	diaphragm
+T8	Location 240 244	pump
+T9	Action 247 252	Rinse
+T10	Reagent 257 270	concentration
+T11	Location 271 280	container
+T12	Numerical 281 286	three
+T13	Modifier 298 309	prefiltered
+T14	Reagent 310 315	water
+T15	Action 323 330	filling
+T16	Modifier 336 347	prefiltered
+T17	Reagent 348 360	sample water
+T18	Action 441 448	arrange
+T19	Location 453 459	tubing
+T20	Action 464 490	tangential flow filtration
+T21	Action 501 507	Attach
+T22	Size 512 521	0.22 - µm
+T23	Location 522 568	tangential flow filtration ( TFF ) filter feed
+T24	Action 573 582	retentate
+T25	Location 583 589	tubing
+T26	Location 597 638	TFF filter housing inlet and outlet ports
+T27	Action 656 662	Attach
+T28	Location 667 682	permeate tubing
+T29	Location 690 703	permeate port
+T30	Location 711 729	TFF filter housing
+T31	Action 734 740	direct
+T32	Modifier 748 756	separate
+T33	Location 757 766	container
+T34	Action 770 775	catch
+T35	Reagent 776 781	virus
+T36	Reagent 795 800	water
+T37	Action 803 806	Run
+T38	Location 811 822	feed tubing
+T39	Modifier 823 830	through
+T40	Modifier 833 838	large
+T41	Location 839 860	peristaltic pump head
+T42	Action 919 922	set
+T43	Generic-Measure 929 946	maximal occlusion
+T44	Action 955 960	prime
+T45	Size 965 974	0.22 - µm
+T46	Location 975 985	TFF filter
+T47	Action 990 996	remove
+T48	Modifier 997 1000	all
+T49	Reagent 1001 1004	air
+T50	Action 1007 1011	Turn
+T51	Location 1016 1031	peristatic pump
+T52	Generic-Measure 1032 1034	on
+T53	Action 1039 1047	increase
+T54	Location 1052 1068	peristaltic pump
+T55	Speed 1078 1082	20 %
+T56	Action 1086 1091	prime
+T57	Location 1096 1102	tubing
+T58	Action 1107 1113	remove
+T59	Modifier 1114 1120	excess
+T60	Reagent 1121 1124	air
+T61	Action 1189 1195	adjust
+T62	Device 1200 1214	occlusion knob
+T63	Numerical 1220 1234	looser setting
+T64	Action 1238 1267	prevent excessive tubing wear
+T65	Modifier 1270 1276	Slowly
+T66	Action 1277 1285	increase
+T67	Measure-Type 1290 1300	pump speed
+T68	Speed 1304 1308	45 %
+T69	Action 1359 1363	open
+T70	Location 1368 1382	permeate valve
+T71	Size 1390 1399	0.22 - µm
+T72	Location 1400 1410	TFF filter
+T73	Generic-Measure 1437 1442	~ 20°
+T74	Action 1452 1459	Collect
+T75	Amount 1466 1473	0.22 µm
+T76	Reagent 1474 1482	permeate
+T77	Size 1491 1510	appropriately sized
+T78	Location 1511 1517	carboy
+T79	Action 1594 1601	prepare
+T80	Generic-Measure 1606 1613	30 - kD
+T81	Location 1614 1624	TFF filter
+T82	Modifier 1629 1648	viral concentration
+T83	Action 1651 1655	Slow
+T84	Measure-Type 1660 1688	large peristaltic pump speed
+T85	Speed 1692 1698	10 % .
+T86	Action 1699 1705	Attach
+T87	Location 1710 1714	feed
+T88	Location 1719 1735	retentate tubing
+T89	Location 1743 1760	appropriate ports
+T90	Generic-Measure 1768 1775	30 - kD
+T91	Location 1776 1779	TFF
+T92	Action 1782 1788	Direct
+T93	Location 1793 1808	permeate tubing
+T94	Generic-Measure 1818 1825	30 - kD
+T95	Location 1826 1836	TFF filter
+T96	Modifier 1844 1849	clean
+T97	Location 1850 1856	carboy
+T98	Action 1860 1867	collect
+T99	Reagent 1868 1881	ultrafiltrate
+T100	Modifier 1912 1921	Carefully
+T101	Action 1922 1926	work
+T102	Location 1931 1942	feed tubing
+T103	Location 1952 1968	second pump head
+T104	Size 1976 1981	large
+T105	Location 1982 1998	peristaltic pump
+T106	Action 2001 2009	Increase
+T107	Measure-Type 2014 2042	large peristaltic pump speed
+T108	Speed 2046 2050	20 %
+T109	Action 2061 2068	tighten
+T110	Device 2073 2087	occlusion knob
+T111	Location 2095 2104	pump head
+T112	Action 2108 2113	prime
+T113	Generic-Measure 2118 2125	30 - kD
+T114	Location 2126 2136	TFF filter
+T115	Action 2141 2147	remove
+T116	Reagent 2152 2155	air
+T117	Action 2201 2207	loosen
+T118	Location 2212 2221	pump head
+T119	Device 2222 2236	occlusion knob
+T120	Modifier 2239 2245	Slowly
+T121	Action 2246 2254	increase
+T122	Measure-Type 2259 2269	pump speed
+T123	Speed 2273 2277	45 %
+T124	Modifier 2280 2286	Slowly
+T125	Action 2287 2292	close
+T126	Device 2297 2314	backpressure knob
+T127	Generic-Measure 2322 2329	30 - kD
+T128	Location 2330 2340	TFF filter
+T129	Action 2373 2380	Monitor
+T130	Measure-Type 2385 2390	level
+T131	Modifier 2394 2403	< 0.22 µm
+T132	Reagent 2404 2409	water
+T133	Size 2417 2426	< 0.22 µm
+T134	Location 2427 2442	permeate carboy
+T135	Action 2543 2550	Collect
+T136	Amount 2551 2554	1 L
+T137	Reagent 2558 2572	ultra filtrate
+T138	Amount 2601 2606	2 - L
+T139	Location 2607 2613	bottle
+T140	Action 2618 2625	rinsing
+T141	Generic-Measure 2633 2640	30 - kD
+T142	Device 2641 2651	TFF filter
+T143	Action 2727 2734	release
+T144	Location 2739 2748	pump head
+T145	Action 2753 2759	remove
+T146	Size 2764 2773	0.22 - µm
+T147	Location 2774 2796	TFF filter feed tubing
+T148	Location 2806 2828	large peristaltic pump
+T149	Action 2843 2846	run
+T150	Generic-Measure 2851 2858	30 - kD
+T151	Location 2859 2869	TFF filter
+T152	Action 2970 2974	stop
+T153	Size 2979 2984	large
+T154	Location 2985 3001	peristaltic pump
+T155	Action 3006 3011	drain
+T156	Generic-Measure 3016 3023	30 - kD
+T157	Location 3024 3034	TFF filter
+T158	Size 3044 3053	< 0.22 µm
+T159	Location 3054 3066	water carboy
+T160	Modifier 3069 3075	Slowly
+T161	Action 3076 3081	prime
+T162	Generic-Measure 3086 3093	30 - kD
+T163	Location 3094 3104	TFF filter
+T164	Amount 3114 3117	1 L
+T165	Reagent 3121 3133	collected UF
+T166	Action 3156 3167	recirculate
+T167	Action 3170 3174	feed
+T168	Action 3177 3186	retentate
+T169	Action 3191 3199	permeate
+T170	Location 3200 3205	lines
+T171	Generic-Measure 3213 3220	30 - kD
+T172	Location 3221 3227	filter
+T173	Amount 3235 3237	1L
+T174	Reagent 3241 3243	UF
+T175	Reagent 3250 3252	UF
+T176	Speed 3256 3260	30 %
+T177	Time 3276 3281	5 min
+T178	Action 3284 3288	Stop
+T179	Device 3293 3297	pump
+T180	Action 3300 3307	release
+T181	Device 3312 3321	pump head
+T182	Action 3328 3333	drain
+T183	Location 3338 3344	tubing
+T184	Amount 3354 3359	2 - L
+T185	Location 3360 3369	UF bottle
+T186	Action 3372 3376	Pool
+T187	Modifier 3381 3393	recirculated
+T188	Location 3394 3396	UF
+T189	Amount 3406 3411	~ 1 L
+T190	Reagent 3415 3424	retentate
+T191	Reagent 3434 3461	primary viral concentration
+T192	Generic-Measure 3474 3481	30 - kD
+T193	Location 3482 3492	TFF filter
+T194	Amount 3513 3518	~ 2 L
+T195	Reagent 3519 3536	viral concentrate
+T196	Action 3552 3559	reduced
+T197	Modifier 3571 3584	small - scale
+T198	Device 3585 3600	TFF ultrafilter
+T199	Action 3666 3671	store
+T200	Reagent 3676 3690	first stage VC
+T201	Temperature 3694 3697	4°C
+T202	Action 3702 3709	perform
+T203	Method 3712 3752	second stage small - scale concentration
+T204	Location 3828 3841	permeate port
+T205	Action 3845 3851	closed
+T206	Action 3865 3872	priming
+T207	Location 3877 3883	system
+E1	Action:T1 Acts-on:T2 Using:T8 Site:T5 Product:T10
+E2	Action:T9 Acts-on:T10 Count:T12 Using:T14
+E3	Action:T15 Acts-on:T17 Site:E2
+E4	Action:T18 Acts-on:T19
+E5	Action:T20 Product:T25
+E6	Action:T21 Acts-on:T23 Site:E3
+E7	Action:T24 Acts-on:T25 Site:T26 Product:T30
+E8	Action:T27 Acts-on:T28 Site:T29
+E9	Action:T31 Site:T33 Acts-on:E8
+E10	Action:T34 Acts-on:T36 Product:T38
+E11	Action:T37 Acts-on:T38 Site:T41 Product:T46
+E12	Action:T42 Acts-on:E11
+E13	Action:T44 Acts-on:T46
+E14	Action:T47 Acts-on:T49 Product:T51
+E15	Action:T50 Acts-on:T51 Product:T54
+E16	Action:T53 Acts-on:T54
+E17	Action:T56 Acts-on:T57
+E18	Action:T58 Acts-on:T60
+E19	Action:T61 Acts-on:T62 Site:E18
+E20	Action:T64 Acts-on:E18
+E21	Action:T66 Acts-on:E20 Measure-Type-Link:T67 Product:T72
+E22	Action:T69 Acts-on:T70 Product:T76
+E23	Action:T74 Acts-on:T76 Site:T78
+E24	Action:T79 Acts-on:T81 Product:T91
+E25	Action:T83 Product:T88 Product2:T87 Measure-Type-Link:T84 Acts-on:E23
+E26	Action:T86 Acts-on:T87 Acts-on2:T88 Site:T89 Product:T95
+E27	Action:T92 Acts-on:T93 Site:T97 Product:T105
+E28	Action:T98 Acts-on:T99
+E29	Action:T101 Acts-on:T102 Site:T103
+E30	Action:T106 Measure-Type-Link:T107 Acts-on:E29 Product:T111
+E31	Action:T109 Acts-on:T110
+E32	Action:T112 Acts-on:T114
+E33	Action:T115 Acts-on:T116 Product:T118
+E34	Action:T117 Acts-on:T119
+E35	Action:T121 Measure-Type-Link:T122 Acts-on:E34 Product:T126
+E36	Action:T125 Acts-on:T126 Site:T128 Product:T132
+E37	Action:T129 Measure-Type-Link:T130 Acts-on:T132 Site:T134 Product:T137 Product2:T142
+E38	Action:T135 Acts-on:T137 Site:T139 Product:T165
+E39	Action:T140 Acts-on:T142 Product:T144
+E40	Action:T143 Acts-on:T144 Product:T147
+E41	Action:T145 Acts-on:T147 Site:T148 Product:T151
+E42	Action:T149 Acts-on:T151 Product:T154
+E43	Action:T152 Acts-on:T154 Product:T157
+E44	Action:T155 Acts-on:T157 Site:T159 Product:T163
+E45	Action:T161 Acts-on:T163 Using:T165 Product:T174
+E46	Action:T166 Acts-on:T175 Product:T179
+E47	Action:T167 Acts-on:T170 Site:T174
+E48	Action:T168 Acts-on:T170 Site:T174
+E49	Action:T169 Acts-on:T170 Site:T174
+E50	Action:T178 Acts-on:T179 Product:T181
+E51	Action:T180 Acts-on:T181 Product:T183 Product2:T193
+E52	Action:T182 Acts-on:T183 Site:T185 Product:T188
+E53	Action:T186 Acts-on:T188 Using:T190 Product:T195
+E54	Action:T196 Acts-on:T195 Using:T198 Product:T200
+E55	Action:T199 Acts-on:T200
+E56	Action:T202 Using:T203 Acts-on:E55 Product:T204
+E57	Action:T205 Acts-on:T204 Product:T207
+E58	Action:T206 Acts-on:T207
+R1	Mod-Link Arg1:T5 Arg2:T4
+R2	Setting Arg1:T5 Arg2:T3
+R3	Mod-Link Arg1:T8 Arg2:T7
+R4	Or Arg1:T7 Arg2:T6
+R5	Meronym Arg1:T10 Arg2:T11
+R6	Mod-Link Arg1:T14 Arg2:T13
+R7	Mod-Link Arg1:T17 Arg2:T16
+R8	Measure Arg1:T23 Arg2:T22
+R9	Meronym Arg1:T29 Arg2:T30
+R10	Meronym Arg1:T35 Arg2:T36
+R11	Setting Arg1:E12 Arg2:T43
+R12	Measure Arg1:T46 Arg2:T45
+R13	Setting Arg1:E15 Arg2:T52
+R14	Setting Arg1:E16 Arg2:T55
+R15	Setting Arg1:E19 Arg2:T63
+R16	Setting Arg1:E21 Arg2:T68
+R17	Meronym Arg1:T70 Arg2:T72
+R18	Measure Arg1:T72 Arg2:T71
+R19	Setting Arg1:E22 Arg2:T73
+R20	Measure Arg1:T76 Arg2:T75
+R21	Measure Arg1:T78 Arg2:T77
+R22	Measure Arg1:T81 Arg2:T80
+R23	Setting Arg1:E25 Arg2:T85
+R24	Meronym Arg1:T89 Arg2:T91
+R25	Measure Arg1:T91 Arg2:T90
+R26	Mod-Link Arg1:T97 Arg2:T96
+R27	Meronym Arg1:T93 Arg2:T95
+R28	Measure Arg1:T95 Arg2:T94
+R29	Meronym Arg1:T103 Arg2:T105
+R30	Measure Arg1:T105 Arg2:T104
+R31	Setting Arg1:E30 Arg2:T108
+R32	Meronym Arg1:T110 Arg2:T111
+R33	Measure Arg1:T114 Arg2:T113
+R34	Meronym Arg1:T119 Arg2:T118
+R35	Setting Arg1:E35 Arg2:T123
+R36	Mod-Link Arg1:E35 Arg2:T120
+R37	Mod-Link Arg1:E36 Arg2:T124
+R38	Measure Arg1:T128 Arg2:T127
+R39	Measure Arg1:T147 Arg2:T146
+R40	Measure Arg1:T151 Arg2:T150
+R41	Measure Arg1:T154 Arg2:T153
+R42	Measure Arg1:T157 Arg2:T156
+R43	Measure Arg1:T159 Arg2:T158
+R44	Mod-Link Arg1:E45 Arg2:T160
+R45	Measure Arg1:T163 Arg2:T162
+R46	Measure Arg1:T165 Arg2:T164
+R47	Meronym Arg1:T170 Arg2:T172
+R48	Measure Arg1:T172 Arg2:T171
+R49	Measure Arg1:T174 Arg2:T173
+R50	Setting Arg1:E46 Arg2:T176
+R51	Setting Arg1:E46 Arg2:T177
+R52	Setting Arg1:T142 Arg2:T141
+R53	Measure Arg1:T139 Arg2:T138
+R54	Measure Arg1:T137 Arg2:T136
+R55	Enables Arg1:E38 Arg2:E39
+R56	Measure Arg1:T185 Arg2:T184
+R57	Mod-Link Arg1:T188 Arg2:T187
+R58	Measure Arg1:T190 Arg2:T189
+R59	Measure Arg1:T193 Arg2:T192
+R60	Meronym Arg1:T190 Arg2:T191
+R61	Measure Arg1:T195 Arg2:T194
+R62	Setting Arg1:E55 Arg2:T201
+R63	Enables Arg1:E4 Arg2:E5
+R64	Meronym Arg1:T26 Arg2:T23
+R65	Enables Arg1:E9 Arg2:E10
+R66	Mod-Link Arg1:T33 Arg2:T32
+R67	Meronym Arg1:T36 Arg2:T30
+R68	Mod-Link Arg1:E11 Arg2:T39
+R69	Mod-Link Arg1:T41 Arg2:T40
+R70	Enables Arg1:E12 Arg2:E13
+R71	Mod-Link Arg1:T49 Arg2:T48
+R72	Enables Arg1:E16 Arg2:E17
+R73	Meronym Arg1:T57 Arg2:T54
+R74	Mod-Link Arg1:T60 Arg2:T59
+R75	Enables Arg1:E16 Arg2:E18
+R76	Enables Arg1:E12 Arg2:E14
+R77	Meronym Arg1:T49 Arg2:T46
+R78	Meronym Arg1:T60 Arg2:T57
+R79	Enables Arg1:E19 Arg2:E20
+R80	Mod-Link Arg1:E21 Arg2:T65
+R81	Mod-Link Arg1:T81 Arg2:T82
+R82	Enables Arg1:E27 Arg2:E28
+R83	Meronym Arg1:T99 Arg2:T95
+R84	Mod-Link Arg1:E29 Arg2:T100
+R85	Enables Arg1:E31 Arg2:E32
+R86	Enables Arg1:E31 Arg2:E33
+R87	Meronym Arg1:T114 Arg2:T111
+R88	Meronym Arg1:T116 Arg2:T111
+R89	Meronym Arg1:T126 Arg2:T128
+R90	Mod-Link Arg1:T132 Arg2:T131
+R91	Measure Arg1:T134 Arg2:T133
+R92	Meronym Arg1:T132 Arg2:T134
+R93	Meronym Arg1:T147 Arg2:T148
+R94	Enables Arg1:E47 Arg2:E46
+R95	Enables Arg1:E48 Arg2:E46
+R96	Enables Arg1:E49 Arg2:E46
+R97	Coreference-Link Arg1:T175 Arg2:T174
+R98	Meronym Arg1:T172 Arg2:T174
+R99	Mod-Link Arg1:T198 Arg2:T197

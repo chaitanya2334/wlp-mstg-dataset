@@ -1,0 +1,88 @@
+T1	Action 32 40	Submerge
+T2	Reagent 41 63	protein acrylamide gel
+T3	Reagent 67 87	coomassie blue stain
+T4	Action 92 97	shake
+T5	Temperature 101 117	room temperature
+T6	Time 122 131	two hours
+T7	Action 134 142	Pour off
+T8	Reagent 143 148	stain
+T9	Location 156 162	bottle
+T10	Action 198 202	wash
+T11	Reagent 203 206	gel
+T12	Reagent 212 217	water
+T13	Action 225 229	pour
+T14	Amount 230 234	more
+T15	Reagent 235 240	stain
+T16	Action 248 253	shake
+T17	Temperature 257 273	room temperature
+T18	Time 278 295	another two hours
+T19	Action 298 306	Pour off
+T20	Reagent 307 312	stain
+T21	Location 320 326	bottle
+T22	Action 329 333	wash
+T23	Reagent 334 337	gel
+T24	Reagent 343 348	water
+T25	Action 413 427	take a picture
+T26	Action 435 439	pour
+T27	Amount 440 444	more
+T28	Reagent 445 450	stain
+T29	Action 458 463	shake
+T30	Temperature 467 483	room temperature
+T31	Time 484 493	overnight
+T32	Action 496 504	Pour off
+T33	Reagent 505 510	stain
+T34	Action 515 529	take a picture
+T35	Reagent 537 550	protein bands
+T36	Action 553 561	Submerge
+T37	Reagent 562 565	gel
+T38	Reagent 569 583	destain buffer
+T39	Amount 586 591	50 mL
+T40	Reagent 592 603	Acetic Acid
+T41	Amount 606 612	100 mL
+T42	Reagent 613 621	Methanol
+T43	Amount 624 630	350 mL
+T44	Reagent 631 636	Water
+T45	Time 646 650	hour
+T46	Action 655 660	shake
+T47	Temperature 664 680	room temperature
+T48	Action 683 687	Wash
+T49	Reagent 693 698	water
+T50	Action 704 710	repeat
+T51	Method 711 717	step 5
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Product:T8 Acts-on:E1
+E3	Action:T7 Acts-on:T8 Site:T9 Product:T11
+E4	Action:T10 Acts-on:T11 Using:T12
+E5	Action:T13 Acts-on:T15 Site:E4
+E6	Action:T16 Acts-on:E5 Product:T20
+E7	Action:T19 Acts-on:T20 Site:T21 Product:T23
+E8	Action:T22 Acts-on:T23 Using:T24
+E9	Action:T25 Acts-on:E8
+E10	Action:T26 Acts-on:T28 Site:E9
+E11	Action:T29 Acts-on:E10 Product:T33
+E12	Action:T32 Acts-on:T33 Product:T35
+E13	Action:T34 Acts-on:T35 Product:T37
+E14	Action:T36 Acts-on:T37 Site:T38
+E15	Action:T46 Acts-on:E14
+E16	Action:T48 Acts-on:E15 Using:T49
+E17	Action:T50 Using:T51 Acts-on:E16
+R1	Setting Arg1:E2 Arg2:T5
+R2	Setting Arg1:E2 Arg2:T6
+R3	Measure Arg1:T15 Arg2:T14
+R4	Setting Arg1:E6 Arg2:T17
+R5	Setting Arg1:E6 Arg2:T18
+R6	Setting Arg1:E11 Arg2:T30
+R7	Setting Arg1:E11 Arg2:T31
+R8	Measure Arg1:T28 Arg2:T27
+R9	Measure Arg1:T40 Arg2:T39
+R10	Measure Arg1:T42 Arg2:T41
+R11	Measure Arg1:T44 Arg2:T43
+R12	Meronym Arg1:T40 Arg2:T38
+R13	Meronym Arg1:T42 Arg2:T38
+R14	Meronym Arg1:T44 Arg2:T38
+R15	Setting Arg1:E14 Arg2:T45
+R16	Setting Arg1:E15 Arg2:T47
+R17	Coreference-Link Arg1:T15 Arg2:T3
+R18	Coreference-Link Arg1:T24 Arg2:T12
+R19	Coreference-Link Arg1:T28 Arg2:T15
+R20	Coreference-Link Arg1:T49 Arg2:T24

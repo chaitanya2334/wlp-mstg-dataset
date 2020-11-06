@@ -1,0 +1,266 @@
+T1	Action 24 30	Dilute
+T2	Reagent 31 57	unlabeled capture antibody
+T3	Concentration 86 101	0.5 – 8 µg / ml
+T4	Reagent 105 153	Coating Buffer ( BioLegend , Cat . No . 421701 )
+T5	Action 158 166	transfer
+T6	Amount 167 173	100 µl
+T7	Modifier 177 181	each
+T8	Location 182 186	well
+T9	Location 190 278	a high affinity , protein - bindingELISA plate ( e . g . , BioLegend Cat . No . 423501 )
+T10	Action 281 285	Seal
+T11	Location 286 291	plate
+T12	Action 303 314	evaporation
+T13	Action 317 325	Incubate
+T14	Temperature 329 332	4°C
+T15	Time 333 342	overnight
+T16	Action 345 350	Bring
+T17	Location 355 360	plate
+T18	Temperature 364 380	room temperature
+T19	Action 383 392	flick off
+T20	Reagent 397 422	capture antibody solution
+T21	Action 425 429	Seal
+T22	Location 430 435	plate
+T23	Action 440 448	incubate
+T24	Temperature 452 468	room temperature
+T25	Time 473 483	≥ 1 hour .
+T26	Modifier 484 490	Firmly
+T27	Action 491 495	blot
+T28	Location 496 501	plate
+T29	Modifier 510 515	clean
+T30	Location 516 528	paper towels
+T31	Action 531 537	Dilute
+T32	Reagent 538 547	standards
+T33	Reagent 552 559	samples
+T34	Concentration 563 585	desired concentrations
+T35	Reagent 589 606	Blocking Solution
+T36	Location 630 649	polypropylene tubes
+T37	Location 653 658	plate
+T38	Action 665 668	add
+T39	Amount 669 675	100 µl
+T40	Modifier 676 679	per
+T41	Location 680 684	well
+T42	Location 692 703	ELISA plate
+T43	Action 706 710	Seal
+T44	Location 715 720	plate
+T45	Action 725 733	incubate
+T46	Temperature 737 753	room temperature
+T47	Time 758 769	2 - 4 hours
+T48	Temperature 776 779	4°C
+T49	Time 780 789	overnight
+T50	Action 792 796	Wash
+T51	Reagent 802 813	PBS / Tween
+T52	Action 826 830	Wash
+T53	Reagent 836 847	PBS / Tween
+T54	Action 860 864	Wash
+T55	Reagent 870 881	PBS / Tween
+T56	Action 894 900	Dilute
+T57	Reagent 905 940	biotin - labeled detection antibody
+T58	Concentration 944 960	0.25 – 2 µg / ml
+T59	Reagent 964 981	Blocking Solution
+T60	Action 984 987	Add
+T61	Amount 988 994	100 µl
+T62	Reagent 998 1014	diluted antibody
+T63	Modifier 1018 1022	each
+T64	Location 1023 1027	well
+T65	Action 1030 1034	Seal
+T66	Location 1039 1044	plate
+T67	Action 1049 1057	incubate
+T68	Temperature 1061 1077	room temperature
+T69	Time 1082 1088	1 hour
+T70	Action 1091 1095	Wash
+T71	Reagent 1101 1112	PBS / Tween
+T72	Action 1125 1129	Wash
+T73	Reagent 1135 1146	PBS / Tween
+T74	Action 1159 1163	Wash
+T75	Reagent 1169 1180	PBS / Tween
+T76	Action 1193 1199	Dilute
+T77	Reagent 1204 1244	Av - HRP conjugate ( Cat . No . 405103 )
+T78	Reagent 1248 1270	other enzyme conjugate
+T79	Concentration 1274 1316	its pre - determined optimal concentration
+T80	Reagent 1320 1335	Blocking Buffer
+T81	Action 1377 1380	Add
+T82	Amount 1381 1387	100 µl
+T83	Modifier 1388 1391	per
+T84	Location 1392 1396	well
+T85	Action 1399 1403	Seal
+T86	Location 1408 1413	plate
+T87	Action 1418 1426	incubate
+T88	Temperature 1430 1446	room temperature
+T89	Time 1451 1461	30 minutes
+T90	Action 1464 1468	Wash
+T91	Reagent 1474 1485	PBS / Tween
+T92	Action 1498 1502	Wash
+T93	Reagent 1508 1519	PBS / Tween
+T94	Action 1532 1536	Wash
+T95	Reagent 1542 1553	PBS / Tween
+T96	Action 1566 1570	Wash
+T97	Reagent 1576 1587	PBS / Tween
+T98	Action 1600 1604	Wash
+T99	Reagent 1610 1621	PBS / Tween
+T100	Action 1634 1638	Thaw
+T101	Reagent 1639 1662	ABTS Substrate Solution
+T102	Time 1663 1683	within 20 min of use
+T103	Action 1686 1689	Add
+T104	Amount 1690 1695	11 µl
+T105	Concentration 1699 1703	30 %
+T106	Reagent 1704 1708	H2O2
+T107	Modifier 1709 1712	per
+T108	Amount 1713 1718	11 ml
+T109	Reagent 1722 1731	substrate
+T110	Action 1736 1742	vortex
+T111	Modifier 1745 1756	Immediately
+T112	Action 1757 1765	dispense
+T113	Amount 1766 1772	100 µl
+T114	Modifier 1778 1782	each
+T115	Location 1783 1787	well
+T116	Action 1792 1800	incubate
+T117	Temperature 1804 1820	room temperature
+T118	Time 1823 1836	4 - 60minutes
+T119	Action 1892 1895	add
+T120	Amount 1896 1901	50 µl
+T121	Reagent 1905 1923	ABTS Stop Solution
+T122	Action 1926 1930	Read
+T123	Generic-Measure 1935 1957	optical density ( OD )
+T124	Modifier 1962 1966	each
+T125	Location 1967 1971	well
+T126	Device 1979 1996	microplate reader
+T127	Generic-Measure 2004 2010	405 nm
+T128	Action 2013 2017	Wash
+T129	Reagent 2023 2034	PBS / Tween
+T130	Action 2047 2051	Wash
+T131	Reagent 2057 2068	PBS / Tween
+T132	Action 2081 2085	Wash
+T133	Reagent 2091 2102	PBS / Tween
+T134	Action 2115 2120	Block
+T135	Reagent 2121 2149	non - specific binding sites
+T136	Action 2153 2159	adding
+T137	Amount 2160 2166	200 µl
+T138	Reagent 2170 2187	Blocking Solution
+T139	Modifier 2191 2195	each
+T140	Location 2196 2200	well
+T141	Action 2203 2207	Wash
+T142	Reagent 2213 2224	PBS / Tween
+T143	Action 2237 2241	Wash
+T144	Reagent 2247 2258	PBS / Tween
+T145	Action 2271 2275	Wash
+T146	Reagent 2281 2292	PBS / Tween
+E1	Action:T1 Using:T4 Acts-on:T2
+E2	Action:T5 Site:T8 Acts-on:E1 Product:T11
+E3	Action:T10 Acts-on:T11
+E4	Action:T12 Acts-on:T11
+E5	Action:T13 Acts-on:E3 Product:T17
+E6	Action:T16 Acts-on:T17 Product:T20
+E7	Action:T19 Acts-on:T20 Product:T22
+E8	Action:T21 Acts-on:T22
+E9	Action:T23 Acts-on:E8 Product:T28
+E10	Action:T27 Acts-on:T28 Using:T30 Product:T42
+E11	Action:T31 Using:T35 Site:T36 Acts-on:T32 Acts-on2:T33
+E12	Action:T38 Site:T42 Acts-on:E11 Product:T44
+E13	Action:T43 Acts-on:T44
+E14	Action:T45 Acts-on:E13
+E15	Action:T50 Using:T51 Acts-on:E14
+E16	Action:T52 Using:T53 Acts-on:E15
+E17	Action:T54 Using:T55 Acts-on:E16 Product:T64
+E18	Action:T56 Using:T59 Acts-on:T57 Product:T62
+E19	Action:T60 Acts-on:T62 Site:T64 Product:T66
+E20	Action:T65 Acts-on:T66
+E21	Action:T67 Acts-on:E20
+E22	Action:T70 Using:T71 Acts-on:E21
+E23	Action:T72 Using:T73 Acts-on:E22
+E24	Action:T74 Using:T75 Acts-on:E23 Product:T84
+E25	Action:T76 Product:T77 Using:T80
+E26	Action:T81 Site:T84 Acts-on:E25 Product:T86
+E27	Action:T85 Acts-on:T86
+E28	Action:T87 Acts-on:E27
+E29	Action:T90 Using:T91 Acts-on:E28
+E30	Action:T92 Using:T93 Acts-on:E29
+E31	Action:T94 Using:T95 Acts-on:E30
+E32	Action:T96 Using:T97 Acts-on:E31
+E33	Action:T98 Using:T99 Acts-on:E32 Product:T115
+E34	Action:T100 Acts-on:T101 Product:T109
+E35	Action:T103 Acts-on:T106 Site:T109
+E36	Action:T110 Acts-on:E35
+E37	Action:T112 Acts-on:E36
+E38	Action:T116 Acts-on:E37
+E39	Action:T119 Acts-on:T121 Site:E38 Product:T125
+E40	Action:T122 Acts-on:T125 Using:T126
+E41	Action:T128 Using:T129 Acts-on:E40
+E42	Action:T130 Using:T131 Acts-on:E41
+E43	Action:T132 Using:T133 Acts-on:E42 Product:T135
+E44	Action:T134 Acts-on:T135
+E45	Action:T136 Acts-on:T138 Site:T140
+E46	Action:T141 Using:T142 Acts-on:E45
+E47	Action:T143 Using:T144 Acts-on:E46
+E48	Action:T145 Using:T146 Acts-on:E47
+R1	Meronym Arg1:T8 Arg2:T9
+R2	Mod-Link Arg1:T8 Arg2:T7
+R3	Setting Arg1:E2 Arg2:T6
+R4	Setting Arg1:E5 Arg2:T14
+R5	Setting Arg1:E5 Arg2:T15
+R6	Setting Arg1:E6 Arg2:T18
+R7	Setting Arg1:E9 Arg2:T24
+R8	Setting Arg1:E9 Arg2:T25
+R9	Mod-Link Arg1:E10 Arg2:T26
+R10	Setting Arg1:E12 Arg2:T39
+R11	Setting Arg1:E1 Arg2:T3
+R12	Setting Arg1:E11 Arg2:T34
+R13	Or Arg1:T36 Arg2:T37
+R14	Mod-Link Arg1:T39 Arg2:T40
+R15	Mod-Link Arg1:T41 Arg2:T40
+R16	Setting Arg1:E14 Arg2:T46
+R17	Setting Arg1:E14 Arg2:T47
+R18	Or Arg1:T46 Arg2:T48
+R19	Or Arg1:T47 Arg2:T49
+R20	Setting Arg1:E18 Arg2:T58
+R21	Measure Arg1:T62 Arg2:T61
+R22	Mod-Link Arg1:T64 Arg2:T63
+R23	Setting Arg1:E21 Arg2:T68
+R24	Setting Arg1:E21 Arg2:T69
+R25	Or Arg1:T77 Arg2:T78
+R26	Setting Arg1:E25 Arg2:T79
+R27	Mod-Link Arg1:T82 Arg2:T83
+R28	Mod-Link Arg1:T84 Arg2:T83
+R29	Setting Arg1:E26 Arg2:T82
+R30	Setting Arg1:E28 Arg2:T88
+R31	Setting Arg1:E28 Arg2:T89
+R32	Setting Arg1:E34 Arg2:T102
+R33	Measure Arg1:T109 Arg2:T108
+R34	Mod-Link Arg1:T108 Arg2:T107
+R35	Mod-Link Arg1:T104 Arg2:T107
+R36	Measure Arg1:T106 Arg2:T105
+R37	Measure Arg1:T106 Arg2:T104
+R38	Mod-Link Arg1:T115 Arg2:T114
+R39	Measure Arg1:T115 Arg2:T113
+R40	Setting Arg1:E37 Arg2:T113
+R41	Setting Arg1:E38 Arg2:T117
+R42	Setting Arg1:E38 Arg2:T118
+R43	Measure Arg1:T121 Arg2:T120
+R44	Setting Arg1:E40 Arg2:T123
+R45	Setting Arg1:T126 Arg2:T127
+R46	Mod-Link Arg1:T125 Arg2:T124
+R47	Mod-Link Arg1:T140 Arg2:T139
+R48	Measure Arg1:T138 Arg2:T137
+R49	Prevents Arg1:E3 Arg2:E4
+R50	Mod-Link Arg1:T30 Arg2:T29
+R51	Coreference-Link Arg1:T53 Arg2:T51
+R52	Coreference-Link Arg1:T55 Arg2:T53
+R53	Coreference-Link Arg1:T59 Arg2:T35
+R54	Coreference-Link Arg1:T71 Arg2:T55
+R55	Coreference-Link Arg1:T73 Arg2:T71
+R56	Coreference-Link Arg1:T75 Arg2:T73
+R57	Coreference-Link Arg1:T80 Arg2:T59
+R58	Coreference-Link Arg1:T91 Arg2:T75
+R59	Coreference-Link Arg1:T93 Arg2:T91
+R60	Coreference-Link Arg1:T95 Arg2:T93
+R61	Coreference-Link Arg1:T97 Arg2:T95
+R62	Coreference-Link Arg1:T99 Arg2:T97
+R63	Mod-Link Arg1:E37 Arg2:T111
+R64	Coreference-Link Arg1:T129 Arg2:T99
+R65	Coreference-Link Arg1:T131 Arg2:T129
+R66	Coreference-Link Arg1:T133 Arg2:T131
+R67	Coreference-Link Arg1:T138 Arg2:T80
+R68	Enables Arg1:E45 Arg2:E44
+R69	Meronym Arg1:T135 Arg2:T140
+R70	Coreference-Link Arg1:T144 Arg2:T142
+R71	Coreference-Link Arg1:T146 Arg2:T144
+R72	Coreference-Link Arg1:T142 Arg2:T133

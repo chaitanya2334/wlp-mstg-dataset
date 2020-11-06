@@ -1,0 +1,78 @@
+T1	Location 91 105	Gelrite plates
+T2	Action 110 122	preincubated
+T3	Time 128 134	10 min
+T4	Temperature 138 142	80˚C
+T5	Action 146 149	dry
+T6	Amount 152 157	10 mL
+T7	Reagent 161 178	Sulfolobus medium
+T8	Concentration 189 194	0.2 %
+T9	Reagent 205 212	Gelrite
+T10	Action 216 222	boiled
+T11	Action 226 234	dissolve
+T12	Reagent 239 246	Gelrite
+T13	Reagent 254 265	“softlayer”
+T14	Action 269 284	allowed to cool
+T15	Modifier 285 293	slightly
+T16	Temperature 304 308	80˚C
+T17	Modifier 313 326	Approximately
+T18	Amount 327 331	3 mL
+T19	Reagent 335 344	softlayer
+T20	Action 345 354	are added
+T21	Amount 363 369	0.2 mL
+T22	Modifier 373 394	exponentially growing
+T23	Reagent 395 405	host cells
+T24	Reagent 418 441	Sulfolobus solfataricus
+T25	Action 448 454	spread
+T26	Location 460 465	plate
+T27	Method 469 477	swirling
+T28	Amount 511 517	1–2 µL
+T29	Reagent 521 528	culture
+T30	Reagent 532 543	supernatant
+T31	Action 562 569	spotted
+T32	Location 577 582	plate
+T33	Amount 610 614	1 µL
+T34	Concentration 620 626	0.01 %
+T35	Reagent 637 660	Triton X - 100 solution
+T36	Action 664 671	spotted
+T37	Location 674 680	Plates
+T38	Action 685 694	incubated
+T39	Modifier 695 703	as above
+T40	Time 708 713	2–3 d
+T41	Location 718 724	plates
+T42	Action 725 733	examined
+T43	Action 738 746	clearing
+T44	Reagent 754 759	spots
+E1	Action:T2 Acts-on:T1 Product:T26
+E2	Action:T5 Acts-on:T1
+E3	Action:T10 Acts-on:T9 Acts-on2:T7 Product:T13
+E4	Action:T11 Acts-on:T12
+E5	Action:T14 Acts-on:T13 Product:T19
+E6	Action:T20 Acts-on:T19 Site:T23
+E7	Action:T25 Using:T27 Site:T26 Acts-on:E6 Product:T32
+E8	Action:T31 Site:T32 Acts-on:T29
+E9	Action:T36 Acts-on:T35 Site:E8 Product:T37
+E10	Action:T38 Acts-on:T37 Product:T41
+E11	Action:T42 Acts-on:T41
+E12	Action:T43 Acts-on:T44
+R1	Measure Arg1:T9 Arg2:T8
+R2	Measure Arg1:T7 Arg2:T6
+R3	Mod-Link Arg1:E5 Arg2:T15
+R4	Setting Arg1:E5 Arg2:T16
+R5	Mod-Link Arg1:T23 Arg2:T22
+R6	Measure Arg1:T19 Arg2:T18
+R7	Measure Arg1:T23 Arg2:T21
+R8	Meronym Arg1:T24 Arg2:T23
+R9	Measure Arg1:T29 Arg2:T28
+R10	Or Arg1:T29 Arg2:T30
+R11	Measure Arg1:T35 Arg2:T34
+R12	Measure Arg1:T35 Arg2:T33
+R13	Mod-Link Arg1:E10 Arg2:T39
+R14	Setting Arg1:E10 Arg2:T40
+R15	Setting Arg1:E1 Arg2:T3
+R16	Setting Arg1:E1 Arg2:T4
+R17	Enables Arg1:E1 Arg2:E2
+R18	Enables Arg1:E3 Arg2:E4
+R19	Coreference-Link Arg1:T12 Arg2:T9
+R20	Mod-Link Arg1:T19 Arg2:T17
+R21	Enables Arg1:E11 Arg2:E12
+R22	Meronym Arg1:T44 Arg2:T41

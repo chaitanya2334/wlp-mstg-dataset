@@ -1,0 +1,152 @@
+T1	Modifier 182 199	Paraffin embedded
+T2	Location 200 208	sections
+T3	Action 217 234	de - paraffinized
+T4	Reagent 240 246	xylene
+T5	Action 251 261	rehydrated
+T6	Modifier 269 282	graded series
+T7	Reagent 286 293	ethanol
+T8	Reagent 323 331	specimen
+T9	Reagent 335 341	tissue
+T10	Action 342 345	dry
+T11	Action 538 545	prepare
+T12	Method 553 573	recommended protocol
+T13	Action 672 680	incubate
+T14	Location 681 687	slides
+T15	Concentration 691 694	3 %
+T16	Reagent 695 729	hydrogen peroxide blocking reagent
+T17	Time 734 744	10 minutes
+T18	Action 822 827	Rinse
+T19	Reagent 833 848	distilled water
+T20	Action 1054 1058	Wash
+T21	Reagent 1064 1067	PBS
+T22	Time 1068 1077	2 minutes
+T23	Numerical 1080 1081	3
+T24	Action 1090 1095	Apply
+T25	Amount 1096 1103	2 drops
+T26	Amount 1106 1112	100 μL
+T27	Reagent 1159 1183	ACUITYAdvanced Reagent 1
+T28	Action 1186 1194	Incubate
+T29	Device 1200 1216	humidity chamber
+T30	Time 1221 1231	10 minutes
+T31	Action 1234 1239	Drain
+T32	Action 1243 1251	blot off
+T33	Reagent 1252 1260	solution
+T34	Action 1270 1275	rinse
+T35	Action 1278 1283	Apply
+T36	Amount 1284 1291	2 drops
+T37	Amount 1294 1300	100 μL
+T38	Reagent 1347 1363	primary antibody
+T39	Action 1366 1374	Incubate
+T40	Device 1380 1396	humidity chamber
+T41	Time 1401 1416	30 - 60 minutes
+T42	Action 1419 1424	Rinse
+T43	Reagent 1430 1433	PBS
+T44	Time 1434 1443	2 minutes
+T45	Numerical 1446 1447	3
+T46	Action 1456 1461	Apply
+T47	Amount 1462 1469	2 drops
+T48	Amount 1472 1478	100 μL
+T49	Reagent 1525 1551	ACUITYAdvanced Reagent 2 .
+T50	Action 1552 1560	Incubate
+T51	Device 1566 1582	humidity chamber
+T52	Time 1587 1602	15 - 20 minutes
+T53	Action 1605 1610	Rinse
+T54	Reagent 1616 1619	PBS
+T55	Time 1620 1629	2 minutes
+T56	Numerical 1632 1633	3
+T57	Action 1642 1647	Apply
+T58	Amount 1648 1655	2 drops
+T59	Amount 1658 1664	100 μL
+T60	Reagent 1711 1735	ACUITYAdvanced Reagent 3
+T61	Action 1738 1746	Incubate
+T62	Device 1752 1768	humidity chamber
+T63	Time 1773 1783	15 minutes
+T64	Action 1786 1791	Rinse
+T65	Reagent 1797 1800	PBS
+T66	Time 1801 1810	2 minutes
+T67	Numerical 1813 1814	3
+T68	Action 2024 2029	Rinse
+T69	Modifier 2035 2044	distilled
+T70	Modifier 2048 2051	tap
+T71	Reagent 2052 2057	water
+T72	Action 2092 2101	dehydrate
+T73	Action 2106 2118	Counterstain
+T74	Modifier 2124 2131	desired
+T75	Reagent 2132 2144	counterstain
+T76	Action 2147 2152	Mount
+T77	Action 2157 2166	coverslip
+T78	Reagent 2169 2182	AEC chromogen
+T79	Action 2193 2201	prepared
+T80	Amount 2202 2208	1 part
+T81	Reagent 2209 2222	AEC chromogen
+T82	Amount 2226 2234	50 parts
+T83	Reagent 2235 2255	AEC Substrate Buffer
+T84	Reagent 2258 2271	DAB chromogen
+T85	Action 2282 2290	prepared
+T86	Amount 2291 2297	1 part
+T87	Reagent 2298 2311	DAB Chromogen
+T88	Amount 2315 2323	25 parts
+T89	Reagent 2324 2344	DAB Substrate Buffer
+E1	Action:T3 Acts-on:T2 Using:T4
+E2	Action:T5 Acts-on:E1 Using:T7 Product:T9
+E3	Action:T10 Acts-on:T9
+E4	Action:T11 Using:T12 Acts-on:E3 Product:T14
+E5	Action:T13 Acts-on:T14 Site:T16
+E6	Action:T18 Acts-on:E5 Using:T19
+E7	Action:T20 Using:T21 Count:T23 Acts-on:E6
+E8	Action:T24 Acts-on:T27 Site:E7
+E9	Action:T28 Site:T29 Acts-on:E8 Product:T33
+E10	Action:T31 Acts-on:T33
+E11	Action:T32 Acts-on:T33
+E12	Action:T34 Acts-on:E10
+E13	Action:T35 Acts-on:T38 Site:E12
+E14	Action:T39 Site:T40 Acts-on:E13
+E15	Action:T42 Using:T43 Count:T45 Acts-on:E14
+E16	Action:T46 Acts-on:T49 Site:E15
+E17	Action:T50 Site:T51 Acts-on:E16
+E18	Action:T53 Using:T54 Count:T56 Acts-on:E17
+E19	Action:T57 Acts-on:T60 Site:E18
+E20	Action:T61 Site:T62 Acts-on:E19
+E21	Action:T64 Using:T65 Count:T67 Acts-on:E20
+E22	Action:T68 Using:T71 Acts-on:E21
+E23	Action:T72 
+E24	Action:T73 Acts-on:E22 Using:T75
+E25	Action:T76 Acts-on:E24
+E26	Action:T77 Acts-on:E25
+E27	Action:T79 Product:T78 Acts-on:T81 Acts-on2:T83
+E28	Action:T85 Product:T84 Acts-on:T89 Acts-on2:T87
+R1	Mod-Link Arg1:T2 Arg2:T1
+R2	Setting Arg1:E5 Arg2:T17
+R3	Measure Arg1:T16 Arg2:T15
+R4	Setting Arg1:E7 Arg2:T22
+R5	Measure Arg1:T27 Arg2:T26
+R6	Or Arg1:T26 Arg2:T25
+R7	Setting Arg1:E15 Arg2:T44
+R8	Measure Arg1:T49 Arg2:T48
+R9	Or Arg1:T48 Arg2:T47
+R10	Setting Arg1:E18 Arg2:T55
+R11	Setting Arg1:E20 Arg2:T63
+R12	Measure Arg1:T60 Arg2:T59
+R13	Or Arg1:T59 Arg2:T58
+R14	Setting Arg1:E21 Arg2:T66
+R15	Mod-Link Arg1:T71 Arg2:T70
+R16	Or Arg1:T70 Arg2:T69
+R17	Measure Arg1:T81 Arg2:T80
+R18	Measure Arg1:T83 Arg2:T82
+R19	Measure Arg1:T87 Arg2:T86
+R20	Measure Arg1:T89 Arg2:T88
+R21	Or Arg1:T37 Arg2:T36
+R22	Measure Arg1:T38 Arg2:T37
+R23	Mod-Link Arg1:T7 Arg2:T6
+R24	Or Arg1:T9 Arg2:T8
+R25	Prevents Arg1:E2 Arg2:E3
+R26	Or Arg1:E10 Arg2:E11
+R27	Prevents Arg1:E10 Arg2:E12
+R28	Setting Arg1:E14 Arg2:T41
+R29	Coreference-Link Arg1:T43 Arg2:T21
+R30	Setting Arg1:E17 Arg2:T52
+R31	Coreference-Link Arg1:T54 Arg2:T43
+R32	Coreference-Link Arg1:T65 Arg2:T54
+R33	Prevents Arg1:E22 Arg2:E23
+R34	Mod-Link Arg1:T75 Arg2:T74
+R35	Setting Arg1:E9 Arg2:T30

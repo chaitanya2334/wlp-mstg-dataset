@@ -1,0 +1,187 @@
+T1	Action 78 85	Harvest
+T2	Numerical 86 91	2 - 3
+T3	Reagent 92 101	seedlings
+T4	Action 106 111	place
+T5	Device 117 123	mortar
+T6	Action 126 130	Fill
+T7	Modifier 136 141	about
+T8	Amount 142 147	50 ml
+T9	Reagent 151 166	liquid nitrogen
+T10	Action 169 174	Grind
+T11	Reagent 175 181	tissue
+T12	Device 187 193	pestle
+T13	Action 196 199	Add
+T14	Amount 200 204	1 ml
+T15	Reagent 208 225	extraction buffer
+T16	Location 233 237	tube
+T17	Action 240 243	Add
+T18	Amount 244 250	120 µl
+T19	Concentration 254 258	10 %
+T20	Reagent 259 262	SDS
+T21	Action 265 268	Mix
+T22	Action 272 281	inverting
+T23	Action 284 292	Incubate
+T24	Location 293 297	tube
+T25	Temperature 307 312	65 ˚C
+T26	Time 317 327	20 minutes
+T27	Action 330 333	Add
+T28	Amount 334 340	300 µl
+T29	Concentration 341 343	5M
+T30	Reagent 344 348	KOAc
+T31	Action 351 354	Mix
+T32	Modifier 355 359	well
+T33	Action 363 372	inverting
+T34	Numerical 373 380	several
+T35	Action 410 415	place
+T36	Location 419 422	ice
+T37	Time 423 432	5 minutes
+T38	Action 435 445	Centrifuge
+T39	Time 450 459	5 minutes
+T40	Speed 463 475	> 12,000 rpm
+T41	Action 478 483	Label
+T42	Modifier 486 492	second
+T43	Location 493 497	tube
+T44	Action 500 504	Pass
+T45	Amount 505 511	700 µl
+T46	Reagent 519 530	supernatant
+T47	Device 541 557	miracloth funnel
+T48	Modifier 567 573	second
+T49	Location 574 578	tube
+T50	Action 581 584	Add
+T51	Amount 585 591	600 µl
+T52	Reagent 595 606	isopropanol
+T53	Action 609 612	Mix
+T54	Reagent 617 625	contents
+T55	Modifier 626 636	thoroughly
+T56	Method 640 649	inverting
+T57	Action 652 656	Spin
+T58	Time 661 670	5 minutes
+T59	Speed 674 684	14,000 rpm
+T60	Modifier 687 696	Carefully
+T61	Action 697 701	pour
+T62	Action 710 717	discard
+T63	Reagent 722 733	supernatant
+T64	Device 742 745	P20
+T65	Amount 753 758	20 µl
+T66	Action 762 768	remove
+T67	Modifier 773 782	remaining
+T68	Reagent 783 798	drops of liquid
+T69	Action 799 817	without disturbing
+T70	Reagent 822 832	DNA pellet
+T71	Action 835 838	Add
+T72	Amount 839 845	500 µl
+T73	Concentration 849 853	70 %
+T74	Reagent 854 861	ethanol
+T75	Action 866 871	flick
+T76	Location 876 880	tube
+T77	Reagent 891 897	pellet
+T78	Action 898 907	comes off
+T79	Location 912 918	bottom
+T80	Action 921 925	Spin
+T81	Time 926 935	5 minutes
+T82	Action 938 946	Pour off
+T83	Reagent 951 958	ethanol
+T84	Device 967 970	P20
+T85	Amount 978 983	20 µl
+T86	Action 987 993	remove
+T87	Modifier 998 1007	remaining
+T88	Reagent 1008 1013	drops
+T89	Action 1014 1032	without disturbing
+T90	Reagent 1037 1043	pellet
+T91	Location 1056 1060	tube
+T92	Modifier 1061 1065	open
+T93	Location 1073 1078	bench
+T94	Action 1082 1089	air dry
+T95	Time 1094 1108	5 - 10 minutes
+T96	Action 1111 1120	Resuspend
+T97	Reagent 1125 1128	DNA
+T98	Amount 1132 1137	50 µl
+T99	Reagent 1138 1140	TE
+T100	Action 1145 1153	incubate
+T101	Temperature 1157 1173	room temperature
+T102	Time 1178 1187	5 minutes
+T103	Modifier 1192 1200	complete
+T104	Action 1201 1213	resuspension
+T105	Reagent 1216 1223	Samples
+T106	Action 1234 1240	frozen
+T107	Reagent 1245 1252	storage
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Site:T5 Acts-on:E1
+E3	Action:T6 Acts-on:T9 Site:E2 Product:T11
+E4	Action:T10 Acts-on:T11 Using:T12 Product:T16
+E5	Action:T13 Acts-on:T15 Site:T16
+E6	Action:T17 Acts-on:T20 Site:E5
+E7	Action:T21 Acts-on:E6 Product:T24
+E8	Action:T22 Acts-on:E6
+E9	Action:T23 Acts-on:T24
+E10	Action:T27 Acts-on:T30 Site:E9
+E11	Action:T31 Acts-on:E10
+E12	Action:T33 Count:T34 Acts-on:E10
+E13	Action:T35 Site:T36 Acts-on:E11
+E14	Action:T38 Acts-on:E13 Product:T46
+E15	Action:T41 Acts-on:T43 Product:T49
+E16	Action:T44 Acts-on:T46 Using:T47 Site:T49
+E17	Action:T50 Acts-on:T52 Acts-on2:E16 Product:T54
+E18	Action:T53 Acts-on:T54 Using:T56
+E19	Action:T57 Acts-on:E18 Product:T63
+E20	Action:T61 Acts-on:T63
+E21	Action:T62 Acts-on:E20 Product:T70
+E22	Action:T66 Acts-on:T68 Using:T64
+E23	Action:T69 Acts-on:T70
+E24	Action:T71 Acts-on:T74 Site:E22 Product:T76
+E25	Action:T75 Acts-on:T76
+E26	Action:T78 Acts-on:T77 Site:T79
+E27	Action:T80 Acts-on:E26
+E28	Action:T82 Acts-on:T83 Site:E27 Product:T90
+E29	Action:T86 Using:T84 Acts-on:T88 Product:T91
+E30	Action:T89 Acts-on:T90
+E31	Action:T94 Site:T93 Acts-on:T91 Product:T97
+E32	Action:T96 Acts-on:T97 Acts-on2:T99
+E33	Action:T100 Acts-on:E32
+E34	Action:T104 Product:T105
+E35	Action:T106 Acts-on:T105 Product:T107
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E9 Arg2:T25
+R3	Setting Arg1:E9 Arg2:T26
+R4	Setting Arg1:E13 Arg2:T37
+R5	Mod-Link Arg1:E11 Arg2:T32
+R6	Mod-Link Arg1:T49 Arg2:T48
+R7	Mod-Link Arg1:E20 Arg2:T60
+R8	Mod-Link Arg1:T68 Arg2:T67
+R9	Setting Arg1:E27 Arg2:T81
+R10	Mod-Link Arg1:T88 Arg2:T87
+R11	Setting Arg1:E33 Arg2:T101
+R12	Setting Arg1:E33 Arg2:T102
+R13	Mod-Link Arg1:E34 Arg2:T103
+R14	Measure Arg1:T9 Arg2:T8
+R15	Measure Arg1:T15 Arg2:T14
+R16	Measure Arg1:T20 Arg2:T19
+R17	Measure Arg1:T20 Arg2:T18
+R18	Measure Arg1:T30 Arg2:T29
+R19	Measure Arg1:T30 Arg2:T28
+R20	Measure Arg1:T46 Arg2:T45
+R21	Measure Arg1:T52 Arg2:T51
+R22	Setting Arg1:T64 Arg2:T65
+R23	Measure Arg1:T74 Arg2:T73
+R24	Measure Arg1:T74 Arg2:T72
+R25	Setting Arg1:T84 Arg2:T85
+R26	Measure Arg1:T99 Arg2:T98
+R27	Mod-Link Arg1:T8 Arg2:T7
+R28	Mod-Link Arg1:E18 Arg2:T55
+R29	Enables Arg1:E8 Arg2:E7
+R30	Enables Arg1:E12 Arg2:E11
+R31	Setting Arg1:E14 Arg2:T39
+R32	Setting Arg1:E14 Arg2:T40
+R33	Mod-Link Arg1:T43 Arg2:T42
+R34	Setting Arg1:E19 Arg2:T58
+R35	Setting Arg1:E19 Arg2:T59
+R36	Meronym Arg1:T68 Arg2:T70
+R37	Prevents Arg1:E22 Arg2:E23
+R38	Meronym Arg1:T77 Arg2:T79
+R39	Meronym Arg1:T79 Arg2:T76
+R40	Enables Arg1:E25 Arg2:E26
+R41	Prevents Arg1:E29 Arg2:E30
+R42	Meronym Arg1:T88 Arg2:T90
+R43	Setting Arg1:E31 Arg2:T95
+R44	Mod-Link Arg1:T91 Arg2:T92
+R45	Enables Arg1:E33 Arg2:E34

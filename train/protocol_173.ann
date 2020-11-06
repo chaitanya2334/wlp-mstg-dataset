@@ -1,0 +1,181 @@
+T1	Action 52 58	Dilute
+T2	Modifier 59 63	each
+T3	Reagent 64 77	sub - library
+T4	Concentration 81 91	50 ng / ul
+T5	Reagent 95 100	water
+T6	Action 104 120	EB Electroporate
+T7	Reagent 125 132	library
+T8	Action 135 146	Pre - chill
+T9	Size 147 153	0.1 cm
+T10	Location 154 162	cuvettes
+T11	Reagent 165 176	megaX cells
+T12	Concentration 179 183	10 %
+T13	Reagent 184 192	glycerol
+T14	Location 196 199	ice
+T15	Action 202 208	Follow
+T16	Location 213 218	table
+T17	Modifier 238 251	sub - library
+T18	Reagent 252 263	plasmid DNA
+T19	Reagent 268 289	MegaX competent cells
+T20	Action 292 295	mix
+T21	Modifier 296 302	gently
+T22	Action 307 315	incubate
+T23	Location 319 322	ice
+T24	Time 327 333	30 min
+T25	Action 336 339	Add
+T26	Modifier 340 353	pre - chilled
+T27	Concentration 354 358	10 %
+T28	Reagent 359 367	glycerol
+T29	Reagent 375 394	MageX - library mix
+T30	Modifier 401 406	final
+T31	Amount 407 412	75 ul
+T32	Action 415 423	transfer
+T33	Reagent 428 431	mix
+T34	Modifier 437 447	prechilled
+T35	Size 448 454	0.1 cm
+T36	Location 455 462	cuvette
+T37	Action 465 478	Electroporate
+T38	Generic-Measure 482 488	2.0 kV
+T39	Generic-Measure 491 499	200 ohms
+T40	Generic-Measure 502 507	25 uF
+T41	Device 510 539	Gene Pulser Xcell , Bio - rad
+T42	Action 544 552	Transfer
+T43	Reagent 553 558	cells
+T44	Location 564 576	culture tube
+T45	Action 579 582	Use
+T46	Amount 583 587	1 ml
+T47	Device 588 596	pipettes
+T48	Device 601 617	gel loading tips
+T49	Action 620 624	Wash
+T50	Reagent 625 630	cells
+T51	Modifier 635 641	gently
+T52	Amount 647 653	300 ul
+T53	Reagent 654 663	S . O . C
+T54	Numerical 666 671	twice
+T55	Action 691 699	Incubate
+T56	Temperature 703 707	37oC
+T57	Speed 710 717	250 rpm
+T58	Time 720 730	1.5 hour .
+T59	Action 731 736	Plate
+T60	Reagent 741 756	transformations
+T61	Action 759 764	Plate
+T62	Amount 765 768	all
+T63	Numerical 772 775	one
+T64	Modifier 776 781	large
+T65	Reagent 782 794	square plate
+T66	Modifier 795 798	per
+T67	Reagent 799 812	sub - library
+T68	Modifier 819 829	autoclaved
+T69	Reagent 830 835	beads
+T70	Action 838 846	Incubate
+T71	Temperature 850 854	37oC
+T72	Time 859 867	18 hours
+T73	Action 870 877	Collect
+T74	Modifier 878 881	all
+T75	Reagent 882 890	colonies
+T76	Reagent 896 898	LB
+T77	Action 903 905	do
+T78	Numerical 906 909	one
+T79	Method 910 918	maxiprep
+T80	Modifier 919 922	per
+T81	Location 923 928	plate
+T82	Action 931 936	elute
+T83	Amount 940 946	500 ul
+T84	Reagent 947 949	EB
+T85	Concentration 984 997	2 ~ 3 ug / ul
+T86	Action 1003 1011	sequence
+T87	Reagent 1016 1023	library
+T88	Action 1034 1037	PCR
+T89	Reagent 1042 1054	sgRNA region
+T90	Reagent 1086 1102	common 3’ primer
+T91	Numerical 1110 1111	2
+T92	Modifier 1112 1121	different
+T93	Reagent 1122 1132	5’ primers
+T94	Modifier 1137 1144	CRISPRa
+T95	Modifier 1148 1155	CRISPRi
+T96	Action 1479 1483	Pool
+T97	Reagent 1484 1499	sub - libraries
+T98	Modifier 1500 1514	proportionally
+T99	Reagent 1561 1587	CRISPRa or CRISPRi library
+T100	Action 1590 1597	measure
+T101	Measure-Type 1602 1622	pooled concentration
+T102	Action 1627 1633	dilute
+T103	Mention 1634 1636	it
+T104	Concentration 1640 1651	400 ng / ul
+T105	Action 1660 1663	Run
+T106	Numerical 1664 1665	3
+T107	Location 1666 1671	tubes
+T108	Amount 1675 1681	100 ul
+T109	Reagent 1682 1695	PCR reactions
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T6 Acts-on:T7
+E3	Action:T8 Acts-on:T10 Acts-on2:T11 Acts-on3:T13 Site:T14 Product:T28 Product2:T36
+E4	Action:T15 Product:T18 Product2:T19 Site:T16 Acts-on:E2
+E5	Action:T20 Acts-on:E3 Acts-on2:T19 Acts-on3:T18
+E6	Action:T22 Site:T23 Acts-on:E5 Product:T29
+E7	Action:T25 Acts-on:T28 Site:T29 Product:T33
+E8	Action:T32 Acts-on:T33 Site:T36
+E9	Action:T37 Using:T41 Acts-on:E8 Product:T43
+E10	Action:T42 Acts-on:T43 Site:T44
+E11	Action:T45 Using:T47 Using2:T48 Site:E10 Product:T50
+E12	Action:T49 Acts-on:T50 Using:T53 Count:T54
+E13	Action:T55 Acts-on:E12 Product:T60
+E14	Action:T59 Acts-on:T60 Product:T67
+E15	Action:T61 Site:T65 Acts-on:T67 Using:T69
+E16	Action:T70 Acts-on:E15 Product:T75
+E17	Action:T73 Acts-on:T75 Using:T76 Product:T81
+E18	Action:T77 Using:T79 Acts-on:T81
+E19	Action:T82 Site:T84 Acts-on:E18 Product:T87
+E20	Action:T86 Acts-on:T87 Product:T97
+E21	Action:T88 Acts-on:T89 Using:T90 Using2:T93
+E22	Action:T96 Acts-on:T97 Product:T99
+E23	Action:T100 Measure-Type-Link:T101 Acts-on:T99 Product:T103
+E24	Action:T102 Acts-on:T103 Product:T107
+E25	Action:T105 Acts-on:T107
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T4
+R3	Measure Arg1:T13 Arg2:T12
+R4	Measure Arg1:T10 Arg2:T9
+R5	Mod-Link Arg1:E5 Arg2:T21
+R6	Setting Arg1:E6 Arg2:T24
+R7	Measure Arg1:T28 Arg2:T27
+R8	Mod-Link Arg1:T28 Arg2:T26
+R9	Mod-Link Arg1:T31 Arg2:T30
+R10	Setting Arg1:E7 Arg2:T31
+R11	Measure Arg1:T36 Arg2:T35
+R12	Mod-Link Arg1:T36 Arg2:T34
+R13	Setting Arg1:T41 Arg2:T40
+R14	Setting Arg1:T41 Arg2:T39
+R15	Setting Arg1:T41 Arg2:T38
+R16	Setting Arg1:T47 Arg2:T46
+R17	Measure Arg1:T53 Arg2:T52
+R18	Mod-Link Arg1:E12 Arg2:T51
+R19	Setting Arg1:E13 Arg2:T56
+R20	Setting Arg1:E13 Arg2:T57
+R21	Setting Arg1:E13 Arg2:T58
+R22	Mod-Link Arg1:T69 Arg2:T68
+R23	Mod-Link Arg1:T65 Arg2:T64
+R24	Measure Arg1:T65 Arg2:T63
+R25	Mod-Link Arg1:T67 Arg2:T66
+R26	Setting Arg1:E16 Arg2:T71
+R27	Setting Arg1:E16 Arg2:T72
+R28	Mod-Link Arg1:T75 Arg2:T74
+R29	Or Arg1:T79 Arg2:T78
+R30	Mod-Link Arg1:T81 Arg2:T80
+R31	Measure Arg1:T84 Arg2:T83
+R32	Setting Arg1:E19 Arg2:T85
+R33	Mod-Link Arg1:E22 Arg2:T98
+R34	Measure Arg1:T109 Arg2:T108
+R35	Measure Arg1:T107 Arg2:T106
+R36	Or Arg1:E1 Arg2:E2
+R37	Mod-Link Arg1:T18 Arg2:T17
+R38	Mod-Link Arg1:T19 Arg2:T17
+R39	Setting Arg1:E15 Arg2:T62
+R40	Measure Arg1:T93 Arg2:T91
+R41	Mod-Link Arg1:T93 Arg2:T92
+R42	Mod-Link Arg1:T93 Arg2:T94
+R43	Or Arg1:T94 Arg2:T95
+R44	Enables Arg1:E21 Arg2:E20
+R45	Meronym Arg1:T89 Arg2:T87
+R46	Setting Arg1:E24 Arg2:T104
+R47	Meronym Arg1:T107 Arg2:T109

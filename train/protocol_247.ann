@@ -1,0 +1,219 @@
+T1	Modifier 44 52	For each
+T2	Reagent 53 59	sample
+T3	Action 66 75	collected
+T4	Numerical 78 81	one
+T5	Location 82 109	anaerobic collection vessel
+T6	Action 138 146	prepared
+T7	Amount 151 163	small amount
+T8	Amount 171 180	50–220 mg
+T9	Reagent 186 232	elemental sulfur ( e . g . , Riedel - deHaën )
+T10	Action 236 242	placed
+T11	Location 246 263	an anaerobic tube
+T12	Amount 266 272	0.1 mL
+T13	Concentration 278 281	2 %
+T14	Reagent 282 300	resazurin solution
+T15	Amount 305 311	0.1 mL
+T16	Reagent 315 339	water saturated with H2S
+T17	Action 344 349	added
+T18	Reagent 356 359	air
+T19	Location 367 371	tube
+T20	Action 375 384	displaced
+T21	Reagent 390 393	CO2
+T22	Reagent 398 400	N2
+T23	Method 408 425	Hungate technique
+T24	Location 434 438	tube
+T25	Action 442 451	stoppered
+T26	Seal 481 484	cap
+T27	Action 488 494	placed
+T28	Location 502 506	tube
+T29	Reagent 515 525	assemblage
+T30	Action 526 536	autoclaved
+T31	Reagent 539 570	Liquid and wet sediment samples
+T32	Action 575 584	collected
+T33	Location 590 620	turbid terrestrial hot springs
+T34	Modifier 626 642	high temperature
+T35	Temperature 643 649	> 70˚C
+T36	Modifier 654 660	low pH
+T37	pH 661 664	< 4
+T38	Reagent 667 674	Samples
+T39	Action 679 688	collected
+T40	Modifier 692 699	sterile
+T41	Size 700 707	50 - mL
+T42	Location 708 722	conical flasks
+T43	Location 730 733	end
+T44	Location 740 768	extendible pole with a clamp
+T45	Measure-Type 856 858	pH
+T46	Reagent 866 872	liquid
+T47	Action 886 894	adjusted
+T48	pH 903 906	5.5
+T49	Reagent 912 923	solid CaCO3
+T50	Method 927 940	slow addition
+T51	Method 945 953	stirring
+T52	Reagent 984 990	sample
+T53	Action 994 1005	transferred
+T54	Location 1011 1040	pre - prepared anaerobic tube
+T55	Device 1049 1056	syringe
+T56	Reagent 1145 1175	drops of H2S - saturated water
+T57	Action 1180 1185	added
+T58	Reagent 1212 1219	Samples
+T59	Action 1227 1237	maintained
+T60	Time 1242 1255	up to 2 weeks
+T61	Temperature 1259 1275	room temperature
+T62	Reagent 1296 1303	Samples
+T63	Location 1324 1339	anaerobic tubes
+T64	Location 1343 1366	filled centrifuge tubes
+T65	Action 1371 1378	diluted
+T66	Concentration 1379 1396	1 : 50 or 1 : 100
+T67	Reagent 1400 1424	Sulfolobus growth medium
+T68	Action 1453 1461	Incubate
+T69	Reagent 1462 1469	samples
+T70	Temperature 1473 1477	80˚C
+T71	Method 1483 1490	shaking
+T72	Speed 1493 1500	150 rpm
+T73	Time 1507 1520	up to 2 weeks
+T74	Reagent 1527 1533	medium
+T75	Action 1538 1546	buffered
+T76	Amount 1552 1557	0.7 g
+T77	Reagent 1558 1565	glycine
+T78	Modifier 1566 1569	per
+T79	Amount 1570 1575	liter
+T80	Measure-Type 1584 1586	pH
+T81	Action 1591 1599	adjusted
+T82	pH 1603 1611	pH 3–3.5
+T83	Concentration 1617 1630	1 : 2 diluted
+T84	Reagent 1631 1644	sulfuric acid
+T85	Reagent 1973 1980	samples
+T86	Action 1985 1991	plated
+T87	Location 1995 2010	Gelrite® plates
+T88	Concentration 2054 2070	rediluted 1 : 50
+T89	Action 2077 2104	screened for VLP production
+T90	Method 2110 2129	spot - onlawn assay
+T91	Method 2174 2193	electron microscopy
+T92	Modifier 2240 2252	second round
+T93	Reagent 2256 2274	enrichment culture
+T94	Action 2283 2289	plated
+T95	Action 2294 2323	screened for virus production
+T96	Location 2326 2332	Plates
+T97	Action 2352 2358	adding
+T98	Concentration 2359 2373	6–10 grams / L
+T99	Reagent 2374 2391	Gelrite ( Kelco )
+T100	Reagent 2395 2411	Sulfolobus media
+T101	Action 2430 2437	boiling
+T102	Reagent 2456 2480	Calcium ( Ca ( NO3 ) 2 )
+T103	Reagent 2485 2504	magnesium ( MgCl2 )
+T104	Action 2509 2514	added
+T105	Concentration 2543 2555	1.5 and 5 mM
+T106	Action 2576 2585	stabilize
+T107	Reagent 2590 2593	gel
+T108	Reagent 2607 2610	gel
+T109	Amount 2624 2634	ca . 25 mL
+T110	Action 2638 2644	poured
+T111	Size 2650 2668	standard ( 90 mm )
+T112	Location 2669 2681	Petri plates
+T113	Device 2687 2691	cams
+T114	Location 2725 2731	plates
+T115	Action 2739 2745	stored
+T116	Temperature 2749 2752	4˚C
+T117	Time 2753 2765	indefinitely
+T118	Amount 2782 2788	0.1 mL
+T119	Concentration 2796 2817	undiluted to 10 - 3 ,
+T120	Reagent 2821 2840	enrichment cultures
+T121	Action 2845 2851	spread
+T122	Location 2855 2869	Gelrite plates
+T123	Reagent 2877 2885	presence
+T124	Reagent 2889 2896	absence
+T125	Amount 2900 2906	0.5 mL
+T126	Concentration 2907 2912	0.2 %
+T127	Reagent 2913 2920	Gelrite
+T128	Reagent 2934 2951	Sulfolobus medium
+T129	Location 2954 2960	Plates
+T130	Action 2965 2974	incubated
+T131	Modifier 2975 2983	inverted
+T132	Location 2987 3012	airtight moist containers
+T133	Temperature 3016 3023	75–80˚C
+T134	Time 3028 3048	approximately 1 week
+E1	Action:T3 Acts-on:T2
+E2	Action:T6 Product:T5 Acts-on:E1
+E3	Action:T10 Site:T11 Acts-on:T9
+E4	Action:T17 Acts-on:T14 Acts-on2:T16 Site:E3 Product:T19
+E5	Action:T20 Acts-on:T18 Using:T21 Using2:T22 Using3:T23 Product:T24
+E6	Action:T25 Acts-on:T24 Product:T28
+E7	Action:T27 Acts-on:T26 Site:T28 Product:T29
+E8	Action:T30 Acts-on:T29 Product:T54
+E9	Action:T32 Acts-on:T31 Site:T33 Product:T38
+E10	Action:T39 Acts-on:T38 Site:T42 Product:T46
+E11	Action:T47 Measure-Type-Link:T45 Using:T49 Using2:T50 Using3:T51 Acts-on:T46 Product:T52
+E12	Action:T53 Acts-on:T52 Site:T54 Using:T55
+E13	Action:T57 Acts-on:T56 Site:E12 Product:T58
+E14	Action:T59 Acts-on:T58 Product:T62
+E15	Action:T65 Using:T67 Acts-on:T62 Product:T69
+E16	Action:T68 Acts-on:T69 Using:T71 Product:T85
+E17	Action:T75 Using:T77
+E18	Action:T81 Measure-Type-Link:T80 Using:T84 Acts-on:E17 Product:T74
+E19	Action:T86 Acts-on:T85 Site:T87
+E20	Action:T89 Using:T90 Using2:T91 Acts-on:E19 Product:T93
+E21	Action:T94 Acts-on:T93 Product:T120
+E22	Action:T95 Acts-on:T93 Product:T120
+E23	Action:T97 Acts-on:T99 Site:T100
+E24	Action:T101 Acts-on:E23 Product:T96
+E25	Action:T104 Acts-on:T102 Acts-on2:T103 Site:T96
+E26	Action:T106 Acts-on:T107 Product:T108
+E27	Action:T110 Site:T112 Using:T113 Acts-on:T108 Product:T114
+E28	Action:T115 Acts-on:T114 Product:T122
+E29	Action:T121 Site:T122 Acts-on:T120 Product:T129
+E30	Action:T130 Acts-on:T129 Site:T132
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T9 Arg2:T8
+R3	Measure Arg1:T16 Arg2:T15
+R4	Measure Arg1:T14 Arg2:T13
+R5	Measure Arg1:T14 Arg2:T12
+R6	Meronym Arg1:T18 Arg2:T19
+R7	Setting Arg1:T34 Arg2:T35
+R8	Setting Arg1:T36 Arg2:T37
+R9	Mod-Link Arg1:T33 Arg2:T34
+R10	Mod-Link Arg1:T33 Arg2:T36
+R11	Measure Arg1:T42 Arg2:T41
+R12	Meronym Arg1:T42 Arg2:T43
+R13	Meronym Arg1:T43 Arg2:T44
+R14	Mod-Link Arg1:T42 Arg2:T40
+R15	Setting Arg1:E11 Arg2:T48
+R16	Setting Arg1:E14 Arg2:T60
+R17	Setting Arg1:E14 Arg2:T61
+R18	Or Arg1:T63 Arg2:T64
+R19	Setting Arg1:E15 Arg2:T66
+R20	Measure Arg1:T77 Arg2:T76
+R21	Mod-Link Arg1:T76 Arg2:T78
+R22	Mod-Link Arg1:T79 Arg2:T78
+R23	Measure Arg1:T84 Arg2:T83
+R24	Setting Arg1:E18 Arg2:T82
+R25	Measure Arg1:T85 Arg2:T88
+R26	Measure Arg1:T99 Arg2:T98
+R27	Setting Arg1:E25 Arg2:T105
+R28	Measure Arg1:T112 Arg2:T111
+R29	Setting Arg1:E27 Arg2:T109
+R30	Setting Arg1:E28 Arg2:T116
+R31	Setting Arg1:E28 Arg2:T117
+R32	Meronym Arg1:T127 Arg2:T128
+R33	Measure Arg1:T127 Arg2:T126
+R34	Measure Arg1:T127 Arg2:T125
+R35	Or Arg1:T123 Arg2:T124
+R36	Meronym Arg1:T127 Arg2:T123
+R37	Meronym Arg1:T127 Arg2:T124
+R38	Measure Arg1:T120 Arg2:T118
+R39	Measure Arg1:T120 Arg2:T119
+R40	Mod-Link Arg1:E30 Arg2:T131
+R41	Setting Arg1:E30 Arg2:T133
+R42	Setting Arg1:E30 Arg2:T134
+R43	Setting Arg1:E16 Arg2:T70
+R44	Setting Arg1:E16 Arg2:T72
+R45	Setting Arg1:E16 Arg2:T73
+R46	Coreference-Link Arg1:T67 Arg2:T74
+R47	Enables Arg1:E25 Arg2:E26
+R48	Mod-Link Arg1:T2 Arg2:T1
+R49	Coreference-Link Arg1:T11 Arg2:T5
+R50	Or Arg1:T8 Arg2:T7
+R51	Meronym Arg1:T62 Arg2:T63
+R52	Mod-Link Arg1:T93 Arg2:T92
+R53	Overlaps Arg1:E21 Arg2:E22
+R54	Overlaps Arg1:E26 Arg2:E27
+R55	Meronym Arg1:T128 Arg2:T122

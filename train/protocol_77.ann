@@ -1,0 +1,66 @@
+T1	Action 44 48	Take
+T2	Reagent 49 67	agar cubes / rains
+T3	Reagent 73 87	glycerol stock
+T4	Action 92 97	place
+T5	Reagent 98 110	3 - 4 pieces
+T6	Location 114 125	agar plates
+T7	Action 315 319	Grow
+T8	Device 320 326	plates
+T9	Time 337 343	7 days
+T10	Location 351 355	dark
+T11	Temperature 420 429	18 - 20°C
+T12	Action 432 436	Move
+T13	Device 437 443	plates
+T14	Method 450 476	16 / 8 light / dark cycles
+T15	Time 487 497	2 - 3 days
+T16	Action 501 507	induce
+T17	Method 508 519	sporulation
+T18	Action 522 529	Harvest
+T19	Reagent 530 539	sporangia
+T20	Action 543 549	adding
+T21	Amount 550 560	several ml
+T22	Reagent 561 575	ice cold water
+T23	Location 583 589	plates
+T24	Action 594 602	scraping
+T25	Reagent 610 619	sporangia
+T26	Device 627 638	pipette tip
+T27	Action 641 649	Aspirate
+T28	Modifier 650 653	all
+T29	Reagent 654 660	liquid
+T30	Action 665 670	store
+T31	Location 674 680	fridge
+T32	Time 685 696	3 - 6 hours
+T33	Action 707 715	hatching
+T34	Reagent 723 729	spores
+T35	Action 732 743	Pipette off
+T36	Reagent 748 760	upper layers
+T37	Action 798 803	check
+T38	Reagent 804 817	spore density
+T39	Location 824 833	microsope
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T5 Site:T6 Product:T8
+E3	Action:T7 Acts-on:T8 Site:T10 Product:T13
+E4	Action:T12 Acts-on:T13 Using:T14 Product:T19
+E5	Action:T16 Using:T17
+E6	Action:T18 Acts-on:T19 Product:T29
+E7	Action:T20 Acts-on:T22 Site:T23
+E8	Action:T24 Acts-on:T25 Using:T26
+E9	Action:T27 Acts-on:T29 Product:T38
+E10	Action:T30 Site:T31 Acts-on:E9
+E11	Action:T33 Acts-on:T34 Product:T36
+E12	Action:T35 Acts-on:T36 Product:T38
+E13	Action:T37 Acts-on:T38 Site:T39
+R1	Setting Arg1:E4 Arg2:T15
+R2	Measure Arg1:T22 Arg2:T21
+R3	Setting Arg1:E3 Arg2:T9
+R4	Mod-Link Arg1:T29 Arg2:T28
+R5	Setting Arg1:E10 Arg2:T32
+R6	Enables Arg1:E4 Arg2:E5
+R7	Enables Arg1:E7 Arg2:E6
+R8	Enables Arg1:E8 Arg2:E6
+R9	Meronym Arg1:T2 Arg2:T3
+R10	Coreference-Link Arg1:E1 Arg2:T5
+R11	Setting Arg1:E3 Arg2:T11
+R12	Meronym Arg1:T19 Arg2:T23
+R13	Coreference-Link Arg1:T19 Arg2:T25
+R14	Enables Arg1:E10 Arg2:E11

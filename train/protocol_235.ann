@@ -1,0 +1,433 @@
+T1	Action 118 122	make
+T2	Reagent 126 138	oxalate wash
+T3	Action 169 175	remove
+T4	Reagent 176 194	extracellular iron
+T5	Reagent 200 207	diatoms
+T6	Action 210 213	Mix
+T7	Modifier 214 227	consecutively
+T8	Amount 243 249	600 ml
+T9	Reagent 253 263	ultra pure
+T10	Action 266 270	Take
+T11	Amount 277 280	1 L
+T12	Reagent 281 291	ultra pure
+T13	pH 297 301	Ph 8
+T14	Amount 315 320	15.3g
+T15	Reagent 323 327	EDTA
+T16	Amount 330 335	14.7g
+T17	Reagent 338 352	Sodium Citrate
+T18	Amount 355 360	0.74g
+T19	Reagent 363 381	Potassium Chloride
+T20	Amount 384 386	5g
+T21	Reagent 389 404	Sodium Chloride
+T22	Amount 407 420	Several drops
+T23	Reagent 424 440	Sodium Hydroxide
+T24	pH 449 465	Ph of 6 - 712.6g
+T25	Reagent 468 479	Oxalic Acid
+T26	pH 483 486	1.2
+T27	Action 489 496	Harvest
+T28	Reagent 497 504	Diatoms
+T29	Reagent 541 549	cultures
+T30	Action 560 565	grown
+T31	Measure-Type 575 590	optimal density
+T32	Generic-Measure 607 615	3500 RFU
+T33	Mention 620 624	they
+T34	Action 636 645	harvested
+T35	Device 701 719	a pair of tweezers
+T36	Action 735 742	cleaned
+T37	Concentration 746 750	10 %
+T38	Reagent 751 754	HCl
+T39	Time 755 764	overnight
+T40	Location 767 788	polycarbonate filters
+T41	Size 791 796	0.1um
+T42	Action 814 820	washed
+T43	Concentration 824 828	10 %
+T44	Reagent 829 832	HCl
+T45	Time 833 842	overnight
+T46	Action 847 853	rinsed
+T47	Reagent 857 860	UPW
+T48	Numerical 863 864	3
+T49	Location 865 872	bottles
+T50	Location 875 878	one
+T51	Modifier 879 895	to collect waste
+T52	Location 898 901	one
+T53	Reagent 916 919	ASW
+T54	Location 924 927	one
+T55	Reagent 942 945	UPW
+T56	Reagent 948 960	oxalate wash
+T57	Size 965 969	60ml
+T58	Device 970 977	syringe
+T59	Device 984 1002	syringe filter tip
+T60	Action 1005 1010	Label
+T61	Numerical 1011 1018	several
+T62	Size 1019 1023	15ml
+T63	Location 1024 1029	tubes
+T64	Modifier 1030 1074	with the designated solution numbers on them
+T65	Location 1081 1085	tube
+T66	Action 1096 1103	labeled
+T67	Modifier 1104 1126	for unwashed solutions
+T68	Location 1142 1146	tube
+T69	Action 1147 1154	labeled
+T70	Modifier 1155 1175	for washed solutions
+T71	Action 1291 1299	assemble
+T72	Device 1304 1324	filtration apparatus
+T73	Device 1331 1350	polyethylene gloves
+T74	Action 1354 1360	handle
+T75	Device 1365 1373	tweezers
+T76	Action 1376 1382	remove
+T77	Numerical 1383 1386	one
+T78	Location 1387 1407	polycarbonate filter
+T79	Location 1417 1426	container
+T80	Action 1431 1436	place
+T81	Device 1444 1454	filter rig
+T82	Action 1457 1462	Screw
+T83	Location 1467 1476	reservoir
+T84	Device 1486 1496	filter rig
+T85	Action 1501 1506	rinse
+T86	Location 1511 1517	filter
+T87	Reagent 1523 1526	UPW
+T88	Action 1573 1577	Pour
+T89	Amount 1578 1583	250ml
+T90	Reagent 1587 1594	culture
+T91	Location 1604 1610	filter
+T92	Mention 1621 1623	it
+T93	Action 1627 1632	drain
+T94	Action 1635 1640	Rinse
+T95	Location 1645 1651	filter
+T96	Numerical 1652 1663	three times
+T97	Amount 1669 1672	5ml
+T98	Reagent 1676 1679	ASW
+T99	Action 1719 1726	unscrew
+T100	Location 1731 1740	reservoir
+T101	Device 1746 1765	polyethylene gloves
+T102	Action 1768 1774	remove
+T103	Location 1779 1785	filter
+T104	Device 1791 1799	tweezers
+T105	Action 1806 1811	place
+T106	Mention 1812 1814	it
+T107	Size 1836 1840	15ml
+T108	Location 1841 1845	tube
+T109	Modifier 1846 1872	that is labeled “unwashed”
+T110	Action 1875 1889	Syringe filter
+T111	Amount 1890 1894	60ml
+T112	Reagent 1898 1910	oxalate wash
+T113	Amount 1930 1935	750ml
+T114	Reagent 1939 1946	culture
+T115	Action 1949 1955	Invert
+T116	Location 1956 1962	bottle
+T117	Numerical 1963 1967	once
+T118	Action 1972 1984	allow to sit
+T119	Time 1989 1994	30min
+T120	Action 1997 2003	Invert
+T121	Location 2004 2010	bottle
+T122	Action 2029 2034	place
+T123	Modifier 2037 2040	new
+T124	Location 2041 2061	polycarbonate filter
+T125	Device 2071 2081	filter rig
+T126	Action 2084 2089	rinse
+T127	Reagent 2095 2098	UPW
+T128	Action 2103 2107	pour
+T129	Reagent 2122 2129	culture
+T130	Location 2135 2141	filter
+T131	Action 2144 2149	Rinse
+T132	Location 2150 2156	filter
+T133	Numerical 2157 2168	three times
+T134	Amount 2174 2177	5ml
+T135	Reagent 2178 2181	ASW
+T136	Action 2184 2189	drain
+T137	Modifier 2190 2200	completely
+T138	Action 2203 2209	remove
+T139	Location 2210 2216	filter
+T140	Action 2223 2228	place
+T141	Location 2246 2250	tube
+T142	Modifier 2251 2267	labeled “washed”
+T143	Method 2270 2288	Repeat these steps
+T144	Size 2306 2308	1L
+T145	Location 2309 2316	bottles
+T146	Action 2327 2335	filtered
+T147	Action 2338 2343	Rinse
+T148	Device 2344 2352	tweezers
+T149	Reagent 2358 2361	UPW
+T150	Device 2377 2387	filter rig
+T151	Action 2394 2397	put
+T152	Reagent 2398 2408	everything
+T153	Location 2409 2426	back in its place
+T154	Action 2429 2434	Rinse
+T155	Location 2439 2446	bottles
+T156	Reagent 2456 2459	UPW
+T157	Action 2464 2468	take
+T158	Mention 2469 2473	them
+T159	Location 2481 2490	clean lab
+T160	Action 2497 2504	cleaned
+T161	Reagent 2511 2519	cultures
+T162	Action 2549 2560	run through
+T163	Location 2561 2568	columns
+T164	Action 2641 2649	Transfer
+T165	Location 2650 2656	filter
+T166	Modifier 2662 2667	clean
+T167	Size 2668 2673	15 mL
+T168	Location 2674 2678	tube
+T169	Action 2693 2701	Transfer
+T170	Location 2706 2712	filter
+T171	Location 2720 2745	small teflon ( PFA ) vial
+T172	Action 2748 2751	Add
+T173	Amount 2752 2756	1 mL
+T174	Reagent 2757 2763	conc .
+T175	Modifier 2767 2772	clean
+T176	Reagent 2773 2776	HCl
+T177	Amount 2781 2785	1 mL
+T178	Reagent 2786 2792	conc .
+T179	Action 2793 2801	TE clean
+T180	Reagent 2802 2806	HNO3
+T181	Modifier 2810 2814	each
+T182	Location 2815 2819	vial
+T183	Action 2904 2909	Place
+T184	Seal 2910 2914	caps
+T185	Location 2926 2931	vials
+T186	Action 2936 2941	place
+T187	Location 2942 2947	vials
+T188	Location 2953 2962	fume hood
+T189	Action 3173 3179	remove
+T190	Location 3184 3191	filters
+T191	Location 3201 3206	vials
+T192	Device 3212 3237	a pair of teflon tweezers
+T193	Action 3247 3254	pick up
+T194	Location 3259 3265	filter
+T195	Modifier 3266 3336	in a way that most of the remaining diatom shells remain on the filter
+T196	Action 3445 3454	Rinse off
+T197	Reagent 3460 3464	acid
+T198	Location 3479 3487	PFA vial
+T199	Numerical 3491 3496	twice
+T200	Action 3497 3506	pipetting
+T201	Amount 3507 3511	1 mL
+T202	Reagent 3515 3521	TE H2O
+T203	Modifier 3527 3531	each
+T204	Location 3532 3538	filter
+T205	Action 3541 3550	Evaporate
+T206	Reagent 3551 3558	samples
+T207	Modifier 3559 3569	to dryness
+T208	Device 3575 3584	hot plate
+T209	Action 3587 3599	Reconstitute
+T210	Reagent 3600 3607	samples
+T211	Amount 3611 3617	200 uL
+T212	Reagent 3621 3628	10N HCl
+T213	Concentration 3629 3638	+ 0.001 %
+T214	Reagent 3639 3645	H2O2 .
+T215	Action 3646 3653	Collect
+T216	Reagent 3656 3665	subsample
+T217	Action 3707 3710	Run
+T218	Reagent 3711 3718	samples
+T219	Location 3727 3741	‘mini’ columns
+T220	Size 3744 3750	135 uL
+T221	Action 3815 3820	clean
+T222	Location 3834 3843	PFA vials
+T223	Action 3847 3855	blasting
+T224	Mention 3856 3860	then
+T225	Reagent 3866 3874	TE water
+T226	Modifier 3875 3887	from the tap
+T227	Action 3892 3899	putting
+T228	Mention 3900 3904	them
+T229	Device 3912 3921	hot plate
+T230	Concentration 3927 3932	0.1 N
+T231	Reagent 3933 3937	HNO3
+T232	Time 3945 3956	hour or two
+T233	Action 3974 3979	Elute
+T234	Location 3989 3996	columns
+T235	Location 4011 4020	PFA vials
+T236	Action 4048 4056	Dry down
+T237	Time 4057 4066	overnight
+T238	Time 4072 4087	for a few hours
+T239	Action 4092 4103	Re dissolve
+T240	Amount 4107 4112	100ul
+T241	Reagent 4116 4127	conc . HNO3
+T242	Action 4130 4133	Put
+T243	Location 4137 4146	hot plate
+T244	Location 4150 4157	bio lab
+T245	Action 4160 4166	capped
+T246	Time 4173 4178	30min
+T247	Temperature 4182 4185	350
+T248	Action 4188 4196	Take off
+T249	Location 4197 4206	hot plate
+T250	Location 4210 4219	clean lab
+T251	Action 4224 4227	put
+T252	Location 4231 4240	hot plate
+T253	Location 4244 4258	biological lab
+T254	Action 4262 4270	dry down
+T255	Action 4273 4285	Reconstitute
+T256	Amount 4289 4295	1100ul
+T257	Concentration 4296 4300	0.1N
+T258	Reagent 4301 4305	HNO3
+T259	Action 4306 4314	Take off
+T260	Amount 4315 4320	100ul
+T261	Reagent 4324 4330	sample
+T262	Action 4335 4341	dilute
+T263	Amount 4345 4348	1ml
+T264	Concentration 4354 4358	. 1N
+T265	Reagent 4359 4363	HNO3
+T266	Action 4366 4372	put in
+T267	Amount 4373 4378	15 ml
+T268	Location 4379 4383	vial
+E1	Action:T1 Product:T2
+E2	Action:T3 Acts-on:T4 Site:T5 Using:T2
+E3	Action:T6 Site:T9 Acts-on:E2 Product:T12 Product2:T28
+E4	Action:T10 Acts-on:T12
+E5	Action:T27 Acts-on:T28 Product:T29
+E6	Action:T30 Measure-Type-Link:T31 Acts-on:T29 Product:T33
+E7	Action:T34 Acts-on:T33 Product:T90
+E8	Action:T36 Acts-on:T35 Using:T38 Product:T75
+E9	Action:T42 Using:T44 Acts-on:T40 Product:T78
+E10	Action:T46 Using:T47 Acts-on:E9
+E11	Action:T60 Product:T63
+E12	Action:T66 Product:T65 Acts-on:T63
+E13	Action:T69 Product:T68 Acts-on:T63
+E14	Action:T71 Acts-on:T72 Product:T81
+E15	Action:T74 Acts-on:T75 Using:T73 Product:T79
+E16	Action:T76 Acts-on:T78 Site:T79
+E17	Action:T80 Site:T81 Acts-on:E16 Product:T84
+E18	Action:T82 Acts-on:T83 Site:T84 Product:T86
+E19	Action:T85 Acts-on:T86 Using:T87 Product:T91
+E20	Action:T88 Acts-on:T90 Site:T91
+E21	Action:T93 Acts-on:T92 Product:T95
+E22	Action:T94 Count:T96 Acts-on:T95 Acts-on2:T98 Product:T100
+E23	Action:T99 Acts-on:T100 Using:T101 Product:T103
+E24	Action:T102 Acts-on:T103 Using:T104 Product:T106
+E25	Action:T105 Acts-on:T106 Site:T108 Product:T114
+E26	Action:T110 Acts-on:T112 Site:T114 Product:T116
+E27	Action:T115 Acts-on:T116 Count:T117
+E28	Action:T118 Acts-on:E27 Product:T121
+E29	Action:T120 Acts-on:T121 Product:T129
+E30	Action:T122 Acts-on:T124 Site:T125
+E31	Action:T126 Using:T127 Acts-on:E30 Product:T130
+E32	Action:T128 Acts-on:T129 Site:T130 Product:T132
+E33	Action:T131 Acts-on:T132 Count:T133 Using:T135
+E34	Action:T136 Acts-on:E33 Product:T139
+E35	Action:T138 Acts-on:T139
+E36	Action:T140 Site:T141 Acts-on:E35 Product:T145
+E37	Action:T146 Acts-on:T145 Using:T143 Product:T148 Product2:T150
+E38	Action:T147 Acts-on:T150 Acts-on2:T148 Using:T149 Product:T152
+E39	Action:T151 Acts-on:T152 Site:T153 Product:T155
+E40	Action:T154 Acts-on:T155 Using:T156 Product:T158
+E41	Action:T157 Acts-on:T158 Site:T159
+E42	Action:T160 Acts-on:E41 Product:T161
+E43	Action:T162 Using:T163 Acts-on:T161 Product:T165
+E44	Action:T164 Acts-on:T165 Site:T168 Product:T170
+E45	Action:T169 Acts-on:T170 Site:T171
+E46	Action:T172 Acts-on:T174 Site:E45 Acts-on2:T174 Acts-on3:T176
+E47	Action:T179 Acts-on:T180 Site:T182
+E48	Action:T183 Acts-on:T184 Site:T185
+E49	Action:T186 Acts-on:T187 Site:T188
+E50	Action:T189 Acts-on:T190 Site:T191 Using:T192
+E51	Action:T193 Acts-on:T194
+E52	Action:T196 Acts-on:T197 Site:T198 Using:E53
+E53	Action:T200 Count:T199 Acts-on:T202 Site:T204
+E54	Action:T205 Site:T208 Acts-on:T206
+E55	Action:T209 Acts-on:T210 Site:T212
+E56	Action:T215 Acts-on:T216
+E57	Action:T217 Acts-on:T218 Using:T219
+E58	Action:T221 
+E59	Action:T223 Acts-on:T224
+E60	Action:T227 Acts-on:T228 Site:T229 Using:T231
+E61	Action:T233 Site:T234 Site2:T235
+E62	Action:T236 
+E63	Action:T239 Acts-on:T241
+E64	Action:T242 Site:T243
+E65	Action:T245 Acts-on:T243
+E66	Action:T248 Acts-on:T249
+E67	Action:T251 Site:T252
+E68	Action:T254 
+E69	Action:T255 Site:T258
+E70	Action:T259 Product:T261
+E71	Action:T262 Using:T265 Acts-on:T261
+E72	Action:T266 Site:T268 Acts-on:E71
+R1	Mod-Link Arg1:E3 Arg2:T7
+R2	Measure Arg1:T9 Arg2:T8
+R3	Measure Arg1:T12 Arg2:T11
+R4	Setting Arg1:E4 Arg2:T13
+R5	Measure Arg1:T15 Arg2:T14
+R6	Measure Arg1:T17 Arg2:T16
+R7	Measure Arg1:T19 Arg2:T18
+R8	Measure Arg1:T21 Arg2:T20
+R9	Measure Arg1:T23 Arg2:T22
+R10	Measure Arg1:T23 Arg2:T24
+R11	Setting Arg1:E6 Arg2:T32
+R12	Measure Arg1:T38 Arg2:T37
+R13	Setting Arg1:E8 Arg2:T39
+R14	Measure Arg1:T40 Arg2:T41
+R15	Measure Arg1:T44 Arg2:T43
+R16	Setting Arg1:E9 Arg2:T45
+R17	Measure Arg1:T49 Arg2:T48
+R18	Meronym Arg1:T55 Arg2:T54
+R19	Meronym Arg1:T56 Arg2:T54
+R20	Measure Arg1:T58 Arg2:T57
+R21	Meronym Arg1:T53 Arg2:T52
+R22	Mod-Link Arg1:T50 Arg2:T51
+R23	Meronym Arg1:T50 Arg2:T49
+R24	Meronym Arg1:T52 Arg2:T49
+R25	Meronym Arg1:T54 Arg2:T49
+R26	Measure Arg1:T63 Arg2:T62
+R27	Measure Arg1:T63 Arg2:T61
+R28	Mod-Link Arg1:E13 Arg2:T70
+R29	Mod-Link Arg1:E12 Arg2:T67
+R30	Measure Arg1:T78 Arg2:T77
+R31	Measure Arg1:T90 Arg2:T89
+R32	Coreference-Link Arg1:T92 Arg2:T90
+R33	Measure Arg1:T98 Arg2:T97
+R34	Measure Arg1:T108 Arg2:T107
+R35	Mod-Link Arg1:T108 Arg2:T109
+R36	Measure Arg1:T114 Arg2:T113
+R37	Measure Arg1:T112 Arg2:T111
+R38	Setting Arg1:E28 Arg2:T119
+R39	Mod-Link Arg1:T141 Arg2:T142
+R40	Measure Arg1:T145 Arg2:T144
+R41	Measure Arg1:T168 Arg2:T167
+R42	Mod-Link Arg1:T168 Arg2:T166
+R43	Measure Arg1:T174 Arg2:T173
+R44	Mod-Link Arg1:T182 Arg2:T181
+R45	Mod-Link Arg1:E51 Arg2:T195
+R46	Mod-Link Arg1:T204 Arg2:T203
+R47	Measure Arg1:T202 Arg2:T201
+R48	Mod-Link Arg1:E54 Arg2:T207
+R49	Measure Arg1:T214 Arg2:T213
+R50	Measure Arg1:T212 Arg2:T211
+R51	Meronym Arg1:T214 Arg2:T212
+R52	Measure Arg1:T219 Arg2:T220
+R53	Coreference-Link Arg1:T224 Arg2:T222
+R54	Mod-Link Arg1:T225 Arg2:T226
+R55	Measure Arg1:T231 Arg2:T230
+R56	Setting Arg1:E60 Arg2:T232
+R57	Or Arg1:T237 Arg2:T238
+R58	Setting Arg1:E62 Arg2:T237
+R59	Meronym Arg1:T243 Arg2:T244
+R60	Setting Arg1:E65 Arg2:T246
+R61	Setting Arg1:E65 Arg2:T247
+R62	Meronym Arg1:T252 Arg2:T253
+R63	Meronym Arg1:T249 Arg2:T250
+R64	Measure Arg1:T268 Arg2:T267
+R65	Measure Arg1:T265 Arg2:T264
+R66	Setting Arg1:E71 Arg2:T263
+R67	Measure Arg1:T261 Arg2:T260
+R68	Measure Arg1:T258 Arg2:T257
+R69	Measure Arg1:T258 Arg2:T256
+R70	Measure Arg1:T25 Arg2:T26
+R71	Meronym Arg1:T15 Arg2:T17
+R72	Meronym Arg1:T17 Arg2:T19
+R73	Meronym Arg1:T19 Arg2:T21
+R74	Meronym Arg1:T21 Arg2:T23
+R75	Meronym Arg1:T23 Arg2:T25
+R76	Coreference-Link Arg1:T44 Arg2:T38
+R77	Mod-Link Arg1:E11 Arg2:T64
+R78	Meronym Arg1:T78 Arg2:T79
+R79	Coreference-Link Arg1:T87 Arg2:T54
+R80	Overlaps Arg1:E21 Arg2:E20
+R81	Coreference-Link Arg1:T98 Arg2:T53
+R82	Coreference-Link Arg1:T101 Arg2:T73
+R83	Coreference-Link Arg1:T104 Arg2:T75
+R84	Coreference-Link Arg1:T108 Arg2:T65
+R85	Coreference-Link Arg1:T112 Arg2:T56
+R86	Mod-Link Arg1:T124 Arg2:T123
+R87	Coreference-Link Arg1:T127 Arg2:T87
+R88	Measure Arg1:T135 Arg2:T134
+R89	Coreference-Link Arg1:T135 Arg2:T98
+R90	Mod-Link Arg1:E34 Arg2:T137
+R91	Coreference-Link Arg1:T141 Arg2:T68
+R92	Coreference-Link Arg1:T149 Arg2:T127
+R93	Coreference-Link Arg1:T156 Arg2:T149

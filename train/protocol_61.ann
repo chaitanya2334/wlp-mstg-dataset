@@ -1,0 +1,91 @@
+T1	Action 29 34	Place
+T2	Reagent 35 39	food
+T3	Location 43 52	container
+T4	Location 56 60	foil
+T5	Action 89 94	Place
+T6	Location 98 103	shelf
+T7	Device 111 128	autoclave chamber
+T8	Action 131 135	Fill
+T9	Device 136 143	chamber
+T10	Device 150 159	autoclave
+T11	Action 163 172	sterilize
+T12	Action 177 182	close
+T13	Action 185 188	Let
+T14	Device 189 198	autoclave
+T15	Temperature 207 212	265°F
+T16	Action 255 273	Adjust to maintain
+T17	Measure-Type 274 285	temperature
+T18	Temperature 294 304	260 - 270°
+T19	Action 307 313	Follow
+T20	Measure-Type 318 330	cooking time
+T21	Method 338 348	the recipe
+T22	Temperature 392 397	265°F
+T23	Action 432 436	vent
+T24	Action 441 447	remove
+T25	Reagent 448 452	food
+T26	Action 588 592	Line
+T27	Location 593 607	autoclave tray
+T28	Reagent 613 630	heavy - duty foil
+T29	Action 633 638	Slash
+T30	Reagent 639 645	franks
+T31	Modifier 646 659	on a diagonal
+T32	Numerical 660 661	3
+T33	Numerical 665 666	4
+T34	Location 676 686	both sides
+T35	Action 689 694	Place
+T36	Reagent 695 701	franks
+T37	Location 705 709	tray
+T38	Action 712 716	Cook
+T39	Method 727 739	instructions
+T40	Time 781 790	4 minutes
+T41	Action 793 797	Vent
+T42	Action 805 811	remove
+T43	Reagent 816 824	sausages
+T44	Location 829 833	foil
+T45	Action 836 841	Place
+T46	Reagent 842 846	buns
+T47	Location 854 858	tray
+T48	Action 863 866	put
+T49	Mention 867 871	them
+T50	Location 884 888	door
+T51	Modifier 889 895	closed
+T52	Modifier 900 905	about
+T53	Time 906 919	4 - 5 minutes
+T54	Action 923 927	warm
+T55	Action 930 939	Break out
+T56	Reagent 944 951	mustard
+T57	Reagent 954 964	sauerkraut
+T58	Reagent 975 984	condiment
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T5 Site:T6 Acts-on:E1 Product:T9
+E3	Action:T8 Acts-on:T9 Product:T10
+E4	Action:T11 Acts-on:T10
+E5	Action:T12 Acts-on:E4 Product:T14
+E6	Action:T13 Acts-on:T14
+E7	Action:T16 Measure-Type-Link:T17 Acts-on:E6
+E8	Action:T19 Measure-Type-Link:T20 Using:T21 Product:T25 Acts-on:E7
+E9	Action:T23 Acts-on:T25
+E10	Action:T24 Acts-on:E9 Product:T27 Product2:T30
+E11	Action:T26 Acts-on:T27 Using:T28 Product:T37
+E12	Action:T29 Acts-on:T30 Count:T32 Site:T34 Acts-on2:E11 Product:T36
+E13	Action:T35 Acts-on:T36 Site:T37
+E14	Action:T38 Using:T39 Acts-on:E13
+E15	Action:T41 Acts-on:E14 Product:T43
+E16	Action:T42 Acts-on:T43 Acts-on2:T44 Product:T47
+E17	Action:T45 Acts-on:T46 Site:T47 Product:T49
+E18	Action:T48 Acts-on:T49 Acts-on2:T50
+E19	Action:T54 
+E20	Action:T55 Acts-on:T56 Acts-on2:T57 Acts-on3:T58 Site:E19
+R1	Setting Arg1:E6 Arg2:T15
+R2	Setting Arg1:E7 Arg2:T18
+R3	Mod-Link Arg1:E12 Arg2:T31
+R4	Setting Arg1:E14 Arg2:T40
+R5	Setting Arg1:E18 Arg2:T53
+R6	Or Arg1:T3 Arg2:T4
+R7	Meronym Arg1:T6 Arg2:T7
+R8	Or Arg1:T32 Arg2:T33
+R9	Mod-Link Arg1:T53 Arg2:T52
+R10	Setting Arg1:E8 Arg2:T22
+R11	Meronym Arg1:T34 Arg2:T30
+R12	Mod-Link Arg1:T50 Arg2:T51
+R13	Enables Arg1:E18 Arg2:E19

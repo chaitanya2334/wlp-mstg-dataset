@@ -1,0 +1,98 @@
+T1	Action 46 53	Prepare
+T2	Reagent 56 78	single cell suspension
+T3	Action 83 92	resuspend
+T4	Reagent 97 102	cells
+T5	Modifier 108 116	ice cold
+T6	Reagent 117 139	cell separation buffer
+T7	Action 177 181	Pass
+T8	Reagent 186 191	cells
+T9	Size 202 207	70 μm
+T10	Device 208 214	filter
+T11	Action 217 227	centrifuge
+T12	Speed 230 237	300 x g
+T13	Time 242 251	5 minutes
+T14	Action 256 263	discard
+T15	Reagent 268 279	supernatant
+T16	Action 284 293	resuspend
+T17	Reagent 298 303	cells
+T18	Reagent 307 329	cell separation buffer
+T19	Action 332 338	Adjust
+T20	Measure-Type 343 361	cell concentration
+T21	Generic-Measure 365 383	1 x 108 cells / mL
+T22	Action 386 393	Aliquot
+T23	Amount 394 400	100 μL
+T24	Numerical 403 406	107
+T25	Reagent 407 412	cells
+T26	Modifier 422 425	new
+T27	Location 426 430	tube
+T28	Action 433 439	Vortex
+T29	Reagent 444 475	antibody - conjugated Nanobeads
+T30	Speed 496 505	max speed
+T31	Generic-Measure 508 517	5 touches
+T32	Action 524 531	prepare
+T33	Reagent 536 545	dilutions
+T34	Action 556 559	Add
+T35	Amount 560 565	10 μL
+T36	Modifier 569 582	pre - diluted
+T37	Modifier 583 593	conjugated
+T38	Reagent 594 603	Nanobeads
+T39	Action 606 609	Mix
+T40	Modifier 610 614	well
+T41	Action 619 627	incubate
+T42	Location 631 634	ice
+T43	Time 639 649	15 minutes
+T44	Action 652 660	Scale up
+T45	Measure-Type 665 671	volume
+T46	Modifier 672 683	accordingly
+T47	Action 725 728	add
+T48	Amount 729 735	100 μL
+T49	Modifier 739 752	pre - diluted
+T50	Reagent 753 762	Nanobeads
+T51	Generic-Measure 767 774	1 x 108
+T52	Reagent 775 780	cells
+T53	Action 956 965	Resuspend
+T54	Reagent 970 975	cells
+T55	Modifier 979 990	appropriate
+T56	Amount 991 997	amount
+T57	Reagent 1001 1007	buffer
+E1	Action:T1 Product:T2
+E2	Action:T3 Acts-on:T4 Site:T6 Product:T8
+E3	Action:T7 Acts-on:T8 Site:T10
+E4	Action:T11 Acts-on:E3 Product:T15
+E5	Action:T14 Acts-on:T15 Product:T17
+E6	Action:T16 Acts-on:T17 Site:T18
+E7	Action:T19 Acts-on:E6 Product:T25
+E8	Action:T22 Acts-on:T25 Site:T27
+E9	Action:T28 Acts-on:T29 Site:E8
+E10	Action:T32 Product:T33 Acts-on:E9
+E11	Action:T34 Acts-on:T38 Site:T33
+E12	Action:T39 Acts-on:E11
+E13	Action:T41 Site:T42 Acts-on:E12
+E14	Action:T44 Measure-Type-Link:T45 Acts-on:E13 Product:T52
+E15	Action:T47 Acts-on:T50 Site:T52 Product:T54
+E16	Action:T53 Acts-on:T54 Site:T57
+R1	Measure Arg1:T10 Arg2:T9
+R2	Setting Arg1:E4 Arg2:T12
+R3	Setting Arg1:E4 Arg2:T13
+R4	Of-Type Arg1:T21 Arg2:T20
+R5	Setting Arg1:E7 Arg2:T21
+R6	Mod-Link Arg1:T27 Arg2:T26
+R7	Measure Arg1:T25 Arg2:T23
+R8	Measure Arg1:T25 Arg2:T24
+R9	Setting Arg1:E9 Arg2:T30
+R10	Setting Arg1:E9 Arg2:T31
+R11	Measure Arg1:T38 Arg2:T35
+R12	Mod-Link Arg1:T38 Arg2:T37
+R13	Mod-Link Arg1:T38 Arg2:T36
+R14	Mod-Link Arg1:E12 Arg2:T40
+R15	Setting Arg1:E13 Arg2:T43
+R16	Measure Arg1:T52 Arg2:T51
+R17	Mod-Link Arg1:T50 Arg2:T49
+R18	Measure Arg1:T50 Arg2:T48
+R19	Measure Arg1:T57 Arg2:T56
+R20	Mod-Link Arg1:T56 Arg2:T55
+R21	Coreference-Link Arg1:T4 Arg2:T2
+R22	Mod-Link Arg1:T6 Arg2:T5
+R23	Coreference-Link Arg1:T18 Arg2:T6
+R24	Mod-Link Arg1:E14 Arg2:T46
+R25	Coreference-Link Arg1:T50 Arg2:T38

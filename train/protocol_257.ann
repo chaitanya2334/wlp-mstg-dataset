@@ -1,0 +1,41 @@
+T1	Reagent 37 43	sample
+T2	Reagent 47 52	virus
+T3	Action 56 62	placed
+T4	Modifier 68 75	sterile
+T5	Location 76 83	surface
+T6	Location 92 96	grid
+T7	Method 99 125	plastic - coated side down
+T8	Action 128 134	placed
+T9	Reagent 142 149	droplet
+T10	Time 154 163	1.5–2 min
+T11	Location 170 174	grid
+T12	Action 183 189	placed
+T13	Time 196 205	1–1.5 min
+T14	Reagent 213 217	drop
+T15	Modifier 221 237	freshly filtered
+T16	Concentration 238 247	2 % w / v
+T17	Reagent 248 262	uranyl acetate
+T18	Modifier 267 273	excess
+T19	Reagent 274 279	stain
+T20	Action 280 287	removed
+T21	Device 293 305	filter paper
+T22	Action 314 324	air drying
+T23	Location 327 332	grids
+T24	Modifier 333 339	may be
+T25	Action 340 348	examined
+T26	Method 352 384	transmission electron microscopy
+E1	Action:T3 Acts-on:T1 Site:T5 Product:T9
+E2	Action:T8 Site:T9 Using:T7 Acts-on:T6 Product:T11
+E3	Action:T12 Acts-on:T11 Site:T14
+E4	Action:T20 Acts-on:T19 Using:T21 Site:E3
+E5	Action:T22 Acts-on:E4 Product:T23
+E6	Action:T25 Acts-on:T23 Using:T26
+R1	Meronym Arg1:T1 Arg2:T2
+R2	Mod-Link Arg1:T5 Arg2:T4
+R3	Setting Arg1:E2 Arg2:T10
+R4	Setting Arg1:E3 Arg2:T13
+R5	Measure Arg1:T17 Arg2:T16
+R6	Mod-Link Arg1:T17 Arg2:T15
+R7	Meronym Arg1:T14 Arg2:T17
+R8	Mod-Link Arg1:T19 Arg2:T18
+R9	Mod-Link Arg1:E6 Arg2:T24

@@ -1,0 +1,357 @@
+T1	Action 91 97	filter
+T2	Amount 98 105	4 - 8 L
+T3	Reagent 109 121	phage lysate
+T4	Action 124 130	set up
+T5	Device 135 154	Vivaflow50 cassette
+T6	Amount 155 172	per 4 L of sample
+T7	Amount 235 238	two
+T8	Device 239 248	cassettes
+T9	Action 281 293	set these up
+T10	Location 297 332	parallel with separate tubing lines
+T11	Device 345 368	double tubing pump head
+T12	Action 371 379	Refer to
+T13	Device 384 405	Sartorius user manual
+T14	Device 410 423	online videos
+T15	Location 428 434	tubing
+T16	Action 435 445	attachment
+T17	Action 450 463	flow set - up
+T18	Location 474 480	tubing
+T19	Location 492 496	ends
+T20	Action 503 509	placed
+T21	Reagent 517 523	sample
+T22	Action 528 536	filtrate
+T23	Modifier 540 557	clean as possible
+T24	Action 563 571	removing
+T25	Location 581 590	packaging
+T26	Action 596 601	adapt
+T27	Size 606 613	smaller
+T28	Location 614 629	cassette tubing
+T29	Location 643 652	pump head
+T30	Action 673 679	attach
+T31	Size 684 691	size 25
+T32	Device 692 709	Masterflex tubing
+T33	Action 718 722	Keep
+T34	Modifier 723 728	clean
+T35	Modifier 731 738	sterile
+T36	Location 739 746	the end
+T37	Action 753 759	placed
+T38	Reagent 767 779	phage sample
+T39	Action 850 855	label
+T40	Location 877 883	tubing
+T41	Location 886 895	cassettes
+T42	Location 900 907	bottles
+T43	Location 911 917	flasks
+T44	Device 923 934	sample ID’s
+T45	Action 941 954	keep separate
+T46	Action 958 981	prevent any phage cross
+T47	Action 1025 1032	prepare
+T48	Location 1037 1045	cassette
+T49	Action 1077 1090	pre - rinsing
+T50	Location 1095 1101	system
+T51	Generic-Measure 1105 1118	full pressure
+T52	Action 1122 1128	remove
+T53	Amount 1129 1142	trace amounts
+T54	Reagent 1146 1155	glycerine
+T55	Reagent 1160 1172	sodium azide
+T56	Action 1177 1196	check for any leaks
+T57	Location 1204 1222	tubing connections
+T58	Action 1225 1230	Place
+T59	Location 1235 1247	input tubing
+T60	Size 1257 1260	1 L
+T61	Location 1261 1267	bottle
+T62	Size 1271 1277	0.2 um
+T63	Modifier 1278 1286	filtered
+T64	Modifier 1289 1296	sterile
+T65	Reagent 1297 1311	nanopure water
+T66	Action 1314 1319	Place
+T67	Location 1324 1344	output return tubing
+T68	Location 1352 1363	same bottle
+T69	Action 1368 1372	pump
+T70	Reagent 1373 1379	liquid
+T71	Location 1392 1398	system
+T72	Action 1402 1407	purge
+T73	Reagent 1412 1423	air pockets
+T74	Action 1485 1491	set up
+T75	Amount 1492 1495	two
+T76	Modifier 1496 1504	parallel
+T77	Location 1505 1514	cassettes
+T78	Mention 1783 1789	400 ml
+T79	Amount 1790 1802	per cassette
+T80	Action 1806 1810	pass
+T81	Reagent 1820 1839	filtrate collection
+T82	Action 1842 1861	Check for any leaks
+T83	Location 1865 1876	connections
+T84	Action 1889 1894	drain
+T85	Location 1899 1905	system
+T86	Action 1910 1915	empty
+T87	Location 1920 1934	filtrate flask
+T88	Action 1940 1951	concentrate
+T89	Reagent 1956 1968	phage sample
+T90	Action 1971 1976	place
+T91	Location 1981 1986	input
+T92	Location 1991 1997	output
+T93	Reagent 2021 2027	lysate
+T94	Size 2050 2052	1L
+T95	Location 2053 2059	bottle
+T96	Action 2094 2099	place
+T97	Seal 2111 2119	parafilm
+T98	Location 2129 2136	opening
+T99	Action 2140 2162	minimize contamination
+T100	Action 2167 2173	secure
+T101	Location 2178 2184	tubing
+T102	Action 2196 2200	Pump
+T103	Reagent 2205 2211	liquid
+T104	Location 2224 2230	system
+T105	Action 2532 2539	Monitor
+T106	Measure-Type 2544 2556	sample level
+T107	Action 2561 2577	stop the pumping
+T108	Amount 2598 2610	100 - 200 ml
+T109	Action 2614 2620	refill
+T110	Location 2625 2631	bottle
+T111	Reagent 2642 2648	sample
+T112	Action 2656 2663	monitor
+T113	Location 2668 2682	filtrate flask
+T114	Action 2686 2705	prevent overflowing
+T115	Action 2710 2717	discard
+T116	Reagent 2747 2755	filtrate
+T117	Location 2765 2769	sink
+T118	Action 2807 2818	Stop adding
+T119	Reagent 2819 2831	phage sample
+T120	Amount 2860 2863	4 L
+T121	Concentration 2867 2889	between 175 and 200 ml
+T122	Action 2987 2993	reduce
+T123	Measure-Type 2998 3016	recirculation rate
+T124	Generic-Measure 3020 3036	20 - 40 ml / min
+T125	Action 3068 3079	recirculate
+T126	Modifier 3084 3096	concentrated
+T127	Reagent 3097 3103	sample
+T128	Time 3108 3121	1 - 2 minutes
+T129	Action 3125 3142	maximize recovery
+T130	Action 3145 3156	Stop adding
+T131	Reagent 3157 3169	phage sample
+T132	Amount 3198 3201	4 L
+T133	Concentration 3205 3227	between 175 and 200 ml
+T134	Action 3325 3331	reduce
+T135	Measure-Type 3336 3354	recirculation rate
+T136	Generic-Measure 3358 3374	20 - 40 ml / min
+T137	Action 3406 3417	recirculate
+T138	Modifier 3422 3434	concentrated
+T139	Reagent 3435 3441	sample
+T140	Time 3446 3459	1 - 2 minutes
+T141	Action 3463 3480	maximize recovery
+T142	Action 3555 3560	place
+T143	Location 3565 3570	input
+T144	Location 3575 3587	return tubes
+T145	Location 3597 3622	next lysate sample bottle
+T146	Seal 3625 3633	parafilm
+T147	Action 3634 3639	cover
+T148	Action 3646 3652	repeat
+T149	Method 3657 3678	concentration process
+T150	Action 3702 3710	transfer
+T151	Modifier 3715 3727	concentrated
+T152	Reagent 3728 3734	sample
+T153	Size 3749 3755	250 ml
+T154	Location 3756 3762	bottle
+T155	Action 3767 3772	drain
+T156	Amount 3777 3786	remaining
+T157	Reagent 3787 3793	sample
+T158	Modifier 3794 3804	completely
+T159	Location 3814 3820	system
+T160	Action 3826 3833	collect
+T161	Reagent 3836 3847	final rinse
+T162	Location 3857 3864	filters
+T163	Action 3903 3908	place
+T164	Amount 3909 3915	100 ml
+T165	Reagent 3916 3925	ASW salts
+T166	Modifier 3933 3938	clean
+T167	Size 3939 3945	250 ml
+T168	Location 3946 3952	bottle
+T169	Action 3955 3960	Place
+T170	Location 3965 3970	input
+T171	Location 3975 3988	return tubing
+T172	Location 3998 4004	bottle
+T173	Action 4007 4012	cover
+T174	Seal 4026 4034	parafilm
+T175	Action 4039 4050	recirculate
+T176	Speed 4054 4065	lower speed
+T177	Amount 4103 4108	20 ml
+T178	Action 4116 4121	drain
+T179	Location 4126 4132	system
+T180	Method 4133 4142	as before
+T181	Action 4147 4154	collect
+T182	Amount 4159 4168	remaining
+T183	Reagent 4169 4183	rinse fraction
+T184	Location 4193 4199	bottle
+T185	Action 4334 4339	store
+T186	Location 4344 4353	cassettes
+T187	Action 4356 4360	load
+T188	Mention 4361 4365	them
+T189	Reagent 4371 4380	ASW salts
+T190	Action 4385 4389	keep
+T191	Temperature 4393 4397	4 °C
+T192	Action 4400 4405	Place
+T193	Amount 4406 4411	50 ml
+T194	Reagent 4412 4421	ASW salts
+T195	Modifier 4429 4436	sterile
+T196	Size 4437 4442	50 ml
+T197	Location 4443 4447	tube
+T198	Action 4452 4463	recirculate
+T199	Mention 4464 4468	this
+T200	Location 4481 4487	filter
+T201	Location 4492 4498	tubing
+T202	Action 4502 4508	remove
+T203	Reagent 4509 4520	air bubbles
+T204	Action 4535 4540	leave
+T205	Modifier 4545 4549	open
+T206	Location 4550 4561	tubing ends
+T207	Location 4569 4579	media tube
+T208	Action 4584 4589	cover
+T209	Seal 4595 4603	parafilm
+T210	Action 4609 4613	seal
+T211	Location 4618 4629	tubing ends
+T212	Seal 4635 4639	tape
+T213	Action 4646 4674	phage concentration analysis
+T214	Method 4679 4701	SYBR slide preparation
+T215	Action 4704 4711	collect
+T216	Amount 4712 4718	0.5 ml
+T217	Reagent 4734 4751	following samples
+T218	Reagent 4754 4774	Sample Fractions # 1
+T219	Reagent 4777 4780	# 2
+T220	Reagent 4785 4790	Rinse
+T221	Action 4793 4801	Filtrate
+T222	Location 4807 4816	beginning
+T223	Action 4850 4858	Filtrate
+T224	Location 4864 4867	end
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T5
+E3	Action:T9 Acts-on:T8 Site:T10 Using:T11
+E4	Action:T12 Acts-on:T13 Acts-on2:T14
+E5	Action:T16 Acts-on:T15
+E6	Action:T17 
+E7	Action:T20 Acts-on:T19 Site:T21
+E8	Action:T22 Acts-on:T21
+E9	Action:T24 Site:T25 Product:T21 Acts-on:T18
+E10	Action:T26 Acts-on:T28 Site:T29
+E11	Action:T30 Acts-on:T32
+E12	Action:T33 Acts-on:T36
+E13	Action:T37 Acts-on:T36 Site:T38
+E14	Action:T39 Acts-on:T40 Acts-on2:T41 Acts-on3:T42 Using:T44
+E15	Action:T45 Acts-on:T42 Acts-on2:T41 Acts-on3:T40
+E16	Action:T46 Using:E15
+E17	Action:T47 Acts-on:T48 Using:E18
+E18	Action:T49 Acts-on:T50
+E19	Action:T52 Acts-on:T54 Acts-on2:T55 Using:E18
+E20	Action:T56 Acts-on:T57 Using:E18
+E21	Action:T58 Acts-on:T59 Site:T61
+E22	Action:T66 Acts-on:T67 Site:T68
+E23	Action:T69 Acts-on:T70 Site:T71
+E24	Action:T72 Acts-on:T73 Using:E23
+E25	Action:T74 Acts-on:T77
+E26	Action:T80 Acts-on:T78 Site:T81
+E27	Action:T82 Acts-on:T83
+E28	Action:T84 Acts-on:T85
+E29	Action:T86 Acts-on:T87
+E30	Action:T88 Acts-on:T89 Using:E31
+E31	Action:T90 Acts-on:T91 Acts-on2:T92 Site:T95
+E32	Action:T96 Acts-on:T97 Site:T98
+E33	Action:T99 Using:E32
+E34	Action:T100 Acts-on:T101
+E35	Action:T102 Acts-on:T103 Site:T104
+E36	Action:T105 Measure-Type-Link:T106
+E37	Action:T107 
+E38	Action:T109 Acts-on:T110 Using:T111
+E39	Action:T112 Acts-on:T113
+E40	Action:T114 Using:E39
+E41	Action:T115 Acts-on:T116 Site:T117
+E42	Action:T118 Acts-on:T119
+E43	Action:T122 
+E44	Action:T125 Acts-on:T127
+E45	Action:T129 Using:E44
+E46	Action:T130 Acts-on:T131
+E47	Action:T134 Measure-Type-Link:T135
+E48	Action:T137 Acts-on:T139
+E49	Action:T141 Using:E48
+E50	Action:T142 Acts-on:T143 Acts-on2:T144 Site:T145
+E51	Action:T147 Using:T146
+E52	Action:T148 Using:T149
+E53	Action:T150 Acts-on:T152 Site:T154
+E54	Action:T155 Acts-on:T157 Site:T159
+E55	Action:T160 Acts-on:T161 Site:T162
+E56	Action:T163 Acts-on:T165 Site:T168
+E57	Action:T169 Acts-on:T170 Acts-on2:T171 Site:T172
+E58	Action:T173 Using:T174
+E59	Action:T175 
+E60	Action:T178 Acts-on:T179 Using:T180
+E61	Action:T181 Acts-on:T183 Site:T184
+E62	Action:T185 Acts-on:T186
+E63	Action:T187 Acts-on:T188 Using:T189
+E64	Action:T190 Acts-on:T188
+E65	Action:T192 Acts-on:T194 Site:T197
+E66	Action:T198 Acts-on:T199 Site:T200 Site2:T201
+E67	Action:T202 Acts-on:T203 Using:E66
+E68	Action:T204 Acts-on:T206 Site:T207
+E69	Action:T208 Using:T209
+E70	Action:T210 Acts-on:T211 Using:T212
+E71	Action:T213 Using:T214 Using2:E72
+E72	Action:T215 Acts-on:T217
+E73	Action:T221 Site:T222
+E74	Action:T223 Site:T224
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T5 Arg2:T6
+R3	Measure Arg1:T8 Arg2:T7
+R4	Or Arg1:T42 Arg2:T43
+R5	Mod-Link Arg1:T36 Arg2:T35
+R6	Mod-Link Arg1:T36 Arg2:T34
+R7	Setting Arg1:E18 Arg2:T51
+R8	Measure Arg1:T54 Arg2:T53
+R9	Measure Arg1:T55 Arg2:T53
+R10	Meronym Arg1:T19 Arg2:T18
+R11	Mod-Link Arg1:E8 Arg2:T23
+R12	Setting Arg1:T28 Arg2:T27
+R13	Setting Arg1:T32 Arg2:T31
+R14	Setting Arg1:T63 Arg2:T62
+R15	Mod-Link Arg1:T65 Arg2:T64
+R16	Mod-Link Arg1:T65 Arg2:T63
+R17	Meronym Arg1:T65 Arg2:T61
+R18	Measure Arg1:T61 Arg2:T60
+R19	Meronym Arg1:T67 Arg2:T71
+R20	Mod-Link Arg1:E25 Arg2:T76
+R21	Setting Arg1:T77 Arg2:T75
+R22	Measure Arg1:T95 Arg2:T94
+R23	Meronym Arg1:T93 Arg2:T95
+R24	Setting Arg1:E37 Arg2:T108
+R25	Setting Arg1:E42 Arg2:T121
+R26	Of-Type Arg1:T124 Arg2:T123
+R27	Setting Arg1:E43 Arg2:T124
+R28	Mod-Link Arg1:T127 Arg2:T126
+R29	Setting Arg1:E44 Arg2:T128
+R30	Measure Arg1:T119 Arg2:T120
+R31	Setting Arg1:E46 Arg2:T133
+R32	Measure Arg1:T131 Arg2:T132
+R33	Mod-Link Arg1:T139 Arg2:T138
+R34	Setting Arg1:E48 Arg2:T140
+R35	Or Arg1:T136 Arg2:T135
+R36	Mod-Link Arg1:T152 Arg2:T151
+R37	Measure Arg1:T154 Arg2:T153
+R38	Measure Arg1:T157 Arg2:T156
+R39	Mod-Link Arg1:E54 Arg2:T158
+R40	Setting Arg1:E59 Arg2:T176
+R41	Setting Arg1:E59 Arg2:T177
+R42	Measure Arg1:T183 Arg2:T182
+R43	Coreference-Link Arg1:T188 Arg2:T186
+R44	Setting Arg1:E64 Arg2:T191
+R45	Measure Arg1:T194 Arg2:T193
+R46	Measure Arg1:T197 Arg2:T196
+R47	Mod-Link Arg1:T197 Arg2:T195
+R48	Coreference-Link Arg1:T199 Arg2:T194
+R49	Mod-Link Arg1:T206 Arg2:T205
+R50	Measure Arg1:T217 Arg2:T216
+R51	Meronym Arg1:T220 Arg2:T217
+R52	Meronym Arg1:T219 Arg2:T217
+R53	Meronym Arg1:T218 Arg2:T217
+R54	Measure Arg1:T165 Arg2:T164
+R55	Mod-Link Arg1:T168 Arg2:T166
+R56	Measure Arg1:T168 Arg2:T167
+R57	Enables Arg1:E2 Arg2:E1
+R58	Enables Arg1:E4 Arg2:E5
+R59	Enables Arg1:E4 Arg2:E6

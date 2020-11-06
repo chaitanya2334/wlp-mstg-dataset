@@ -1,0 +1,267 @@
+T1	Action 524 530	Digest
+T2	Amount 541 549	miniprep
+T3	Reagent 553 566	FP–SEC vector
+T4	Time 567 576	overnight
+T5	Temperature 580 584	37°C
+T6	Action 647 653	Purify
+T7	Modifier 658 666	digested
+T8	Reagent 667 673	vector
+T9	Device 682 705	PCR cleanup spin column
+T10	Action 709 715	remove
+T11	Reagent 720 727	enzymes
+T12	Action 730 737	Process
+T13	Reagent 749 764	digested vector
+T14	Action 799 809	gel purify
+T15	Modifier 810 820	individual
+T16	Reagent 821 826	bands
+T17	Modifier 833 841	digested
+T18	Modifier 844 852	purified
+T19	Reagent 853 859	vector
+T20	Action 867 873	stored
+T21	Temperature 877 880	4°C
+T22	Modifier 885 893	at least
+T23	Time 896 906	few months
+T24	Action 911 917	reused
+T25	Action 921 930	construct
+T26	Numerical 931 939	multiple
+T27	Reagent 940 956	repair templates
+T28	Action 959 967	Generate
+T29	Amount 968 971	two
+T30	Reagent 972 984	PCR products
+T31	Reagent 1013 1024	genomic DNA
+T32	Reagent 1049 1056	primers
+T33	Action 1078 1081	Mix
+T34	Amount 1086 1089	two
+T35	Reagent 1090 1102	PCR products
+T36	Action 1107 1113	purify
+T37	Mention 1114 1118	them
+T38	Modifier 1119 1127	together
+T39	Device 1140 1163	PCR cleanup spin column
+T40	Action 1166 1169	Mix
+T41	Amount 1170 1174	1 µL
+T42	Reagent 1178 1184	vector
+T43	Amount 1187 1191	4 µL
+T44	Reagent 1195 1208	homology arms
+T45	Amount 1213 1217	5 µL
+T46	Reagent 1221 1250	isothemal assembly enzyme mix
+T47	Action 1305 1313	Incubate
+T48	Time 1314 1316	1h
+T49	Temperature 1317 1323	@ 50°C
+T50	Action 1368 1377	Transform
+T51	Amount 1378 1382	2 µL
+T52	Reagent 1390 1398	reaction
+T53	Modifier 1402 1410	suitable
+T54	Reagent 1411 1426	competent cells
+T55	Action 1429 1436	Isolate
+T56	Reagent 1437 1440	DNA
+T57	Numerical 1446 1451	3 - 6
+T58	Reagent 1452 1458	clones
+T59	Action 1463 1471	sequence
+T60	Reagent 1477 1488	M13 Forward
+T61	Reagent 1493 1508	Reverse primers
+T62	Action 1512 1518	verify
+T63	Method 1519 1557	correct insertion of the homology arms
+T64	Action 1560 1567	Prepare
+T65	Reagent 1571 1584	injection mix
+T66	Amount 1612 1622	10 ng / µL
+T67	Reagent 1623 1649	homologous repair template
+T68	Amount 1652 1662	50 ng / µL
+T69	Reagent 1663 1675	Cas9 - sgRNA
+T70	Amount 1789 1799	10 ng / µL
+T71	Reagent 1800 1804	pGH8
+T72	Action 2080 2087	Prepare
+T73	Reagent 2088 2099	plasmid DNA
+T74	Device 2106 2145	Invitrogen’s PureLink mini - prep kit ,
+T75	Action 2188 2194	Inject
+T76	Reagent 2199 2206	mixture
+T77	Location 2216 2222	gonads
+T78	Amount 2226 2233	50 - 60
+T79	Reagent 2234 2251	young adult worms
+T80	Modifier 2255 2264	strain N2
+T81	Action 2305 2313	Transfer
+T82	Reagent 2318 2332	injected worms
+T83	Location 2340 2353	seeded plates
+T84	Action 2408 2411	Use
+T85	Location 2420 2430	NGM plates
+T86	Action 2464 2468	make
+T87	Location 2471 2484	control plate
+T88	Reagent 2490 2506	uninjected worms
+T89	Action 2585 2588	Put
+T90	Location 2593 2599	plates
+T91	Temperature 2603 2607	25°C
+T92	Action 2612 2615	let
+T93	Method 2620 2634	worms lay eggs
+T94	Time 2657 2667	2 - 3 days
+T95	Action 2670 2677	Prepare
+T96	Action 2682 2698	filter sterilize
+T97	Amount 2701 2710	5 mg / mL
+T98	Reagent 2711 2730	hygromycin solution
+T99	Reagent 2734 2739	water
+T100	Generic-Measure 2746 2750	6 cm
+T101	Location 2751 2757	plates
+T102	Modifier 2770 2775	10 mL
+T103	Location 2776 2787	agar plates
+T104	Action 2790 2795	pipet
+T105	Amount 2796 2802	500 µL
+T106	Reagent 2806 2810	drug
+T107	Location 2820 2827	surface
+T108	Location 2836 2850	plate of worms
+T109	Concentration 2882 2895	~ 250 µg / mL
+T110	Action 2965 2970	Swirl
+T111	Modifier 2971 2977	gently
+T112	Reagent 2990 2998	solution
+T113	Action 2999 3005	covers
+T114	Location 3017 3024	surface
+T115	Location 3032 3037	plate
+T116	Action 3052 3055	dry
+T117	Action 3058 3061	Put
+T118	Reagent 3066 3071	worms
+T119	Temperature 3080 3084	25ºC
+T120	Action 3087 3094	Examine
+T121	Location 3099 3105	plates
+T122	Action 3110 3118	identify
+T123	Mention 3119 3124	those
+T124	Modifier 3130 3199	contain Roller ( Rol ) animals that survived the hygromycin treatment
+T125	Action 3367 3373	Single
+T126	Amount 3374 3380	5 - 10
+T127	Reagent 3381 3408	candidate knock - in adults
+T128	Modifier 3412 3415	new
+T129	Location 3416 3422	plates
+T130	Modifier 3423 3441	without hygromycin
+T131	Action 3444 3448	Look
+T132	Location 3453 3459	plates
+T133	Modifier 3466 3501	100 % of L4s and adults are Rollers
+T134	Action 3541 3545	Pick
+T135	Amount 3546 3551	6 - 8
+T136	Reagent 3552 3566	L1 / L2 larvae
+T137	Amount 3578 3583	three
+T138	Modifier 3584 3587	new
+T139	Location 3588 3594	plates
+T140	Action 3772 3782	Heat shock
+T141	Location 3787 3793	plates
+T142	Temperature 3797 3801	34°C
+T143	Time 3806 3813	4 hours
+T144	Temperature 3822 3826	32°C
+T145	Time 3831 3842	4 - 5 hours
+T146	Device 3851 3864	air incubator
+T147	Action 3868 3887	activate expression
+T148	Reagent 3891 3901	hs : : Cre
+T149	Action 3904 3910	Return
+T150	Location 3915 3921	plates
+T151	Temperature 3925 3937	20°C or 25°C
+T152	Action 3940 3944	Pick
+T153	Modifier 3945 3956	wild - type
+T154	Reagent 3957 3962	worms
+T155	Modifier 3966 3969	new
+T156	Location 3970 3976	plates
+E1	Action:T1 Acts-on:T3 Product:T8
+E2	Action:T6 Using:T9 Acts-on:T8
+E3	Action:T10 Acts-on:T11 Product:T13
+E4	Action:T12 Acts-on:T13 Product:T19
+E5	Action:T14 Acts-on:T16
+E6	Action:T20 Acts-on:T19
+E7	Action:T24 Acts-on:E6
+E8	Action:T25 Product:T27 Product2:T42
+E9	Action:T28 Product:T30 Using:T31 Using2:T32
+E10	Action:T33 Acts-on:T35 Product:T37
+E11	Action:T36 Acts-on:T37 Site:T39 Product:T44
+E12	Action:T40 Acts-on:T42 Acts-on2:T44 Acts-on3:T46
+E13	Action:T47 Acts-on:E12 Product:T52
+E14	Action:T50 Acts-on:T52 Site:T54 Product:T56
+E15	Action:T55 Acts-on:T56
+E16	Action:T59 Using:T60 Using2:T61 Acts-on:E15
+E17	Action:T62 Acts-on:E16 Using:T63 Product:T67
+E18	Action:T64 Product:T65
+E19	Action:T72 Product:T73 Using:T74
+E20	Action:T75 Site:T77 Acts-on:T76 Product:T82
+E21	Action:T81 Site:T83 Acts-on:T82 Product:T90
+E22	Action:T84 Using:T85
+E23	Action:T86 Product:T87 Using:T88 Acts-on:E22 Product2:T90
+E24	Action:T89 Acts-on:T90
+E25	Action:T92 Using:T93 Acts-on:E24
+E26	Action:T95 Acts-on:T98
+E27	Action:T96 Acts-on:E26 Product:T106
+E28	Action:T104 Acts-on:T106 Site:T103 Site2:T101 Product:T112
+E29	Action:T110 Acts-on:E28
+E30	Action:T113 Acts-on:T112 Site:T114
+E31	Action:T116 Acts-on:E30 Product:T118
+E32	Action:T117 Acts-on:T118 Product:T121
+E33	Action:T120 Acts-on:T121
+E34	Action:T122 Acts-on:T123 Site:E33 Product:T127
+E35	Action:T125 Acts-on:T127 Site:T129 Product:T132
+E36	Action:T131 Acts-on:T132 Product:T136
+E37	Action:T134 Acts-on:T136 Site:T139 Product:T141
+E38	Action:T140 Acts-on:T141 Site:T146
+E39	Action:T147 Acts-on:T148 Product:T150
+E40	Action:T149 Acts-on:T150 Product:T154
+E41	Action:T152 Acts-on:T154 Site:T156
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T5
+R3	Setting Arg1:E6 Arg2:T21
+R4	Setting Arg1:E6 Arg2:T23
+R5	Measure Arg1:T30 Arg2:T29
+R6	Measure Arg1:T35 Arg2:T34
+R7	Measure Arg1:T42 Arg2:T41
+R8	Measure Arg1:T44 Arg2:T43
+R9	Measure Arg1:T46 Arg2:T45
+R10	Setting Arg1:E13 Arg2:T48
+R11	Setting Arg1:E13 Arg2:T49
+R12	Measure Arg1:T52 Arg2:T51
+R13	Measure Arg1:T67 Arg2:T66
+R14	Measure Arg1:T69 Arg2:T68
+R15	Measure Arg1:T71 Arg2:T70
+R16	Measure Arg1:T79 Arg2:T78
+R17	Setting Arg1:E24 Arg2:T91
+R18	Measure Arg1:T98 Arg2:T97
+R19	Measure Arg1:T101 Arg2:T100
+R20	Mod-Link Arg1:T103 Arg2:T102
+R21	Measure Arg1:T106 Arg2:T105
+R22	Measure Arg1:T106 Arg2:T109
+R23	Setting Arg1:E32 Arg2:T119
+R24	Measure Arg1:T136 Arg2:T135
+R25	Setting Arg1:T141 Arg2:T143
+R26	Setting Arg1:T141 Arg2:T142
+R27	Setting Arg1:E40 Arg2:T151
+R28	Setting Arg1:E1 Arg2:T4
+R29	Mod-Link Arg1:T8 Arg2:T7
+R30	Enables Arg1:E2 Arg2:E3
+R31	Meronym Arg1:T11 Arg2:T8
+R32	Mod-Link Arg1:T16 Arg2:T15
+R33	Prevents Arg1:E4 Arg2:E5
+R34	Meronym Arg1:T16 Arg2:T13
+R35	Mod-Link Arg1:T19 Arg2:T18
+R36	Mod-Link Arg1:T19 Arg2:T17
+R37	Mod-Link Arg1:T23 Arg2:T22
+R38	Setting Arg1:E8 Arg2:T26
+R39	Enables Arg1:E7 Arg2:E8
+R40	Coreference-Link Arg1:T35 Arg2:T30
+R41	Mod-Link Arg1:E11 Arg2:T38
+R42	Mod-Link Arg1:T54 Arg2:T53
+R43	Measure Arg1:T58 Arg2:T57
+R44	Meronym Arg1:T56 Arg2:T58
+R45	Meronym Arg1:T67 Arg2:T65
+R46	Meronym Arg1:T69 Arg2:T65
+R47	Meronym Arg1:T71 Arg2:T65
+R48	Meronym Arg1:T77 Arg2:T79
+R49	Mod-Link Arg1:T79 Arg2:T80
+R50	Coreference-Link Arg1:T76 Arg2:T65
+R51	Setting Arg1:E24 Arg2:T94
+R52	Setting Arg1:E25 Arg2:T94
+R53	Meronym Arg1:T98 Arg2:T99
+R54	Meronym Arg1:T107 Arg2:T108
+R55	Mod-Link Arg1:E29 Arg2:T111
+R56	Enables Arg1:E29 Arg2:E30
+R57	Meronym Arg1:T107 Arg2:T103
+R58	Meronym Arg1:T114 Arg2:T115
+R59	Measure Arg1:T127 Arg2:T126
+R60	Mod-Link Arg1:T129 Arg2:T128
+R61	Mod-Link Arg1:T129 Arg2:T130
+R62	Mod-Link Arg1:T123 Arg2:T124
+R63	Mod-Link Arg1:T132 Arg2:T133
+R64	Mod-Link Arg1:T139 Arg2:T138
+R65	Measure Arg1:T139 Arg2:T137
+R66	Or Arg1:T142 Arg2:T144
+R67	Or Arg1:T143 Arg2:T145
+R68	Enables Arg1:E38 Arg2:E39
+R69	Mod-Link Arg1:T154 Arg2:T153
+R70	Mod-Link Arg1:T156 Arg2:T155

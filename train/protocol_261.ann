@@ -1,0 +1,41 @@
+T1	Action 38 44	Set up
+T2	Modifier 49 58	following
+T3	Reagent 59 67	reaction
+T4	Location 71 74	ice
+T5	Modifier 77 83	Gently
+T6	Action 84 87	mix
+T7	Reagent 92 100	reaction
+T8	Action 103 110	Collect
+T9	Reagent 115 121	liquid
+T10	Location 129 135	bottom
+T11	Location 143 147	tube
+T12	Modifier 153 158	quick
+T13	Action 159 163	spin
+T14	Action 181 188	overlay
+T15	Reagent 193 199	sample
+T16	Reagent 205 216	mineral oil
+T17	Action 263 271	Transfer
+T18	Location 272 281	PCR tubes
+T19	Location 287 290	ice
+T20	Device 296 307	PCR machine
+T21	Location 317 322	block
+T22	Action 323 332	preheated
+T23	Temperature 336 340	95°C
+T24	Action 351 364	thermocycling
+E1	Action:T1 Site:T4 Product:T3
+E2	Action:T6 Acts-on:T7 Product:T9
+E3	Action:T8 Acts-on:T9 Site:T10 Product:T15
+E4	Action:T13 Acts-on:T11
+E5	Action:T14 Acts-on:T15 Using:T16 Product:T18
+E6	Action:T17 Acts-on:T18 Site:T20
+E7	Action:T22 Acts-on:T21 Product:T20
+E8	Action:T24 Acts-on:E6
+R1	Mod-Link Arg1:E2 Arg2:T5
+R2	Mod-Link Arg1:T3 Arg2:T2
+R3	Meronym Arg1:T10 Arg2:T11
+R4	Setting Arg1:E7 Arg2:T23
+R5	Coreference-Link Arg1:T7 Arg2:T3
+R6	Mod-Link Arg1:E4 Arg2:T12
+R7	Enables Arg1:E4 Arg2:E3
+R8	Meronym Arg1:T18 Arg2:T19
+R9	Meronym Arg1:T21 Arg2:T20

@@ -1,0 +1,114 @@
+T1	Action 16 19	Add
+T2	Amount 20 25	5.0 g
+T3	Reagent 26 39	Yeast Extract
+T4	Amount 45 52	1 Liter
+T5	Location 53 69	Erlenmeyer Flask
+T6	Action 72 75	Add
+T7	Amount 76 80	30 g
+T8	Reagent 81 88	Glucose
+T9	Reagent 92 100	Dextrose
+T10	Location 108 113	flask
+T11	Action 116 119	Add
+T12	Amount 120 126	0.25 g
+T13	Reagent 127 134	Adenine
+T14	Location 142 147	flask
+T15	Action 150 153	Add
+T16	Amount 154 160	0.25 g
+T17	Reagent 161 167	Uracil
+T18	Location 175 180	flask
+T19	Action 183 186	Add
+T20	Amount 187 193	0.25 g
+T21	Reagent 194 203	Histidine
+T22	Location 211 216	flask
+T23	Action 219 222	Add
+T24	Amount 223 227	0.25
+T25	Reagent 228 235	Leucine
+T26	Location 243 248	flask
+T27	Action 251 254	Add
+T28	Amount 255 261	0.25 g
+T29	Reagent 262 268	Lysine
+T30	Location 276 281	flask
+T31	Action 284 287	Add
+T32	Amount 288 291	1 g
+T33	Reagent 292 300	Arginine
+T34	Location 308 313	flask
+T35	Action 344 347	add
+T36	Amount 348 352	20 g
+T37	Reagent 353 369	Difco Bacto Agar
+T38	Location 377 382	flask
+T39	Action 385 389	Fill
+T40	Location 394 399	flask
+T41	Reagent 405 410	water
+T42	Amount 421 428	1 Liter
+T43	Action 449 454	Place
+T44	Device 457 474	magnetic stir bar
+T45	Location 484 489	flask
+T46	Action 494 499	place
+T47	Location 504 509	flask
+T48	Device 515 531	magnetic stirrer
+T49	Action 535 543	dissolve
+T50	Reagent 548 554	powder
+T51	Reagent 564 569	water
+T52	Action 572 578	Remove
+T53	Device 583 591	stir bar
+T54	Device 599 611	magnetic rod
+T55	Action 614 619	Place
+T56	Seal 620 633	aluminum foil
+T57	Location 643 646	top
+T58	Location 654 659	flask
+T59	Action 669 678	autoclave
+T60	Modifier 684 696	liquid cycle
+T61	Time 701 711	20 minutes
+T62	Action 732 736	pour
+T63	Location 758 764	plates
+T64	Action 789 793	cool
+T65	Time 794 803	overnight
+T66	Location 811 820	lab bench
+T67	Action 842 849	aliquot
+T68	Modifier 855 862	smaller
+T69	Reagent 863 870	amounts
+T70	Action 875 880	store
+T71	Temperature 884 889	+ 4 C
+E1	Action:T1 Acts-on:T3 Site:T5 Product:T10
+E2	Action:T6 Acts-on:T8 Site:T10 Product:T14
+E3	Action:T11 Acts-on:T13 Site:T14 Product:T18
+E4	Action:T15 Acts-on:T17 Site:T18 Product:T22
+E5	Action:T19 Acts-on:T21 Site:T22 Product:T26
+E6	Action:T23 Acts-on:T25 Site:T26 Product:T30
+E7	Action:T27 Acts-on:T29 Site:T30 Product:T34
+E8	Action:T31 Acts-on:T33 Site:T34 Product:T38
+E9	Action:T35 Acts-on:T37 Site:T38 Product:T40
+E10	Action:T39 Site:T40 Acts-on:T41 Product:T45
+E11	Action:T43 Acts-on:T44 Site:T45 Product:T47
+E12	Action:T46 Acts-on:T47 Site:T48
+E13	Action:T49 Acts-on:T50 Site:T51 Product:T53
+E14	Action:T52 Acts-on:T53 Using:T54 Product:T58
+E15	Action:T55 Acts-on:T56 Site:T57
+E16	Action:T59 Acts-on:E15
+E17	Action:T62 Site:T63 Acts-on:E16
+E18	Action:T64 Site:T66 Acts-on:E17
+E19	Action:T67 Acts-on:E16 Product:T69
+E20	Action:T70 Acts-on:T69
+R1	Meronym Arg1:T57 Arg2:T58
+R2	Setting Arg1:E16 Arg2:T61
+R3	Measure Arg1:T3 Arg2:T2
+R4	Measure Arg1:T5 Arg2:T4
+R5	Measure Arg1:T8 Arg2:T7
+R6	Or Arg1:T8 Arg2:T9
+R7	Measure Arg1:T13 Arg2:T12
+R8	Measure Arg1:T17 Arg2:T16
+R9	Measure Arg1:T21 Arg2:T20
+R10	Measure Arg1:T25 Arg2:T24
+R11	Measure Arg1:T29 Arg2:T28
+R12	Measure Arg1:T33 Arg2:T32
+R13	Measure Arg1:T37 Arg2:T36
+R14	Setting Arg1:E10 Arg2:T42
+R15	Enables Arg1:E12 Arg2:E13
+R16	Enables Arg1:E11 Arg2:E13
+R17	Meronym Arg1:T51 Arg2:T45
+R18	Meronym Arg1:T50 Arg2:T45
+R19	Mod-Link Arg1:E16 Arg2:T60
+R20	Setting Arg1:E18 Arg2:T65
+R21	Or Arg1:E19 Arg2:E17
+R22	Mod-Link Arg1:T69 Arg2:T68
+R23	Setting Arg1:E20 Arg2:T71

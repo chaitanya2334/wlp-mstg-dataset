@@ -1,0 +1,250 @@
+T1	Action 33 36	Mix
+T2	Reagent 41 48	reagent
+T3	Modifier 49 53	well
+T4	Reagent 66 73	reagent
+T5	Modifier 82 93	homogeneous
+T6	Modifier 98 117	consistent in color
+T7	Action 120 123	Add
+T8	Amount 124 130	117 μL
+T9	Modifier 134 144	homogenous
+T10	Reagent 145 160	AMPure XP beads
+T11	Modifier 164 168	each
+T12	Modifier 169 184	adaptor ligated
+T13	Reagent 185 195	DNA sample
+T14	Amount 208 214	1.5 mL
+T15	Location 215 227	LoBind tubes
+T16	Amount 231 237	0.2 mL
+T17	Location 238 250	LoBind tubes
+T18	Action 255 258	Mix
+T19	Modifier 259 263	well
+T20	Action 267 276	pipetting
+T21	Method 277 288	up and down
+T22	Modifier 289 297	at least
+T23	Numerical 298 300	10
+T24	Action 309 317	Incubate
+T25	Temperature 321 337	room temperature
+T26	Time 342 347	5 min
+T27	Action 350 353	Put
+T28	Location 358 362	tube
+T29	Device 370 384	magnetic stand
+T30	Reagent 402 410	solution
+T31	Action 414 419	clear
+T32	Modifier 440 453	approximately
+T33	Time 454 461	3–5 min
+T34	Action 466 470	Keep
+T35	Location 475 479	tube
+T36	Device 487 501	magnetic stand
+T37	Action 504 516	Do not touch
+T38	Reagent 521 526	beads
+T39	Modifier 537 546	carefully
+T40	Action 547 554	discard
+T41	Reagent 559 575	cleared solution
+T42	Location 585 590	tubes
+T43	Action 605 609	keep
+T44	Location 614 618	tube
+T45	Device 626 647	magnetic stand / rack
+T46	Action 655 661	adding
+T47	Amount 662 668	500 μL
+T48	Amount 671 677	1.5 mL
+T49	Location 678 690	LoBind tubes
+T50	Amount 696 702	200 μL
+T51	Amount 705 710	0.2mL
+T52	Location 711 724	LobBind tubes
+T53	Concentration 730 734	70 %
+T54	Reagent 735 742	ethanol
+T55	Modifier 746 750	each
+T56	Location 751 755	tube
+T57	Location 783 787	tube
+T58	Action 788 791	sit
+T59	Time 796 801	1 min
+T60	Modifier 815 824	disturbed
+T61	Reagent 825 830	beads
+T62	Action 834 840	settle
+T63	Action 847 853	remove
+T64	Reagent 858 865	ethanol
+T65	Action 897 901	keep
+T66	Location 906 910	tube
+T67	Device 918 939	magnetic stand / rack
+T68	Action 947 953	adding
+T69	Amount 954 960	500 μL
+T70	Amount 988 994	200 μL
+T71	Concentration 1022 1026	70 %
+T72	Reagent 1027 1034	ethanol
+T73	Location 1043 1047	tube
+T74	Location 1075 1079	tube
+T75	Action 1080 1083	sit
+T76	Time 1088 1093	1 min
+T77	Modifier 1107 1116	disturbed
+T78	Reagent 1117 1122	beads
+T79	Action 1126 1132	settle
+T80	Action 1139 1145	remove
+T81	Reagent 1150 1157	ethanol
+T82	Action 1177 1181	Seal
+T83	Location 1186 1190	tube
+T84	Location 1194 1199	plate
+T85	Action 1204 1214	centrifuge
+T86	Modifier 1215 1222	briefly
+T87	Speed 1225 1232	260 x g
+T88	Time 1237 1243	30 sec
+T89	Action 1248 1254	Return
+T90	Location 1259 1263	tube
+T91	Device 1271 1292	magnetic stand / rack
+T92	Action 1297 1301	wait
+T93	Time 1302 1307	1 min
+T94	Action 1310 1316	Remove
+T95	Modifier 1317 1320	any
+T96	Modifier 1321 1330	remaining
+T97	Reagent 1331 1338	ethanol
+T98	Device 1347 1366	P20 pipette and tip
+T99	Action 1383 1395	not to touch
+T100	Reagent 1400 1411	bead pellet
+T101	Action 1414 1417	Dry
+T102	Reagent 1422 1429	samples
+T103	Temperature 1435 1440	37 °C
+T104	Device 1441 1451	heat block
+T105	Time 1456 1463	3–5 min
+T106	Modifier 1477 1485	residual
+T107	Reagent 1486 1493	ethanol
+T108	Modifier 1494 1504	completely
+T109	Action 1505 1515	evaporates
+T110	Action 1578 1581	Add
+T111	Amount 1582 1587	32 μL
+T112	Reagent 1588 1609	nuclease - free water
+T113	Modifier 1610 1618	directly
+T114	Reagent 1626 1637	bead pellet
+T115	Action 1640 1643	mix
+T116	Modifier 1644 1648	well
+T117	Action 1652 1661	pipetting
+T118	Method 1662 1673	up and down
+T119	Modifier 1674 1682	at least
+T120	Numerical 1683 1685	10
+T121	Action 1694 1702	Incubate
+T122	Time 1707 1712	3 min
+T123	Temperature 1716 1732	room temperature
+T124	Action 1735 1745	Centrifuge
+T125	Modifier 1746 1753	briefly
+T126	Action 1757 1768	consolidate
+T127	Reagent 1773 1779	sample
+T128	Action 1784 1789	place
+T129	Device 1795 1816	magnetic stand / rack
+T130	Time 1821 1828	2–3 min
+T131	Action 1862 1868	Remove
+T132	Amount 1869 1874	30 μL
+T133	Reagent 1882 1893	supernatant
+T134	Action 1898 1906	transfer
+T135	Modifier 1912 1917	fresh
+T136	Location 1918 1929	LoBind tube
+T137	Reagent 1936 1941	beads
+T138	Action 1949 1958	discarded
+E1	Action:T1 Acts-on:T2 Product:T4
+E2	Action:T7 Acts-on:T10 Site:T13
+E3	Action:T18 Acts-on:E2
+E4	Action:T20 Using:T21 Count:T23 Acts-on:E2
+E5	Action:T24 Acts-on:E3 Product:T28
+E6	Action:T27 Acts-on:T28 Site:T29 Product:T30
+E7	Action:T31 Acts-on:T30 Product:T35
+E8	Action:T34 Acts-on:T35 Site:T36 Product:T42
+E9	Action:T37 Acts-on:T38
+E10	Action:T40 Acts-on:T41 Product:T44
+E11	Action:T43 Acts-on:T44 Site:T45
+E12	Action:T46 Acts-on:T54 Site:T56 Product:T57
+E13	Action:T58 Acts-on:T57
+E14	Action:T62 Acts-on:T61 Product:T64
+E15	Action:T63 Acts-on:T64 Product:T66
+E16	Action:T65 Acts-on:T66 Site:T67
+E17	Action:T68 Acts-on:T72 Site:T73 Product:T74
+E18	Action:T75 Acts-on:T74
+E19	Action:T79 Acts-on:T78 Product:T81
+E20	Action:T80 Acts-on:T81 Product:T83
+E21	Action:T82 Acts-on:T83
+E22	Action:T85 Acts-on:E21 Product:T90
+E23	Action:T89 Acts-on:T90 Site:T91
+E24	Action:T92 Acts-on:E23 Product:T97
+E25	Action:T94 Acts-on:T97 Using:T98 Product:T102
+E26	Action:T99 Acts-on:T100
+E27	Action:T101 Acts-on:T102 Site:T104 Product:T114
+E28	Action:T109 Acts-on:T107
+E29	Action:T110 Acts-on:T112 Site:T114
+E30	Action:T115 Acts-on:E29
+E31	Action:T117 Using:T118 Count:T120 Acts-on:E29
+E32	Action:T121 Acts-on:E30 Product:T127
+E33	Action:T124 Acts-on:T127
+E34	Action:T126 Acts-on:T127
+E35	Action:T128 Site:T129 Acts-on:E34 Product:T133
+E36	Action:T131 Acts-on:T133 Product:T137
+E37	Action:T134 Site:T136 Acts-on:E36
+E38	Action:T138 Acts-on:T137
+R1	Mod-Link Arg1:E1 Arg2:T3
+R2	Mod-Link Arg1:T10 Arg2:T9
+R3	Mod-Link Arg1:T13 Arg2:T12
+R4	Mod-Link Arg1:E3 Arg2:T19
+R5	Setting Arg1:E5 Arg2:T25
+R6	Setting Arg1:E5 Arg2:T26
+R7	Mod-Link Arg1:T61 Arg2:T60
+R8	Setting Arg1:E13 Arg2:T59
+R9	Mod-Link Arg1:T78 Arg2:T77
+R10	Setting Arg1:E18 Arg2:T76
+R11	Mod-Link Arg1:E22 Arg2:T86
+R12	Setting Arg1:E24 Arg2:T93
+R13	Mod-Link Arg1:T97 Arg2:T96
+R14	Mod-Link Arg1:T107 Arg2:T106
+R15	Setting Arg1:E27 Arg2:T105
+R16	Mod-Link Arg1:E29 Arg2:T113
+R17	Mod-Link Arg1:E30 Arg2:T116
+R18	Setting Arg1:E32 Arg2:T122
+R19	Setting Arg1:E32 Arg2:T123
+R20	Mod-Link Arg1:E33 Arg2:T125
+R21	Setting Arg1:E35 Arg2:T130
+R22	Mod-Link Arg1:T136 Arg2:T135
+R23	Measure Arg1:T10 Arg2:T8
+R24	Measure Arg1:T54 Arg2:T53
+R25	Measure Arg1:T54 Arg2:T50
+R26	Or Arg1:T50 Arg2:T47
+R27	Measure Arg1:T72 Arg2:T71
+R28	Measure Arg1:T72 Arg2:T70
+R29	Or Arg1:T70 Arg2:T69
+R30	Measure Arg1:T112 Arg2:T111
+R31	Measure Arg1:T133 Arg2:T132
+R32	Mod-Link Arg1:T13 Arg2:T11
+R33	Measure Arg1:T17 Arg2:T16
+R34	Measure Arg1:T15 Arg2:T14
+R35	Or Arg1:T15 Arg2:T17
+R36	Meronym Arg1:T13 Arg2:T15
+R37	Or Arg1:T23 Arg2:T22
+R38	Mod-Link Arg1:T33 Arg2:T32
+R39	Mod-Link Arg1:E10 Arg2:T39
+R40	Measure Arg1:T49 Arg2:T48
+R41	Measure Arg1:T52 Arg2:T51
+R42	Mod-Link Arg1:T56 Arg2:T55
+R43	Or Arg1:T83 Arg2:T84
+R44	Setting Arg1:T86 Arg2:T87
+R45	Setting Arg1:T86 Arg2:T88
+R46	Mod-Link Arg1:T97 Arg2:T95
+R47	Setting Arg1:T104 Arg2:T103
+R48	Mod-Link Arg1:E28 Arg2:T108
+R49	Mod-Link Arg1:T4 Arg2:T5
+R50	Mod-Link Arg1:T4 Arg2:T6
+R51	Coreference-Link Arg1:T4 Arg2:T10
+R52	Enables Arg1:E4 Arg2:E3
+R53	Setting Arg1:E7 Arg2:T33
+R54	Meronym Arg1:T38 Arg2:T42
+R55	Meronym Arg1:T41 Arg2:T42
+R56	Prevents Arg1:E10 Arg2:E9
+R57	Enables Arg1:E13 Arg2:E14
+R58	Meronym Arg1:T61 Arg2:T57
+R59	Meronym Arg1:T66 Arg2:T73
+R60	Overlaps Arg1:E16 Arg2:E17
+R61	Coreference-Link Arg1:T44 Arg2:T56
+R62	Overlaps Arg1:E11 Arg2:E12
+R63	Enables Arg1:E18 Arg2:E19
+R64	Meronym Arg1:T78 Arg2:T74
+R65	Coreference-Link Arg1:T45 Arg2:T67
+R66	Coreference-Link Arg1:T29 Arg2:T36
+R67	Coreference-Link Arg1:T36 Arg2:T45
+R68	Coreference-Link Arg1:T67 Arg2:T91
+R69	Prevents Arg1:E25 Arg2:E26
+R70	Meronym Arg1:T100 Arg2:T97
+R71	Meronym Arg1:T107 Arg2:T102
+R72	Overlaps Arg1:E27 Arg2:E28
+R73	Enables Arg1:E31 Arg2:E30
+R74	Enables Arg1:E33 Arg2:E34

@@ -1,0 +1,310 @@
+T1	Reagent 129 143	Whole seawater
+T2	Reagent 211 235	0.22 - filtered seawater
+T3	Modifier 288 294	gently
+T4	Action 295 303	filtered
+T5	Size 325 332	0.02 µm
+T6	Reagent 333 354	aluminum oxide filter
+T7	Reagent 462 472	pumped air
+T8	Action 476 482	remove
+T9	Amount 483 490	as much
+T10	Reagent 491 506	residual sample
+T11	Action 532 536	seal
+T12	Location 541 566	filter inlets and outlets
+T13	Seal 572 580	parafilm
+T14	Action 583 588	Label
+T15	Location 593 599	filter
+T16	Action 602 616	Flash - freeze
+T17	Location 621 627	filter
+T18	Reagent 631 646	liquid nitrogen
+T19	Action 649 654	Store
+T20	Mention 655 657	it
+T21	Temperature 661 666	–80°C
+T22	Reagent 686 705	Total nucleic acids
+T23	Action 710 719	extracted
+T24	Location 729 751	aluminum oxide filters
+T25	Device 760 808	Masterpure complete DNA and RNA Purification kit
+T26	Action 843 849	Remove
+T27	Reagent 850 867	contaminating DNA
+T28	Reagent 873 889	RNA preparations
+T29	Device 899 942	Turbo DNA - free kit ( Applied Biosystems )
+T30	Modifier 943 993	as described in the protocol provided with the kit
+T31	Modifier 996 1000	Each
+T32	Reagent 1001 1014	cDNA reaction
+T33	Amount 1024 1029	11 µL
+T34	Reagent 1033 1080	extracted Turbo DNA - free–treated RNA template
+T35	Concentration 1083 1089	0.2 mM
+T36	Modifier 1093 1097	each
+T37	Reagent 1098 1102	dNTP
+T38	Amount 1109 1115	100 ng
+T39	Reagent 1119 1128	N6 primer
+T40	Amount 1150 1155	13 µL
+T41	Action 1230 1237	heating
+T42	Reagent 1242 1248	sample
+T43	Temperature 1252 1256	65°C
+T44	Time 1261 1266	5 min
+T45	Action 1276 1283	cooling
+T46	Mention 1284 1286	it
+T47	Location 1287 1293	on ice
+T48	Reagent 1317 1320	DTT
+T49	Concentration 1323 1329	0.5 mM
+T50	Action 1348 1353	added
+T51	Reagent 1361 1369	reaction
+T52	Amount 1410 1414	40 U
+T53	Reagent 1415 1439	RNase OUT ( Invitrogen )
+T54	Action 1443 1450	protect
+T55	Reagent 1455 1461	sample
+T56	Reagent 1488 1512	complementary DNA strand
+T57	Action 1516 1527	synthesized
+T58	Amount 1533 1538	200 U
+T59	Reagent 1539 1591	Superscript III ( Invitrogen ) Reverse Transcriptase
+T60	Reagent 1642 1650	reaction
+T61	Action 1654 1663	incubated
+T62	Temperature 1677 1681	25°C
+T63	Time 1686 1691	5 min
+T64	Measure-Type 1809 1820	temperature
+T65	Action 1829 1838	increased
+T66	Temperature 1842 1846	50°C
+T67	Time 1922 1928	60 min
+T68	Reagent 1951 1957	enzyme
+T69	Action 1961 1971	terminated
+T70	Action 1975 1985	incubating
+T71	Reagent 1990 1998	reaction
+T72	Temperature 2002 2006	85°C
+T73	Time 2011 2016	5 min
+T74	Action 2042 2045	add
+T75	Amount 2046 2058	1 µL ( 2 U )
+T76	Reagent 2062 2084	RNase H ( Invitrogen )
+T77	Reagent 2092 2100	reaction
+T78	Action 2105 2113	incubate
+T79	Temperature 2117 2121	37°C
+T80	Time 2126 2132	20 min
+T81	Action 2136 2142	digest
+T82	Reagent 2147 2159	RNA template
+T83	Reagent 2169 2188	cDNA : RNA molecule
+T84	Method 2191 2194	PCR
+T85	Action 2202 2211	performed
+T86	Reagent 2221 2286	RdRp , Mpl . sc1 , Mpl . sc2 , Mplsc3 , and Mpl . cdh primer sets
+T87	Modifier 2287 2304	listed in Table 1
+T88	Reagent 2313 2317	cDNA
+T89	Size 2358 2364	0.2 mL
+T90	Location 2365 2389	nuclease - free PCR tube
+T91	Action 2392 2395	add
+T92	Reagent 2396 2415	reaction components
+T93	Action 2419 2447	achieve final concentrations
+T94	Concentration 2451 2453	1×
+T95	Reagent 2454 2473	Platinum Taq buffer
+T96	Concentration 2476 2480	3 mM
+T97	Reagent 2481 2486	MgCl2
+T98	Concentration 2489 2495	0.2 mM
+T99	Modifier 2499 2503	each
+T100	Reagent 2504 2508	dNTP
+T101	Concentration 2511 2515	1 µM
+T102	Modifier 2519 2523	each
+T103	Reagent 2524 2530	primer
+T104	Amount 2537 2543	1 unit
+T105	Reagent 2547 2589	Platinum Taq DNA polymerase ( Invitrogen )
+T106	Action 2592 2600	Incubate
+T107	Reagent 2605 2614	reactions
+T108	Temperature 2663 2667	94°C
+T109	Time 2672 2676	75 s
+T110	Action 2803 2815	denaturation
+T111	Temperature 2819 2823	94°C
+T112	Time 2828 2832	45 s
+T113	Action 2835 2844	annealing
+T114	Temperature 2850 2879	primer - specific temperature
+T115	Time 2896 2900	45 s
+T116	Action 2907 2916	extension
+T117	Temperature 2920 2924	72°C
+T118	Time 2929 2933	45 s
+T119	Action 2936 2944	Complete
+T120	Reagent 2949 2954	cycle
+T121	Method 2962 2989	single final extension step
+T122	Time 2993 3003	9 min 15 s
+T123	Temperature 3007 3011	72°C
+T124	Action 3041 3047	purify
+T125	Action 3052 3063	concentrate
+T126	Reagent 3068 3081	PCR reactions
+T127	Device 3089 3127	MinElute PCR cleanup column ( Qiagen )
+T128	Reagent 3163 3184	Purified PCR products
+T129	Action 3189 3195	loaded
+T130	Concentration 3203 3206	1 %
+T131	Reagent 3207 3218	agarose gel
+T132	Reagent 3230 3263	1× SYBR safe stain ( Invitrogen )
+T133	Concentration 3268 3272	0.5×
+T134	Reagent 3273 3283	TBE buffer
+T135	Reagent 3286 3298	Bands of DNA
+T136	Size 3325 3345	approximately 500 bp
+T137	Action 3352 3359	excised
+T138	Action 3364 3372	purified
+T139	Device 3380 3418	MinElute Gel Extraction kit ( Qiagen )
+T140	Action 3479 3486	eluting
+T141	Reagent 3487 3490	DNA
+T142	Location 3500 3506	column
+T143	Numerical 3512 3524	three washes
+T144	Amount 3528 3533	10 µL
+T145	Reagent 3534 3555	nuclease - free water
+T146	Reagent 3631 3643	PCR products
+T147	Action 3648 3656	polished
+T148	Action 3661 3675	phosphorylated
+T149	Device 3685 3723	PCRTerminator End Repair kit ( Lucigen
+T150	Time 3769 3777	15 - min
+T151	Action 3778 3788	incubation
+T152	Temperature 3792 3808	room temperature
+T153	Reagent 3813 3821	reaction
+T154	Action 3825 3833	purified
+T155	Action 3838 3850	concentrated
+T156	Device 3858 3901	MinElute Reaction Cleanup column ( Qiagen )
+T157	Reagent 3908 3927	eluted PCR products
+T158	Action 3945 3952	ligated
+T159	Reagent 3962 3995	pSMART - HCKan vector ( Lucigen )
+T160	Action 4034 4045	terminating
+T161	Reagent 4050 4067	ligation reaction
+T162	Action 4071 4081	incubating
+T163	Time 4086 4092	15 min
+T164	Temperature 4096 4100	70°C
+T165	Amount 4103 4107	2 µL
+T166	Reagent 4115 4132	ligation reaction
+T167	Action 4136 4147	transformed
+T168	Reagent 4153 4189	Ecloni 10G Supreme cells ( Lucigen )
+T169	Method 4194 4209	electroporation
+T170	Action 4279 4288	screening
+T171	Numerical 4289 4297	10 to 20
+T172	Reagent 4298 4306	colonies
+T173	Reagent 4311 4318	inserts
+T174	Method 4322 4339	PCR amplification
+T175	Reagent 4349 4368	primers SL1 and SR2
+T176	Action 4384 4402	assess the quality
+T177	Reagent 4410 4417	library
+T178	Reagent 4420 4439	Colony PCR products
+T179	Action 4447 4457	visualized
+T180	Reagent 4463 4466	gel
+T181	Reagent 4475 4483	products
+T182	Modifier 4484 4509	in the correct size range
+T183	Action 4510 4518	purified
+T184	Action 4523 4532	sequenced
+E1	Action:T4 Acts-on:T1 Using:T6 Product:T10
+E2	Action:T8 Acts-on:T10 Using:T7 Product:T12
+E3	Action:T11 Acts-on:T12 Using:T13 Product:T15
+E4	Action:T14 Acts-on:T15 Product:T17
+E5	Action:T16 Acts-on:T17 Site:T18 Product:T20
+E6	Action:T19 Acts-on:T20 Product:T24
+E7	Action:T23 Site:T24 Acts-on:T22 Using:T25 Product:T27
+E8	Action:T26 Acts-on:T27 Site:T28 Using:T29 Product:T42
+E9	Action:T41 Acts-on:T42 Product:T46
+E10	Action:T45 Acts-on:T46 Using:T47 Product:T51
+E11	Action:T50 Acts-on:T48 Site:T51
+E12	Action:T54 Acts-on:T55
+E13	Action:T57 Using:T59 Product:T56 Acts-on:E12
+E14	Action:T61 Acts-on:T60
+E15	Action:T65 Measure-Type-Link:T64 Acts-on:E14 Product:T68
+E16	Action:T69 Acts-on:T68 Product:T77
+E17	Action:T70 Acts-on:T71
+E18	Action:T74 Acts-on:T76 Site:T77
+E19	Action:T78 Acts-on:E18
+E20	Action:T81 Acts-on:T82 Product:T88
+E21	Action:T85 Using:T86 Using2:T88 Using3:T84 Product:T92
+E22	Action:T91 Acts-on:T92 Site:T90
+E23	Action:T93 Acts-on:T95 Acts-on2:T97 Acts-on3:T100 Acts-on4:T103 Acts-on5:T105 Product:T107
+E24	Action:T106 Acts-on:T107
+E25	Action:T110 Acts-on:E24
+E26	Action:T113 Acts-on:E25
+E27	Action:T116 Acts-on:E26 Product:T120
+E28	Action:T119 Acts-on:T120 Using:T121 Product:T126
+E29	Action:T124 Acts-on:T126 Using:T127
+E30	Action:T125 Using:T127 Acts-on:E29 Product:T128
+E31	Action:T129 Acts-on:T128 Site:T131 Product:T135
+E32	Action:T137 Acts-on:T135 Using:T139
+E33	Action:T138 Using:T139 Acts-on:E32 Product:T141
+E34	Action:T140 Acts-on:T141 Using:T145 Product:T146
+E35	Action:T147 Acts-on:T146 Using:T149
+E36	Action:T148 Using:T149 Acts-on:E35 Product:T153
+E37	Action:T151 Acts-on:T153
+E38	Action:T154 Using:T156 Acts-on:E37
+E39	Action:T155 Using:T156 Acts-on:E38 Product:T157
+E40	Action:T158 Acts-on:T157 Site:T159 Product:T161
+E41	Action:T160 Acts-on:T161 Product:T166
+E42	Action:T162 Acts-on:T161
+E43	Action:T167 Acts-on:T166 Using:T169 Site:T168 Product:T172
+E44	Action:T170 Acts-on:T172 Using:T174 Using2:T175
+E45	Action:T176 Acts-on:T177 Product:T178
+E46	Action:T179 Acts-on:T178 Site:T180 Product:T181
+E47	Action:T183 Acts-on:T181
+E48	Action:T184 Acts-on:E47
+R1	Or Arg1:T1 Arg2:T2
+R2	Measure Arg1:T6 Arg2:T5
+R3	Measure Arg1:T10 Arg2:T9
+R4	Setting Arg1:E6 Arg2:T21
+R5	Mod-Link Arg1:E8 Arg2:T30
+R6	Measure Arg1:T32 Arg2:T40
+R7	Measure Arg1:T34 Arg2:T33
+R8	Measure Arg1:T37 Arg2:T35
+R9	Mod-Link Arg1:T32 Arg2:T31
+R10	Mod-Link Arg1:T37 Arg2:T36
+R11	Measure Arg1:T39 Arg2:T38
+R12	Meronym Arg1:T34 Arg2:T32
+R13	Meronym Arg1:T37 Arg2:T32
+R14	Meronym Arg1:T39 Arg2:T32
+R15	Setting Arg1:E9 Arg2:T43
+R16	Setting Arg1:E9 Arg2:T44
+R17	Measure Arg1:T48 Arg2:T49
+R18	Measure Arg1:T53 Arg2:T52
+R19	Measure Arg1:T59 Arg2:T58
+R20	Setting Arg1:E14 Arg2:T62
+R21	Setting Arg1:E14 Arg2:T63
+R22	Setting Arg1:E15 Arg2:T66
+R23	Setting Arg1:E15 Arg2:T67
+R24	Setting Arg1:E17 Arg2:T72
+R25	Setting Arg1:E17 Arg2:T73
+R26	Measure Arg1:T76 Arg2:T75
+R27	Meronym Arg1:T82 Arg2:T83
+R28	Setting Arg1:E19 Arg2:T79
+R29	Setting Arg1:E19 Arg2:T80
+R30	Mod-Link Arg1:T86 Arg2:T87
+R31	Measure Arg1:T90 Arg2:T89
+R32	Measure Arg1:T105 Arg2:T104
+R33	Measure Arg1:T95 Arg2:T94
+R34	Measure Arg1:T97 Arg2:T96
+R35	Mod-Link Arg1:T100 Arg2:T99
+R36	Measure Arg1:T100 Arg2:T98
+R37	Mod-Link Arg1:T103 Arg2:T102
+R38	Measure Arg1:T103 Arg2:T101
+R39	Setting Arg1:E24 Arg2:T108
+R40	Setting Arg1:E24 Arg2:T109
+R41	Setting Arg1:E25 Arg2:T111
+R42	Setting Arg1:E25 Arg2:T112
+R43	Setting Arg1:E26 Arg2:T114
+R44	Setting Arg1:E26 Arg2:T115
+R45	Setting Arg1:E27 Arg2:T117
+R46	Setting Arg1:E27 Arg2:T118
+R47	Measure Arg1:T131 Arg2:T130
+R48	Meronym Arg1:T132 Arg2:T131
+R49	Measure Arg1:T134 Arg2:T133
+R50	Meronym Arg1:T134 Arg2:T132
+R51	Measure Arg1:T135 Arg2:T136
+R52	Meronym Arg1:T141 Arg2:T142
+R53	Measure Arg1:T145 Arg2:T144
+R54	Setting Arg1:E37 Arg2:T150
+R55	Setting Arg1:E37 Arg2:T152
+R56	Setting Arg1:E42 Arg2:T163
+R57	Setting Arg1:E42 Arg2:T164
+R58	Measure Arg1:T166 Arg2:T165
+R59	Measure Arg1:T172 Arg2:T171
+R60	Mod-Link Arg1:T181 Arg2:T182
+R61	Mod-Link Arg1:E1 Arg2:T3
+R62	Meronym Arg1:T22 Arg2:T24
+R63	Meronym Arg1:T27 Arg2:T28
+R64	Enables Arg1:E11 Arg2:E12
+R65	Meronym Arg1:T51 Arg2:T55
+R66	Meronym Arg1:T32 Arg2:T42
+R67	Coreference-Link Arg1:T60 Arg2:T56
+R68	Enables Arg1:E17 Arg2:E16
+R69	Meronym Arg1:T68 Arg2:T71
+R70	Enables Arg1:E19 Arg2:E20
+R71	Meronym Arg1:T82 Arg2:T77
+R72	Enables Arg1:E22 Arg2:E23
+R73	Setting Arg1:E28 Arg2:T122
+R74	Setting Arg1:E28 Arg2:T123
+R75	Measure Arg1:T145 Arg2:T143
+R76	Enables Arg1:E42 Arg2:E41
+R77	Enables Arg1:E44 Arg2:E45
+R78	Meronym Arg1:T173 Arg2:T172

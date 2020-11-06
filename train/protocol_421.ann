@@ -1,0 +1,95 @@
+T1	Action 17 23	Number
+T2	Action 28 36	annotate
+T3	Numerical 54 56	95
+T4	Modifier 57 65	isolated
+T5	Reagent 66 74	colonies
+T6	Location 78 97	SPOT 0m 10ml plates
+T7	Amount 103 106	2ml
+T8	Modifier 107 111	deep
+T9	Location 112 126	96 well plates
+T10	Action 127 130	add
+T11	Amount 131 134	1ml
+T12	Reagent 138 150	Zobell broth
+T13	Modifier 154 157	all
+T14	Location 158 163	wells
+T15	Device 170 185	8 channel pipet
+T16	Modifier 192 212	autoclaved / sterile
+T17	Amount 213 218	200ul
+T18	Device 219 229	pipet tips
+T19	Action 243 247	pick
+T20	Modifier 248 251	all
+T21	Numerical 252 254	95
+T22	Reagent 255 263	colonies
+T23	Device 270 279	pipet tip
+T24	Action 283 290	pick up
+T25	Modifier 294 300	entire
+T26	Modifier 301 309	isolated
+T27	Reagent 310 316	colony
+T28	Action 321 326	place
+T29	Device 327 336	pipet tip
+T30	Location 342 346	well
+T31	Action 449 454	place
+T32	Modifier 459 471	final unused
+T33	Device 472 481	pipet tip
+T34	Reagent 487 495	Negative
+T35	Device 551 567	12 channel pipet
+T36	Action 570 576	attach
+T37	Location 582 585	row
+T38	Device 589 593	tips
+T39	Action 598 603	pipet
+T40	Method 604 615	up and down
+T41	Numerical 625 626	3
+T42	Action 636 644	dislodge
+T43	Reagent 645 651	colony
+T44	Action 654 660	Remove
+T45	Device 661 665	tips
+T46	Action 683 688	Place
+T47	Seal 689 698	pore film
+T48	Location 704 709	plate
+T49	Action 714 718	seal
+T50	Location 719 723	well
+T51	Action 726 731	Label
+T52	Location 732 737	plate
+T53	Action 738 743	Place
+T54	Device 747 753	shaker
+T55	Modifier 758 766	at least
+T56	Time 767 775	48 hours
+T57	Action 779 783	grow
+E1	Action:T1 Acts-on:T5
+E2	Action:T2 Site:T6 Product:T27
+E3	Action:T10 Acts-on:T12 Using:T15 Site:T14 Product:T30
+E4	Action:T19 Acts-on:T22 Using:T18
+E5	Action:T24 Acts-on:T27 Using:T23 Product:T29
+E6	Action:T28 Acts-on:T29 Site:T30
+E7	Action:T31 Acts-on:T33 Product:T34 Acts-on2:E6 Product2:T37
+E8	Action:T36 Using:T35 Acts-on:T37
+E9	Action:T39 Using:T40 Count:T41 Acts-on:E8 Product:T45
+E10	Action:T42 Acts-on:T43
+E11	Action:T44 Acts-on:T45 Product:T48
+E12	Action:T46 Acts-on:T47 Site:T48 Product:T52
+E13	Action:T49 Acts-on:T50
+E14	Action:T51 Acts-on:T52
+E15	Action:T53 Site:T54 Acts-on:E14
+E16	Action:T57 
+R1	Mod-Link Arg1:T5 Arg2:T4
+R2	Measure Arg1:T5 Arg2:T3
+R3	Mod-Link Arg1:T9 Arg2:T8
+R4	Measure Arg1:T22 Arg2:T21
+R5	Mod-Link Arg1:T22 Arg2:T20
+R6	Setting Arg1:T18 Arg2:T17
+R7	Mod-Link Arg1:T18 Arg2:T16
+R8	Measure Arg1:T12 Arg2:T11
+R9	Measure Arg1:T9 Arg2:T7
+R10	Mod-Link Arg1:T14 Arg2:T13
+R11	Mod-Link Arg1:T27 Arg2:T26
+R12	Mod-Link Arg1:T27 Arg2:T25
+R13	Mod-Link Arg1:T33 Arg2:T32
+R14	Meronym Arg1:T37 Arg2:T38
+R15	Mod-Link Arg1:T56 Arg2:T55
+R16	Setting Arg1:E15 Arg2:T56
+R17	Overlaps Arg1:E2 Arg2:E1
+R18	Meronym Arg1:T14 Arg2:T9
+R19	Coreference-Link Arg1:E4 Arg2:E5
+R20	Enables Arg1:E15 Arg2:E16
+R21	Enables Arg1:E12 Arg2:E13
+R22	Enables Arg1:E9 Arg2:E10

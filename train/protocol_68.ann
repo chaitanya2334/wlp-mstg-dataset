@@ -1,0 +1,62 @@
+T1	Action 29 38	Collected
+T2	Reagent 39 48	sea stars
+T3	Method 49 56	by hand
+T4	Action 59 64	Rinse
+T5	Location 69 77	location
+T6	Reagent 98 102	star
+T7	Modifier 108 115	sterile
+T8	Reagent 116 124	seawater
+T9	Action 128 134	remove
+T10	Modifier 135 138	any
+T11	Reagent 139 157	transient microbes
+T12	Action 445 451	Remove
+T13	Modifier 454 459	clean
+T14	Reagent 460 472	sterile swab
+T15	Mention 478 481	its
+T16	Location 482 490	wrapping
+T17	Reagent 499 509	cotton tip
+T18	Action 520 527	applied
+T19	Modifier 535 552	previously rinsed
+T20	Location 553 568	sample location
+T21	Reagent 575 579	swab
+T22	Action 590 603	pulled across
+T23	Location 608 623	sample location
+T24	Method 629 646	moderate pressure
+T25	Reagent 745 749	swab
+T26	Action 760 766	placed
+T27	Modifier 774 781	labeled
+T28	Modifier 782 789	sterile
+T29	Location 790 804	screw cap tube
+T30	Action 814 818	kept
+T31	Location 822 825	ice
+T32	Mention 832 834	it
+T33	Action 842 848	frozen
+T34	Temperature 852 857	- 80°
+T35	Reagent 860 865	Swabs
+T36	Action 875 880	ready
+T37	Method 885 899	DNA extraction
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T6
+E2	Action:T4 Using:T8 Acts-on:T5
+E3	Action:T9 Acts-on:T11 Product:T20
+E4	Action:T12 Acts-on:T14 Site:T16 Product:T17
+E5	Action:T18 Acts-on:T17 Site:T20
+E6	Action:T22 Acts-on:T21 Site:T23 Using:T24 Product:T25
+E7	Action:T26 Acts-on:T25 Site:T29
+E8	Action:T30 Site:T31 Acts-on:E7 Product:T32
+E9	Action:T33 Acts-on:T32 Product:T35
+E10	Action:T36 Acts-on:T35 Using:T37
+R1	Mod-Link Arg1:T8 Arg2:T7
+R2	Mod-Link Arg1:T14 Arg2:T13
+R3	Mod-Link Arg1:T29 Arg2:T28
+R4	Mod-Link Arg1:T29 Arg2:T27
+R5	Setting Arg1:E9 Arg2:T34
+R6	Mod-Link Arg1:T11 Arg2:T10
+R7	Coreference-Link Arg1:T15 Arg2:T14
+R8	Mod-Link Arg1:T20 Arg2:T19
+R9	Meronym Arg1:T11 Arg2:T5
+R10	Enables Arg1:E2 Arg2:E3
+R11	Meronym Arg1:T5 Arg2:T6
+R12	Meronym Arg1:T15 Arg2:T16
+R13	Enables Arg1:E6 Arg2:E5
+R14	Meronym Arg1:T17 Arg2:T21
+R15	Coreference-Link Arg1:T23 Arg2:T20

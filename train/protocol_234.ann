@@ -1,0 +1,217 @@
+T1	Action 52 59	Prepare
+T2	Reagent 60 81	buffer glutaraldehyde
+T3	Action 84 88	Make
+T4	Reagent 89 97	dilution
+T5	Reagent 101 111	virus prep
+T6	Amount 115 122	0.02 µm
+T7	Reagent 123 140	filtered seawater
+T8	Concentration 163 181	~ E + 07 particles
+T9	Reagent 182 188	ml - 1
+T10	Action 189 192	Fix
+T11	Reagent 193 205	viral sample
+T12	Concentration 211 215	20 %
+T13	Reagent 216 229	buffered glut
+T14	Concentration 258 263	0.5 %
+T15	Action 266 274	Incubate
+T16	Temperature 278 281	4°C
+T17	Time 286 292	30 min
+T18	Action 295 302	Prepare
+T19	Reagent 303 320	working solutions
+T20	Reagent 324 333	SYBR Gold
+T21	Action 336 339	Add
+T22	Amount 340 344	2 µl
+T23	Reagent 348 366	SYBR working stock
+T24	Amount 370 375	98 µl
+T25	Reagent 376 395	0.02 µm filtered mQ
+T26	Location 401 419	plastic Petri dish
+T27	Concentration 422 441	4 drops in one dish
+T28	Action 444 449	Cover
+T29	Location 454 458	dish
+T30	Seal 462 475	aluminum foil
+T31	Action 478 484	Set up
+T32	Device 489 504	filtration unit
+T33	Action 507 517	connecting
+T34	Mention 518 520	it
+T35	Device 526 532	vacuum
+T36	Action 535 538	Add
+T37	Amount 541 550	few drops
+T38	Reagent 554 573	0.02 µm filtered mQ
+T39	Location 581 592	filter base
+T40	Action 595 600	Place
+T41	Location 603 651	0.2 nitrocellulose filter ( the support filter )
+T42	Location 655 658	top
+T43	Reagent 666 671	water
+T44	Action 674 683	Switch on
+T45	Device 688 694	vacuum
+T46	Action 752 755	Add
+T47	Amount 756 767	a few drops
+T48	Reagent 771 790	0.02 µm filtered mQ
+T49	Location 798 812	support filter
+T50	Action 815 824	Switch on
+T51	Device 829 835	vacuum
+T52	Action 839 843	pull
+T53	Reagent 848 853	water
+T54	Action 864 869	Apply
+T55	Size 872 879	0.02 µm
+T56	Reagent 880 894	Anodisc filter
+T57	Location 904 918	support filter
+T58	Action 921 926	Apply
+T59	Device 931 943	filter tower
+T60	Device 948 953	clamp
+T61	Modifier 954 972	while vacuum is on
+T62	Action 975 985	Switch off
+T63	Device 990 996	vacuum
+T64	Action 1001 1004	add
+T65	Reagent 1005 1018	viral samples
+T66	Action 1021 1030	Switch on
+T67	Device 1035 1041	vacuum
+T68	Action 1046 1050	wash
+T69	Location 1051 1061	filter set
+T70	Amount 1067 1073	~ 1 ml
+T71	Reagent 1077 1096	0.02 µm filtered mQ
+T72	Action 1099 1105	Remove
+T73	Location 1110 1116	filter
+T74	Modifier 1117 1145	while the vacuum is still on
+T75	Action 1148 1153	Rinse
+T76	Location 1154 1159	tower
+T77	Amount 1163 1165	1L
+T78	Reagent 1166 1175	Q - water
+T79	Modifier 1176 1194	in between samples
+T80	Action 1197 1201	Blot
+T81	Location 1207 1218	paper towel
+T82	Action 1222 1225	dry
+T83	Action 1228 1231	Dry
+T84	Reagent 1232 1247	filter membrane
+T85	Location 1251 1259	Kimwipes
+T86	Temperature 1263 1265	RT
+T87	Modifier 1266 1276	completely
+T88	Action 1279 1285	Remove
+T89	Reagent 1286 1294	membrane
+T90	Action 1299 1304	place
+T91	Reagent 1305 1312	viruses
+T92	Modifier 1313 1320	side up
+T93	Reagent 1324 1341	staining solution
+T94	Location 1349 1359	Petri dish
+T95	Time 1364 1374	15 minutes
+T96	Action 1377 1382	cover
+T97	Seal 1388 1401	aluminum foil
+T98	Action 1406 1409	Dry
+T99	Reagent 1410 1425	filter membrane
+T100	Location 1435 1443	Kimwipes
+T101	Modifier 1444 1455	in the dark
+T102	Temperature 1459 1461	RT
+T103	Modifier 1462 1472	completely
+T104	Action 1475 1480	Pipet
+T105	Amount 1481 1486	20 µl
+T106	Reagent 1487 1504	antifade solution
+T107	Location 1510 1526	microscope slide
+T108	Action 1529 1534	Place
+T109	Reagent 1539 1562	stained filter membrane
+T110	Location 1566 1569	top
+T111	Mention 1573 1575	it
+T112	Action 1578 1583	Pipet
+T113	Amount 1584 1589	30 µl
+T114	Reagent 1590 1607	antifade solution
+T115	Location 1613 1624	cover slide
+T116	Modifier 1627 1636	Carefully
+T117	Action 1637 1642	place
+T118	Mention 1643 1645	it
+T119	Location 1653 1659	filter
+T120	Action 1663 1668	avoid
+T121	Reagent 1669 1676	bubbles
+T122	Action 1679 1684	Place
+T123	Location 1685 1690	slide
+T124	Temperature 1694 1700	- 20°C
+T125	Action 1704 1711	enhance
+T126	Reagent 1712 1724	fluorescence
+T127	Action 1727 1731	Read
+T128	Location 1732 1738	slides
+T129	Concentration 1745 1749	100x
+T130	Reagent 1750 1773	oil immersion objective
+T131	Device 1778 1809	inverted fluorescent microscope
+E1	Action:T1 Product:T2
+E2	Action:T3 Site:T7 Acts-on:T5 Product:T11
+E3	Action:T10 Acts-on:T11 Using:T13 Product:T2
+E4	Action:T15 Acts-on:T2 Product:T65
+E5	Action:T18 Product:T19
+E6	Action:T21 Acts-on:T23 Site:T25 Product:T29 Product2:T38
+E7	Action:T28 Acts-on:T29 Using:T30
+E8	Action:T31 Acts-on:T32 Product:T34
+E9	Action:T33 Acts-on:T34 Site:T35 Product:T39
+E10	Action:T36 Acts-on:T38 Site:T39 Product:T43
+E11	Action:T40 Acts-on:T41 Site:T42 Product:T45
+E12	Action:T44 Acts-on:T45 Product:T49
+E13	Action:T46 Acts-on:T48 Site:T49 Product:T51
+E14	Action:T50 Acts-on:T51
+E15	Action:T52 Acts-on:T53 Product:T57
+E16	Action:T54 Acts-on:T56 Site:T57
+E17	Action:T58 Acts-on:T59 Acts-on2:T60 Site:E16 Product:T63
+E18	Action:T62 Acts-on:T63
+E19	Action:T64 Acts-on:T65 Site:E18 Product:T67
+E20	Action:T66 Acts-on:T67 Product:T69
+E21	Action:T68 Acts-on:T69 Using:T71 Product:T73
+E22	Action:T72 Acts-on:T73 Product:T76
+E23	Action:T75 Acts-on:T76 Using:T78
+E24	Action:T80 Acts-on:E23 Site:T81
+E25	Action:T82 Acts-on:E23 Product:T84
+E26	Action:T83 Acts-on:T84 Site:T85 Product:T89
+E27	Action:T88 Acts-on:T89 Product:T91
+E28	Action:T90 Acts-on:T91 Site:T93
+E29	Action:T96 Using:T97 Acts-on:E28 Product:T99
+E30	Action:T98 Acts-on:T99 Site:T100 Product:T109
+E31	Action:T104 Acts-on:T106 Site:T107 Product:T111
+E32	Action:T108 Acts-on:T109 Site:T110 Product:T119
+E33	Action:T112 Acts-on:T114 Site:T115 Product:T118
+E34	Action:T117 Acts-on:T118 Site:T119
+E35	Action:T120 Acts-on:T121 Product:T123
+E36	Action:T122 Acts-on:T123
+E37	Action:T125 Acts-on:T126 Product:T128
+E38	Action:T127 Acts-on:T128 Using:T131 Using2:T130
+R1	Measure Arg1:T7 Arg2:T6
+R2	Measure Arg1:T9 Arg2:T8
+R3	Setting Arg1:E2 Arg2:T8
+R4	Meronym Arg1:T5 Arg2:T4
+R5	Measure Arg1:T13 Arg2:T12
+R6	Setting Arg1:E3 Arg2:T14
+R7	Setting Arg1:E4 Arg2:T16
+R8	Setting Arg1:E4 Arg2:T17
+R9	Meronym Arg1:T20 Arg2:T19
+R10	Measure Arg1:T23 Arg2:T22
+R11	Measure Arg1:T25 Arg2:T24
+R12	Meronym Arg1:T25 Arg2:T26
+R13	Setting Arg1:E6 Arg2:T27
+R14	Measure Arg1:T38 Arg2:T37
+R15	Meronym Arg1:T42 Arg2:T43
+R16	Measure Arg1:T48 Arg2:T47
+R17	Measure Arg1:T56 Arg2:T55
+R18	Mod-Link Arg1:E17 Arg2:T61
+R19	Measure Arg1:T71 Arg2:T70
+R20	Mod-Link Arg1:E22 Arg2:T74
+R21	Measure Arg1:T78 Arg2:T77
+R22	Mod-Link Arg1:E23 Arg2:T79
+R23	Mod-Link Arg1:E26 Arg2:T87
+R24	Setting Arg1:E26 Arg2:T86
+R25	Mod-Link Arg1:E28 Arg2:T92
+R26	Meronym Arg1:T93 Arg2:T94
+R27	Setting Arg1:E28 Arg2:T95
+R28	Mod-Link Arg1:E30 Arg2:T101
+R29	Setting Arg1:E30 Arg2:T102
+R30	Mod-Link Arg1:E30 Arg2:T103
+R31	Measure Arg1:T106 Arg2:T105
+R32	Meronym Arg1:T110 Arg2:T111
+R33	Measure Arg1:T114 Arg2:T113
+R34	Setting Arg1:E36 Arg2:T124
+R35	Measure Arg1:T130 Arg2:T129
+R36	Enables Arg1:E14 Arg2:E15
+R37	Meronym Arg1:T53 Arg2:T51
+R38	Coreference-Link Arg1:T23 Arg2:T19
+R39	Coreference-Link Arg1:T71 Arg2:T48
+R40	Coreference-Link Arg1:T48 Arg2:T38
+R41	Enables Arg1:E24 Arg2:E25
+R42	Coreference-Link Arg1:T100 Arg2:T85
+R43	Coreference-Link Arg1:T114 Arg2:T106
+R44	Mod-Link Arg1:E34 Arg2:T116
+R45	Prevents Arg1:E34 Arg2:E35
+R46	Enables Arg1:E36 Arg2:E37
+R47	Meronym Arg1:T126 Arg2:T123
+R48	Meronym Arg1:T121 Arg2:T119

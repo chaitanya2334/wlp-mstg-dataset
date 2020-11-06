@@ -1,0 +1,151 @@
+T1	Reagent 61 71	host cells
+T2	Action 76 81	grown
+T3	Time 82 91	overnight
+T4	Reagent 95 110	liquid cultures
+T5	Modifier 125 136	appropriate
+T6	Reagent 137 150	growth medium
+T7	Action 170 177	Measure
+T8	Measure-Type 178 193	optical density
+T9	Method 194 216	spectrophotometrically
+T10	Generic-Measure 220 226	525 nm
+T11	Action 241 247	adjust
+T12	Measure-Type 248 250	OD
+T13	Numerical 254 261	0.3–0.5
+T14	Reagent 267 280	growth medium
+T15	Reagent 283 292	Soft agar
+T16	Concentration 295 307	0.5 to 0.6 %
+T17	Reagent 308 312	agar
+T18	Reagent 316 321	media
+T19	Modifier 322 331	of choice
+T20	Action 337 343	melted
+T21	Device 349 359	water bath
+T22	Device 365 379	microwave oven
+T23	Action 382 389	Aliquot
+T24	Amount 390 393	4mL
+T25	Reagent 397 406	soft agar
+T26	Modifier 412 419	sterile
+T27	Location 420 425	tubes
+T28	Action 430 434	keep
+T29	Modifier 435 445	just above
+T30	Temperature 446 472	solidification temperature
+T31	Amount 485 495	200–300 µL
+T32	Reagent 496 513	bacterial culture
+T33	Action 517 522	added
+T34	Amount 530 534	4 mL
+T35	Location 535 540	tubes
+T36	Modifier 546 552	melted
+T37	Reagent 553 562	soft agar
+T38	Reagent 569 597	bacteria - soft agar mixture
+T39	Action 606 614	vortexed
+T40	Modifier 619 630	immediately
+T41	Action 631 637	poured
+T42	Location 646 656	agar plate
+T43	Reagent 665 669	agar
+T44	Action 715 725	Distribute
+T45	Reagent 726 754	bacteria - soft agar mixture
+T46	Modifier 755 761	evenly
+T47	Location 769 774	plate
+T48	Action 786 792	placed
+T49	Location 798 810	flat surface
+T50	Reagent 822 831	soft agar
+T51	Reagent 847 862	target bacteria
+T52	Action 867 877	solidified
+T53	Action 880 890	triplicate
+T54	Reagent 891 899	aliquots
+T55	Amount 903 910	5–10 µL
+T56	Reagent 926 953	environmental water samples
+T57	Reagent 965 971	phages
+T58	Action 982 990	isolated
+T59	Action 995 1002	spotted
+T60	Location 1006 1009	top
+T61	Reagent 1017 1026	soft agar
+T62	Modifier 1034 1050	negative control
+T63	Amount 1051 1058	5–10 µL
+T64	Reagent 1059 1071	phage buffer
+T65	Reagent 1084 1093	SM buffer
+T66	Concentration 1096 1102	450 mM
+T67	Reagent 1103 1107	NaCl
+T68	Concentration 1110 1115	50 mM
+T69	Reagent 1116 1121	MgSO4
+T70	Concentration 1124 1129	50 mM
+T71	Reagent 1130 1134	Tris
+T72	Concentration 1137 1143	0.01 %
+T73	Reagent 1144 1151	Gelatin
+T74	pH 1154 1160	pH = 8
+T75	Amount 1166 1173	0.02 µm
+T76	Modifier 1174 1182	filtered
+T77	Reagent 1183 1195	sample water
+T78	Action 1199 1206	spotted
+T79	Method 1210 1220	triplicate
+T80	Reagent 1228 1237	soft agar
+T81	Location 1244 1250	plates
+T82	Action 1255 1264	incubated
+T83	Time 1269 1274	1–3 d
+T84	Reagent 1674 1680	phages
+T85	Action 1693 1701	isolated
+T86	Action 1706 1714	purified
+T87	Location 1724 1730	plates
+E1	Action:T2 Acts-on:T1 Site:T4
+E2	Action:T7 Measure-Type-Link:T8 Using:T9 Acts-on:E1
+E3	Action:T11 Measure-Type-Link:T12 Acts-on:T14 Acts-on2:E2 Product:T32
+E4	Action:T20 Acts-on:T15 Using:T21 Product:T25
+E5	Action:T23 Acts-on:T25 Site:T27
+E6	Action:T28 Acts-on:E5 Product:T37
+E7	Action:T33 Acts-on:T32 Site:T35 Product:T38
+E8	Action:T39 Acts-on:T38
+E9	Action:T41 Site:T42 Acts-on:E8 Product:T45
+E10	Action:T44 Acts-on:T45 Site:E11 Product:T50
+E11	Action:T48 Acts-on:T47 Site:T49
+E12	Action:T52 Acts-on:T50 Product:T61 Product2:T80
+E13	Action:T53 Acts-on:T54
+E14	Action:T58 Product:T57 Acts-on:E13
+E15	Action:T59 Site:T60 Acts-on:T57 Product:T81
+E16	Action:T78 Acts-on:T64 Using:T79 Site:T80 Product:T81
+E17	Action:T82 Acts-on:T81 Product:T87
+E18	Action:T85 Acts-on:T87
+E19	Action:T86 Acts-on:E18
+R1	Mod-Link Arg1:T6 Arg2:T5
+R2	Setting Arg1:E1 Arg2:T3
+R3	Meronym Arg1:T6 Arg2:T4
+R4	Setting Arg1:E2 Arg2:T10
+R5	Setting Arg1:E3 Arg2:T13
+R6	Mod-Link Arg1:T27 Arg2:T26
+R7	Mod-Link Arg1:T37 Arg2:T36
+R8	Meronym Arg1:T37 Arg2:T35
+R9	Mod-Link Arg1:E9 Arg2:T40
+R10	Meronym Arg1:T43 Arg2:T42
+R11	Mod-Link Arg1:E10 Arg2:T46
+R12	Meronym Arg1:T51 Arg2:T50
+R13	Meronym Arg1:T60 Arg2:T61
+R14	Meronym Arg1:T54 Arg2:T56
+R15	Mod-Link Arg1:T77 Arg2:T76
+R16	Mod-Link Arg1:T64 Arg2:T62
+R17	Meronym Arg1:T67 Arg2:T65
+R18	Meronym Arg1:T69 Arg2:T65
+R19	Meronym Arg1:T71 Arg2:T65
+R20	Meronym Arg1:T73 Arg2:T65
+R21	Meronym Arg1:T65 Arg2:T64
+R22	Setting Arg1:E17 Arg2:T83
+R23	Measure Arg1:T25 Arg2:T24
+R24	Measure Arg1:T32 Arg2:T31
+R25	Measure Arg1:T35 Arg2:T34
+R26	Measure Arg1:T54 Arg2:T55
+R27	Measure Arg1:T64 Arg2:T63
+R28	Measure Arg1:T67 Arg2:T66
+R29	Measure Arg1:T69 Arg2:T68
+R30	Measure Arg1:T71 Arg2:T70
+R31	Measure Arg1:T73 Arg2:T72
+R32	Measure Arg1:T77 Arg2:T75
+R33	Mod-Link Arg1:T18 Arg2:T19
+R34	Measure Arg1:T17 Arg2:T16
+R35	Meronym Arg1:T17 Arg2:T18
+R36	Or Arg1:T18 Arg2:T15
+R37	Or Arg1:T21 Arg2:T22
+R38	Mod-Link Arg1:E6 Arg2:T29
+R39	Setting Arg1:E6 Arg2:T30
+R40	Measure Arg1:T73 Arg2:T74
+R41	Or Arg1:T64 Arg2:T77
+R42	Meronym Arg1:T1 Arg2:T4
+R43	Coreference-Link Arg1:T6 Arg2:T14
+R44	Coreference-Link Arg1:T56 Arg2:T77
+R45	Meronym Arg1:T84 Arg2:T87

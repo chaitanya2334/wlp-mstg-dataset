@@ -1,0 +1,32 @@
+T1	Action 49 54	Weigh
+T2	Amount 55 60	30 mg
+T3	Reagent 64 72	X - Gluc
+T4	Action 75 78	Add
+T5	Amount 79 85	1.5 mL
+T6	Reagent 89 92	DMF
+T7	Action 95 101	Vortex
+T8	Action 105 113	dissolve
+T9	Modifier 114 124	completely
+T10	Action 127 131	Wrap
+T11	Seal 135 139	foil
+T12	Action 144 149	store
+T13	Location 157 161	dark
+T14	Temperature 165 171	- 20°C
+T15	Reagent 174 180	Stocks
+T16	Modifier 181 187	may be
+T17	Action 188 192	kept
+T18	Time 197 203	1 year
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T6 Site:E1
+E3	Action:T7 Acts-on:E2
+E4	Action:T8 
+E5	Action:T10 Using:T11 Acts-on:E3
+E6	Action:T12 Site:T13 Acts-on:E5 Product:T15
+E7	Action:T17 Acts-on:T15
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T6 Arg2:T5
+R3	Mod-Link Arg1:E4 Arg2:T9
+R4	Setting Arg1:E6 Arg2:T14
+R5	Mod-Link Arg1:E7 Arg2:T16
+R6	Setting Arg1:E7 Arg2:T18
+R7	Enables Arg1:E3 Arg2:E4
