@@ -1,0 +1,129 @@
+T1	Action 141 146	Clamp
+T2	Location 151 156	tubes
+T3	Location 160 169	manifolds
+T4	Location 174 186	filter tanks
+T5	Action 189 198	Make sure
+T6	Device 199 213	bleeder valves
+T7	Location 218 224	on top
+T8	Action 227 234	Turn on
+T9	Device 235 239	pump
+T10	Action 249 254	bleed
+T11	Reagent 255 260	A / E
+T12	Reagent 266 274	Durapore
+T13	Reagent 283 288	A / E
+T14	Action 297 301	Keep
+T15	Location 302 317	cubie container
+T16	Location 321 324	ice
+T17	Action 372 377	Place
+T18	Location 378 388	“out” tube
+T19	Device 394 402	Durapore
+T20	Location 410 422	filter flask
+T21	Modifier 431 470	attached to the vacuum side of the pump
+T22	Action 473 477	Wait
+T23	Modifier 478 557	until water stops moving towards the vacuum and only bubbles are coming through
+T24	Action 560 564	Open
+T25	Seal 565 586	steel filter tank lid
+T26	Modifier 591 597	slowly
+T27	Action 598 602	open
+T28	Device 603 621	tank bleeder valve
+T29	Action 625 637	depressurize
+T30	Modifier 640 646	SLOWLY
+T31	Modifier 651 690	When pressure has dropped significantly
+T32	Action 691 698	push in
+T33	Seal 699 713	steel tank lid
+T34	Modifier 716 767	allow a few more minutes for water to drain through
+T35	Action 770 780	Disconnect
+T36	Device 781 786	clamp
+T37	Location 792 803	bottom side
+T38	Device 807 819	A / E filter
+T39	Action 822 828	remove
+T40	Location 829 833	tube
+T41	Location 839 849	“out” side
+T42	Device 853 858	A / E
+T43	Action 861 866	Place
+T44	Device 867 875	Durapore
+T45	Location 879 884	knees
+T46	Action 889 894	swirl
+T47	Modifier 895 901	gently
+T48	Modifier 902 941	so all water goes into the filter flask
+T49	Modifier 944 961	Once water is out
+T50	Action 964 968	open
+T51	Device 969 977	manifold
+T52	Modifier 978 984	slowly
+T53	Action 987 994	fold up
+T54	Device 995 1001	filter
+T55	Action 1006 1011	place
+T56	Location 1015 1024	whirlpack
+T57	Action 1027 1033	Remove
+T58	Device 1034 1042	Durapore
+T59	Location 1043 1053	“out” tube
+T60	Location 1059 1071	filter flask
+T61	Action 1074 1079	place
+T62	Device 1080 1096	A / E “out” tube
+T63	Location 1102 1114	filter flask
+T64	Action 1117 1122	Place
+T65	Device 1123 1128	A / E
+T66	Location 1132 1137	knees
+T67	Reagent 1144 1149	water
+T68	Action 1150 1155	drain
+T69	Location 1160 1181	into the filter flask
+T70	Action 1194 1198	Open
+T71	Location 1199 1207	manifold
+T72	Modifier 1208 1214	slowly
+T73	Action 1217 1225	peel off
+T74	Location 1226 1230	ring
+T75	Device 1234 1240	filter
+T76	Action 1243 1250	discard
+T77	Action 1253 1257	fold
+T78	Device 1258 1264	filter
+T79	Action 1269 1274	place
+T80	Location 1278 1287	whirlpack
+T81	Action 1298 1306	turn off
+T82	Device 1307 1311	pump
+E1	Action:T1 Acts-on:T2 Site:T3 Site2:T4
+E2	Action:T5 Acts-on:T6 Site:T7 Acts-on2:E1
+E3	Action:T8 Acts-on:T9 Acts-on2:E2
+E4	Action:T10 Acts-on:E3 Acts-on2:T11 Acts-on3:T12 Acts-on4:T13
+E5	Action:T14 Acts-on:T15 Site:T16 Acts-on2:E4
+E6	Action:T17 Acts-on:T18 Site:T20 Acts-on2:E5
+E7	Action:T22 Acts-on:E6
+E8	Action:T24 Acts-on:T25 Acts-on2:E7
+E9	Action:T27 Acts-on:T28 Acts-on2:E8
+E10	Action:T29 
+E11	Action:T32 Acts-on:T33 Acts-on2:E10
+E12	Action:T35 Acts-on:T36 Site:T37 Acts-on2:E11
+E13	Action:T39 Acts-on:T40 Site:T41 Acts-on2:E12
+E14	Action:T43 Acts-on:T44 Site:T45 Acts-on2:E13
+E15	Action:T46 Acts-on:E14
+E16	Action:T50 Acts-on:T51 Acts-on2:E15
+E17	Action:T53 Acts-on:T54 Acts-on2:E16
+E18	Action:T55 Site:T56 Acts-on:E17
+E19	Action:T57 Acts-on:T59 Site:T60 Acts-on2:E18
+E20	Action:T61 Site:T63 Acts-on:E19 Acts-on2:T62
+E21	Action:T64 Acts-on:T65 Site:T66 Acts-on2:E20
+E22	Action:T68 Acts-on:T67 Site:T69 Acts-on2:E21
+E23	Action:T70 Acts-on:T71 Acts-on2:E22
+E24	Action:T73 Acts-on:T74 Acts-on2:E23
+E25	Action:T76 Acts-on:E24
+E26	Action:T77 Acts-on:T78 Acts-on2:E25
+E27	Action:T79 Site:T80 Acts-on:E26
+E28	Action:T81 Acts-on:E27 Acts-on2:T82
+R1	Mod-Link Arg1:E9 Arg2:T26
+R2	Meronym Arg1:T37 Arg2:T38
+R3	Meronym Arg1:T41 Arg2:T42
+R4	Meronym Arg1:T18 Arg2:T19
+R5	Mod-Link Arg1:E15 Arg2:T47
+R6	Mod-Link Arg1:E15 Arg2:T48
+R7	Meronym Arg1:T59 Arg2:T58
+R8	Mod-Link Arg1:E23 Arg2:T72
+R9	Meronym Arg1:T74 Arg2:T75
+R10	Coreference-Link Arg1:T13 Arg2:T11
+R11	Mod-Link Arg1:T20 Arg2:T21
+R12	Mod-Link Arg1:E7 Arg2:T23
+R13	Enables Arg1:E9 Arg2:E10
+R14	Enables Arg1:E8 Arg2:E10
+R15	Mod-Link Arg1:E10 Arg2:T30
+R16	Mod-Link Arg1:E11 Arg2:T31
+R17	Mod-Link Arg1:E11 Arg2:T34
+R18	Mod-Link Arg1:E16 Arg2:T49
+R19	Mod-Link Arg1:E16 Arg2:T52

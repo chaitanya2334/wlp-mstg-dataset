@@ -1,0 +1,79 @@
+T1	Action 34 37	Run
+T2	Concentration 38 42	40 %
+T3	Reagent 46 55	IP eluate
+T4	Concentration 59 63	10 %
+T5	Reagent 64 82	gel Tris - Glycine
+T6	Action 85 93	Transfer
+T7	Reagent 94 101	protein
+T8	Reagent 105 118	PVDF membrane
+T9	Time 123 126	1hr
+T10	Temperature 130 132	RT
+T11	Device 138 146	ice pack
+T12	Generic-Measure 149 153	100V
+T13	Action 158 161	Cut
+T14	Reagent 162 170	membrane
+T15	Generic-Measure 182 187	180kD
+T16	Action 239 242	Cut
+T17	Reagent 243 251	Membrane
+T18	Generic-Measure 255 261	~ 82kD
+T19	Action 639 644	Block
+T20	Reagent 645 653	membrane
+T21	Concentration 659 662	5 %
+T22	Reagent 663 666	BSA
+T23	Reagent 669 672	IgG
+T24	Reagent 677 692	Protease - Free
+T25	Reagent 697 701	TBST
+T26	Time 706 710	2hrs
+T27	Temperature 714 716	RT
+T28	Action 719 724	Probe
+T29	Reagent 725 733	membrane
+T30	Reagent 739 773	phospho - threonine - HRP antibody
+T31	Reagent 777 787	IgG - Free
+T32	Reagent 790 809	Protease - Free BSA
+T33	Reagent 812 816	TBST
+T34	Generic-Measure 819 827	1 : 1000
+T35	Action 832 837	Probe
+T36	Time 838 847	overnight
+T37	Temperature 851 853	4C
+T38	Location 857 866	cold room
+T39	Device 870 882	tilting tray
+T40	Action 885 890	Rinse
+T41	Reagent 891 899	membrane
+T42	Concentration 900 902	8x
+T43	Time 922 926	2hrs
+T44	Concentration 932 934	1x
+T45	Reagent 935 939	TBST
+T46	Action 942 950	Activate
+T47	Reagent 951 959	membrane
+T48	Reagent 965 973	pico ECL
+E1	Action:T1 Acts-on:T3 Site:T5 Product:T7
+E2	Action:T6 Acts-on:T7 Site:T8 Using:T11 Product:T14
+E3	Action:T13 Acts-on:T14 Product:T17
+E4	Action:T16 Acts-on:T17 Product:T20
+E5	Action:T19 Acts-on:T20 Using:T22 Product:T29
+E6	Action:T28 Acts-on:T29 Using:T30 Site:T31
+E7	Action:T35 Site:T39 Acts-on:E6 Product:T41
+E8	Action:T40 Acts-on:T41 Using:T45 Product:T47
+E9	Action:T46 Acts-on:T47 Using:T48
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Setting Arg1:E3 Arg2:T15
+R4	Setting Arg1:E4 Arg2:T18
+R5	Setting Arg1:E2 Arg2:T9
+R6	Setting Arg1:E2 Arg2:T10
+R7	Setting Arg1:T11 Arg2:T12
+R8	Measure Arg1:T22 Arg2:T21
+R9	Meronym Arg1:T23 Arg2:T22
+R10	Meronym Arg1:T24 Arg2:T22
+R11	Or Arg1:T22 Arg2:T25
+R12	Setting Arg1:E5 Arg2:T26
+R13	Setting Arg1:E5 Arg2:T27
+R14	Or Arg1:T31 Arg2:T32
+R15	Or Arg1:T32 Arg2:T33
+R16	Measure Arg1:T31 Arg2:T34
+R17	Setting Arg1:E7 Arg2:T36
+R18	Setting Arg1:E7 Arg2:T37
+R19	Meronym Arg1:T39 Arg2:T38
+R20	Measure Arg1:T41 Arg2:T42
+R21	Setting Arg1:E8 Arg2:T43
+R22	Measure Arg1:T45 Arg2:T44

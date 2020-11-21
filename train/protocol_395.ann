@@ -1,0 +1,72 @@
+T1	Action 46 49	Add
+T2	Amount 50 56	12.9 g
+T3	Reagent 60 74	sodium nitrite
+T4	Modifier 75 78	per
+T5	Amount 79 85	125 mL
+T6	Reagent 89 98	Milli - Q
+T7	Action 104 112	weighing
+T8	Reagent 117 131	sodium nitrite
+T9	Modifier 132 140	directly
+T10	Modifier 148 153	large
+T11	Modifier 154 165	trace metal
+T12	Modifier 166 171	clean
+T13	Location 172 178	bottle
+T14	Action 181 184	Add
+T15	Amount 185 191	125 mL
+T16	Reagent 195 204	Milli - Q
+T17	Location 212 218	bottle
+T18	Method 222 228	weight
+T19	Action 231 234	Add
+T20	Modifier 235 240	clean
+T21	Reagent 241 259	Chelex - 100 resin
+T22	Location 267 273	bottle
+T23	Action 278 283	place
+T24	Mention 284 286	it
+T25	Device 292 298	shaker
+T26	Time 299 308	overnight
+T27	Reagent 323 329	Chelex
+T28	Action 330 335	mixes
+T29	Modifier 336 346	throughout
+T30	Reagent 351 359	solution
+T31	Modifier 386 392	slowly
+T32	Action 393 397	pour
+T33	Reagent 402 410	solution
+T34	Device 422 433	HPLC column
+T35	Device 441 445	frit
+T36	Action 458 464	filter
+T37	Reagent 469 475	chelex
+T38	Reagent 490 498	solution
+T39	Action 502 511	pass into
+T40	Modifier 514 525	trace metal
+T41	Modifier 526 531	clean
+T42	Location 532 538	bottle
+E1	Action:T1 Acts-on:T3 Site:T6 Product:T17
+E2	Action:T7 Acts-on:T8 Site:T13
+E3	Action:T14 Acts-on:T16 Site:T17 Using:T18 Product:T22
+E4	Action:T19 Acts-on:T21 Site:T22 Product:T24
+E5	Action:T23 Acts-on:T24 Site:T25 Product:T30
+E6	Action:T28 Acts-on:T27 Site:T30 Product:T33
+E7	Action:T32 Acts-on:T33 Site:T34 Product:T42
+E8	Action:T36 Acts-on:T37
+E9	Action:T39 Site:T42 Acts-on:T38
+R1	Mod-Link Arg1:T13 Arg2:T12
+R2	Mod-Link Arg1:T13 Arg2:T11
+R3	Mod-Link Arg1:T13 Arg2:T10
+R4	Measure Arg1:T6 Arg2:T5
+R5	Measure Arg1:T3 Arg2:T2
+R6	Mod-Link Arg1:T6 Arg2:T4
+R7	Mod-Link Arg1:E2 Arg2:T9
+R8	Measure Arg1:T16 Arg2:T15
+R9	Mod-Link Arg1:T21 Arg2:T20
+R10	Mod-Link Arg1:E6 Arg2:T29
+R11	Setting Arg1:E5 Arg2:T26
+R12	Mod-Link Arg1:T42 Arg2:T41
+R13	Mod-Link Arg1:T42 Arg2:T40
+R14	Mod-Link Arg1:E7 Arg2:T31
+R15	Enables Arg1:E2 Arg2:E1
+R16	Enables Arg1:E7 Arg2:E8
+R17	Enables Arg1:E8 Arg2:E9
+R18	Coreference-Link Arg1:T27 Arg2:T21
+R19	Coreference-Link Arg1:T24 Arg2:T22
+R20	Meronym Arg1:T35 Arg2:T34
+R21	Coreference-Link Arg1:T38 Arg2:T33

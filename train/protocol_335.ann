@@ -1,0 +1,93 @@
+T1	Modifier 50 59	Potential
+T2	Reagent 60 70	host cells
+T3	Action 75 80	grown
+T4	Time 81 90	overnight
+T5	Reagent 94 109	liquid cultures
+T6	Reagent 123 141	rich growth medium
+T7	Action 162 168	Adjust
+T8	Generic-Measure 175 190	optical density
+T9	Concentration 203 209	525 nm
+T10	Numerical 223 230	0.3–0.5
+T11	Amount 247 252	25 mL
+T12	Reagent 253 265	water sample
+T13	Action 269 277	filtered
+T14	Size 280 286	0.2 µm
+T15	Size 290 297	0.45 µm
+T16	Device 298 313	syringe filters
+T17	Action 319 327	minimize
+T18	Reagent 340 363	bacterial contamination
+T19	Reagent 371 390	enrichment cultures
+T20	Action 393 401	Transfer
+T21	Modifier 402 410	filtered
+T22	Reagent 411 418	samples
+T23	Modifier 422 432	triplicate
+T24	Modifier 433 440	sterile
+T25	Size 441 447	100 mL
+T26	Location 448 462	culture flasks
+T27	Action 465 468	Add
+T28	Amount 469 473	3 mL
+T29	Concentration 474 477	10×
+T30	Reagent 478 491	growth medium
+T31	Action 537 542	Start
+T32	Reagent 543 562	enrichment cultures
+T33	Action 566 572	adding
+T34	Amount 573 585	1 mL of each
+T35	Reagent 600 612	host strains
+T36	Location 688 701	culture flask
+T37	Action 704 712	Incubate
+T38	Reagent 717 725	cultures
+T39	Device 731 744	shaking table
+T40	Temperature 750 761	temperature
+T41	Time 766 772	period
+T42	Modifier 781 792	appropriate
+T43	Reagent 801 814	host bacteria
+T44	Modifier 819 826	control
+T45	Reagent 827 834	culture
+T46	Reagent 860 880	environmental sample
+T47	Action 884 892	replaced
+T48	Amount 896 901	25 mL
+T49	Reagent 902 921	artificial seawater
+T50	Amount 927 934	0.02 µm
+T51	Reagent 935 956	filtered water sample
+T52	Action 962 968	verify
+T53	Reagent 969 985	bacterial growth
+T54	Modifier 986 1006	in absence of phages
+E1	Action:T3 Acts-on:T2 Site:T5
+E2	Action:T7 Acts-on:E1 Product:T35
+E3	Action:T13 Acts-on:T12 Using:T16
+E4	Action:T17 Acts-on:T18 Site:T19 Product:T22
+E5	Action:T20 Acts-on:T22 Site:T26
+E6	Action:T27 Acts-on:T30 Site:E5 Product:T36
+E7	Action:T31 Product:T32 Site:T36
+E8	Action:T33 Acts-on:T35
+E9	Action:T37 Acts-on:T38 Site:T39
+E10	Action:T47 Acts-on:T46 Acts-on2:T49 Product:T45
+E11	Action:T52 Acts-on:T53
+R1	Setting Arg1:E1 Arg2:T4
+R2	Meronym Arg1:T6 Arg2:T5
+R3	Setting Arg1:E2 Arg2:T9
+R4	Measure Arg1:T12 Arg2:T11
+R5	Measure Arg1:T30 Arg2:T29
+R6	Measure Arg1:T30 Arg2:T28
+R7	Measure Arg1:T35 Arg2:T34
+R8	Mod-Link Arg1:T41 Arg2:T42
+R9	Mod-Link Arg1:T40 Arg2:T42
+R10	Setting Arg1:E9 Arg2:T40
+R11	Setting Arg1:E9 Arg2:T41
+R12	Mod-Link Arg1:E11 Arg2:T54
+R13	Measure Arg1:T49 Arg2:T48
+R14	Or Arg1:T49 Arg2:T51
+R15	Measure Arg1:T51 Arg2:T50
+R16	Mod-Link Arg1:T2 Arg2:T1
+R17	Setting Arg1:E2 Arg2:T8
+R18	Setting Arg1:E2 Arg2:T10
+R19	Measure Arg1:T16 Arg2:T15
+R20	Measure Arg1:T16 Arg2:T14
+R21	Enables Arg1:E3 Arg2:E4
+R22	Mod-Link Arg1:T22 Arg2:T21
+R23	Measure Arg1:T26 Arg2:T25
+R24	Mod-Link Arg1:T26 Arg2:T24
+R25	Mod-Link Arg1:T26 Arg2:T23
+R26	Coreference-Link Arg1:T32 Arg2:T38
+R27	Meronym Arg1:T43 Arg2:T38
+R28	Mod-Link Arg1:T45 Arg2:T44

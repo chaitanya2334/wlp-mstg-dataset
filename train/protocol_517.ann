@@ -1,0 +1,207 @@
+T1	Action 61 69	Assemble
+T2	Reagent 84 92	reagents
+T3	Modifier 98 111	thin - walled
+T4	Location 112 120	PCR tube
+T5	Amount 123 128	25 μl
+T6	Reagent 129 132	RXN
+T7	Reagent 150 192	Q5 Hot Start High - Fidelity 2X Master Mix
+T8	Amount 193 200	12.5 μl
+T9	Concentration 201 203	1X
+T10	Reagent 206 226	10 μM Forward Primer
+T11	Amount 227 234	1.25 μl
+T12	Concentration 235 241	0.5 μM
+T13	Reagent 244 264	10 μM Reverse Primer
+T14	Amount 265 272	1.25 μl
+T15	Concentration 273 279	0.5 μM
+T16	Reagent 282 294	Template DNA
+T17	Concentration 297 309	1–25 ng / μl
+T18	Amount 312 316	1 μl
+T19	Concentration 317 326	1 - 25 ng
+T20	Reagent 329 350	Nuclease - free water
+T21	Amount 351 357	9.0 μl
+T22	Action 360 363	Mix
+T23	Reagent 364 372	reagents
+T24	Modifier 373 383	completely
+T25	Action 386 394	Transfer
+T26	Device 400 412	thermocycler
+T27	Action 417 424	perform
+T28	Method 439 457	cycling conditions
+T29	Action 520 540	Initial Denaturation
+T30	Temperature 541 545	98°C
+T31	Time 546 556	30 seconds
+T32	Action 557 566	25 Cycles
+T33	Temperature 567 571	98°C
+T34	Time 572 582	10 seconds
+T35	Temperature 583 590	50–72°C
+T36	Time 591 606	* 10–30 seconds
+T37	Temperature 607 611	72°C
+T38	Time 612 630	20–30 seconds / kb
+T39	Action 631 646	Final Extension
+T40	Temperature 647 651	72°C
+T41	Time 652 661	2 minutes
+T42	Action 662 666	Hold
+T43	Temperature 667 673	4–10°C
+T44	Action 676 684	Assemble
+T45	Reagent 699 707	reagents
+T46	Reagent 730 741	PCR Product
+T47	Amount 742 746	1 μl
+T48	Concentration 749 751	2X
+T49	Reagent 752 771	KLD Reaction Buffer
+T50	Amount 772 776	5 μl
+T51	Concentration 777 779	1X
+T52	Concentration 782 785	10X
+T53	Reagent 786 800	KLD Enzyme Mix
+T54	Amount 801 805	1 μl
+T55	Concentration 806 808	1X
+T56	Reagent 811 832	Nuclease - free Water
+T57	Amount 833 837	3 μl
+T58	Action 840 843	Mix
+T59	Modifier 844 848	well
+T60	Action 852 861	pipetting
+T61	Method 862 873	up and down
+T62	Action 876 884	Incubate
+T63	Temperature 888 904	room temperature
+T64	Time 909 918	5 minutes
+T65	Action 921 924	Add
+T66	Amount 925 929	5 μl
+T67	Reagent 937 944	KLD mix
+T68	Location 954 969	" KLD Section "
+T69	Amount 979 984	50 μl
+T70	Modifier 988 1010	chemically - competent
+T71	Reagent 1011 1016	cells
+T72	Modifier 1019 1028	Carefully
+T73	Action 1029 1034	flick
+T74	Location 1039 1043	tube
+T75	Numerical 1044 1049	4 - 5
+T76	Action 1059 1062	mix
+T77	Action 1065 1078	Do not vortex
+T78	Action 1081 1086	Place
+T79	Reagent 1091 1098	mixture
+T80	Location 1102 1105	ice
+T81	Time 1110 1120	30 minutes
+T82	Action 1123 1133	Heat shock
+T83	Temperature 1137 1141	42°C
+T84	Time 1146 1156	30 seconds
+T85	Action 1159 1164	Place
+T86	Location 1168 1171	ice
+T87	Time 1176 1185	5 minutes
+T88	Action 1188 1195	Pipette
+T89	Amount 1196 1202	950 μl
+T90	Temperature 1206 1222	room temperature
+T91	Reagent 1223 1226	SOC
+T92	Reagent 1236 1243	mixture
+T93	Action 1246 1254	Incubate
+T94	Temperature 1258 1262	37°C
+T95	Time 1267 1277	60 minutes
+T96	Action 1283 1290	shaking
+T97	Speed 1293 1300	250 rpm
+T98	Action 1305 1308	Mix
+T99	Reagent 1313 1318	cells
+T100	Modifier 1319 1329	thoroughly
+T101	Action 1333 1341	flicking
+T102	Location 1346 1350	tube
+T103	Action 1355 1364	inverting
+T104	Action 1367 1373	Spread
+T105	Amount 1374 1383	40–100 μl
+T106	Modifier 1389 1400	appropriate
+T107	Location 1401 1416	selection plate
+T108	Action 1419 1427	Incubate
+T109	Time 1428 1437	overnight
+T110	Temperature 1441 1445	37°C
+E1	Action:T1 Product:T2 Site:T4 Acts-on:T6
+E2	Action:T22 Acts-on:T23
+E3	Action:T25 Site:T26 Acts-on:E2
+E4	Action:T27 Using:T28 Acts-on:E3 Product:T46
+E5	Action:T29 
+E6	Action:T32 
+E7	Action:T39 
+E8	Action:T42 
+E9	Action:T44 Product:T45 Acts-on:T46 Acts-on2:T49 Acts-on3:T53 Acts-on4:T56
+E10	Action:T58 Acts-on:T45
+E11	Action:T60 Using:T61
+E12	Action:T62 Acts-on:E10 Product:T67
+E13	Action:T65 Acts-on:T67 Site:T71 Product:T74
+E14	Action:T73 Acts-on:T74 Count:T75
+E15	Action:T76 
+E16	Action:T77 Acts-on:E15 Product:T79
+E17	Action:T78 Acts-on:T79 Site:T80
+E18	Action:T82 Acts-on:E17
+E19	Action:T85 Site:T86 Acts-on:E18 Product:T92
+E20	Action:T88 Acts-on:T91 Site:T92
+E21	Action:T93 Acts-on:E20 Product:T99
+E22	Action:T96 Acts-on:E20 Product:T99
+E23	Action:T98 Acts-on:T99
+E24	Action:T101 Acts-on:T102
+E25	Action:T103 
+E26	Action:T104 Site:T107 Acts-on:E23
+E27	Action:T108 Acts-on:E26
+R1	Mod-Link Arg1:T4 Arg2:T3
+R2	Measure Arg1:T6 Arg2:T5
+R3	Measure Arg1:T7 Arg2:T8
+R4	Measure Arg1:T7 Arg2:T9
+R5	Measure Arg1:T10 Arg2:T11
+R6	Measure Arg1:T10 Arg2:T12
+R7	Measure Arg1:T13 Arg2:T14
+R8	Measure Arg1:T13 Arg2:T15
+R9	Measure Arg1:T16 Arg2:T17
+R10	Measure Arg1:T16 Arg2:T18
+R11	Measure Arg1:T16 Arg2:T19
+R12	Measure Arg1:T20 Arg2:T21
+R13	Meronym Arg1:T7 Arg2:T6
+R14	Meronym Arg1:T10 Arg2:T6
+R15	Meronym Arg1:T13 Arg2:T6
+R16	Meronym Arg1:T16 Arg2:T6
+R17	Meronym Arg1:T20 Arg2:T6
+R18	Mod-Link Arg1:E2 Arg2:T24
+R19	Coreference-Link Arg1:T23 Arg2:T2
+R20	Setting Arg1:E5 Arg2:T30
+R21	Setting Arg1:E5 Arg2:T31
+R22	Setting Arg1:E6 Arg2:T33
+R23	Setting Arg1:E6 Arg2:T34
+R24	Setting Arg1:E6 Arg2:T35
+R25	Setting Arg1:E6 Arg2:T36
+R26	Setting Arg1:E6 Arg2:T37
+R27	Setting Arg1:E6 Arg2:T38
+R28	Setting Arg1:E7 Arg2:T40
+R29	Setting Arg1:E7 Arg2:T41
+R30	Setting Arg1:E8 Arg2:T43
+R31	Enables Arg1:E5 Arg2:E4
+R32	Enables Arg1:E6 Arg2:E4
+R33	Enables Arg1:E7 Arg2:E4
+R34	Enables Arg1:E8 Arg2:E4
+R35	Measure Arg1:T49 Arg2:T48
+R36	Measure Arg1:T49 Arg2:T50
+R37	Measure Arg1:T49 Arg2:T51
+R38	Measure Arg1:T53 Arg2:T52
+R39	Measure Arg1:T53 Arg2:T54
+R40	Measure Arg1:T53 Arg2:T55
+R41	Measure Arg1:T56 Arg2:T57
+R42	Measure Arg1:T46 Arg2:T47
+R43	Mod-Link Arg1:E10 Arg2:T59
+R44	Enables Arg1:E11 Arg2:E10
+R45	Setting Arg1:E12 Arg2:T63
+R46	Setting Arg1:E12 Arg2:T64
+R47	Measure Arg1:T67 Arg2:T66
+R48	Meronym Arg1:T67 Arg2:T68
+R49	Mod-Link Arg1:T71 Arg2:T70
+R50	Measure Arg1:T71 Arg2:T69
+R51	Mod-Link Arg1:E14 Arg2:T72
+R52	Enables Arg1:E14 Arg2:E15
+R53	Setting Arg1:E17 Arg2:T81
+R54	Setting Arg1:E18 Arg2:T83
+R55	Setting Arg1:E18 Arg2:T84
+R56	Setting Arg1:E19 Arg2:T87
+R57	Measure Arg1:T91 Arg2:T90
+R58	Measure Arg1:T91 Arg2:T89
+R59	Setting Arg1:E21 Arg2:T94
+R60	Setting Arg1:E21 Arg2:T95
+R61	Overlaps Arg1:E21 Arg2:E22
+R62	Setting Arg1:E22 Arg2:T97
+R63	Mod-Link Arg1:E23 Arg2:T100
+R64	Overlaps Arg1:E25 Arg2:E24
+R65	Setting Arg1:E26 Arg2:T105
+R66	Mod-Link Arg1:T107 Arg2:T106
+R67	Setting Arg1:E27 Arg2:T109
+R68	Setting Arg1:E27 Arg2:T110
+R69	Enables Arg1:E24 Arg2:E23
+R70	Enables Arg1:E25 Arg2:E23

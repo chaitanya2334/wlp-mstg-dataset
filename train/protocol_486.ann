@@ -1,0 +1,252 @@
+T1	Action 58 63	Label
+T2	Numerical 64 65	8
+T3	Modifier 66 71	clean
+T4	Location 72 88	glass test tubes
+T5	Reagent 94 99	A - H
+T6	Action 104 111	prepare
+T7	Reagent 116 125	standards
+T8	Action 383 387	Thaw
+T9	Reagent 388 422	SAM Methyltransferase Assay Buffer
+T10	Reagent 427 479	SAM Methyltransferase Assay Buffer Additive solution
+T11	Temperature 483 499	room temperature
+T12	Action 502 505	Add
+T13	Amount 510 523	entire volume
+T14	Reagent 527 570	SAM Methyltransferase Assay Buffer Additive
+T15	Reagent 580 614	SAM Methyltransferase Assay Buffer
+T16	Action 619 622	mix
+T17	Modifier 626 636	thoroughly
+T18	Action 639 644	Store
+T19	Reagent 645 679	SAM Methyltransferase Assay Buffer
+T20	Temperature 683 699	room temperature
+T21	Action 866 870	Thaw
+T22	Device 875 879	vial
+T23	Location 883 886	ice
+T24	Action 904 910	dilute
+T25	Amount 911 915	10µl
+T26	Amount 921 925	90µl
+T27	Reagent 929 977	SAM Methyltransferase Assay Buffer with Additive
+T28	Action 1189 1201	Reconstitute
+T29	Reagent 1206 1214	contents
+T30	Location 1221 1225	vial
+T31	Amount 1231 1236	100µl
+T32	Reagent 1237 1254	HCl Assay Reagent
+T33	Concentration 1257 1261	20mM
+T34	Action 1267 1272	yield
+T35	Concentration 1273 1278	6.9mM
+T36	Reagent 1279 1282	SAM
+T37	Action 1359 1362	add
+T38	Amount 1363 1368	100µl
+T39	Reagent 1369 1373	DMSO
+T40	Location 1381 1385	vial
+T41	Action 1390 1396	vortex
+T42	Action 1399 1402	Add
+T43	Amount 1403 1408	400µl
+T44	Reagent 1409 1424	proteomic grade
+T45	Modifier 1428 1438	ultra pure
+T46	Reagent 1439 1444	water
+T47	Action 1449 1455	vortex
+T48	Action 1477 1480	Add
+T49	Amount 1481 1484	4ml
+T50	Reagent 1485 1501	Resorufin Buffer
+T51	Concentration 1504 1507	10X
+T52	Amount 1513 1517	36ml
+T53	Modifier 1518 1528	ultra pure
+T54	Reagent 1529 1534	water
+T55	Concentration 1547 1549	1X
+T56	Reagent 1550 1566	Resorufin Buffer
+T57	Action 1590 1597	Prepare
+T58	Reagent 1603 1614	test sample
+T59	Modifier 1632 1640	purified
+T60	Reagent 1641 1672	SAM dependent methyltransferase
+T61	Action 1731 1738	Prepare
+T62	Reagent 1752 1761	substrate
+T63	Reagent 1770 1787	methyltransferase
+T64	Action 1794 1801	assayed
+T65	Reagent 1812 1846	SAM Methyltransferase Assay Buffer
+T66	Reagent 1854 1860	buffer
+T67	Modifier 1864 1879	your own choice
+T68	Action 1899 1902	Add
+T69	Amount 1903 1908	115µl
+T70	Reagent 1917 1925	standard
+T71	Location 1926 1934	per well
+T72	Device 1940 1968	fluorescent compatible plate
+T73	Action 1971 1978	Perform
+T74	Numerical 1982 1991	duplicate
+T75	Action 2011 2016	Blank
+T76	Device 2021 2026	plate
+T77	Reagent 2035 2054	1X Resorufin Buffer
+T78	Action 2057 2061	Read
+T79	Device 2066 2071	plate
+T80	Time 2078 2087	5 minutes
+T81	Device 2097 2118	excitation wavelength
+T82	Generic-Measure 2122 2133	530 - 540nm
+T83	Device 2141 2160	emission wavelength
+T84	Generic-Measure 2164 2175	585 - 595nm
+T85	Action 2178 2189	Equilibrate
+T86	Reagent 2194 2239	SAM Methyltransferase Assay Buffer + Additive
+T87	Temperature 2243 2248	37 °C
+T88	Action 2251 2258	Aliquot
+T89	Amount 2277 2280	5μl
+T90	Reagent 2289 2318	SAM methyltransferase samples
+T91	Modifier 2322 2330	at least
+T92	Location 2331 2340	two wells
+T93	Device 2346 2359	96 well plate
+T94	Action 2549 2556	aliquot
+T95	Amount 2557 2560	5μl
+T96	Reagent 2561 2595	SAM Methyltransferase Assay Buffer
+T97	Location 2606 2629	background control well
+T98	Action 2716 2719	add
+T99	Amount 2720 2723	5μl
+T100	Reagent 2724 2740	Positive Control
+T101	Amount 2745 2749	10μl
+T102	Reagent 2750 2784	SAM Methyltransferase Assay Buffer
+T103	Modifier 2793 2801	positive
+T104	Location 2802 2814	control well
+T105	Action 2870 2873	Add
+T106	Amount 2874 2878	10µl
+T107	Modifier 2883 2894	appropriate
+T108	Reagent 2895 2913	acceptor substrate
+T109	Location 2921 2927	sample
+T110	Location 2932 2956	background control wells
+T111	Reagent 2965 2999	SAM Methyltransferase Assay Buffer
+T112	Concentration 3003 3007	0.1M
+T113	Reagent 3008 3012	Tris
+T114	Action 3086 3093	prepare
+T115	Reagent 3098 3136	SAM Methyltransferase Assay Master Mix
+T116	Action 3438 3446	initiate
+T117	Reagent 3451 3459	reaction
+T118	Action 3463 3469	adding
+T119	Amount 3470 3475	100μl
+T120	Reagent 3476 3508	SAM Methyltransferase Master Mix
+T121	Location 3516 3521	wells
+T122	Action 3538 3542	read
+T123	Device 3547 3552	plate
+T124	Temperature 3556 3560	37°C
+T125	Modifier 3561 3566	every
+T126	Numerical 3567 3573	minute
+T127	Time 3578 3588	30 minutes
+T128	Device 3598 3619	excitation wavelength
+T129	Generic-Measure 3623 3634	530 - 540nm
+T130	Device 3642 3661	emission wavelength
+T131	Generic-Measure 3665 3676	585 - 595nm
+T132	Action 3696 3702	Dilute
+T133	Amount 3703 3707	25µl
+T134	Reagent 3708 3726	resorufin standard
+T135	Reagent 3732 3757	475µl 1X Resorufin Buffer
+T136	Action 3777 3780	Mix
+T137	Amount 3781 3786	500µl
+T138	Reagent 3795 3811	diluted standard
+T139	Amount 3817 3822	4.5ml
+T140	Reagent 3823 3835	1X Resorufin
+T141	Action 3839 3844	yield
+T142	Reagent 3847 3861	stock solution
+T143	Amount 3865 3869	10µM
+E1	Action:T1 Acts-on:T4 Using:T5
+E2	Action:T6 Product:T7 Acts-on:E1
+E3	Action:T8 Acts-on:T9 Acts-on2:T10
+E4	Action:T12 Acts-on:T14 Site:T15 Site2:E3
+E5	Action:T16 Acts-on:E4
+E6	Action:T18 Acts-on:T19
+E7	Action:T21 Acts-on:T22 Site:T23
+E8	Action:T24 Using:T27
+E9	Action:T28 Acts-on:T29 Using:T32 Product:T36
+E10	Action:T34 Acts-on:T36
+E11	Action:T37 Acts-on:T39 Site:T40 Site2:E10
+E12	Action:T41 Acts-on:E11
+E13	Action:T42 Acts-on:T44 Site:E12
+E14	Action:T47 Acts-on:E13
+E15	Action:T48 Acts-on:T50 Site:T54 Product:T56 Site2:E14
+E16	Action:T57 Product:T58
+E17	Action:T61 Product:T62
+E18	Action:T64 Acts-on:T63 Using:T65
+E19	Action:T68 Site:E18 Acts-on:T70 Site2:T71 Using:T72
+E20	Action:T73 Count:T74 Acts-on:E19
+E21	Action:T75 Acts-on:T76
+E22	Action:T78 Acts-on:T79 Using:T81 Using2:T83
+E23	Action:T85 Acts-on:T86
+E24	Action:T88 Acts-on:T90 Site:T92
+E25	Action:T94 Acts-on:T96 Site:T97
+E26	Action:T98 Acts-on:T100 Acts-on2:T102 Site:T104
+E27	Action:T105 Using:T111 Acts-on:T108 Site:T109 Site2:T110
+E28	Action:T114 Product:T115
+E29	Action:T116 Acts-on:T117
+E30	Action:T118 Site:T121
+E31	Action:T122 Acts-on:T123 Using:T128 Count:T126 Using2:T130 Acts-on2:E30
+E32	Action:T132 Acts-on:T134 Using:T135 Product:T138
+E33	Action:T136 Acts-on:T138 Product:T142 Using:T140
+E34	Action:T141 Acts-on:T142
+R1	Mod-Link Arg1:T4 Arg2:T3
+R2	Measure Arg1:T4 Arg2:T2
+R3	Setting Arg1:E3 Arg2:T11
+R4	Measure Arg1:T14 Arg2:T13
+R5	Mod-Link Arg1:E5 Arg2:T17
+R6	Setting Arg1:E6 Arg2:T20
+R7	Measure Arg1:T27 Arg2:T26
+R8	Setting Arg1:E8 Arg2:T25
+R9	Measure Arg1:T36 Arg2:T35
+R10	Measure Arg1:T32 Arg2:T31
+R11	Meronym Arg1:T29 Arg2:T30
+R12	Measure Arg1:T39 Arg2:T38
+R13	Mod-Link Arg1:T46 Arg2:T45
+R14	Measure Arg1:T44 Arg2:T43
+R15	Measure Arg1:T46 Arg2:T43
+R16	Or Arg1:T44 Arg2:T46
+R17	Measure Arg1:T50 Arg2:T49
+R18	Measure Arg1:T50 Arg2:T51
+R19	Mod-Link Arg1:T54 Arg2:T53
+R20	Measure Arg1:T54 Arg2:T52
+R21	Measure Arg1:T56 Arg2:T55
+R22	Mod-Link Arg1:T60 Arg2:T59
+R23	Meronym Arg1:T60 Arg2:T58
+R24	Coreference-Link Arg1:T15 Arg2:T9
+R25	Coreference-Link Arg1:T19 Arg2:T15
+R26	Coreference-Link Arg1:T14 Arg2:T10
+R27	Overlaps Arg1:E7 Arg2:E8
+R28	Overlaps Arg1:E6 Arg2:E7
+R29	Coreference-Link Arg1:T30 Arg2:T23
+R30	Coreference-Link Arg1:T40 Arg2:T30
+R31	Overlaps Arg1:E15 Arg2:E16
+R32	Enables Arg1:E17 Arg2:E18
+R33	Mod-Link Arg1:T66 Arg2:T67
+R34	Or Arg1:T65 Arg2:T66
+R35	Measure Arg1:T70 Arg2:T69
+R36	Coreference-Link Arg1:T76 Arg2:T72
+R37	Meronym Arg1:T77 Arg2:T76
+R38	Coreference-Link Arg1:T79 Arg2:T76
+R39	Setting Arg1:E22 Arg2:T80
+R40	Measure Arg1:T81 Arg2:T82
+R41	Measure Arg1:T83 Arg2:T84
+R42	Coreference-Link Arg1:T86 Arg2:T27
+R43	Setting Arg1:E23 Arg2:T87
+R44	Measure Arg1:T90 Arg2:T89
+R45	Coreference-Link Arg1:T90 Arg2:T60
+R46	Mod-Link Arg1:T92 Arg2:T91
+R47	Meronym Arg1:T93 Arg2:T92
+R48	Enables Arg1:E1 Arg2:E3
+R49	Coreference-Link Arg1:T96 Arg2:T9
+R50	Measure Arg1:T96 Arg2:T95
+R51	Coreference-Link Arg1:T102 Arg2:T96
+R52	Measure Arg1:T102 Arg2:T101
+R53	Measure Arg1:T100 Arg2:T99
+R54	Mod-Link Arg1:T104 Arg2:T103
+R55	Measure Arg1:T138 Arg2:T137
+R56	Measure Arg1:T140 Arg2:T139
+R57	Measure Arg1:T142 Arg2:T143
+R58	Measure Arg1:T113 Arg2:T112
+R59	Or Arg1:T111 Arg2:T113
+R60	Mod-Link Arg1:T108 Arg2:T107
+R61	Measure Arg1:T108 Arg2:T106
+R62	Coreference-Link Arg1:T110 Arg2:T97
+R63	Enables Arg1:E27 Arg2:E28
+R64	Overlaps Arg1:E26 Arg2:E27
+R65	Overlaps Arg1:E25 Arg2:E26
+R66	Coreference-Link Arg1:T120 Arg2:T115
+R67	Coreference-Link Arg1:T121 Arg2:T110
+R68	Measure Arg1:T120 Arg2:T119
+R69	Enables Arg1:E30 Arg2:E29
+R70	Setting Arg1:E31 Arg2:T124
+R71	Mod-Link Arg1:T126 Arg2:T125
+R72	Measure Arg1:T128 Arg2:T129
+R73	Setting Arg1:T130 Arg2:T131
+R74	Setting Arg1:E31 Arg2:T127
+R75	Measure Arg1:T134 Arg2:T133

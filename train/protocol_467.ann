@@ -1,0 +1,90 @@
+T1	Action 32 37	Place
+T2	Location 38 45	bottles
+T3	Method 46 57	upside down
+T4	Location 65 74	soap bath
+T5	Time 75 84	overnight
+T6	Action 87 93	Remove
+T7	Location 94 101	bottles
+T8	Reagent 107 111	soap
+T9	Action 118 123	rinse
+T10	Modifier 124 134	thoroughly
+T11	Numerical 135 136	7
+T12	Location 143 149	inside
+T13	Modifier 156 167	a few times
+T14	Location 168 175	outside
+T15	Action 179 185	remove
+T16	Reagent 186 190	soap
+T17	Action 193 198	Place
+T18	Location 199 206	bottles
+T19	Method 207 218	upside down
+T20	Concentration 226 228	1N
+T21	Location 229 237	HCl bath
+T22	Action 240 245	Leave
+T23	Time 250 258	one week
+T24	Action 333 339	Remove
+T25	Location 340 347	bottles
+T26	Seal 352 356	caps
+T27	Location 366 370	bath
+T28	Action 375 380	rinse
+T29	Modifier 381 391	thoroughly
+T30	Numerical 392 393	7
+T31	Action 403 409	remove
+T32	Modifier 410 414	most
+T33	Reagent 422 425	HCl
+T34	Action 428 431	Dry
+T35	Action 434 441	sticker
+T36	Action 444 454	double bag
+T37	Action 459 468	placement
+T38	Location 474 479	boxes
+T39	Modifier 495 499	Each
+T40	Location 500 505	crate
+T41	Action 516 523	ziptied
+T42	Action 528 537	stickered
+T43	Action 544 551	contain
+T44	Numerical 552 555	two
+T45	Seal 556 563	zipties
+T46	Action 564 569	taped
+T47	Seal 573 576	lid
+T48	Numerical 579 582	one
+T49	Location 583 587	card
+T50	Modifier 592 597	large
+T51	Location 598 610	interior bag
+T52	Numerical 617 623	twelve
+T53	Location 624 631	bottles
+T54	Modifier 652 667	double - bagged
+E1	Action:T1 Acts-on:T2 Site:T4 Product:T7 Using:T3 Product2:T8
+E2	Action:T6 Acts-on:T7 Product:T12 Product2:T14 Product3:T16
+E3	Action:T9 Count:T11 Acts-on:T12 Acts-on2:T14
+E4	Action:T15 Acts-on:T16 Product:T18
+E5	Action:T17 Acts-on:T18 Site:T21 Using:T19
+E6	Action:T22 Acts-on:E5 Product:T25
+E7	Action:T24 Acts-on:T25 Acts-on2:T26 Product:T33
+E8	Action:T28 Count:T30 Acts-on:E7
+E9	Action:T31 Acts-on:T33
+E10	Action:T34 Acts-on:E9
+E11	Action:T35 Acts-on:E10
+E12	Action:T36 Acts-on:E11
+E13	Action:T37 Site:T38 Product:T53
+E14	Action:T41 Acts-on:T40
+E15	Action:T42 Acts-on:E14 Product:T47
+E16	Action:T43 Acts-on:T49 Acts-on2:T51 Acts-on3:T53 Site:E15 Acts-on4:E17
+E17	Action:T46 Site:T47 Acts-on:T45
+R1	Setting Arg1:E1 Arg2:T5
+R2	Mod-Link Arg1:E3 Arg2:T10
+R3	Measure Arg1:T21 Arg2:T20
+R4	Mod-Link Arg1:E9 Arg2:T32
+R5	Mod-Link Arg1:E8 Arg2:T29
+R6	Mod-Link Arg1:T40 Arg2:T39
+R7	Mod-Link Arg1:T14 Arg2:T13
+R8	Enables Arg1:E3 Arg2:E4
+R9	Setting Arg1:E6 Arg2:T23
+R10	Enables Arg1:E8 Arg2:E9
+R11	Enables Arg1:E12 Arg2:E13
+R12	Measure Arg1:T45 Arg2:T44
+R13	Measure Arg1:T49 Arg2:T48
+R14	Measure Arg1:T53 Arg2:T52
+R15	Mod-Link Arg1:T53 Arg2:T54
+R16	Mod-Link Arg1:T51 Arg2:T50
+R17	Meronym Arg1:T26 Arg2:T27
+R18	Meronym Arg1:T25 Arg2:T27
+R19	Meronym Arg1:T7 Arg2:T8

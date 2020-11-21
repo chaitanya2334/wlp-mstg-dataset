@@ -1,0 +1,237 @@
+T1	Action 46 51	Bring
+T2	Reagent 56 64	reagents
+T3	Temperature 68 71	0°C
+T4	Action 75 82	putting
+T5	Mention 83 87	them
+T6	Location 91 94	ice
+T7	Action 97 103	Dilute
+T8	Concentration 104 108	10mM
+T9	Reagent 109 136	stock solutions of peptides
+T10	Modifier 137 146	of choice
+T11	Concentration 150 155	400μM
+T12	Action 159 165	mixing
+T13	Amount 166 169	5μl
+T14	Reagent 173 195	peptide stock solution
+T15	Amount 201 206	120μl
+T16	Reagent 207 210	PBS
+T17	Action 217 221	keep
+T18	Location 225 228	ice
+T19	Action 231 234	Add
+T20	Amount 235 239	20μl
+T21	Reagent 240 255	diluted peptide
+T22	Amount 270 274	20μl
+T23	Reagent 287 304	Flex - T™ monomer
+T24	Concentration 307 317	200μg / mL
+T25	Device 325 351	96 - well U - bottom plate
+T26	Action 354 357	Mix
+T27	Action 361 370	pipetting
+T28	Method 371 382	up and down
+T29	Action 385 389	Seal
+T30	Device 394 399	plate
+T31	Action 402 412	centrifuge
+T32	Speed 416 422	3300xg
+T33	Time 427 436	2 minutes
+T34	Temperature 440 443	4°C
+T35	Action 447 454	collect
+T36	Reagent 459 465	liquid
+T37	Location 466 470	down
+T38	Action 473 479	Remove
+T39	Device 484 488	seal
+T40	Action 491 494	put
+T41	Device 499 504	plate
+T42	Location 508 511	ice
+T43	Action 516 526	illuminate
+T44	Device 532 540	UV light
+T45	Time 545 555	30 minutes
+T46	Action 623 627	Seal
+T47	Device 632 637	plate
+T48	Action 640 648	incubate
+T49	Time 653 663	30 minutes
+T50	Temperature 667 671	37°C
+T51	Action 809 817	Transfer
+T52	Amount 818 822	30μl
+T53	Reagent 826 853	peptide - exchanged monomer
+T54	Device 861 870	new plate
+T55	Action 878 881	add
+T56	Amount 882 887	3.3μl
+T57	Reagent 891 914	conjugated streptavidin
+T58	Action 917 920	mix
+T59	Action 924 933	pipetting
+T60	Method 934 949	up - and - down
+T61	Action 952 960	Incubate
+T62	Location 964 967	ice
+T63	Location 975 979	dark
+T64	Time 984 994	30 minutes
+T65	Action 1507 1514	prepare
+T66	Reagent 1515 1532	blocking solution
+T67	Action 1536 1542	adding
+T68	Amount 1543 1548	1.6μl
+T69	Concentration 1549 1553	50mM
+T70	Reagent 1554 1564	D - Biotin
+T71	Amount 1569 1572	6μl
+T72	Reagent 1573 1592	10 % ( w / v ) NaN3
+T73	Amount 1596 1603	192.4μl
+T74	Reagent 1604 1607	PBS
+T75	Action 1610 1613	mix
+T76	Method 1617 1626	vortexing
+T77	Action 1652 1655	add
+T78	Amount 1656 1661	2.4μl
+T79	Reagent 1665 1682	blocking solution
+T80	Action 1687 1694	pipette
+T81	Method 1695 1706	up and down
+T82	Action 1710 1714	stop
+T83	Reagent 1719 1727	reaction
+T84	Action 1730 1734	Seal
+T85	Device 1739 1744	plate
+T86	Action 1749 1757	incubate
+T87	Temperature 1761 1768	2 - 8°C
+T88	Time 1769 1778	overnight
+T89	Location 1787 1790	ice
+T90	Time 1795 1805	30 minutes
+T91	Location 1813 1817	dark
+T92	Action 2037 2044	Prepare
+T93	Reagent 2045 2050	cells
+T94	Modifier 2051 2062	of interest
+T95	Action 2093 2103	centrifuge
+T96	Device 2108 2113	plate
+T97	Speed 2117 2123	3300xg
+T98	Time 2128 2137	5 minutes
+T99	Temperature 2141 2144	4°C
+T100	Action 2147 2151	Keep
+T101	Location 2155 2158	ice
+T102	Location 2166 2170	dark
+T103	Action 2173 2176	Add
+T104	Amount 2177 2184	2 x 106
+T105	Reagent 2185 2190	cells
+T106	Device 2196 2222	96 - well U - bottom plate
+T107	Device 2226 2242	12 x 75 mm tubes
+T108	Action 2245 2251	Adjust
+T109	Device 2252 2258	volume
+T110	Amount 2262 2267	200μl
+T111	Reagent 2273 2292	CellStaining Buffer
+T112	Action 2295 2298	Add
+T113	Amount 2299 2302	2μl
+T114	Modifier 2303 2313	per sample
+T115	Reagent 2317 2334	Flex - T™ complex
+T116	Action 2361 2364	mix
+T117	Action 2369 2377	incubate
+T118	Location 2381 2386	icein
+T119	Location 2391 2395	dark
+T120	Time 2400 2410	30 minutes
+T121	Action 2544 2552	Incubate
+T122	Time 2557 2567	30 minutes
+T123	Location 2571 2574	ice
+T124	Location 2582 2586	dark
+T125	Action 2589 2593	Wash
+T126	Reagent 2598 2603	cells
+T127	Reagent 2609 2624	Staining Buffer
+T128	Numerical 2625 2634	two times
+T129	Action 2637 2646	Resuspend
+T130	Reagent 2647 2652	cells
+T131	Reagent 2658 2673	Staining Buffer
+T132	Action 2676 2683	Acquire
+T133	Reagent 2688 2695	samples
+T134	Device 2703 2717	flow cytometer
+T135	Modifier 2743 2749	within
+T136	Time 2750 2757	2 hours
+E1	Action:T1 Acts-on:T2 Site:T6 Product:T14 Product2:T16 Product3:T9
+E2	Action:T4 Acts-on:T2 Acts-on2:T5
+E3	Action:T7 Acts-on:T9
+E4	Action:T12 Acts-on:T14 Acts-on2:T16
+E5	Action:T17 Site:T18 Acts-on:E3
+E6	Action:T19 Acts-on:T21 Acts-on2:T23 Site:T25
+E7	Action:T26 Acts-on:E6 Product:T30
+E8	Action:T27 Using:T28
+E9	Action:T29 Acts-on:T30
+E10	Action:T31 Product:T36 Acts-on:E9
+E11	Action:T35 Site:T37 Acts-on:T36 Product:T41
+E12	Action:T38 Acts-on:T39
+E13	Action:T40 Acts-on:T41 Site:T42 Acts-on2:E12
+E14	Action:T43 Using:T44 Acts-on:E13 Product:T47
+E15	Action:T46 Acts-on:T47
+E16	Action:T48 Acts-on:E15 Product:T53
+E17	Action:T51 Acts-on:T53 Site:T54
+E18	Action:T55 Acts-on:T57 Site:E17
+E19	Action:T58 Acts-on:E18
+E20	Action:T59 Using:T60
+E21	Action:T61 Site:T62 Site2:T63 Acts-on:E19 Product:T115
+E22	Action:T65 Product:T66 Acts-on:T70 Acts-on2:T72
+E23	Action:T67 Acts-on:T70 Acts-on2:T72 Site:T74
+E24	Action:T75 Using:T76 Acts-on:E22
+E25	Action:T77 Acts-on:T79 Site:E21
+E26	Action:T80 Using:T81 Product:T83 Acts-on:E25
+E27	Action:T82 Acts-on:T83 Product:T85
+E28	Action:T84 Acts-on:T85
+E29	Action:T86 Site:T91 Acts-on:E28 Product:T96
+E30	Action:T92 Product:T93
+E31	Action:T95 Acts-on:T96
+E32	Action:T100 Site:T101 Site2:T102 Acts-on:E31
+E33	Action:T103 Acts-on:T105 Site:T106
+E34	Action:T108 Acts-on:T111 Acts-on2:T109
+E35	Action:T112 Acts-on:T115 Site:E34
+E36	Action:T116 Acts-on:E35
+E37	Action:T117 Acts-on:E36 Site:T118 Site2:T119
+E38	Action:T121 Site:T123 Site2:T124 Acts-on:E37 Product:T126
+E39	Action:T125 Acts-on:T127 Acts-on2:T126 Count:T128 Product:T130
+E40	Action:T129 Acts-on:T131 Acts-on2:T130 Product:T133
+E41	Action:T132 Acts-on:T133 Using:T134
+R1	Setting Arg1:E1 Arg2:T3
+R2	Measure Arg1:T9 Arg2:T8
+R3	Measure Arg1:T14 Arg2:T13
+R4	Measure Arg1:T16 Arg2:T15
+R5	Measure Arg1:T21 Arg2:T20
+R6	Measure Arg1:T23 Arg2:T24
+R7	Setting Arg1:E10 Arg2:T32
+R8	Setting Arg1:E10 Arg2:T33
+R9	Setting Arg1:E10 Arg2:T34
+R10	Setting Arg1:T44 Arg2:T45
+R11	Setting Arg1:E16 Arg2:T49
+R12	Setting Arg1:E16 Arg2:T50
+R13	Measure Arg1:T53 Arg2:T52
+R14	Measure Arg1:T57 Arg2:T56
+R15	Setting Arg1:E21 Arg2:T64
+R16	Measure Arg1:T70 Arg2:T69
+R17	Measure Arg1:T70 Arg2:T68
+R18	Setting Arg1:E29 Arg2:T87
+R19	Setting Arg1:E31 Arg2:T97
+R20	Setting Arg1:E38 Arg2:T122
+R21	Measure Arg1:T115 Arg2:T113
+R22	Setting Arg1:E37 Arg2:T120
+R23	Mod-Link Arg1:T9 Arg2:T10
+R24	Coreference-Link Arg1:T18 Arg2:T6
+R25	Coreference-Link Arg1:T42 Arg2:T18
+R26	Measure Arg1:T72 Arg2:T71
+R27	Measure Arg1:T74 Arg2:T73
+R28	Setting Arg1:E29 Arg2:T88
+R29	Or Arg1:T87 Arg2:T89
+R30	Or Arg1:T88 Arg2:T90
+R31	Mod-Link Arg1:E30 Arg2:T94
+R32	Setting Arg1:E31 Arg2:T98
+R33	Setting Arg1:E31 Arg2:T99
+R34	Coreference-Link Arg1:T101 Arg2:T89
+R35	Coreference-Link Arg1:T89 Arg2:T62
+R36	Coreference-Link Arg1:T62 Arg2:T42
+R37	Setting Arg1:E41 Arg2:T136
+R38	Mod-Link Arg1:E41 Arg2:T135
+R39	Measure Arg1:T23 Arg2:T22
+R40	Enables Arg1:E8 Arg2:E7
+R41	Enables Arg1:E4 Arg2:E3
+R42	Enables Arg1:E2 Arg2:E1
+R43	Coreference-Link Arg1:T5 Arg2:T2
+R44	Setting Arg1:E3 Arg2:T11
+R45	Coreference-Link Arg1:T21 Arg2:T9
+R46	Coreference-Link Arg1:T39 Arg2:E9
+R47	Enables Arg1:E20 Arg2:E19
+R48	Overlaps Arg1:E21 Arg2:E22
+R49	Enables Arg1:E23 Arg2:E22
+R50	Measure Arg1:T79 Arg2:T78
+R51	Coreference-Link Arg1:T79 Arg2:T66
+R52	Coreference-Link Arg1:T96 Arg2:T85
+R53	Measure Arg1:T105 Arg2:T104
+R54	Coreference-Link Arg1:T105 Arg2:T93
+R55	Or Arg1:T106 Arg2:T107
+R56	Setting Arg1:E34 Arg2:T110
+R57	Meronym Arg1:T109 Arg2:T106
+R58	Mod-Link Arg1:E35 Arg2:T114
+R59	Coreference-Link Arg1:T118 Arg2:T101
+R60	Coreference-Link Arg1:T123 Arg2:T118

@@ -1,0 +1,154 @@
+T1	Action 40 44	Pick
+T2	Reagent 45 63	bacterial colonies
+T3	Location 74 91	Gent + Kan plates
+T4	Action 96 105	inoculate
+T5	Amount 106 111	10 mL
+T6	Reagent 112 121	LB medium
+T7	Action 141 148	Measure
+T8	Generic-Measure 149 154	OD600
+T9	Action 159 164	start
+T10	Amount 167 173	150 mL
+T11	Reagent 174 187	LB subculture
+T12	Action 240 244	Grow
+T13	Generic-Measure 248 252	37oC
+T14	Action 285 295	Centrifuge
+T15	Speed 299 308	4,000 rpm
+T16	Generic-Measure 311 315	10oC
+T17	Time 322 328	10 min
+T18	Action 331 337	Decant
+T19	Reagent 338 349	supernatant
+T20	Action 354 363	resuspend
+T21	Amount 367 373	800 µL
+T22	Reagent 374 377	SOC
+T23	Action 454 463	Spin down
+T24	Size 464 471	2 x 108
+T25	Reagent 472 477	cells
+T26	Speed 481 489	4000 rpm
+T27	Generic-Measure 492 496	10oC
+T28	Time 503 509	10 min
+T29	Action 512 518	Decant
+T30	Reagent 519 530	supernatant
+T31	Action 535 544	resuspend
+T32	Reagent 545 551	pellet
+T33	Amount 555 559	1 mL
+T34	Location 560 569	L1 medium
+T35	Action 572 575	Mix
+T36	Amount 576 582	200 µL
+T37	Reagent 583 603	T . pseudonana cells
+T38	Amount 608 614	200 µL
+T39	Reagent 615 629	E . coli cells
+T40	Amount 635 641	1.5 mL
+T41	Location 642 646	tube
+T42	Action 649 656	Pipette
+T43	Method 657 668	up and down
+T44	Generic-Measure 671 680	few times
+T45	Action 683 688	Plate
+T46	Generic-Measure 692 700	1 / 2xL1
+T47	Generic-Measure 701 704	1 %
+T48	Location 705 716	agar plates
+T49	Generic-Measure 721 724	5 %
+T50	Reagent 725 727	LB
+T51	Action 730 738	Incubate
+T52	Location 742 746	dark
+T53	Generic-Measure 750 754	30oC
+T54	Time 759 769	90 minutes
+T55	Action 875 878	Add
+T56	Amount 879 883	1 mL
+T57	Reagent 884 893	L1 medium
+T58	Action 898 904	scrape
+T59	Device 912 924	cell scraper
+T60	Device 928 938	L spreader
+T61	Action 1123 1128	Leave
+T62	Generic-Measure 1132 1136	18oC
+T63	Location 1141 1155	constant light
+T64	Action 1436 1440	Pick
+T65	Reagent 1441 1449	colonies
+T66	Action 1493 1502	inoculate
+T67	Amount 1503 1511	~ 0.5 mL
+T68	Reagent 1512 1521	L1 medium
+T69	Action 1584 1587	Use
+T70	Amount 1590 1592	µL
+T71	Reagent 1596 1610	diatom culture
+T72	Action 2119 2125	Purify
+T73	Modifier 2126 2131	total
+T74	Reagent 2132 2135	RNA
+T75	Reagent 2141 2162	Nou100 diatom culture
+T76	Action 2165 2172	convert
+T77	Reagent 2179 2183	cDNA
+T78	Action 2188 2191	use
+T79	Mention 2192 2194	it
+T80	Action 2331 2338	Perform
+T81	Device 2341 2356	diatom miniprep
+T82	Action 2400 2409	Transform
+T83	Reagent 2410 2418	E . coli
+T84	Modifier 2424 2440	diatom - derived
+T85	Reagent 2441 2444	DNA
+T86	Action 2449 2455	Select
+T87	Location 2459 2473	LB agar plates
+T88	Concentration 2479 2489	50 µg / mL
+T89	Reagent 2490 2499	kanamycin
+T90	Action 2504 2512	Miniprep
+T91	Action 2515 2521	digest
+T92	Action 2526 2533	analyze
+T93	Location 2539 2542	gel
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T6 Acts-on2:T2
+E3	Action:T7 Acts-on:T6 Product:T11
+E4	Action:T9 Acts-on:T11
+E5	Action:T12 Acts-on:T11
+E6	Action:T14 Acts-on:T11 Product:T19
+E7	Action:T18 Acts-on:T19
+E8	Action:T20 Acts-on:T22 Acts-on2:T19 Product:T25
+E9	Action:T23 Acts-on:T25 Product:T30
+E10	Action:T29 Acts-on:T30
+E11	Action:T31 Acts-on:T32 Site:T34 Acts-on2:T30 Product:T37
+E12	Action:T35 Acts-on:T37 Acts-on2:T39 Site:T41
+E13	Action:T42 Using:T43 Acts-on:T39 Product:T50
+E14	Action:T45 Site:T48 Acts-on:T50
+E15	Action:T51 Site:T52 Acts-on:T50 Product:T57
+E16	Action:T55 Acts-on:T57
+E17	Action:T58 Acts-on:T59 Acts-on2:T57
+E18	Action:T61 Site:T63 Acts-on:T57 Product:T65
+E19	Action:T64 Acts-on:T65
+E20	Action:T66 Acts-on:T65 Acts-on2:T68 Product:T71
+E21	Action:T69 Acts-on:T71 Product:T74
+E22	Action:T72 Acts-on:T74 Using:T75
+E23	Action:T76 Acts-on:T74 Product:T77
+E24	Action:T78 Acts-on:T79
+E25	Action:T80 Acts-on:T81 Acts-on2:T77 Product:T83
+E26	Action:T82 Acts-on:T83 Using:T85 Product:T89
+E27	Action:T86 Acts-on:T87 Using:T89
+E28	Action:T90 Acts-on:T89 Acts-on2:E29
+E29	Action:T91 Acts-on:E30
+E30	Action:T92 Site:T93
+R1	Measure Arg1:T89 Arg2:T88
+R2	Mod-Link Arg1:T85 Arg2:T84
+R3	Mod-Link Arg1:T74 Arg2:T73
+R4	Coreference-Link Arg1:T79 Arg2:T74
+R5	Measure Arg1:T71 Arg2:T70
+R6	Measure Arg1:T48 Arg2:T47
+R7	Measure Arg1:T48 Arg2:T46
+R8	Measure Arg1:T50 Arg2:T49
+R9	Measure Arg1:T41 Arg2:T40
+R10	Measure Arg1:T37 Arg2:T36
+R11	Measure Arg1:T39 Arg2:T38
+R12	Setting Arg1:E13 Arg2:T44
+R13	Setting Arg1:E15 Arg2:T53
+R14	Setting Arg1:E15 Arg2:T54
+R15	Setting Arg1:E3 Arg2:T8
+R16	Measure Arg1:T11 Arg2:T10
+R17	Measure Arg1:T6 Arg2:T5
+R18	Setting Arg1:E5 Arg2:T13
+R19	Setting Arg1:E6 Arg2:T15
+R20	Setting Arg1:E6 Arg2:T16
+R21	Setting Arg1:E6 Arg2:T17
+R22	Measure Arg1:T22 Arg2:T21
+R23	Measure Arg1:T25 Arg2:T24
+R24	Setting Arg1:E9 Arg2:T26
+R25	Setting Arg1:E9 Arg2:T27
+R26	Setting Arg1:E9 Arg2:T28
+R27	Measure Arg1:T34 Arg2:T33
+R28	Or Arg1:T59 Arg2:T60
+R29	Measure Arg1:T57 Arg2:T56
+R30	Setting Arg1:E18 Arg2:T62
+R31	Measure Arg1:T68 Arg2:T67

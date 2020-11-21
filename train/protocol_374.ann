@@ -1,0 +1,148 @@
+T1	Action 110 116	dilute
+T2	Reagent 121 149	Nucleic Acid Dilution Buffer
+T3	Generic-Measure 150 158	100 fold
+T4	Action 232 238	Dilute
+T5	Reagent 239 246	samples
+T6	Modifier 247 255	at least
+T7	Generic-Measure 256 261	1 : 1
+T8	Modifier 271 282	appropriate
+T9	Reagent 283 298	Dilution Buffer
+T10	Action 301 305	Open
+T11	Location 310 332	NUCLEIC Test Strip box
+T12	Action 335 341	remove
+T13	Location 344 349	strip
+T14	Action 356 365	peel away
+T15	Seal 370 387	protective sheets
+T16	Device 398 405	forceps
+T17	Action 417 423	Attach
+T18	Location 428 447	white NUCLEIC Strip
+T19	Location 455 472	application board
+T20	Device 482 494	side magnets
+T21	Action 497 502	Apply
+T22	Amount 503 508	1‐5µl
+T23	Modifier 516 523	diluted
+T24	Reagent 524 531	samples
+T25	Location 539 549	Test Strip
+T26	Action 690 697	Squeeze
+T27	Device 702 717	pipette plunger
+T28	Reagent 726 730	drop
+T29	Action 734 740	formed
+T30	Location 748 751	tip
+T31	Device 759 770	pipette tip
+T32	Action 773 778	Lower
+T33	Reagent 783 787	drop
+T34	Mention 794 796	it
+T35	Action 797 804	touches
+T36	Location 809 819	Test Strip
+T37	Action 929 934	Apply
+T38	Reagent 935 941	sample
+T39	Method 945 978	point of contact capillary action
+T40	Action 1062 1066	Keep
+T41	Device 1071 1082	pipette tip
+T42	Method 1083 1094	straight up
+T43	Method 1109 1125	capillary action
+T44	Location 1133 1138	strip
+T45	Action 1142 1146	draw
+T46	Reagent 1151 1157	sample
+T47	Device 1167 1178	pipette tip
+T48	Action 1528 1533	Place
+T49	Location 1538 1551	NUCLEIC strip
+T50	Location 1557 1572	developing tray
+T51	Modifier 1596 1601	other
+T52	Location 1602 1612	small dish
+T53	Action 1615 1620	Apply
+T54	Amount 1621 1626	0.5ml
+T55	Reagent 1627 1638	NUCLEIC Dye
+T56	Modifier 1639 1647	directly
+T57	Location 1655 1660	strip
+T58	Action 1663 1671	Incubate
+T59	Temperature 1675 1691	room temperature
+T60	Time 1696 1704	1 minute
+T61	Method 1705 1731	without shaking or rocking
+T62	Action 1734 1741	Discard
+T63	Reagent 1746 1757	NUCLEIC Dye
+T64	Action 1762 1767	rinse
+T65	Location 1772 1777	strip
+T66	Time 1782 1792	10 seconds
+T67	Amount 1796 1800	50ml
+T68	Reagent 1801 1817	ultra pure water
+T69	Action 1820 1827	Discard
+T70	Reagent 1832 1837	rinse
+T71	Action 1842 1846	wash
+T72	Amount 1852 1856	50ml
+T73	Reagent 1857 1873	ultra pure water
+T74	Time 1878 1891	30‐60 seconds
+T75	Reagent 1905 1920	blue background
+T76	Action 1921 1931	disappears
+T77	Action 1934 1940	Remove
+T78	Location 1945 1950	strip
+T79	Reagent 1960 1971	second wash
+T80	Action 2039 2046	Compare
+T81	Generic-Measure 2051 2056	color
+T82	Reagent 2064 2080	test sample spot
+T83	Device 2090 2109	dotMETRIC™ Standard
+T84	Device 2157 2181	NUCLEIC dotMETRIC™ scale
+T85	Action 2185 2194	determine
+T86	Measure-Type 2199 2212	concentration
+T87	Modifier 2220 2227	diluted
+T88	Reagent 2228 2234	sample
+E1	Action:T1 Acts-on:T2 Product:T9
+E2	Action:T4 Acts-on:T5 Using:T9 Product:T24
+E3	Action:T10 Acts-on:T11 Product:T13
+E4	Action:T12 Acts-on:T13 Product:T15
+E5	Action:T14 Acts-on:T15 Using:T16 Product:T18
+E6	Action:T17 Acts-on:T18 Site:T19 Using:T20 Product:T25
+E7	Action:T21 Acts-on:T24 Site:T25 Product:T49
+E8	Action:T26 Acts-on:T27 Acts-on2:T24
+E9	Action:T29 Product:T28 Site:T30
+E10	Action:T32 Acts-on:T33
+E11	Action:T35 Acts-on:T34 Site:T36
+E12	Action:T37 Acts-on:T38 Using:T39
+E13	Action:T40 Acts-on:T41 Using:T42
+E14	Action:T45 Using:T43 Acts-on:T46 Site:T47 Site2:T44
+E15	Action:T48 Acts-on:T49 Site:T50 Product:T57
+E16	Action:T53 Acts-on:T55 Site:T57
+E17	Action:T58 Using:T61 Acts-on:E16 Product:T63
+E18	Action:T62 Acts-on:T63 Product:T65
+E19	Action:T64 Acts-on:T65 Using:T68 Product:T70
+E20	Action:T69 Acts-on:T70 Product:T75
+E21	Action:T71 Using:T73 Acts-on:T75
+E22	Action:T76 Acts-on:T75 Product:T78
+E23	Action:T77 Acts-on:T78 Site:T79 Product:T82
+E24	Action:T80 Acts-on:T82 Using:T83
+E25	Action:T85 Using:T84 Measure-Type-Link:T86 Acts-on:T88
+R1	Setting Arg1:E1 Arg2:T3
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Setting Arg1:E2 Arg2:T7
+R4	Mod-Link Arg1:T9 Arg2:T8
+R5	Mod-Link Arg1:T24 Arg2:T23
+R6	Measure Arg1:T24 Arg2:T22
+R7	Meronym Arg1:T30 Arg2:T31
+R8	Coreference-Link Arg1:T34 Arg2:T33
+R9	Mod-Link Arg1:T52 Arg2:T51
+R10	Or Arg1:T50 Arg2:T52
+R11	Measure Arg1:T55 Arg2:T54
+R12	Mod-Link Arg1:E16 Arg2:T56
+R13	Setting Arg1:E17 Arg2:T59
+R14	Setting Arg1:E17 Arg2:T60
+R15	Setting Arg1:E19 Arg2:T66
+R16	Measure Arg1:T68 Arg2:T67
+R17	Measure Arg1:T73 Arg2:T72
+R18	Setting Arg1:E21 Arg2:T74
+R19	Mod-Link Arg1:T88 Arg2:T87
+R20	Enables Arg1:E9 Arg2:E7
+R21	Enables Arg1:E12 Arg2:E7
+R22	Or Arg1:E12 Arg2:E8
+R23	Coreference-Link Arg1:T24 Arg2:T38
+R24	Enables Arg1:E8 Arg2:E9
+R25	Enables Arg1:E10 Arg2:E7
+R26	Coreference-Link Arg1:T28 Arg2:T33
+R27	Coreference-Link Arg1:T25 Arg2:T36
+R28	Coreference-Link Arg1:T36 Arg2:T44
+R29	Enables Arg1:E14 Arg2:E12
+R30	Coreference-Link Arg1:T38 Arg2:T46
+R31	Coreference-Link Arg1:T41 Arg2:T47
+R32	Enables Arg1:E21 Arg2:E22
+R33	Coreference-Link Arg1:T82 Arg2:T88
+R34	Or Arg1:E24 Arg2:E25
+R35	Measure Arg1:T82 Arg2:T81

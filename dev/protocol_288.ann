@@ -1,0 +1,140 @@
+T1	Action 48 51	Add
+T2	Reagent 52 59	agarose
+T3	Reagent 63 72	SE buffer
+T4	Measure-Type 79 98	final concentration
+T5	Concentration 102 120	1.5 % ( wt / vol )
+T6	Action 123 127	Melt
+T7	Reagent 132 139	agarose
+T8	Device 145 159	microwave oven
+T9	Action 167 171	cool
+T10	Action 176 184	maintain
+T11	Temperature 188 192	37°C
+T12	Device 198 208	water bath
+T13	Action 211 215	Warm
+T14	Reagent 220 237	viral concentrate
+T15	Temperature 241 245	37°C
+T16	Device 253 263	water bath
+T17	Modifier 271 282	immediately
+T18	Action 283 286	mix
+T19	Amount 295 307	equal volume
+T20	Reagent 311 325	molten agarose
+T21	Modifier 330 337	quickly
+T22	Action 338 346	transfer
+T23	Reagent 351 358	mixture
+T24	Location 362 375	casting molds
+T25	Action 408 416	transfer
+T26	Reagent 421 425	plug
+T27	Location 431 437	noodle
+T28	Location 447 454	syringe
+T29	Location 460 467	buttons
+T30	Location 477 485	parafilm
+T31	Location 497 501	tube
+T32	Amount 513 522	5 volumes
+T33	Reagent 526 538	lysis buffer
+T34	Modifier 539 546	amended
+T35	Reagent 552 564	proteinase K
+T36	Action 601 609	Incubate
+T37	Temperature 613 629	room temperature
+T38	Time 630 639	overnight
+T39	Action 642 648	Decant
+T40	Reagent 653 665	lysis buffer
+T41	Action 689 693	lose
+T42	Reagent 698 703	plugs
+T43	Action 717 722	Rinse
+T44	Reagent 727 732	plugs
+T45	Numerical 733 738	twice
+T46	Action 751 757	adding
+T47	Amount 758 768	25 volumes
+T48	Modifier 772 777	fresh
+T49	Reagent 778 780	TE
+T50	Concentration 792 796	1 mM
+T51	Reagent 797 801	PMSF
+T52	Action 804 814	incubating
+T53	Time 819 822	1 h
+T54	Modifier 828 834	gentle
+T55	Method 835 844	agitation
+T56	Action 852 861	decanting
+T57	Reagent 866 877	rinse fluid
+T58	Action 880 885	Rinse
+T59	Reagent 890 895	plugs
+T60	Action 898 901	add
+T61	Amount 902 912	50 volumes
+T62	Modifier 916 921	fresh
+T63	Reagent 922 937	TE with no PMSF
+T64	Action 940 948	incubate
+T65	Time 953 959	30 min
+T66	Action 991 997	decant
+T67	Reagent 1002 1013	rinse fluid
+T68	Action 1028 1033	rinse
+T69	Reagent 1038 1043	plugs
+T70	Action 1046 1049	add
+T71	Amount 1050 1060	50 volumes
+T72	Modifier 1064 1069	fresh
+T73	Reagent 1070 1085	TE with no PMSF
+T74	Action 1088 1096	incubate
+T75	Time 1101 1107	30 min
+T76	Action 1139 1145	decant
+T77	Reagent 1150 1161	rinse fluid
+T78	Action 1164 1169	Store
+T79	Reagent 1174 1179	plugs
+T80	Temperature 1183 1186	4°C
+T81	Modifier 1187 1196	submerged
+T82	Reagent 1200 1202	TE
+E1	Action:T1 Acts-on:T2 Site:T3 Measure-Type-Link:T4 Product:T7
+E2	Action:T6 Acts-on:T7 Site:T8
+E3	Action:T9 Acts-on:E2
+E4	Action:T10 Site:T12 Acts-on:E3 Product:T20
+E5	Action:T13 Acts-on:T14 Using:T16
+E6	Action:T18 Site:T20 Acts-on:E5 Product:T23
+E7	Action:T22 Acts-on:T23 Site:T24 Product:T26
+E8	Action:T25 Acts-on:T26 Site:T31
+E9	Action:T36 Acts-on:E8 Product:T40
+E10	Action:T39 Acts-on:T40
+E11	Action:T41 Acts-on:T42 Product:T44
+E12	Action:T43 Acts-on:T44 Count:T45
+E13	Action:T46 Acts-on:T49 Site:E12
+E14	Action:T52 Acts-on:E13 Using:T55 Product:T57
+E15	Action:T56 Acts-on:T57 Product:T59
+E16	Action:T58 Acts-on:T59
+E17	Action:T60 Acts-on:T63 Site:E16
+E18	Action:T64 Acts-on:E17 Product:T67
+E19	Action:T66 Acts-on:T67 Product:T69
+E20	Action:T68 Acts-on:T69
+E21	Action:T70 Acts-on:T73 Site:E20
+E22	Action:T74 Acts-on:E21 Product:T77
+E23	Action:T76 Acts-on:T77 Product:T79
+E24	Action:T78 Acts-on:T79 Site:T82
+R1	Setting Arg1:E4 Arg2:T11
+R2	Setting Arg1:E5 Arg2:T15
+R3	Mod-Link Arg1:E6 Arg2:T17
+R4	Measure Arg1:T20 Arg2:T19
+R5	Mod-Link Arg1:E7 Arg2:T21
+R6	Measure Arg1:T33 Arg2:T32
+R7	Meronym Arg1:T33 Arg2:T31
+R8	Setting Arg1:E9 Arg2:T37
+R9	Setting Arg1:E9 Arg2:T38
+R10	Measure Arg1:T51 Arg2:T50
+R11	Mod-Link Arg1:T49 Arg2:T48
+R12	Measure Arg1:T49 Arg2:T47
+R13	Meronym Arg1:T51 Arg2:T49
+R14	Setting Arg1:E14 Arg2:T53
+R15	Or Arg1:T55 Arg2:T54
+R16	Setting Arg1:E18 Arg2:T65
+R17	Mod-Link Arg1:T63 Arg2:T62
+R18	Measure Arg1:T63 Arg2:T61
+R19	Setting Arg1:E22 Arg2:T75
+R20	Mod-Link Arg1:T73 Arg2:T72
+R21	Measure Arg1:T73 Arg2:T71
+R22	Setting Arg1:E24 Arg2:T80
+R23	Mod-Link Arg1:E24 Arg2:T81
+R24	Setting Arg1:E1 Arg2:T5
+R25	Or Arg1:T26 Arg2:T27
+R26	Meronym Arg1:T27 Arg2:T28
+R27	Or Arg1:T27 Arg2:T29
+R28	Meronym Arg1:T29 Arg2:T30
+R29	Mod-Link Arg1:T35 Arg2:T34
+R30	Meronym Arg1:T35 Arg2:T33
+R31	Prevents Arg1:E10 Arg2:E11
+R32	Meronym Arg1:T42 Arg2:T40
+R33	Coreference-Link Arg1:T73 Arg2:T63
+R34	Coreference-Link Arg1:T82 Arg2:T49

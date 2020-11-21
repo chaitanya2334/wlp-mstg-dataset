@@ -1,0 +1,39 @@
+T1	Reagent 50 54	grid
+T2	Action 55 59	prep
+T3	Method 66 80	glow discharge
+T4	Action 84 90	render
+T5	Reagent 91 96	grids
+T6	Reagent 97 108	hydrophylic
+T7	Action 111 118	Holding
+T8	Reagent 123 127	grid
+T9	Device 135 143	tweezers
+T10	Action 146 151	place
+T11	Amount 152 156	5 µl
+T12	Reagent 160 172	viral lysate
+T13	Location 182 192	shiny side
+T14	Reagent 200 204	grid
+T15	Reagent 228 234	sample
+T16	Action 235 238	sit
+T17	Time 243 254	~ 3 minutes
+T18	Reagent 268 275	viruses
+T19	Action 279 285	adsorb
+T20	Reagent 293 297	grid
+T21	Action 300 305	Stain
+T22	Reagent 310 317	viruses
+T23	Method 337 393	“Positive and Negative Staining of Viruses on TEM Grids”
+E1	Action:T2 Acts-on:T1 Product:T5
+E2	Action:T4 Using:T3 Acts-on:T5 Product:T6
+E3	Action:T7 Acts-on:T8 Using:T9
+E4	Action:T10 Acts-on:T12 Site:T13 Product:T15 Product2:T20 Product3:T18
+E5	Action:T16 Acts-on:T15
+E6	Action:T19 Acts-on:T18 Site:T20 Product:T22
+E7	Action:T21 Using:T23 Acts-on:T22
+R1	Measure Arg1:T12 Arg2:T11
+R2	Meronym Arg1:T13 Arg2:T14
+R3	Setting Arg1:E5 Arg2:T17
+R4	Coreference-Link Arg1:T6 Arg2:T8
+R5	Enables Arg1:E3 Arg2:E4
+R6	Coreference-Link Arg1:T8 Arg2:T14
+R7	Meronym Arg1:T18 Arg2:T20
+R8	Enables Arg1:E5 Arg2:E6
+R9	Coreference-Link Arg1:T15 Arg2:T18

@@ -1,0 +1,129 @@
+T1	Action 65 71	Pellet
+T2	Amount 72 78	1–5 ml
+T3	Reagent 79 96	bacterial culture
+T4	Method 100 114	centrifugation
+T5	Speed 118 128	16,000 x g
+T6	Time 133 143	30 seconds
+T7	Action 146 153	Discard
+T8	Reagent 154 165	supernatant
+T9	Action 168 177	Resuspend
+T10	Reagent 178 184	pellet
+T11	Amount 188 194	200 μl
+T12	Reagent 195 222	Plasmid Resuspension Buffer
+T13	Action 232 238	Vortex
+T14	Action 242 247	pipet
+T15	Reagent 258 263	cells
+T16	Modifier 268 290	completely resuspended
+T17	Action 329 332	Add
+T18	Amount 333 339	200 μl
+T19	Reagent 340 360	Plasmid Lysis Buffer
+T20	Modifier 370 376	gently
+T21	Action 377 383	invert
+T22	Device 384 388	tube
+T23	Generic-Measure 389 398	5–6 times
+T24	Action 405 413	incubate
+T25	Temperature 417 433	room temperature
+T26	Time 438 446	1 minute
+T27	Action 551 554	Add
+T28	Amount 555 561	400 μl
+T29	Reagent 565 594	Plasmid Neutralization Buffer
+T30	Modifier 604 610	gently
+T31	Action 611 617	invert
+T32	Device 618 622	tube
+T33	Action 647 655	incubate
+T34	Temperature 659 675	room temperature
+T35	Time 680 689	2 minutes
+T36	Action 785 795	Centrifuge
+T37	Reagent 796 802	lysate
+T38	Speed 806 816	16,000 x g
+T39	Time 821 832	2–5 minutes
+T40	Modifier 989 998	Carefully
+T41	Action 999 1007	transfer
+T42	Reagent 1008 1019	supernatant
+T43	Action 1043 1053	centrifuge
+T44	Speed 1057 1067	16,000 x g
+T45	Time 1072 1080	1 minute
+T46	Action 1108 1119	Re - insert
+T47	Reagent 1120 1126	column
+T48	Location 1134 1149	collection tube
+T49	Action 1154 1157	add
+T50	Amount 1158 1164	200 μl
+T51	Reagent 1168 1189	Plasmid Wash Buffer 1
+T52	Action 1192 1202	Centrifuge
+T53	Time 1207 1215	1 minute
+T54	Speed 1219 1229	16,000 x g
+T55	Action 1276 1279	Add
+T56	Amount 1280 1286	400 μl
+T57	Reagent 1290 1311	Plasmid Wash Buffer 2
+T58	Action 1316 1326	centrifuge
+T59	Speed 1330 1340	16,000 x g
+T60	Time 1345 1353	1 minute
+T61	Action 1356 1364	Transfer
+T62	Reagent 1365 1371	column
+T63	Modifier 1377 1382	clean
+T64	Size 1383 1389	1.5 ml
+T65	Location 1390 1404	microfuge tube
+T66	Action 1566 1569	Add
+T67	Amount 1572 1577	30 μl
+T68	Reagent 1578 1596	DNA Elution Buffer
+T69	Action 1627 1631	Wait
+T70	Time 1636 1644	1 minute
+T71	Action 1652 1656	spin
+T72	Time 1661 1669	1 minute
+T73	Speed 1673 1683	16,000 x g
+E1	Action:T1 Acts-on:T3 Using:T4 Product:T8
+E2	Action:T7 Acts-on:T8
+E3	Action:T9 Acts-on:T10 Site:T12 Acts-on2:E2
+E4	Action:T13 Acts-on:E3
+E5	Action:T14 Acts-on:T15
+E6	Action:T17 Acts-on:T19 Site:T15
+E7	Action:T21 Acts-on:T22 Acts-on2:T19
+E8	Action:T24 Acts-on:T22
+E9	Action:T27 Acts-on:T29 Site:T32 Acts-on2:T22
+E10	Action:T31 Acts-on:T32
+E11	Action:T33 Acts-on:T32
+E12	Action:T36 Acts-on:T37 Product:T42 Acts-on2:E11
+E13	Action:T41 Acts-on:T42
+E14	Action:T43 Acts-on:T42 Product:T47
+E15	Action:T46 Acts-on:T47 Site:T48
+E16	Action:T49 Acts-on:T51 Site:T48
+E17	Action:T52 Acts-on:T48
+E18	Action:T55 Acts-on:T57 Acts-on2:E17
+E19	Action:T58 Product:T62 Acts-on:E18
+E20	Action:T61 Acts-on:T62 Site:T65
+E21	Action:T66 Acts-on:T68 Acts-on2:T65
+E22	Action:T69 
+E23	Action:T71 Acts-on:E21
+R1	Setting Arg1:E23 Arg2:T72
+R2	Setting Arg1:E22 Arg2:T70
+R3	Setting Arg1:E23 Arg2:T73
+R4	Measure Arg1:T12 Arg2:T11
+R5	Measure Arg1:T29 Arg2:T28
+R6	Measure Arg1:T3 Arg2:T2
+R7	Setting Arg1:E1 Arg2:T5
+R8	Setting Arg1:E1 Arg2:T6
+R9	Measure Arg1:T19 Arg2:T18
+R10	Mod-Link Arg1:E7 Arg2:T20
+R11	Setting Arg1:E7 Arg2:T23
+R12	Setting Arg1:E8 Arg2:T25
+R13	Setting Arg1:E8 Arg2:T26
+R14	Mod-Link Arg1:E10 Arg2:T30
+R15	Setting Arg1:E11 Arg2:T34
+R16	Setting Arg1:E11 Arg2:T35
+R17	Setting Arg1:E12 Arg2:T38
+R18	Setting Arg1:E12 Arg2:T39
+R19	Mod-Link Arg1:E13 Arg2:T40
+R20	Setting Arg1:E14 Arg2:T44
+R21	Setting Arg1:E14 Arg2:T45
+R22	Setting Arg1:E17 Arg2:T53
+R23	Setting Arg1:E17 Arg2:T54
+R24	Measure Arg1:T57 Arg2:T56
+R25	Measure Arg1:T51 Arg2:T50
+R26	Setting Arg1:E19 Arg2:T59
+R27	Setting Arg1:E19 Arg2:T60
+R28	Measure Arg1:T65 Arg2:T64
+R29	Mod-Link Arg1:T65 Arg2:T63
+R30	Measure Arg1:T68 Arg2:T67
+R31	Or Arg1:E4 Arg2:E5
+R32	Mod-Link Arg1:T15 Arg2:T16
+R33	Enables Arg1:E22 Arg2:E23

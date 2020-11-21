@@ -1,0 +1,211 @@
+T1	Modifier 39 47	Manually
+T2	Action 48 54	select
+T3	Reagent 55 76	almond kernel samples
+T4	Modifier 86 97	pasteurized
+T5	Modifier 102 109	shelled
+T6	Action 404 410	Record
+T7	Measure-Type 411 417	weight
+T8	Measure-Type 422 426	size
+T9	Reagent 430 444	almond kernels
+T10	Action 445 453	Separate
+T11	Reagent 458 465	samples
+T12	Numerical 471 474	two
+T13	Reagent 475 481	groups
+T14	Action 791 797	Obtain
+T15	Reagent 798 808	A . flavus
+T16	Reagent 813 837	A . parasiticus isolates
+T17	Action 841 847	infect
+T18	Reagent 848 855	almonds
+T19	Action 990 994	take
+T20	Reagent 999 1013	fungi isolates
+T21	Action 1018 1022	grow
+T22	Mention 1023 1027	them
+T23	Reagent 1031 1038	culture
+T24	Action 1041 1044	Use
+T25	Concentration 1045 1048	5 %
+T26	Modifier 1049 1062	reconstituted
+T27	Reagent 1063 1080	tomato juice agar
+T28	Action 1127 1131	grow
+T29	Modifier 1132 1136	each
+T30	Reagent 1137 1144	isolate
+T31	Time 1149 1155	6 days
+T32	Temperature 1176 1181	31 °C
+T33	Method 1182 1203	in a dark environment
+T34	Reagent 1245 1252	conidia
+T35	Action 1256 1265	collected
+T36	Modifier 1274 1284	sterilized
+T37	Device 1285 1296	cotton swab
+T38	Action 1304 1313	deposited
+T39	Modifier 1317 1334	sterile deionized
+T40	Reagent 1335 1340	water
+T41	Device 1345 1359	haemocytometer
+T42	Action 1376 1384	quantify
+T43	Reagent 1389 1416	water solution with conidia
+T44	Mention 1421 1423	it
+T45	Action 1437 1444	diluted
+T46	Generic-Measure 1467 1488	105 spores per ml - 1
+T47	Action 1491 1506	Create incision
+T48	Location 1514 1526	bottom right
+T49	Reagent 1530 1544	almond kernels
+T50	Device 1553 1588	B - D® 16G1 Precision Glide® Needle
+T51	Reagent 1744 1751	kernels
+T52	Action 1760 1770	sterilized
+T53	Action 1774 1784	submerging
+T54	Mention 1785 1789	them
+T55	Concentration 1793 1797	10 %
+T56	Reagent 1798 1813	bleach solution
+T57	Time 1830 1839	7 minutes
+T58	Reagent 1846 1853	kernels
+T59	Action 1867 1873	rinsed
+T60	Numerical 1874 1879	three
+T61	Modifier 1891 1898	sterile
+T62	Modifier 1899 1908	deionized
+T63	Reagent 1909 1914	water
+T64	Action 1927 1936	submerged
+T65	Reagent 1958 1976	Dichloran solution
+T66	Time 1981 1990	2 seconds
+T67	Action 1993 1999	Remove
+T68	Reagent 2000 2008	moisture
+T69	Location 2014 2021	surface
+T70	Reagent 2025 2032	almonds
+T71	Action 2036 2044	blotting
+T72	Mention 2045 2049	them
+T73	Action 2054 2058	move
+T74	Mention 2059 2063	them
+T75	Location 2069 2094	biological safety cabinet
+T76	Time 2111 2127	10 to 15 minutes
+T77	Action 2130 2139	Inoculate
+T78	Modifier 2140 2144	each
+T79	Reagent 2145 2151	almond
+T80	Amount 2157 2161	5 μl
+T81	Reagent 2169 2183	fungi solution
+T82	Reagent 2366 2373	almonds
+T83	Action 2397 2400	add
+T84	Modifier 2401 2410	deionized
+T85	Reagent 2411 2416	water
+T86	Location 2424 2433	container
+T87	Mention 2440 2444	they
+T88	Action 2461 2469	incubate
+T89	Mention 2470 2474	them
+T90	Time 2491 2497	7 days
+T91	Temperature 2518 2521	31°
+T92	Method 2522 2537	in a dark place
+T93	Action 2577 2581	wash
+T94	Reagent 2582 2589	almonds
+T95	Modifier 2595 2604	deionized
+T96	Reagent 2605 2610	water
+T97	Action 2614 2620	remove
+T98	Modifier 2621 2631	any traces
+T99	Reagent 2635 2647	fungi spores
+T100	Location 2657 2664	surface
+T101	Action 2667 2672	Place
+T102	Reagent 2673 2687	almond kernels
+T103	Device 2693 2702	fume hood
+T104	Time 2719 2727	12 hours
+T105	Action 2755 2759	keep
+T106	Reagent 2760 2767	kernels
+T107	Modifier 2773 2781	constant
+T108	Temperature 2797 2802	2.6°C
+T109	Action 2805 2809	Take
+T110	Reagent 2810 2816	almond
+T111	Action 2821 2824	put
+T112	Mention 2825 2827	it
+T113	Modifier 2828 2833	under
+T114	Device 2838 2855	spectrophotometer
+T115	Action 2863 2868	place
+T116	Device 2869 2885	black optic mask
+T117	Location 2893 2906	space between
+T118	Action 2919 2923	Scan
+T119	Location 2928 2935	surface
+T120	Reagent 2943 2956	almond kernel
+T121	Device 2967 2984	spectrophotometer
+T122	Modifier 2991 3006	each individual
+T123	Reagent 3007 3020	almond kernel
+T124	Action 3021 3025	take
+T125	Numerical 3026 3028	32
+T126	Measure-Type 3029 3034	scans
+T127	Location 3042 3046	face
+T128	Generic-Measure 3076 3093	400 nm to 2500 nm
+T129	Generic-Measure 3099 3105	2 - nm
+E1	Action:T2 Acts-on:T3
+E2	Action:T6 Measure-Type-Link:T7 Measure-Type-Link2:T8 Acts-on:T9 Acts-on2:E1
+E3	Action:T10 Acts-on:T11 Acts-on2:E2 Product:T13
+E4	Action:T14 Acts-on:T15 Acts-on2:T16 Acts-on3:E3
+E5	Action:T17 Acts-on:T18
+E6	Action:T19 Acts-on:T20 Acts-on2:E5 Acts-on3:E4
+E7	Action:T21 Acts-on:E6 Acts-on2:T22 Site:T23
+E8	Action:T24 Acts-on:T27 Acts-on2:E7
+E9	Action:T28 Acts-on:T30 Using:T33 Acts-on2:E25
+E10	Action:T35 Acts-on:T34 Using:T37 Acts-on2:E9
+E11	Action:T38 Site:T40 Acts-on:E10 Product:T43
+E12	Action:T42 Acts-on:T43 Using:T41
+E13	Action:T45 Acts-on:T44
+E14	Action:T47 Acts-on:E13 Site:T48 Acts-on2:T49 Using:T50 Acts-on3:T48 Site2:T49
+E15	Action:T52 Acts-on:T51 Product:E17
+E16	Action:T53 Acts-on:T54 Site:T56 Acts-on2:E14
+E17	Action:T59 Acts-on:T58 Count:T60 Using:T63
+E18	Action:T64 Acts-on:E17 Site:T65
+E19	Action:T67 Acts-on:T68 Site:T69 Acts-on2:E18 Site2:T70
+E20	Action:T71 Acts-on:T72
+E21	Action:T73 Acts-on:T74 Acts-on2:E20 Acts-on3:E19 Site:T75
+E22	Action:T77 Acts-on:E19 Acts-on2:T79 Using:T81 Product:T82
+E23	Action:T83 Acts-on:T85 Site:T86
+E24	Action:T88 Acts-on:T89 Acts-on2:E23 Using:T92 Product:T94
+E25	Action:T93 Acts-on:T94 Using:T96 Product:T102
+E26	Action:T97 Acts-on:T99 Site:T100
+E27	Action:T101 Acts-on:T102 Site:T103
+E28	Action:T105 Acts-on:E27 Acts-on2:T106
+E29	Action:T109 Acts-on:E28 Acts-on2:T110
+E30	Action:T111 Acts-on:E29 Acts-on2:T112 Site:T114
+E31	Action:T115 Acts-on:E30 Acts-on2:T116 Site:T117
+E32	Action:T118 Acts-on:E31 Acts-on2:T119 Using:T121
+E33	Action:T124 Count:T125 Measure-Type-Link:T126 Acts-on:T127 Acts-on2:E32
+R1	Measure Arg1:T56 Arg2:T55
+R2	Coreference-Link Arg1:T54 Arg2:T51
+R3	Setting Arg1:E16 Arg2:T57
+R4	Meronym Arg1:T69 Arg2:T70
+R5	Coreference-Link Arg1:T72 Arg2:T70
+R6	Mod-Link Arg1:E1 Arg2:T1
+R7	Mod-Link Arg1:T3 Arg2:T4
+R8	Mod-Link Arg1:T3 Arg2:T5
+R9	Measure Arg1:T13 Arg2:T12
+R10	Enables Arg1:E4 Arg2:E5
+R11	Coreference-Link Arg1:T22 Arg2:T20
+R12	Mod-Link Arg1:T27 Arg2:T26
+R13	Measure Arg1:T27 Arg2:T25
+R14	Mod-Link Arg1:T30 Arg2:T29
+R15	Setting Arg1:E9 Arg2:T31
+R16	Setting Arg1:E9 Arg2:T32
+R17	Mod-Link Arg1:T37 Arg2:T36
+R18	Mod-Link Arg1:T40 Arg2:T39
+R19	Coreference-Link Arg1:T44 Arg2:T43
+R20	Setting Arg1:E13 Arg2:T46
+R21	Enables Arg1:E16 Arg2:E15
+R22	Mod-Link Arg1:T63 Arg2:T62
+R23	Mod-Link Arg1:T63 Arg2:T61
+R24	Setting Arg1:E18 Arg2:T66
+R25	Meronym Arg1:T48 Arg2:T49
+R26	Coreference-Link Arg1:T74 Arg2:T70
+R27	Enables Arg1:E20 Arg2:E19
+R28	Setting Arg1:E21 Arg2:T76
+R29	Mod-Link Arg1:T79 Arg2:T78
+R30	Measure Arg1:T81 Arg2:T80
+R31	Coreference-Link Arg1:T87 Arg2:T82
+R32	Mod-Link Arg1:T85 Arg2:T84
+R33	Meronym Arg1:T86 Arg2:T87
+R34	Coreference-Link Arg1:T89 Arg2:T82
+R35	Setting Arg1:E24 Arg2:T90
+R36	Setting Arg1:E24 Arg2:T91
+R37	Mod-Link Arg1:T96 Arg2:T95
+R38	Enables Arg1:E25 Arg2:E26
+R39	Mod-Link Arg1:E26 Arg2:T98
+R40	Setting Arg1:E27 Arg2:T104
+R41	Setting Arg1:E28 Arg2:T108
+R42	Mod-Link Arg1:T108 Arg2:T107
+R43	Coreference-Link Arg1:T112 Arg2:T110
+R44	Mod-Link Arg1:T114 Arg2:T113
+R45	Meronym Arg1:T119 Arg2:T120
+R46	Meronym Arg1:T127 Arg2:T123
+R47	Setting Arg1:E33 Arg2:T128
+R48	Setting Arg1:E33 Arg2:T129
+R49	Mod-Link Arg1:E33 Arg2:T122

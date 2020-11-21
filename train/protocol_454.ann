@@ -1,0 +1,149 @@
+T1	Action 31 35	Spin
+T2	Amount 36 41	500ul
+T3	Reagent 45 67	bacteria broth culture
+T4	Speed 71 77	10000g
+T5	Time 82 92	10 minutes
+T6	Action 95 103	Pour off
+T7	Reagent 104 115	supernatant
+T8	Action 118 121	Add
+T9	Amount 122 127	200ul
+T10	Reagent 128 140	Lysis buffer
+T11	Amount 145 149	20ul
+T12	Reagent 150 162	Proteinase K
+T13	Action 165 171	Vortex
+T14	Time 176 186	15 seconds
+T15	Action 191 200	spin down
+T16	Action 203 211	Incubate
+T17	Temperature 215 219	56 C
+T18	Time 224 230	1 hour
+T19	Action 233 236	Add
+T20	Amount 237 242	200ul
+T21	Reagent 243 257	Binding Buffer
+T22	Amount 262 267	200ul
+T23	Reagent 268 275	Ethanol
+T24	Modifier 279 283	each
+T25	Reagent 284 290	sample
+T26	Action 293 299	Vortex
+T27	Time 304 314	15 seconds
+T28	Action 319 328	spin down
+T29	Action 331 339	Transfer
+T30	Amount 344 349	600ul
+T31	Reagent 353 359	sample
+T32	Location 365 376	spin column
+T33	Location 381 396	collection tube
+T34	Action 399 403	Spin
+T35	Speed 407 417	high speed
+T36	Time 422 430	1 minute
+T37	Action 433 440	Dispose
+T38	Reagent 444 456	flow through
+T39	Action 459 462	Add
+T40	Amount 463 468	500ul
+T41	Reagent 469 480	Wash Buffer
+T42	Action 483 487	Spin
+T43	Speed 491 501	high speed
+T44	Time 506 514	1 minute
+T45	Action 517 524	Dispose
+T46	Reagent 528 540	flow through
+T47	Action 543 546	Add
+T48	Amount 555 560	500ul
+T49	Reagent 561 572	Wash Buffer
+T50	Action 575 579	Spin
+T51	Speed 583 593	high speed
+T52	Time 598 606	1 minute
+T53	Action 609 614	Place
+T54	Location 619 630	spin column
+T55	Modifier 636 639	new
+T56	Location 640 655	collection tube
+T57	Action 658 662	Spin
+T58	Generic-Measure 666 670	high
+T59	Time 675 684	2 minutes
+T60	Action 687 692	Place
+T61	Location 697 708	spin column
+T62	Modifier 714 719	clean
+T63	Location 720 724	tube
+T64	Action 727 730	Add
+T65	Amount 731 736	100ul
+T66	Reagent 737 746	TE buffer
+T67	Action 749 757	Incubate
+T68	Temperature 761 763	RT
+T69	Time 768 777	2 minutes
+T70	Action 780 784	Spin
+T71	Speed 788 798	high speed
+T72	Time 803 811	1 minute
+T73	Action 814 817	Add
+T74	Modifier 818 825	another
+T75	Amount 826 831	100ul
+T76	Reagent 832 841	TE buffer
+T77	Action 844 852	Incubate
+T78	Temperature 856 858	RT
+T79	Time 863 871	1 minute
+T80	Action 874 878	Spin
+T81	Speed 882 892	high speed
+T82	Time 897 905	1 minute
+T83	Action 908 915	Discard
+T84	Location 916 927	spin column
+E1	Action:T1 Acts-on:T3 Product:T7
+E2	Action:T6 Acts-on:T7
+E3	Action:T8 Acts-on:T10 Acts-on2:T12 Acts-on3:T7
+E4	Action:T13 Acts-on:E3
+E5	Action:T15 
+E6	Action:T16 Product:T25 Acts-on:E4
+E7	Action:T19 Acts-on:T21 Acts-on2:T23 Site:T25
+E8	Action:T26 Acts-on:T25 Product:T31
+E9	Action:T28 
+E10	Action:T29 Acts-on:T31 Site:T32 Site2:T33
+E11	Action:T34 Acts-on:T31 Product:T38
+E12	Action:T37 Acts-on:T38
+E13	Action:T39 Acts-on:T41 Acts-on2:E12
+E14	Action:T42 Product:T46 Acts-on:E13
+E15	Action:T45 Acts-on:T46
+E16	Action:T47 Acts-on:T49 Acts-on2:E15
+E17	Action:T50 Acts-on:E16 Product:T54
+E18	Action:T53 Acts-on:T54 Site:T56
+E19	Action:T57 Acts-on:T56 Product:T61
+E20	Action:T60 Acts-on:T61 Site:T63
+E21	Action:T64 Acts-on:T66 Acts-on2:T63
+E22	Action:T67 Acts-on:T66
+E23	Action:T70 Acts-on:E22
+E24	Action:T73 Acts-on:T76 Acts-on2:E23
+E25	Action:T77 Acts-on:E24
+E26	Action:T80 Acts-on:E25
+E27	Action:T83 Acts-on:T84 Acts-on2:E26
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T4
+R3	Setting Arg1:E1 Arg2:T5
+R4	Measure Arg1:T10 Arg2:T9
+R5	Measure Arg1:T12 Arg2:T11
+R6	Setting Arg1:E4 Arg2:T14
+R7	Setting Arg1:E6 Arg2:T17
+R8	Setting Arg1:E6 Arg2:T18
+R9	Measure Arg1:T21 Arg2:T20
+R10	Measure Arg1:T23 Arg2:T22
+R11	Mod-Link Arg1:T25 Arg2:T24
+R12	Setting Arg1:E8 Arg2:T27
+R13	Measure Arg1:T31 Arg2:T30
+R14	Setting Arg1:E11 Arg2:T35
+R15	Setting Arg1:E11 Arg2:T36
+R16	Measure Arg1:T41 Arg2:T40
+R17	Setting Arg1:E14 Arg2:T43
+R18	Setting Arg1:E14 Arg2:T44
+R19	Measure Arg1:T49 Arg2:T48
+R20	Setting Arg1:E17 Arg2:T51
+R21	Setting Arg1:E17 Arg2:T52
+R22	Mod-Link Arg1:T56 Arg2:T55
+R23	Setting Arg1:E19 Arg2:T58
+R24	Setting Arg1:E19 Arg2:T59
+R25	Mod-Link Arg1:T63 Arg2:T62
+R26	Measure Arg1:T66 Arg2:T65
+R27	Setting Arg1:E22 Arg2:T68
+R28	Setting Arg1:E22 Arg2:T69
+R29	Setting Arg1:E23 Arg2:T71
+R30	Setting Arg1:E23 Arg2:T72
+R31	Measure Arg1:T76 Arg2:T75
+R32	Mod-Link Arg1:T76 Arg2:T74
+R33	Setting Arg1:E25 Arg2:T78
+R34	Setting Arg1:E25 Arg2:T79
+R35	Setting Arg1:E26 Arg2:T81
+R36	Setting Arg1:E26 Arg2:T82
+R37	Overlaps Arg1:E4 Arg2:E5
+R38	Overlaps Arg1:E8 Arg2:E9

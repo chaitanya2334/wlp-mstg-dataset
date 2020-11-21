@@ -1,0 +1,251 @@
+T1	Action 29 36	Collect
+T2	Reagent 37 42	cells
+T3	Action 47 57	centrifuge
+T4	Speed 61 69	1200 rpm
+T5	Time 74 83	5 minutes
+T6	Temperature 87 90	4°C
+T7	Action 93 97	Wash
+T8	Reagent 98 121	protein G agarose beads
+T9	Reagent 127 144	cell lysis buffer
+T10	Action 148 155	pulsing
+T11	Location 161 181	microcentrifuge tube
+T12	Time 184 195	two minutes
+T13	Speed 199 208	5,000 rpm
+T14	Action 213 221	Aspirate
+T15	Action 226 233	discard
+T16	Reagent 234 245	supernatant
+T17	Action 248 252	Wash
+T18	Reagent 257 262	beads
+T19	Reagent 268 284	celllysis buffer
+T20	Action 297 301	Wash
+T21	Reagent 306 311	beads
+T22	Reagent 317 333	celllysis buffer
+T23	Action 346 350	Wash
+T24	Reagent 355 360	beads
+T25	Reagent 366 382	celllysis buffer
+T26	Action 395 401	Adjust
+T27	Measure-Type 402 424	antibody concentration
+T28	Concentration 428 442	5 - 10 µg / ml
+T29	Reagent 446 449	PBS
+T30	Action 454 462	transfer
+T31	Amount 463 469	500 µl
+T32	Modifier 473 480	diluted
+T33	Reagent 481 489	antibody
+T34	Amount 493 502	5 - 10 µl
+T35	Reagent 506 519	agarose beads
+T36	Modifier 524 528	each
+T37	Reagent 529 535	sample
+T38	Action 538 543	Place
+T39	Reagent 548 580	antibody - protein G agarose mix
+T40	Device 586 592	shaker
+T41	Action 597 603	rotate
+T42	Temperature 607 610	4°C
+T43	Time 615 623	one hour
+T44	Action 626 635	Spin down
+T45	Reagent 640 655	protein G beads
+T46	Time 660 671	two minutes
+T47	Speed 675 684	5,000 rpm
+T48	Action 689 693	wash
+T49	Reagent 698 714	antibody - beads
+T50	Numerical 715 720	three
+T51	Reagent 732 749	cell lysis buffer
+T52	Action 752 759	Discard
+T53	Reagent 764 775	supernatant
+T54	Modifier 780 791	immediately
+T55	Action 792 795	add
+T56	Amount 796 802	800 µl
+T57	Modifier 806 816	ice - cold
+T58	Reagent 817 829	lysis buffer
+T59	Reagent 837 842	cells
+T60	Action 847 853	vortex
+T61	Action 861 869	incubate
+T62	Time 874 884	30 minutes
+T63	Reagent 888 891	ice
+T64	Action 894 900	Freeze
+T65	Action 905 909	thaw
+T66	Reagent 914 921	samples
+T67	Reagent 927 934	dry ice
+T68	Numerical 939 942	two
+T69	Action 958 966	sonicate
+T70	Time 971 981	15 seconds
+T71	Modifier 996 1000	full
+T72	Action 1001 1008	release
+T73	Reagent 1016 1024	proteins
+T74	Reagent 1034 1039	cells
+T75	Action 1042 1046	Spin
+T76	Reagent 1047 1054	lysates
+T77	Speed 1058 1068	14,000 rpm
+T78	Modifier 1074 1086	pre - cooled
+T79	Device 1087 1097	centrifuge
+T80	Time 1102 1112	10 minutes
+T81	Action 1117 1121	keep
+T82	Reagent 1126 1137	supernatant
+T83	Action 1140 1146	Adjust
+T84	Measure-Type 1151 1172	protein concentration
+T85	Reagent 1180 1191	supernatant
+T86	Concentration 1195 1208	1 - 2 mg / ml
+T87	Reagent 1214 1226	lysis buffer
+T88	Action 1229 1232	Mix
+T89	Amount 1233 1245	100 - 500 µl
+T90	Reagent 1249 1261	cell extract
+T91	Reagent 1267 1295	antibody - protein G agarose
+T92	Action 1300 1306	rotate
+T93	Reagent 1311 1318	samples
+T94	Temperature 1322 1325	4°C
+T95	Time 1336 1345	two hours
+T96	Action 1348 1355	Collect
+T97	Reagent 1360 1373	agarose beads
+T98	Action 1377 1384	pulsing
+T99	Device 1390 1410	microcentrifuge tube
+T100	Time 1413 1424	two minutes
+T101	Speed 1428 1437	5,000 rpm
+T102	Temperature 1440 1445	4°C )
+T103	Action 1448 1456	Aspirate
+T104	Action 1461 1468	discard
+T105	Reagent 1473 1484	supernatant
+T106	Action 1487 1491	Wash
+T107	Reagent 1496 1501	beads
+T108	Modifier 1507 1517	ice - cold
+T109	Reagent 1518 1535	cell lysis buffer
+T110	Action 1548 1552	Wash
+T111	Reagent 1557 1562	beads
+T112	Modifier 1568 1578	ice - cold
+T113	Reagent 1579 1596	cell lysis buffer
+T114	Action 1609 1613	Wash
+T115	Reagent 1618 1623	beads
+T116	Modifier 1629 1639	ice - cold
+T117	Reagent 1640 1657	cell lysis buffer
+T118	Action 1693 1699	remove
+T119	Reagent 1704 1715	supernatant
+T120	Action 1720 1723	add
+T121	Amount 1724 1729	20 µl
+T122	Concentration 1733 1735	2X
+T123	Reagent 1736 1755	SDS sample buffer .
+T124	Action 1756 1760	Load
+T125	Amount 1761 1766	30 µl
+T126	Reagent 1770 1776	sample
+T127	Location 1780 1789	each well
+T128	Size 1795 1801	1.5 mm
+T129	Reagent 1808 1811	gel
+T130	Action 1814 1817	Run
+T131	Reagent 1822 1825	gel
+T132	Method 1836 1868	tomanufacturer’s recommendations
+T133	Action 1887 1901	immunoblotting
+T134	Method 1908 1945	BioLegend’s Western Blotting protocol
+T135	Action 2079 2083	Boil
+T136	Time 2088 2097	5 minutes
+T137	Temperature 2101 2105	95°C
+T138	Modifier 2108 2117	Carefully
+T139	Action 2118 2129	pipette off
+T140	Reagent 2134 2145	supernatant
+T141	Action 2148 2157	Spin down
+T142	Reagent 2162 2167	beads
+T143	Speed 2171 2184	maximum speed
+T144	Device 2190 2205	microcentrifuge
+T145	Time 2210 2219	5 minutes
+T146	Temperature 2223 2239	room temperature
+E1	Action:T1 Acts-on:T2
+E2	Action:T3 Acts-on:E1 Product:T16 Product2:T37
+E3	Action:T7 Acts-on:T8 Using:T9 Product:T18
+E4	Action:T10 Site:T11 Acts-on:T8
+E5	Action:T14 Acts-on:T16
+E6	Action:T15 Acts-on:E5
+E7	Action:T17 Acts-on:T18 Using:T19 Product:T21
+E8	Action:T20 Acts-on:T21 Using:T22 Product:T24
+E9	Action:T23 Acts-on:T24 Using:T25 Product:T35
+E10	Action:T26 Measure-Type-Link:T27 Site:T29 Product:T33
+E11	Action:T30 Acts-on:T33 Site:T35 Product:T39
+E12	Action:T38 Acts-on:T39 Site:T40
+E13	Action:T41 Acts-on:E12 Product:T45
+E14	Action:T44 Acts-on:T45 Product:T49
+E15	Action:T48 Acts-on:T49 Count:T50 Using:T51 Product:T53
+E16	Action:T52 Acts-on:T53 Product:T59
+E17	Action:T55 Acts-on:T58 Site:T59
+E18	Action:T60 Acts-on:E17
+E19	Action:T61 Site:T63 Acts-on:E18 Product:T66
+E20	Action:T64 Acts-on:T66 Using:T67 Count:T68
+E21	Action:T65 Count:T68 Acts-on:E20
+E22	Action:T69 
+E23	Action:T72 Acts-on:T73 Site:T74 Product:T76
+E24	Action:T75 Acts-on:T76 Site:T79 Product:T82
+E25	Action:T81 Acts-on:T82 Product:T85
+E26	Action:T83 Measure-Type-Link:T84 Site:T85 Using:T87 Product:T90
+E27	Action:T88 Acts-on:T90 Acts-on2:T91 Product:T93
+E28	Action:T92 Acts-on:T93 Product:T97
+E29	Action:T96 Acts-on:T97 Product:T105
+E30	Action:T98 Site:T99 Acts-on:T97
+E31	Action:T103 Acts-on:T105
+E32	Action:T104 Acts-on:E31 Product:T107
+E33	Action:T106 Acts-on:T107 Using:T109 Product:T111
+E34	Action:T110 Acts-on:T111 Using:T113 Product:T115
+E35	Action:T114 Acts-on:T115 Using:T117 Product:T119
+E36	Action:T118 Acts-on:T119
+E37	Action:T120 Acts-on:T123 Site:E36 Product:T126
+E38	Action:T124 Acts-on:T126 Site:T127 Product:T131
+E39	Action:T130 Acts-on:T131 Using:T132
+E40	Action:T133 Using:T134 Acts-on:E39
+E41	Action:T135 Acts-on:E40 Product:T140
+E42	Action:T139 Acts-on:T140 Product:T142
+E43	Action:T141 Acts-on:T142 Site:T144
+R1	Setting Arg1:E2 Arg2:T4
+R2	Setting Arg1:E2 Arg2:T5
+R3	Setting Arg1:E2 Arg2:T6
+R4	Setting Arg1:E4 Arg2:T12
+R5	Setting Arg1:E4 Arg2:T13
+R6	Setting Arg1:E10 Arg2:T28
+R7	Mod-Link Arg1:T33 Arg2:T32
+R8	Measure Arg1:T33 Arg2:T31
+R9	Measure Arg1:T35 Arg2:T34
+R10	Setting Arg1:E13 Arg2:T42
+R11	Setting Arg1:E13 Arg2:T43
+R12	Setting Arg1:E14 Arg2:T46
+R13	Setting Arg1:E14 Arg2:T47
+R14	Mod-Link Arg1:E17 Arg2:T54
+R15	Mod-Link Arg1:T58 Arg2:T57
+R16	Measure Arg1:T58 Arg2:T56
+R17	Setting Arg1:E19 Arg2:T62
+R18	Setting Arg1:E22 Arg2:T70
+R19	Setting Arg1:E24 Arg2:T77
+R20	Mod-Link Arg1:T79 Arg2:T78
+R21	Setting Arg1:E24 Arg2:T80
+R22	Setting Arg1:E26 Arg2:T86
+R23	Measure Arg1:T90 Arg2:T89
+R24	Setting Arg1:E28 Arg2:T94
+R25	Setting Arg1:E28 Arg2:T95
+R26	Setting Arg1:E30 Arg2:T100
+R27	Setting Arg1:E30 Arg2:T101
+R28	Setting Arg1:E30 Arg2:T102
+R29	Mod-Link Arg1:T109 Arg2:T108
+R30	Mod-Link Arg1:T113 Arg2:T112
+R31	Mod-Link Arg1:T117 Arg2:T116
+R32	Measure Arg1:T123 Arg2:T122
+R33	Measure Arg1:T123 Arg2:T121
+R34	Measure Arg1:T126 Arg2:T125
+R35	Measure Arg1:T129 Arg2:T128
+R36	Meronym Arg1:T127 Arg2:T129
+R37	Setting Arg1:E41 Arg2:T136
+R38	Setting Arg1:E41 Arg2:T137
+R39	Mod-Link Arg1:E42 Arg2:T138
+R40	Setting Arg1:E43 Arg2:T143
+R41	Setting Arg1:E43 Arg2:T145
+R42	Setting Arg1:E43 Arg2:T146
+R43	Enables Arg1:E4 Arg2:E3
+R44	Coreference-Link Arg1:T19 Arg2:T9
+R45	Coreference-Link Arg1:T22 Arg2:T19
+R46	Coreference-Link Arg1:T25 Arg2:T22
+R47	Coreference-Link Arg1:T51 Arg2:T25
+R48	Mod-Link Arg1:T37 Arg2:T36
+R49	Meronym Arg1:T35 Arg2:T37
+R50	Coreference-Link Arg1:T58 Arg2:T51
+R51	Or Arg1:E21 Arg2:E22
+R52	Or Arg1:E20 Arg2:E22
+R53	Enables Arg1:E22 Arg2:E23
+R54	Enables Arg1:E21 Arg2:E23
+R55	Enables Arg1:E20 Arg2:E23
+R56	Mod-Link Arg1:E23 Arg2:T71
+R57	Meronym Arg1:T73 Arg2:T74
+R58	Meronym Arg1:T73 Arg2:T66
+R59	Coreference-Link Arg1:T87 Arg2:T58
+R60	Enables Arg1:E30 Arg2:E29
+R61	Coreference-Link Arg1:T113 Arg2:T109
+R62	Coreference-Link Arg1:T117 Arg2:T113

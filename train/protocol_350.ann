@@ -1,0 +1,114 @@
+T1	Action 60 64	Thaw
+T2	Amount 69 87	appropriate amount
+T3	Reagent 91 106	competent cells
+T4	Location 110 113	ice
+T5	Action 116 127	Pre - chill
+T6	Amount 132 147	required number
+T7	Modifier 151 156	empty
+T8	Size 157 163	1.5 ml
+T9	Location 164 185	microcentrifuge tubes
+T10	Action 188 193	Pipet
+T11	Amount 194 200	100 µl
+T12	Reagent 201 209	aliquots
+T13	Reagent 213 218	cells
+T14	Modifier 228 241	pre - chilled
+T15	Location 242 247	tubes
+T16	Action 250 253	Add
+T17	Amount 254 263	5 - 10 µl
+T18	Reagent 269 290	ligation reaction mix
+T19	Amount 294 298	5 ng
+T20	Reagent 302 318	pure plasmid DNA
+T21	Amount 322 326	each
+T22	Location 327 331	tube
+T23	Action 334 337	Mix
+T24	Modifier 338 344	gently
+T25	Action 347 355	Incubate
+T26	Location 360 365	tubes
+T27	Location 369 372	ice
+T28	Time 377 383	30 min
+T29	Action 386 396	Heat shock
+T30	Reagent 401 406	cells
+T31	Time 411 417	45 sec
+T32	Temperature 421 425	42°C
+T33	Action 428 433	Place
+T34	Location 438 443	tubes
+T35	Modifier 444 455	immediately
+T36	Location 459 462	ice
+T37	Time 476 481	2 min
+T38	Action 484 487	Add
+T39	Amount 488 495	1000 µl
+T40	Reagent 499 509	SOC medium
+T41	Amount 513 517	each
+T42	Location 518 522	tube
+T43	Action 527 535	incubate
+T44	Time 540 546	1 hour
+T45	Temperature 550 554	37°C
+T46	Action 560 567	shaking
+T47	Action 570 578	Transfer
+T48	Reagent 583 591	cultures
+T49	Size 595 601	1.5 ml
+T50	Location 602 623	microcentrifuge tubes
+T51	Action 628 632	spin
+T52	Time 637 642	1 min
+T53	Speed 646 657	10000 x g .
+T54	Action 658 664	Remove
+T55	Amount 665 671	800 µl
+T56	Reagent 679 690	supernatant
+T57	Action 695 704	resuspend
+T58	Reagent 709 715	pellet
+T59	Action 718 727	Plate out
+T60	Reagent 732 742	suspension
+T61	Location 748 761	LB agar plate
+T62	Reagent 777 799	appropriate antibiotic
+T63	Action 802 810	Incubate
+T64	Location 815 821	plates
+T65	Time 822 831	overnight
+T66	Temperature 835 839	37°C
+E1	Action:T1 Acts-on:T3 Site:T4 Product:T13
+E2	Action:T5 Acts-on:T9 Product:T15
+E3	Action:T10 Acts-on:T12 Site:T15 Product:T22
+E4	Action:T16 Acts-on:T18 Site:T22
+E5	Action:T23 Acts-on:E4 Product:T26
+E6	Action:T25 Acts-on:T26 Site:T27 Product:T30
+E7	Action:T29 Acts-on:T30 Product:T34
+E8	Action:T33 Acts-on:T34 Site:T36 Product:T42
+E9	Action:T38 Acts-on:T40 Site:T42
+E10	Action:T43 Acts-on:E9 Product:T48
+E11	Action:T46 Acts-on:E9 Product:T48
+E12	Action:T47 Acts-on:T48 Site:T50
+E13	Action:T51 Acts-on:E12 Product:T56
+E14	Action:T54 Acts-on:T56 Product:T58
+E15	Action:T57 Acts-on:T58 Product:T60
+E16	Action:T59 Acts-on:T60 Site:T61 Product:T64
+E17	Action:T63 Acts-on:T64
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T9 Arg2:T8
+R3	Mod-Link Arg1:T9 Arg2:T7
+R4	Measure Arg1:T9 Arg2:T6
+R5	Measure Arg1:T12 Arg2:T11
+R6	Meronym Arg1:T13 Arg2:T12
+R7	Mod-Link Arg1:T15 Arg2:T14
+R8	Measure Arg1:T18 Arg2:T17
+R9	Or Arg1:T18 Arg2:T20
+R10	Measure Arg1:T20 Arg2:T19
+R11	Measure Arg1:T22 Arg2:T21
+R12	Setting Arg1:E6 Arg2:T28
+R13	Mod-Link Arg1:E8 Arg2:T35
+R14	Setting Arg1:E8 Arg2:T37
+R15	Measure Arg1:T40 Arg2:T39
+R16	Measure Arg1:T42 Arg2:T41
+R17	Setting Arg1:E10 Arg2:T44
+R18	Setting Arg1:E10 Arg2:T45
+R19	Measure Arg1:T50 Arg2:T49
+R20	Setting Arg1:E13 Arg2:T52
+R21	Setting Arg1:E13 Arg2:T53
+R22	Measure Arg1:T56 Arg2:T55
+R23	Meronym Arg1:T62 Arg2:T61
+R24	Setting Arg1:E17 Arg2:T65
+R25	Setting Arg1:E17 Arg2:T66
+R26	Mod-Link Arg1:E5 Arg2:T24
+R27	Coreference-Link Arg1:T4 Arg2:T27
+R28	Setting Arg1:E7 Arg2:T31
+R29	Setting Arg1:E7 Arg2:T32
+R30	Coreference-Link Arg1:T27 Arg2:T36
+R31	Overlaps Arg1:E11 Arg2:E10

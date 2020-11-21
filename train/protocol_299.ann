@@ -1,0 +1,196 @@
+T1	Device 78 92	flow cytometry
+T2	Action 96 103	measure
+T3	Measure-Type 104 123	cell concentrations
+T4	Reagent 127 150	cyanobacterial cultures
+T5	Method 156 162	Step 2
+T6	Reagent 169 182	SYBR staining
+T7	Action 221 230	determine
+T8	Measure-Type 231 244	concentration
+T9	Modifier 248 265	your concentrated
+T10	Reagent 266 278	viral lysate
+T11	Method 284 292	Step 1 .
+T12	Action 293 302	Calculate
+T13	Measure-Type 303 310	volumes
+T14	Reagent 314 319	cells
+T15	Reagent 322 327	phage
+T16	Reagent 332 337	media
+T17	Modifier 778 785	quickly
+T18	Modifier 797 804	sterile
+T19	Method 805 814	technique
+T20	Action 842 848	mixing
+T21	Amount 849 856	volumes
+T22	Reagent 885 890	media
+T23	Reagent 893 898	cells
+T24	Reagent 905 910	phage
+T25	Action 919 922	add
+T26	Modifier 923 934	appropriate
+T27	Amount 935 941	volume
+T28	Modifier 945 952	sterile
+T29	Reagent 953 959	medium
+T30	Location 968 995	experimental culture vessel
+T31	Modifier 1006 1013	sterile
+T32	Amount 1014 1019	250ml
+T33	Location 1020 1041	polycarbonate bottles
+T34	Action 1070 1073	add
+T35	Reagent 1074 1079	cells
+T36	Modifier 1115 1125	uninfected
+T37	Location 1126 1141	control bottles
+T38	Action 1144 1147	add
+T39	Reagent 1148 1154	lysate
+T40	Modifier 1169 1177	filtered
+T41	Action 1181 1187	remove
+T42	Reagent 1188 1203	phage particles
+T43	Action 1549 1552	add
+T44	Reagent 1553 1558	phage
+T45	Location 1568 1586	respective bottles
+T46	Action 1628 1631	Mix
+T47	Location 1632 1639	bottles
+T48	Modifier 1643 1649	gentle
+T49	Method 1650 1659	vortexing
+T50	Action 1662 1668	Sample
+T51	Modifier 1669 1680	immediately
+T52	Measure-Type 1685 1691	time 0
+T53	Action 1790 1795	Place
+T54	Location 1796 1803	bottles
+T55	Device 1807 1816	incubator
+T56	Time 1817 1838	until next time point
+T57	Action 1841 1847	Repeat
+T58	Method 1848 1866	sampling in Step 5
+T59	Time 1902 1913	1 - 2 hours
+T60	Modifier 1916 1939	until lysis is complete
+T61	Action 1942 1949	Prepare
+T62	Reagent 1950 1955	cells
+T63	Action 1972 1979	Grow up
+T64	Amount 1980 2006	sufficiently large volumes
+T65	Reagent 2010 2015	cells
+T66	Action 2159 2165	bubble
+T67	Reagent 2166 2178	your culture
+T68	Device 2187 2200	aquarium pump
+T69	Device 2232 2246	diffuser stone
+T70	Action 2252 2259	prevent
+T71	Reagent 2260 2263	CO2
+T72	Method 2264 2274	limitation
+T73	Action 2277 2284	Prepare
+T74	Reagent 2285 2300	phage stockGrow
+T75	Time 2306 2319	day minus - 8
+T76	Action 2322 2325	add
+T77	Reagent 2326 2337	phage stock
+T78	Amount 2341 2343	4L
+T79	Reagent 2347 2362	mid - log cells
+T80	Action 2366 2371	start
+T81	Method 2376 2385	infection
+T82	Action 2442 2449	monitor
+T83	Time 2460 2466	a week
+T84	Modifier 2467 2491	until the culture clears
+T85	Action 2569 2579	centrifuge
+T86	Modifier 2584 2591	cleared
+T87	Reagent 2592 2599	culture
+T88	Speed 2602 2611	max speed
+T89	Time 2614 2620	10 min
+T90	Action 2626 2632	remove
+T91	Reagent 2633 2650	large cell debris
+T92	Reagent 2655 2668	unlysed cells
+T93	Action 2671 2675	Pour
+T94	Reagent 2676 2687	supernatant
+T95	Modifier 2714 2724	disposable
+T96	Modifier 2725 2732	sterile
+T97	Device 2733 2756	vacuum filtration units
+T98	Size 2770 2775	0.2µm
+T99	Device 2776 2786	PES filter
+T100	Action 2789 2796	discard
+T101	Reagent 2801 2807	pellet
+T102	Reagent 2819 2830	cell debris
+T103	Action 2833 2840	Connect
+T104	Location 2844 2857	vacuum source
+T105	Action 2862 2868	filter
+T106	Reagent 2873 2879	lysate
+T107	Action 2882 2886	save
+T108	Reagent 2887 2895	filtrate
+T109	Reagent 2912 2927	phage particles
+T110	Action 2944 2955	Concentrate
+T111	Modifier 2961 2970	clarified
+T112	Reagent 2971 2983	phage lysate
+T113	Concentration 2990 3012	VivaFlow Concentration
+T114	Reagent 3016 3028	Phage Lysate
+T115	Action 3039 3050	concentrate
+T116	Reagent 3055 3066	phage stock
+T117	Action 3073 3081	exchange
+T118	Reagent 3082 3097	buffers / media
+T119	Concentration 3188 3208	Amicon Concentration
+T120	Reagent 3212 3219	Viruses
+E1	Action:T2 Using:T1 Measure-Type-Link:T3 Acts-on:T4 Using2:T5 Product:T14
+E2	Action:T7 Using:T6 Measure-Type-Link:T8 Acts-on:T10 Using2:T11 Product:T15
+E3	Action:T12 Measure-Type-Link:T13 Acts-on:T14 Acts-on2:T15 Acts-on3:T16 Product:T22 Product2:T23 Product3:T24
+E4	Action:T20 Acts-on:T22 Acts-on2:T23 Acts-on3:T24 Using:T19 Product:T35
+E5	Action:T25 Acts-on:T29 Site:T30
+E6	Action:T34 Acts-on:T35 Site:E5 Product:T37
+E7	Action:T38 Acts-on:T39 Site:T37 Product:T45
+E8	Action:T41 Acts-on:T42 Product:T39
+E9	Action:T43 Acts-on:T44 Site:T45 Product:T47
+E10	Action:T46 Acts-on:T47 Using:T49
+E11	Action:T50 Measure-Type-Link:T52 Acts-on:E10 Product:T54
+E12	Action:T53 Acts-on:T54 Site:T55
+E13	Action:T57 Using:T58 Acts-on:E12
+E14	Action:T61 Product:T62
+E15	Action:T63 Acts-on:T65
+E16	Action:T66 Acts-on:T67 Using:T68
+E17	Action:T70 Acts-on:T71 Using:T72 Product:T79
+E18	Action:T73 Product:T74
+E19	Action:T76 Acts-on:T77 Site:T79
+E20	Action:T80 Using:T81
+E21	Action:T82 Acts-on:E20 Product:T87
+E22	Action:T85 Acts-on:T87
+E23	Action:T90 Acts-on:T91 Acts-on2:T92 Product:T94
+E24	Action:T93 Acts-on:T94 Site:T97 Product:T101
+E25	Action:T100 Acts-on:T101
+E26	Action:T103 Site:T104 Acts-on:E25 Product:T106
+E27	Action:T105 Acts-on:T106 Product:T108
+E28	Action:T107 Acts-on:T108 Product:T112
+E29	Action:T110 Acts-on:T112 Using:T114 Product:T116
+E30	Action:T115 Acts-on:T116 Product:T118
+E31	Action:T117 Acts-on:T118 Using:T120
+R1	Measure Arg1:T22 Arg2:T21
+R2	Measure Arg1:T23 Arg2:T21
+R3	Measure Arg1:T24 Arg2:T21
+R4	Mod-Link Arg1:E4 Arg2:T18
+R5	Mod-Link Arg1:E4 Arg2:T17
+R6	Mod-Link Arg1:T27 Arg2:T26
+R7	Mod-Link Arg1:T29 Arg2:T28
+R8	Measure Arg1:T29 Arg2:T27
+R9	Measure Arg1:T33 Arg2:T32
+R10	Mod-Link Arg1:T33 Arg2:T31
+R11	Mod-Link Arg1:T39 Arg2:T40
+R12	Mod-Link Arg1:T37 Arg2:T36
+R13	Setting Arg1:E13 Arg2:T59
+R14	Measure Arg1:T65 Arg2:T64
+R15	Meronym Arg1:T68 Arg2:T69
+R16	Setting Arg1:E19 Arg2:T75
+R17	Measure Arg1:T79 Arg2:T78
+R18	Setting Arg1:E21 Arg2:T83
+R19	Mod-Link Arg1:T87 Arg2:T86
+R20	Setting Arg1:E22 Arg2:T88
+R21	Setting Arg1:E22 Arg2:T89
+R22	Mod-Link Arg1:T97 Arg2:T96
+R23	Mod-Link Arg1:T97 Arg2:T95
+R24	Setting Arg1:T99 Arg2:T98
+R25	Meronym Arg1:T99 Arg2:T97
+R26	Meronym Arg1:T102 Arg2:T101
+R27	Meronym Arg1:T109 Arg2:T108
+R28	Measure Arg1:T114 Arg2:T113
+R29	Mod-Link Arg1:T112 Arg2:T111
+R30	Measure Arg1:T120 Arg2:T119
+R31	Mod-Link Arg1:T10 Arg2:T9
+R32	Meronym Arg1:T33 Arg2:T30
+R33	Mod-Link Arg1:E10 Arg2:T48
+R34	Mod-Link Arg1:E11 Arg2:T51
+R35	Setting Arg1:E12 Arg2:T56
+R36	Mod-Link Arg1:E13 Arg2:T60
+R37	Enables Arg1:E15 Arg2:E14
+R38	Coreference-Link Arg1:T67 Arg2:T62
+R39	Prevents Arg1:E16 Arg2:E17
+R40	Enables Arg1:E19 Arg2:E18
+R41	Enables Arg1:E19 Arg2:E20
+R42	Mod-Link Arg1:E21 Arg2:T84
+R43	Enables Arg1:E22 Arg2:E23
+R44	Meronym Arg1:T91 Arg2:T87
+R45	Meronym Arg1:T92 Arg2:T87

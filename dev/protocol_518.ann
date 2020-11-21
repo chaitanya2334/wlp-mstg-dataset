@@ -1,0 +1,101 @@
+T1	Action 259 265	Pellet
+T2	Reagent 270 285	harvested cells
+T3	Method 289 303	centrifugation
+T4	Speed 307 316	~ 800 x g
+T5	Time 321 329	1 minute
+T6	Action 342 348	remove
+T7	Action 353 360	discard
+T8	Reagent 365 376	supernatant
+T9	Action 379 382	Add
+T10	Amount 383 388	500µl
+T11	Temperature 392 400	ice cold
+T12	Reagent 401 419	SubCell Buffer - I
+T13	Action 429 435	vortex
+T14	Reagent 451 456	cells
+T15	Action 461 469	incubate
+T16	Temperature 473 476	ice
+T17	Time 481 491	10 minutes
+T18	Size 552 560	20 gauge
+T19	Device 563 577	syringe needle
+T20	Action 587 591	pull
+T21	Reagent 596 606	suspension
+T22	Numerical 619 632	10 - 30 times
+T23	Action 717 720	Add
+T24	Amount 721 726	250µl
+T25	Concentration 727 729	3X
+T26	Reagent 730 749	SubCell Buffer - II
+T27	Action 794 797	mix
+T28	Method 801 810	inverting
+T29	Action 878 888	Centrifuge
+T30	Location 893 897	tube
+T31	Speed 901 907	700x g
+T32	Time 912 922	10 minutes
+T33	Action 946 954	Transfer
+T34	Reagent 959 970	supernatant
+T35	Location 980 984	tube
+T36	Action 987 997	Centrifuge
+T37	Reagent 998 1009	supernatant
+T38	Speed 1013 1022	12,000x g
+T39	Time 1027 1037	15 minutes
+T40	Action 1075 1083	Transfer
+T41	Reagent 1088 1099	supernatant
+T42	Location 1130 1134	tube
+T43	Action 1137 1140	Add
+T44	Amount 1141 1146	500µl
+T45	Concentration 1147 1149	1X
+T46	Reagent 1150 1169	SubCell Buffer - II
+T47	Reagent 1177 1183	pellet
+T48	Action 1190 1200	centrifuge
+T49	Speed 1210 1220	12,000 x g
+T50	Time 1225 1234	5 minutes
+T51	Action 1237 1244	Discard
+T52	Reagent 1249 1260	supernatant
+T53	Action 1263 1270	Suspend
+T54	Reagent 1275 1295	mitochondrial pellet
+T55	Amount 1299 1309	50 - 100µl
+T56	Reagent 1312 1347	Working Mitochondria Storage Buffer
+T57	Action 1352 1356	keep
+T58	Reagent 1361 1371	suspension
+T59	Temperature 1375 1378	ice
+T60	Action 1432 1438	stored
+T61	Temperature 1442 1445	ice
+T62	Time 1456 1464	48 hours
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T8
+E2	Action:T6 Acts-on:T8
+E3	Action:T7 Acts-on:T8
+E4	Action:T9 Acts-on:T12 Acts-on2:E2
+E5	Action:T13 Acts-on:T14 Acts-on2:E4
+E6	Action:T15 Acts-on:E5
+E7	Action:T20 Acts-on:T21 Count:T22 Using:T19 Acts-on2:E6
+E8	Action:T23 Acts-on:T26 Acts-on2:E7
+E9	Action:T27 Using:T28 Acts-on:E8 Product:T30
+E10	Action:T29 Acts-on:T30 Product:T34
+E11	Action:T33 Acts-on:T34 Site:T35 Product:T37
+E12	Action:T36 Acts-on:T37 Product:T41
+E13	Action:T40 Acts-on:T41 Site:T42
+E14	Action:T43 Acts-on:T46 Site:T47 Acts-on2:E13
+E15	Action:T48 Acts-on:E14 Product:T52
+E16	Action:T51 Acts-on:T52
+E17	Action:T53 Acts-on:T54 Using:T56 Product:T58 Acts-on2:E16
+E18	Action:T57 Acts-on:T58
+E19	Action:T60 Acts-on:E18
+R1	Setting Arg1:E1 Arg2:T4
+R2	Setting Arg1:E1 Arg2:T5
+R3	Measure Arg1:T12 Arg2:T10
+R4	Setting Arg1:E4 Arg2:T11
+R5	Setting Arg1:E6 Arg2:T16
+R6	Setting Arg1:E6 Arg2:T17
+R7	Measure Arg1:T19 Arg2:T18
+R8	Measure Arg1:T26 Arg2:T25
+R9	Measure Arg1:T26 Arg2:T24
+R10	Setting Arg1:E10 Arg2:T31
+R11	Setting Arg1:E10 Arg2:T32
+R12	Setting Arg1:E12 Arg2:T38
+R13	Setting Arg1:E12 Arg2:T39
+R14	Measure Arg1:T46 Arg2:T45
+R15	Measure Arg1:T46 Arg2:T44
+R16	Setting Arg1:E15 Arg2:T49
+R17	Setting Arg1:E15 Arg2:T50
+R18	Setting Arg1:E18 Arg2:T59
+R19	Setting Arg1:E19 Arg2:T61
+R20	Setting Arg1:E19 Arg2:T62

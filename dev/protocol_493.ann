@@ -1,0 +1,76 @@
+T1	Action 47 51	Thaw
+T2	Amount 52 60	20–50 mg
+T3	Reagent 64 70	tissue
+T4	Amount 74 78	15CM
+T5	Reagent 79 89	dish cells
+T6	Amount 93 97	1 mL
+T7	Modifier 101 105	high
+T8	Location 106 117	salt buffer
+T9	Action 120 130	Homogenize
+T10	Reagent 131 138	tissues
+T11	Device 148 172	IKA Ultra Turbax blender
+T12	Speed 192 202	∼25,000rpm
+T13	Time 209 213	30 s
+T14	Action 216 231	Ultracentrifuge
+T15	Reagent 236 246	suspension
+T16	Device 250 265	Beckman MLA 130
+T17	Speed 269 278	100,000 g
+T18	Time 283 289	10 min
+T19	Location 296 301	tubes
+T20	Action 312 320	balanced
+T21	Modifier 337 346	less than
+T22	Numerical 347 352	50 mg
+T23	Action 355 362	Discard
+T24	Reagent 367 378	supernatant
+T25	Action 383 393	homogenize
+T26	Reagent 394 401	pellets
+T27	Amount 405 409	1 mL
+T28	Location 413 429	carbonate buffer
+T29	Method 436 442	step 2
+T30	Action 445 453	Incubate
+T31	Time 458 464	30 min
+T32	Modifier 470 476	gentle
+T33	Method 477 483	mixing
+T34	Action 486 493	Collect
+T35	Modifier 498 511	non - soluble
+T36	Reagent 512 520	material
+T37	Method 524 538	centrifugation
+T38	Device 545 551	step 3
+T39	Action 729 736	Discard
+T40	Reagent 737 748	supernatant
+T41	Action 753 762	resuspend
+T42	Reagent 763 770	pellets
+T43	Location 774 785	wash buffer
+T44	Method 792 798	step 2
+T45	Action 801 808	Collect
+T46	Modifier 813 818	crude
+T47	Reagent 819 828	membranes
+T48	Method 832 846	centrifugation
+T49	Device 853 859	step 3
+E1	Action:T1 Acts-on:T3 Site:T8 Product:T10
+E2	Action:T9 Acts-on:T10 Using:T11 Product:T15
+E3	Action:T14 Acts-on:T15 Site:T16
+E4	Action:T20 Acts-on:T19 Acts-on2:E3 Product:T24
+E5	Action:T23 Acts-on:T24 Product:T26
+E6	Action:T25 Acts-on:T26 Site:T28 Using:T29
+E7	Action:T30 Acts-on:E6 Product:T36 Using:T33
+E8	Action:T34 Acts-on:T36 Using:T37 Site:T38 Product:T40
+E9	Action:T39 Acts-on:T40
+E10	Action:T41 Acts-on:T42 Site:T43 Using:T44 Acts-on2:E9 Product:T47
+E11	Action:T45 Acts-on:T47 Site:T49 Using:T48
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T12
+R3	Setting Arg1:E2 Arg2:T13
+R4	Or Arg1:T3 Arg2:T5
+R5	Measure Arg1:T5 Arg2:T4
+R6	Mod-Link Arg1:T8 Arg2:T7
+R7	Measure Arg1:T8 Arg2:T6
+R8	Setting Arg1:E3 Arg2:T17
+R9	Setting Arg1:E3 Arg2:T18
+R10	Measure Arg1:T28 Arg2:T27
+R11	Setting Arg1:E7 Arg2:T31
+R12	Mod-Link Arg1:T36 Arg2:T35
+R13	Mod-Link Arg1:T47 Arg2:T46
+R14	Mod-Link Arg1:E4 Arg2:T21
+R15	Setting Arg1:E4 Arg2:T22
+R16	Mod-Link Arg1:E7 Arg2:T32

@@ -1,0 +1,59 @@
+T1	Action 27 30	Add
+T2	Amount 31 40	2 volumes
+T3	Temperature 44 52	ice cold
+T4	Reagent 53 60	ethanol
+T5	Action 63 66	mix
+T6	Modifier 67 71	well
+T7	Action 74 81	Let sit
+T8	Temperature 85 88	ice
+T9	Time 89 104	15 - 30 minutes
+T10	Action 107 116	Microfuge
+T11	Speed 120 129	max speed
+T12	Time 132 142	20 minutes
+T13	Action 155 161	remove
+T14	Reagent 162 173	supernatant
+T15	Action 178 182	fill
+T16	Location 183 187	tube
+T17	Generic-Measure 188 195	halfway
+T18	Concentration 201 205	70 %
+T19	Reagent 206 213	ethanol
+T20	Action 216 220	Spin
+T21	Speed 224 233	max speed
+T22	Time 238 247	2 minutes
+T23	Action 250 256	Repeat
+T24	Numerical 272 280	one time
+T25	Action 301 307	Remove
+T26	Reagent 316 323	ethanol
+T27	Location 372 376	tube
+T28	Action 377 381	open
+T29	Location 385 390	bench
+T30	Time 391 403	~ 15 minutes
+T31	Action 406 414	Dissolve
+T32	Reagent 418 427	TE buffer
+T33	Measure-Type 432 434	pH
+T34	Numerical 435 438	7.6
+E1	Action:T1 Acts-on:T4
+E2	Action:T5 Acts-on:T4
+E3	Action:T7 Acts-on:E2
+E4	Action:T10 Acts-on:E3 Product:T14
+E5	Action:T13 Acts-on:T14
+E6	Action:T15 Using:T19 Site:T16 Acts-on:E5
+E7	Action:T20 Acts-on:E6
+E8	Action:T23 Count:T24 Acts-on:E7 Product:T26
+E9	Action:T25 Acts-on:T26
+E10	Action:T28 Acts-on:T27 Site:T29 Acts-on2:E9
+E11	Action:T31 Using:T32 Acts-on:E10
+R1	Setting Arg1:E1 Arg2:T3
+R2	Measure Arg1:T4 Arg2:T2
+R3	Mod-Link Arg1:E2 Arg2:T6
+R4	Setting Arg1:E3 Arg2:T8
+R5	Setting Arg1:E3 Arg2:T9
+R6	Setting Arg1:E4 Arg2:T11
+R7	Setting Arg1:E4 Arg2:T12
+R8	Measure Arg1:T16 Arg2:T17
+R9	Measure Arg1:T19 Arg2:T18
+R10	Setting Arg1:E7 Arg2:T21
+R11	Setting Arg1:E7 Arg2:T22
+R12	Setting Arg1:E10 Arg2:T30
+R13	Of-Type Arg1:T34 Arg2:T33
+R14	Setting Arg1:E11 Arg2:T34
