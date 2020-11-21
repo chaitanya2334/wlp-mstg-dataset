@@ -1,0 +1,202 @@
+T1	Action 52 56	Pull
+T2	Reagent 57 77	Roseobacter cultures
+T3	Location 83 89	freeze
+T4	Action 94 98	grow
+T5	Amount 102 106	5 ml
+T6	Reagent 107 121	broth cultures
+T7	Action 124 131	Perform
+T8	Method 132 147	virus screening
+T9	Modifier 151 158	sterile
+T10	Size 159 166	96 well
+T11	Location 167 221	flat - bottom tissue culture treated microtiter plates
+T12	Action 224 229	Store
+T13	Reagent 230 248	seawater filtrates
+T14	Temperature 252 255	4°C
+T15	Action 258 264	Absorb
+T16	Reagent 269 276	viruses
+T17	Reagent 284 292	bacteria
+T18	Action 295 300	Place
+T19	Amount 301 306	15 µl
+T20	Reagent 310 325	log phase cells
+T21	Amount 330 335	15 µl
+T22	Reagent 339 356	seawater filtrate
+T23	Modifier 359 375	containing virus
+T24	Location 383 388	wells
+T25	Size 394 401	96 well
+T26	Location 402 407	plate
+T27	Reagent 420 427	viruses
+T28	Action 431 437	absorb
+T29	Reagent 445 453	bacteria
+T30	Time 458 464	1 hour
+T31	Action 467 470	Add
+T32	Amount 471 477	200 µl
+T33	Reagent 478 490	growth media
+T34	Location 523 528	wells
+T35	Action 531 535	Seal
+T36	Location 540 545	plate
+T37	Seal 551 559	parafilm
+T38	Action 564 585	incubate with shaking
+T39	Action 588 596	Look for
+T40	Modifier 597 605	infected
+T41	Location 606 611	wells
+T42	Modifier 612 665	that show lysis with respect to uninoculated controls
+T43	Reagent 679 686	viruses
+T44	Action 690 702	transferring
+T45	Modifier 703 707	from
+T46	Size 716 723	96 well
+T47	Location 724 729	plate
+T48	Modifier 730 732	to
+T49	Size 741 750	96 - well
+T50	Location 751 756	plate
+T51	Reagent 768 786	fresh liquid media
+T52	Action 848 858	filter out
+T53	Reagent 859 864	cells
+T54	Amount 870 875	0.2um
+T55	Device 876 886	filtration
+T56	Size 892 897	1.5ml
+T57	Location 898 913	microfuge tubes
+T58	Action 914 918	Spin
+T59	Time 923 929	5 mins
+T60	Speed 935 938	max
+T61	Action 957 965	Transfer
+T62	Reagent 966 977	supernatant
+T63	Location 981 991	fresh tube
+T64	Action 1006 1011	Store
+T65	Temperature 1015 1018	4°C
+T66	Action 1063 1070	growing
+T67	Reagent 1071 1076	cells
+T68	Reagent 1082 1087	virus
+T69	Reagent 1091 1102	solid media
+T70	Action 1105 1112	Prepare
+T71	Reagent 1113 1129	solid agar media
+T72	Concentration 1134 1139	0.5 %
+T73	Reagent 1140 1152	overlay agar
+T74	Action 1155 1161	Absorb
+T75	Amount 1205 1210	25 µl
+T76	Reagent 1211 1216	virus
+T77	Size 1222 1229	96 well
+T78	Location 1230 1235	plate
+T79	Amount 1252 1258	200 µl
+T80	Reagent 1259 1284	log - phase host bacteria
+T81	Time 1289 1292	1hr
+T82	Action 1295 1298	Mix
+T83	Reagent 1303 1325	virus - absorbed cells
+T84	Amount 1333 1337	5 ml
+T85	Reagent 1338 1350	overlay agar
+T86	Action 1353 1362	Pour over
+T87	Reagent 1367 1378	solid media
+T88	Action 1381 1389	Incubate
+T89	Action 1394 1398	look
+T90	Reagent 1403 1419	plaque formation
+T91	Action 1422 1426	Pick
+T92	Reagent 1427 1442	representatives
+T93	Reagent 1450 1462	plaque types
+T94	Action 1475 1481	record
+T95	Generic-Measure 1482 1492	appearance
+T96	Reagent 1500 1507	plaques
+T97	Action 1510 1515	Store
+T98	Reagent 1520 1525	broth
+T99	Reagent 1544 1554	agar plugs
+T100	Temperature 1558 1561	4°C
+T101	Reagent 1576 1583	viruses
+T102	Action 1587 1598	diffuse out
+T103	Reagent 1606 1610	agar
+T104	Reagent 1620 1625	broth
+T105	Action 1737 1741	Take
+T106	Amount 1742 1747	25 µl
+T107	Reagent 1755 1778	plaque - purified virus
+T108	Action 1815 1821	absorb
+T109	Amount 1825 1831	200 µl
+T110	Reagent 1832 1852	log - phase bacteria
+T111	Time 1857 1861	1 hr
+T112	Action 1864 1867	Add
+T113	Amount 1871 1875	5 ml
+T114	Reagent 1876 1881	broth
+T115	Action 1886 1890	grow
+T116	Method 1896 1903	shaking
+T117	Action 1906 1916	Centrifuge
+T118	Reagent 1921 1926	cells
+T119	Action 1931 1937	filter
+T120	Reagent 1938 1945	culture
+T121	Size 1954 1960	0.2 µm
+T122	Device 1961 1967	filter
+T123	Action 1968 1978	SYBR stain
+T124	Reagent 1981 1988	portion
+T125	Reagent 1996 2004	filtrate
+T126	Action 2046 2052	Purify
+T127	Reagent 2053 2056	DNA
+T128	Method 2067 2096	Promega Wizard Lambda DNA kit
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Site:T6 Acts-on:E1
+E3	Action:T7 Using:T8 Site:T11 Acts-on:E2
+E4	Action:T12 Acts-on:T13 Acts-on2:E3
+E5	Action:T15 Acts-on:T16 Site:T17 Acts-on2:E4 Product:T22
+E6	Action:T18 Acts-on:T20 Acts-on2:T22 Site:T24
+E7	Action:T28 Acts-on:T27 Site:T29 Acts-on2:E6
+E8	Action:T31 Acts-on:T33 Site:T34 Acts-on2:E7
+E9	Action:T35 Acts-on:T36 Using:T37 Acts-on2:E8
+E10	Action:T38 Acts-on:E9 Product:T41
+E11	Action:T39 Acts-on:T41
+E12	Action:T44 Site:T47 Site2:T50 Acts-on:T43 Acts-on2:E11
+E13	Action:T52 Acts-on:T53 Using:T55 Site:T57 Acts-on2:E12
+E14	Action:T58 Product:T62 Acts-on:E13
+E15	Action:T61 Acts-on:T62 Site:T63
+E16	Action:T64 Acts-on:E15
+E17	Action:T66 Acts-on:T67 Acts-on2:T68 Site:T69 Acts-on3:E16
+E18	Action:T70 Product:T71 Product2:T73 Acts-on:E17
+E19	Action:T74 Acts-on:T76 Site:T78 Site2:T80 Acts-on2:E18 Product:T83
+E20	Action:T82 Acts-on:T83 Site:T85
+E21	Action:T86 Acts-on:T87 Acts-on2:E20
+E22	Action:T88 Acts-on:E21 Product:T90
+E23	Action:T89 Acts-on:T90
+E24	Action:T91 Acts-on:T92 Acts-on2:E23
+E25	Action:T94 Acts-on:T96 Acts-on2:E24
+E26	Action:T97 Acts-on:T98 Acts-on2:E25
+E27	Action:T102 Acts-on:T101 Site:T103 Site2:T104 Acts-on2:E26
+E28	Action:T105 Acts-on:T107 Acts-on2:E27
+E29	Action:T108 Acts-on:T110 Acts-on2:E28
+E30	Action:T112 Acts-on:T114 Acts-on2:E29
+E31	Action:T115 Using:T116 Acts-on:E30
+E32	Action:T117 Acts-on:T118 Acts-on2:E31
+E33	Action:T119 Acts-on:T120 Using:T122 Acts-on2:E32
+E34	Action:T123 Acts-on:T124 Acts-on2:E33
+E35	Action:T126 Acts-on:T127 Using:T128 Acts-on2:E34
+R1	Measure Arg1:T6 Arg2:T5
+R2	Measure Arg1:T11 Arg2:T10
+R3	Setting Arg1:E4 Arg2:T14
+R4	Measure Arg1:T20 Arg2:T19
+R5	Measure Arg1:T22 Arg2:T21
+R6	Measure Arg1:T26 Arg2:T25
+R7	Meronym Arg1:T24 Arg2:T26
+R8	Measure Arg1:T33 Arg2:T32
+R9	Measure Arg1:T47 Arg2:T46
+R10	Measure Arg1:T50 Arg2:T49
+R11	Meronym Arg1:T51 Arg2:T50
+R12	Measure Arg1:T57 Arg2:T56
+R13	Setting Arg1:E14 Arg2:T59
+R14	Setting Arg1:E14 Arg2:T60
+R15	Measure Arg1:T55 Arg2:T54
+R16	Setting Arg1:E16 Arg2:T65
+R17	Measure Arg1:T73 Arg2:T72
+R18	Measure Arg1:T76 Arg2:T75
+R19	Measure Arg1:T78 Arg2:T77
+R20	Measure Arg1:T80 Arg2:T79
+R21	Setting Arg1:E19 Arg2:T81
+R22	Measure Arg1:T85 Arg2:T84
+R23	Meronym Arg1:T92 Arg2:T93
+R24	Measure Arg1:T96 Arg2:T95
+R25	Meronym Arg1:T99 Arg2:T98
+R26	Setting Arg1:E26 Arg2:T100
+R27	Measure Arg1:T107 Arg2:T106
+R28	Measure Arg1:T110 Arg2:T109
+R29	Setting Arg1:E29 Arg2:T111
+R30	Measure Arg1:T114 Arg2:T113
+R31	Measure Arg1:T122 Arg2:T121
+R32	Meronym Arg1:T124 Arg2:T125
+R33	Mod-Link Arg1:T11 Arg2:T9
+R34	Mod-Link Arg1:T22 Arg2:T23
+R35	Setting Arg1:E7 Arg2:T30
+R36	Mod-Link Arg1:T41 Arg2:T40
+R37	Mod-Link Arg1:T41 Arg2:T42
+R38	Mod-Link Arg1:T47 Arg2:T45
+R39	Mod-Link Arg1:T50 Arg2:T48

@@ -1,0 +1,18 @@
+T1	Action 51 58	Collect
+T2	Reagent 59 75	seawater samples
+T3	Location 85 101	desired location
+T4	Reagent 622 632	Subsamples
+T5	Action 649 654	fixed
+T6	Concentration 660 670	1 % to 2 %
+T7	Size 695 704	0.02 - µm
+T8	Modifier 705 713	filtered
+T9	Reagent 714 722	formalin
+T10	Action 727 733	stored
+T11	Temperature 737 740	4°C
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T4
+E2	Action:T5 Acts-on:T4 Using:T9
+E3	Action:T10 Acts-on:T9
+R1	Setting Arg1:E3 Arg2:T11
+R2	Measure Arg1:T9 Arg2:T6
+R3	Mod-Link Arg1:T9 Arg2:T8
+R4	Measure Arg1:T9 Arg2:T7

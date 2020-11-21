@@ -1,0 +1,116 @@
+T1	Action 15 18	Add
+T2	Reagent 23 44	nuclease - free water
+T3	Amount 49 54	50 µL
+T4	Amount 65 68	5µL
+T5	Concentration 69 72	10X
+T6	Reagent 73 81	Buffer O
+T7	Amount 84 87	1µL
+T8	Reagent 88 91	DNA
+T9	Concentration 94 103	1 µg / µL
+T10	Amount 108 112	1 µL
+T11	Reagent 113 119	NotI 1
+T12	Concentration 122 130	10U / µL
+T13	Action 137 140	Mix
+T14	Action 152 156	spin
+T15	Time 168 179	few seconds
+T16	Action 182 190	Incubate
+T17	Temperature 194 198	37°C
+T18	Time 203 215	1 - 16 hours
+T19	Action 378 388	incubation
+T20	Temperature 392 396	80°C
+T21	Time 401 407	20 min
+T22	Action 410 417	Measure
+T23	Generic-Measure 422 428	volume
+T24	Reagent 436 446	DNA sample
+T25	Action 455 458	Add
+T26	Amount 459 472	1 / 10 volume
+T27	Reagent 476 490	sodium acetate
+T28	Measure-Type 493 495	pH
+T29	Numerical 496 499	5.2
+T30	Action 707 710	Mix
+T31	Modifier 711 715	well
+T32	Action 718 721	Add
+T33	Amount 722 738	2 to 2.5 volumes
+T34	Temperature 742 746	cold
+T35	Concentration 747 752	100 %
+T36	Reagent 753 760	ethanol
+T37	Action 813 816	Mix
+T38	Action 824 829	Place
+T39	Temperature 833 836	ice
+T40	Temperature 843 857	- 20 degrees C
+T41	Time 862 874	> 20 minutes
+T42	Action 877 881	Spin
+T43	Speed 884 897	maximum speed
+T44	Location 903 912	microfuge
+T45	Time 913 924	10 - 15 min
+T46	Action 937 943	decant
+T47	Reagent 944 955	supernatant
+T48	Action 958 961	Add
+T49	Amount 962 966	1 ml
+T50	Concentration 967 971	70 %
+T51	Reagent 972 979	ethanol
+T52	Action 982 985	Mix
+T53	Action 988 992	Spin
+T54	Modifier 993 1000	briefly
+T55	Action 1013 1019	decant
+T56	Reagent 1020 1031	supernatant
+T57	Action 1034 1041	Air dry
+T58	Action 1053 1063	vacuum dry
+T59	Reagent 1064 1070	pellet
+T60	Action 1073 1082	Resuspend
+T61	Reagent 1083 1089	pellet
+T62	Generic-Measure 1097 1115	appropriate volume
+T63	Reagent 1119 1121	TE
+T64	Reagent 1125 1130	water
+E1	Action:T1 Acts-on:T2 Acts-on2:T6 Acts-on3:T8 Acts-on4:T11
+E2	Action:T13 Acts-on:E1
+E3	Action:T14 
+E4	Action:T16 Acts-on:E3
+E5	Action:T19 Acts-on:E4
+E6	Action:T22 Acts-on:T24 Acts-on2:E5
+E7	Action:T25 Acts-on:T27 Site:T24
+E8	Action:T30 Acts-on:E7
+E9	Action:T32 Acts-on:T36 Acts-on2:E8
+E10	Action:T37 Acts-on:E9
+E11	Action:T38 Acts-on:E10
+E12	Action:T42 Acts-on:T44 Acts-on2:E11 Product:T47
+E13	Action:T46 Acts-on:T47
+E14	Action:T48 Acts-on:T51 Acts-on2:E13
+E15	Action:T52 Acts-on:E14
+E16	Action:T53 Acts-on:E15 Product:T56
+E17	Action:T55 Acts-on:T56
+E18	Action:T57 Acts-on:T59 Acts-on2:E17 Product:T61
+E19	Action:T58 
+E20	Action:T60 Acts-on:T61 Using:T63
+R1	Measure Arg1:T6 Arg2:T5
+R2	Measure Arg1:T6 Arg2:T4
+R3	Measure Arg1:T2 Arg2:T3
+R4	Measure Arg1:T8 Arg2:T9
+R5	Measure Arg1:T8 Arg2:T7
+R6	Measure Arg1:T11 Arg2:T10
+R7	Measure Arg1:T11 Arg2:T12
+R8	Setting Arg1:E3 Arg2:T15
+R9	Setting Arg1:E4 Arg2:T17
+R10	Setting Arg1:E4 Arg2:T18
+R11	Setting Arg1:E5 Arg2:T20
+R12	Setting Arg1:E5 Arg2:T21
+R13	Measure Arg1:T24 Arg2:T23
+R14	Measure Arg1:T27 Arg2:T26
+R15	Of-Type Arg1:T29 Arg2:T28
+R16	Measure Arg1:T27 Arg2:T29
+R17	Measure Arg1:T36 Arg2:T35
+R18	Measure Arg1:T36 Arg2:T33
+R19	Setting Arg1:E9 Arg2:T34
+R20	Setting Arg1:E11 Arg2:T39
+R21	Or Arg1:T39 Arg2:T40
+R22	Setting Arg1:E11 Arg2:T41
+R23	Setting Arg1:E12 Arg2:T43
+R24	Setting Arg1:E12 Arg2:T45
+R25	Measure Arg1:T51 Arg2:T50
+R26	Measure Arg1:T51 Arg2:T49
+R27	Or Arg1:T63 Arg2:T64
+R28	Measure Arg1:T63 Arg2:T62
+R29	Mod-Link Arg1:E16 Arg2:T54
+R30	Mod-Link Arg1:E8 Arg2:T31
+R31	Overlaps Arg1:E2 Arg2:E3
+R32	Or Arg1:E18 Arg2:E19

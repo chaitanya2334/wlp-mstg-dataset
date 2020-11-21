@@ -1,0 +1,175 @@
+T1	Action 20 24	Take
+T2	Reagent 25 29	cell
+T3	Location 30 36	dishes
+T4	Device 44 53	incubator
+T5	Action 58 68	pre - cool
+T6	Location 72 75	ice
+T7	Action 78 83	Rinse
+T8	Reagent 84 89	cells
+T9	Modifier 90 96	gently
+T10	Modifier 102 112	ice - cold
+T11	Reagent 113 116	PBS
+T12	Numerical 121 126	twice
+T13	Action 129 135	Scrape
+T14	Reagent 136 141	cells
+T15	Action 146 155	spin down
+T16	Speed 158 165	500 rpm
+T17	Time 168 173	10min
+T18	Time 176 180	4 °C
+T19	Action 183 186	Add
+T20	Amount 187 194	500l ul
+T21	Reagent 195 210	IP lysis buffer
+T22	Reagent 219 231	cell pellets
+T23	Action 256 262	Rotate
+T24	Time 267 269	2h
+T25	Temperature 273 276	4°C
+T26	Action 279 289	Centrifuge
+T27	Speed 290 299	14,000rpm
+T28	Time 304 310	30 min
+T29	Action 313 317	Save
+T30	Reagent 318 329	supernatant
+T31	Action 353 362	determine
+T32	Reagent 363 370	protein
+T33	Measure-Type 371 384	concentration
+T34	Device 390 395	OD280
+T35	Action 398 404	Adjust
+T36	Reagent 409 416	samples
+T37	Measure-Type 424 442	same concentration
+T38	Action 445 454	Determine
+T39	Measure-Type 455 461	amount
+T40	Reagent 465 470	beads
+T41	Action 543 547	Wash
+T42	Reagent 548 553	beads
+T43	Amount 557 560	1ml
+T44	Reagent 561 573	lysis buffer
+T45	Numerical 578 583	twice
+T46	Action 586 595	Spin down
+T47	Speed 598 602	500g
+T48	Time 605 608	30s
+T49	Action 611 620	Resuspend
+T50	Modifier 621 629	pelleted
+T51	Reagent 630 635	beads
+T52	Concentration 639 647	1mg / ml
+T53	Reagent 648 651	BSA
+T54	Action 654 660	rotate
+T55	Temperature 663 665	RT
+T56	Time 668 673	10min
+T57	Action 676 682	Remove
+T58	Reagent 683 686	BSA
+T59	Action 691 695	wash
+T60	Reagent 696 701	beads
+T61	Reagent 705 717	lysis buffer
+T62	Numerical 722 723	3
+T63	Action 732 741	Resuspend
+T64	Modifier 742 750	pelleted
+T65	Reagent 751 756	beads
+T66	Concentration 757 762	1 : 1
+T67	Reagent 768 780	lysis buffer
+T68	Action 783 787	Save
+T69	Amount 788 792	40ul
+T70	Reagent 796 805	IP lysate
+T71	Reagent 810 816	sample
+T72	Action 828 831	Add
+T73	Reagent 832 842	primary Ab
+T74	Reagent 847 852	beads
+T75	Reagent 856 865	IP lysate
+T76	Action 868 874	Rotate
+T77	Temperature 877 885	4 degree
+T78	Time 890 899	overnight
+T79	Action 902 908	Pellet
+T80	Reagent 909 914	beads
+T81	Speed 917 921	500g
+T82	Time 926 931	30sec
+T83	Temperature 934 936	RT
+T84	Action 941 948	discard
+T85	Reagent 953 964	supernatant
+T86	Action 967 971	Wash
+T87	Reagent 972 977	beads
+T88	Amount 981 984	1ml
+T89	Modifier 985 995	ice - cold
+T90	Reagent 996 1008	lysis buffer
+T91	Action 1011 1017	Repeat
+T92	Numerical 1018 1019	3
+T93	Action 1028 1037	Resuspend
+T94	Reagent 1038 1043	beads
+T95	Amount 1047 1051	30ul
+T96	Concentration 1055 1057	2×
+T97	Reagent 1058 1072	loading buffer
+T98	Action 1075 1079	Boil
+T99	Reagent 1084 1089	beads
+T100	Time 1094 1098	5min
+T101	Action 1101 1111	Centrifuge
+T102	Temperature 1114 1116	RT
+T103	Time 1121 1125	1min
+T104	Action 1128 1132	Save
+T105	Reagent 1133 1144	supernatant
+T106	Action 1149 1167	perform SDS - PAGE
+E1	Action:T1 Acts-on:T3 Site:T4
+E2	Action:T5 Site:T6 Acts-on:E1 Product:T8
+E3	Action:T7 Acts-on:T8 Using:T11 Count:T12 Product:T14
+E4	Action:T13 Acts-on:T14
+E5	Action:T15 Acts-on:E4 Product:T22
+E6	Action:T19 Acts-on:T21 Site:T22
+E7	Action:T23 Acts-on:E6
+E8	Action:T26 Acts-on:E7 Product:T30
+E9	Action:T29 Acts-on:T30 Product:T32
+E10	Action:T31 Measure-Type-Link:T33 Site:T32 Using:T34 Product:T36
+E11	Action:T35 Acts-on:T36 Measure-Type-Link:T37 Product:T70
+E12	Action:T38 Measure-Type-Link:T39 Acts-on:T40 Product:T42
+E13	Action:T41 Acts-on:T42 Site:T44 Count:T45
+E14	Action:T46 Acts-on:E13 Product:T51
+E15	Action:T49 Acts-on:T51 Site:T53
+E16	Action:T54 Acts-on:E15 Product:T58
+E17	Action:T57 Acts-on:T58 Product:T60
+E18	Action:T59 Acts-on:T60 Site:T61 Count:T62 Product:T65
+E19	Action:T63 Acts-on:T65 Site:T67 Product:T74
+E20	Action:T68 Acts-on:T70 Product:T75
+E21	Action:T72 Acts-on:T73 Acts-on2:T74 Site:T75
+E22	Action:T76 Acts-on:E21 Product:T80
+E23	Action:T79 Acts-on:T80 Product:T85
+E24	Action:T84 Acts-on:T85 Product:T87
+E25	Action:T86 Acts-on:T87 Site:T90
+E26	Action:T91 Count:T92 Acts-on:E25 Product:T94
+E27	Action:T93 Acts-on:T94 Acts-on2:T97 Product:T99
+E28	Action:T98 Acts-on:T99
+E29	Action:T101 Acts-on:E28 Product:T105
+E30	Action:T104 Acts-on:T105
+E31	Action:T106 Acts-on:E30
+R1	Meronym Arg1:T2 Arg2:T3
+R2	Mod-Link Arg1:E3 Arg2:T9
+R3	Mod-Link Arg1:T11 Arg2:T10
+R4	Setting Arg1:E5 Arg2:T16
+R5	Setting Arg1:E5 Arg2:T17
+R6	Setting Arg1:E5 Arg2:T18
+R7	Measure Arg1:T21 Arg2:T20
+R8	Setting Arg1:E7 Arg2:T24
+R9	Setting Arg1:E7 Arg2:T25
+R10	Setting Arg1:E8 Arg2:T27
+R11	Setting Arg1:E8 Arg2:T28
+R12	Measure Arg1:T44 Arg2:T43
+R13	Setting Arg1:E14 Arg2:T47
+R14	Setting Arg1:E14 Arg2:T48
+R15	Mod-Link Arg1:T51 Arg2:T50
+R16	Measure Arg1:T53 Arg2:T52
+R17	Setting Arg1:E16 Arg2:T55
+R18	Setting Arg1:E16 Arg2:T56
+R19	Mod-Link Arg1:T65 Arg2:T64
+R20	Setting Arg1:E19 Arg2:T66
+R21	Meronym Arg1:T70 Arg2:T71
+R22	Measure Arg1:T70 Arg2:T69
+R23	Setting Arg1:E22 Arg2:T77
+R24	Setting Arg1:E22 Arg2:T78
+R25	Setting Arg1:E23 Arg2:T81
+R26	Setting Arg1:E23 Arg2:T82
+R27	Setting Arg1:E23 Arg2:T83
+R28	Mod-Link Arg1:T90 Arg2:T89
+R29	Measure Arg1:T90 Arg2:T88
+R30	Measure Arg1:T97 Arg2:T96
+R31	Measure Arg1:T97 Arg2:T95
+R32	Setting Arg1:E28 Arg2:T100
+R33	Setting Arg1:E29 Arg2:T102
+R34	Setting Arg1:E29 Arg2:T103
+R35	Coreference-Link Arg1:T21 Arg2:T44
+R36	Coreference-Link Arg1:T44 Arg2:T61
+R37	Coreference-Link Arg1:T61 Arg2:T67
+R38	Coreference-Link Arg1:T67 Arg2:T90

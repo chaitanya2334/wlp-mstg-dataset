@@ -1,0 +1,41 @@
+T1	Action 486 494	Incubate
+T2	Reagent 495 502	samples
+T3	Device 508 520	thermocycler
+T4	Temperature 524 528	50°C
+T5	Time 533 543	15 minutes
+T6	Amount 551 552	2
+T7	Amount 556 557	3
+T8	Reagent 558 567	fragments
+T9	Action 578 587	assembled
+T10	Time 593 603	60 minutes
+T11	Amount 611 614	4–6
+T12	Reagent 615 624	fragments
+T13	Action 635 644	assembled
+T14	Action 672 677	store
+T15	Reagent 678 685	samples
+T16	Location 689 692	ice
+T17	Temperature 699 704	–20°C
+T18	Reagent 709 734	subsequent transformation
+T19	Action 737 746	Transform
+T20	Reagent 747 785	NEB 5 - alpha Competent E . coli cells
+T21	Amount 856 860	2 μl
+T22	Modifier 868 877	assembled
+T23	Reagent 878 885	product
+T24	Method 902 925	transformation protocol
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T15
+E2	Action:T9 Acts-on:T8 Acts-on2:E1
+E3	Action:T13 Acts-on:T12 Acts-on2:E1
+E4	Action:T14 Acts-on:T15 Site:T16 Product:T18
+E5	Action:T19 Acts-on:T20 Using:T24
+R1	Setting Arg1:E1 Arg2:T4
+R2	Setting Arg1:E4 Arg2:T17
+R3	Mod-Link Arg1:T23 Arg2:T22
+R4	Measure Arg1:T23 Arg2:T21
+R5	Meronym Arg1:T23 Arg2:T20
+R6	Setting Arg1:E1 Arg2:T5
+R7	Or Arg1:T5 Arg2:T10
+R8	Or Arg1:T6 Arg2:T7
+R9	Or Arg1:T16 Arg2:T17
+R10	Measure Arg1:T12 Arg2:T11
+R11	Measure Arg1:T8 Arg2:T6
+R12	Coreference-Link Arg1:T23 Arg2:T18

@@ -1,0 +1,290 @@
+T1	Action 37 44	Prepare
+T2	Reagent 49 67	substrate solution
+T3	Amount 106 113	10.34ml
+T4	Reagent 114 122	DI water
+T5	Amount 123 128	1.2ml
+T6	Reagent 132 148	Substrate Buffer
+T7	Concentration 149 152	10X
+T8	Amount 165 170	240μl
+T9	Reagent 174 193	ABTS stock solution
+T10	Amount 194 199	120μl
+T11	Reagent 203 229	Hydrogen peroxide solution
+T12	Action 232 238	Vortex
+T13	Action 355 361	Dilute
+T14	Concentration 366 368	5X
+T15	Reagent 369 383	Coating Buffer
+T16	Concentration 387 389	1X
+T17	Reagent 395 403	DI water
+T18	Action 404 411	Prepare
+T19	Reagent 412 433	Streptavidin solution
+T20	Location 446 451	plate
+T21	Amount 456 460	24μl
+T22	Reagent 464 485	Streptavidin solution
+T23	Amount 488 497	11.976 ml
+T24	Concentration 498 500	1X
+T25	Reagent 501 515	Coating Buffer
+T26	Action 518 527	Calculate
+T27	Generic-Measure 532 538	amount
+T28	Concentration 542 544	1X
+T29	Reagent 545 560	Dilution Buffer
+T30	Action 574 581	prepare
+T31	Reagent 586 594	solution
+T32	Action 598 606	diluting
+T33	Concentration 611 614	10X
+T34	Reagent 615 634	concentrated buffer
+T35	Numerical 635 643	10 times
+T36	Reagent 647 655	DI water
+T37	Action 737 744	Prepare
+T38	Reagent 745 756	Wash Buffer
+T39	Action 759 765	dilute
+T40	Concentration 770 773	20X
+T41	Reagent 774 785	wash buffer
+T42	Reagent 791 799	DI water
+T43	Action 829 835	Dilute
+T44	Generic-Measure 836 848	concentrated
+T45	Reagent 849 874	HRP - conjugated antibody
+T46	Concentration 878 888	0.3μg / ml
+T47	Concentration 892 894	1X
+T48	Reagent 895 910	Dilution Buffer
+T49	Action 929 940	Prepare12ml
+T50	Modifier 941 944	per
+T51	Location 945 950	plate
+T52	Action 953 959	Dilute
+T53	Reagent 964 996	Flex - T™ ELISA Positive Control
+T54	Concentration 1010 1015	2.7μM
+T55	Reagent 1016 1024	solution
+T56	Amount 1029 1032	5μl
+T57	Reagent 1036 1068	Flex - T™ ELISA Positive Control
+T58	Concentration 1072 1082	0.2mg / ml
+T59	Amount 1085 1090	2.9μl
+T60	Concentration 1094 1096	1X
+T61	Reagent 1097 1112	Dilution Buffer
+T62	Action 1113 1117	Coat
+T63	Location 1122 1127	wells
+T64	Location 1135 1140	plate
+T65	Reagent 1146 1158	Streptavidin
+T66	Action 1161 1164	Add
+T67	Amount 1165 1170	100μl
+T68	Reagent 1174 1195	Streptavidin solution
+T69	Location 1203 1208	wells
+T70	Action 1211 1215	Seal
+T71	Location 1216 1224	theplate
+T72	Action 1229 1237	incubate
+T73	Time 1238 1247	overnight
+T74	Temperature 1267 1283	room temperature
+T75	Action 1300 1307	Discard
+T76	Reagent 1312 1328	coating solution
+T77	Action 1333 1337	wash
+T78	Location 1342 1347	plate
+T79	Numerical 1348 1355	3 times
+T80	Amount 1370 1375	300μl
+T81	Reagent 1376 1387	Wash Buffer
+T82	Modifier 1388 1391	per
+T83	Location 1392 1396	well
+T84	Action 1401 1405	blot
+T85	Modifier 1406 1414	residual
+T86	Reagent 1415 1421	buffer
+T87	Modifier 1425 1431	firmly
+T88	Action 1432 1439	tapping
+T89	Location 1440 1445	plate
+T90	Method 1446 1457	upside down
+T91	Reagent 1461 1476	absorbent paper
+T92	Action 1588 1591	add
+T93	Amount 1592 1597	300μl
+T94	Concentration 1601 1603	1X
+T95	Reagent 1604 1619	Dilution Buffer
+T96	Location 1627 1632	wells
+T97	Action 1635 1639	Seal
+T98	Location 1644 1649	plate
+T99	Action 1654 1662	incubate
+T100	Time 1667 1677	30 minutes
+T101	Temperature 1681 1697	room temperature
+T102	Action 1714 1721	Prepare
+T103	Numerical 1722 1727	three
+T104	Reagent 1745 1756	HLA control
+T105	Method 1760 1775	serial dilution
+T106	Concentration 1779 1781	1X
+T107	Reagent 1782 1797	Dilution Buffer
+T108	Action 1800 1807	Prepare
+T109	Reagent 1812 1820	controls
+T110	Action 1831 1835	keep
+T111	Mention 1836 1840	them
+T112	Temperature 1844 1855	melting ice
+T113	Action 1934 1940	dilute
+T114	Generic-Measure 1943 1956	small aliquot
+T115	Reagent 1964 1989	exchange reaction mixture
+T116	Numerical 1990 2000	300 - fold
+T117	Concentration 2004 2006	1X
+T118	Reagent 2007 2022	Dilution Buffer
+T119	Action 2156 2159	Mix
+T120	Modifier 2160 2170	thoroughly
+T121	Action 2173 2180	Discard
+T122	Reagent 2185 2200	Dilution Buffer
+T123	Location 2210 2215	plate
+T124	Action 2220 2224	blot
+T125	Reagent 2229 2244	residual buffer
+T126	Action 2247 2254	Pipette
+T127	Amount 2255 2260	100μl
+T128	Concentration 2264 2266	1X
+T129	Reagent 2267 2282	Dilution Buffer
+T130	Reagent 2295 2317	diluted ELISA controls
+T131	Reagent 2373 2408	exchange reaction mixture dilutions
+T132	Location 2432 2437	wells
+T133	Action 2485 2489	Seal
+T134	Location 2494 2500	plates
+T135	Action 2505 2513	incubate
+T136	Time 2518 2524	1 hour
+T137	Temperature 2528 2532	37°C
+T138	Action 2535 2542	Discard
+T139	Reagent 2547 2553	liquid
+T140	Location 2563 2568	wells
+T141	Action 2573 2577	wash
+T142	Numerical 2578 2585	3 times
+T143	Amount 2591 2596	300μl
+T144	Reagent 2600 2611	wash buffer
+T145	Location 2616 2620	well
+T146	Action 2623 2626	Add
+T147	Amount 2627 2632	100μl
+T148	Reagent 2636 2669	diluted HRP - conjugated antibody
+T149	Action 2672 2676	Seal
+T150	Location 2681 2687	plates
+T151	Action 2692 2700	incubate
+T152	Time 2705 2711	1 hour
+T153	Temperature 2715 2719	37°C
+T154	Action 2722 2729	Discard
+T155	Reagent 2734 2740	liquid
+T156	Location 2750 2755	wells
+T157	Action 2760 2764	wash
+T158	Numerical 2765 2772	3 times
+T159	Amount 2778 2783	300μl
+T160	Reagent 2787 2798	wash buffer
+T161	Location 2803 2807	well
+T162	Action 2810 2813	Add
+T163	Amount 2814 2819	100μl
+T164	Reagent 2823 2841	substrate solution
+T165	Action 2844 2852	Incubate
+T166	Time 2857 2866	8 minutes
+T167	Temperature 2870 2886	room temperature
+T168	Method 2908 2912	dark
+T169	Device 2918 2930	plate shaker
+T170	Speed 2934 2947	400 - 500 rpm
+T171	Action 2950 2953	Add
+T172	Amount 2954 2958	50μl
+T173	Reagent 2962 2975	Stop Solution
+T174	Location 2983 2988	wells
+T175	Action 2993 2997	read
+T176	Generic-Measure 3001 3006	414nm
+T177	Device 3013 3025	ELISA reader
+E1	Action:T1 Product:T2
+E2	Action:T12 Acts-on:T2
+E3	Action:T13 Acts-on:T15 Using:T17 Acts-on2:E2
+E4	Action:T18 Site:T20 Product:T19 Acts-on:E3
+E5	Action:T26 Acts-on:T29 Acts-on2:E4
+E6	Action:T30 Product:T31
+E7	Action:T32 Count:T35 Acts-on:T34 Using:T36 Acts-on2:E6
+E8	Action:T37 Product:T38 Acts-on:E7
+E9	Action:T39 Acts-on:T41 Using:T42 Acts-on2:E8
+E10	Action:T43 Acts-on:T45 Using:T48 Acts-on2:E9
+E11	Action:T49 Site:T51 Acts-on:E10
+E12	Action:T52 Acts-on:T53 Acts-on2:E11
+E13	Action:T62 Acts-on:T63 Using:T65 Acts-on2:E12
+E14	Action:T66 Acts-on:T68 Site:T69 Acts-on2:E13
+E15	Action:T70 Acts-on:T71 Acts-on2:E14
+E16	Action:T72 Acts-on:E15
+E17	Action:T75 Acts-on:T76 Acts-on2:E16
+E18	Action:T77 Acts-on:T78 Using:T81 Site:T83 Acts-on2:E17
+E19	Action:T84 Acts-on:T86 Acts-on2:E18
+E20	Action:T88 Acts-on:T89 Using:T90 Site:T91 Acts-on2:E19
+E21	Action:T92 Acts-on:T95 Site:T96 Acts-on2:E20
+E22	Action:T97 Acts-on:T98 Acts-on2:E21
+E23	Action:T99 Acts-on:T98
+E24	Action:T102 Count:T103 Using:T105 Product:T104 Using2:T107 Acts-on:E23
+E25	Action:T108 Product:T109 Acts-on:E24
+E26	Action:T110 Acts-on:T111
+E27	Action:T113 Acts-on:T115 Using:T118 Acts-on2:E25
+E28	Action:T119 Acts-on:E27 Product:T122
+E29	Action:T121 Acts-on:T122 Site:T123
+E30	Action:T124 Acts-on:T125 Acts-on2:E29
+E31	Action:T126 Acts-on:T129 Acts-on2:T130 Site:T132 Acts-on3:E30 Product:T134
+E32	Action:T133 Acts-on:T134
+E33	Action:T135 Acts-on:E32 Product:T139
+E34	Action:T138 Acts-on:T139 Site:T140
+E35	Action:T141 Count:T142 Acts-on:T144 Site:T145 Acts-on2:E34
+E36	Action:T146 Acts-on:T148 Product:T150 Acts-on2:E35
+E37	Action:T149 Acts-on:T150
+E38	Action:T151 Acts-on:E37
+E39	Action:T154 Acts-on:T155 Site:T156 Acts-on2:E38
+E40	Action:T157 Count:T158 Using:T160 Site:T161 Acts-on:E39
+E41	Action:T162 Acts-on:T164 Acts-on2:E40
+E42	Action:T165 Using:T168 Site:T169 Acts-on:E41
+E43	Action:T171 Acts-on:T173 Site:T174 Acts-on2:E42
+E44	Action:T175 Using:T177 Acts-on:E43
+R1	Measure Arg1:T11 Arg2:T10
+R2	Measure Arg1:T9 Arg2:T8
+R3	Measure Arg1:T6 Arg2:T5
+R4	Measure Arg1:T9 Arg2:T7
+R5	Measure Arg1:T4 Arg2:T3
+R6	Meronym Arg1:T4 Arg2:T2
+R7	Meronym Arg1:T6 Arg2:T2
+R8	Meronym Arg1:T9 Arg2:T2
+R9	Meronym Arg1:T11 Arg2:T2
+R10	Measure Arg1:T15 Arg2:T14
+R11	Setting Arg1:E3 Arg2:T16
+R12	Measure Arg1:T22 Arg2:T21
+R13	Measure Arg1:T25 Arg2:T24
+R14	Measure Arg1:T25 Arg2:T23
+R15	Meronym Arg1:T22 Arg2:T19
+R16	Meronym Arg1:T25 Arg2:T19
+R17	Measure Arg1:T29 Arg2:T28
+R18	Setting Arg1:E5 Arg2:T27
+R19	Measure Arg1:T34 Arg2:T33
+R20	Measure Arg1:T41 Arg2:T40
+R21	Measure Arg1:T45 Arg2:T44
+R22	Setting Arg1:E10 Arg2:T46
+R23	Measure Arg1:T48 Arg2:T47
+R24	Measure Arg1:T55 Arg2:T54
+R25	Setting Arg1:E12 Arg2:T54
+R26	Measure Arg1:T57 Arg2:T56
+R27	Measure Arg1:T57 Arg2:T58
+R28	Meronym Arg1:T57 Arg2:T55
+R29	Measure Arg1:T61 Arg2:T60
+R30	Measure Arg1:T61 Arg2:T59
+R31	Meronym Arg1:T61 Arg2:T55
+R32	Meronym Arg1:T63 Arg2:T64
+R33	Measure Arg1:T68 Arg2:T67
+R34	Setting Arg1:E16 Arg2:T73
+R35	Setting Arg1:E16 Arg2:T74
+R36	Setting Arg1:E18 Arg2:T79
+R37	Measure Arg1:T81 Arg2:T80
+R38	Mod-Link Arg1:E20 Arg2:T87
+R39	Measure Arg1:T95 Arg2:T94
+R40	Measure Arg1:T95 Arg2:T93
+R41	Setting Arg1:E23 Arg2:T100
+R42	Setting Arg1:E23 Arg2:T101
+R43	Measure Arg1:T107 Arg2:T106
+R44	Setting Arg1:E26 Arg2:T112
+R45	Coreference-Link Arg1:T111 Arg2:T109
+R46	Setting Arg1:E27 Arg2:T116
+R47	Measure Arg1:T115 Arg2:T114
+R48	Measure Arg1:T118 Arg2:T117
+R49	Mod-Link Arg1:E28 Arg2:T120
+R50	Measure Arg1:T129 Arg2:T128
+R51	Measure Arg1:T129 Arg2:T127
+R52	Or Arg1:T130 Arg2:T131
+R53	Setting Arg1:E33 Arg2:T136
+R54	Setting Arg1:E33 Arg2:T137
+R55	Measure Arg1:T144 Arg2:T143
+R56	Measure Arg1:T148 Arg2:T147
+R57	Setting Arg1:E38 Arg2:T152
+R58	Setting Arg1:E38 Arg2:T153
+R59	Measure Arg1:T160 Arg2:T159
+R60	Measure Arg1:T164 Arg2:T163
+R61	Measure Arg1:T173 Arg2:T172
+R62	Setting Arg1:E44 Arg2:T176
+R63	Setting Arg1:E42 Arg2:T166
+R64	Setting Arg1:E42 Arg2:T167
+R65	Setting Arg1:E42 Arg2:T170
+R66	Enables Arg1:E5 Arg2:E6
+R67	Mod-Link Arg1:E11 Arg2:T50
+R68	Mod-Link Arg1:T83 Arg2:T82
+R69	Mod-Link Arg1:T86 Arg2:T85

@@ -1,0 +1,38 @@
+T1	Action 70 76	Digest
+T2	Amount 77 83	1–5 μg
+T3	Reagent 87 98	plasmid DNA
+T4	Amount 104 109	20 μl
+T5	Reagent 110 118	reaction
+T6	Action 132 140	Incubate
+T7	Temperature 144 148	37°C
+T8	Time 153 163	60 minutes
+T9	Action 207 210	Add
+T10	Amount 211 217	1 unit
+T11	Reagent 221 225	rSAP
+T12	Amount 236 242	1 pmol
+T13	Reagent 246 254	DNA ends
+T14	Action 290 298	Incubate
+T15	Temperature 302 306	37°C
+T16	Time 311 324	30–60 minutes
+T17	Action 327 331	Stop
+T18	Reagent 332 340	reaction
+T19	Action 344 363	heat - inactivation
+T20	Reagent 367 371	rSAP
+T21	Reagent 376 394	restriction enzyme
+E1	Action:T1 Acts-on:T3 Site:T5
+E2	Action:T6 Acts-on:E1 Product:T13
+E3	Action:T9 Acts-on:T11 Site:T13
+E4	Action:T14 Acts-on:E3 Product:T18
+E5	Action:T17 Acts-on:T18
+E6	Action:T19 Acts-on:T20 Acts-on2:T21
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Setting Arg1:E2 Arg2:T7
+R4	Setting Arg1:E2 Arg2:T8
+R5	Measure Arg1:T13 Arg2:T12
+R6	Measure Arg1:T11 Arg2:T10
+R7	Setting Arg1:E4 Arg2:T15
+R8	Setting Arg1:E4 Arg2:T16
+R9	Enables Arg1:E6 Arg2:E5
+R10	Meronym Arg1:T20 Arg2:T18
+R11	Meronym Arg1:T21 Arg2:T18

@@ -1,0 +1,53 @@
+T1	Location 55 77	sterile microfuge tube
+T2	Action 78 81	add
+T3	Reagent 86 95	following
+T4	Action 98 102	Heat
+T5	Time 107 120	3 - 5 minutes
+T6	Temperature 124 133	65 - 80°C
+T7	Action 136 140	Spin
+T8	Generic-Measure 141 148	briefly
+T9	Action 153 158	place
+T10	Generic-Measure 159 167	promptly
+T11	Temperature 171 174	ice
+T12	Action 177 180	Add
+T13	Concentration 181 184	10X
+T14	Reagent 185 194	RT Buffer
+T15	Action 197 200	Add
+T16	Reagent 201 216	RNAse inhibitor
+T17	Amount 217 221	1 µL
+T18	Action 224 227	Add
+T19	Reagent 228 258	M - MuLV Reverse Transcriptase
+T20	Amount 259 263	1 µL
+T21	Action 266 274	Incubate
+T22	Temperature 278 282	42°C
+T23	Time 287 295	one hour
+T24	Action 298 308	Inactivate
+T25	Reagent 309 315	enzyme
+T26	Temperature 319 323	90°C
+T27	Time 328 338	10 minutes
+T28	Action 341 346	Store
+T29	Reagent 347 355	products
+T30	Temperature 359 365	- 20°C
+E1	Action:T2 Site:T1 Acts-on:T3 Product:E2
+E2	Action:T4 
+E3	Action:T7 Acts-on:E2
+E4	Action:T9 Acts-on:E3
+E5	Action:T12 Acts-on:T14 Acts-on2:E4
+E6	Action:T15 Acts-on:T16 Acts-on2:E5
+E7	Action:T18 Acts-on:T19 Acts-on2:E6
+E8	Action:T21 Acts-on:E7
+E9	Action:T24 Acts-on:T25 Acts-on2:E8
+E10	Action:T28 Acts-on:T29 Acts-on2:E9
+R1	Setting Arg1:E2 Arg2:T5
+R2	Setting Arg1:E2 Arg2:T6
+R3	Setting Arg1:E3 Arg2:T8
+R4	Setting Arg1:E4 Arg2:T11
+R5	Setting Arg1:E4 Arg2:T10
+R6	Measure Arg1:T14 Arg2:T13
+R7	Measure Arg1:T16 Arg2:T17
+R8	Measure Arg1:T19 Arg2:T20
+R9	Setting Arg1:E8 Arg2:T22
+R10	Setting Arg1:E8 Arg2:T23
+R11	Setting Arg1:E9 Arg2:T26
+R12	Setting Arg1:E9 Arg2:T27
+R13	Setting Arg1:E10 Arg2:T30

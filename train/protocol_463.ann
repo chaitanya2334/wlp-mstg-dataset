@@ -1,0 +1,184 @@
+T1	Action 148 154	filter
+T2	Amount 155 168	entire volume
+T3	Reagent 172 178	lysate
+T4	Size 189 212	0.45 - µm - pore - size
+T5	Reagent 213 225	PES membrane
+T6	Modifier 226 233	sterile
+T7	Modifier 234 244	disposable
+T8	Device 245 256	filter unit
+T9	Action 260 266	remove
+T10	Modifier 267 272	large
+T11	Reagent 273 284	cell debris
+T12	Action 287 290	Add
+T13	Amount 291 296	20 mL
+T14	Modifier 297 305	filtered
+T15	Reagent 306 312	lysate
+T16	Location 320 335	upper reservoir
+T17	Generic-Measure 341 360	100,000 Dalton MWCO
+T18	Device 361 405	PES membrane Vivaspin20 ultrafiltration unit
+T19	Action 617 622	Place
+T20	Device 623 627	unit
+T21	Device 633 650	counter - balance
+T22	Device 654 675	swinging bucket rotor
+T23	Temperature 694 697	4°C
+T24	Device 700 719	benchtop centrifuge
+T25	Method 732 769	printed side faces upwards / outwards
+T26	Action 772 782	Centrifuge
+T27	Speed 786 795	1,000 x g
+T28	Modifier 798 811	do not exceed
+T29	Time 820 834	5 - 10 minutes
+T30	Action 907 935	Do not let the filter go dry
+T31	Action 938 944	Record
+T32	Measure-Type 949 964	volume retained
+T33	Location 972 987	upper reservoir
+T34	Action 990 997	Discard
+T35	Reagent 1002 1010	filtrate
+T36	Action 1014 1024	separating
+T37	Location 1029 1044	upper reservoir
+T38	Location 1054 1060	bottom
+T39	Device 1068 1083	Vivaspin20 unit
+T40	Action 1086 1098	Repeat 2 - 6
+T41	Action 1383 1391	Transfer
+T42	Modifier 1396 1408	concentrated
+T43	Reagent 1409 1421	virus sample
+T44	Location 1445 1460	upper reservoir
+T45	Modifier 1466 1473	sterile
+T46	Amount 1474 1485	15 or 50 mL
+T47	Location 1486 1498	conical tube
+T48	Action 1501 1507	Remove
+T49	Location 1512 1527	upper reservoir
+T50	Device 1537 1552	Vivaspin20 unit
+T51	Action 1557 1562	cover
+T52	Location 1567 1573	bottom
+T53	Seal 1581 1607	double - layer of Parafilm
+T54	Action 1610 1613	Add
+T55	Amount 1614 1618	2 mL
+T56	Modifier 1622 1642	0.02 - µm - filtered
+T57	Concentration 1643 1645	1X
+T58	Reagent 1646 1655	TE buffer
+T59	pH 1658 1664	pH 8.0
+T60	Location 1674 1689	upper reservoir
+T61	Action 1692 1698	Vortex
+T62	Location 1703 1718	upper reservoir
+T63	Modifier 1721 1739	Parafilm side down
+T64	Time 1746 1754	~ 20 sec
+T65	Generic-Measure 1758 1768	60 % power
+T66	Action 1772 1776	wash
+T67	Device 1781 1798	Vivaspin20 filter
+T68	Action 1801 1804	Add
+T69	Modifier 1809 1815	washed
+T70	Reagent 1816 1822	sample
+T71	Modifier 1830 1839	recovered
+T72	Reagent 1840 1859	viral concentrate .
+T73	Action 1860 1874	Repeat 10 - 12
+T74	Numerical 1875 1880	twice
+T75	Action 1927 1932	Store
+T76	Modifier 1933 1945	concentrated
+T77	Reagent 1946 1958	virus sample
+T78	Temperature 1962 1965	4°C
+T79	Location 1966 1986	protected from light
+T80	Action 2009 2024	Ethanol - clean
+T81	Location 2025 2037	culture hood
+T82	Action 2054 2056	UV
+T83	Device 2057 2065	pipettes
+T84	Device 2068 2072	tips
+T85	Location 2079 2088	tube rack
+T86	Time 2093 2099	10 min
+T87	Modifier 2112 2131	one virus at a time
+T88	Action 2134 2146	transferring
+T89	Reagent 2151 2163	master stock
+T90	Temperature 2169 2172	4°C
+T91	Location 2180 2192	culture hood
+T92	Action 2195 2203	Initiate
+T93	Reagent 2208 2225	primary infection
+T94	Action 2229 2235	adding
+T95	Reagent 2240 2258	master virus stock
+T96	Amount 2262 2293	1 % of the total culture volume
+T97	Action 2368 2371	Mix
+T98	Location 2376 2390	infected flask
+T99	Action 2395 2403	incubate
+T100	Method 2407 2433	standard growth conditions
+T101	Generic-Measure 2434 2463	until culture is mostly lysed
+T102	Modifier 2517 2527	Thoroughly
+T103	Action 2528 2533	clean
+T104	Device 2534 2541	pipette
+T105	Device 2546 2552	gloves
+T106	Reagent 2558 2565	ethanol
+T107	Action 2608 2623	Ethanol - clean
+T108	Location 2624 2628	hood
+T109	Action 2633 2635	UV
+T110	Device 2636 2644	pipettes
+T111	Device 2647 2651	tips
+T112	Location 2658 2667	tube rack
+T113	Modifier 2668 2677	after use
+E1	Action:T1 Acts-on:T3 Using:T8 Using2:T5 Product:T15
+E2	Action:T9 Acts-on:T11
+E3	Action:T12 Acts-on:T15 Site:T16 Product:T20
+E4	Action:T19 Acts-on:T20 Site:T22 Acts-on2:T21 Site2:T24 Using:T25
+E5	Action:T26 Acts-on:E4 Product:T35
+E6	Action:T30 Acts-on:E5
+E7	Action:T31 Acts-on:E6 Acts-on2:T33 Measure-Type-Link:T32
+E8	Action:T34 Acts-on:T35
+E9	Action:T36 Acts-on:T37 Site:T38 Site2:T39
+E10	Action:T40 Acts-on:E8
+E11	Action:T41 Acts-on:T43 Site:T47 Acts-on2:E10 Acts-on3:T44
+E12	Action:T48 Acts-on:T49 Site:T50 Acts-on2:E11
+E13	Action:T51 Acts-on:T52 Using:T53 Acts-on2:E12 Product:T60
+E14	Action:T54 Acts-on:T58 Site:T60 Product:T62
+E15	Action:T61 Acts-on:T62
+E16	Action:T66 Acts-on:T67 Product:T70
+E17	Action:T68 Acts-on:T70 Site:T72 Product:T77
+E18	Action:T73 Count:T74 Acts-on:E17
+E19	Action:T75 Acts-on:T77 Site:T79
+E20	Action:T80 Acts-on:T81 Acts-on2:E19
+E21	Action:T82 Acts-on:T83 Acts-on2:T84 Acts-on3:T85 Acts-on4:E20
+E22	Action:T88 Acts-on:T89 Site:T91 Acts-on2:E21
+E23	Action:T92 Acts-on:T93 Acts-on2:E22
+E24	Action:T94 Acts-on:T95 Product:T98
+E25	Action:T97 Acts-on:T98
+E26	Action:T99 Using:T100 Acts-on:E25
+E27	Action:T103 Acts-on:T104 Acts-on2:T105 Using:T106 Acts-on3:E26
+E28	Action:T107 Acts-on:T108 Acts-on2:E27
+E29	Action:T109 Acts-on:T110 Acts-on2:T111 Acts-on3:T112 Acts-on4:E28
+R1	Measure Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T5 Arg2:T8
+R3	Mod-Link Arg1:T8 Arg2:T6
+R4	Mod-Link Arg1:T8 Arg2:T7
+R5	Setting Arg1:T8 Arg2:T4
+R6	Mod-Link Arg1:T11 Arg2:T10
+R7	Mod-Link Arg1:T15 Arg2:T14
+R8	Measure Arg1:T15 Arg2:T13
+R9	Setting Arg1:T18 Arg2:T17
+R10	Meronym Arg1:T16 Arg2:T18
+R11	Setting Arg1:E5 Arg2:T27
+R12	Setting Arg1:E5 Arg2:T29
+R13	Meronym Arg1:T38 Arg2:T39
+R14	Measure Arg1:T47 Arg2:T46
+R15	Mod-Link Arg1:T47 Arg2:T45
+R16	Mod-Link Arg1:T43 Arg2:T42
+R17	Measure Arg1:T58 Arg2:T57
+R18	Mod-Link Arg1:T58 Arg2:T56
+R19	Measure Arg1:T58 Arg2:T55
+R20	Measure Arg1:T58 Arg2:T59
+R21	Setting Arg1:E15 Arg2:T64
+R22	Setting Arg1:E15 Arg2:T65
+R23	Mod-Link Arg1:T70 Arg2:T69
+R24	Mod-Link Arg1:T72 Arg2:T71
+R25	Mod-Link Arg1:T77 Arg2:T76
+R26	Setting Arg1:E19 Arg2:T78
+R27	Setting Arg1:E21 Arg2:T86
+R28	Setting Arg1:E22 Arg2:T90
+R29	Measure Arg1:T95 Arg2:T96
+R30	Mod-Link Arg1:E27 Arg2:T102
+R31	Enables Arg1:E1 Arg2:E2
+R32	Meronym Arg1:T22 Arg2:T24
+R33	Setting Arg1:T24 Arg2:T23
+R34	Mod-Link Arg1:E5 Arg2:T28
+R35	Enables Arg1:E9 Arg2:E8
+R36	Meronym Arg1:T43 Arg2:T44
+R37	Mod-Link Arg1:T62 Arg2:T63
+R38	Enables Arg1:E15 Arg2:E16
+R39	Mod-Link Arg1:E22 Arg2:T87
+R40	Enables Arg1:E24 Arg2:E23
+R41	Setting Arg1:E26 Arg2:T101
+R42	Mod-Link Arg1:E29 Arg2:T113

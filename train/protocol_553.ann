@@ -1,0 +1,88 @@
+T1	Action 16 25	Wipe down
+T2	Location 26 31	bench
+T3	Reagent 37 46	RNase zap
+T4	Action 60 66	Dilute
+T5	Reagent 67 88	oligo - dT30VN primer
+T6	Action 92 98	adding
+T7	Amount 99 103	37µL
+T8	Concentration 107 112	100µM
+T9	Reagent 113 119	primer
+T10	Amount 123 127	63µL
+T11	Reagent 131 148	nuclease free H20
+T12	Action 151 158	Prepare
+T13	Reagent 159 165	RT mix
+T14	Action 416 424	Incubate
+T15	Temperature 428 431	72º
+T16	Time 436 438	3m
+T17	Action 441 447	return
+T18	Location 451 454	ice
+T19	Action 457 461	Take
+T20	Amount 462 467	4.3µL
+T21	Modifier 471 481	hybridized
+T22	Reagent 482 498	oligo - dT + RNA
+T23	Action 503 509	put in
+T24	Location 510 521	strip tubes
+T25	Action 524 527	Add
+T26	Amount 528 533	5.7µL
+T27	Reagent 534 540	RT mix
+T28	Action 608 614	Dilute
+T29	Reagent 615 628	ISPCR primers
+T30	Concentration 629 636	1 : 100
+T31	Action 639 646	Prepare
+T32	Reagent 647 657	PCR preamp
+T33	Action 872 875	Add
+T34	Amount 876 880	15µL
+T35	Reagent 881 895	PCR preamp mix
+T36	Amount 899 903	10µL
+T37	Reagent 904 906	RT
+T38	Action 909 915	Preamp
+T39	Method 916 921	PCR15
+T40	Action 1014 1017	Use
+T41	Amount 1018 1029	0.6 volumes
+T42	Reagent 1033 1038	beads
+T43	Amount 1044 1048	15µL
+T44	Reagent 1052 1057	beads
+T45	Amount 1066 1070	25µL
+T46	Reagent 1071 1079	reaction
+T47	Action 1082 1091	Resuspend
+T48	Amount 1095 1101	15.5µL
+T49	Reagent 1102 1104	EB
+T50	Action 1112 1119	measure
+T51	Measure-Type 1120 1134	concentrations
+T52	Device 1141 1146	qubit
+E1	Action:T1 Acts-on:T2 Using:T3
+E2	Action:T4 Acts-on:T5 Site:E1
+E3	Action:T6 Acts-on:T9 Site:T11 Site2:E1
+E4	Action:T12 Product:T13
+E5	Action:T14 Acts-on:E2
+E6	Action:T17 Site:T18 Acts-on:E5 Product:T22
+E7	Action:T19 Acts-on:T22
+E8	Action:T23 Site:T24 Acts-on:E7
+E9	Action:T25 Acts-on:T27 Product:T37 Site:E8
+E10	Action:T28 Acts-on:T29
+E11	Action:T31 Product:T32 Acts-on:E10
+E12	Action:T33 Acts-on:T35 Site:T37
+E13	Action:T38 Using:T39 Acts-on:E12 Product:T46
+E14	Action:T40 Acts-on:T44 Site:T46
+E15	Action:T47 Acts-on:E14 Site:T49
+E16	Action:T50 Measure-Type-Link:T51 Using:T52 Acts-on:E15
+R1	Measure Arg1:T11 Arg2:T10
+R2	Measure Arg1:T9 Arg2:T8
+R3	Measure Arg1:T9 Arg2:T7
+R4	Coreference-Link Arg1:T9 Arg2:T5
+R5	Setting Arg1:E5 Arg2:T15
+R6	Setting Arg1:E5 Arg2:T16
+R7	Mod-Link Arg1:T22 Arg2:T21
+R8	Measure Arg1:T22 Arg2:T20
+R9	Measure Arg1:T35 Arg2:T34
+R10	Measure Arg1:T49 Arg2:T48
+R11	Enables Arg1:E3 Arg2:E2
+R12	Measure Arg1:T27 Arg2:T26
+R13	Measure Arg1:T44 Arg2:T43
+R14	Measure Arg1:T46 Arg2:T45
+R15	Coreference-Link Arg1:T27 Arg2:T13
+R16	Setting Arg1:E10 Arg2:T30
+R17	Coreference-Link Arg1:T35 Arg2:T32
+R18	Measure Arg1:T37 Arg2:T36
+R19	Measure Arg1:T42 Arg2:T41
+R20	Or Arg1:T44 Arg2:T42

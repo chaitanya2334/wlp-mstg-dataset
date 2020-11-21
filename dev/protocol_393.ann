@@ -1,0 +1,73 @@
+T1	Action 1597 1606	Inoculate
+T2	Reagent 1607 1627	E . coli BL21 strain
+T3	Reagent 1643 1662	recombinant protein
+T4	Reagent 1666 1699	chloramphenicol acetyltransferase
+T5	Amount 1703 1706	5mL
+T6	Reagent 1707 1723	LB liquid medium
+T7	Temperature 1763 1767	37 C
+T8	Action 1768 1775	shaking
+T9	Action 1780 1787	culture
+T10	Time 1788 1797	overnight
+T11	Action 1800 1808	Transfer
+T12	Amount 1809 1812	1mL
+T13	Reagent 1813 1831	overnight cultures
+T14	Amount 1835 1841	100 mL
+T15	Concentration 1855 1865	100ug / mL
+T16	Reagent 1866 1876	ampicillin
+T17	Reagent 1879 1895	LB liquid medium
+T18	Temperature 1898 1902	37 C
+T19	Action 1903 1908	shake
+T20	Reagent 1909 1916	culture
+T21	Modifier 1917 1922	until
+T22	Generic-Measure 1923 1940	OD600 = 0.6 - 0.8
+T23	Action 1943 1947	Take
+T24	Amount 1948 1952	10ul
+T25	Reagent 1953 1960	samples
+T26	Method 1965 1984	SDS - PAGE analysis
+T27	Action 1987 1990	Add
+T28	Reagent 1991 1995	IPTG
+T29	Measure-Type 2001 2020	final concentration
+T30	Concentration 2024 2036	0.5 mmol / l
+T31	Action 2039 2046	culture
+T32	Time 2047 2053	1 - 3h
+T33	Temperature 2057 2061	37 C
+T34	Speed 2064 2073	12,000rpm
+T35	Action 2074 2088	centrifugation
+T36	Time 2093 2099	10 min
+T37	Action 2102 2109	discard
+T38	Reagent 2114 2125	supernatant
+T39	Action 2128 2133	store
+T40	Reagent 2134 2150	cell precipitate
+T41	Temperature 2154 2160	- 20 C
+T42	Temperature 2164 2170	- 70 C
+E1	Action:T1 Acts-on:T2 Site:T6
+E2	Action:T8 Acts-on:E1
+E3	Action:T9 Acts-on:E2 Product:T13
+E4	Action:T11 Acts-on:T13 Site:T17
+E5	Action:T19 Acts-on:E4 Acts-on2:T20 Product:T25
+E6	Action:T23 Acts-on:T25 Using:T26 Product:T28
+E7	Action:T27 Acts-on:T28 Measure-Type-Link:T29
+E8	Action:T31 Acts-on:E7
+E9	Action:T35 Acts-on:E8 Product:T38
+E10	Action:T37 Acts-on:T38 Product:T40
+E11	Action:T39 Acts-on:T40
+R1	Meronym Arg1:T3 Arg2:T4
+R2	Meronym Arg1:T3 Arg2:T2
+R3	Setting Arg1:E2 Arg2:T7
+R4	Measure Arg1:T6 Arg2:T5
+R5	Setting Arg1:E3 Arg2:T10
+R6	Measure Arg1:T20 Arg2:T22
+R7	Setting Arg1:E5 Arg2:T18
+R8	Measure Arg1:T17 Arg2:T14
+R9	Measure Arg1:T13 Arg2:T12
+R10	Measure Arg1:T16 Arg2:T15
+R11	Meronym Arg1:T16 Arg2:T17
+R12	Measure Arg1:T25 Arg2:T24
+R13	Setting Arg1:E8 Arg2:T32
+R14	Setting Arg1:E8 Arg2:T33
+R15	Setting Arg1:E7 Arg2:T30
+R16	Setting Arg1:E11 Arg2:T41
+R17	Or Arg1:T41 Arg2:T42
+R18	Setting Arg1:E9 Arg2:T34
+R19	Setting Arg1:E9 Arg2:T36
+R20	Mod-Link Arg1:E5 Arg2:T21

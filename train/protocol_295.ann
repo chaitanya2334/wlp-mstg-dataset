@@ -1,0 +1,572 @@
+T1	Action 47 55	Puncture
+T2	Location 56 69	posterior end
+T3	Reagent 73 84	staged pupa
+T4	Device 90 109	dissecting scissors
+T5	Device 112 125	fine forcepts
+T6	Size 131 135	. 22
+T7	Device 136 148	gauge needle
+T8	Action 151 156	Place
+T9	Location 162 176	Eppendorf tube
+T10	Amount 182 188	500 ul
+T11	Reagent 192 196	FAAG
+T12	Action 201 206	store
+T13	Time 207 216	overnight
+T14	Temperature 220 237	4 degrees Celsius
+T15	Action 240 246	Remove
+T16	Reagent 247 251	FAAG
+T17	Location 259 263	hood
+T18	Action 268 275	dispose
+T19	Location 279 307	" Aldehyde Waste " container
+T20	Action 310 319	Dehydrate
+T21	Reagent 328 342	ethanol series
+T22	Action 347 352	clear
+T23	Reagent 356 363	Xylenes
+T24	Action 366 372	Rotate
+T25	Device 376 383	nutator
+T26	Temperature 387 389	RT
+T27	Action 662 668	Repeat
+T28	Method 669 675	Step 5
+T29	Action 676 685	Dehydrate
+T30	Reagent 694 708	ethanol series
+T31	Action 757 763	Repeat
+T32	Method 764 770	Step 5
+T33	Action 771 780	Dehydrate
+T34	Reagent 789 803	ethanol series
+T35	Action 852 858	Repeat
+T36	Method 859 865	Step 5
+T37	Action 866 875	Dehydrate
+T38	Reagent 884 898	ethanol series
+T39	Action 947 954	Replace
+T40	Concentration 955 960	100 %
+T41	Reagent 961 968	Ethanol
+T42	Amount 974 979	500ul
+T43	Reagent 980 987	Xylenes
+T44	Time 992 1006	thirty minutes
+T45	Action 1009 1016	Dispose
+T46	Reagent 1020 1027	Xylenes
+T47	Location 1031 1059	" Aldehyde Waste " container
+T48	Action 1062 1068	Repeat
+T49	Method 1069 1075	Step 9
+T50	Action 1078 1084	Remove
+T51	Reagent 1085 1092	Xylenes
+T52	Action 1097 1104	replace
+T53	Modifier 1110 1113	new
+T54	Amount 1114 1119	500ul
+T55	Reagent 1120 1127	Xylenes
+T56	Time 1132 1146	thirty minutes
+T57	Action 1149 1156	Dispose
+T58	Reagent 1160 1167	Xylenes
+T59	Location 1171 1199	" Aldehyde Waste " container
+T60	Action 1202 1208	Repeat
+T61	Method 1209 1217	Step 9 :
+T62	Action 1218 1224	Remove
+T63	Reagent 1225 1232	Xylenes
+T64	Action 1237 1244	replace
+T65	Modifier 1250 1253	new
+T66	Amount 1254 1259	500ul
+T67	Reagent 1260 1267	Xylenes
+T68	Time 1272 1286	thirty minutes
+T69	Action 1289 1296	Dispose
+T70	Reagent 1300 1307	Xylenes
+T71	Location 1311 1339	" Aldehyde Waste " container
+T72	Action 1342 1348	Repeat
+T73	Method 1349 1355	Step 9
+T74	Action 1358 1364	Remove
+T75	Reagent 1365 1372	Xylenes
+T76	Action 1377 1384	replace
+T77	Modifier 1390 1393	new
+T78	Amount 1394 1399	500ul
+T79	Reagent 1400 1407	Xylenes
+T80	Time 1412 1426	thirty minutes
+T81	Action 1429 1436	Dispose
+T82	Reagent 1440 1447	Xylenes
+T83	Location 1451 1479	" Aldehyde Waste " container
+T84	Action 1504 1512	Transfer
+T85	Reagent 1513 1518	pupae
+T86	Location 1522 1540	scintillation vial
+T87	Amount 1546 1550	2 ml
+T88	Reagent 1554 1561	Xylenes
+T89	Modifier 1568 1578	designated
+T90	Device 1579 1589	paintbrush
+T91	Action 1592 1596	Mark
+T92	Location 1601 1617	level of Xylenes
+T93	Location 1621 1625	tube
+T94	Action 1628 1631	Add
+T95	Numerical 1632 1636	~ 20
+T96	Reagent 1637 1651	paraffin chips
+T97	Action 1675 1679	melt
+T98	Temperature 1683 1700	42 degree Celsius
+T99	Device 1701 1710	incubator
+T100	Action 1738 1743	Leave
+T101	Time 1744 1753	overnight
+T102	Size 1759 1765	500 ml
+T103	Location 1766 1772	beaker
+T104	Action 1775 1778	add
+T105	Modifier 1779 1785	melted
+T106	Reagent 1786 1794	paraffin
+T107	Action 1799 1807	incubate
+T108	Temperature 1811 1829	56 degrees celsius
+T109	Time 1838 1846	tomorrow
+T110	Action 1849 1855	Remove
+T111	Reagent 1856 1869	Xylenes / Wax
+T112	Action 1874 1879	place
+T113	Location 1885 1899	wax waste tray
+T114	Action 1902 1905	Add
+T115	Amount 1908 1920	small amount
+T116	Modifier 1924 1930	melted
+T117	Reagent 1931 1939	paraffin
+T118	Temperature 1943 1961	56 degrees Celsius
+T119	Action 1965 1971	dilute
+T120	Modifier 1972 1980	residual
+T121	Reagent 1981 1987	Xylene
+T122	Action 1990 1996	remove
+T123	Action 2001 2006	place
+T124	Location 2012 2026	wax waste tray
+T125	Action 2029 2032	Add
+T126	Modifier 2033 2039	melted
+T127	Temperature 2040 2057	56 degree Celsius
+T128	Reagent 2058 2066	paraffin
+T129	Action 2067 2075	incubate
+T130	Time 2080 2091	1 - 2 hours
+T131	Action 2094 2100	Remove
+T132	Reagent 2101 2109	paraffin
+T133	Action 2114 2121	replace
+T134	Modifier 2127 2132	fresh
+T135	Modifier 2133 2139	melted
+T136	Temperature 2140 2157	56 degree Celsius
+T137	Reagent 2158 2166	paraffin
+T138	Action 2167 2175	incubate
+T139	Time 2180 2191	1 - 2 hours
+T140	Action 2194 2200	Remove
+T141	Reagent 2201 2209	paraffin
+T142	Action 2214 2221	replace
+T143	Modifier 2227 2232	fresh
+T144	Modifier 2233 2239	melted
+T145	Temperature 2240 2257	56 degree Celsius
+T146	Reagent 2258 2266	paraffin
+T147	Action 2271 2275	fill
+T148	Location 2283 2286	top
+T149	Location 2294 2304	glass vial
+T150	Action 2307 2315	Incubate
+T151	Time 2316 2325	overnight
+T152	Action 2328 2332	Make
+T153	Location 2333 2337	mold
+T154	Action 2341 2347	taping
+T155	Location 2352 2356	ends
+T156	Location 2361 2366	sides
+T157	Location 2370 2385	cut index cards
+T158	Action 2390 2394	tape
+T159	Location 2395 2399	ends
+T160	Action 2419 2429	Pre - heat
+T161	Location 2430 2439	hot block
+T162	Temperature 2443 2461	56 degrees Celsius
+T163	Action 2466 2471	cover
+T164	Modifier 2472 2482	completely
+T165	Seal 2488 2496	tin foil
+T166	Action 2529 2534	swirl
+T167	Reagent 2535 2540	pupae
+T168	Location 2548 2552	vial
+T169	Modifier 2557 2564	quickly
+T170	Action 2565 2569	pour
+T171	Reagent 2570 2583	wax and pupae
+T172	Location 2589 2593	mold
+T173	Location 2597 2600	top
+T174	Location 2604 2613	hot block
+T175	Action 2616 2622	Orient
+T176	Reagent 2627 2634	samples
+T177	Modifier 2635 2642	quickly
+T178	Action 2668 2672	Fill
+T179	Modifier 2677 2686	remainder
+T180	Location 2694 2698	boat
+T181	Modifier 2704 2710	melted
+T182	Reagent 2711 2719	paraffin
+T183	Action 2726 2729	sit
+T184	Time 2734 2744	15 minutes
+T185	Modifier 2748 2753	begin
+T186	Action 2757 2765	solidify
+T187	Modifier 2768 2777	Carefully
+T188	Action 2778 2784	remove
+T189	Location 2785 2789	boat
+T190	Location 2795 2804	hot block
+T191	Action 2809 2813	coll
+T192	Time 2814 2823	overnight
+T193	Temperature 2827 2836	room temp
+T194	Action 2839 2842	Cut
+T195	Reagent 2843 2846	wax
+T196	Reagent 2852 2884	individual pyramid shaped blocks
+T197	Device 2908 2919	razor blade
+T198	Action 2922 2927	Mount
+T199	Reagent 2928 2934	blocks
+T200	Location 2940 2945	chuck
+T201	Action 2949 2956	melting
+T202	Reagent 2957 2965	paraffin
+T203	Modifier 2971 2977	heated
+T204	Device 2978 2990	flat spatula
+T205	Action 2993 3000	Cection
+T206	Reagent 3001 3007	blocks
+T207	Device 3011 3020	microtome
+T208	Generic-Measure 3024 3027	7um
+T209	Action 3032 3037	float
+T210	Location 3043 3049	slides
+T211	Reagent 3055 3060	water
+T212	Action 3070 3082	pre - warmed
+T213	Device 3086 3098	slide warmer
+T214	Temperature 3102 3120	42 degrees Celsius
+T215	Reagent 3133 3141	sections
+T216	Action 3145 3151	expand
+T217	Device 3155 3167	slide warmer
+T218	Time 3172 3185	2 - 5 minutes
+T219	Action 3188 3194	Remove
+T220	Reagent 3195 3200	water
+T221	Action 3204 3211	wicking
+T222	Device 3219 3226	kimwipe
+T223	Action 3229 3233	Bake
+T224	Location 3234 3240	slides
+T225	Temperature 3244 3261	42 degree Celsius
+T226	Device 3262 3274	slide warmer
+T227	Time 3275 3284	overnight
+T228	Action 3287 3294	Hydrate
+T229	Reagent 3295 3302	samples
+T230	Action 3306 3313	placing
+T231	Reagent 3317 3324	Xylenes
+T232	Time 3345 3354	3 minutes
+T233	Action 3357 3364	Hydrate
+T234	Reagent 3365 3372	samples
+T235	Action 3376 3383	placing
+T236	Reagent 3387 3394	Xylenes
+T237	Time 3415 3424	3 minutes
+T238	Action 3427 3434	Hydrate
+T239	Reagent 3435 3442	samples
+T240	Action 3446 3453	placing
+T241	Concentration 3457 3462	100 %
+T242	Reagent 3463 3470	Ethanol
+T243	Time 3491 3500	3 minutes
+T244	Action 3503 3510	Hydrate
+T245	Reagent 3511 3518	samples
+T246	Action 3522 3529	placing
+T247	Concentration 3533 3538	100 %
+T248	Reagent 3539 3546	Ethanol
+T249	Time 3567 3576	3 minutes
+T250	Action 3579 3586	Hydrate
+T251	Reagent 3587 3594	samples
+T252	Action 3598 3605	placing
+T253	Concentration 3609 3613	95 %
+T254	Reagent 3614 3621	Ethanol
+T255	Time 3626 3635	3 minutes
+T256	Action 3638 3645	Hydrate
+T257	Reagent 3646 3653	samples
+T258	Action 3657 3664	placing
+T259	Concentration 3668 3672	70 %
+T260	Reagent 3673 3680	Ethanol
+T261	Time 3685 3694	3 minutes
+T262	Action 3697 3702	Rinse
+T263	Reagent 3709 3726	running tap water
+T264	Time 3731 3737	5 mins
+T265	Action 3740 3745	Stain
+T266	Reagent 3746 3753	Samples
+T267	Action 3754 3762	Submerge
+T268	Location 3763 3769	slides
+T269	Reagent 3773 3794	Weigert's Hematoxylin
+T270	Time 3799 3805	5 mins
+T271	Action 3808 3813	Rinse
+T272	Reagent 3820 3837	running tap water
+T273	Time 3842 3848	5 mins
+T274	Action 3851 3859	Submerge
+T275	Reagent 3863 3879	Pollak Trichrome
+T276	Time 3884 3890	7 mins
+T277	Action 3893 3898	Rinse
+T278	Modifier 3902 3911	distilled
+T279	Reagent 3912 3917	water
+T280	Modifier 3922 3928	approx
+T281	Time 3929 3939	10 seconds
+T282	Action 3943 3949	remove
+T283	Reagent 3954 3971	bulk of the stain
+T284	Action 3974 3982	Submerge
+T285	Modifier 3986 3995	Acidified
+T286	Modifier 3996 4005	distilled
+T287	Reagent 4006 4011	water
+T288	Time 4016 4022	10 sec
+T289	Action 4039 4042	Dip
+T290	Location 4043 4049	slides
+T291	Reagent 4055 4067	70 % Ethanol
+T292	Numerical 4068 4075	3 times
+T293	Action 4078 4081	Dip
+T294	Location 4082 4088	slides
+T295	Concentration 4094 4098	95 %
+T296	Reagent 4099 4106	Ethanol
+T297	Numerical 4123 4124	3
+T298	Action 4133 4141	Submerge
+T299	Location 4142 4148	slides
+T300	Concentration 4154 4158	95 %
+T301	Reagent 4159 4166	Ethanol
+T302	Time 4187 4193	3 mins
+T303	Action 4196 4204	Submerge
+T304	Location 4205 4211	slides
+T305	Concentration 4217 4222	100 %
+T306	Reagent 4223 4230	Ethanol
+T307	Time 4251 4257	3 mins
+T308	Action 4260 4268	Submerge
+T309	Location 4269 4275	slides
+T310	Concentration 4281 4286	100 %
+T311	Reagent 4287 4294	Ethanol
+T312	Time 4315 4321	3 mins
+T313	Action 4324 4332	Submerge
+T314	Location 4333 4339	slides
+T315	Reagent 4345 4352	Xylenes
+T316	Time 4373 4379	3 mins
+T317	Action 4382 4390	Submerge
+T318	Location 4391 4397	slides
+T319	Reagent 4403 4410	Xylenes
+T320	Time 4431 4437	3 mins
+T321	Action 4440 4446	Remove
+T322	Location 4447 4453	slides
+T323	Reagent 4459 4466	Xylenes
+T324	Action 4471 4476	drain
+T325	Time 4481 4487	2 mins
+T326	Device 4493 4504	paper towel
+T327	Action 4505 4508	Use
+T328	Amount 4509 4513	78ul
+T329	Reagent 4517 4525	Permount
+T330	Action 4554 4559	apply
+T331	Seal 4560 4569	coverslip
+T332	Location 4576 4582	slides
+T333	Action 4583 4589	harden
+T334	Time 4590 4599	overnight
+E1	Action:T1 Using:T4 Acts-on:T2
+E2	Action:T8 Site:T9 Acts-on:E1
+E3	Action:T12 Acts-on:E2 Product:T16
+E4	Action:T15 Acts-on:T16 Site:T17
+E5	Action:T18 Site:T19 Acts-on:E4
+E6	Action:T20 Using:T21 Acts-on:E5
+E7	Action:T22 Using:T23 Acts-on:E6
+E8	Action:T24 Using:T25 Acts-on:E7
+E9	Action:T27 Using:T28 Acts-on:E8
+E10	Action:T29 Acts-on:E9 Using:T30
+E11	Action:T31 Using:T32 Acts-on:E10
+E12	Action:T33 Acts-on:E11 Using:T34
+E13	Action:T35 Using:T36 Acts-on:E12
+E14	Action:T37 Acts-on:E13 Using:T38 Product:T41
+E15	Action:T39 Acts-on:T41 Using:T43 Product:T46
+E16	Action:T45 Acts-on:T46 Site:T47
+E17	Action:T48 Using:T49 Acts-on:E16 Product:T51
+E18	Action:T50 Acts-on:T51
+E19	Action:T52 Acts-on:E18 Using:T55 Product:T58
+E20	Action:T57 Site:T59 Acts-on:T58
+E21	Action:T60 Using:T61 Acts-on:E20 Product:T63
+E22	Action:T62 Acts-on:T63
+E23	Action:T64 Acts-on:E22 Using:T67 Product:T70
+E24	Action:T69 Acts-on:T70 Site:T71
+E25	Action:T72 Using:T73 Acts-on:E24 Product:T75
+E26	Action:T74 Acts-on:T75
+E27	Action:T76 Using:T79 Acts-on:E26 Product:T82
+E28	Action:T81 Acts-on:T82 Site:T83 Product:T85
+E29	Action:T84 Acts-on:T85 Site:T86 Using:T90 Product:T93
+E30	Action:T91 Acts-on:T92
+E31	Action:T94 Acts-on:T96 Site:E30
+E32	Action:T97 Using:T99 Acts-on:E31
+E33	Action:T100 Acts-on:E32 Product:T106
+E34	Action:T104 Acts-on:T106 Site:T103
+E35	Action:T107 Acts-on:E34 Product:T111
+E36	Action:T110 Acts-on:T111
+E37	Action:T112 Site:T113 Acts-on:E36 Product:T121
+E38	Action:T114 Acts-on:T117 Site:E37
+E39	Action:T119 Acts-on:T121
+E40	Action:T122 Acts-on:E39
+E41	Action:T123 Acts-on:E40 Site:T124
+E42	Action:T125 Acts-on:T128 Site:E41
+E43	Action:T129 Acts-on:E42 Product:T132
+E44	Action:T131 Acts-on:T132
+E45	Action:T133 Using:T137 Acts-on:E44
+E46	Action:T138 Acts-on:E45 Product:T141
+E47	Action:T140 Acts-on:T141
+E48	Action:T142 Using:T146 Acts-on:E47 Product:T149
+E49	Action:T147 Site:T148
+E50	Action:T150 Acts-on:E49 Product:T167
+E51	Action:T152 Product:T153
+E52	Action:T154 Acts-on:T155 Acts-on2:T156 Product:T159
+E53	Action:T158 Acts-on:T159
+E54	Action:T160 Acts-on:T161
+E55	Action:T163 Using:T165 Acts-on:E54 Product:T174
+E56	Action:T166 Acts-on:T167 Site:T168 Product:T171
+E57	Action:T170 Acts-on:T171 Site:T172 Product:T176
+E58	Action:T175 Acts-on:T176 Product:T180
+E59	Action:T178 Site:T180 Acts-on:T182
+E60	Action:T183 Acts-on:E59
+E61	Action:T186 Acts-on:E59 Product:T189
+E62	Action:T188 Acts-on:T189 Site:T190
+E63	Action:T191 Acts-on:E62 Product:T195
+E64	Action:T194 Acts-on:T195 Product:T196 Using:T197
+E65	Action:T198 Acts-on:T199 Site:T200
+E66	Action:T201 Acts-on:T202 Using:T204 Product:T206
+E67	Action:T205 Acts-on:T206 Using:T207 Product:T210
+E68	Action:T209 Site:T210 Using:T211 Product:T215
+E69	Action:T212 Product:T210 Site:T213
+E70	Action:T216 Acts-on:T215 Using:T217 Product:T220
+E71	Action:T219 Acts-on:T220 Product:T224
+E72	Action:T221 Using:T222 Acts-on:T220
+E73	Action:T223 Acts-on:T224 Using:T226 Product:T229
+E74	Action:T228 Acts-on:T229 Product:T234
+E75	Action:T230 Site:T231 Acts-on:T229
+E76	Action:T233 Acts-on:T234 Product:T239
+E77	Action:T235 Site:T236 Acts-on:T234
+E78	Action:T238 Acts-on:T239 Product:T245
+E79	Action:T240 Site:T242 Acts-on:T239
+E80	Action:T244 Acts-on:T245 Product:T251
+E81	Action:T246 Site:T248 Acts-on:T245
+E82	Action:T250 Acts-on:T251 Product:T257
+E83	Action:T252 Site:T254 Acts-on:T251
+E84	Action:T256 Acts-on:T257
+E85	Action:T258 Acts-on:T257 Site:T260
+E86	Action:T262 Using:T263 Acts-on:E84 Product:T266
+E87	Action:T265 Acts-on:T266 Product:T268
+E88	Action:T267 Acts-on:T268 Site:T269
+E89	Action:T271 Using:T272 Acts-on:E88
+E90	Action:T274 Site:T275 Acts-on:E89 Product:T283
+E91	Action:T277 Using:T279 Acts-on:E90
+E92	Action:T282 Acts-on:T283
+E93	Action:T284 Site:T287 Acts-on:E92 Product:T290
+E94	Action:T289 Acts-on:T290 Site:T291 Count:T292 Product:T294
+E95	Action:T293 Acts-on:T294 Site:T296 Count:T297 Product:T299
+E96	Action:T298 Acts-on:T299 Site:T301 Product:T304
+E97	Action:T303 Acts-on:T304 Site:T306 Product:T309
+E98	Action:T308 Acts-on:T309 Site:T311 Product:T314
+E99	Action:T313 Acts-on:T314 Site:T315 Product:T318
+E100	Action:T317 Acts-on:T318 Site:T319 Product:T322
+E101	Action:T321 Site:T323 Acts-on:T322
+E102	Action:T324 Using:T326 Acts-on:E101
+E103	Action:T327 Acts-on:T329 Site:E102
+E104	Action:T330 Acts-on:T331 Site:E103 Product:T332
+E105	Action:T333 Acts-on:T332
+R1	Setting Arg1:E8 Arg2:T26
+R2	Or Arg1:T4 Arg2:T5
+R3	Or Arg1:T5 Arg2:T7
+R4	Measure Arg1:T7 Arg2:T6
+R5	Setting Arg1:E3 Arg2:T13
+R6	Setting Arg1:E3 Arg2:T14
+R7	Measure Arg1:T11 Arg2:T10
+R8	Meronym Arg1:T11 Arg2:T9
+R9	Measure Arg1:T41 Arg2:T40
+R10	Measure Arg1:T43 Arg2:T42
+R11	Setting Arg1:E15 Arg2:T44
+R12	Measure Arg1:T88 Arg2:T87
+R13	Meronym Arg1:T88 Arg2:T86
+R14	Mod-Link Arg1:T90 Arg2:T89
+R15	Setting Arg1:T99 Arg2:T98
+R16	Measure Arg1:T96 Arg2:T95
+R17	Setting Arg1:E33 Arg2:T101
+R18	Setting Arg1:E35 Arg2:T108
+R19	Setting Arg1:E35 Arg2:T109
+R20	Measure Arg1:T103 Arg2:T102
+R21	Mod-Link Arg1:T106 Arg2:T105
+R22	Mod-Link Arg1:T121 Arg2:T120
+R23	Mod-Link Arg1:T117 Arg2:T116
+R24	Measure Arg1:T117 Arg2:T115
+R25	Setting Arg1:E38 Arg2:T118
+R26	Mod-Link Arg1:T128 Arg2:T126
+R27	Setting Arg1:E43 Arg2:T130
+R28	Mod-Link Arg1:T137 Arg2:T134
+R29	Mod-Link Arg1:T137 Arg2:T135
+R30	Setting Arg1:E46 Arg2:T139
+R31	Meronym Arg1:T148 Arg2:T149
+R32	Mod-Link Arg1:T146 Arg2:T143
+R33	Mod-Link Arg1:T146 Arg2:T144
+R34	Setting Arg1:E50 Arg2:T151
+R35	Meronym Arg1:T155 Arg2:T157
+R36	Meronym Arg1:T156 Arg2:T157
+R37	Mod-Link Arg1:E55 Arg2:T164
+R38	Setting Arg1:E54 Arg2:T162
+R39	Mod-Link Arg1:E57 Arg2:T169
+R40	Meronym Arg1:T172 Arg2:T173
+R41	Meronym Arg1:T173 Arg2:T174
+R42	Mod-Link Arg1:E58 Arg2:T177
+R43	Setting Arg1:E60 Arg2:T184
+R44	Mod-Link Arg1:T180 Arg2:T179
+R45	Mod-Link Arg1:T182 Arg2:T181
+R46	Setting Arg1:E63 Arg2:T192
+R47	Setting Arg1:E63 Arg2:T193
+R48	Mod-Link Arg1:E62 Arg2:T187
+R49	Mod-Link Arg1:T204 Arg2:T203
+R50	Setting Arg1:E69 Arg2:T214
+R51	Setting Arg1:T207 Arg2:T208
+R52	Setting Arg1:E70 Arg2:T218
+R53	Setting Arg1:E73 Arg2:T225
+R54	Setting Arg1:E73 Arg2:T227
+R55	Setting Arg1:E75 Arg2:T232
+R56	Setting Arg1:E77 Arg2:T237
+R57	Measure Arg1:T242 Arg2:T241
+R58	Setting Arg1:E79 Arg2:T243
+R59	Measure Arg1:T248 Arg2:T247
+R60	Setting Arg1:E81 Arg2:T249
+R61	Measure Arg1:T254 Arg2:T253
+R62	Setting Arg1:E83 Arg2:T255
+R63	Measure Arg1:T260 Arg2:T259
+R64	Setting Arg1:E85 Arg2:T261
+R65	Setting Arg1:E86 Arg2:T264
+R66	Setting Arg1:E89 Arg2:T273
+R67	Setting Arg1:E90 Arg2:T276
+R68	Mod-Link Arg1:T279 Arg2:T278
+R69	Setting Arg1:E91 Arg2:T281
+R70	Mod-Link Arg1:T281 Arg2:T280
+R71	Mod-Link Arg1:T287 Arg2:T286
+R72	Mod-Link Arg1:T287 Arg2:T285
+R73	Setting Arg1:E93 Arg2:T288
+R74	Measure Arg1:T296 Arg2:T295
+R75	Measure Arg1:T301 Arg2:T300
+R76	Setting Arg1:E96 Arg2:T302
+R77	Measure Arg1:T306 Arg2:T305
+R78	Setting Arg1:E97 Arg2:T307
+R79	Measure Arg1:T311 Arg2:T310
+R80	Setting Arg1:E98 Arg2:T312
+R81	Setting Arg1:E99 Arg2:T316
+R82	Setting Arg1:E100 Arg2:T320
+R83	Measure Arg1:T329 Arg2:T328
+R84	Setting Arg1:E102 Arg2:T325
+R85	Setting Arg1:E105 Arg2:T334
+R86	Meronym Arg1:T2 Arg2:T3
+R87	Measure Arg1:T55 Arg2:T54
+R88	Setting Arg1:E19 Arg2:T56
+R89	Mod-Link Arg1:T55 Arg2:T53
+R90	Measure Arg1:T67 Arg2:T66
+R91	Mod-Link Arg1:T67 Arg2:T65
+R92	Setting Arg1:E23 Arg2:T68
+R93	Measure Arg1:T79 Arg2:T78
+R94	Mod-Link Arg1:T79 Arg2:T77
+R95	Setting Arg1:E27 Arg2:T80
+R96	Coreference-Link Arg1:T79 Arg2:T67
+R97	Coreference-Link Arg1:T67 Arg2:T55
+R98	Coreference-Link Arg1:T55 Arg2:T43
+R99	Coreference-Link Arg1:T43 Arg2:T23
+R100	Coreference-Link Arg1:T88 Arg2:T79
+R101	Meronym Arg1:T92 Arg2:T93
+R102	Enables Arg1:E38 Arg2:E39
+R103	Coreference-Link Arg1:T124 Arg2:T113
+R104	Coreference-Link Arg1:T83 Arg2:T71
+R105	Coreference-Link Arg1:T71 Arg2:T59
+R106	Coreference-Link Arg1:T59 Arg2:T47
+R107	Coreference-Link Arg1:T47 Arg2:T19
+R108	Measure Arg1:T128 Arg2:T127
+R109	Measure Arg1:T137 Arg2:T136
+R110	Coreference-Link Arg1:T137 Arg2:T128
+R111	Coreference-Link Arg1:T146 Arg2:T137
+R112	Coreference-Link Arg1:T128 Arg2:T117
+R113	Enables Arg1:E52 Arg2:E51
+R114	Coreference-Link Arg1:T172 Arg2:T153
+R115	Coreference-Link Arg1:T182 Arg2:T146
+R116	Mod-Link Arg1:E61 Arg2:T185
+R117	Enables Arg1:E60 Arg2:E61
+R118	Meronym Arg1:T189 Arg2:T190
+R119	Coreference-Link Arg1:T199 Arg2:T196
+R120	Enables Arg1:E66 Arg2:E65
+R121	Meronym Arg1:T202 Arg2:T199
+R122	Coreference-Link Arg1:T217 Arg2:T213
+R123	Enables Arg1:E72 Arg2:E71
+R124	Coreference-Link Arg1:T226 Arg2:T217
+R125	Enables Arg1:E75 Arg2:E74
+R126	Enables Arg1:E77 Arg2:E76
+R127	Enables Arg1:E79 Arg2:E78
+R128	Enables Arg1:E81 Arg2:E80
+R129	Enables Arg1:E83 Arg2:E82
+R130	Enables Arg1:E85 Arg2:E84
+R131	Setting Arg1:E88 Arg2:T270
+R132	Enables Arg1:E91 Arg2:E92
+R133	Meronym Arg1:T322 Arg2:T323

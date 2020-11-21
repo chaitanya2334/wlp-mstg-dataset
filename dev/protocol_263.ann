@@ -1,0 +1,279 @@
+T1	Action 30 40	Centrifuge
+T2	Reagent 45 60	NC64A chlorella
+T3	Generic-Measure 104 130	1.0 - 2.0 X 107 cells / mL
+T4	Device 140 157	Sorvall GSA rotor
+T5	Speed 161 170	7,000 rpm
+T6	Time 173 178	5 min
+T7	Temperature 181 184	4°C
+T8	Location 191 206	sterile bottles
+T9	Action 210 217	harvest
+T10	Reagent 222 227	cells
+T11	Action 230 237	Discard
+T12	Reagent 242 254	supernatants
+T13	Action 257 266	Resuspend
+T14	Reagent 271 276	cells
+T15	Reagent 282 293	sterile BBM
+T16	Action 296 302	Adjust
+T17	Measure-Type 307 319	final volume
+T18	Amount 323 329	500 mL
+T19	Reagent 335 346	sterile BBM
+T20	Action 349 352	Add
+T21	Modifier 353 372	filter - sterilized
+T22	Reagent 373 385	tetracycline
+T23	Concentration 388 406	12.5 mg / Ml stock
+T24	Reagent 452 460	PBCV - 1
+T25	Measure-Type 467 470	moi
+T26	Numerical 504 508	0.01
+T27	Action 511 519	Incubate
+T28	Time 520 529	overnight
+T29	Temperature 533 537	25°C
+T30	Method 543 571	continuous light and shaking
+T31	Action 613 623	Centrifuge
+T32	Reagent 628 634	lysate
+T33	Device 642 659	Sorvall GSA rotor
+T34	Speed 663 672	3,500 rpm
+T35	Time 675 681	10 min
+T36	Temperature 684 687	5°C
+T37	Action 690 696	Decant
+T38	Reagent 701 713	supernatants
+T39	Modifier 717 722	clean
+T40	Location 723 730	bottles
+T41	Action 733 743	Centrifuge
+T42	Reagent 748 759	supernatant
+T43	Device 767 784	Sorvall GSA rotor
+T44	Speed 788 798	10,000 rpm
+T45	Time 801 807	60 min
+T46	Temperature 810 813	5°C
+T47	Action 816 822	Decant
+T48	Reagent 827 838	supernatant
+T49	Modifier 842 847	clean
+T50	Location 848 854	flasks
+T51	Action 857 860	Add
+T52	Reagent 861 868	d - H2O
+T53	Measure-Type 874 886	final volume
+T54	Amount 890 897	1000 mL
+T55	Action 900 905	Place
+T56	Temperature 909 912	4°C
+T57	Action 915 918	Add
+T58	Temperature 924 927	4°C
+T59	Reagent 930 936	2 - ME
+T60	Concentration 940 944	2 mM
+T61	Reagent 945 949	EDTA
+T62	Concentration 953 957	5 mM
+T63	Reagent 958 962	NaN3
+T64	Concentration 966 980	200 mg / liter
+T65	Reagent 981 993	( NH4 ) 2SO4
+T66	Generic-Measure 997 1012	40 % saturation
+T67	Action 1013 1019	Adjust
+T68	pH 1024 1033	pH to 7.0
+T69	Reagent 1039 1043	NaOH
+T70	Action 1046 1051	Cover
+T71	Action 1056 1064	incubate
+T72	Temperature 1068 1071	4°C
+T73	Time 1072 1081	overnight
+T74	Action 1084 1094	Centrifuge
+T75	Reagent 1099 1107	material
+T76	Device 1115 1132	Sorvall GSA rotor
+T77	Speed 1136 1146	10,000 rpm
+T78	Time 1149 1155	60 min
+T79	Temperature 1158 1161	5°C
+T80	Action 1164 1170	Decant
+T81	Reagent 1175 1186	supernatant
+T82	Modifier 1190 1195	clean
+T83	Location 1196 1202	flasks
+T84	Action 1205 1212	Discard
+T85	Reagent 1217 1224	pellets
+T86	Action 1227 1230	Add
+T87	Temperature 1236 1239	4°C
+T88	Reagent 1242 1254	( NH4 ) 2SO4
+T89	Generic-Measure 1258 1273	65 % saturation
+T90	Action 1276 1282	Adjust
+T91	pH 1287 1296	pH to 7.0
+T92	Reagent 1302 1306	NaOH
+T93	Action 1309 1314	Cover
+T94	Action 1319 1327	incubate
+T95	Temperature 1331 1334	4°C
+T96	Time 1335 1344	overnight
+T97	Action 1347 1357	Centrifuge
+T98	Reagent 1362 1370	material
+T99	Device 1378 1395	Sorvall GSA rotor
+T100	Speed 1399 1409	10,000 rpm
+T101	Time 1412 1418	10 min
+T102	Temperature 1421 1424	5°C
+T103	Action 1427 1439	Aspirate off
+T104	Reagent 1444 1455	supernatant
+T105	Action 1458 1462	Save
+T106	Reagent 1467 1473	pellet
+T107	Action 1476 1485	Resuspend
+T108	Reagent 1490 1496	pellet
+T109	Amount 1502 1509	10.0 mL
+T110	Concentration 1513 1518	10 mM
+T111	Reagent 1519 1529	Tris - HCl
+T112	pH 1532 1538	pH 8.0
+T113	Concentration 1541 1545	1 mM
+T114	Reagent 1546 1550	EDTA
+T115	Concentration 1553 1557	2 mM
+T116	Reagent 1558 1564	2 - ME
+T117	Amount 1567 1571	2 mg
+T118	Reagent 1572 1576	NaN3
+T119	Action 1579 1589	Centrifuge
+T120	Reagent 1594 1602	material
+T121	Device 1610 1628	Sorvall SS34 rotor
+T122	Speed 1632 1642	15,000 rpm
+T123	Time 1645 1651	60 min
+T124	Temperature 1654 1657	5°C
+T125	Action 1660 1664	Save
+T126	Reagent 1669 1680	supernatant
+T127	Action 1683 1690	Dialyze
+T128	Reagent 1695 1706	supernatant
+T129	Time 1711 1724	48 - 72 hours
+T130	Temperature 1728 1731	4°C
+T131	Concentration 1740 1745	10 mM
+T132	Reagent 1746 1756	Tris - HCl
+T133	pH 1759 1765	pH 8.0
+T134	Concentration 1768 1772	1 mM
+T135	Reagent 1773 1777	EDTA
+T136	Concentration 1780 1784	2 mM
+T137	Reagent 1785 1791	2 - ME
+T138	Concentration 1794 1808	200 mg / liter
+T139	Reagent 1809 1813	NaN3
+T140	Action 1816 1822	Change
+T141	Reagent 1827 1833	buffer
+T142	Modifier 1839 1844	every
+T143	Time 1845 1853	24 hours
+T144	Action 1856 1862	Remove
+T145	Reagent 1867 1875	material
+T146	Device 1885 1893	dialysis
+T147	Action 1896 1906	Centrifuge
+T148	Reagent 1911 1919	material
+T149	Device 1927 1945	Sorvall SS34 rotor
+T150	Speed 1949 1959	13,000 rpm
+T151	Time 1962 1968	60 min
+T152	Temperature 1971 1974	5°C
+T153	Action 1977 1984	Aliquot
+T154	Reagent 1989 2000	supernatant
+T155	Location 2006 2021	microfuge tubes
+T156	Action 2026 2031	store
+T157	Temperature 2035 2041	- 20°C
+T158	Action 2044 2049	Assay
+T159	Reagent 2054 2074	supernatant fraction
+T160	Action 2096 2100	Save
+T161	Reagent 2105 2116	supernatant
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T10
+E2	Action:T9 Acts-on:T10 Site:T8 Product:T12
+E3	Action:T11 Acts-on:T12 Product:T14
+E4	Action:T13 Acts-on:T14 Using:T15
+E5	Action:T16 Using:T19 Measure-Type-Link:T17 Acts-on:E4
+E6	Action:T20 Acts-on:T22 Site:E5 Acts-on2:T24
+E7	Action:T27 Using:T30 Acts-on:E6 Product:T32
+E8	Action:T31 Acts-on:T32 Using:T33 Product:T38
+E9	Action:T37 Acts-on:T38 Site:T40 Product:T42
+E10	Action:T41 Acts-on:T42 Using:T43 Product:T48
+E11	Action:T47 Acts-on:T48 Site:T50
+E12	Action:T51 Acts-on:T52 Measure-Type-Link:T53 Site:E11
+E13	Action:T55 Acts-on:E12
+E14	Action:T57 Acts-on:T59 Site:T61 Site2:T63 Site3:T65 Acts-on2:E13
+E15	Action:T67 Using:T69 Acts-on:E14
+E16	Action:T70 Acts-on:E15
+E17	Action:T71 Acts-on:E16 Product:T75
+E18	Action:T74 Acts-on:T75 Site:T76 Product:T81
+E19	Action:T80 Acts-on:T81 Site:T83 Product:T85
+E20	Action:T84 Acts-on:T85
+E21	Action:T86 Acts-on:T88 Site:E20
+E22	Action:T90 Using:T92 Acts-on:E21
+E23	Action:T93 Acts-on:E22
+E24	Action:T94 Acts-on:E23 Product:T98
+E25	Action:T97 Acts-on:T98 Using:T99 Product:T104
+E26	Action:T103 Acts-on:T104 Product:T106
+E27	Action:T105 Acts-on:T106 Product:T108
+E28	Action:T107 Acts-on:T108 Using:T111 Using2:T114 Using3:T116 Using4:T118 Product:T120
+E29	Action:T119 Acts-on:T120 Using:T121 Product:T126
+E30	Action:T125 Acts-on:T126 Product:T128
+E31	Action:T127 Acts-on:T128 Using:T132 Using2:T135 Using3:T137 Using4:T139 Product:T141
+E32	Action:T140 Acts-on:T141 Product:T145
+E33	Action:T144 Acts-on:T145 Site:T146 Product:T148
+E34	Action:T147 Acts-on:T148 Using:T149 Product:T154
+E35	Action:T153 Acts-on:T154 Site:T155
+E36	Action:T156 Acts-on:E35 Product:T159
+E37	Action:T158 Acts-on:T159 Product:T161
+E38	Action:T160 Acts-on:T161
+R1	Measure Arg1:T2 Arg2:T3
+R2	Setting Arg1:E1 Arg2:T5
+R3	Setting Arg1:E1 Arg2:T6
+R4	Setting Arg1:E1 Arg2:T7
+R5	Setting Arg1:E5 Arg2:T18
+R6	Of-Type Arg1:T26 Arg2:T25
+R7	Measure Arg1:T24 Arg2:T26
+R8	Mod-Link Arg1:T22 Arg2:T21
+R9	Setting Arg1:E7 Arg2:T28
+R10	Setting Arg1:E7 Arg2:T29
+R11	Setting Arg1:E8 Arg2:T34
+R12	Setting Arg1:E8 Arg2:T35
+R13	Setting Arg1:E8 Arg2:T36
+R14	Mod-Link Arg1:T40 Arg2:T39
+R15	Setting Arg1:E10 Arg2:T44
+R16	Setting Arg1:E10 Arg2:T45
+R17	Setting Arg1:E10 Arg2:T46
+R18	Mod-Link Arg1:T50 Arg2:T49
+R19	Setting Arg1:E12 Arg2:T54
+R20	Setting Arg1:E13 Arg2:T56
+R21	Setting Arg1:E14 Arg2:T58
+R22	Measure Arg1:T61 Arg2:T60
+R23	Measure Arg1:T63 Arg2:T62
+R24	Measure Arg1:T65 Arg2:T64
+R25	Setting Arg1:E14 Arg2:T66
+R26	Setting Arg1:E15 Arg2:T68
+R27	Setting Arg1:E17 Arg2:T73
+R28	Setting Arg1:E17 Arg2:T72
+R29	Setting Arg1:E18 Arg2:T77
+R30	Setting Arg1:E18 Arg2:T78
+R31	Setting Arg1:E18 Arg2:T79
+R32	Mod-Link Arg1:T83 Arg2:T82
+R33	Setting Arg1:E21 Arg2:T87
+R34	Setting Arg1:E21 Arg2:T89
+R35	Setting Arg1:E22 Arg2:T91
+R36	Setting Arg1:E24 Arg2:T95
+R37	Setting Arg1:E24 Arg2:T96
+R38	Setting Arg1:E25 Arg2:T100
+R39	Setting Arg1:E25 Arg2:T101
+R40	Setting Arg1:E25 Arg2:T102
+R41	Measure Arg1:T111 Arg2:T110
+R42	Measure Arg1:T111 Arg2:T109
+R43	Measure Arg1:T111 Arg2:T112
+R44	Measure Arg1:T114 Arg2:T113
+R45	Measure Arg1:T116 Arg2:T115
+R46	Measure Arg1:T118 Arg2:T117
+R47	Setting Arg1:E29 Arg2:T122
+R48	Setting Arg1:E29 Arg2:T123
+R49	Setting Arg1:E29 Arg2:T124
+R50	Setting Arg1:E31 Arg2:T129
+R51	Setting Arg1:E31 Arg2:T130
+R52	Measure Arg1:T132 Arg2:T131
+R53	Measure Arg1:T132 Arg2:T133
+R54	Measure Arg1:T135 Arg2:T134
+R55	Measure Arg1:T137 Arg2:T136
+R56	Measure Arg1:T139 Arg2:T138
+R57	Setting Arg1:E32 Arg2:T143
+R58	Mod-Link Arg1:T143 Arg2:T142
+R59	Setting Arg1:E34 Arg2:T150
+R60	Setting Arg1:E34 Arg2:T151
+R61	Setting Arg1:E34 Arg2:T152
+R62	Setting Arg1:E36 Arg2:T157
+R63	Coreference-Link Arg1:T19 Arg2:T15
+R64	Measure Arg1:T22 Arg2:T23
+R65	Coreference-Link Arg1:T33 Arg2:T4
+R66	Coreference-Link Arg1:T43 Arg2:T33
+R67	Coreference-Link Arg1:T76 Arg2:T43
+R68	Coreference-Link Arg1:T83 Arg2:T50
+R69	Coreference-Link Arg1:T99 Arg2:T76
+R70	Coreference-Link Arg1:T88 Arg2:T65
+R71	Coreference-Link Arg1:T114 Arg2:T61
+R72	Coreference-Link Arg1:T118 Arg2:T63
+R73	Coreference-Link Arg1:T116 Arg2:T59
+R74	Coreference-Link Arg1:T121 Arg2:T99
+R75	Coreference-Link Arg1:T132 Arg2:T111
+R76	Coreference-Link Arg1:T135 Arg2:T114
+R77	Coreference-Link Arg1:T137 Arg2:T116
+R78	Coreference-Link Arg1:T139 Arg2:T118
+R79	Meronym Arg1:T145 Arg2:T146
+R80	Coreference-Link Arg1:T149 Arg2:T121

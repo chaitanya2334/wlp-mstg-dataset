@@ -1,0 +1,156 @@
+T1	Action 39 49	Innoculate
+T2	Numerical 50 51	1
+T3	Reagent 52 58	colony
+T4	Location 72 77	plate
+T5	Amount 125 130	10 ml
+T6	Reagent 134 137	SOB
+T7	Size 143 149	125 ml
+T8	Location 150 155	flask
+T9	Action 158 166	Incubate
+T10	Time 171 184	16 - 18 hours
+T11	Temperature 188 192	37°C
+T12	Speed 197 204	250 rpm
+T13	Action 207 217	Pre - warm
+T14	Numerical 218 219	2
+T15	Size 222 225	1 L
+T16	Location 226 232	flasks
+T17	Amount 244 250	250 ml
+T18	Reagent 259 262	SOB
+T19	Action 265 268	Add
+T20	Numerical 269 272	two
+T21	Generic-Measure 273 278	drops
+T22	Reagent 286 303	overnight culture
+T23	Size 332 338	250 ml
+T24	Location 339 345	flasks
+T25	Action 348 353	Shake
+T26	Temperature 357 361	37°C
+T27	Speed 366 373	250 rpm
+T28	Measure-Type 402 407	OD600
+T29	Numerical 411 420	0.5 - 0.7
+T30	Action 423 430	Turn on
+T31	Device 431 441	centrifuge
+T32	Action 446 450	cool
+T33	Device 451 456	rotor
+T34	Temperature 460 463	4°C
+T35	Action 502 507	Place
+T36	Amount 508 511	1 L
+T37	Concentration 515 519	10 %
+T38	Reagent 520 528	glycerol
+T39	Temperature 532 535	ice
+T40	Action 574 579	Place
+T41	Reagent 580 588	cultures
+T42	Temperature 592 595	ice
+T43	Time 600 610	15 minutes
+T44	Action 669 673	Pour
+T45	Amount 679 685	250 ml
+T46	Reagent 686 693	culture
+T47	Temperature 699 706	chilled
+T48	Size 707 713	500 ml
+T49	Size 719 726	1000 ml
+T50	Location 729 747	centrifuge bottles
+T51	Action 750 760	Centrifuge
+T52	Speed 764 772	5000 rpm
+T53	Time 777 783	10 min
+T54	Action 786 794	Pour off
+T55	Reagent 799 810	supernatant
+T56	Action 815 823	aspirate
+T57	Reagent 828 842	residual broth
+T58	Action 845 848	Add
+T59	Amount 849 855	250 ml
+T60	Reagent 859 867	glycerol
+T61	Location 883 901	centrifuge bottles
+T62	Action 917 924	suspend
+T63	Reagent 929 934	cells
+T64	Method 938 959	pipetting up and down
+T65	Action 962 972	Centrifuge
+T66	Speed 976 984	5000 rpm
+T67	Time 989 995	10 min
+T68	Action 998 1006	Pour off
+T69	Reagent 1011 1022	supernatant
+T70	Action 1059 1062	Add
+T71	Amount 1063 1069	250 ml
+T72	Reagent 1073 1081	glycerol
+T73	Location 1097 1115	centrifuge bottles
+T74	Action 1131 1138	suspend
+T75	Reagent 1143 1148	cells
+T76	Method 1152 1173	pipetting up and down
+T77	Action 1176 1184	Pour off
+T78	Reagent 1189 1200	supernatant
+T79	Action 1205 1212	suspend
+T80	Reagent 1217 1222	cells
+T81	Reagent 1239 1247	glycerol
+T82	Method 1251 1272	pipetting up and down
+T83	Action 1287 1290	add
+T84	Amount 1291 1297	100 µl
+T85	Reagent 1305 1312	culture
+T86	Location 1316 1337	microcentrifuge tubes
+T87	Temperature 1341 1344	ice
+T88	Action 1387 1395	transfer
+T89	Location 1400 1405	tubes
+T90	Reagent 1409 1416	dry ice
+T91	Time 1421 1431	10 minutes
+T92	Reagent 1443 1451	cultures
+T93	Action 1465 1473	transfer
+T94	Mention 1474 1478	them
+T95	Temperature 1484 1490	- 80°C
+T96	Device 1491 1498	freezer
+E1	Action:T1 Count:T2 Acts-on:T3 Site:T4 Using:T6 Site2:T8
+E2	Action:T9 Acts-on:E1
+E3	Action:T13 Count:T14 Acts-on:T16 Acts-on2:E2
+E4	Action:T19 Count:T20 Site:T24 Acts-on:E3
+E5	Action:T25 Acts-on:T24
+E6	Action:T30 Acts-on:T31 Acts-on2:E5
+E7	Action:T32 Acts-on:T33
+E8	Action:T35 Acts-on:T38 Acts-on2:E6
+E9	Action:T40 Acts-on:T41 Acts-on2:E8 Product:T46
+E10	Action:T44 Acts-on:T46 Site:T50
+E11	Action:T51 Acts-on:T50 Product:T55
+E12	Action:T54 Acts-on:T55
+E13	Action:T56 Acts-on:T57 Acts-on2:E12
+E14	Action:T58 Acts-on:T60 Site:T61 Acts-on2:E13
+E15	Action:T62 Acts-on:T63 Using:T64 Acts-on2:E14
+E16	Action:T65 Acts-on:T63 Product:T69
+E17	Action:T68 Acts-on:T69
+E18	Action:T70 Acts-on:T72 Site:T73 Acts-on2:E17
+E19	Action:T74 Acts-on:T75 Using:T76 Product:T78 Acts-on2:E18
+E20	Action:T77 Acts-on:T78
+E21	Action:T79 Acts-on:T80 Using:T81 Using2:T82 Acts-on2:E20
+E22	Action:T83 Acts-on:T85 Site:T86 Acts-on2:E21 Product:T89
+E23	Action:T88 Acts-on:T89 Site:T90 Product:T92
+E24	Action:T93 Acts-on:T94 Site:T96
+R1	Measure Arg1:T6 Arg2:T5
+R2	Measure Arg1:T8 Arg2:T7
+R3	Setting Arg1:E2 Arg2:T10
+R4	Setting Arg1:E2 Arg2:T11
+R5	Setting Arg1:E2 Arg2:T12
+R6	Measure Arg1:T16 Arg2:T15
+R7	Measure Arg1:T18 Arg2:T17
+R8	Meronym Arg1:T18 Arg2:T16
+R9	Measure Arg1:T22 Arg2:T21
+R10	Measure Arg1:T24 Arg2:T23
+R11	Setting Arg1:E5 Arg2:T26
+R12	Setting Arg1:E5 Arg2:T27
+R13	Of-Type Arg1:T29 Arg2:T28
+R14	Setting Arg1:E5 Arg2:T29
+R15	Setting Arg1:E7 Arg2:T34
+R16	Measure Arg1:T38 Arg2:T37
+R17	Measure Arg1:T38 Arg2:T36
+R18	Setting Arg1:E8 Arg2:T39
+R19	Setting Arg1:E9 Arg2:T42
+R20	Setting Arg1:E9 Arg2:T43
+R21	Measure Arg1:T46 Arg2:T45
+R22	Or Arg1:T48 Arg2:T49
+R23	Measure Arg1:T50 Arg2:T48
+R24	Setting Arg1:E10 Arg2:T47
+R25	Setting Arg1:E11 Arg2:T52
+R26	Setting Arg1:E11 Arg2:T53
+R27	Measure Arg1:T60 Arg2:T59
+R28	Setting Arg1:E16 Arg2:T66
+R29	Setting Arg1:E16 Arg2:T67
+R30	Measure Arg1:T72 Arg2:T71
+R31	Measure Arg1:T85 Arg2:T84
+R32	Setting Arg1:E22 Arg2:T87
+R33	Setting Arg1:E23 Arg2:T91
+R34	Coreference-Link Arg1:T94 Arg2:T92
+R35	Setting Arg1:T96 Arg2:T95
+R36	Overlaps Arg1:E6 Arg2:E7

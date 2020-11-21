@@ -1,0 +1,210 @@
+T1	Action 75 83	Incubate
+T2	Time 88 94	45 min
+T3	Temperature 98 103	37 °C
+T4	Action 106 112	Dilute
+T5	Reagent 117 125	reaction
+T6	Action 129 135	adding
+T7	Amount 154 160	100 μl
+T8	Concentration 166 169	1 M
+T9	Reagent 170 183	sodium borate
+T10	Generic-Measure 186 192	pH 7.5
+T11	Action 207 218	precipitate
+T12	Amount 224 236	five volumes
+T13	Concentration 240 245	100 %
+T14	Reagent 246 253	ethanol
+T15	Action 302 306	Spin
+T16	Speed 310 320	> 15,000 g
+T17	Time 325 335	30 minutes
+T18	Temperature 339 343	4 °C
+T19	Action 346 353	Discard
+T20	Reagent 358 369	supernatant
+T21	Action 430 433	Add
+T22	Amount 434 442	1 volume
+T23	Concentration 446 450	70 %
+T24	Reagent 460 467	ethanol
+T25	Action 471 475	wash
+T26	Reagent 480 486	pellet
+T27	Action 511 515	spin
+T28	Speed 519 529	> 15,000 g
+T29	Time 534 543	5 minutes
+T30	Temperature 547 551	4 °C
+T31	Action 554 561	Discard
+T32	Reagent 566 577	supernatant
+T33	Reagent 588 594	pellet
+T34	Action 595 598	dry
+T35	Temperature 602 618	room temperature
+T36	Action 694 697	dry
+T37	Device 704 710	vacuum
+T38	Time 715 725	10 minutes
+T39	Action 748 758	Solubilize
+T40	Reagent 763 769	pellet
+T41	Amount 773 778	40 µl
+T42	Reagent 782 802	Tris - borate buffer
+T43	Concentration 805 810	10 mM
+T44	Reagent 811 821	Tris - HCl
+T45	Generic-Measure 824 830	pH 7.8
+T46	Concentration 833 836	1 M
+T47	Reagent 837 850	sodium borate
+T48	Generic-Measure 853 859	pH 7.5
+T49	Action 956 960	wait
+T50	Time 965 979	5 - 10 minutes
+T51	Action 987 999	resuspending
+T52	Reagent 1004 1010	pellet
+T53	Action 1074 1077	Add
+T54	Reagent 1078 1086	RNase T1
+T55	Concentration 1092 1119	desired final concentration
+T56	Action 1136 1142	dilute
+T57	Reagent 1147 1152	RNase
+T58	Reagent 1160 1180	Tris - borate buffer
+T59	Reagent 1191 1211	Tris - borate buffer
+T60	Action 1215 1223	complete
+T61	Amount 1238 1243	50 µl
+T62	Action 1574 1582	Incubate
+T63	Time 1587 1596	3 minutes
+T64	Temperature 1600 1605	37 °C
+T65	Action 1608 1614	Dilute
+T66	Reagent 1619 1627	reaction
+T67	Amount 1636 1648	equal volume
+T68	Modifier 1652 1662	ice - cold
+T69	Modifier 1663 1675	RNase - free
+T70	Reagent 1676 1681	water
+T71	Action 1686 1691	place
+T72	Location 1695 1698	ice
+T73	Action 1715 1722	Proceed
+T74	Action 1752 1765	snap - freeze
+T75	Reagent 1770 1779	reactions
+T76	Reagent 1783 1798	liquid nitrogen
+T77	Action 1803 1808	store
+T78	Temperature 1812 1819	- 80 °C
+T79	Action 1822 1829	Extract
+T80	Reagent 1834 1837	RNA
+T81	Reagent 1870 1887	Trizol substitute
+T82	Action 1984 1994	Solubilize
+T83	Reagent 1999 2011	pelleted RNA
+T84	Amount 2015 2020	50 µl
+T85	Concentration 2024 2030	100 mM
+T86	Reagent 2031 2047	sodium phosphate
+T87	Generic-Measure 2048 2054	pH 7.0
+T88	Action 2057 2060	Add
+T89	Amount 2079 2084	50 μl
+T90	Concentration 2090 2095	100 %
+T91	Reagent 2096 2100	DMSO
+T92	Action 2105 2108	mix
+T93	Modifier 2109 2113	well
+T94	Action 2116 2131	De - glyoxalate
+T95	Reagent 2136 2139	RNA
+T96	Action 2143 2153	incubating
+T97	Time 2161 2168	3 hours
+T98	Temperature 2172 2177	65 °C
+T99	Modifier 2185 2191	gentle
+T100	Action 2192 2198	mixing
+T101	Time 2199 2220	every 15 - 30 minutes
+T102	Action 2225 2231	Dilute
+T103	Reagent 2236 2244	reaction
+T104	Amount 2253 2265	equal volume
+T105	Modifier 2269 2279	ice - cold
+T106	Modifier 2280 2292	RNase - free
+T107	Reagent 2293 2298	water
+T108	Action 2312 2319	Extract
+T109	Reagent 2324 2327	RNA
+T110	Reagent 2360 2377	Trizol substitute
+T111	Action 2474 2483	Resuspend
+T112	Reagent 2488 2491	RNA
+T113	Modifier 2495 2507	RNase - free
+T114	Reagent 2508 2513	water
+T115	Action 2516 2521	Store
+T116	Temperature 2525 2532	- 80 °C
+T117	Action 2556 2575	downstream analysis
+E1	Action:T1 Product:T5
+E2	Action:T4 Acts-on:T5
+E3	Action:T6 Acts-on:T9 Site:T5
+E4	Action:T11 Using:T14 Acts-on:E2
+E5	Action:T15 Acts-on:E4 Product:T20
+E6	Action:T19 Acts-on:T20 Product:T26
+E7	Action:T21 Acts-on:T24 Site:T26
+E8	Action:T25 Acts-on:T26
+E9	Action:T27 Acts-on:E8 Product:T32
+E10	Action:T31 Acts-on:T32 Product:T33
+E11	Action:T34 Acts-on:T33 Product:T40
+E12	Action:T36 Using:T37 Acts-on:T33 Product:T40
+E13	Action:T39 Acts-on:T40 Site:T42
+E14	Action:T49 Acts-on:E13 Product:T52
+E15	Action:T51 Acts-on:T52
+E16	Action:T53 Acts-on:T54 Site:E15
+E17	Action:T56 Acts-on:T57 Site:T58 Product:T54
+E18	Action:T60 Using:T59 Acts-on:E16
+E19	Action:T62 Acts-on:E18 Product:T66
+E20	Action:T65 Acts-on:T66 Using:T70
+E21	Action:T71 Site:T72 Acts-on:E20 Product:T75
+E22	Action:T73 Acts-on:T75 Product:T80
+E23	Action:T74 Acts-on:T75 Using:T76
+E24	Action:T77 Acts-on:E23
+E25	Action:T79 Acts-on:T80 Using:T81 Product:T83
+E26	Action:T82 Acts-on:T83 Site:T86
+E27	Action:T88 Acts-on:T91 Site:E26
+E28	Action:T92 Acts-on:E27 Product:T95
+E29	Action:T94 Acts-on:T95 Product:T103
+E30	Action:T96 Acts-on:T95
+E31	Action:T100 Acts-on:T95
+E32	Action:T102 Acts-on:T103 Using:T107 Product:T109
+E33	Action:T108 Acts-on:T109 Using:T110 Product:T112
+E34	Action:T111 Acts-on:T112 Site:T114
+E35	Action:T115 Acts-on:E34
+E36	Action:T117 Acts-on:E34
+R1	Setting Arg1:E1 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T3
+R3	Measure Arg1:T9 Arg2:T8
+R4	Measure Arg1:T9 Arg2:T7
+R5	Measure Arg1:T9 Arg2:T10
+R6	Measure Arg1:T14 Arg2:T13
+R7	Measure Arg1:T14 Arg2:T12
+R8	Setting Arg1:E5 Arg2:T16
+R9	Setting Arg1:E5 Arg2:T17
+R10	Setting Arg1:E5 Arg2:T18
+R11	Measure Arg1:T24 Arg2:T23
+R12	Measure Arg1:T24 Arg2:T22
+R13	Setting Arg1:E9 Arg2:T28
+R14	Setting Arg1:E9 Arg2:T29
+R15	Setting Arg1:E9 Arg2:T30
+R16	Setting Arg1:E11 Arg2:T35
+R17	Setting Arg1:E12 Arg2:T38
+R18	Measure Arg1:T42 Arg2:T41
+R19	Measure Arg1:T44 Arg2:T43
+R20	Measure Arg1:T44 Arg2:T45
+R21	Measure Arg1:T47 Arg2:T46
+R22	Measure Arg1:T47 Arg2:T48
+R23	Meronym Arg1:T47 Arg2:T42
+R24	Meronym Arg1:T44 Arg2:T42
+R25	Setting Arg1:E14 Arg2:T50
+R26	Setting Arg1:E16 Arg2:T55
+R27	Setting Arg1:E18 Arg2:T61
+R28	Setting Arg1:E19 Arg2:T63
+R29	Setting Arg1:E19 Arg2:T64
+R30	Measure Arg1:T70 Arg2:T67
+R31	Mod-Link Arg1:T70 Arg2:T68
+R32	Setting Arg1:E24 Arg2:T78
+R33	Measure Arg1:T86 Arg2:T85
+R34	Measure Arg1:T86 Arg2:T87
+R35	Measure Arg1:T86 Arg2:T84
+R36	Measure Arg1:T91 Arg2:T90
+R37	Measure Arg1:T91 Arg2:T89
+R38	Mod-Link Arg1:E28 Arg2:T93
+R39	Setting Arg1:E30 Arg2:T97
+R40	Setting Arg1:E30 Arg2:T98
+R41	Mod-Link Arg1:E31 Arg2:T99
+R42	Setting Arg1:E31 Arg2:T101
+R43	Mod-Link Arg1:T107 Arg2:T106
+R44	Mod-Link Arg1:T107 Arg2:T105
+R45	Measure Arg1:T107 Arg2:T104
+R46	Mod-Link Arg1:T114 Arg2:T113
+R47	Setting Arg1:E35 Arg2:T116
+R48	Enables Arg1:E3 Arg2:E2
+R49	Enables Arg1:E7 Arg2:E8
+R50	Or Arg1:E11 Arg2:E12
+R51	Coreference-Link Arg1:T42 Arg2:T58
+R52	Coreference-Link Arg1:T58 Arg2:T59
+R53	Mod-Link Arg1:T70 Arg2:T69
+R54	Or Arg1:E23 Arg2:E22
+R55	Enables Arg1:E30 Arg2:E29
+R56	Overlaps Arg1:E31 Arg2:E30
+R57	Or Arg1:E35 Arg2:E36

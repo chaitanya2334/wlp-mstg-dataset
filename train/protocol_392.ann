@@ -1,0 +1,259 @@
+T1	Action 89 96	Prepare
+T2	Concentration 101 106	1.5 %
+T3	Reagent 107 114	agarose
+T4	Reagent 123 135	lysis buffer
+T5	Action 138 146	Incubate
+T6	Reagent 151 158	agarose
+T7	Temperature 162 166	80°C
+T8	Action 187 195	Dispense
+T9	Amount 196 200	5 mL
+T10	Modifier 208 220	freshly made
+T11	Reagent 221 233	lysis buffer
+T12	Amount 239 246	50 - mL
+T13	Location 247 259	Falcon tubes
+T14	Action 284 291	Combine
+T15	Modifier 292 305	equal volumes
+T16	Amount 308 314	200 µL
+T17	Reagent 320 337	virus concentrate
+T18	Modifier 342 348	molten
+T19	Concentration 349 354	1.5 %
+T20	Reagent 355 362	agarose
+T21	Action 365 368	Mix
+T22	Modifier 369 376	briefly
+T23	Action 379 387	Dispense
+T24	Reagent 392 399	mixture
+T25	Location 405 415	plug molds
+T26	Device 423 430	pipette
+T27	Action 433 438	Place
+T28	Reagent 443 453	plug molds
+T29	Device 461 468	freezer
+T30	Temperature 471 476	–20°C
+T31	Modifier 483 491	at least
+T32	Time 492 497	2 min
+T33	Action 507 513	Remove
+T34	Seal 518 522	tape
+T35	Location 532 538	bottom
+T36	Reagent 546 556	plug molds
+T37	Action 561 565	push
+T38	Reagent 570 575	plugs
+T39	Reagent 589 594	molds
+T40	Amount 600 604	5 mL
+T41	Reagent 605 617	lysis buffer
+T42	Action 620 628	Incubate
+T43	Reagent 633 638	plugs
+T44	Reagent 642 654	lysis buffer
+T45	Time 655 664	overnight
+T46	Location 672 676	dark
+T47	Temperature 680 684	30°C
+T48	Action 702 708	decant
+T49	Reagent 713 725	lysis buffer
+T50	Device 734 747	plastic sieve
+T51	Modifier 777 785	attached
+T52	Location 793 796	top
+T53	Location 804 815	Falcon tube
+T54	Action 818 822	Wash
+T55	Reagent 827 832	plugs
+T56	Numerical 833 838	three
+T57	Time 847 853	30 min
+T58	Modifier 854 858	each
+T59	Reagent 864 873	TE buffer
+T60	Generic-Measure 874 880	10 : 1
+T61	Temperature 884 900	room temperature
+T62	Reagent 907 912	plugs
+T63	Action 920 926	stored
+T64	Temperature 930 933	4°C
+T65	Reagent 937 939	TE
+T66	Generic-Measure 940 947	20 : 50
+T67	Time 952 965	several month
+T68	Action 1148 1154	Set up
+T69	Device 1159 1166	gel rig
+T70	Action 1169 1176	Prepare
+T71	Concentration 1179 1182	1 %
+T72	Reagent 1183 1194	agarose gel
+T73	Concentration 1198 1200	1×
+T74	Reagent 1201 1211	TBE buffer
+T75	Action 1214 1218	Melt
+T76	Reagent 1229 1236	agarose
+T77	Action 1263 1268	Place
+T78	Modifier 1273 1277	warm
+T79	Reagent 1278 1285	agarose
+T80	Temperature 1289 1293	60°C
+T81	Time 1298 1304	10 min
+T82	Action 1312 1319	pouring
+T83	Device 1329 1336	gel rig
+T84	Mention 1350 1352	it
+T85	Action 1356 1360	cool
+T86	Action 1363 1367	Keep
+T87	Amount 1368 1374	~ 5 mL
+T88	Reagent 1375 1382	agarose
+T89	Temperature 1386 1390	60°C
+T90	Action 1408 1412	seal
+T91	Location 1417 1422	wells
+T92	Action 1451 1455	pour
+T93	Amount 1456 1461	50 mL
+T94	Concentration 1465 1467	1×
+T95	Reagent 1468 1486	TBE running buffer
+T96	Location 1494 1497	top
+T97	Reagent 1505 1508	gel
+T98	Action 1513 1518	place
+T99	Mention 1519 1521	it
+T100	Device 1529 1541	refrigerator
+T101	Modifier 1546 1554	at least
+T102	Time 1555 1561	20 min
+T103	Time 1565 1574	overnight
+T104	Action 1577 1582	Place
+T105	Reagent 1583 1609	molecular weight standards
+T106	Reagent 1612 1618	slices
+T107	Size 1622 1628	~ 5 mm
+T108	Location 1634 1645	either side
+T109	Reagent 1653 1656	gel
+T110	Action 1659 1664	Place
+T111	Reagent 1669 1676	samples
+T112	Modifier 1677 1684	between
+T113	Location 1689 1696	markers
+T114	Modifier 1705 1712	sterile
+T115	Device 1713 1717	loop
+T116	Action 1720 1727	Overlay
+T117	Location 1732 1737	wells
+T118	Modifier 1743 1751	leftover
+T119	Modifier 1752 1758	molten
+T120	Concentration 1759 1762	1 %
+T121	Reagent 1763 1770	agarose
+T122	Action 1773 1779	Remove
+T123	Reagent 1784 1787	gel
+T124	Location 1797 1808	pouring rig
+T125	Action 1813 1819	remove
+T126	Modifier 1820 1823	any
+T127	Modifier 1824 1834	extraneous
+T128	Reagent 1835 1842	agarose
+T129	Location 1852 1858	bottom
+T130	Location 1863 1868	edges
+T131	Action 1871 1878	Prepare
+T132	Concentration 1883 1885	1×
+T133	Reagent 1886 1889	TBE
+T134	Action 1913 1918	place
+T135	Time 1922 1926	14°C
+T136	Action 1947 1952	Place
+T137	Reagent 1957 1960	gel
+T138	Device 1970 1993	electrophoresis chamber
+T139	Modifier 1998 2007	carefully
+T140	Action 2008 2012	pour
+T141	Modifier 2017 2023	cooled
+T142	Concentration 2024 2026	1×
+T143	Reagent 2027 2045	TBE running buffer
+T144	Device 2055 2062	chamber
+T145	Action 2065 2068	Run
+T146	Reagent 2073 2076	gel
+T147	Generic-Measure 2080 2088	6 V cm–1
+T148	Device 2094 2105	pulse ramps
+T149	Time 2111 2121	20 to 40 s
+T150	Temperature 2141 2145	14°C
+T151	Time 2150 2154	22 h
+E1	Action:T1 Product:T3 Product2:T4
+E2	Action:T5 Acts-on:T6 Product:T20
+E3	Action:T8 Acts-on:T11 Site:T13
+E4	Action:T14 Acts-on:T17 Acts-on2:T20
+E5	Action:T21 Acts-on:E4 Product:T24
+E6	Action:T23 Acts-on:T24 Site:T25 Using:T26 Product:T28
+E7	Action:T27 Acts-on:T28 Site:T29 Product:T36
+E8	Action:T33 Acts-on:T34 Site:T35
+E9	Action:T37 Acts-on:T38 Site:T39 Site2:T41 Product:T43
+E10	Action:T42 Acts-on:T43 Site:T46 Product:T49
+E11	Action:T48 Acts-on:T49 Using:T50 Product:T55 Site:T52
+E12	Action:T54 Acts-on:T55 Using:T59 Product:T62
+E13	Action:T63 Acts-on:T62 Site:T65
+E14	Action:T68 Product:T69
+E15	Action:T70 Site:T74 Product:T72
+E16	Action:T75 Acts-on:T76 Product:T79
+E17	Action:T77 Acts-on:T79
+E18	Action:T82 Site:T83 Acts-on:T79
+E19	Action:T85 Acts-on:T84
+E20	Action:T86 Acts-on:T88
+E21	Action:T90 Acts-on:T91
+E22	Action:T92 Acts-on:T95 Site:T96
+E23	Action:T98 Acts-on:T99 Site:T100 Acts-on2:E22 Product:T109
+E24	Action:T104 Acts-on:T106 Site:T108 Product:T111
+E25	Action:T110 Acts-on:T111 Site:T113 Using:T115 Product:T123
+E26	Action:T116 Acts-on:T117 Using:T121 Product:T128
+E27	Action:T122 Acts-on:T123 Site:T124 Product:T137
+E28	Action:T125 Acts-on:T128 Site:T129 Site2:T130
+E29	Action:T131 Product:T133
+E30	Action:T134 Acts-on:E29
+E31	Action:T136 Acts-on:T137 Site:T138 Product:T144
+E32	Action:T140 Acts-on:T143 Site:T144 Product:T146
+E33	Action:T145 Acts-on:T146 Using:T148
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E2 Arg2:T7
+R3	Mod-Link Arg1:T11 Arg2:T10
+R4	Measure Arg1:T11 Arg2:T9
+R5	Measure Arg1:T13 Arg2:T12
+R6	Measure Arg1:T20 Arg2:T19
+R7	Mod-Link Arg1:T20 Arg2:T18
+R8	Measure Arg1:T17 Arg2:T16
+R9	Mod-Link Arg1:E5 Arg2:T22
+R10	Mod-Link Arg1:T32 Arg2:T31
+R11	Setting Arg1:T29 Arg2:T30
+R12	Setting Arg1:T29 Arg2:T32
+R13	Measure Arg1:T41 Arg2:T40
+R14	Meronym Arg1:T35 Arg2:T36
+R15	Setting Arg1:E10 Arg2:T45
+R16	Setting Arg1:E10 Arg2:T47
+R17	Meronym Arg1:T43 Arg2:T44
+R18	Meronym Arg1:T52 Arg2:T53
+R19	Measure Arg1:T59 Arg2:T60
+R20	Mod-Link Arg1:T57 Arg2:T58
+R21	Measure Arg1:T55 Arg2:T56
+R22	Setting Arg1:E12 Arg2:T57
+R23	Setting Arg1:E12 Arg2:T61
+R24	Setting Arg1:E13 Arg2:T64
+R25	Measure Arg1:T65 Arg2:T66
+R26	Setting Arg1:E13 Arg2:T67
+R27	Measure Arg1:T74 Arg2:T73
+R28	Measure Arg1:T72 Arg2:T71
+R29	Mod-Link Arg1:T79 Arg2:T78
+R30	Setting Arg1:E17 Arg2:T80
+R31	Setting Arg1:E17 Arg2:T81
+R32	Coreference-Link Arg1:T84 Arg2:T79
+R33	Measure Arg1:T88 Arg2:T87
+R34	Setting Arg1:E20 Arg2:T89
+R35	Mod-Link Arg1:T102 Arg2:T101
+R36	Or Arg1:T102 Arg2:T103
+R37	Measure Arg1:T95 Arg2:T94
+R38	Measure Arg1:T95 Arg2:T93
+R39	Meronym Arg1:T96 Arg2:T97
+R40	Setting Arg1:E23 Arg2:T102
+R41	Coreference-Link Arg1:T99 Arg2:T97
+R42	Meronym Arg1:T108 Arg2:T109
+R43	Measure Arg1:T106 Arg2:T107
+R44	Meronym Arg1:T106 Arg2:T105
+R45	Mod-Link Arg1:T113 Arg2:T112
+R46	Mod-Link Arg1:T115 Arg2:T114
+R47	Measure Arg1:T121 Arg2:T120
+R48	Mod-Link Arg1:T121 Arg2:T119
+R49	Mod-Link Arg1:T121 Arg2:T118
+R50	Mod-Link Arg1:T128 Arg2:T127
+R51	Mod-Link Arg1:T128 Arg2:T126
+R52	Setting Arg1:E30 Arg2:T135
+R53	Measure Arg1:T133 Arg2:T132
+R54	Mod-Link Arg1:E32 Arg2:T139
+R55	Measure Arg1:T143 Arg2:T142
+R56	Mod-Link Arg1:T143 Arg2:T141
+R57	Setting Arg1:T148 Arg2:T147
+R58	Setting Arg1:T148 Arg2:T149
+R59	Setting Arg1:T148 Arg2:T150
+R60	Setting Arg1:E33 Arg2:T151
+R61	Coreference-Link Arg1:T6 Arg2:T3
+R62	Coreference-Link Arg1:T11 Arg2:T4
+R63	Coreference-Link Arg1:T38 Arg2:T36
+R64	Coreference-Link Arg1:T39 Arg2:T36
+R65	Coreference-Link Arg1:T41 Arg2:T11
+R66	Coreference-Link Arg1:T76 Arg2:T72
+R67	Coreference-Link Arg1:T83 Arg2:T69
+R68	Coreference-Link Arg1:T95 Arg2:T74
+R69	Coreference-Link Arg1:T88 Arg2:T79
+R70	Coreference-Link Arg1:T121 Arg2:T6
+R71	Mod-Link Arg1:E11 Arg2:T51
+R72	Enables Arg1:E20 Arg2:E21
+R73	Coreference-Link Arg1:T143 Arg2:T133
+R74	Mod-Link Arg1:E4 Arg2:T15
+R75	Coreference-Link Arg1:T117 Arg2:T91

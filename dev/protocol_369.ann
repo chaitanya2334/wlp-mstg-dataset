@@ -1,0 +1,20 @@
+T1	Reagent 65 72	Na2EDTA
+T2	Reagent 73 78	FeCl3
+T3	Action 79 84	Bring
+T4	Reagent 85 93	solution
+T5	Amount 97 104	1000 mL
+T6	Reagent 110 120	MilliQ H2O
+T7	Action 125 141	filter sterilize
+T8	Size 149 154	0.2μm
+T9	Device 155 161	filter
+T10	Action 164 169	Store
+T11	Location 170 181	in the dark
+T12	Temperature 185 188	4ºC
+E1	Action:T3 Acts-on:T4 Using:T6
+E2	Action:T7 Using:T9 Acts-on:E1
+E3	Action:T10 Site:T11 Acts-on:E2
+R1	Setting Arg1:E3 Arg2:T12
+R2	Meronym Arg1:T1 Arg2:T4
+R3	Setting Arg1:T9 Arg2:T8
+R4	Setting Arg1:E1 Arg2:T5
+R5	Meronym Arg1:T2 Arg2:T4

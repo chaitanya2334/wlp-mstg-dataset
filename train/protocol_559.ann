@@ -1,0 +1,74 @@
+T1	Action 42 48	Dilute
+T2	Concentration 53 56	10X
+T3	Reagent 57 73	RBC Lysis Buffer
+T4	Concentration 77 79	1X
+T5	Reagent 107 124	deionized water .
+T6	Action 125 129	Warm
+T7	Concentration 134 136	1X
+T8	Reagent 137 145	solution
+T9	Temperature 149 165	room temperature
+T10	Modifier 166 178	prior to use
+T11	Action 181 184	Add
+T12	Amount 185 191	2.0 ml
+T13	Concentration 195 197	1X
+T14	Reagent 198 214	RBC Lysis Buffer
+T15	Modifier 218 222	each
+T16	Location 223 227	tube
+T17	Amount 245 251	100 μl
+T18	Reagent 255 266	whole blood
+T19	Modifier 269 275	Gently
+T20	Action 276 282	vortex
+T21	Modifier 283 287	each
+T22	Location 288 292	tube
+T23	Modifier 293 304	immediately
+T24	Action 311 317	adding
+T25	Reagent 322 337	lysing solution
+T26	Action 340 348	Incubate
+T27	Temperature 352 368	room temperature
+T28	Method 371 391	protected from light
+T29	Time 398 413	10 - 15 minutes
+T30	Action 416 426	Centrifuge
+T31	Speed 427 434	350 x g
+T32	Time 439 448	5 minutes
+T33	Action 451 459	Aspirate
+T34	Reagent 460 471	supernatant
+T35	Modifier 472 490	without disturbing
+T36	Reagent 491 497	pellet
+T37	Action 504 513	resuspend
+T38	Reagent 518 524	pellet
+T39	Modifier 532 543	appropriate
+T40	Reagent 544 550	buffer
+T41	Reagent 563 592	BioLegendCell Staining Buffer
+E1	Action:T1 Acts-on:T3 Using:T5 Product:T8
+E2	Action:T6 Acts-on:T8
+E3	Action:T11 Acts-on:T14 Site:T16 Product:T22 Acts-on2:E2
+E4	Action:T20 Acts-on:T22
+E5	Action:T24 Acts-on:T25
+E6	Action:T26 Using:T28 Acts-on:E4
+E7	Action:T30 Acts-on:E6 Product:T34
+E8	Action:T33 Acts-on:T34 Product:T38
+E9	Action:T37 Acts-on:T38 Site:T40
+R1	Measure Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T4
+R3	Measure Arg1:T8 Arg2:T7
+R4	Setting Arg1:E2 Arg2:T9
+R5	Measure Arg1:T18 Arg2:T17
+R6	Mod-Link Arg1:T16 Arg2:T15
+R7	Meronym Arg1:T18 Arg2:T16
+R8	Measure Arg1:T14 Arg2:T13
+R9	Measure Arg1:T14 Arg2:T12
+R10	Mod-Link Arg1:E4 Arg2:T19
+R11	Mod-Link Arg1:E4 Arg2:T23
+R12	Mod-Link Arg1:T22 Arg2:T21
+R13	Setting Arg1:E6 Arg2:T27
+R14	Setting Arg1:E6 Arg2:T29
+R15	Setting Arg1:E7 Arg2:T31
+R16	Setting Arg1:E7 Arg2:T32
+R17	Mod-Link Arg1:T40 Arg2:T39
+R18	Mod-Link Arg1:E2 Arg2:T10
+R19	Coreference-Link Arg1:T14 Arg2:T8
+R20	Coreference-Link Arg1:T25 Arg2:T14
+R21	Enables Arg1:E5 Arg2:E4
+R22	Coreference-Link Arg1:T41 Arg2:T40
+R23	Mod-Link Arg1:E8 Arg2:T35
+R24	Meronym Arg1:T36 Arg2:T34

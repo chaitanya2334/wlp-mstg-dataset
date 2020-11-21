@@ -1,0 +1,54 @@
+T1	Action 37 41	Take
+T2	Amount 42 46	20 g
+T3	Reagent 47 51	soil
+T4	Reagent 55 61	manure
+T5	Location 67 80	conical flask
+T6	Action 85 88	add
+T7	Amount 89 95	100 mL
+T8	Reagent 99 109	extractant
+T9	Concentration 112 123	1 : 5 ratio
+T10	Action 128 133	Shake
+T11	Modifier 134 138	well
+T12	Action 149 157	standing
+T13	Time 162 166	18 h
+T14	Action 169 175	Filter
+T15	Device 184 211	Whatman filter paper no . 1
+T16	Reagent 362 367	humus
+T17	Action 371 379	dialyzed
+T18	Device 383 397	dialysis tubes
+T19	Device 401 416	parchment paper
+T20	Reagent 425 442	running tap water
+T21	Time 447 451	24 h
+T22	Action 477 484	Measure
+T23	Generic-Measure 489 495	volume
+T24	Modifier 504 516	known volume
+T25	Amount 519 524	10 mL
+T26	Modifier 541 554	pre - weighed
+T27	Size 555 561	100 mL
+T28	Location 562 568	beaker
+T29	Location 575 581	beaker
+T30	Action 585 590	dried
+T31	Device 597 601	oven
+T32	Temperature 605 609	70°C
+E1	Action:T1 Acts-on:T4 Site:T5
+E2	Action:T6 Acts-on:T8 Acts-on2:T5
+E3	Action:T10 Acts-on:E2
+E4	Action:T12 Acts-on:E3
+E5	Action:T14 Using:T15 Acts-on:E4 Product:T16
+E6	Action:T17 Acts-on:T16 Using:T18 Using2:T20
+E7	Action:T22 Site:T28 Acts-on:E6 Product:T29
+E8	Action:T30 Acts-on:T29 Using:T31
+R1	Or Arg1:T3 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Measure Arg1:T8 Arg2:T7
+R4	Setting Arg1:E2 Arg2:T9
+R5	Setting Arg1:E4 Arg2:T13
+R6	Mod-Link Arg1:E3 Arg2:T11
+R7	Or Arg1:T18 Arg2:T19
+R8	Setting Arg1:E6 Arg2:T21
+R9	Setting Arg1:E7 Arg2:T23
+R10	Measure Arg1:T28 Arg2:T27
+R11	Setting Arg1:E8 Arg2:T32
+R12	Mod-Link Arg1:T28 Arg2:T26
+R13	Setting Arg1:T24 Arg2:T25
+R14	Setting Arg1:E7 Arg2:T25

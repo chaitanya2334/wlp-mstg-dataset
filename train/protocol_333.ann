@@ -1,0 +1,281 @@
+T1	Action 15 23	Incubate
+T2	Time 28 39	120 minutes
+T3	Temperature 43 50	37 ⁰C .
+T4	Action 51 57	Invert
+T5	Location 62 67	plate
+T6	Action 72 75	pat
+T7	Reagent 87 114	thick clean absorbent paper
+T8	Action 117 125	Incubate
+T9	Time 130 140	60 minutes
+T10	Temperature 144 150	37°C .
+T11	Action 166 174	Aspirate
+T12	Location 175 184	each well
+T13	Action 189 193	wash
+T14	Action 197 204	filling
+T15	Location 205 214	each well
+T16	Reagent 220 231	Wash Buffer
+T17	Amount 248 253	400µL
+T18	Action 273 281	Aspirate
+T19	Location 282 291	each well
+T20	Action 296 300	wash
+T21	Action 304 311	filling
+T22	Location 312 321	each well
+T23	Reagent 327 338	Wash Buffer
+T24	Amount 355 360	400µL
+T25	Action 380 388	Aspirate
+T26	Location 389 398	each well
+T27	Action 403 407	wash
+T28	Action 411 418	filling
+T29	Location 419 428	each well
+T30	Reagent 434 445	Wash Buffer
+T31	Amount 462 467	400µL
+T32	Action 487 495	Aspirate
+T33	Location 496 505	each well
+T34	Action 510 514	wash
+T35	Action 518 525	filling
+T36	Location 526 535	each well
+T37	Reagent 541 552	Wash Buffer
+T38	Amount 569 574	400µL
+T39	Action 594 602	Aspirate
+T40	Location 603 612	each well
+T41	Action 617 621	wash
+T42	Action 625 632	filling
+T43	Location 633 642	each well
+T44	Reagent 648 659	Wash Buffer
+T45	Amount 676 681	400µL
+T46	Modifier 686 694	Complete
+T47	Action 695 702	removal
+T48	Reagent 706 712	liquid
+T49	Action 741 744	Add
+T50	Amount 745 749	50µL
+T51	Reagent 753 766	Stop Solution
+T52	Location 770 779	each well
+T53	Action 831 834	tap
+T54	Location 839 844	plate
+T55	Modifier 855 863	thorough
+T56	Action 864 870	mixing
+T57	Action 873 882	Determine
+T58	Measure-Type 887 902	optical density
+T59	Location 919 928	each well
+T60	Device 947 963	microplatereader
+T61	Generic-Measure 971 977	450 nm
+T62	Action 992 996	open
+T63	Device 1001 1021	micro - plate reader
+T64	Action 1035 1042	preheat
+T65	Mention 1047 1057	instrument
+T66	Action 1064 1090	set the testing parameters
+T67	Action 1112 1117	store
+T68	Reagent 1118 1130	all reagents
+T69	Temperature 1148 1177	specified storage temperature
+T70	Action 1212 1215	Add
+T71	Amount 1216 1221	100µL
+T72	Reagent 1225 1233	Standard
+T73	Reagent 1236 1241	Blank
+T74	Reagent 1247 1253	Sample
+T75	Location 1258 1262	well
+T76	Location 1269 1279	blank well
+T77	Action 1283 1288	added
+T78	Reagent 1294 1308	Sample diluent
+T79	Reagent 1311 1320	Solutions
+T80	Action 1325 1330	added
+T81	Location 1338 1344	bottom
+T82	Location 1348 1370	micro ELISA plate well
+T83	Action 1373 1411	avoid inside wall touching and foaming
+T84	Action 1426 1429	Mix
+T85	Modifier 1433 1439	gently
+T86	Action 1442 1447	Cover
+T87	Location 1452 1457	plate
+T88	Seal 1463 1469	sealer
+T89	Action 1484 1490	Remove
+T90	Reagent 1495 1501	liquid
+T91	Location 1507 1516	each well
+T92	Action 1519 1529	don't wash
+T93	Action 1532 1535	Add
+T94	Amount 1536 1541	100µL
+T95	Reagent 1545 1581	Detection Reagent A working solution
+T96	Location 1585 1594	each well
+T97	Action 1597 1602	Cover
+T98	Seal 1612 1624	Plate sealer
+T99	Action 1634 1637	tap
+T100	Location 1642 1647	plate
+T101	Modifier 1658 1666	thorough
+T102	Action 1667 1673	mixing
+T103	Action 1676 1684	Incubate
+T104	Time 1689 1695	1 hour
+T105	Temperature 1699 1703	37°C
+T106	Action 1721 1729	Aspirate
+T107	Location 1730 1739	each well
+T108	Action 1744 1748	wash
+T109	Action 1752 1759	filling
+T110	Location 1760 1769	each well
+T111	Reagent 1775 1786	Wash Buffer
+T112	Amount 1803 1808	400µL
+T113	Action 1826 1834	Aspirate
+T114	Location 1835 1844	each well
+T115	Action 1849 1853	wash
+T116	Action 1857 1864	filling
+T117	Location 1865 1874	each well
+T118	Reagent 1880 1891	Wash Buffer
+T119	Amount 1908 1913	400µL
+T120	Action 1933 1941	Aspirate
+T121	Location 1942 1951	each well
+T122	Action 1956 1960	wash
+T123	Action 1964 1971	filling
+T124	Location 1972 1981	each well
+T125	Reagent 1987 1998	Wash Buffer
+T126	Amount 2015 2020	400µL
+T127	Modifier 2124 2132	Complete
+T128	Action 2133 2140	removal
+T129	Reagent 2144 2150	liquid
+T130	Action 2212 2218	remove
+T131	Reagent 2219 2240	remaining Wash Buffer
+T132	Method 2244 2254	aspirating
+T133	Method 2258 2267	decanting
+T134	Action 2270 2273	Add
+T135	Amount 2274 2279	100µL
+T136	Reagent 2283 2319	Detection Reagent B working solution
+T137	Location 2323 2334	each well .
+T138	Action 2335 2340	Cover
+T139	Seal 2349 2361	Plate sealer
+T140	Action 2364 2367	Add
+T141	Amount 2368 2372	90µL
+T142	Reagent 2376 2394	Substrate Solution
+T143	Location 2398 2407	each well
+T144	Action 2410 2415	Cover
+T145	Seal 2423 2439	new Plate sealer
+T146	Action 2444 2455	incubatefor
+T147	Time 2456 2471	15 - 30 minutes
+T148	Temperature 2475 2479	37°C
+T149	Action 2482 2489	Protect
+T150	Location 2494 2499	plate
+T151	Location 2505 2510	light
+T152	Action 2711 2720	terminate
+T153	Reagent 2725 2733	reaction
+T154	Modifier 2758 2768	completely
+T155	Action 2769 2775	remove
+T156	Reagent 2776 2797	remaining Wash Buffer
+T157	Method 2801 2811	aspirating
+T158	Method 2815 2824	decanting
+T159	Action 2827 2833	Invert
+T160	Location 2838 2843	plate
+T161	Action 2848 2851	pat
+T162	Reagent 2863 2890	thick clean absorbent paper
+E1	Action:T1 Product:T5
+E2	Action:T4 Acts-on:T5
+E3	Action:T6 Using:T7 Acts-on:E2
+E4	Action:T8 Acts-on:E3 Product:T12
+E5	Action:T11 Acts-on:T12 Product:T15
+E6	Action:T13 Acts-on:E5 Product:T19
+E7	Action:T14 Acts-on:T16 Site:T15
+E8	Action:T18 Acts-on:T19 Product:T22
+E9	Action:T20 Acts-on:E8 Product:T26
+E10	Action:T21 Acts-on:T23 Site:T22
+E11	Action:T25 Acts-on:T26 Product:T29
+E12	Action:T27 Acts-on:E11 Product:T33
+E13	Action:T28 Acts-on:T30 Site:T29
+E14	Action:T32 Acts-on:T33 Product:T36
+E15	Action:T34 Product:T40 Acts-on:E14
+E16	Action:T35 Acts-on:T37 Site:T36
+E17	Action:T39 Acts-on:T40 Product:T43
+E18	Action:T41 Acts-on:E17 Product:T48
+E19	Action:T42 Acts-on:T44 Site:T43
+E20	Action:T47 Acts-on:T48 Product:T52
+E21	Action:T49 Acts-on:T51 Site:T52 Product:T54
+E22	Action:T53 Acts-on:T54
+E23	Action:T56 Acts-on:T54 Product:T59
+E24	Action:T57 Measure-Type-Link:T58 Site:T59 Using:T60 Product:T68
+E25	Action:T62 Acts-on:T63 Product:T65
+E26	Action:T64 Acts-on:T65
+E27	Action:T66 Acts-on:E26 Product:T60
+E28	Action:T67 Acts-on:T68 Product:T75
+E29	Action:T70 Acts-on:T72 Site:T75 Product:T76
+E30	Action:T77 Acts-on:T76 Using:T78 Product:T82
+E31	Action:T80 Acts-on:T79 Site:T81
+E32	Action:T83 Acts-on:E31
+E33	Action:T84 Acts-on:E32 Product:T87
+E34	Action:T86 Acts-on:T87 Using:T88 Product:T90
+E35	Action:T89 Acts-on:T90 Site:T91
+E36	Action:T92 Acts-on:T91 Product:T96
+E37	Action:T93 Acts-on:T95 Site:T96
+E38	Action:T97 Using:T98 Acts-on:E37 Product:T100
+E39	Action:T99 Acts-on:T100
+E40	Action:T102 Acts-on:T100
+E41	Action:T103 Acts-on:E40 Product:T107
+E42	Action:T106 Acts-on:T107 Product:T110
+E43	Action:T108 Acts-on:E42 Product:T114
+E44	Action:T109 Site:T110 Acts-on:T111
+E45	Action:T113 Acts-on:T114 Product:T117
+E46	Action:T115 Product:T121 Acts-on:E45
+E47	Action:T116 Acts-on:T118 Site:T117
+E48	Action:T120 Acts-on:T121 Product:T124
+E49	Action:T122 Acts-on:E48 Product:T129
+E50	Action:T123 Acts-on:T125 Site:T124
+E51	Action:T128 Acts-on:T129 Product:T131
+E52	Action:T130 Acts-on:T131 Using:T132 Using2:T133 Product:T137
+E53	Action:T134 Acts-on:T136 Site:T137
+E54	Action:T138 Using:T139 Acts-on:E53 Product:T143
+E55	Action:T140 Acts-on:T142 Site:T143
+E56	Action:T144 Using:T145 Site:E55 Product:T150
+E57	Action:T146 Acts-on:E56
+E58	Action:T149 Acts-on:T150 Site:T151 Product:T153
+E59	Action:T152 Acts-on:T153 Product:T156
+E60	Action:T155 Acts-on:T156 Using:T157 Using2:T158 Product:T160
+E61	Action:T159 Acts-on:T160
+E62	Action:T161 Using:T162 Acts-on:E61
+R1	Setting Arg1:E1 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T3
+R3	Setting Arg1:E4 Arg2:T9
+R4	Setting Arg1:E4 Arg2:T10
+R5	Measure Arg1:T16 Arg2:T17
+R6	Measure Arg1:T23 Arg2:T24
+R7	Measure Arg1:T30 Arg2:T31
+R8	Measure Arg1:T37 Arg2:T38
+R9	Measure Arg1:T44 Arg2:T45
+R10	Mod-Link Arg1:E20 Arg2:T46
+R11	Measure Arg1:T51 Arg2:T50
+R12	Mod-Link Arg1:E23 Arg2:T55
+R13	Setting Arg1:T60 Arg2:T61
+R14	Setting Arg1:E28 Arg2:T69
+R15	Or Arg1:T72 Arg2:T73
+R16	Or Arg1:T73 Arg2:T74
+R17	Measure Arg1:T72 Arg2:T71
+R18	Measure Arg1:T73 Arg2:T71
+R19	Measure Arg1:T74 Arg2:T71
+R20	Meronym Arg1:T81 Arg2:T82
+R21	Mod-Link Arg1:E33 Arg2:T85
+R22	Measure Arg1:T95 Arg2:T94
+R23	Mod-Link Arg1:E40 Arg2:T101
+R24	Setting Arg1:E41 Arg2:T104
+R25	Setting Arg1:E41 Arg2:T105
+R26	Measure Arg1:T118 Arg2:T119
+R27	Measure Arg1:T111 Arg2:T112
+R28	Measure Arg1:T125 Arg2:T126
+R29	Mod-Link Arg1:E51 Arg2:T127
+R30	Measure Arg1:T136 Arg2:T135
+R31	Measure Arg1:T142 Arg2:T141
+R32	Setting Arg1:E57 Arg2:T147
+R33	Setting Arg1:E57 Arg2:T148
+R34	Enables Arg1:E7 Arg2:E6
+R35	Coreference-Link Arg1:T23 Arg2:T16
+R36	Coreference-Link Arg1:T30 Arg2:T23
+R37	Coreference-Link Arg1:T37 Arg2:T30
+R38	Coreference-Link Arg1:T44 Arg2:T37
+R39	Enables Arg1:E10 Arg2:E9
+R40	Enables Arg1:E13 Arg2:E12
+R41	Enables Arg1:E16 Arg2:E15
+R42	Enables Arg1:E19 Arg2:E18
+R43	Enables Arg1:E22 Arg2:E23
+R44	Prevents Arg1:E31 Arg2:E32
+R45	Meronym Arg1:T90 Arg2:T91
+R46	Prevents Arg1:E35 Arg2:E36
+R47	Enables Arg1:E39 Arg2:E40
+R48	Coreference-Link Arg1:T111 Arg2:T44
+R49	Coreference-Link Arg1:T118 Arg2:T111
+R50	Coreference-Link Arg1:T125 Arg2:T118
+R51	Enables Arg1:E44 Arg2:E43
+R52	Enables Arg1:E47 Arg2:E46
+R53	Enables Arg1:E50 Arg2:E49
+R54	Or Arg1:T132 Arg2:T133
+R55	Or Arg1:T157 Arg2:T158
+R56	Mod-Link Arg1:E60 Arg2:T154
+R57	Coreference-Link Arg1:T162 Arg2:T7

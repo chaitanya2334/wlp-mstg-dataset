@@ -1,0 +1,303 @@
+T1	Action 63 70	Prepare
+T2	Reagent 71 79	Buffer A
+T3	Action 82 89	Prepare
+T4	Reagent 90 98	Buffer B
+T5	Action 101 108	Prepare
+T6	Reagent 109 117	Buffer B
+T7	pH 120 126	pH 8.5
+T8	Action 129 136	Prepare
+T9	Reagent 137 151	Storage Buffer
+T10	Action 154 161	Prepare
+T11	Concentration 162 164	1X
+T12	Reagent 165 183	CviJI Assay Buffer
+T13	Action 186 191	Store
+T14	Reagent 196 202	enzyme
+T15	Temperature 206 212	- 20°C
+T16	Action 215 219	Thaw
+T17	Modifier 220 226	7 hour
+T18	Reagent 227 265	IL - 3A virus infected NC64A chlorella
+T19	Action 270 277	suspend
+T20	Location 281 291	MSK flasks
+T21	Reagent 297 307	Buffer A .
+T22	Action 308 315	Recover
+T23	Reagent 320 330	homogenate
+T24	Modifier 334 339	clean
+T25	Location 340 345	tubes
+T26	Action 348 354	Adjust
+T27	Reagent 359 381	homogenate supernatant
+T28	Generic-Measure 385 400	70 % saturation
+T29	Reagent 406 418	( NH4 ) 2SO4
+T30	Temperature 422 425	4°C
+T31	Modifier 431 437	gentle
+T32	Action 438 446	stirring
+T33	Action 449 459	Centrifuge
+T34	Reagent 464 472	material
+T35	Device 480 498	Sorvall SS34 rotor
+T36	Speed 502 512	10,000 rpm
+T37	Time 513 519	10 min
+T38	Temperature 522 525	4°C
+T39	Action 528 535	Suspend
+T40	Reagent 540 547	pellets
+T41	Reagent 553 561	Buffer A
+T42	Action 564 574	Centrifuge
+T43	Reagent 579 587	material
+T44	Device 595 613	Sorvall SS34 rotor
+T45	Speed 617 627	10,000 rpm
+T46	Time 630 636	10 min
+T47	Temperature 639 642	4°C
+T48	Action 645 651	Dilute
+T49	Reagent 656 667	supernatant
+T50	Amount 673 688	10 - 15 volumes
+T51	Reagent 692 700	Buffer B
+T52	Action 704 710	reduce
+T53	Reagent 715 719	NaCl
+T54	Measure-Type 720 733	concentration
+T55	Action 736 741	Elute
+T56	Reagent 746 772	Heparin - Sepharose column
+T57	Reagent 778 786	Buffer B
+T58	Generic-Measure 795 804	0 - 2.0 M
+T59	Reagent 805 818	KOAc gradient
+T60	Action 821 826	Elute
+T61	Reagent 831 854	Blue - Sepharose column
+T62	Reagent 860 868	Buffer B
+T63	Generic-Measure 877 886	0 - 2.0 M
+T64	Reagent 887 900	KOAc gradient
+T65	Action 903 909	Dilute
+T66	Reagent 914 930	pooled fractions
+T67	Amount 936 951	10 - 15 volumes
+T68	Reagent 955 963	Buffer B
+T69	pH 966 972	pH 8.5
+T70	Action 976 982	reduce
+T71	Reagent 987 991	salt
+T72	Measure-Type 992 1005	concentration
+T73	Action 1008 1013	Elute
+T74	Reagent 1018 1038	Q - Sepharose column
+T75	Reagent 1044 1052	Buffer B
+T76	pH 1055 1061	pH 8.5
+T77	Concentration 1070 1079	0 - 2.0 M
+T78	Reagent 1080 1093	KOAc gradient
+T79	Action 1096 1107	Concentrate
+T80	Modifier 1112 1118	pooled
+T81	Reagent 1119 1125	enzyme
+T82	Method 1129 1137	dialysis
+T83	Time 1138 1147	overnight
+T84	Reagent 1153 1167	storage buffer
+T85	Temperature 1171 1174	4°C
+T86	Action 1177 1187	Homogenize
+T87	Reagent 1192 1197	cells
+T88	Device 1205 1231	MSK mechanical homogenizer
+T89	Generic-Measure 1237 1242	15 gm
+T90	Size 1246 1252	0.3 mm
+T91	Reagent 1253 1264	glass beads
+T92	Speed 1268 1277	4,000 rpm
+T93	Time 1282 1288	90 sec
+T94	Method 1309 1320	CO2 cooling
+T95	Action 1323 1327	Wash
+T96	Reagent 1332 1343	glass beads
+T97	Numerical 1344 1346	3X
+T98	Amount 1352 1356	5 mL
+T99	Reagent 1360 1368	Buffer A
+T100	Action 1373 1380	combine
+T101	Reagent 1390 1400	homogenate
+T102	Action 1403 1413	Centrifuge
+T103	Reagent 1418 1428	homogenate
+T104	Device 1436 1454	Sorvall SS34 rotor
+T105	Speed 1458 1468	10,000 rpm
+T106	Time 1471 1477	20 min
+T107	Temperature 1480 1483	4°C
+T108	Action 1486 1490	Save
+T109	Reagent 1495 1506	supernatant
+T110	Action 1509 1517	Incubate
+T111	Temperature 1521 1524	4°C
+T112	Time 1529 1540	60 - 90 min
+T113	Method 1541 1557	without stirring
+T114	Action 1560 1564	Save
+T115	Reagent 1569 1575	pellet
+T116	Modifier 1578 1581	Per
+T117	Amount 1582 1584	mL
+T118	Reagent 1588 1598	suspension
+T119	Action 1599 1602	add
+T120	Amount 1605 1612	0.45 mL
+T121	Concentration 1616 1619	4 M
+T122	Reagent 1620 1624	NaCl
+T123	Amount 1629 1636	0.45 mL
+T124	Concentration 1640 1644	28 %
+T125	Reagent 1645 1653	PEG 8000
+T126	Action 1675 1678	Mix
+T127	Modifier 1679 1685	gently
+T128	Action 1689 1698	inversion
+T129	Time 1703 1713	5 - 10 min
+T130	Action 1716 1720	Save
+T131	Reagent 1725 1736	supernatant
+T132	Action 1739 1743	Load
+T133	Reagent 1748 1756	material
+T134	Time 1757 1766	overnight
+T135	Location 1774 1800	Heparin - Sepharose column
+T136	Modifier 1801 1813	equilibrated
+T137	Reagent 1819 1827	Buffer B
+T138	Modifier 1835 1839	cold
+T139	Location 1840 1844	room
+T140	Action 1847 1852	Assay
+T141	Reagent 1857 1873	column fractions
+T142	Action 1878 1882	pool
+T143	Reagent 1887 1903	active fractions
+T144	Action 1906 1912	Dilute
+T145	Reagent 1917 1933	pooled fractions
+T146	Amount 1939 1954	10 - 15 volumes
+T147	Reagent 1958 1966	Buffer B
+T148	Action 1970 1976	reduce
+T149	Reagent 1981 1985	salt
+T150	Measure-Type 1986 1999	concentration
+T151	Action 2002 2006	Load
+T152	Reagent 2011 2019	material
+T153	Time 2020 2029	overnight
+T154	Location 2037 2060	Blue - Sepharose column
+T155	Action 2061 2073	equilibrated
+T156	Reagent 2079 2087	Buffer B
+T157	Modifier 2095 2099	cold
+T158	Location 2100 2104	room
+T159	Action 2107 2112	Assay
+T160	Reagent 2117 2133	column fractions
+T161	Action 2138 2142	pool
+T162	Reagent 2147 2163	active fractions
+T163	Action 2166 2170	Load
+T164	Reagent 2175 2183	material
+T165	Time 2184 2193	overnight
+T166	Location 2201 2221	Q - Sepharose column
+T167	Action 2222 2234	equilibrated
+T168	Reagent 2240 2250	Buffer B ,
+T169	pH 2251 2257	pH 8.5
+T170	Modifier 2265 2269	cold
+T171	Location 2270 2274	room
+T172	Action 2277 2282	Assay
+T173	Reagent 2287 2303	column fractions
+T174	Action 2308 2312	pool
+T175	Reagent 2317 2333	active fractions
+T176	Action 2336 2339	Add
+T177	Reagent 2340 2343	BSA
+T178	Concentration 2346 2356	10 mg / mL
+T179	Measure-Type 2364 2383	final concentration
+T180	Concentration 2387 2398	100 µg / mL
+E1	Action:T1 Product:T2
+E2	Action:T3 Product:T4
+E3	Action:T5 Product:T6
+E4	Action:T8 Product:T9
+E5	Action:T10 Product:T12
+E6	Action:T13 Acts-on:T14
+E7	Action:T16 Acts-on:T18
+E8	Action:T19 Site:T20 Using:T21 Acts-on:E7 Product:T23
+E9	Action:T22 Acts-on:T23 Site:T25 Product:T27
+E10	Action:T26 Acts-on:T27 Using:T29 Product:T34
+E11	Action:T32 
+E12	Action:T33 Acts-on:T34 Using:T35 Product:T40
+E13	Action:T39 Acts-on:T40 Using:T41 Product:T43
+E14	Action:T42 Acts-on:T43 Using:T44 Product:T49
+E15	Action:T48 Acts-on:T49 Using:T51
+E16	Action:T52 Measure-Type-Link:T54 Acts-on:T53 Product:T66
+E17	Action:T55 Acts-on:T56 Site:T57 Using:T59 Product:T135
+E18	Action:T60 Acts-on:T61 Site:T62 Using:T64 Product:T154
+E19	Action:T65 Acts-on:T66 Using:T68
+E20	Action:T70 Acts-on:T71 Measure-Type-Link:T72 Product:T81
+E21	Action:T73 Acts-on:T74 Site:T75 Using:T78 Product:T166
+E22	Action:T79 Acts-on:T81 Using:T82 Site:T84 Product:T87
+E23	Action:T86 Acts-on:T87 Site:T88 Using:T91 Using2:T94 Product:T101
+E24	Action:T95 Acts-on:T96 Using:T99
+E25	Action:T100 Acts-on:T101 Acts-on2:E24 Product:T103
+E26	Action:T102 Acts-on:T103 Site:T104 Product:T109
+E27	Action:T108 Acts-on:T109
+E28	Action:T110 Using:T113 Acts-on:E27 Product:T115
+E29	Action:T114 Acts-on:T115 Product:T118
+E30	Action:T119 Acts-on:T122 Acts-on2:T125 Site:T118
+E31	Action:T126 Acts-on:E30 Product:T131
+E32	Action:T128 
+E33	Action:T130 Acts-on:T131 Product:T133
+E34	Action:T132 Acts-on:T133 Site:T135 Site2:T139 Product:T141 Product2:T143
+E35	Action:T140 Acts-on:T141
+E36	Action:T142 Acts-on:T143
+E37	Action:T144 Acts-on:T145 Using:T147 Product:T152 Product2:T164
+E38	Action:T148 Acts-on:T149 Measure-Type-Link:T150
+E39	Action:T151 Acts-on:T152 Site:T154 Product:T160 Product2:T162
+E40	Action:T155 Site:T158 Acts-on:T152 Using:T156
+E41	Action:T159 Acts-on:T160
+E42	Action:T161 Acts-on:T162
+E43	Action:T163 Acts-on:T164 Site:T166 Product:T173 Product2:T175
+E44	Action:T167 Using:T168 Site:T171 Acts-on:T164
+E45	Action:T172 Acts-on:T173
+E46	Action:T174 Acts-on:T175 Product:T177
+E47	Action:T176 Acts-on:T177 Measure-Type-Link:T179
+R1	Measure Arg1:T6 Arg2:T7
+R2	Measure Arg1:T12 Arg2:T11
+R3	Setting Arg1:E6 Arg2:T15
+R4	Mod-Link Arg1:T18 Arg2:T17
+R5	Mod-Link Arg1:T25 Arg2:T24
+R6	Mod-Link Arg1:E11 Arg2:T31
+R7	Setting Arg1:E10 Arg2:T28
+R8	Setting Arg1:E10 Arg2:T30
+R9	Setting Arg1:T35 Arg2:T36
+R10	Setting Arg1:T35 Arg2:T37
+R11	Setting Arg1:T35 Arg2:T38
+R12	Setting Arg1:T44 Arg2:T45
+R13	Setting Arg1:T44 Arg2:T46
+R14	Setting Arg1:T44 Arg2:T47
+R15	Measure Arg1:T51 Arg2:T50
+R16	Measure Arg1:T59 Arg2:T58
+R17	Measure Arg1:T64 Arg2:T63
+R18	Measure Arg1:T68 Arg2:T67
+R19	Measure Arg1:T68 Arg2:T69
+R20	Measure Arg1:T78 Arg2:T77
+R21	Measure Arg1:T75 Arg2:T76
+R22	Mod-Link Arg1:T81 Arg2:T80
+R23	Setting Arg1:E22 Arg2:T83
+R24	Setting Arg1:E22 Arg2:T85
+R25	Measure Arg1:T91 Arg2:T90
+R26	Measure Arg1:T91 Arg2:T89
+R27	Setting Arg1:T88 Arg2:T92
+R28	Setting Arg1:T88 Arg2:T93
+R29	Setting Arg1:E24 Arg2:T97
+R30	Measure Arg1:T99 Arg2:T98
+R31	Setting Arg1:E26 Arg2:T105
+R32	Setting Arg1:E26 Arg2:T106
+R33	Setting Arg1:E26 Arg2:T107
+R34	Setting Arg1:E28 Arg2:T111
+R35	Setting Arg1:E28 Arg2:T112
+R36	Measure Arg1:T118 Arg2:T117
+R37	Mod-Link Arg1:T117 Arg2:T116
+R38	Measure Arg1:T125 Arg2:T124
+R39	Measure Arg1:T122 Arg2:T121
+R40	Measure Arg1:T125 Arg2:T123
+R41	Measure Arg1:T122 Arg2:T120
+R42	Setting Arg1:E32 Arg2:T129
+R43	Mod-Link Arg1:E31 Arg2:T127
+R44	Mod-Link Arg1:T139 Arg2:T138
+R45	Setting Arg1:E34 Arg2:T134
+R46	Measure Arg1:T147 Arg2:T146
+R47	Mod-Link Arg1:T158 Arg2:T157
+R48	Setting Arg1:E39 Arg2:T153
+R49	Mod-Link Arg1:T171 Arg2:T170
+R50	Measure Arg1:T168 Arg2:T169
+R51	Setting Arg1:E43 Arg2:T165
+R52	Measure Arg1:T177 Arg2:T178
+R53	Setting Arg1:E47 Arg2:T180
+R54	Coreference-Link Arg1:T21 Arg2:T2
+R55	Enables Arg1:E11 Arg2:E10
+R56	Coreference-Link Arg1:T41 Arg2:T21
+R57	Enables Arg1:E15 Arg2:E16
+R58	Coreference-Link Arg1:T51 Arg2:T4
+R59	Coreference-Link Arg1:T57 Arg2:T51
+R60	Coreference-Link Arg1:T64 Arg2:T59
+R61	Coreference-Link Arg1:T62 Arg2:T57
+R62	Coreference-Link Arg1:T68 Arg2:T6
+R63	Enables Arg1:E19 Arg2:E20
+R64	Coreference-Link Arg1:T75 Arg2:T68
+R65	Coreference-Link Arg1:T78 Arg2:T64
+R66	Coreference-Link Arg1:T99 Arg2:T41
+R67	Enables Arg1:E32 Arg2:E31
+R68	Enables Arg1:E37 Arg2:E38
+R69	Coreference-Link Arg1:T137 Arg2:T62
+R70	Coreference-Link Arg1:T84 Arg2:T9
+R71	Mod-Link Arg1:T135 Arg2:T136
+R72	Meronym Arg1:T137 Arg2:T135
+R73	Overlaps Arg1:E45 Arg2:E46
+R74	Overlaps Arg1:E41 Arg2:E42
+R75	Overlaps Arg1:E35 Arg2:E36
+R76	Coreference-Link Arg1:T14 Arg2:T12

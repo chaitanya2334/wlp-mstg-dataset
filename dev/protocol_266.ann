@@ -1,0 +1,266 @@
+T1	Action 109 114	Place
+T2	Amount 115 120	10 ml
+T3	Concentration 124 126	1X
+T4	Reagent 127 130	PBS
+T5	Device 138 147	microwave
+T6	Action 156 160	boil
+T7	Action 163 166	Add
+T8	Amount 171 174	. 4
+T9	Reagent 175 191	paraformaldehyde
+T10	Action 194 197	Add
+T11	Generic-Measure 198 205	4 drops
+T12	Concentration 209 211	2M
+T13	Reagent 212 216	NaCl
+T14	Action 280 283	Add
+T15	Generic-Measure 284 292	one drop
+T16	Amount 293 297	12ml
+T17	Reagent 298 301	HCL
+T18	Action 305 311	adjust
+T19	pH 316 330	PH ( 7.5 - 8 )
+T20	Reagent 337 342	block
+T21	Amount 345 350	10 ml
+T22	Concentration 354 356	1X
+T23	Reagent 357 360	PBS
+T24	Amount 361 370	10µl / ml
+T25	Reagent 371 390	Normal Donkey Serum
+T26	Amount 391 400	10µl / ml
+T27	Concentration 401 404	10X
+T28	Reagent 405 411	Triton
+T29	Action 414 420	Set up
+T30	Device 425 446	dissection microscopy
+T31	Action 449 452	Put
+T32	Location 457 473	depression slide
+T33	Mention 477 479	it
+T34	Action 482 485	Put
+T35	Generic-Measure 486 497	three drops
+T36	Concentration 501 503	1X
+T37	Reagent 504 507	PBS
+T38	Location 515 520	slide
+T39	Action 524 532	maintain
+T40	Measure-Type 537 539	PH
+T41	Reagent 553 565	egg chambers
+T42	Action 566 574	hydrated
+T43	Action 577 588	Anesthetize
+T44	Reagent 593 598	flies
+T45	Location 608 615	CO2 bed
+T46	Action 618 622	Hold
+T47	Reagent 627 630	fly
+T48	Location 640 645	wings
+T49	Size 653 659	size 5
+T50	Device 660 667	tweezer
+T51	Action 670 675	Place
+T52	Mention 676 678	it
+T53	Location 686 691	slide
+T54	Device 704 713	left hand
+T55	Action 714 718	hold
+T56	Reagent 723 726	fly
+T57	Location 736 742	thorax
+T58	Device 757 767	right hand
+T59	Modifier 768 774	gently
+T60	Action 775 779	grap
+T61	Location 784 787	tip
+T62	Reagent 795 802	abdomen
+T63	Action 807 811	pull
+T64	Mention 812 814	it
+T65	Action 859 866	Squeeze
+T66	Reagent 871 878	abdomen
+T67	Modifier 879 885	gently
+T68	Reagent 896 915	pair of the ovaries
+T69	Action 928 936	Transfer
+T70	Reagent 941 948	ovaries
+T71	Location 958 974	depression slide
+T72	Reagent 984 987	fix
+T73	Device 994 1009	transfer piptte
+T74	Action 1012 1016	Wash
+T75	Reagent 1021 1028	ovaries
+T76	Numerical 1029 1031	3X
+T77	Concentration 1037 1039	1X
+T78	Reagent 1040 1043	PBS
+T79	Device 1050 1065	transfer piptte
+T80	Action 1068 1076	Transfer
+T81	Reagent 1081 1088	ovaries
+T82	Reagent 1098 1103	block
+T83	Device 1114 1129	transfer piptte
+T84	Action 1161 1169	transfer
+T85	Location 1182 1191	microtube
+T86	Reagent 1212 1223	fresh block
+T87	Action 1224 1227	add
+T88	Reagent 1232 1248	primary antibody
+T89	Time 1249 1259	over night
+T90	Temperature 1263 1265	4C
+T91	Action 1283 1289	Remove
+T92	Reagent 1294 1299	block
+T93	Action 1302 1306	Wash
+T94	Reagent 1311 1318	ovaries
+T95	Numerical 1319 1321	3X
+T96	Concentration 1322 1324	1X
+T97	Reagent 1325 1328	PBS
+T98	Action 1331 1334	Add
+T99	Reagent 1335 1340	block
+T100	Action 1341 1345	Rock
+T101	Temperature 1349 1351	RT
+T102	Time 1356 1363	20 mins
+T103	Action 1382 1388	Remove
+T104	Reagent 1393 1398	block
+T105	Action 1401 1405	Wash
+T106	Numerical 1406 1409	one
+T107	Concentration 1420 1422	1X
+T108	Reagent 1423 1426	PBS
+T109	Action 1429 1432	Add
+T110	Reagent 1433 1438	block
+T111	Action 1441 1444	Add
+T112	Reagent 1445 1463	secondry antibodiy
+T113	Action 1477 1482	cover
+T114	Location 1487 1491	tube
+T115	Seal 1497 1501	foil
+T116	Action 1505 1528	prevent the interaction
+T117	Reagent 1537 1549	2nd antibody
+T118	Reagent 1559 1564	light
+T119	Action 1567 1571	Rock
+T120	Temperature 1575 1577	RT
+T121	Time 1582 1593	2 - 4 hours
+T122	Action 1623 1629	Remove
+T123	Reagent 1634 1639	block
+T124	Action 1642 1646	Wash
+T125	Numerical 1647 1649	3X
+T126	Concentration 1655 1657	1X
+T127	Reagent 1658 1661	PBS
+T128	Action 1664 1667	Add
+T129	Reagent 1668 1673	block
+T130	Action 1676 1680	Rock
+T131	Time 1685 1692	30 mins
+T132	Temperature 1696 1698	RT
+T133	Action 1753 1757	Wash
+T134	Numerical 1758 1761	one
+T135	Concentration 1772 1774	1X
+T136	Reagent 1775 1778	PBS
+T137	Device 1790 1802	glass piptte
+T138	Action 1805 1813	transfer
+T139	Reagent 1818 1825	ovaries
+T140	Location 1833 1846	regular slide
+T141	Action 1856 1862	remove
+T142	Modifier 1863 1867	most
+T143	Reagent 1875 1878	PBS
+T144	Action 1936 1939	Put
+T145	Generic-Measure 1940 1951	three drops
+T146	Reagent 1955 1969	mounting media
+T147	Action 1974 1979	place
+T148	Seal 1984 1994	cover slip
+T149	Location 1998 2001	top
+T150	Reagent 2009 2016	ovaries
+T151	Action 2019 2023	Heal
+T152	Location 2028 2033	edges
+T153	Seal 2041 2051	cover slip
+T154	Reagent 2059 2070	nail polish
+T155	Reagent 2077 2084	ovaries
+T156	Action 2101 2111	visualized
+E1	Action:T1 Acts-on:T4 Site:T5
+E2	Action:T6 Acts-on:T4
+E3	Action:T7 Acts-on:T9 Site:E2
+E4	Action:T10 Acts-on:T13 Site:E3
+E5	Action:T14 Acts-on:T17 Site:E4
+E6	Action:T18 Acts-on:E4 Product:T72
+E7	Action:T29 Acts-on:T30 Product:T33
+E8	Action:T31 Acts-on:T32 Site:T33 Product:T38
+E9	Action:T34 Acts-on:T37 Site:T38
+E10	Action:T39 Measure-Type-Link:T40 Acts-on:E8
+E11	Action:T42 Acts-on:T41 Product:T53
+E12	Action:T43 Acts-on:T44 Using:T45 Product:T47
+E13	Action:T46 Using:T50 Acts-on:T48 Product:T52
+E14	Action:T51 Acts-on:T52 Site:T53 Product:T56
+E15	Action:T55 Using:T54 Acts-on:T57
+E16	Action:T60 Acts-on:T61 Using:T58
+E17	Action:T63 Acts-on:T64 Product:T66
+E18	Action:T65 Acts-on:T66 Product:T68
+E19	Action:T69 Acts-on:T70 Site:T71 Site2:T72 Using:T73 Product:T75
+E20	Action:T74 Acts-on:T75 Count:T76 Using:T78 Using2:T79 Product:T81
+E21	Action:T80 Acts-on:T81 Site:T82 Using:T83
+E22	Action:T84 Site:T85 Acts-on:E21
+E23	Action:T87 Acts-on:T88 Site:E22 Product:T92
+E24	Action:T91 Acts-on:T92 Product:T94
+E25	Action:T93 Acts-on:T94 Count:T95 Using:T97
+E26	Action:T98 Acts-on:T99 Site:E25
+E27	Action:T100 Acts-on:E26 Product:T104
+E28	Action:T103 Acts-on:T104
+E29	Action:T105 Count:T106 Using:T108 Acts-on:E28
+E30	Action:T109 Acts-on:T110 Site:E29
+E31	Action:T111 Acts-on:T112 Site:E30 Product:T114
+E32	Action:T113 Acts-on:T114 Using:T115
+E33	Action:T116 Acts-on:T117 Using:T118
+E34	Action:T119 Acts-on:E33 Product:T123
+E35	Action:T122 Acts-on:T123
+E36	Action:T124 Count:T125 Using:T127 Acts-on:E35
+E37	Action:T128 Acts-on:T129 Site:E36
+E38	Action:T130 Acts-on:E37
+E39	Action:T133 Count:T134 Using:T136 Acts-on:E38 Product:T139
+E40	Action:T138 Acts-on:T139 Site:T140 Using:T137 Product:T143
+E41	Action:T141 Acts-on:T143
+E42	Action:T144 Acts-on:T146 Site:E41 Product:T150
+E43	Action:T147 Acts-on:T148 Site:T149 Product:T153
+E44	Action:T151 Acts-on:T152 Using:T154 Product:T155
+E45	Action:T156 Acts-on:T155
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T4 Arg2:T2
+R3	Measure Arg1:T9 Arg2:T8
+R4	Measure Arg1:T13 Arg2:T12
+R5	Measure Arg1:T13 Arg2:T11
+R6	Measure Arg1:T17 Arg2:T16
+R7	Measure Arg1:T17 Arg2:T15
+R8	Setting Arg1:E6 Arg2:T19
+R9	Measure Arg1:T37 Arg2:T36
+R10	Measure Arg1:T37 Arg2:T35
+R11	Measure Arg1:T50 Arg2:T49
+R12	Meronym Arg1:T57 Arg2:T56
+R13	Meronym Arg1:T61 Arg2:T62
+R14	Mod-Link Arg1:E16 Arg2:T59
+R15	Coreference-Link Arg1:T64 Arg2:T62
+R16	Mod-Link Arg1:E18 Arg2:T67
+R17	Measure Arg1:T78 Arg2:T77
+R18	Meronym Arg1:T86 Arg2:T85
+R19	Setting Arg1:E23 Arg2:T89
+R20	Setting Arg1:E23 Arg2:T90
+R21	Measure Arg1:T97 Arg2:T96
+R22	Measure Arg1:T108 Arg2:T107
+R23	Setting Arg1:E34 Arg2:T120
+R24	Setting Arg1:E34 Arg2:T121
+R25	Measure Arg1:T127 Arg2:T126
+R26	Setting Arg1:E38 Arg2:T131
+R27	Setting Arg1:E38 Arg2:T132
+R28	Measure Arg1:T136 Arg2:T135
+R29	Measure Arg1:T146 Arg2:T145
+R30	Meronym Arg1:T149 Arg2:T150
+R31	Meronym Arg1:T152 Arg2:T153
+R32	Enables Arg1:E1 Arg2:E2
+R33	Enables Arg1:E5 Arg2:E6
+R34	Coreference-Link Arg1:T37 Arg2:T4
+R35	Enables Arg1:E9 Arg2:E10
+R36	Enables Arg1:E9 Arg2:E11
+R37	Meronym Arg1:T41 Arg2:T38
+R38	Meronym Arg1:T48 Arg2:T47
+R39	Overlaps Arg1:E15 Arg2:E16
+R40	Meronym Arg1:T62 Arg2:T56
+R41	Overlaps Arg1:E16 Arg2:E17
+R42	Coreference-Link Arg1:T70 Arg2:T68
+R43	Meronym Arg1:T70 Arg2:T71
+R44	Coreference-Link Arg1:T78 Arg2:T37
+R45	Measure Arg1:T23 Arg2:T22
+R46	Measure Arg1:T23 Arg2:T21
+R47	Meronym Arg1:T23 Arg2:T20
+R48	Measure Arg1:T25 Arg2:T24
+R49	Measure Arg1:T28 Arg2:T27
+R50	Measure Arg1:T28 Arg2:T26
+R51	Meronym Arg1:T25 Arg2:T20
+R52	Meronym Arg1:T28 Arg2:T20
+R53	Coreference-Link Arg1:T82 Arg2:T20
+R54	Coreference-Link Arg1:T97 Arg2:T78
+R55	Setting Arg1:E27 Arg2:T101
+R56	Setting Arg1:E27 Arg2:T102
+R57	Coreference-Link Arg1:T99 Arg2:T82
+R58	Coreference-Link Arg1:T108 Arg2:T97
+R59	Coreference-Link Arg1:T110 Arg2:T99
+R60	Prevents Arg1:E32 Arg2:E33
+R61	Meronym Arg1:T117 Arg2:T114
+R62	Coreference-Link Arg1:T127 Arg2:T108
+R63	Coreference-Link Arg1:T129 Arg2:T110
+R64	Coreference-Link Arg1:T136 Arg2:T127
+R65	Mod-Link Arg1:T143 Arg2:T142

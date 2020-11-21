@@ -1,0 +1,95 @@
+T1	Modifier 72 86	unconcentrated
+T2	Reagent 87 103	seawater samples
+T3	Action 106 109	add
+T4	Amount 110 115	25 mL
+T5	Modifier 116 120	each
+T6	Reagent 126 133	control
+T7	Reagent 137 146	treatment
+T8	Amount 149 156	50 - mL
+T9	Modifier 157 164	sterile
+T10	Modifier 167 174	conical
+T11	Location 175 191	centrifuge tubes
+T12	Modifier 202 212	additional
+T13	Reagent 213 219	sample
+T14	Amount 222 227	25 mL
+T15	Action 234 237	fix
+T16	Concentration 243 246	1 %
+T17	Generic-Measure 247 265	0.02 - µm filtered
+T18	Reagent 266 274	formalin
+T19	Reagent 285 302	treatment samples
+T20	Action 305 308	add
+T21	Concentration 309 318	1 µg / mL
+T22	Reagent 319 330	mitomycin C
+T23	Concentration 336 347	0.5 µg / mL
+T24	Reagent 385 392	samples
+T25	Action 397 406	incubated
+T26	Time 411 418	16–24 h
+T27	Temperature 422 438	room temperature
+T28	Action 443 448	fixed
+T29	Concentration 461 464	2 %
+T30	Reagent 465 479	glutaraldehyde
+T31	Concentration 494 497	1 %
+T32	Reagent 498 506	formalin
+T33	Concentration 543 546	1 %
+T34	Reagent 547 555	formalin
+T35	Concentration 558 563	0.5 %
+T36	Reagent 564 578	glutaraldehyde
+T37	Reagent 608 615	Samples
+T38	Modifier 620 661	enumeration by epifluorescence microscopy
+T39	Action 672 679	counted
+T40	Modifier 680 686	within
+T41	Time 687 691	24 h
+T42	Action 709 715	stored
+T43	Reagent 719 732	frozen slides
+T44	Modifier 733 755	stained with SYBR Gold
+T45	Action 758 763	Count
+T46	Reagent 769 777	bacteria
+T47	Reagent 782 789	viruses
+T48	Modifier 793 800	control
+T49	Modifier 805 812	treated
+T50	Reagent 813 820	samples
+T51	Action 823 832	Calculate
+T52	Measure-Type 837 857	% lysogenic bacteria
+T53	Method 871 921	% lysogens = [ ( VDCT - VDCC ) / Bz ] / BDC T = o'
+E1	Action:T3 Acts-on:T2 Site:T6 Product:T19
+E2	Action:T15 Using:T18 Acts-on:T13
+E3	Action:T20 Acts-on:T22 Site:T19 Product:T24
+E4	Action:T25 Acts-on:T24
+E5	Action:T28 Product:T37 Acts-on:E4 Using:T30 Product2:T50
+E6	Action:T39 Acts-on:T37
+E7	Action:T42 Product:T43 Acts-on:E6
+E8	Action:T45 Acts-on:T46 Acts-on2:T47
+E9	Action:T51 Measure-Type-Link:T52 Using:T53 Acts-on:E8
+R1	Mod-Link Arg1:T2 Arg2:T1
+R2	Mod-Link Arg1:T2 Arg2:T5
+R3	Measure Arg1:T2 Arg2:T4
+R4	Mod-Link Arg1:T11 Arg2:T10
+R5	Mod-Link Arg1:T11 Arg2:T9
+R6	Measure Arg1:T11 Arg2:T8
+R7	Or Arg1:T6 Arg2:T7
+R8	Measure Arg1:T18 Arg2:T17
+R9	Measure Arg1:T18 Arg2:T16
+R10	Measure Arg1:T13 Arg2:T14
+R11	Mod-Link Arg1:T13 Arg2:T12
+R12	Measure Arg1:T22 Arg2:T21
+R13	Or Arg1:T21 Arg2:T23
+R14	Setting Arg1:E4 Arg2:T26
+R15	Setting Arg1:E4 Arg2:T27
+R16	Measure Arg1:T30 Arg2:T29
+R17	Or Arg1:T30 Arg2:T32
+R18	Measure Arg1:T32 Arg2:T31
+R19	Or Arg1:T32 Arg2:T34
+R20	Measure Arg1:T34 Arg2:T33
+R21	Meronym Arg1:T36 Arg2:T34
+R22	Measure Arg1:T36 Arg2:T35
+R23	Setting Arg1:E6 Arg2:T41
+R24	Mod-Link Arg1:T41 Arg2:T40
+R25	Meronym Arg1:T7 Arg2:T11
+R26	Meronym Arg1:T6 Arg2:T11
+R27	Coreference-Link Arg1:T13 Arg2:T2
+R28	Mod-Link Arg1:T37 Arg2:T38
+R29	Mod-Link Arg1:T43 Arg2:T44
+R30	Mod-Link Arg1:T50 Arg2:T49
+R31	Mod-Link Arg1:T50 Arg2:T48
+R32	Meronym Arg1:T46 Arg2:T50
+R33	Meronym Arg1:T47 Arg2:T50

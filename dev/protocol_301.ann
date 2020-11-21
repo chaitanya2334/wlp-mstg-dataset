@@ -1,0 +1,110 @@
+T1	Action 39 46	Harvest
+T2	Reagent 47 58	lymph nodes
+T3	Reagent 141 145	mice
+T4	Action 148 153	Tease
+T5	Reagent 154 165	lymph nodes
+T6	Modifier 176 183	sterile
+T7	Generic-Measure 184 191	70 - µm
+T8	Device 192 211	nylon cell strainer
+T9	Action 215 221	obtain
+T10	Reagent 222 247	single - cell suspensions
+T11	Action 306 315	Resuspend
+T12	Reagent 316 321	cells
+T13	Reagent 325 340	complete medium
+T14	Method 349 369	your favorite method
+T15	Action 373 380	isolate
+T16	Reagent 381 392	CD4 + cells
+T17	Action 443 448	Plate
+T18	Reagent 449 460	CD4 + cells
+T19	Generic-Measure 464 486	1.0 x 106 / 1ml / well
+T20	Action 489 496	Culture
+T21	Reagent 497 502	cells
+T22	Time 507 513	5 days
+T23	Temperature 517 521	37°C
+T24	Concentration 524 527	5 %
+T25	Reagent 528 531	CO2
+T26	Reagent 550 569	ofanti - mouse CD28
+T27	Action 572 577	clone
+T28	Generic-Measure 578 597	37.51 ( 3 µg / mL )
+T29	Reagent 600 624	recombinant mouse IL - 2
+T30	Generic-Measure 627 636	5 ng / mL
+T31	Reagent 645 670	recombinanthuman TGF - β1
+T32	Generic-Measure 673 682	5 ng / ml
+T33	Time 690 695	day 3
+T34	Action 719 722	add
+T35	Generic-Measure 723 734	2 ml / well
+T36	Reagent 738 751	fresh media .
+T37	Action 828 832	coat
+T38	Location 833 848	12 - well plate
+T39	Reagent 854 871	anti - mouse CD3ε
+T40	Action 874 879	clone
+T41	Reagent 880 890	145 - 2C11
+T42	Generic-Measure 893 902	3 µg / ml
+T43	Action 907 915	Incubate
+T44	Temperature 919 923	37°C
+T45	Time 928 935	2 hours
+T46	Action 956 964	incubate
+T47	Temperature 968 971	4°C
+T48	Time 972 981	overnight
+T49	Modifier 986 997	Aseptically
+T50	Action 998 1004	decant
+T51	Reagent 1005 1022	antibody solution
+T52	Location 1032 1037	plate
+T53	Action 1040 1044	Wash
+T54	Location 1045 1050	plate
+T55	Modifier 1056 1063	sterile
+T56	Reagent 1064 1067	PBS
+T57	Action 1085 1089	Wash
+T58	Location 1090 1095	plate
+T59	Modifier 1101 1108	sterile
+T60	Reagent 1109 1112	PBS
+T61	Action 1130 1134	Wash
+T62	Location 1135 1140	plate
+T63	Modifier 1146 1153	sterile
+T64	Reagent 1154 1157	PBS
+T65	Action 1175 1182	Discard
+T66	Reagent 1183 1189	liquid
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T5
+E2	Action:T4 Acts-on:T5 Site:T8
+E3	Action:T9 Product:T10
+E4	Action:T11 Acts-on:T12 Site:T13 Product:T16
+E5	Action:T15 Acts-on:T16 Using:T14 Product:T18
+E6	Action:T17 Acts-on:T18 Product:T21
+E7	Action:T20 Acts-on:T21 Site:T26 Site2:T25
+E8	Action:T27 Acts-on:T29 Acts-on2:T31
+E9	Action:T34 Acts-on:T36 Site:T31 Site2:T29 Site3:E7 Product:T39
+E10	Action:T37 Acts-on:T38 Using:T39
+E11	Action:T40 Product:T41 Site:E10
+E12	Action:T43 Product:T51 Acts-on:E11
+E13	Action:T46 Acts-on:E11 Product:T52
+E14	Action:T50 Acts-on:T51 Site:T52 Product:T54
+E15	Action:T53 Acts-on:T54 Using:T56 Product:T58
+E16	Action:T57 Acts-on:T58 Using:T60 Product:T62
+E17	Action:T61 Acts-on:T62 Using:T64 Product:T66
+E18	Action:T65 Acts-on:T66
+R1	Measure Arg1:T8 Arg2:T7
+R2	Mod-Link Arg1:T8 Arg2:T6
+R3	Setting Arg1:E6 Arg2:T19
+R4	Measure Arg1:T29 Arg2:T28
+R5	Measure Arg1:T29 Arg2:T30
+R6	Measure Arg1:T31 Arg2:T32
+R7	Setting Arg1:E7 Arg2:T22
+R8	Setting Arg1:E7 Arg2:T23
+R9	Measure Arg1:T25 Arg2:T24
+R10	Measure Arg1:T36 Arg2:T35
+R11	Measure Arg1:T41 Arg2:T42
+R12	Setting Arg1:E12 Arg2:T44
+R13	Setting Arg1:E12 Arg2:T45
+R14	Setting Arg1:E13 Arg2:T47
+R15	Setting Arg1:E13 Arg2:T48
+R16	Mod-Link Arg1:E14 Arg2:T49
+R17	Mod-Link Arg1:T56 Arg2:T55
+R18	Mod-Link Arg1:T60 Arg2:T59
+R19	Mod-Link Arg1:T64 Arg2:T63
+R20	Enables Arg1:E2 Arg2:E3
+R21	Coreference-Link Arg1:T12 Arg2:T10
+R22	Setting Arg1:E9 Arg2:T33
+R23	Or Arg1:E13 Arg2:E12
+R24	Meronym Arg1:T51 Arg2:T52
+R25	Coreference-Link Arg1:T60 Arg2:T56
+R26	Coreference-Link Arg1:T64 Arg2:T60

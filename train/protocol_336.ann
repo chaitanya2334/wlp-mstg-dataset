@@ -1,0 +1,159 @@
+T1	Method 36 53	sterile technique
+T2	Action 56 62	remove
+T3	Device 67 74	plunger
+T4	Size 84 88	60mL
+T5	Location 89 96	syringe
+T6	Action 99 105	Attach
+T7	Size 110 117	0.02 µm
+T8	Location 127 133	Anotop
+T9	Location 143 146	end
+T10	Location 154 161	syringe
+T11	Action 164 168	Pour
+T12	Amount 169 174	50 mL
+T13	Size 178 184	0.2 µm
+T14	Reagent 185 193	filtrate
+T15	Size 203 210	60 - mL
+T16	Location 211 218	syringe
+T17	Action 221 228	Replace
+T18	Device 229 236	plunger
+T19	Action 241 246	mount
+T20	Location 251 258	syringe
+T21	Location 263 269	filter
+T22	Device 279 290	can crusher
+T23	Action 293 297	Push
+T24	Size 302 308	0.2 µm
+T25	Reagent 309 317	filtrate
+T26	Modifier 318 329	very slowly
+T27	Location 342 348	Anotop
+T28	Device 361 372	can crusher
+T29	Method 377 410	applying gentle , steady pressure
+T30	Action 489 501	stop pushing
+T31	Method 510 527	sterile technique
+T32	Action 530 536	remove
+T33	Location 541 547	Anotop
+T34	Location 557 564	syringe
+T35	Action 567 579	Do not touch
+T36	Location 584 596	filter inlet
+T37	Location 600 606	outlet
+T38	Action 609 616	Suck up
+T39	Amount 631 635	50mL
+T40	Size 639 645	0.2 µm
+T41	Reagent 646 654	filtrate
+T42	Size 679 686	60 - mL
+T43	Location 687 694	syringe
+T44	Action 697 708	Re - attach
+T45	Location 713 719	Anotop
+T46	Location 727 730	end
+T47	Location 738 745	syringe
+T48	Action 764 768	Push
+T49	Size 773 779	0.2 µm
+T50	Reagent 780 788	filtrate
+T51	Modifier 789 795	slowly
+T52	Location 808 814	Anotop
+T53	Device 827 838	can crusher
+T54	Action 841 847	Remove
+T55	Location 852 858	Anotop
+T56	Location 868 875	syringe
+T57	Action 878 883	Write
+T58	Location 891 897	Anotop
+T59	Modifier 913 923	waterproof
+T60	Device 924 931	Sharpie
+T61	Action 934 938	Wrap
+T62	Location 943 949	Anotop
+T63	Seal 953 967	clean parafilm
+T64	Action 970 978	covering
+T65	Location 988 993	inlet
+T66	Location 998 1004	outlet
+T67	Action 1007 1012	Label
+T68	Seal 1015 1037	piece of aluminum foil
+T69	Modifier 1079 1089	waterproof
+T70	Device 1090 1097	Sharpie
+T71	Action 1102 1106	Wrap
+T72	Modifier 1111 1121	parafilmed
+T73	Location 1122 1128	Anotop
+T74	Modifier 1136 1143	labeled
+T75	Seal 1144 1157	aluminum foil
+T76	Action 1160 1165	Label
+T77	Location 1168 1178	Ziploc bag
+T78	Action 1215 1222	Collect
+T79	Amount 1223 1230	several
+T80	Location 1231 1238	Anotops
+T81	Action 1242 1245	put
+T82	Modifier 1255 1262	labeled
+T83	Location 1263 1269	Ziploc
+T84	Action 1309 1312	Put
+T85	Modifier 1317 1331	foil - wrapped
+T86	Location 1332 1339	Anotops
+T87	Modifier 1349 1356	labeled
+T88	Location 1357 1367	Ziploc bag
+T89	Action 1370 1376	Freeze
+T90	Location 1381 1387	Ziploc
+T91	Temperature 1391 1397	- 80°C
+T92	Device 1398 1405	freezer
+T93	Action 1469 1476	Discard
+T94	Location 1481 1488	syringe
+T95	Reagent 1493 1501	filtrate
+E1	Action:T2 Acts-on:T3 Site:T5 Using:T1 Product:T10 Product2:T18 Product3:T9
+E2	Action:T6 Acts-on:T8 Site:T9 Product:T16
+E3	Action:T11 Acts-on:T14 Site:T16
+E4	Action:T17 Acts-on:T18 Site:E3 Product:T20 Product2:T21
+E5	Action:T19 Acts-on:T20 Acts-on2:T21 Site:T22 Product:T27 Product2:T28
+E6	Action:T23 Acts-on:T25 Site:T27 Using:T28 Using2:T29
+E7	Action:T30 Acts-on:E6 Product:T34 Product2:T33
+E8	Action:T32 Acts-on:T33 Site:T34 Using:T31 Product:T41 Product2:T43 Product3:T45
+E9	Action:T35 Acts-on:T36 Acts-on2:T37
+E10	Action:T38 Acts-on:T41 Site:T43 Product:T47
+E11	Action:T44 Acts-on:T45 Site:T46 Product:T52
+E12	Action:T48 Acts-on:T50 Site:T52 Using:T53 Product:T56 Product2:T55 Product3:T95
+E13	Action:T54 Acts-on:T55 Site:T56 Product:T58 Product2:T94
+E14	Action:T57 Acts-on:T58 Using:T60 Product:T62
+E15	Action:T61 Acts-on:T62 Using:T63
+E16	Action:T64 Acts-on:T65 Acts-on2:T66 Product:T73
+E17	Action:T67 Acts-on:T68 Using:T70 Product:T75
+E18	Action:T71 Acts-on:T73 Using:T75 Product:T80
+E19	Action:T76 Acts-on:T77 Product:T83
+E20	Action:T78 Acts-on:T80 Product:T86
+E21	Action:T81 Site:T83 Acts-on:E20
+E22	Action:T84 Acts-on:T86 Site:T88 Product:T90
+E23	Action:T89 Acts-on:T90 Site:T92
+E24	Action:T93 Acts-on:T94 Acts-on2:T95
+R1	Measure Arg1:T5 Arg2:T4
+R2	Measure Arg1:T8 Arg2:T7
+R3	Meronym Arg1:T9 Arg2:T10
+R4	Measure Arg1:T14 Arg2:T13
+R5	Measure Arg1:T14 Arg2:T12
+R6	Measure Arg1:T16 Arg2:T15
+R7	Measure Arg1:T25 Arg2:T24
+R8	Mod-Link Arg1:E6 Arg2:T26
+R9	Measure Arg1:T41 Arg2:T40
+R10	Measure Arg1:T41 Arg2:T39
+R11	Measure Arg1:T43 Arg2:T42
+R12	Meronym Arg1:T46 Arg2:T47
+R13	Measure Arg1:T50 Arg2:T49
+R14	Mod-Link Arg1:E12 Arg2:T51
+R15	Mod-Link Arg1:T73 Arg2:T72
+R16	Mod-Link Arg1:T75 Arg2:T74
+R17	Measure Arg1:T80 Arg2:T79
+R18	Mod-Link Arg1:T83 Arg2:T82
+R19	Mod-Link Arg1:T86 Arg2:T85
+R20	Mod-Link Arg1:T88 Arg2:T87
+R21	Setting Arg1:T92 Arg2:T91
+R22	Meronym Arg1:T3 Arg2:T5
+R23	Meronym Arg1:T21 Arg2:T20
+R24	Meronym Arg1:T25 Arg2:T27
+R25	Meronym Arg1:T27 Arg2:T28
+R26	Meronym Arg1:T33 Arg2:T34
+R27	Overlaps Arg1:E9 Arg2:E8
+R28	Meronym Arg1:T36 Arg2:T33
+R29	Meronym Arg1:T37 Arg2:T33
+R30	Meronym Arg1:T50 Arg2:T52
+R31	Meronym Arg1:T52 Arg2:T53
+R32	Meronym Arg1:T55 Arg2:T56
+R33	Mod-Link Arg1:T60 Arg2:T59
+R34	Meronym Arg1:T65 Arg2:T62
+R35	Meronym Arg1:T66 Arg2:T62
+R36	Enables Arg1:E15 Arg2:E16
+R37	Coreference-Link Arg1:T60 Arg2:T70
+R38	Mod-Link Arg1:T70 Arg2:T69
+R39	Overlaps Arg1:E22 Arg2:E21
+R40	Coreference-Link Arg1:T83 Arg2:T88

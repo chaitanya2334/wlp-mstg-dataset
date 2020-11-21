@@ -1,0 +1,230 @@
+T1	Modifier 73 79	On ice
+T2	Action 82 85	add
+T3	Generic-Measure 92 99	2.5x106
+T4	Reagent 100 105	cells
+T5	Device 111 131	Tube - O - DIALYZER™
+T6	Action 136 146	centrifuge
+T7	Speed 150 157	5,000xg
+T8	Time 162 171	5 minutes
+T9	Action 175 181	pellet
+T10	Reagent 182 187	cells
+T11	Action 190 197	Discard
+T12	Reagent 202 213	supernatant
+T13	Action 216 219	Add
+T14	Amount 220 225	500µl
+T15	Reagent 226 249	Nuclei Isolation Buffer
+T16	Action 252 258	Invert
+T17	Location 263 267	tube
+T18	Numerical 268 273	2 - 3
+T19	Action 283 290	suspend
+T20	Reagent 295 300	cells
+T21	Action 303 311	incubate
+T22	Time 316 326	10 minutes
+T23	Location 330 333	ice
+T24	Action 336 341	Place
+T25	Device 346 366	Tube - O - DIALYZER™
+T26	Seal 367 370	cap
+T27	Location 376 382	beaker
+T28	Reagent 386 395	TE buffer
+T29	Action 400 405	store
+T30	Temperature 409 412	4°C
+T31	Action 430 435	Rinse
+T32	Location 440 465	Tube - O - DIALYZER™ tube
+T33	Reagent 471 480	TE buffer
+T34	Device 490 497	pipette
+T35	Action 498 506	transfer
+T36	Reagent 511 522	supernatant
+T37	Device 530 550	Tube - O - DIALYZER™
+T38	Action 607 612	Place
+T39	Seal 615 627	supplied cap
+T40	Location 635 639	tube
+T41	Action 644 654	centrifuge
+T42	Speed 658 666	16,000xg
+T43	Time 671 680	5 minutes
+T44	Action 684 690	pellet
+T45	Reagent 695 701	nuclei
+T46	Modifier 704 713	Carefully
+T47	Action 714 721	discard
+T48	Reagent 726 737	supernatant
+T49	Action 742 748	invert
+T50	Location 753 757	tube
+T51	Location 763 774	paper towel
+T52	Action 778 784	remove
+T53	Modifier 785 791	excess
+T54	Reagent 792 803	supernatant
+T55	Action 806 809	Add
+T56	Amount 810 814	70µl
+T57	Reagent 815 832	Suspension Buffer
+T58	Reagent 840 846	nuclei
+T59	Modifier 851 857	gently
+T60	Action 858 862	rock
+T61	Action 866 869	tap
+T62	Location 874 878	tube
+T63	Action 882 890	dislodge
+T64	Reagent 895 901	nuclei
+T65	Action 904 910	Vortex
+T66	Reagent 915 937	LongLife™ Proteinase K
+T67	Action 942 945	add
+T68	Amount 946 950	10µl
+T69	Reagent 958 964	nuclei
+T70	Action 967 970	Add
+T71	Amount 971 975	70µl
+T72	Reagent 976 992	Digestion Buffer
+T73	Action 997 1000	mix
+T74	Method 1006 1020	gentle rocking
+T75	Action 1023 1031	Incubate
+T76	Temperature 1035 1039	55°C
+T77	Time 1044 1055	2 - 4 hours
+T78	Method 1061 1077	periodic rocking
+T79	Action 1080 1093	Do not vortex
+T80	Action 1126 1136	centrifuge
+T81	Location 1141 1145	tube
+T82	Time 1150 1160	20 seconds
+T83	Speed 1164 1170	1,000g
+T84	Action 1173 1180	Replace
+T85	Seal 1185 1188	cap
+T86	Seal 1198 1210	dialysis cap
+T87	Action 1213 1227	Do not discard
+T88	Seal 1232 1243	storage cap
+T89	Action 1290 1295	Place
+T90	Device 1300 1320	Tube - O - DIALYZER™
+T91	Modifier 1321 1332	upside down
+T92	Amount 1338 1342	50ml
+T93	Location 1343 1358	centrifuge tube
+T94	Action 1363 1373	centrifuge
+T95	Speed 1377 1383	1000xg
+T96	Time 1388 1398	30 seconds
+T97	Action 1402 1407	bring
+T98	Reagent 1412 1418	sample
+T99	Location 1428 1445	dialysis membrane
+T100	Action 1448 1454	Remove
+T101	Device 1459 1479	Tube - O - DIALYZER™
+T102	Amount 1489 1493	50ml
+T103	Location 1494 1498	tube
+T104	Device 1504 1511	forceps
+T105	Action 1516 1523	keeping
+T106	Mention 1524 1526	it
+T107	Modifier 1527 1535	inverted
+T108	Action 1536 1541	slide
+T109	Location 1551 1565	provided float
+T110	Action 1570 1577	dialyze
+T111	Amount 1581 1586	500ml
+T112	Concentration 1587 1589	1X
+T113	Reagent 1590 1599	TE buffer
+T114	Temperature 1603 1619	room temperature
+T115	Time 1624 1637	18 - 24 hours
+T116	Numerical 1643 1648	2 - 3
+T117	Measure-Type 1649 1663	buffer changes
+T118	Modifier 1666 1672	Gently
+T119	Action 1673 1678	swirl
+T120	Location 1679 1683	tube
+T121	Action 1687 1690	mix
+T122	Reagent 1691 1699	contents
+T123	Modifier 1703 1707	each
+T124	Generic-Measure 1708 1721	buffer change
+T125	Action 1932 1939	prepare
+T126	Reagent 1944 1956	Concentrator
+T127	Method 1968 1980	instructions
+T128	Action 1985 1991	invert
+T129	Device 1996 2016	Tube - O - DIALYZER™
+T130	Reagent 2033 2036	DNA
+T131	Reagent 2044 2052	solution
+T132	Action 2117 2127	centrifuge
+T133	Location 2132 2136	tube
+T134	Speed 2140 2146	1000xg
+T135	Time 2151 2159	1 minute
+T136	Action 2162 2169	Replace
+T137	Seal 2174 2186	dialysis cap
+T138	Seal 2196 2206	normal cap
+E1	Action:T2 Acts-on:T4 Site:T5
+E2	Action:T6 Acts-on:E1 Product:T12
+E3	Action:T9 Acts-on:T10
+E4	Action:T11 Acts-on:T12
+E5	Action:T13 Acts-on:T15 Acts-on2:E4
+E6	Action:T16 Acts-on:T17 Count:T18 Acts-on2:E5
+E7	Action:T19 Acts-on:T20
+E8	Action:T21 Site:T23 Acts-on:E7 Product:T36 Acts-on2:E6
+E9	Action:T24 Acts-on:T26 Site:T27 Acts-on2:E8 Site2:T28 Acts-on3:T25
+E10	Action:T29 Acts-on:E9
+E11	Action:T31 Acts-on:T32 Using:T33 Acts-on2:E10
+E12	Action:T35 Acts-on:T36 Site:T37 Using:T34
+E13	Action:T38 Site:T40 Acts-on:E12 Acts-on2:T39
+E14	Action:T41 Acts-on:E13 Product:T48
+E15	Action:T44 Acts-on:T45
+E16	Action:T47 Acts-on:T48
+E17	Action:T49 Acts-on:T50 Site:T51 Acts-on2:E16
+E18	Action:T52 Acts-on:T54
+E19	Action:T55 Acts-on:T57 Site:T58 Acts-on2:E18 Acts-on3:E17 Product:T62
+E20	Action:T60 Acts-on:T62
+E21	Action:T61 
+E22	Action:T63 Acts-on:T64 Product:T69
+E23	Action:T65 Acts-on:T66
+E24	Action:T67 Site:T69 Acts-on:E23
+E25	Action:T70 Acts-on:T72 Acts-on2:E24
+E26	Action:T73 Using:T74 Acts-on:E25
+E27	Action:T75 Using:T78 Acts-on:E26
+E28	Action:T79 Acts-on:E27
+E29	Action:T80 Acts-on:T81 Acts-on2:E28
+E30	Action:T84 Acts-on:T85 Using:T86 Acts-on2:E29
+E31	Action:T87 Acts-on:T88 Acts-on2:E30
+E32	Action:T89 Acts-on:T90 Site:T93 Acts-on2:E31
+E33	Action:T94 Acts-on:E32 Product:T101
+E34	Action:T97 Acts-on:T98 Site:T99
+E35	Action:T100 Acts-on:T101 Site:T103 Using:T104
+E36	Action:T105 Acts-on:T106
+E37	Action:T108 Acts-on:T106 Site:T109
+E38	Action:T110 Site:T113 Acts-on:E37
+E39	Action:T119 Acts-on:T120 Acts-on2:E38
+E40	Action:T121 Acts-on:T122
+E41	Action:T125 Using:T127 Product:T126 Acts-on:E40
+E42	Action:T128 Acts-on:T129 Site:T131 Acts-on2:E41
+E43	Action:T132 Acts-on:T133 Acts-on2:E42
+E44	Action:T136 Acts-on:T137 Using:T138 Acts-on2:E43
+R1	Setting Arg1:E2 Arg2:T7
+R2	Setting Arg1:E2 Arg2:T8
+R3	Measure Arg1:T4 Arg2:T3
+R4	Measure Arg1:T15 Arg2:T14
+R5	Setting Arg1:E8 Arg2:T22
+R6	Setting Arg1:E10 Arg2:T30
+R7	Meronym Arg1:T26 Arg2:T25
+R8	Meronym Arg1:T28 Arg2:T27
+R9	Setting Arg1:E14 Arg2:T42
+R10	Setting Arg1:E14 Arg2:T43
+R11	Mod-Link Arg1:T54 Arg2:T53
+R12	Mod-Link Arg1:E16 Arg2:T46
+R13	Measure Arg1:T57 Arg2:T56
+R14	Mod-Link Arg1:E20 Arg2:T59
+R15	Measure Arg1:T72 Arg2:T71
+R16	Setting Arg1:E27 Arg2:T76
+R17	Setting Arg1:E27 Arg2:T77
+R18	Setting Arg1:E29 Arg2:T82
+R19	Setting Arg1:E29 Arg2:T83
+R20	Mod-Link Arg1:E32 Arg2:T91
+R21	Measure Arg1:T93 Arg2:T92
+R22	Setting Arg1:E33 Arg2:T95
+R23	Setting Arg1:E33 Arg2:T96
+R24	Measure Arg1:T103 Arg2:T102
+R25	Coreference-Link Arg1:T106 Arg2:T101
+R26	Mod-Link Arg1:E36 Arg2:T107
+R27	Measure Arg1:T113 Arg2:T112
+R28	Measure Arg1:T113 Arg2:T111
+R29	Setting Arg1:E38 Arg2:T114
+R30	Setting Arg1:E38 Arg2:T115
+R31	Setting Arg1:E38 Arg2:T116
+R32	Of-Type Arg1:T116 Arg2:T117
+R33	Mod-Link Arg1:E39 Arg2:T118
+R34	Meronym Arg1:T130 Arg2:T129
+R35	Setting Arg1:E43 Arg2:T134
+R36	Setting Arg1:E43 Arg2:T135
+R37	Mod-Link Arg1:T5 Arg2:T1
+R38	Enables Arg1:E2 Arg2:E3
+R39	Enables Arg1:E6 Arg2:E7
+R40	Enables Arg1:E14 Arg2:E15
+R41	Enables Arg1:E17 Arg2:E18
+R42	Or Arg1:E20 Arg2:E21
+R43	Enables Arg1:E20 Arg2:E22
+R44	Setting Arg1:E24 Arg2:T68
+R45	Enables Arg1:E33 Arg2:E34
+R46	Enables Arg1:E39 Arg2:E40
+R47	Mod-Link Arg1:T124 Arg2:T123
+R48	Setting Arg1:E40 Arg2:T124

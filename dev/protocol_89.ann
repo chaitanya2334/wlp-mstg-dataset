@@ -1,0 +1,141 @@
+T1	Action 62 71	Inoculate
+T2	Amount 72 78	3.5 mL
+T3	Reagent 79 87	aliquots
+T4	Reagent 91 99	LB media
+T5	Reagent 115 137	appropriate antibiotic
+T6	Reagent 143 165	single colony isolates
+T7	Reagent 173 181	bacteria
+T8	Reagent 197 204	plasmid
+T9	Action 219 227	Incubate
+T10	Time 228 237	overnight
+T11	Temperature 241 247	37°C .
+T12	Action 248 253	Place
+T13	Amount 254 260	150 µL
+T14	Reagent 264 276	each culture
+T15	Location 284 298	microfuge tube
+T16	Action 301 311	Centrifuge
+T17	Device 319 328	microfuge
+T18	Time 333 343	30 seconds
+T19	Action 347 353	pellet
+T20	Reagent 358 366	bacteria
+T21	Action 369 376	Discard
+T22	Reagent 381 393	supernatants
+T23	Action 396 399	Add
+T24	Amount 400 405	40 µL
+T25	Reagent 409 422	agarose beads
+T26	Reagent 431 437	sample
+T27	Action 440 443	Add
+T28	Amount 444 449	14 µL
+T29	Reagent 453 472	phenol : chloroform
+T30	Concentration 475 482	1 : 1 )
+T31	Amount 486 490	each
+T32	Reagent 491 497	sample
+T33	Action 502 508	vortex
+T34	Time 513 523	5 - 10 sec
+T35	Action 526 536	Centrifuge
+T36	Reagent 541 548	samples
+T37	Device 556 565	microfuge
+T38	Time 570 575	5 min
+T39	Action 579 587	separate
+T40	Reagent 592 598	phases
+T41	Action 601 606	Layer
+T42	Amount 607 612	10 µL
+T43	Reagent 628 642	aqueous phases
+T44	Concentration 650 655	1.2 %
+T45	Reagent 656 678	agarose horizontal gel
+T46	Concentration 692 694	1X
+T47	Reagent 695 705	TPE buffer
+T48	Location 715 728	outside lanes
+T49	Action 729 732	run
+T50	Reagent 733 743	lambda DNA
+T51	Action 744 752	digested
+T52	Reagent 758 765	HindIII
+T53	Reagent 775 779	StyI
+T54	Action 804 807	run
+T55	Modifier 812 820	original
+T56	Reagent 821 827	vector
+T57	Action 831 835	show
+T58	Generic-Measure 840 844	size
+T59	Reagent 852 859	plasmid
+T60	Modifier 860 878	without insert DNA
+T61	Action 944 958	Electrophorese
+T62	Reagent 963 966	gel
+T63	Concentration 970 972	1X
+T64	Reagent 973 983	TPE buffer
+T65	Generic-Measure 1002 1024	400 - 450 volt - hours
+T66	Action 1027 1032	Stain
+T67	Reagent 1037 1040	gel
+T68	Reagent 1046 1062	ethidium bromide
+T69	Concentration 1085 1096	0.5 µg / mL
+T70	Reagent 1100 1107	d - H2O
+T71	Time 1112 1122	30 minutes
+T72	Action 1125 1132	Observe
+T73	Reagent 1137 1140	gel
+T74	Device 1146 1158	UV light box
+T75	Action 1163 1173	photograph
+T76	Reagent 1178 1181	gel
+T77	Reagent 1207 1218	plasmid DNA
+T78	Action 1226 1234	isolated
+T79	Reagent 1246 1253	samples
+T80	Reagent 1283 1290	inserts
+T81	Modifier 1298 1314	appropriate size
+T82	Action 1317 1324	Destain
+T83	Reagent 1329 1332	gel
+T84	Reagent 1338 1345	d - H2O
+E1	Action:T1 Acts-on:T3 Using:T6
+E2	Action:T9 Acts-on:E1 Product:T14
+E3	Action:T12 Acts-on:T14 Site:T15 Product:T20
+E4	Action:T16 Site:T17 Product:T22 Acts-on:T20
+E5	Action:T19 Acts-on:T20
+E6	Action:T21 Acts-on:T22 Site:E4 Product:T26
+E7	Action:T23 Acts-on:T25 Site:T26 Product:T32
+E8	Action:T27 Acts-on:T29 Site:T32
+E9	Action:T33 Acts-on:E8 Product:T36 Product2:T40
+E10	Action:T35 Acts-on:T36 Site:T37
+E11	Action:T39 Acts-on:T40 Product:T43
+E12	Action:T41 Acts-on:T43 Site:T45 Product:T48
+E13	Action:T49 Site:T48 Acts-on:E12 Acts-on2:E14
+E14	Action:T51 Using:T52 Acts-on:T50
+E15	Action:T54 Acts-on:T56 Site:E13 Product:T62
+E16	Action:T57 Acts-on:T59
+E17	Action:T61 Acts-on:T62 Site:T64 Product:T67
+E18	Action:T66 Acts-on:T67 Site:T70 Product:T73 Using:T68
+E19	Action:T72 Acts-on:T73 Using:T74 Product:T76
+E20	Action:T75 Acts-on:T76 Product:T83 Product2:T79
+E21	Action:T78 Product:T77 Acts-on:T79
+E22	Action:T82 Acts-on:T83 Using:T84
+R1	Meronym Arg1:T3 Arg2:T4
+R2	Measure Arg1:T3 Arg2:T2
+R3	Meronym Arg1:T5 Arg2:T4
+R4	Meronym Arg1:T6 Arg2:T7
+R5	Meronym Arg1:T8 Arg2:T6
+R6	Setting Arg1:E2 Arg2:T10
+R7	Setting Arg1:E2 Arg2:T11
+R8	Measure Arg1:T14 Arg2:T13
+R9	Setting Arg1:E4 Arg2:T18
+R10	Measure Arg1:T25 Arg2:T24
+R11	Measure Arg1:T29 Arg2:T28
+R12	Measure Arg1:T29 Arg2:T30
+R13	Measure Arg1:T32 Arg2:T31
+R14	Setting Arg1:E9 Arg2:T34
+R15	Setting Arg1:E10 Arg2:T38
+R16	Measure Arg1:T43 Arg2:T42
+R17	Measure Arg1:T45 Arg2:T44
+R18	Meronym Arg1:T47 Arg2:T45
+R19	Measure Arg1:T47 Arg2:T46
+R20	Measure Arg1:T64 Arg2:T63
+R21	Setting Arg1:E17 Arg2:T65
+R22	Setting Arg1:E18 Arg2:T69
+R23	Setting Arg1:E18 Arg2:T71
+R24	Or Arg1:T52 Arg2:T53
+R25	Enables Arg1:E4 Arg2:E5
+R26	Enables Arg1:E10 Arg2:E11
+R27	Meronym Arg1:T40 Arg2:T36
+R28	Measure Arg1:T59 Arg2:T58
+R29	Mod-Link Arg1:T59 Arg2:T60
+R30	Coreference-Link Arg1:T56 Arg2:T59
+R31	Mod-Link Arg1:T56 Arg2:T55
+R32	Enables Arg1:E15 Arg2:E16
+R33	Meronym Arg1:T68 Arg2:T70
+R34	Mod-Link Arg1:T80 Arg2:T81
+R35	Meronym Arg1:T80 Arg2:T79
