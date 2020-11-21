@@ -139,8 +139,6 @@ R33	Setting Arg1:E15 Arg2:T81
 R34	Mod-Link Arg1:T81 Arg2:T82
 R35	Setting Arg1:E15 Arg2:T85
 R36	Or Arg1:T88 Arg2:T89
-R37	Meronym Arg1:T19 Arg2:T17
-R38	Meronym Arg1:T21 Arg2:T17
 R39	Coreference-Link Arg1:T36 Arg2:T17
 R40	Mod-Link Arg1:E7 Arg2:T35
 R41	Meronym Arg1:T40 Arg2:T42

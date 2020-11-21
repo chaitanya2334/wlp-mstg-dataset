@@ -75,7 +75,7 @@ T74	Reagent 1814 1825	3′ - 5′ exo
 T75	Reagent 1858 1873	Klenow reaction
 T76	Action 1877 1887	terminated
 T77	Modifier 1895 1900	final
-T78	Reagent 1901 1911	incubation
+T78	Method 1901 1911	incubation
 T79	Temperature 1915 1919	75°C
 T80	Time 1924 1930	10 min
 T81	Reagent 1937 1949	PCR reaction
@@ -156,14 +156,14 @@ T155	Reagent 3789 3796	Viruses
 T156	Action 3806 3815	recovered
 T157	Action 3819 3826	eluting
 T158	Amount 3830 3839	3 × 50 µL
-T159	Location 3843 3868	0.02 - filtered SM buffer
+T159	Reagent 3859 3868	SM buffer
 E1	Action:T2 Using:T1 Acts-on:T3
 E2	Action:T6 Acts-on:T5 Using:T7 Product:T11 Site:E1
 E3	Action:T8 Acts-on:T10 Site:T11 Using:T12 Product:T15
 E4	Action:T16 Acts-on:T15 Acts-on2:T17 Acts-on3:T21 Acts-on4:T22 Product:T23
 E5	Action:T24 Acts-on:T23
 E6	Action:T26 Site:T27 Acts-on:E5 Product:T31
-E7	Action:T30 Site:T28 Acts-on:T29 Site2:T31 Using:T34
+E7	Action:T30 Site:T28 Acts-on:T29 Site2:T31 Using:T34 Acts-on2:T32
 E8	Action:T35 Acts-on:T36 Using:T37 Product:T38
 E9	Action:T39 Acts-on:T38 Using:T41 Product:T42
 E10	Action:T43 Acts-on:T42
@@ -174,7 +174,7 @@ E14	Action:T58 Acts-on:E13 Product:T60
 E15	Action:T61 Acts-on:T60
 E16	Action:T66 Site:T67 Acts-on:E15 Product:T68
 E17	Action:T69 Acts-on:T68 Using:T73 Product:T75
-E18	Action:T76 Acts-on:T75 Using:T78
+E18	Action:T76 Acts-on:T75 Using:T78 Product:T87
 E19	Action:T82 Product:T81 Acts-on:T84 Acts-on2:T89 Acts-on3:T90 Acts-on4:T93 Acts-on5:T95 Acts-on6:T97 Product2:T105 Product3:T107
 E20	Action:T85 Product:T84 Acts-on:T87
 E21	Action:T100 Acts-on:T99
@@ -262,3 +262,5 @@ R67	Measure Arg1:T132 Arg2:T131
 R68	Measure Arg1:T134 Arg2:T133
 R69	Meronym Arg1:T148 Arg2:T149
 R70	Enables Arg1:E35 Arg2:E34
+T160	Modifier 3843 3858	0.02 - filtered
+R71	Mod-Link Arg1:T159 Arg2:T160	

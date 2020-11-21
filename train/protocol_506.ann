@@ -65,14 +65,14 @@ T64	Method 999 1007	inverted
 T65	Time 1008 1017	overnight
 T66	Temperature 1034 1038	37⁰C
 E1	Action:T2 Acts-on:T1 Product:T32
-E2	Action:T4 Acts-on:T1 Acts-on2:E1
+E2	Action:T4 Acts-on2:E1 Product:T8
 E3	Action:T6 Acts-on:T8 Site:T10 Product:T12
 E4	Action:T11 Acts-on:T12 Using:T14 Product:T16
-E5	Action:T15 Acts-on:T16 Site:T17
+E5	Action:T15 Acts-on:T16 Site:T17 Product:T32 Product2:T37
 E6	Action:T19 Site:T22 Acts-on:T20 Product:T39
 E7	Action:T38 Acts-on:T39 Site:T40
 E8	Action:T42 Acts-on:E7
-E9	Action:T44 Acts-on:E8
+E9	Action:T44 Acts-on:E8 Product:T49
 E10	Action:T46 Acts-on:T49 Site:T50 Product:T51
 E11	Action:T52 Acts-on:T51
 E12	Action:T55 Using:T54 Acts-on:T57
@@ -110,5 +110,5 @@ R29	Meronym Arg1:T58 Arg2:T57
 R30	Or Arg1:T58 Arg2:T59
 R31	Setting Arg1:E14 Arg2:T65
 R32	Setting Arg1:E14 Arg2:T66
-R33	Enables Arg1:E3 Arg2:E1
 R34	Coreference-Link Arg1:T51 Arg2:T61
+R35	Meronym Arg1:T37 Arg2:T34	

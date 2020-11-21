@@ -154,16 +154,13 @@ T153	Method 2617 2633	final DNase step
 T154	Numerical 2647 2650	Two
 T155	Method 2661 2682	amplification methods
 T156	Action 2688 2692	used
-T157	Reagent 2815 2834	ssDNA viral genomes
 T158	Reagent 2837 2852	DNA extractions
 T159	Action 2858 2867	converted
 T160	Reagent 2871 2876	dsDNA
-T161	Numerical 2902 2912	Triplicate
 T162	Amount 2913 2919	10 μ L
 T163	Reagent 2920 2928	aliquots
 T164	Reagent 2936 2951	DNA extractions
 T165	Reagent 2965 2991	ds and ssDNA viral genomes
-T166	Method 3022 3037	Klenow reaction
 T167	Amount 3075 3082	1.5 μ L
 T168	Concentration 3086 3089	10×
 T169	Reagent 3090 3105	reaction buffer
@@ -180,7 +177,7 @@ T179	Temperature 3270 3274	94°C
 T180	Time 3279 3284	3 min
 T181	Reagent 3291 3299	reaction
 T182	Action 3309 3315	placed
-T183	Reagent 3319 3322	ice
+T183	Location 3319 3322	ice
 T184	Time 3327 3332	3 min
 T185	Amount 3365 3370	1 μ L
 T186	Reagent 3374 3380	Klenow
@@ -248,7 +245,7 @@ T247	Temperature 4500 4504	94°C
 T248	Time 4509 4514	3 min
 T249	Reagent 4521 4529	reaction
 T250	Action 4539 4545	placed
-T251	Reagent 4549 4552	ice
+T251	Location 4549 4552	ice
 T252	Time 4557 4562	3 min
 T253	Reagent 4576 4582	primer
 T254	Action 4583 4592	annealing
@@ -274,7 +271,7 @@ T273	Time 4899 4904	3 min
 T274	Action 4905 4912	heating
 T275	Reagent 4924 4932	reaction
 T276	Action 4942 4945	put
-T277	Reagent 4949 4952	ice
+T277	Location 4949 4952	ice
 T278	Time 4957 4962	3 min
 T279	Reagent 4969 4977	reaction
 T280	Modifier 4995 5000	final
@@ -289,7 +286,6 @@ T288	Reagent 5107 5115	reaction
 T289	Action 5125 5135	terminated
 T290	Temperature 5139 5143	75°C
 T291	Time 5148 5154	20 min
-T292	Method 5186 5200	cDNA synthesis
 T293	Amount 5203 5209	10 μ L
 T294	Modifier 5210 5218	purified
 T295	Reagent 5219 5237	RNA viral template
@@ -310,7 +306,7 @@ T309	Temperature 5446 5450	65°C
 T310	Time 5455 5460	5 min
 T311	Reagent 5467 5475	reaction
 T312	Action 5485 5491	cooled
-T313	Reagent 5495 5498	ice
+T313	Location 5495 5498	ice
 T314	Time 5503 5508	3 min
 T315	Reagent 5522 5529	primers
 T316	Action 5533 5539	anneal
@@ -475,101 +471,101 @@ T474	Generic-Measure 8351 8357	200 bp
 E1	Action:T4 Product:T3 Using:T7
 E2	Action:T12 Product:T11 Using:T15
 E3	Action:T16 Product:T15 Site:T17
-E4	Action:T19 Acts-on:T18 Using:T21
+E4	Action:T19 Acts-on:T18 Using:T21 Product:T22
 E5	Action:T23 Acts-on:T22 Site:T24 Using:T25 Site2:T28
-E6	Action:T43 Acts-on:T39 Site:T42
-E7	Action:T45 Acts-on:T44
-E8	Action:T50 Using:T53 Acts-on:T49
-E9	Action:T56 Acts-on:T54
-E10	Action:T60 Acts-on:T59 Site:T62
-E11	Action:T63 Acts-on:T62 Using:T69
-E12	Action:T66 Acts-on:T68 Using:E11
-E13	Action:T71 Acts-on:T70 Using:E14
-E14	Action:T72 Acts-on:T77 Site:T79 Using:E15
+E6	Action:T43 Acts-on:T39 Site:E5 Product:T44
+E7	Action:T45 Acts-on:T44 Product:T49
+E8	Action:T50 Using:T53 Acts-on:T49 Product:T54
+E9	Action:T56 Acts-on:T54 Product:T59
+E10	Action:T60 Acts-on:T59 Site:T62 Product:T68
+E11	Action:T63 Using:T69 Acts-on:T68 Product:T81
+E12	Action:T66 Acts-on:T68
+E13	Action:T71 Product:T70
+E14	Action:T72 Acts-on:T77 Site:T79
 E15	Action:T82 Site:T83 Acts-on:T81
-E16	Action:T86 Acts-on:T85 Using:T90
-E17	Action:T93 Acts-on:T92 Using:T91
-E18	Action:T97 Acts-on:T96
-E19	Action:T101 Acts-on:T100 Product:T103 Site:T105
-E20	Action:T112 Acts-on:T111 Site:T113
-E21	Action:T115 Acts-on:T114 Using:T113
-E22	Action:T119 Acts-on:T118 Using:T121
-E23	Action:T124 Acts-on:T123 Using:T125 Using2:T126
-E24	Action:T128 Acts-on:T129 Using:T127 Using2:E25
+E16	Action:T86 Acts-on:T85 Using:T90 Product:T92
+E17	Action:T93 Acts-on:T92 Using:T91 Product:T96
+E18	Action:T97 Acts-on:T96 Product:T100
+E19	Action:T101 Acts-on:T100 Product:T103 Site:T105 Product2:T111
+E20	Action:T112 Acts-on:T111 Site:T113 Product:T114
+E21	Action:T115 Acts-on:T114 Product:T118
+E22	Action:T119 Acts-on:T118 Using:T121 Product:T123
+E23	Action:T124 Acts-on:T123 Using:T125 Using2:T126 Product:T129
+E24	Action:T128 Acts-on:T129 Using:T127 Product:T138
 E25	Action:T134 Acts-on:T131 Using:T135 Acts-on2:T132 Acts-on3:T133
-E26	Action:T137 Using:T136 Acts-on:T138
-E27	Action:T140 Acts-on:T139 Using:T141
-E28	Action:T144 Acts-on:T143 Using:T148
-E29	Action:T146 Using:T147 Acts-on:T145 Using2:T148
+E26	Action:T137 Using:T136 Acts-on:T138 Product:T139
+E27	Action:T140 Acts-on:T139 Using:T141 Using2:T142 Product:T143
+E28	Action:T144 Acts-on:T143 Using:T148 Product:T145
+E29	Action:T146 Using:T147 Acts-on:T145 Using2:T148 Product:T149
 E30	Action:T150 Acts-on:T149 Using:T151 Using2:T152 Using3:T153
-E31	Action:T156 Using:T155 Count:T154
+E31	Action:T156 Using:T155 Count:T154 Acts-on:E30 Product:T158
 E32	Action:T159 Acts-on:T158 Product:T160
-E33	Action:T178 Acts-on:T177
+E33	Action:T178 Acts-on:T177 Product:T181
 E34	Action:T182 Acts-on:T181 Site:T183
-E35	Action:T187 Acts-on:T186
-E36	Action:T188 
-E37	Action:T192 Acts-on:T191
-E38	Action:T196 Acts-on:T195 Using:T197
-E39	Action:T201 Acts-on:T200
+E35	Action:T187 Acts-on:T186 Site:E34
+E36	Action:T188 Acts-on:E35 Product:T191
+E37	Action:T192 Acts-on:T191 Product:T195
+E38	Action:T196 Acts-on:T195 Using:T197 Product:T200
+E39	Action:T201 Acts-on:T200 Using:T203
 E40	Action:T202 Acts-on:T200 Using:T203
-E41	Action:T204 Acts-on:T200 Using:T206
-E42	Action:T208 Acts-on:T207 Using:T210 Using2:T211 Using3:T212
+E41	Action:T204 Using:T206 Acts-on:E40 Acts-on2:E39 Product:T230
+E42	Action:T208 Acts-on:T207 Using:T210 Using2:T211 Using3:T212 Product:T213 Product2:T226
 E43	Action:T214 Acts-on:T213 Using:T216
-E44	Action:T221 Acts-on:T213 Using:T222
-E45	Action:T223 Acts-on:T213 Using:T225
+E44	Action:T221 Using:T222 Acts-on:E43
+E45	Action:T223 Using:T225 Acts-on:E44 Product:T238 Product2:T263
 E46	Action:T227 Acts-on:T226
 E47	Action:T228 Acts-on:T226 Using:T229
 E48	Action:T231 Acts-on:T232 Product:T233 Using:T230 Using2:T234
 E49	Action:T235 Acts-on:T234 Using:T236
-E50	Action:T237 Acts-on:T238 Using:T239
+E50	Action:T237 Acts-on:T238 Using:T239 Product:T245
 E51	Action:T242 Acts-on:T241 Site:T244
-E52	Action:T246 Acts-on:T245
+E52	Action:T246 Acts-on:T245 Product:T249
 E53	Action:T250 Acts-on:T249 Site:T251
 E54	Action:T254 Acts-on:T253
-E55	Action:T257 Acts-on:T256
-E56	Action:T258 Acts-on:T256
-E57	Action:T262 Using:T261 Acts-on:T263 Using2:T264
+E55	Action:T257 Acts-on:T256 Site:E54
+E56	Action:T258 Acts-on:E55
+E57	Action:T262 Using:T261 Acts-on:T263 Using2:T264 Product:T271
 E58	Action:T265 Acts-on:T268 Acts-on2:T270
-E59	Action:T274 Acts-on:T271
-E60	Action:T276 Acts-on:T275 Site:T277
-E61	Action:T281 Site:T279 Using:T283
-E62	Action:T285 Acts-on:T284
+E59	Action:T274 Acts-on:T271 Product:T275
+E60	Action:T276 Acts-on:T275 Site:T277 Product:T279
+E61	Action:T281 Site:T279 Using:T283 Product:T284
+E62	Action:T285 Acts-on:T284 Product:T288
 E63	Action:T289 Acts-on:T288
-E64	Action:T296 Acts-on:T295 Acts-on2:T299 Acts-on3:T301 Acts-on4:T304
-E65	Action:T308 Acts-on:T307
-E66	Action:T312 Acts-on:T311 Using:T313
-E67	Action:T316 Acts-on:T315
-E68	Action:T320 Acts-on:T319 Acts-on2:T321 Site:T317
-E69	Action:T325 Acts-on:T326 Using:E68
-E70	Action:T329 Acts-on:T328 Using:T331
+E64	Action:T296 Acts-on:T295 Using:T299 Using2:T301 Using3:T304 Product:T307
+E65	Action:T308 Acts-on:T307 Product:T311
+E66	Action:T312 Acts-on:T311 Site:T313
+E67	Action:T316 Acts-on:T315 Product:T321
+E68	Action:T320 Acts-on:T319 Acts-on3:T324 Site2:T321
+E69	Action:T325 Acts-on:T326 Site:T327 Product:T328
+E70	Action:T329 Acts-on:T328 Using:T331 Product:T332
 E71	Action:T333 Acts-on:T332
 E72	Action:T336 Acts-on:T337 Acts-on2:T338 Site:T339 Using:T340
-E73	Action:T342 
-E74	Action:T346 Acts-on:T345
-E75	Action:T351 Acts-on:T345 Site:T352
-E76	Action:T355 Acts-on:T353 Using:T359
+E73	Action:T342 Acts-on:E72 Product:T345
+E74	Action:T346 Acts-on:T345 Product:T353
+E75	Action:T351 Site:T352 Acts-on:E74
+E76	Action:T355 Acts-on:T353 Using:T359 Product:T360
 E77	Action:T361 Acts-on:T360 Using:T362
-E78	Action:T367 Using:T365 Acts-on:T366 Using2:T370
-E79	Action:T372 Acts-on:T371
-E80	Action:T377 Acts-on:T375
-E81	Action:T379 Acts-on:T378 Using:T381 Using2:T382
+E78	Action:T367 Using:T365 Acts-on:T366 Using2:T370 Product:T371
+E79	Action:T372 Acts-on:T371 Product:T375
+E80	Action:T377 Acts-on:T375 Product:T378
+E81	Action:T379 Acts-on:T378 Using:T381 Using2:T382 Product:T387
 E82	Action:T389 Acts-on:T391 Product:T388
 E83	Action:T393 Acts-on:T401 Acts-on2:T405 Acts-on3:T409 Acts-on4:T396 Acts-on5:T399 Product:T392
-E84	Action:T411 Acts-on:T410
-E85	Action:T416 Acts-on:T414
+E84	Action:T411 Acts-on:T410 Product:T414
+E85	Action:T416 Acts-on:T414 Product:T417
 E86	Action:T418 Acts-on:T417
-E87	Action:T420 
-E88	Action:T423 Acts-on:T422 Using:T424
+E87	Action:T420 Acts-on:E86 Product:T422
+E88	Action:T423 Acts-on:T422 Using:T424 Product:T428
 E89	Action:T429 Acts-on:T428 Using:T431 Measure-Type-Link:T430 Site:T434
-E90	Action:T435 Acts-on:T428 Using:T437 Using2:T439
-E91	Action:T442 Measure-Type-Link:T443 Using:E92 Using2:E90
+E90	Action:T435 Using:T437 Using2:T439 Acts-on:E89
+E91	Action:T442 Measure-Type-Link:T443 Product:T449
 E92	Action:T446 Acts-on:T448
-E93	Action:T450 Acts-on:T449 Using:T451
-E94	Action:T453 Acts-on:T452 Site:T454
+E93	Action:T450 Acts-on:T449 Using:T451 Product:T452
+E94	Action:T453 Acts-on:T452 Site:T454 Product:T455 Product2:T458
 E95	Action:T456 Acts-on:T455 Product:T457
 E96	Action:T459 Acts-on:T458
-E97	Action:T461 Acts-on:T460 Measure-Type-Link:T462
-E98	Action:T468 Acts-on:T467
+E97	Action:T461 Acts-on:T460 Measure-Type-Link:T462 Product:T467
+E98	Action:T468 Acts-on:T467 Product:T470
 E99	Action:T471 Acts-on:T469 Measure-Type-Link:T472
 R1	Measure Arg1:T3 Arg2:T2
 R2	Mod-Link Arg1:T7 Arg2:T6
@@ -615,7 +611,6 @@ R41	Setting Arg1:E22 Arg2:T120
 R42	Setting Arg1:E22 Arg2:T122
 R43	Measure Arg1:T131 Arg2:T130
 R44	Measure Arg1:T163 Arg2:T162
-R45	Measure Arg1:T163 Arg2:T161
 R46	Measure Arg1:T169 Arg2:T168
 R47	Measure Arg1:T169 Arg2:T167
 R48	Measure Arg1:T171 Arg2:T170
@@ -733,8 +728,6 @@ R159	Measure Arg1:T133 Arg2:T130
 R160	Meronym Arg1:T216 Arg2:T218
 R161	Mod-Link Arg1:T267 Arg2:T266
 R162	Mod-Link Arg1:E61 Arg2:T280
-R163	Meronym Arg1:T324 Arg2:T322
-R164	Or Arg1:T322 Arg2:T319
 R165	Mod-Link Arg1:E74 Arg2:T347
 R166	Mod-Link Arg1:E75 Arg2:T350
 R167	Mod-Link Arg1:E76 Arg2:T354
@@ -752,3 +745,63 @@ R178	Setting Arg1:E97 Arg2:T466
 R179	Meronym Arg1:T470 Arg2:T469
 R180	Of-Type Arg1:T474 Arg2:T473
 R181	Setting Arg1:E99 Arg2:T474
+R182	Coreference-Link Arg1:T18 Arg2:T11	
+R183	Coreference-Link Arg1:T18 Arg2:T3	
+R184	Meronym Arg1:T39 Arg2:T42	
+R185	Enables Arg1:E11 Arg2:E12	
+R186	Enables Arg1:E14 Arg2:E13	
+R187	Overlaps Arg1:E15 Arg2:E14	
+R188	Coreference-Link Arg1:T84 Arg2:T77	
+R189	Coreference-Link Arg1:T85 Arg2:T70	
+R190	Enables Arg1:E25 Arg2:E24	
+T475	Modifier 2339 2344	prior
+R191	Mod-Link Arg1:E27 Arg2:T475	
+T157	Action 2902 2912	Triplicate
+E100	Action:T157 Acts-on:T163 Product:T177
+R45	Meronym Arg1:T164 Arg2:T163	
+R192	Meronym Arg1:T165 Arg2:T164	
+T161	Action 2994 3003	underwent
+E101	Action:T161 Using:T166 Product:T163
+T476	Generic-Measure 3006 3018	single round
+T166	Method 3022 3037	Klenow reaction
+R193	Setting Arg1:E101 Arg2:T476	
+T477	Action 3068 3074	mixing
+E102	Action:T477 Acts-on:T169 Acts-on2:T171 Acts-on3:T175 Site:T160
+R194	Meronym Arg1:T173 Arg2:T171	
+T478	Reagent 3225 3235	Invitrogen
+R195	Measure Arg1:T478 Arg2:T176	
+R196	Meronym Arg1:T478 Arg2:T175	
+R197	Enables Arg1:E102 Arg2:E101	
+R198	Overlaps Arg1:E40 Arg2:E39	
+T479	Modifier 4046 4050	same
+R199	Mod-Link Arg1:E46 Arg2:T479	
+R200	Overlaps Arg1:E46 Arg2:E45	
+R201	Coreference-Link Arg1:T210 Arg2:T233	
+R202	Enables Arg1:E51 Arg2:E50	
+R203	Enables Arg1:E53 Arg2:E54	
+R204	Coreference-Link Arg1:T256 Arg2:T230	
+R205	Enables Arg1:E58 Arg2:E57	
+R206	Coreference-Link Arg1:T283 Arg2:T256	
+R207	Meronym Arg1:T306 Arg2:T304	
+T292	Reagent 5371 5400	GCCGGAGCTCTGCAGATATC ( T ) 20
+R208	Meronym Arg1:T292 Arg2:T304	
+T480	Reagent 5303 5329	GCCGGAGCTCTGCAGATATCNNNNNN
+R209	Meronym Arg1:T480 Arg2:T301	
+R210	Enables Arg1:E66 Arg2:E67	
+R211	Meronym Arg1:T315 Arg2:T311	
+R164	Enables Arg1:E68 Arg2:E69	
+R163	Meronym Arg1:T322 Arg2:T321	
+R212	Meronym Arg1:T321 Arg2:T317	
+R213	Meronym Arg1:T326 Arg2:T321	
+R214	Enables Arg1:E71 Arg2:E72	
+R215	Meronym Arg1:T337 Arg2:T332	
+R216	Meronym Arg1:T338 Arg2:T332	
+R217	Meronym Arg1:T339 Arg2:T332	
+R218	Coreference-Link Arg1:T359 Arg2:T283	
+T481	Action 6775 6786	resulted in
+E103	Action:T481 Using:T385 Acts-on:T387 Product:T391
+R219	Coreference-Link Arg1:T392 Arg2:T388	
+R220	Coreference-Link Arg1:T410 Arg2:T392	
+R221	Enables Arg1:E90 Arg2:E91	
+R222	Enables Arg1:E92 Arg2:E91	
+R223	Coreference-Link Arg1:T460 Arg2:T457	

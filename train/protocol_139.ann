@@ -239,7 +239,7 @@ R40	Of-Type Arg1:T4 Arg2:T3
 R41	Setting Arg1:E1 Arg2:T4
 R42	Setting Arg1:E7 Arg2:T30
 R43	Enables Arg1:E10 Arg2:E9
-R44	Coreference-Link Arg1:T49 Arg2:T70
+R44	Coreference-Link Arg1:T70 Arg2:T49
 R45	Enables Arg1:E13 Arg2:E12
 R46	Enables Arg1:E14 Arg2:E12
 R47	Enables Arg1:E15 Arg2:E12

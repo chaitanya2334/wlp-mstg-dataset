@@ -53,22 +53,22 @@ T52	Size 1202 1209	96 well
 T53	Location 1210 1227	micro titer plate
 T54	Action 1232 1239	measure
 T55	Measure-Type 1244 1255	absorbances
-T56	Numerical 1259 1264	480nm
+T56	Generic-Measure 1259 1264	480nm
 T57	Reagent 1273 1281	DI water
-E1	Action:T1 Acts-on:T3 Site:T5
-E2	Action:T6 Acts-on:T8 Acts-on2:T9 Acts-on3:E1
-E3	Action:T10 Acts-on:T9
-E4	Action:T11 Acts-on:T12 Site:T13 Acts-on2:E2
-E5	Action:T14 Acts-on:T13
-E6	Action:T15 Acts-on:E4
-E7	Action:T18 Acts-on:T19 Acts-on2:E6
-E8	Action:T22 Acts-on:T23 Acts-on2:E7
-E9	Action:T24 Acts-on:T23
-E10	Action:T25 Acts-on:T27 Acts-on2:T29 Site:T30 Acts-on3:E9
-E11	Action:T31 Acts-on:T30
-E12	Action:T34 Acts-on:T36 Site:T37 Using:T33 Acts-on2:E11
-E13	Action:T40 Acts-on:T41 Acts-on2:E12
-E14	Action:T42 Acts-on:E9
+E1	Action:T1 Acts-on:T3 Site:T5 Product:T9
+E2	Action:T6 Acts-on:T8 Site:T9
+E3	Action:T10 Acts-on:E2 Product:T13
+E4	Action:T11 Acts-on:T12 Site:T13
+E5	Action:T14 Acts-on:E4
+E6	Action:T15 Acts-on:E5 Product:T19
+E7	Action:T18 Acts-on:T19 Product:T23
+E8	Action:T22 Acts-on:T23
+E9	Action:T24 Acts-on:E8 Product:T30
+E10	Action:T25 Acts-on:T27 Acts-on2:T29 Site:T30
+E11	Action:T31 Acts-on:E10 Product:T37
+E12	Action:T34 Acts-on:T36 Site:T37 Using:T33 Product:T41
+E13	Action:T40 Acts-on:T41
+E14	Action:T42 Product:T51 Acts-on:E13
 E15	Action:T45 Using:T48 Acts-on:E14
 E16	Action:T49 Acts-on:T51 Site:T53
 E17	Action:T54 Site:T57 Acts-on:E16

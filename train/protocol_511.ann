@@ -30,7 +30,7 @@ E1	Action:T1 Acts-on:T2
 E2	Action:T3 Site:T4 Acts-on:E1 Product:T7
 E3	Action:T5 Acts-on:T6 Site:T7
 E4	Action:T8 Acts-on:E3 Product:T11
-E5	Action:T10 Acts-on:T11 Site:T12 Product:T15
+E5	Action:T10 Acts-on:T11 Site:T12 Product:T15 Using:T13
 E6	Action:T14 Acts-on:T15 Site:T16
 E7	Action:T22 Using:T23 Acts-on:E6
 E8	Action:T27 Using:T26 Acts-on:T28 Acts-on2:E7

@@ -84,16 +84,16 @@ E2	Action:T4 Acts-on:T5 Using:T8 Product:T9
 E3	Action:T12 Acts-on:T13 Site:T14
 E4	Action:T16 Acts-on:T17 Using:T15 Product:T48
 E5	Action:T18 Using:T21 Acts-on:T20
-E6	Action:T23 Acts-on:E5
+E6	Action:T23 Acts-on:E5 Product:T32
 E7	Action:T26 Product:T32
-E8	Action:T30 
+E8	Action:T30 Acts-on:T31
 E9	Action:T33 Acts-on:E8 Acts-on2:T34 Using:T36
 E10	Action:T37 Acts-on:E9 Acts-on2:T38 Using:T40
 E11	Action:T41 Product:T46 Acts-on:E10 Acts-on2:T42 Using:T44
 E12	Action:T45 Acts-on:T46
 E13	Action:T47 Site:E12 Product:T51 Acts-on:T48
 E14	Action:T50 Acts-on:T51 Using:T53 Using2:T55 Using3:T57 Using4:T59 Using5:T61 Using6:T63
-E15	Action:T66 Site:E14 Acts-on:T69 Product:T72
+E15	Action:T66 Site:E14 Acts-on:T69 Product:T72 Acts-on2:T70
 E16	Action:T71 Acts-on:T72
 E17	Action:T74 Site:T75 Acts-on:T72 Using:T77 Using2:T79 Using3:T80 Acts-on2:E16
 R1	Measure Arg1:T11 Arg2:T10
@@ -128,3 +128,9 @@ R29	Measure Arg1:T57 Arg2:T58
 R30	Measure Arg1:T59 Arg2:T60
 R31	Measure Arg1:T61 Arg2:T62
 R32	Measure Arg1:T63 Arg2:T64
+R33	Mod-Link Arg1:E8 Arg2:T29	
+T82	Concentration 1234 1256	same the concentration
+R34	Measure Arg1:T70 Arg2:T82	
+R35	Measure Arg1:T69 Arg2:T67	
+R36	Meronym Arg1:T32 Arg2:T31	
+R37	Overlaps Arg1:E4 Arg2:E3	

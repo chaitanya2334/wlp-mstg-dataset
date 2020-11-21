@@ -9,7 +9,7 @@ T8	Reagent 112 127	deionized water
 T9	Action 130 141	Equilibrate
 T10	Reagent 142 146	PVDF
 T11	Reagent 150 173	nitrocellulose membrane
-T12	Reagent 177 206	diluted SWIFT™ Western Buffer
+T12	Reagent 185 206	SWIFT™ Western Buffer
 T13	Time 211 223	5‐10 minutes
 T14	Action 226 231	Place
 T15	Location 236 265	supplied SWIFT™ Template Card
@@ -66,7 +66,7 @@ T65	Time 1234 1247	30‐60 minutes
 T66	Generic-Measure 1251 1272	200mA fixed current .
 E1	Action:T1 Acts-on:T2 Site:T4
 E2	Action:T6 Count:T7 Using:T8 Acts-on:E1 Product:T10
-E3	Action:T9 Acts-on:T10 Site:T12
+E3	Action:T9 Acts-on:T10 Site:T12 Product:T21
 E4	Action:T14 Acts-on:T15 Site:T16 Product:T19
 E5	Action:T17 Acts-on:T18 Site:T19 Product:T23
 E6	Action:T20 Acts-on:T21 Site:T22 Product:T30
@@ -103,9 +103,11 @@ R16	Setting Arg1:E20 Arg2:T65
 R17	Setting Arg1:E20 Arg2:T66
 R18	Enables Arg1:E6 Arg2:E7
 R19	Mod-Link Arg1:E8 Arg2:T26
-R20	Prevents Arg1:E9 Arg2:E8
+R20	Enables Arg1:E9 Arg2:E8
 R21	Mod-Link Arg1:T36 Arg2:T37
 R22	Prevents Arg1:E14 Arg2:E13
 R23	Prevents Arg1:E12 Arg2:E11
 R24	Enables Arg1:E16 Arg2:E15
 R25	Or Arg1:T50 Arg2:T51
+T67	Modifier 177 184	diluted
+R26	Mod-Link Arg1:T12 Arg2:T67	

@@ -61,24 +61,24 @@ T60	Action 1243 1250	analyze
 T61	Method 1254 1271	plasmid isolation
 T62	Method 1274 1277	PCR
 T63	Method 1283 1293	sequencing
-E1	Action:T1 Acts-on:T2 Product:T14
-E2	Action:T5 Acts-on:E1
-E3	Action:T7 Acts-on:T10 Product:T16
+E1	Action:T1 Acts-on:T2
+E2	Action:T5 Acts-on:E1 Product:T14
+E3	Action:T7 Acts-on:T10 Product:T16 Product2:T15
 E4	Action:T12 Acts-on:T14 Site:T15
-E5	Action:T17 Using:T18 Acts-on:E4
-E6	Action:T19 Acts-on:T20 Site:T21 Acts-on2:E5
+E5	Action:T17 Using:T18 Acts-on:E4 Product:T20 Product2:T67
+E6	Action:T19 Acts-on:T20 Site:T21
 E7	Action:T23 Site:T26 Acts-on:E6
-E8	Action:T27 Acts-on:T28 Site:T30 Acts-on2:E7
-E9	Action:T31 Acts-on:T32 Acts-on2:E8
-E10	Action:T34 Acts-on:T36 Site:T37
-E11	Action:T38 Acts-on:T39 Site:T40 Acts-on2:E10
-E12	Action:T41 Using:T42 Acts-on:T39
-E13	Action:T43 Acts-on:T44 Site:T48 Acts-on2:E12 Product:T51
-E14	Action:T49 Acts-on:T51 Site:T52
-E15	Action:T53 Acts-on:T54 Acts-on2:E14
-E16	Action:T55 Acts-on:T54 Product:T59
+E8	Action:T27 Acts-on:T28 Site:T30 Product:T32
+E9	Action:T31 Acts-on:T32 Product:T37
+E10	Action:T34 Acts-on:T36 Site:T37 Product:T39
+E11	Action:T38 Acts-on:T39 Site:T40
+E12	Action:T41 Using:T42 Acts-on:E11 Product:T44
+E13	Action:T43 Acts-on:T44 Site:T48 Product:T51
+E14	Action:T49 Acts-on:T51 Site:T52 Product:T74
+E15	Action:T53 Acts-on:T54
+E16	Action:T55 Product:T59 Acts-on:E15
 E17	Action:T58 Acts-on:T59
-E18	Action:T60 Using:T61 Acts-on:T59
+E18	Action:T60 Using:T61 Acts-on:E17
 R1	Meronym Arg1:T3 Arg2:T2
 R2	Setting Arg1:E2 Arg2:T6
 R3	Mod-Link Arg1:E1 Arg2:T4
@@ -91,7 +91,6 @@ R9	Setting Arg1:E6 Arg2:T22
 R10	Setting Arg1:T26 Arg2:T25
 R11	Setting Arg1:E7 Arg2:T24
 R12	Setting Arg1:E9 Arg2:T33
-R13	Coreference-Link Arg1:T32 Arg2:T28
 R14	Setting Arg1:T30 Arg2:T29
 R15	Measure Arg1:T36 Arg2:T35
 R16	Setting Arg1:E13 Arg2:T45
@@ -102,3 +101,38 @@ R20	Setting Arg1:E16 Arg2:T56
 R21	Setting Arg1:E16 Arg2:T57
 R22	Or Arg1:T61 Arg2:T62
 R23	Or Arg1:T62 Arg2:T63
+T64	Action 349 359	Do not mix
+E19	Action:T64 Using:T65 Product:T67 Product2:T20
+T65	Method 363 384	pipetting up and down
+R24	Overlaps Arg1:E19 Arg2:E5	
+T66	Modifier 391 400	remaining
+T67	Reagent 401 423	ligation mixture ( s )
+T68	Action 431 437	stored
+E20	Action:T68 Acts-on:T67
+T69	Temperature 441 446	−20°C
+R25	Setting Arg1:E20 Arg2:T69	
+R26	Mod-Link Arg1:T67 Arg2:T66	
+T70	Action 554 564	Do not mix
+E21	Action:T70 Acts-on:E7 Product:T28
+T71	Action 568 573	shake
+E22	Action:T71 Acts-on:E7 Product:T28
+R27	Or Arg1:E21 Arg2:E22	
+R13	Coreference-Link Arg1:T32 Arg2:T28	
+R28	Coreference-Link Arg1:T32 Arg2:T30	
+T72	Modifier 1045 1052	labeled
+R29	Mod-Link Arg1:T52 Arg2:T72	
+T73	Modifier 1074 1083	remaining
+T74	Reagent 1084 1102	transformation mix
+T75	Action 1110 1116	stored
+E23	Action:T75 Acts-on:T74
+T76	Modifier 1103 1106	may
+T77	Temperature 1120 1123	4°C
+T78	Action 1128 1138	plated out
+E24	Action:T78 Acts-on:E23 Product:T54
+T79	Time 1143 1151	next day
+T80	Modifier 1154 1164	if desired
+R30	Setting Arg1:E24 Arg2:T79	
+R31	Mod-Link Arg1:E24 Arg2:T80	
+R32	Mod-Link Arg1:E23 Arg2:T76	
+R33	Mod-Link Arg1:T74 Arg2:T73	
+R34	Setting Arg1:E23 Arg2:T77	

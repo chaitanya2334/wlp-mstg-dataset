@@ -67,7 +67,7 @@ T66	Action 1205 1212	Collect
 T67	Amount 1213 1226	0.2 - 0.25 ml
 T68	Reagent 1227 1236	fractions
 T69	Action 1239 1248	Calculate
-T70	Amount 1249 1255	amount
+T70	Measure-Type 1249 1255	amount
 T71	Reagent 1259 1262	DNA
 T72	Modifier 1266 1270	each
 T73	Reagent 1271 1279	fraction
@@ -94,9 +94,9 @@ E13	Action:T56 Acts-on:T57 Site:T58 Acts-on2:E12
 E14	Action:T59 Acts-on:T60 Site:E13
 E15	Action:T61 Using:T63 Product:T68 Acts-on:E14
 E16	Action:T66 Acts-on:T68 Product:T73
-E17	Action:T69 Product:T78 Acts-on:T71
-E18	Action:T75 
-E19	Action:T79 Acts-on:E18 Acts-on2:T80
+E17	Action:T69 Product:T78 Acts-on:T71 Product2:T80 Measure-Type-Link:T70 Using:T74
+E18	Action:T75 Measure-Type-Link:T76 Acts-on:T78
+E19	Action:T79 Acts-on2:T80 Measure-Type-Link:T81
 R1	Measure Arg1:T8 Arg2:T7
 R2	Or Arg1:T2 Arg2:T3
 R3	Or Arg1:T3 Arg2:T4
@@ -124,3 +124,5 @@ R24	Setting Arg1:T63 Arg2:T64
 R25	Setting Arg1:T63 Arg2:T65
 R26	Setting Arg1:T63 Arg2:T62
 R27	Meronym Arg1:T71 Arg2:T73
+T81	Measure-Type 1390 1397	density
+R28	Setting Arg1:E10 Arg2:T48	

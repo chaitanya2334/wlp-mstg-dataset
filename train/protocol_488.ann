@@ -40,7 +40,7 @@ E2	Action:T5 Acts-on:T7 Site:T11 Product:T21
 E3	Action:T15 Acts-on:T17 Site:T21
 E4	Action:T23 Acts-on:T25 Acts-on2:E3
 E5	Action:T29 Acts-on:T30 Acts-on2:E4
-E6	Action:T31 Acts-on:T30 Product:T36
+E6	Action:T31 Product:T36 Acts-on:E5
 E7	Action:T34 Acts-on:T36 Using:T37
 R1	Mod-Link Arg1:T3 Arg2:T2
 R2	Setting Arg1:E1 Arg2:T4

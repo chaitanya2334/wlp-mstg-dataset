@@ -7,7 +7,7 @@ T6	Amount 155 172	per 4 L of sample
 T7	Amount 235 238	two
 T8	Device 239 248	cassettes
 T9	Action 281 293	set these up
-T10	Location 297 332	parallel with separate tubing lines
+T10	Location 311 332	separate tubing lines
 T11	Device 345 368	double tubing pump head
 T12	Action 371 379	Refer to
 T13	Device 384 405	Sartorius user manual
@@ -16,8 +16,7 @@ T15	Location 428 434	tubing
 T16	Action 435 445	attachment
 T17	Action 450 463	flow set - up
 T18	Location 474 480	tubing
-T19	Location 492 496	ends
-T20	Action 503 509	placed
+T19	Location 492 509	ends to be placed
 T21	Reagent 517 523	sample
 T22	Action 528 536	filtrate
 T23	Modifier 540 557	clean as possible
@@ -29,12 +28,11 @@ T28	Location 614 629	cassette tubing
 T29	Location 643 652	pump head
 T30	Action 673 679	attach
 T31	Size 684 691	size 25
-T32	Device 692 709	Masterflex tubing
+T32	Location 692 709	Masterflex tubing
 T33	Action 718 722	Keep
 T34	Modifier 723 728	clean
 T35	Modifier 731 738	sterile
-T36	Location 739 746	the end
-T37	Action 753 759	placed
+T36	Location 739 759	the end to be placed
 T38	Reagent 767 779	phage sample
 T39	Action 850 855	label
 T40	Location 877 883	tubing
@@ -75,8 +73,8 @@ T74	Action 1485 1491	set up
 T75	Amount 1492 1495	two
 T76	Modifier 1496 1504	parallel
 T77	Location 1505 1514	cassettes
-T78	Mention 1783 1789	400 ml
-T79	Amount 1790 1802	per cassette
+T78	Amount 1783 1789	400 ml
+T79	Location 1790 1802	per cassette
 T80	Action 1806 1810	pass
 T81	Reagent 1820 1839	filtrate collection
 T82	Action 1842 1861	Check for any leaks
@@ -222,80 +220,78 @@ T221	Action 4793 4801	Filtrate
 T222	Location 4807 4816	beginning
 T223	Action 4850 4858	Filtrate
 T224	Location 4864 4867	end
-E1	Action:T1 Acts-on:T3
+E1	Action:T1 Acts-on:T3 Product:T28
 E2	Action:T4 Acts-on:T5
 E3	Action:T9 Acts-on:T8 Site:T10 Using:T11
 E4	Action:T12 Acts-on:T13 Acts-on2:T14
-E5	Action:T16 Acts-on:T15
-E6	Action:T17 
-E7	Action:T20 Acts-on:T19 Site:T21
-E8	Action:T22 Acts-on:T21
-E9	Action:T24 Site:T25 Product:T21 Acts-on:T18
-E10	Action:T26 Acts-on:T28 Site:T29
+E5	Action:T16 Acts-on:T15 Product:T18
+E6	Action:T17 Product:T18
+E8	Action:T22 Acts-on:E75
+E9	Action:T24 Site:T25 Acts-on:E8 Product:T38
+E10	Action:T26 Acts-on:T28 Site:T29 Product:T36
 E11	Action:T30 Acts-on:T32
-E12	Action:T33 Acts-on:T36
-E13	Action:T37 Acts-on:T36 Site:T38
+E12	Action:T33 Acts-on:T36 Site:T38 Product:T40 Product2:T41
 E14	Action:T39 Acts-on:T40 Acts-on2:T41 Acts-on3:T42 Using:T44
-E15	Action:T45 Acts-on:T42 Acts-on2:T41 Acts-on3:T40
-E16	Action:T46 Using:E15
-E17	Action:T47 Acts-on:T48 Using:E18
+E15	Action:T45 Acts-on:E14
+E16	Action:T46 Product:T48
+E17	Action:T47 Acts-on:T48 Product:T59
 E18	Action:T49 Acts-on:T50
-E19	Action:T52 Acts-on:T54 Acts-on2:T55 Using:E18
-E20	Action:T56 Acts-on:T57 Using:E18
-E21	Action:T58 Acts-on:T59 Site:T61
-E22	Action:T66 Acts-on:T67 Site:T68
-E23	Action:T69 Acts-on:T70 Site:T71
-E24	Action:T72 Acts-on:T73 Using:E23
+E19	Action:T52 Acts-on:T54 Acts-on2:T55 Product:T57
+E20	Action:T56 Acts-on:T57
+E21	Action:T58 Acts-on:T59 Site:T61 Product:T67
+E22	Action:T66 Acts-on:T67 Site:T68 Product:T70
+E23	Action:T69 Acts-on:T70
+E24	Action:T72 Acts-on:T73 Product:T81 Product2:T95
 E25	Action:T74 Acts-on:T77
-E26	Action:T80 Acts-on:T78 Site:T81
-E27	Action:T82 Acts-on:T83
-E28	Action:T84 Acts-on:T85
-E29	Action:T86 Acts-on:T87
-E30	Action:T88 Acts-on:T89 Using:E31
+E26	Action:T80 Site:T81 Acts-on:T79 Product:T83
+E27	Action:T82 Acts-on:T83 Product:T85
+E28	Action:T84 Acts-on:T85 Product:T87
+E29	Action:T86 Acts-on:T87 Product:T91 Product2:T92
+E30	Action:T88 Acts-on:T89 Product:T98
 E31	Action:T90 Acts-on:T91 Acts-on2:T92 Site:T95
-E32	Action:T96 Acts-on:T97 Site:T98
-E33	Action:T99 Using:E32
-E34	Action:T100 Acts-on:T101
+E32	Action:T96 Acts-on:T97 Site:T98 Product:T101
+E33	Action:T99 
+E34	Action:T100 Acts-on:T101 Product:T103
 E35	Action:T102 Acts-on:T103 Site:T104
-E36	Action:T105 Measure-Type-Link:T106
-E37	Action:T107 
-E38	Action:T109 Acts-on:T110 Using:T111
+E36	Action:T105 Measure-Type-Link:T106 Acts-on:E35
+E37	Action:T107 Acts-on:E36
+E38	Action:T109 Acts-on:T110 Using:T111 Product:T113
 E39	Action:T112 Acts-on:T113
-E40	Action:T114 Using:E39
+E40	Action:T114 Product:T116
 E41	Action:T115 Acts-on:T116 Site:T117
-E42	Action:T118 Acts-on:T119
-E43	Action:T122 
+E42	Action:T118 Acts-on:T119 Site:E41
+E43	Action:T122 Acts-on:E42 Product:T127
 E44	Action:T125 Acts-on:T127
-E45	Action:T129 Using:E44
-E46	Action:T130 Acts-on:T131
-E47	Action:T134 Measure-Type-Link:T135
+E45	Action:T129 
+E46	Action:T130 Acts-on:T131 Site:E45
+E47	Action:T134 Measure-Type-Link:T135 Acts-on:E46 Product:T139
 E48	Action:T137 Acts-on:T139
-E49	Action:T141 Using:E48
+E49	Action:T141 Product:T152
 E50	Action:T142 Acts-on:T143 Acts-on2:T144 Site:T145
-E51	Action:T147 Using:T146
-E52	Action:T148 Using:T149
-E53	Action:T150 Acts-on:T152 Site:T154
-E54	Action:T155 Acts-on:T157 Site:T159
-E55	Action:T160 Acts-on:T161 Site:T162
+E51	Action:T147 Using:T146 Acts-on:E50
+E52	Action:T148 Using:T149 Acts-on:E51 Product:T152
+E53	Action:T150 Acts-on:T152 Site:T154 Product:T157
+E54	Action:T155 Acts-on:T157 Product:T161
+E55	Action:T160 Acts-on:T161 Product:T172
 E56	Action:T163 Acts-on:T165 Site:T168
-E57	Action:T169 Acts-on:T170 Acts-on2:T171 Site:T172
-E58	Action:T173 Using:T174
-E59	Action:T175 
-E60	Action:T178 Acts-on:T179 Using:T180
-E61	Action:T181 Acts-on:T183 Site:T184
-E62	Action:T185 Acts-on:T186
+E57	Action:T169 Acts-on:T170 Acts-on2:T171 Site:T172 Product:T243
+E58	Action:T173 Using:T174 Acts-on:T243
+E59	Action:T175 Acts-on:E58 Product:T179
+E60	Action:T178 Acts-on:T179 Using:T180 Product:T183
+E61	Action:T181 Acts-on:T183 Site:T184 Product:T220 Product2:T186
+E62	Action:T185 Acts-on:T186 Product:T201
 E63	Action:T187 Acts-on:T188 Using:T189
-E64	Action:T190 Acts-on:T188
-E65	Action:T192 Acts-on:T194 Site:T197
+E64	Action:T190 Acts-on:E63
+E65	Action:T192 Acts-on:T194 Site:T197 Product:T199
 E66	Action:T198 Acts-on:T199 Site:T200 Site2:T201
-E67	Action:T202 Acts-on:T203 Using:E66
+E67	Action:T202 Acts-on:T203 Product:T206 Product2:T207 Product3:T211
 E68	Action:T204 Acts-on:T206 Site:T207
-E69	Action:T208 Using:T209
+E69	Action:T208 Using:T209 Acts-on:E68
 E70	Action:T210 Acts-on:T211 Using:T212
-E71	Action:T213 Using:T214 Using2:E72
+E71	Action:T213 Using:T214
 E72	Action:T215 Acts-on:T217
-E73	Action:T221 Site:T222
-E74	Action:T223 Site:T224
+E73	Action:T221 Site:T222 Acts-on:E71
+E74	Action:T223 Site:T224 Acts-on:E73
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T5 Arg2:T6
 R3	Measure Arg1:T8 Arg2:T7
@@ -314,7 +310,6 @@ R15	Mod-Link Arg1:T65 Arg2:T64
 R16	Mod-Link Arg1:T65 Arg2:T63
 R17	Meronym Arg1:T65 Arg2:T61
 R18	Measure Arg1:T61 Arg2:T60
-R19	Meronym Arg1:T67 Arg2:T71
 R20	Mod-Link Arg1:E25 Arg2:T76
 R21	Setting Arg1:T77 Arg2:T75
 R22	Measure Arg1:T95 Arg2:T94
@@ -338,12 +333,10 @@ R39	Mod-Link Arg1:E54 Arg2:T158
 R40	Setting Arg1:E59 Arg2:T176
 R41	Setting Arg1:E59 Arg2:T177
 R42	Measure Arg1:T183 Arg2:T182
-R43	Coreference-Link Arg1:T188 Arg2:T186
 R44	Setting Arg1:E64 Arg2:T191
 R45	Measure Arg1:T194 Arg2:T193
 R46	Measure Arg1:T197 Arg2:T196
 R47	Mod-Link Arg1:T197 Arg2:T195
-R48	Coreference-Link Arg1:T199 Arg2:T194
 R49	Mod-Link Arg1:T206 Arg2:T205
 R50	Measure Arg1:T217 Arg2:T216
 R51	Meronym Arg1:T220 Arg2:T217
@@ -353,5 +346,73 @@ R54	Measure Arg1:T165 Arg2:T164
 R55	Mod-Link Arg1:T168 Arg2:T166
 R56	Measure Arg1:T168 Arg2:T167
 R57	Enables Arg1:E2 Arg2:E1
-R58	Enables Arg1:E4 Arg2:E5
 R59	Enables Arg1:E4 Arg2:E6
+R60	Overlaps Arg1:E3 Arg2:E2	
+R58	Enables Arg1:E4 Arg2:E5	
+R61	Enables Arg1:E11 Arg2:E10	
+T225	Action 483 487	keep
+E75	Action:T225 Acts-on:T19 Site:T21
+R62	Enables Arg1:E15 Arg2:E16	
+R64	Meronym Arg1:T50 Arg2:T48	
+R63	Enables Arg1:E20 Arg2:E17	
+R65	Enables Arg1:E18 Arg2:E19	
+R66	Enables Arg1:E23 Arg2:E24	
+R19	Meronym Arg1:T70 Arg2:T71	
+T20	Action 1435 1439	need
+E7	Action:T20 Acts-on:T226 Site:T227
+T37	Amount 1440 1448	~ 500 ml
+T226	Reagent 1452 1457	water
+T227	Location 1462 1470	cassette
+R67	Measure Arg1:T226 Arg2:T37	
+R68	Overlaps Arg1:E7 Arg2:E23	
+R69	Overlaps Arg1:E25 Arg2:E7	
+R70	Coreference-Link Arg1:T77 Arg2:T227	
+T228	Measure-Type 1544 1562	recirculation rate
+T229	Generic-Measure 1589 1607	200 - 400 ml / min
+T230	Action 1633 1637	exit
+E13	Action:T230 Acts-on:T232 Site:T231
+T231	Location 1642 1655	filtrate line
+T232	Reagent 1612 1625	suitable flow
+T233	Action 1563 1572	should be
+E76	Action:T233 Measure-Type-Link:T228
+R71	Of-Type Arg1:T229 Arg2:T228	
+R72	Overlaps Arg1:E76 Arg2:E25	
+R73	Overlaps Arg1:E13 Arg2:E76	
+T234	Action 1698 1702	read
+E77	Action:T234 Measure-Type-Link:T237
+T235	Modifier 1703 1716	approximately
+T236	Generic-Measure 1717 1724	2.5 bar
+T237	Measure-Type 1672 1690	pressure indicator
+R74	Of-Type Arg1:T236 Arg2:T237	
+R75	Mod-Link Arg1:T236 Arg2:T235	
+R76	Overlaps Arg1:E77 Arg2:E13	
+T238	Action 1732 1743	corresponds
+E78	Action:T238 Measure-Type-Link:T239
+T239	Measure-Type 1749 1761	pump setting
+T240	Generic-Measure 1772 1774	60
+R77	Of-Type Arg1:T240 Arg2:T239	
+R78	Overlaps Arg1:E78 Arg2:E77	
+R79	Setting Arg1:E26 Arg2:T78	
+R80	Enables Arg1:E31 Arg2:E30	
+R81	Enables Arg1:E32 Arg2:E33	
+T241	Generic-Measure 2238 2273	same rate and pressure as specified
+R82	Setting Arg1:E35 Arg2:T241	
+R83	Enables Arg1:E37 Arg2:E38	
+R84	Enables Arg1:E39 Arg2:E40	
+T242	Modifier 3742 3748	second
+R85	Mod-Link Arg1:T154 Arg2:T242	
+R86	Meronym Arg1:T157 Arg2:T159	
+R87	Meronym Arg1:T161 Arg2:T162	
+R88	Enables Arg1:E56 Arg2:E55	
+R89	Enables Arg1:E48 Arg2:E49	
+T243	Location 4017 4020	top
+R48	Enables Arg1:E66 Arg2:E67	
+R90	Or Arg1:E70 Arg2:E68	
+R91	Enables Arg1:E72 Arg2:E71	
+R43	Enables Arg1:E63 Arg2:E62	
+R92	Coreference-Link Arg1:T188 Arg2:T186	
+R93	Enables Arg1:E3 Arg2:E1	
+R94	Overlaps Arg1:E5 Arg2:E6	
+R95	Setting Arg1:E77 Arg2:T236	
+R96	Setting Arg1:E78 Arg2:T240	
+R97	Enables Arg1:E44 Arg2:E45	

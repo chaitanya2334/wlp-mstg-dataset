@@ -6,7 +6,7 @@ T5	Temperature 60 66	- 20°C
 T6	Action 69 76	Prepare
 T7	Reagent 77 101	target cells of interest
 T8	Action 106 110	wash
-T9	Reagent 111 113	2X
+T9	Numerical 111 113	2X
 T10	Reagent 119 122	PBS
 T11	Action 126 136	centrifuge
 T12	Speed 140 145	350xg
@@ -30,7 +30,7 @@ T29	Action 344 352	incubate
 T30	Temperature 356 362	- 20°C
 T31	Time 367 373	1 hour
 T32	Action 376 380	Wash
-T33	Reagent 381 383	3X
+T33	Numerical 381 383	3X
 T34	Reagent 389 421	BioLegend’s Cell Staining Buffer
 T35	Action 453 462	resuspend
 T36	Reagent 467 472	cells
@@ -45,27 +45,27 @@ T44	Temperature 617 633	room temperature
 T45	Location 641 645	dark
 T46	Time 650 660	30 minutes
 T47	Action 663 667	Wash
-T48	Reagent 668 670	2X
+T48	Numerical 668 670	2X
 T49	Reagent 676 708	BioLegend’s Cell Staining Buffer
 T50	Action 740 749	resuspend
 T51	Amount 753 759	0.5 ml
 T52	Reagent 760 780	cell staining buffer
-E1	Action:T1 Acts-on:T3 Product:T23
-E2	Action:T4 Acts-on:T3
-E3	Action:T6 Acts-on:T7 Product:T15
-E4	Action:T8 Acts-on:T9 Using:T10
+E1	Action:T1 Product2:T3
+E2	Action:T4 Acts-on:T3 Product:T23
+E3	Action:T6 Product:T7
+E4	Action:T8 Using:T10 Product:T15 Count:T9 Acts-on:T7
 E5	Action:T11 
-E6	Action:T14 Acts-on:T15
+E6	Action:T14 Acts-on:T15 Product:T17
 E7	Action:T16 Acts-on:T17 Using:T18
-E8	Action:T19 Acts-on:T23 Using:T24 Site:T25 Acts-on2:E7
+E8	Action:T19 Acts-on:T23 Using:T24 Site:T25 Site2:E7
 E9	Action:T26 Using:T27 Acts-on:E8
-E10	Action:T29 
-E11	Action:T32 Acts-on:T33 Using:T34 Product:T36 Acts-on2:E10
+E10	Action:T29 Acts-on:E9
+E11	Action:T32 Using:T34 Product:T36 Acts-on2:E10 Count:T33
 E12	Action:T35 Acts-on:T36 Product:T40
 E13	Action:T38 Acts-on:T40 Using:T42
-E14	Action:T43 Site:T45 Acts-on:T40 Acts-on2:E13
-E15	Action:T47 Acts-on:T48 Using:T49 Acts-on2:E14
-E16	Action:T50 Acts-on:T48 Site:T52
+E14	Action:T43 Site:T45 Acts-on2:E13
+E15	Action:T47 Using:T49 Acts-on2:E14 Count:T48
+E16	Action:T50 Site:T52 Acts-on:E15
 R1	Measure Arg1:T40 Arg2:T39
 R2	Measure Arg1:T3 Arg2:T2
 R3	Setting Arg1:E2 Arg2:T5

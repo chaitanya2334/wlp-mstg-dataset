@@ -116,7 +116,7 @@ T115	Reagent 1846 1851	cells
 T116	Time 1852 1860	24 hours
 T117	Action 1861 1870	to settle
 T118	Action 1875 1882	recover
-E1	Action:T1 Using:T5 Product:T21
+E1	Action:T1 Using:T5 Product:T21 Acts-on:T3
 E2	Action:T15 Acts-on:T17 Using:T19 Product:T22
 E3	Action:T20 Acts-on:T21 Site:T22
 E4	Action:T24 Acts-on:T25 Product:T27
@@ -126,8 +126,8 @@ E7	Action:T32 Acts-on:T34 Site:T36 Product:T41
 E8	Action:T37 Acts-on:E7
 E9	Action:T40 Acts-on:T41 Product:T62
 E10	Action:T43 Product:T44 Product2:T45
-E11	Action:T46 Using:T49 Product:T47
-E12	Action:T51 Site:T52 Acts-on:T47 Product:T110
+E11	Action:T46 Using:T49 Acts-on:T47
+E12	Action:T51 Site:T52 Product:T110 Acts-on:E11
 E13	Action:T53 Site:T57 Product:T55 Acts-on:T45
 E14	Action:T54 Site:T57 Acts-on:T55 Product:T86
 E15	Action:T58 Acts-on:T59 Using:T60 Product:T94
@@ -144,7 +144,7 @@ E25	Action:T92 Acts-on:T93 Site:T94
 E26	Action:T95 Acts-on:E25 Product:T96
 E27	Action:T97 Acts-on:T96 Site:T98 Product:T105
 E28	Action:T100 Acts-on:T103 Site:T105 Product:T107
-E29	Action:T106 Acts-on:T107 Using:T108
+E29	Action:T106 Acts-on:T107 Using:T108 Site:T110
 E30	Action:T111 Using:T112 Acts-on:T114 Site:E29 Product:T115
 E31	Action:T117 Acts-on:T115
 E32	Action:T118 Acts-on:E31

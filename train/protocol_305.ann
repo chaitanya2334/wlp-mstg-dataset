@@ -81,7 +81,7 @@ E13	Action:T37 Using:T38 Acts-on:E12 Product:T41
 E14	Action:T40 Acts-on:T41 Using:T42 Product:T45
 E15	Action:T43 Acts-on:T45 Site:T46
 E16	Action:T47 Acts-on:T48 Site:E15
-E17	Action:T49 Acts-on:T46 Product:T52
+E17	Action:T49 Product:T52 Acts-on:E16
 E18	Action:T51 Acts-on:T52 Using:T53 Product:T64
 E19	Action:T63 Acts-on:T64 Site:T65
 E20	Action:T66 Acts-on:E19

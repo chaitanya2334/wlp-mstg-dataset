@@ -267,7 +267,7 @@ E1	Action:T1 Acts-on:T2
 E2	Action:T4 Using:T7 Acts-on:E1
 E3	Action:T9 Product:T14 Acts-on:E2
 E4	Action:T13 Acts-on:T14
-E5	Action:T16 Acts-on:E43
+E5	Action:T16 Acts-on2:E4
 E6	Action:T17 Count:T18 Acts-on:E5
 E7	Action:T21 Acts-on:T20 Product:T25
 E8	Action:T23 Acts-on:T25 Using:T28
@@ -275,7 +275,7 @@ E9	Action:T29 Using:T30 Acts-on:E8
 E10	Action:T32 Site:T34 Acts-on:E9 Product:T39 Product2:T41
 E11	Action:T35 Using:T37 Acts-on:T39
 E12	Action:T40 Acts-on:T41 Product:T46
-E13	Action:T43 
+E13	Action:T43 Acts-on:T46
 E14	Action:T44 Acts-on:T46 Product:T51
 E15	Action:T47 Acts-on:T51 Product:T56 Product2:T57
 E16	Action:T52 Acts-on:E15
@@ -291,8 +291,8 @@ E25	Action:T95 Acts-on:T96 Product:T99
 E26	Action:T97 Acts-on:T99 Product:T103
 E27	Action:T101 Acts-on:T103 Product:T209
 E28	Action:T105 Acts-on:T107 Product:T112 Product2:T116
-E29	Action:T109 Acts-on:T111 Site:T112
-E30	Action:T113 Acts-on:T115 Site:T116 Product:T134
+E29	Action:T109 Acts-on:T111 Site:T112 Product:T118
+E30	Action:T113 Acts-on:T115 Site:T116 Product:T118
 E31	Action:T117 Acts-on:T118 Product:T121
 E32	Action:T119 Acts-on:T121 Site:T123
 E33	Action:T124 Site:T126 Acts-on:E32 Product:T129
@@ -309,7 +309,7 @@ E43	Action:T168 Acts-on:T170 Site:T171 Product:T175
 E44	Action:T172 Site:T174 Site2:T175 Using:T177 Product:T180 Product2:T217
 E45	Action:T178 Acts-on:T179 Site:T180
 E46	Action:T183 Using:T182 Site:T186 Acts-on:E45 Product:T189
-E47	Action:T187 
+E47	Action:T187 Acts-on:T189
 E48	Action:T188 Acts-on:T189 Product:T194 Product2:T197
 E49	Action:T191 Acts-on:T194 Acts-on2:T197 Site:T199 Product:T202 Product2:T203
 E50	Action:T204 Acts-on:T202 Acts-on2:T203
@@ -426,7 +426,7 @@ R94	Enables Arg1:E6 Arg2:E7
 R95	Or Arg1:T37 Arg2:T38
 R96	Measure Arg1:T39 Arg2:T36
 R97	Enables Arg1:E13 Arg2:E14
-R98	Coreference-Link Arg1:T91 Arg2:T96
+R98	Coreference-Link Arg1:T96 Arg2:T91
 R99	Meronym Arg1:T136 Arg2:T134
 R100	Mod-Link Arg1:E26 Arg2:T100
 R101	Mod-Link Arg1:E28 Arg2:T108

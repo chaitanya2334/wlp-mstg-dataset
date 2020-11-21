@@ -242,3 +242,4 @@ R58	Coreference-Link Arg1:T84 Arg2:T111
 R59	Enables Arg1:E38 Arg2:E39
 R60	Coreference-Link Arg1:T111 Arg2:T127
 R61	Enables Arg1:E43 Arg2:E44
+R62	Measure Arg1:T10 Arg2:T9	

@@ -35,20 +35,20 @@ T34	Reagent 460 475	synthesized RNA
 T35	Action 479 487	analysis
 T36	Reagent 491 513	transcription products
 T37	Method 517 536	gel electrophoresis
-E1	Action:T1 Product:T3
-E2	Action:T4 Acts-on:T6
-E3	Action:T7 Using:T9
-E4	Action:T8 Using:T9
-E5	Action:T10 Acts-on:T11 Site:T12 Using:E3 Using2:E4
+E1	Action:T1 Product:T3 Product2:T6
+E2	Action:T4 Acts-on:T6 Product:T13 Product2:T11
+E3	Action:T7 Using:T9 Acts-on:T13
+E4	Action:T8 Using:T9 Acts-on:T13
+E5	Action:T10 Acts-on:T11 Site:T12 Product:T15
 E6	Action:T14 Acts-on:T15
-E7	Action:T17 
-E8	Action:T19 
-E9	Action:T20 
-E10	Action:T23 Acts-on:T24 Using:E11
+E7	Action:T17 Acts-on:E6
+E8	Action:T19 Acts-on:E7
+E9	Action:T20 Acts-on:E8
+E10	Action:T23 Acts-on:T24 Product:T34 Product2:T36
 E11	Action:T25 Acts-on:T27
-E12	Action:T28 
-E13	Action:T29 
-E14	Action:T32 Using:E15
+E12	Action:T28 Acts-on:E11
+E13	Action:T29 Acts-on:E11
+E14	Action:T32 
 E15	Action:T33 Acts-on:T34
 E16	Action:T35 Acts-on:T36 Using:T37
 R1	Measure Arg1:T3 Arg2:T2
@@ -63,3 +63,13 @@ R9	Setting Arg1:E13 Arg2:T30
 R10	Setting Arg1:E13 Arg2:T31
 R11	Setting Arg1:E12 Arg2:T30
 R12	Setting Arg1:E12 Arg2:T31
+R13	Overlaps Arg1:E4 Arg2:E3	
+R14	Enables Arg1:E4 Arg2:E5	
+R15	Enables Arg1:E3 Arg2:E5	
+T38	Modifier 309 317	Optional
+R17	Mod-Link Arg1:E10 Arg2:T38	
+R18	Overlaps Arg1:E13 Arg2:E12	
+R16	Enables Arg1:E13 Arg2:E10	
+R19	Enables Arg1:E12 Arg2:E10	
+R20	Enables Arg1:E15 Arg2:E14	
+R21	Or Arg1:E16 Arg2:E15	

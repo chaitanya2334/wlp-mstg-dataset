@@ -56,9 +56,9 @@ T55	Action 1019 1024	Place
 T56	Modifier 1025 1028	all
 T57	Device 1036 1057	polycarbonate filters
 T58	Location 1067 1070	20L
-T59	Location 1078 1098	50ml centrifuge tube
+T59	Location 1083 1098	centrifuge tube
 T60	Modifier 1105 1112	careful
-T61	Action 1120 1130	scrape off
+T61	Action 1113 1130	not to scrape off
 T62	Reagent 1142 1147	FeCl3
 T63	Location 1155 1159	edge
 T64	Location 1167 1171	tube
@@ -66,19 +66,19 @@ T65	Action 1243 1250	Discard
 T66	Device 1255 1275	Supor support filter
 T67	Action 1278 1285	Prepare
 T68	Modifier 1286 1291	fresh
-T69	Reagent 1292 1301	0.1M EDTA
-T70	Reagent 1304 1314	0.2M MgCl2
-T71	Reagent 1317 1338	0.2M Ascorbate Buffer
+T69	Reagent 1297 1301	EDTA
+T70	Reagent 1309 1314	MgCl2
+T71	Reagent 1322 1338	Ascorbate Buffer
 T72	pH 1341 1346	pH6.5
 T73	Action 1349 1352	Add
-T74	Reagent 1353 1363	1ml buffer
-T75	Amount 1368 1379	each 1mg Fe
+T74	Reagent 1357 1363	buffer
+T75	Reagent 1377 1379	Fe
 T76	Action 1481 1486	Shake
-T77	Device 1491 1495	tube
+T77	Location 1491 1495	tube
 T78	Modifier 1496 1506	vigorously
 T79	Action 1509 1514	Place
-T80	Device 1515 1520	tubes
-T81	Location 1526 1533	rotator
+T80	Location 1515 1520	tubes
+T81	Device 1526 1533	rotator
 T82	Action 1538 1544	rotate
 T83	Temperature 1548 1551	4°C
 T84	Time 1552 1561	overnight
@@ -91,7 +91,7 @@ T90	Modifier 1610 1617	further
 T91	Action 1618 1624	purify
 T92	Reagent 1629 1645	viral fraction .
 T93	Action 1687 1691	open
-T94	Device 1696 1700	tube
+T94	Location 1696 1700	tube
 T95	Action 1705 1712	collect
 T96	Reagent 1713 1719	liquid
 T97	Modifier 1727 1732	fresh
@@ -121,30 +121,30 @@ E1	Action:T1 Acts-on:T3
 E2	Action:T4 Acts-on:T5 Site:T6 Using:T7 Product:T52
 E3	Action:T8 Acts-on:T10 Using:T11
 E4	Action:T12 Using:T16 Acts-on:E3
-E5	Action:T14 Acts-on:T15
+E5	Action:T14 Acts-on:T15 Product:T18
 E6	Action:T17 Acts-on:T18 Using:T19
 E7	Action:T20 Acts-on:T21
 E8	Action:T22 Acts-on:T24 Site:T27
-E9	Action:T28 Acts-on:E8 Product:T37
+E9	Action:T28 Product:T37 Acts-on:E7
 E10	Action:T31 Acts-on:T34 Site:E9
 E11	Action:T38 Acts-on:E10 Product:T42
 E12	Action:T43 Acts-on:T42 Site:E11 Product:T48
-E13	Action:T46 Acts-on:T48 Using:T49 Using2:T50
+E13	Action:T46 Acts-on:T48 Using:T49 Using2:T50 Product:T57
 E14	Action:T51 Acts-on:T52 Site:T53 Using:T54
 E15	Action:T55 Acts-on:T57 Site:T58 Site2:T59 Product:T66
 E16	Action:T61 Acts-on:T62 Site:T64
-E17	Action:T65 Acts-on:T66
-E18	Action:T67 Acts-on:T69 Acts-on2:T70 Acts-on3:T71 Product:T74
-E19	Action:T73 Acts-on:T74 Product:T77
+E17	Action:T65 Acts-on:T66 Product:T75
+E18	Action:T67 Product2:T69 Product3:T70 Product4:T71
+E19	Action:T73 Acts-on:T74 Product:T77 Site:T75 Site2:T128
 E20	Action:T76 Acts-on:T77 Product:T80
 E21	Action:T79 Acts-on:T80 Site:T81
 E22	Action:T82 Acts-on:E21
 E23	Action:T85 Site:T86 Acts-on:E22
 E24	Action:T89 
 E25	Action:T91 Acts-on:T92 Product:T94
-E26	Action:T93 Acts-on:T94 Site:E23
-E27	Action:T95 Acts-on:T96 Product:T98 Site:T94 Product2:T104
-E28	Action:T102 Using:T101 Using2:T100 Using3:T99 Site:T103 Site2:T105
+E26	Action:T93 Acts-on:T94 Site:E23 Product:T96
+E27	Action:T95 Acts-on:T96 Product2:T104 Site:T98
+E28	Action:T102 Using:T101 Using2:T100 Using3:T99 Site:T103 Site2:T105 Product:T111
 E29	Action:T106 Acts-on:E28
 E30	Action:T109 Acts-on:T111
 E31	Action:T112 Acts-on:T114 Site:E30
@@ -154,7 +154,6 @@ R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T10 Arg2:T9
 R3	Mod-Link Arg1:E4 Arg2:T13
 R4	Measure Arg1:T24 Arg2:T23
-R5	Mod-Link Arg1:T26 Arg2:T25
 R6	Mod-Link Arg1:T27 Arg2:T25
 R7	Mod-Link Arg1:E9 Arg2:T29
 R8	Setting Arg1:E9 Arg2:T30
@@ -175,14 +174,12 @@ R22	Measure Arg1:T71 Arg2:T72
 R23	Mod-Link Arg1:T69 Arg2:T68
 R24	Mod-Link Arg1:T70 Arg2:T68
 R25	Mod-Link Arg1:T71 Arg2:T68
-R26	Setting Arg1:E19 Arg2:T75
 R27	Mod-Link Arg1:E20 Arg2:T78
 R28	Setting Arg1:E22 Arg2:T83
 R29	Setting Arg1:E22 Arg2:T84
 R30	Setting Arg1:E23 Arg2:T87
 R31	Setting Arg1:E23 Arg2:T88
 R32	Mod-Link Arg1:E25 Arg2:T90
-R33	Setting Arg1:E24 Arg2:T88
 R34	Mod-Link Arg1:T98 Arg2:T97
 R35	Meronym Arg1:T103 Arg2:T104
 R36	Setting Arg1:E29 Arg2:T107
@@ -194,9 +191,42 @@ R41	Setting Arg1:E32 Arg2:T117
 R42	Enables Arg1:E1 Arg2:E2
 R43	Enables Arg1:E4 Arg2:E5
 R44	Enables Arg1:E6 Arg2:E7
-R45	Enables Arg1:E8 Arg2:E7
+R45	Enables Arg1:E8 Arg2:E6
 R46	Enables Arg1:E14 Arg2:E13
-R47	Prevents Arg1:E15 Arg2:E16
+R47	Enables Arg1:E16 Arg2:E15
 R48	Enables Arg1:E23 Arg2:E24
 R49	Or Arg1:E24 Arg2:E25
 R50	Enables Arg1:E29 Arg2:E30
+R51	Coreference-Link Arg1:T64 Arg2:T59	
+T120	Concentration 1292 1296	0.1M
+T121	Concentration 1304 1308	0.2M
+T122	Concentration 1317 1321	0.2M
+R52	Measure Arg1:T69 Arg2:T120	
+R53	Measure Arg1:T70 Arg2:T121	
+R54	Measure Arg1:T71 Arg2:T122	
+T123	Amount 1373 1376	1mg
+R26	Measure Arg1:T75 Arg2:T123	
+T124	Amount 1391 1395	20ml
+T125	Concentration 1399 1401	1x
+T126	Reagent 1402 1408	buffer
+T127	Amount 1417 1420	20L
+T128	Reagent 1421 1441	seawater precipitate
+T129	Amount 1444 1448	10ml
+T130	Concentration 1454 1456	2X
+T131	Modifier 1457 1469	concentrated
+T132	Reagent 1470 1476	buffer
+R55	Mod-Link Arg1:T132 Arg2:T131	
+R56	Measure Arg1:T132 Arg2:T130	
+R58	Measure Arg1:T128 Arg2:T127	
+R57	Measure Arg1:T126 Arg2:T125	
+R59	Measure Arg1:T126 Arg2:T124	
+T133	Amount 1353 1356	1ml
+R60	Measure Arg1:T74 Arg2:T133	
+R61	Coreference-Link Arg1:T126 Arg2:T74	
+R62	Measure Arg1:T132 Arg2:T129	
+R63	Coreference-Link Arg1:T132 Arg2:T126	
+R64	Coreference-Link Arg1:T74 Arg2:T71	
+T134	Amount 1078 1082	50ml
+R65	Measure Arg1:T59 Arg2:T134	
+R5	Measure Arg1:T27 Arg2:T26	
+R66	Coreference-Link Arg1:T27 Arg2:T18	

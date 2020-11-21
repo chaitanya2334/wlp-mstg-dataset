@@ -257,7 +257,7 @@ T256	Action 4594 4597	Mix
 T257	Modifier 4598 4602	well
 T258	Method 4606 4627	pipetting up and down
 T259	Modifier 4628 4636	at least
-T260	Amount 4637 4645	10 times
+T260	Numerical 4637 4639	10
 T261	Modifier 4648 4655	Quickly
 T262	Action 4656 4660	spin
 T263	Location 4665 4669	tube
@@ -280,7 +280,7 @@ T279	Reagent 4891 4896	water
 T280	Action 4903 4908	check
 T281	Measure-Type 4913 4930	size distribution
 T282	Device 4937 4966	Agilent high sensitivity chip
-E1	Action:T1 Acts-on:T3 Acts-on2:T5 Acts-on3:T8 Site:T2
+E1	Action:T1 Acts-on:T3 Acts-on2:T5 Acts-on3:T8 Site:T2 Product:T16
 E2	Action:T10 Using:T11 Product:T16
 E3	Action:T13 
 E4	Action:T14 Acts-on:T16 Site:T17 Product:E5
@@ -345,7 +345,7 @@ E62	Action:T237 Acts-on:E61 Product:T242
 E63	Action:T241 Acts-on:T242 Product:T244 Product2:T246
 E64	Action:T243 Acts-on:T244 Site:T246 Product:T249
 E65	Action:T248 Acts-on:T249 Site:T253 Site2:T255
-E66	Action:T256 Using:T258 Acts-on:E65 Product:T263
+E66	Action:T256 Using:T258 Acts-on:E65 Product:T263 Count:T260
 E67	Action:T262 Acts-on:T263 Product:T265 Product2:T269 Product3:T270
 E68	Action:T264 Acts-on:T265 Site:T267
 E69	Action:T268 Acts-on:T269 Site:T270 Product:T274
@@ -464,3 +464,4 @@ R109	Mod-Link Arg1:E63 Arg2:T240
 R110	Meronym Arg1:T246 Arg2:T247
 R111	Meronym Arg1:T249 Arg2:T250
 R112	Enables Arg1:E68 Arg2:E69
+R113	Mod-Link Arg1:E39 Arg2:T141	

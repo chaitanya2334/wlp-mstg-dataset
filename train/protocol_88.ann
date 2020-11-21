@@ -94,9 +94,9 @@ E9	Action:T34 Acts-on:T36
 E10	Action:T35 Acts-on:E9 Product:T42
 E11	Action:T41 Acts-on:T42 Product:T44
 E12	Action:T43 Acts-on:T44 Using:T46 Product:T49
-E13	Action:T48 Acts-on:T49 Site:T50
+E13	Action:T48 Acts-on:T49 Site:T50 Product:T64
 E14	Action:T51 Acts-on:T53 Product:T55 Using:T56
-E15	Action:T58 Acts-on:T61 Product:T64
+E15	Action:T58 Acts-on:T61
 E16	Action:T63 Acts-on:T64 Using:T65 Product:T68
 E17	Action:T66 Acts-on:T68 Site:T70
 E18	Action:T71 Acts-on:E17 Product:T76

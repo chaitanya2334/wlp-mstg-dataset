@@ -72,8 +72,9 @@ R19	Mod-Link Arg1:E4 Arg2:T32
 R20	Mod-Link Arg1:T39 Arg2:T38
 R21	Or Arg1:T45 Arg2:T46
 R22	Mod-Link Arg1:E6 Arg2:T40
-R23	Coreference-Link Arg1:T2 Arg2:T26
+R23	Coreference-Link Arg1:T26 Arg2:T2
 R24	Meronym Arg1:T29 Arg2:T30
 R25	Enables Arg1:E4 Arg2:E3
 R26	Mod-Link Arg1:T43 Arg2:T44
 R27	Setting Arg1:T44 Arg2:T45
+R28	Meronym Arg1:T39 Arg2:T37	

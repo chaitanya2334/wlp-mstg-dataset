@@ -147,7 +147,7 @@ T146	Location 2196 2206	slip slide
 T147	Reagent 2213 2262	Permanent Aqueous Mounting Medium ( SIG - 31010 )
 E1	Action:T1 Acts-on:T2 Product:T4 Product2:T6
 E2	Action:T3 Acts-on:T4 Product:T51
-E3	Action:T5 Acts-on:T6
+E3	Action:T5 Acts-on:T6 Product:T51
 E4	Action:T7 Acts-on:T8 Site:T13
 E5	Action:T14 Acts-on:T16 Site:T21
 E6	Action:T22 Acts-on:T24 Site:T28
@@ -182,10 +182,8 @@ E34	Action:T130 Acts-on:T131 Using:T133 Site:T137 Using2:T139 Site2:T144 Product
 E35	Action:T145 Acts-on:T146 Using:T147
 R1	Measure Arg1:T13 Arg2:T12
 R2	Measure Arg1:T13 Arg2:T11
-R3	Setting Arg1:T10 Arg2:T11
 R4	Measure Arg1:T21 Arg2:T20
 R5	Measure Arg1:T21 Arg2:T19
-R6	Setting Arg1:T18 Arg2:T19
 R7	Measure Arg1:T16 Arg2:T15
 R8	Measure Arg1:T28 Arg2:T27
 R9	Measure Arg1:T28 Arg2:T26
@@ -195,7 +193,6 @@ R12	Measure Arg1:T35 Arg2:T33
 R13	Measure Arg1:T31 Arg2:T30
 R14	Measure Arg1:T42 Arg2:T41
 R15	Measure Arg1:T42 Arg2:T40
-R16	Setting Arg1:T39 Arg2:T40
 R17	Measure Arg1:T49 Arg2:T48
 R18	Measure Arg1:T49 Arg2:T47
 R19	Measure Arg1:T44 Arg2:T45
@@ -247,3 +244,6 @@ R64	Meronym Arg1:T102 Arg2:T98
 R65	Setting Arg1:E29 Arg2:T114
 R66	Setting Arg1:E34 Arg2:T134
 R67	Setting Arg1:E34 Arg2:T140
+R3	Mod-Link Arg1:T13 Arg2:T10	
+R6	Mod-Link Arg1:T21 Arg2:T18	
+R16	Mod-Link Arg1:T42 Arg2:T39	

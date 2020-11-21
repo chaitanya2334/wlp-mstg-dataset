@@ -146,9 +146,9 @@ E31	Action:T88 Acts-on:E30 Product:T92
 E32	Action:T91 Acts-on:T92 Site:T93 Product:T102
 E33	Action:T94 Acts-on:T96
 E34	Action:T97 Site:T99 Acts-on:T96
-E35	Action:T101 Acts-on:T102 Site:T104
+E35	Action:T101 Acts-on:T102 Site:T104 Product:T129 Site2:E34
 E36	Action:T106 Acts-on:T107 Site:T108
-E37	Action:T110 Using:T113 Using2:T114
+E37	Action:T110 Using:T113 Using2:T114 Acts-on:T111 Acts-on2:T112
 R1	Measure Arg1:T5 Arg2:T4
 R2	Setting Arg1:E2 Arg2:T7
 R3	Measure Arg1:T3 Arg2:T2
@@ -204,3 +204,44 @@ R52	Mod-Link Arg1:E31 Arg2:T89
 R53	Coreference-Link Arg1:T87 Arg2:T74
 R54	Coreference-Link Arg1:T92 Arg2:T79
 R55	Enables Arg1:E34 Arg2:E33
+T115	Action 1753 1758	place
+E38	Action:T115 Acts-on:T117 Site:T119
+T116	Modifier 1733 1746	Alternatively
+T117	Device 1759 1768	plug cast
+T118	Modifier 1772 1780	inverted
+T119	Location 1781 1806	metal microfuge ice block
+T120	Location 1810 1813	ice
+T121	Time 1818 1823	45min
+T122	Action 1829 1852	avoid potential contact
+E39	Action:T122 Acts-on:T123 Using:T124 Product:T111 Product2:T112
+T123	Reagent 1856 1863	agarose
+T124	Location 1869 1872	ice
+R56	Mod-Link Arg1:T119 Arg2:T118	
+R57	Meronym Arg1:T119 Arg2:T120	
+R58	Setting Arg1:E38 Arg2:T121	
+R59	Enables Arg1:E38 Arg2:E39	
+R60	Meronym Arg1:T123 Arg2:T117	
+R61	Coreference-Link Arg1:T124 Arg2:T120	
+R62	Mod-Link Arg1:E38 Arg2:T116	
+R63	Or Arg1:E38 Arg2:E36	
+R64	Coreference-Link Arg1:T117 Arg2:T107	
+R65	Coreference-Link Arg1:T120 Arg2:T108	
+T125	Action 1503 1510	prepare
+E40	Action:T125 Acts-on:T127 Product:T107
+T126	Numerical 1511 1512	5
+T127	Device 1513 1518	plugs
+T128	Numerical 1524 1527	one
+T129	Location 1528 1532	tube
+T130	Action 1536 1546	performing
+E41	Action:T130 Using:T131
+T131	Method 1551 1561	next steps
+T132	Modifier 1562 1569	rapidly
+T133	Action 1573 1593	avoid solidification
+E42	Action:T133 Acts-on:T134
+T134	Reagent 1601 1623	cell - agarose mixture
+R66	Mod-Link Arg1:E41 Arg2:T132	
+R67	Enables Arg1:E41 Arg2:E42	
+R68	Measure Arg1:T127 Arg2:T126	
+R69	Meronym Arg1:T127 Arg2:T129	
+R70	Measure Arg1:T129 Arg2:T128	
+R71	Enables Arg1:E41 Arg2:E40	

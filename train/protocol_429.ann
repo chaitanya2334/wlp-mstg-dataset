@@ -119,7 +119,7 @@ E3	Action:T14 Acts-on:T16 Site:T18 Product:T20
 E4	Action:T19 Acts-on:T20 Site:T21
 E5	Action:T22 Acts-on:E4
 E6	Action:T25 Acts-on:E5 Product:T31 Product2:T34
-E7	Action:T29 Acts-on:T30
+E7	Action:T29 Acts-on:T30 Site:T32
 E8	Action:T33 Acts-on:T34 Site:T37
 E9	Action:T39 Acts-on:E8 Product:T46
 E10	Action:T42 Acts-on:T44 Acts-on2:T46 Product:T50
@@ -142,7 +142,7 @@ E26	Action:T97 Acts-on:T96 Site:T94
 E27	Action:T99 Acts-on:T101 Site:T103 Product:T105
 E28	Action:T104 Acts-on:T105 Site:T106
 E29	Action:T109 Acts-on:E28
-E30	Action:T111 Using:T112
+E30	Action:T111 Using:T112 Acts-on:E29
 E31	Action:T115 Acts-on:T113
 R1	Mod-Link Arg1:T13 Arg2:T12
 R2	Mod-Link Arg1:T13 Arg2:T11
@@ -198,3 +198,4 @@ R51	Mod-Link Arg1:E31 Arg2:T114
 R52	Enables Arg1:E12 Arg2:E11
 R53	Enables Arg1:E26 Arg2:E25
 R54	Enables Arg1:E30 Arg2:E31
+R55	Measure Arg1:T8 Arg2:T7	

@@ -38,14 +38,14 @@ E1	Action:T1 Product:T3
 E2	Action:T4 Acts-on:T3 Product:T22
 E3	Action:T6 Product:T7
 E4	Action:T8 Count:T9 Using:T10 Acts-on:T7
-E5	Action:T11 Acts-on:T7 Product:T15
+E5	Action:T11 Product:T15 Acts-on:E4 Product2:T16
 E6	Action:T14 Acts-on:T15
 E7	Action:T17 Acts-on:T16 Product:T24
 E8	Action:T18 Acts-on:T22 Using:T23 Site:T24
 E9	Action:T25 Acts-on:T24
-E10	Action:T26 Acts-on:E8
+E10	Action:T26 Acts-on:E8 Acts-on2:E9
 E11	Action:T28 Acts-on:E10
-E12	Action:T31 Count:T32 Using:T33 Acts-on:T35 Acts-on2:E11
+E12	Action:T31 Count:T32 Using:T33 Acts-on2:E11 Product:T35
 E13	Action:T34 Acts-on:T35
 R1	Measure Arg1:T3 Arg2:T2
 R2	Setting Arg1:E2 Arg2:T5
@@ -58,3 +58,4 @@ R8	Setting Arg1:E10 Arg2:T27
 R9	Setting Arg1:E11 Arg2:T29
 R10	Setting Arg1:E11 Arg2:T30
 R11	Setting Arg1:E13 Arg2:T36
+R12	Overlaps Arg1:E8 Arg2:E9	

@@ -49,17 +49,17 @@ T48	Action 821 827	stored
 T49	Location 828 834	on ice
 T50	Time 835 849	up to 48 hours
 E1	Action:T1 Acts-on:T2 Site:T5 Product:T16
-E2	Action:T6 Product:T7 Product2:T18
+E2	Action:T6 Product:T7
 E3	Action:T8 Acts-on:T10 Site:T11
 E4	Action:T12 Using:T14 Acts-on:E3
 E5	Action:T15 Acts-on:T16 Site:T17 Product:T20
 E6	Action:T19 Acts-on:T20 Product:T25
 E7	Action:T23 Acts-on:T25
-E8	Action:T26 Acts-on:T27 Site:T28
+E8	Action:T26 Acts-on:T27 Site:T28 Product:T30
 E9	Action:T29 Acts-on:T30 Using:T33
 E10	Action:T34 Acts-on:T35 Acts-on2:E9
 E11	Action:T38 Acts-on:T39 Acts-on2:E10 Product:T41
-E12	Action:T40 Acts-on:T41 Using:T43 Product:T47
+E12	Action:T40 Acts-on:T41 Using:T43 Product:T47 Product2:T45
 E13	Action:T44 Acts-on:T45 Site:T46
 E14	Action:T48 Acts-on:T47 Site:T49
 R1	Measure Arg1:T5 Arg2:T4
@@ -76,5 +76,6 @@ R11	Setting Arg1:E10 Arg2:T36
 R12	Setting Arg1:E10 Arg2:T37
 R13	Measure Arg1:T43 Arg2:T42
 R14	Setting Arg1:E14 Arg2:T50
-R15	Enables Arg1:E3 Arg2:E2
 R16	Coreference-Link Arg1:T27 Arg2:T25
+R15	Enables Arg1:E4 Arg2:E2	
+R17	Coreference-Link Arg1:T18 Arg2:T7	

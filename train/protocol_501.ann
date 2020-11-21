@@ -17,8 +17,8 @@ T16	Action 351 360	Transform
 T17	Action 365 371	spread
 T18	Location 377 387	ampicillin
 T19	Concentration 390 401	100 µg / ml
-E1	Action:T1 Acts-on:T2 Site:T3
-E2	Action:T4 Acts-on:T5 Product:T7
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T7
+E2	Action:T4 Acts-on:T5
 E3	Action:T6 Acts-on:T7
 E4	Action:T10 Acts-on:E3
 E5	Action:T13 Acts-on:E4

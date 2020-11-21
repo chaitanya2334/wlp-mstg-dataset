@@ -76,7 +76,7 @@ T75	Reagent 1234 1239	cells
 T76	Modifier 1243 1254	appropriate
 T77	Amount 1255 1261	amount
 T78	Reagent 1265 1271	buffer
-E1	Action:T1 Product:T2 Acts-on:T3 Using:T4 Product2:T6
+E1	Action:T1 Product:T2 Acts-on:T3 Using:T4
 E2	Action:T5 Acts-on:T6 Site:T7 Product:T20
 E3	Action:T8 Site:T13 Acts-on:T6
 E4	Action:T14 Acts-on:T15 Site:T16 Using:T18
@@ -133,3 +133,7 @@ R32	Coreference-Link Arg1:T7 Arg2:T29
 R33	Coreference-Link Arg1:T29 Arg2:T56
 R34	Coreference-Link Arg1:T56 Arg2:T66
 R35	Enables Arg1:E12 Arg2:E11
+R36	Mod-Link Arg1:E4 Arg2:T17	
+R37	Coreference-Link Arg1:T6 Arg2:T2	
+R38	Overlaps Arg1:E4 Arg2:E2	
+R39	Enables Arg1:E3 Arg2:E2	

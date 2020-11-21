@@ -110,7 +110,7 @@ R25	Mod-Link Arg1:T2 Arg2:T4
 R26	Mod-Link Arg1:T2 Arg2:T5
 R27	Mod-Link Arg1:T2 Arg2:T6
 R28	Mod-Link Arg1:T2 Arg2:T7
-R29	Coreference-Link Arg1:T2 Arg2:T10
-R30	Coreference-Link Arg1:T14 Arg2:T19
-R31	Coreference-Link Arg1:T23 Arg2:T46
+R29	Coreference-Link Arg1:T10 Arg2:T2
+R30	Coreference-Link Arg1:T19 Arg2:T14
+R31	Coreference-Link Arg1:T46 Arg2:T23
 R32	Meronym Arg1:T36 Arg2:T37

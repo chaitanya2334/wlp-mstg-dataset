@@ -34,9 +34,9 @@ E1	Action:T3 Acts-on:T5 Site:T2
 E2	Action:T6 Acts-on:E1
 E3	Action:T8 Using:T9 Acts-on:E2
 E4	Action:T10 
-E5	Action:T12 Acts-on:E3
-E6	Action:T15 
-E7	Action:T16 Acts-on:E6
+E5	Action:T12 Acts-on:E4
+E6	Action:T15 Acts-on:E5
+E7	Action:T16 Acts-on:E6 Product:T22
 E8	Action:T19 Acts-on:T20
 E9	Action:T21 Acts-on:T22 Site:T24 Product:T30
 E10	Action:T27 Acts-on:T28 Site:T29
@@ -54,6 +54,5 @@ R10	Mod-Link Arg1:T24 Arg2:T23
 R11	Mod-Link Arg1:E10 Arg2:T26
 R12	Meronym Arg1:T29 Arg2:T30
 R13	Enables Arg1:E3 Arg2:E4
-R14	Prevents Arg1:E5 Arg2:E6
 R15	Enables Arg1:E8 Arg2:E7
 R16	Enables Arg1:E10 Arg2:E11

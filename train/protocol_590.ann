@@ -89,11 +89,11 @@ E3	Action:T7 Acts-on:T9 Site:T11
 E4	Action:T12 Acts-on:E3
 E5	Action:T15 Acts-on:T17 Acts-on2:E4
 E6	Action:T18 Acts-on:T21 Acts-on2:E5
-E7	Action:T22 Acts-on:T21 Acts-on2:E6 Product:T26
+E7	Action:T22 Acts-on2:E6 Product:T26
 E8	Action:T25 Acts-on:T26 Site:T27 Product:T31
 E9	Action:T30 Acts-on:T31 Product:T33
 E10	Action:T32 Acts-on:T33 Using:T36 Site:T37 Product:T41
-E11	Action:T40 Acts-on:T41 Using:T44
+E11	Action:T40 Acts-on:T41 Using:T44 Product:T46
 E12	Action:T45 Acts-on:T46 Product:T50
 E13	Action:T49 Acts-on:T50 Using:T53 Product:T57
 E14	Action:T56 Acts-on:T57 Site:T58 Product:T62

@@ -85,7 +85,7 @@ E9	Action:T45 Acts-on:T46 Site:T49 Product:T54 Product2:T61
 E10	Action:T50 Acts-on:T53 Site:T54 Product:T59
 E11	Action:T55 Acts-on:T57 Site:T58 Product:T62
 E12	Action:T60 Acts-on:T61 Product:T65
-E13	Action:T63 Acts-on:T65 Site:T67
+E13	Action:T63 Acts-on:T65 Site:T67 Product:T71
 E14	Action:T68 Using:T69 Acts-on:T71 Product:T74
 E15	Action:T72 Acts-on:T74
 R1	Measure Arg1:T74 Arg2:T73
@@ -117,3 +117,4 @@ R26	Mod-Link Arg1:T71 Arg2:T70
 R27	Setting Arg1:E15 Arg2:T75
 R28	Meronym Arg1:T46 Arg2:T49
 R29	Coreference-Link Arg1:T6 Arg2:T39
+R30	Or Arg1:E6 Arg2:E5	

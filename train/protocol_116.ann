@@ -1,4 +1,4 @@
-T1	Action 111 130	Collect and prepare
+T1	Action 111 118	Collect
 T2	Reagent 131 137	sample
 T3	Action 165 172	Prepare
 T4	Location 173 185	slide labels
@@ -7,7 +7,7 @@ T6	Generic-Measure 231 246	sample location
 T7	Generic-Measure 253 268	volume filtered
 T8	Action 272 282	keep track
 T9	Reagent 290 297	samples
-T10	Action 318 338	filtered and stained
+T10	Action 318 326	filtered
 T11	Modifier 341 354	For every set
 T12	Numerical 358 362	four
 T13	Reagent 363 370	samples
@@ -50,12 +50,12 @@ T49	Action 786 791	Place
 T50	Location 796 808	Petri plates
 T51	Location 816 820	dark
 T52	Reagent 833 838	stain
-T53	Action 846 854	bleached
+T53	Action 842 854	not bleached
 T54	Action 857 864	Prepare
 T55	Reagent 869 886	antifade solution
 T56	Modifier 892 897	clean
 T57	Modifier 900 910	sterilized
-T58	Modifier 911 917	2 - mL
+T58	Amount 911 917	2 - mL
 T59	Location 918 938	microcentrifuge tube
 T60	Action 941 947	Dilute
 T61	Concentration 952 956	10 %
@@ -228,7 +228,7 @@ T227	Device 3940 3952	filter paper
 T228	Device 3956 3963	Kimwipe
 T229	Location 3971 3975	dark
 T230	Device 3992 3998	filter
-T231	Action 4002 4005	dry
+T231	Action 3999 4005	to dry
 T232	Mention 4012 4014	it
 T233	Action 4015 4029	appears opaque
 T234	Action 4032 4037	Place
@@ -322,37 +322,37 @@ T321	Modifier 5223 5231	at least
 T322	Numerical 5232 5234	20
 T323	Reagent 5235 5248	random fields
 E1	Action:T1 Acts-on:T2 Product:T9
-E2	Action:T3 Acts-on:T4
-E3	Action:T8 Acts-on:E4 Product:T13
+E2	Action:T3 Product:T4
+E3	Action:T8 Acts-on:E4 Acts-on2:E83
 E4	Action:T10 Acts-on:T9
 E5	Action:T14 Acts-on:T13
-E6	Action:T16 Using:T15 Acts-on:T17 Using2:T19 Acts-on2:E5 Product:T31
+E6	Action:T16 Using:T15 Acts-on:T17 Using2:T19 Product:T31
 E7	Action:T22 Acts-on:T21
 E8	Action:T23 Acts-on:T27 Site:T29 Acts-on2:E49 Product:T43
 E9	Action:T32 Acts-on:T34 Product:T38
 E10	Action:T36 Acts-on:T38 Site:T43 Product:T46
 E11	Action:T45 Using:T48 Acts-on:T46 Product:T50 Product2:T52
-E12	Action:T49 Acts-on:T50 Site:T51
+E12	Action:T49 Acts-on:T50 Site:T51 Product:T81
 E13	Action:T53 Acts-on:T52
-E14	Action:T54 Acts-on:T55 Site:T59 Product:T66 Acts-on2:E12
+E14	Action:T54 Site:T59 Product2:T55
 E15	Action:T60 Using:T64 Site:T62
-E16	Action:T65 Acts-on:T66 Site:T67
-E17	Action:T68 Acts-on:T69 Site:T70 Product:T236 Product2:T245
+E16	Action:T65 Acts-on:T66 Site:T67 Product:T69
+E17	Action:T68 Acts-on:T69 Site:T70 Product:T236
 E18	Action:T73 Acts-on:T72
-E19	Action:T74 Acts-on:T77 Site:T79 Acts-on2:E18 Product:T91 Product2:T93
+E19	Action:T74 Acts-on:T77 Site:T79 Product:T91 Product2:T93
 E20	Action:T82 Acts-on:T84 Site:T90
 E21	Action:T85 Using:T88 Product:T84
 E22	Action:T92 Acts-on:T93
 E23	Action:T94 Acts-on:T95 Site:T98 Using:T99 Site2:T97 Product:T105
 E24	Action:T101 Acts-on:T103 Site:T105 Product:T107
-E25	Action:T106 Acts-on:T107 Using:T108
+E25	Action:T106 Acts-on:T107 Using:T108 Product:T117
 E26	Action:T111 Acts-on:T114 Product:T116
 E27	Action:T115 Site:T117 Acts-on:T116 Product:T152
 E28	Action:T119 Acts-on:T118 Using:T120
 E29	Action:T124 Using:T126 Product:T141 Acts-on:T121
 E30	Action:T129 Using:T131 Product:T141 Acts-on:T127
 E31	Action:T134 Product:T135
-E32	Action:T136 Acts-on:T139 Product:T142
+E32	Action:T136 Acts-on:T139
 E33	Action:T140 Acts-on:T141 Product:T139
 E34	Action:T143 Using:T147 Acts-on:T142 Product:T149
 E35	Action:T150 Acts-on:T149 Site:T151 Product:T158 Product2:T162
@@ -381,8 +381,8 @@ E57	Action:T231 Acts-on:T230
 E58	Action:T233 Acts-on:T232 Product:T241 Product2:T257
 E59	Action:T234 Acts-on:T236 Site:T238
 E60	Action:T239 Acts-on:T241 Site:T242 Product:T247
-E61	Action:T243 Using:T245 Site:T246
-E62	Action:T248 Using:T249 Acts-on:T246 Product:T271
+E61	Action:T243 Site:T246 Acts-on:T245
+E62	Action:T248 Using:T249 Product:T271 Acts-on:E61
 E63	Action:T250 Using:T252 Site:T254
 E64	Action:T255 Acts-on:T257 Site:T258 Product:T263
 E65	Action:T259 Acts-on:T261 Site:T262
@@ -405,7 +405,7 @@ E81	Action:T320 Acts-on:T323
 R1	Measure Arg1:T27 Arg2:T24
 R2	Measure Arg1:T38 Arg2:T37
 R3	Measure Arg1:T43 Arg2:T41
-R4	Mod-Link Arg1:T59 Arg2:T58
+R4	Measure Arg1:T59 Arg2:T58
 R5	Measure Arg1:T62 Arg2:T61
 R6	Measure Arg1:T77 Arg2:T75
 R7	Measure Arg1:T88 Arg2:T86
@@ -514,14 +514,9 @@ R109	Measure Arg1:T314 Arg2:T312
 R110	Mod-Link Arg1:T316 Arg2:T315
 R111	Measure Arg1:T323 Arg2:T322
 R112	Or Arg1:T322 Arg2:T321
-R113	Prevents Arg1:E12 Arg2:E13
-R114	Setting Arg1:E37 Arg2:T5
-R115	Setting Arg1:E37 Arg2:T6
-R116	Setting Arg1:E37 Arg2:T7
-R117	Enables Arg1:E37 Arg2:E3
+R113	Enables Arg1:E13 Arg2:E12
 R118	Measure Arg1:T13 Arg2:T12
 R119	Mod-Link Arg1:T13 Arg2:T11
-R120	Enables Arg1:E15 Arg2:E14
 R121	Enables Arg1:E20 Arg2:E22
 R122	Enables Arg1:E28 Arg2:E27
 R123	Enables Arg1:E32 Arg2:E31
@@ -545,3 +540,27 @@ R140	Meronym Arg1:T314 Arg2:T311
 R141	Enables Arg1:E81 Arg2:E80
 R142	Mod-Link Arg1:E11 Arg2:T47
 R143	Mod-Link Arg1:T257 Arg2:T256
+T324	Action 123 130	prepare
+E82	Action:T324 Acts-on:T2 Product:T9
+R144	Overlaps Arg1:E1 Arg2:E82	
+R114	Measure Arg1:T4 Arg2:T5	
+R115	Measure Arg1:T4 Arg2:T6	
+R116	Measure Arg1:T4 Arg2:T7	
+R145	Enables Arg1:E2 Arg2:E3	
+T325	Action 331 338	stained
+E83	Action:T325 Acts-on:T9
+R146	Overlaps Arg1:E83 Arg2:E4	
+R147	Enables Arg1:E6 Arg2:E5	
+R148	Enables Arg1:E8 Arg2:E7	
+R149	Enables Arg1:E5 Arg2:E83	
+R117	Enables Arg1:E15 Arg2:E14	
+R120	Coreference-Link Arg1:T66 Arg2:T55	
+R152	Enables Arg1:E19 Arg2:E18	
+R153	Meronym Arg1:T93 Arg2:T91	
+R154	Coreference-Link Arg1:T107 Arg2:T103	
+R155	Coreference-Link Arg1:T116 Arg2:T113	
+R156	Meronym Arg1:T118 Arg2:T117	
+R157	Or Arg1:E30 Arg2:E29	
+R158	Coreference-Link Arg1:T142 Arg2:T135	
+R159	Coreference-Link Arg1:T245 Arg2:T236	
+R151	Enables Arg1:E7 Arg2:E4	

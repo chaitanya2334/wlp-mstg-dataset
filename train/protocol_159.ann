@@ -33,4 +33,4 @@ R4	Measure Arg1:T7 Arg2:T10
 R5	Setting Arg1:E4 Arg2:T15
 R6	Measure Arg1:T13 Arg2:T12
 R7	Setting Arg1:E6 Arg2:T22
-R8	Coreference-Link Arg1:T7 Arg2:T13
+R8	Coreference-Link Arg1:T13 Arg2:T7

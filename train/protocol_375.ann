@@ -45,15 +45,15 @@ T44	Modifier 594 605	appropriate
 T45	Reagent 606 612	buffer
 T46	Action 613 618	Count
 T47	Reagent 619 624	cells
-E1	Action:T1 Acts-on:T2 Product:T9
-E2	Action:T3 Acts-on:T5 Product:T12
-E3	Action:T8 Using:T6 Acts-on:T9 Site:T10
-E4	Action:T11 Acts-on:T12 Product:T23
-E5	Action:T13 Product:T15
+E1	Action:T1 Acts-on:T2
+E2	Action:T3 Acts-on:T5 Product2:T9
+E3	Action:T8 Using:T6 Acts-on:T9 Site:T10 Product:T12
+E4	Action:T11 Acts-on:T12 Product:T23 Product2:T15
+E5	Action:T13 
 E6	Action:T14 Acts-on:T15
-E7	Action:T16 Acts-on:T18 Using:T21 Product:T33
+E7	Action:T16 Acts-on:T18 Using:T21 Product2:T26
 E8	Action:T22 Acts-on:T23 Site:T26
-E9	Action:T27 Acts-on:T28 Site:E8 Product:T38
+E9	Action:T27 Acts-on:T28 Site:E8 Product:T38 Product2:T33
 E10	Action:T31 
 E11	Action:T32 Acts-on:T33 Using:T36 Product:T47
 E12	Action:T37 Acts-on:T38 Product:T41 Product2:T43

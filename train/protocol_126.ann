@@ -40,7 +40,7 @@ T39	Action 546 556	Do not mix
 T40	Action 559 566	Pipette
 T41	Amount 567 573	950 µl
 T42	Reagent 594 597	SOC
-T43	Location 607 614	mixture
+T43	Reagent 607 614	mixture
 T44	Action 617 622	Place
 T45	Temperature 626 630	37°C
 T46	Time 635 645	60 minutes
@@ -49,13 +49,13 @@ T48	Modifier 654 664	vigorously
 T49	Speed 667 674	250 rpm
 T50	Action 680 686	rotate
 T51	Action 689 693	Warm
-T52	Device 694 710	selection plates
+T52	Location 694 710	selection plates
 T53	Temperature 714 718	37°C
 T54	Action 721 724	Mix
 T55	Reagent 729 734	cells
 T56	Modifier 735 745	thoroughly
 T57	Action 749 757	flicking
-T58	Device 762 766	tube
+T58	Location 762 766	tube
 T59	Action 771 780	inverting
 T60	Action 783 790	Perform
 T61	Generic-Measure 791 798	several
@@ -73,14 +73,14 @@ E2	Action:T6 Acts-on:E1 Product:T11
 E3	Action:T9 Acts-on:T11 Site:T12 Product:T18
 E4	Action:T14 Acts-on:T17 Site:T18 Product:T21 Product2:T24 Product3:T25
 E5	Action:T20 Acts-on:T21 Count:T22
-E6	Action:T23 Acts-on:T24 Acts-on2:T25 Product:T28
-E7	Action:T26 
+E6	Action:T23 Acts-on:T24 Acts-on2:T25
+E7	Action:T26 Acts-on:E6 Product:T28
 E8	Action:T27 Acts-on:T28 Site:T29
-E9	Action:T31 
-E10	Action:T32 Acts-on:E8
-E11	Action:T35 
-E12	Action:T36 Site:T37 Acts-on:E10 Product:T43
-E13	Action:T39 
+E9	Action:T31 Acts-on:E8
+E10	Action:T32 Acts-on:E9
+E11	Action:T35 Acts-on:E10
+E12	Action:T36 Site:T37 Acts-on:E11
+E13	Action:T39 Acts-on:E12 Product:T43
 E14	Action:T40 Acts-on:T42 Site:T43
 E15	Action:T44 Acts-on:E14
 E16	Action:T47 Acts-on:E15
@@ -117,17 +117,12 @@ R22	Meronym Arg1:T12 Arg2:T13
 R23	Enables Arg1:E5 Arg2:E6
 R24	Meronym Arg1:T24 Arg2:T21
 R25	Meronym Arg1:T25 Arg2:T21
-R26	Prevents Arg1:E5 Arg2:E7
 R27	Coreference-Link Arg1:T4 Arg2:T13
 R28	Coreference-Link Arg1:T13 Arg2:T29
-R29	Prevents Arg1:E8 Arg2:E9
-R30	Prevents Arg1:E10 Arg2:E11
-R31	Prevents Arg1:E12 Arg2:E13
 R32	Coreference-Link Arg1:T29 Arg2:T37
 R33	Setting Arg1:E15 Arg2:T45
 R34	Setting Arg1:E15 Arg2:T46
 R35	Or Arg1:E16 Arg2:E17
 R36	Meronym Arg1:T55 Arg2:T58
-R37	Enables Arg1:E20 Arg2:E19
 R38	Enables Arg1:E21 Arg2:E19
 R39	Coreference-Link Arg1:T42 Arg2:T63

@@ -128,4 +128,4 @@ R31	Meronym Arg1:T30 Arg2:T25
 R32	Enables Arg1:E12 Arg2:E13
 R33	Enables Arg1:E19 Arg2:E18
 R34	Meronym Arg1:T65 Arg2:T67
-R35	Coreference-Link Arg1:T2 Arg2:T7
+R35	Coreference-Link Arg1:T7 Arg2:T2

@@ -64,10 +64,10 @@ T63	Location 852 864	plastic bags
 T64	Action 868 874	sealed
 T65	Seal 880 888	parafilm
 T66	Temperature 892 895	4°C
-E1	Action:T1 Site:T3 Acts-on:T5 Acts-on2:T7 Acts-on3:T9 Acts-on4:T11 Product:T19
+E1	Action:T1 Site:T3 Acts-on:T5 Acts-on2:T7 Acts-on3:T9 Acts-on4:T11
 E2	Action:T12 Acts-on:T13 Site:E1
 E3	Action:T15 Acts-on:E2
-E4	Action:T16 
+E4	Action:T16 Product:T19
 E5	Action:T17 Using:T20 Acts-on:T18
 E6	Action:T21 Using:T22 Acts-on:E5
 E7	Action:T23 Acts-on:E6 Product:T27
@@ -75,12 +75,12 @@ E8	Action:T26 Acts-on:T27 Site:T28 Product:T29
 E9	Action:T30 Acts-on:T29 Product:T36
 E10	Action:T32 Acts-on:T35 Site:T36
 E11	Action:T40 Acts-on:E10
-E12	Action:T41 
+E12	Action:T41 Product:T44
 E13	Action:T42 Acts-on:T44 Site:T46 Product:T49
-E14	Action:T47 Acts-on:T48 Site:T49 Product:T54
-E15	Action:T51 Acts-on:E14
+E14	Action:T47 Acts-on:T48 Site:T49
+E15	Action:T51 Product:T54 Acts-on:T50
 E16	Action:T53 Acts-on:T54 Product:T59
-E17	Action:T55 Acts-on:T54
+E17	Action:T55 Acts-on:E16
 E18	Action:T58 Acts-on:T59 Using:T61
 E19	Action:T62 Site:T63 Acts-on:E18
 E20	Action:T64 Using:T65 Acts-on:T60
@@ -108,3 +108,5 @@ R21	Measure Arg1:T9 Arg2:T8
 R22	Measure Arg1:T11 Arg2:T10
 R23	Enables Arg1:E3 Arg2:E4
 R24	Enables Arg1:E11 Arg2:E12
+R25	Meronym Arg1:T39 Arg2:T36	
+R26	Enables Arg1:E14 Arg2:E15	

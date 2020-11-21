@@ -64,8 +64,8 @@ T63	Time 1129 1138	6–8 hours
 E1	Action:T3 Acts-on:T2 Site:T5 Using:T7
 E2	Action:T9 Site:T10 Acts-on:E1 Product:T14
 E3	Action:T15 Acts-on:T13 Acts-on2:T16 Site:T18 Product:T22 Product2:T24
-E4	Action:T20 Product:T26
-E5	Action:T23 
+E4	Action:T20 
+E5	Action:T23 Acts-on:T22 Site:T24 Product:T26
 E6	Action:T25 Acts-on:T26 Product:T30
 E7	Action:T29 Acts-on:T30 Product:T32
 E8	Action:T31 Site:T34 Acts-on:T32 Product:T41
@@ -103,3 +103,4 @@ R23	Setting Arg1:E15 Arg2:T58
 R24	Setting Arg1:E16 Arg2:T63
 R25	Enables Arg1:E4 Arg2:E5
 R26	Enables Arg1:E9 Arg2:E10
+R27	Setting Arg1:E13 Arg2:T50	

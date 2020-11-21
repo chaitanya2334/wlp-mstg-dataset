@@ -75,7 +75,7 @@ T74	Location 1374 1385	opaque tube
 T75	Action 1392 1405	anesthetizing
 T76	Mention 1406 1410	them
 E1	Action:T1 Product:T22
-E2	Action:T2 Using:T5 Using2:T8
+E2	Action:T2 Using:T5 Using2:T8 Product:T10
 E3	Action:T9 Acts-on:T10 Site:T13
 E4	Action:T14 Acts-on:T15 Site:T17 Using:T18 Product:T25 Product2:T29
 E5	Action:T20 Acts-on:T22 Site:T25 Using:T27 Product:T33
@@ -86,9 +86,9 @@ E9	Action:T38 Acts-on:T39 Site:T41
 E10	Action:T42 Acts-on:T43 Site:T46 Product:T49
 E11	Action:T47 Acts-on:T49 Site:T50 Product:T53 Product2:T56
 E12	Action:T54 Acts-on:T56 Site:T57
-E13	Action:T59 Acts-on:E12
+E13	Action:T59 Acts-on:E12 Product:T62
 E14	Action:T61 Acts-on:T62 Using:T64
-E15	Action:T67 Site:T69 Acts-on:T68
+E15	Action:T67 Site:T69 Acts-on:T68 Acts-on2:E14 Product:T71
 E16	Action:T70 Acts-on:T71 Site:T72 Site2:T73 Site3:T74
 E17	Action:T75 Acts-on:T76
 R1	Or Arg1:T11 Arg2:T12
@@ -118,11 +118,9 @@ R24	Mod-Link Arg1:T66 Arg2:T65
 R25	Meronym Arg1:T66 Arg2:T64
 R26	Coreference-Link Arg1:T76 Arg2:T71
 R27	Enables Arg1:E3 Arg2:E1
-R28	Enables Arg1:E2 Arg2:E1
 R29	Meronym Arg1:T43 Arg2:T39
 R30	Coreference-Link Arg1:T25 Arg2:T57
 R31	Coreference-Link Arg1:T57 Arg2:T72
 R32	Coreference-Link Arg1:T18 Arg2:T68
-R33	Meronym Arg1:T22 Arg2:T62
 R34	Mod-Link Arg1:E2 Arg2:T3
 R35	Mod-Link Arg1:E2 Arg2:T4
