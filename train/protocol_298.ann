@@ -77,7 +77,7 @@ E2	Action:T4 Count:T5 Acts-on:E1
 E3	Action:T6 Acts-on:E1 Product:T19
 E4	Action:T7 Acts-on:T9 Acts-on2:T11
 E5	Action:T12 Using:T14 Acts-on:E4
-E6	Action:T15 Acts-on:T19
+E6	Action:T15 Acts-on:T19 Site:E5
 E7	Action:T20 Using:T22 Count:T23 Acts-on:E6
 E8	Action:T24 Acts-on:T25 Acts-on2:E7 Product:T37
 E9	Action:T26 Acts-on:T28 Site:T29 Product:T32

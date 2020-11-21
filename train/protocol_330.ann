@@ -178,3 +178,4 @@ R46	Mod-Link Arg1:T57 Arg2:T61
 R47	Coreference-Link Arg1:T14 Arg2:T96
 R48	Coreference-Link Arg1:T15 Arg2:T97
 R49	Coreference-Link Arg1:T83 Arg2:T107
+R50	Meronym Arg1:T60 Arg2:T57	

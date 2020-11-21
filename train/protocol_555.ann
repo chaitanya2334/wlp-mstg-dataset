@@ -108,19 +108,19 @@ E1	Action:T1 Product:T5 Acts-on:T7 Acts-on2:T9 Acts-on3:T10 Acts-on4:T11 Product
 E2	Action:T12 Acts-on:T13 Product:T20
 E3	Action:T16 Acts-on:T18 Site:T20
 E4	Action:T21 Acts-on:E3
-E5	Action:T24 Acts-on:T26 Acts-on2:E4 Product:T35
-E6	Action:T27 Acts-on:T30
-E7	Action:T31 
-E8	Action:T34 Acts-on:T35 Acts-on2:E6
-E9	Action:T36 Acts-on:T37 Using:T38 Product:T42 Acts-on2:E6
+E5	Action:T24 Acts-on:T26 Site:E4
+E6	Action:T27 Acts-on:T30 Site:E5 Product:T35
+E7	Action:T31 Acts-on:T35
+E8	Action:T34 Acts-on:T35 Product:T37
+E9	Action:T36 Acts-on:T37 Using:T38 Product:T42
 E10	Action:T41 Acts-on:T42 Product:T44
 E11	Action:T43 Acts-on:T44 Count:T45 Using:T48 Site:T49 Product:T53
-E12	Action:T52 Acts-on:T53 Product:T59
+E12	Action:T52 Acts-on:T53 Product:T59 Using:T57
 E13	Action:T58 Acts-on:T59 Product:T63
 E14	Action:T62 Acts-on:T63 Using:T66 Product:T70
 E15	Action:T69 Acts-on:T70 Using:T71 Product:T75
 E16	Action:T74 Acts-on:T75 Count:T76 Using:T79 Site:T80 Product:T84
-E17	Action:T83 Acts-on:T84 Using:T87
+E17	Action:T83 Acts-on:T84 Using:T87 Product:T95
 E18	Action:T88 Acts-on:T89 Acts-on2:E17 Product:T97
 E19	Action:T91 Acts-on:T92
 E20	Action:T93 Acts-on:T94
@@ -176,3 +176,5 @@ R46	Measure Arg1:T106 Arg2:T105
 R47	Enables Arg1:E7 Arg2:E8
 R48	Or Arg1:E20 Arg2:E19
 R49	Enables Arg1:E21 Arg2:E22
+R50	Enables Arg1:E19 Arg2:E18	
+R51	Enables Arg1:E20 Arg2:E18	

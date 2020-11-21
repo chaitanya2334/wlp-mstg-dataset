@@ -11,7 +11,7 @@ T10	Action 709 715	remove
 T11	Reagent 720 727	enzymes
 T12	Action 730 737	Process
 T13	Reagent 749 764	digested vector
-T14	Action 799 809	gel purify
+T14	Action 781 809	do not attempt to gel purify
 T15	Modifier 810 820	individual
 T16	Reagent 821 826	bands
 T17	Modifier 833 841	digested
@@ -178,9 +178,9 @@ E21	Action:T81 Site:T83 Acts-on:T82 Product:T90
 E22	Action:T84 Using:T85
 E23	Action:T86 Product:T87 Using:T88 Acts-on:E22 Product2:T90
 E24	Action:T89 Acts-on:T90
-E25	Action:T92 Using:T93 Acts-on:E24
-E26	Action:T95 Acts-on:T98
-E27	Action:T96 Acts-on:E26 Product:T106
+E25	Action:T92 Using:T93 Acts-on:E24 Product:T101 Product2:T108
+E26	Action:T95 Acts-on:T98 Product:T106
+E27	Action:T96 Product:T106 Acts-on:T98
 E28	Action:T104 Acts-on:T106 Site:T103 Site2:T101 Product:T112
 E29	Action:T110 Acts-on:E28
 E30	Action:T113 Acts-on:T112 Site:T114
@@ -227,7 +227,7 @@ R29	Mod-Link Arg1:T8 Arg2:T7
 R30	Enables Arg1:E2 Arg2:E3
 R31	Meronym Arg1:T11 Arg2:T8
 R32	Mod-Link Arg1:T16 Arg2:T15
-R33	Prevents Arg1:E4 Arg2:E5
+R33	Enables Arg1:E5 Arg2:E4
 R34	Meronym Arg1:T16 Arg2:T13
 R35	Mod-Link Arg1:T19 Arg2:T18
 R36	Mod-Link Arg1:T19 Arg2:T17
@@ -245,7 +245,6 @@ R47	Meronym Arg1:T71 Arg2:T65
 R48	Meronym Arg1:T77 Arg2:T79
 R49	Mod-Link Arg1:T79 Arg2:T80
 R50	Coreference-Link Arg1:T76 Arg2:T65
-R51	Setting Arg1:E24 Arg2:T94
 R52	Setting Arg1:E25 Arg2:T94
 R53	Meronym Arg1:T98 Arg2:T99
 R54	Meronym Arg1:T107 Arg2:T108
@@ -265,3 +264,5 @@ R67	Or Arg1:T143 Arg2:T145
 R68	Enables Arg1:E38 Arg2:E39
 R69	Mod-Link Arg1:T154 Arg2:T153
 R70	Mod-Link Arg1:T156 Arg2:T155
+R71	Overlaps Arg1:E26 Arg2:E27	
+R72	Coreference-Link Arg1:T79 Arg2:T73	

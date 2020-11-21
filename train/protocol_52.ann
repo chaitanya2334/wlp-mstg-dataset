@@ -143,7 +143,7 @@ E4	Action:T20 Using:T21 Count:T23 Acts-on:E2
 E5	Action:T24 Acts-on:E3 Product:T28
 E6	Action:T27 Acts-on:T28 Site:T29 Product:T30
 E7	Action:T31 Acts-on:T30 Product:T35
-E8	Action:T34 Acts-on:T35 Site:T36 Product:T42
+E8	Action:T34 Acts-on:T35 Site:T36 Product:T42 Product2:T38
 E9	Action:T37 Acts-on:T38
 E10	Action:T40 Acts-on:T41 Product:T44
 E11	Action:T43 Acts-on:T44 Site:T45
@@ -224,12 +224,12 @@ R47	Setting Arg1:T104 Arg2:T103
 R48	Mod-Link Arg1:E28 Arg2:T108
 R49	Mod-Link Arg1:T4 Arg2:T5
 R50	Mod-Link Arg1:T4 Arg2:T6
-R51	Coreference-Link Arg1:T4 Arg2:T10
+R51	Coreference-Link Arg1:T10 Arg2:T4
 R52	Enables Arg1:E4 Arg2:E3
 R53	Setting Arg1:E7 Arg2:T33
 R54	Meronym Arg1:T38 Arg2:T42
 R55	Meronym Arg1:T41 Arg2:T42
-R56	Prevents Arg1:E10 Arg2:E9
+R56	Overlaps Arg1:E10 Arg2:E9
 R57	Enables Arg1:E13 Arg2:E14
 R58	Meronym Arg1:T61 Arg2:T57
 R59	Meronym Arg1:T66 Arg2:T73
@@ -248,3 +248,6 @@ R71	Meronym Arg1:T107 Arg2:T102
 R72	Overlaps Arg1:E27 Arg2:E28
 R73	Enables Arg1:E31 Arg2:E30
 R74	Enables Arg1:E33 Arg2:E34
+R75	Meronym Arg1:T54 Arg2:T52	
+R76	Or Arg1:T52 Arg2:T49	
+R77	Mod-Link Arg1:T120 Arg2:T119	

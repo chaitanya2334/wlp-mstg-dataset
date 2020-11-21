@@ -67,26 +67,26 @@ T66	Action 824 829	Store
 T67	Temperature 833 839	- 80°C
 E1	Action:T1 Product:T2
 E2	Action:T3 Acts-on:T5 Site:T7
-E3	Action:T8 Acts-on:T10 Acts-on2:E1
-E4	Action:T12 Acts-on:T14 Acts-on2:E3
+E3	Action:T8 Acts-on:T10 Site:T2
+E4	Action:T12 Acts-on:T14 Site:E3
 E5	Action:T15 Acts-on:E4
-E6	Action:T18 Acts-on:T20 Acts-on2:E5
-E7	Action:T21 Acts-on:T20 Acts-on2:E6
+E6	Action:T18 Acts-on:T20 Site:E5
+E7	Action:T21 Acts-on2:E6
 E8	Action:T22 Site:T25 Acts-on:E7
-E9	Action:T26 Acts-on:T28 Acts-on2:E8
-E10	Action:T29 Acts-on:T28 Acts-on2:E9
+E9	Action:T26 Acts-on:T28 Site:E8
+E10	Action:T29 Acts-on2:E9
 E11	Action:T30 Acts-on:E10
 E12	Action:T33 Site:T36 Acts-on:E11 Product:T43
 E13	Action:T37 Acts-on:T39 Site:T41
 E14	Action:T42 Acts-on:T43
-E15	Action:T44 Acts-on:T46 Site:T48 Acts-on2:E14
+E15	Action:T44 Acts-on:T46 Site:T48 Site2:E14
 E16	Action:T49 Acts-on:T50 Site:T51 Acts-on2:E15
 E17	Action:T53 Acts-on:E16
-E18	Action:T56 Acts-on:E17
-E19	Action:T58 Acts-on:T60 Site:T61 Count:T62 Acts-on2:E18
+E18	Action:T56 Acts-on:E17 Product:T61
+E19	Action:T58 Acts-on:T60 Site:T61 Count:T62 Product:T65
 E20	Action:T63 Acts-on:E19
 E21	Action:T64 Acts-on:T65
-E22	Action:T66 Acts-on:E20
+E22	Action:T66 Acts-on:E21
 R1	Measure Arg1:T5 Arg2:T4
 R2	Measure Arg1:T7 Arg2:T6
 R3	Measure Arg1:T10 Arg2:T11
@@ -113,5 +113,6 @@ R23	Setting Arg1:E18 Arg2:T57
 R24	Measure Arg1:T60 Arg2:T59
 R25	Setting Arg1:E22 Arg2:T67
 R26	Enables Arg1:E2 Arg2:E1
-R27	Enables Arg1:E14 Arg2:E13
+R27	Enables Arg1:E13 Arg2:E14
 R28	Enables Arg1:E20 Arg2:E21
+R29	Meronym Arg1:T43 Arg2:T41	

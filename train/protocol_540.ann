@@ -25,9 +25,9 @@ T24	Numerical 577 578	2
 T25	Reagent 579 588	Milli - Q
 T26	Action 595 610	double - bagged
 T27	Action 615 621	stored
-E1	Action:T1 Acts-on:T3
+E1	Action:T1 Product:T3
 E2	Action:T5 Acts-on:T4 Using:T7
-E3	Action:T8 Acts-on:T4 Acts-on2:E2 Product:T10
+E3	Action:T8 Acts-on2:E2 Product:T10
 E4	Action:T11 Using:T12 Count:T13 Acts-on:T10
 E5	Action:T14 Using:T16 Acts-on:E4
 E6	Action:T17 Acts-on:E5
@@ -43,4 +43,4 @@ R5	Setting Arg1:E6 Arg2:T18
 R6	Setting Arg1:E7 Arg2:T20
 R7	Of-Type Arg1:T24 Arg2:T23
 R8	Measure Arg1:T25 Arg2:T24
-R9	Coreference-Link Arg1:T3 Arg2:T4
+R9	Coreference-Link Arg1:T4 Arg2:T3

@@ -82,8 +82,8 @@ E4	Action:T15 Measure-Type-Link:T16 Acts-on:E3
 E5	Action:T17 Acts-on:T18 Site:E4
 E6	Action:T19 Product:T20 Acts-on:E5
 E7	Action:T21 Acts-on:E6 Product:T25
-E8	Action:T23 Acts-on:T25 Using:T26 Product:T33
-E9	Action:T30 Using:T31 Acts-on:E8
+E8	Action:T23 Acts-on:T25 Using:T26 Product:T33 Product2:T38
+E9	Action:T30 Using:T31
 E10	Action:T32 Acts-on:T33
 E11	Action:T34 Using:T40 Product:T35 Acts-on:T38
 E12	Action:T42 Acts-on:T44
@@ -93,7 +93,7 @@ E15	Action:T53 Product:T55 Product2:T56
 E16	Action:T58 Acts-on:T59 Product:T61
 E17	Action:T60 Acts-on:T61 Using:T62 Product:T66
 E18	Action:T63 Using:T67 Measure-Type-Link:T64 Acts-on:T66 Product:T71
-E19	Action:T68 Using:T70 Using2:T72 Acts-on:T71
+E19	Action:T68 Using:T70 Using2:T72 Acts-on:T71 Measure-Type-Link:T69
 E20	Action:T73 Using:T75 Measure-Type-Link:T74 Using2:T76 Using3:T77 Acts-on:E19
 R1	Mod-Link Arg1:T4 Arg2:T3
 R2	Mod-Link Arg1:T13 Arg2:T12

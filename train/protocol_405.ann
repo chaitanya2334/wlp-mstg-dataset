@@ -45,13 +45,13 @@ T44	Reagent 989 1008	adsorption cultures
 E1	Action:T1 Acts-on:T2 Site:T4 Product:T7 Product2:T44
 E2	Action:T6 Acts-on:T9 Site:T7 Product:T12
 E3	Action:T10 Acts-on:T11 Site:T12
-E4	Action:T15 Acts-on:E3 Product:T20
-E5	Action:T16 Acts-on:T17
+E4	Action:T15 Acts-on:E3
+E5	Action:T16 Acts-on:T17 Product:T20
 E6	Action:T19 Acts-on:T20
 E7	Action:T21 Acts-on:E6
 E8	Action:T24 Site:T26 Acts-on:E7
-E9	Action:T30 Acts-on:E8 Product:T33
-E10	Action:T31 
+E9	Action:T30 Acts-on:E8
+E10	Action:T31 Product:T33 Acts-on:E8
 E11	Action:T32 Acts-on:T33 Product:T39
 E12	Action:T36 Acts-on:T39 Site:T41
 E13	Action:T42 Acts-on:E12
@@ -73,5 +73,5 @@ R14	Mod-Link Arg1:E12 Arg2:T35
 R15	Measure Arg1:T39 Arg2:T38
 R16	Or Arg1:T38 Arg2:T37
 R17	Mod-Link Arg1:T41 Arg2:T40
-R18	Enables Arg1:E4 Arg2:E12
 R19	Enables Arg1:E9 Arg2:E10
+R20	Enables Arg1:E4 Arg2:E5	

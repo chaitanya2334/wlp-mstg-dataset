@@ -25,7 +25,7 @@ E1	Action:T1 Acts-on:T3 Site:T5
 E2	Action:T6 Acts-on:T8 Site:T9 Acts-on2:E1
 E3	Action:T10 Acts-on:T12 Site:T13 Acts-on2:E2
 E4	Action:T14 Acts-on:T15 Site:T16 Acts-on2:E3
-E5	Action:T17 Count:T19 Using:T18
+E5	Action:T17 Count:T19 Using:T18 Acts-on:E4
 E6	Action:T20 Acts-on:T21 Site:T23 Acts-on2:E5
 R1	Measure Arg1:T5 Arg2:T4
 R2	Measure Arg1:T3 Arg2:T2

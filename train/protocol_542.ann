@@ -56,7 +56,7 @@ E5	Action:T16 Acts-on:T17 Acts-on2:T18 Acts-on3:T19 Product:T21
 E6	Action:T20 Acts-on:T21 Using:T22 Product:T26
 E7	Action:T25 Acts-on:T26 Site:T27 Product:T29 Product2:T34
 E8	Action:T28 Acts-on:T29 Using:T31 Using2:T32
-E9	Action:T33 Site:T34
+E9	Action:T33 Site:T34 Product:T36
 E10	Action:T35 Site:T37 Acts-on:T36 Product:T39
 E11	Action:T38 Acts-on:T39 Using:T40 Product:T44
 E12	Action:T43 Acts-on:T44 Using:T45 Using2:T46 Product:T49
@@ -70,3 +70,4 @@ R6	Or Arg1:T23 Arg2:T24
 R7	Measure Arg1:T31 Arg2:T30
 R8	Or Arg1:T40 Arg2:T41
 R9	Or Arg1:T41 Arg2:T42
+R10	Coreference-Link Arg1:T36 Arg2:T34	

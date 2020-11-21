@@ -20,7 +20,6 @@ T19	Modifier 359 362	new
 T20	Location 363 367	tube
 T21	Action 371 381	aspiration
 T22	Device 389 396	pipette
-T23	Method 457 466	steps 1–3
 T24	Action 610 613	Add
 T25	Amount 617 629	equal volume
 T26	Reagent 633 635	CI

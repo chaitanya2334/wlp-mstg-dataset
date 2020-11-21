@@ -104,20 +104,20 @@ E6	Action:T17 Acts-on:T18 Product:T23
 E7	Action:T22 Acts-on:T23 Product:T25
 E8	Action:T24 Acts-on:T25 Product:T27
 E9	Action:T26 Acts-on:T27 Site:T30 Product:T33
-E10	Action:T31 Acts-on:T33
+E10	Action:T31 Acts-on:T33 Product:T37
 E11	Action:T34 Using:T35 Acts-on:E7
-E12	Action:T36 Acts-on:T37
-E13	Action:T39 Acts-on:T40 Site:T42 Product:T45
-E14	Action:T43 Acts-on:T44
+E12	Action:T36 Acts-on:T37 Product:T40
+E13	Action:T39 Acts-on:T40 Site:T42
+E14	Action:T43 Acts-on:T44 Product:T45
 E15	Action:T46 Acts-on:T45 Product:T50
-E16	Action:T49 Acts-on:T50 Using:T54
-E17	Action:T55 Product:T56 Using:T57 Product2:T77
+E16	Action:T49 Acts-on:T50 Using:T54 Product:T74
+E17	Action:T55 Product:T56 Using:T57
 E18	Action:T61 Using:T58 Using2:T59 Using3:T60 Acts-on:T62 Site:T64
-E19	Action:T65 Acts-on:E18 Product:T70
+E19	Action:T65 Product:T70 Acts-on:T56
 E20	Action:T68 Acts-on:T69 Using:T71
-E21	Action:T73 Acts-on:T74 Using:T75 Acts-on2:E20
+E21	Action:T73 Acts-on:T74 Using:T75 Acts-on2:E20 Product:T78 Product2:T77
 E22	Action:T76 Acts-on:T77 Site:T78
-E23	Action:T79 Acts-on:T80
+E23	Action:T79 Acts-on:T80 Product:T82
 E24	Action:T81 Acts-on:T82 Product:T87
 E25	Action:T83 Acts-on:T84 Site:T85
 E26	Action:T86 Acts-on:T87 Site:T88
@@ -158,3 +158,4 @@ R32	Enables Arg1:E13 Arg2:E14
 R33	Enables Arg1:E18 Arg2:E17
 R34	Enables Arg1:E25 Arg2:E24
 R35	Enables Arg1:E22 Arg2:E23
+R36	Meronym Arg1:T44 Arg2:T40	

@@ -268,7 +268,7 @@ T267	Amount 4373 4378	15 ml
 T268	Location 4379 4383	vial
 E1	Action:T1 Product:T2
 E2	Action:T3 Acts-on:T4 Site:T5 Using:T2
-E3	Action:T6 Site:T9 Acts-on:E2 Product:T12 Product2:T28
+E3	Action:T6 Site:T9 Acts-on:E2 Product2:T28 Acts-on2:T15 Acts-on3:T17 Acts-on4:T19 Acts-on5:T21 Acts-on6:T23 Acts-on7:T25
 E4	Action:T10 Acts-on:T12
 E5	Action:T27 Acts-on:T28 Product:T29
 E6	Action:T30 Measure-Type-Link:T31 Acts-on:T29 Product:T33
@@ -408,11 +408,6 @@ R67	Measure Arg1:T261 Arg2:T260
 R68	Measure Arg1:T258 Arg2:T257
 R69	Measure Arg1:T258 Arg2:T256
 R70	Measure Arg1:T25 Arg2:T26
-R71	Meronym Arg1:T15 Arg2:T17
-R72	Meronym Arg1:T17 Arg2:T19
-R73	Meronym Arg1:T19 Arg2:T21
-R74	Meronym Arg1:T21 Arg2:T23
-R75	Meronym Arg1:T23 Arg2:T25
 R76	Coreference-Link Arg1:T44 Arg2:T38
 R77	Mod-Link Arg1:E11 Arg2:T64
 R78	Meronym Arg1:T78 Arg2:T79
@@ -431,3 +426,5 @@ R90	Mod-Link Arg1:E34 Arg2:T137
 R91	Coreference-Link Arg1:T141 Arg2:T68
 R92	Coreference-Link Arg1:T149 Arg2:T127
 R93	Coreference-Link Arg1:T156 Arg2:T149
+R94	Coreference-Link Arg1:T12 Arg2:T9	
+R71	Overlaps Arg1:E4 Arg2:E3	

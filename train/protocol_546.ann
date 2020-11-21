@@ -60,11 +60,11 @@ T59	Time 1479 1487	1 minute
 T60	Speed 1491 1501	16,000 x g
 E1	Action:T1 Acts-on:T2 Site:T3
 E2	Action:T4 Acts-on:T5
-E3	Action:T6 Acts-on:T8 Acts-on2:E2
+E3	Action:T6 Acts-on:T8 Acts-on2:E1
 E4	Action:T9 Acts-on:T10 Acts-on2:E3 Product:T14
 E5	Action:T11 Acts-on:T13 Site:T14 Product:T16
 E6	Action:T15 Acts-on:T16 Product:T23
-E7	Action:T19 Acts-on:T20 Site:T21
+E7	Action:T19 Acts-on:T20 Site:T21 Product:T24
 E8	Action:T22 Acts-on:T23 Site:T24
 E9	Action:T25 Acts-on:E8 Product:T29
 E10	Action:T28 Acts-on:T29 Product:T31

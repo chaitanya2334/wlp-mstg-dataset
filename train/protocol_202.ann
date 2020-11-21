@@ -333,35 +333,35 @@ T332	Reagent 4849 4853	CFUs
 E1	Action:T1 Acts-on:T3 Using:T5
 E2	Action:T6 Site:T7 Acts-on:E1 Product:T11
 E3	Action:T10 Acts-on:T11 Using:T12 Product:T14
-E4	Action:T13 Acts-on:T14 Site:T16 Site2:T18
+E4	Action:T13 Acts-on:T14 Site2:T18
 E5	Action:T19 Acts-on:E4 Product:T24
 E6	Action:T22 Acts-on:T24
-E7	Action:T23 Acts-on:E6 Product:T26
+E7	Action:T23 Product:T26 Acts-on:T24
 E8	Action:T25 Acts-on:T26 Using:T28 Using2:T29 Site:T34 Product:T38
 E9	Action:T37 Acts-on:T38 Using:T39 Product:T51
 E10	Action:T49 Using:T50 Acts-on:T51
 E11	Action:T53 Site:T55 Acts-on:E10
 E12	Action:T57 Site:T59 Site2:T62
-E13	Action:T63 Acts-on:T66 Acts-on2:E12 Product:T71
+E13	Action:T63 Acts-on2:E12 Product:T71 Using:T66
 E14	Action:T67 Acts-on:T69 Using:T71
 E15	Action:T72 Using:T74 Acts-on:E14 Product:T78
 E16	Action:T77 Acts-on:T78 Site:T79
-E17	Action:T80 Site:E16 Product:T101
-E18	Action:T84 Product:T85 Product2:T87 Product3:T91 Product4:T95
+E17	Action:T80 Product:T101 Acts-on:E16
+E18	Action:T84 Product:T85 Product3:T91 Product4:T95 Site:T87 Product2:T89
 E19	Action:T97 Acts-on:T99
 E20	Action:T102 Site:T104 Acts-on:E19
 E21	Action:T109 Site:T108 Acts-on:E20 Product:T114
 E22	Action:T113 Acts-on:T114 Using:T115 Product:T117
-E23	Action:T116 Acts-on:T117 Product:T147
-E24	Action:T118 Acts-on:T119 Using:T120 Using2:T122 Site:E23
+E23	Action:T116 Acts-on:T117 Product:T119
+E24	Action:T118 Acts-on:T119 Using:T120 Using2:T122 Site:E23 Product:T147
 E25	Action:T145 Acts-on:T147 Acts-on2:T149 Site:T144
 E26	Action:T151 Acts-on:T153 Acts-on2:T155 Site:T150
 E27	Action:T157 Acts-on:T159 Acts-on2:T161 Site:T156
 E28	Action:T162 Acts-on:E27
 E29	Action:T166 Acts-on:E28 Using:T170 Product:T178
-E30	Action:T171 Acts-on:T172
+E30	Action:T171 Acts-on:T172 Product:T180
 E31	Action:T176 Acts-on:T178
-E32	Action:T177 Acts-on:E31 Product:T180
+E32	Action:T177 Product:T180 Acts-on:T178
 E33	Action:T179 Acts-on:T180 Count:T181 Using:T182
 E34	Action:T183 Acts-on:T182
 E35	Action:T185 Product:T182
@@ -380,9 +380,9 @@ E47	Action:T253 Site:T256 Acts-on:E46
 E48	Action:T257 Acts-on:E47 Site:T260
 E49	Action:T261 Using:T265 Acts-on:E48 Product:T268
 E50	Action:T266 Acts-on:T268
-E51	Action:T267 Acts-on:E50 Product:T270
+E51	Action:T267 Product:T270 Acts-on:T268
 E52	Action:T269 Acts-on:T270 Using:T272
-E53	Action:T273 Acts-on:T272 Product:T272
+E53	Action:T273 Product:T272
 E54	Action:T276 Acts-on:T279 Site:E52
 E55	Action:T282 Acts-on:T281
 E56	Action:T287 Acts-on:T289 Acts-on2:T291 Site:T286
@@ -441,7 +441,6 @@ R42	Measure Arg1:T101 Arg2:T100
 R43	Meronym Arg1:T101 Arg2:T99
 R44	Setting Arg1:E21 Arg2:T111
 R45	Setting Arg1:E21 Arg2:T112
-R46	Coreference-Link Arg1:T119 Arg2:T117
 R47	Measure Arg1:T122 Arg2:T121
 R48	Measure Arg1:T126 Arg2:T125
 R49	Measure Arg1:T128 Arg2:T127
@@ -605,3 +604,6 @@ R206	Coreference-Link Arg1:T285 Arg2:T228
 R207	Setting Arg1:E66 Arg2:T330
 R208	Coreference-Link Arg1:T312 Arg2:T249
 R209	Coreference-Link Arg1:T314 Arg2:T251
+R210	Overlaps Arg1:E6 Arg2:E7	
+R46	Overlaps Arg1:E31 Arg2:E32	
+R211	Overlaps Arg1:E50 Arg2:E51	

@@ -51,7 +51,7 @@ E2	Action:T6 Acts-on:T7 Using:T11 Product:T14
 E3	Action:T12 Acts-on:T14 Site:T15 Product:T21
 E4	Action:T18 Acts-on:T19 Site:T21 Product:T26
 E5	Action:T22 Acts-on:T23
-E6	Action:T24 Acts-on:T26 Using:T28
+E6	Action:T24 Acts-on:T26 Using:T28 Product:T30
 E7	Action:T29 Acts-on:T30 Product:T34
 E8	Action:T32 Acts-on:T33
 E9	Action:T35 Acts-on:T37 Site:E8

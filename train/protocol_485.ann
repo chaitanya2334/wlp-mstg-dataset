@@ -47,18 +47,18 @@ T46	Action 697 702	Store
 T47	Temperature 706 722	room temperature
 T48	Modifier 727 732	up to
 T49	Time 733 742	one month
-E1	Action:T1 Product:T2
+E1	Action:T1 Acts-on:T2 Acts-on2:T3
 E2	Action:T4 Using:T5 Using2:T6 Acts-on:T2 Acts-on2:T3
-E3	Action:T7 Acts-on:T9 Using:T11 Product:T18
-E4	Action:T12 Acts-on:T11 Site:T13
+E3	Action:T7 Acts-on:T9 Using:T11 Product:T18 Site:E1
+E4	Action:T12 Acts-on:T11 Site:T13 Product:T18
 E5	Action:T17 Acts-on:T18 Site:T19
-E6	Action:T22 Acts-on:E5
-E7	Action:T24 Acts-on:T26 Product:T43
-E8	Action:T27 Acts-on:T29 Product:T44
-E9	Action:T30 Acts-on:T31 Product:T45
-E10	Action:T32 Acts-on:T33 Product:T39
+E6	Action:T22 Acts-on:E5 Product:T42
+E7	Action:T24 Product2:T26
+E8	Action:T27 Product:T29
+E9	Action:T30 Product:T31
+E10	Action:T32 Product:T33 Acts-on:T31
 E11	Action:T35 Acts-on:T38 Product:T34 Acts-on2:T39 Site:T42 Using:T43 Using2:T44 Using3:T45
-E12	Action:T46 Acts-on:E11
+E12	Action:T46 Acts-on:T34
 R1	Mod-Link Arg1:T9 Arg2:T8
 R2	Setting Arg1:T11 Arg2:T10
 R3	Setting Arg1:T16 Arg2:T15
@@ -77,3 +77,7 @@ R15	Mod-Link Arg1:T49 Arg2:T48
 R16	Setting Arg1:E12 Arg2:T47
 R17	Setting Arg1:E12 Arg2:T49
 R18	Enables Arg1:E2 Arg2:E1
+R19	Overlaps Arg1:E4 Arg2:E3	
+R20	Coreference-Link Arg1:T43 Arg2:T26	
+R21	Coreference-Link Arg1:T44 Arg2:T29	
+R22	Coreference-Link Arg1:T45 Arg2:T33	

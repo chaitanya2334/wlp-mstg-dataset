@@ -50,20 +50,20 @@ T49	Action 770 776	sealed
 T50	Reagent 782 790	parafilm
 T51	Temperature 794 797	4°C
 E1	Action:T3 Acts-on:T4 Site:T2
-E2	Action:T6 Using:T7 Acts-on:E1
-E3	Action:T9 Acts-on:T10 Using:T12 Acts-on2:E2
-E4	Action:T13 Using:T14 Acts-on:T10
+E2	Action:T6 Using:T7 Acts-on:E1 Product:T11
+E3	Action:T9 Acts-on:T10 Using:T12
+E4	Action:T13 Using:T14 Acts-on:E3
 E5	Action:T15 Using:T16 Acts-on:E4 Product:T19
-E6	Action:T18 Acts-on:T19 Site:T20
+E6	Action:T18 Acts-on:T19 Site:T20 Product:T21
 E7	Action:T22 Acts-on:T21 Product:T27
 E8	Action:T24 Acts-on:T26 Site:T27
-E9	Action:T28 Acts-on:T27 Product:T31
+E9	Action:T28 Product:T31 Acts-on:E8
 E10	Action:T29 Acts-on:T31 Site:T33
 E11	Action:T34 Acts-on:T35 Site:T36 Acts-on2:E10
-E12	Action:T37 Acts-on:T36 Acts-on2:E11
+E12	Action:T37 Acts-on2:E11
 E13	Action:T39 Acts-on:T40 Acts-on2:E12
 E14	Action:T41 Acts-on:E13
-E15	Action:T44 Acts-on:T45 Acts-on2:T40
+E15	Action:T44 Acts-on:T45 Acts-on2:E14
 E16	Action:T47 Acts-on:T48 Acts-on2:E15
 E17	Action:T49 Acts-on:T50
 R1	Measure Arg1:T2 Arg2:T1

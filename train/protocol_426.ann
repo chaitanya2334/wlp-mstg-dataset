@@ -58,9 +58,9 @@ T57	Reagent 819 828	specimens
 T58	Device 836 854	High Vaccum Coater
 E1	Action:T1 Acts-on:T3 Using:T4 Product:T6
 E2	Action:T5 Acts-on:T6 Using:T7 Product:T11
-E3	Action:T8 Acts-on:T9
-E4	Action:T10 Acts-on:T11 Product:T17
-E5	Action:T14 Using:T15 Acts-on:T13
+E3	Action:T8 Product:T9
+E4	Action:T10 Acts-on:T11 Product:T17 Site:T13
+E5	Action:T14 Using:T15 Product:T13
 E6	Action:T16 Acts-on:T17 Site:T19
 E7	Action:T20 Acts-on:T22 Measure-Type-Link:T21 Acts-on2:E6
 E8	Action:T23 Site:T24 Acts-on:E7
@@ -87,4 +87,4 @@ R9	Measure Arg1:T39 Arg2:T40
 R10	Measure Arg1:T42 Arg2:T43
 R11	Measure Arg1:T45 Arg2:T46
 R12	Coreference-Link Arg1:T54 Arg2:T52
-R13	Coreference-Link Arg1:T9 Arg2:T15
+R13	Coreference-Link Arg1:T15 Arg2:T9

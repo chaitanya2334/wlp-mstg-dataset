@@ -109,7 +109,7 @@ T108	Concentration 1155 1157	6x
 T109	Reagent 1158 1176	gel loading buffer
 E1	Action:T1 Acts-on:T3 Product:T17
 E2	Action:T5 Acts-on:T7 Site:T11 Product:T14 Using:T9
-E3	Action:T12 Acts-on:T14 Site:T17
+E3	Action:T12 Acts-on:T14 Site:T17 Product:T29
 E4	Action:T18 Acts-on:T19 Product:T27
 E5	Action:T21 Acts-on:T20 Site:T23
 E6	Action:T25 Using:T24 Acts-on:T27 Site:T29 Product:T39
@@ -178,3 +178,8 @@ R41	Meronym Arg1:T84 Arg2:T82
 R42	Enables Arg1:E22 Arg2:E23
 R43	Meronym Arg1:T91 Arg2:T89
 R44	Enables Arg1:E24 Arg2:E25
+R45	Measure Arg1:T31 Arg2:T30	
+R46	Measure Arg1:T34 Arg2:T33	
+R47	Meronym Arg1:T31 Arg2:T29	
+R48	Meronym Arg1:T34 Arg2:T29	
+R49	Measure Arg1:T72 Arg2:T71	

@@ -36,7 +36,7 @@ T35	Action 678 683	Rinse
 T36	Device 688 695	sensors
 T37	Reagent 705 717	HBS solution
 E1	Action:T1 Product:T2 Acts-on:T4 Acts-on2:T6
-E2	Action:T7 Product:T9 Acts-on:E1 Product2:T29 Product3:T31 Product4:T37
+E2	Action:T7 Product:T9
 E3	Action:T12 Acts-on:T13 Using:T11 Product:T26 Product2:T16
 E4	Action:T14 Acts-on:T16 Site:T18 Using:T20 Using2:T21 Product:T25
 E5	Action:T22 Acts-on:T25 Using:T26 Product:T28
@@ -54,5 +54,9 @@ R8	Mod-Link Arg1:T16 Arg2:T15
 R9	Setting Arg1:E4 Arg2:T19
 R10	Mod-Link Arg1:T33 Arg2:T32
 R11	Measure Arg1:T31 Arg2:T34
-R12	Coreference-Link Arg1:T10 Arg2:T13
+R12	Coreference-Link Arg1:T13 Arg2:T10
 R13	Overlaps Arg1:E5 Arg2:E4
+R14	Coreference-Link Arg1:T10 Arg2:T2	
+R15	Coreference-Link Arg1:T29 Arg2:T13	
+R16	Coreference-Link Arg1:T31 Arg2:T9	
+R17	Coreference-Link Arg1:T37 Arg2:T29	

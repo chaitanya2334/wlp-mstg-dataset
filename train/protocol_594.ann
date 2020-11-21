@@ -79,7 +79,7 @@ E9	Action:T26 Acts-on:T28 Product:T43
 E10	Action:T29 Acts-on:T31 Product:T37
 E11	Action:T33 Acts-on:T34 Site:T35 Product:T39
 E12	Action:T36 Acts-on:T37 Site:T39
-E13	Action:T40 Using:T41 Site:T43 Product:T45 Product2:T47
+E13	Action:T40 Using:T41 Site:T43 Product:T45 Product2:T47 Acts-on:E12
 E14	Action:T44 Acts-on:T45
 E15	Action:T46 Acts-on:T47
 E16	Action:T48 Using:T49 Acts-on:E15

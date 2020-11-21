@@ -82,10 +82,10 @@ E7	Action:T21 Acts-on:T22 Site:T23 Product:T25
 E8	Action:T24 Acts-on:T25 Using:T26 Product:T28
 E9	Action:T27 Acts-on:T28 Using:T29 Product:T31
 E10	Action:T30 Acts-on:T31 Using:T32 Product:T34
-E11	Action:T33 Acts-on:T34
+E11	Action:T33 Acts-on:T34 Product:T38
 E12	Action:T35 Acts-on:T36 Site:T38 Product:T40
-E13	Action:T39 Acts-on:T40 Using:T44 Product:T59
-E14	Action:T55 Acts-on:T57 Site:E13
+E13	Action:T39 Acts-on:T40 Using:T44
+E14	Action:T55 Acts-on:T57 Site:E13 Product:T59
 E15	Action:T58 Acts-on:T59 Count:T60
 E16	Action:T61 Using:T62 Site:T71 Site2:T72 Acts-on:E15
 R1	Measure Arg1:T7 Arg2:T6

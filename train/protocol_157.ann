@@ -389,7 +389,7 @@ E22	Action:T80 Acts-on:T81
 E23	Action:T82 Acts-on:E22
 E24	Action:T84 Acts-on:T85 Site:T86 Product:T88
 E25	Action:T87 Acts-on:T88 Site:T89
-E26	Action:T90 Site:T91 Acts-on:T88
+E26	Action:T90 Site:T91 Acts-on:E25
 E27	Action:T94 Acts-on:T93 Site:T95 Acts-on2:T92 Product:T98
 E28	Action:T96 Acts-on:T98 Site:T100
 E29	Action:T101 Acts-on:T103 Site:E28
@@ -406,7 +406,7 @@ E39	Action:T132 Product:T133 Using:T134 Acts-on:E38
 E40	Action:T135 Acts-on:T133
 E41	Action:T138 Acts-on:T140 Site:E40 Product:T146
 E42	Action:T141 Acts-on:T144 Product:T158
-E43	Action:T145 Acts-on:T146
+E43	Action:T145 Acts-on:T146 Product:T150
 E44	Action:T149 Acts-on:T150
 E45	Action:T153 Acts-on:E44 Product:T156
 E46	Action:T155 Acts-on:T156
@@ -618,7 +618,6 @@ R148	Setting Arg1:E102 Arg2:T362
 R149	Setting Arg1:E103 Arg2:T363
 R150	Enables Arg1:E23 Arg2:E24
 R151	Enables Arg1:E26 Arg2:E27
-R152	Overlaps Arg1:E26 Arg2:E25
 R153	Measure Arg1:T169 Arg2:T168
 R154	Meronym Arg1:T167 Arg2:T169
 R155	Measure Arg1:T277 Arg2:T276

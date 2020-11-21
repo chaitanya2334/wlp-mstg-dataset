@@ -253,8 +253,8 @@ T252	Action 4162 4170	transfer
 T253	Location 4178 4189	glass slide
 T254	Action 4196 4205	air - dry
 E1	Action:T1 Acts-on:T2 Using:T8
-E2	Action:T10 Acts-on:E1
-E3	Action:T11 Acts-on:T12 Acts-on2:E2
+E2	Action:T10 Acts-on:E1 Product:T12
+E3	Action:T11 Acts-on:T12 Product:T41
 E4	Action:T15 Site:T16 Acts-on:T14
 E5	Action:T17 Acts-on:E4
 E6	Action:T19 Acts-on:E5
@@ -299,7 +299,7 @@ E44	Action:T144 Using:T145 Acts-on:E43
 E45	Action:T146 Acts-on:E44 Product:T150
 E46	Action:T149 Acts-on:T150 Using:T151
 E47	Action:T152 Site:T154 Acts-on:E46
-E48	Action:T155 Acts-on:T156 Product:T182
+E48	Action:T155 Acts-on:T156
 E49	Action:T157 Acts-on:T160 Acts-on2:T163 Acts-on3:T165
 E50	Action:T166 Acts-on:E48 Product:T189
 E51	Action:T170 
@@ -308,7 +308,7 @@ E53	Action:T181 Acts-on:T182 Site:E52 Product:T184
 E54	Action:T183 Acts-on:T184 Count:T185 Product:T187
 E55	Action:T186 Acts-on:T187 Using:T189 Product:T191
 E56	Action:T190 Acts-on:T191 Site:T192
-E57	Action:T195 Acts-on:T191 Product:T200
+E57	Action:T195 Product:T200 Acts-on:E56
 E58	Action:T199 Acts-on:T200 Count:T202 Site:T207 Product:T209 Product2:T211
 E59	Action:T208 Acts-on:T209 Product:T223
 E60	Action:T210 Acts-on:T211 Site:T214

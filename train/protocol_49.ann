@@ -139,13 +139,13 @@ R32	Measure Arg1:T77 Arg2:T75
 R33	Mod-Link Arg1:T18 Arg2:T19
 R34	Measure Arg1:T17 Arg2:T16
 R35	Meronym Arg1:T17 Arg2:T18
-R36	Or Arg1:T18 Arg2:T15
 R37	Or Arg1:T21 Arg2:T22
 R38	Mod-Link Arg1:E6 Arg2:T29
 R39	Setting Arg1:E6 Arg2:T30
 R40	Measure Arg1:T73 Arg2:T74
 R41	Or Arg1:T64 Arg2:T77
 R42	Meronym Arg1:T1 Arg2:T4
-R43	Coreference-Link Arg1:T6 Arg2:T14
+R43	Coreference-Link Arg1:T14 Arg2:T6
 R44	Coreference-Link Arg1:T56 Arg2:T77
 R45	Meronym Arg1:T84 Arg2:T87
+R46	Coreference-Link Arg1:T15 Arg2:T17	

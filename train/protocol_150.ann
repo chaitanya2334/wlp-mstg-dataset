@@ -92,8 +92,8 @@ E3	Action:T7 Using:T8
 E4	Action:T11 Using:T13 Using2:T16 Using3:T17 Acts-on:E3
 E5	Action:T18 Site:T19 Acts-on:E2
 E6	Action:T20 Acts-on:E5 Product:T22
-E7	Action:T23 Acts-on:T22 Product:T26
-E8	Action:T27 Acts-on:T26
+E7	Action:T23 Acts-on:T22 Product:T26 Using:T24
+E8	Action:T27 Acts-on:T26 Product:T46
 E9	Action:T29 Acts-on:T30 Product:T32
 E10	Action:T31 Acts-on:T32 Site:T33 Product:T36
 E11	Action:T35 Acts-on:T36 Product:T38
@@ -113,7 +113,6 @@ E24	Action:T79 Acts-on:T80 Product:T86
 E25	Action:T82 Acts-on:T83 Using:T84
 E26	Action:T85 Acts-on:T86 Using:T88
 R1	Setting Arg1:E6 Arg2:T21
-R2	Setting Arg1:E22 Arg2:T28
 R3	Mod-Link Arg1:E14 Arg2:T43
 R4	Setting Arg1:E15 Arg2:T48
 R5	Setting Arg1:E15 Arg2:T49
@@ -131,7 +130,6 @@ R16	Measure Arg1:T16 Arg2:T15
 R17	Setting Arg1:E4 Arg2:T14
 R18	Enables Arg1:E4 Arg2:E2
 R19	Setting Arg1:T24 Arg2:T25
-R20	Coreference-Link Arg1:E7 Arg2:T24
 R21	Measure Arg1:T33 Arg2:T34
 R22	Meronym Arg1:T63 Arg2:T64
 R23	Measure Arg1:T61 Arg2:T60
@@ -139,3 +137,4 @@ R24	Mod-Link Arg1:E25 Arg2:T81
 R25	Enables Arg1:E25 Arg2:E24
 R26	Mod-Link Arg1:T88 Arg2:T87
 R27	Meronym Arg1:T5 Arg2:T6
+R2	Setting Arg1:E8 Arg2:T28	

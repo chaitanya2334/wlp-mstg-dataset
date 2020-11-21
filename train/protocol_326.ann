@@ -14,8 +14,7 @@ T13	Reagent 157 167	TAE buffer
 T14	Action 168 173	Place
 T15	Location 174 190	Erlenmeyer Flask
 T16	Device 194 203	microwave
-T17	Action 206 209	Set
-T18	Action 213 217	wait
+T17	Action 206 217	Set to wait
 T19	Time 218 228	30 seconds
 T20	Generic-Measure 255 260	1250W
 T21	Time 267 277	20 seconds
@@ -112,7 +111,6 @@ E2	Action:T7 Acts-on:T8 Site:T9 Acts-on2:E1
 E3	Action:T10 Acts-on:T13 Acts-on2:E2
 E4	Action:T14 Acts-on:T15 Site:T16 Acts-on2:E3 Product:T24
 E5	Action:T17 
-E6	Action:T18 
 E7	Action:T26 Acts-on:T25
 E8	Action:T27 Acts-on:T28 Site:T29 Acts-on2:E7
 E9	Action:T31 Acts-on:T30 Site:T32 Acts-on2:E8
@@ -121,23 +119,23 @@ E11	Action:T34 Acts-on:T36 Site:T38 Acts-on2:E10 Product:T52
 E12	Action:T39 Acts-on:T36 Site:T38 Acts-on2:E11
 E13	Action:T40 Acts-on:T36
 E14	Action:T41 Acts-on:T42 Site:T43
-E15	Action:T44 Acts-on:T42 Site:T43
+E15	Action:T44 Acts-on:E14 Product:T48
 E16	Action:T46 Acts-on:T47 Site:T48
-E17	Action:T50 Acts-on:T47 Acts-on2:T49 Product:T54
+E17	Action:T50 Acts-on2:T49 Acts-on:E16 Product:T54
 E18	Action:T51 Acts-on:T52 Site:T54
 E19	Action:T56 Acts-on:T55 Acts-on2:E18
 E20	Action:T58 Acts-on:T59 Acts-on2:E18
-E21	Action:T61 Acts-on:T62 Site:T63 Acts-on2:E20
-E22	Action:T64 Site:T65 Product:T79
-E23	Action:T66 Acts-on:T69 Site:T70 Acts-on2:T67 Site2:T68 Acts-on3:E21
+E21	Action:T61 Acts-on:T62 Site:T63 Acts-on2:E20 Product:T67
+E22	Action:T64 Site:T65 Product:T79 Product2:T67
+E23	Action:T66 Acts-on:T69 Acts-on2:T67 Site2:T68
 E24	Action:T71 Acts-on:T72 Product:T77 Product2:T100
 E25	Action:T73 Acts-on:T74
 E26	Action:T80 Acts-on:T81 Acts-on2:T82 Acts-on3:E24
 E27	Action:T83 Acts-on:T85
 E28	Action:T86 Acts-on:T87 Site:T88 Acts-on2:E26
 E29	Action:T89 Acts-on:T90 Site:T91 Acts-on2:E28
-E30	Action:T92 Acts-on:T93 Site:T94
-E31	Action:T95 Acts-on:E29 Product:T101
+E30	Action:T92 Acts-on:T93 Site:T94 Acts-on2:E29
+E31	Action:T95 Product:T101 Acts-on:E30
 E32	Action:T99 Acts-on:T98 Site:T100
 E33	Action:T102 Acts-on:T101 Site:T104 Using:T103
 E34	Action:T105 Acts-on:T101
@@ -150,7 +148,6 @@ R4	Meronym Arg1:T4 Arg2:T6
 R5	Coreference-Link Arg1:T8 Arg2:T6
 R6	Measure Arg1:T13 Arg2:T12
 R7	Measure Arg1:T13 Arg2:T11
-R8	Setting Arg1:E6 Arg2:T19
 R9	Setting Arg1:E5 Arg2:T20
 R10	Setting Arg1:E5 Arg2:T21
 R11	Setting Arg1:E5 Arg2:T22
@@ -181,3 +178,6 @@ R35	Enables Arg1:E24 Arg2:E25
 R36	Enables Arg1:E27 Arg2:E26
 R37	Enables Arg1:E31 Arg2:E32
 R38	Enables Arg1:E35 Arg2:E36
+R8	Setting Arg1:E5 Arg2:T19	
+R39	Overlaps Arg1:E21 Arg2:E22	
+R40	Coreference-Link Arg1:T65 Arg2:T62	

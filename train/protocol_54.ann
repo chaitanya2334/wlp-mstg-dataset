@@ -280,3 +280,4 @@ R77	Meronym Arg1:T134 Arg2:T129
 R78	Enables Arg1:E39 Arg2:E40
 R79	Enables Arg1:E42 Arg2:E43
 R80	Or Arg1:E45 Arg2:E46
+R81	Mod-Link Arg1:T6 Arg2:T5	

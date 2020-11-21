@@ -40,7 +40,7 @@ T39	Location 1369 1375	plates
 E1	Action:T1 Acts-on:T4 Site:T7 Product:T9
 E2	Action:T8 Acts-on:T9
 E3	Action:T17 Acts-on:T18
-E4	Action:T20 Acts-on:E3
+E4	Action:T20 Acts-on:E3 Acts-on2:E2
 E5	Action:T23 Acts-on:E4
 E6	Action:T26 Acts-on:E5
 E7	Action:T29 Acts-on:E6

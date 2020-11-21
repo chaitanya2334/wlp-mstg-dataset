@@ -27,14 +27,14 @@ T26	Amount 648 660	equal volume
 T27	Reagent 664 692	chloroform : isoamyl alcohol
 T28	Action 722 733	Precipitate
 T29	Reagent 738 750	nucleic acid
-E1	Action:T1 Acts-on:T2 Product:T29
+E1	Action:T1 Acts-on:T2 Product:T10
 E2	Action:T4 Acts-on:T5 Site:T6 Product:T10
 E3	Action:T7 Acts-on:T9 Site:T10
 E4	Action:T11 Acts-on:E3
 E5	Action:T13 Using:T14 Acts-on:E4 Product:T18
 E6	Action:T17 Acts-on:T18 Site:T19 Product:T21
 E7	Action:T20 Acts-on:T21 Using:T23 Product:T25
-E8	Action:T24 Acts-on:T25 Site:T27
+E8	Action:T24 Acts-on:T25 Site:T27 Product:T29
 E9	Action:T28 Acts-on:T29
 R1	Setting Arg1:E1 Arg2:T3
 R2	Measure Arg1:T9 Arg2:T8
