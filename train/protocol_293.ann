@@ -1,0 +1,58 @@
+T1	Action 153 159	Filter
+T2	Device 168 184	membrane filters
+T3	Size 188 200	0.22–0.45 µm
+T4	Action 213 217	Wash
+T5	Reagent 223 229	buffer
+T6	Concentration 242 247	0.1 M
+T7	Reagent 248 264	ammonium acetate
+T8	pH 267 271	pH 7
+T9	Device 282 297	ultracentrifuge
+T10	Device 305 324	fixed - angle rotor
+T11	Speed 327 334	25,000g
+T12	Speed 338 348	25,000 rpm
+T13	Time 353 356	1 h
+T14	Action 361 368	Deposit
+T15	Reagent 371 375	drop
+T16	Reagent 379 395	virus suspension
+T17	Location 401 405	grid
+T18	Action 406 411	Leave
+T19	Time 416 419	30s
+T20	Method 424 445	adsorption of viruses
+T21	Action 448 451	Add
+T22	Reagent 454 458	drop
+T23	Reagent 462 467	stain
+T24	Action 470 478	Withdraw
+T25	Reagent 479 485	liquid
+T26	Device 492 504	filter paper
+T27	Action 507 514	Operate
+T28	Device 515 548	transmission electron microscopes
+T29	Generic-Measure 561 569	60–80 kV
+T30	Action 572 576	Cool
+T31	Reagent 581 593	object stage
+T32	Reagent 599 614	liquid nitrogen
+T33	Action 618 637	limit contamination
+T34	Reagent 641 662	hydrocarbon molecules
+T35	Location 678 684	column
+E1	Action:T1 Using:T2
+E2	Action:T4 Using:T5 Site:T9 Acts-on:E1 Product:T16
+E3	Action:T14 Acts-on:T15 Site:T17
+E4	Action:T18 Using:T20 Acts-on:E3
+E5	Action:T21 Acts-on:T22 Site:E4 Product:T25
+E6	Action:T24 Acts-on:T25 Using:T26
+E7	Action:T27 Acts-on:T28 Site:E6 Product:T31
+E8	Action:T30 Acts-on:T31 Using:T32
+E9	Action:T33 Acts-on:T34 Site:T35
+R1	Measure Arg1:T2 Arg2:T3
+R2	Meronym Arg1:T10 Arg2:T9
+R3	Measure Arg1:T7 Arg2:T6
+R4	Measure Arg1:T7 Arg2:T8
+R5	Setting Arg1:T9 Arg2:T11
+R6	Setting Arg1:T9 Arg2:T12
+R7	Setting Arg1:T9 Arg2:T13
+R8	Meronym Arg1:T15 Arg2:T16
+R9	Setting Arg1:E4 Arg2:T19
+R10	Meronym Arg1:T22 Arg2:T23
+R11	Setting Arg1:E7 Arg2:T29
+R12	Meronym Arg1:T7 Arg2:T5
+R13	Enables Arg1:E8 Arg2:E9
+R14	Meronym Arg1:T35 Arg2:T31
