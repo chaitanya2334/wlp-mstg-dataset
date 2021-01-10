@@ -7,8 +7,6 @@ T6	Reagent 246 252	target
 T7	Action 300 307	Perform
 T8	Method 312 328	subsequent steps
 T9	Location 335 348	subdued light
-T10	Reagent 361 366	stain
-T11	Action 372 376	fade
 T12	Action 390 393	Add
 T13	Amount 394 400	0.1 mL
 T14	Reagent 401 419	FLVP working stock
@@ -55,7 +53,6 @@ T54	Reagent 937 942	cells
 T55	Device 950 966	fluorescent halo
 E1	Action:T1 Acts-on:T3 Using:T2 Product:T6
 E2	Action:T7 Site:T9 Using:T8 Acts-on:T6 Product:T16
-E3	Action:T11 Acts-on:T10
 E4	Action:T12 Acts-on:T14 Acts-on2:T16 Site:T17
 E5	Action:T20 Product:T19 Acts-on:E4 Product2:T24 Product3:T25
 E6	Action:T21 
@@ -80,6 +77,5 @@ R10	Measure Arg1:T48 Arg2:T47
 R11	Meronym Arg1:T44 Arg2:T45
 R12	Meronym Arg1:T36 Arg2:T37
 R13	Or Arg1:T3 Arg2:T4
-R14	Prevents Arg1:E2 Arg2:E3
 R15	Enables Arg1:E14 Arg2:E6
 R16	Mod-Link Arg1:T19 Arg2:T18

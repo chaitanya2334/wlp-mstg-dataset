@@ -41,7 +41,7 @@ T40	Action 694 702	transfer
 T41	Reagent 707 721	cell / DNA mix
 T42	Modifier 729 736	chilled
 T43	Location 737 744	cuvette
-T44	Action 753 764	introducing
+T44	Action 745 764	without introducing
 T45	Reagent 765 772	bubbles
 T46	Reagent 796 801	cells
 T47	Action 802 809	deposit
@@ -94,7 +94,7 @@ E8	Action:T29
 E9	Action:T31 Acts-on:T33 Site:T35
 E10	Action:T36 Acts-on:T38 Site:E9 Product:T41 Acts-on2:T19
 E11	Action:T40 Acts-on:T41 Site:T43 Product:T46
-E12	Action:T44 Acts-on:T45
+E12	Action:T44 Acts-on:T45 Product:T46
 E13	Action:T47 Acts-on:T46 Site:T49
 E14	Action:T51 Acts-on:E13 Product:T60
 E15	Action:T56 Site:T60 Acts-on:T59
@@ -140,7 +140,7 @@ R32	Enables Arg1:E8 Arg2:E7
 R33	Setting Arg1:E14 Arg2:T52
 R34	Setting Arg1:E14 Arg2:T53
 R35	Setting Arg1:E14 Arg2:T54
-R36	Coreference-Link Arg1:T3 Arg2:T67
+R36	Coreference-Link Arg1:T67 Arg2:T3
 R37	Or Arg1:E18 Arg2:E19
 R38	Coreference-Link Arg1:T74 Arg2:T78
-R39	Prevents Arg1:E12 Arg2:E11
+R39	Overlaps Arg1:E12 Arg2:E11

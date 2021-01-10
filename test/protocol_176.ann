@@ -44,7 +44,7 @@ T43	Location 872 878	volume
 T44	Device 886 902	rotator / shaker
 T45	Action 938 942	Wash
 T46	Modifier 943 947	each
-T47	Location 948 954	sample
+T47	Reagent 948 954	sample
 T48	Numerical 955 959	five
 T49	Time 968 973	5 min
 T50	Modifier 974 977	per
@@ -60,8 +60,6 @@ T59	Action 1140 1152	Do not place
 T60	Device 1156 1162	shaker
 T61	Device 1166 1173	rotator
 T62	Action 1184 1188	Stop
-T63	Reagent 1193 1205	proteinase K
-T64	Action 1206 1215	digestion
 T65	Numerical 1221 1224	two
 T66	Action 1225 1231	washes
 T67	Concentration 1235 1244	2 mg / mL
@@ -100,7 +98,6 @@ T99	Reagent 1807 1817	Hyb Buffer
 T100	Action 1824 1832	incubate
 T101	Temperature 1836 1841	65 °C
 T102	Time 1846 1851	2.5 h
-T103	Action 1861 1868	Prevent
 T104	Location 1918 1930	petri plates
 T105	Action 1933 1938	place
 T106	Mention 1939 1943	them
@@ -154,7 +151,7 @@ T153	Amount 3528 3534	500 μL
 T154	Concentration 3537 3541	50 %
 T155	Reagent 3545 3562	Probe Wash Buffer
 T156	Concentration 3565 3569	50 %
-T157	Reagent 3573 3579	5X SSC
+T157	Reagent 3576 3579	SSC
 T158	Time 3586 3592	15 min
 T159	Temperature 3596 3601	45 °C
 T160	Action 3612 3616	Wash
@@ -163,21 +160,21 @@ T162	Amount 3628 3634	500 μL
 T163	Concentration 3637 3641	25 %
 T164	Reagent 3645 3662	Probe Wash Buffer
 T165	Concentration 3665 3669	75 %
-T166	Reagent 3673 3679	5X SSC
+T166	Reagent 3676 3679	SSC
 T167	Time 3686 3692	15 min
 T168	Temperature 3696 3701	45 °C
 T169	Action 3712 3716	Wash
 T170	Reagent 3717 3724	samples
 T171	Numerical 3725 3726	2
 T172	Amount 3738 3744	500 μL
-T173	Reagent 3748 3754	5X SSC
+T173	Reagent 3751 3754	SSC
 T174	Time 3759 3765	15 min
 T175	Temperature 3769 3774	45 °C
 T176	Action 3785 3789	Wash
 T177	Reagent 3790 3797	samples
 T178	Numerical 3798 3799	2
 T179	Amount 3811 3817	500 μL
-T180	Reagent 3821 3827	5X SSC
+T180	Reagent 3824 3827	SSC
 T181	Time 3832 3838	30 min
 T182	Temperature 3842 3847	45 °C
 T183	Action 3891 3899	Incubate
@@ -243,58 +240,56 @@ T242	Action 5221 5225	Wash
 T243	Reagent 5226 5233	samples
 T244	Numerical 5234 5235	4
 T245	Amount 5247 5253	500 μL
-T246	Reagent 5257 5265	5X SSCTw
+T246	Reagent 5260 5265	SSCTw
 T247	Time 5270 5275	5 min
 T248	Temperature 5284 5286	RT
 T249	Action 5297 5301	Wash
 T250	Reagent 5302 5309	samples
 T251	Numerical 5310 5311	2
 T252	Amount 5323 5329	500 μL
-T253	Reagent 5333 5341	5X SSCTw
+T253	Reagent 5336 5341	SSCTw
 T254	Time 5346 5352	30 min
 T255	Temperature 5361 5363	RT
 T256	Reagent 5384 5391	Samples
 T257	Action 5399 5405	imaged
 T258	Modifier 5406 5414	directly
-T259	Reagent 5418 5426	5X SSCTw
+T259	Reagent 5421 5426	SSCTw
 T260	Action 5432 5438	stored
-T261	Reagent 5442 5450	5X SSCTw
+T261	Reagent 5445 5450	SSCTw
 T262	Temperature 5454 5458	4 °C
 E1	Action:T1 Acts-on:T2 Site:T3
-E2	Action:T4 Acts-on2:T5 Acts-on:E1
-E3	Action:T6 Acts-on:E2 Acts-on2:T8 Product:T10
-E4	Action:T9 Acts-on:T10
+E2	Action:T4 Acts-on:E1 Site:T5
+E3	Action:T6 Acts-on:E2 Product:T10 Using:T8
+E4	Action:T9 Acts-on:T10 Product:T20
 E5	Action:T12 Acts-on:T10 Site:T14
-E6	Action:T18 Using:T17 Acts-on:T20 Site:T21
-E7	Action:T19 Using:T17 Acts-on:T20 Site:T21
-E8	Action:T23 Acts-on:T24
+E6	Action:T18 Using:T17 Acts-on:T20 Site:T21 Product:T24
+E7	Action:T19 Using:T17 Acts-on:T20 Site:T21 Product:T24
+E8	Action:T23 Acts-on:T24 Product:T29
 E9	Action:T25 Acts-on:T26
-E10	Action:T27 Acts-on:T29
-E11	Action:T32 Site:T35
-E12	Action:T36 Using:E11
+E10	Action:T27 Acts-on:T29 Site:T31
+E11	Action:T32 Site:T35 Acts-on:E10
+E12	Action:T36 Acts-on:E10 Product:T47
 E13	Action:T37 Using:T39 Using2:T40 Using3:T41 Site:T43 Using4:T44
 E14	Action:T45 Acts-on:T47 Count:T48 Using:T52
 E15	Action:T51 
 E16	Action:T54 Acts-on:E14 Using:T56
-E17	Action:T59 Acts-on:E16 Acts-on2:T60
-E18	Action:T62 
-E19	Action:T64 Acts-on:T63
+E17	Action:T59 Acts-on:E16 Site:T60
+E18	Action:T62 Using:T63 Acts-on:E17
 E20	Action:T66 Count:T65 Acts-on:T68 Site:T69
-E21	Action:T70 Using:T71 Using2:T73 Site:T76
-E22	Action:T77 Acts-on:T78 Count:T79
+E21	Action:T70 Using:T71 Using2:T73 Site:T76 Acts-on:E18
+E22	Action:T77 Count:T79 Using:T78 Acts-on:E21 Product:T86 Product2:T85
 E23	Action:T82 
-E24	Action:T83 Acts-on:T85 Site:T86 Product:T88
-E25	Action:T87 Acts-on:T88 Site:T91
-E26	Action:T94 Acts-on:T95 Product:T99
-E27	Action:T100 
-E28	Action:T103 
-E29	Action:T105 Acts-on:T106 Site:T107
-E30	Action:T108 Acts-on:T109 Using:T111
-E31	Action:T112 Acts-on:T115 Site:T118
-E32	Action:T121 Acts-on:T123
+E24	Action:T83 Acts-on:T85 Product:T88
+E25	Action:T87 Acts-on:T88 Site:T91 Product:T95
+E26	Action:T94 Acts-on:T95 Site:T99
+E27	Action:T100 Acts-on:E26 Product:T104 Product2:T110
+E29	Action:T105 Acts-on:T106 Site:T107 Product:T126
+E30	Action:T108 Acts-on:T109 Using:T111 Product:T126
+E31	Action:T112 Acts-on:T115 Site:T118 Product:T123
+E32	Action:T121 Acts-on:T123 Product:T125
 E33	Action:T124 Acts-on:T125 Site:T126
-E34	Action:T129 
-E35	Action:T133 Acts-on:T132
+E34	Action:T129 Product:T136
+E35	Action:T133 Acts-on:T132 Product:T138
 E36	Action:T135 Acts-on:T136 Site:T138 Product:T142
 E37	Action:T141 Acts-on:T142 Site:T145 Site2:T148 Product:T152
 E38	Action:T151 Acts-on:T152 Site:T155 Site2:T157 Product:T161
@@ -303,21 +298,21 @@ E40	Action:T169 Acts-on:T170 Count:T171 Site:T173 Product:T177
 E41	Action:T176 Acts-on:T177 Count:T178 Site:T180 Product:T184
 E42	Action:T183 Acts-on:T184 Site:T186 Product:T190
 E43	Action:T189 Acts-on:T190 Site:T193 Product:T229
-E44	Action:T196 Acts-on:T201 Site:T203 Product:T205
+E44	Action:T196 Acts-on:T201 Site:T203 Product:T205 Using:T199
 E45	Action:T204 Acts-on:T205 Using:T208 Product:T211
 E46	Action:T209 Acts-on:T211 Site:T212 Product:T223
-E47	Action:T215 Product:T218 Using:E48
+E47	Action:T215 Product:T218
 E48	Action:T219 
 E49	Action:T221 Acts-on:T223 Site:T226 Product:T232
-E50	Action:T228 Acts-on:T229 Site:T230
-E51	Action:T231 Acts-on:T232 Site:T233
+E50	Action:T228 Acts-on:T229 Site:T230 Product:T233
+E51	Action:T231 Acts-on:T232 Site:T233 Product:T239
 E52	Action:T236 
 E53	Action:T238 Acts-on:T239 Using:T240
-E54	Action:T241 Using:E53
+E54	Action:T241 Product:T243
 E55	Action:T242 Acts-on:T243 Count:T244 Site:T246 Product:T250
 E56	Action:T249 Acts-on:T250 Count:T251 Site:T253 Product:T256
 E57	Action:T257 Acts-on:T256 Site:T259
-E58	Action:T260 Acts-on:T261
+E58	Action:T260 Site:T261 Acts-on:T256
 R1	Mod-Link Arg1:T8 Arg2:T7
 R2	Setting Arg1:E4 Arg2:T11
 R3	Measure Arg1:T14 Arg2:T13
@@ -364,7 +359,6 @@ R43	Mod-Link Arg1:T115 Arg2:T114
 R44	Measure Arg1:T118 Arg2:T116
 R45	Measure Arg1:T118 Arg2:T117
 R46	Measure Arg1:T123 Arg2:T122
-R47	Setting Arg1:E33 Arg2:T127
 R48	Or Arg1:T127 Arg2:T128
 R49	Setting Arg1:E34 Arg2:T130
 R50	Mod-Link Arg1:T132 Arg2:T131
@@ -431,3 +425,49 @@ R110	Setting Arg1:E56 Arg2:T255
 R111	Measure Arg1:T253 Arg2:T252
 R112	Mod-Link Arg1:E57 Arg2:T258
 R113	Setting Arg1:E58 Arg2:T262
+R114	Enables Arg1:E5 Arg2:E4	
+R115	Overlaps Arg1:E6 Arg2:E7	
+R116	Enables Arg1:E11 Arg2:E12	
+R117	Enables Arg1:E13 Arg2:E14	
+T63	Method 1193 1215	proteinase K digestion
+R118	Enables Arg1:E23 Arg2:E22	
+R119	Meronym Arg1:T85 Arg2:T86	
+R120	Or Arg1:E29 Arg2:E30	
+R47	Setting Arg1:E34 Arg2:T127	
+R121	Enables Arg1:E33 Arg2:E34	
+R122	Coreference-Link Arg1:T145 Arg2:T138	
+R123	Coreference-Link Arg1:T155 Arg2:T145	
+R124	Coreference-Link Arg1:T164 Arg2:T155	
+T64	Generic-Measure 3573 3575	5X
+T103	Generic-Measure 3673 3675	5X
+R125	Measure Arg1:T166 Arg2:T103	
+R126	Measure Arg1:T157 Arg2:T64	
+T263	Generic-Measure 3748 3750	5X
+R127	Measure Arg1:T173 Arg2:T263	
+T264	Generic-Measure 3821 3823	5X
+R128	Measure Arg1:T180 Arg2:T264	
+R129	Coreference-Link Arg1:T173 Arg2:T166	
+R130	Coreference-Link Arg1:T166 Arg2:T157	
+R131	Coreference-Link Arg1:T157 Arg2:T148	
+R132	Coreference-Link Arg1:T180 Arg2:T173	
+R133	Coreference-Link Arg1:T193 Arg2:T186	
+R134	Coreference-Link Arg1:T199 Arg2:T193	
+R135	Enables Arg1:E48 Arg2:E47	
+R136	Enables Arg1:E52 Arg2:E51	
+T265	Concentration 5257 5259	5X
+R137	Measure Arg1:T246 Arg2:T265	
+T266	Concentration 5333 5335	5X
+R138	Measure Arg1:T253 Arg2:T266	
+R139	Coreference-Link Arg1:T253 Arg2:T246	
+T267	Concentration 5418 5420	5X
+T268	Concentration 5442 5444	5X
+R140	Measure Arg1:T261 Arg2:T268	
+R141	Measure Arg1:T259 Arg2:T267	
+R142	Or Arg1:E57 Arg2:E58	
+R143	Coreference-Link Arg1:T226 Arg2:T218	
+R144	Enables Arg1:E15 Arg2:E14	
+R145	Coreference-Link Arg1:T78 Arg2:T71	
+R146	Coreference-Link Arg1:T71 Arg2:T69	
+R147	Coreference-Link Arg1:T69 Arg2:T56	
+R148	Coreference-Link Arg1:T56 Arg2:T52	
+R149	Mod-Link Arg1:E13 Arg2:T38	

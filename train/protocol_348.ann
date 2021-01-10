@@ -37,8 +37,8 @@ T36	Temperature 661 665	60°C
 T37	Time 670 676	10 min
 T38	Action 680 687	release
 T39	Reagent 692 704	nucleic acid
-E1	Action:T1 Acts-on:T2
-E2	Action:T3 Site:T4 Product:T7 Acts-on:T2
+E1	Action:T1 Acts-on:T2 Product:T7
+E2	Action:T3 Site:T4 Acts-on:T2
 E3	Action:T8 Acts-on:T10 Site:T7 Product:T13
 E4	Action:T12 Acts-on:T13
 E5	Action:T14 Using:T15 Count:T16 Acts-on:E4
@@ -61,10 +61,10 @@ R8	Setting Arg1:E12 Arg2:T37
 R9	Mod-Link Arg1:T7 Arg2:T6
 R10	Setting Arg1:T4 Arg2:T5
 R11	Enables Arg1:E2 Arg2:E1
-R12	Coreference-Link Arg1:T18 Arg2:T29
-R13	Coreference-Link Arg1:T10 Arg2:T23
-R14	Coreference-Link Arg1:T11 Arg2:T24
-R15	Coreference-Link Arg1:T4 Arg2:T21
+R12	Coreference-Link Arg1:T29 Arg2:T18
+R13	Coreference-Link Arg1:T23 Arg2:T10
+R14	Coreference-Link Arg1:T24 Arg2:T11
+R15	Coreference-Link Arg1:T21 Arg2:T4
 R16	Enables Arg1:E8 Arg2:E7
 R17	Meronym Arg1:T35 Arg2:T34
 R18	Enables Arg1:E12 Arg2:E13

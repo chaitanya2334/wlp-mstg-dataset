@@ -69,7 +69,6 @@ T68	Modifier 1820 1826	gently
 T69	Action 1827 1834	tapping
 T70	Device 1839 1855	Tube‐O‐DIALYZER™
 T71	Numerical 1856 1859	1‐2
-T72	Method 1873 1881	dialysis
 T73	Action 1885 1888	mix
 T74	Reagent 1893 1899	sample
 E1	Action:T1 Acts-on:T2 Acts-on2:T3 Product:T5 Product2:T11

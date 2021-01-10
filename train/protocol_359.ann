@@ -105,11 +105,11 @@ R19	Setting Arg1:E14 Arg2:T57
 R20	Mod-Link Arg1:E14 Arg2:T58
 R21	Enables Arg1:E2 Arg2:E3
 R22	Meronym Arg1:T16 Arg2:T11
-R23	Coreference-Link Arg1:T4 Arg2:T13
-R24	Coreference-Link Arg1:T6 Arg2:T25
-R25	Coreference-Link Arg1:T8 Arg2:T35
+R23	Coreference-Link Arg1:T13 Arg2:T4
+R24	Coreference-Link Arg1:T25 Arg2:T6
+R25	Coreference-Link Arg1:T35 Arg2:T8
 R26	Measure Arg1:T35 Arg2:T34
-R27	Coreference-Link Arg1:T31 Arg2:T41
+R27	Coreference-Link Arg1:T41 Arg2:T31
 R28	Enables Arg1:E10 Arg2:E11
 R29	Meronym Arg1:T44 Arg2:T40
-R30	Coreference-Link Arg1:T50 Arg2:T55
+R30	Coreference-Link Arg1:T55 Arg2:T50

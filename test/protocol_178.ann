@@ -16,7 +16,7 @@ T19	Time 1224 1234	10 minutes
 T20	Action 1237 1242	Rinse
 T21	Reagent 1248 1263	lab grade water
 T22	Action 1266 1271	Rinse
-T23	Reagent 1272 1278	Slides
+T23	Location 1272 1278	Slides
 T24	Concentration 1284 1286	1X
 T25	Reagent 1287 1290	PBS
 T26	Action 1443 1448	Apply
@@ -72,9 +72,6 @@ T75	Action 2240 2248	incubate
 T76	Location 2249 2255	slides
 T77	Time 2260 2269	5 minutes
 T78	Temperature 2273 2289	room temperature
-T79	Action 2548 2554	dilute
-T80	Action 2559 2567	incubate
-T81	Method 2585 2612	manufacturer’s instructions
 T82	Action 2615 2620	Rinse
 T83	Location 2621 2627	slides
 T84	Reagent 2633 2648	lab grade water
@@ -100,39 +97,33 @@ T103	Action 3135 3145	Cover slip
 T104	Location 3146 3151	slide
 T105	Reagent 3158 3191	Permanent Aqueous Mounting Medium
 T106	Reagent 3195 3214	Xylene Based medium
-T107	Action 3224 3234	Do not use
-T108	Reagent 3235 3253	xylene based mount
-T109	Reagent 3259 3272	AEC Chromogen
 E3	Action:T5 Acts-on:T6 Using:T7 Site:T11
 E4	Action:T14 Acts-on:E3 Using:T16
 E5	Action:T17 Acts-on:E4 Site:T18
 E6	Action:T20 Acts-on:E5 Using:T21 Product:T23
 E7	Action:T22 Acts-on:T23 Using:T25
-E8	Action:T26 Acts-on:E7 Acts-on2:T27
+E8	Action:T26 Acts-on2:T27 Site:E7 Product:T32
 E9	Action:T31 Acts-on:T32 Product:T34
-E10	Action:T35 Acts-on:T34
-E11	Action:T39 Acts-on:T38 Using:T41
-E12	Action:T44 Using:T45
-E13	Action:T46 Acts-on:T47
+E10	Action:T35 Acts-on:T34 Product:T38
+E11	Action:T39 Acts-on:T38 Using:T41 Using2:T43 Product:T47
+E12	Action:T44 Using:T45 Product:T47
+E13	Action:T46 Acts-on:T47 Product:T51
 E14	Action:T50 Acts-on:T51 Using:T53
-E15	Action:T54 Acts-on:T55 Product:T57
+E15	Action:T54 Acts-on:T55 Product:T57 Site:E14
 E16	Action:T56 Acts-on:T57 Product:T61
 E17	Action:T60 Acts-on:T61 Using:T63
-E18	Action:T64 Acts-on:T65 Product:T67
+E18	Action:T64 Acts-on:T65 Product:T67 Site:E17
 E19	Action:T66 Acts-on:T67
 E20	Action:T70 Acts-on:E19 Using:T72
-E21	Action:T73 Acts-on:T74
-E22	Action:T75 Acts-on:T76
-E23	Action:T79 Using:T81
-E24	Action:T80 Using:T81
+E21	Action:T73 Acts-on:T74 Site:E20 Product:T76
+E22	Action:T75 Acts-on:T76 Product:T83
 E25	Action:T82 Acts-on:T83 Using:T84 Product:T86
 E26	Action:T85 Acts-on:T86 Site:T87
-E27	Action:T89 Acts-on:E26 Acts-on2:T91 Product:T94
+E27	Action:T89 Acts-on:E26 Product:T94 Site:T91
 E28	Action:T93 Acts-on:T94 Site:T95
-E29	Action:T97 Acts-on:T99
-E30	Action:T101 Acts-on:T102
+E29	Action:T97 Product:T102 Site:T99 Acts-on:E28
+E30	Action:T101 Acts-on:T102 Product:T104
 E31	Action:T103 Acts-on:T104 Using:T105
-E32	Action:T107 Acts-on:T108 Using:T109
 R1	Setting Arg1:E3 Arg2:T9
 R2	Setting Arg1:T7 Arg2:T8
 R3	Mod-Link Arg1:T11 Arg2:T10
@@ -163,33 +154,181 @@ R29	Setting Arg1:E22 Arg2:T78
 R30	Setting Arg1:E26 Arg2:T88
 R31	Setting Arg1:E27 Arg2:T92
 R32	Mod-Link Arg1:T91 Arg2:T90
-R33	Setting Arg1:E28 Arg2:T40
 R34	Setting Arg1:E28 Arg2:T96
 R35	Setting Arg1:E29 Arg2:T100
 R36	Mod-Link Arg1:T99 Arg2:T98
 R37	Or Arg1:T105 Arg2:T106
 T110	Action 91 98	Removes
-E33	Action:T110 Acts-on:T111
+E33	Action:T110 Acts-on:T111 Product:T155
 T111	Reagent 99 107	paraffin
 T112	Action 112 120	hydrates
-E34	Action:T112 Acts-on:T113
+E34	Action:T112 Acts-on:T113 Product:T155
 T113	Reagent 125 131	tissue
 T114	Action 76 81	Clear
 E35	Action:T114 Acts-on:T115
 T115	Location 82 88	Slides
 R38	Overlaps Arg1:E34 Arg2:E33	
-R39	Enables Arg1:E34 Arg2:E35	
+R39	Enables Arg1:E35 Arg2:E34	
 R40	Meronym Arg1:T111 Arg2:T115	
 R41	Meronym Arg1:T113 Arg2:T115	
 T1	Action 253 254	A
-E1	Action:T1 
+E1	Action:T1 Acts-on:T118 Site:T121
 T2	Action 317 318	B
-E2	Action:T2 
+E2	Action:T2 Acts-on:T139 Site:T122
 T3	Action 389 390	C
-E36	Action:T3 
+E36	Action:T3 Acts-on:T141 Site:T124
 T4	Action 440 441	D
-E37	Action:T4 
+E37	Action:T4 Acts-on:T144 Site:T126
 T116	Action 491 492	E
-E38	Action:T116 
+E38	Action:T116 Acts-on:T143 Site:T129
 T117	Action 554 555	F
-E39	Action:T117 
+E39	Action:T117 Acts-on:T149 Using:T152
+R8	Enables Arg1:E35 Arg2:E33	
+T118	Reagent 257 264	Xylene5
+T119	Time 265 272	minutes
+T120	Amount 300 305	250mL
+T121	Location 306 316	containers
+T122	Location 378 388	containers
+T123	Amount 372 377	250mL
+T124	Location 430 439	container
+T125	Amount 424 429	250mL
+T126	Location 481 490	container
+T127	Amount 475 480	250mL
+T128	Amount 537 542	250mL
+T129	Location 543 553	containers
+T130	Modifier 290 299	different
+T131	Modifier 362 371	different
+T132	Modifier 527 536	different
+T133	Numerical 286 287	3
+T134	Numerical 358 359	3
+T135	Numerical 420 421	1
+T136	Numerical 523 524	3
+T137	Numerical 471 472	1
+T138	Concentration 321 326	100 %
+T139	Reagent 327 334	alcohol
+T140	Concentration 393 397	95 %
+T141	Reagent 398 406	alcohol3
+T142	Concentration 444 448	70 %
+T143	Reagent 495 501	water1
+T144	Reagent 449 457	alcohol3
+T145	Time 502 509	minutes
+T146	Time 458 465	minutes
+T147	Time 407 414	minutes
+T148	Time 335 344	5 minutes
+R9	Setting Arg1:E1 Arg2:T119	
+R42	Measure Arg1:T121 Arg2:T120	
+R43	Mod-Link Arg1:T121 Arg2:T130	
+R44	Measure Arg1:T121 Arg2:T133	
+R45	Measure Arg1:T122 Arg2:T134	
+R46	Mod-Link Arg1:T122 Arg2:T131	
+R47	Measure Arg1:T122 Arg2:T123	
+R48	Measure Arg1:T139 Arg2:T138	
+R49	Setting Arg1:E2 Arg2:T148	
+R50	Measure Arg1:T141 Arg2:T140	
+R51	Setting Arg1:E36 Arg2:T147	
+R52	Measure Arg1:T124 Arg2:T125	
+R53	Measure Arg1:T124 Arg2:T135	
+R54	Measure Arg1:T144 Arg2:T142	
+R55	Setting Arg1:E37 Arg2:T146	
+R56	Measure Arg1:T126 Arg2:T127	
+R57	Measure Arg1:T126 Arg2:T137	
+R58	Setting Arg1:E38 Arg2:T145	
+R59	Measure Arg1:T129 Arg2:T128	
+R60	Mod-Link Arg1:T129 Arg2:T132	
+R61	Measure Arg1:T129 Arg2:T136	
+T149	Reagent 558 562	H2O2
+T150	Concentration 565 568	3 %
+T151	Time 571 581	15 minutes
+T152	Reagent 588 608	# 1 Blocking Reagent
+T153	Reagent 647 662	927401 / 927402
+R62	Measure Arg1:T149 Arg2:T150	
+R63	Setting Arg1:E39 Arg2:T151	
+R64	Or Arg1:T152 Arg2:T153	
+T154	Action 710 715	Rinse
+E40	Action:T154 Acts-on:T155 Using:T156 Product:T6
+T155	Location 716 722	slides
+T156	Reagent 728 743	lab grade water
+R65	Enables Arg1:E1 Arg2:E35	
+R66	Enables Arg1:E2 Arg2:E35	
+R67	Enables Arg1:E36 Arg2:E35	
+R68	Enables Arg1:E37 Arg2:E35	
+R69	Enables Arg1:E38 Arg2:E35	
+R70	Enables Arg1:E39 Arg2:E35	
+R71	Coreference-Link Arg1:T21 Arg2:T156	
+R33	Setting Arg1:E11 Arg2:T40	
+R72	Or Arg1:E12 Arg2:E11	
+R73	Coreference-Link Arg1:T53 Arg2:T41	
+R74	Coreference-Link Arg1:T63 Arg2:T53	
+R75	Coreference-Link Arg1:T72 Arg2:T63	
+T157	Reagent 2296 2309	AEC Chromogen
+T158	Reagent 2317 2330	AEC chromogen
+T159	Reagent 2337 2357	AEC substrate buffer
+T160	Generic-Measure 2360 2366	1 : 50
+T161	Generic-Measure 2447 2453	1 : 25
+T162	Reagent 2424 2444	DAB substrate buffer
+T163	Reagent 2404 2417	DAB chromogen
+T164	Reagent 2382 2395	DAB Chromogen
+T165	Amount 2312 2316	20μL
+T166	Amount 2398 2403	40 μL
+T167	Amount 2333 2336	1mL
+T168	Amount 2420 2423	1mL
+T169	Action 2367 2375	Dilution
+E41	Action:T169 Acts-on:T159 Acts-on2:T158 Product:T157
+T170	Action 2454 2462	Dilution
+E42	Action:T170 Acts-on:T162 Acts-on2:T163 Product:T164
+R76	Setting Arg1:E41 Arg2:T160	
+R77	Setting Arg1:E42 Arg2:T161	
+R78	Measure Arg1:T158 Arg2:T165	
+R79	Measure Arg1:T159 Arg2:T167	
+R80	Measure Arg1:T163 Arg2:T166	
+R81	Measure Arg1:T162 Arg2:T168	
+R82	Coreference-Link Arg1:T74 Arg2:T157	
+R83	Coreference-Link Arg1:T74 Arg2:T164	
+R84	Coreference-Link Arg1:T91 Arg2:T84	
+R85	Coreference-Link Arg1:T84 Arg2:T21	
+R86	Coreference-Link Arg1:T99 Arg2:T91	
+T79	Action 2908 2913	Clear
+E23	Action:T79 Acts-on:T80
+T80	Location 2914 2920	slides
+R87	Enables Arg1:E23 Arg2:E30	
+T81	Concentration 2950 2954	95 %
+T171	Reagent 2955 2962	alcohol
+T172	Time 2963 2972	3 minutes
+T173	Numerical 2978 2979	1
+T174	Amount 2982 2987	250mL
+T175	Location 2988 2997	container
+T176	Modifier 3043 3052	different
+T177	Amount 3053 3058	250mL
+T178	Location 3059 3068	container
+T179	Amount 3117 3122	250mL
+T180	Modifier 3107 3116	different
+T181	Location 3123 3132	container
+T182	Numerical 3039 3040	3
+T183	Numerical 3103 3104	3
+T184	Time 3016 3025	5 minutes
+T185	Time 3080 3089	5 minutes
+T186	Reagent 3008 3015	alcohol
+T187	Reagent 3073 3079	Xylene
+T188	Concentration 3002 3007	100 %
+R88	Measure Arg1:T181 Arg2:T179	
+R89	Mod-Link Arg1:T181 Arg2:T180	
+R90	Measure Arg1:T181 Arg2:T183	
+R91	Measure Arg1:T178 Arg2:T177	
+R92	Mod-Link Arg1:T178 Arg2:T176	
+R93	Measure Arg1:T178 Arg2:T182	
+R94	Measure Arg1:T186 Arg2:T188	
+R95	Measure Arg1:T171 Arg2:T81	
+T189	Action 2946 2947	A
+E24	Action:T189 Acts-on:T171 Site:T175
+T190	Action 2998 2999	B
+E43	Action:T190 Acts-on:T186 Site:T178
+T191	Action 3069 3070	C
+E44	Action:T191 Acts-on:T187 Site:T181
+R96	Setting Arg1:E24 Arg2:T172	
+R97	Measure Arg1:T175 Arg2:T174	
+R98	Setting Arg1:E43 Arg2:T184	
+R99	Setting Arg1:E44 Arg2:T185	
+R100	Enables Arg1:E24 Arg2:E23	
+R101	Enables Arg1:E43 Arg2:E23	
+R102	Enables Arg1:E44 Arg2:E23	
+R103	Measure Arg1:T175 Arg2:T173	

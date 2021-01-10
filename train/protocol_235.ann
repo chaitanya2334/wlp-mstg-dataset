@@ -24,8 +24,6 @@ T23	Reagent 424 440	Sodium Hydroxide
 T24	pH 449 465	Ph of 6 - 712.6g
 T25	Reagent 468 479	Oxalic Acid
 T26	pH 483 486	1.2
-T27	Action 489 496	Harvest
-T28	Reagent 497 504	Diatoms
 T29	Reagent 541 549	cultures
 T30	Action 560 565	grown
 T31	Measure-Type 575 590	optimal density
@@ -171,13 +169,9 @@ T170	Location 2706 2712	filter
 T171	Location 2720 2745	small teflon ( PFA ) vial
 T172	Action 2748 2751	Add
 T173	Amount 2752 2756	1 mL
-T174	Reagent 2757 2763	conc .
-T175	Modifier 2767 2772	clean
-T176	Reagent 2773 2776	HCl
+T176	Reagent 2764 2776	TE clean HCl
 T177	Amount 2781 2785	1 mL
-T178	Reagent 2786 2792	conc .
-T179	Action 2793 2801	TE clean
-T180	Reagent 2802 2806	HNO3
+T180	Reagent 2793 2806	TE clean HNO3
 T181	Modifier 2810 2814	each
 T182	Location 2815 2819	vial
 T183	Action 2904 2909	Place
@@ -192,7 +186,6 @@ T191	Location 3201 3206	vials
 T192	Device 3212 3237	a pair of teflon tweezers
 T193	Action 3247 3254	pick up
 T194	Location 3259 3265	filter
-T195	Modifier 3266 3336	in a way that most of the remaining diatom shells remain on the filter
 T196	Action 3445 3454	Rinse off
 T197	Reagent 3460 3464	acid
 T198	Location 3479 3487	PFA vial
@@ -268,9 +261,8 @@ T267	Amount 4373 4378	15 ml
 T268	Location 4379 4383	vial
 E1	Action:T1 Product:T2
 E2	Action:T3 Acts-on:T4 Site:T5 Using:T2
-E3	Action:T6 Site:T9 Acts-on:E2 Product2:T28 Acts-on2:T15 Acts-on3:T17 Acts-on4:T19 Acts-on5:T21 Acts-on6:T23 Acts-on7:T25
+E3	Action:T6 Site:T9 Acts-on:E2 Acts-on2:T15 Acts-on3:T17 Acts-on4:T19 Acts-on5:T21 Acts-on6:T23 Acts-on7:T25 Product:T29
 E4	Action:T10 Acts-on:T12
-E5	Action:T27 Acts-on:T28 Product:T29
 E6	Action:T30 Measure-Type-Link:T31 Acts-on:T29 Product:T33
 E7	Action:T34 Acts-on:T33 Product:T90
 E8	Action:T36 Acts-on:T35 Using:T38 Product:T75
@@ -311,33 +303,32 @@ E42	Action:T160 Acts-on:E41 Product:T161
 E43	Action:T162 Using:T163 Acts-on:T161 Product:T165
 E44	Action:T164 Acts-on:T165 Site:T168 Product:T170
 E45	Action:T169 Acts-on:T170 Site:T171
-E46	Action:T172 Acts-on:T174 Site:E45 Acts-on2:T174 Acts-on3:T176
-E47	Action:T179 Acts-on:T180 Site:T182
-E48	Action:T183 Acts-on:T184 Site:T185
-E49	Action:T186 Acts-on:T187 Site:T188
-E50	Action:T189 Acts-on:T190 Site:T191 Using:T192
+E46	Action:T172 Site:E45 Acts-on3:T176 Acts-on:T180 Site2:T182 Product:T185
+E48	Action:T183 Acts-on:T184 Site:T185 Product:T187
+E49	Action:T186 Acts-on:T187 Site:T188 Product:T191
+E50	Action:T189 Acts-on:T190 Using:T192 Product:T194 Product2:T175 Product3:T198
 E51	Action:T193 Acts-on:T194
-E52	Action:T196 Acts-on:T197 Site:T198 Using:E53
+E52	Action:T196 Acts-on:T197 Site:T198 Product:T206
 E53	Action:T200 Count:T199 Acts-on:T202 Site:T204
-E54	Action:T205 Site:T208 Acts-on:T206
-E55	Action:T209 Acts-on:T210 Site:T212
-E56	Action:T215 Acts-on:T216
-E57	Action:T217 Acts-on:T218 Using:T219
-E58	Action:T221 
-E59	Action:T223 Acts-on:T224
-E60	Action:T227 Acts-on:T228 Site:T229 Using:T231
-E61	Action:T233 Site:T234 Site2:T235
-E62	Action:T236 
-E63	Action:T239 Acts-on:T241
-E64	Action:T242 Site:T243
-E65	Action:T245 Acts-on:T243
+E54	Action:T205 Site:T208 Acts-on:T206 Product:T210
+E55	Action:T209 Acts-on:T210 Site:T212 Product:T216
+E56	Action:T215 Acts-on:T216 Product:T218
+E57	Action:T217 Acts-on:T218 Using:T219 Product:T234
+E58	Action:T221 Acts-on:T222 Product:T228
+E59	Action:T223 Acts-on:T224 Using:T225
+E60	Action:T227 Acts-on:T228 Site:T229 Using:T231 Product:T235
+E61	Action:T233 Acts-on:T234 Site:T235
+E62	Action:T236 Acts-on:E61
+E63	Action:T239 Acts-on:T241 Acts-on2:E62
+E64	Action:T242 Site:T243 Acts-on:E63 Product:T249
+E65	Action:T245 Acts-on:T243 Product:T249
 E66	Action:T248 Acts-on:T249
-E67	Action:T251 Site:T252
+E67	Action:T251 Site:T252 Acts-on:E66
 E68	Action:T254 
-E69	Action:T255 Site:T258
-E70	Action:T259 Product:T261
+E69	Action:T255 Site:T258 Acts-on:E68
+E70	Action:T259 Product:T261 Site:E69
 E71	Action:T262 Using:T265 Acts-on:T261
-E72	Action:T266 Site:T268 Acts-on:E71
+E72	Action:T266 Site:T268 Acts-on:E71 Product:T269
 R1	Mod-Link Arg1:E3 Arg2:T7
 R2	Measure Arg1:T9 Arg2:T8
 R3	Measure Arg1:T12 Arg2:T11
@@ -380,9 +371,7 @@ R39	Mod-Link Arg1:T141 Arg2:T142
 R40	Measure Arg1:T145 Arg2:T144
 R41	Measure Arg1:T168 Arg2:T167
 R42	Mod-Link Arg1:T168 Arg2:T166
-R43	Measure Arg1:T174 Arg2:T173
 R44	Mod-Link Arg1:T182 Arg2:T181
-R45	Mod-Link Arg1:E51 Arg2:T195
 R46	Mod-Link Arg1:T204 Arg2:T203
 R47	Measure Arg1:T202 Arg2:T201
 R48	Mod-Link Arg1:E54 Arg2:T207
@@ -428,3 +417,46 @@ R92	Coreference-Link Arg1:T149 Arg2:T127
 R93	Coreference-Link Arg1:T156 Arg2:T149
 R94	Coreference-Link Arg1:T12 Arg2:T9	
 R71	Overlaps Arg1:E4 Arg2:E3	
+T27	Modifier 2757 2761	conc
+T28	Modifier 2786 2790	conc
+R43	Mod-Link Arg1:T176 Arg2:T27	
+R72	Mod-Link Arg1:T180 Arg2:T28	
+R73	Measure Arg1:T180 Arg2:T177	
+R74	Measure Arg1:T176 Arg2:T173	
+R75	Meronym Arg1:T190 Arg2:T191	
+T174	Modifier 3292 3301	remaining
+T175	Reagent 3302 3315	diatom shells
+T178	Action 3316 3322	remain
+E5	Action:T178 Acts-on:T175 Site:T179 Product:T197
+T179	Location 3330 3336	filter
+R45	Mod-Link Arg1:T175 Arg2:T174	
+R95	Enables Arg1:E51 Arg2:E5	
+R96	Enables Arg1:E53 Arg2:E52	
+R97	Enables Arg1:E59 Arg2:E58	
+R98	Coreference-Link Arg1:T228 Arg2:T222	
+R99	Measure Arg1:T241 Arg2:T240	
+R100	Overlaps Arg1:E64 Arg2:E65	
+R101	Enables Arg1:E67 Arg2:E68	
+T195	Action 4386 4390	Give
+E47	Action:T195 Acts-on:T269
+T269	Reagent 4395 4401	sample
+T270	Time 4425 4428	Tim
+T271	Action 4432 4435	run
+E73	Action:T271 Using:T272
+T272	Method 4436 4446	on element
+R102	Setting Arg1:E47 Arg2:T270	
+R103	Enables Arg1:E47 Arg2:E73	
+T273	Action 4580 4583	add
+E74	Action:T273 Acts-on:T275 Measure-Type-Link:T277 Product:T278 Site:E73
+T274	Modifier 4584 4590	enough
+T275	Reagent 4591 4605	double - spike
+T276	Generic-Measure 4615 4620	1 : 2
+T277	Measure-Type 4621 4641	sample : spike ratio
+R104	Mod-Link Arg1:T275 Arg2:T274	
+R105	Setting Arg1:E74 Arg2:T276	
+T278	Reagent 4648 4654	sample
+T279	Action 4658 4663	ready
+E75	Action:T279 Acts-on:T278 Using:T280
+T280	Method 4668 4685	isotopic analysis
+R106	Meronym Arg1:T58 Arg2:T54	
+R107	Meronym Arg1:T59 Arg2:T54	

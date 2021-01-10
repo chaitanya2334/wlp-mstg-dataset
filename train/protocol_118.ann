@@ -7,8 +7,6 @@ T6	Concentration 110 114	10 %
 T7	Reagent 115 118	FBS
 T8	Reagent 121 140	b - mercaptoethanol
 T9	Action 141 146	Plate
-T10	Mention 147 153	50,000
-T11	Concentration 154 162	c / well
 T12	Location 168 181	24 well plate
 T13	Mention 185 191	500 ul
 T14	Action 194 197	Add
@@ -23,7 +21,7 @@ T22	Action 281 290	stimulate
 T23	Amount 296 304	10 - 50U
 T24	Reagent 305 309	IFNg
 E1	Action:T1 Product:T2 Using:T4
-E2	Action:T9 Site:T12 Acts-on:T10 Using:T13
+E2	Action:T9 Site:T12 Using:T13
 E3	Action:T14 Acts-on:T16 Product:T19 Site:E2
 E4	Action:T18 Acts-on:T19
 E5	Action:T22 Acts-on:E4 Using:T24
@@ -37,5 +35,6 @@ R7	Meronym Arg1:T8 Arg2:T4
 R8	Meronym Arg1:T7 Arg2:T4
 R9	Meronym Arg1:T5 Arg2:T4
 R10	Measure Arg1:T7 Arg2:T6
-R11	Meronym Arg1:T2 Arg2:T10
 R12	Meronym Arg1:T4 Arg2:T13
+T10	Generic-Measure 147 162	50,000 c / well
+R11	Setting Arg1:E2 Arg2:T10	

@@ -79,12 +79,12 @@ E1	Action:T1 Acts-on:T3 Product:T5
 E2	Action:T9 Acts-on:T12 Site:T8
 E3	Action:T13 Acts-on:T16 Site:E2
 E4	Action:T17 Acts-on:E3
-E5	Action:T19 Acts-on:E4 Site:T21
+E5	Action:T19 Acts-on:E4 Site:T21 Product:T25
 E6	Action:T26 Acts-on:T29 Site:T31 Using:T33 Product:T38
 E7	Action:T34 Acts-on:T35 Site:T38 Product:T44
 E8	Action:T42 Using:T41 Using2:T43 Site:T44 Count:T46
 E9	Action:T47 Site:T51 Site2:T50 Acts-on:E8
-E10	Action:T53 Using:T54 Acts-on:T55 Count:T56
+E10	Action:T53 Using:T54 Acts-on:T55 Count:T56 Acts-on2:E9 Product:T60
 E11	Action:T57 Acts-on:T60 Using:T61
 E12	Action:T62 Site:T63 Product:T68 Acts-on:E11
 E13	Action:T65 Acts-on:T68 Using:T69
@@ -124,5 +124,6 @@ R31	Measure Arg1:T68 Arg2:T66
 R32	Setting Arg1:T77 Arg2:T76
 R33	Mod-Link Arg1:T75 Arg2:T74
 R34	Measure Arg1:T75 Arg2:T73
-R35	Coreference-Link Arg1:T3 Arg2:T12
-R36	Coreference-Link Arg1:T29 Arg2:T55
+R35	Coreference-Link Arg1:T12 Arg2:T3	
+R37	Coreference-Link Arg1:T29 Arg2:T5	
+R36	Coreference-Link Arg1:T55 Arg2:T29	

@@ -60,7 +60,7 @@ E5	Action:T20 Acts-on:T22 Site:T26
 E6	Action:T27 Acts-on:T30 Site:E5 Product:T36
 E7	Action:T31 Product:T32 Site:T36
 E8	Action:T33 Acts-on:T35
-E9	Action:T37 Acts-on:T38 Site:T39
+E9	Action:T37 Acts-on:T38 Site:T39 Product:T46 Product2:T53
 E10	Action:T47 Acts-on:T46 Acts-on2:T49 Product:T45
 E11	Action:T52 Acts-on:T53
 R1	Setting Arg1:E1 Arg2:T4
@@ -88,6 +88,9 @@ R22	Mod-Link Arg1:T22 Arg2:T21
 R23	Measure Arg1:T26 Arg2:T25
 R24	Mod-Link Arg1:T26 Arg2:T24
 R25	Mod-Link Arg1:T26 Arg2:T23
-R26	Coreference-Link Arg1:T32 Arg2:T38
+R26	Coreference-Link Arg1:T38 Arg2:T32
 R27	Meronym Arg1:T43 Arg2:T38
 R28	Mod-Link Arg1:T45 Arg2:T44
+R29	Enables Arg1:E8 Arg2:E7	
+R30	Enables Arg1:E10 Arg2:E11	
+R31	Meronym Arg1:T53 Arg2:T46	

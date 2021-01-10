@@ -20,7 +20,7 @@ T19	Amount 348 357	8 volumes
 T20	Reagent 361 381	1X SubCell Buffer‐II
 T21	Amount 393 404	0.25mg / ml
 T22	Reagent 405 412	trypsin
-T23	Device 418 437	2ml centrifuge tube
+T23	Location 422 437	centrifuge tube
 T24	Action 440 448	Incubate
 T25	Location 452 455	ice
 T26	Time 460 469	3 minutes
@@ -79,7 +79,6 @@ T78	Reagent 1213 1219	tissue
 T79	Numerical 1225 1229	5‐15
 T80	Action 1230 1237	strokes
 T81	Reagent 1251 1264	tissue sample
-T82	Modifier 1268 1290	completely homogenized
 T83	Modifier 1301 1314	tight‐fitting
 T84	Device 1315 1321	pestle
 T85	Action 1324 1331	release
@@ -96,7 +95,7 @@ T95	Action 1496 1501	leave
 T96	Modifier 1502 1507	large
 T97	Size 1508 1514	chunks
 T98	Reagent 1518 1534	tissue fragments
-T99	Location 1542 1553	homogenizer
+T99	Device 1542 1553	homogenizer
 T100	Action 1572 1582	Centrifuge
 T101	Reagent 1587 1593	lysate
 T102	Speed 1597 1603	700x g
@@ -126,11 +125,11 @@ T125	Action 2033 2039	stored
 T126	Location 2043 2046	ice
 T127	Modifier 2051 2056	up to
 T128	Time 2057 2065	48 hours
-E1	Action:T1 Acts-on:T3 Product:T9
-E2	Action:T5 Acts-on:E1
+E1	Action:T1 Acts-on:T3
+E2	Action:T5 Acts-on:E1 Product:T9
 E3	Action:T6 Acts-on:T9 Product:T15
 E4	Action:T14 Site:T12 Using:T13 Acts-on:T15 Product:T18
-E5	Action:T17 Acts-on:T18 Using:T20 Using2:T23
+E5	Action:T17 Acts-on:T18 Using:T20 Site:T23
 E6	Action:T24 Acts-on:E5 Site:T25 Product:T28
 E7	Action:T27 Acts-on:T28 Site:T30 Product:T32
 E8	Action:T31 Acts-on:T32 Using:T33
@@ -149,11 +148,11 @@ E20	Action:T77 Acts-on:T78 Product:T86
 E21	Action:T80 Count:T79
 E22	Action:T85 Using:T84 Acts-on:T86
 E23	Action:T88 Count:T87
-E24	Action:T89 Acts-on:E22 Product:T93
-E25	Action:T92 Acts-on:T93 Site:T94 Product:T101
+E24	Action:T89 Acts-on:E22 Product:T93 Site:T90
+E25	Action:T92 Acts-on:T93 Site:T94 Product:T101 Product2:T98
 E26	Action:T95 Acts-on:T98 Site:T99
-E27	Action:T100 Acts-on:T101 Product:T107
-E28	Action:T104 
+E27	Action:T100 Acts-on:T101
+E28	Action:T104 Acts-on:T105 Product:T107
 E29	Action:T106 Acts-on:T107 Site:T109
 E30	Action:T110 Acts-on:E29 Product:T114
 E31	Action:T113 Acts-on:T114 Site:T116 Product:T118
@@ -185,7 +184,6 @@ R22	Measure Arg1:T69 Arg2:T68
 R23	Mod-Link Arg1:T69 Arg2:T70
 R24	Mod-Link Arg1:T74 Arg2:T73
 R25	Mod-Link Arg1:T76 Arg2:T75
-R26	Mod-Link Arg1:T81 Arg2:T82
 R27	Mod-Link Arg1:E22 Arg2:T83
 R28	Mod-Link Arg1:T97 Arg2:T96
 R29	Measure Arg1:T98 Arg2:T97
@@ -197,3 +195,18 @@ R34	Setting Arg1:E30 Arg2:T112
 R35	Mod-Link Arg1:T116 Arg2:T115
 R36	Mod-Link Arg1:T120 Arg2:T119
 R37	Mod-Link Arg1:T128 Arg2:T127
+R38	Meronym Arg1:T22 Arg2:T20	
+T129	Amount 418 421	2ml
+R39	Measure Arg1:T23 Arg2:T129	
+R40	Enables Arg1:E21 Arg2:E20	
+T82	Action 1279 1290	homogenized
+E35	Action:T82 Acts-on:T81
+T130	Modifier 1268 1278	completely
+R26	Mod-Link Arg1:E35 Arg2:T130	
+R41	Enables Arg1:E35 Arg2:E20	
+R42	Coreference-Link Arg1:T81 Arg2:T78	
+R43	Or Arg1:E35 Arg2:E21	
+R44	Setting Arg1:E24 Arg2:T91	
+R45	Enables Arg1:E27 Arg2:E28	
+R46	Setting Arg1:E34 Arg2:T128	
+R47	Enables Arg1:E23 Arg2:E22	

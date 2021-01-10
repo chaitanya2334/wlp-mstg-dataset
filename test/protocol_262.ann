@@ -34,7 +34,7 @@ T33	Reagent 539 561	large tissue fragments
 T34	Action 570 581	sedimenting
 T35	Reagent 586 592	nuclei
 T36	Action 617 624	prepare
-T37	Reagent 629 646	Tube - ODIALYZER™
+T37	Location 629 646	Tube - ODIALYZER™
 T38	Action 649 654	Place
 T39	Seal 659 683	Tube - O - DIALYZER™ cap
 T40	Location 689 695	beaker
@@ -70,7 +70,7 @@ T69	Action 1136 1144	Incubate
 T70	Temperature 1148 1152	55°C
 T71	Time 1157 1168	2 - 4 hours
 T72	Method 1174 1190	periodic rocking
-T73	Action 1200 1206	vortex
+T73	Action 1193 1206	Do not vortex
 T74	Action 1239 1249	centrifuge
 T75	Location 1254 1258	tube
 T76	Time 1263 1273	20 seconds
@@ -78,8 +78,7 @@ T77	Speed 1277 1283	1,000g
 T78	Action 1286 1293	Replace
 T79	Seal 1298 1301	cap
 T80	Seal 1311 1323	dialysis cap
-T81	Action 1329 1332	not
-T82	Action 1333 1340	discard
+T82	Action 1326 1340	Do not discard
 T83	Seal 1345 1356	storage cap
 T84	Action 1403 1408	Place
 T85	Location 1413 1433	Tube - O - DIALYZER™
@@ -156,8 +155,8 @@ E8	Action:T32 Acts-on:T33
 E9	Action:T34 Acts-on:T35
 E10	Action:T36 Product:T37
 E11	Action:T38 Acts-on:T39 Site:T40
-E12	Action:T42 Acts-on:E11 Acts-on2:T40
-E13	Action:T44 Acts-on:T45 Using:T46 Product:T50
+E12	Action:T42 Acts-on:E11 Acts-on2:T40 Product:T45
+E13	Action:T44 Acts-on:T45 Using:T46
 E14	Action:T48 Using:T47 Acts-on:T49 Site:T50 Product:T53
 E15	Action:T51 Acts-on:T52 Site:T53
 E16	Action:T54 Acts-on:E15
@@ -166,28 +165,27 @@ E18	Action:T59 Acts-on:T60
 E19	Action:T61 Acts-on:E18 Site:T63
 E20	Action:T64 Site:E19 Acts-on:T66
 E21	Action:T67 Acts-on:E20 Using:T68
-E22	Action:T69 Acts-on:E21 Using:T72 Product:T75
-E23	Action:T73 
+E22	Action:T69 Acts-on:E21 Using:T72
+E23	Action:T73 Acts-on:E22 Product:T75
 E24	Action:T74 Acts-on:T75 Product:T79
-E25	Action:T78 Acts-on:T79 Using:T80 Product:T85
-E26	Action:T81 
+E25	Action:T78 Acts-on:T79 Using:T80 Product:T85 Product2:T83
 E27	Action:T82 Acts-on:T83 Product:T128
 E28	Action:T84 Acts-on:T85 Site:T87
 E29	Action:T88 Acts-on:E28
 E30	Action:T91 Acts-on:T92 Site:T93 Product:T95
 E31	Action:T94 Acts-on:T95 Site:T97 Using:T98
-E32	Action:T99 Acts-on:E31 Acts-on2:T102 Product:T109
+E32	Action:T99 Acts-on:E31 Acts-on2:T102 Product:T109 Product2:T107
 E33	Action:T106 Acts-on:T107
-E34	Action:T108 Acts-on:T109
-E35	Action:T111 Acts-on:T110 Site:T112 Using:T113
+E34	Action:T108 Acts-on:T109 Product:T110
+E35	Action:T111 Acts-on:T110 Site:T112 Using:T113 Using2:T114 Product:T120 Product2:T119
 E36	Action:T115 Product:T116 Using:T117
 E37	Action:T118 Acts-on:T119 Site:T121 Product:T123
 E38	Action:T122 Acts-on:T123 Product:T127
 E39	Action:T126 Acts-on:T127 Using:T128
-E40	Action:T129 Acts-on:T131 Site:T132
+E40	Action:T129 Acts-on:T131 Site:T132 Product:T136 Product2:T138
 E41	Action:T134 Acts-on:T136
-E42	Action:T135 
-E43	Action:T137 Acts-on:T138
+E42	Action:T135 Acts-on:T136
+E43	Action:T137 Acts-on:T138 Product:T141
 E44	Action:T140 Acts-on:T141 Product:T143
 E45	Action:T142 Acts-on:T143 Site:T144
 E46	Action:T145 Acts-on:T147
@@ -215,7 +213,6 @@ R21	Meronym Arg1:T35 Arg2:T29
 R22	Overlaps Arg1:E10 Arg2:E7
 R24	Meronym Arg1:T41 Arg2:T40
 R26	Setting Arg1:E12 Arg2:T43
-R27	Enables Arg1:E13 Arg2:E10
 R28	Setting Arg1:E16 Arg2:T55
 R29	Setting Arg1:E16 Arg2:T56
 R30	Enables Arg1:E16 Arg2:E17
@@ -246,3 +243,10 @@ R54	Enables Arg1:E41 Arg2:E43
 R55	Mod-Link Arg1:E44 Arg2:T139
 R56	Enables Arg1:E45 Arg2:E46
 R57	Mod-Link Arg1:T147 Arg2:T146
+R23	Measure Arg1:T66 Arg2:T65	
+R25	Meronym Arg1:T109 Arg2:T107	
+R58	Meronym Arg1:T138 Arg2:T136	
+R27	Coreference-Link Arg1:T46 Arg2:T41	
+R59	Enables Arg1:E13 Arg2:E10	
+R60	Coreference-Link Arg1:T50 Arg2:T37	
+R61	Coreference-Link Arg1:T121 Arg2:T116	

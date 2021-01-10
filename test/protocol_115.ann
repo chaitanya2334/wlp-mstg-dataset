@@ -131,27 +131,27 @@ E3	Action:T9 Acts-on:T10 Site:T11 Product:T13
 E4	Action:T12 Acts-on:T13 Site:T14 Product:T22
 E5	Action:T17 Acts-on:T16
 E6	Action:T20 Acts-on:T18
-E7	Action:T21 Acts-on:T22 Site:T23
+E7	Action:T21 Acts-on:T22 Site:T23 Product:T24
 E8	Action:T25 Acts-on:T24 Site:T26
 E9	Action:T27 
 E10	Action:T29 Acts-on:T30 Product:T34
 E11	Action:T31 Acts-on:T33 Site:T34
 E12	Action:T35 Acts-on:E11
-E13	Action:T36 Product:T49
-E14	Action:T37 Acts-on:T38 Site:T39 Product:T44
-E15	Action:T40 Acts-on:E14
-E16	Action:T42 Acts-on:T43 Site:T44
+E13	Action:T36 Product:T49 Product2:T50
+E14	Action:T37 Acts-on:T38 Site:T39
+E15	Action:T40 Acts-on:E14 Product:T44
+E16	Action:T42 Acts-on:T43 Site:T44 Product:T46
 E17	Action:T47 Using:T45 Acts-on:T46 Product:T51
-E18	Action:T48 Acts-on:T49 Site:T51
-E19	Action:T53 Acts-on:T52
+E18	Action:T48 Acts-on:T49 Site:T51 Product:T52
+E19	Action:T53 Acts-on:T52 Product:T58
 E20	Action:T56 Product:T55
-E21	Action:T57 Acts-on:T58 Product:T63 Site:E19
+E21	Action:T57 Acts-on:T58 Product:T63 Acts-on2:T55
 E22	Action:T60 Acts-on:T61 Product:T63
 E23	Action:T62 Acts-on:T63 Site:T64 Product:T69
 E24	Action:T66 Acts-on:T65 Site:T67 Product:T69
 E25	Action:T68 Acts-on:T69 Site:T70 Product:T77
 E26	Action:T71 Acts-on:T73
-E27	Action:T74 Acts-on:T76
+E27	Action:T74 Acts-on:T76 Product:T88
 E29	Action:T80 Site:T81 Product:T88 Product2:T79
 E30	Action:T83 Acts-on:T86 Site:T88
 E31	Action:T89 Acts-on:T90 Site:T93
@@ -174,7 +174,7 @@ R4	Coreference-Link Arg1:T10 Arg2:T8
 R5	Setting Arg1:E4 Arg2:T15
 R6	Mod-Link Arg1:E6 Arg2:T19
 R8	Mod-Link Arg1:E10 Arg2:T28
-R9	Coreference-Link Arg1:T30 Arg2:E9
+R9	Coreference-Link Arg1:T30 Arg2:T22
 R10	Measure Arg1:T33 Arg2:T32
 R11	Mod-Link Arg1:E15 Arg2:T41
 R13	Meronym Arg1:T49 Arg2:T50
@@ -205,10 +205,9 @@ R36	Or Arg1:T15 Arg2:E6
 R37	Enables Arg1:E8 Arg2:E9	
 R39	Enables Arg1:E12 Arg2:E13	
 T130	Action 456 472	not to introduce
-E44	Action:T130 Acts-on:T131
+E44	Action:T130 Acts-on:T131 Product:T49 Product2:T50
 T131	Reagent 473 480	bubbles
 R40	Overlaps Arg1:E13 Arg2:E44	
-R12	Coreference-Link Arg1:T46 Arg2:E16	
 R41	Or Arg1:E19 Arg2:E20	
 R42	Overlaps Arg1:E21 Arg2:E22	
 R43	Enables Arg1:E41 Arg2:E42	
@@ -219,5 +218,7 @@ R47	Coreference-Link Arg1:T90 Arg2:T86
 R48	Coreference-Link Arg1:T91 Arg2:T87	
 R49	Or Arg1:E36 Arg2:E37	
 R50	Overlaps Arg1:E23 Arg2:E24	
-R7	Coreference-Link Arg1:T24 Arg2:E7	
 R38	Enables Arg1:E9 Arg2:E10	
+R7	Coreference-Link Arg1:T46 Arg2:T43	
+R12	Coreference-Link Arg1:T24 Arg2:T22	
+R51	Meronym Arg1:T61 Arg2:T58	

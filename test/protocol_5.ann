@@ -68,7 +68,7 @@ T67	Action 1097 1105	repeated
 T68	Reagent 1116 1136	putative lytic agent
 E1	Action:T1 Acts-on:T4 Using:T5 Product:T7
 E2	Action:T6 Acts-on:T7 Using:T10 Product:T12 Product2:T30
-E3	Action:T11 Acts-on:T12 Site:T15 Product:T21
+E3	Action:T11 Acts-on:T12 Site:T15 Product:T21 Site2:T18
 E4	Action:T19 Acts-on:T20 Site:T21 Product:T25
 E5	Action:T22 Acts-on:T23
 E6	Action:T24 Product:T37 Acts-on2:T25 Using:T28

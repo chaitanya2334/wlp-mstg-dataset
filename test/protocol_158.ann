@@ -143,3 +143,5 @@ R7	Enables Arg1:E8 Arg2:E7
 R35	Coreference-Link Arg1:T46 Arg2:T39	
 R36	Overlaps Arg1:E17 Arg2:E18	
 R37	Enables Arg1:E20 Arg2:E21	
+R38	Of-Type Arg1:T82 Arg2:T83	
+R39	Of-Type Arg1:T81 Arg2:T83	

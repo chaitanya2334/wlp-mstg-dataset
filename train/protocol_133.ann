@@ -273,7 +273,6 @@ R39	Measure Arg1:T151 Arg2:T150
 R40	Mod-Link Arg1:E42 Arg2:T153
 R41	Mod-Link Arg1:E42 Arg2:T154
 R42	Setting Arg1:E43 Arg2:T156
-R43	Setting Arg1:T157 Arg2:T158
 R44	Setting Arg1:E43 Arg2:T158
 R45	Setting Arg1:E44 Arg2:T160
 R46	Setting Arg1:E44 Arg2:T161
@@ -300,3 +299,4 @@ R66	Setting Arg1:E36 Arg2:T135
 R67	Setting Arg1:E36 Arg2:T136
 R68	Measure Arg1:T178 Arg2:T177
 R69	Measure Arg1:T144 Arg2:T143
+R43	Mod-Link Arg1:T158 Arg2:T157	

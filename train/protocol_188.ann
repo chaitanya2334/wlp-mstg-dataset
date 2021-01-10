@@ -116,7 +116,7 @@ T115	Method 1694 1711	isotopic analysis
 E1	Action:T1 Acts-on:T2 Site:T3 Product:T7 Product2:T8
 E2	Action:T4 Acts-on:T6 Site:T7 Site2:T8 Product:T11
 E3	Action:T9 Acts-on:T10 Site:T11
-E4	Action:T14 Acts-on:T13
+E4	Action:T14 Acts-on:T13 Product:T18
 E5	Action:T17 Acts-on:T18
 E6	Action:T20 Acts-on:T22
 E7	Action:T24 Acts-on:T25

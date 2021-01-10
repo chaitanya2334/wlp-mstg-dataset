@@ -63,12 +63,12 @@ E7	Action:T21 Acts-on:T22 Site:T23 Product:T26
 E8	Action:T25 Acts-on:T26
 E9	Action:T28 Acts-on:T30 Product:T32
 E10	Action:T31 Acts-on:T32 Product:T35
-E11	Action:T33 Acts-on:T34
+E11	Action:T33 Acts-on:T34 Product:T39 Product2:T43
 E12	Action:T36 Product:T37 Product2:T45 Product3:T46
 E13	Action:T38 Acts-on:T39
 E14	Action:T42 Acts-on:T43
 E15	Action:T44 Acts-on:T45 Acts-on2:T46
-E16	Action:T47 Site:T49 Acts-on:E15 Product:T51
+E16	Action:T47 Site:T49 Acts-on:E15 Product:T51 Product2:T55
 E17	Action:T50 Acts-on:T51
 E18	Action:T54 Acts-on:T55
 R1	Measure Arg1:T7 Arg2:T6

@@ -90,16 +90,16 @@ E2	Action:T7 Measure-Type-Link:T8 Using:T9 Acts-on:E1
 E3	Action:T11 Measure-Type-Link:T12 Acts-on:T14 Acts-on2:E2 Product:T32
 E4	Action:T20 Acts-on:T15 Using:T21 Product:T25
 E5	Action:T23 Acts-on:T25 Site:T27
-E6	Action:T28 Acts-on:E5 Product:T37
+E6	Action:T28 Acts-on:E5 Product:T37 Product2:T35
 E7	Action:T33 Acts-on:T32 Site:T35 Product:T38
 E8	Action:T39 Acts-on:T38
 E9	Action:T41 Site:T42 Acts-on:E8 Product:T45
-E10	Action:T44 Acts-on:T45 Site:E11 Product:T50
+E10	Action:T44 Acts-on:T45 Site:E11 Product:T50 Product2:T51
 E11	Action:T48 Acts-on:T47 Site:T49
-E12	Action:T52 Acts-on:T50 Product:T61 Product2:T80
+E12	Action:T52 Acts-on:T50 Product:T61 Product3:T60
 E13	Action:T53 Acts-on:T54
 E14	Action:T58 Product:T57 Acts-on:E13
-E15	Action:T59 Site:T60 Acts-on:T57 Product:T81
+E15	Action:T59 Site:T60 Acts-on:T57 Product:T80
 E16	Action:T78 Acts-on:T64 Using:T79 Site:T80 Product:T81
 E17	Action:T82 Acts-on:T81 Product:T87
 E18	Action:T85 Acts-on:T87
@@ -144,8 +144,7 @@ R38	Mod-Link Arg1:E6 Arg2:T29
 R39	Setting Arg1:E6 Arg2:T30
 R40	Measure Arg1:T73 Arg2:T74
 R41	Or Arg1:T64 Arg2:T77
-R42	Meronym Arg1:T1 Arg2:T4
-R43	Coreference-Link Arg1:T14 Arg2:T6
-R44	Coreference-Link Arg1:T56 Arg2:T77
+R44	Coreference-Link Arg1:T77 Arg2:T56
 R45	Meronym Arg1:T84 Arg2:T87
 R46	Coreference-Link Arg1:T15 Arg2:T17	
+R36	Coreference-Link Arg1:T14 Arg2:T6	

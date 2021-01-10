@@ -71,3 +71,4 @@ R18	Measure Arg1:T36 Arg2:T35
 R19	Coreference-Link Arg1:T37 Arg2:T5
 R20	Mod-Link Arg1:E8 Arg2:T38
 R21	Mod-Link Arg1:E9 Arg2:T43
+R22	Mod-Link Arg1:E3 Arg2:T17	

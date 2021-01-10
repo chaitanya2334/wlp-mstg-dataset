@@ -168,3 +168,5 @@ R51	Meronym Arg1:T95 Arg2:T93
 R52	Meronym Arg1:T97 Arg2:T93
 R53	Coreference-Link Arg1:T86 Arg2:T26
 R54	Coreference-Link Arg1:T93 Arg2:T37
+R55	Measure Arg1:T95 Arg2:T94	
+R56	Measure Arg1:T97 Arg2:T96	

@@ -64,9 +64,9 @@ T63	Action 1066 1075	calculate
 T64	Reagent 1093 1096	DNA
 E1	Action:T1 Acts-on:T2 Site:T4 Product:T70
 E2	Action:T5 Product:T6 Acts-on:T8 Using:T9 Site:T66
-E3	Action:T10 Acts-on:T11 Product:T12 Acts-on2:E18 Product3:T23
+E3	Action:T10 Acts-on:T11 Product:T12 Acts-on2:E18 Product2:T16
 E4	Action:T20 Product:T21 Acts-on:T23
-E5	Action:T24 Measure-Type-Link:T25 Product:T26 Acts-on:T28 Site:T30 Product2:T39
+E5	Action:T24 Measure-Type-Link:T25 Product:T26 Acts-on:T28 Site:T30
 E6	Action:T31 Acts-on:T33 Site:T34 Product:T37 Product2:T40
 E7	Action:T35 Acts-on:T36 Site:T37 Product:T49
 E8	Action:T38 Acts-on:T39 Site:T40 Product:T49
@@ -99,8 +99,8 @@ E18	Action:T67 Acts-on:T68 Acts-on2:T69 Acts-on3:T70 Using:T6
 T68	Reagent 231 240	standards
 T69	Reagent 243 250	samples
 T70	Reagent 255 264	PicoGreen
-R3	Coreference-Link Arg1:T15 Arg2:T12	
-R4	Coreference-Link Arg1:T19 Arg2:T16	
+R3	Meronym Arg1:T15 Arg2:T12	
+R4	Meronym Arg1:T19 Arg2:T16	
 R19	Coreference-Link Arg1:T30 Arg2:T6	
 R20	Coreference-Link Arg1:T33 Arg2:T6	
 R21	Coreference-Link Arg1:T44 Arg2:T6	
@@ -129,3 +129,7 @@ R28	Meronym Arg1:T64 Arg2:T82
 R29	Or Arg1:T12 Arg2:T16	
 R5	Measure Arg1:T12 Arg2:T13	
 R7	Measure Arg1:T16 Arg2:T17	
+R30	Coreference-Link Arg1:T39 Arg2:T26	
+R31	Coreference-Link Arg1:T36 Arg2:T21	
+R32	Coreference-Link Arg1:T23 Arg2:T12	
+R33	Coreference-Link Arg1:T23 Arg2:T16	

@@ -130,7 +130,7 @@ E9	Action:T43 Acts-on:T44 Site:T45 Product:T47
 E10	Action:T46 Acts-on:T47 Using:T49
 E11	Action:T50 Measure-Type-Link:T52 Acts-on:E10 Product:T54
 E12	Action:T53 Acts-on:T54 Site:T55
-E13	Action:T57 Using:T58 Acts-on:E12
+E13	Action:T57 Using:T58 Acts-on:E12 Product:T65
 E14	Action:T61 Product:T62
 E15	Action:T63 Acts-on:T65
 E16	Action:T66 Acts-on:T67 Using:T68

@@ -3,7 +3,7 @@ T2	Modifier 47 51	each
 T3	Reagent 52 56	salt
 T4	Modifier 57 67	completely
 T5	Action 75 81	adding
-T6	Mention 86 94	next one
+T6	Reagent 86 94	next one
 T7	Action 97 105	Dispense
 T8	Size 111 117	500 ml
 T9	Modifier 118 131	acid - washed
@@ -115,12 +115,12 @@ T114	Location 1359 1365	bottle
 T115	Reagent 1369 1391	Turk's Island Salt Mix
 T116	Reagent 1407 1419	final medium
 E1	Action:T1 Acts-on:T3
-E2	Action:T5 Acts-on:T6 Site:E1
-E3	Action:T7 Site:T10 Acts-on:E2
-E4	Action:T11 Acts-on:E3 Product:T14
+E2	Action:T5 Acts-on:T6
+E3	Action:T7 Site:T10 Acts-on:E2 Acts-on2:E1
+E4	Action:T11 Acts-on:E3 Product:T14 Product2:T33 Product3:T53 Product4:T62 Product5:T77
 E5	Action:T13 Acts-on:T14 Using:T17 Product:T20
 E6	Action:T18 Acts-on:T20 Using:T22 Site:T26
-E7	Action:T30 Acts-on:E6 Product:T53
+E7	Action:T30 Acts-on:E6
 E8	Action:T32 Acts-on:T33 Using:T36 Product:T39
 E9	Action:T37 Acts-on:T39 Using:T41 Site:T45
 E10	Action:T49 Acts-on:E9 Product:T55
@@ -132,9 +132,9 @@ E15	Action:T72 Acts-on:T73 Count:T74
 E16	Action:T75 Acts-on:T77 Using:T78 Product:T80
 E17	Action:T79 Acts-on:T80 Site:T82
 E18	Action:T83 Count:T84 Acts-on:T82
-E19	Action:T86 Site:E18 Acts-on:T89 Acts-on2:T90 Acts-on3:T91 Acts-on4:T92 Acts-on5:T93 Acts-on6:T94
-E20	Action:T87 Acts-on:E19
-E21	Action:T95 Measure-Type-Link:T96 Using:T98 Acts-on:E20
+E19	Action:T86 Acts-on:T89 Acts-on2:T90 Acts-on3:T91 Acts-on4:T92 Acts-on5:T93 Acts-on6:T94 Site:E17
+E20	Action:T87 Acts-on:T89 Acts-on2:T90 Acts-on3:T91 Acts-on4:T92 Acts-on5:T93 Acts-on6:T94
+E21	Action:T95 Measure-Type-Link:T96 Using:T98 Acts-on:E20 Acts-on2:E19
 E22	Action:T99 Using:T101 Site:T104 Acts-on:E21 Product:T108
 E23	Action:T106 Acts-on:T108 Product:T112
 E24	Action:T110 Acts-on:T112 Site:T114 Product:T116
@@ -193,11 +193,8 @@ R52	Or Arg1:T45 Arg2:T48
 R53	Mod-Link Arg1:T82 Arg2:T81
 R54	Measure Arg1:T101 Arg2:T100
 R55	Meronym Arg1:T104 Arg2:T105
-R56	Meronym Arg1:T6 Arg2:T3
-R57	Coreference-Link Arg1:T29 Arg2:T10
+R56	Coreference-Link Arg1:T6 Arg2:T3
 R58	Coreference-Link Arg1:T36 Arg2:T17
-R59	Coreference-Link Arg1:T45 Arg2:T26
-R60	Coreference-Link Arg1:T48 Arg2:T29
 R61	Enables Arg1:E15 Arg2:E14
 R62	Meronym Arg1:T71 Arg2:T73
 R63	Enables Arg1:E18 Arg2:E17
@@ -206,3 +203,5 @@ R65	Coreference-Link Arg1:T78 Arg2:T63
 R66	Coreference-Link Arg1:T41 Arg2:T22
 R67	Coreference-Link Arg1:T101 Arg2:T41
 R68	Coreference-Link Arg1:T114 Arg2:T59
+R69	Overlaps Arg1:E2 Arg2:E1	
+R57	Overlaps Arg1:E20 Arg2:E19	

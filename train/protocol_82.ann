@@ -127,7 +127,7 @@ E9	Action:T39 Acts-on:T40 Using:T41 Site:T43 Product:T45 Product2:T48
 E10	Action:T44 Acts-on:T45 Site:T46
 E11	Action:T47 Acts-on:T48 Product:T52
 E12	Action:T53 Acts-on:T52 Product:T58
-E13	Action:T56 
+E13	Action:T56 Acts-on:T58
 E14	Action:T59 Acts-on:T63 Site:E13
 E15	Action:T65 Product:T66 Acts-on:E14
 E16	Action:T67 Acts-on:T68 Acts-on2:E14
@@ -152,7 +152,7 @@ R4	Measure Arg1:T12 Arg2:T11
 R5	Measure Arg1:T12 Arg2:T14
 R6	Mod-Link Arg1:T14 Arg2:T13
 R7	Coreference-Link Arg1:T7 Arg2:T10
-R8	Coreference-Link Arg1:T8 Arg2:T12
+R8	Coreference-Link Arg1:T12 Arg2:T8
 R9	Setting Arg1:E3 Arg2:T17
 R10	Setting Arg1:E3 Arg2:T18
 R11	Measure Arg1:T21 Arg2:T20

@@ -57,7 +57,7 @@ T56	Amount 981 987	0.5 ml
 T57	Modifier 993 997	each
 T58	Location 998 1007	eppendorf
 T59	Action 1074 1079	Rinse
-T60	Device 1084 1099	Eppendorf ( s )
+T60	Location 1084 1099	Eppendorf ( s )
 T61	Device 1104 1112	strainer
 T62	Amount 1118 1124	0.5 ml
 T63	Reagent 1128 1143	Milton solution
@@ -246,36 +246,36 @@ T245	Mention 4856 4860	them
 T246	Modifier 4864 4872	at least
 T247	Numerical 4873 4874	3
 T248	Location 4875 4881	plates
-E1	Action:T1 Acts-on:T3 Site:T4
-E2	Action:T2 Acts-on:T3 Site:T4
-E3	Action:T5 Product:T6 Product2:T8
-E4	Action:T19 Acts-on:T21
-E5	Action:T23 Measure-Type-Link:T24 Acts-on:T25 Site:T26
-E6	Action:T27 Acts-on:T28 Site:T29 Site2:E3
-E7	Action:T30 Acts-on:T32 Site:T34 Site2:E3
-E8	Action:T36 Using:T35 Acts-on:T37 Acts-on2:E5
-E9	Action:T38 Acts-on:T39 Product:T43
-E10	Action:T41 Acts-on:T43
+E1	Action:T1 Acts-on:T3 Site:T4 Product:T18
+E2	Action:T2 Acts-on:T3 Site:T4 Product:T18
+E3	Action:T5 Product:T6 Product2:T8 Product3:T26
+E4	Action:T19 Acts-on:T21 Product:T25
+E5	Action:T23 Measure-Type-Link:T24 Acts-on:T25 Product:T28
+E6	Action:T27 Acts-on:T28 Site:T29 Product:T34
+E7	Action:T30 Acts-on:T32 Site:T34 Product:T37
+E8	Action:T36 Using:T35 Acts-on:T37 Product:T39
+E9	Action:T38 Acts-on:T39 Product:T43 Product2:T51 Product3:T52
+E10	Action:T41 Acts-on:T43 Product:T60 Product2:T61
 E11	Action:T44 Acts-on:T46 Site:T48 Product:T50
 E12	Action:T49 Site:T50 Acts-on:T51
-E13	Action:T55 Acts-on:T58 Acts-on2:E12 Product:T60 Product2:T61
-E14	Action:T59 Acts-on:T60 Acts-on2:T61 Using:T63 Acts-on3:T66 Product:T68
-E15	Action:T67 Acts-on:T68 Using:T69 Site:T70
+E13	Action:T55 Acts-on:T58 Acts-on2:E12
+E14	Action:T59 Acts-on:T60 Acts-on2:T61 Using:T63 Product:T68 Using2:T66
+E15	Action:T67 Acts-on:T68 Using:T69 Product:T71
 E16	Action:T72 Acts-on:T71
-E17	Action:T74 Acts-on:E16 Product:T78 Product2:T80
-E18	Action:T77 Acts-on:T78
-E19	Action:T79 Acts-on:T80 Site:T82 Using:T85 Product:T89
+E17	Action:T74 Acts-on:E16 Product:T78
+E18	Action:T77 Acts-on:T78 Product:T80
+E19	Action:T79 Acts-on:T80 Site:T82 Product:T89
 E20	Action:T86 Site:T90 Acts-on:T89
 E21	Action:T91 Using:T92 Acts-on:E20 Product:T98
 E22	Action:T93 Using:T94 Acts-on:T98
 E23	Action:T99 Acts-on:T100 Acts-on2:T101
-E24	Action:T102 Acts-on:T104 Site:T107 Site2:T108 Site3:E23
-E25	Action:T109 Acts-on:E24 Site:T112 Using:T114 Product:T116
+E24	Action:T102 Acts-on:T104 Site:T107 Site2:T108
+E25	Action:T109 Site:T112 Using:T114 Product:T116 Acts-on:E23
 E26	Action:T115 Acts-on:T116
 E27	Action:T118 Acts-on:T120 Site:E26
 E28	Action:T121 Acts-on:E27 Product:T126
 E29	Action:T125 Acts-on:T126
-E30	Action:T127 Acts-on:E29 Site:T129
+E30	Action:T127 Acts-on:T129 Site:T126
 E31	Action:T130 Acts-on:E30
 E32	Action:T134 Acts-on:T135 Acts-on2:E31 Product:T138
 E33	Action:T136 Acts-on:T138 Site:T139
@@ -331,12 +331,7 @@ R26	Measure Arg1:T142 Arg2:T141
 R27	Measure Arg1:T144 Arg2:T143
 R28	Meronym Arg1:T16 Arg2:T8
 R29	Mod-Link Arg1:E4 Arg2:T22
-R30	Coreference-Link Arg1:T18 Arg2:T3
-R31	Coreference-Link Arg1:T26 Arg2:T18
-R32	Coreference-Link Arg1:T25 Arg2:T21
-R33	Coreference-Link Arg1:T28 Arg2:T26
 R34	Mod-Link Arg1:E9 Arg2:T40
-R35	Meronym Arg1:T71 Arg2:T70
 R36	Setting Arg1:E16 Arg2:T73
 R37	Setting Arg1:E17 Arg2:T75
 R38	Setting Arg1:E17 Arg2:T76
@@ -415,3 +410,13 @@ R110	Measure Arg1:T240 Arg2:T239
 R111	Coreference-Link Arg1:T245 Arg2:T242
 R112	Mod-Link Arg1:T248 Arg2:T246
 R113	Measure Arg1:T248 Arg2:T247
+R114	Overlaps Arg1:E1 Arg2:E2	
+R30	Meronym Arg1:T25 Arg2:T26	
+R31	Coreference-Link Arg1:T32 Arg2:T11	
+R32	Enables Arg1:E13 Arg2:E10	
+R33	Coreference-Link Arg1:T63 Arg2:T32	
+R115	Meronym Arg1:T69 Arg2:T70	
+R35	Coreference-Link Arg1:T71 Arg2:T70	
+R116	Meronym Arg1:T85 Arg2:T82	
+R117	Enables Arg1:E24 Arg2:E23	
+R118	Enables Arg1:E30 Arg2:E29	

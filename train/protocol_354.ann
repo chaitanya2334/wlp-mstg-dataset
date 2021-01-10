@@ -140,7 +140,7 @@ T139	Device 2412 2418	magnet
 T140	Time 2423 2432	5 minutes
 E1	Action:T1 Acts-on:T3
 E2	Action:T2 Acts-on:E1 Product:T4
-E3	Action:T5 Acts-on:T4
+E3	Action:T5 Acts-on:T4 Product:T7 Product2:T8 Product3:T10
 E4	Action:T6 Acts-on:T7 Site:T8 Product:T25
 E5	Action:T9 Acts-on:T10
 E6	Action:T11 Acts-on:T12
@@ -180,14 +180,14 @@ E39	Action:T104 Acts-on:E35
 E40	Action:T105 Measure-Type-Link:T106 Measure-Type-Link2:T107
 E41	Action:T108 Acts-on:T109 Site:T110 Product:T112 Product2:T117
 E42	Action:T111 Acts-on:T112 Site:T114 Product:T116
-E43	Action:T115 Acts-on:T116 Site:T117 Product:T120 Product2:T139
+E43	Action:T115 Acts-on:T116 Site:T117 Product:T120
 E44	Action:T119 Acts-on:T120 Site:T121
 E45	Action:T122 Acts-on:E44 Product:T124
 E46	Action:T123 Acts-on:T124 Product:T130
 E47	Action:T125 Product:T126
 E48	Action:T127 Acts-on:T128
 E49	Action:T129 Acts-on:T130 Product:T126
-E50	Action:T137 Acts-on:T138 Site:T139 Product:T3
+E50	Action:T137 Acts-on:T138 Site:T139
 R1	Setting Arg1:E28 Arg2:T76
 R2	Meronym Arg1:T128 Arg2:T130
 R3	Measure Arg1:T15 Arg2:T17
@@ -220,7 +220,6 @@ R29	Setting Arg1:E43 Arg2:T118
 R30	Measure Arg1:T132 Arg2:T134
 R31	Meronym Arg1:T132 Arg2:T133
 R32	Mod-Link Arg1:T132 Arg2:T131
-R33	Coreference-Link Arg1:T138 Arg2:T133
 R34	Setting Arg1:E50 Arg2:T140
 R35	Meronym Arg1:T7 Arg2:T8
 R36	Enables Arg1:E4 Arg2:E5
@@ -246,4 +245,7 @@ R55	Enables Arg1:E49 Arg2:E48
 R56	Enables Arg1:E48 Arg2:E47
 R57	Meronym Arg1:T135 Arg2:T132
 R58	Meronym Arg1:T136 Arg2:T132
-R59	Coreference-Link Arg1:T126 Arg2:T132
+R59	Coreference-Link Arg1:T132 Arg2:T126
+T141	Action 2269 2273	Take
+E51	Action:T141 Acts-on:T132 Product:T138
+R33	Coreference-Link Arg1:T139 Arg2:T117	

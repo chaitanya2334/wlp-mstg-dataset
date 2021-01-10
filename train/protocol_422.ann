@@ -79,9 +79,9 @@ T78	Concentration 1394 1405	500 ng / mL
 T79	Reagent 1406 1415	ionomycin
 T80	Reagent 1437 1448	Brefeldin A
 T81	Time 1514 1525	4 - 5 hours
-E1	Action:T1 Product:T2 Acts-on:T3 Product2:T5
+E1	Action:T1 Product:T2 Acts-on:T3
 E2	Action:T4 Acts-on:T5 Using:T8 Product:T9
-E3	Action:T12 Acts-on:T13 Site:T14
+E3	Action:T12 Acts-on:T13 Site:T14 Product:T48
 E4	Action:T16 Acts-on:T17 Using:T15 Product:T48
 E5	Action:T18 Using:T21 Acts-on:T20
 E6	Action:T23 Acts-on:E5 Product:T32
@@ -106,7 +106,7 @@ R7	Setting Arg1:E16 Arg2:T73
 R8	Measure Arg1:T77 Arg2:T76
 R9	Measure Arg1:T79 Arg2:T78
 R10	Setting Arg1:E17 Arg2:T81
-R11	Coreference-Link Arg1:T9 Arg2:T13
+R11	Coreference-Link Arg1:T13 Arg2:T9
 R12	Meronym Arg1:T17 Arg2:T13
 R13	Coreference-Link Arg1:T36 Arg2:T40
 R14	Coreference-Link Arg1:T40 Arg2:T44
@@ -134,3 +134,4 @@ R34	Measure Arg1:T70 Arg2:T82
 R35	Measure Arg1:T69 Arg2:T67	
 R36	Meronym Arg1:T32 Arg2:T31	
 R37	Overlaps Arg1:E4 Arg2:E3	
+R38	Coreference-Link Arg1:T5 Arg2:T2	

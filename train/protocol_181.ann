@@ -128,8 +128,8 @@ E2	Action:T4 Acts-on:T5 Product:T8
 E3	Action:T7 Acts-on:T8 Product:T10
 E4	Action:T9 Acts-on:T10
 E5	Action:T12 Acts-on:T14 Site:E4 Product:T42
-E6	Action:T18 Acts-on:T20 Product:T23 Product2:T25
-E7	Action:T22 Acts-on:T23
+E6	Action:T18 Acts-on:T20 Product:T23
+E7	Action:T22 Acts-on:T23 Product:T25
 E8	Action:T24 Acts-on:T25
 E9	Action:T27 Acts-on:T29 Site:E8 Product:T42
 E10	Action:T36 Acts-on:T33 Product:T38
@@ -147,7 +147,7 @@ E21	Action:T77 Acts-on:T79 Site:E20
 E22	Action:T81 Acts-on:T83 Site:E21
 E23	Action:T85 Acts-on:T87 Site:E22
 E24	Action:T89 Acts-on:T91 Site:E23 Product:T94
-E25	Action:T93 Acts-on:T94 Site:T95
+E25	Action:T93 Acts-on:T94 Site:T95 Product:T100 Product2:T102 Product3:T103
 E26	Action:T98 Acts-on:T100 Product:T106
 E27	Action:T104 Using:T105 Acts-on:T106 Product:T108
 E28	Action:T107 Acts-on:T108 Site:T109 Product:T112

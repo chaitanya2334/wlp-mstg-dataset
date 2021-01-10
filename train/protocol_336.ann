@@ -153,7 +153,7 @@ R33	Mod-Link Arg1:T60 Arg2:T59
 R34	Meronym Arg1:T65 Arg2:T62
 R35	Meronym Arg1:T66 Arg2:T62
 R36	Enables Arg1:E15 Arg2:E16
-R37	Coreference-Link Arg1:T60 Arg2:T70
+R37	Coreference-Link Arg1:T70 Arg2:T60
 R38	Mod-Link Arg1:T70 Arg2:T69
 R39	Overlaps Arg1:E22 Arg2:E21
-R40	Coreference-Link Arg1:T83 Arg2:T88
+R40	Coreference-Link Arg1:T88 Arg2:T83

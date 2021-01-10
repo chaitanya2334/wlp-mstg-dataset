@@ -42,7 +42,7 @@ T41	Reagent 728 743	unknown samples
 E1	Action:T1 Acts-on:T2 Product:T14
 E2	Action:T4 Acts-on:T5 Product:T27
 E3	Action:T6 Acts-on:T7 Count:T8
-E4	Action:T9 Acts-on:T10
+E4	Action:T9 Acts-on:T10 Product:T27
 E5	Action:T11 Acts-on:T12 Site:T13 Product:T18 Product2:T19
 E6	Action:T15 Site:T20 Acts-on:T18 Acts-on2:T19 Product:T29
 E7	Action:T21 Product:T22
@@ -66,7 +66,7 @@ R11	Setting Arg1:E10 Arg2:T34
 R12	Setting Arg1:E11 Arg2:T37
 R13	Setting Arg1:E1 Arg2:T3
 R14	Enables Arg1:E3 Arg2:E2
-R15	Prevents Arg1:E2 Arg2:E4
-R16	Coreference-Link Arg1:T7 Arg2:T10
-R17	Coreference-Link Arg1:T13 Arg2:T24
+R16	Coreference-Link Arg1:T10 Arg2:T7
+R17	Coreference-Link Arg1:T24 Arg2:T13
 R18	Enables Arg1:E12 Arg2:E13
+R15	Overlaps Arg1:E4 Arg2:E2	

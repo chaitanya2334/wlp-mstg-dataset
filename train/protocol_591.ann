@@ -178,7 +178,7 @@ E29	Action:T95 Acts-on:T96 Product:T101
 E30	Action:T100 Acts-on:T101 Product:T105
 E31	Action:T103 Acts-on:E30
 E32	Action:T104 Acts-on:T105 Product:T107
-E33	Action:T106 Product:T112
+E33	Action:T106 Product:T112 Acts-on:T107
 E34	Action:T111 Acts-on:T112 Product:T116
 E35	Action:T114 Acts-on:E34
 E36	Action:T115 Acts-on:T116 Product:T121

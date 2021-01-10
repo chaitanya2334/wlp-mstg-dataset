@@ -110,7 +110,7 @@ T109	Reagent 1682 1695	PCR reactions
 E1	Action:T1 Acts-on:T3 Site:T5
 E2	Action:T6 Acts-on:T7
 E3	Action:T8 Acts-on:T10 Acts-on2:T11 Acts-on3:T13 Site:T14 Product:T28 Product2:T36
-E4	Action:T15 Product:T18 Product2:T19 Site:T16 Acts-on:E2
+E4	Action:T15 Product:T18 Product2:T19 Site:T16 Acts-on:E2 Acts-on2:E1
 E5	Action:T20 Acts-on:E3 Acts-on2:T19 Acts-on3:T18
 E6	Action:T22 Site:T23 Acts-on:E5 Product:T29
 E7	Action:T25 Acts-on:T28 Site:T29 Product:T33

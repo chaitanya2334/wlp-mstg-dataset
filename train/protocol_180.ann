@@ -125,7 +125,7 @@ T124	Action 1725 1735	Cover slip
 T125	Location 1736 1741	slide
 T126	Reagent 1748 1781	Permanent Aqueous Mounting Medium
 E1	Action:T1 Using:T2 Count:T4 Site:T6
-E2	Action:T7 Using:T9 Count:T11 Site:T13 Acts-on:E16
+E2	Action:T7 Using:T9 Count:T11 Site:T13 Acts-on2:E1
 E3	Action:T14 Using:T16 Site:T19 Acts-on:E2
 E4	Action:T20 Using:T22 Site:T25 Acts-on:E3
 E5	Action:T26 Using:T27 Count:T29 Site:T31 Acts-on:E4
@@ -156,7 +156,6 @@ E29	Action:T115 Acts-on:T116 Site:T117
 E30	Action:T119 Using:T122 Acts-on:E29 Product:T125
 E31	Action:T124 Acts-on:T125 Using:T126
 R1	Measure Arg1:T6 Arg2:T5
-R2	Setting Arg1:E16 Arg2:T3
 R3	Measure Arg1:T13 Arg2:T12
 R4	Measure Arg1:T9 Arg2:T8
 R5	Setting Arg1:E2 Arg2:T10
@@ -207,3 +206,4 @@ R49	Mod-Link Arg1:T113 Arg2:T112
 R50	Mod-Link Arg1:T122 Arg2:T121
 R51	Coreference-Link Arg1:T113 Arg2:T105
 R52	Coreference-Link Arg1:T122 Arg2:T113
+R2	Setting Arg1:E1 Arg2:T3	

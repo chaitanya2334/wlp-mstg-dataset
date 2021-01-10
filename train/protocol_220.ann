@@ -389,7 +389,7 @@ E33	Action:T129 Acts-on:T130 Using:T132 Product:T136
 E34	Action:T134 Acts-on:E32 Product:T136 Product2:T146
 E35	Action:T135 Acts-on:T136 Using:T138
 E36	Action:T140 Acts-on:T142 Site:T146
-E37	Action:T148 Site:T149 Acts-on:E36
+E37	Action:T148 Site:T149 Acts-on:E36 Product:T161 Product2:T160
 E38	Action:T152 Acts-on:T155 Site:T160
 E39	Action:T162 Site:T163 Product:T168
 E40	Action:T166 Acts-on:E39

@@ -657,5 +657,3 @@ E101	Action:T386 Acts-on:T385
 R170	Measure Arg1:T385 Arg2:T384	
 R171	Enables Arg1:E84 Arg2:E101	
 R172	Or Arg1:E87 Arg2:E91	
-T387	Action 2854 2862	contains
-E102	Action:T387 

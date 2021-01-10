@@ -76,19 +76,19 @@ E4	Action:T9 Site:T12 Acts-on:T8 Acts-on2:T7
 E5	Action:T13 Acts-on:T14 Site:T15
 E6	Action:T16 Acts-on:T17 Using:T19
 E7	Action:T20 Acts-on:E6
-E8	Action:T23 Acts-on:E18 Site:T25 Product:T28
+E8	Action:T23 Site:T25 Product:T28 Acts-on:E7
 E9	Action:T26 Measure-Type-Link:T29 Acts-on:T28
 E10	Action:T27 Acts-on:E9 Product:T35
 E11	Action:T31 Acts-on:T33 Site:T36 Product:T38
 E12	Action:T37 Acts-on:T38
-E13	Action:T39 Measure-Type-Link:T42
+E13	Action:T39 Measure-Type-Link:T42 Acts-on:T38
 E14	Action:T43 Acts-on:T45 Site:E12
 E15	Action:T46 Acts-on:E14
 E16	Action:T48 Site:T49 Acts-on:E15 Product:T52
 E17	Action:T51 Site:T54 Acts-on:T52 Product:T56
 E18	Action:T55 Acts-on:T56 Site:T57 Product:T60
 E19	Action:T59 Acts-on:T60 Product:T62
-E20	Action:T61 Acts-on:T62 Site:T63
+E20	Action:T61 Acts-on:T62 Site:T63 Product:T65
 E21	Action:T64 Acts-on:T65
 E22	Action:T66 Acts-on:E21 Using:T68
 E23	Action:T69 Measure-Type-Link:T70 Measure-Type-Link2:T71 Acts-on:T65
@@ -107,21 +107,19 @@ R12	Mod-Link Arg1:E15 Arg2:T47
 R13	Setting Arg1:E16 Arg2:T50
 R14	Measure Arg1:T54 Arg2:T53
 R15	Setting Arg1:E18 Arg2:T58
-R16	Meronym Arg1:T60 Arg2:T56
 R17	Mod-Link Arg1:E22 Arg2:T67
 R18	Meronym Arg1:T5 Arg2:T2
 R19	Enables Arg1:E2 Arg2:E1
 R21	Enables Arg1:E4 Arg2:E3
-R23	Coreference-Link Arg1:T2 Arg2:T7
+R23	Coreference-Link Arg1:T7 Arg2:T2
 R24	Coreference-Link Arg1:T14 Arg2:T8
-R26	Setting Arg1:E18 Arg2:T21
-R27	Setting Arg1:E18 Arg2:T22
 R28	Setting Arg1:E8 Arg2:T24
-R29	Coreference-Link Arg1:T8 Arg2:T25
+R29	Coreference-Link Arg1:T25 Arg2:T8
 R30	Enables Arg1:E13 Arg2:E12
-R31	Coreference-Link Arg1:T15 Arg2:T49
-R32	Coreference-Link Arg1:T25 Arg2:T54
-R33	Coreference-Link Arg1:E20 Arg2:T65
+R31	Coreference-Link Arg1:T49 Arg2:T15
+R32	Coreference-Link Arg1:T54 Arg2:T25
 R34	Overlaps Arg1:E23 Arg2:E22
 R20	Overlaps Arg1:E5 Arg2:E3	
 R22	Overlaps Arg1:E3 Arg2:E1	
+R25	Setting Arg1:E7 Arg2:T21	
+R26	Setting Arg1:E7 Arg2:T22	

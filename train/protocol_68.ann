@@ -35,7 +35,7 @@ T34	Temperature 852 857	- 80°
 T35	Reagent 860 865	Swabs
 T36	Action 875 880	ready
 T37	Method 885 899	DNA extraction
-E1	Action:T1 Acts-on:T2 Using:T3 Product:T6
+E1	Action:T1 Acts-on:T2 Using:T3 Product:T6 Product2:T5
 E2	Action:T4 Using:T8 Acts-on:T5
 E3	Action:T9 Acts-on:T11 Product:T20
 E4	Action:T12 Acts-on:T14 Site:T16 Product:T17

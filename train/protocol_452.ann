@@ -15,9 +15,6 @@ T14	Modifier 166 174	filtered
 T15	Reagent 175 177	TE
 T16	Reagent 180 195	dilution buffer
 T17	Reagent 200 205	water
-T18	Action 224 228	make
-T19	Reagent 229 238	dilutions
-T20	Reagent 243 254	wet filters
 T21	Action 257 264	Prepare
 T22	Reagent 265 274	dilutions
 T23	Reagent 278 284	sample
@@ -170,57 +167,56 @@ T169	Device 1788 1795	freezer
 T170	Time 1800 1804	1 hr
 T171	Action 1808 1815	improve
 T172	Reagent 1816 1824	staining
-E1	Action:T1 Acts-on:T3 Acts-on2:T4 Site:T6 Product:T8
-E2	Action:T7 Acts-on:T8 Site:T9
-E3	Action:T10 Site:T12 Acts-on:T11 Acts-on2:E2
-E4	Action:T18 Product:T19 Product2:T20 Using:T15 Using2:T16 Using3:T17 Acts-on:E3 Product3:T22
-E5	Action:T21 Acts-on:T22
-E6	Action:T24 Acts-on:T22
+E1	Action:T1 Acts-on:T3 Acts-on2:T4 Site:T6 Product:T8 Product2:T49 Product3:T48
+E2	Action:T7 Acts-on:T8 Site:T9 Product:T11
+E3	Action:T10 Site:T12 Acts-on:T11 Product:T41
+E5	Action:T21 Product:T22
+E6	Action:T24 Acts-on:T22 Product:T99
 E7	Action:T25 Using:T27 Acts-on:T26
-E8	Action:T28 Acts-on:T30 Acts-on2:T26
+E8	Action:T28 Acts-on:T30
 E9	Action:T31 Acts-on:T32 Product:T37
 E10	Action:T33 Acts-on:T34
-E11	Action:T36 Acts-on:T37
-E12	Action:T38 Acts-on:T39 Acts-on2:T37
-E13	Action:T40 Acts-on:T41 Using:T45 Acts-on2:E12
-E14	Action:T46 Acts-on:T48 Site:T50 Acts-on2:E13
-E15	Action:T51 Acts-on:T54 Acts-on2:T50 Site:T56
-E16	Action:T57 Acts-on:T59 Site:T56
-E17	Action:T60 Acts-on:T61 Acts-on2:T56
-E18	Action:T63 Acts-on:T64 Site:T65 Acts-on2:T61
-E19	Action:T66 Acts-on:T67 Site:T68 Site2:T65
-E20	Action:T71 Acts-on:T72 Site:T73 Acts-on2:T70
+E11	Action:T36 Acts-on:T37 Product:T50
+E12	Action:T38 Acts-on:T39 Acts-on2:E11
+E13	Action:T40 Acts-on:T41 Using:T45 Site:E12 Product:T54
+E14	Action:T46 Acts-on:T48 Site:T50
+E15	Action:T51 Acts-on:T54 Site:T56
+E16	Action:T57 Acts-on:T59 Acts-on2:E15
+E17	Action:T60 Acts-on:T61 Acts-on2:E16
+E18	Action:T63 Acts-on:T64 Site:T65 Product:T70 Product2:T68
+E19	Action:T66 Acts-on:T67 Site:T68 Product:T73 Product2:T74
+E20	Action:T71 Acts-on:T72 Site:T73
 E21	Action:T75 Acts-on:T76
-E22	Action:T78 Acts-on:T79
-E23	Action:T80 Acts-on:T81 Acts-on2:T79
-E24	Action:T82 Acts-on:T84 Site:T86 Acts-on2:E23
-E25	Action:T88 Acts-on:T91 Site:T92 Acts-on2:T87
-E26	Action:T93 Acts-on:T94 Acts-on2:T87
-E27	Action:T95 Acts-on:T96 Site:T97 Acts-on2:E26
-E28	Action:T98 Acts-on:T99 Site:T96
-E29	Action:T100 Acts-on:T101 Site:T103 Acts-on2:T99
-E30	Action:T106 Acts-on:T105 Acts-on2:T99
+E22	Action:T78 Acts-on:T79 Product:T81
+E23	Action:T80 Acts-on:T81 Product:T87
+E24	Action:T82 Acts-on:T84 Site:T86
+E25	Action:T88 Acts-on:T91 Site:T92 Acts-on2:E24 Product:T94
+E26	Action:T93 Acts-on:T94 Product:T96
+E27	Action:T95 Acts-on:T96 Site:T97 Product:T104
+E28	Action:T98 Acts-on:T99 Site:E27 Product:T105
+E29	Action:T100 Acts-on:T101 Site:T103 Acts-on2:T99 Product:T105
+E30	Action:T106 Acts-on:T105
 E31	Action:T109 Acts-on:T110
-E32	Action:T111 Acts-on:T110 Acts-on2:T113 Site:T114
-E33	Action:T115 Acts-on:T114
+E32	Action:T111 Acts-on2:T113 Site:T114 Acts-on:E31
+E33	Action:T115 Acts-on:E32
 E34	Action:T117 Acts-on:T118 Acts-on2:E33
-E35	Action:T119 Using:T120 Acts-on:T122
-E36	Action:T124 Acts-on:T126 Site:T127 Acts-on2:T122
-E37	Action:T128 Acts-on:T130 Using:T131 Site:T127
-E38	Action:T132 Site:T133 Acts-on:T130
-E39	Action:T135 Acts-on:T136 Acts-on2:T134
-E40	Action:T138 Acts-on:T139
-E41	Action:T140 Acts-on:T141 Using:T142 Acts-on2:T139
-E42	Action:T144 Acts-on:T145 Site:T147 Acts-on2:T141
-E43	Action:T148 Acts-on:T149 Acts-on2:T141
+E35	Action:T119 Using:T120 Acts-on2:E34 Product:T122
+E36	Action:T124 Acts-on:T126 Site:T127 Acts-on2:T122 Product:T130
+E37	Action:T128 Acts-on:T130 Using:T131
+E38	Action:T132 Site:T133 Acts-on:E37 Product:T139
+E39	Action:T135 Acts-on:T136
+E40	Action:T138 Acts-on:T139 Product:T141
+E41	Action:T140 Acts-on:T141 Using:T142
+E42	Action:T144 Acts-on:T145 Site:T147 Acts-on2:E41 Product:T149
+E43	Action:T148 Acts-on:T149 Product:T151 Product2:T152
 E44	Action:T150 Acts-on:T151 Acts-on2:T152 Site:T153
-E45	Action:T154 Acts-on:T156 Acts-on2:T153
-E46	Action:T157 Acts-on:T159 Site:T161 Acts-on2:E45
-E47	Action:T162 Site:T163 Acts-on:T159
+E45	Action:T154 Acts-on:T156 Acts-on2:E44 Product:T161
+E46	Action:T157 Acts-on:T159 Site:T161 Product:T165
+E47	Action:T162 Site:T163 Acts-on:E46
 E48	Action:T164 Acts-on:T165
-E49	Action:T166 Acts-on:T165
-E50	Action:T168 Site:T169
-E51	Action:T171 Acts-on:T172 Using:E50
+E49	Action:T166 Acts-on:E48
+E50	Action:T168 Site:T169 Acts-on:E48
+E51	Action:T171 Acts-on:T172
 R1	Mod-Link Arg1:T15 Arg2:T14
 R2	Measure Arg1:T15 Arg2:T13
 R3	Measure Arg1:T3 Arg2:T2
@@ -250,7 +246,6 @@ R26	Mod-Link Arg1:T103 Arg2:T102
 R27	Meronym Arg1:T103 Arg2:T104
 R28	Setting Arg1:E30 Arg2:T107
 R29	Mod-Link Arg1:E31 Arg2:T108
-R30	Meronym Arg1:T113 Arg2:T114
 R31	Setting Arg1:E33 Arg2:T116
 R32	Mod-Link Arg1:T122 Arg2:T121
 R33	Measure Arg1:T126 Arg2:T125
@@ -264,17 +259,26 @@ R40	Measure Arg1:T159 Arg2:T158
 R41	Mod-Link Arg1:T161 Arg2:T160
 R42	Mod-Link Arg1:E49 Arg2:T167
 R43	Setting Arg1:E50 Arg2:T170
-R44	Coreference-Link Arg1:E35 Arg2:E24
 R45	Enables Arg1:E7 Arg2:E6
 R46	Overlaps Arg1:E8 Arg2:E9
 R47	Enables Arg1:E10 Arg2:E11
 R48	Mod-Link Arg1:T56 Arg2:T55
 R49	Overlaps Arg1:E20 Arg2:E21
 R50	Enables Arg1:E21 Arg2:E22
-R51	Coreference-Link Arg1:E30 Arg2:E31
 R52	Mod-Link Arg1:T113 Arg2:T112
 R53	Mod-Link Arg1:T122 Arg2:T123
 R54	Enables Arg1:E39 Arg2:E40
-R55	Overlaps Arg1:E43 Arg2:E44
 R56	Enables Arg1:E47 Arg2:E48
 R57	Or Arg1:E49 Arg2:E50
+R58	Overlaps Arg1:E18 Arg2:E17	
+R44	Overlaps Arg1:E28 Arg2:E29	
+R59	Meronym Arg1:T99 Arg2:T104	
+R51	Overlaps Arg1:E31 Arg2:E30	
+R60	Coreference-Link Arg1:T110 Arg2:T105	
+R61	Coreference-Link Arg1:T113 Arg2:T54	
+R30	Enables Arg1:E50 Arg2:E51	
+T173	Action 153 157	Have
+E52	Action:T173 Acts-on:T15 Acts-on2:T16 Acts-on3:T17 Product:T45 Product2:T67
+R55	Coreference-Link Arg1:T59 Arg2:T45	
+R62	Coreference-Link Arg1:T85 Arg2:T67	
+R63	Coreference-Link Arg1:T126 Arg2:T85	

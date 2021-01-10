@@ -255,3 +255,5 @@ R75	Coreference-Link Arg1:T77 Arg2:T96
 R76	Coreference-Link Arg1:T72 Arg2:T118
 R77	Coreference-Link Arg1:T85 Arg2:T103
 R78	Coreference-Link Arg1:T96 Arg2:T113
+R79	Measure Arg1:T103 Arg2:T104	
+R80	Setting Arg1:E2 Arg2:T11	

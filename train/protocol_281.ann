@@ -59,7 +59,7 @@ T58	Concentration 997 1000	1 %
 T59	Reagent 1001 1012	agarose gel
 E1	Action:T1 Acts-on:T3
 E2	Action:T4 Acts-on:T5 Acts-on2:E1
-E3	Action:T7 Site:T8 Acts-on:E1
+E3	Action:T7 Site:T8 Acts-on:E2
 E4	Action:T13 Using:T14 Acts-on:E3
 E5	Action:T15 Using:T16 Acts-on:E4
 E6	Action:T17 Using:T18 Acts-on:E5 Product:T22

@@ -414,7 +414,6 @@ T417	Reagent 7239 7248	Reactions
 T418	Action 7254 7261	cleaned
 T419	Generic-Measure 7266 7268	QC
 T420	Action 7273 7281	assessed
-T421	Method 7290 7303	amplification
 T422	Reagent 7306 7313	samples
 T423	Action 7319 7326	cleaned
 T424	Reagent 7334 7354	QIAamp® DNA Mini kit
@@ -438,7 +437,6 @@ T441	Time 7660 7666	30 min
 T442	Action 7670 7677	confirm
 T443	Measure-Type 7680 7690	size range
 T444	Modifier 7691 7702	appropriate
-T445	Method 7707 7717	sequencing
 T446	Action 7747 7768	without contamination
 T447	Modifier 7772 7779	smaller
 T448	Reagent 7780 7789	fragments
@@ -478,8 +476,8 @@ E7	Action:T45 Acts-on:T44 Product:T49
 E8	Action:T50 Using:T53 Acts-on:T49 Product:T54
 E9	Action:T56 Acts-on:T54 Product:T59
 E10	Action:T60 Acts-on:T59 Site:T62 Product:T68
-E11	Action:T63 Using:T69 Acts-on:T68 Product:T81
-E12	Action:T66 Acts-on:T68
+E11	Action:T63 Using:T69 Acts-on:T68
+E12	Action:T66 Acts-on:T68 Product:T81
 E13	Action:T71 Product:T70
 E14	Action:T72 Acts-on:T77 Site:T79
 E15	Action:T82 Site:T83 Acts-on:T81
@@ -495,7 +493,7 @@ E24	Action:T128 Acts-on:T129 Using:T127 Product:T138
 E25	Action:T134 Acts-on:T131 Using:T135 Acts-on2:T132 Acts-on3:T133
 E26	Action:T137 Using:T136 Acts-on:T138 Product:T139
 E27	Action:T140 Acts-on:T139 Using:T141 Using2:T142 Product:T143
-E28	Action:T144 Acts-on:T143 Using:T148 Product:T145
+E28	Action:T144 Acts-on:T143 Product:T145
 E29	Action:T146 Using:T147 Acts-on:T145 Using2:T148 Product:T149
 E30	Action:T150 Acts-on:T149 Using:T151 Using2:T152 Using3:T153
 E31	Action:T156 Using:T155 Count:T154 Acts-on:E30 Product:T158
@@ -544,7 +542,7 @@ E73	Action:T342 Acts-on:E72 Product:T345
 E74	Action:T346 Acts-on:T345 Product:T353
 E75	Action:T351 Site:T352 Acts-on:E74
 E76	Action:T355 Acts-on:T353 Using:T359 Product:T360
-E77	Action:T361 Acts-on:T360 Using:T362
+E77	Action:T361 Acts-on:T360 Using:T362 Product:T370
 E78	Action:T367 Using:T365 Acts-on:T366 Using2:T370 Product:T371
 E79	Action:T372 Acts-on:T371 Product:T375
 E80	Action:T377 Acts-on:T375 Product:T378
@@ -805,3 +803,6 @@ R220	Coreference-Link Arg1:T410 Arg2:T392
 R221	Enables Arg1:E90 Arg2:E91	
 R222	Enables Arg1:E92 Arg2:E91	
 R223	Coreference-Link Arg1:T460 Arg2:T457	
+R224	Meronym Arg1:T303 Arg2:T480	
+R225	Meronym Arg1:T403 Arg2:T401	
+R226	Meronym Arg1:T407 Arg2:T405	

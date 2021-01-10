@@ -84,15 +84,15 @@ T83	Action 908 915	Discard
 T84	Location 916 927	spin column
 E1	Action:T1 Acts-on:T3 Product:T7
 E2	Action:T6 Acts-on:T7
-E3	Action:T8 Acts-on:T10 Acts-on2:T12 Acts-on3:T7
+E3	Action:T8 Acts-on:T10 Acts-on2:T12 Acts-on3:E2
 E4	Action:T13 Acts-on:E3
 E5	Action:T15 
-E6	Action:T16 Product:T25 Acts-on:E4
+E6	Action:T16 Product:T25 Acts-on:E4 Acts-on2:E5
 E7	Action:T19 Acts-on:T21 Acts-on2:T23 Site:T25
-E8	Action:T26 Acts-on:T25 Product:T31
-E9	Action:T28 
+E8	Action:T26 Product:T31 Acts-on:E7
+E9	Action:T28 Product:T31
 E10	Action:T29 Acts-on:T31 Site:T32 Site2:T33
-E11	Action:T34 Acts-on:T31 Product:T38
+E11	Action:T34 Product:T38 Acts-on:E10
 E12	Action:T37 Acts-on:T38
 E13	Action:T39 Acts-on:T41 Acts-on2:E12
 E14	Action:T42 Product:T46 Acts-on:E13
@@ -100,10 +100,10 @@ E15	Action:T45 Acts-on:T46
 E16	Action:T47 Acts-on:T49 Acts-on2:E15
 E17	Action:T50 Acts-on:E16 Product:T54
 E18	Action:T53 Acts-on:T54 Site:T56
-E19	Action:T57 Acts-on:T56 Product:T61
+E19	Action:T57 Product:T61 Acts-on:E18
 E20	Action:T60 Acts-on:T61 Site:T63
-E21	Action:T64 Acts-on:T66 Acts-on2:T63
-E22	Action:T67 Acts-on:T66
+E21	Action:T64 Acts-on:T66 Site:E20
+E22	Action:T67 Acts-on:E21
 E23	Action:T70 Acts-on:E22
 E24	Action:T73 Acts-on:T76 Acts-on2:E23
 E25	Action:T77 Acts-on:E24

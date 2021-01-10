@@ -179,9 +179,9 @@ R38	Measure Arg1:T8 Arg2:T9
 R39	Measure Arg1:T19 Arg2:T20
 R40	Mod-Link Arg1:E3 Arg2:T25
 R41	Mod-Link Arg1:T104 Arg2:T103
-R42	Coreference-Link Arg1:T6 Arg2:T21
-R43	Coreference-Link Arg1:T4 Arg2:T23
-R44	Coreference-Link Arg1:T19 Arg2:T24
+R42	Coreference-Link Arg1:T21 Arg2:T6
+R43	Coreference-Link Arg1:T23 Arg2:T4
+R44	Coreference-Link Arg1:T24 Arg2:T19
 R45	Overlaps Arg1:E4 Arg2:E3
 R46	Meronym Arg1:T33 Arg2:T29
 R47	Enables Arg1:E8 Arg2:E9
@@ -189,9 +189,9 @@ R48	Overlaps Arg1:E10 Arg2:E8
 R49	Enables Arg1:E11 Arg2:E10
 R50	Enables Arg1:E12 Arg2:E10
 R51	Meronym Arg1:T63 Arg2:T64
-R52	Coreference-Link Arg1:T29 Arg2:T76
+R52	Coreference-Link Arg1:T76 Arg2:T29
 R53	Meronym Arg1:T56 Arg2:T58
 R54	Enables Arg1:E13 Arg2:E10
-R55	Coreference-Link Arg1:T47 Arg2:T89
+R55	Coreference-Link Arg1:T89 Arg2:T47
 R56	Meronym Arg1:T95 Arg2:T97
-R57	Coreference-Link Arg1:T46 Arg2:T109
+R57	Coreference-Link Arg1:T109 Arg2:T46

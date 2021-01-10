@@ -75,6 +75,6 @@ R15	Setting Arg1:E9 Arg2:T37
 R16	Mod-Link Arg1:T43 Arg2:T42
 R17	Mod-Link Arg1:T46 Arg2:T45
 R18	Setting Arg1:E12 Arg2:T47
-R19	Coreference-Link Arg1:T2 Arg2:T22
-R20	Coreference-Link Arg1:T6 Arg2:T26
-R21	Coreference-Link Arg1:T10 Arg2:T31
+R19	Coreference-Link Arg1:T22 Arg2:T2
+R20	Coreference-Link Arg1:T26 Arg2:T6
+R21	Coreference-Link Arg1:T31 Arg2:T10

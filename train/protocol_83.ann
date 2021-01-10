@@ -90,10 +90,10 @@ R13	Measure Arg1:T49 Arg2:T48
 R14	Measure Arg1:T52 Arg2:T51
 R15	Measure Arg1:T52 Arg2:T50
 R16	Measure Arg1:T10 Arg2:T9
-R17	Coreference-Link Arg1:T1 Arg2:T10
-R18	Coreference-Link Arg1:T15 Arg2:T17
-R19	Coreference-Link Arg1:T10 Arg2:T16
+R17	Coreference-Link Arg1:T10 Arg2:T1
+R18	Coreference-Link Arg1:T17 Arg2:T15
+R19	Coreference-Link Arg1:T16 Arg2:T10
 R20	Mod-Link Arg1:E6 Arg2:T35
 R21	Prevents Arg1:E6 Arg2:E7
 R22	Enables Arg1:E10 Arg2:E9
-R23	Coreference-Link Arg1:T46 Arg2:T56
+R23	Coreference-Link Arg1:T56 Arg2:T46

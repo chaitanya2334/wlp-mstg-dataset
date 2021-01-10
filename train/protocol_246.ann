@@ -9,7 +9,7 @@ T8	Location 182 186	well
 T9	Location 190 278	a high affinity , protein - bindingELISA plate ( e . g . , BioLegend Cat . No . 423501 )
 T10	Action 281 285	Seal
 T11	Location 286 291	plate
-T12	Action 303 314	evaporation
+T12	Action 295 314	prevent evaporation
 T13	Action 317 325	Incubate
 T14	Temperature 329 332	4°C
 T15	Time 333 342	overnight
@@ -148,7 +148,7 @@ E1	Action:T1 Using:T4 Acts-on:T2
 E2	Action:T5 Site:T8 Acts-on:E1 Product:T11
 E3	Action:T10 Acts-on:T11
 E4	Action:T12 Acts-on:T11
-E5	Action:T13 Acts-on:E3 Product:T17
+E5	Action:T13 Product:T17 Acts-on:E4
 E6	Action:T16 Acts-on:T17 Product:T20
 E7	Action:T19 Acts-on:T20 Product:T22
 E8	Action:T21 Acts-on:T22
@@ -240,7 +240,7 @@ R45	Setting Arg1:T126 Arg2:T127
 R46	Mod-Link Arg1:T125 Arg2:T124
 R47	Mod-Link Arg1:T140 Arg2:T139
 R48	Measure Arg1:T138 Arg2:T137
-R49	Prevents Arg1:E3 Arg2:E4
+R49	Enables Arg1:E3 Arg2:E4
 R50	Mod-Link Arg1:T30 Arg2:T29
 R51	Coreference-Link Arg1:T53 Arg2:T51
 R52	Coreference-Link Arg1:T55 Arg2:T53

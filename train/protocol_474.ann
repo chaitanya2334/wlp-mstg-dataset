@@ -173,10 +173,10 @@ E16	Action:T63 Acts-on:T64 Site:T65
 E17	Action:T66 Acts-on:T68 Site:E16
 E18	Action:T69 Acts-on:E17 Using:T71 Count:T72 Using2:T73
 E19	Action:T74 Acts-on:E18
-E20	Action:T76 Acts-on:T78 Site:E19
+E20	Action:T76 Acts-on:T78 Site:E19 Product:T90
 E21	Action:T79 Acts-on:T80
 E22	Action:T82 Product:T83
-E23	Action:T84 Acts-on:T86 Site:T88 Product:T90
+E23	Action:T84 Acts-on:T86 Site:T88 Product:T91
 E24	Action:T89 Acts-on:T90 Site:T91 Using:T92
 E25	Action:T93 Acts-on:E24 Product:T97
 E26	Action:T96 Acts-on:T97 Count:T98 Using:T100
@@ -260,5 +260,4 @@ R60	Measure Arg1:T14 Arg2:T13
 R61	Coreference-Link Arg1:T86 Arg2:T83
 R62	Coreference-Link Arg1:T78 Arg2:T50
 R63	Coreference-Link Arg1:T36 Arg2:T33
-R64	Coreference-Link Arg1:T91 Arg2:T86
-R65	Coreference-Link Arg1:T83 Arg2:T80
+R65	Enables Arg1:E21 Arg2:E22	

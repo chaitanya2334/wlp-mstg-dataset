@@ -42,8 +42,8 @@ T41	Action 1283 1286	Use
 T42	Modifier 1287 1291	each
 T43	Reagent 1292 1299	aliquot
 T44	Action 1317 1324	discard
-E1	Action:T1 Acts-on:T4 Product:T10
-E2	Action:T5 Using:T8
+E1	Action:T1 Product:T10 Acts-on:E2
+E2	Action:T5 Using:T8 Acts-on:T4
 E3	Action:T9 Acts-on:T10 Using:T11 Product:T15 Product2:T16
 E4	Action:T14 Acts-on:T15 Using:T17 Using2:T18
 E5	Action:T19 Acts-on:E4 Using:T20 Product:T46

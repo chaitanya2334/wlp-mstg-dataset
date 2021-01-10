@@ -19,7 +19,7 @@ T18	Action 639 644	Store
 T19	Reagent 645 679	SAM Methyltransferase Assay Buffer
 T20	Temperature 683 699	room temperature
 T21	Action 866 870	Thaw
-T22	Device 875 879	vial
+T22	Location 875 879	vial
 T23	Location 883 886	ice
 T24	Action 904 910	dilute
 T25	Amount 911 915	10µl
@@ -74,7 +74,7 @@ T73	Action 1971 1978	Perform
 T74	Numerical 1982 1991	duplicate
 T75	Action 2011 2016	Blank
 T76	Device 2021 2026	plate
-T77	Reagent 2035 2054	1X Resorufin Buffer
+T77	Reagent 2038 2054	Resorufin Buffer
 T78	Action 2057 2061	Read
 T79	Device 2066 2071	plate
 T80	Time 2078 2087	5 minutes
@@ -106,7 +106,7 @@ T105	Action 2870 2873	Add
 T106	Amount 2874 2878	10µl
 T107	Modifier 2883 2894	appropriate
 T108	Reagent 2895 2913	acceptor substrate
-T109	Location 2921 2927	sample
+T109	Reagent 2921 2927	sample
 T110	Location 2932 2956	background control wells
 T111	Reagent 2965 2999	SAM Methyltransferase Assay Buffer
 T112	Concentration 3003 3007	0.1M
@@ -120,7 +120,7 @@ T119	Amount 3470 3475	100μl
 T120	Reagent 3476 3508	SAM Methyltransferase Master Mix
 T121	Location 3516 3521	wells
 T122	Action 3538 3542	read
-T123	Device 3547 3552	plate
+T123	Location 3547 3552	plate
 T124	Temperature 3556 3560	37°C
 T125	Modifier 3561 3566	every
 T126	Numerical 3567 3573	minute
@@ -132,46 +132,46 @@ T131	Generic-Measure 3665 3676	585 - 595nm
 T132	Action 3696 3702	Dilute
 T133	Amount 3703 3707	25µl
 T134	Reagent 3708 3726	resorufin standard
-T135	Reagent 3732 3757	475µl 1X Resorufin Buffer
+T135	Reagent 3741 3757	Resorufin Buffer
 T136	Action 3777 3780	Mix
 T137	Amount 3781 3786	500µl
 T138	Reagent 3795 3811	diluted standard
 T139	Amount 3817 3822	4.5ml
-T140	Reagent 3823 3835	1X Resorufin
+T140	Reagent 3826 3835	Resorufin
 T141	Action 3839 3844	yield
 T142	Reagent 3847 3861	stock solution
 T143	Amount 3865 3869	10µM
 E1	Action:T1 Acts-on:T4 Using:T5
 E2	Action:T6 Product:T7 Acts-on:E1
-E3	Action:T8 Acts-on:T9 Acts-on2:T10
-E4	Action:T12 Acts-on:T14 Site:T15 Site2:E3
-E5	Action:T16 Acts-on:E4
-E6	Action:T18 Acts-on:T19
-E7	Action:T21 Acts-on:T22 Site:T23
-E8	Action:T24 Using:T27
+E3	Action:T8 Acts-on:T9 Acts-on2:T10 Product:T14 Product2:T15
+E4	Action:T12 Acts-on:T14 Site:T15
+E5	Action:T16 Acts-on:E4 Product:T19
+E6	Action:T18 Acts-on:T19 Product:T27
+E7	Action:T21 Acts-on:T22 Site:T23 Product:T100
+E8	Action:T24 Using:T27 Product:T65
 E9	Action:T28 Acts-on:T29 Using:T32 Product:T36
-E10	Action:T34 Acts-on:T36
-E11	Action:T37 Acts-on:T39 Site:T40 Site2:E10
+E10	Action:T34 Acts-on:T36 Product:T40
+E11	Action:T37 Acts-on:T39 Site:T40
 E12	Action:T41 Acts-on:E11
 E13	Action:T42 Acts-on:T44 Site:E12
-E14	Action:T47 Acts-on:E13
-E15	Action:T48 Acts-on:T50 Site:T54 Product:T56 Site2:E14
+E14	Action:T47 Acts-on:E13 Product:T162
+E15	Action:T48 Acts-on:T50 Site:T54 Product:T56
 E16	Action:T57 Product:T58
 E17	Action:T61 Product:T62
 E18	Action:T64 Acts-on:T63 Using:T65
 E19	Action:T68 Site:E18 Acts-on:T70 Site2:T71 Using:T72
-E20	Action:T73 Count:T74 Acts-on:E19
-E21	Action:T75 Acts-on:T76
+E20	Action:T73 Count:T74 Acts-on:E19 Product:T86
+E21	Action:T75 Acts-on:T76 Product:T79
 E22	Action:T78 Acts-on:T79 Using:T81 Using2:T83
-E23	Action:T85 Acts-on:T86
+E23	Action:T85 Acts-on:T86 Product:T90
 E24	Action:T88 Acts-on:T90 Site:T92
 E25	Action:T94 Acts-on:T96 Site:T97
-E26	Action:T98 Acts-on:T100 Acts-on2:T102 Site:T104
-E27	Action:T105 Using:T111 Acts-on:T108 Site:T109 Site2:T110
+E26	Action:T98 Acts-on:T100 Acts-on2:T102 Site:T104 Product:T109
+E27	Action:T105 Using:T111 Acts-on:T108 Site:T109 Site2:T110 Product:T117
 E28	Action:T114 Product:T115
 E29	Action:T116 Acts-on:T117
-E30	Action:T118 Site:T121
-E31	Action:T122 Acts-on:T123 Using:T128 Count:T126 Using2:T130 Acts-on2:E30
+E30	Action:T118 Site:T121 Product:T123
+E31	Action:T122 Acts-on:T123 Using:T128 Count:T126 Using2:T130
 E32	Action:T132 Acts-on:T134 Using:T135 Product:T138
 E33	Action:T136 Acts-on:T138 Product:T142 Using:T140
 E34	Action:T141 Acts-on:T142
@@ -198,32 +198,18 @@ R20	Measure Arg1:T54 Arg2:T52
 R21	Measure Arg1:T56 Arg2:T55
 R22	Mod-Link Arg1:T60 Arg2:T59
 R23	Meronym Arg1:T60 Arg2:T58
-R24	Coreference-Link Arg1:T15 Arg2:T9
-R25	Coreference-Link Arg1:T19 Arg2:T15
-R26	Coreference-Link Arg1:T14 Arg2:T10
-R27	Overlaps Arg1:E7 Arg2:E8
-R28	Overlaps Arg1:E6 Arg2:E7
-R29	Coreference-Link Arg1:T30 Arg2:T23
-R30	Coreference-Link Arg1:T40 Arg2:T30
-R31	Overlaps Arg1:E15 Arg2:E16
 R32	Enables Arg1:E17 Arg2:E18
 R33	Mod-Link Arg1:T66 Arg2:T67
 R34	Or Arg1:T65 Arg2:T66
 R35	Measure Arg1:T70 Arg2:T69
-R36	Coreference-Link Arg1:T76 Arg2:T72
 R37	Meronym Arg1:T77 Arg2:T76
-R38	Coreference-Link Arg1:T79 Arg2:T76
 R39	Setting Arg1:E22 Arg2:T80
 R40	Measure Arg1:T81 Arg2:T82
 R41	Measure Arg1:T83 Arg2:T84
-R42	Coreference-Link Arg1:T86 Arg2:T27
 R43	Setting Arg1:E23 Arg2:T87
 R44	Measure Arg1:T90 Arg2:T89
-R45	Coreference-Link Arg1:T90 Arg2:T60
 R46	Mod-Link Arg1:T92 Arg2:T91
 R47	Meronym Arg1:T93 Arg2:T92
-R48	Enables Arg1:E1 Arg2:E3
-R49	Coreference-Link Arg1:T96 Arg2:T9
 R50	Measure Arg1:T96 Arg2:T95
 R51	Coreference-Link Arg1:T102 Arg2:T96
 R52	Measure Arg1:T102 Arg2:T101
@@ -237,9 +223,6 @@ R59	Or Arg1:T111 Arg2:T113
 R60	Mod-Link Arg1:T108 Arg2:T107
 R61	Measure Arg1:T108 Arg2:T106
 R62	Coreference-Link Arg1:T110 Arg2:T97
-R63	Enables Arg1:E27 Arg2:E28
-R64	Overlaps Arg1:E26 Arg2:E27
-R65	Overlaps Arg1:E25 Arg2:E26
 R66	Coreference-Link Arg1:T120 Arg2:T115
 R67	Coreference-Link Arg1:T121 Arg2:T110
 R68	Measure Arg1:T120 Arg2:T119
@@ -250,3 +233,62 @@ R72	Measure Arg1:T128 Arg2:T129
 R73	Setting Arg1:T130 Arg2:T131
 R74	Setting Arg1:E31 Arg2:T127
 R75	Measure Arg1:T134 Arg2:T133
+T144	Action 702 715	do not freeze
+E35	Action:T144 Acts-on:E6
+T145	Location 791 795	vial
+T146	Amount 805 810	200µl
+T147	Concentration 816 819	1mM
+T148	Reagent 820 852	solution of adenosylhomocysteine
+R24	Measure Arg1:T148 Arg2:T147	
+R25	Measure Arg1:T148 Arg2:T146	
+R26	Meronym Arg1:T148 Arg2:T145	
+T149	Action 745 761	Positive Control
+E36	Action:T149 Product:T150 Acts-on:T148 Product2:T22
+T150	Reagent 764 784	Adenosylhomocysteine
+T151	Action 1067 1071	Thaw
+E37	Action:T151 Site:T152 Acts-on:T154
+T152	Location 1075 1078	ice
+T153	Numerical 1079 1094	only the number
+T154	Location 1098 1103	vials
+T155	Action 1108 1115	require
+E38	Action:T155 Using:T156
+T156	Reagent 1125 1130	assay
+R27	Measure Arg1:T154 Arg2:T153	
+R28	Enables Arg1:E38 Arg2:E37	
+T157	Reagent 980 1000	SAMfluoro Enzyme Mix
+T158	Amount 1015 1020	300µl
+T159	Location 1021 1026	vials
+R29	Measure Arg1:T159 Arg2:T158	
+R30	Meronym Arg1:T157 Arg2:T159	
+R42	Coreference-Link Arg1:T159 Arg2:T154	
+T160	Action 1175 1186	lyophilized
+E39	Action:T160 Acts-on:T161 Product:T29 Product2:T30
+T161	Reagent 1133 1163	S - Adenosylmethionine ( SAM )
+T162	Reagent 1285 1311	SAMfluoro Fluorometric Mix
+T163	Concentration 2035 2037	1X
+R31	Measure Arg1:T77 Arg2:T163	
+R36	Coreference-Link Arg1:T77 Arg2:T56	
+T164	Reagent 2370 2404	SAM Methyltransferase Assay Buffer
+T165	Action 2362 2365	Use
+E40	Action:T165 Acts-on:T164 Acts-on2:T167
+T166	Concentration 2408 2412	0.1M
+T167	Reagent 2413 2417	Tris
+T168	pH 2420 2425	pH8.0
+R38	Or Arg1:T164 Arg2:T167	
+R45	Measure Arg1:T167 Arg2:T166	
+R48	Measure Arg1:T167 Arg2:T168	
+R49	Coreference-Link Arg1:T96 Arg2:T164	
+R76	Coreference-Link Arg1:T164 Arg2:T65	
+R64	Coreference-Link Arg1:T108 Arg2:T62	
+R65	Coreference-Link Arg1:T111 Arg2:T102	
+T169	pH 3015 3020	pH8.0
+R77	Measure Arg1:T113 Arg2:T169	
+T170	Amount 3732 3737	475µl
+T171	Concentration 3738 3740	1X
+T172	Concentration 3823 3825	1X
+R63	Measure Arg1:T140 Arg2:T172	
+R78	Measure Arg1:T135 Arg2:T170	
+R79	Measure Arg1:T135 Arg2:T171	
+R80	Coreference-Link Arg1:T135 Arg2:T77	
+R81	Coreference-Link Arg1:T140 Arg2:T135	
+R82	Coreference-Link Arg1:T70 Arg2:T7	

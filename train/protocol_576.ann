@@ -1,6 +1,6 @@
 T1	Action 58 63	Place
 T2	Location 68 72	tube
-T3	Location 80 86	magnet
+T3	Device 80 86	magnet
 T4	Time 91 100	5 minutes
 T5	Action 103 112	Resuspend
 T6	Reagent 117 122	cells
@@ -9,7 +9,6 @@ T8	Reagent 134 150	MojoSort™ Buffer
 T9	Action 303 310	Prepare
 T10	Reagent 311 316	cells
 T11	Reagent 327 345	tissue of interest
-T12	Modifier 346 373	without lysing erythrocytes
 T13	Modifier 376 420	In the final wash of your sample preparation
 T14	Action 423 432	resuspend
 T15	Reagent 437 442	cells
@@ -66,29 +65,28 @@ T65	Action 1625 1635	centrifuge
 T66	Speed 1639 1646	300 x g
 T67	Time 1651 1660	5 minutes
 T68	Reagent 1663 1681	discardsupernatant
-E1	Action:T1 Acts-on:T2 Site:T3
-E2	Action:T5 Acts-on:T6 Site:T8 Acts-on2:T2
-E3	Action:T9 Product:T10 Site:T11 Acts-on:E2 Product2:T15
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T6
+E2	Action:T5 Acts-on:T6 Site:T8
+E3	Action:T9 Product:T10 Site:T11 Acts-on:E2
 E4	Action:T14 Acts-on:T15 Site:T16 Product:T22
 E5	Action:T17 Acts-on:T16 Site:T20
 E6	Action:T21 Acts-on:T22 Using:T24
-E7	Action:T25 Acts-on:T22
-E8	Action:T28 Acts-on:T22 Site:T29
-E9	Action:T30 Measure-Type-Link:T32 Acts-on:E8
-E10	Action:T31 Measure-Type-Link:T32
-E11	Action:T34 Acts-on:T36 Site:T38 Acts-on2:E9
-E12	Action:T39 Acts-on:T41 Acts-on2:T36
-E13	Action:T42 Acts-on:T41
-E14	Action:T44 Site:T45 Acts-on:T41 Product:T48
+E7	Action:T25 Acts-on:E6
+E8	Action:T28 Site:T29 Acts-on:E7
+E9	Action:T30 Measure-Type-Link:T32 Acts-on:E8 Product:T36
+E10	Action:T31 Measure-Type-Link:T32 Product:T36
+E11	Action:T34 Acts-on:T36 Site:T38
+E12	Action:T39 Acts-on:T41 Site:E11
+E13	Action:T42 Acts-on:E12
+E14	Action:T44 Site:T45 Product:T48 Acts-on:E13
 E15	Action:T47 Acts-on:T48
-E16	Action:T49 
-E17	Action:T52 Acts-on:T54 Acts-on2:T48
+E16	Action:T49 Acts-on:T48
+E17	Action:T52 Acts-on:T54 Acts-on2:E15
 E18	Action:T55 Acts-on:E17
 E19	Action:T57 Site:T58 Product:T61 Acts-on:E18
 E20	Action:T60 Acts-on:T61
-E21	Action:T62 Acts-on:T64
-E22	Action:T65 Acts-on:T61 Product:T68
-R1	Mod-Link Arg1:E3 Arg2:T12
+E21	Action:T62 Acts-on:T64 Acts-on2:T61
+E22	Action:T65 Product:T68 Acts-on:E20
 R2	Measure Arg1:T20 Arg2:T19
 R3	Measure Arg1:T16 Arg2:T18
 R4	Mod-Link Arg1:E4 Arg2:T13
@@ -115,3 +113,33 @@ R24	Enables Arg1:E5 Arg2:E4
 R25	Overlaps Arg1:E9 Arg2:E10
 R26	Enables Arg1:E16 Arg2:E15
 R27	Enables Arg1:E21 Arg2:E20
+T12	Action 346 360	without lysing
+E23	Action:T12 Acts-on:T69 Product:T10
+T69	Reagent 361 373	erythrocytes
+R1	Overlaps Arg1:E3 Arg2:E23	
+R28	Coreference-Link Arg1:T15 Arg2:T10	
+R29	Coreference-Link Arg1:T16 Arg2:T8	
+T70	Amount 488 492	5 mL
+R30	Measure Arg1:T20 Arg2:T70	
+T71	Modifier 691 704	anappropriate
+R31	Mod-Link Arg1:T29 Arg2:T71	
+R32	Coreference-Link Arg1:T29 Arg2:T16	
+T72	Action 1875 1878	add
+E24	Action:T72 Acts-on:T74 Site:T68
+T73	Amount 1879 1883	3 mL
+T74	Reagent 1887 1903	MojoSort™ Buffer
+T75	Action 1908 1914	repeat
+E25	Action:T75 Using:T76 Acts-on:E24 Using2:T78 Count:T79 Product:T82
+T76	Method 1915 1928	steps 8 and 9
+T77	Modifier 1938 1958	magnetically labeled
+T78	Reagent 1959 1967	fraction
+T79	Numerical 1974 1977	two
+T80	Action 1995 1999	pool
+E26	Action:T80 Acts-on:T82
+T81	Modifier 2004 2013	unlabeled
+T82	Reagent 2014 2023	fractions
+R33	Measure Arg1:T74 Arg2:T73	
+R34	Mod-Link Arg1:T78 Arg2:T77	
+R35	Mod-Link Arg1:T82 Arg2:T81	
+R36	Coreference-Link Arg1:T74 Arg2:T64	
+R37	Coreference-Link Arg1:T64 Arg2:T29	

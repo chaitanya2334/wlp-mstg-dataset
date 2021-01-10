@@ -2,7 +2,7 @@ T1	Modifier 349 354	fresh
 T2	Reagent 355 368	tissue sample
 T3	Action 411 415	kept
 T4	Location 419 422	ice
-T5	Action 432 438	freeze
+T5	Action 425 438	Do not freeze
 T6	Action 441 446	Weigh
 T7	Modifier 447 460	approximately
 T8	Amount 461 469	50‐100mg
@@ -108,15 +108,15 @@ T107	Method 2028 2035	strokes
 T108	Action 2045 2050	twist
 T109	Device 2055 2061	pestle
 E1	Action:T3 Site:T4 Acts-on:T2
-E2	Action:T5 Acts-on:T2 Product:T9
+E2	Action:T5 Product:T9 Acts-on:E1
 E3	Action:T6 Acts-on:T9 Product:T14
 E4	Action:T13 Acts-on:T14 Product:T16 Using:T12 Site:T11
 E5	Action:T17 Using:T18 Site:T19 Acts-on:T16 Product:T22
 E6	Action:T20 Acts-on:T22 Site:T24
 E7	Action:T25 Site:T26 Acts-on:E6 Product:T29
 E8	Action:T28 Acts-on:T29 Site:T30 Product:T33
-E9	Action:T31 Acts-on:T33 Site:T35 Product:T38
-E10	Action:T36 Acts-on:E9
+E9	Action:T31 Acts-on:T33 Site:T35
+E10	Action:T36 Acts-on:E9 Product:T38 Product2:T42
 E11	Action:T37 Acts-on:T38
 E12	Action:T41 Acts-on:T42 Product:T45
 E13	Action:T44 Acts-on:T45 Site:T47 Product:T49
@@ -168,7 +168,6 @@ R30	Measure Arg1:T95 Arg2:T94
 R31	Measure Arg1:T95 Arg2:T93
 R32	Mod-Link Arg1:T97 Arg2:T96
 R33	Mod-Link Arg1:T103 Arg2:T102
-R34	Prevents Arg1:E11 Arg2:E2
 R35	Meronym Arg1:T34 Arg2:T35
 R36	Enables Arg1:E11 Arg2:E12
 R37	Meronym Arg1:T42 Arg2:T38

@@ -31,7 +31,7 @@ T30	Time 1221 1231	10 minutes
 T31	Action 1234 1239	Drain
 T32	Action 1243 1251	blot off
 T33	Reagent 1252 1260	solution
-T34	Action 1270 1275	rinse
+T34	Action 1263 1275	Do not rinse
 T35	Action 1278 1283	Apply
 T36	Amount 1284 1291	2 drops
 T37	Amount 1294 1300	100 μL
@@ -69,7 +69,7 @@ T68	Action 2024 2029	Rinse
 T69	Modifier 2035 2044	distilled
 T70	Modifier 2048 2051	tap
 T71	Reagent 2052 2057	water
-T72	Action 2092 2101	dehydrate
+T72	Action 2085 2101	do not dehydrate
 T73	Action 2106 2118	Counterstain
 T74	Modifier 2124 2131	desired
 T75	Reagent 2132 2144	counterstain
@@ -108,8 +108,8 @@ E18	Action:T53 Using:T54 Count:T56 Acts-on:E17
 E19	Action:T57 Acts-on:T60 Site:E18
 E20	Action:T61 Site:T62 Acts-on:E19
 E21	Action:T64 Using:T65 Count:T67 Acts-on:E20
-E22	Action:T68 Using:T71 Acts-on:E21
-E23	Action:T72 
+E22	Action:T68 Using:T71 Acts-on:T78 Acts-on2:T84
+E23	Action:T72 Acts-on:T78 Acts-on2:T84
 E24	Action:T73 Acts-on:E22 Using:T75
 E25	Action:T76 Acts-on:E24
 E26	Action:T77 Acts-on:E25
@@ -139,14 +139,12 @@ R21	Or Arg1:T37 Arg2:T36
 R22	Measure Arg1:T38 Arg2:T37
 R23	Mod-Link Arg1:T7 Arg2:T6
 R24	Or Arg1:T9 Arg2:T8
-R25	Prevents Arg1:E2 Arg2:E3
 R26	Or Arg1:E10 Arg2:E11
-R27	Prevents Arg1:E10 Arg2:E12
 R28	Setting Arg1:E14 Arg2:T41
 R29	Coreference-Link Arg1:T43 Arg2:T21
 R30	Setting Arg1:E17 Arg2:T52
 R31	Coreference-Link Arg1:T54 Arg2:T43
 R32	Coreference-Link Arg1:T65 Arg2:T54
-R33	Prevents Arg1:E22 Arg2:E23
+R33	Overlaps Arg1:E22 Arg2:E23
 R34	Mod-Link Arg1:T75 Arg2:T74
 R35	Setting Arg1:E9 Arg2:T30

@@ -1,7 +1,7 @@
 T1	Action 23 30	Prepare
 T2	Reagent 31 42	PCR mixture
 T3	Action 45 52	Perform
-T4	Reagent 57 60	PCR
+T4	Method 57 60	PCR
 T5	Action 75 78	add
 T6	Amount 79 82	1ul
 T7	Reagent 86 90	DpnI
@@ -38,8 +38,8 @@ T37	Time 413 419	1 hour
 T38	Action 422 427	Plate
 T39	Modifier 431 437	warmed
 T40	Location 438 455	antibiotic plates
-E1	Action:T1 Acts-on:T2
-E2	Action:T3 Acts-on:T4 Product:T9
+E1	Action:T1 Product:T2
+E2	Action:T3 Product:T9 Using:T4 Acts-on:T2
 E3	Action:T5 Acts-on:T7 Site:T9
 E4	Action:T10 Acts-on:E3
 E5	Action:T13 Acts-on:E4 Using:T14 Product:T17

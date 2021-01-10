@@ -58,7 +58,7 @@ T57	Temperature 735 738	4⁰C
 T58	Modifier 743 752	carefully
 T59	Action 753 762	pipet out
 T60	Reagent 763 774	supernatant
-T61	Action 785 795	disturbing
+T61	Action 781 795	not disturbing
 T62	Reagent 800 806	pellet
 T63	Action 809 815	Remove
 T64	Modifier 820 824	last
@@ -132,7 +132,7 @@ E17	Action:T49 Acts-on:E15
 E18	Action:T50 Acts-on:E17 Product:T54
 E19	Action:T53 Acts-on:T54 Product:T60 Product2:T62
 E20	Action:T59 Acts-on:T60 Product:T67
-E21	Action:T61 Acts-on:T62
+E21	Action:T61 Acts-on:T62 Product:T67
 E22	Action:T63 Acts-on:T65 Product:T72
 E23	Action:T66 Acts-on:T67
 E24	Action:T68 Acts-on:T69 Using:T70
@@ -194,7 +194,7 @@ R42	Prevents Arg1:E12 Arg2:E13
 R43	Coreference-Link Arg1:T47 Arg2:T20
 R44	Enables Arg1:E16 Arg2:E17
 R45	Mod-Link Arg1:E20 Arg2:T58
-R46	Prevents Arg1:E20 Arg2:E21
+R46	Overlaps Arg1:E20 Arg2:E21
 R47	Mod-Link Arg1:T65 Arg2:T64
 R48	Enables Arg1:E23 Arg2:E22
 R49	Meronym Arg1:T65 Arg2:T67
@@ -245,3 +245,4 @@ R68	Measure Arg1:T127 Arg2:T126
 R69	Meronym Arg1:T127 Arg2:T129	
 R70	Measure Arg1:T129 Arg2:T128	
 R71	Enables Arg1:E41 Arg2:E40	
+R72	Meronym Arg1:T62 Arg2:T60	

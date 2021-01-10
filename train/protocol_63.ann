@@ -136,7 +136,7 @@ E4	Action:T10 Product:T14 Acts-on:E3
 E5	Action:T13 Acts-on:T14 Product:T22
 E6	Action:T15 Acts-on:T17 Product:T19
 E7	Action:T21 Acts-on:T22 Using:T25
-E8	Action:T26 Acts-on:E7
+E8	Action:T26 Acts-on:E7 Product:T30
 E9	Action:T29 Acts-on:E10
 E10	Action:T31 Acts-on:T30 Product:T35
 E11	Action:T32 Acts-on:T34 Site:T35
@@ -218,12 +218,9 @@ R53	Mod-Link Arg1:T111 Arg2:T110
 R54	Meronym Arg1:T127 Arg2:T129
 R55	Mod-Link Arg1:T3 Arg2:T2
 R56	Measure Arg1:T19 Arg2:T18
-R57	Coreference-Link Arg1:T19 Arg2:T25
-R58	Overlaps Arg1:E10 Arg2:E8
-R59	Enables Arg1:E8 Arg2:E10
+R57	Coreference-Link Arg1:T25 Arg2:T19
 R60	Enables Arg1:E7 Arg2:E10
 R61	Enables Arg1:E11 Arg2:E9
-R62	Meronym Arg1:T30 Arg2:T22
 R63	Coreference-Link Arg1:T6 Arg2:T8
 R64	Coreference-Link Arg1:T8 Arg2:T34
 R65	Coreference-Link Arg1:T34 Arg2:T42
@@ -238,3 +235,4 @@ R73	Coreference-Link Arg1:T112 Arg2:T119
 R74	Enables Arg1:E29 Arg2:E31
 R75	Meronym Arg1:T125 Arg2:T117
 R76	Enables Arg1:E30 Arg2:E31
+R58	Meronym Arg1:T20 Arg2:T19	

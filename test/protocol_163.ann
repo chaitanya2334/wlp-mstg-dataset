@@ -145,7 +145,7 @@ E17	Action:T42 Acts-on2:E16 Product:T45
 E18	Action:T46 Acts-on:T48 Site:T49 Product:T52
 E19	Action:T50 Acts-on:E18
 E20	Action:T51 Acts-on:T52
-E21	Action:T54 Product:T59 Acts-on:E20
+E21	Action:T54 Product:T59 Acts-on:E19
 E22	Action:T58 Acts-on:T59 Site:T61 Product:T65
 E23	Action:T62 Acts-on:T64 Site:T65 Product:T69
 E24	Action:T66 Acts-on:E23
@@ -154,7 +154,7 @@ E26	Action:T71 Product:T75 Acts-on:E24 Product2:T79 Product3:T81
 E27	Action:T74 Acts-on:T75
 E28	Action:T78 Using:T76 Acts-on:T79
 E29	Action:T80 Acts-on:T81
-E30	Action:T82 Acts-on:T85 Product:E28 Product2:T87
+E30	Action:T82 Acts-on:T85 Product2:T87 Site:E28 Site2:E29
 E31	Action:T86 Acts-on:T87
 E32	Action:T89 Acts-on:T90
 E33	Action:T91 Product:T95 Acts-on:E32

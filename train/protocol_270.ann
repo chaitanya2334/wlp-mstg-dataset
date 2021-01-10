@@ -20,7 +20,7 @@ T19	Temperature 316 320	75°C
 E1	Action:T2 Site:T4 Acts-on:T1
 E2	Action:T6 Acts-on:T8 Site:E1
 E3	Action:T9 Acts-on:E2
-E4	Action:T12 
+E4	Action:T12 Using:T13
 E5	Action:T14 Acts-on:T15 Site:E3
 E6	Action:T17 Acts-on:E5
 R1	Measure Arg1:T4 Arg2:T3

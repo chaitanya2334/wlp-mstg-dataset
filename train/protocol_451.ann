@@ -176,50 +176,50 @@ T175	Action 2994 2999	EMPTY
 T176	Reagent 3000 3008	CONTENTS
 T177	Device 3012 3031	FILTRATION MANIFOLD
 T178	Location 3051 3072	FORMALIN WASTE CARBOY
-E1	Action:T1 Acts-on:T2
+E1	Action:T1 Product:T2
 E2	Action:T5 Acts-on:T4 Using:T6
-E3	Action:T7 Acts-on:T9 Acts-on2:T12 Site:T4 Acts-on3:E1 Acts-on4:T15 Acts-on5:T17 Acts-on6:T20
-E4	Action:T21 Acts-on:T22 Acts-on2:E3
-E5	Action:T24 Acts-on:T26 Acts-on2:T28 Site:T23 Acts-on3:E4 Product:T30
+E3	Action:T7 Acts-on:T9 Acts-on2:T12 Site:T4 Acts-on4:T15 Acts-on5:T17 Acts-on6:T20
+E4	Action:T21 Product:T22
+E5	Action:T24 Acts-on:T26 Acts-on2:T28 Site:T23
 E6	Action:T31 Acts-on:T33 Site:T35 Using:T36 Acts-on2:T30
-E7	Action:T37 Acts-on:T39 Acts-on2:T33
-E8	Action:T41 Acts-on:T43 Acts-on2:E7 Acts-on3:T46 Acts-on4:T48 Acts-on5:T50
+E7	Action:T37 Acts-on:T39 Acts-on2:E6
+E8	Action:T41 Acts-on3:T46 Acts-on4:T48 Acts-on5:T50 Product:T43
 E9	Action:T51 Acts-on:T52 Using:T55 Site:T56
-E10	Action:T59 Acts-on:T58 Acts-on2:E9
-E11	Action:T60 Acts-on:T61 Using:T62 Acts-on2:E10
-E12	Action:T63 Acts-on:T64 Acts-on2:T65 Site:T62
-E13	Action:T66 Acts-on:E12
-E14	Action:T68 Acts-on:T69 Site:T70
-E15	Action:T71 Acts-on:T72 Acts-on2:E14
-E16	Action:T73 Acts-on:T74 Using:T76 Acts-on2:E15
-E17	Action:T77 Acts-on:T78 Site:T74
-E18	Action:T80 Acts-on:T81 Acts-on2:T78
-E19	Action:T83 Site:T84 Acts-on:T81
-E20	Action:T85 Acts-on:T87 Product:T89 Acts-on2:T81
-E21	Action:T88 Acts-on:T89 Site:T91
-E22	Action:T92 Acts-on:T94 Site:T96 Site2:T91
-E23	Action:T97 Acts-on:T98 Acts-on2:E22
-E24	Action:T101 Acts-on:T103 Acts-on2:T98
-E25	Action:T104 Acts-on:T106 Acts-on2:T103 Site:T109
-E26	Action:T108 Acts-on:T109
-E27	Action:T110 Acts-on:T111 Site:T114
-E28	Action:T116 Acts-on:T117 Product:T122 Acts-on2:T114
+E10	Action:T59 Acts-on:T58
+E11	Action:T60 Acts-on:T61 Using:T62 Acts-on2:E10 Acts-on3:E9
+E12	Action:T63 Acts-on:T64 Acts-on2:T65 Site:E11 Product:T69 Product2:T70
+E13	Action:T66 Acts-on:T69 Product:T72
+E14	Action:T68 Acts-on:T69
+E15	Action:T71 Acts-on:T72 Product:T74
+E16	Action:T73 Acts-on:T74 Using:T76 Product:T78
+E17	Action:T77 Acts-on:T78 Product:T81 Product2:T82
+E18	Action:T80 Acts-on:T81
+E19	Action:T83 Site:T84 Acts-on:E18 Product:T87
+E20	Action:T85 Acts-on:T87 Product:T89
+E21	Action:T88 Acts-on:T89 Site:T91 Product:T96
+E22	Action:T92 Acts-on:T94 Site:T96 Product:T98
+E23	Action:T97 Acts-on:T98 Product:T103
+E24	Action:T101 Acts-on:T103
+E25	Action:T104 Acts-on:T106 Site2:E24 Product:T109
+E26	Action:T108 Acts-on:T109 Product:T111
+E27	Action:T110 Acts-on:T111 Site:T114 Product:T117
+E28	Action:T116 Acts-on:T117 Product:T122 Product2:T119
 E29	Action:T118 Acts-on:T119 Using:T120
-E30	Action:T121 Acts-on:T122 Acts-on2:T123 Site:T126
-E31	Action:T128 Acts-on:T127 Site:T126
+E30	Action:T121 Acts-on:T122 Acts-on2:T123 Site:T126 Product:T127
+E31	Action:T128 Acts-on:T127 Product:T133
 E32	Action:T131 Acts-on:T133 Product:T140
 E33	Action:T134 Acts-on:T137 Site:T140
-E34	Action:T141 Acts-on:T140 Product:T146
-E35	Action:T144 Acts-on:T146
-E36	Action:T147 Acts-on:T148 Acts-on2:E35
-E37	Action:T149 Acts-on:T150 Site:T151 Acts-on2:E36
+E34	Action:T141 Product:T146 Acts-on:E33
+E35	Action:T144 Acts-on:T146 Product:T148
+E36	Action:T147 Acts-on:T148 Product:T150
+E37	Action:T149 Acts-on:T150 Product:T153
 E38	Action:T152 Site:T154 Using:T155 Acts-on:T153
-E39	Action:T156 Acts-on:T158 Site:T160 Acts-on2:T150
-E40	Action:T161 Using:T162 Acts-on:T160
-E41	Action:T163 Acts-on:T164 Site:T165
-E42	Action:T166 Acts-on:T168 Acts-on2:T165
-E43	Action:T170 Acts-on:T171 Site:T172 Using:T174 Acts-on2:T168
-E44	Action:T175 Acts-on:T176 Site:T178 Acts-on2:T171
+E39	Action:T156 Acts-on:T158 Site:T160 Acts-on2:E37
+E40	Action:T161 Using:T162 Acts-on:E39 Product:T165
+E41	Action:T163 Acts-on:T164 Site:T165 Product:T168
+E42	Action:T166 Acts-on:T168 Product:T171
+E43	Action:T170 Acts-on:T171 Site:T172 Using:T174 Product:T176
+E44	Action:T175 Acts-on:T176 Site:T178
 R1	Measure Arg1:T4 Arg2:T3
 R2	Measure Arg1:T9 Arg2:T8
 R3	Measure Arg1:T12 Arg2:T11
@@ -279,7 +279,19 @@ R56	Mod-Link Arg1:T174 Arg2:T173
 R57	Meronym Arg1:T176 Arg2:T177
 R58	Mod-Link Arg1:T74 Arg2:T75
 R59	Enables Arg1:E14 Arg2:E13
-R60	Overlaps Arg1:E26 Arg2:E27
-R61	Enables Arg1:E31 Arg2:E32
 R62	Measure Arg1:T137 Arg2:T138
 R63	Mod-Link Arg1:E42 Arg2:T169
+R64	Enables Arg1:E3 Arg2:E1	
+R65	Overlaps Arg1:E6 Arg2:E5	
+R66	Coreference-Link Arg1:T30 Arg2:T23	
+R67	Coreference-Link Arg1:T33 Arg2:T26	
+R68	Coreference-Link Arg1:T39 Arg2:T28	
+R69	Enables Arg1:E7 Arg2:E4	
+R70	Coreference-Link Arg1:T94 Arg2:T2	
+R71	Coreference-Link Arg1:T106 Arg2:T22	
+R72	Coreference-Link Arg1:T123 Arg2:T43	
+R73	Coreference-Link Arg1:T125 Arg2:T43	
+R74	Overlaps Arg1:E10 Arg2:E9	
+R75	Meronym Arg1:T69 Arg2:T70	
+R60	Coreference-Link Arg1:T137 Arg2:T125	
+R61	Meronym Arg1:T150 Arg2:T151	

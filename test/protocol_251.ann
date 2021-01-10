@@ -704,3 +704,6 @@ R200	Coreference-Link Arg1:T367 Arg2:T357
 R167	Coreference-Link Arg1:T373 Arg2:T367	
 R201	Meronym Arg1:T378 Arg2:T379	
 R202	Meronym Arg1:T382 Arg2:T383	
+R203	Measure Arg1:T226 Arg2:T224	
+R204	Measure Arg1:T19 Arg2:T20	
+R205	Measure Arg1:T136 Arg2:T134	

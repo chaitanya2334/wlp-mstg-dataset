@@ -80,14 +80,14 @@ E2	Action:T4 Acts-on:T5 Site:T7 Product:T11
 E3	Action:T9 Acts-on:T11 Site:T13 Product:T19
 E4	Action:T14 Acts-on:T17 Site:T19 Product:T22
 E5	Action:T21 Acts-on:T22 Count:T23
-E6	Action:T24 Acts-on:T25 Acts-on2:T26 Product:T29
-E7	Action:T27 
+E6	Action:T24 Acts-on:T25 Acts-on2:T26
+E7	Action:T27 Acts-on:E6 Product:T29
 E8	Action:T28 Acts-on:T29 Site:T30
-E9	Action:T32 
-E10	Action:T33 Acts-on:E8
-E11	Action:T38 
-E12	Action:T39 Site:T40 Acts-on:E10 Product:T49
-E13	Action:T42 
+E9	Action:T32 Acts-on:E8
+E10	Action:T33 Acts-on:E9
+E11	Action:T38 Acts-on:E10
+E12	Action:T39 Site:T40 Acts-on:E11
+E13	Action:T42 Acts-on:E12 Product:T49 Product2:T47
 E14	Action:T43 Acts-on:T46 Site:T47
 E15	Action:T50 Acts-on:E14 Product:T64
 E16	Action:T53 
@@ -130,16 +130,13 @@ R28	Setting Arg1:E24 Arg2:T77
 R29	Enables Arg1:E5 Arg2:E6
 R30	Meronym Arg1:T25 Arg2:T22
 R31	Meronym Arg1:T26 Arg2:T22
-R32	Prevents Arg1:E5 Arg2:E7
-R33	Prevents Arg1:E8 Arg2:E9
-R34	Prevents Arg1:E10 Arg2:E11
-R35	Prevents Arg1:E12 Arg2:E13
 R36	Overlaps Arg1:E16 Arg2:E15
 R37	Overlaps Arg1:E17 Arg2:E15
 R38	Or Arg1:E17 Arg2:E16
-R39	Coreference-Link Arg1:T46 Arg2:T69
+R39	Coreference-Link Arg1:T69 Arg2:T46
 R40	Meronym Arg1:T61 Arg2:T64
 R41	Enables Arg1:E20 Arg2:E19
 R42	Enables Arg1:E21 Arg2:E19
 R43	Coreference-Link Arg1:T7 Arg2:T30
 R44	Coreference-Link Arg1:T30 Arg2:T40
+R45	Measure Arg1:T46 Arg2:T45	
