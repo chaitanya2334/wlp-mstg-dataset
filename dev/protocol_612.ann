@@ -1,0 +1,112 @@
+T1	Action 141 146	Clamp
+T2	Modifier 147 150	all
+T3	Location 151 156	tubes
+T4	Location 160 169	manifolds
+T5	Location 174 186	filter tanks
+T6	Action 227 234	Turn on
+T7	Device 235 239	pump
+T8	Action 249 254	bleed
+T9	Device 255 260	A / E
+T10	Device 266 274	Durapore
+T11	Device 283 288	A / E
+T12	Action 297 301	Keep
+T13	Location 302 317	cubie container
+T14	Location 321 332	ice - water
+T15	Action 372 377	Place
+T16	Location 378 388	“out” tube
+T17	Location 410 422	filter flask
+T18	Action 431 439	attached
+T19	Location 447 458	vacuum side
+T20	Device 466 470	pump
+T21	Action 473 477	Wait
+T22	Action 560 564	Open
+T23	Seal 565 586	steel filter tank lid
+T24	Modifier 591 597	slowly
+T25	Action 598 602	open
+T26	Device 603 621	tank bleeder valve
+T27	Method 625 637	depressurize
+T28	Modifier 640 646	SLOWLY
+T29	Action 770 780	Disconnect
+T30	Device 781 786	clamp
+T31	Location 792 803	bottom side
+T32	Device 807 819	A / E filter
+T33	Action 822 828	remove
+T34	Location 829 833	tube
+T35	Location 839 849	“out” side
+T36	Device 853 858	A / E
+T37	Action 861 866	Place
+T38	Device 867 875	Durapore
+T39	Location 879 884	knees
+T40	Action 889 894	swirl
+T41	Modifier 895 901	gently
+T42	Modifier 905 908	all
+T43	Reagent 909 914	water
+T44	Action 915 919	goes
+T45	Location 929 941	filter flask
+T46	Action 964 968	open
+T47	Device 969 977	manifold
+T48	Modifier 978 984	slowly
+T49	Action 987 994	fold up
+T50	Device 995 1001	filter
+T51	Action 1006 1011	place
+T52	Location 1015 1024	whirlpack
+T53	Action 1027 1033	Remove
+T54	Location 1034 1053	Durapore “out” tube
+T55	Location 1059 1071	filter flask
+T56	Action 1074 1079	place
+T57	Location 1080 1096	A / E “out” tube
+T58	Location 1102 1114	filter flask
+T59	Action 1117 1122	Place
+T60	Device 1123 1128	A / E
+T61	Location 1132 1137	knees
+T62	Reagent 1144 1149	water
+T63	Action 1150 1159	drain out
+T64	Location 1169 1181	filter flask
+T65	Method 1185 1191	before
+T66	Action 1194 1198	Open
+T67	Device 1199 1207	manifold
+T68	Modifier 1208 1214	slowly
+T69	Action 1217 1225	peel off
+T70	Location 1226 1230	ring
+T71	Device 1234 1240	filter
+T72	Action 1243 1250	discard
+T73	Device 1253 1264	fold filter
+T74	Action 1269 1274	place
+T75	Location 1278 1287	whirlpack
+E1	Action:T1 Acts-on:T3 Site:T4 Site2:T5
+E2	Action:T6 Acts-on:E1 Acts-on2:T7
+E3	Action:T8 Acts-on:E2 Using:T9 Using2:T10 Using3:T11
+E4	Action:T12 Acts-on:T13 Site:T14 Acts-on2:E3
+E5	Action:T15 Acts-on:T16 Site:T17 Acts-on2:E4
+E6	Action:T18 Site:T19 Using:T17
+E7	Action:T21 Acts-on:E5
+E8	Action:T22 Acts-on:T23 Acts-on2:E7
+E9	Action:T25 Acts-on:T26 Using:T27 Acts-on2:E8
+E10	Action:T29 Acts-on:T30 Site:T31 Acts-on2:E9
+E11	Action:T33 Acts-on:T34 Site:T35 Acts-on2:E10
+E12	Action:T37 Acts-on:T38 Site:T39 Acts-on2:E11
+E13	Action:T40 Acts-on:T38
+E14	Action:T44 Acts-on:T43 Site:T45
+E15	Action:T46 Acts-on:T47 Acts-on2:E14
+E16	Action:T49 Acts-on:T50
+E17	Action:T51 Site:T52 Acts-on:T50
+E18	Action:T53 Acts-on:T54 Site:T55
+E19	Action:T56 Acts-on:T57 Site:T58
+E20	Action:T59 Acts-on:T60 Site:T61 Acts-on2:E18
+E21	Action:T63 Acts-on:T62 Site:T64 Using:T65
+E22	Action:T66 Acts-on:T67 Acts-on2:E20
+E23	Action:T69 Acts-on:T70
+E24	Action:T72 Acts-on:T73
+E25	Action:T74 Site:T75
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Meronym Arg1:T19 Arg2:T20
+R3	Mod-Link Arg1:E9 Arg2:T24
+R4	Meronym Arg1:T35 Arg2:T36
+R5	Meronym Arg1:T31 Arg2:T32
+R6	Mod-Link Arg1:E13 Arg2:T41
+R7	Mod-Link Arg1:T43 Arg2:T42
+R8	Mod-Link Arg1:E15 Arg2:T48
+R9	Mod-Link Arg1:E22 Arg2:T68
+R10	Meronym Arg1:T70 Arg2:T71
+R11	Enables Arg1:E13 Arg2:E14
+R12	Mod-Link Arg1:E9 Arg2:T28

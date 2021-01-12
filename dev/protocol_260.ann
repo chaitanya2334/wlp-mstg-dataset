@@ -1,0 +1,200 @@
+T1	Action 44 48	Thaw
+T2	Device 49 65	sterivex filters
+T3	Location 69 72	ice
+T4	Action 75 78	Add
+T5	Amount 79 83	40µL
+T6	Reagent 84 101	lysozyme solution
+T7	Action 104 107	add
+T8	Amount 108 112	2 mg
+T9	Reagent 113 121	lysozyme
+T10	Amount 125 130	40 µl
+T11	Reagent 131 143	Lysis Buffer
+T12	Device 149 155	filter
+T13	Action 158 166	Incubate
+T14	Temperature 170 174	37°C
+T15	Action 181 189	rotating
+T16	Time 194 204	45 minutes
+T17	Action 207 210	Add
+T18	Amount 211 216	100µL
+T19	Reagent 217 238	Proteinase K solution
+T20	Amount 241 244	1mg
+T21	Reagent 245 257	Proteinase K
+T22	Amount 261 267	100 µl
+T23	Reagent 268 280	Lysis Buffer
+T24	Amount 287 292	100µL
+T25	Concentration 293 297	20 %
+T26	Reagent 298 301	SDS
+T27	Action 304 312	Incubate
+T28	Temperature 316 320	55°C
+T29	Action 327 335	rotating
+T30	Time 340 347	2 hours
+T31	Action 350 358	Transfer
+T32	Reagent 359 365	lysate
+T33	Amount 371 376	15 mL
+T34	Location 377 389	conical tube
+T35	Modifier 398 405	sterile
+T36	Amount 406 410	3 mL
+T37	Device 411 418	syringe
+T38	Action 421 424	Add
+T39	Amount 425 429	1 mL
+T40	Reagent 430 442	Lysis Buffer
+T41	Device 446 452	filter
+T42	Action 457 461	wash
+T43	Temperature 465 469	55°C
+T44	Time 474 484	15 minutes
+T45	Action 487 491	Pool
+T46	Modifier 497 502	above
+T47	Reagent 503 509	lysate
+T48	Action 512 515	Add
+T49	Amount 516 520	3 mL
+T50	Reagent 521 546	Phenol : Chloroform : IAA
+T51	Generic-Measure 549 560	25 : 24 : 1
+T52	pH 563 569	pH 8.0
+T53	Action 574 580	Vortex
+T54	Time 585 595	10 seconds
+T55	Action 598 602	Spin
+T56	Time 607 616	5 minutes
+T57	Speed 620 625	2500g
+T58	Speed 628 635	speed 8
+T59	Modifier 640 649	Carefully
+T60	Action 650 658	transfer
+T61	Reagent 659 672	aqueous phase
+T62	Modifier 678 681	new
+T63	Amount 682 687	15 mL
+T64	Location 688 700	conical tube
+T65	Action 703 706	Add
+T66	Amount 707 711	3 mL
+T67	Reagent 712 728	Chloroform : IAA
+T68	Generic-Measure 731 737	24 : 1
+T69	Action 740 746	Vortex
+T70	Time 751 761	10 seconds
+T71	Action 764 768	Spin
+T72	Time 773 782	5 minutes
+T73	Speed 786 791	2500g
+T74	Speed 794 801	speed 8
+T75	Modifier 806 815	Carefully
+T76	Action 816 824	transfer
+T77	Reagent 825 838	aqueous phase
+T78	Device 844 857	centricon 100
+T79	Measure-Type 881 887	volume
+T80	Action 898 909	transferred
+T81	Location 916 924	epi tube
+T82	Action 927 931	Spin
+T83	Device 932 941	Centricon
+T84	Speed 945 951	1000xg
+T85	Speed 954 960	speed4
+T86	Time 967 977	20 minutes
+T87	Action 980 983	Add
+T88	Measure-Type 994 1000	volume
+T89	Location 1006 1014	epi tube
+T90	Device 1018 1027	centricon
+T91	Action 1030 1034	Spin
+T92	Amount 1046 1059	100µL - 500µL
+T93	Reagent 1063 1076	aqueous phase
+T94	Action 1077 1084	is left
+T95	Device 1088 1097	Centricon
+T96	Action 1100 1103	Add
+T97	Amount 1104 1108	1 mL
+T98	Reagent 1109 1118	TE Buffer
+T99	Action 1119 1125	Repeat
+T100	Method 1126 1133	step 20
+T101	Action 1136 1140	Spin
+T102	Amount 1152 1167	100 µL - 150 µL
+T103	Action 1168 1172	left
+T104	Device 1176 1185	Centricon
+T105	Modifier 1188 1197	Carefully
+T106	Action 1198 1204	remove
+T107	Reagent 1205 1211	liquid
+T108	Action 1212 1228	without damaging
+T109	Reagent 1233 1241	membrane
+T110	Action 1244 1248	Wash
+T111	Reagent 1249 1257	membrane
+T112	Modifier 1258 1262	well
+T113	Amount 1268 1272	40µL
+T114	Reagent 1276 1285	TE Buffer
+T115	Action 1286 1290	Pool
+T116	Reagent 1295 1303	membrane
+T117	Modifier 1311 1315	same
+T118	Location 1316 1324	epi tube
+T119	Measure-Type 1342 1348	volume
+T120	Location 1356 1364	epi tube
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T4 Acts-on:T6 Site:T12
+E3	Action:T7 Acts-on:T9 Site:T11
+E4	Action:T13 
+E5	Action:T15 
+E6	Action:T17 Acts-on:T19 Acts-on2:T26
+E7	Action:T27 
+E8	Action:T29 
+E9	Action:T31 Acts-on:T32 Site:T34 Using:T37
+E10	Action:T38 Acts-on:T40 Site:T41
+E11	Action:T42 
+E12	Action:T45 Acts-on:T47
+E13	Action:T48 Acts-on:T50
+E14	Action:T53 
+E15	Action:T55 
+E16	Action:T60 Acts-on:T61 Site:T64
+E17	Action:T65 Acts-on:T67
+E18	Action:T69 
+E19	Action:T71 
+E20	Action:T76 Acts-on:T77 Site:T78
+E21	Action:T80 Measure-Type-Link:T79 Site:T81
+E22	Action:T82 Using:T83
+E23	Action:T87 Site:T89 Site2:T90
+E24	Action:T91 Using:T95
+E25	Action:T94 Acts-on:T93 Site:T95
+E26	Action:T96 Acts-on:T98
+E27	Action:T99 Using:T100
+E28	Action:T101 Using:T104
+E29	Action:T103 Site:T104
+E30	Action:T106 Acts-on:T107
+E31	Action:T108 Acts-on:T109
+E32	Action:T110 Acts-on:T111 Using:T114
+E33	Action:T115 Acts-on:T116 Site:T118
+R1	Measure Arg1:T6 Arg2:T5
+R2	Measure Arg1:T9 Arg2:T8
+R3	Measure Arg1:T11 Arg2:T10
+R4	Setting Arg1:E4 Arg2:T14
+R5	Setting Arg1:E5 Arg2:T16
+R6	Measure Arg1:T19 Arg2:T18
+R7	Measure Arg1:T21 Arg2:T20
+R8	Measure Arg1:T23 Arg2:T22
+R9	Measure Arg1:T26 Arg2:T25
+R10	Measure Arg1:T26 Arg2:T24
+R11	Setting Arg1:E7 Arg2:T28
+R12	Setting Arg1:E8 Arg2:T30
+R13	Measure Arg1:T34 Arg2:T33
+R14	Setting Arg1:T37 Arg2:T36
+R15	Mod-Link Arg1:T37 Arg2:T35
+R16	Measure Arg1:T40 Arg2:T39
+R17	Setting Arg1:E11 Arg2:T43
+R18	Setting Arg1:E11 Arg2:T44
+R19	Mod-Link Arg1:T47 Arg2:T46
+R20	Measure Arg1:T50 Arg2:T49
+R21	Measure Arg1:T50 Arg2:T51
+R22	Measure Arg1:T50 Arg2:T52
+R23	Setting Arg1:E14 Arg2:T54
+R24	Setting Arg1:E15 Arg2:T56
+R25	Setting Arg1:E15 Arg2:T57
+R26	Mod-Link Arg1:E16 Arg2:T59
+R27	Measure Arg1:T64 Arg2:T63
+R28	Mod-Link Arg1:T64 Arg2:T62
+R29	Measure Arg1:T67 Arg2:T66
+R30	Measure Arg1:T67 Arg2:T68
+R31	Setting Arg1:E18 Arg2:T70
+R32	Setting Arg1:E19 Arg2:T72
+R33	Setting Arg1:E19 Arg2:T73
+R34	Mod-Link Arg1:E20 Arg2:T75
+R35	Setting Arg1:T83 Arg2:T84
+R36	Setting Arg1:T83 Arg2:T86
+R37	Setting Arg1:E23 Arg2:T88
+R38	Measure Arg1:T93 Arg2:T92
+R39	Measure Arg1:T98 Arg2:T97
+R40	Setting Arg1:E29 Arg2:T102
+R41	Mod-Link Arg1:E30 Arg2:T105
+R42	Mod-Link Arg1:E32 Arg2:T112
+R43	Measure Arg1:T114 Arg2:T113
+R44	Mod-Link Arg1:T118 Arg2:T117
+R45	Coreference-Link Arg1:T58 Arg2:T57
+R46	Coreference-Link Arg1:T74 Arg2:T73
+R47	Coreference-Link Arg1:T85 Arg2:T84

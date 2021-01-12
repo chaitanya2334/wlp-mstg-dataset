@@ -1,0 +1,280 @@
+T1	Action 200 205	Label
+T2	Numerical 206 207	5
+T3	Amount 208 212	15ml
+T4	Location 213 225	falcon tubes
+T5	Modifier 231 272	25 % , 30 % , 35 % , 40 % and 45 % labels
+T6	Action 275 280	Label
+T7	Amount 283 288	50 ml
+T8	Location 289 300	falcon tube
+T9	Modifier 303 311	Optiprep
+T10	Action 316 322	Remove
+T11	Reagent 323 340	OptiPrep solution
+T12	Device 350 356	fridge
+T13	Action 361 370	wipe down
+T14	Location 371 376	sides
+T15	Seal 379 382	cap
+T16	Location 387 393	septum
+T17	Reagent 399 406	alcohol
+T18	Action 409 415	Pierce
+T19	Reagent 416 422	septum
+T20	Device 428 434	needle
+T21	Generic-Measure 437 445	20 gauge
+T22	Size 446 456	1 / 2 inch
+T23	Modifier 489 510	appropriately - sized
+T24	Device 511 518	syringe
+T25	Modifier 523 534	aseptically
+T26	Action 535 541	remove
+T27	Amount 542 552	15 - 16 ml
+T28	Reagent 556 564	OptiPrep
+T29	Modifier 565 586	for every 2 gradients
+T30	Action 608 613	Place
+T31	Reagent 614 622	Optiprep
+T32	Modifier 630 637	sterile
+T33	Amount 638 643	50 ml
+T34	Location 644 655	falcon tube
+T35	Action 658 662	Make
+T36	Concentration 663 667	25 %
+T37	Concentration 670 674	30 %
+T38	Concentration 677 681	35 %
+T39	Concentration 684 688	40 %
+T40	Concentration 693 697	45 %
+T41	Reagent 698 716	Optiprep solutions
+T42	Modifier 724 731	labeled
+T43	Location 732 744	falcon tubes
+T44	Action 823 826	Mix
+T45	Modifier 827 831	well
+T46	Action 1118 1122	Make
+T47	Device 1125 1164	loading system for the centrifuge tubes
+T48	Action 1168 1177	attaching
+T49	Location 1182 1190	thin end
+T50	Device 1196 1209	pasteur pipet
+T51	Amount 1215 1219	5 ml
+T52	Device 1220 1227	syringe
+T53	Seal 1233 1241	parafilm
+T54	Seal 1247 1258	rubber tube
+T55	Action 1261 1265	Hold
+T56	Device 1270 1277	syringe
+T57	Device 1285 1295	ring clamp
+T58	Location 1308 1311	end
+T59	Device 1319 1336	Pasteur pipet tip
+T60	Action 1337 1343	hovers
+T61	Modifier 1344 1354	just above
+T62	Location 1359 1365	bottom
+T63	Location 1373 1377	tube
+T64	Action 1380 1387	Pipette
+T65	Amount 1388 1394	2.4 ml
+T66	Concentration 1398 1402	25 %
+T67	Reagent 1403 1411	solution
+T68	Device 1421 1428	syringe
+T69	Action 1448 1452	flow
+T70	Location 1462 1477	centrifuge tube
+T71	Method 1482 1489	gravity
+T72	Action 1544 1547	add
+T73	Amount 1548 1554	2.4 ml
+T74	Reagent 1562 1566	30 %
+T75	Action 1569 1575	Repeat
+T76	Modifier 1580 1583	all
+T77	Reagent 1584 1593	solutions
+T78	Action 1979 1983	seal
+T79	Location 1988 1991	top
+T80	Seal 1997 2005	parafilm
+T81	Action 2010 2015	place
+T82	Location 2020 2025	tubes
+T83	Device 2033 2039	fridge
+T84	Location 2052 2057	tubes
+T85	Action 2061 2064	sit
+T86	Time 2065 2074	overnight
+T87	Reagent 2085 2104	continuous gradient
+T88	Location 2114 2119	Tubes
+T89	Action 2124 2127	sit
+T90	Device 2135 2141	fridge
+T91	Time 2146 2159	several weeks
+T92	Action 2277 2284	pipette
+T93	Amount 2285 2295	0.5 - 4 ml
+T94	Reagent 2304 2321	viral concentrate
+T95	Reagent 2327 2340	each gradient
+T96	Action 2343 2350	Balance
+T97	Location 2355 2360	tubes
+T98	Modifier 2367 2374	sterile
+T99	Reagent 2375 2388	growth medium
+T100	Action 2462 2472	Centrifuge
+T101	Location 2477 2482	tubes
+T102	Device 2488 2509	swinging bucket rotor
+T103	Device 2517 2540	Beckman Advanti J30 - I
+T104	Modifier 2569 2578	max speed
+T105	Speed 2581 2591	40,000 rpm
+T106	Modifier 2598 2606	at least
+T107	Time 2607 2614	4 hours
+T108	Temperature 2618 2621	8˚C
+T109	Action 2661 2665	spin
+T110	Modifier 2670 2681	longer than
+T111	Time 2682 2689	4 hours
+T112	Method 2693 2711	achieve separation
+T113	Action 2776 2782	Remove
+T114	Location 2787 2792	tubes
+T115	Modifier 2793 2802	carefully
+T116	Device 2814 2819	rotor
+T117	Action 2824 2829	place
+T118	Mention 2830 2834	them
+T119	Location 2840 2854	standing clamp
+T120	Action 2858 2867	visualize
+T121	Reagent 2872 2877	bands
+T122	Action 2933 2940	suspend
+T123	Location 2945 2950	tubes
+T124	Location 2956 2962	beaker
+T125	Reagent 2966 2971	water
+T126	Action 2974 2980	remove
+T127	Action 2985 2995	back light
+T128	Mention 2996 3000	them
+T129	Action 3022 3029	Extract
+T130	Reagent 3034 3039	bands
+T131	Modifier 3040 3050	separately
+T132	Modifier 3057 3064	sterile
+T133	Device 3065 3072	needles
+T134	Amount 3079 3083	3 ml
+T135	Device 3084 3091	syringe
+T136	Generic-Measure 3114 3122	20 gauge
+T137	Size 3123 3134	half - inch
+T138	Device 3135 3142	needles
+T139	Action 3160 3176	avoid puncturing
+T140	Modifier 3177 3181	both
+T141	Location 3182 3187	walls
+T142	Location 3195 3199	tube
+T143	Action 3202 3212	Do not use
+T144	Modifier 3213 3216	any
+T145	Device 3217 3224	needles
+T146	Size 3237 3239	½”
+T147	Action 3242 3246	Wipe
+T148	Location 3251 3256	sides
+T149	Location 3264 3273	tube wall
+T150	Reagent 3279 3286	ethanol
+T151	Action 3289 3294	Place
+T152	Device 3299 3306	syringe
+T153	Modifier 3307 3311	just
+T154	Location 3312 3317	below
+T155	Reagent 3322 3326	band
+T156	Action 3331 3339	puncture
+T157	Location 3344 3348	wall
+T158	Action 3351 3359	Aspirate
+T159	Action 3364 3370	remove
+T160	Reagent 3375 3379	band
+T161	Device 3389 3396	syringe
+T162	Action 3484 3489	Place
+T163	Seal 3492 3512	piece of scotch tape
+T164	Location 3522 3526	hole
+T165	Location 3534 3538	tube
+T166	Action 3542 3549	prevent
+T167	Reagent 3554 3562	gradient
+T168	Method 3568 3579	leaking out
+T169	Action 3582 3587	Place
+T170	Reagent 3592 3598	sample
+T171	Amount 3606 3612	1.5 ml
+T172	Location 3613 3628	centrifuge tube
+T173	Action 3633 3638	store
+T174	Temperature 3642 3645	4˚C
+E1	Action:T1 Acts-on:T4 Count:T2
+E2	Action:T6 Acts-on:T8 Acts-on2:E1
+E3	Action:T10 Acts-on:T11 Site:T12 Acts-on2:E2
+E4	Action:T13 Acts-on:T14 Acts-on2:T15 Acts-on3:T16 Using:T17 Acts-on4:E3 Product:T19
+E5	Action:T18 Acts-on:T19 Using:T20
+E6	Action:T26 Acts-on:T28 Acts-on2:E5 Product:T31
+E7	Action:T30 Acts-on:T31 Site:T34
+E8	Action:T35 Acts-on:T41 Site:T43 Acts-on2:E7
+E9	Action:T44 Acts-on:E8
+E10	Action:T46 Acts-on:T47
+E11	Action:T48 Acts-on:T49 Site:T52 Using:T53 Acts-on2:T50 Acts-on3:E9
+E12	Action:T55 Acts-on:T56 Using:T57 Acts-on2:E10
+E13	Action:T60 Site:T62 Acts-on:T58 Acts-on2:T59
+E14	Action:T64 Acts-on:T67 Site:T68 Acts-on2:E13
+E15	Action:T69 Site:T70 Using:T71 Acts-on:E14
+E16	Action:T72 Acts-on:T74 Acts-on2:E15
+E17	Action:T75 Acts-on:T77 Acts-on2:E16
+E18	Action:T78 Acts-on:T79 Using:T80
+E19	Action:T81 Acts-on:T82 Site:T83
+E20	Action:T85 Acts-on:T84 Product:T87
+E21	Action:T89 Site:T90 Acts-on:T88
+E22	Action:T92 Acts-on:T94 Site:T95
+E23	Action:T96 Acts-on:T97 Using:T99
+E24	Action:T100 Acts-on:T101 Site:T102
+E25	Action:T109 Using:T112
+E26	Action:T113 Acts-on:T114 Site:T116
+E27	Action:T117 Acts-on:T118 Site:T119
+E28	Action:T120 Acts-on:T121 Using:E27
+E29	Action:T122 Acts-on:T123 Site:T124
+E30	Action:T126 
+E31	Action:T127 
+E32	Action:T129 Acts-on:T130 Using:T133 Using2:T135
+E33	Action:T139 Using:T138 Acts-on:T141
+E34	Action:T143 Acts-on:T145
+E35	Action:T147 Acts-on:T148 Using:T150
+E36	Action:T151 Acts-on:T152 Site:T154
+E37	Action:T156 Acts-on:T157
+E38	Action:T158 Acts-on:T160 Using:T161
+E39	Action:T159 Acts-on:T160 Using:T161
+E40	Action:T162 Acts-on:T163 Site:T164
+E41	Action:T166 Acts-on:T167 Using:T168 Using2:E40
+E42	Action:T169 Acts-on:T170 Site:T172
+E43	Action:T173 
+R1	Measure Arg1:T4 Arg2:T3
+R2	Measure Arg1:T8 Arg2:T7
+R3	Setting Arg1:T20 Arg2:T21
+R4	Measure Arg1:T20 Arg2:T22
+R5	Mod-Link Arg1:T24 Arg2:T23
+R6	Meronym Arg1:T20 Arg2:T24
+R7	Measure Arg1:T28 Arg2:T27
+R8	Mod-Link Arg1:E6 Arg2:T25
+R9	Measure Arg1:T34 Arg2:T33
+R10	Measure Arg1:T41 Arg2:T40
+R11	Measure Arg1:T41 Arg2:T39
+R12	Measure Arg1:T41 Arg2:T38
+R13	Measure Arg1:T41 Arg2:T37
+R14	Measure Arg1:T41 Arg2:T36
+R15	Mod-Link Arg1:T43 Arg2:T42
+R16	Mod-Link Arg1:E9 Arg2:T45
+R17	Setting Arg1:T52 Arg2:T51
+R18	Meronym Arg1:T49 Arg2:T50
+R19	Or Arg1:T53 Arg2:T54
+R20	Measure Arg1:T67 Arg2:T66
+R21	Measure Arg1:T67 Arg2:T65
+R22	Meronym Arg1:T62 Arg2:T63
+R23	Meronym Arg1:T58 Arg2:T59
+R24	Mod-Link Arg1:E13 Arg2:T61
+R25	Measure Arg1:T74 Arg2:T73
+R26	Mod-Link Arg1:T77 Arg2:T76
+R27	Setting Arg1:E20 Arg2:T86
+R28	Setting Arg1:E21 Arg2:T91
+R29	Measure Arg1:T94 Arg2:T93
+R30	Mod-Link Arg1:T99 Arg2:T98
+R31	Mod-Link Arg1:T107 Arg2:T106
+R32	Mod-Link Arg1:T105 Arg2:T104
+R33	Setting Arg1:T103 Arg2:T105
+R34	Setting Arg1:T103 Arg2:T107
+R35	Setting Arg1:T103 Arg2:T108
+R36	Meronym Arg1:T102 Arg2:T103
+R37	Mod-Link Arg1:T111 Arg2:T110
+R38	Setting Arg1:E25 Arg2:T111
+R39	Mod-Link Arg1:E26 Arg2:T115
+R40	Coreference-Link Arg1:T118 Arg2:T114
+R41	Meronym Arg1:T125 Arg2:T124
+R42	Coreference-Link Arg1:T128 Arg2:T123
+R43	Setting Arg1:T135 Arg2:T134
+R44	Mod-Link Arg1:T133 Arg2:T132
+R45	Mod-Link Arg1:E32 Arg2:T131
+R46	Mod-Link Arg1:T141 Arg2:T140
+R47	Meronym Arg1:T141 Arg2:T142
+R48	Setting Arg1:T138 Arg2:T137
+R49	Setting Arg1:T138 Arg2:T136
+R50	Mod-Link Arg1:T145 Arg2:T144
+R51	Setting Arg1:T145 Arg2:T146
+R52	Meronym Arg1:T148 Arg2:T149
+R53	Mod-Link Arg1:T154 Arg2:T153
+R54	Meronym Arg1:T154 Arg2:T155
+R55	Meronym Arg1:T164 Arg2:T165
+R56	Measure Arg1:T172 Arg2:T171
+R57	Setting Arg1:E43 Arg2:T174
+R58	Mod-Link Arg1:E2 Arg2:T9
+R59	Mod-Link Arg1:E6 Arg2:T29
+R60	Mod-Link Arg1:T34 Arg2:T32
+R61	Mod-Link Arg1:E1 Arg2:T5
+R62	Enables Arg1:E9 Arg2:E10
+R63	Enables Arg1:E12 Arg2:E13

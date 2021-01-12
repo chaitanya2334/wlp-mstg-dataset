@@ -1,0 +1,92 @@
+T1	Action 86 93	Prepare
+T2	Modifier 94 103	duplicate
+T3	Reagent 104 113	standards
+T4	Reagent 132 138	buffer
+T5	Concentration 183 184	0
+T6	Concentration 187 190	0.2
+T7	Concentration 193 196	0.4
+T8	Concentration 199 202	0.6
+T9	Concentration 205 208	0.8
+T10	Concentration 211 221	1.0µg / µl
+T11	Action 222 230	Transfer
+T12	Amount 231 235	50µl
+T13	Reagent 236 252	protein standard
+T14	Amount 256 261	1.5ml
+T15	Location 262 278	centrifuge tubes
+T16	Action 628 631	Add
+T17	Amount 632 635	1ml
+T18	Reagent 636 668	pre - chilled ( - 20°C ) CB - X™
+T19	Action 673 679	vortex
+T20	Action 689 699	Centrifuge
+T21	Speed 703 711	16,000xg
+T22	Time 716 725	5 minutes
+T23	Modifier 730 739	carefully
+T24	Action 740 746	remove
+T25	Reagent 755 766	supernatant
+T26	Action 807 810	Add
+T27	Amount 811 815	50µl
+T28	Reagent 816 849	CB - X™ Solubilization Buffer - I
+T29	Amount 854 858	50µl
+T30	Reagent 859 893	CB - X™ Solubilization Buffer - II
+T31	Device 901 905	tube
+T32	Action 910 916	vortex
+T33	Action 920 928	dissolve
+T34	Reagent 933 947	protein pellet
+T35	Action 950 956	Invert
+T36	Reagent 961 978	CB - X™ Assay Dye
+T37	Numerical 979 984	2 - 3
+T38	Action 1002 1005	add
+T39	Amount 1006 1009	1ml
+T40	Reagent 1010 1027	CB - X™ Assay Dye
+T41	Location 1035 1039	tube
+T42	Action 1044 1050	vortex
+T43	Modifier 1051 1058	briefly
+T44	Action 1061 1069	Incubate
+T45	Time 1074 1083	5 minutes
+T46	Temperature 1087 1103	room temperature
+T47	Action 1106 1110	Read
+T48	Device 1115 1125	absorbance
+T49	Generic-Measure 1129 1134	595nm
+T50	Device 1174 1197	1cm path length cuvette
+T51	Action 1201 1209	transfer
+T52	Amount 1210 1215	200µl
+T53	Reagent 1216 1230	assay solution
+T54	Location 1236 1251	microtiter well
+E1	Action:T1 Site:T4 Product:T3 Product2:T13
+E2	Action:T11 Acts-on:T13 Site:T15
+E3	Action:T16 Acts-on:T18 Site:E2
+E4	Action:T19 Acts-on:E3
+E5	Action:T20 Product:T25 Acts-on:E4
+E6	Action:T24 Acts-on:T25
+E7	Action:T26 Acts-on:T28 Acts-on2:T30 Site:T31 Product:T34 Acts-on3:E6
+E8	Action:T32 Acts-on:E7
+E9	Action:T33 Acts-on:T34
+E10	Action:T35 Acts-on:T36 Count:T37 Acts-on2:E9
+E11	Action:T38 Acts-on:T40 Site:T41 Acts-on2:E10
+E12	Action:T42 Acts-on:E11
+E13	Action:T44 Acts-on:E12 Product:T53
+E14	Action:T47 Acts-on:T48 Using:T50
+E15	Action:T51 Acts-on:T53 Site:T54
+R1	Measure Arg1:T13 Arg2:T12
+R2	Measure Arg1:T15 Arg2:T14
+R3	Measure Arg1:T18 Arg2:T17
+R4	Setting Arg1:E5 Arg2:T21
+R5	Setting Arg1:E5 Arg2:T22
+R6	Mod-Link Arg1:E6 Arg2:T23
+R7	Measure Arg1:T28 Arg2:T27
+R8	Measure Arg1:T30 Arg2:T29
+R9	Measure Arg1:T40 Arg2:T39
+R10	Mod-Link Arg1:E12 Arg2:T43
+R11	Setting Arg1:E13 Arg2:T45
+R12	Setting Arg1:E13 Arg2:T46
+R13	Setting Arg1:T48 Arg2:T49
+R14	Measure Arg1:T53 Arg2:T52
+R15	Mod-Link Arg1:T3 Arg2:T2
+R16	Or Arg1:T5 Arg2:T6
+R17	Or Arg1:T6 Arg2:T7
+R18	Or Arg1:T7 Arg2:T8
+R19	Or Arg1:T8 Arg2:T9
+R20	Or Arg1:T9 Arg2:T10
+R21	Or Arg1:E14 Arg2:E15
+R22	Enables Arg1:E8 Arg2:E9
+R23	Measure Arg1:T4 Arg2:T5

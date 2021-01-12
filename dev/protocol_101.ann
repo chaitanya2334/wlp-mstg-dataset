@@ -1,0 +1,74 @@
+T1	Action 31 36	Login
+T2	Location 44 47	hpc
+T3	Reagent 91 100	user name
+T4	Action 101 107	Create
+T5	Reagent 110 119	directory
+T6	Action 137 139	Go
+T7	Location 147 168	hpc - blast directory
+T8	Action 173 179	create
+T9	Reagent 180 195	sub directories
+T10	Action 275 277	Go
+T11	Location 285 302	blastdb directory
+T12	Action 307 313	create
+T13	Reagent 318 332	blast database
+T14	Action 335 339	Copy
+T15	Reagent 344 355	input files
+T16	Location 366 372	iPlant
+T17	Action 525 528	Put
+T18	Mention 529 534	these
+T19	Location 544 561	scripts directory
+T20	Action 593 599	create
+T21	Reagent 604 622	config . sh script
+T22	Action 1197 1203	create
+T23	Reagent 1208 1227	" driver script " ,
+T24	Action 1317 1323	Create
+T25	Reagent 1326 1338	shell script
+T26	Reagent 1353 1377	fasta splitter perl code
+T27	Action 1399 1405	Create
+T28	Reagent 1408 1420	shell script
+T29	Location 1442 1454	compute node
+T30	Action 1484 1490	Create
+T31	Reagent 1493 1505	shell script
+T32	Location 1547 1559	compute node
+T33	Action 1604 1610	modify
+T34	Reagent 1615 1634	blast search script
+T35	Action 1637 1643	Update
+T36	Measure-Type 1648 1657	e - value
+T37	Generic-Measure 1664 1678	less stringent
+T38	Action 1779 1783	Make
+T39	Reagent 1795 1802	scripts
+T40	Modifier 1803 1813	executable
+T41	Action 1823 1826	run
+T42	Reagent 1831 1839	pipeline
+T43	Time 1895 1902	< 1 day
+T44	Action 2188 2191	add
+T45	Reagent 2202 2206	step
+T46	Action 2212 2216	puts
+T47	Reagent 2228 2247	parsed blast output
+T48	Location 2255 2266	single file
+T49	Action 2685 2691	Commit
+T50	Reagent 2697 2701	code
+T51	Location 2714 2738	github abe487 repository
+T52	Reagent 2749 2772	directory : hpc - blast
+E1	Action:T1 Acts-on:T2 Using:T3
+E2	Action:T4 Product:T5
+E3	Action:T6 Site:T7
+E4	Action:T8 Product:T9
+E5	Action:T10 Site:T11
+E6	Action:T12 Product:T13
+E7	Action:T14 Acts-on:T15 Site:T16
+E8	Action:T17 Acts-on:T18 Site:T19
+E9	Action:T20 Product:T21
+E10	Action:T22 Acts-on:T23
+E11	Action:T24 Using:T26 Product:T25
+E12	Action:T27 Product:T28 Site:T29
+E13	Action:T30 Product:T31 Site:T32
+E14	Action:T33 Acts-on:T34
+E15	Action:T35 Measure-Type-Link:T36
+E16	Action:T38 Acts-on:T39
+E17	Action:T41 Acts-on:T42
+E18	Action:T44 Product:T45
+E19	Action:T46 Acts-on:T47 Site:T48
+E20	Action:T49 Site:T51 Acts-on:T50 Using:T52
+R1	Setting Arg1:E15 Arg2:T37
+R2	Mod-Link Arg1:T39 Arg2:T40

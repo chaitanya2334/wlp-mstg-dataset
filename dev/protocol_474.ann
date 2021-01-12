@@ -1,0 +1,264 @@
+T1	Action 43 54	Equilibrate
+T2	Reagent 55 58	DNA
+T3	Time 59 67	~ 30 min
+T4	Temperature 71 80	room temp
+T5	Action 83 88	Pipet
+T6	Reagent 89 92	mix
+T7	Numerical 93 95	3x
+T8	Modifier 101 105	wide
+T9	Device 106 114	bore tip
+T10	Action 117 124	Prepare
+T11	Reagent 125 147	nicking master mix One
+T12	Amount 148 152	10μL
+T13	Amount 159 162	1μL
+T14	Reagent 163 169	buffer
+T15	Reagent 172 175	DNA
+T16	Reagent 178 184	enzyme
+T17	Amount 188 193	200μL
+T18	Modifier 194 205	thin - wall
+T19	Location 206 214	PCR tube
+T20	Action 378 381	Mix
+T21	Numerical 382 384	4x
+T22	Device 390 411	Xplorer Plus Pipettor
+T23	Concentration 419 422	8μL
+T24	Speed 426 438	lowest speed
+T25	Action 441 451	Pulse spin
+T26	Time 452 456	2sec
+T27	Action 459 467	Incubate
+T28	Device 473 487	thermal cycler
+T29	Time 492 497	2 hrs
+T30	Temperature 501 505	37°C
+T31	Seal 511 523	heated - lid
+T32	Action 582 589	Prepare
+T33	Reagent 594 613	Labeling Master Mix
+T34	Action 697 700	Add
+T35	Amount 701 704	5μL
+T36	Reagent 705 724	Labeling Master Mix
+T37	Action 727 730	Mix
+T38	Numerical 731 733	4x
+T39	Device 739 760	Xplorer Plus Pipettor
+T40	Concentration 768 772	13μL
+T41	Speed 776 788	lowest speed
+T42	Action 791 801	Pulse spin
+T43	Time 802 806	2sec
+T44	Action 809 817	Incubate
+T45	Device 823 837	thermal cycler
+T46	Time 842 848	60 min
+T47	Temperature 852 856	72°C
+T48	Seal 862 874	heated - lid
+T49	Action 877 884	Prepare
+T50	Reagent 889 906	Repair Master Mix
+T51	Action 1004 1007	Mix
+T52	Numerical 1008 1010	4x
+T53	Device 1016 1037	Xplorer Plus Pipettor
+T54	Concentration 1045 1049	18μL
+T55	Speed 1053 1065	lowest speed
+T56	Action 1068 1078	Pulse spin
+T57	Time 1079 1083	2sec
+T58	Action 1086 1094	Incubate
+T59	Device 1100 1114	thermal cycler
+T60	Time 1119 1125	30 min
+T61	Temperature 1129 1133	37°C
+T62	Seal 1139 1151	heated - lid
+T63	Action 1154 1159	Place
+T64	Reagent 1160 1172	NLR reaction
+T65	Location 1176 1179	ice
+T66	Action 1182 1185	Add
+T67	Amount 1186 1189	1μL
+T68	Reagent 1190 1203	Stop Solution
+T69	Action 1206 1209	Mix
+T70	Modifier 1213 1219	gently
+T71	Method 1220 1228	stirring
+T72	Numerical 1229 1236	5 times
+T73	Device 1246 1255	pipet tip
+T74	Action 1258 1268	Pulse spin
+T75	Time 1269 1273	2sec
+T76	Action 1276 1279	Add
+T77	Amount 1280 1283	5μl
+T78	Reagent 1291 1308	Repair Master Mix
+T79	Action 1311 1322	Equilibrate
+T80	Reagent 1323 1353	Staining Master Mix components
+T81	Temperature 1357 1366	room temp
+T82	Action 1369 1376	Prepare
+T83	Reagent 1381 1402	Staining Master Mix .
+T84	Action 1470 1477	Aliquot
+T85	Amount 1478 1482	40μL
+T86	Reagent 1490 1509	Staining Master Mix
+T87	Amount 1517 1522	0.6mL
+T88	Location 1523 1533	amber tube
+T89	Action 1536 1544	Transfer
+T90	Reagent 1545 1548	NLR
+T91	Reagent 1552 1564	Staining Mix
+T92	Device 1570 1584	standard tip .
+T93	Action 1585 1595	Pulse spin
+T94	Time 1596 1603	2 sec .
+T95	Modifier 1604 1610	Gently
+T96	Action 1611 1614	mix
+T97	Reagent 1615 1623	NLRS DNA
+T98	Numerical 1624 1626	5x
+T99	Modifier 1632 1636	wide
+T100	Device 1637 1645	bore tip
+T101	Amount 1653 1657	50μL
+T102	Action 1660 1670	Pulse spin
+T103	Time 1671 1676	2 sec
+T104	Action 1679 1684	Place
+T105	Reagent 1685 1703	staining reactions
+T106	Temperature 1707 1710	4°C
+T107	Time 1711 1720	overnight
+T108	Action 1724 1730	ensure
+T109	Modifier 1731 1738	uniform
+T110	Reagent 1739 1751	DNA staining
+T111	Action 1754 1765	Equilibrate
+T112	Reagent 1766 1770	NLRS
+T113	Temperature 1774 1783	room temp
+T114	Time 1788 1796	~ 30 min
+T115	Modifier 1799 1805	Gently
+T116	Action 1806 1809	mix
+T117	Reagent 1810 1813	DNA
+T118	Numerical 1814 1816	3x
+T119	Modifier 1822 1826	wide
+T120	Device 1827 1835	bore tip
+T121	Amount 1843 1847	50μL
+T122	Action 1850 1860	Pulse spin
+T123	Time 1861 1866	2 sec
+T124	Action 1869 1875	Remove
+T125	Amount 1876 1879	2μL
+T126	Reagent 1880 1888	aliquots
+T127	Location 1898 1901	Top
+T128	Location 1904 1910	Middle
+T129	Location 1915 1921	Bottom
+T130	Action 1925 1933	separate
+T131	Reagent 1934 1951	Qubit Assay tubes
+T132	Action 1954 1957	Add
+T133	Amount 1958 1962	18uL
+T134	Reagent 1966 1981	Qubit HS Buffer
+T135	Action 1984 1992	Sonicate
+T136	Time 1993 1999	10 min
+T137	Device 2005 2019	bath sonicator
+T138	Action 2022 2025	Add
+T139	Amount 2026 2031	180μL
+T140	Reagent 2032 2051	Qubit reagent mix .
+T141	Action 2052 2058	Vortex
+T142	Time 2059 2068	5 seconds
+T143	Action 2071 2081	Pulse spin
+T144	Time 2082 2087	2 sec
+T145	Action 2090 2098	Incubate
+T146	Modifier 2099 2107	at least
+T147	Time 2108 2113	2 min
+T148	Temperature 2117 2126	room temp
+T149	Action 2129 2139	Quantitate
+T150	Device 2145 2166	Qubit 2.0 Fluorimeter
+T151	Action 2213 2217	Load
+T152	Reagent 2218 2224	sample
+T153	Location 2230 2239	Irys chip
+T154	Action 2244 2265	start data collection
+T155	Generic-Measure 2273 2283	30 - cycle
+T156	Device 2291 2302	irys system
+E1	Action:T1 Acts-on:T2 Product:T6
+E2	Action:T5 Acts-on:T6 Count:T7 Using:T9 Product:T15
+E3	Action:T10 Acts-on:T15 Site:T19 Product:T11 Acts-on2:T14 Acts-on3:T16
+E4	Action:T20 Count:T21 Using:T22 Acts-on:T11
+E5	Action:T25 Acts-on:E4
+E6	Action:T27 Using:T28 Acts-on:E5
+E7	Action:T32 Product:T33
+E8	Action:T34 Acts-on:T36 Site:E7
+E9	Action:T37 Count:T38 Using:T39 Acts-on:E8
+E10	Action:T42 Acts-on:E9
+E11	Action:T44 Using:T45 Acts-on:E10
+E12	Action:T49 Product:T50
+E13	Action:T51 Count:T52 Using:T53 Acts-on:T50
+E14	Action:T56 Acts-on:E13
+E15	Action:T58 Acts-on:E14 Site:T59 Product:T64
+E16	Action:T63 Acts-on:T64 Site:T65
+E17	Action:T66 Acts-on:T68 Site:E16
+E18	Action:T69 Acts-on:E17 Using:T71 Count:T72 Using2:T73
+E19	Action:T74 Acts-on:E18
+E20	Action:T76 Acts-on:T78 Site:E19
+E21	Action:T79 Acts-on:T80
+E22	Action:T82 Product:T83
+E23	Action:T84 Acts-on:T86 Site:T88 Product:T90
+E24	Action:T89 Acts-on:T90 Site:T91 Using:T92
+E25	Action:T93 Acts-on:E24 Product:T97
+E26	Action:T96 Acts-on:T97 Count:T98 Using:T100
+E27	Action:T102 Acts-on:E26 Product:T105
+E28	Action:T104 Acts-on:T105 Product:T110
+E29	Action:T108 Acts-on:T110 Product:T112
+E30	Action:T111 Acts-on:T112 Product:T117
+E31	Action:T116 Acts-on:T117 Count:T118 Using:T120
+E32	Action:T122 Acts-on:E31 Product:T126
+E33	Action:T124 Acts-on:T126 Site:T127 Site2:T128 Site3:T129 Product:T131
+E34	Action:T130 Acts-on:T131
+E35	Action:T132 Acts-on:T134 Site:E34
+E36	Action:T135 Acts-on:E35 Site:T137
+E37	Action:T138 Acts-on:T140 Site:E36
+E38	Action:T141 Acts-on:E37
+E39	Action:T143 Acts-on:E38
+E40	Action:T145 Acts-on:E39
+E41	Action:T149 Using:T150 Acts-on:E40 Product:T152
+E42	Action:T151 Acts-on:T152 Site:T153
+E43	Action:T154 Using:T156 Acts-on:T152
+R1	Mod-Link Arg1:T9 Arg2:T8
+R2	Mod-Link Arg1:T19 Arg2:T18
+R3	Measure Arg1:T19 Arg2:T17
+R4	Setting Arg1:T22 Arg2:T23
+R5	Setting Arg1:E4 Arg2:T24
+R6	Setting Arg1:E5 Arg2:T26
+R7	Setting Arg1:E6 Arg2:T29
+R8	Setting Arg1:E6 Arg2:T30
+R9	Meronym Arg1:T31 Arg2:T28
+R10	Measure Arg1:T36 Arg2:T35
+R11	Setting Arg1:T39 Arg2:T40
+R12	Setting Arg1:E9 Arg2:T41
+R13	Setting Arg1:E10 Arg2:T43
+R14	Setting Arg1:E11 Arg2:T46
+R15	Setting Arg1:E11 Arg2:T47
+R16	Meronym Arg1:T48 Arg2:T45
+R17	Setting Arg1:T53 Arg2:T54
+R18	Setting Arg1:E13 Arg2:T55
+R19	Setting Arg1:E15 Arg2:T60
+R20	Setting Arg1:E15 Arg2:T61
+R21	Meronym Arg1:T62 Arg2:T59
+R22	Measure Arg1:T68 Arg2:T67
+R23	Setting Arg1:E19 Arg2:T75
+R24	Measure Arg1:T78 Arg2:T77
+R25	Setting Arg1:E21 Arg2:T81
+R26	Measure Arg1:T88 Arg2:T87
+R27	Measure Arg1:T86 Arg2:T85
+R28	Setting Arg1:E25 Arg2:T94
+R29	Setting Arg1:T100 Arg2:T101
+R30	Mod-Link Arg1:T100 Arg2:T99
+R31	Mod-Link Arg1:E26 Arg2:T95
+R32	Setting Arg1:E27 Arg2:T103
+R33	Setting Arg1:E28 Arg2:T106
+R34	Setting Arg1:E28 Arg2:T107
+R35	Setting Arg1:E30 Arg2:T113
+R36	Setting Arg1:E30 Arg2:T114
+R37	Mod-Link Arg1:T120 Arg2:T119
+R38	Mod-Link Arg1:E31 Arg2:T115
+R39	Setting Arg1:T120 Arg2:T121
+R40	Setting Arg1:E32 Arg2:T123
+R41	Measure Arg1:T126 Arg2:T125
+R42	Measure Arg1:T134 Arg2:T133
+R43	Setting Arg1:E36 Arg2:T136
+R44	Measure Arg1:T140 Arg2:T139
+R45	Setting Arg1:E38 Arg2:T142
+R46	Setting Arg1:E39 Arg2:T144
+R47	Mod-Link Arg1:T147 Arg2:T146
+R48	Setting Arg1:E40 Arg2:T147
+R49	Setting Arg1:E40 Arg2:T148
+R50	Setting Arg1:E43 Arg2:T155
+R51	Setting Arg1:E1 Arg2:T3
+R52	Setting Arg1:E1 Arg2:T4
+R53	Overlaps Arg1:E6 Arg2:E7
+R54	Overlaps Arg1:E11 Arg2:E12
+R55	Setting Arg1:E14 Arg2:T57
+R56	Mod-Link Arg1:T110 Arg2:T109
+R57	Enables Arg1:E42 Arg2:E43
+R58	Mod-Link Arg1:E18 Arg2:T70
+R59	Measure Arg1:T11 Arg2:T12
+R60	Measure Arg1:T14 Arg2:T13
+R61	Coreference-Link Arg1:T86 Arg2:T83
+R62	Coreference-Link Arg1:T78 Arg2:T50
+R63	Coreference-Link Arg1:T36 Arg2:T33
+R64	Coreference-Link Arg1:T91 Arg2:T86
+R65	Coreference-Link Arg1:T83 Arg2:T80

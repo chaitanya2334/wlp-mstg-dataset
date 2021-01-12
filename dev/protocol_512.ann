@@ -1,0 +1,52 @@
+T1	Action 34 41	Combine
+T2	Amount 42 47	50 ng
+T3	Reagent 51 57	vector
+T4	Concentration 65 86	3 - fold molar excess
+T5	Reagent 90 96	insert
+T6	Action 99 105	Adjust
+T7	Amount 116 120	10μl
+T8	Reagent 126 130	dH2O
+T9	Action 133 136	Add
+T10	Amount 137 142	10 μl
+T11	Concentration 146 148	2X
+T12	Reagent 149 170	Quick Ligation Buffer
+T13	Action 175 178	mix
+T14	Action 181 184	Add
+T15	Amount 185 188	1μl
+T16	Reagent 192 211	Quick T4 DNA Ligase
+T17	Action 216 219	mix
+T18	Modifier 220 230	thoroughly
+T19	Action 233 243	Centrifuge
+T20	Modifier 244 251	briefly
+T21	Action 256 264	incubate
+T22	Temperature 268 284	room temperature
+T23	Time 298 307	5 minutes
+T24	Action 310 315	Chill
+T25	Temperature 319 322	ice
+T26	Action 330 339	transform
+T27	Action 343 348	store
+T28	Temperature 352 358	- 20°C
+E1	Action:T1 Acts-on:T3 Acts-on2:T5
+E2	Action:T6 Using:T8
+E3	Action:T9 Acts-on:T12
+E4	Action:T13 Acts-on:T12
+E5	Action:T14 Acts-on:T16
+E6	Action:T17 
+E7	Action:T19 
+E8	Action:T21 
+E9	Action:T24 
+E10	Action:T26 
+E11	Action:T27 
+R1	Measure Arg1:T3 Arg2:T2
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T3 Arg2:T4
+R4	Measure Arg1:T8 Arg2:T7
+R5	Measure Arg1:T12 Arg2:T11
+R6	Measure Arg1:T12 Arg2:T10
+R7	Measure Arg1:T16 Arg2:T15
+R8	Mod-Link Arg1:E6 Arg2:T18
+R9	Mod-Link Arg1:E7 Arg2:T20
+R10	Setting Arg1:E8 Arg2:T22
+R11	Setting Arg1:E8 Arg2:T23
+R12	Setting Arg1:E9 Arg2:T25
+R13	Setting Arg1:E11 Arg2:T28

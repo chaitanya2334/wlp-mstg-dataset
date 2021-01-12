@@ -1,0 +1,33 @@
+T1	Action 51 56	Weigh
+T2	Amount 57 62	0.5 g
+T3	Reagent 66 76	rifampicin
+T4	Action 79 82	Add
+T5	Amount 83 88	10 ml
+T6	Modifier 92 97	100 %
+T7	Reagent 98 106	methanol
+T8	Action 109 117	Dissolve
+T9	Modifier 118 128	completely
+T10	Reagent 131 136	Stock
+T11	Action 144 148	kept
+T12	Temperature 152 158	- 20°C
+T13	Time 163 169	1 year
+T14	Reagent 172 182	Rifampicin
+T15	Modifier 183 186	may
+T16	Action 187 198	precipitate
+T17	Location 206 213	freezer
+T18	Action 216 224	Dissolve
+T19	Modifier 225 241	again before use
+E1	Action:T1 Acts-on:T3
+E2	Action:T4 Acts-on:T7
+E3	Action:T8 
+E4	Action:T11 Acts-on:T10
+E5	Action:T16 Acts-on:T14 Site:T17
+E6	Action:T18 
+R1	Measure Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Measure Arg1:T7 Arg2:T5
+R4	Mod-Link Arg1:E3 Arg2:T9
+R5	Setting Arg1:E4 Arg2:T12
+R6	Setting Arg1:E4 Arg2:T13
+R7	Mod-Link Arg1:E5 Arg2:T15
+R8	Mod-Link Arg1:E6 Arg2:T19

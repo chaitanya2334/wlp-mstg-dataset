@@ -1,0 +1,135 @@
+T1	Action 67 74	Suspend
+T2	Reagent 75 86	genomic DNA
+T3	Measure-Type 92 98	volume
+T4	Reagent 102 123	nuclease - free water
+T5	Action 127 134	produce
+T6	Reagent 137 142	stock
+T7	Measure-Type 143 156	concentration
+T8	Concentration 160 171	0.1 μg / μL
+T9	Action 174 182	Incubate
+T10	Reagent 183 197	rehydrated DNA
+T11	Time 198 207	overnight
+T12	Temperature 211 214	4°C
+T13	Action 221 228	rocking
+T14	Action 240 248	incubate
+T15	Time 253 256	1 h
+T16	Temperature 260 264	65°C
+T17	Action 267 274	Prepare
+T18	Reagent 275 291	working solution
+T19	Action 295 301	adding
+T20	Amount 302 306	1 μL
+T21	Reagent 314 328	stock solution
+T22	Amount 332 337	99 μL
+T23	Reagent 341 362	nuclease - free water
+T24	Action 366 373	produce
+T25	Measure-Type 382 395	concentration
+T26	Concentration 399 408	1 ng / μL
+T27	Action 411 416	Check
+T28	Reagent 421 424	DNA
+T29	Measure-Type 425 438	concentration
+T30	Reagent 442 448	stocks
+T31	Modifier 449 465	fluorometrically
+T32	Device 472 510	Quant - iT™ PicoGreen® dsDNA Assay Kit
+T33	Reagent 511 522	Genomic DNA
+T34	Action 530 536	stored
+T35	Temperature 540 546	−20 °C
+T36	Reagent 563 573	sample DNA
+T37	Method 574 584	extraction
+T38	Action 587 590	add
+T39	Reagent 598 610	standard DNA
+T40	Modifier 614 618	each
+T41	Reagent 619 625	sample
+T42	Action 629 634	reach
+T43	Modifier 635 636	~
+T44	Concentration 637 648	0.1 - 1.0 %
+T45	Action 685 695	sequencing
+T46	Action 698 706	quantify
+T47	Measure-Type 721 743	genomic standard reads
+T48	Measure-Type 772 788	bit score cutoff
+T49	Numerical 792 794	50
+T50	Action 797 805	identify
+T51	Measure-Type 806 820	standard reads
+T52	Method 824 846	BLASTn homology search
+T53	Reagent 876 882	genome
+T54	Measure-Type 921 937	bit score cutoff
+T55	Numerical 941 943	40
+T56	Action 946 953	perform
+T57	Method 956 962	BLASTx
+T58	Reagent 975 989	RefSeq Protein
+T59	Action 1002 1010	identify
+T60	Reagent 1015 1022	protein
+T61	Measure-Type 1023 1037	encoding reads
+T62	Reagent 1073 1079	genome
+T63	Action 1082 1090	Quantify
+T64	Modifier 1091 1100	recovered
+T65	Reagent 1101 1113	standard DNA
+T66	Measure-Type 1114 1119	reads
+T67	Action 1124 1130	remove
+T68	Action 1146 1155	Calculate
+T69	Measure-Type 1160 1179	number of molecules
+T70	Measure-Type 1246 1265	number of molecules
+T71	Reagent 1287 1293	genome
+T72	Action 1480 1489	Calculate
+T73	Measure-Type 1494 1518	community gene pool size
+T74	Measure-Type 1554 1586	number of protein encoding genes
+T75	Reagent 1594 1602	samplePs
+T76	Measure-Type 1605 1641	number of protein encoding sequences
+T77	Reagent 1649 1659	metagenome
+T78	Action 1820 1829	Calculate
+T79	Reagent 1861 1866	genes
+T80	Measure-Type 1908 1927	number of molecules
+T81	Reagent 1946 1950	gene
+T82	Reagent 1967 1973	sample
+T83	Action 1993 2000	divided
+T84	Measure-Type 2008 2012	mass
+T85	Measure-Type 2016 2022	volume
+T86	Reagent 2026 2032	sample
+T87	Action 2046 2055	calculate
+T88	Measure-Type 2060 2074	gene abundance
+T89	Measure-Type 2079 2085	volume
+T90	Measure-Type 2089 2097	weightGs
+T91	Measure-Type 2100 2115	number of genes
+T92	Measure-Type 2162 2194	number of protein encoding genes
+T93	Reagent 2202 2210	samplePs
+T94	Measure-Type 2213 2249	number of protein encoding sequences
+T95	Reagent 2257 2267	metagenome
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T5 Measure-Type-Link:T7 Acts-on:T6
+E3	Action:T9 Acts-on:T10
+E4	Action:T13 
+E5	Action:T14 
+E6	Action:T17 Acts-on:T18
+E7	Action:T19 Acts-on:T21 Site:T23
+E8	Action:T24 Measure-Type-Link:T25
+E9	Action:T27 Acts-on:T30 Using:T32 Measure-Type-Link:T29
+E10	Action:T34 Acts-on:T33
+E11	Action:T38 Acts-on:T39 Site:T41
+E12	Action:T42 
+E13	Action:T45 
+E14	Action:T46 Measure-Type-Link:T47
+E15	Action:T50 Measure-Type-Link:T51 Using:T52
+E16	Action:T56 Using:T57
+E17	Action:T59 Measure-Type-Link:T61 Acts-on:T60
+E18	Action:T63 Acts-on:T65 Measure-Type-Link:T66
+E19	Action:T67 
+E20	Action:T68 Measure-Type-Link:T69
+E21	Action:T72 Measure-Type-Link:T73
+E22	Action:T78 
+E23	Action:T83 
+E24	Action:T87 
+R1	Setting Arg1:E2 Arg2:T8
+R2	Setting Arg1:E3 Arg2:T11
+R3	Setting Arg1:E3 Arg2:T12
+R4	Setting Arg1:E5 Arg2:T15
+R5	Setting Arg1:E5 Arg2:T16
+R6	Setting Arg1:E8 Arg2:T26
+R7	Measure Arg1:T21 Arg2:T20
+R8	Measure Arg1:T23 Arg2:T22
+R9	Setting Arg1:E10 Arg2:T35
+R10	Mod-Link Arg1:T41 Arg2:T40
+R11	Setting Arg1:E12 Arg2:T44
+R12	Mod-Link Arg1:T44 Arg2:T43
+R13	Of-Type Arg1:T49 Arg2:T48
+R14	Of-Type Arg1:T55 Arg2:T54
+R15	Mod-Link Arg1:T65 Arg2:T64
+R16	Mod-Link Arg1:E9 Arg2:T31

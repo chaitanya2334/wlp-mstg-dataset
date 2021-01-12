@@ -1,0 +1,322 @@
+T1	Action 49 59	Centrifuge
+T2	Reagent 60 76	suspension cells
+T3	Amount 104 109	15 mL
+T4	Location 110 122	conical tube
+T5	Action 125 133	Aspirate
+T6	Reagent 134 145	supernatant
+T7	Action 148 155	leaving
+T8	Reagent 156 161	cells
+T9	Modifier 162 173	in a pellet
+T10	Location 177 181	base
+T11	Location 185 189	tube
+T12	Modifier 192 198	Gently
+T13	Action 199 208	resuspend
+T14	Reagent 209 214	cells
+T15	Amount 218 222	1 mL
+T16	Concentration 226 228	1X
+T17	Reagent 229 232	PBS
+T18	Action 239 249	centrifuge
+T19	Action 253 259	pellet
+T20	Reagent 260 275	cell suspension
+T21	Action 278 286	Aspirate
+T22	Concentration 291 293	1X
+T23	Reagent 294 297	PBS
+T24	Modifier 304 310	gently
+T25	Action 311 320	resuspend
+T26	Reagent 321 326	cells
+T27	Amount 330 334	1 mL
+T28	Reagent 338 353	fixation buffer
+T29	Action 356 359	Mix
+T30	Modifier 360 364	well
+T31	Action 368 377	pipetting
+T32	Location 395 399	tube
+T33	Action 402 410	Incubate
+T34	Temperature 414 430	room temperature
+T35	Time 435 445	10 minutes
+T36	Action 448 458	Centrifuge
+T37	Action 462 468	pellet
+T38	Reagent 469 484	cell suspension
+T39	Action 487 495	Aspirate
+T40	Reagent 496 511	fixation buffer
+T41	Action 518 522	wash
+T42	Reagent 523 528	cells
+T43	Numerical 529 534	three
+T44	Amount 546 550	1 mL
+T45	Concentration 554 556	1X
+T46	Reagent 557 560	PBS
+T47	Action 563 566	Mix
+T48	Modifier 567 571	well
+T49	Modifier 575 581	gently
+T50	Action 582 591	pipetting
+T51	Modifier 592 603	up and down
+T52	Action 607 616	resuspend
+T53	Reagent 617 623	pellet
+T54	Action 629 641	permeabilize
+T55	Reagent 642 647	cells
+T56	Action 650 659	resuspend
+T57	Reagent 660 665	cells
+T58	Amount 669 673	1 mL
+T59	Concentration 677 681	70 %
+T60	Reagent 682 689	ethanol
+T61	Time 703 709	1 hour
+T62	Temperature 722 726	8 °C
+T63	Action 903 906	Mix
+T64	Modifier 907 911	well
+T65	Action 915 924	vortexing
+T66	Action 932 942	centrifuge
+T67	Modifier 943 950	briefly
+T68	Action 956 963	prepare
+T69	Reagent 968 988	Hybridization Buffer
+T70	Action 1008 1011	add
+T71	Amount 1012 1016	1 μL
+T72	Reagent 1020 1040	probe stock solution
+T73	Amount 1044 1050	100 μL
+T74	Reagent 1054 1074	Hybridization Buffer
+T75	Action 1086 1092	vortex
+T76	Action 1097 1107	centrifuge
+T77	Action 1230 1236	Invert
+T78	Location 1237 1241	tube
+T79	Reagent 1271 1287	suspension cells
+T80	Numerical 1288 1295	several
+T81	Action 1305 1314	resuspend
+T82	Reagent 1315 1320	cells
+T83	Action 1328 1333	place
+T84	Amount 1334 1345	50 - 500 μL
+T85	Reagent 1349 1354	cells
+T86	Location 1391 1411	microcentrifuge tube
+T87	Action 1642 1652	Centrifuge
+T88	Action 1656 1662	pellet
+T89	Reagent 1663 1668	cells
+T90	Action 1673 1681	aspirate
+T91	Amount 1682 1686	70 %
+T92	Reagent 1687 1694	ethanol
+T93	Modifier 1697 1703	Gently
+T94	Action 1704 1713	resuspend
+T95	Reagent 1714 1719	cells
+T96	Amount 1723 1729	500 μL
+T97	Reagent 1733 1746	Wash Buffer A
+T98	Action 1770 1780	Centrifuge
+T99	Action 1784 1790	pellet
+T100	Reagent 1791 1796	cells
+T101	Action 1801 1809	aspirate
+T102	Reagent 1810 1823	Wash Buffer A
+T103	Action 1826 1835	Resuspend
+T104	Reagent 1836 1841	cells
+T105	Amount 1845 1851	100 μL
+T106	Reagent 1855 1875	Hybridization Buffer
+T107	Action 1895 1898	Mix
+T108	Modifier 1899 1903	well
+T109	Action 1907 1916	pipetting
+T110	Modifier 1917 1928	up and down
+T111	Action 1931 1939	Incubate
+T112	Location 1940 1960	microcentrifuge tube
+T113	Location 1961 1972	in the dark
+T114	Temperature 1976 1981	37 °C
+T115	Time 1996 2004	16 hours
+T116	Action 2009 2019	Centrifuge
+T117	Action 2023 2029	pellet
+T118	Reagent 2030 2035	cells
+T119	Action 2040 2048	aspirate
+T120	Numerical 2055 2059	50 %
+T121	Reagent 2067 2087	Hybridization Buffer
+T122	Action 2166 2169	Add
+T123	Amount 2170 2176	500 μL
+T124	Reagent 2180 2193	Wash Buffer A
+T125	Action 2196 2206	Centrifuge
+T126	Action 2210 2216	pellet
+T127	Reagent 2217 2222	cells
+T128	Action 2227 2235	aspirate
+T129	Reagent 2236 2244	solution
+T130	Action 2286 2295	Resuspend
+T131	Reagent 2296 2301	cells
+T132	Amount 2305 2311	500 μL
+T133	Reagent 2315 2328	Wash Buffer A
+T134	Action 2331 2339	Incubate
+T135	Modifier 2340 2351	in the dark
+T136	Temperature 2355 2360	37 °C
+T137	Time 2365 2375	30 minutes
+T138	Action 2378 2388	Centrifuge
+T139	Action 2392 2398	pellet
+T140	Reagent 2399 2404	cells
+T141	Action 2409 2417	aspirate
+T142	Reagent 2418 2431	Wash Buffer A
+T143	Action 2434 2443	Resuspend
+T144	Reagent 2444 2449	cells
+T145	Amount 2453 2459	500 μL
+T146	Reagent 2463 2481	DAPI nuclear stain
+T147	Concentration 2484 2486	1X
+T148	Reagent 2487 2500	Wash Buffer A
+T149	Concentration 2515 2524	5 ng / mL
+T150	Reagent 2525 2529	DAPI
+T151	Action 2535 2547	counterstain
+T152	Reagent 2552 2558	nuclei
+T153	Action 2561 2569	Incubate
+T154	Modifier 2570 2581	in the dark
+T155	Temperature 2585 2590	37 °C
+T156	Time 2595 2605	30 minutes
+T157	Action 2608 2618	Centrifuge
+T158	Action 2622 2628	pellet
+T159	Reagent 2629 2634	cells
+T160	Action 2639 2647	aspirate
+T161	Reagent 2648 2666	DAPI nuclear stain
+T162	Action 2669 2678	Resuspend
+T163	Reagent 2679 2684	cells
+T164	Amount 2688 2694	500 μL
+T165	Reagent 2698 2711	Wash Buffer B
+T166	Action 2714 2724	Centrifuge
+T167	Action 2728 2734	pellet
+T168	Reagent 2735 2740	cells
+T169	Action 2745 2753	aspirate
+T170	Reagent 2754 2767	Wash Buffer B
+T171	Action 2770 2779	Resuspend
+T172	Reagent 2780 2785	cells
+T173	Modifier 2791 2796	small
+T174	Reagent 2797 2801	drop
+T175	Amount 2818 2823	30 μL
+T176	Reagent 2829 2856	Vectashield Mounting Medium
+T177	Action 2859 2864	Place
+T178	Amount 2865 2874	5 - 10 μL
+T179	Reagent 2878 2893	cell suspension
+T180	Modifier 2899 2904	clean
+T181	Modifier 2905 2910	glass
+T182	Location 2911 2927	microscope slide
+T183	Action 2937 2942	place
+T184	Size 2946 2956	18 x 18 mm
+T185	Device 2957 2978	square # 1 coverglass
+T186	Location 2979 2993	over the cells
+T187	Action 2997 3003	spread
+T188	Reagent 3008 3016	solution
+T189	Action 3336 3340	Seal
+T190	Device 3345 3355	coverglass
+T191	Location 3356 3365	perimeter
+T192	Modifier 3371 3376	clear
+T193	Reagent 3377 3388	nail polish
+T194	Action 3395 3407	allow to dry
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T5 Acts-on:T6
+E3	Action:T7 Acts-on:T8 Site:T10
+E4	Action:T13 Acts-on:T14 Site:T17
+E5	Action:T18 Acts-on:T17
+E6	Action:T19 Acts-on:T20 Using:E5
+E7	Action:T21 Acts-on:T23
+E8	Action:T25 Acts-on:T26 Site:T28
+E9	Action:T29 Using:E10
+E10	Action:T31 Acts-on:T32
+E11	Action:T33 
+E12	Action:T36 Acts-on:T38
+E13	Action:T37 Acts-on:T38 Using:E12
+E14	Action:T39 Acts-on:T40
+E15	Action:T41 Count:T43 Acts-on:T42 Using:T46
+E16	Action:T47 Using:E17
+E17	Action:T50 
+E18	Action:T52 Acts-on:T53 Using:E16
+E19	Action:T54 Acts-on:T55
+E20	Action:T56 Acts-on:T57 Using:E19
+E21	Action:T63 Using:E22
+E22	Action:T65 
+E23	Action:T66 
+E24	Action:T68 Product:T69 Using:E25 Using2:E26 Using3:E27
+E25	Action:T70 Acts-on:T72 Site:T74
+E26	Action:T75 Acts-on:T74
+E27	Action:T76 Acts-on:T74
+E28	Action:T77 Count:T80 Acts-on:T78
+E29	Action:T81 Acts-on:T82 Using:E28
+E30	Action:T83 Acts-on:T85 Site:T86
+E31	Action:T87 
+E32	Action:T88 Acts-on:T89 Using:E31
+E33	Action:T90 Acts-on:T92
+E34	Action:T94 Acts-on:T95 Site:T97
+E35	Action:T98 
+E36	Action:T99 Using:E35 Acts-on:T100
+E37	Action:T101 Acts-on:T102
+E38	Action:T103 Acts-on:T104 Site:T106
+E39	Action:T107 Using:E40
+E40	Action:T109 
+E41	Action:T111 Acts-on:T112 Site:T113
+E42	Action:T116 
+E43	Action:T117 Acts-on:T118 Using:E42
+E44	Action:T119 Acts-on:T121
+E45	Action:T122 Acts-on:T124
+E46	Action:T125 
+E47	Action:T126 Acts-on:T127 Using:E46
+E48	Action:T128 Acts-on:T129
+E49	Action:T130 Acts-on:T131 Site:T133
+E50	Action:T134 
+E51	Action:T138 
+E52	Action:T139 Using:E51 Acts-on:T140
+E53	Action:T141 Acts-on:T142
+E54	Action:T143 Acts-on:T144 Site:T146
+E55	Action:T151 Acts-on:T152 Using:E54
+E56	Action:T153 
+E57	Action:T157 
+E58	Action:T158 Acts-on:T159 Using:E57
+E59	Action:T160 Acts-on:T161
+E60	Action:T162 Acts-on:T163 Site:T165
+E61	Action:T166 
+E62	Action:T167 Using:E61 Acts-on:T168
+E63	Action:T169 Acts-on:T170
+E64	Action:T171 Acts-on:T172 Site:T174
+E65	Action:T177 Acts-on:T179 Site:T182
+E66	Action:T183 Acts-on:T185 Site:T186
+E67	Action:T187 Acts-on:T188 Using:E65 Using2:E66
+E68	Action:T189 Acts-on:T191 Using:T193
+E69	Action:T194 Acts-on:T193
+R1	Measure Arg1:T4 Arg2:T3
+R2	Mod-Link Arg1:E4 Arg2:T12
+R3	Measure Arg1:T17 Arg2:T16
+R4	Measure Arg1:T17 Arg2:T15
+R5	Measure Arg1:T28 Arg2:T27
+R6	Mod-Link Arg1:E8 Arg2:T24
+R7	Measure Arg1:T23 Arg2:T22
+R8	Mod-Link Arg1:E9 Arg2:T30
+R9	Setting Arg1:E11 Arg2:T34
+R10	Setting Arg1:E11 Arg2:T35
+R11	Measure Arg1:T46 Arg2:T45
+R12	Measure Arg1:T46 Arg2:T44
+R13	Mod-Link Arg1:E17 Arg2:T49
+R14	Mod-Link Arg1:E17 Arg2:T51
+R15	Mod-Link Arg1:E16 Arg2:T48
+R16	Meronym Arg1:T10 Arg2:T11
+R17	Mod-Link Arg1:E3 Arg2:T9
+R18	Measure Arg1:T124 Arg2:T123
+R19	Measure Arg1:T60 Arg2:T59
+R20	Measure Arg1:T60 Arg2:T58
+R21	Setting Arg1:E20 Arg2:T61
+R22	Setting Arg1:E20 Arg2:T62
+R23	Mod-Link Arg1:E21 Arg2:T64
+R24	Mod-Link Arg1:E23 Arg2:T67
+R25	Measure Arg1:T72 Arg2:T71
+R26	Measure Arg1:T74 Arg2:T73
+R27	Measure Arg1:T165 Arg2:T164
+R28	Meronym Arg1:T79 Arg2:T78
+R29	Measure Arg1:T85 Arg2:T84
+R30	Measure Arg1:T92 Arg2:T91
+R31	Mod-Link Arg1:E34 Arg2:T93
+R32	Measure Arg1:T97 Arg2:T96
+R33	Measure Arg1:T106 Arg2:T105
+R34	Mod-Link Arg1:E39 Arg2:T108
+R35	Mod-Link Arg1:E40 Arg2:T110
+R36	Setting Arg1:E41 Arg2:T114
+R37	Setting Arg1:E41 Arg2:T115
+R38	Measure Arg1:T121 Arg2:T120
+R39	Measure Arg1:T133 Arg2:T132
+R40	Mod-Link Arg1:E50 Arg2:T135
+R41	Setting Arg1:E50 Arg2:T136
+R42	Setting Arg1:E50 Arg2:T137
+R43	Measure Arg1:T150 Arg2:T149
+R44	Measure Arg1:T148 Arg2:T147
+R45	Meronym Arg1:T148 Arg2:T146
+R46	Meronym Arg1:T150 Arg2:T146
+R47	Measure Arg1:T146 Arg2:T145
+R48	Mod-Link Arg1:E56 Arg2:T154
+R49	Setting Arg1:E56 Arg2:T155
+R50	Setting Arg1:E56 Arg2:T156
+R51	Mod-Link Arg1:T174 Arg2:T173
+R52	Measure Arg1:T174 Arg2:T175
+R53	Meronym Arg1:T174 Arg2:T176
+R54	Measure Arg1:T179 Arg2:T178
+R55	Mod-Link Arg1:T182 Arg2:T181
+R56	Mod-Link Arg1:T182 Arg2:T180
+R57	Setting Arg1:T185 Arg2:T184
+R58	Meronym Arg1:T191 Arg2:T190
+R59	Mod-Link Arg1:T193 Arg2:T192

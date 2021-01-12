@@ -1,0 +1,420 @@
+T1	Action 37 44	Turn on
+T2	Device 45 56	FlowCamPush
+T3	Location 57 70	silver button
+T4	Seal 86 98	machine face
+T5	Action 102 109	turn on
+T6	Device 110 118	computer
+T7	Device 123 130	machine
+T8	Action 133 139	Instal
+T9	Location 140 149	flow cell
+T10	Location 159 181	flow cell holderSelect
+T11	Location 190 206	flow cell tubing
+T12	Size 254 267	100 um x 1 mm
+T13	Location 268 277	flow cell
+T14	Location 288 295	kimwipe
+T15	Location 299 309	lens paper
+T16	Action 320 325	clean
+T17	Location 330 343	glass portion
+T18	Location 351 360	flow cell
+T19	Action 363 369	Insert
+T20	Location 370 383	glass portion
+T21	Location 391 400	flow cell
+T22	Location 410 426	flow cell holder
+T23	Action 429 435	Secure
+T24	Location 436 445	flow cell
+T25	Modifier 449 455	gently
+T26	Action 456 464	screwing
+T27	Device 469 489	male threaded holder
+T28	Location 500 509	flow cell
+T29	Modifier 513 523	stationary
+T30	Action 544 549	screw
+T31	Modifier 554 561	tightly
+T32	Action 577 585	breaking
+T33	Modifier 590 597	fragile
+T34	Location 598 607	flow cell
+T35	Device 661 668	FlowCam
+T36	Action 680 686	select
+T37	Location 691 700	flow cell
+T38	Modifier 701 708	labeled
+T39	Action 737 743	Instal
+T40	Location 748 764	flow cell holder
+T41	Device 774 785	FLowCamMake
+T42	Device 800 814	objective lens
+T43	Device 819 829	collimator
+T44	Action 882 887	using
+T45	Generic-Measure 892 895	10X
+T46	Device 896 900	lens
+T47	Action 903 906	use
+T48	Generic-Measure 925 928	10X
+T49	Device 929 939	collimator
+T50	Action 942 945	Use
+T51	Location 948 955	kimwipe
+T52	Location 959 969	lens paper
+T53	Modifier 973 979	gently
+T54	Action 980 985	clean
+T55	Device 990 1004	objective lens
+T56	Device 1009 1020	collimnator
+T57	Action 1023 1030	Install
+T58	Location 1031 1047	flow cell holder
+T59	Location 1079 1101	flow cell holder mount
+T60	Location 1117 1123	middle
+T61	Device 1131 1147	camera apparatus
+T62	Action 1150 1157	Tighten
+T63	Device 1158 1163	screw
+T64	Seal 1167 1170	top
+T65	Location 1174 1180	holder
+T66	Action 1184 1190	secure
+T67	Mention 1191 1193	it
+T68	Location 1201 1206	mount
+T69	Action 1209 1215	Insert
+T70	Location 1216 1222	tubing
+T71	Seal 1226 1229	top
+T72	Location 1233 1242	flow cell
+T73	Seal 1252 1258	bottom
+T74	Location 1262 1275	sample funnel
+T75	Action 1278 1284	Insert
+T76	Location 1285 1298	bottom tubing
+T77	Seal 1304 1307	tip
+T78	Device 1311 1318	syringe
+T79	Action 1321 1327	Insert
+T80	Location 1328 1348	syringe - out tubing
+T81	Location 1354 1366	small beaker
+T82	Action 1371 1381	collecting
+T83	Reagent 1382 1387	waste
+T84	Action 1390 1395	Flush
+T85	Location 1396 1409	Flow CellMake
+T86	Action 1418 1423	flush
+T87	Location 1428 1437	flow cell
+T88	Action 1458 1465	prevent
+T89	Reagent 1479 1496	cellular material
+T90	Reagent 1500 1506	debris
+T91	Reagent 1531 1537	sample
+T92	Action 1544 1548	Load
+T93	Device 1553 1559	funnel
+T94	Reagent 1565 1570	ddH2O
+T95	Action 1599 1604	click
+T96	Action 1634 1637	Set
+T97	Generic-Measure 1641 1653	4 - 5 cycles
+T98	Action 1672 1676	Load
+T99	Reagent 1677 1684	Sample1
+T100	Location 1691 1696	pipet
+T101	Action 1700 1704	draw
+T102	Reagent 1705 1711	sample
+T103	Location 1722 1731	container
+T104	Amount 1748 1760	0.2 - 0.5 mL
+T105	Reagent 1764 1782	homogenized sample
+T106	Modifier 1803 1808	dense
+T107	Reagent 1809 1817	cultures
+T108	Method 1822 1830	dilution
+T109	Action 1890 1897	Sieving
+T110	Modifier 1911 1914	raw
+T111	Reagent 1915 1922	samples
+T112	Reagent 1939 1947	detritus
+T113	Reagent 1951 1962	zooplankton
+T114	Action 1969 1974	Lower
+T115	Location 1975 1978	tip
+T116	Location 1982 1987	pipet
+T117	Seal 1993 1999	bottom
+T118	Location 2003 2022	P1000 sample funnel
+T119	Modifier 2025 2033	Forcibly
+T120	Action 2034 2041	squeeze
+T121	Location 2042 2047	pipet
+T122	Action 2051 2057	ensure
+T123	Reagent 2063 2069	sample
+T124	Numerical 2081 2084	one
+T125	Reagent 2085 2096	liquid mass
+T126	Location 2122 2127	walls
+T127	Device 2135 2141	funnel
+T128	Action 2170 2175	click
+T129	Action 2205 2213	Aspirate
+T130	Amount 2214 2221	0.500mL
+T131	Location 2227 2236	Flow Cell
+T132	Action 2241 2246	Click
+T133	Method 2247 2256	Stop Pump
+T134	Reagent 2266 2272	sample
+T135	Measure-Type 2273 2279	volume
+T136	Location 2296 2305	flow cell
+T137	Action 2318 2323	Click
+T138	Method 2327 2334	Context
+T139	Measure-Type 2518 2522	date
+T140	Measure-Type 2525 2535	experiment
+T141	Measure-Type 2538 2544	strain
+T142	Measure-Type 2547 2554	species
+T143	Measure-Type 2557 2570	magnification
+T144	Location 2573 2582	flow cell
+T145	Device 2585 2592	syringe
+T146	Measure-Type 2595 2603	dilution
+T147	Action 2627 2633	Adjust
+T148	Reagent 2643 2649	sample
+T149	Measure-Type 2650 2656	volume
+T150	Amount 2667 2671	1 mL
+T151	Measure-Type 2739 2749	efficiency
+T152	Generic-Measure 2758 2762	25 %
+T153	Location 2765 2774	Flow cell
+T154	Action 2781 2787	Adjust
+T155	Measure-Type 2792 2803	tube length
+T156	Location 2814 2823	flow cell
+T157	Size 2846 2850	0 cm
+T158	Location 2857 2867	flow cells
+T159	Action 2872 2875	cut
+T160	Size 2884 2889	10 cm
+T161	Location 2890 2896	tubing
+T162	Size 2907 2912	20 cm
+T163	Location 2913 2919	tubing
+T164	Action 2953 2964	terminating
+T165	Amount 2989 2995	100 uL
+T166	Amount 2998 3004	0.1 mL
+T167	Reagent 3010 3016	sample
+T168	Action 3026 3032	imaged
+T169	Amount 3056 3060	1 mL
+T170	Reagent 3064 3070	sample
+T171	Modifier 3077 3082	short
+T172	Action 3083 3090	priming
+T173	Action 3142 3147	Check
+T174	Action 3168 3174	export
+T175	Action 3206 3211	saves
+T176	Measure-Type 3216 3228	measurements
+T177	Modifier 3236 3244	captured
+T178	Reagent 3245 3254	particles
+T179	Action 3411 3416	Click
+T180	Method 3417 3430	Setup / Focus
+T181	Device 3466 3472	camera
+T182	Location 3485 3494	flow cell
+T183	Device 3542 3547	knobs
+T184	Action 3551 3557	center
+T185	Reagent 3562 3571	flow cell
+T186	Device 3613 3618	knobs
+T187	Action 3622 3627	bring
+T188	Reagent 3632 3638	sample
+T189	Action 3652 3655	Run
+T190	Reagent 3656 3663	Sample1
+T191	Action 3666 3671	Click
+T192	Method 3672 3685	Autoimage . 2
+T193	Action 3771 3776	enter
+T194	Numerical 3779 3784	value
+T195	Action 3802 3806	stop
+T196	Measure-Type 3825 3836	# of events
+T197	Measure-Type 3839 3845	volume
+T198	Measure-Type 3849 3853	time
+T199	Action 3859 3864	leave
+T200	Method 3904 3910	button
+T201	Action 3911 3918	checked
+T202	Method 3923 3936	manually stop
+T203	Action 4002 4006	Make
+T204	Reagent 4039 4045	sample
+T205	Measure-Type 4066 4070	date
+T206	Measure-Type 4073 4084	strain info
+T207	Measure-Type 4087 4100	magnification
+T208	Measure-Type 4103 4117	flow cell size
+T209	Measure-Type 4120 4128	dilution
+T210	Action 4143 4148	click
+T211	Method 4149 4153	save
+T212	Reagent 4189 4195	sample
+T213	Action 4196 4199	run
+T214	Reagent 4221 4227	sample
+T215	Action 4233 4236	run
+T216	Action 4307 4317	terminates
+T217	Action 4329 4337	pressing
+T218	Method 4342 4358	Autoimage button
+T219	Action 4483 4489	Select
+T220	Reagent 4495 4499	data
+T221	Action 4512 4523	clicking on
+T222	Device 4536 4542	filter
+T223	Action 4546 4558	highlighting
+T224	Measure-Type 4575 4581	graphs
+T225	Action 4586 4595	selecting
+T226	Method 4596 4605	Open View
+T227	Action 4631 4637	Adjust
+T228	Reagent 4646 4654	dilution
+T229	Method 4663 4683	Context - > Fluidics
+T230	Action 4688 4696	checking
+T231	Method 4701 4720	Sample Dilution box
+T232	Action 4723 4731	Enter in
+T233	Numerical 4736 4741	ratio
+T234	Reagent 4749 4757	dilution
+T235	Measure-Type 4765 4771	volume
+T236	Reagent 4775 4781	sample
+T237	Measure-Type 4790 4796	volume
+T238	Measure-Type 4799 4813	Particles / mL
+T239	Measure-Type 4821 4831	cell count
+T240	Measure-Type 4846 4856	Efficiency
+T241	Location 4884 4893	flow cell
+T242	Action 4925 4930	flush
+T243	Reagent 4935 4944	flow cell
+T244	Action 4953 4960	samples
+T245	Action 4963 4968	Flush
+T246	Reagent 4969 4982	Flow CellMake
+T247	Action 4991 4996	flush
+T248	Location 5001 5010	flow cell
+T249	Action 5019 5026	samples
+T250	Action 5030 5037	prevent
+T251	Reagent 5051 5068	cellular material
+T252	Reagent 5072 5078	debris
+T253	Reagent 5103 5109	sample
+T254	Action 5116 5120	Load
+T255	Device 5125 5131	funnel
+T256	Reagent 5137 5142	ddH2O
+T257	Action 5171 5176	click
+T258	Action 5206 5209	Set
+T259	Numerical 5213 5225	4 - 5 cycles
+T260	Action 5232 5237	Click
+T261	Action 5286 5293	running
+T262	Reagent 5294 5301	samples
+T263	Action 5414 5426	Dissasembly1
+T264	Action 5429 5435	Remove
+T265	Location 5440 5446	tubing
+T266	Device 5456 5467	syringe tip
+T267	Device 5476 5489	sample funnel
+T268	Action 5496 5502	Loosen
+T269	Device 5507 5529	flow cell holder screw
+T270	Action 5534 5540	remove
+T271	Location 5545 5561	flow cell holder
+T272	Location 5566 5575	flow cell
+T273	Action 5582 5588	Remove
+T274	Location 5593 5602	flow cell
+T275	Location 5612 5628	flow cell holder
+T276	Action 5635 5638	Put
+T277	Location 5643 5652	flow cell
+T278	Location 5665 5680	protective tube
+T279	Action 5687 5692	Close
+T280	Device 5697 5704	program
+T281	Action 5709 5718	shut down
+T282	Device 5719 5727	computer
+E1	Action:T1 Acts-on:T2
+E2	Action:T5 Acts-on:T6 Acts-on2:T7
+E3	Action:T8 Acts-on:T9 Site:T10
+E4	Action:T16 Using:T14 Acts-on:T17
+E5	Action:T19 Acts-on:T20 Site:T22
+E6	Action:T23 Acts-on:T24
+E7	Action:T26 Site:T24 Acts-on:T27
+E8	Action:T30 
+E9	Action:T32 Acts-on:T34
+E10	Action:T36 Acts-on:T37
+E11	Action:T39 Acts-on:T40 Site:T41
+E12	Action:T44 Acts-on:T46
+E13	Action:T47 Acts-on:T49
+E14	Action:T50 Acts-on:T51
+E15	Action:T54 Using:T51 Acts-on:T55 Acts-on2:T56
+E16	Action:T57 Acts-on:T58 Site:T59
+E17	Action:T62 Acts-on:T63 Site:T65
+E18	Action:T66 Acts-on:T67 Site:T68
+E19	Action:T69 Acts-on:T70 Site:T72 Site2:T74
+E20	Action:T75 Acts-on:T76 Using:T77
+E21	Action:T79 Acts-on:T80 Site:T81
+E22	Action:T82 Acts-on:T83
+E23	Action:T84 Acts-on:T85
+E24	Action:T86 Acts-on:T87
+E25	Action:T88 Acts-on:T89
+E26	Action:T92 Acts-on:T93 Using:T94
+E27	Action:T95 
+E28	Action:T96 
+E29	Action:T98 Acts-on:T99
+E30	Action:T101 Site:T103 Acts-on:T102 Using:T100
+E31	Action:T109 Acts-on:T111
+E32	Action:T114 Site:T118 Acts-on:T116
+E33	Action:T120 Acts-on:T121
+E34	Action:T122 
+E35	Action:T128 
+E36	Action:T129 Site:T131
+E37	Action:T132 Using:T133
+E38	Action:T137 Using:T138
+E39	Action:T147 Measure-Type-Link:T149
+E40	Action:T154 Measure-Type-Link:T155
+E41	Action:T159 Acts-on:T158
+E42	Action:T164 
+E43	Action:T168 Acts-on:T167
+E44	Action:T172 
+E45	Action:T173 
+E46	Action:T174 
+E47	Action:T175 Measure-Type-Link:T176
+E48	Action:T179 Using:T180
+E49	Action:T184 Acts-on:T185 Using:T183
+E50	Action:T187 Acts-on:T188 Using:T186
+E51	Action:T189 Acts-on:T190
+E52	Action:T191 Using:T192
+E53	Action:T193 
+E54	Action:T195 
+E55	Action:T199 
+E56	Action:T201 Using:T200 Using2:T202
+E57	Action:T203 
+E58	Action:T210 Using:T211
+E59	Action:T213 Acts-on:T212
+E60	Action:T215 Acts-on:T214
+E61	Action:T216 
+E62	Action:T217 Using:T218
+E63	Action:T219 Acts-on:T220
+E64	Action:T221 Acts-on:T222
+E65	Action:T223 Measure-Type-Link:T224
+E66	Action:T225 Using:T226
+E67	Action:T227 Using:T229
+E68	Action:T230 Using:T231
+E69	Action:T232 
+E70	Action:T242 Acts-on:T243
+E71	Action:T244 
+E72	Action:T245 Acts-on:T246
+E73	Action:T247 Acts-on:T248
+E74	Action:T249 
+E75	Action:T250 Acts-on:T251
+E76	Action:T254 Acts-on:T255 Using:T256
+E77	Action:T257 
+E78	Action:T258 
+E79	Action:T260 
+E80	Action:T261 Acts-on:T262
+E81	Action:T263 
+E82	Action:T264 Acts-on:T265 Acts-on2:T266 Acts-on3:T267
+E83	Action:T268 Acts-on:T269
+E84	Action:T270 Acts-on:T271 Acts-on2:T272
+E85	Action:T273 Acts-on:T274 Site:T275
+E86	Action:T276 Acts-on:T277 Site:T278
+E87	Action:T279 Acts-on:T280
+E88	Action:T281 Acts-on:T282
+R1	Or Arg1:T14 Arg2:T15
+R2	Meronym Arg1:T4 Arg2:T2
+R3	Meronym Arg1:T17 Arg2:T18
+R4	Meronym Arg1:T20 Arg2:T21
+R5	Mod-Link Arg1:E7 Arg2:T25
+R6	Or Arg1:T51 Arg2:T52
+R7	Meronym Arg1:T64 Arg2:T65
+R8	Meronym Arg1:T72 Arg2:T71
+R9	Meronym Arg1:T74 Arg2:T73
+R10	Meronym Arg1:T78 Arg2:T77
+R11	Setting Arg1:E28 Arg2:T97
+R12	Measure Arg1:T105 Arg2:T104
+R13	Meronym Arg1:T116 Arg2:T115
+R14	Meronym Arg1:T118 Arg2:T117
+R15	Mod-Link Arg1:E33 Arg2:T119
+R16	Measure Arg1:T131 Arg2:T130
+R17	Setting Arg1:E53 Arg2:T194
+R18	Setting Arg1:E69 Arg2:T233
+R19	Setting Arg1:E78 Arg2:T259
+R20	Measure Arg1:T13 Arg2:T12
+R21	Mod-Link Arg1:T28 Arg2:T29
+R22	Mod-Link Arg1:E8 Arg2:T31
+R23	Mod-Link Arg1:T34 Arg2:T33
+R24	Mod-Link Arg1:T37 Arg2:T38
+R25	Measure Arg1:T46 Arg2:T45
+R26	Measure Arg1:T49 Arg2:T48
+R27	Mod-Link Arg1:E15 Arg2:T53
+R28	Meronym Arg1:T59 Arg2:T60
+R29	Meronym Arg1:T60 Arg2:T61
+R30	Coreference-Link Arg1:T67 Arg2:T65
+R31	Or Arg1:T89 Arg2:T90
+R32	Mod-Link Arg1:T107 Arg2:T106
+R33	Mod-Link Arg1:T111 Arg2:T110
+R34	Meronym Arg1:T112 Arg2:T111
+R35	Or Arg1:T112 Arg2:T113
+R36	Measure Arg1:T125 Arg2:T124
+R37	Meronym Arg1:T126 Arg2:T127
+R38	Measure Arg1:T148 Arg2:T150
+R39	Of-Type Arg1:T152 Arg2:T151
+R40	Measure Arg1:T161 Arg2:T160
+R41	Measure Arg1:T163 Arg2:T162
+R42	Coreference-Link Arg1:T166 Arg2:T165
+R43	Measure Arg1:T167 Arg2:T165
+R44	Measure Arg1:T170 Arg2:T169
+R45	Mod-Link Arg1:E44 Arg2:T171
+R46	Mod-Link Arg1:T178 Arg2:T177
+R47	Or Arg1:T198 Arg2:T197
+R48	Or Arg1:T197 Arg2:T196
+R49	Or Arg1:E64 Arg2:E65
+R50	Or Arg1:T251 Arg2:T252

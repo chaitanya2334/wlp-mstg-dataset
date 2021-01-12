@@ -1,0 +1,182 @@
+T1	Action 50 57	Grow up
+T2	Reagent 58 63	cells
+T3	Amount 83 89	1 - 2L
+T4	Numerical 101 114	~ 1011 - 1012
+T5	Reagent 115 120	cells
+T6	Method 127 152	'microbubbling' technique
+T7	Action 155 158	Add
+T8	Reagent 159 166	Rnase A
+T9	Generic-Measure 169 180	10ug ml - 1
+T10	Amount 192 197	250µl
+T11	Reagent 201 209	Qiagen's
+T12	Concentration 210 220	100mg / ml
+T13	Reagent 233 239	DNase1
+T14	Generic-Measure 242 256	0.25 SU ml - 1
+T15	Amount 268 272	50µl
+T16	Reagent 276 281	stock
+T17	Action 286 296	Centrifuge
+T18	Speed 297 307	12,500 rpm
+T19	Speed 310 318	23,975xg
+T20	Device 324 339	Beckman Ja - 14
+T21	Time 344 354	15 minutes
+T22	Temperature 358 361	4°C
+T23	Action 362 368	Filter
+T24	Reagent 373 384	supernatant
+T25	Location 395 416	Kim Wipe tissue paper
+T26	Action 419 422	Mix
+T27	Reagent 426 445	polyethylene glycol
+T28	Modifier 476 482	gentle
+T29	Method 483 491	stirring
+T30	Action 494 502	Incubate
+T31	Time 503 512	overnight
+T32	Temperature 516 519	4°C
+T33	Action 522 529	Collect
+T34	Reagent 530 553	PEG - phage precipitate
+T35	Action 557 567	centrifuge
+T36	Numerical 570 571	6
+T37	Location 572 577	tubes
+T38	Speed 612 621	12,500rpm
+T39	Speed 624 632	23,975xg
+T40	Device 638 653	Beckman Ja - 14
+T41	Time 658 668	15 minutes
+T42	Temperature 672 675	4°C
+T43	Action 678 685	Discard
+T44	Reagent 686 697	supernatant
+T45	Modifier 700 706	Gently
+T46	Action 707 716	resuspend
+T47	Reagent 717 723	pellet
+T48	Amount 729 745	~ 1 / 150 volume
+T49	Reagent 746 751	Pro99
+T50	Action 769 772	Add
+T51	Reagent 776 794	resuspension media
+T52	Action 797 802	place
+T53	Location 807 811	tube
+T54	Mention 815 818	its
+T55	Location 819 823	side
+T56	Location 827 846	syrofoam cut - outs
+T57	Action 878 884	Put on
+T58	Device 885 899	orbital shaker
+T59	Speed 902 909	150 rpm
+T60	Location 915 924	cold room
+T61	Time 929 938	overnight
+T62	Method 939 954	re - suspension
+T63	Action 957 964	Combine
+T64	Modifier 965 976	resuspended
+T65	Reagent 977 999	PEG concentrated phage
+T66	Numerical 1007 1013	single
+T67	Location 1014 1018	tube
+T68	Action 1069 1076	Prepare
+T69	Reagent 1079 1097	CsCl step gradient
+T70	Generic-Measure 1100 1128	1.3 , 1.4 , 1.5 , 1.65 bands
+T71	Location 1134 1155	ultracentrifuge tubes
+T72	Action 1158 1161	Add
+T73	Modifier 1162 1174	concentrated
+T74	Reagent 1175 1187	phage sample
+T75	Location 1191 1194	top
+T76	Action 1197 1201	Spin
+T77	Speed 1202 1212	28,000 rpm
+T78	Time 1217 1224	4 hours
+T79	Temperature 1228 1231	4°C
+T80	Device 1235 1261	SW28 swinging bucket rotor
+T81	Action 1264 1270	Remove
+T82	Modifier 1271 1279	purified
+T83	Reagent 1280 1290	phage band
+T84	Action 1349 1361	Step dialyze
+T85	Device 1365 1401	Slide - A - Lyzer dialysis cassettes
+T86	Time 1456 1466	30 minutes
+T87	Reagent 1475 1481	5xNaCl
+T88	Reagent 1491 1497	3xNaCl
+T89	Reagent 1524 1537	1xNaCl buffer
+T90	Concentration 1549 1555	600 mM
+T91	Reagent 1556 1560	NaCl
+T92	Concentration 1563 1569	100 mM
+T93	Reagent 1570 1577	TrisHCL
+T94	pH 1580 1588	pH = 7.5
+T95	Concentration 1593 1599	100 mM
+T96	Reagent 1600 1605	MgCl2
+T97	Action 1610 1615	Store
+T98	Modifier 1616 1624	dialyzed
+T99	Reagent 1625 1634	particles
+T100	Temperature 1638 1641	4°C
+T101	Action 1657 1665	Incubate
+T102	Time 1670 1676	1 hour
+T103	Temperature 1680 1696	room temperature
+T104	Action 1699 1702	Add
+T105	Amount 1703 1707	116g
+T106	Reagent 1708 1712	NaCl
+T107	Reagent 1726 1732	lysate
+T108	Action 1801 1809	Incubate
+T109	Location 1813 1816	ice
+T110	Time 1817 1827	30 minutes
+E1	Action:T1 Acts-on:T2 Product:T5 Using:T6
+E2	Action:T7 Acts-on:T8 Acts-on2:T13 Site:E1
+E3	Action:T17 Using:T20 Acts-on:E2 Product:T24
+E4	Action:T23 Acts-on:T24 Using:T25
+E5	Action:T26 Using:T29 Acts-on:E4 Site:T27
+E6	Action:T30 Acts-on:E5 Product:T37
+E7	Action:T33 Acts-on:T34
+E8	Action:T35 Acts-on:T37 Using:T40 Product:T34 Product2:T44 Product3:T47
+E9	Action:T43 Acts-on:T44
+E10	Action:T46 Acts-on:T47 Site:T49
+E11	Action:T50 Acts-on:T51 Site:E10 Product:T53
+E12	Action:T52 Acts-on:T55 Site:T56
+E13	Action:T57 Acts-on:T58 Site:T60 Using:T62 Acts-on2:E12 Product:T65
+E14	Action:T63 Acts-on:T65 Site:T67 Product:T74
+E15	Action:T68 Product:T69 Site:T71
+E16	Action:T72 Acts-on:T74 Site:T75 Site2:E15
+E17	Action:T76 Using:T80 Acts-on:E16 Product:T83
+E18	Action:T81 Acts-on:T83
+E19	Action:T84 Using:T85 Acts-on:T87 Acts-on2:T88 Acts-on3:T89 Site:E18 Product:T99
+E20	Action:T97 Acts-on:T99
+E21	Action:T101 Acts-on:E20 Product:T107
+E22	Action:T104 Acts-on:T106 Site:T107
+E23	Action:T108 Acts-on:E22 Site:T109
+R1	Measure Arg1:T2 Arg2:T3
+R2	Measure Arg1:T5 Arg2:T4
+R3	Measure Arg1:T11 Arg2:T10
+R4	Measure Arg1:T11 Arg2:T12
+R5	Meronym Arg1:T11 Arg2:T8
+R6	Measure Arg1:T8 Arg2:T9
+R7	Measure Arg1:T13 Arg2:T14
+R8	Measure Arg1:T16 Arg2:T15
+R9	Meronym Arg1:T16 Arg2:T13
+R10	Setting Arg1:T20 Arg2:T19
+R11	Setting Arg1:T20 Arg2:T18
+R12	Setting Arg1:T20 Arg2:T21
+R13	Setting Arg1:T20 Arg2:T22
+R14	Setting Arg1:E6 Arg2:T31
+R15	Setting Arg1:E6 Arg2:T32
+R16	Measure Arg1:T37 Arg2:T36
+R17	Setting Arg1:T40 Arg2:T38
+R18	Setting Arg1:T40 Arg2:T39
+R19	Setting Arg1:T40 Arg2:T41
+R20	Setting Arg1:T40 Arg2:T42
+R21	Mod-Link Arg1:E10 Arg2:T45
+R22	Measure Arg1:T49 Arg2:T48
+R23	Coreference-Link Arg1:T54 Arg2:T53
+R24	Meronym Arg1:T55 Arg2:T54
+R25	Setting Arg1:T58 Arg2:T59
+R26	Setting Arg1:E13 Arg2:T61
+R27	Measure Arg1:T67 Arg2:T66
+R28	Mod-Link Arg1:T65 Arg2:T64
+R29	Measure Arg1:T69 Arg2:T70
+R30	Mod-Link Arg1:T74 Arg2:T73
+R31	Setting Arg1:T80 Arg2:T79
+R32	Setting Arg1:T80 Arg2:T78
+R33	Setting Arg1:T80 Arg2:T77
+R34	Mod-Link Arg1:T83 Arg2:T82
+R35	Measure Arg1:T91 Arg2:T90
+R36	Measure Arg1:T93 Arg2:T92
+R37	Measure Arg1:T93 Arg2:T94
+R38	Measure Arg1:T96 Arg2:T95
+R39	Setting Arg1:T85 Arg2:T86
+R40	Meronym Arg1:T91 Arg2:T89
+R41	Meronym Arg1:T93 Arg2:T89
+R42	Meronym Arg1:T96 Arg2:T89
+R43	Mod-Link Arg1:T99 Arg2:T98
+R44	Setting Arg1:E20 Arg2:T100
+R45	Setting Arg1:E21 Arg2:T102
+R46	Setting Arg1:E21 Arg2:T103
+R47	Measure Arg1:T106 Arg2:T105
+R48	Setting Arg1:E23 Arg2:T110
+R49	Enables Arg1:E8 Arg2:E7

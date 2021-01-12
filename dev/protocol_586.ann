@@ -1,0 +1,65 @@
+T1	Action 33 39	Dilute
+T2	Reagent 45 64	nucleic acid sample
+T3	Amount 68 78	100–700 µL
+T4	Action 163 166	Add
+T5	Amount 170 182	equal volume
+T6	Reagent 186 192	phenol
+T7	Location 200 204	tube
+T8	Action 207 213	vortex
+T9	Modifier 214 224	vigorously
+T10	Action 228 231	mix
+T11	Reagent 236 242	phases
+T12	Action 245 249	Spin
+T13	Location 255 264	microfuge
+T14	Speed 268 277	top speed
+T15	Time 282 289	1–2 min
+T16	Action 293 301	separate
+T17	Reagent 306 312	phases
+T18	Action 315 321	Remove
+T19	Reagent 326 339	aqueous phase
+T20	Modifier 345 348	new
+T21	Location 349 353	tube
+T22	Modifier 356 427	being careful not to transfer any of the protein at the phase interface
+T23	Action 430 436	Repeat
+T24	Method 441 458	phenol extraction
+T25	Action 473 479	Repeat
+T26	Method 484 501	phenol extraction
+T27	Action 516 523	Extract
+T28	Reagent 528 534	sample
+T29	Amount 543 555	equal volume
+T30	Reagent 559 587	chloroform : isoamyl alcohol
+T31	Action 591 597	remove
+T32	Reagent 608 614	phenol
+T33	Action 617 624	Extract
+T34	Reagent 629 635	sample
+T35	Amount 650 662	equal volume
+T36	Reagent 666 694	chloroform : isoamyl alcohol
+T37	Action 698 704	remove
+T38	Reagent 715 721	phenol
+T39	Action 724 735	Precipitate
+T40	Reagent 740 752	nucleic acid
+E1	Action:T1 Acts-on:T2
+E2	Action:T4 Site:T7 Acts-on:T6 Acts-on2:E1
+E3	Action:T8 
+E4	Action:T10 Acts-on:T11
+E5	Action:T12 Site:T13
+E6	Action:T16 Acts-on:T17
+E7	Action:T18 Acts-on:T19 Site:T21
+E8	Action:T23 Using:T24
+E9	Action:T25 Using:T26
+E10	Action:T27 Acts-on:T28 Using:T30
+E11	Action:T31 Acts-on:T32 Using:E10
+E12	Action:T33 Acts-on:T34 Using:T36
+E13	Action:T37 Acts-on:T38 Using:E12
+E14	Action:T39 Acts-on:T40
+R1	Setting Arg1:E5 Arg2:T14
+R2	Setting Arg1:E5 Arg2:T15
+R3	Mod-Link Arg1:T21 Arg2:T20
+R4	Mod-Link Arg1:E7 Arg2:T22
+R5	Setting Arg1:E1 Arg2:T3
+R6	Mod-Link Arg1:E3 Arg2:T9
+R7	Measure Arg1:T6 Arg2:T5
+R8	Measure Arg1:T30 Arg2:T29
+R9	Measure Arg1:T36 Arg2:T35
+R10	Enables Arg1:E4 Arg2:E3
+R11	Enables Arg1:E6 Arg2:E5

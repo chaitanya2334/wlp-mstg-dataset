@@ -1,0 +1,72 @@
+T1	Action 67 71	Cool
+T2	Modifier 72 82	autoclaved
+T3	Reagent 83 100	growth media agar
+T4	Temperature 104 108	50°C
+T5	Action 111 114	Add
+T6	Amount 115 120	10 µl
+T7	Reagent 121 137	X - Gal Solution
+T8	Concentration 140 150	20 mg / ml
+T9	Modifier 153 156	per
+T10	Amount 157 161	1 mL
+T11	Reagent 165 170	Media
+T12	Amount 176 180	2 µl
+T13	Reagent 181 197	X - Gal Solution
+T14	Concentration 200 211	100 mg / ml
+T15	Modifier 214 217	per
+T16	Amount 218 222	1 mL
+T17	Reagent 226 231	Media
+T18	Action 236 239	Add
+T19	Amount 240 245	10 µl
+T20	Reagent 246 250	IPTG
+T21	Concentration 253 258	100mM
+T22	Modifier 261 264	per
+T23	Amount 265 269	1 mL
+T24	Reagent 273 278	Media
+T25	Concentration 308 311	1mM
+T26	Action 314 317	Add
+T27	Modifier 318 327	screening
+T28	Reagent 328 338	antibiotic
+T29	Reagent 351 361	Ampicillin
+T30	Reagent 364 373	Kanamycin
+T31	Reagent 376 389	Carbenicillin
+T32	Action 400 404	Pour
+T33	Device 405 411	plates
+T34	Action 425 429	cool
+T35	Temperature 433 449	room temperature
+T36	Modifier 460 468	at least
+T37	Time 469 479	30 minutes
+T38	Action 495 501	Spread
+T39	Modifier 502 513	transformed
+T40	Reagent 514 529	competent cells
+E1	Action:T1 Acts-on:T3
+E2	Action:T5 Acts-on:T7 Site:T11 Site2:E1
+E3	Action:T18 Acts-on:T20 Site:T24 Site2:E2
+E4	Action:T26 Acts-on:T28 Site:E3 Product:T33
+E5	Action:T32 Acts-on:T33
+E6	Action:T34 Acts-on:E5 Product:T40
+E7	Action:T38 Acts-on:T40
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Setting Arg1:E1 Arg2:T4
+R3	Measure Arg1:T7 Arg2:T6
+R4	Mod-Link Arg1:T28 Arg2:T27
+R5	Mod-Link Arg1:T40 Arg2:T39
+R6	Measure Arg1:T20 Arg2:T19
+R7	Measure Arg1:T11 Arg2:T10
+R8	Mod-Link Arg1:T11 Arg2:T9
+R9	Measure Arg1:T13 Arg2:T12
+R10	Measure Arg1:T17 Arg2:T16
+R11	Mod-Link Arg1:T17 Arg2:T15
+R12	Measure Arg1:T13 Arg2:T14
+R13	Measure Arg1:T7 Arg2:T8
+R14	Or Arg1:T7 Arg2:T13
+R15	Or Arg1:T11 Arg2:T17
+R16	Measure Arg1:T24 Arg2:T23
+R17	Mod-Link Arg1:T24 Arg2:T22
+R18	Measure Arg1:T24 Arg2:T25
+R19	Measure Arg1:T20 Arg2:T21
+R20	Coreference-Link Arg1:T29 Arg2:T28
+R21	Coreference-Link Arg1:T30 Arg2:T28
+R22	Coreference-Link Arg1:T31 Arg2:T28
+R23	Setting Arg1:E6 Arg2:T35
+R24	Setting Arg1:E6 Arg2:T37
+R25	Mod-Link Arg1:T37 Arg2:T36

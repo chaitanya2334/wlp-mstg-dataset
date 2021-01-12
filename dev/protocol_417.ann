@@ -1,0 +1,37 @@
+T1	Action 52 55	Mix
+T2	Modifier 60 65	first
+T3	Numerical 66 67	3
+T4	Reagent 68 78	components
+T5	Action 97 100	Add
+T6	Reagent 101 119	Cloning Master Mix
+T7	Concentration 122 124	2X
+T8	Amount 129 133	5 μl
+T9	Action 180 188	Incubate
+T10	Temperature 192 208	room temperature
+T11	Temperature 211 215	25°C
+T12	Time 222 234	5–15 minutes
+T13	Action 237 245	Incubate
+T14	Location 249 252	ice
+T15	Time 257 266	2 minutes
+T16	Action 269 278	Transform
+T17	Modifier 279 290	immediately
+T18	Reagent 296 328	NEB 10 - beta Competent E . coli
+T19	Action 332 337	store
+T20	Temperature 341 347	- 20°C
+E1	Action:T1 Acts-on:T4
+E2	Action:T5 Acts-on:T6 Site:E1
+E3	Action:T9 Acts-on:E2
+E4	Action:T13 Site:T14 Acts-on:E3
+E5	Action:T16 Product:T18 Acts-on:E4
+E6	Action:T19 Acts-on:E4
+R1	Measure Arg1:T4 Arg2:T3
+R2	Mod-Link Arg1:T4 Arg2:T2
+R3	Measure Arg1:T6 Arg2:T7
+R4	Measure Arg1:T6 Arg2:T8
+R5	Or Arg1:T10 Arg2:T11
+R6	Setting Arg1:E3 Arg2:T10
+R7	Setting Arg1:E3 Arg2:T12
+R8	Setting Arg1:E4 Arg2:T15
+R9	Mod-Link Arg1:E5 Arg2:T17
+R10	Setting Arg1:E6 Arg2:T20
+R11	Or Arg1:E6 Arg2:E5

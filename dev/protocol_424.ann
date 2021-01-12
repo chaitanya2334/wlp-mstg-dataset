@@ -1,0 +1,145 @@
+T1	Action 57 64	Prepare
+T2	Reagent 69 79	components
+T3	Action 120 123	Mix
+T4	Reagent 128 138	components
+T5	Action 143 147	stir
+T6	Temperature 151 167	room temperature
+T7	Time 197 212	30 - 60 minutes
+T8	Action 244 249	Store
+T9	Temperature 253 257	4 °C
+T10	Location 263 275	glass bottle
+T11	Action 299 302	Add
+T12	Amount 303 312	5 volumes
+T13	Reagent 320 349	home - made Trizol substitute
+T14	Reagent 357 363	sample
+T15	Action 500 506	Vortex
+T16	Modifier 507 517	vigorously
+T17	Time 522 537	10 - 30 seconds
+T18	Action 628 636	Incubate
+T19	Temperature 640 656	room temperature
+T20	Time 661 670	5 minutes
+T21	Action 673 676	Add
+T22	Amount 677 685	1 volume
+T23	Reagent 689 699	chloroform
+T24	Action 752 755	Mix
+T25	Modifier 756 766	vigorously
+T26	Numerical 767 774	10 - 20
+T27	Method 784 802	inverting the tube
+T28	Action 843 851	Incubate
+T29	Temperature 855 871	room temperature
+T30	Time 876 885	5 minutes
+T31	Action 888 892	Spin
+T32	Time 897 912	10 - 15 minutes
+T33	Speed 916 926	> 12,000 g
+T34	Temperature 931 935	4 °C
+T35	Action 1026 1034	Transfer
+T36	Reagent 1039 1058	upper aqueous phase
+T37	Modifier 1066 1069	new
+T38	Location 1070 1074	tube
+T39	Action 1202 1205	Add
+T40	Amount 1206 1217	1.1 volumes
+T41	Reagent 1221 1232	isopropanol
+T42	Action 1511 1514	Mix
+T43	Modifier 1515 1519	well
+T44	Method 1523 1541	inverting the tube
+T45	Action 1544 1552	Incubate
+T46	Time 1553 1568	30 - 60 minutes
+T47	Temperature 1572 1576	4 °C
+T48	Temperature 1583 1599	room temperature
+T49	Action 1602 1606	Spin
+T50	Time 1611 1626	30 - 45 minutes
+T51	Speed 1630 1640	> 12,000 g
+T52	Temperature 1645 1649	4 °C
+T53	Action 1652 1659	Discard
+T54	Reagent 1664 1675	supernatant
+T55	Action 1678 1681	Add
+T56	Amount 1682 1690	1 volume
+T57	Concentration 1694 1698	70 %
+T58	Reagent 1708 1715	ethanol
+T59	Action 1766 1769	Mix
+T60	Modifier 1770 1776	gently
+T61	Action 1867 1875	Incubate
+T62	Time 1876 1886	10 minutes
+T63	Temperature 1890 1906	room temperature
+T64	Action 1909 1913	Spin
+T65	Time 1918 1928	10 minutes
+T66	Speed 1932 1942	> 12,000 g
+T67	Temperature 1947 1951	4 °C
+T68	Action 1954 1961	Discard
+T69	Reagent 1966 1977	supernatant
+T70	Reagent 1988 1994	pellet
+T71	Action 1995 1998	dry
+T72	Temperature 2002 2018	room temperature
+T73	Amount 2029 2038	no traces
+T74	Concentration 2042 2046	70 %
+T75	Reagent 2047 2054	ethanol
+T76	Action 2055 2061	remain
+T77	Modifier 2171 2181	Completely
+T78	Action 2182 2190	dissolve
+T79	Reagent 2195 2201	pellet
+T80	Reagent 2205 2223	RNase - free water
+E1	Action:T1 Product:T2
+E2	Action:T3 Acts-on:T4
+E3	Action:T5 Acts-on:E2
+E4	Action:T8 Site:T10 Acts-on:E3 Product:T14
+E5	Action:T11 Acts-on:T13 Site:E4
+E6	Action:T15 Acts-on:T14
+E7	Action:T18 Acts-on:E6
+E8	Action:T21 Acts-on:T23 Site:E7
+E9	Action:T24 Count:T26 Using:T27 Acts-on:E8
+E10	Action:T28 Acts-on:E9
+E11	Action:T31 Acts-on:E10 Product:T36
+E12	Action:T35 Acts-on:T36 Site:T38
+E13	Action:T39 Acts-on:T41 Site:E12
+E14	Action:T42 Using:T44 Acts-on:E13
+E15	Action:T45 Acts-on:E14
+E16	Action:T49 Acts-on:E15 Product:T54
+E17	Action:T53 Acts-on:T54
+E18	Action:T55 Acts-on:T58 Acts-on2:E17
+E19	Action:T59 Acts-on:E18
+E20	Action:T61 Acts-on:E19
+E21	Action:T64 Acts-on:E20 Product:T69
+E22	Action:T68 Acts-on:T69 Product:T70 Product2:T75
+E23	Action:T71 Acts-on:T70 Product:T79
+E24	Action:T76 Acts-on:T75
+E25	Action:T78 Acts-on:T79 Using:T80
+R1	Setting Arg1:E3 Arg2:T6
+R2	Setting Arg1:E3 Arg2:T7
+R3	Setting Arg1:E4 Arg2:T9
+R4	Measure Arg1:T13 Arg2:T12
+R5	Mod-Link Arg1:E6 Arg2:T16
+R6	Setting Arg1:E6 Arg2:T17
+R7	Setting Arg1:E7 Arg2:T19
+R8	Setting Arg1:E7 Arg2:T20
+R9	Measure Arg1:T23 Arg2:T22
+R10	Mod-Link Arg1:E9 Arg2:T25
+R11	Setting Arg1:E10 Arg2:T29
+R12	Setting Arg1:E10 Arg2:T30
+R13	Setting Arg1:E11 Arg2:T32
+R14	Setting Arg1:E11 Arg2:T33
+R15	Setting Arg1:E11 Arg2:T34
+R16	Mod-Link Arg1:T38 Arg2:T37
+R17	Measure Arg1:T41 Arg2:T40
+R18	Mod-Link Arg1:E14 Arg2:T43
+R19	Setting Arg1:E15 Arg2:T46
+R20	Setting Arg1:E15 Arg2:T47
+R21	Or Arg1:T47 Arg2:T48
+R22	Setting Arg1:E16 Arg2:T50
+R23	Setting Arg1:E16 Arg2:T51
+R24	Setting Arg1:E16 Arg2:T52
+R25	Measure Arg1:T58 Arg2:T57
+R26	Measure Arg1:T58 Arg2:T56
+R27	Mod-Link Arg1:E19 Arg2:T60
+R28	Setting Arg1:E20 Arg2:T62
+R29	Setting Arg1:E20 Arg2:T63
+R30	Setting Arg1:E21 Arg2:T65
+R31	Setting Arg1:E21 Arg2:T66
+R32	Setting Arg1:E21 Arg2:T67
+R33	Measure Arg1:T75 Arg2:T74
+R34	Setting Arg1:E23 Arg2:T72
+R35	Mod-Link Arg1:E25 Arg2:T77
+R36	Coreference-Link Arg1:T4 Arg2:T2
+R37	Setting Arg1:E15 Arg2:T48
+R38	Measure Arg1:T75 Arg2:T73
+R39	Enables Arg1:E23 Arg2:E9
+R40	Meronym Arg1:T75 Arg2:T70

@@ -1,0 +1,79 @@
+T1	Action 53 60	Prepare
+T2	Generic-Measure 61 66	0.5 %
+T3	Reagent 67 97	Neu5Gc Assay Blocking Solution
+T4	Location 101 104	PBS
+T5	Action 968 972	Wash
+T6	Reagent 973 978	cells
+T7	Action 982 988	adding
+T8	Amount 989 993	1 ml
+T9	Modifier 994 998	cold
+T10	Reagent 999 1002	PBS
+T11	Modifier 1010 1016	gently
+T12	Action 1017 1027	centrifuge
+T13	Temperature 1031 1034	4°C
+T14	Modifier 1037 1046	Carefully
+T15	Action 1047 1053	remove
+T16	Reagent 1054 1065	supernatant
+T17	Action 1070 1077	discard
+T18	Modifier 1080 1086	Gently
+T19	Action 1087 1096	resuspend
+T20	Reagent 1097 1102	cells
+T21	Amount 1106 1112	100 μl
+T22	Modifier 1120 1131	appropriate
+T23	Modifier 1132 1139	diluted
+T24	Reagent 1140 1148	antibody
+T25	Action 1169 1177	Incubate
+T26	Reagent 1178 1183	cells
+T27	Location 1187 1190	ice
+T28	Modifier 1195 1203	at least
+T29	Time 1204 1210	1 hour
+T30	Action 1213 1217	Wash
+T31	Reagent 1218 1223	cells
+T32	Modifier 1235 1241	Gently
+T33	Action 1242 1251	resuspend
+T34	Reagent 1252 1257	cells
+T35	Amount 1261 1267	100 μl
+T36	Reagent 1268 1304	Secondary Antibody in diluent buffer
+T37	Action 1311 1319	incubate
+T38	Time 1324 1330	1 hour
+T39	Location 1334 1337	ice
+T40	Action 1340 1344	Wash
+T41	Reagent 1345 1350	cells
+T42	Action 1363 1372	Resuspend
+T43	Reagent 1373 1384	cell pellet
+T44	Amount 1388 1394	400 μl
+T45	Location 1398 1412	diluent buffer
+T46	Action 1415 1418	Run
+T47	Reagent 1419 1424	cells
+T48	Device 1437 1451	flow cytometer
+E1	Action:T1 Acts-on:T3 Site:T4 Product:T6
+E2	Action:T5 Acts-on:T6
+E3	Action:T7 Acts-on:T10
+E4	Action:T12 Acts-on:E3 Product:T16 Product2:T20
+E5	Action:T15 Acts-on:T16
+E6	Action:T17 Acts-on:T16
+E7	Action:T19 Acts-on:T20 Using:T24 Product:T26
+E8	Action:T25 Acts-on:T26 Site:T27 Product:T31
+E9	Action:T30 Acts-on:T31 Product:T34
+E10	Action:T33 Acts-on:T34 Site:T36
+E11	Action:T37 Acts-on:T34 Site:T39 Product:T41
+E12	Action:T40 Acts-on:T41 Product:T43
+E13	Action:T42 Acts-on:T43 Site:T45 Product:T47
+E14	Action:T46 Acts-on:T47 Site:T48
+R1	Measure Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:E10 Arg2:T32
+R3	Mod-Link Arg1:E5 Arg2:T14
+R4	Mod-Link Arg1:E7 Arg2:T18
+R5	Measure Arg1:T24 Arg2:T21
+R6	Mod-Link Arg1:T24 Arg2:T22
+R7	Mod-Link Arg1:T24 Arg2:T23
+R8	Mod-Link Arg1:T29 Arg2:T28
+R9	Setting Arg1:E8 Arg2:T29
+R10	Measure Arg1:T36 Arg2:T35
+R11	Setting Arg1:E11 Arg2:T38
+R12	Measure Arg1:T45 Arg2:T44
+R13	Mod-Link Arg1:E4 Arg2:T11
+R14	Setting Arg1:E4 Arg2:T13
+R15	Mod-Link Arg1:T10 Arg2:T9
+R16	Measure Arg1:T10 Arg2:T8
+R17	Enables Arg1:E3 Arg2:E2

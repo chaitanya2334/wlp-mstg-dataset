@@ -1,0 +1,74 @@
+T1	Action 49 58	Inoculate
+T2	Modifier 61 64	new
+T3	Reagent 65 72	culture
+T4	Action 80 84	pick
+T5	Reagent 87 93	colony
+T6	Modifier 101 104	new
+T7	Location 105 110	flask
+T8	Amount 122 127	10 ml
+T9	Reagent 131 140	MLB media
+T10	Action 348 368	Calculate the volume
+T11	Numerical 380 383	107
+T12	Reagent 384 390	phages
+T13	Action 393 420	Determine the concentration
+T14	Reagent 429 436	culture
+T15	Modifier 437 480	at the time you want to start the infection
+T16	Action 483 503	Calculate the volume
+T17	Reagent 507 519	host culture
+T18	Numerical 531 534	108
+T19	Reagent 535 540	cells
+T20	Action 543 548	Pipet
+T21	Mention 549 560	this amount
+T22	Amount 568 574	1.5 ml
+T23	Location 575 579	tube
+T24	Action 582 585	Add
+T25	Numerical 586 589	107
+T26	Reagent 590 596	phages
+T27	Location 604 608	tube
+T28	Action 613 618	start
+T29	Device 624 629	timer
+T30	Time 634 644	15 minutes
+T31	Modifier 695 711	After 15 minutes
+T32	Action 714 720	dilute
+T33	Reagent 725 734	infection
+T34	Concentration 735 743	1 : 1000
+T35	Reagent 747 756	MLB media
+T36	Amount 762 768	250 ml
+T37	Location 769 774	flask
+T38	Action 959 964	Store
+T39	Modifier 969 977	filtered
+T40	Reagent 978 985	samples
+T41	Temperature 989 992	4°C
+T42	Action 1293 1298	Count
+T43	Modifier 1305 1321	on the third day
+T44	Action 1471 1480	Calculate
+T45	Measure-Type 1481 1491	burst size
+E1	Action:T1 Product:T3
+E2	Action:T4 Acts-on:T5 Site:T7
+E3	Action:T10 Acts-on:T12
+E4	Action:T13 Acts-on:T14
+E5	Action:T16 Acts-on:T17 Acts-on2:T19
+E6	Action:T20 Acts-on:T21 Site:T23
+E7	Action:T24 Acts-on:T26 Site:T27
+E8	Action:T28 Acts-on:T29
+E9	Action:T32 Acts-on:T33 Site:T35 Site2:T37
+E10	Action:T38 Acts-on:T40
+E11	Action:T42 
+E12	Action:T44 Measure-Type-Link:T45
+R1	Mod-Link Arg1:T3 Arg2:T2
+R2	Mod-Link Arg1:T7 Arg2:T6
+R3	Meronym Arg1:T9 Arg2:T7
+R4	Measure Arg1:T9 Arg2:T8
+R5	Measure Arg1:T23 Arg2:T22
+R6	Mod-Link Arg1:E4 Arg2:T15
+R7	Measure Arg1:T12 Arg2:T11
+R8	Measure Arg1:T19 Arg2:T18
+R9	Mod-Link Arg1:E9 Arg2:T31
+R10	Measure Arg1:T26 Arg2:T25
+R11	Setting Arg1:E8 Arg2:T30
+R12	Measure Arg1:T37 Arg2:T36
+R13	Measure Arg1:T33 Arg2:T34
+R14	Mod-Link Arg1:T40 Arg2:T39
+R15	Setting Arg1:E10 Arg2:T41
+R16	Mod-Link Arg1:E11 Arg2:T43
+R17	Enables Arg1:E2 Arg2:E1

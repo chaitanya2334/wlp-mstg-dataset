@@ -1,0 +1,20 @@
+T1	Reagent 57 84	Thiamine Vitamin B12 Biotin
+T2	Modifier 85 97	After mixing
+T3	Action 100 116	filter sterilize
+T4	Size 122 128	0.2 μm
+T5	Device 129 135	filter
+T6	Action 140 145	store
+T7	Location 149 153	dark
+T8	Temperature 157 163	- 20ºC
+T9	Action 166 172	Divide
+T10	Modifier 178 183	small
+T11	Reagent 184 192	aliquots
+T12	Modifier 193 203	if desired
+E1	Action:T3 Acts-on:T5
+E2	Action:T6 Acts-on:T7
+E3	Action:T9 Product:T11
+R1	Setting Arg1:T5 Arg2:T4
+R2	Setting Arg1:E2 Arg2:T8
+R3	Mod-Link Arg1:T11 Arg2:T10
+R4	Mod-Link Arg1:E3 Arg2:T12
+R5	Mod-Link Arg1:E1 Arg2:T2

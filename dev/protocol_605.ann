@@ -1,0 +1,103 @@
+T1	Reagent 93 109	vertical net tow
+T2	Action 113 122	collected
+T3	Size 131 135	25µm
+T4	Device 136 153	mesh plankton net
+T5	Amount 161 166	200mL
+T6	Reagent 167 182	cod - end piece
+T7	Location 188 193	depth
+T8	Generic-Measure 197 200	5 m
+T9	Measure-Type 209 230	phytoplankton biomass
+T10	Action 234 243	estimated
+T11	Method 249 280	in vivo chlorphyll fluorescence
+T12	Modifier 284 288	dark
+T13	Modifier 289 296	adapted
+T14	Reagent 297 300	net
+T15	Reagent 305 324	whole water samples
+T16	Modifier 333 343	calibrated
+T17	Device 344 364	Aquaflor fluorometer
+T18	Reagent 386 414	Vertical whole water samples
+T19	Action 419 428	collected
+T20	Device 437 444	VanDorn
+T21	Generic-Measure 457 459	1m
+T22	Location 460 469	intervals
+T23	Action 474 484	integrated
+T24	Generic-Measure 490 492	5m
+T25	Measure-Type 495 521	Species relative abundance
+T26	Action 525 533	assessed
+T27	Method 534 549	microscopically
+T28	Concentration 555 558	1 %
+T29	Reagent 559 591	glutaraldehyde preserved samples
+T30	Action 592 602	quantified
+T31	Device 608 637	nanoplankton counting chamber
+T32	Reagent 736 747	Whole water
+T33	Action 751 757	passed
+T34	Size 768 774	0.2 µm
+T35	Device 775 789	syringe filter
+T36	Action 794 800	stored
+T37	Time 804 810	- 20°C
+T38	Amount 829 835	50 mLs
+T39	Reagent 843 857	net tow sample
+T40	Action 862 870	filtered
+T41	Size 879 884	1.2µm
+T42	Device 885 908	Isopore membrane filter
+T43	Action 927 936	extracted
+T44	Reagent 942 948	Trizol
+T45	Action 977 985	archived
+T46	Temperature 989 995	- 80°C
+T47	Amount 1024 1029	50mLs
+T48	Reagent 1037 1044	net tow
+T49	Action 1049 1057	filtered
+T50	Size 1066 1069	2µm
+T51	Device 1070 1093	Isopore membrane filter
+T52	Action 1112 1121	extracted
+T53	Concentration 1127 1131	80 %
+T54	Reagent 1132 1140	Methanol
+T55	Action 1154 1162	archived
+T56	Temperature 1166 1172	- 80°C
+T57	Amount 1185 1190	25mLs
+T58	Reagent 1198 1205	net tow
+T59	Action 1210 1218	filtered
+T60	Device 1227 1251	Glass Microfibre Filters
+T61	Action 1268 1276	archived
+T62	Temperature 1280 1286	- 80°C
+E1	Action:T2 Using:T4 Product:T1 Site:T7
+E2	Action:T10 Measure-Type-Link:T9 Using:T11 Using2:T17 Acts-on:T14 Acts-on2:T15 Product:T32 Product2:T39
+E3	Action:T19 Using:T20 Site:T22
+E4	Action:T23 Acts-on:E3 Product:T18
+E5	Action:T26 Measure-Type-Link:T25 Using:T27 Acts-on:T29
+E6	Action:T30 Product:T29 Using:T31 Acts-on:E2
+E7	Action:T33 Acts-on:T32 Using:T35
+E8	Action:T36 Acts-on:E7
+E9	Action:T40 Acts-on:T39 Using:T42
+E10	Action:T43 Site:T44 Acts-on:E9
+E11	Action:T45 Acts-on:E10
+E12	Action:T49 Acts-on:T48 Using:T51
+E13	Action:T52 Acts-on:E12 Site:T54
+E14	Action:T55 Acts-on:E13
+E15	Action:T59 Acts-on:T58 Using:T60
+E16	Action:T61 Acts-on:E15
+R1	Setting Arg1:T4 Arg2:T3
+R2	Measure Arg1:T6 Arg2:T5
+R3	Measure Arg1:T7 Arg2:T8
+R4	Mod-Link Arg1:T14 Arg2:T13
+R5	Mod-Link Arg1:T14 Arg2:T12
+R6	Mod-Link Arg1:T17 Arg2:T16
+R7	Setting Arg1:E4 Arg2:T24
+R8	Measure Arg1:T29 Arg2:T28
+R9	Setting Arg1:T35 Arg2:T34
+R10	Setting Arg1:E8 Arg2:T37
+R11	Measure Arg1:T39 Arg2:T38
+R12	Measure Arg1:T48 Arg2:T47
+R13	Measure Arg1:T58 Arg2:T57
+R14	Setting Arg1:T42 Arg2:T41
+R15	Setting Arg1:T51 Arg2:T50
+R16	Measure Arg1:T54 Arg2:T53
+R17	Setting Arg1:E11 Arg2:T46
+R18	Setting Arg1:E14 Arg2:T56
+R19	Setting Arg1:E16 Arg2:T62
+R20	Meronym Arg1:T6 Arg2:T4
+R21	Coreference-Link Arg1:T14 Arg2:T1
+R22	Coreference-Link Arg1:T15 Arg2:T18
+R23	Measure Arg1:T22 Arg2:T21
+R24	Coreference-Link Arg1:T48 Arg2:T39
+R25	Coreference-Link Arg1:T58 Arg2:T48

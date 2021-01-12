@@ -1,0 +1,142 @@
+T1	Action 35 44	Resuspend
+T2	Reagent 45 51	oligos
+T3	Reagent 55 60	ddH2O
+T4	Concentration 83 88	20 μM
+T5	Action 91 94	Add
+T6	Amount 95 98	5ul
+T7	Reagent 99 112	Forward oligo
+T8	Action 115 118	Add
+T9	Amount 119 122	5ul
+T10	Reagent 123 136	Reverse oligo
+T11	Action 139 142	Add
+T12	Amount 143 147	5 μL
+T13	Reagent 148 164	10x NEB buffer 2
+T14	Action 167 170	Add
+T15	Amount 171 176	35 μL
+T16	Reagent 177 182	ddH2O
+T17	Action 185 193	Incubate
+T18	Time 198 207	4 minutes
+T19	Temperature 211 215	95°C
+T20	Device 221 232	PCR machine
+T21	Action 267 275	Incubate
+T22	Reagent 280 286	sample
+T23	Temperature 290 294	70°C
+T24	Time 299 309	10 minutes
+T25	Device 315 326	PCR machine
+T26	Modifier 329 335	Slowly
+T27	Action 336 340	cool
+T28	Temperature 344 360	room temperature
+T29	Action 396 399	Mix
+T30	Amount 402 406	6 μg
+T31	Reagent 407 436	pLKO . 1 TRC - cloning vector
+T32	Amount 471 475	5 μL
+T33	Reagent 476 492	10x NEB buffer 1
+T34	Amount 498 502	1 μL
+T35	Reagent 503 507	AgeI
+T36	Action 531 539	Incubate
+T37	Temperature 543 547	37°C
+T38	Time 552 559	2 hours
+T39	Action 562 568	Purify
+T40	Device 574 601	Qiaquick gel extraction kit
+T41	Action 604 611	eluting
+T42	Amount 615 620	30 μL
+T43	Reagent 624 629	ddH2O
+T44	Action 632 638	Digest
+T45	Reagent 639 645	eluate
+T46	Reagent 651 656	EcoRI
+T47	Action 660 666	mixing
+T48	Amount 669 674	30 μL
+T49	Reagent 675 704	pLKO . 1 TRC - cloning vector
+T50	Amount 729 733	5 μL
+T51	Reagent 738 748	NEB buffer
+T52	Amount 764 768	1 μL
+T53	Reagent 769 774	EcoRI
+T54	Amount 779 784	14 μL
+T55	Reagent 785 790	ddH2O
+T56	Action 793 801	Incubate
+T57	Temperature 805 809	37°C
+T58	Time 814 821	2 hours
+T59	Action 824 827	Run
+T60	Modifier 828 836	digested
+T61	Reagent 837 840	DNA
+T62	Generic-Measure 844 849	0.8 %
+T63	Location 850 879	low melting point agarose gel
+T64	Action 943 950	Cut out
+T65	Generic-Measure 955 958	7kb
+T66	Device 959 963	band
+T67	Action 968 973	place
+T68	Modifier 979 986	sterile
+T69	Location 987 1007	microcentrifuge tube
+T70	Action 1010 1016	Purify
+T71	Reagent 1021 1024	DNA
+T72	Device 1033 1060	Qiaquick gel extraction kit
+T73	Action 1063 1068	Elute
+T74	Amount 1072 1077	30 μL
+T75	Reagent 1081 1086	ddH2O
+T76	Action 1089 1096	Measure
+T77	Reagent 1101 1118	DNA concentration
+T78	Action 1469 1477	Incubate
+T79	Temperature 1481 1485	16°C
+T80	Time 1490 1502	4 - 20 hours
+T81	Action 1505 1514	Transform
+T82	Amount 1515 1519	2 μL
+T83	Reagent 1523 1535	ligation mix
+T84	Amount 1541 1546	25 μL
+T85	Reagent 1547 1572	competent DH5 alpha cells
+E1	Action:T1 Acts-on:T2 Site:T3
+E2	Action:T5 Acts-on:T7 Site:E1
+E3	Action:T8 Acts-on:T10 Site:E2
+E4	Action:T11 Acts-on:T13 Site:E3
+E5	Action:T14 Acts-on:T16 Site:E4
+E6	Action:T17 Site:T20 Acts-on:E5 Product:T22
+E7	Action:T21 Acts-on:T22 Site:T25
+E8	Action:T27 Acts-on:E7
+E9	Action:T29 Acts-on:T31 Acts-on2:T33 Acts-on3:T35 Acts-on4:E8
+E10	Action:T36 Acts-on:E9
+E11	Action:T39 Using:T40 Acts-on:E10
+E12	Action:T41 Site:T43 Product:T45
+E13	Action:T44 Acts-on:T45 Using:T46
+E14	Action:T47 Acts-on:T49 Acts-on2:T55 Acts-on3:T53 Acts-on4:T51
+E15	Action:T56 Acts-on:E14 Product:T61
+E16	Action:T59 Acts-on:T61 Site:T63 Product:T66
+E17	Action:T64 Acts-on:T66
+E18	Action:T67 Site:T69 Product:T71 Acts-on:E17
+E19	Action:T70 Acts-on:T71 Using:T72
+E20	Action:T73 Acts-on:T75 Acts-on2:E19 Product:T77
+E21	Action:T76 Acts-on:T77
+E22	Action:T78 Acts-on:E21 Product:T83
+E23	Action:T81 Acts-on:T83 Product:T85
+R1	Setting Arg1:E1 Arg2:T4
+R2	Measure Arg1:T75 Arg2:T74
+R3	Measure Arg1:T85 Arg2:T84
+R4	Measure Arg1:T83 Arg2:T82
+R5	Setting Arg1:E22 Arg2:T79
+R6	Setting Arg1:E22 Arg2:T80
+R7	Measure Arg1:T66 Arg2:T65
+R8	Mod-Link Arg1:T69 Arg2:T68
+R9	Mod-Link Arg1:T61 Arg2:T60
+R10	Measure Arg1:T63 Arg2:T62
+R11	Setting Arg1:E15 Arg2:T57
+R12	Setting Arg1:E15 Arg2:T58
+R13	Setting Arg1:E10 Arg2:T37
+R14	Setting Arg1:E10 Arg2:T38
+R15	Setting Arg1:E6 Arg2:T18
+R16	Setting Arg1:E6 Arg2:T19
+R17	Measure Arg1:T31 Arg2:T30
+R18	Measure Arg1:T16 Arg2:T15
+R19	Measure Arg1:T13 Arg2:T12
+R20	Measure Arg1:T10 Arg2:T9
+R21	Measure Arg1:T7 Arg2:T6
+R22	Setting Arg1:E7 Arg2:T23
+R23	Setting Arg1:E7 Arg2:T24
+R24	Mod-Link Arg1:E8 Arg2:T26
+R25	Setting Arg1:E8 Arg2:T28
+R26	Measure Arg1:T33 Arg2:T32
+R27	Measure Arg1:T35 Arg2:T34
+R28	Measure Arg1:T43 Arg2:T42
+R29	Enables Arg1:E12 Arg2:E11
+R30	Measure Arg1:T51 Arg2:T50
+R31	Measure Arg1:T53 Arg2:T52
+R32	Measure Arg1:T55 Arg2:T54
+R33	Measure Arg1:T49 Arg2:T48
+R34	Enables Arg1:E14 Arg2:E13

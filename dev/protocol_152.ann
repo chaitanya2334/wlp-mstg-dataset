@@ -1,0 +1,85 @@
+T1	Action 40 46	Assess
+T2	Modifier 47 50	raw
+T3	Reagent 51 66	FASTQ sequences
+T4	Method 85 95	FastQCGoal
+T5	Action 98 104	Remove
+T6	Modifier 105 116	low quality
+T7	Reagent 117 126	sequences
+T8	Action 130 138	increase
+T9	Measure-Type 139 160	average quality score
+T10	Reagent 164 169	reads
+T11	Generic-Measure 176 178	28
+T12	Reagent 191 209	sequencing centers
+T13	Reagent 216 222	5' end
+T14	Reagent 234 251	Illumina adapters
+T15	Reagent 256 263	primers
+T16	Action 264 271	removed
+T17	Method 291 300	inclusion
+T18	Reagent 308 331	3' end Illumina adapter
+T19	Reagent 335 348	DNA fragments
+T20	Measure-Type 354 360	length
+T21	Modifier 361 370	less than
+T22	Measure-Type 375 395	number of the cycles
+T23	Device 404 413	sequencer
+T24	Action 416 422	Remove
+T25	Reagent 423 449	Illumina adaptor sequences
+T26	Reagent 455 474	3' end of sequences
+T27	Action 488 496	preserve
+T28	Reagent 497 502	reads
+T29	Generic-Measure 506 514	0 length
+T30	Action 517 523	Repeat
+T31	Action 554 560	Assess
+T32	Measure-Type 561 577	Cutadapt results
+T33	Method 583 589	FastQC
+T34	Action 592 598	Remove
+T35	Modifier 599 610	low quality
+T36	Reagent 611 621	base pairs
+T37	Reagent 627 636	sequences
+T38	Reagent 658 664	3' end
+T39	Measure-Type 675 689	sliding window
+T40	Generic-Measure 693 698	10 bp
+T41	Action 709 713	trim
+T42	Reagent 718 732	trailing bases
+T43	Measure-Type 748 761	quality score
+T44	Generic-Measure 774 776	28
+T45	Action 794 802	maintain
+T46	Reagent 816 847	paired - end Illumina sequences
+T47	Reagent 853 858	reads
+T48	Action 867 872	input
+T49	Modifier 873 887	simultaneously
+T50	Measure-Type 902 921	number of sequences
+T51	Action 922 931	submitted
+T52	Reagent 942 951	read pair
+T53	Measure-Type 972 978	length
+T54	Reagent 986 994	sequence
+T55	Action 997 1003	Assess
+T56	Measure-Type 1009 1023	quality scores
+T57	Method 1030 1036	FastQC
+T58	Action 1039 1046	Utilize
+T59	Method 1047 1058	Trimmomatic
+T60	Generic-Measure 1110 1118	first bp
+E1	Action:T1 Acts-on:T3 Using:T4
+E2	Action:T5 Acts-on:T7
+E3	Action:T8 Measure-Type-Link:T9
+E4	Action:T16 Acts-on:T14 Acts-on2:T15
+E5	Action:T24 Acts-on:T25 Site:T26
+E6	Action:T27 Acts-on:T28
+E7	Action:T30 
+E8	Action:T31 Measure-Type-Link:T32 Using:T33
+E9	Action:T34 Acts-on:T36 Site:T37
+E10	Action:T41 Acts-on:T42
+E11	Action:T45 Acts-on:T46
+E12	Action:T48 Acts-on:T47
+E13	Action:T51 Measure-Type-Link:T50
+E14	Action:T55 Measure-Type-Link:T56 Using:T57
+E15	Action:T58 Using:T59
+R1	Mod-Link Arg1:T36 Arg2:T35
+R2	Mod-Link Arg1:T3 Arg2:T2
+R3	Mod-Link Arg1:T7 Arg2:T6
+R4	Of-Type Arg1:T11 Arg2:T9
+R5	Measure Arg1:T10 Arg2:T11
+R6	Meronym Arg1:T18 Arg2:T19
+R7	Setting Arg1:E6 Arg2:T29
+R8	Of-Type Arg1:T40 Arg2:T39
+R9	Of-Type Arg1:T44 Arg2:T43
+R10	Mod-Link Arg1:E12 Arg2:T49

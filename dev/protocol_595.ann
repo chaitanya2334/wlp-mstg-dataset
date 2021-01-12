@@ -1,0 +1,60 @@
+T1	Action 36 39	Tag
+T2	Reagent 40 46	gtbp‐1
+T3	Reagent 52 56	eGFP
+T4	Reagent 60 67	mCherry
+T5	Reagent 74 90	dpy‐10 co‐CRISPR
+T6	Action 93 100	Prepare
+T7	Method 105 124	repair PCR template
+T8	Action 237 241	Make
+T9	Reagent 246 259	injection mix
+T10	Action 303 306	Use
+T11	Reagent 311 326	crRNA gtbp‐1 Ct
+T12	Action 351 357	Inject
+T13	Numerical 358 363	15‐20
+T14	Modifier 364 375	young adult
+T15	Reagent 376 384	N2 worms
+T16	Action 389 396	recover
+T17	Action 442 446	Pool
+T18	Modifier 451 460	recovered
+T19	Reagent 461 466	worms
+T20	Numerical 478 481	one
+T21	Location 482 487	plate
+T22	Action 492 500	incubate
+T23	Time 505 511	22‐23h
+T24	Temperature 515 520	20 °C
+T25	Action 533 538	Clone
+T26	Reagent 543 546	P0s
+T27	Modifier 550 560	individual
+T28	Reagent 561 572	OP50 plates
+T29	Action 577 585	incubate
+T30	Temperature 589 594	20 °C
+T31	Time 599 607	4‐5 days
+T32	Time 620 654	When the F1s reach the adult stage
+T33	Action 657 662	check
+T34	Device 667 674	Rollers
+T35	Action 707 713	screen
+T36	Device 718 725	Rollers
+E1	Action:T1 Acts-on:T2 Using:T3
+E2	Action:T6 Using:T7
+E3	Action:T8 Acts-on:T9
+E4	Action:T10 Acts-on:T11
+E5	Action:T12 Acts-on:T15
+E6	Action:T16 Acts-on:T15
+E7	Action:T17 Acts-on:T19 Site:T21
+E8	Action:T22 Acts-on:T19
+E9	Action:T25 Acts-on:T26 Product:T28
+E10	Action:T29 Acts-on:T28
+E11	Action:T33 Acts-on:T34
+E12	Action:T35 Acts-on:T36
+R1	Or Arg1:T2 Arg2:T4
+R2	Or Arg1:T3 Arg2:T5
+R3	Mod-Link Arg1:T15 Arg2:T14
+R4	Measure Arg1:T15 Arg2:T13
+R5	Mod-Link Arg1:T19 Arg2:T18
+R6	Setting Arg1:E11 Arg2:T32
+R7	Measure Arg1:T21 Arg2:T20
+R8	Setting Arg1:E8 Arg2:T23
+R9	Setting Arg1:E8 Arg2:T24
+R10	Setting Arg1:E10 Arg2:T30
+R11	Setting Arg1:E10 Arg2:T31
+R12	Mod-Link Arg1:T28 Arg2:T27

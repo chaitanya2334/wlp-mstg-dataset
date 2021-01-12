@@ -1,0 +1,123 @@
+T1	Action 82 86	pick
+T2	Reagent 89 95	colony
+T3	Modifier 103 106	new
+T4	Location 107 112	flask
+T5	Amount 124 129	10 ml
+T6	Reagent 133 142	MLB media
+T7	Modifier 145 175	Immediately after the transfer
+T8	Action 178 182	take
+T9	Measure-Type 185 208	‘time 0’ growth reading
+T10	Action 211 235	Continue taking readings
+T11	Modifier 259 271	periodically
+T12	Action 274 291	Do a plaque assay
+T13	Measure-Type 309 317	PFU / ml
+T14	Reagent 325 331	lysate
+T15	Action 350 359	Calculate
+T16	Measure-Type 364 370	volume
+T17	Reagent 382 392	107 phages
+T18	Action 395 404	Determine
+T19	Measure-Type 409 422	concentration
+T20	Reagent 431 438	culture
+T21	Action 485 494	Calculate
+T22	Measure-Type 499 505	volume
+T23	Reagent 509 521	host culture
+T24	Modifier 529 542	for 108 cells
+T25	Action 545 550	Pipet
+T26	Reagent 556 562	amount
+T27	Amount 570 576	1.5 ml
+T28	Location 577 581	tube
+T29	Action 584 587	Add
+T30	Numerical 588 591	107
+T31	Reagent 592 598	phages
+T32	Location 606 610	tube
+T33	Action 615 620	start
+T34	Device 626 631	timer
+T35	Time 636 646	15 minutes
+T36	Reagent 660 666	phages
+T37	Action 670 676	adsorb
+T38	Reagent 684 694	host cells
+T39	Action 716 722	dilute
+T40	Reagent 727 736	infection
+T41	Generic-Measure 737 745	1 : 1000
+T42	Reagent 749 758	MLB media
+T43	Amount 764 770	250 ml
+T44	Location 771 776	flask
+T45	Action 779 783	Take
+T46	Reagent 786 792	sample
+T47	Modifier 793 819	immediately after dilution
+T48	Action 915 923	Continue
+T49	Reagent 924 932	sampling
+T50	Method 936 944	this way
+T51	Time 949 956	8 hours
+T52	Action 959 964	Store
+T53	Reagent 969 985	filtered samples
+T54	Temperature 989 992	4°C
+T55	Modifier 995 1007	The next day
+T56	Action 1010 1015	count
+T57	Reagent 1020 1027	plaques
+T58	Modifier 1031 1034	all
+T59	Location 1035 1041	plates
+T60	Modifier 1042 1070	that have a countable number
+T61	Modifier 1198 1210	The next day
+T62	Action 1213 1218	count
+T63	Modifier 1219 1222	any
+T64	Modifier 1223 1226	new
+T65	Reagent 1227 1234	plaques
+T66	Action 1258 1261	add
+T67	Location 1271 1290	your original count
+T68	Action 1293 1304	Count again
+T69	Modifier 1305 1321	on the third day
+T70	Action 1324 1333	Calculate
+T71	Measure-Type 1334 1342	PFU / ml
+T72	Modifier 1343 1361	at each time point
+T73	Modifier 1362 1370	for both
+T74	Reagent 1375 1386	centrifuged
+T75	Reagent 1411 1426	not centrifuged
+T76	Action 1453 1470	Graph the results
+T77	Action 1471 1491	Calculate burst size
+E1	Action:T1 Acts-on:T2 Site:T4
+E2	Action:T8 Measure-Type-Link:T9 Acts-on:E1
+E3	Action:T10 Acts-on:E14
+E4	Action:T12 Measure-Type-Link:T13 Acts-on:T14 Acts-on2:E3
+E5	Action:T15 Acts-on:T17 Acts-on2:E4 Measure-Type-Link:T16
+E6	Action:T18 Measure-Type-Link:T19 Acts-on:T20 Acts-on2:E5
+E7	Action:T21 Measure-Type-Link:T22 Acts-on:T23 Acts-on2:E6 Product:T26
+E8	Action:T25 Acts-on:T26 Site:T28
+E9	Action:T29 Acts-on:T31 Site:T32 Acts-on2:E8
+E10	Action:T33 Acts-on:E9 Acts-on2:T34
+E11	Action:T37 Site:T38 Acts-on:T36
+E12	Action:T39 Acts-on:T40 Site:T44 Using:T42 Acts-on2:E11 Product:T46
+E13	Action:T45 Acts-on:T46
+E14	Action:T48 Using:T50 Acts-on:E13 Acts-on2:T49
+E15	Action:T52 Acts-on:T53 Acts-on2:E14
+E16	Action:T56 Acts-on:T57 Site:T59 Acts-on2:E15
+E17	Action:T62 Acts-on:T65 Acts-on2:E16
+E18	Action:T66 Site:T67 Acts-on:E17
+E19	Action:T68 Acts-on:E18
+E20	Action:T70 Measure-Type-Link:T71 Acts-on:T74 Acts-on2:T75 Acts-on3:E19
+E21	Action:T76 Acts-on:E20
+E22	Action:T77 Acts-on:E21
+R1	Measure Arg1:T6 Arg2:T5
+R2	Mod-Link Arg1:T4 Arg2:T3
+R3	Meronym Arg1:T6 Arg2:T4
+R4	Measure Arg1:T28 Arg2:T27
+R5	Measure Arg1:T31 Arg2:T30
+R6	Measure Arg1:T44 Arg2:T43
+R7	Setting Arg1:E12 Arg2:T41
+R8	Setting Arg1:E14 Arg2:T51
+R9	Setting Arg1:E15 Arg2:T54
+R10	Mod-Link Arg1:T59 Arg2:T58
+R11	Mod-Link Arg1:T65 Arg2:T64
+R12	Mod-Link Arg1:T65 Arg2:T63
+R13	Mod-Link Arg1:E14 Arg2:T7
+R14	Mod-Link Arg1:E3 Arg2:T11
+R15	Mod-Link Arg1:T23 Arg2:T24
+R16	Setting Arg1:E10 Arg2:T35
+R17	Enables Arg1:E10 Arg2:E11
+R18	Mod-Link Arg1:E13 Arg2:T47
+R19	Mod-Link Arg1:E16 Arg2:T55
+R20	Mod-Link Arg1:T59 Arg2:T60
+R21	Mod-Link Arg1:E17 Arg2:T61
+R22	Mod-Link Arg1:E19 Arg2:T69
+R23	Mod-Link Arg1:E20 Arg2:T72
+R24	Mod-Link Arg1:E20 Arg2:T73
