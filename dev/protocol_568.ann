@@ -22,12 +22,12 @@ T21	Reagent 240 255	diluted peptide
 T22	Amount 270 274	20μl
 T23	Reagent 287 304	Flex - T™ monomer
 T24	Concentration 307 317	200μg / mL
-T25	Device 325 351	96 - well U - bottom plate
+T25	Location 325 351	96 - well U - bottom plate
 T26	Action 354 357	Mix
 T27	Action 361 370	pipetting
 T28	Method 371 382	up and down
 T29	Action 385 389	Seal
-T30	Device 394 399	plate
+T30	Location 394 399	plate
 T31	Action 402 412	centrifuge
 T32	Speed 416 422	3300xg
 T33	Time 427 436	2 minutes
@@ -36,22 +36,22 @@ T35	Action 447 454	collect
 T36	Reagent 459 465	liquid
 T37	Location 466 470	down
 T38	Action 473 479	Remove
-T39	Device 484 488	seal
+T39	Seal 484 488	seal
 T40	Action 491 494	put
-T41	Device 499 504	plate
+T41	Location 499 504	plate
 T42	Location 508 511	ice
 T43	Action 516 526	illuminate
 T44	Device 532 540	UV light
 T45	Time 545 555	30 minutes
 T46	Action 623 627	Seal
-T47	Device 632 637	plate
+T47	Location 632 637	plate
 T48	Action 640 648	incubate
 T49	Time 653 663	30 minutes
 T50	Temperature 667 671	37°C
 T51	Action 809 817	Transfer
 T52	Amount 818 822	30μl
 T53	Reagent 826 853	peptide - exchanged monomer
-T54	Device 861 870	new plate
+T54	Location 865 870	plate
 T55	Action 878 881	add
 T56	Amount 882 887	3.3μl
 T57	Reagent 891 914	conjugated streptavidin
@@ -82,7 +82,7 @@ T81	Method 1695 1706	up and down
 T82	Action 1710 1714	stop
 T83	Reagent 1719 1727	reaction
 T84	Action 1730 1734	Seal
-T85	Device 1739 1744	plate
+T85	Location 1739 1744	plate
 T86	Action 1749 1757	incubate
 T87	Temperature 1761 1768	2 - 8°C
 T88	Time 1769 1778	overnight
@@ -93,7 +93,7 @@ T92	Action 2037 2044	Prepare
 T93	Reagent 2045 2050	cells
 T94	Modifier 2051 2062	of interest
 T95	Action 2093 2103	centrifuge
-T96	Device 2108 2113	plate
+T96	Location 2108 2113	plate
 T97	Speed 2117 2123	3300xg
 T98	Time 2128 2137	5 minutes
 T99	Temperature 2141 2144	4°C
@@ -103,10 +103,10 @@ T102	Location 2166 2170	dark
 T103	Action 2173 2176	Add
 T104	Amount 2177 2184	2 x 106
 T105	Reagent 2185 2190	cells
-T106	Device 2196 2222	96 - well U - bottom plate
-T107	Device 2226 2242	12 x 75 mm tubes
+T106	Location 2206 2222	U - bottom plate
+T107	Location 2237 2242	tubes
 T108	Action 2245 2251	Adjust
-T109	Device 2252 2258	volume
+T109	Measure-Type 2252 2258	volume
 T110	Amount 2262 2267	200μl
 T111	Reagent 2273 2292	CellStaining Buffer
 T112	Action 2295 2298	Add
@@ -134,22 +134,22 @@ T133	Reagent 2688 2695	samples
 T134	Device 2703 2717	flow cytometer
 T135	Modifier 2743 2749	within
 T136	Time 2750 2757	2 hours
-E1	Action:T1 Acts-on:T2 Site:T6 Product:T14 Product2:T16 Product3:T9
-E2	Action:T4 Acts-on:T2 Acts-on2:T5
-E3	Action:T7 Acts-on:T9
+E1	Action:T1 Acts-on:T2 Product:T14 Product2:T16 Product3:T9
+E2	Action:T4 Acts-on2:T5 Site:T6
+E3	Action:T7 Acts-on:T9 Product:T21
 E4	Action:T12 Acts-on:T14 Acts-on2:T16
 E5	Action:T17 Site:T18 Acts-on:E3
 E6	Action:T19 Acts-on:T21 Acts-on2:T23 Site:T25
 E7	Action:T26 Acts-on:E6 Product:T30
-E8	Action:T27 Using:T28
-E9	Action:T29 Acts-on:T30
-E10	Action:T31 Product:T36 Acts-on:E9
-E11	Action:T35 Site:T37 Acts-on:T36 Product:T41
-E12	Action:T38 Acts-on:T39
-E13	Action:T40 Acts-on:T41 Site:T42 Acts-on2:E12
+E8	Action:T27 Using:T28 Acts-on:E6
+E9	Action:T29 Acts-on:T30 Product:T36
+E10	Action:T31 Acts-on:E9
+E11	Action:T35 Site:T37 Acts-on:T36 Product:T39
+E12	Action:T38 Acts-on:T39 Product:T41
+E13	Action:T40 Acts-on:T41 Site:T42
 E14	Action:T43 Using:T44 Acts-on:E13 Product:T47
 E15	Action:T46 Acts-on:T47
-E16	Action:T48 Acts-on:E15 Product:T53
+E16	Action:T48 Acts-on:E15 Product:T53 Site:T137
 E17	Action:T51 Acts-on:T53 Site:T54
 E18	Action:T55 Acts-on:T57 Site:E17
 E19	Action:T58 Acts-on:E18
@@ -158,7 +158,7 @@ E21	Action:T61 Site:T62 Site2:T63 Acts-on:E19 Product:T115
 E22	Action:T65 Product:T66 Acts-on:T70 Acts-on2:T72
 E23	Action:T67 Acts-on:T70 Acts-on2:T72 Site:T74
 E24	Action:T75 Using:T76 Acts-on:E22
-E25	Action:T77 Acts-on:T79 Site:E21
+E25	Action:T77 Acts-on:T79
 E26	Action:T80 Using:T81 Product:T83 Acts-on:E25
 E27	Action:T82 Acts-on:T83 Product:T85
 E28	Action:T84 Acts-on:T85
@@ -167,13 +167,13 @@ E30	Action:T92 Product:T93
 E31	Action:T95 Acts-on:T96
 E32	Action:T100 Site:T101 Site2:T102 Acts-on:E31
 E33	Action:T103 Acts-on:T105 Site:T106
-E34	Action:T108 Acts-on:T111 Acts-on2:T109
+E34	Action:T108 Acts-on:T111 Measure-Type-Link:T109 Acts-on2:E33
 E35	Action:T112 Acts-on:T115 Site:E34
 E36	Action:T116 Acts-on:E35
 E37	Action:T117 Acts-on:E36 Site:T118 Site2:T119
 E38	Action:T121 Site:T123 Site2:T124 Acts-on:E37 Product:T126
-E39	Action:T125 Acts-on:T127 Acts-on2:T126 Count:T128 Product:T130
-E40	Action:T129 Acts-on:T131 Acts-on2:T130 Product:T133
+E39	Action:T125 Acts-on2:T126 Count:T128 Product:T130 Using:T127
+E40	Action:T129 Acts-on2:T130 Product:T133 Using:T131
 E41	Action:T132 Acts-on:T133 Using:T134
 R1	Setting Arg1:E1 Arg2:T3
 R2	Measure Arg1:T9 Arg2:T8
@@ -219,8 +219,6 @@ R41	Enables Arg1:E4 Arg2:E3
 R42	Enables Arg1:E2 Arg2:E1
 R43	Coreference-Link Arg1:T5 Arg2:T2
 R44	Setting Arg1:E3 Arg2:T11
-R45	Coreference-Link Arg1:T21 Arg2:T9
-R46	Coreference-Link Arg1:T39 Arg2:E9
 R47	Enables Arg1:E20 Arg2:E19
 R48	Overlaps Arg1:E21 Arg2:E22
 R49	Enables Arg1:E23 Arg2:E22
@@ -231,7 +229,16 @@ R53	Measure Arg1:T105 Arg2:T104
 R54	Coreference-Link Arg1:T105 Arg2:T93
 R55	Or Arg1:T106 Arg2:T107
 R56	Setting Arg1:E34 Arg2:T110
-R57	Meronym Arg1:T109 Arg2:T106
 R58	Mod-Link Arg1:E35 Arg2:T114
 R59	Coreference-Link Arg1:T118 Arg2:T101
 R60	Coreference-Link Arg1:T123 Arg2:T118
+R45	Enables Arg1:E10 Arg2:E11	
+T137	Location 679 683	dark
+T138	Modifier 861 864	new
+R46	Mod-Link Arg1:T54 Arg2:T138	
+T139	Size 2226 2236	12 x 75 mm
+T140	Size 2196 2205	96 - well
+R61	Measure Arg1:T106 Arg2:T140	
+R62	Measure Arg1:T107 Arg2:T139	
+R57	Coreference-Link Arg1:T127 Arg2:T111	
+R63	Coreference-Link Arg1:T131 Arg2:T127	

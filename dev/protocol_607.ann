@@ -20,14 +20,14 @@ T19	Action 833 838	Place
 T20	Size 843 850	0.02 µm
 T21	Device 851 857	filter
 T22	Size 872 878	0.8 µm
-T23	Location 879 885	filter
+T23	Device 879 885	filter
 T24	Action 1027 1032	Clamp
 T25	Device 1037 1043	funnel
-T26	Location 1058 1065	filters
+T26	Device 1058 1065	filters
 T27	Action 1068 1071	Add
 T28	Reagent 1076 1082	sample
 T29	Action 1087 1094	turn on
-T30	Mention 1099 1103	pump
+T30	Device 1099 1103	pump
 T31	Action 1251 1259	Turn off
 T32	Device 1264 1270	vacuum
 T33	Action 1273 1279	remove
@@ -54,7 +54,7 @@ T53	Modifier 1808 1815	plastic
 T54	Location 1816 1826	Petri dish
 T55	Action 1829 1832	Lay
 T56	Amount 1837 1841	0.02
-T57	Reagent 1842 1857	Anodisc filters
+T57	Device 1842 1857	Anodisc filters
 T58	Modifier 1858 1872	sample side up
 T59	Modifier 1880 1885	drops
 T60	Reagent 1893 1915	SYBR staining solution
@@ -65,7 +65,7 @@ T64	Action 2028 2031	Dry
 T65	Modifier 2032 2042	completely
 T66	Method 2049 2060	steps 7 - 8
 T67	Action 2100 2105	Place
-T68	Reagent 2110 2116	filter
+T68	Device 2110 2116	filter
 T69	Modifier 2117 2133	sample - side up
 T70	Location 2139 2150	glass slide
 T71	Action 2153 2158	Place
@@ -88,7 +88,7 @@ T87	Method 2337 2352	blue excitation
 T88	Action 2355 2362	Examine
 T89	Modifier 2363 2371	at least
 T90	Numerical 2372 2375	ten
-T91	Location 2376 2382	fields
+T91	Reagent 2376 2382	fields
 T92	Device 2390 2400	microscope
 T93	Action 2429 2434	Count
 T94	Modifier 2435 2443	at least
@@ -107,13 +107,13 @@ E2	Action:T6 Acts-on:T7 Site:T8
 E3	Action:T10 Acts-on:T11 Acts-on2:T12 Acts-on3:E2
 E4	Action:T13 Acts-on:T14 Acts-on2:E3
 E5	Action:T15 Acts-on:T17 Site:T18 Acts-on2:E4
-E6	Action:T19 Acts-on:T21 Site:T23 Acts-on2:E5
-E7	Action:T24 Acts-on:T25 Site:T26 Acts-on2:E6
-E8	Action:T27 Acts-on:T28 Acts-on2:E7
-E9	Action:T29 Acts-on:T30 Acts-on2:E8
-E10	Action:T31 Acts-on:T32 Acts-on2:E13
-E11	Action:T33 Acts-on:T35 Acts-on2:E10
-E12	Action:T36 Acts-on:T37 Site:T40 Using:T41 Acts-on2:E11 Product:T54
+E6	Action:T19 Acts-on:T21 Site:T23 Acts-on2:E5 Product:T26
+E7	Action:T24 Acts-on:T25 Site:T26
+E8	Action:T27 Acts-on:T28 Product:T30 Site:E7
+E9	Action:T29 Acts-on:T30 Product:T32
+E10	Action:T31 Acts-on:T32 Product:T35
+E11	Action:T33 Acts-on:T35 Product:T37 Product2:T40
+E12	Action:T36 Acts-on:T37 Site:T40 Using:T41 Product:T54
 E13	Action:T42 Acts-on:T45 Site:T54 Product:T60
 E14	Action:T55 Site:T60 Site2:T62 Acts-on:T57
 E15	Action:T64 Using:T66 Acts-on:E14 Product:T68
@@ -123,9 +123,9 @@ E18	Action:T75 Acts-on:T76
 E19	Action:T77 Site:T79 Acts-on:E18
 E20	Action:T80 Using:T81 Acts-on:E19
 E21	Action:T83 Acts-on:T82 Site:T84
-E22	Action:T86 Using:T87 Acts-on:E21
-E23	Action:T88 Acts-on:T91 Site:T92 Acts-on2:E22
-E24	Action:T93 Acts-on:T96 Acts-on2:E23
+E22	Action:T86 Using:T87 Acts-on:E21 Product:T91
+E23	Action:T88 Acts-on:T91 Site:T92 Product:T96 Product2:T97
+E24	Action:T93 Acts-on:T96
 E25	Action:T98 Acts-on:T99 Acts-on2:E24
 E26	Action:T101 Using:T102 Acts-on:E25
 E27	Action:T103 Using:T104 Acts-on:E26
@@ -164,3 +164,5 @@ R32	Mod-Link Arg1:T57 Arg2:T58
 R33	Mod-Link Arg1:T79 Arg2:T78
 R34	Mod-Link Arg1:T84 Arg2:T85
 R35	Enables Arg1:E20 Arg2:E21
+T105	Modifier 1762 1770	filtered
+R36	Mod-Link Arg1:T51 Arg2:T105	

@@ -46,7 +46,7 @@ T45	Action 500 504	Pass
 T46	Amount 505 511	700 µl
 T47	Reagent 519 530	supernatant
 T48	Device 541 557	miracloth funnel
-T49	Location 567 578	second tube
+T49	Location 574 578	tube
 T50	Action 581 584	Add
 T51	Amount 585 591	600 µl
 T52	Reagent 595 606	isopropanol
@@ -82,7 +82,7 @@ T81	Amount 978 983	20 µl
 T82	Action 987 993	remove
 T83	Modifier 998 1007	remaining
 T84	Reagent 1008 1013	drops
-T85	Reagent 1056 1060	tube
+T85	Location 1056 1060	tube
 T86	Location 1073 1078	bench
 T87	Action 1082 1089	air dry
 T88	Time 1094 1108	5 - 10 minutes
@@ -95,35 +95,35 @@ T94	Temperature 1157 1173	room temperature
 T95	Time 1178 1187	5 minutes
 T96	Method 1192 1213	complete resuspension
 E1	Action:T1 Acts-on:T3 Site:T4
-E2	Action:T5 Acts-on:T7 Acts-on2:T4
+E2	Action:T5 Acts-on:T7 Acts-on2:E1
 E3	Action:T8 Site:T9 Acts-on:E2
-E4	Action:T10 Acts-on:T12 Site:E3
-E5	Action:T13 Acts-on:T14 Using:T15 Acts-on2:E4
-E6	Action:T16 Acts-on:T18 Site:T19 Site2:E5
+E4	Action:T10 Acts-on:T12 Site:E3 Product:T14
+E5	Action:T13 Acts-on:T14 Using:T15 Product:T19
+E6	Action:T16 Acts-on:T18 Site:T19
 E7	Action:T20 Acts-on:T23 Site:E6
-E8	Action:T24 Using:E9 Acts-on:E7
-E9	Action:T25 
-E10	Action:T26 Acts-on:T27 Acts-on2:E8
+E8	Action:T24 Acts-on:E7 Product:T27
+E9	Action:T25 Acts-on:E7
+E10	Action:T26 Acts-on:T27
 E11	Action:T30 Acts-on:T33 Site:E10
 E12	Action:T34 Acts-on:E11 Using:T36
 E13	Action:T37 Site:T38 Acts-on:E12
-E14	Action:T40 Acts-on:E13
-E15	Action:T43 Acts-on:T44
-E16	Action:T45 Acts-on:T47 Using:T48 Site:T49 Acts-on2:E15
-E17	Action:T50 Acts-on:T52 Site:E16
-E18	Action:T53 Acts-on:T54 Using:T56 Acts-on2:E17
-E19	Action:T57 Acts-on:E18
-E20	Action:T61 Acts-on:T54 Product:T63
-E21	Action:T62 Acts-on:T63
-E22	Action:T66 Using:T64 Acts-on:T69 Acts-on2:E20 Product:T75
-E23	Action:T70 Acts-on:T73 Site:T75
-E24	Action:T74 Acts-on:T75 Acts-on2:E23
-E25	Action:T76 Acts-on:T75
-E26	Action:T78 Acts-on:T79 Acts-on2:E25 Product:T84
+E14	Action:T40 Acts-on:E13 Product:T47
+E15	Action:T43 Acts-on:T44 Product:T49
+E16	Action:T45 Acts-on:T47 Using:T48 Site:T49
+E17	Action:T50 Acts-on:T52 Site:E16 Product:T54
+E18	Action:T53 Acts-on:T54 Using:T56
+E19	Action:T57 Acts-on:E18 Product:T63
+E20	Action:T61 Acts-on2:T63 Product:T69
+E21	Action:T62 Acts-on:T63 Product:T69
+E22	Action:T66 Using:T64 Acts-on:T69
+E23	Action:T70 Acts-on:T73 Site2:E22 Product:T75
+E24	Action:T74 Acts-on:T75
+E25	Action:T76 Acts-on:E24 Product:T79
+E26	Action:T78 Acts-on:T79 Product:T84 Product2:T100
 E27	Action:T82 Using:T80 Acts-on:T84 Product:T85
-E28	Action:T87 Site:T86 Acts-on:T85
-E29	Action:T89 Acts-on:T90 Site:T92 Acts-on2:E28
-E30	Action:T93 Using:T96 Acts-on:E29
+E28	Action:T87 Site:T86 Acts-on:T85 Product:T90
+E29	Action:T89 Acts-on:T90 Site:T92
+E30	Action:T93 Using:T96 Acts-on:E29 Product:T101
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T7 Arg2:T6
 R3	Measure Arg1:T12 Arg2:T11
@@ -155,3 +155,20 @@ R28	Measure Arg1:T92 Arg2:T91
 R29	Setting Arg1:E30 Arg2:T94
 R30	Setting Arg1:E30 Arg2:T95
 R31	Setting Arg1:E28 Arg2:T88
+R32	Enables Arg1:E9 Arg2:E8	
+T97	Modifier 486 492	second
+R33	Mod-Link Arg1:T44 Arg2:T97	
+T98	Modifier 567 573	second
+R34	Mod-Link Arg1:T49 Arg2:T98	
+R35	Overlaps Arg1:E20 Arg2:E21	
+R36	Setting Arg1:E25 Arg2:T77	
+T99	Action 1014 1032	without disturbing
+E31	Action:T99 Acts-on:T100
+T100	Reagent 1037 1043	pellet
+R37	Overlaps Arg1:E27 Arg2:E31	
+R38	Meronym Arg1:T100 Arg2:T84	
+T101	Reagent 1216 1223	Samples
+T102	Modifier 1234 1240	frozen
+T103	Action 1245 1252	storage
+E32	Action:T103 Acts-on:T101
+R39	Mod-Link Arg1:T101 Arg2:T102	

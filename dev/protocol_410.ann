@@ -85,7 +85,7 @@ T84	Location 1197 1213	sample reservoir
 T85	Device 1222 1242	multichannel pipette
 T86	Action 1246 1249	add
 T87	Amount 1250 1255	50 µL
-T88	Reagent 1256 1286	10 - 10 - diluted virus sample
+T88	Reagent 1274 1286	virus sample
 T89	Modifier 1290 1293	all
 T90	Location 1294 1299	wells
 T91	Modifier 1303 1311	Column 8
@@ -120,8 +120,6 @@ T119	Time 1911 1920	~ 2 weeks
 T120	Action 1923 1932	measuring
 T121	Measure-Type 1933 1939	growth
 T122	Time 1946 1954	few days
-T123	Action 1975 1982	Turn on
-T124	Device 1987 2034	Molecular Devices SpectraMax 340PC plate reader
 E1	Action:T1 Acts-on:T3 Using:T4 Product:T9
 E2	Action:T5 Acts-on:T7 Site:T9 Product:T13
 E3	Action:T10 Acts-on:T12 Site:T13
@@ -130,7 +128,7 @@ E5	Action:T15 Acts-on:E3
 E6	Action:T18 Acts-on:T20 Site:T21 Using:T17 Acts-on2:E5
 E7	Action:T22 Acts-on:E6
 E8	Action:T23 Acts-on:E6
-E9	Action:T24 Using:T25
+E9	Action:T24 Using:T25 Acts-on:E8 Product:T28
 E10	Action:T26 Acts-on:T28 Site:T31
 E11	Action:T32 Acts-on:T35 Site:E10
 E12	Action:T37 Acts-on:E11
@@ -139,23 +137,22 @@ E14	Action:T39 Site:T42 Product:T44
 E15	Action:T43 Acts-on:T44 Site:T45
 E16	Action:T46 Acts-on:E15
 E17	Action:T50 Acts-on:E16 Using:T51
-E18	Action:T52 Acts-on:E17
+E18	Action:T52 Acts-on:E17 Product:T81
 E19	Action:T54 Acts-on:T56 Site:T58 Product:T62
 E20	Action:T60 Acts-on:T62 Site:T64 Using:T59 Product:T66 Product2:T74 Product3:T76
 E21	Action:T65 Acts-on:T66 Product:T68
 E22	Action:T67 Using:T69 Acts-on:T68 Product:T72
-E23	Action:T70 Acts-on:T72 Site:T74
+E23	Action:T70 Acts-on:T72 Site:T74 Product:T79
 E24	Action:T77 Acts-on:T79
-E25	Action:T80 Acts-on:T81 Site:T84 Acts-on2:E24
+E25	Action:T80 Acts-on:T81 Site:T84 Product:T88 Site2:E24
 E26	Action:T86 Acts-on:T88 Using:T85 Site:T90
 E27	Action:T94 Acts-on:T96 Acts-on2:E26
 E28	Action:T97 Acts-on:T98 Site:T100 Acts-on2:E27 Product:T105
 E29	Action:T103 Acts-on:T105 Site:T107 Using:T102
-E30	Action:T110 Acts-on:T112 Site:T109
+E30	Action:T110 Acts-on:T112 Site:E29
 E31	Action:T113 Measure-Type-Link:T114 Acts-on:T115 Using:T116 Acts-on2:E30
 E32	Action:T117 Using:T118 Acts-on:E31
 E33	Action:T120 Measure-Type-Link:T121 Acts-on:E32
-E34	Action:T123 Acts-on:T124
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T7 Arg2:T6
 R3	Mod-Link Arg1:T9 Arg2:T8
@@ -200,6 +197,8 @@ R41	Meronym Arg1:T107 Arg2:T109
 R42	Mod-Link Arg1:T102 Arg2:T101
 R43	Enables Arg1:E4 Arg2:E5
 R44	Enables Arg1:E7 Arg2:E8
-R45	Enables Arg1:E12 Arg2:E5
 R46	Setting Arg1:E16 Arg2:T49
 R47	Mod-Link Arg1:T90 Arg2:T91
+T123	Modifier 1256 1273	10 - 10 - diluted
+R48	Mod-Link Arg1:T88 Arg2:T123	
+R45	Enables Arg1:E12 Arg2:E13	

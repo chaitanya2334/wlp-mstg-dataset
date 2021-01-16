@@ -203,7 +203,7 @@ T202	Reagent 3335 3343	membrane
 T203	Mention 3352 3354	it
 T204	Action 3355 3360	shake
 T205	Temperature 3364 3380	room temperature
-E1	Action:T1 Acts-on:T2 Site:T3
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T4
 E2	Action:T5 Acts-on:T4 Product:T10
 E3	Action:T6 Acts-on:T8 Site:T9 Product:T13 Product2:T17
 E4	Action:T12 Acts-on:T13
@@ -259,7 +259,7 @@ E53	Action:T164 Acts-on:T165
 E54	Action:T169 Count:T167 Acts-on:E53 Product:T174 Using:T170
 E55	Action:T171 Acts-on:E53
 E56	Action:T173 Acts-on:T174 Product:T182
-E57	Action:T175 Site:T183 Acts-on:T182
+E57	Action:T175 Site:T183 Acts-on:T182 Acts-on2:E58
 E58	Action:T180 Acts-on:T179 Acts-on2:T177
 E59	Action:T181 Acts-on:T182 Product:T184
 E60	Action:T185 Acts-on:T184

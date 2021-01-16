@@ -43,10 +43,10 @@ T42	Action 835 842	recover
 T43	Reagent 843 851	droplets
 T44	Location 857 862	sides
 T45	Action 865 872	Combine
-T46	Device 873 882	retentate
+T46	Reagent 873 882	retentate
 T47	Numerical 888 889	2
 T48	Numerical 904 907	one
-T49	Device 908 923	Centriprep unit
+T49	Reagent 908 923	Centriprep unit
 T50	Method 929 945	gentle pipetting
 T51	Action 1021 1025	Make
 T52	Concentration 1028 1031	1 %
@@ -82,7 +82,7 @@ T81	Reagent 1413 1417	mold
 T82	Action 1424 1429	slide
 T83	Location 1430 1443	backing plate
 T84	Reagent 1451 1454	gel
-T85	Location 1466 1477	out of mold
+T85	Location 1473 1477	mold
 T86	Action 1480 1485	Place
 T87	Reagent 1486 1489	gel
 T88	Location 1495 1508	backing plate
@@ -114,12 +114,12 @@ T113	Action 2305 2308	add
 T114	Amount 2309 2314	20 μl
 T115	Concentration 2315 2319	0.5x
 T116	Reagent 2320 2323	TBE
-T117	Location 2327 2335	membrane
+T117	Reagent 2327 2335	membrane
 T118	Action 2339 2344	elute
 T119	Reagent 2345 2352	viruses
 T120	Action 2397 2403	Invert
 T121	Reagent 2404 2413	cartridge
-T122	Action 2416 2424	place in
+T122	Action 2416 2421	place
 T123	Modifier 2425 2430	fresh
 T124	Location 2431 2435	tube
 T125	Action 2442 2446	spin
@@ -198,60 +198,60 @@ T197	Generic-Measure 3307 3318	14 and 16°C
 E1	Action:T1 Using:T4 Product:T9 Product2:T6
 E2	Action:T5 Acts-on:T6 Site:T7
 E3	Action:T8 Acts-on:T9 Site:T10
-E4	Action:T11 Acts-on:T12 Acts-on2:E3
-E5	Action:T15 Acts-on:T16 Using:T17 Acts-on2:E4
+E4	Action:T11 Acts-on2:E3 Site:T12 Product:T16
+E5	Action:T15 Acts-on:T16 Using:T17
 E6	Action:T18 Using:T19 Acts-on:E5
 E7	Action:T20 Acts-on:E6
 E8	Action:T21 Using:T22 Acts-on:E7
 E9	Action:T23 Acts-on:T24
 E10	Action:T27 Acts-on:E9
 E11	Action:T28 Acts-on:E10
-E12	Action:T31 Site:T32 Acts-on:T30
-E13	Action:T33 Acts-on:T34 Site:T36 Acts-on2:E12
-E14	Action:T37 Acts-on:T38 Acts-on2:E13
-E15	Action:T39 Acts-on:T40 Acts-on2:E14
-E16	Action:T42 Acts-on:T43 Site:T44 Product:T46
-E17	Action:T45 Acts-on:T46 Product:T49 Using:T50
+E12	Action:T31 Site:T32 Acts-on:T30 Product:T34 Product2:T36
+E13	Action:T33 Acts-on:T34 Product:T38
+E14	Action:T37 Acts-on:T38 Product:T40 Product2:T43 Product3:T44
+E15	Action:T39 Acts-on:T40
+E16	Action:T42 Acts-on:T43 Product:T46 Product2:T49
+E17	Action:T45 Acts-on:T46 Using:T50 Acts-on2:T49 Product:T64
 E18	Action:T51 Product:T53
 E19	Action:T54 Acts-on:T56 Acts-on2:T59
-E20	Action:T60 Acts-on:E19 Product:T67
+E20	Action:T60 Acts-on:E19
 E21	Action:T63 Acts-on:T64 Using:T65
 E22	Action:T66 Acts-on:T67 Site:E21
 E23	Action:T68 Acts-on:E22 Product:T81
 E24	Action:T69 Acts-on:T70 Using:T73 Product:T90
 E25	Action:T74 Acts-on:T75
-E26	Action:T76 Using:T75
-E27	Action:T78 Acts-on:T79 Acts-on2:T80
-E28	Action:T82 Acts-on:T83 Site:T85 Acts-on2:T84 Product:T87 Product2:T88
+E26	Action:T76 Acts-on:E25
+E27	Action:T78 Acts-on:T79 Acts-on2:T80 Product:T85 Product2:T83 Product3:T84 Site:E26
+E28	Action:T82 Acts-on:T83 Acts-on2:T84 Product:T87 Product2:T88
 E29	Action:T86 Acts-on:T87 Site:T89
-E30	Action:T91 Acts-on:E29 Product:T180
+E30	Action:T91 Acts-on:E29 Product:T93
 E31	Action:T92 Acts-on:T93 Site:T94 Product:T98
 E32	Action:T96 Acts-on:T98 Site:T100
 E33	Action:T101 Using:T105 Acts-on:E32 Product:T111
 E34	Action:T106 Acts-on:T109 Site:T111
-E35	Action:T112 Acts-on:E34
-E36	Action:T113 Acts-on:T116 Site:T117 Site2:E35
-E37	Action:T118 Acts-on:T119
-E38	Action:T120 Acts-on:T121 Acts-on2:E37
+E35	Action:T112 Acts-on:E34 Acts-on2:E66
+E36	Action:T113 Acts-on:T116 Site:T117
+E37	Action:T118 Acts-on:T119 Product:T121
+E38	Action:T120 Acts-on:T121
 E39	Action:T122 Site:T124 Acts-on:E38
-E40	Action:T125 Acts-on:T124 Product:T129
+E40	Action:T125 Acts-on:E39
 E41	Action:T128 Acts-on:T129 Using:T133 Product:T136
 E42	Action:T135 Acts-on:T136
 E43	Action:T137 Site:T139 Acts-on:E42
 E44	Action:T141 Site:T142 Acts-on:E43
 E45	Action:T143 Acts-on:E44
-E46	Action:T145 Acts-on:T146 Site:T147 Site2:T148
+E46	Action:T145 Acts-on:T146 Site:T147 Site2:T148 Product:T161
 E47	Action:T149 Product:T150
 E48	Action:T151 Acts-on:T153 Site:T155
-E49	Action:T157 Acts-on:T159 Site:T161 Acts-on2:E48
-E50	Action:T162 Acts-on:E49
-E51	Action:T164 Count:T165 Using:T167 Product:T172
-E52	Action:T168 Acts-on:T169 Product:T174 Product2:T177
-E53	Action:T171 Acts-on:T172
+E49	Action:T157 Acts-on:T159 Site:T161 Acts-on2:T150
+E50	Action:T162 Acts-on:E49 Product:T172
+E51	Action:T164 Count:T165 Using:T167
+E52	Action:T168 Acts-on:T169
+E53	Action:T171 Acts-on:T172 Site:E52 Product:T174 Product2:T177
 E54	Action:T173 Acts-on:T174
-E55	Action:T176 Acts-on:T177
-E56	Action:T179 Acts-on:T180 Site:E55
-E57	Action:T181 Acts-on:E56
+E55	Action:T176 Acts-on:T177 Site:E54
+E56	Action:T179 Acts-on:T180 Site:E55 Product:T216
+E57	Action:T181 Acts-on:E70
 E58	Action:T184 Acts-on:E57
 E59	Action:T187 Acts-on:E58
 E60	Action:T190 Acts-on:E59
@@ -325,12 +325,58 @@ R65	Enables Arg1:E11 Arg2:E12
 R66	Enables Arg1:E15 Arg2:E16
 R67	Measure Arg1:T46 Arg2:T47
 R68	Measure Arg1:T49 Arg2:T48
-R69	Enables Arg1:E19 Arg2:E18
 R70	Setting Arg1:E20 Arg2:T61
 R71	Mod-Link Arg1:T61 Arg2:T62
-R72	Enables Arg1:E27 Arg2:E28
 R73	Meronym Arg1:T84 Arg2:T83
-R74	Enables Arg1:E37 Arg2:E36
+R74	Enables Arg1:E36 Arg2:E37
 R75	Enables Arg1:E45 Arg2:E46
 R76	Enables Arg1:E48 Arg2:E47
 R77	Enables Arg1:E51 Arg2:E50
+R78	Meronym Arg1:T34 Arg2:T36	
+R79	Meronym Arg1:T43 Arg2:T44	
+R69	Enables Arg1:E20 Arg2:E18	
+R80	Coreference-Link Arg1:T67 Arg2:T53	
+R72	Meronym Arg1:T84 Arg2:T85	
+T198	Action 2261 2267	Repeat
+E63	Action:T198 Using:T200 Acts-on:E35
+T199	Action 2278 2284	Repeat
+E64	Action:T199 Using:T201 Acts-on:E63 Product:T117
+T200	Method 2268 2275	step 22
+T201	Method 2285 2292	step 22
+T202	Modifier 2293 2298	again
+R81	Mod-Link Arg1:E64 Arg2:T202	
+T203	Modifier 2217 2222	again
+R82	Mod-Link Arg1:E35 Arg2:T203	
+T204	Action 2226 2232	reduce
+E65	Action:T204 Measure-Type-Link:T205
+T205	Measure-Type 2233 2239	volume
+R83	Enables Arg1:E35 Arg2:E65	
+T206	Modifier 2155 2166	taking care
+T207	Action 2167 2179	not to touch
+E66	Action:T207 Acts-on:T208 Using:T209
+T208	Reagent 2180 2188	membrane
+T209	Device 2194 2205	pipette tip
+R84	Mod-Link Arg1:E66 Arg2:T206	
+R85	Overlaps Arg1:E34 Arg2:E66	
+R86	Meronym Arg1:T119 Arg2:T117	
+T210	Modifier 2355 2360	again
+T211	Modifier 2361 2372	taking care
+T212	Action 2373 2385	not to touch
+E67	Action:T212 Acts-on:T213 Product:T121
+T213	Reagent 2386 2394	membrane
+R87	Mod-Link Arg1:E67 Arg2:T211	
+R88	Mod-Link Arg1:E67 Arg2:T210	
+R89	Overlaps Arg1:E37 Arg2:E67	
+R90	Coreference-Link Arg1:T213 Arg2:T117	
+T214	Action 2476 2483	recover
+E68	Action:T214 Product:T129
+R91	Enables Arg1:E40 Arg2:E68	
+T215	Action 3064 3069	check
+E69	Action:T215 Acts-on:T216
+T216	Location 3070 3081	connections
+T217	Action 3102 3110	in order
+E70	Action:T217 Acts-on:T218
+T218	Reagent 3095 3098	all
+T219	Modifier 3085 3094	make sure
+R92	Mod-Link Arg1:E70 Arg2:T219	
+R93	Enables Arg1:E69 Arg2:E70	

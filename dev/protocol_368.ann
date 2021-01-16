@@ -109,7 +109,6 @@ T108	Location 1483 1487	tube
 T109	Device 1493 1500	forceps
 T110	Action 1505 1512	keeping
 T111	Mention 1513 1515	it
-T112	Method 1516 1524	inverted
 T113	Action 1525 1530	slide
 T114	Location 1540 1554	provided float
 T115	Action 1559 1566	dialyze
@@ -154,10 +153,10 @@ E4	Action:T11 Acts-on:T12
 E5	Action:T13 Acts-on:T15 Site:E4 Product:T17 Product2:T20
 E6	Action:T16 Acts-on:T17 Count:T18
 E7	Action:T19 Acts-on:T20
-E8	Action:T21 Site:T23 Acts-on:E7 Product:T25 Product2:T31
+E8	Action:T21 Site:T23 Acts-on:E7 Product:T25
 E9	Action:T24 Acts-on:T25 Site:T26
-E10	Action:T28 Acts-on:E9
-E11	Action:T30 Acts-on:T31 Using:T32
+E10	Action:T28 Acts-on:E9 Product:T31
+E11	Action:T30 Acts-on:T31 Using:T32 Product:T36
 E12	Action:T34 Using:T33 Acts-on:T35 Site:T36 Product:T43
 E13	Action:T39 Acts-on:T38
 E14	Action:T40 Acts-on:T42 Site:T43 Product:T48

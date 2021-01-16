@@ -334,7 +334,7 @@ E30	Action:T127 Acts-on:E29 Product:T131
 E31	Action:T130 Acts-on:T131 Product:T137
 E32	Action:T132 
 E33	Action:T136 Acts-on:T137 Product:T139
-E34	Action:T138 Acts-on:T139 Using:T140 Using2:T141
+E34	Action:T138 Acts-on:T139 Using:T140 Using2:T141 Product:T309
 E35	Action:T143 Using:T142 Acts-on:T144 Product:T148
 E36	Action:T147 Acts-on:T148 Product:T153
 E37	Action:T149 
@@ -342,10 +342,10 @@ E38	Action:T152 Product:T153
 E39	Action:T155 Acts-on:T156 Site:E38
 E40	Action:T157 Acts-on:T159 Site:E39
 E41	Action:T161 Acts-on:E40 Product:T165
-E42	Action:T164 Acts-on:T165 Site:T167
+E42	Action:T164 Acts-on:T165 Site:T167 Product:T174
 E43	Action:T168 Acts-on:T171 Acts-on2:T173 Site:T174
 E44	Action:T175 Acts-on:E43
-E45	Action:T176 
+E45	Action:T176 Acts-on:E44
 E46	Action:T179 Acts-on:E45 Product:T184
 E47	Action:T183 Acts-on:T184 Product:T186
 E48	Action:T185 Acts-on:T186 Using:T190
@@ -356,7 +356,7 @@ E52	Action:T198 Acts-on:T201 Site:T203
 E53	Action:T204 Acts-on:T207 Site:T209 Product:T212
 E54	Action:T213 Measure-Type-Link:T214 Acts-on:T215 Using:T212
 E55	Action:T216 Acts-on:T220 Site:T222
-E56	Action:T224 Site:T223 Acts-on:T226
+E56	Action:T224 Site:T223 Acts-on:T226 Acts-on2:E55
 E57	Action:T227 Using:T229 Acts-on:E56 Product:T231
 E58	Action:T230 Acts-on:T231
 E59	Action:T234 Acts-on:T236 Site:E58
@@ -519,8 +519,27 @@ R136	Mod-Link Arg1:E23 Arg2:T101
 R137	Setting Arg1:E23 Arg2:T103
 R138	Enables Arg1:E32 Arg2:E31
 R139	Enables Arg1:E37 Arg2:E36
-R140	Coreference-Link Arg1:T174 Arg2:T167
 R141	Coreference-Link Arg1:T209 Arg2:T203
 R142	Coreference-Link Arg1:T220 Arg2:T201
 R143	Enables Arg1:E70 Arg2:E71
-R144	Enables Arg1:E44 Arg2:E45
+T304	Action 1774 1781	combine
+E80	Action:T304 Site:T305 Acts-on:T306 Acts-on2:T307 Acts-on3:T308 Acts-on4:T309 Product:T144
+T305	Location 1765 1773	PCR tube
+T306	Reagent 1812 1833	Nuclease - free water
+T307	Reagent 1842 1852	NEBuffer 4
+T308	Reagent 1869 1872	BSA
+T309	Reagent 1890 1901	Plasmid DNA
+T310	Amount 1882 1889	4.00 uL
+T311	Amount 1861 1868	0.20 uL
+T312	Amount 1834 1841	2.00 uL
+T313	Amount 1804 1811	12.8 uL
+T314	Concentration 1855 1858	10X
+T315	Concentration 1875 1879	100X
+R140	Measure Arg1:T306 Arg2:T313	
+R144	Measure Arg1:T307 Arg2:T312	
+R145	Measure Arg1:T308 Arg2:T311	
+R146	Measure Arg1:T308 Arg2:T314	
+R147	Measure Arg1:T309 Arg2:T310	
+R148	Measure Arg1:T309 Arg2:T315	
+T316	Concentration 1904 1915	0.5 ug / uL
+R149	Measure Arg1:T309 Arg2:T316	

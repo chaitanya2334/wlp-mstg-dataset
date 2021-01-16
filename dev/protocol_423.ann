@@ -127,44 +127,43 @@ T126	Action 1384 1392	validate
 E1	Action:T1 Acts-on:T2 Site:T3
 E2	Action:T4 Acts-on:T5 Site:E1
 E3	Action:T6 Acts-on:E2
-E4	Action:T9 Product:T10 Site:E3
-E5	Action:T13 Acts-on:T15
-E6	Action:T16 Site:T18 Acts-on:E4
+E4	Action:T9 Site:E3 Acts-on:T10
+E5	Action:T13 Acts-on:T15 Site:E3
+E6	Action:T16 Site:T18 Acts-on:E4 Acts-on2:E5
 E7	Action:T19 Using:T23 Acts-on:E6 Product:T25
 E8	Action:T24 Acts-on:T25 Site:T27
 E9	Action:T28 Acts-on:T29 Site:E8
 E10	Action:T32 Acts-on:T34
 E11	Action:T35 Acts-on:E9
 E12	Action:T36 
-E13	Action:T37 Acts-on:T39 Acts-on2:E11
+E13	Action:T37 Acts-on:T39 Acts-on2:E12
 E14	Action:T40 Using:T44 Acts-on:E13 Product:T47
 E15	Action:T46 Acts-on:T47
 E16	Action:T48 Product:T55
 E17	Action:T49 Acts-on:T50 Using:T51 Site:T52
-E18	Action:T53 Acts-on:T55
-E19	Action:T56 Acts-on:T57 Count:T59 Using:T60 Acts-on2:E18
-E20	Action:T62 Site:T64 Acts-on:T60
+E18	Action:T53 Acts-on:T55 Product:T57 Product2:T58
+E19	Action:T56 Acts-on:T57 Count:T59 Using:T60
+E20	Action:T62 Site:T64 Acts-on:E19 Product:T66
 E21	Action:T65 Acts-on:T66
-E22	Action:T67 
-E23	Action:T68 Acts-on:T69 Acts-on2:E21 Product:T73
-E24	Action:T71 Acts-on:T73 Site:T76 Acts-on2:T64
-E25	Action:T77 Using:T78 Acts-on:E24
+E22	Action:T67 Acts-on:T66 Product:T69
+E23	Action:T68 Acts-on:T69 Product:T73
+E24	Action:T71 Acts-on:T73 Site:T76
+E25	Action:T77 Using:T78 Acts-on:E24 Product:T84
 E26	Action:T79 Acts-on:T80 Site:T82
-E27	Action:T83 Acts-on:T84 Acts-on2:E26
-E28	Action:T87 Acts-on:T90 Site:T93 Acts-on2:E27
-E29	Action:T95 Acts-on:T96 Site:T99 Acts-on2:T93
-E30	Action:T100 Acts-on:T99
-E31	Action:T103 Acts-on:T105 Using:E30
-E32	Action:T106 Acts-on:T107 Site:T110 Acts-on2:E30
-E33	Action:T111 Acts-on:T114 Site:T110
+E27	Action:T83 Acts-on:T84 Site:E26 Product:T93
+E28	Action:T87 Acts-on:T90 Site:T93 Product:T96
+E29	Action:T95 Acts-on:T96 Site:T99 Product:T105
+E30	Action:T100 Acts-on:E29
+E31	Action:T103 Acts-on:T105 Product:T107
+E32	Action:T106 Acts-on:T107 Site:T110
+E33	Action:T111 Acts-on:T114 Site:E32
 E34	Action:T115 
-E35	Action:T117 Acts-on:E33
-E36	Action:T118 Acts-on:E33
-E37	Action:T121 Using:T124 Acts-on:T123 Acts-on2:E36
-E38	Action:T126 Using:T125 Acts-on:E37
+E35	Action:T117 Acts-on:E34
+E36	Action:T118 Acts-on:E34
+E37	Action:T121 Using:T124 Acts-on:T123 Site:E36 Product:T127
+E38	Action:T126 Using:T125 Acts-on2:T127 Measure-Type-Link:T128
 R1	Measure Arg1:T15 Arg2:T14
 R2	Setting Arg1:E5 Arg2:T12
-R3	Measure Arg1:T10 Arg2:T11
 R4	Setting Arg1:T23 Arg2:T22
 R5	Setting Arg1:E6 Arg2:T17
 R6	Mod-Link Arg1:T27 Arg2:T26
@@ -209,9 +208,15 @@ R44	Or Arg1:E10 Arg2:E9
 R45	Enables Arg1:E11 Arg2:E12
 R46	Setting Arg1:E14 Arg2:T41
 R47	Setting Arg1:E14 Arg2:T42
-R48	Enables Arg1:E16 Arg2:E15
+R48	Enables Arg1:E15 Arg2:E16
 R49	Enables Arg1:E17 Arg2:E18
 R50	Enables Arg1:E21 Arg2:E22
-R51	Enables Arg1:E34 Arg2:E33
+R51	Enables Arg1:E33 Arg2:E34
 R52	Or Arg1:E36 Arg2:E35
 R53	Measure Arg1:T123 Arg2:T122
+R54	Setting Arg1:E3 Arg2:T7	
+R55	Setting Arg1:E3 Arg2:T8	
+R3	Setting Arg1:E4 Arg2:T11	
+R56	Enables Arg1:E30 Arg2:E31	
+T127	Reagent 1393 1401	NanoDrop
+T128	Measure-Type 1402 1410	readings

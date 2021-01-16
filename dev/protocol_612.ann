@@ -73,31 +73,31 @@ T72	Action 1243 1250	discard
 T73	Device 1253 1264	fold filter
 T74	Action 1269 1274	place
 T75	Location 1278 1287	whirlpack
-E1	Action:T1 Acts-on:T3 Site:T4 Site2:T5
-E2	Action:T6 Acts-on:E1 Acts-on2:T7
-E3	Action:T8 Acts-on:E2 Using:T9 Using2:T10 Using3:T11
-E4	Action:T12 Acts-on:T13 Site:T14 Acts-on2:E3
-E5	Action:T15 Acts-on:T16 Site:T17 Acts-on2:E4
-E6	Action:T18 Site:T19 Using:T17
-E7	Action:T21 Acts-on:E5
-E8	Action:T22 Acts-on:T23 Acts-on2:E7
-E9	Action:T25 Acts-on:T26 Using:T27 Acts-on2:E8
-E10	Action:T29 Acts-on:T30 Site:T31 Acts-on2:E9
-E11	Action:T33 Acts-on:T34 Site:T35 Acts-on2:E10
-E12	Action:T37 Acts-on:T38 Site:T39 Acts-on2:E11
-E13	Action:T40 Acts-on:T38
-E14	Action:T44 Acts-on:T43 Site:T45
-E15	Action:T46 Acts-on:T47 Acts-on2:E14
+E1	Action:T1 Acts-on:T3 Site:T4 Site2:T5 Product:T7
+E2	Action:T6 Acts-on2:T7
+E3	Action:T8 Acts-on:E2 Using:T9 Using2:T10 Using3:T11 Product:T16 Product2:T76 Product3:T20 Product4:T19 Product5:T13
+E4	Action:T12 Acts-on:T13 Site:T14
+E5	Action:T15 Acts-on:T16 Site:E6
+E6	Action:T18 Site:T19 Acts-on:T17
+E7	Action:T21 Acts-on:E5 Product:T23
+E8	Action:T22 Acts-on:T23
+E9	Action:T25 Acts-on:T26 Using:T27 Site:E8 Product:T30 Product2:T32 Product3:T31
+E10	Action:T29 Acts-on:T30 Site:T31 Product:T34 Product2:T35 Product3:T36
+E11	Action:T33 Acts-on:T34 Product:T38
+E12	Action:T37 Acts-on:T38 Site:T39
+E13	Action:T40 Acts-on:E12
+E14	Action:T44 Acts-on:T43 Site:T45 Product:T47
+E15	Action:T46 Acts-on:T47 Product:T50
 E16	Action:T49 Acts-on:T50
-E17	Action:T51 Site:T52 Acts-on:T50
-E18	Action:T53 Acts-on:T54 Site:T55
-E19	Action:T56 Acts-on:T57 Site:T58
-E20	Action:T59 Acts-on:T60 Site:T61 Acts-on2:E18
-E21	Action:T63 Acts-on:T62 Site:T64 Using:T65
-E22	Action:T66 Acts-on:T67 Acts-on2:E20
-E23	Action:T69 Acts-on:T70
+E17	Action:T51 Site:T52 Acts-on:E16 Product:T54 Product2:T55
+E18	Action:T53 Acts-on:T54 Product:T58
+E19	Action:T56 Acts-on:T57 Site:T58 Product:T61
+E20	Action:T59 Acts-on:T60 Site:T61 Product:T64
+E21	Action:T63 Acts-on:T62 Site:T64 Using:T65 Product:T67
+E22	Action:T66 Acts-on:T67 Product:T71 Product2:T70
+E23	Action:T69 Acts-on:T70 Product:T73
 E24	Action:T72 Acts-on:T73
-E25	Action:T74 Site:T75
+E25	Action:T74 Site:T75 Acts-on:E24
 R1	Mod-Link Arg1:T3 Arg2:T2
 R2	Meronym Arg1:T19 Arg2:T20
 R3	Mod-Link Arg1:E9 Arg2:T24
@@ -110,3 +110,7 @@ R9	Mod-Link Arg1:E22 Arg2:T68
 R10	Meronym Arg1:T70 Arg2:T71
 R11	Enables Arg1:E13 Arg2:E14
 R12	Mod-Link Arg1:E9 Arg2:T28
+T76	Device 394 402	Durapore
+R13	Meronym Arg1:T16 Arg2:T76	
+R14	Meronym Arg1:T34 Arg2:T35	
+R15	Meronym Arg1:T54 Arg2:T55	

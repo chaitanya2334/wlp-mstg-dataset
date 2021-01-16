@@ -27,7 +27,6 @@ T26	Concentration 356 360	10 %
 T27	Reagent 361 368	NP - 40
 T28	Reagent 374 388	Triton X - 100
 T29	Reagent 398 417	lysate supernatants
-T30	Mention 418 420	to
 T31	Concentration 446 449	1 %
 T32	Action 452 462	Centrifuge
 T33	Reagent 467 475	material
@@ -101,7 +100,6 @@ T100	Time 1251 1256	5 min
 T101	Temperature 1260 1263	4°C
 T102	Action 1266 1272	Remove
 T103	Reagent 1277 1297	upper aqueous layers
-T104	Action 1301 1306	clean
 T105	Location 1307 1312	tubes
 T106	Action 1315 1318	Add
 T107	Amount 1319 1325	600 µL
@@ -210,8 +208,7 @@ E19	Action:T83 Acts-on:T84 Product:T94
 E20	Action:T87 Acts-on:T90 Acts-on2:T92 Site:T94
 E21	Action:T95 Using:T96 Acts-on:E20
 E22	Action:T97 Using:T98 Acts-on:E21 Product:T103
-E23	Action:T102 Acts-on:T103 Product:T110
-E24	Action:T104 Acts-on:T105
+E23	Action:T102 Acts-on:T103 Site:T105 Product:T110
 E25	Action:T106 Acts-on:T108 Site:T110
 E26	Action:T111 Using:T112 Acts-on:E25
 E27	Action:T113 Using:T116 Acts-on:E26 Product:T118
@@ -223,12 +220,12 @@ E32	Action:T128 Acts-on:T131 Site:T133 Acts-on2:E31
 E33	Action:T134 Acts-on:T135 Using:T139 Acts-on2:E32
 E34	Action:T140 Acts-on:E33
 E35	Action:T142 Acts-on:E34
-E36	Action:T145 Acts-on:T146 Site:T147 Acts-on2:E35 Product:T153 Product2:T155
-E37	Action:T150 Acts-on:T151
+E36	Action:T145 Acts-on:T146 Site:T147 Acts-on2:E35 Product2:T155
+E37	Action:T150 Acts-on:T151 Product:T153
 E38	Action:T152 Acts-on:T153
 E39	Action:T154 Acts-on:T155 Using:T159 Site:T160 Count:T156 Product:T164
-E40	Action:T163 Acts-on:T164 Using:T167 Product:T173
-E41	Action:T170 Acts-on:T171
+E40	Action:T163 Acts-on:T164 Using:T167
+E41	Action:T170 Acts-on:T171 Product:T173
 E42	Action:T172 Acts-on:T173 Using:T177
 E43	Action:T178 Using:T179 Acts-on:E42 Product:T183 Product2:T187 Product3:T189
 E44	Action:T182 Acts-on:T183 Site:T185
@@ -308,11 +305,11 @@ R71	Setting Arg1:E43 Arg2:T181
 R72	Mod-Link Arg1:T185 Arg2:T184
 R73	Setting Arg1:E46 Arg2:T190
 R74	Measure Arg1:T27 Arg2:T26
-R75	Measure Arg1:T30 Arg2:T31
-R76	Coreference-Link Arg1:T30 Arg2:T29
 R77	Measure Arg1:T48 Arg2:T46
 R78	Measure Arg1:T61 Arg2:T59
-R79	Enables Arg1:E23 Arg2:E32
 R80	Enables Arg1:E28 Arg2:E29
 R81	Enables Arg1:E36 Arg2:E37
 R82	Enables Arg1:E40 Arg2:E41
+R75	Setting Arg1:E6 Arg2:T31	
+T30	Modifier 1301 1306	clean
+R76	Mod-Link Arg1:T105 Arg2:T30	

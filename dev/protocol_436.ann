@@ -13,7 +13,6 @@ T12	Reagent 195 222	Plasmid Resuspension Buffer
 T13	Action 232 238	Vortex
 T14	Action 242 247	pipet
 T15	Reagent 258 263	cells
-T16	Modifier 268 290	completely resuspended
 T17	Action 329 332	Add
 T18	Amount 333 339	200 μl
 T19	Reagent 340 360	Plasmid Lysis Buffer
@@ -29,7 +28,7 @@ T28	Amount 555 561	400 μl
 T29	Reagent 565 594	Plasmid Neutralization Buffer
 T30	Modifier 604 610	gently
 T31	Action 611 617	invert
-T32	Device 618 622	tube
+T32	Location 618 622	tube
 T33	Action 647 655	incubate
 T34	Temperature 659 675	room temperature
 T35	Time 680 689	2 minutes
@@ -44,7 +43,7 @@ T43	Action 1043 1053	centrifuge
 T44	Speed 1057 1067	16,000 x g
 T45	Time 1072 1080	1 minute
 T46	Action 1108 1119	Re - insert
-T47	Reagent 1120 1126	column
+T47	Location 1120 1126	column
 T48	Location 1134 1149	collection tube
 T49	Action 1154 1157	add
 T50	Amount 1158 1164	200 μl
@@ -59,7 +58,7 @@ T58	Action 1316 1326	centrifuge
 T59	Speed 1330 1340	16,000 x g
 T60	Time 1345 1353	1 minute
 T61	Action 1356 1364	Transfer
-T62	Reagent 1365 1371	column
+T62	Location 1365 1371	column
 T63	Modifier 1377 1382	clean
 T64	Size 1383 1389	1.5 ml
 T65	Location 1390 1404	microfuge tube
@@ -72,28 +71,28 @@ T71	Action 1652 1656	spin
 T72	Time 1661 1669	1 minute
 T73	Speed 1673 1683	16,000 x g
 E1	Action:T1 Acts-on:T3 Using:T4 Product:T8
-E2	Action:T7 Acts-on:T8
-E3	Action:T9 Acts-on:T10 Site:T12 Acts-on2:E2
+E2	Action:T7 Acts-on:T8 Product:T10
+E3	Action:T9 Acts-on:T10 Site:T12
 E4	Action:T13 Acts-on:E3
-E5	Action:T14 Acts-on:T15
-E6	Action:T17 Acts-on:T19 Site:T15
-E7	Action:T21 Acts-on:T22 Acts-on2:T19
-E8	Action:T24 Acts-on:T22
-E9	Action:T27 Acts-on:T29 Site:T32 Acts-on2:T22
+E5	Action:T14 Acts-on:E3
+E6	Action:T17 Acts-on:T19 Site:E24
+E7	Action:T21 Acts-on:T22 Acts-on2:E6
+E8	Action:T24 Acts-on:E7
+E9	Action:T27 Acts-on:T29 Site2:E25 Product:T32
 E10	Action:T31 Acts-on:T32
-E11	Action:T33 Acts-on:T32
-E12	Action:T36 Acts-on:T37 Product:T42 Acts-on2:E11
+E11	Action:T33 Acts-on:E10
+E12	Action:T36 Acts-on:T37 Product:T42
 E13	Action:T41 Acts-on:T42
-E14	Action:T43 Acts-on:T42 Product:T47
+E14	Action:T43 Acts-on:E13 Product2:T78
 E15	Action:T46 Acts-on:T47 Site:T48
-E16	Action:T49 Acts-on:T51 Site:T48
-E17	Action:T52 Acts-on:T48
-E18	Action:T55 Acts-on:T57 Acts-on2:E17
+E16	Action:T49 Acts-on:T51 Site:E15
+E17	Action:T52 Acts-on:E16 Product:T80
+E18	Action:T55 Acts-on:T57 Site:E28
 E19	Action:T58 Product:T62 Acts-on:E18
-E20	Action:T61 Acts-on:T62 Site:T65
-E21	Action:T66 Acts-on:T68 Acts-on2:T65
-E22	Action:T69 
-E23	Action:T71 Acts-on:E21
+E20	Action:T61 Acts-on:T62 Site:T65 Product:T82 Product2:T83
+E21	Action:T66 Acts-on:T68 Site:T82
+E22	Action:T69 Acts-on:E21 Product:T91
+E23	Action:T71 Acts-on:E22
 R1	Setting Arg1:E23 Arg2:T72
 R2	Setting Arg1:E22 Arg2:T70
 R3	Setting Arg1:E23 Arg2:T73
@@ -125,5 +124,40 @@ R28	Measure Arg1:T65 Arg2:T64
 R29	Mod-Link Arg1:T65 Arg2:T63
 R30	Measure Arg1:T68 Arg2:T67
 R31	Or Arg1:E4 Arg2:E5
-R32	Mod-Link Arg1:T15 Arg2:T16
-R33	Enables Arg1:E22 Arg2:E23
+T16	Modifier 268 278	completely
+T74	Action 279 290	resuspended
+E24	Action:T74 Acts-on:T15
+R32	Mod-Link Arg1:E24 Arg2:T16	
+R34	Enables Arg1:E5 Arg2:E24	
+R35	Enables Arg1:E4 Arg2:E24	
+T75	Action 535 548	Do not vortex
+E25	Action:T75 Acts-on:E8
+T76	Action 769 782	Do not vortex
+E26	Action:T76 Acts-on:E11 Product:T37
+T77	Action 1083 1090	Discard
+E27	Action:T77 Acts-on:T78 Product:T47
+T78	Reagent 1091 1105	flow - through
+T79	Action 1232 1242	Discarding
+E28	Action:T79 Acts-on:T80
+T80	Reagent 1247 1261	flow - through
+T81	Modifier 1265 1273	optional
+R36	Mod-Link Arg1:E28 Arg2:T81	
+T82	Location 1604 1610	center
+T83	Location 1618 1624	matrix
+R37	Meronym Arg1:T82 Arg2:T83	
+T84	Reagent 1489 1503	flow - through
+T85	Action 1472 1479	contact
+E29	Action:T85 Site:T84 Acts-on:T88 Product:T82 Product2:T83
+T86	Modifier 1453 1466	does not come
+R38	Mod-Link Arg1:E29 Arg2:T86	
+T87	Location 1446 1452	column
+T88	Location 1435 1438	tip
+R39	Meronym Arg1:T88 Arg2:T87	
+T89	Modifier 1411 1415	care
+R40	Mod-Link Arg1:E29 Arg2:T89	
+R41	Overlaps Arg1:E29 Arg2:E20	
+R42	Coreference-Link Arg1:T87 Arg2:T62	
+T90	Action 1687 1692	elute
+E30	Action:T90 Acts-on:T91
+T91	Reagent 1697 1700	DNA
+R43	Enables Arg1:E23 Arg2:E30	
