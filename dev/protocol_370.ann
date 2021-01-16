@@ -145,42 +145,42 @@ T144	Method 2273 2284	upside down
 T145	Action 2298 2302	grow
 T146	Modifier 2307 2315	at least
 T147	Time 2316 2324	24 hours
-E1	Action:T1 Acts-on:T4 Site:T6
+E1	Action:T1 Acts-on:T4 Site:T6 Product:T11
 E2	Action:T9 Acts-on:T11 Using:T13
-E3	Action:T14 Site:T15
-E4	Action:T16 Acts-on:T17 Acts-on2:T20 Using:T21
-E5	Action:T22 Acts-on:T23 Site:T24 Using:T25 Using2:T28
-E6	Action:T29 Acts-on:T30 Site:T31
+E3	Action:T14 Site:T15 Acts-on:E2 Product:T24
+E4	Action:T16 Acts-on:T17 Acts-on2:T20 Using:T21 Product:T25 Product2:T28
+E5	Action:T22 Acts-on:T23 Site:T24 Using:T25 Using2:T28 Product:T32 Product2:T31
+E6	Action:T29 Acts-on:T30 Site:T31 Product:T34
 E7	Action:T33 Acts-on:T34
-E8	Action:T35 Site:T37
-E9	Action:T38 Acts-on:T39 Site:T40
-E10	Action:T41 Using:T43 Acts-on:T39
-E11	Action:T44 Site:T47
-E12	Action:T49 Using:T48 Acts-on:T51 Site:T52
-E13	Action:T54 Site:T56
+E8	Action:T35 Site:T37 Acts-on:E7 Product:T56
+E9	Action:T38 Acts-on:T39
+E10	Action:T41 Using:T43 Acts-on:E9
+E11	Action:T44 Site:T47 Acts-on:E10 Product:T48
+E12	Action:T49 Using:T48 Acts-on:T51 Site:T52 Product:T57
+E13	Action:T54 Site:T56 Acts-on:E12
 E14	Action:T58 Acts-on:T60 Site:T61 Using:T57
-E15	Action:T63 Site:T65
+E15	Action:T63 Site:T65 Acts-on:E14 Product:T70
 E16	Action:T69 Acts-on:T70 Site:T72
-E17	Action:T73 
-E18	Action:T74 Acts-on:T76 Using:E19
+E17	Action:T73 Acts-on:E16 Product:T76
+E18	Action:T74 Acts-on:T76 Product:T85
 E19	Action:T77 Acts-on:T78 Using:T79
 E20	Action:T83 Using:T80 Using2:T82 Acts-on:T85
-E21	Action:T86 Site:T88
-E22	Action:T89 Acts-on:T90
-E23	Action:T91 Acts-on:T92
-E24	Action:T94 Acts-on:T95 Using:T96
-E25	Action:T97 Acts-on:T98
+E21	Action:T86 Site:T88 Acts-on:E20 Product:T90
+E22	Action:T89 Acts-on:T90 Product:T92 Product2:T93
+E23	Action:T91 Acts-on:T92 Product:T95
+E24	Action:T94 Acts-on:T95 Using:T96 Product:T98
+E25	Action:T97 Acts-on:T98 Product:T100 Product2:T101
 E26	Action:T99 Acts-on:T100
-E27	Action:T102 Using:T103 Site:T104 Acts-on:T100
+E27	Action:T102 Using:T103 Site:T104 Acts-on:E26 Product:T110 Product2:T108
 E28	Action:T107 Using:T105 Acts-on:T108
-E29	Action:T111 Site:T113
-E30	Action:T115 Using:T114 Acts-on:T116 Site:T118
+E29	Action:T111 Site:T113 Acts-on:E28 Product:T116
+E30	Action:T115 Using:T114 Acts-on:T116 Site:T118 Product:T122
 E31	Action:T119 Using:T120 Acts-on:T122 Site:T124
-E32	Action:T125 Using:T126 Acts-on:T128
-E33	Action:T131 Acts-on:T130 Site:T132
+E32	Action:T125 Using:T126 Acts-on:T128 Acts-on2:E31 Product:T130 Product2:T132
+E33	Action:T131 Acts-on:T130 Site:T132 Product:T137
 E34	Action:T136 Acts-on:T137 Using:T138 Site:T140
-E35	Action:T143 Using:T144
-E36	Action:T145 
+E35	Action:T143 Using:T144 Acts-on:E34
+E36	Action:T145 Acts-on:E34
 R1	Mod-Link Arg1:T4 Arg2:T3
 R2	Mod-Link Arg1:T4 Arg2:T2
 R3	Measure Arg1:T6 Arg2:T5
@@ -229,3 +229,10 @@ R45	Mod-Link Arg1:T142 Arg2:T141
 R46	Setting Arg1:E34 Arg2:T142
 R47	Setting Arg1:E36 Arg2:T147
 R48	Mod-Link Arg1:T147 Arg2:T146
+R49	Coreference-Link Arg1:T21 Arg2:T13	
+R50	Meronym Arg1:T39 Arg2:T40	
+R51	Coreference-Link Arg1:T43 Arg2:T21	
+R52	Coreference-Link Arg1:T62 Arg2:T53	
+R53	Enables Arg1:E19 Arg2:E18	
+R54	Meronym Arg1:T78 Arg2:T76	
+R55	Enables Arg1:E35 Arg2:E36	

@@ -186,65 +186,65 @@ T185	Reagent 2381 2388	ethanol
 T186	Action 2391 2400	Resuspend
 T187	Amount 2404 2409	50 µl
 T188	Reagent 2410 2421	Sigma water
-E1	Action:T1 Acts-on:T2 Using:T4
+E1	Action:T1 Acts-on:T2 Using:T4 Product:T7 Product2:T6
 E2	Action:T5 Acts-on:T6 Using:T8
-E3	Action:T9 Acts-on:T11
-E4	Action:T12 Acts-on:T13 Site:T14
+E3	Action:T9 Acts-on:T11 Site:E2 Product:T14
+E4	Action:T12 Acts-on:T13 Site:T14 Product:T17
 E5	Action:T15 Acts-on:T17 Measure-Type-Link:T16
-E6	Action:T18 
+E6	Action:T18 Acts-on:E5 Product:T25
 E7	Action:T24 Acts-on:T25
-E8	Action:T28 
-E9	Action:T29 
-E10	Action:T31 Site:T32
-E11	Action:T34 Acts-on:T36
-E12	Action:T37 Acts-on:T36
-E13	Action:T38 
-E14	Action:T41 Using:T43
-E15	Action:T45 Acts-on:T46 Using:E14
-E16	Action:T47 
-E17	Action:T48 Acts-on:T49 Site:T52
+E8	Action:T28 Acts-on:E7
+E9	Action:T29 Acts-on:E7
+E10	Action:T31 Site:T32 Acts-on:E8 Acts-on2:E9
+E11	Action:T34 Acts-on:T36 Site:E10
+E12	Action:T37 Acts-on:E11 Product:T46
+E13	Action:T38 Acts-on:E11 Product:T46
+E14	Action:T41 Using:T43 Acts-on:T46
+E15	Action:T45 Acts-on:T46 Product:T49
+E16	Action:T47 Acts-on:T49 Product:T58
+E17	Action:T48 Acts-on:T49 Site:T52 Product:T58
 E18	Action:T53 Acts-on:T55 Site:T58
-E19	Action:T60 
-E20	Action:T63 Using:T64
-E21	Action:T65 
-E22	Action:T68 Site:T71
-E23	Action:T72 Acts-on:T75 Acts-on2:T78
-E24	Action:T79 Acts-on:T82
-E25	Action:T85 Acts-on:T87
-E26	Action:T88 Acts-on:T90
-E27	Action:T91 
-E28	Action:T94 Acts-on:T98
-E29	Action:T99 Site:T100
-E30	Action:T103 Acts-on:T105 Count:T106
-E31	Action:T107 Acts-on:T109
-E32	Action:T110 Using:T111
+E19	Action:T60 Acts-on:E18
+E20	Action:T63 Using:T64 Acts-on:E19
+E21	Action:T65 Acts-on:E20
+E22	Action:T68 Site:T71 Acts-on:E21
+E23	Action:T72 Acts-on:T75 Acts-on2:T78 Site:E22
+E24	Action:T79 Acts-on:T82 Site:E23
+E25	Action:T85 Acts-on:T87 Site:E24
+E26	Action:T88 Acts-on:T90 Site:E25
+E27	Action:T91 Acts-on:E26
+E28	Action:T94 Acts-on:T98 Site:E27
+E29	Action:T99 Site:T100 Acts-on:E28
+E30	Action:T103 Count:T106 Acts-on2:E29 Using:T105
+E31	Action:T107 Site:T109 Acts-on:E30
+E32	Action:T110 Using:T111 Acts-on:E31 Product:T113
 E33	Action:T112 Acts-on:T113 Site:T115
-E34	Action:T116 Acts-on:T119 Acts-on2:T122
-E35	Action:T123 
-E36	Action:T124 
-E37	Action:T127 Acts-on:T130
-E38	Action:T131 
-E39	Action:T133 Acts-on:T135
-E40	Action:T136 
-E41	Action:T137 
-E42	Action:T140 Acts-on:T142
-E43	Action:T143 
-E44	Action:T144 
-E45	Action:T146 Acts-on:T147 Site:T149
+E34	Action:T116 Acts-on:T119 Acts-on2:T122 Site:E33
+E35	Action:T123 Acts-on:E34
+E36	Action:T124 Acts-on:E35
+E37	Action:T127 Acts-on:T130 Site:E36
+E38	Action:T131 Acts-on:E37
+E39	Action:T133 Acts-on:T135 Site:E38
+E40	Action:T136 Acts-on:E39
+E41	Action:T137 Acts-on:E40
+E42	Action:T140 Acts-on:T142 Site:E41
+E43	Action:T143 Acts-on:E42
+E44	Action:T144 Acts-on:E43 Product:T147
+E45	Action:T146 Acts-on:T147 Site:T149 Product:T153
 E46	Action:T150 Acts-on:T152 Site:T153
-E47	Action:T154 
-E48	Action:T155 
-E49	Action:T157 Acts-on:T158 Site:T160
+E47	Action:T154 Acts-on:E46
+E48	Action:T155 Acts-on:E47 Product:T158
+E49	Action:T157 Acts-on:T158 Site:T160 Product:T164
 E50	Action:T161 Acts-on:T163 Site:T164
-E51	Action:T165 
-E52	Action:T166 
-E53	Action:T168 Acts-on:T169 Site:T171
+E51	Action:T165 Acts-on:E50
+E52	Action:T166 Acts-on:E51 Product:T169
+E53	Action:T168 Acts-on:T169 Site:T171 Product:T175
 E54	Action:T172 Acts-on:T174 Site:T175
-E55	Action:T176 
-E56	Action:T179 Acts-on:T178 Using:E55
-E57	Action:T180 Acts-on:T182
-E58	Action:T183 Using:T185
-E59	Action:T186 Acts-on:T188
+E55	Action:T176 Acts-on:E54
+E56	Action:T179 Acts-on:T178
+E57	Action:T180 Acts-on2:E56 Site:T182
+E58	Action:T183 Using:T185 Acts-on:E57
+E59	Action:T186 Acts-on2:E58 Site:T188
 R1	Measure Arg1:T4 Arg2:T3
 R2	Mod-Link Arg1:T11 Arg2:T10
 R3	Meronym Arg1:T6 Arg2:T7
@@ -285,8 +285,6 @@ R37	Mod-Link Arg1:T84 Arg2:T83
 R38	Setting Arg1:E24 Arg2:T84
 R39	Measure Arg1:T87 Arg2:T86
 R40	Measure Arg1:T90 Arg2:T89
-R41	Setting Arg1:E40 Arg2:T92
-R42	Setting Arg1:E40 Arg2:T93
 R43	Measure Arg1:T98 Arg2:T97
 R44	Measure Arg1:T98 Arg2:T95
 R45	Setting Arg1:T100 Arg2:T101
@@ -320,3 +318,11 @@ R72	Mod-Link Arg1:E55 Arg2:T177
 R73	Setting Arg1:E57 Arg2:T181
 R74	Measure Arg1:T185 Arg2:T184
 R75	Measure Arg1:T188 Arg2:T187
+R76	Overlaps Arg1:E8 Arg2:E9	
+R77	Overlaps Arg1:E12 Arg2:E13	
+R78	Enables Arg1:E14 Arg2:E15	
+R79	Overlaps Arg1:E16 Arg2:E17	
+R80	Setting Arg1:E27 Arg2:T92	
+R81	Setting Arg1:E27 Arg2:T93	
+R41	Measure Arg1:T98 Arg2:T96	
+R42	Enables Arg1:E55 Arg2:E56	

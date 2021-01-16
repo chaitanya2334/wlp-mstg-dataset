@@ -206,7 +206,7 @@ R38	Setting Arg1:E33 Arg2:T115
 R39	Mod-Link Arg1:T119 Arg2:T120
 R40	Measure Arg1:T123 Arg2:T122
 R41	Mod-Link Arg1:T127 Arg2:T126
-R42	Or Arg1:T129 Arg2:T128
+R42	Mod-Link Arg1:T129 Arg2:T128
 R43	Mod-Link Arg1:T132 Arg2:T131
 R44	Overlaps Arg1:E1 Arg2:E2	
 R45	Meronym Arg1:T2 Arg2:T3	

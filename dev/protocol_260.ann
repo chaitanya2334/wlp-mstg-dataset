@@ -118,39 +118,39 @@ T117	Modifier 1311 1315	same
 T118	Location 1316 1324	epi tube
 T119	Measure-Type 1342 1348	volume
 T120	Location 1356 1364	epi tube
-E1	Action:T1 Acts-on:T2 Site:T3
+E1	Action:T1 Acts-on:T2 Site:T3 Product:T12
 E2	Action:T4 Acts-on:T6 Site:T12
-E3	Action:T7 Acts-on:T9 Site:T11
-E4	Action:T13 
-E5	Action:T15 
-E6	Action:T17 Acts-on:T19 Acts-on2:T26
-E7	Action:T27 
-E8	Action:T29 
-E9	Action:T31 Acts-on:T32 Site:T34 Using:T37
+E3	Action:T7 Acts-on:T9 Site:T11 Product:T6
+E4	Action:T13 Acts-on:E2
+E5	Action:T15 Acts-on:E2
+E6	Action:T17 Acts-on:T19 Acts-on2:T26 Site:E5 Site2:E4
+E7	Action:T27 Acts-on:E6 Product:T32
+E8	Action:T29 Acts-on:E6 Product:T32
+E9	Action:T31 Acts-on:T32 Site:T34 Using:T37 Product:T40
 E10	Action:T38 Acts-on:T40 Site:T41
-E11	Action:T42 
-E12	Action:T45 Acts-on:T47
-E13	Action:T48 Acts-on:T50
-E14	Action:T53 
-E15	Action:T55 
+E11	Action:T42 Acts-on:E10
+E12	Action:T45 Using:T47 Acts-on:E11
+E13	Action:T48 Acts-on:T50 Site:E12
+E14	Action:T53 Acts-on:E13
+E15	Action:T55 Acts-on:E14 Product:T61
 E16	Action:T60 Acts-on:T61 Site:T64
-E17	Action:T65 Acts-on:T67
-E18	Action:T69 
-E19	Action:T71 
-E20	Action:T76 Acts-on:T77 Site:T78
-E21	Action:T80 Measure-Type-Link:T79 Site:T81
-E22	Action:T82 Using:T83
-E23	Action:T87 Site:T89 Site2:T90
-E24	Action:T91 Using:T95
+E17	Action:T65 Acts-on:T67 Site:E16
+E18	Action:T69 Acts-on:E17
+E19	Action:T71 Acts-on:E18 Product:T77
+E20	Action:T76 Acts-on:T77 Site:T78 Product:T83
+E21	Action:T80 Measure-Type-Link:T79 Site:T81 Acts-on:E20 Product:T89
+E22	Action:T82 Acts-on:T83 Product:T90
+E23	Action:T87 Site:T89 Site2:T90 Product:T93 Product2:T95
+E24	Action:T91 Acts-on:E25
 E25	Action:T94 Acts-on:T93 Site:T95
-E26	Action:T96 Acts-on:T98
-E27	Action:T99 Using:T100
-E28	Action:T101 Using:T104
+E26	Action:T96 Acts-on:T98 Site:E24
+E27	Action:T99 Using:T100 Acts-on:E26 Product:T104
+E28	Action:T101 Acts-on:E29 Product:T107 Product2:T109
 E29	Action:T103 Site:T104
-E30	Action:T106 Acts-on:T107
-E31	Action:T108 Acts-on:T109
-E32	Action:T110 Acts-on:T111 Using:T114
-E33	Action:T115 Acts-on:T116 Site:T118
+E30	Action:T106 Acts-on:T107 Product:T111
+E31	Action:T108 Acts-on:T109 Product:T111
+E32	Action:T110 Acts-on:T111 Using:T114 Product:T116
+E33	Action:T115 Acts-on:T116 Site:T118 Product:T120
 R1	Measure Arg1:T6 Arg2:T5
 R2	Measure Arg1:T9 Arg2:T8
 R3	Measure Arg1:T11 Arg2:T10
@@ -198,3 +198,12 @@ R44	Mod-Link Arg1:T118 Arg2:T117
 R45	Coreference-Link Arg1:T58 Arg2:T57
 R46	Coreference-Link Arg1:T74 Arg2:T73
 R47	Coreference-Link Arg1:T85 Arg2:T84
+R48	Overlaps Arg1:E4 Arg2:E5	
+R49	Meronym Arg1:T21 Arg2:T23	
+R50	Meronym Arg1:T19 Arg2:T21	
+R51	Overlaps Arg1:E7 Arg2:E8	
+R52	Coreference-Link Arg1:T41 Arg2:T12	
+R53	Overlaps Arg1:E30 Arg2:E31	
+R54	Meronym Arg1:T109 Arg2:T107	
+T121	Action 1327 1331	Note
+E34	Action:T121 Measure-Type-Link:T119 Acts-on:T120

@@ -7,7 +7,7 @@ T6	Reagent 137 142	stock
 T7	Measure-Type 143 156	concentration
 T8	Concentration 160 171	0.1 μg / μL
 T9	Action 174 182	Incubate
-T10	Reagent 183 197	rehydrated DNA
+T10	Reagent 194 197	DNA
 T11	Time 198 207	overnight
 T12	Temperature 211 214	4°C
 T13	Action 221 228	rocking
@@ -42,7 +42,6 @@ T41	Reagent 619 625	sample
 T42	Action 629 634	reach
 T43	Modifier 635 636	~
 T44	Concentration 637 648	0.1 - 1.0 %
-T45	Action 685 695	sequencing
 T46	Action 698 706	quantify
 T47	Measure-Type 721 743	genomic standard reads
 T48	Measure-Type 772 788	bit score cutoff
@@ -94,29 +93,28 @@ T93	Reagent 2202 2210	samplePs
 T94	Measure-Type 2213 2249	number of protein encoding sequences
 T95	Reagent 2257 2267	metagenome
 E1	Action:T1 Acts-on:T2 Site:T4
-E2	Action:T5 Measure-Type-Link:T7 Acts-on:T6
-E3	Action:T9 Acts-on:T10
-E4	Action:T13 
-E5	Action:T14 
-E6	Action:T17 Acts-on:T18
+E2	Action:T5 Measure-Type-Link:T7 Acts-on:T6 Product:T10
+E3	Action:T9 Acts-on:T10 Product:T28
+E4	Action:T13 Acts-on:T10
+E5	Action:T14 Acts-on:E4 Acts-on2:E3
+E6	Action:T17 Product:T18
 E7	Action:T19 Acts-on:T21 Site:T23
 E8	Action:T24 Measure-Type-Link:T25
-E9	Action:T27 Acts-on:T30 Using:T32 Measure-Type-Link:T29
-E10	Action:T34 Acts-on:T33
+E9	Action:T27 Acts-on:T30 Using:T32 Measure-Type-Link:T29 Acts-on2:T28 Product:T33
+E10	Action:T34 Acts-on:T33 Product:T39
 E11	Action:T38 Acts-on:T39 Site:T41
 E12	Action:T42 
-E13	Action:T45 
-E14	Action:T46 Measure-Type-Link:T47
-E15	Action:T50 Measure-Type-Link:T51 Using:T52
-E16	Action:T56 Using:T57
-E17	Action:T59 Measure-Type-Link:T61 Acts-on:T60
+E14	Action:T46 Measure-Type-Link:T47 Acts-on:E12
+E15	Action:T50 Measure-Type-Link:T51 Using:T52 Acts-on:E14 Product:T60
+E16	Action:T56 Using:T57 Acts-on:E15 Using2:T58
+E17	Action:T59 Measure-Type-Link:T61 Acts-on:T60 Product:T65
 E18	Action:T63 Acts-on:T65 Measure-Type-Link:T66
-E19	Action:T67 
-E20	Action:T68 Measure-Type-Link:T69
-E21	Action:T72 Measure-Type-Link:T73
-E22	Action:T78 
-E23	Action:T83 
-E24	Action:T87 
+E19	Action:T67 Acts-on:E18
+E20	Action:T68 Measure-Type-Link:T69 Acts-on:E19 Measure-Type-Link2:T70 Acts-on2:T71
+E21	Action:T72 Measure-Type-Link:T73 Measure-Type-Link2:T74 Acts-on:T75 Measure-Type-Link3:T76 Acts-on2:T77 Site:E20 Product:T81 Product2:T82 Product3:T79
+E22	Action:T78 Acts-on:T79 Measure-Type-Link:T80 Acts-on2:T81 Product:T86
+E23	Action:T83 Acts-on:T86 Measure-Type-Link:T84 Measure-Type-Link2:T85
+E24	Action:T87 Measure-Type-Link:T88 Measure-Type-Link2:T89 Measure-Type-Link3:T90 Measure-Type-Link4:T91 Measure-Type-Link5:T92 Measure-Type-Link6:T94 Acts-on:T93 Acts-on2:T95
 R1	Setting Arg1:E2 Arg2:T8
 R2	Setting Arg1:E3 Arg2:T11
 R3	Setting Arg1:E3 Arg2:T12
@@ -133,3 +131,16 @@ R13	Of-Type Arg1:T49 Arg2:T48
 R14	Of-Type Arg1:T55 Arg2:T54
 R15	Mod-Link Arg1:T65 Arg2:T64
 R16	Mod-Link Arg1:E9 Arg2:T31
+R17	Enables Arg1:E1 Arg2:E2	
+T96	Modifier 183 193	rehydrated
+R18	Mod-Link Arg1:T10 Arg2:T96	
+R19	Overlaps Arg1:E3 Arg2:E4	
+R21	Enables Arg1:E7 Arg2:E8	
+R20	Enables Arg1:E8 Arg2:E6	
+R22	Coreference-Link Arg1:T30 Arg2:T18	
+R23	Enables Arg1:E11 Arg2:E12	
+R24	Enables Arg1:E16 Arg2:E17	
+R25	Meronym Arg1:T60 Arg2:T62	
+R26	Meronym Arg1:T81 Arg2:T82	
+R27	Or Arg1:T84 Arg2:T85	
+R28	Enables Arg1:E23 Arg2:E24	

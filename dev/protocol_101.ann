@@ -51,24 +51,26 @@ T50	Reagent 2697 2701	code
 T51	Location 2714 2738	github abe487 repository
 T52	Reagent 2749 2772	directory : hpc - blast
 E1	Action:T1 Acts-on:T2 Using:T3
-E2	Action:T4 Product:T5
-E3	Action:T6 Site:T7
-E4	Action:T8 Product:T9
-E5	Action:T10 Site:T11
-E6	Action:T12 Product:T13
-E7	Action:T14 Acts-on:T15 Site:T16
+E2	Action:T4 Product:T5 Acts-on:E1
+E3	Action:T6 Site:T7 Acts-on:T5
+E4	Action:T8 Product:T9 Acts-on:E3
+E5	Action:T10 Site:T11 Acts-on:T9
+E6	Action:T12 Product:T13 Acts-on:E5 Product2:T15
+E7	Action:T14 Acts-on:T15 Site:T16 Product:T18
 E8	Action:T17 Acts-on:T18 Site:T19
-E9	Action:T20 Product:T21
-E10	Action:T22 Acts-on:T23
-E11	Action:T24 Using:T26 Product:T25
-E12	Action:T27 Product:T28 Site:T29
-E13	Action:T30 Product:T31 Site:T32
+E9	Action:T20 Product:T21 Acts-on:E8
+E10	Action:T22 Acts-on:T23 Site:E9
+E11	Action:T24 Using:T26 Product:T25 Acts-on:E10
+E12	Action:T27 Product:T28 Site:T29 Acts-on:E10
+E13	Action:T30 Product:T31 Site:T32 Acts-on:E10
 E14	Action:T33 Acts-on:T34
-E15	Action:T35 Measure-Type-Link:T36
-E16	Action:T38 Acts-on:T39
+E15	Action:T35 Measure-Type-Link:T36 Acts-on:E14 Product:T39
+E16	Action:T38 Acts-on:T39 Product:T42
 E17	Action:T41 Acts-on:T42
-E18	Action:T44 Product:T45
-E19	Action:T46 Acts-on:T47 Site:T48
+E18	Action:T44 Product:T45 Acts-on:E17 Product2:T47
+E19	Action:T46 Acts-on:T47 Site:T48 Product:T50
 E20	Action:T49 Site:T51 Acts-on:T50 Using:T52
 R1	Setting Arg1:E15 Arg2:T37
 R2	Mod-Link Arg1:T39 Arg2:T40
+R3	Coreference-Link Arg1:T34 Arg2:T31	
+R4	Setting Arg1:E17 Arg2:T43	

@@ -1,5 +1,5 @@
 Buffers for Chloroplast Isolation from Diatoms Isolation Buffer (40 mL)
-1) Mix:20 ml 1 M sorbitol 400 μl 0.6 M Na2-EDTA 200 μl 1 M MgCl 2400 μl 1 M KCl 40 μl 1 M MnCl 22 ml 1 M HEPES-KOH pH = 8.0 16.96 ml Sterile H2O.
+1) Mix: 20 ml 1 M sorbitol 400 μl 0.6 M Na2-EDTA 200 μl 1 M MgCl 2400 μl 1 M KCl 40 μl 1 M MnCl 22 ml 1 M HEPES-KOH pH = 8.0 16.96 ml Sterile H2O.
 2) Add bovine serum albumen (BSA) 1% (w/v) just before use to subset of isolation buffer needed at the beginning of the procedure PEG-6000 Solution.
 Mix: 6 g PEG10 ml water   Percoll Solution (20 mL Stock)
 Mix: 19 ml Percoll 1 ml PEG – 6000 solution 0.2 g Ficoll 0.2 g BSA Gradient Mixture (10 mL Stock)
