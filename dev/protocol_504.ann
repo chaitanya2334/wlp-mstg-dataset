@@ -29,12 +29,12 @@ T28	Location 474 481	chamber
 T29	Action 484 487	Add
 T30	Generic-Measure 496 500	drop
 T31	Reagent 504 511	Milli Q
-T32	Device 523 529	filter
+T32	Device 515 529	support filter
 T33	Action 532 537	float
 T34	Size 538 543	0.2µm
 T35	Device 544 573	polycarbonate membrane filter
 T36	Size 576 589	25mm diameter
-T37	Device 603 609	filter
+T37	Device 595 609	support filter
 T38	Action 639 643	Save
 T39	Device 644 667	filter separator sheets
 T40	Action 688 695	Turn on
@@ -73,14 +73,14 @@ T72	Action 1149 1154	Label
 T73	Device 1155 1170	membrane filter
 T74	Device 1176 1182	pencil
 T75	Action 1185 1190	place
-T76	Mention 1191 1206	membrane filter
+T76	Device 1191 1206	membrane filter
 T77	Reagent 1215 1231	separator sheets
 T78	Action 1321 1325	Seal
 T79	Location 1326 1336	Petri dish
 T80	Reagent 1342 1350	parafilm
 T81	Reagent 1384 1388	tape
 T82	Action 1395 1398	put
-T83	Mention 1399 1411	Petri dishes
+T83	Location 1399 1411	Petri dishes
 T84	Location 1419 1429	Ziploc bag
 T85	Action 1432 1437	Store
 T86	Temperature 1441 1447	- 20°C
@@ -91,7 +91,7 @@ T90	Location 1614 1633	filtration manifold
 T91	Action 1636 1641	Place
 T92	Reagent 1652 1665	Milli Q water
 T93	Amount 1668 1673	~ 1ml
-T94	Location 1679 1686	support
+T94	Device 1679 1686	support
 T95	Action 1689 1694	float
 T96	Size 1695 1701	0.45µm
 T97	Device 1702 1734	cellulose nitrate support filter
@@ -108,12 +108,12 @@ T107	Generic-Measure 1863 1871	pressure
 T108	Action 1887 1890	Add
 T109	Amount 1899 1903	drop
 T110	Reagent 1907 1914	Milli Q
-T111	Location 1918 1932	support filter
+T111	Device 1918 1932	support filter
 T112	Action 1935 1940	float
 T113	Amount 1941 1946	0.2µm
 T114	Device 1947 1976	polycarbonate membrane filter
 T115	Size 1979 1992	47mm diameter
-T116	Location 1998 2012	support filter
+T116	Device 1998 2012	support filter
 T117	Location 2015 2025	shiny side
 T118	Action 2026 2032	facing
 T119	Location 2033 2035	up
@@ -126,7 +126,7 @@ T125	Measure-Type 2112 2120	in of Hg
 T126	Action 2164 2169	Leave
 T127	Device 2170 2176	vacuum
 T128	Action 2182 2187	Place
-T129	Location 2188 2200	filter tower
+T129	Device 2188 2200	filter tower
 T130	Location 2204 2212	membrane
 T131	Action 2217 2222	clamp
 T132	Action 2225 2231	Filter
@@ -141,7 +141,7 @@ T140	Device 2435 2440	tower
 T141	Amount 2446 2456	20 - 30 ml
 T142	Reagent 2460 2471	sterile H2O
 T143	Action 2474 2480	remove
-T144	Mention 2481 2484	H2O
+T144	Reagent 2481 2484	H2O
 T145	Device 2488 2494	vacuum
 T146	Action 2497 2503	Remove
 T147	Device 2504 2510	filter
@@ -163,63 +163,63 @@ T162	Reagent 2710 2726	separator sheets
 T163	Action 2816 2820	Seal
 T164	Location 2821 2831	Petri dish
 T165	Reagent 2837 2845	parafilm
-T166	Reagent 2879 2883	tape
+T166	Seal 2879 2883	tape
 T167	Action 2890 2893	put
 T168	Location 2894 2906	Petri dishes
 T169	Location 2914 2924	Ziploc bag
 T170	Action 2927 2932	Store
 T171	Temperature 2936 2942	- 20°C
 E1	Action:T1 Acts-on:T2
-E2	Action:T4 
-E3	Action:T7 Site:T10
-E4	Action:T11 Acts-on:T12 Site:T14
-E5	Action:T15 Site:T19 Acts-on:T17
-E6	Action:T20 Acts-on:T21
-E7	Action:T24 Acts-on:T25
-E8	Action:T26 Site:T28
-E9	Action:T29 Acts-on:T31 Acts-on2:T32
-E10	Action:T33 Acts-on:T35 Acts-on2:T37
+E2	Action:T4 Acts-on:E52 Product:T52 Product2:T59
+E3	Action:T7 Site:T10 Acts-on:T8 Product:T14
+E4	Action:T11 Acts-on:T12 Site:T14 Product:T19
+E5	Action:T15 Site:T19 Acts-on:T17 Product:T21
+E6	Action:T20 Acts-on:T21 Product:T25
+E7	Action:T24 Acts-on:T25 Product:T28
+E8	Action:T26 Site:T28 Product:T32
+E9	Action:T29 Acts-on:T31 Acts-on2:T32 Product:T37
+E10	Action:T33 Acts-on:T35 Acts-on2:T37 Product:T39 Product2:T41
 E11	Action:T38 Acts-on:T39
-E12	Action:T40 Acts-on:T41
-E13	Action:T44 Acts-on:T45
-E14	Action:T46 Acts-on:T47 Site:T48 Site2:T49
+E12	Action:T40 Acts-on:T41 Product:T45
+E13	Action:T44 Acts-on:T45 Product:T48 Product2:T49
+E14	Action:T46 Acts-on:T47 Site:T48 Site2:T49 Product:T54
 E15	Action:T50 Acts-on:T52 Using:T54
-E16	Action:T57 Acts-on:T59 Using:T60
-E17	Action:T61 Acts-on:T62 Site:T63
+E16	Action:T57 Acts-on:T59 Using:T60 Product:T62
+E17	Action:T61 Acts-on:T62 Site:T63 Product:T65
 E18	Action:T64 Acts-on:T65 Site:T66
-E19	Action:T67 Using:T68 Acts-on:T69
-E20	Action:T71 
-E21	Action:T72 Acts-on:T73 Using:T74
-E22	Action:T75 Acts-on:T76 Site:T77
-E23	Action:T78 Acts-on:T79 Using:T80 Using2:T81
+E19	Action:T67 Using:T68 Acts-on2:E18
+E20	Action:T71 Acts-on:E19 Product:T77
+E21	Action:T72 Acts-on:T73 Using:T74 Product:T76
+E22	Action:T75 Acts-on:T76 Site:T77 Product:T79
+E23	Action:T78 Acts-on:T79 Using:T80 Using2:T81 Product:T83
 E24	Action:T82 Acts-on:T83 Site:T84
-E25	Action:T85 
-E26	Action:T87 Site:T90 Acts-on:T88
-E27	Action:T91 Acts-on:T92 Site:T94
-E28	Action:T95 Acts-on:T97 Site:T99
-E29	Action:T100 Acts-on:T101
-E30	Action:T104 Acts-on:T105
-E31	Action:T106 
-E32	Action:T108 Acts-on:T110 Site:T111
-E33	Action:T112 Acts-on:T114 Site:T116
-E34	Action:T118 Acts-on:T117 Site:T119
-E35	Action:T120 Acts-on:T121
-E36	Action:T122 Acts-on:T123
-E37	Action:T126 Acts-on:T127
+E25	Action:T85 Acts-on:E24 Product:T134
+E26	Action:T87 Site:T90 Acts-on:T88 Product:T94
+E27	Action:T91 Acts-on:T92 Site:T94 Product:T99
+E28	Action:T95 Acts-on:T97 Site:T99 Product:T101
+E29	Action:T100 Acts-on:T101 Product:T105
+E30	Action:T104 Acts-on:T105 Product:T173
+E31	Action:T106 Acts-on:T173 Product:T111
+E32	Action:T108 Acts-on:T110 Site:T111 Product:T116
+E33	Action:T112 Acts-on:T114 Site:T116 Product:T121
+E34	Action:T118 Acts-on:T117 Site:T119 Product:T121
+E35	Action:T120 Acts-on:T121 Product:T123
+E36	Action:T122 Acts-on:T123 Product:T127
+E37	Action:T126 Acts-on:T127 Product:T129
 E38	Action:T128 Acts-on:T129 Site:T130
-E39	Action:T131 Acts-on:T130
-E40	Action:T132 Acts-on:T134 Using:T135
-E41	Action:T138 Acts-on:T139 Acts-on2:T140 Using:T142
-E42	Action:T143 Acts-on:T144 Using:T145
-E43	Action:T146 Acts-on:T147 Site:T148
+E39	Action:T131 Acts-on:E38
+E40	Action:T132 Acts-on:T134 Using:T135 Product:T139 Product2:T140
+E41	Action:T138 Acts-on:T139 Acts-on2:T140 Using:T142 Product:T144
+E42	Action:T143 Acts-on:T144 Using:T145 Product:T147 Product2:T148
+E43	Action:T146 Acts-on:T147 Product:T150
 E44	Action:T149 Acts-on:T150 Site:T151
-E45	Action:T152 Using:T153
-E46	Action:T156 
-E47	Action:T157 Acts-on:T158 Using:T159
-E48	Action:T160 Acts-on:T161 Site:T162
-E49	Action:T163 Acts-on:T164 Using:T165 Using2:T166
+E45	Action:T152 Using:T153 Acts-on:E44
+E46	Action:T156 Acts-on:E45 Product:T158
+E47	Action:T157 Acts-on:T158 Using:T159 Product:T161
+E48	Action:T160 Acts-on:T161 Site:T162 Product:T164
+E49	Action:T163 Acts-on:T164 Using:T165 Using2:T166 Product:T168
 E50	Action:T167 Acts-on:T168 Site:T169
-E51	Action:T170 
+E51	Action:T170 Acts-on:E50
 R1	Setting Arg1:E1 Arg2:T3
 R2	Setting Arg1:E2 Arg2:T5
 R3	Setting Arg1:E2 Arg2:T6
@@ -227,7 +227,6 @@ R4	Measure Arg1:T8 Arg2:T9
 R5	Measure Arg1:T12 Arg2:T13
 R6	Measure Arg1:T17 Arg2:T16
 R7	Measure Arg1:T17 Arg2:T18
-R8	Meronym Arg1:T19 Arg2:T14
 R9	Measure Arg1:T23 Arg2:T22
 R10	Meronym Arg1:T21 Arg2:T23
 R11	Setting Arg1:E8 Arg2:T27
@@ -243,14 +242,11 @@ R20	Meronym Arg1:T54 Arg2:T56
 R21	Measure Arg1:T59 Arg2:T58
 R22	Coreference-Link Arg1:T65 Arg2:T62
 R23	Or Arg1:T69 Arg2:T70
-R24	Coreference-Link Arg1:T76 Arg2:T73
-R25	Coreference-Link Arg1:T83 Arg2:T79
 R26	Setting Arg1:E25 Arg2:T86
 R27	Setting Arg1:T88 Arg2:T89
 R28	Measure Arg1:T92 Arg2:T93
 R29	Setting Arg1:T97 Arg2:T96
 R30	Setting Arg1:T97 Arg2:T98
-R31	Meronym Arg1:T99 Arg2:T94
 R32	Of-Type Arg1:T102 Arg2:T103
 R33	Setting Arg1:E29 Arg2:T102
 R34	Setting Arg1:E31 Arg2:T107
@@ -264,7 +260,14 @@ R41	Measure Arg1:T134 Arg2:T133
 R42	Setting Arg1:T135 Arg2:T136
 R43	Of-Type Arg1:T136 Arg2:T137
 R44	Measure Arg1:T142 Arg2:T141
-R45	Coreference-Link Arg1:T144 Arg2:T142
 R46	Meronym Arg1:T154 Arg2:T153
 R47	Or Arg1:T153 Arg2:T155
 R48	Setting Arg1:E51 Arg2:T171
+T172	Action 113 121	filtrate
+E52	Action:T172 Acts-on:T2
+R49	Enables Arg1:E1 Arg2:E52	
+R8	Meronym Arg1:T68 Arg2:T69	
+T173	Location 1877 1884	chamber
+R24	Overlaps Arg1:E34 Arg2:E33	
+R25	Meronym Arg1:T147 Arg2:T148	
+R31	Coreference-Link Arg1:T150 Arg2:T147	

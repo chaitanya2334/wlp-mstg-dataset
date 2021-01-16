@@ -25,26 +25,26 @@ T24	Temperature 515 520	20 °C
 T25	Action 533 538	Clone
 T26	Reagent 543 546	P0s
 T27	Modifier 550 560	individual
-T28	Reagent 561 572	OP50 plates
+T28	Location 561 572	OP50 plates
 T29	Action 577 585	incubate
 T30	Temperature 589 594	20 °C
 T31	Time 599 607	4‐5 days
 T32	Time 620 654	When the F1s reach the adult stage
 T33	Action 657 662	check
-T34	Device 667 674	Rollers
+T34	Reagent 667 674	Rollers
 T35	Action 707 713	screen
-T36	Device 718 725	Rollers
+T36	Reagent 718 725	Rollers
 E1	Action:T1 Acts-on:T2 Using:T3
-E2	Action:T6 Using:T7
-E3	Action:T8 Acts-on:T9
-E4	Action:T10 Acts-on:T11
-E5	Action:T12 Acts-on:T15
-E6	Action:T16 Acts-on:T15
+E2	Action:T6 Using:T7 Acts-on:E1
+E3	Action:T8 Acts-on:T9 Site:E2
+E4	Action:T10 Acts-on:T11 Site:E3
+E5	Action:T12 Acts-on2:E4 Site:T15 Product:T19
+E6	Action:T16 Acts-on:E5
 E7	Action:T17 Acts-on:T19 Site:T21
-E8	Action:T22 Acts-on:T19
-E9	Action:T25 Acts-on:T26 Product:T28
-E10	Action:T29 Acts-on:T28
-E11	Action:T33 Acts-on:T34
+E8	Action:T22 Acts-on:E7 Product:T26
+E9	Action:T25 Acts-on:T26 Site:T28
+E10	Action:T29 Acts-on:E9
+E11	Action:T33 Acts-on:T34 Acts-on2:E10 Product:T36
 E12	Action:T35 Acts-on:T36
 R1	Or Arg1:T2 Arg2:T4
 R2	Or Arg1:T3 Arg2:T5

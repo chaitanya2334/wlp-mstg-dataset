@@ -18,7 +18,7 @@ T17	Action 219 223	keep
 T18	Location 227 230	ice
 T19	Action 233 236	Add
 T20	Amount 237 241	20μl
-T21	Reagent 242 257	diluted peptide
+T21	Reagent 250 257	peptide
 T22	Concentration 260 265	400μM
 T23	Amount 272 276	20μl
 T24	Reagent 277 306	conditional Flex - T™ monomer
@@ -120,8 +120,6 @@ T119	Amount 2301 2304	2μl
 T120	Modifier 2305 2308	per
 T121	Reagent 2309 2315	sample
 T122	Reagent 2319 2336	Flex - T™ complex
-T123	Action 2337 2345	prepared
-T124	Method 2349 2360	Steps 7 - 9
 T125	Action 2363 2366	mix
 T126	Action 2371 2379	incubate
 T127	Location 2383 2386	ice
@@ -150,45 +148,44 @@ T149	Device 2706 2720	flow cytometer
 T150	Modifier 2725 2736	appropriate
 T151	Generic-Measure 2737 2745	settings
 T152	Time 2753 2760	2 hours
-E1	Action:T1 Acts-on:T3 Using:E2
+E1	Action:T1 Acts-on:T3 Product:T10
 E2	Action:T5 Acts-on:T6 Site:T7
-E3	Action:T8 Acts-on:T10
+E3	Action:T8 Acts-on:T10 Product:T21
 E4	Action:T12 Acts-on:T14 Using:T16
-E5	Action:T17 Acts-on:T18
+E5	Action:T17 Site:T18 Acts-on:E3
 E6	Action:T19 Acts-on:T21 Acts-on2:T24 Site:T26
-E7	Action:T27 Using:T28
-E8	Action:T29 Acts-on:T30
-E9	Action:T31 
-E10	Action:T35 Acts-on:T36 Site:T37 Using:E9
-E11	Action:T38 Acts-on:T39
+E7	Action:T27 Using:T28 Acts-on:E6 Product:T30
+E8	Action:T29 Acts-on:T30 Product:T36
+E9	Action:T31 Acts-on:E8
+E10	Action:T35 Acts-on:T36 Site:T37 Product:T39
+E11	Action:T38 Acts-on:T39 Product:T41
 E12	Action:T40 Acts-on:T41 Site:T42
-E13	Action:T43 Using:T44 Acts-on:T41
+E13	Action:T43 Using:T44 Acts-on:E12 Product:T47
 E14	Action:T46 Acts-on:T47
-E15	Action:T48 Site:T51
+E15	Action:T48 Site:T51 Acts-on:E14 Product:T54
 E16	Action:T52 Acts-on:T54 Site:T56
-E17	Action:T57 Acts-on:T59 Site:T56
-E18	Action:T60 Using:T61 Acts-on:T56
-E19	Action:T62 Site:T63
-E20	Action:T68 Acts-on:T67 Using:T70
-E21	Action:T73 Acts-on:T76 Acts-on2:T79 Site:T81 Product:T72
-E22	Action:T82 Using:T83
-E23	Action:T84 Acts-on:T86
-E24	Action:T88 Acts-on:T89 Using:T87
+E17	Action:T57 Acts-on:T59 Site:E16
+E18	Action:T60 Using:T61 Acts-on:E17
+E19	Action:T62 Site:T63 Acts-on:E18
+E20	Action:T68 Using2:T67 Acts-on2:E19 Using:T70 Product:T122
+E21	Action:T73 Acts-on:T76 Acts-on2:T79 Site:T81
+E22	Action:T82 Using:T83 Acts-on:E41
+E23	Action:T84 Acts-on:T86 Product:T89
+E24	Action:T88 Acts-on:T89 Using:T87 Product:T91
 E25	Action:T90 Acts-on:T91
-E26	Action:T92 
+E26	Action:T92 Acts-on:E25 Site:T95 Site2:T97 Product:T101
 E27	Action:T98 Product:T99 Site:T101
 E28	Action:T100 Acts-on:T101
-E29	Action:T105 Site:T106
+E29	Action:T105 Site:T106 Acts-on:T99 Product:T110
 E30	Action:T108 Acts-on:T110 Site:T111
-E31	Action:T114 Measure-Type-Link:T115 Using:T117
-E32	Action:T118 Acts-on:T121
-E33	Action:T123 Using:T124 Product:T122
-E34	Action:T125 
-E35	Action:T126 Acts-on:T127
+E31	Action:T114 Measure-Type-Link:T115 Using:T117 Acts-on:E30
+E32	Action:T118 Using:T121 Site:E31
+E34	Action:T125 Acts-on:E32
+E35	Action:T126 Acts-on2:E32 Site:T127 Product:T135
 E36	Action:T130 Using:T135 Product:T131
-E37	Action:T136 Site:T138
-E38	Action:T140 Acts-on:T141 Using:T142 Count:T143
-E39	Action:T144 Acts-on:T145 Using:T146
+E37	Action:T136 Site:T138 Acts-on:T131 Product:T141
+E38	Action:T140 Acts-on:T141 Using:T142 Count:T143 Product:T145
+E39	Action:T144 Acts-on:T145 Using:T146 Product:T148
 E40	Action:T147 Acts-on:T148 Using:T149
 R1	Mod-Link Arg1:T3 Arg2:T2
 R2	Setting Arg1:E1 Arg2:T4
@@ -244,3 +241,16 @@ R51	Setting Arg1:E37 Arg2:T137
 R52	Setting Arg1:E40 Arg2:T152
 R53	Mod-Link Arg1:T151 Arg2:T150
 R54	Setting Arg1:T149 Arg2:T151
+R55	Enables Arg1:E2 Arg2:E1	
+R56	Enables Arg1:E4 Arg2:E3	
+T153	Modifier 242 249	diluted
+R57	Mod-Link Arg1:T21 Arg2:T153	
+R58	Enables Arg1:E9 Arg2:E10	
+T154	Action 1510 1517	prepare
+E41	Action:T154 Product:T72
+R59	Enables Arg1:E21 Arg2:E41	
+R60	Coreference-Link Arg1:T86 Arg2:T72	
+R61	Setting Arg1:E26 Arg2:T96	
+R62	Or Arg1:T96 Arg2:T94	
+T123	Modifier 2337 2360	prepared in Steps 7 - 9
+R63	Mod-Link Arg1:T122 Arg2:T123	

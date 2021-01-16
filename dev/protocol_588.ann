@@ -116,40 +116,40 @@ T115	Temperature 1773 1789	room temperature
 T116	Time 1803 1813	15 minutes
 T117	Action 1817 1826	rehydrate
 E1	Action:T1 Acts-on:T2 Site:T3
-E2	Action:T6 Acts-on:T2 Site:T8
-E3	Action:T10 Acts-on:T14 Site:T19
-E4	Action:T22 Acts-on:T23 Using:T26
+E2	Action:T6 Site:T8 Acts-on:E1 Product:T19 Product2:T21
+E3	Action:T10 Acts-on:T14 Site:T19 Product:T23
+E4	Action:T22 Acts-on:T23 Using:T26 Product:T27
 E5	Action:T28 Acts-on:T27
-E6	Action:T30 Acts-on:T32
-E7	Action:T33 Using:E8
+E6	Action:T30 Acts-on:T32 Site:E5 Product:T35
+E7	Action:T33 Acts-on:E6
 E8	Action:T34 Count:T36 Acts-on:T35
-E9	Action:T37 
-E10	Action:T41 Acts-on:T42 Site:T44
+E9	Action:T37 Acts-on:E7 Product:T42
+E10	Action:T41 Acts-on:T42 Site:T44 Product:T48
 E11	Action:T45 Acts-on:T47 Site:T48
-E12	Action:T49 Count:T50 Acts-on:T48
-E13	Action:T51 Using:E12
+E12	Action:T49 Count:T50 Acts-on:E11
+E13	Action:T51 Acts-on:E11 Product:T53
 E14	Action:T52 Acts-on:T53
-E15	Action:T56 Acts-on:T58
-E16	Action:T59 Using:E17
+E15	Action:T56 Acts-on:T58 Site:E14 Product:T61
+E16	Action:T59 Acts-on:E15 Product:T64
 E17	Action:T60 Count:T62 Acts-on:T61
-E18	Action:T63 Acts-on:T64
-E19	Action:T67 Acts-on:T68 Site:T70
-E20	Action:T71 Acts-on:T72 Using:T74
+E18	Action:T63 Acts-on:T64 Product:T68
+E19	Action:T67 Acts-on:T68 Site:T70 Product:T72
+E20	Action:T71 Acts-on:T72 Using:T74 Product:T76
 E21	Action:T75 Count:T77 Acts-on:T76
-E22	Action:T78 Acts-on:T79 Using:E21
-E23	Action:T80 
-E24	Action:T83 Acts-on:T84 Using:E23
-E25	Action:T85 Acts-on:T86
+E22	Action:T78 Acts-on:T79 Product:T84
+E23	Action:T80 Acts-on:E22
+E24	Action:T83 Acts-on:T84 Product:T86
+E25	Action:T85 Acts-on:T86 Product:T91
 E26	Action:T87 Site:T91 Acts-on:T90
-E27	Action:T92 Acts-on:T91 Count:T93
-E28	Action:T94 Acts-on:T95 Using:E27
-E29	Action:T96 
-E30	Action:T99 Acts-on:T100
+E27	Action:T92 Count:T93 Acts-on:E26
+E28	Action:T94 Acts-on:T95
+E29	Action:T96 Acts-on:E28 Product:T100
+E30	Action:T99 Acts-on:T100 Product:T102
 E31	Action:T101 Acts-on:T102 Site:T105
-E32	Action:T109 Acts-on:T108 Using:E31
+E32	Action:T109 Acts-on:T108 Product:T113
 E33	Action:T110 Acts-on:T112 Site:T113
-E34	Action:T114 
-E35	Action:T117 Using:E34
+E34	Action:T114 Acts-on:E33
+E35	Action:T117 Acts-on:E33 Product:T121
 R1	Mod-Link Arg1:E1 Arg2:T4
 R2	Mod-Link Arg1:E2 Arg2:T5
 R3	Meronym Arg1:T8 Arg2:T9
@@ -194,3 +194,31 @@ R41	Mod-Link Arg1:T108 Arg2:T107
 R42	Measure Arg1:T112 Arg2:T111
 R43	Setting Arg1:E34 Arg2:T115
 R44	Setting Arg1:E34 Arg2:T116
+R45	Enables Arg1:E8 Arg2:E7	
+R46	Enables Arg1:E12 Arg2:E13	
+R47	Enables Arg1:E17 Arg2:E16	
+R48	Enables Arg1:E21 Arg2:E22	
+R49	Meronym Arg1:T79 Arg2:T76	
+R50	Enables Arg1:E23 Arg2:E24	
+R51	Enables Arg1:E27 Arg2:E28	
+T118	Action 1586 1597	pipette off
+E36	Action:T118 Acts-on:T100 Product:T102
+R52	Or Arg1:E30 Arg2:E36	
+T119	Modifier 1691 1694	any
+R53	Mod-Link Arg1:T108 Arg2:T119	
+R54	Enables Arg1:E31 Arg2:E32	
+R55	Meronym Arg1:T108 Arg2:T102	
+R56	Enables Arg1:E34 Arg2:E35	
+T120	Action 1915 1920	Store
+E37	Action:T120 Acts-on:T121
+T121	Reagent 1921 1924	DNA
+T122	Temperature 1928 1931	4°C
+T123	Temperature 1965 1971	- 20°C
+T124	Temperature 1975 1981	- 80°C
+R57	Setting Arg1:E37 Arg2:T122	
+T125	Action 1956 1961	store
+E38	Action:T125 Acts-on:E35
+R58	Setting Arg1:E38 Arg2:T123	
+R59	Setting Arg1:E38 Arg2:T124	
+R60	Or Arg1:T123 Arg2:T124	
+R61	Or Arg1:E37 Arg2:E38	

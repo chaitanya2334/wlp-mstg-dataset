@@ -19,7 +19,7 @@ T18	Action 315 321	Remove
 T19	Reagent 326 339	aqueous phase
 T20	Modifier 345 348	new
 T21	Location 349 353	tube
-T22	Modifier 356 427	being careful not to transfer any of the protein at the phase interface
+T22	Modifier 362 369	careful
 T23	Action 430 436	Repeat
 T24	Method 441 458	phenol extraction
 T25	Action 473 479	Repeat
@@ -38,28 +38,50 @@ T37	Action 698 704	remove
 T38	Reagent 715 721	phenol
 T39	Action 724 735	Precipitate
 T40	Reagent 740 752	nucleic acid
-E1	Action:T1 Acts-on:T2
-E2	Action:T4 Site:T7 Acts-on:T6 Acts-on2:E1
-E3	Action:T8 
+E1	Action:T1 Acts-on:T2 Product:T7
+E2	Action:T4 Site:T7 Acts-on:T6 Product:T11
+E3	Action:T8 Acts-on:E2
 E4	Action:T10 Acts-on:T11
-E5	Action:T12 Site:T13
-E6	Action:T16 Acts-on:T17
+E5	Action:T12 Site:T13 Acts-on:E4 Product:T17
+E6	Action:T16 Acts-on:T17 Product:T19 Product2:T47 Product3:T48
 E7	Action:T18 Acts-on:T19 Site:T21
-E8	Action:T23 Using:T24
-E9	Action:T25 Using:T26
-E10	Action:T27 Acts-on:T28 Using:T30
-E11	Action:T31 Acts-on:T32 Using:E10
-E12	Action:T33 Acts-on:T34 Using:T36
-E13	Action:T37 Acts-on:T38 Using:E12
+E8	Action:T23 Using:T24 Acts-on:E7 Acts-on2:E16
+E9	Action:T25 Using:T26 Acts-on:E8 Product:T28 Product2:T32
+E10	Action:T27 Acts-on:T28 Using:T30 Product:T34 Product2:T38
+E11	Action:T31 Acts-on:T32
+E12	Action:T33 Acts-on:T34 Using:T36 Product:T40
+E13	Action:T37 Acts-on:T38
 E14	Action:T39 Acts-on:T40
 R1	Setting Arg1:E5 Arg2:T14
 R2	Setting Arg1:E5 Arg2:T15
 R3	Mod-Link Arg1:T21 Arg2:T20
-R4	Mod-Link Arg1:E7 Arg2:T22
 R5	Setting Arg1:E1 Arg2:T3
 R6	Mod-Link Arg1:E3 Arg2:T9
 R7	Measure Arg1:T6 Arg2:T5
 R8	Measure Arg1:T30 Arg2:T29
 R9	Measure Arg1:T36 Arg2:T35
-R10	Enables Arg1:E4 Arg2:E3
-R11	Enables Arg1:E6 Arg2:E5
+R10	Enables Arg1:E3 Arg2:E4
+R11	Enables Arg1:E5 Arg2:E6
+T41	Action 82 88	divide
+E15	Action:T41 Acts-on:T42 Site:T43 Product:T7
+T42	Reagent 94 101	samples
+T43	Location 107 112	tubes
+T44	Amount 145 151	700 µL
+T45	Location 156 160	tube
+R12	Measure Arg1:T42 Arg2:T44	
+R13	Coreference-Link Arg1:T43 Arg2:T45	
+R14	Or Arg1:E1 Arg2:E15	
+T46	Action 370 385	not to transfer
+E16	Action:T46 Acts-on:T47
+T47	Reagent 397 404	protein
+T48	Reagent 412 427	phase interface
+R4	Mod-Link Arg1:E16 Arg2:T22	
+T49	Modifier 386 389	any
+R15	Mod-Link Arg1:T47 Arg2:T49	
+R16	Meronym Arg1:T47 Arg2:T48	
+R17	Overlaps Arg1:E7 Arg2:E16	
+R18	Meronym Arg1:T48 Arg2:T19	
+R19	Enables Arg1:E10 Arg2:E11	
+R20	Meronym Arg1:T32 Arg2:T28	
+R21	Enables Arg1:E12 Arg2:E13	
+R22	Meronym Arg1:T38 Arg2:T34	

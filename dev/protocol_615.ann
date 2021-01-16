@@ -110,36 +110,36 @@ T109	Action 1739 1743	Wash
 T110	Amount 1749 1755	100 µl
 T111	Concentration 1756 1758	1X
 T112	Reagent 1759 1762	PBS
-E1	Action:T1 Product:T2
+E1	Action:T1 Acts-on:T2 Product:T12
 E2	Action:T6 Acts-on:T7
-E3	Action:T8 Acts-on:T7
-E4	Action:T11 Acts-on:T12 Using:E5
+E3	Action:T8 Acts-on:E2 Product:T53
+E4	Action:T11 Acts-on:T12
 E5	Action:T13 Count:T14 Acts-on:T12
-E6	Action:T15 Acts-on:T17 Using:E5 Site:T12
-E7	Action:T19 Acts-on:T21 Site:T23
+E6	Action:T15 Acts-on:T17 Product:T21
+E7	Action:T19 Acts-on:T21 Site:T23 Product:T25
 E8	Action:T24 Acts-on:T25 Site:T27
-E9	Action:T28 
-E10	Action:T29 
-E11	Action:T32 Acts-on:T33 Count:T34 Using:T36
-E12	Action:T37 Acts-on:T38 Site:T40
-E13	Action:T41 Site:T42 Using:E14
+E9	Action:T28 Acts-on:E8
+E10	Action:T29 Acts-on:E9 Product:T33
+E11	Action:T32 Acts-on:T33 Count:T34 Using:T36 Product:T38
+E12	Action:T37 Acts-on:T38 Site:T40 Product:T50
+E13	Action:T41 Product:T42
 E14	Action:T43 Acts-on:T45 Site:T47
 E15	Action:T48 Acts-on:T50 Site:T53
-E16	Action:T54 Product:T56
-E17	Action:T57 Site:T59 Acts-on:T56
-E18	Action:T60 Acts-on:T61
-E19	Action:T66 Acts-on:T67 Site:T69
-E20	Action:T70 Acts-on:T71 Site:T75
-E21	Action:T78 Acts-on:T79 Site:T80
-E22	Action:T81 Acts-on:T83
-E23	Action:T84 
-E24	Action:T86 Acts-on:T87 Site:T88
-E25	Action:T90 Acts-on:T91 Acts-on2:T88
-E26	Action:T96 
+E16	Action:T54 Acts-on:T56 Site:E15
+E17	Action:T57 Site:T59 Acts-on:E16 Product:T61
+E18	Action:T60 Acts-on:T61 Product:T67
+E19	Action:T66 Acts-on:T67 Site:T69 Product:T71
+E20	Action:T70 Acts-on:T71 Site:T75 Product:T79 Product2:T80
+E21	Action:T78 Acts-on:T79
+E22	Action:T81 Acts-on:T83 Site:E21
+E23	Action:T84 Acts-on:E22 Product:T87
+E24	Action:T86 Acts-on:T87 Site:T88 Site2:T89
+E25	Action:T90 Acts-on:T91 Acts-on2:E24
+E26	Action:T96 Acts-on:E25 Product:T99
 E27	Action:T98 Acts-on:T99 Using:T101
-E28	Action:T102 
-E29	Action:T105 Using:T108
-E30	Action:T109 Using:T112
+E28	Action:T102 Acts-on:E27
+E29	Action:T105 Using:T108 Acts-on:E28
+E30	Action:T109 Using:T112 Acts-on:E29
 R1	Of-Type Arg1:T3 Arg2:T4
 R2	Measure Arg1:T2 Arg2:T3
 R3	Mod-Link Arg1:E2 Arg2:T5
@@ -186,3 +186,10 @@ R43	Measure Arg1:T108 Arg2:T107
 R44	Measure Arg1:T108 Arg2:T106
 R45	Measure Arg1:T112 Arg2:T111
 R46	Measure Arg1:T112 Arg2:T110
+R47	Overlaps Arg1:E4 Arg2:E5	
+R48	Enables Arg1:E5 Arg2:E6	
+R49	Enables Arg1:E4 Arg2:E6	
+R50	Meronym Arg1:T18 Arg2:T12	
+R51	Enables Arg1:E14 Arg2:E13	
+R52	Coreference-Link Arg1:T69 Arg2:T42	
+R53	Meronym Arg1:T79 Arg2:T80	

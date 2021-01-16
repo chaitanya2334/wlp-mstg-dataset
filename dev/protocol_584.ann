@@ -45,16 +45,16 @@ T44	Action 1471 1480	Calculate
 T45	Measure-Type 1481 1491	burst size
 E1	Action:T1 Product:T3
 E2	Action:T4 Acts-on:T5 Site:T7
-E3	Action:T10 Acts-on:T12
-E4	Action:T13 Acts-on:T14
-E5	Action:T16 Acts-on:T17 Acts-on2:T19
-E6	Action:T20 Acts-on:T21 Site:T23
+E3	Action:T10 Acts-on2:E13 Using:T12 Product:T14
+E4	Action:T13 Acts-on:T14 Product:T17
+E5	Action:T16 Acts-on:T17 Using:T19 Product:T21
+E6	Action:T20 Acts-on:T21 Site:T23 Product:T27
 E7	Action:T24 Acts-on:T26 Site:T27
-E8	Action:T28 Acts-on:T29
-E9	Action:T32 Acts-on:T33 Site:T35 Site2:T37
-E10	Action:T38 Acts-on:T40
-E11	Action:T42 
-E12	Action:T44 Measure-Type-Link:T45
+E8	Action:T28 Acts-on:T29 Acts-on2:E7 Product:T33
+E9	Action:T32 Acts-on:T33 Site:T35 Site2:T37 Product:T50
+E10	Action:T38 Acts-on:T40 Product:T55
+E11	Action:T42 Acts-on:E19 Product:T70 Product2:T71
+E12	Action:T44 Measure-Type-Link:T45 Acts-on:E18
 R1	Mod-Link Arg1:T3 Arg2:T2
 R2	Mod-Link Arg1:T7 Arg2:T6
 R3	Meronym Arg1:T9 Arg2:T7
@@ -72,3 +72,44 @@ R14	Mod-Link Arg1:T40 Arg2:T39
 R15	Setting Arg1:E10 Arg2:T41
 R16	Mod-Link Arg1:E11 Arg2:T43
 R17	Enables Arg1:E2 Arg2:E1
+T46	Action 176 180	take
+E13	Action:T46 Measure-Type-Link:T47 Acts-on:T3
+T47	Measure-Type 184 206	time 0’ growth reading
+T48	Modifier 791 802	immediately
+T49	Action 777 781	Take
+E14	Action:T49 Acts-on:T50
+T50	Reagent 784 790	sample
+R18	Mod-Link Arg1:E14 Arg2:T48	
+T51	Modifier 915 923	Continue
+T52	Action 924 932	sampling
+E15	Action:T52 Acts-on:E14 Product:T40
+T53	Time 949 956	8 hours
+R19	Mod-Link Arg1:E15 Arg2:T51	
+R20	Setting Arg1:E15 Arg2:T53	
+T54	Action 1010 1015	count
+E16	Action:T54 Acts-on:T55 Site:T56 Product:T58 Product2:T61
+T55	Reagent 1020 1027	plaques
+T56	Location 1035 1041	plates
+T57	Generic-Measure 1054 1070	countable number
+T58	Mention 1074 1078	them
+R21	Measure Arg1:T58 Arg2:T57	
+T59	Action 1213 1218	count
+E17	Action:T59 Acts-on:T61 Product:T64
+T60	Modifier 1223 1226	new
+T61	Reagent 1227 1234	plaques
+T63	Action 1258 1261	add
+E19	Action:T63 Acts-on:T64
+T64	Mention 1262 1267	these
+T65	Generic-Measure 1276 1290	original count
+R22	Setting Arg1:E19 Arg2:T65	
+R23	Mod-Link Arg1:T61 Arg2:T60	
+R24	Coreference-Link Arg1:T64 Arg2:T61	
+T62	Action 1324 1333	Calculate
+E18	Action:T62 Measure-Type-Link:T66 Acts-on:T70 Acts-on2:T71
+T66	Measure-Type 1334 1342	PFU / ml
+T68	Modifier 1411 1426	not centrifuged
+T67	Modifier 1375 1386	centrifuged
+T70	Reagent 1389 1399	free phage
+T71	Reagent 1429 1440	total phage
+R25	Mod-Link Arg1:T71 Arg2:T68	
+R26	Mod-Link Arg1:T70 Arg2:T67	

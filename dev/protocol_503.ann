@@ -621,7 +621,7 @@ T620	Method 11501 11505	qPCR
 T621	Action 11524 11534	quantitate
 T622	Reagent 11535 11556	DNA library templates
 E1	Action:T2 Acts-on:T3
-E2	Action:T4 
+E2	Action:T4 Acts-on:E1 Product:T7
 E3	Action:T6 Acts-on:T7
 E4	Action:T8 Acts-on:T9
 E5	Action:T11 Acts-on:T12

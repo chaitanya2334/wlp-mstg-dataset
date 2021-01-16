@@ -18,11 +18,11 @@ T17	Location 206 213	freezer
 T18	Action 216 224	Dissolve
 T19	Modifier 225 241	again before use
 E1	Action:T1 Acts-on:T3
-E2	Action:T4 Acts-on:T7
-E3	Action:T8 
-E4	Action:T11 Acts-on:T10
+E2	Action:T4 Acts-on:T7 Site:E1
+E3	Action:T8 Acts-on:E2 Product:T10
+E4	Action:T11 Acts-on:T10 Product:T14
 E5	Action:T16 Acts-on:T14 Site:T17
-E6	Action:T18 
+E6	Action:T18 Acts-on:E5
 R1	Measure Arg1:T3 Arg2:T2
 R2	Mod-Link Arg1:T7 Arg2:T6
 R3	Measure Arg1:T7 Arg2:T5

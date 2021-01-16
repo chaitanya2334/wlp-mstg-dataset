@@ -22,9 +22,6 @@ T21	Action 740 745	crush
 T22	Reagent 750 759	sporangia
 T23	Action 764 770	vortex
 T24	Mention 771 775	them
-T25	Action 810 816	Filter
-T26	Modifier 817 824	crushed
-T27	Reagent 825 836	spore heads
 T28	Action 839 844	Place
 T29	Size 849 854	70 μm
 T30	Device 855 868	cell strainer
@@ -80,9 +77,6 @@ T79	Action 1754 1758	Grow
 T80	Modifier 1759 1770	upside down
 T81	Time 1818 1828	5 - 6 days
 T82	Temperature 1832 1837	21 ºC
-T83	Action 1974 1977	Mix
-T84	Reagent 1978 1981	DNA
-T85	Reagent 1986 1990	Agro
 T86	Action 2024 2027	add
 T87	Amount 2028 2037	20 - 50ng
 T88	Reagent 2041 2048	plasmid
@@ -95,7 +89,6 @@ T94	Modifier 2142 2149	chilled
 T95	Size 2150 2154	2 mm
 T96	Device 2155 2162	cuvette
 T97	Generic-Measure 2170 2182	2.5 kV pulse
-T98	Reagent 2193 2197	Agro
 T99	Modifier 2200 2211	Immediately
 T100	Action 2212 2215	add
 T101	Amount 2216 2219	1mL
@@ -210,54 +203,52 @@ T209	Action 4622 4629	pouring
 T210	Mention 4635 4639	them
 T211	Amount 4640 4651	150 - 200ml
 T212	Reagent 4655 4690	water + cefo 100 Sporelings plating
-E1	Action:T1 Acts-on:T3
-E2	Action:T2 Acts-on:T3
-E3	Action:T4 Acts-on:T5 Acts-on2:T7
-E4	Action:T11 Count:T8 Using:T9
-E5	Action:T12 Acts-on:T13 Site:T14
-E6	Action:T15 Acts-on:T17 Site:T19
-E7	Action:T21 Acts-on:T22 Using:T20
+E1	Action:T1 Acts-on:T3 Product:T222
+E2	Action:T2 Acts-on:T3 Product:T222
+E3	Action:T4 Product:T5 Product2:T7 Using:T214 Using2:T215 Using3:T222
+E4	Action:T11 Count:T8 Using:T9 Product:T13
+E5	Action:T12 Acts-on:T13 Site:T14 Product:T19
+E6	Action:T15 Acts-on:T17 Site:T19 Product:T22
+E7	Action:T21 Acts-on:T22 Using:T20 Product:T24
 E8	Action:T23 Acts-on:T24
-E9	Action:T25 Acts-on:T27
-E10	Action:T28 Acts-on:T30 Site:T32
-E11	Action:T33 Using:T34 Acts-on:T35 Site:T39
-E12	Action:T40 Site:T43
-E13	Action:T44 Acts-on:T45 Acts-on2:T46 Using:T48
+E10	Action:T28 Acts-on:T30 Site:T32 Product:T34
+E11	Action:T33 Using:T34 Acts-on:T35 Product:T43
+E12	Action:T40 Site:T43 Product:T45
+E13	Action:T44 Acts-on:T45 Acts-on2:T46 Using:T48 Product:T50 Product2:T51
 E14	Action:T49 Acts-on:T50 Site:T52
-E15	Action:T57 Acts-on:T52
-E16	Action:T59 Acts-on:T52
-E17	Action:T62 Acts-on:T63
-E18	Action:T64 Acts-on:T65 Site:T67 Using:T70
+E15	Action:T57 Acts-on:E14
+E16	Action:T59 Acts-on:E15 Product:T63
+E17	Action:T62 Acts-on:T63 Product:T65
+E18	Action:T64 Acts-on:T65 Site:T67 Using:T70 Product:T74
 E19	Action:T71 Acts-on:T74 Site:T76
 E20	Action:T77 Using:T78
-E21	Action:T79 
-E22	Action:T83 Acts-on:T84 Acts-on2:T85
-E23	Action:T86 Acts-on:T88 Site:T91 Product:T85
-E24	Action:T93 Using:T96
-E25	Action:T100 Acts-on:T102
-E26	Action:T104 Product:T98
-E27	Action:T108 Site:T110
-E28	Action:T111 Using:T115
+E21	Action:T79 Acts-on:E19
+E23	Action:T86 Acts-on:T88 Site:T91
+E24	Action:T93 Using:T96 Acts-on:E23
+E25	Action:T100 Acts-on:T102 Site:E24
+E26	Action:T104 Acts-on:E25
+E27	Action:T108 Site:T110 Acts-on:E26
+E28	Action:T111 Using:T115 Acts-on:E27 Product:T118
 E29	Action:T116 Acts-on:T118 Site:T119
-E30	Action:T120 Acts-on:T122 Site:T124
-E31	Action:T125 
-E32	Action:T128 
-E33	Action:T130 Acts-on:T131
+E30	Action:T120 Site:T124 Acts-on2:E29 Using:T122
+E31	Action:T125 Acts-on:E30
+E32	Action:T128 Acts-on:E31 Product:T131
+E33	Action:T130 Acts-on:T131 Product:T134
 E34	Action:T133 Acts-on:T134
-E35	Action:T135 Site:T138
-E36	Action:T141 Acts-on:T142 Measure-Type-Link:T143
-E37	Action:T145 Site:T149
-E38	Action:T150 Acts-on:T152 Site:T153 Using:T154
-E39	Action:T155 Acts-on:T156
+E35	Action:T135 Site:T138 Acts-on:E34
+E36	Action:T141 Acts-on:T142 Measure-Type-Link:T143 Site:E35
+E37	Action:T145 Site:T149 Acts-on:E36 Product:T152 Product2:T153
+E38	Action:T150 Acts-on:T152 Using:T154 Product:T156
+E39	Action:T155 Acts-on:T156 Product:T158 Product2:T181
 E40	Action:T157 Acts-on:T158 Site:T160
-E41	Action:T161 Acts-on:T163
-E42	Action:T165 Site:T167 Acts-on:T170 Acts-on2:T173 Measure-Type-Link:T174
+E41	Action:T161 Acts-on:T163 Using:T164 Product:T167
+E42	Action:T165 Site:T167 Acts-on:T170 Acts-on2:T173 Measure-Type-Link:T174 Product:T177
 E43	Action:T178 Acts-on:T181 Site:T177
-E44	Action:T182 Site:T184
-E45	Action:T188 Acts-on:T189 Site:T192 Measure-Type-Link:T193
+E44	Action:T182 Site:T184 Acts-on:E43 Product:T201
+E45	Action:T188 Acts-on:T189 Site:T192 Measure-Type-Link:T193 Using:T197 Product:T212
 E46	Action:T198 Product:T199
-E47	Action:T200 Acts-on:T201 Site:T203 Product:T199
-E48	Action:T204 Acts-on:T203 Site:T206
+E47	Action:T200 Acts-on:T201 Site:T203
+E48	Action:T204 Site:T206 Acts-on:E47 Product:T208
 E49	Action:T207 Acts-on:T208
 E50	Action:T209 Acts-on:T212 Site:T210
 R1	Measure Arg1:T7 Arg2:T6
@@ -267,7 +258,6 @@ R4	Measure Arg1:T17 Arg2:T16
 R5	Coreference-Link Arg1:T24 Arg2:T22
 R6	Measure Arg1:T32 Arg2:T31
 R7	Setting Arg1:T30 Arg2:T29
-R8	Mod-Link Arg1:T27 Arg2:T26
 R9	Mod-Link Arg1:T37 Arg2:T36
 R10	Mod-Link Arg1:T43 Arg2:T42
 R11	Setting Arg1:E12 Arg2:T41
@@ -344,8 +334,59 @@ R81	Setting Arg1:E45 Arg2:T194
 R82	Mod-Link Arg1:T197 Arg2:T196
 R83	Measure Arg1:T189 Arg2:T190
 R84	Measure Arg1:T189 Arg2:T195
-R85	Meronym Arg1:T192 Arg2:T197
 R86	Measure Arg1:T206 Arg2:T205
 R87	Setting Arg1:T203 Arg2:T202
 R88	Measure Arg1:T212 Arg2:T211
 R89	Coreference-Link Arg1:T210 Arg2:T208
+R90	Overlaps Arg1:E1 Arg2:E2	
+T213	Modifier 190 197	sterile
+T214	Reagent 198 203	water
+T215	Reagent 214 229	Milton solution
+T216	Reagent 234 247	Milton tablet
+T217	Numerical 232 233	1
+T218	Amount 251 255	25ml
+T219	Modifier 256 263	sterile
+T220	Reagent 264 269	water
+T221	Modifier 290 296	washed
+T222	Reagent 297 309	spores heads
+R91	Mod-Link Arg1:T214 Arg2:T213	
+R92	Measure Arg1:T216 Arg2:T217	
+R93	Mod-Link Arg1:T220 Arg2:T219	
+R94	Measure Arg1:T220 Arg2:T218	
+R95	Meronym Arg1:T220 Arg2:T215	
+R96	Meronym Arg1:T216 Arg2:T215	
+R97	Coreference-Link Arg1:T14 Arg2:T5	
+R99	Coreference-Link Arg1:T13 Arg2:T222	
+R100	Coreference-Link Arg1:T17 Arg2:T215	
+T223	Modifier 782 792	completely
+T224	Action 793 807	re - suspended
+E51	Action:T224 Product:T37 Product2:T35 Product3:T39
+R101	Mod-Link Arg1:E51 Arg2:T223	
+R102	Enables Arg1:E8 Arg2:E51	
+R103	Enables Arg1:E7 Arg2:E51	
+R104	Overlaps Arg1:E7 Arg2:E8	
+R105	Meronym Arg1:T35 Arg2:T39	
+R106	Coreference-Link Arg1:T48 Arg2:T17	
+R8	Meronym Arg1:T152 Arg2:T153	
+R85	Enables Arg1:E47 Arg2:E46	
+R107	Enables Arg1:E50 Arg2:E49	
+T25	Action 4798 4804	remove
+E9	Action:T25 Acts-on:T26 Site:T27 Product:T84
+T26	Reagent 4809 4819	sporelings
+T27	Device 4829 4842	cell strainer
+T83	Action 4847 4853	spread
+E22	Action:T83 Acts-on:T84 Site:T225
+T84	Mention 4854 4858	them
+T85	Modifier 4862 4870	at least
+T98	Numerical 4871 4872	3
+T225	Location 4873 4879	plates
+T226	Action 4919 4928	make sure
+E52	Action:T226 Acts-on:T227
+T227	Mention 4929 4933	they
+T228	Modifier 4938 4949	well spread
+R108	Meronym Arg1:T84 Arg2:T26	
+R109	Measure Arg1:T225 Arg2:T98	
+R110	Mod-Link Arg1:T225 Arg2:T85	
+R111	Mod-Link Arg1:E52 Arg2:T228	
+R112	Overlaps Arg1:E52 Arg2:E22	
+R113	Meronym Arg1:T227 Arg2:T84	

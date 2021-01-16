@@ -10,9 +10,9 @@ T9	Action 166 172	Divide
 T10	Modifier 178 183	small
 T11	Reagent 184 192	aliquots
 T12	Modifier 193 203	if desired
-E1	Action:T3 Acts-on:T5
-E2	Action:T6 Acts-on:T7
-E3	Action:T9 Product:T11
+E1	Action:T3 Acts-on2:T1 Using:T5
+E2	Action:T6 Acts-on2:E1 Site:T7
+E3	Action:T9 Product:T11 Acts-on:E2
 R1	Setting Arg1:T5 Arg2:T4
 R2	Setting Arg1:E2 Arg2:T8
 R3	Mod-Link Arg1:T11 Arg2:T10

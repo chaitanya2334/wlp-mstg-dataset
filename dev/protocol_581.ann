@@ -21,10 +21,10 @@ T20	Location 624 643	on top of the grout
 T21	Action 833 838	Place
 T22	Size 843 850	0.02 µm
 T23	Device 851 857	filter
-T24	Location 858 885	on top of the 0.8 µm filter
+T24	Device 879 885	filter
 T25	Action 1027 1032	Clamp
 T26	Device 1037 1043	funnel
-T27	Location 1044 1065	on top of the filters
+T27	Location 1047 1050	top
 T28	Action 1068 1071	Add
 T29	Reagent 1076 1082	sample
 T30	Action 1087 1094	turn on
@@ -87,27 +87,27 @@ T86	Numerical 2444 2447	200
 T87	Reagent 2448 2455	viruses
 T88	Reagent 2459 2467	bacteria
 E1	Action:T1 Acts-on:T2
-E2	Action:T3 Measure-Type-Link:T4
-E3	Action:T5 Acts-on:T7 Acts-on2:T8 Site:T9
+E2	Action:T3 Measure-Type-Link:T4 Acts-on:E1 Product:T29
+E3	Action:T5 Acts-on:T7 Acts-on2:T8 Site:T9 Product:T42
 E4	Action:T10 Acts-on:T12 Site:T13
-E5	Action:T14 Acts-on:T15
-E6	Action:T17 Acts-on:T19 Acts-on2:T20
-E7	Action:T21 Acts-on:T23 Site:T24
-E8	Action:T25 Acts-on:T26 Acts-on2:T27
-E9	Action:T28 Acts-on:T29
-E10	Action:T30 Acts-on:T31
-E11	Action:T34 Acts-on:T35
-E12	Action:T36 Acts-on:T38
-E13	Action:T39 Product:T41
+E5	Action:T14 Acts-on:T15 Site:E4 Product:T20
+E6	Action:T17 Acts-on:T19 Acts-on2:T20 Product:T24 Product2:T90
+E7	Action:T21 Acts-on:T23 Site:T90 Product:T91 Product2:T27
+E8	Action:T25 Acts-on:T26 Site:T27
+E9	Action:T28 Acts-on:T29 Site:E8 Product:T31
+E10	Action:T30 Acts-on:T31 Product:T35
+E11	Action:T34 Acts-on:T35 Product:T38
+E12	Action:T36 Acts-on:T38 Product:T53
+E13	Action:T39 Site:T49 Acts-on:T41 Product:T55 Product2:T56
 E14	Action:T52 Acts-on:T53 Site:T55 Site2:T58
-E15	Action:T60 
-E16	Action:T62 Acts-on:T63
-E17	Action:T65 Acts-on:T66 Site:T69
-E18	Action:T70 Acts-on:T72 Site:T73
+E15	Action:T60 Acts-on:E14 Product:T63 Product2:T64
+E16	Action:T62 Acts-on:T63 Product:T66
+E17	Action:T65 Acts-on:T66 Site:T69 Product:T77 Product2:T78
+E18	Action:T70 Acts-on:T72 Site:T73 Product:T75
 E19	Action:T74 Acts-on:T75
-E20	Action:T76 Acts-on:T75 Site:T77
-E21	Action:T79 Using:T80
-E22	Action:T81 Acts-on:T83 Site:T84
+E20	Action:T76 Site:T77 Acts-on:E19
+E21	Action:T79 Using:T80 Acts-on:E20 Product:T83
+E22	Action:T81 Acts-on:T83 Site:T84 Product:T87
 E23	Action:T85 Acts-on:T87
 R1	Measure Arg1:T7 Arg2:T6
 R2	Mod-Link Arg1:T12 Arg2:T11
@@ -140,3 +140,11 @@ R28	Meronym Arg1:T77 Arg2:T78
 R29	Measure Arg1:T83 Arg2:T82
 R30	Or Arg1:T87 Arg2:T88
 R31	Measure Arg1:T87 Arg2:T86
+T89	Size 872 878	0.8 µm
+T90	Location 861 864	top
+R32	Measure Arg1:T24 Arg2:T89	
+R33	Meronym Arg1:T90 Arg2:T24	
+T91	Device 1058 1065	filters
+R34	Meronym Arg1:T27 Arg2:T91	
+T92	Generic-Measure 1837 1841	0.02
+R35	Measure Arg1:T53 Arg2:T92	

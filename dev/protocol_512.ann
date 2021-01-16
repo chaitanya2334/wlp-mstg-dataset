@@ -27,16 +27,16 @@ T26	Action 330 339	transform
 T27	Action 343 348	store
 T28	Temperature 352 358	- 20°C
 E1	Action:T1 Acts-on:T3 Acts-on2:T5
-E2	Action:T6 Using:T8
-E3	Action:T9 Acts-on:T12
-E4	Action:T13 Acts-on:T12
-E5	Action:T14 Acts-on:T16
-E6	Action:T17 
-E7	Action:T19 
-E8	Action:T21 
-E9	Action:T24 
-E10	Action:T26 
-E11	Action:T27 
+E2	Action:T6 Using:T8 Acts-on:E1
+E3	Action:T9 Acts-on:T12 Site:E2
+E4	Action:T13 Acts-on:E3
+E5	Action:T14 Acts-on:T16 Site:E4
+E6	Action:T17 Acts-on:E5
+E7	Action:T19 Acts-on:E6
+E8	Action:T21 Acts-on:E7
+E9	Action:T24 Acts-on:E8
+E10	Action:T26 Acts-on:E9
+E11	Action:T27 Acts-on:E9
 R1	Measure Arg1:T3 Arg2:T2
 R2	Measure Arg1:T5 Arg2:T4
 R3	Measure Arg1:T3 Arg2:T4
@@ -50,3 +50,4 @@ R10	Setting Arg1:E8 Arg2:T22
 R11	Setting Arg1:E8 Arg2:T23
 R12	Setting Arg1:E9 Arg2:T25
 R13	Setting Arg1:E11 Arg2:T28
+R14	Or Arg1:E10 Arg2:E11	

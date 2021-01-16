@@ -59,25 +59,25 @@ T58	Time 1479 1487	1 minute
 T59	Speed 1491 1501	16,000 x g
 T60	Action 1505 1510	elute
 T61	Reagent 1515 1518	DNA
-E1	Action:T1 Site:T3
-E2	Action:T4 Acts-on:T5
-E3	Action:T6 Acts-on:T8 Site:T10
-E4	Action:T11 Acts-on:T12
-E5	Action:T15 Acts-on:T16 Site:T17
+E1	Action:T1 Site:T3 Product:T5
+E2	Action:T4 Acts-on:T5 Product:T10
+E3	Action:T6 Acts-on:T8 Site:T10 Product:T12
+E4	Action:T11 Acts-on:T12 Product:T19
+E5	Action:T15 Acts-on:T16 Site:T17 Product:T20
 E6	Action:T18 Acts-on:T19 Site:T20
-E7	Action:T21 
-E8	Action:T24 Acts-on:T25
+E7	Action:T21 Acts-on:E6 Product:T25 Product2:T27
+E8	Action:T24 Acts-on:T25 Product:T28
 E9	Action:T26 Acts-on:T27 Site:T28
-E10	Action:T29 Acts-on:T31
-E11	Action:T33 
+E10	Action:T29 Acts-on:T31 Site:E9
+E11	Action:T33 Acts-on:E10 Product:T37 Product2:T38
 E12	Action:T36 Acts-on:T37 Site:T38
-E13	Action:T39 Acts-on:T41
-E14	Action:T42 
-E15	Action:T45 Acts-on:T46 Site:T49
-E16	Action:T50 Acts-on:T52 Acts-on2:T53
-E17	Action:T55 
-E18	Action:T57 
-E19	Action:T60 Acts-on:T61 Using:E17 Using2:E18
+E13	Action:T39 Acts-on:T41 Site:E12
+E14	Action:T42 Acts-on:E13 Product:T46
+E15	Action:T45 Acts-on:T46 Site:T49 Product:T52
+E16	Action:T50 Acts-on:T52 Acts-on2:T53 Product:T61
+E17	Action:T55 Acts-on:E16
+E18	Action:T57 Acts-on:E17
+E19	Action:T60 Acts-on:T61
 R1	Measure Arg1:T3 Arg2:T2
 R2	Setting Arg1:E4 Arg2:T13
 R3	Setting Arg1:E4 Arg2:T14
@@ -99,3 +99,8 @@ R18	Meronym Arg1:T53 Arg2:T54
 R19	Setting Arg1:E18 Arg2:T58
 R20	Setting Arg1:E18 Arg2:T59
 R21	Setting Arg1:E17 Arg2:T56
+T62	Temperature 388 395	37–55°C
+R22	Setting Arg1:E4 Arg2:T62	
+T63	Modifier 463 472	generally
+R23	Mod-Link Arg1:T14 Arg2:T63	
+R24	Enables Arg1:E18 Arg2:E19	
