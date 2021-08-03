@@ -1,6 +1,6 @@
 # WLP MSTG Dataset
 
-This repository contains a collection of 615 wet lab protocols, annotated with actions, entities and relations all captured within a given sentence and across multiple sentence. 
+This repository contains a collection of 615 wet lab protocols, annotated with actions, entities and relations all captured within a given sentence and across multiple sentences. 
 
 The wet lab protocol dataset annotations were created in brat and are stored in standoff format, very similar to BioNLP Shared Task standoff format, as seen here: [http://2011.bionlp-st.org/home/file-formats](http://2011.bionlp-st.org/home/file-formats).
 
