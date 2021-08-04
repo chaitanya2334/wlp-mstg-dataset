@@ -28,9 +28,11 @@ These actions and entities are interconnected with local relations that we call 
 
 Then, the action phrases as action graphs are interconnected with cross-Action Phrase Temporal and Causal (cAP-TaC) relations. These relations can connect to any action or entity in the action graph. For example, the __Product__ relation from *Grow* to *host culture* indicates two things, (i) that the actual product of the *Grow* __Action__ is *host culture* and (ii) the steps involving *Grow* must take place first before the __Action__ *Add*. 
 
-The wet lab protocol dataset annotations were created in brat and are stored in standoff format, very similar to BioNLP Shared Task standoff format, as seen here: [http://2011.bionlp-st.org/home/file-formats](http://2011.bionlp-st.org/home/file-formats).
+
 
 ## The standoff format:
+
+The wet lab protocol dataset annotations were created in brat and are stored in standoff format, very similar to BioNLP Shared Task standoff format, as seen here: [http://2011.bionlp-st.org/home/file-formats](http://2011.bionlp-st.org/home/file-formats).
 
 Each text document in the dataset is acompanied by a corresponding annotation file. The two are associatied by using a simple file naming convention, wherein their base name (file name without the file extention) is the same: for example, the file protocol_30.ann contains annotations for the file protocol_30.txt.
 
