@@ -2,6 +2,33 @@
 
 This repository contains a collection of 615 wet lab protocols, annotated with actions, entities and relations all captured within a given sentence and across multiple sentences. 
 
+## MSTG: Material State Transfer Graph
+A material state transfer graph (MSTG) describes the flow of materials from start to finish. 
+
+![mstg](mstg.jpg)
+
+The material state transfer graph (asseen above) is designed for the protocol below. 
+
+**Isolation of temperate phages by plaque agar overlay**
+- Grow the bacteria overnight.
+- Melt soft agar overlay tubes in boiling water.
+- Place in the 47C water bath.
+- Remove one tube of soft agar from the water bath.
+- Add 1.0 mL host culture and either 1.0 or 0.1 mL viral concentrate to the tube.
+- Mix the culture contents in the tube well by rolling back and forth between two hands.
+- Immediately empty the tube contents onto an agar plate.
+- Sit RT for 5 min.
+- Gently spread the top agar over the agar surface by sliding the plate on the bench surface using a circular motion.
+- Harden the top agar by not disturbing the plates for 30 min.
+- Incubate the plates (top agar side down) overnight to 48 h.
+
+
+Each action phrase found in the protocol text is converted into an action graph (as seen in greyboxes). For example, the action phrase: *Grow the bacteria overnight*, we identify an *”Action”* Grow and all of its arguments like ”Reagent” bacteria and ”Time” overnight. 
+
+These actions and entities are interconnected with local relations that we call iAP (inter-Action Phrase) relations. For instance, relations like ”Acts-on” between Grow to bacteria and ”Setting” from Grow to overnight to indicate that is how long we should be growing the bacteria.
+
+Then, the action phrases as action graphs are interconnected with cross-Action Phrase Temporal and Causal (cAP-TaC) relations. These relations can connect to any action or entity in the action graph. For example, the ”Product” relation from Grow to host culture indicates two things, (i) that the actual product of the Grow ”Action” is host culture and (ii) the steps involving Grow must take place first before the ”Action” Add. 
+
 The wet lab protocol dataset annotations were created in brat and are stored in standoff format, very similar to BioNLP Shared Task standoff format, as seen here: [http://2011.bionlp-st.org/home/file-formats](http://2011.bionlp-st.org/home/file-formats).
 
 ## The standoff format:
