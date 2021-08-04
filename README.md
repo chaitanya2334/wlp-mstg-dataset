@@ -8,6 +8,7 @@ This repository contains a collection of 615 wet lab protocols, annotated to con
 
 A material state transfer graph (MSTG) describes the flow of materials from start to finish. The above figure is designed for the protocol below. 
 
+---
 **Isolation of temperate phages by plaque agar overlay**
 - Grow the bacteria overnight.
 - Melt soft agar overlay tubes in boiling water.
@@ -20,7 +21,7 @@ A material state transfer graph (MSTG) describes the flow of materials from star
 - Gently spread the top agar over the agar surface by sliding the plate on the bench surface using a circular motion.
 - Harden the top agar by not disturbing the plates for 30 min.
 - Incubate the plates (top agar side down) overnight to 48 h.
-
+---
 
 Each action phrase found in the protocol text is converted into an action graph (as seen in greyboxes). For example, the action phrase: *Grow the bacteria overnight*, we identify an __Action__ *Grow* and all of its arguments like __Reagent__ *bacteria* and __Time__ *overnight*. 
 
