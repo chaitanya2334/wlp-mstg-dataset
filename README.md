@@ -1,10 +1,11 @@
 # WLP MSTG Dataset
 
-This repository contains a collection of 615 wet lab protocols, annotated with actions, entities and relations all captured within a given sentence and across multiple sentences. 
+This repository contains a collection of 615 wet lab protocols, annotated to construct material state transfer graphs. 
 
 ## MSTG: Material State Transfer Graph
 
 ![mstg](https://github.com/chaitanya2334/wlp-mstg-dataset/blob/master/mstg.png)
+
 A material state transfer graph (MSTG) describes the flow of materials from start to finish. The above figure is designed for the protocol below. 
 
 **Isolation of temperate phages by plaque agar overlay**
@@ -21,11 +22,11 @@ A material state transfer graph (MSTG) describes the flow of materials from star
 - Incubate the plates (top agar side down) overnight to 48 h.
 
 
-Each action phrase found in the protocol text is converted into an action graph (as seen in greyboxes). For example, the action phrase: *Grow the bacteria overnight*, we identify an *”Action”* Grow and all of its arguments like ”Reagent” bacteria and ”Time” overnight. 
+Each action phrase found in the protocol text is converted into an action graph (as seen in greyboxes). For example, the action phrase: *Grow the bacteria overnight*, we identify an __Action__ *Grow* and all of its arguments like __Reagent__ *bacteria* and __Time__ *overnight*. 
 
-These actions and entities are interconnected with local relations that we call iAP (inter-Action Phrase) relations. For instance, relations like ”Acts-on” between Grow to bacteria and ”Setting” from Grow to overnight to indicate that is how long we should be growing the bacteria.
+These actions and entities are interconnected with local relations that we call iAP (inter-Action Phrase) relations. For instance, relations like __Acts-on__ between *Grow* to *bacteria* and __Setting__ from *Grow* to *overnight* to indicate that is how long we should be growing the bacteria.
 
-Then, the action phrases as action graphs are interconnected with cross-Action Phrase Temporal and Causal (cAP-TaC) relations. These relations can connect to any action or entity in the action graph. For example, the ”Product” relation from Grow to host culture indicates two things, (i) that the actual product of the Grow ”Action” is host culture and (ii) the steps involving Grow must take place first before the ”Action” Add. 
+Then, the action phrases as action graphs are interconnected with cross-Action Phrase Temporal and Causal (cAP-TaC) relations. These relations can connect to any action or entity in the action graph. For example, the __Product__ relation from *Grow* to *host culture* indicates two things, (i) that the actual product of the *Grow* __Action__ is *host culture* and (ii) the steps involving *Grow* must take place first before the __Action__ *Add*. 
 
 The wet lab protocol dataset annotations were created in brat and are stored in standoff format, very similar to BioNLP Shared Task standoff format, as seen here: [http://2011.bionlp-st.org/home/file-formats](http://2011.bionlp-st.org/home/file-formats).
 
