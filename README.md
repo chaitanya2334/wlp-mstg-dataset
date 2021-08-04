@@ -5,7 +5,7 @@ This repository contains a collection of 615 wet lab protocols, annotated with a
 ## MSTG: Material State Transfer Graph
 A material state transfer graph (MSTG) describes the flow of materials from start to finish. 
 
-![mstg](mstg.jpg)
+![mstg](https://github.com/chaitanya2334/wlp-mstg-dataset/blob/master/mstg.png)
 
 The material state transfer graph (asseen above) is designed for the protocol below. 
 
